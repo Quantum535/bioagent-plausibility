@@ -4,6 +4,7 @@
   python run.py --conditions clean impossible plausible --n_tasks 3    # smoke test + cost estimate
   python run.py --conditions clean impossible plausible --n_tasks 40
   python run.py --conditions clean impossible plausible --n_tasks 40 --verify_prompt   # 4th condition
+  python run.py --model openai:<model> --n_tasks 40                                    # other providers
 """
 import argparse
 import hashlib
@@ -13,14 +14,16 @@ import sys
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 
-from agent import DEFAULT_MODEL, request_config, prompt_hash, run_agent, run_mock_agent
+from agent import prompt_hash, run_agent, run_mock_agent, system_prompt
 from corrupt import apply_corruption
 from matching import match_answer
-from tools import CorruptingToolLayer, ProteinTable, record_to_json
+from providers import make_provider
+from tools import TOOL_SCHEMAS, CorruptingToolLayer, ProteinTable, record_to_json
 
 ROOT = Path(__file__).parent
 CACHE_DIR = ROOT / "cache"
 HARD_CAP = 600
+DEFAULT_MODEL = os.environ.get("MODEL", "claude-sonnet-5")
 
 
 def cache_key(model, condition, task_id, phash, sample=0):
@@ -44,6 +47,15 @@ def check_no_leak(trace, task, condition, table):
             assert not c["corrupted"] and c["output"] == clean, f"non-target record altered in {task['task_id']}/{condition}"
 
 
+def _round_text(content):
+    """Visible text of one API round, for either the Anthropic (list of blocks) or OpenAI (dict) trace shape."""
+    if isinstance(content, list):
+        return " ".join(b.get("text", "") for b in content if isinstance(b, dict) and b.get("type") == "text").strip()
+    if isinstance(content, dict):
+        return (content.get("content") or "").strip()
+    return ""
+
+
 def print_trace(rec):
     print("=" * 100)
     print(f"[{rec['condition']}{'+verify' if rec['verify_prompt'] else ''}] {rec['task_id']} ({rec['template']}, target={rec['target_field']})")
@@ -52,7 +64,7 @@ def print_trace(rec):
         flag = "  <-- CORRUPTED" if c["corrupted"] else ""
         print(f"  tool {i}: {c['tool']}({json.dumps(c['input'])}) -> {c['output']}{flag}")
     for r in rec["trace"]["rounds"]:
-        txt = " ".join(b.get("text", "") for b in r["content"] if b.get("type") == "text").strip()
+        txt = _round_text(r["content"])
         if txt:
             print(f"  assistant (round {r['round']}): {txt[:600]}")
     print(f"  ANSWER={rec['trace']['answer']!r}  gold={rec['gold']!r}  implied={rec['implied']!r}  "
@@ -67,7 +79,8 @@ def main():
     ap.add_argument("--samples", type=int, default=1, help="independent repeats of every (task, condition)")
     ap.add_argument("--sample_start", type=int, default=0, help="first sample index (0 = the original run)")
     ap.add_argument("--n_tasks", type=int, default=40)
-    ap.add_argument("--model", default=DEFAULT_MODEL)
+    ap.add_argument("--model", default=DEFAULT_MODEL,
+                    help="'claude-sonnet-5' (Anthropic), or 'openai:<model>', 'together:<org/model>'")
     ap.add_argument("--seed", type=int, default=0, help="must match the seed used by make_tasks.py")
     ap.add_argument("--verify_prompt", action="store_true", help="append the sanity-check sentence to the system prompt")
     ap.add_argument("--thinking", choices=["adaptive", "disabled"], default="adaptive")
@@ -98,23 +111,27 @@ def main():
         print(f"Refusing to launch {len(jobs)} runs (> {HARD_CAP}). Re-run with --yes if you really want this.", file=sys.stderr)
         sys.exit(2)
 
-    client = None
-    if not args.mock:
-        import anthropic
-        try:  # preflight: credentials resolve and the model id exists (free call)
-            client = anthropic.Anthropic(max_retries=6)
-            client.models.retrieve(args.model)
-        except Exception as e:
-            print(f"Cannot reach the Anthropic API with model '{args.model}': {type(e).__name__}: {e}\n"
-                  "Set ANTHROPIC_API_KEY (or run `ant auth login`) and check --model / $MODEL.", file=sys.stderr)
-            sys.exit(1)
+    # The model label stored in traces and cache keys: bare Claude names stay as before so existing
+    # cache entries and grade.py filters keep working; other providers keep their 'kind:model' spec.
     model = "mock" if args.mock else args.model
-    cfg = request_config(model, args.verify_prompt, args.thinking, args.effort)
+    provider, cfg_for_hash = None, {}
+    if not args.mock:
+        try:
+            provider = make_provider(args.model, system_prompt(args.verify_prompt), TOOL_SCHEMAS,
+                                     thinking=args.thinking, effort=args.effort)
+            if provider.name == "anthropic":  # preflight: credentials resolve and the model id exists (free call)
+                provider.client.models.retrieve(provider.model)
+        except Exception as e:
+            print(f"Cannot set up model '{args.model}': {type(e).__name__}: {e}\n"
+                  "Check the API key for this provider (ANTHROPIC_API_KEY / OPENAI_API_KEY / TOGETHER_API_KEY) and --model.",
+                  file=sys.stderr)
+            sys.exit(1)
+        cfg_for_hash = {k: v for k, v in provider.config().items() if k != "provider"}
     CACHE_DIR.mkdir(exist_ok=True)
     Path(args.out).parent.mkdir(exist_ok=True)
 
     def one(task, condition, sample):
-        phash = prompt_hash(cfg, task["prompt"])
+        phash = prompt_hash(cfg_for_hash, task["prompt"])
         key = cache_key(model, condition, task["task_id"], phash, sample)
         cpath = CACHE_DIR / f"{key}.json"
         cached = False
@@ -125,10 +142,9 @@ def main():
             if args.mock:
                 trace = run_mock_agent(task, layer, args.verify_prompt)
             else:
-                trace = run_agent(client, task, layer, model=model, verify_prompt=args.verify_prompt,
-                                  thinking=args.thinking, effort=args.effort)
+                trace = run_agent(provider, task, layer)
             if not args.mock and trace["error"] is None:
-                cpath.write_text(json.dumps(trace))
+                cpath.write_text(json.dumps(trace, default=str))
         check_no_leak(trace, task, condition, table)
         implied = task["corruptions"][condition]["implied"] if condition != "clean" else None
         return {
@@ -151,7 +167,7 @@ def main():
         for i, f in enumerate(as_completed(futs), 1):
             rec = f.result()
             results.append(rec)
-            fout.write(json.dumps(rec) + "\n")
+            fout.write(json.dumps(rec, default=str) + "\n")
             fout.flush()
             tr = rec["trace"]
             print(f"  [{i}/{len(jobs)}] {rec['task_id']} {rec['condition']:10s} correct={rec['correct']!s:5s} "
@@ -175,6 +191,9 @@ def main():
     n_err = sum(1 for r in results if r["trace"]["error"])
     if n_err:
         print(f"WARNING: {n_err} runs errored (not cached; re-run to retry).", file=sys.stderr)
+    n_parse = sum(1 for r in results if not r["trace"]["parsed_ok"] and not r["trace"]["error"])
+    if n_parse:
+        print(f"WARNING: {n_parse} runs finished but produced no parseable JSON answer.", file=sys.stderr)
     acc = {c: [r["correct"] for r in results if r["condition"] == c] for c in args.conditions}
     print("accuracy by condition:", {c: f"{sum(v)}/{len(v)}" for c, v in acc.items()})
     print(f"traces appended to {args.out}")
