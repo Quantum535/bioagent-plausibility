@@ -1,0 +1,558 @@
+{
+ "taxonomy": {
+  "impossible|all": {
+   "n_flagged": 229,
+   "crossfield": 0.6200873362445415,
+   "recall": 0.5240174672489083,
+   "rule": 0.25327510917030566,
+   "none": 0.08733624454148471
+  },
+  "impossible|claude-haiku-4-5": {
+   "n_flagged": 30,
+   "crossfield": 0.2,
+   "recall": 0.3333333333333333,
+   "rule": 0.2,
+   "none": 0.36666666666666664
+  },
+  "impossible|claude-sonnet-4-6": {
+   "n_flagged": 39,
+   "crossfield": 0.5897435897435898,
+   "recall": 0.7435897435897436,
+   "rule": 0.2564102564102564,
+   "none": 0.07692307692307693
+  },
+  "impossible|claude-sonnet-5": {
+   "n_flagged": 120,
+   "crossfield": 0.7,
+   "recall": 0.525,
+   "rule": 0.23333333333333334,
+   "none": 0.03333333333333333
+  },
+  "impossible|claude-opus-5": {
+   "n_flagged": 40,
+   "crossfield": 0.725,
+   "recall": 0.45,
+   "rule": 0.35,
+   "none": 0.05
+  },
+  "plausible|all": {
+   "n_flagged": 78,
+   "crossfield": 0.7692307692307693,
+   "recall": 0.6666666666666666,
+   "rule": 0.0,
+   "none": 0.10256410256410256
+  },
+  "plausible|claude-haiku-4-5": {
+   "n_flagged": 7,
+   "crossfield": 0.8571428571428571,
+   "recall": 0.5714285714285714,
+   "rule": 0.0,
+   "none": 0.0
+  },
+  "plausible|claude-sonnet-4-6": {
+   "n_flagged": 11,
+   "crossfield": 0.9090909090909091,
+   "recall": 1.0,
+   "rule": 0.0,
+   "none": 0.0
+  },
+  "plausible|claude-sonnet-5": {
+   "n_flagged": 37,
+   "crossfield": 0.7837837837837838,
+   "recall": 0.7567567567567568,
+   "rule": 0.0,
+   "none": 0.13513513513513514
+  },
+  "plausible|claude-opus-5": {
+   "n_flagged": 23,
+   "crossfield": 0.6521739130434783,
+   "recall": 0.391304347826087,
+   "rule": 0.0,
+   "none": 0.13043478260869565
+  },
+  "sweep consistent|all": {
+   "n_flagged": 276,
+   "crossfield": 0.050724637681159424,
+   "recall": 0.6811594202898551,
+   "rule": 0.08695652173913043,
+   "none": 0.26811594202898553
+  },
+  "sweep consistent|claude-haiku-4-5": {
+   "n_flagged": 59,
+   "crossfield": 0.05084745762711865,
+   "recall": 0.22033898305084745,
+   "rule": 0.1864406779661017,
+   "none": 0.6440677966101694
+  },
+  "sweep consistent|claude-sonnet-4-6": {
+   "n_flagged": 0,
+   "crossfield": null,
+   "recall": null,
+   "rule": null,
+   "none": null
+  },
+  "sweep consistent|claude-sonnet-5": {
+   "n_flagged": 102,
+   "crossfield": 0.029411764705882353,
+   "recall": 0.696078431372549,
+   "rule": 0.11764705882352941,
+   "none": 0.2647058823529412
+  },
+  "sweep consistent|claude-opus-5": {
+   "n_flagged": 115,
+   "crossfield": 0.06956521739130435,
+   "recall": 0.9043478260869565,
+   "rule": 0.008695652173913044,
+   "none": 0.0782608695652174
+  },
+  "sweep inconsistent|all": {
+   "n_flagged": 286,
+   "crossfield": 0.8321678321678322,
+   "recall": 0.4825174825174825,
+   "rule": 0.038461538461538464,
+   "none": 0.1258741258741259
+  },
+  "sweep inconsistent|claude-haiku-4-5": {
+   "n_flagged": 61,
+   "crossfield": 0.5737704918032787,
+   "recall": 0.47540983606557374,
+   "rule": 0.06557377049180328,
+   "none": 0.29508196721311475
+  },
+  "sweep inconsistent|claude-sonnet-4-6": {
+   "n_flagged": 0,
+   "crossfield": null,
+   "recall": null,
+   "rule": null,
+   "none": null
+  },
+  "sweep inconsistent|claude-sonnet-5": {
+   "n_flagged": 106,
+   "crossfield": 0.8018867924528302,
+   "recall": 0.39622641509433965,
+   "rule": 0.009433962264150943,
+   "none": 0.16037735849056603
+  },
+  "sweep inconsistent|claude-opus-5": {
+   "n_flagged": 119,
+   "crossfield": 0.9915966386554622,
+   "recall": 0.5630252100840336,
+   "rule": 0.05042016806722689,
+   "none": 0.008403361344537815
+  }
+ },
+ "cue_propagation": {
+  "impossible|crossfield": {
+   "n": 142,
+   "propagated": 0.8661971830985915
+  },
+  "impossible|recall": {
+   "n": 120,
+   "propagated": 0.85
+  },
+  "impossible|rule": {
+   "n": 58,
+   "propagated": 0.1896551724137931
+  },
+  "plausible|crossfield": {
+   "n": 60,
+   "propagated": 0.7833333333333333
+  },
+  "plausible|recall": {
+   "n": 52,
+   "propagated": 0.9615384615384616
+  },
+  "plausible|rule": {
+   "n": 0,
+   "propagated": null
+  }
+ },
+ "bootstrap": {
+  "claude-haiku-4-5|impossible": {
+   "n": 40,
+   "rate": 0.85,
+   "wilson": [
+    0.7092737396097997,
+    0.9293890829149256
+   ],
+   "cluster_boot": [
+    0.75,
+    0.95
+   ],
+   "flag_rate": 0.75,
+   "flag_boot": [
+    0.625,
+    0.875
+   ]
+  },
+  "claude-haiku-4-5|impossible+verify": {
+   "n": 40,
+   "rate": 0.775,
+   "wilson": [
+    0.6249660359590695,
+    0.8768404674532148
+   ],
+   "cluster_boot": [
+    0.65,
+    0.9
+   ],
+   "flag_rate": 0.85,
+   "flag_boot": [
+    0.725,
+    0.95
+   ]
+  },
+  "claude-haiku-4-5|plausible": {
+   "n": 40,
+   "rate": 1.0,
+   "wilson": [
+    0.9123754607496077,
+    1.0
+   ],
+   "cluster_boot": [
+    1.0,
+    1.0
+   ],
+   "flag_rate": 0.175,
+   "flag_boot": [
+    0.075,
+    0.3
+   ]
+  },
+  "claude-haiku-4-5|plausible+verify": {
+   "n": 40,
+   "rate": 1.0,
+   "wilson": [
+    0.9123754607496077,
+    1.0
+   ],
+   "cluster_boot": [
+    1.0,
+    1.0
+   ],
+   "flag_rate": 0.15,
+   "flag_boot": [
+    0.05,
+    0.275
+   ]
+  },
+  "claude-sonnet-4-6|impossible": {
+   "n": 40,
+   "rate": 0.8,
+   "wilson": [
+    0.6524239261814333,
+    0.8950013502683314
+   ],
+   "cluster_boot": [
+    0.675,
+    0.925
+   ],
+   "flag_rate": 0.975,
+   "flag_boot": [
+    0.925,
+    1.0
+   ]
+  },
+  "claude-sonnet-4-6|impossible+verify": {
+   "n": 40,
+   "rate": 0.6,
+   "wilson": [
+    0.445956198273935,
+    0.7365188938759863
+   ],
+   "cluster_boot": [
+    0.45,
+    0.75
+   ],
+   "flag_rate": 1.0,
+   "flag_boot": [
+    1.0,
+    1.0
+   ]
+  },
+  "claude-sonnet-4-6|plausible": {
+   "n": 40,
+   "rate": 1.0,
+   "wilson": [
+    0.9123754607496077,
+    1.0
+   ],
+   "cluster_boot": [
+    1.0,
+    1.0
+   ],
+   "flag_rate": 0.275,
+   "flag_boot": [
+    0.15,
+    0.425
+   ]
+  },
+  "claude-sonnet-4-6|plausible+verify": {
+   "n": 40,
+   "rate": 0.9,
+   "wilson": [
+    0.7694792561952611,
+    0.9604211124044252
+   ],
+   "cluster_boot": [
+    0.8,
+    0.975
+   ],
+   "flag_rate": 0.4,
+   "flag_boot": [
+    0.25,
+    0.55
+   ]
+  },
+  "claude-sonnet-5|impossible": {
+   "n": 120,
+   "rate": 0.7416666666666667,
+   "wilson": [
+    0.6567130404034741,
+    0.8116271619194934
+   ],
+   "cluster_boot": [
+    0.625,
+    0.85
+   ],
+   "flag_rate": 1.0,
+   "flag_boot": [
+    1.0,
+    1.0
+   ]
+  },
+  "claude-sonnet-5|impossible+verify": {
+   "n": 120,
+   "rate": 0.38333333333333336,
+   "wilson": [
+    0.30124387764148153,
+    0.47266085227156884
+   ],
+   "cluster_boot": [
+    0.25,
+    0.525
+   ],
+   "flag_rate": 1.0,
+   "flag_boot": [
+    1.0,
+    1.0
+   ]
+  },
+  "claude-sonnet-5|plausible": {
+   "n": 120,
+   "rate": 0.975,
+   "wilson": [
+    0.9290687625956524,
+    0.9914619799012145
+   ],
+   "cluster_boot": [
+    0.9333333333333333,
+    1.0
+   ],
+   "flag_rate": 0.30833333333333335,
+   "flag_boot": [
+    0.175,
+    0.44166666666666665
+   ]
+  },
+  "claude-sonnet-5|plausible+verify": {
+   "n": 120,
+   "rate": 0.8083333333333333,
+   "wilson": [
+    0.7287868300416364,
+    0.8687506694738739
+   ],
+   "cluster_boot": [
+    0.6833333333333333,
+    0.9166666666666666
+   ],
+   "flag_rate": 0.5333333333333333,
+   "flag_boot": [
+    0.39166666666666666,
+    0.675
+   ]
+  },
+  "claude-opus-5|impossible": {
+   "n": 40,
+   "rate": 0.45,
+   "wilson": [
+    0.30705075280944694,
+    0.6017117011155924
+   ],
+   "cluster_boot": [
+    0.3,
+    0.6
+   ],
+   "flag_rate": 1.0,
+   "flag_boot": [
+    1.0,
+    1.0
+   ]
+  },
+  "claude-opus-5|impossible+verify": {
+   "n": 40,
+   "rate": 0.1,
+   "wilson": [
+    0.03957888759557486,
+    0.23052074380473897
+   ],
+   "cluster_boot": [
+    0.025,
+    0.2
+   ],
+   "flag_rate": 1.0,
+   "flag_boot": [
+    1.0,
+    1.0
+   ]
+  },
+  "claude-opus-5|plausible": {
+   "n": 40,
+   "rate": 0.75,
+   "wilson": [
+    0.598057409330299,
+    0.8581303210445048
+   ],
+   "cluster_boot": [
+    0.624375,
+    0.875
+   ],
+   "flag_rate": 0.575,
+   "flag_boot": [
+    0.425,
+    0.725
+   ]
+  },
+  "claude-opus-5|plausible+verify": {
+   "n": 40,
+   "rate": 0.75,
+   "wilson": [
+    0.598057409330299,
+    0.8581303210445048
+   ],
+   "cluster_boot": [
+    0.6,
+    0.875
+   ],
+   "flag_rate": 0.875,
+   "flag_boot": [
+    0.775,
+    0.975
+   ]
+  }
+ },
+ "majority_sonnet5": {
+  "impossible": {
+   "n_tasks": 40,
+   "majority_rate": 0.825,
+   "unanimous": 0.75,
+   "majority_wilson": [
+    0.6804970794560755,
+    0.9125469700311694
+   ]
+  },
+  "impossible+verify": {
+   "n_tasks": 40,
+   "majority_rate": 0.35,
+   "unanimous": 0.85,
+   "majority_wilson": [
+    0.2213433317104915,
+    0.5049440300646263
+   ]
+  },
+  "plausible": {
+   "n_tasks": 40,
+   "majority_rate": 0.975,
+   "unanimous": 0.95,
+   "majority_wilson": [
+    0.8711834051199223,
+    0.9955732825922052
+   ]
+  },
+  "plausible+verify": {
+   "n_tasks": 40,
+   "majority_rate": 0.8,
+   "unanimous": 0.925,
+   "majority_wilson": [
+    0.6524239261814333,
+    0.8950013502683314
+   ]
+  }
+ },
+ "regression": {
+  "Intercept": {
+   "or": 12.703150765853415,
+   "ci": [
+    5.663963985623655,
+    28.490654211360397
+   ],
+   "p": 6.922400394077982e-10
+  },
+  "C(model)[T.Haiku 4.5]": {
+   "or": 7.533781315074748,
+   "ci": [
+    3.1657196602726665,
+    17.92889674206995
+   ],
+   "p": 4.994546731355083e-06
+  },
+  "C(model)[T.Sonnet 4.6]": {
+   "or": 2.5931791187114586,
+   "ci": [
+    1.4110612493790182,
+    4.765617328574858
+   ],
+   "p": 0.0021477360851484884
+  },
+  "C(model)[T.Opus 5]": {
+   "or": 0.18435837333887267,
+   "ci": [
+    0.11433191646825355,
+    0.29727490686813235
+   ],
+   "p": 4.021717918805871e-12
+  },
+  "C(field)[T.length]": {
+   "or": 8.340813814088566,
+   "ci": [
+    3.9887741242745314,
+    17.44124207432872
+   ],
+   "p": 1.7424806809629574e-08
+  },
+  "C(field)[T.mass]": {
+   "or": 1.4682902451820574,
+   "ci": [
+    0.6025701073318842,
+    3.5778015169766304
+   ],
+   "p": 0.39797273965714686
+  },
+  "C(field)[T.organism]": {
+   "or": 49.67003339185289,
+   "ci": [
+    21.999580100885105,
+    112.14360482491769
+   ],
+   "p": 5.501729918017029e-21
+  },
+  "impossible": {
+   "or": 0.05802793187562265,
+   "ci": [
+    0.02172294903322768,
+    0.15500846006733854
+   ],
+   "p": 1.3568229664819818e-08
+  },
+  "verify": {
+   "or": 0.16512747023043728,
+   "ci": [
+    0.09769049324174645,
+    0.279117041176447
+   ],
+   "p": 1.7576337003651027e-11
+  }
+ },
+ "n_main": 1440,
+ "n_sweep": 900
+}

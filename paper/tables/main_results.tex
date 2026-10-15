@@ -1,0 +1,25 @@
+\begin{tabular}{llrrrrrrr}
+\toprule
+model & condition & $n$ & accuracy & propagation & 95\% CI & flagged & silent & recall \\
+\midrule
+Haiku 4.5 & impossible & 40 & 12 & 85 & [71, 93] & 75 & 22 & 0 \\
+Haiku 4.5 & plausible & 40 & 0 & 100 & [91, 100] & 18 & 82 & 0 \\
+Haiku 4.5 & impossible + verify & 40 & 18 & 78 & [62, 88] & 85 & 12 & 2 \\
+Haiku 4.5 & plausible + verify & 40 & 0 & 100 & [91, 100] & 15 & 85 & 0 \\
+\addlinespace[2pt]
+Sonnet 4.6 & impossible & 40 & 20 & 80 & [65, 90] & 98 & 2 & 0 \\
+Sonnet 4.6 & plausible & 40 & 0 & 100 & [91, 100] & 28 & 72 & 0 \\
+Sonnet 4.6 & impossible + verify & 40 & 40 & 60 & [45, 74] & 100 & 0 & 5 \\
+Sonnet 4.6 & plausible + verify & 40 & 10 & 90 & [77, 96] & 40 & 60 & 0 \\
+\addlinespace[2pt]
+Sonnet 5 & impossible & 120 & 26 & 74 & [66, 81] & 100 & 0 & 9 \\
+Sonnet 5 & plausible & 120 & 2 & 98 & [93, 99] & 31 & 69 & 4 \\
+Sonnet 5 & impossible + verify & 120 & 63 & 38 & [30, 47] & 100 & 0 & 24 \\
+Sonnet 5 & plausible + verify & 120 & 19 & 81 & [73, 87] & 53 & 47 & 20 \\
+\addlinespace[2pt]
+Opus 5 & impossible & 40 & 55 & 45 & [31, 60] & 100 & 0 & 60 \\
+Opus 5 & plausible & 40 & 25 & 75 & [60, 86] & 57 & 42 & 48 \\
+Opus 5 & impossible + verify & 40 & 90 & 10 & [4, 23] & 100 & 0 & 65 \\
+Opus 5 & plausible + verify & 40 & 25 & 75 & [60, 86] & 88 & 12 & 45 \\
+\bottomrule
+\end{tabular}

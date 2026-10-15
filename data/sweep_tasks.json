@@ -1,0 +1,3335 @@
+{
+ "seed": 0,
+ "n_tasks": 20,
+ "factors": [
+  0.9,
+  0.75,
+  0.5,
+  0.25,
+  0.1,
+  0.02,
+  0.005
+ ],
+ "tasks": [
+  {
+   "template": "length_threshold",
+   "target_field": "length",
+   "target_accession": "Q92633",
+   "accessions": [
+    "Q92633"
+   ],
+   "params": {
+    "accession": "Q92633",
+    "threshold": 346
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "f0.9_consistent": {
+     "fields": {
+      "length": 328,
+      "mass": 36998
+     },
+     "clean_value": 364,
+     "corrupted_value": 328,
+     "factor": 0.9,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.9_inconsistent": {
+     "fields": {
+      "length": 328
+     },
+     "clean_value": 364,
+     "corrupted_value": 328,
+     "factor": 0.9,
+     "consistent": false,
+     "implied": "no"
+    },
+    "f0.75_consistent": {
+     "fields": {
+      "length": 273,
+      "mass": 30832
+     },
+     "clean_value": 364,
+     "corrupted_value": 273,
+     "factor": 0.75,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.75_inconsistent": {
+     "fields": {
+      "length": 273
+     },
+     "clean_value": 364,
+     "corrupted_value": 273,
+     "factor": 0.75,
+     "consistent": false,
+     "implied": "no"
+    },
+    "f0.5_consistent": {
+     "fields": {
+      "length": 182,
+      "mass": 20554
+     },
+     "clean_value": 364,
+     "corrupted_value": 182,
+     "factor": 0.5,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.5_inconsistent": {
+     "fields": {
+      "length": 182
+     },
+     "clean_value": 364,
+     "corrupted_value": 182,
+     "factor": 0.5,
+     "consistent": false,
+     "implied": "no"
+    },
+    "f0.25_consistent": {
+     "fields": {
+      "length": 91,
+      "mass": 10277
+     },
+     "clean_value": 364,
+     "corrupted_value": 91,
+     "factor": 0.25,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.25_inconsistent": {
+     "fields": {
+      "length": 91
+     },
+     "clean_value": 364,
+     "corrupted_value": 91,
+     "factor": 0.25,
+     "consistent": false,
+     "implied": "no"
+    },
+    "f0.1_consistent": {
+     "fields": {
+      "length": 36,
+      "mass": 4111
+     },
+     "clean_value": 364,
+     "corrupted_value": 36,
+     "factor": 0.1,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.1_inconsistent": {
+     "fields": {
+      "length": 36
+     },
+     "clean_value": 364,
+     "corrupted_value": 36,
+     "factor": 0.1,
+     "consistent": false,
+     "implied": "no"
+    },
+    "f0.02_consistent": {
+     "fields": {
+      "length": 7,
+      "mass": 822
+     },
+     "clean_value": 364,
+     "corrupted_value": 7,
+     "factor": 0.02,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.02_inconsistent": {
+     "fields": {
+      "length": 7
+     },
+     "clean_value": 364,
+     "corrupted_value": 7,
+     "factor": 0.02,
+     "consistent": false,
+     "implied": "no"
+    },
+    "f0.005_consistent": {
+     "fields": {
+      "length": 2,
+      "mass": 206
+     },
+     "clean_value": 364,
+     "corrupted_value": 2,
+     "factor": 0.005,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.005_inconsistent": {
+     "fields": {
+      "length": 2
+     },
+     "clean_value": 364,
+     "corrupted_value": 2,
+     "factor": 0.005,
+     "consistent": false,
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does protein Q92633 have more than 346 residues? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "s000"
+  },
+  {
+   "template": "mass_threshold",
+   "target_field": "mass",
+   "target_accession": "P98155",
+   "accessions": [
+    "P98155"
+   ],
+   "params": {
+    "accession": "P98155",
+    "threshold_kda": 91.3
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "f0.9_consistent": {
+     "fields": {
+      "mass": 86488,
+      "length": 786
+     },
+     "clean_value": 96098,
+     "corrupted_value": 86488,
+     "factor": 0.9,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.9_inconsistent": {
+     "fields": {
+      "mass": 86488
+     },
+     "clean_value": 96098,
+     "corrupted_value": 86488,
+     "factor": 0.9,
+     "consistent": false,
+     "implied": "no"
+    },
+    "f0.75_consistent": {
+     "fields": {
+      "mass": 72074,
+      "length": 655
+     },
+     "clean_value": 96098,
+     "corrupted_value": 72074,
+     "factor": 0.75,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.75_inconsistent": {
+     "fields": {
+      "mass": 72074
+     },
+     "clean_value": 96098,
+     "corrupted_value": 72074,
+     "factor": 0.75,
+     "consistent": false,
+     "implied": "no"
+    },
+    "f0.5_consistent": {
+     "fields": {
+      "mass": 48049,
+      "length": 436
+     },
+     "clean_value": 96098,
+     "corrupted_value": 48049,
+     "factor": 0.5,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.5_inconsistent": {
+     "fields": {
+      "mass": 48049
+     },
+     "clean_value": 96098,
+     "corrupted_value": 48049,
+     "factor": 0.5,
+     "consistent": false,
+     "implied": "no"
+    },
+    "f0.25_consistent": {
+     "fields": {
+      "mass": 24024,
+      "length": 218
+     },
+     "clean_value": 96098,
+     "corrupted_value": 24024,
+     "factor": 0.25,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.25_inconsistent": {
+     "fields": {
+      "mass": 24024
+     },
+     "clean_value": 96098,
+     "corrupted_value": 24024,
+     "factor": 0.25,
+     "consistent": false,
+     "implied": "no"
+    },
+    "f0.1_consistent": {
+     "fields": {
+      "mass": 9610,
+      "length": 87
+     },
+     "clean_value": 96098,
+     "corrupted_value": 9610,
+     "factor": 0.1,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.1_inconsistent": {
+     "fields": {
+      "mass": 9610
+     },
+     "clean_value": 96098,
+     "corrupted_value": 9610,
+     "factor": 0.1,
+     "consistent": false,
+     "implied": "no"
+    },
+    "f0.02_consistent": {
+     "fields": {
+      "mass": 1922,
+      "length": 17
+     },
+     "clean_value": 96098,
+     "corrupted_value": 1922,
+     "factor": 0.02,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.02_inconsistent": {
+     "fields": {
+      "mass": 1922
+     },
+     "clean_value": 96098,
+     "corrupted_value": 1922,
+     "factor": 0.02,
+     "consistent": false,
+     "implied": "no"
+    },
+    "f0.005_consistent": {
+     "fields": {
+      "mass": 480,
+      "length": 4
+     },
+     "clean_value": 96098,
+     "corrupted_value": 480,
+     "factor": 0.005,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.005_inconsistent": {
+     "fields": {
+      "mass": 480
+     },
+     "clean_value": 96098,
+     "corrupted_value": 480,
+     "factor": 0.005,
+     "consistent": false,
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does protein P98155 have a molecular mass greater than 91.3 kDa? Answer yes or no and give the mass in kDa. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "s001"
+  },
+  {
+   "template": "length_threshold",
+   "target_field": "length",
+   "target_accession": "Q9NR21",
+   "accessions": [
+    "Q9NR21"
+   ],
+   "params": {
+    "accession": "Q9NR21",
+    "threshold": 321
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "f0.9_consistent": {
+     "fields": {
+      "length": 304,
+      "mass": 35637
+     },
+     "clean_value": 338,
+     "corrupted_value": 304,
+     "factor": 0.9,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.9_inconsistent": {
+     "fields": {
+      "length": 304
+     },
+     "clean_value": 338,
+     "corrupted_value": 304,
+     "factor": 0.9,
+     "consistent": false,
+     "implied": "no"
+    },
+    "f0.75_consistent": {
+     "fields": {
+      "length": 254,
+      "mass": 29698
+     },
+     "clean_value": 338,
+     "corrupted_value": 254,
+     "factor": 0.75,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.75_inconsistent": {
+     "fields": {
+      "length": 254
+     },
+     "clean_value": 338,
+     "corrupted_value": 254,
+     "factor": 0.75,
+     "consistent": false,
+     "implied": "no"
+    },
+    "f0.5_consistent": {
+     "fields": {
+      "length": 169,
+      "mass": 19798
+     },
+     "clean_value": 338,
+     "corrupted_value": 169,
+     "factor": 0.5,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.5_inconsistent": {
+     "fields": {
+      "length": 169
+     },
+     "clean_value": 338,
+     "corrupted_value": 169,
+     "factor": 0.5,
+     "consistent": false,
+     "implied": "no"
+    },
+    "f0.25_consistent": {
+     "fields": {
+      "length": 84,
+      "mass": 9899
+     },
+     "clean_value": 338,
+     "corrupted_value": 84,
+     "factor": 0.25,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.25_inconsistent": {
+     "fields": {
+      "length": 84
+     },
+     "clean_value": 338,
+     "corrupted_value": 84,
+     "factor": 0.25,
+     "consistent": false,
+     "implied": "no"
+    },
+    "f0.1_consistent": {
+     "fields": {
+      "length": 34,
+      "mass": 3960
+     },
+     "clean_value": 338,
+     "corrupted_value": 34,
+     "factor": 0.1,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.1_inconsistent": {
+     "fields": {
+      "length": 34
+     },
+     "clean_value": 338,
+     "corrupted_value": 34,
+     "factor": 0.1,
+     "consistent": false,
+     "implied": "no"
+    },
+    "f0.02_consistent": {
+     "fields": {
+      "length": 7,
+      "mass": 792
+     },
+     "clean_value": 338,
+     "corrupted_value": 7,
+     "factor": 0.02,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.02_inconsistent": {
+     "fields": {
+      "length": 7
+     },
+     "clean_value": 338,
+     "corrupted_value": 7,
+     "factor": 0.02,
+     "consistent": false,
+     "implied": "no"
+    },
+    "f0.005_consistent": {
+     "fields": {
+      "length": 2,
+      "mass": 198
+     },
+     "clean_value": 338,
+     "corrupted_value": 2,
+     "factor": 0.005,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.005_inconsistent": {
+     "fields": {
+      "length": 2
+     },
+     "clean_value": 338,
+     "corrupted_value": 2,
+     "factor": 0.005,
+     "consistent": false,
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does protein Q9NR21 have more than 321 residues? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "s002"
+  },
+  {
+   "template": "mass_threshold",
+   "target_field": "mass",
+   "target_accession": "Q9NUQ2",
+   "accessions": [
+    "Q9NUQ2"
+   ],
+   "params": {
+    "accession": "Q9NUQ2",
+    "threshold_kda": 40.0
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "f0.9_consistent": {
+     "fields": {
+      "mass": 37865,
+      "length": 328
+     },
+     "clean_value": 42072,
+     "corrupted_value": 37865,
+     "factor": 0.9,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.9_inconsistent": {
+     "fields": {
+      "mass": 37865
+     },
+     "clean_value": 42072,
+     "corrupted_value": 37865,
+     "factor": 0.9,
+     "consistent": false,
+     "implied": "no"
+    },
+    "f0.75_consistent": {
+     "fields": {
+      "mass": 31554,
+      "length": 273
+     },
+     "clean_value": 42072,
+     "corrupted_value": 31554,
+     "factor": 0.75,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.75_inconsistent": {
+     "fields": {
+      "mass": 31554
+     },
+     "clean_value": 42072,
+     "corrupted_value": 31554,
+     "factor": 0.75,
+     "consistent": false,
+     "implied": "no"
+    },
+    "f0.5_consistent": {
+     "fields": {
+      "mass": 21036,
+      "length": 182
+     },
+     "clean_value": 42072,
+     "corrupted_value": 21036,
+     "factor": 0.5,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.5_inconsistent": {
+     "fields": {
+      "mass": 21036
+     },
+     "clean_value": 42072,
+     "corrupted_value": 21036,
+     "factor": 0.5,
+     "consistent": false,
+     "implied": "no"
+    },
+    "f0.25_consistent": {
+     "fields": {
+      "mass": 10518,
+      "length": 91
+     },
+     "clean_value": 42072,
+     "corrupted_value": 10518,
+     "factor": 0.25,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.25_inconsistent": {
+     "fields": {
+      "mass": 10518
+     },
+     "clean_value": 42072,
+     "corrupted_value": 10518,
+     "factor": 0.25,
+     "consistent": false,
+     "implied": "no"
+    },
+    "f0.1_consistent": {
+     "fields": {
+      "mass": 4207,
+      "length": 36
+     },
+     "clean_value": 42072,
+     "corrupted_value": 4207,
+     "factor": 0.1,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.1_inconsistent": {
+     "fields": {
+      "mass": 4207
+     },
+     "clean_value": 42072,
+     "corrupted_value": 4207,
+     "factor": 0.1,
+     "consistent": false,
+     "implied": "no"
+    },
+    "f0.02_consistent": {
+     "fields": {
+      "mass": 841,
+      "length": 7
+     },
+     "clean_value": 42072,
+     "corrupted_value": 841,
+     "factor": 0.02,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.02_inconsistent": {
+     "fields": {
+      "mass": 841
+     },
+     "clean_value": 42072,
+     "corrupted_value": 841,
+     "factor": 0.02,
+     "consistent": false,
+     "implied": "no"
+    },
+    "f0.005_consistent": {
+     "fields": {
+      "mass": 210,
+      "length": 2
+     },
+     "clean_value": 42072,
+     "corrupted_value": 210,
+     "factor": 0.005,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.005_inconsistent": {
+     "fields": {
+      "mass": 210
+     },
+     "clean_value": 42072,
+     "corrupted_value": 210,
+     "factor": 0.005,
+     "consistent": false,
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does protein Q9NUQ2 have a molecular mass greater than 40.0 kDa? Answer yes or no and give the mass in kDa. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "s003"
+  },
+  {
+   "template": "length_threshold",
+   "target_field": "length",
+   "target_accession": "O75396",
+   "accessions": [
+    "O75396"
+   ],
+   "params": {
+    "accession": "O75396",
+    "threshold": 204
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "f0.9_consistent": {
+     "fields": {
+      "length": 194,
+      "mass": 22267
+     },
+     "clean_value": 215,
+     "corrupted_value": 194,
+     "factor": 0.9,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.9_inconsistent": {
+     "fields": {
+      "length": 194
+     },
+     "clean_value": 215,
+     "corrupted_value": 194,
+     "factor": 0.9,
+     "consistent": false,
+     "implied": "no"
+    },
+    "f0.75_consistent": {
+     "fields": {
+      "length": 161,
+      "mass": 18556
+     },
+     "clean_value": 215,
+     "corrupted_value": 161,
+     "factor": 0.75,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.75_inconsistent": {
+     "fields": {
+      "length": 161
+     },
+     "clean_value": 215,
+     "corrupted_value": 161,
+     "factor": 0.75,
+     "consistent": false,
+     "implied": "no"
+    },
+    "f0.5_consistent": {
+     "fields": {
+      "length": 108,
+      "mass": 12370
+     },
+     "clean_value": 215,
+     "corrupted_value": 108,
+     "factor": 0.5,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.5_inconsistent": {
+     "fields": {
+      "length": 108
+     },
+     "clean_value": 215,
+     "corrupted_value": 108,
+     "factor": 0.5,
+     "consistent": false,
+     "implied": "no"
+    },
+    "f0.25_consistent": {
+     "fields": {
+      "length": 54,
+      "mass": 6185
+     },
+     "clean_value": 215,
+     "corrupted_value": 54,
+     "factor": 0.25,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.25_inconsistent": {
+     "fields": {
+      "length": 54
+     },
+     "clean_value": 215,
+     "corrupted_value": 54,
+     "factor": 0.25,
+     "consistent": false,
+     "implied": "no"
+    },
+    "f0.1_consistent": {
+     "fields": {
+      "length": 22,
+      "mass": 2474
+     },
+     "clean_value": 215,
+     "corrupted_value": 22,
+     "factor": 0.1,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.1_inconsistent": {
+     "fields": {
+      "length": 22
+     },
+     "clean_value": 215,
+     "corrupted_value": 22,
+     "factor": 0.1,
+     "consistent": false,
+     "implied": "no"
+    },
+    "f0.02_consistent": {
+     "fields": {
+      "length": 4,
+      "mass": 495
+     },
+     "clean_value": 215,
+     "corrupted_value": 4,
+     "factor": 0.02,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.02_inconsistent": {
+     "fields": {
+      "length": 4
+     },
+     "clean_value": 215,
+     "corrupted_value": 4,
+     "factor": 0.02,
+     "consistent": false,
+     "implied": "no"
+    },
+    "f0.005_consistent": {
+     "fields": {
+      "length": 1,
+      "mass": 124
+     },
+     "clean_value": 215,
+     "corrupted_value": 1,
+     "factor": 0.005,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.005_inconsistent": {
+     "fields": {
+      "length": 1
+     },
+     "clean_value": 215,
+     "corrupted_value": 1,
+     "factor": 0.005,
+     "consistent": false,
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does protein O75396 have more than 204 residues? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "s004"
+  },
+  {
+   "template": "mass_threshold",
+   "target_field": "mass",
+   "target_accession": "P27144",
+   "accessions": [
+    "P27144"
+   ],
+   "params": {
+    "accession": "P27144",
+    "threshold_kda": 24.0
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "f0.9_consistent": {
+     "fields": {
+      "mass": 22741,
+      "length": 201
+     },
+     "clean_value": 25268,
+     "corrupted_value": 22741,
+     "factor": 0.9,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.9_inconsistent": {
+     "fields": {
+      "mass": 22741
+     },
+     "clean_value": 25268,
+     "corrupted_value": 22741,
+     "factor": 0.9,
+     "consistent": false,
+     "implied": "no"
+    },
+    "f0.75_consistent": {
+     "fields": {
+      "mass": 18951,
+      "length": 167
+     },
+     "clean_value": 25268,
+     "corrupted_value": 18951,
+     "factor": 0.75,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.75_inconsistent": {
+     "fields": {
+      "mass": 18951
+     },
+     "clean_value": 25268,
+     "corrupted_value": 18951,
+     "factor": 0.75,
+     "consistent": false,
+     "implied": "no"
+    },
+    "f0.5_consistent": {
+     "fields": {
+      "mass": 12634,
+      "length": 112
+     },
+     "clean_value": 25268,
+     "corrupted_value": 12634,
+     "factor": 0.5,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.5_inconsistent": {
+     "fields": {
+      "mass": 12634
+     },
+     "clean_value": 25268,
+     "corrupted_value": 12634,
+     "factor": 0.5,
+     "consistent": false,
+     "implied": "no"
+    },
+    "f0.25_consistent": {
+     "fields": {
+      "mass": 6317,
+      "length": 56
+     },
+     "clean_value": 25268,
+     "corrupted_value": 6317,
+     "factor": 0.25,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.25_inconsistent": {
+     "fields": {
+      "mass": 6317
+     },
+     "clean_value": 25268,
+     "corrupted_value": 6317,
+     "factor": 0.25,
+     "consistent": false,
+     "implied": "no"
+    },
+    "f0.1_consistent": {
+     "fields": {
+      "mass": 2527,
+      "length": 22
+     },
+     "clean_value": 25268,
+     "corrupted_value": 2527,
+     "factor": 0.1,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.1_inconsistent": {
+     "fields": {
+      "mass": 2527
+     },
+     "clean_value": 25268,
+     "corrupted_value": 2527,
+     "factor": 0.1,
+     "consistent": false,
+     "implied": "no"
+    },
+    "f0.02_consistent": {
+     "fields": {
+      "mass": 505,
+      "length": 4
+     },
+     "clean_value": 25268,
+     "corrupted_value": 505,
+     "factor": 0.02,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.02_inconsistent": {
+     "fields": {
+      "mass": 505
+     },
+     "clean_value": 25268,
+     "corrupted_value": 505,
+     "factor": 0.02,
+     "consistent": false,
+     "implied": "no"
+    },
+    "f0.005_consistent": {
+     "fields": {
+      "mass": 126,
+      "length": 1
+     },
+     "clean_value": 25268,
+     "corrupted_value": 126,
+     "factor": 0.005,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.005_inconsistent": {
+     "fields": {
+      "mass": 126
+     },
+     "clean_value": 25268,
+     "corrupted_value": 126,
+     "factor": 0.005,
+     "consistent": false,
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does protein P27144 have a molecular mass greater than 24.0 kDa? Answer yes or no and give the mass in kDa. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "s005"
+  },
+  {
+   "template": "length_threshold",
+   "target_field": "length",
+   "target_accession": "Q9BQT9",
+   "accessions": [
+    "Q9BQT9"
+   ],
+   "params": {
+    "accession": "Q9BQT9",
+    "threshold": 908
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "f0.9_consistent": {
+     "fields": {
+      "length": 860,
+      "mass": 95488
+     },
+     "clean_value": 956,
+     "corrupted_value": 860,
+     "factor": 0.9,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.9_inconsistent": {
+     "fields": {
+      "length": 860
+     },
+     "clean_value": 956,
+     "corrupted_value": 860,
+     "factor": 0.9,
+     "consistent": false,
+     "implied": "no"
+    },
+    "f0.75_consistent": {
+     "fields": {
+      "length": 717,
+      "mass": 79574
+     },
+     "clean_value": 956,
+     "corrupted_value": 717,
+     "factor": 0.75,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.75_inconsistent": {
+     "fields": {
+      "length": 717
+     },
+     "clean_value": 956,
+     "corrupted_value": 717,
+     "factor": 0.75,
+     "consistent": false,
+     "implied": "no"
+    },
+    "f0.5_consistent": {
+     "fields": {
+      "length": 478,
+      "mass": 53049
+     },
+     "clean_value": 956,
+     "corrupted_value": 478,
+     "factor": 0.5,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.5_inconsistent": {
+     "fields": {
+      "length": 478
+     },
+     "clean_value": 956,
+     "corrupted_value": 478,
+     "factor": 0.5,
+     "consistent": false,
+     "implied": "no"
+    },
+    "f0.25_consistent": {
+     "fields": {
+      "length": 239,
+      "mass": 26524
+     },
+     "clean_value": 956,
+     "corrupted_value": 239,
+     "factor": 0.25,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.25_inconsistent": {
+     "fields": {
+      "length": 239
+     },
+     "clean_value": 956,
+     "corrupted_value": 239,
+     "factor": 0.25,
+     "consistent": false,
+     "implied": "no"
+    },
+    "f0.1_consistent": {
+     "fields": {
+      "length": 96,
+      "mass": 10610
+     },
+     "clean_value": 956,
+     "corrupted_value": 96,
+     "factor": 0.1,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.1_inconsistent": {
+     "fields": {
+      "length": 96
+     },
+     "clean_value": 956,
+     "corrupted_value": 96,
+     "factor": 0.1,
+     "consistent": false,
+     "implied": "no"
+    },
+    "f0.02_consistent": {
+     "fields": {
+      "length": 19,
+      "mass": 2122
+     },
+     "clean_value": 956,
+     "corrupted_value": 19,
+     "factor": 0.02,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.02_inconsistent": {
+     "fields": {
+      "length": 19
+     },
+     "clean_value": 956,
+     "corrupted_value": 19,
+     "factor": 0.02,
+     "consistent": false,
+     "implied": "no"
+    },
+    "f0.005_consistent": {
+     "fields": {
+      "length": 5,
+      "mass": 530
+     },
+     "clean_value": 956,
+     "corrupted_value": 5,
+     "factor": 0.005,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.005_inconsistent": {
+     "fields": {
+      "length": 5
+     },
+     "clean_value": 956,
+     "corrupted_value": 5,
+     "factor": 0.005,
+     "consistent": false,
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does protein Q9BQT9 have more than 908 residues? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "s006"
+  },
+  {
+   "template": "mass_threshold",
+   "target_field": "mass",
+   "target_accession": "P40429",
+   "accessions": [
+    "P40429"
+   ],
+   "params": {
+    "accession": "P40429",
+    "threshold_kda": 22.4
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "f0.9_consistent": {
+     "fields": {
+      "mass": 21219,
+      "length": 183
+     },
+     "clean_value": 23577,
+     "corrupted_value": 21219,
+     "factor": 0.9,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.9_inconsistent": {
+     "fields": {
+      "mass": 21219
+     },
+     "clean_value": 23577,
+     "corrupted_value": 21219,
+     "factor": 0.9,
+     "consistent": false,
+     "implied": "no"
+    },
+    "f0.75_consistent": {
+     "fields": {
+      "mass": 17683,
+      "length": 152
+     },
+     "clean_value": 23577,
+     "corrupted_value": 17683,
+     "factor": 0.75,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.75_inconsistent": {
+     "fields": {
+      "mass": 17683
+     },
+     "clean_value": 23577,
+     "corrupted_value": 17683,
+     "factor": 0.75,
+     "consistent": false,
+     "implied": "no"
+    },
+    "f0.5_consistent": {
+     "fields": {
+      "mass": 11788,
+      "length": 102
+     },
+     "clean_value": 23577,
+     "corrupted_value": 11788,
+     "factor": 0.5,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.5_inconsistent": {
+     "fields": {
+      "mass": 11788
+     },
+     "clean_value": 23577,
+     "corrupted_value": 11788,
+     "factor": 0.5,
+     "consistent": false,
+     "implied": "no"
+    },
+    "f0.25_consistent": {
+     "fields": {
+      "mass": 5894,
+      "length": 51
+     },
+     "clean_value": 23577,
+     "corrupted_value": 5894,
+     "factor": 0.25,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.25_inconsistent": {
+     "fields": {
+      "mass": 5894
+     },
+     "clean_value": 23577,
+     "corrupted_value": 5894,
+     "factor": 0.25,
+     "consistent": false,
+     "implied": "no"
+    },
+    "f0.1_consistent": {
+     "fields": {
+      "mass": 2358,
+      "length": 20
+     },
+     "clean_value": 23577,
+     "corrupted_value": 2358,
+     "factor": 0.1,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.1_inconsistent": {
+     "fields": {
+      "mass": 2358
+     },
+     "clean_value": 23577,
+     "corrupted_value": 2358,
+     "factor": 0.1,
+     "consistent": false,
+     "implied": "no"
+    },
+    "f0.02_consistent": {
+     "fields": {
+      "mass": 472,
+      "length": 4
+     },
+     "clean_value": 23577,
+     "corrupted_value": 472,
+     "factor": 0.02,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.02_inconsistent": {
+     "fields": {
+      "mass": 472
+     },
+     "clean_value": 23577,
+     "corrupted_value": 472,
+     "factor": 0.02,
+     "consistent": false,
+     "implied": "no"
+    },
+    "f0.005_consistent": {
+     "fields": {
+      "mass": 118,
+      "length": 1
+     },
+     "clean_value": 23577,
+     "corrupted_value": 118,
+     "factor": 0.005,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.005_inconsistent": {
+     "fields": {
+      "mass": 118
+     },
+     "clean_value": 23577,
+     "corrupted_value": 118,
+     "factor": 0.005,
+     "consistent": false,
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does protein P40429 have a molecular mass greater than 22.4 kDa? Answer yes or no and give the mass in kDa. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "s007"
+  },
+  {
+   "template": "length_threshold",
+   "target_field": "length",
+   "target_accession": "O75077",
+   "accessions": [
+    "O75077"
+   ],
+   "params": {
+    "accession": "O75077",
+    "threshold": 790
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "f0.9_consistent": {
+     "fields": {
+      "length": 749,
+      "mass": 82733
+     },
+     "clean_value": 832,
+     "corrupted_value": 749,
+     "factor": 0.9,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.9_inconsistent": {
+     "fields": {
+      "length": 749
+     },
+     "clean_value": 832,
+     "corrupted_value": 749,
+     "factor": 0.9,
+     "consistent": false,
+     "implied": "no"
+    },
+    "f0.75_consistent": {
+     "fields": {
+      "length": 624,
+      "mass": 68944
+     },
+     "clean_value": 832,
+     "corrupted_value": 624,
+     "factor": 0.75,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.75_inconsistent": {
+     "fields": {
+      "length": 624
+     },
+     "clean_value": 832,
+     "corrupted_value": 624,
+     "factor": 0.75,
+     "consistent": false,
+     "implied": "no"
+    },
+    "f0.5_consistent": {
+     "fields": {
+      "length": 416,
+      "mass": 45963
+     },
+     "clean_value": 832,
+     "corrupted_value": 416,
+     "factor": 0.5,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.5_inconsistent": {
+     "fields": {
+      "length": 416
+     },
+     "clean_value": 832,
+     "corrupted_value": 416,
+     "factor": 0.5,
+     "consistent": false,
+     "implied": "no"
+    },
+    "f0.25_consistent": {
+     "fields": {
+      "length": 208,
+      "mass": 22982
+     },
+     "clean_value": 832,
+     "corrupted_value": 208,
+     "factor": 0.25,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.25_inconsistent": {
+     "fields": {
+      "length": 208
+     },
+     "clean_value": 832,
+     "corrupted_value": 208,
+     "factor": 0.25,
+     "consistent": false,
+     "implied": "no"
+    },
+    "f0.1_consistent": {
+     "fields": {
+      "length": 83,
+      "mass": 9193
+     },
+     "clean_value": 832,
+     "corrupted_value": 83,
+     "factor": 0.1,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.1_inconsistent": {
+     "fields": {
+      "length": 83
+     },
+     "clean_value": 832,
+     "corrupted_value": 83,
+     "factor": 0.1,
+     "consistent": false,
+     "implied": "no"
+    },
+    "f0.02_consistent": {
+     "fields": {
+      "length": 17,
+      "mass": 1839
+     },
+     "clean_value": 832,
+     "corrupted_value": 17,
+     "factor": 0.02,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.02_inconsistent": {
+     "fields": {
+      "length": 17
+     },
+     "clean_value": 832,
+     "corrupted_value": 17,
+     "factor": 0.02,
+     "consistent": false,
+     "implied": "no"
+    },
+    "f0.005_consistent": {
+     "fields": {
+      "length": 4,
+      "mass": 460
+     },
+     "clean_value": 832,
+     "corrupted_value": 4,
+     "factor": 0.005,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.005_inconsistent": {
+     "fields": {
+      "length": 4
+     },
+     "clean_value": 832,
+     "corrupted_value": 4,
+     "factor": 0.005,
+     "consistent": false,
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does protein O75077 have more than 790 residues? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "s008"
+  },
+  {
+   "template": "mass_threshold",
+   "target_field": "mass",
+   "target_accession": "Q969U6",
+   "accessions": [
+    "Q969U6"
+   ],
+   "params": {
+    "accession": "Q969U6",
+    "threshold_kda": 60.7
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "f0.9_consistent": {
+     "fields": {
+      "mass": 57530,
+      "length": 509
+     },
+     "clean_value": 63922,
+     "corrupted_value": 57530,
+     "factor": 0.9,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.9_inconsistent": {
+     "fields": {
+      "mass": 57530
+     },
+     "clean_value": 63922,
+     "corrupted_value": 57530,
+     "factor": 0.9,
+     "consistent": false,
+     "implied": "no"
+    },
+    "f0.75_consistent": {
+     "fields": {
+      "mass": 47942,
+      "length": 424
+     },
+     "clean_value": 63922,
+     "corrupted_value": 47942,
+     "factor": 0.75,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.75_inconsistent": {
+     "fields": {
+      "mass": 47942
+     },
+     "clean_value": 63922,
+     "corrupted_value": 47942,
+     "factor": 0.75,
+     "consistent": false,
+     "implied": "no"
+    },
+    "f0.5_consistent": {
+     "fields": {
+      "mass": 31961,
+      "length": 283
+     },
+     "clean_value": 63922,
+     "corrupted_value": 31961,
+     "factor": 0.5,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.5_inconsistent": {
+     "fields": {
+      "mass": 31961
+     },
+     "clean_value": 63922,
+     "corrupted_value": 31961,
+     "factor": 0.5,
+     "consistent": false,
+     "implied": "no"
+    },
+    "f0.25_consistent": {
+     "fields": {
+      "mass": 15980,
+      "length": 142
+     },
+     "clean_value": 63922,
+     "corrupted_value": 15980,
+     "factor": 0.25,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.25_inconsistent": {
+     "fields": {
+      "mass": 15980
+     },
+     "clean_value": 63922,
+     "corrupted_value": 15980,
+     "factor": 0.25,
+     "consistent": false,
+     "implied": "no"
+    },
+    "f0.1_consistent": {
+     "fields": {
+      "mass": 6392,
+      "length": 57
+     },
+     "clean_value": 63922,
+     "corrupted_value": 6392,
+     "factor": 0.1,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.1_inconsistent": {
+     "fields": {
+      "mass": 6392
+     },
+     "clean_value": 63922,
+     "corrupted_value": 6392,
+     "factor": 0.1,
+     "consistent": false,
+     "implied": "no"
+    },
+    "f0.02_consistent": {
+     "fields": {
+      "mass": 1278,
+      "length": 11
+     },
+     "clean_value": 63922,
+     "corrupted_value": 1278,
+     "factor": 0.02,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.02_inconsistent": {
+     "fields": {
+      "mass": 1278
+     },
+     "clean_value": 63922,
+     "corrupted_value": 1278,
+     "factor": 0.02,
+     "consistent": false,
+     "implied": "no"
+    },
+    "f0.005_consistent": {
+     "fields": {
+      "mass": 320,
+      "length": 3
+     },
+     "clean_value": 63922,
+     "corrupted_value": 320,
+     "factor": 0.005,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.005_inconsistent": {
+     "fields": {
+      "mass": 320
+     },
+     "clean_value": 63922,
+     "corrupted_value": 320,
+     "factor": 0.005,
+     "consistent": false,
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does protein Q969U6 have a molecular mass greater than 60.7 kDa? Answer yes or no and give the mass in kDa. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "s009"
+  },
+  {
+   "template": "length_threshold",
+   "target_field": "length",
+   "target_accession": "Q99733",
+   "accessions": [
+    "Q99733"
+   ],
+   "params": {
+    "accession": "Q99733",
+    "threshold": 356
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "f0.9_consistent": {
+     "fields": {
+      "length": 338,
+      "mass": 38541
+     },
+     "clean_value": 375,
+     "corrupted_value": 338,
+     "factor": 0.9,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.9_inconsistent": {
+     "fields": {
+      "length": 338
+     },
+     "clean_value": 375,
+     "corrupted_value": 338,
+     "factor": 0.9,
+     "consistent": false,
+     "implied": "no"
+    },
+    "f0.75_consistent": {
+     "fields": {
+      "length": 281,
+      "mass": 32117
+     },
+     "clean_value": 375,
+     "corrupted_value": 281,
+     "factor": 0.75,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.75_inconsistent": {
+     "fields": {
+      "length": 281
+     },
+     "clean_value": 375,
+     "corrupted_value": 281,
+     "factor": 0.75,
+     "consistent": false,
+     "implied": "no"
+    },
+    "f0.5_consistent": {
+     "fields": {
+      "length": 188,
+      "mass": 21412
+     },
+     "clean_value": 375,
+     "corrupted_value": 188,
+     "factor": 0.5,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.5_inconsistent": {
+     "fields": {
+      "length": 188
+     },
+     "clean_value": 375,
+     "corrupted_value": 188,
+     "factor": 0.5,
+     "consistent": false,
+     "implied": "no"
+    },
+    "f0.25_consistent": {
+     "fields": {
+      "length": 94,
+      "mass": 10706
+     },
+     "clean_value": 375,
+     "corrupted_value": 94,
+     "factor": 0.25,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.25_inconsistent": {
+     "fields": {
+      "length": 94
+     },
+     "clean_value": 375,
+     "corrupted_value": 94,
+     "factor": 0.25,
+     "consistent": false,
+     "implied": "no"
+    },
+    "f0.1_consistent": {
+     "fields": {
+      "length": 38,
+      "mass": 4282
+     },
+     "clean_value": 375,
+     "corrupted_value": 38,
+     "factor": 0.1,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.1_inconsistent": {
+     "fields": {
+      "length": 38
+     },
+     "clean_value": 375,
+     "corrupted_value": 38,
+     "factor": 0.1,
+     "consistent": false,
+     "implied": "no"
+    },
+    "f0.02_consistent": {
+     "fields": {
+      "length": 8,
+      "mass": 856
+     },
+     "clean_value": 375,
+     "corrupted_value": 8,
+     "factor": 0.02,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.02_inconsistent": {
+     "fields": {
+      "length": 8
+     },
+     "clean_value": 375,
+     "corrupted_value": 8,
+     "factor": 0.02,
+     "consistent": false,
+     "implied": "no"
+    },
+    "f0.005_consistent": {
+     "fields": {
+      "length": 2,
+      "mass": 214
+     },
+     "clean_value": 375,
+     "corrupted_value": 2,
+     "factor": 0.005,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.005_inconsistent": {
+     "fields": {
+      "length": 2
+     },
+     "clean_value": 375,
+     "corrupted_value": 2,
+     "factor": 0.005,
+     "consistent": false,
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does protein Q99733 have more than 356 residues? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "s010"
+  },
+  {
+   "template": "mass_threshold",
+   "target_field": "mass",
+   "target_accession": "P68543",
+   "accessions": [
+    "P68543"
+   ],
+   "params": {
+    "accession": "P68543",
+    "threshold_kda": 27.8
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "f0.9_consistent": {
+     "fields": {
+      "mass": 26350,
+      "length": 233
+     },
+     "clean_value": 29278,
+     "corrupted_value": 26350,
+     "factor": 0.9,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.9_inconsistent": {
+     "fields": {
+      "mass": 26350
+     },
+     "clean_value": 29278,
+     "corrupted_value": 26350,
+     "factor": 0.9,
+     "consistent": false,
+     "implied": "no"
+    },
+    "f0.75_consistent": {
+     "fields": {
+      "mass": 21958,
+      "length": 194
+     },
+     "clean_value": 29278,
+     "corrupted_value": 21958,
+     "factor": 0.75,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.75_inconsistent": {
+     "fields": {
+      "mass": 21958
+     },
+     "clean_value": 29278,
+     "corrupted_value": 21958,
+     "factor": 0.75,
+     "consistent": false,
+     "implied": "no"
+    },
+    "f0.5_consistent": {
+     "fields": {
+      "mass": 14639,
+      "length": 130
+     },
+     "clean_value": 29278,
+     "corrupted_value": 14639,
+     "factor": 0.5,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.5_inconsistent": {
+     "fields": {
+      "mass": 14639
+     },
+     "clean_value": 29278,
+     "corrupted_value": 14639,
+     "factor": 0.5,
+     "consistent": false,
+     "implied": "no"
+    },
+    "f0.25_consistent": {
+     "fields": {
+      "mass": 7320,
+      "length": 65
+     },
+     "clean_value": 29278,
+     "corrupted_value": 7320,
+     "factor": 0.25,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.25_inconsistent": {
+     "fields": {
+      "mass": 7320
+     },
+     "clean_value": 29278,
+     "corrupted_value": 7320,
+     "factor": 0.25,
+     "consistent": false,
+     "implied": "no"
+    },
+    "f0.1_consistent": {
+     "fields": {
+      "mass": 2928,
+      "length": 26
+     },
+     "clean_value": 29278,
+     "corrupted_value": 2928,
+     "factor": 0.1,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.1_inconsistent": {
+     "fields": {
+      "mass": 2928
+     },
+     "clean_value": 29278,
+     "corrupted_value": 2928,
+     "factor": 0.1,
+     "consistent": false,
+     "implied": "no"
+    },
+    "f0.02_consistent": {
+     "fields": {
+      "mass": 586,
+      "length": 5
+     },
+     "clean_value": 29278,
+     "corrupted_value": 586,
+     "factor": 0.02,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.02_inconsistent": {
+     "fields": {
+      "mass": 586
+     },
+     "clean_value": 29278,
+     "corrupted_value": 586,
+     "factor": 0.02,
+     "consistent": false,
+     "implied": "no"
+    },
+    "f0.005_consistent": {
+     "fields": {
+      "mass": 146,
+      "length": 1
+     },
+     "clean_value": 29278,
+     "corrupted_value": 146,
+     "factor": 0.005,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.005_inconsistent": {
+     "fields": {
+      "mass": 146
+     },
+     "clean_value": 29278,
+     "corrupted_value": 146,
+     "factor": 0.005,
+     "consistent": false,
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does protein P68543 have a molecular mass greater than 27.8 kDa? Answer yes or no and give the mass in kDa. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "s011"
+  },
+  {
+   "template": "length_threshold",
+   "target_field": "length",
+   "target_accession": "Q9NX40",
+   "accessions": [
+    "Q9NX40"
+   ],
+   "params": {
+    "accession": "Q9NX40",
+    "threshold": 232
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "f0.9_consistent": {
+     "fields": {
+      "length": 220,
+      "mass": 24863
+     },
+     "clean_value": 245,
+     "corrupted_value": 220,
+     "factor": 0.9,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.9_inconsistent": {
+     "fields": {
+      "length": 220
+     },
+     "clean_value": 245,
+     "corrupted_value": 220,
+     "factor": 0.9,
+     "consistent": false,
+     "implied": "no"
+    },
+    "f0.75_consistent": {
+     "fields": {
+      "length": 184,
+      "mass": 20720
+     },
+     "clean_value": 245,
+     "corrupted_value": 184,
+     "factor": 0.75,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.75_inconsistent": {
+     "fields": {
+      "length": 184
+     },
+     "clean_value": 245,
+     "corrupted_value": 184,
+     "factor": 0.75,
+     "consistent": false,
+     "implied": "no"
+    },
+    "f0.5_consistent": {
+     "fields": {
+      "length": 122,
+      "mass": 13813
+     },
+     "clean_value": 245,
+     "corrupted_value": 122,
+     "factor": 0.5,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.5_inconsistent": {
+     "fields": {
+      "length": 122
+     },
+     "clean_value": 245,
+     "corrupted_value": 122,
+     "factor": 0.5,
+     "consistent": false,
+     "implied": "no"
+    },
+    "f0.25_consistent": {
+     "fields": {
+      "length": 61,
+      "mass": 6906
+     },
+     "clean_value": 245,
+     "corrupted_value": 61,
+     "factor": 0.25,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.25_inconsistent": {
+     "fields": {
+      "length": 61
+     },
+     "clean_value": 245,
+     "corrupted_value": 61,
+     "factor": 0.25,
+     "consistent": false,
+     "implied": "no"
+    },
+    "f0.1_consistent": {
+     "fields": {
+      "length": 24,
+      "mass": 2763
+     },
+     "clean_value": 245,
+     "corrupted_value": 24,
+     "factor": 0.1,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.1_inconsistent": {
+     "fields": {
+      "length": 24
+     },
+     "clean_value": 245,
+     "corrupted_value": 24,
+     "factor": 0.1,
+     "consistent": false,
+     "implied": "no"
+    },
+    "f0.02_consistent": {
+     "fields": {
+      "length": 5,
+      "mass": 553
+     },
+     "clean_value": 245,
+     "corrupted_value": 5,
+     "factor": 0.02,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.02_inconsistent": {
+     "fields": {
+      "length": 5
+     },
+     "clean_value": 245,
+     "corrupted_value": 5,
+     "factor": 0.02,
+     "consistent": false,
+     "implied": "no"
+    },
+    "f0.005_consistent": {
+     "fields": {
+      "length": 1,
+      "mass": 138
+     },
+     "clean_value": 245,
+     "corrupted_value": 1,
+     "factor": 0.005,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.005_inconsistent": {
+     "fields": {
+      "length": 1
+     },
+     "clean_value": 245,
+     "corrupted_value": 1,
+     "factor": 0.005,
+     "consistent": false,
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does protein Q9NX40 have more than 232 residues? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "s012"
+  },
+  {
+   "template": "mass_threshold",
+   "target_field": "mass",
+   "target_accession": "Q8N6D2",
+   "accessions": [
+    "Q8N6D2"
+   ],
+   "params": {
+    "accession": "Q8N6D2",
+    "threshold_kda": 26.0
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "f0.9_consistent": {
+     "fields": {
+      "mass": 24662,
+      "length": 222
+     },
+     "clean_value": 27402,
+     "corrupted_value": 24662,
+     "factor": 0.9,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.9_inconsistent": {
+     "fields": {
+      "mass": 24662
+     },
+     "clean_value": 27402,
+     "corrupted_value": 24662,
+     "factor": 0.9,
+     "consistent": false,
+     "implied": "no"
+    },
+    "f0.75_consistent": {
+     "fields": {
+      "mass": 20552,
+      "length": 185
+     },
+     "clean_value": 27402,
+     "corrupted_value": 20552,
+     "factor": 0.75,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.75_inconsistent": {
+     "fields": {
+      "mass": 20552
+     },
+     "clean_value": 27402,
+     "corrupted_value": 20552,
+     "factor": 0.75,
+     "consistent": false,
+     "implied": "no"
+    },
+    "f0.5_consistent": {
+     "fields": {
+      "mass": 13701,
+      "length": 124
+     },
+     "clean_value": 27402,
+     "corrupted_value": 13701,
+     "factor": 0.5,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.5_inconsistent": {
+     "fields": {
+      "mass": 13701
+     },
+     "clean_value": 27402,
+     "corrupted_value": 13701,
+     "factor": 0.5,
+     "consistent": false,
+     "implied": "no"
+    },
+    "f0.25_consistent": {
+     "fields": {
+      "mass": 6850,
+      "length": 62
+     },
+     "clean_value": 27402,
+     "corrupted_value": 6850,
+     "factor": 0.25,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.25_inconsistent": {
+     "fields": {
+      "mass": 6850
+     },
+     "clean_value": 27402,
+     "corrupted_value": 6850,
+     "factor": 0.25,
+     "consistent": false,
+     "implied": "no"
+    },
+    "f0.1_consistent": {
+     "fields": {
+      "mass": 2740,
+      "length": 25
+     },
+     "clean_value": 27402,
+     "corrupted_value": 2740,
+     "factor": 0.1,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.1_inconsistent": {
+     "fields": {
+      "mass": 2740
+     },
+     "clean_value": 27402,
+     "corrupted_value": 2740,
+     "factor": 0.1,
+     "consistent": false,
+     "implied": "no"
+    },
+    "f0.02_consistent": {
+     "fields": {
+      "mass": 548,
+      "length": 5
+     },
+     "clean_value": 27402,
+     "corrupted_value": 548,
+     "factor": 0.02,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.02_inconsistent": {
+     "fields": {
+      "mass": 548
+     },
+     "clean_value": 27402,
+     "corrupted_value": 548,
+     "factor": 0.02,
+     "consistent": false,
+     "implied": "no"
+    },
+    "f0.005_consistent": {
+     "fields": {
+      "mass": 137,
+      "length": 1
+     },
+     "clean_value": 27402,
+     "corrupted_value": 137,
+     "factor": 0.005,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.005_inconsistent": {
+     "fields": {
+      "mass": 137
+     },
+     "clean_value": 27402,
+     "corrupted_value": 137,
+     "factor": 0.005,
+     "consistent": false,
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does protein Q8N6D2 have a molecular mass greater than 26.0 kDa? Answer yes or no and give the mass in kDa. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "s013"
+  },
+  {
+   "template": "length_threshold",
+   "target_field": "length",
+   "target_accession": "Q8TAI7",
+   "accessions": [
+    "Q8TAI7"
+   ],
+   "params": {
+    "accession": "Q8TAI7",
+    "threshold": 174
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "f0.9_consistent": {
+     "fields": {
+      "length": 165,
+      "mass": 18614
+     },
+     "clean_value": 183,
+     "corrupted_value": 165,
+     "factor": 0.9,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.9_inconsistent": {
+     "fields": {
+      "length": 165
+     },
+     "clean_value": 183,
+     "corrupted_value": 165,
+     "factor": 0.9,
+     "consistent": false,
+     "implied": "no"
+    },
+    "f0.75_consistent": {
+     "fields": {
+      "length": 137,
+      "mass": 15512
+     },
+     "clean_value": 183,
+     "corrupted_value": 137,
+     "factor": 0.75,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.75_inconsistent": {
+     "fields": {
+      "length": 137
+     },
+     "clean_value": 183,
+     "corrupted_value": 137,
+     "factor": 0.75,
+     "consistent": false,
+     "implied": "no"
+    },
+    "f0.5_consistent": {
+     "fields": {
+      "length": 92,
+      "mass": 10341
+     },
+     "clean_value": 183,
+     "corrupted_value": 92,
+     "factor": 0.5,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.5_inconsistent": {
+     "fields": {
+      "length": 92
+     },
+     "clean_value": 183,
+     "corrupted_value": 92,
+     "factor": 0.5,
+     "consistent": false,
+     "implied": "no"
+    },
+    "f0.25_consistent": {
+     "fields": {
+      "length": 46,
+      "mass": 5170
+     },
+     "clean_value": 183,
+     "corrupted_value": 46,
+     "factor": 0.25,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.25_inconsistent": {
+     "fields": {
+      "length": 46
+     },
+     "clean_value": 183,
+     "corrupted_value": 46,
+     "factor": 0.25,
+     "consistent": false,
+     "implied": "no"
+    },
+    "f0.1_consistent": {
+     "fields": {
+      "length": 18,
+      "mass": 2068
+     },
+     "clean_value": 183,
+     "corrupted_value": 18,
+     "factor": 0.1,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.1_inconsistent": {
+     "fields": {
+      "length": 18
+     },
+     "clean_value": 183,
+     "corrupted_value": 18,
+     "factor": 0.1,
+     "consistent": false,
+     "implied": "no"
+    },
+    "f0.02_consistent": {
+     "fields": {
+      "length": 4,
+      "mass": 414
+     },
+     "clean_value": 183,
+     "corrupted_value": 4,
+     "factor": 0.02,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.02_inconsistent": {
+     "fields": {
+      "length": 4
+     },
+     "clean_value": 183,
+     "corrupted_value": 4,
+     "factor": 0.02,
+     "consistent": false,
+     "implied": "no"
+    },
+    "f0.005_consistent": {
+     "fields": {
+      "length": 1,
+      "mass": 103
+     },
+     "clean_value": 183,
+     "corrupted_value": 1,
+     "factor": 0.005,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.005_inconsistent": {
+     "fields": {
+      "length": 1
+     },
+     "clean_value": 183,
+     "corrupted_value": 1,
+     "factor": 0.005,
+     "consistent": false,
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does protein Q8TAI7 have more than 174 residues? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "s014"
+  },
+  {
+   "template": "mass_threshold",
+   "target_field": "mass",
+   "target_accession": "P15918",
+   "accessions": [
+    "P15918"
+   ],
+   "params": {
+    "accession": "P15918",
+    "threshold_kda": 113.1
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "f0.9_consistent": {
+     "fields": {
+      "mass": 107187,
+      "length": 939
+     },
+     "clean_value": 119097,
+     "corrupted_value": 107187,
+     "factor": 0.9,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.9_inconsistent": {
+     "fields": {
+      "mass": 107187
+     },
+     "clean_value": 119097,
+     "corrupted_value": 107187,
+     "factor": 0.9,
+     "consistent": false,
+     "implied": "no"
+    },
+    "f0.75_consistent": {
+     "fields": {
+      "mass": 89323,
+      "length": 782
+     },
+     "clean_value": 119097,
+     "corrupted_value": 89323,
+     "factor": 0.75,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.75_inconsistent": {
+     "fields": {
+      "mass": 89323
+     },
+     "clean_value": 119097,
+     "corrupted_value": 89323,
+     "factor": 0.75,
+     "consistent": false,
+     "implied": "no"
+    },
+    "f0.5_consistent": {
+     "fields": {
+      "mass": 59548,
+      "length": 522
+     },
+     "clean_value": 119097,
+     "corrupted_value": 59548,
+     "factor": 0.5,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.5_inconsistent": {
+     "fields": {
+      "mass": 59548
+     },
+     "clean_value": 119097,
+     "corrupted_value": 59548,
+     "factor": 0.5,
+     "consistent": false,
+     "implied": "no"
+    },
+    "f0.25_consistent": {
+     "fields": {
+      "mass": 29774,
+      "length": 261
+     },
+     "clean_value": 119097,
+     "corrupted_value": 29774,
+     "factor": 0.25,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.25_inconsistent": {
+     "fields": {
+      "mass": 29774
+     },
+     "clean_value": 119097,
+     "corrupted_value": 29774,
+     "factor": 0.25,
+     "consistent": false,
+     "implied": "no"
+    },
+    "f0.1_consistent": {
+     "fields": {
+      "mass": 11910,
+      "length": 104
+     },
+     "clean_value": 119097,
+     "corrupted_value": 11910,
+     "factor": 0.1,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.1_inconsistent": {
+     "fields": {
+      "mass": 11910
+     },
+     "clean_value": 119097,
+     "corrupted_value": 11910,
+     "factor": 0.1,
+     "consistent": false,
+     "implied": "no"
+    },
+    "f0.02_consistent": {
+     "fields": {
+      "mass": 2382,
+      "length": 21
+     },
+     "clean_value": 119097,
+     "corrupted_value": 2382,
+     "factor": 0.02,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.02_inconsistent": {
+     "fields": {
+      "mass": 2382
+     },
+     "clean_value": 119097,
+     "corrupted_value": 2382,
+     "factor": 0.02,
+     "consistent": false,
+     "implied": "no"
+    },
+    "f0.005_consistent": {
+     "fields": {
+      "mass": 595,
+      "length": 5
+     },
+     "clean_value": 119097,
+     "corrupted_value": 595,
+     "factor": 0.005,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.005_inconsistent": {
+     "fields": {
+      "mass": 595
+     },
+     "clean_value": 119097,
+     "corrupted_value": 595,
+     "factor": 0.005,
+     "consistent": false,
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does protein P15918 have a molecular mass greater than 113.1 kDa? Answer yes or no and give the mass in kDa. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "s015"
+  },
+  {
+   "template": "length_threshold",
+   "target_field": "length",
+   "target_accession": "P51114",
+   "accessions": [
+    "P51114"
+   ],
+   "params": {
+    "accession": "P51114",
+    "threshold": 590
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "f0.9_consistent": {
+     "fields": {
+      "length": 559,
+      "mass": 62749
+     },
+     "clean_value": 621,
+     "corrupted_value": 559,
+     "factor": 0.9,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.9_inconsistent": {
+     "fields": {
+      "length": 559
+     },
+     "clean_value": 621,
+     "corrupted_value": 559,
+     "factor": 0.9,
+     "consistent": false,
+     "implied": "no"
+    },
+    "f0.75_consistent": {
+     "fields": {
+      "length": 466,
+      "mass": 52291
+     },
+     "clean_value": 621,
+     "corrupted_value": 466,
+     "factor": 0.75,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.75_inconsistent": {
+     "fields": {
+      "length": 466
+     },
+     "clean_value": 621,
+     "corrupted_value": 466,
+     "factor": 0.75,
+     "consistent": false,
+     "implied": "no"
+    },
+    "f0.5_consistent": {
+     "fields": {
+      "length": 310,
+      "mass": 34860
+     },
+     "clean_value": 621,
+     "corrupted_value": 310,
+     "factor": 0.5,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.5_inconsistent": {
+     "fields": {
+      "length": 310
+     },
+     "clean_value": 621,
+     "corrupted_value": 310,
+     "factor": 0.5,
+     "consistent": false,
+     "implied": "no"
+    },
+    "f0.25_consistent": {
+     "fields": {
+      "length": 155,
+      "mass": 17430
+     },
+     "clean_value": 621,
+     "corrupted_value": 155,
+     "factor": 0.25,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.25_inconsistent": {
+     "fields": {
+      "length": 155
+     },
+     "clean_value": 621,
+     "corrupted_value": 155,
+     "factor": 0.25,
+     "consistent": false,
+     "implied": "no"
+    },
+    "f0.1_consistent": {
+     "fields": {
+      "length": 62,
+      "mass": 6972
+     },
+     "clean_value": 621,
+     "corrupted_value": 62,
+     "factor": 0.1,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.1_inconsistent": {
+     "fields": {
+      "length": 62
+     },
+     "clean_value": 621,
+     "corrupted_value": 62,
+     "factor": 0.1,
+     "consistent": false,
+     "implied": "no"
+    },
+    "f0.02_consistent": {
+     "fields": {
+      "length": 12,
+      "mass": 1394
+     },
+     "clean_value": 621,
+     "corrupted_value": 12,
+     "factor": 0.02,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.02_inconsistent": {
+     "fields": {
+      "length": 12
+     },
+     "clean_value": 621,
+     "corrupted_value": 12,
+     "factor": 0.02,
+     "consistent": false,
+     "implied": "no"
+    },
+    "f0.005_consistent": {
+     "fields": {
+      "length": 3,
+      "mass": 349
+     },
+     "clean_value": 621,
+     "corrupted_value": 3,
+     "factor": 0.005,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.005_inconsistent": {
+     "fields": {
+      "length": 3
+     },
+     "clean_value": 621,
+     "corrupted_value": 3,
+     "factor": 0.005,
+     "consistent": false,
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does protein P51114 have more than 590 residues? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "s016"
+  },
+  {
+   "template": "mass_threshold",
+   "target_field": "mass",
+   "target_accession": "Q01518",
+   "accessions": [
+    "Q01518"
+   ],
+   "params": {
+    "accession": "Q01518",
+    "threshold_kda": 49.3
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "f0.9_consistent": {
+     "fields": {
+      "mass": 46711,
+      "length": 428
+     },
+     "clean_value": 51901,
+     "corrupted_value": 46711,
+     "factor": 0.9,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.9_inconsistent": {
+     "fields": {
+      "mass": 46711
+     },
+     "clean_value": 51901,
+     "corrupted_value": 46711,
+     "factor": 0.9,
+     "consistent": false,
+     "implied": "no"
+    },
+    "f0.75_consistent": {
+     "fields": {
+      "mass": 38926,
+      "length": 356
+     },
+     "clean_value": 51901,
+     "corrupted_value": 38926,
+     "factor": 0.75,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.75_inconsistent": {
+     "fields": {
+      "mass": 38926
+     },
+     "clean_value": 51901,
+     "corrupted_value": 38926,
+     "factor": 0.75,
+     "consistent": false,
+     "implied": "no"
+    },
+    "f0.5_consistent": {
+     "fields": {
+      "mass": 25950,
+      "length": 238
+     },
+     "clean_value": 51901,
+     "corrupted_value": 25950,
+     "factor": 0.5,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.5_inconsistent": {
+     "fields": {
+      "mass": 25950
+     },
+     "clean_value": 51901,
+     "corrupted_value": 25950,
+     "factor": 0.5,
+     "consistent": false,
+     "implied": "no"
+    },
+    "f0.25_consistent": {
+     "fields": {
+      "mass": 12975,
+      "length": 119
+     },
+     "clean_value": 51901,
+     "corrupted_value": 12975,
+     "factor": 0.25,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.25_inconsistent": {
+     "fields": {
+      "mass": 12975
+     },
+     "clean_value": 51901,
+     "corrupted_value": 12975,
+     "factor": 0.25,
+     "consistent": false,
+     "implied": "no"
+    },
+    "f0.1_consistent": {
+     "fields": {
+      "mass": 5190,
+      "length": 48
+     },
+     "clean_value": 51901,
+     "corrupted_value": 5190,
+     "factor": 0.1,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.1_inconsistent": {
+     "fields": {
+      "mass": 5190
+     },
+     "clean_value": 51901,
+     "corrupted_value": 5190,
+     "factor": 0.1,
+     "consistent": false,
+     "implied": "no"
+    },
+    "f0.02_consistent": {
+     "fields": {
+      "mass": 1038,
+      "length": 10
+     },
+     "clean_value": 51901,
+     "corrupted_value": 1038,
+     "factor": 0.02,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.02_inconsistent": {
+     "fields": {
+      "mass": 1038
+     },
+     "clean_value": 51901,
+     "corrupted_value": 1038,
+     "factor": 0.02,
+     "consistent": false,
+     "implied": "no"
+    },
+    "f0.005_consistent": {
+     "fields": {
+      "mass": 260,
+      "length": 2
+     },
+     "clean_value": 51901,
+     "corrupted_value": 260,
+     "factor": 0.005,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.005_inconsistent": {
+     "fields": {
+      "mass": 260
+     },
+     "clean_value": 51901,
+     "corrupted_value": 260,
+     "factor": 0.005,
+     "consistent": false,
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does protein Q01518 have a molecular mass greater than 49.3 kDa? Answer yes or no and give the mass in kDa. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "s017"
+  },
+  {
+   "template": "length_threshold",
+   "target_field": "length",
+   "target_accession": "Q8TEC5",
+   "accessions": [
+    "Q8TEC5"
+   ],
+   "params": {
+    "accession": "Q8TEC5",
+    "threshold": 692
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "f0.9_consistent": {
+     "fields": {
+      "length": 656,
+      "mass": 71388
+     },
+     "clean_value": 729,
+     "corrupted_value": 656,
+     "factor": 0.9,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.9_inconsistent": {
+     "fields": {
+      "length": 656
+     },
+     "clean_value": 729,
+     "corrupted_value": 656,
+     "factor": 0.9,
+     "consistent": false,
+     "implied": "no"
+    },
+    "f0.75_consistent": {
+     "fields": {
+      "length": 547,
+      "mass": 59490
+     },
+     "clean_value": 729,
+     "corrupted_value": 547,
+     "factor": 0.75,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.75_inconsistent": {
+     "fields": {
+      "length": 547
+     },
+     "clean_value": 729,
+     "corrupted_value": 547,
+     "factor": 0.75,
+     "consistent": false,
+     "implied": "no"
+    },
+    "f0.5_consistent": {
+     "fields": {
+      "length": 364,
+      "mass": 39660
+     },
+     "clean_value": 729,
+     "corrupted_value": 364,
+     "factor": 0.5,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.5_inconsistent": {
+     "fields": {
+      "length": 364
+     },
+     "clean_value": 729,
+     "corrupted_value": 364,
+     "factor": 0.5,
+     "consistent": false,
+     "implied": "no"
+    },
+    "f0.25_consistent": {
+     "fields": {
+      "length": 182,
+      "mass": 19830
+     },
+     "clean_value": 729,
+     "corrupted_value": 182,
+     "factor": 0.25,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.25_inconsistent": {
+     "fields": {
+      "length": 182
+     },
+     "clean_value": 729,
+     "corrupted_value": 182,
+     "factor": 0.25,
+     "consistent": false,
+     "implied": "no"
+    },
+    "f0.1_consistent": {
+     "fields": {
+      "length": 73,
+      "mass": 7932
+     },
+     "clean_value": 729,
+     "corrupted_value": 73,
+     "factor": 0.1,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.1_inconsistent": {
+     "fields": {
+      "length": 73
+     },
+     "clean_value": 729,
+     "corrupted_value": 73,
+     "factor": 0.1,
+     "consistent": false,
+     "implied": "no"
+    },
+    "f0.02_consistent": {
+     "fields": {
+      "length": 15,
+      "mass": 1586
+     },
+     "clean_value": 729,
+     "corrupted_value": 15,
+     "factor": 0.02,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.02_inconsistent": {
+     "fields": {
+      "length": 15
+     },
+     "clean_value": 729,
+     "corrupted_value": 15,
+     "factor": 0.02,
+     "consistent": false,
+     "implied": "no"
+    },
+    "f0.005_consistent": {
+     "fields": {
+      "length": 4,
+      "mass": 397
+     },
+     "clean_value": 729,
+     "corrupted_value": 4,
+     "factor": 0.005,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.005_inconsistent": {
+     "fields": {
+      "length": 4
+     },
+     "clean_value": 729,
+     "corrupted_value": 4,
+     "factor": 0.005,
+     "consistent": false,
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does protein Q8TEC5 have more than 692 residues? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "s018"
+  },
+  {
+   "template": "mass_threshold",
+   "target_field": "mass",
+   "target_accession": "Q9UDT6",
+   "accessions": [
+    "Q9UDT6"
+   ],
+   "params": {
+    "accession": "Q9UDT6",
+    "threshold_kda": 110.0
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "f0.9_consistent": {
+     "fields": {
+      "mass": 104253,
+      "length": 941
+     },
+     "clean_value": 115837,
+     "corrupted_value": 104253,
+     "factor": 0.9,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.9_inconsistent": {
+     "fields": {
+      "mass": 104253
+     },
+     "clean_value": 115837,
+     "corrupted_value": 104253,
+     "factor": 0.9,
+     "consistent": false,
+     "implied": "no"
+    },
+    "f0.75_consistent": {
+     "fields": {
+      "mass": 86878,
+      "length": 784
+     },
+     "clean_value": 115837,
+     "corrupted_value": 86878,
+     "factor": 0.75,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.75_inconsistent": {
+     "fields": {
+      "mass": 86878
+     },
+     "clean_value": 115837,
+     "corrupted_value": 86878,
+     "factor": 0.75,
+     "consistent": false,
+     "implied": "no"
+    },
+    "f0.5_consistent": {
+     "fields": {
+      "mass": 57918,
+      "length": 523
+     },
+     "clean_value": 115837,
+     "corrupted_value": 57918,
+     "factor": 0.5,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.5_inconsistent": {
+     "fields": {
+      "mass": 57918
+     },
+     "clean_value": 115837,
+     "corrupted_value": 57918,
+     "factor": 0.5,
+     "consistent": false,
+     "implied": "no"
+    },
+    "f0.25_consistent": {
+     "fields": {
+      "mass": 28959,
+      "length": 262
+     },
+     "clean_value": 115837,
+     "corrupted_value": 28959,
+     "factor": 0.25,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.25_inconsistent": {
+     "fields": {
+      "mass": 28959
+     },
+     "clean_value": 115837,
+     "corrupted_value": 28959,
+     "factor": 0.25,
+     "consistent": false,
+     "implied": "no"
+    },
+    "f0.1_consistent": {
+     "fields": {
+      "mass": 11584,
+      "length": 105
+     },
+     "clean_value": 115837,
+     "corrupted_value": 11584,
+     "factor": 0.1,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.1_inconsistent": {
+     "fields": {
+      "mass": 11584
+     },
+     "clean_value": 115837,
+     "corrupted_value": 11584,
+     "factor": 0.1,
+     "consistent": false,
+     "implied": "no"
+    },
+    "f0.02_consistent": {
+     "fields": {
+      "mass": 2317,
+      "length": 21
+     },
+     "clean_value": 115837,
+     "corrupted_value": 2317,
+     "factor": 0.02,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.02_inconsistent": {
+     "fields": {
+      "mass": 2317
+     },
+     "clean_value": 115837,
+     "corrupted_value": 2317,
+     "factor": 0.02,
+     "consistent": false,
+     "implied": "no"
+    },
+    "f0.005_consistent": {
+     "fields": {
+      "mass": 579,
+      "length": 5
+     },
+     "clean_value": 115837,
+     "corrupted_value": 579,
+     "factor": 0.005,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.005_inconsistent": {
+     "fields": {
+      "mass": 579
+     },
+     "clean_value": 115837,
+     "corrupted_value": 579,
+     "factor": 0.005,
+     "consistent": false,
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does protein Q9UDT6 have a molecular mass greater than 110.0 kDa? Answer yes or no and give the mass in kDa. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "s019"
+  }
+ ]
+}

@@ -1,0 +1,1531 @@
+{
+ "seed": 0,
+ "n_tasks": 40,
+ "tasks": [
+  {
+   "template": "length_ratio",
+   "target_field": "length",
+   "target_accession": "Q6UW63",
+   "accessions": [
+    "Q6UW63",
+    "P40429"
+   ],
+   "params": {
+    "gene_A": "POGLUT2",
+    "gene_B": "RPL13A",
+    "acc_A": "Q6UW63",
+    "acc_B": "P40429"
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 2,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "length": 3
+     },
+     "clean_value": 502,
+     "corrupted_value": 3,
+     "factor": null,
+     "implied": "no"
+    },
+    "plausible": {
+     "fields": {
+      "length": 376,
+      "mass": 43532
+     },
+     "clean_value": 502,
+     "corrupted_value": 376,
+     "factor": 0.75,
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Is POGLUT2 at least twice as long as RPL13A? Answer yes or no with both lengths. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "t000"
+  },
+  {
+   "template": "mass_comparison",
+   "target_field": "mass",
+   "target_accession": "O75144",
+   "accessions": [
+    "P53701",
+    "O75144"
+   ],
+   "params": {
+    "gene_A": "HCCS",
+    "gene_B": "ICOSLG",
+    "acc_A": "P53701",
+    "acc_B": "O75144"
+   },
+   "answer_type": "string",
+   "n_calls_expected": 2,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "mass": 45
+     },
+     "clean_value": 33349,
+     "corrupted_value": 45,
+     "factor": null,
+     "implied": "HCCS"
+    },
+    "plausible": {
+     "fields": {
+      "length": 226,
+      "mass": 25012
+     },
+     "clean_value": 33349,
+     "corrupted_value": 25012,
+     "factor": 0.75,
+     "implied": "HCCS"
+    }
+   },
+   "gold": "ICOSLG",
+   "prompt": "Which is heavier, the protein encoded by HCCS or ICOSLG? Give the gene symbol and both masses in kDa. Put only the gene symbol of the heavier protein in the JSON \"answer\" field.",
+   "task_id": "t001"
+  },
+  {
+   "template": "organism",
+   "target_field": "organism",
+   "target_accession": "Q9BQT9",
+   "accessions": [
+    "Q9BQT9"
+   ],
+   "params": {
+    "accession": "Q9BQT9"
+   },
+   "answer_type": "string",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "organism": "Escherichia coli K-12"
+     },
+     "clean_value": "Homo sapiens",
+     "corrupted_value": "Escherichia coli K-12",
+     "factor": null,
+     "implied": "Escherichia coli K-12"
+    },
+    "plausible": {
+     "fields": {
+      "organism": "Mus musculus"
+     },
+     "clean_value": "Homo sapiens",
+     "corrupted_value": "Mus musculus",
+     "factor": null,
+     "implied": "Mus musculus"
+    }
+   },
+   "gold": "Homo sapiens",
+   "prompt": "What organism is Q9BQT9 from, and is it a mammal? Answer with organism and yes/no. Put only the organism name in the JSON \"answer\" field.",
+   "task_id": "t002"
+  },
+  {
+   "template": "gene_symbol",
+   "target_field": "gene_symbol",
+   "target_accession": "Q5XXA6",
+   "accessions": [
+    "Q5XXA6"
+   ],
+   "params": {
+    "accession": "Q5XXA6"
+   },
+   "answer_type": "string",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "gene_symbol": "WDD8"
+     },
+     "clean_value": "ANO1",
+     "corrupted_value": "WDD8",
+     "factor": null,
+     "implied": "WDD8"
+    },
+    "plausible": {
+     "fields": {
+      "gene_symbol": "ICOSLG"
+     },
+     "clean_value": "ANO1",
+     "corrupted_value": "ICOSLG",
+     "factor": null,
+     "implied": "ICOSLG"
+    }
+   },
+   "gold": "ANO1",
+   "prompt": "What gene encodes Q5XXA6? Answer with the gene symbol. Put only the gene symbol in the JSON \"answer\" field.",
+   "task_id": "t003"
+  },
+  {
+   "template": "length_threshold",
+   "target_field": "length",
+   "target_accession": "O95782",
+   "accessions": [
+    "O95782"
+   ],
+   "params": {
+    "accession": "O95782",
+    "threshold": 879
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "length": 3
+     },
+     "clean_value": 977,
+     "corrupted_value": 3,
+     "factor": null,
+     "implied": "no"
+    },
+    "plausible": {
+     "fields": {
+      "length": 782,
+      "mass": 86037
+     },
+     "clean_value": 977,
+     "corrupted_value": 782,
+     "factor": 0.8,
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does protein O95782 have more than 879 residues? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "t004"
+  },
+  {
+   "template": "mass_comparison",
+   "target_field": "mass",
+   "target_accession": "Q9NR21",
+   "accessions": [
+    "Q9NR21",
+    "P56962"
+   ],
+   "params": {
+    "gene_A": "PARP11",
+    "gene_B": "STX17",
+    "acc_A": "Q9NR21",
+    "acc_B": "P56962"
+   },
+   "answer_type": "string",
+   "n_calls_expected": 2,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "mass": -39597
+     },
+     "clean_value": 39597,
+     "corrupted_value": -39597,
+     "factor": null,
+     "implied": "STX17"
+    },
+    "plausible": {
+     "fields": {
+      "length": 254,
+      "mass": 29698
+     },
+     "clean_value": 39597,
+     "corrupted_value": 29698,
+     "factor": 0.75,
+     "implied": "STX17"
+    }
+   },
+   "gold": "PARP11",
+   "prompt": "Which is heavier, the protein encoded by PARP11 or STX17? Give the gene symbol and both masses in kDa. Put only the gene symbol of the heavier protein in the JSON \"answer\" field.",
+   "task_id": "t005"
+  },
+  {
+   "template": "organism",
+   "target_field": "organism",
+   "target_accession": "P22303",
+   "accessions": [
+    "P22303"
+   ],
+   "params": {
+    "accession": "P22303"
+   },
+   "answer_type": "string",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "organism": "Escherichia coli K-12"
+     },
+     "clean_value": "Homo sapiens",
+     "corrupted_value": "Escherichia coli K-12",
+     "factor": null,
+     "implied": "Escherichia coli K-12"
+    },
+    "plausible": {
+     "fields": {
+      "organism": "Mus musculus"
+     },
+     "clean_value": "Homo sapiens",
+     "corrupted_value": "Mus musculus",
+     "factor": null,
+     "implied": "Mus musculus"
+    }
+   },
+   "gold": "Homo sapiens",
+   "prompt": "What organism is P22303 from, and is it a mammal? Answer with organism and yes/no. Put only the organism name in the JSON \"answer\" field.",
+   "task_id": "t006"
+  },
+  {
+   "template": "gene_symbol",
+   "target_field": "gene_symbol",
+   "target_accession": "Q969U6",
+   "accessions": [
+    "Q969U6"
+   ],
+   "params": {
+    "accession": "Q969U6"
+   },
+   "answer_type": "string",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "gene_symbol": "HDE2"
+     },
+     "clean_value": "FBXW5",
+     "corrupted_value": "HDE2",
+     "factor": null,
+     "implied": "HDE2"
+    },
+    "plausible": {
+     "fields": {
+      "gene_symbol": "FSCN2"
+     },
+     "clean_value": "FBXW5",
+     "corrupted_value": "FSCN2",
+     "factor": null,
+     "implied": "FSCN2"
+    }
+   },
+   "gold": "FBXW5",
+   "prompt": "What gene encodes Q969U6? Answer with the gene symbol. Put only the gene symbol in the JSON \"answer\" field.",
+   "task_id": "t007"
+  },
+  {
+   "template": "length_ratio",
+   "target_field": "length",
+   "target_accession": "P51114",
+   "accessions": [
+    "P51114",
+    "P53701"
+   ],
+   "params": {
+    "gene_A": "FXR1",
+    "gene_B": "HCCS",
+    "acc_A": "P51114",
+    "acc_B": "P53701"
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 2,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "length": 3
+     },
+     "clean_value": 621,
+     "corrupted_value": 3,
+     "factor": null,
+     "implied": "no"
+    },
+    "plausible": {
+     "fields": {
+      "length": 497,
+      "mass": 55777
+     },
+     "clean_value": 621,
+     "corrupted_value": 497,
+     "factor": 0.8,
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Is FXR1 at least twice as long as HCCS? Answer yes or no with both lengths. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "t008"
+  },
+  {
+   "template": "mass_comparison",
+   "target_field": "mass",
+   "target_accession": "Q9Y692",
+   "accessions": [
+    "Q9Y692",
+    "Q96F86"
+   ],
+   "params": {
+    "gene_A": "GMEB1",
+    "gene_B": "EDC3",
+    "acc_A": "Q9Y692",
+    "acc_B": "Q96F86"
+   },
+   "answer_type": "string",
+   "n_calls_expected": 2,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "mass": 45
+     },
+     "clean_value": 62591,
+     "corrupted_value": 45,
+     "factor": null,
+     "implied": "EDC3"
+    },
+    "plausible": {
+     "fields": {
+      "length": 458,
+      "mass": 50073
+     },
+     "clean_value": 62591,
+     "corrupted_value": 50073,
+     "factor": 0.8,
+     "implied": "EDC3"
+    }
+   },
+   "gold": "GMEB1",
+   "prompt": "Which is heavier, the protein encoded by GMEB1 or EDC3? Give the gene symbol and both masses in kDa. Put only the gene symbol of the heavier protein in the JSON \"answer\" field.",
+   "task_id": "t009"
+  },
+  {
+   "template": "organism",
+   "target_field": "organism",
+   "target_accession": "O96018",
+   "accessions": [
+    "O96018"
+   ],
+   "params": {
+    "accession": "O96018"
+   },
+   "answer_type": "string",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "organism": "Escherichia coli K-12"
+     },
+     "clean_value": "Homo sapiens",
+     "corrupted_value": "Escherichia coli K-12",
+     "factor": null,
+     "implied": "Escherichia coli K-12"
+    },
+    "plausible": {
+     "fields": {
+      "organism": "Mus musculus"
+     },
+     "clean_value": "Homo sapiens",
+     "corrupted_value": "Mus musculus",
+     "factor": null,
+     "implied": "Mus musculus"
+    }
+   },
+   "gold": "Homo sapiens",
+   "prompt": "What organism is O96018 from, and is it a mammal? Answer with organism and yes/no. Put only the organism name in the JSON \"answer\" field.",
+   "task_id": "t010"
+  },
+  {
+   "template": "gene_symbol",
+   "target_field": "gene_symbol",
+   "target_accession": "Q92633",
+   "accessions": [
+    "Q92633"
+   ],
+   "params": {
+    "accession": "Q92633"
+   },
+   "answer_type": "string",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "gene_symbol": "QKZ3"
+     },
+     "clean_value": "LPAR1",
+     "corrupted_value": "QKZ3",
+     "factor": null,
+     "implied": "QKZ3"
+    },
+    "plausible": {
+     "fields": {
+      "gene_symbol": "ABHD6"
+     },
+     "clean_value": "LPAR1",
+     "corrupted_value": "ABHD6",
+     "factor": null,
+     "implied": "ABHD6"
+    }
+   },
+   "gold": "LPAR1",
+   "prompt": "What gene encodes Q92633? Answer with the gene symbol. Put only the gene symbol in the JSON \"answer\" field.",
+   "task_id": "t011"
+  },
+  {
+   "template": "length_threshold",
+   "target_field": "length",
+   "target_accession": "Q2M389",
+   "accessions": [
+    "Q2M389"
+   ],
+   "params": {
+    "accession": "Q2M389",
+    "threshold": 1026
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "length": 3
+     },
+     "clean_value": 1173,
+     "corrupted_value": 3,
+     "factor": null,
+     "implied": "no"
+    },
+    "plausible": {
+     "fields": {
+      "length": 880,
+      "mass": 102302
+     },
+     "clean_value": 1173,
+     "corrupted_value": 880,
+     "factor": 0.75,
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does protein Q2M389 have more than 1026 residues? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "t012"
+  },
+  {
+   "template": "mass_comparison",
+   "target_field": "mass",
+   "target_accession": "Q13769",
+   "accessions": [
+    "Q13769",
+    "Q96LW4"
+   ],
+   "params": {
+    "gene_A": "THOC5",
+    "gene_B": "PRIMPOL",
+    "acc_A": "Q13769",
+    "acc_B": "Q96LW4"
+   },
+   "answer_type": "string",
+   "n_calls_expected": 2,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "mass": -78508
+     },
+     "clean_value": 78508,
+     "corrupted_value": -78508,
+     "factor": null,
+     "implied": "PRIMPOL"
+    },
+    "plausible": {
+     "fields": {
+      "length": 512,
+      "mass": 58881
+     },
+     "clean_value": 78508,
+     "corrupted_value": 58881,
+     "factor": 0.75,
+     "implied": "PRIMPOL"
+    }
+   },
+   "gold": "THOC5",
+   "prompt": "Which is heavier, the protein encoded by THOC5 or PRIMPOL? Give the gene symbol and both masses in kDa. Put only the gene symbol of the heavier protein in the JSON \"answer\" field.",
+   "task_id": "t013"
+  },
+  {
+   "template": "organism",
+   "target_field": "organism",
+   "target_accession": "P56962",
+   "accessions": [
+    "P56962"
+   ],
+   "params": {
+    "accession": "P56962"
+   },
+   "answer_type": "string",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "organism": "Escherichia coli K-12"
+     },
+     "clean_value": "Homo sapiens",
+     "corrupted_value": "Escherichia coli K-12",
+     "factor": null,
+     "implied": "Escherichia coli K-12"
+    },
+    "plausible": {
+     "fields": {
+      "organism": "Mus musculus"
+     },
+     "clean_value": "Homo sapiens",
+     "corrupted_value": "Mus musculus",
+     "factor": null,
+     "implied": "Mus musculus"
+    }
+   },
+   "gold": "Homo sapiens",
+   "prompt": "What organism is P56962 from, and is it a mammal? Answer with organism and yes/no. Put only the organism name in the JSON \"answer\" field.",
+   "task_id": "t014"
+  },
+  {
+   "template": "gene_symbol",
+   "target_field": "gene_symbol",
+   "target_accession": "Q96LW4",
+   "accessions": [
+    "Q96LW4"
+   ],
+   "params": {
+    "accession": "Q96LW4"
+   },
+   "answer_type": "string",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "gene_symbol": "UHN2"
+     },
+     "clean_value": "PRIMPOL",
+     "corrupted_value": "UHN2",
+     "factor": null,
+     "implied": "UHN2"
+    },
+    "plausible": {
+     "fields": {
+      "gene_symbol": "GMEB1"
+     },
+     "clean_value": "PRIMPOL",
+     "corrupted_value": "GMEB1",
+     "factor": null,
+     "implied": "GMEB1"
+    }
+   },
+   "gold": "PRIMPOL",
+   "prompt": "What gene encodes Q96LW4? Answer with the gene symbol. Put only the gene symbol in the JSON \"answer\" field.",
+   "task_id": "t015"
+  },
+  {
+   "template": "length_ratio",
+   "target_field": "length",
+   "target_accession": "O75344",
+   "accessions": [
+    "Q969U6",
+    "O75344"
+   ],
+   "params": {
+    "gene_A": "FBXW5",
+    "gene_B": "FKBP6",
+    "acc_A": "Q969U6",
+    "acc_B": "O75344"
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 2,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "length": 3
+     },
+     "clean_value": 327,
+     "corrupted_value": 3,
+     "factor": null,
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "length": 245,
+      "mass": 27910
+     },
+     "clean_value": 327,
+     "corrupted_value": 245,
+     "factor": 0.75,
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Is FBXW5 at least twice as long as FKBP6? Answer yes or no with both lengths. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "t016"
+  },
+  {
+   "template": "mass_comparison",
+   "target_field": "mass",
+   "target_accession": "Q86UD4",
+   "accessions": [
+    "Q86UD4",
+    "O14926"
+   ],
+   "params": {
+    "gene_A": "ZNF329",
+    "gene_B": "FSCN2",
+    "acc_A": "Q86UD4",
+    "acc_B": "O14926"
+   },
+   "answer_type": "string",
+   "n_calls_expected": 2,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "mass": -61725
+     },
+     "clean_value": 61725,
+     "corrupted_value": -61725,
+     "factor": null,
+     "implied": "FSCN2"
+    },
+    "plausible": {
+     "fields": {
+      "length": 433,
+      "mass": 49380
+     },
+     "clean_value": 61725,
+     "corrupted_value": 49380,
+     "factor": 0.8,
+     "implied": "FSCN2"
+    }
+   },
+   "gold": "ZNF329",
+   "prompt": "Which is heavier, the protein encoded by ZNF329 or FSCN2? Give the gene symbol and both masses in kDa. Put only the gene symbol of the heavier protein in the JSON \"answer\" field.",
+   "task_id": "t017"
+  },
+  {
+   "template": "organism",
+   "target_field": "organism",
+   "target_accession": "Q96F86",
+   "accessions": [
+    "Q96F86"
+   ],
+   "params": {
+    "accession": "Q96F86"
+   },
+   "answer_type": "string",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "organism": "Escherichia coli K-12"
+     },
+     "clean_value": "Homo sapiens",
+     "corrupted_value": "Escherichia coli K-12",
+     "factor": null,
+     "implied": "Escherichia coli K-12"
+    },
+    "plausible": {
+     "fields": {
+      "organism": "Mus musculus"
+     },
+     "clean_value": "Homo sapiens",
+     "corrupted_value": "Mus musculus",
+     "factor": null,
+     "implied": "Mus musculus"
+    }
+   },
+   "gold": "Homo sapiens",
+   "prompt": "What organism is Q96F86 from, and is it a mammal? Answer with organism and yes/no. Put only the organism name in the JSON \"answer\" field.",
+   "task_id": "t018"
+  },
+  {
+   "template": "gene_symbol",
+   "target_field": "gene_symbol",
+   "target_accession": "O43897",
+   "accessions": [
+    "O43897"
+   ],
+   "params": {
+    "accession": "O43897"
+   },
+   "answer_type": "string",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "gene_symbol": "UJT8"
+     },
+     "clean_value": "TLL1",
+     "corrupted_value": "UJT8",
+     "factor": null,
+     "implied": "UJT8"
+    },
+    "plausible": {
+     "fields": {
+      "gene_symbol": "NTF3"
+     },
+     "clean_value": "TLL1",
+     "corrupted_value": "NTF3",
+     "factor": null,
+     "implied": "NTF3"
+    }
+   },
+   "gold": "TLL1",
+   "prompt": "What gene encodes O43897? Answer with the gene symbol. Put only the gene symbol in the JSON \"answer\" field.",
+   "task_id": "t019"
+  },
+  {
+   "template": "length_threshold",
+   "target_field": "length",
+   "target_accession": "Q9H2B4",
+   "accessions": [
+    "Q9H2B4"
+   ],
+   "params": {
+    "accession": "Q9H2B4",
+    "threshold": 613
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "length": 3
+     },
+     "clean_value": 701,
+     "corrupted_value": 3,
+     "factor": null,
+     "implied": "no"
+    },
+    "plausible": {
+     "fields": {
+      "length": 526,
+      "mass": 56262
+     },
+     "clean_value": 701,
+     "corrupted_value": 526,
+     "factor": 0.75,
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does protein Q9H2B4 have more than 613 residues? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "t020"
+  },
+  {
+   "template": "mass_comparison",
+   "target_field": "mass",
+   "target_accession": "Q9HC58",
+   "accessions": [
+    "Q9HC58",
+    "Q6UW63"
+   ],
+   "params": {
+    "gene_A": "SLC24A3",
+    "gene_B": "POGLUT2",
+    "acc_A": "Q9HC58",
+    "acc_B": "Q6UW63"
+   },
+   "answer_type": "string",
+   "n_calls_expected": 2,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "mass": 45
+     },
+     "clean_value": 71992,
+     "corrupted_value": 45,
+     "factor": null,
+     "implied": "POGLUT2"
+    },
+    "plausible": {
+     "fields": {
+      "length": 483,
+      "mass": 53994
+     },
+     "clean_value": 71992,
+     "corrupted_value": 53994,
+     "factor": 0.75,
+     "implied": "POGLUT2"
+    }
+   },
+   "gold": "SLC24A3",
+   "prompt": "Which is heavier, the protein encoded by SLC24A3 or POGLUT2? Give the gene symbol and both masses in kDa. Put only the gene symbol of the heavier protein in the JSON \"answer\" field.",
+   "task_id": "t021"
+  },
+  {
+   "template": "organism",
+   "target_field": "organism",
+   "target_accession": "Q8TAI7",
+   "accessions": [
+    "Q8TAI7"
+   ],
+   "params": {
+    "accession": "Q8TAI7"
+   },
+   "answer_type": "string",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "organism": "Escherichia coli K-12"
+     },
+     "clean_value": "Homo sapiens",
+     "corrupted_value": "Escherichia coli K-12",
+     "factor": null,
+     "implied": "Escherichia coli K-12"
+    },
+    "plausible": {
+     "fields": {
+      "organism": "Mus musculus"
+     },
+     "clean_value": "Homo sapiens",
+     "corrupted_value": "Mus musculus",
+     "factor": null,
+     "implied": "Mus musculus"
+    }
+   },
+   "gold": "Homo sapiens",
+   "prompt": "What organism is Q8TAI7 from, and is it a mammal? Answer with organism and yes/no. Put only the organism name in the JSON \"answer\" field.",
+   "task_id": "t022"
+  },
+  {
+   "template": "gene_symbol",
+   "target_field": "gene_symbol",
+   "target_accession": "P12036",
+   "accessions": [
+    "P12036"
+   ],
+   "params": {
+    "accession": "P12036"
+   },
+   "answer_type": "string",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "gene_symbol": "HNC3"
+     },
+     "clean_value": "NEFH",
+     "corrupted_value": "HNC3",
+     "factor": null,
+     "implied": "HNC3"
+    },
+    "plausible": {
+     "fields": {
+      "gene_symbol": "SH3RF2"
+     },
+     "clean_value": "NEFH",
+     "corrupted_value": "SH3RF2",
+     "factor": null,
+     "implied": "SH3RF2"
+    }
+   },
+   "gold": "NEFH",
+   "prompt": "What gene encodes P12036? Answer with the gene symbol. Put only the gene symbol in the JSON \"answer\" field.",
+   "task_id": "t023"
+  },
+  {
+   "template": "length_ratio",
+   "target_field": "length",
+   "target_accession": "O14926",
+   "accessions": [
+    "P98155",
+    "O14926"
+   ],
+   "params": {
+    "gene_A": "VLDLR",
+    "gene_B": "FSCN2",
+    "acc_A": "P98155",
+    "acc_B": "O14926"
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 2,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "length": 3
+     },
+     "clean_value": 492,
+     "corrupted_value": 3,
+     "factor": null,
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "length": 369,
+      "mass": 41293
+     },
+     "clean_value": 492,
+     "corrupted_value": 369,
+     "factor": 0.75,
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Is VLDLR at least twice as long as FSCN2? Answer yes or no with both lengths. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "t024"
+  },
+  {
+   "template": "mass_comparison",
+   "target_field": "mass",
+   "target_accession": "Q7L513",
+   "accessions": [
+    "Q7L513",
+    "O75144"
+   ],
+   "params": {
+    "gene_A": "FCRLA",
+    "gene_B": "ICOSLG",
+    "acc_A": "Q7L513",
+    "acc_B": "O75144"
+   },
+   "answer_type": "string",
+   "n_calls_expected": 2,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "mass": -38927
+     },
+     "clean_value": 38927,
+     "corrupted_value": -38927,
+     "factor": null,
+     "implied": "ICOSLG"
+    },
+    "plausible": {
+     "fields": {
+      "length": 287,
+      "mass": 31142
+     },
+     "clean_value": 38927,
+     "corrupted_value": 31142,
+     "factor": 0.8,
+     "implied": "ICOSLG"
+    }
+   },
+   "gold": "FCRLA",
+   "prompt": "Which is heavier, the protein encoded by FCRLA or ICOSLG? Give the gene symbol and both masses in kDa. Put only the gene symbol of the heavier protein in the JSON \"answer\" field.",
+   "task_id": "t025"
+  },
+  {
+   "template": "organism",
+   "target_field": "organism",
+   "target_accession": "Q13416",
+   "accessions": [
+    "Q13416"
+   ],
+   "params": {
+    "accession": "Q13416"
+   },
+   "answer_type": "string",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "organism": "Escherichia coli K-12"
+     },
+     "clean_value": "Homo sapiens",
+     "corrupted_value": "Escherichia coli K-12",
+     "factor": null,
+     "implied": "Escherichia coli K-12"
+    },
+    "plausible": {
+     "fields": {
+      "organism": "Mus musculus"
+     },
+     "clean_value": "Homo sapiens",
+     "corrupted_value": "Mus musculus",
+     "factor": null,
+     "implied": "Mus musculus"
+    }
+   },
+   "gold": "Homo sapiens",
+   "prompt": "What organism is Q13416 from, and is it a mammal? Answer with organism and yes/no. Put only the organism name in the JSON \"answer\" field.",
+   "task_id": "t026"
+  },
+  {
+   "template": "gene_symbol",
+   "target_field": "gene_symbol",
+   "target_accession": "P53701",
+   "accessions": [
+    "P53701"
+   ],
+   "params": {
+    "accession": "P53701"
+   },
+   "answer_type": "string",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "gene_symbol": "ZRF8"
+     },
+     "clean_value": "HCCS",
+     "corrupted_value": "ZRF8",
+     "factor": null,
+     "implied": "ZRF8"
+    },
+    "plausible": {
+     "fields": {
+      "gene_symbol": "SLC24A3"
+     },
+     "clean_value": "HCCS",
+     "corrupted_value": "SLC24A3",
+     "factor": null,
+     "implied": "SLC24A3"
+    }
+   },
+   "gold": "HCCS",
+   "prompt": "What gene encodes P53701? Answer with the gene symbol. Put only the gene symbol in the JSON \"answer\" field.",
+   "task_id": "t027"
+  },
+  {
+   "template": "length_threshold",
+   "target_field": "length",
+   "target_accession": "O75396",
+   "accessions": [
+    "O75396"
+   ],
+   "params": {
+    "accession": "O75396",
+    "threshold": 188
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "length": 3
+     },
+     "clean_value": 215,
+     "corrupted_value": 3,
+     "factor": null,
+     "implied": "no"
+    },
+    "plausible": {
+     "fields": {
+      "length": 161,
+      "mass": 18556
+     },
+     "clean_value": 215,
+     "corrupted_value": 161,
+     "factor": 0.75,
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does protein O75396 have more than 188 residues? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "t028"
+  },
+  {
+   "template": "mass_comparison",
+   "target_field": "mass",
+   "target_accession": "Q9UDT6",
+   "accessions": [
+    "O95782",
+    "Q9UDT6"
+   ],
+   "params": {
+    "gene_A": "AP2A1",
+    "gene_B": "CLIP2",
+    "acc_A": "O95782",
+    "acc_B": "Q9UDT6"
+   },
+   "answer_type": "string",
+   "n_calls_expected": 2,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "mass": -115837
+     },
+     "clean_value": 115837,
+     "corrupted_value": -115837,
+     "factor": null,
+     "implied": "AP2A1"
+    },
+    "plausible": {
+     "fields": {
+      "length": 837,
+      "mass": 92670
+     },
+     "clean_value": 115837,
+     "corrupted_value": 92670,
+     "factor": 0.8,
+     "implied": "AP2A1"
+    }
+   },
+   "gold": "CLIP2",
+   "prompt": "Which is heavier, the protein encoded by AP2A1 or CLIP2? Give the gene symbol and both masses in kDa. Put only the gene symbol of the heavier protein in the JSON \"answer\" field.",
+   "task_id": "t029"
+  },
+  {
+   "template": "organism",
+   "target_field": "organism",
+   "target_accession": "Q8NBQ7",
+   "accessions": [
+    "Q8NBQ7"
+   ],
+   "params": {
+    "accession": "Q8NBQ7"
+   },
+   "answer_type": "string",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "organism": "Escherichia coli K-12"
+     },
+     "clean_value": "Homo sapiens",
+     "corrupted_value": "Escherichia coli K-12",
+     "factor": null,
+     "implied": "Escherichia coli K-12"
+    },
+    "plausible": {
+     "fields": {
+      "organism": "Mus musculus"
+     },
+     "clean_value": "Homo sapiens",
+     "corrupted_value": "Mus musculus",
+     "factor": null,
+     "implied": "Mus musculus"
+    }
+   },
+   "gold": "Homo sapiens",
+   "prompt": "What organism is Q8NBQ7 from, and is it a mammal? Answer with organism and yes/no. Put only the organism name in the JSON \"answer\" field.",
+   "task_id": "t030"
+  },
+  {
+   "template": "gene_symbol",
+   "target_field": "gene_symbol",
+   "target_accession": "P27144",
+   "accessions": [
+    "P27144"
+   ],
+   "params": {
+    "accession": "P27144"
+   },
+   "answer_type": "string",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "gene_symbol": "LND1"
+     },
+     "clean_value": "AK4",
+     "corrupted_value": "LND1",
+     "factor": null,
+     "implied": "LND1"
+    },
+    "plausible": {
+     "fields": {
+      "gene_symbol": "PPIH"
+     },
+     "clean_value": "AK4",
+     "corrupted_value": "PPIH",
+     "factor": null,
+     "implied": "PPIH"
+    }
+   },
+   "gold": "AK4",
+   "prompt": "What gene encodes P27144? Answer with the gene symbol. Put only the gene symbol in the JSON \"answer\" field.",
+   "task_id": "t031"
+  },
+  {
+   "template": "length_ratio",
+   "target_field": "length",
+   "target_accession": "P40429",
+   "accessions": [
+    "Q9NR21",
+    "P40429"
+   ],
+   "params": {
+    "gene_A": "PARP11",
+    "gene_B": "RPL13A",
+    "acc_A": "Q9NR21",
+    "acc_B": "P40429"
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 2,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "length": 3
+     },
+     "clean_value": 203,
+     "corrupted_value": 3,
+     "factor": null,
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "length": 152,
+      "mass": 17683
+     },
+     "clean_value": 203,
+     "corrupted_value": 152,
+     "factor": 0.75,
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Is PARP11 at least twice as long as RPL13A? Answer yes or no with both lengths. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "t032"
+  },
+  {
+   "template": "mass_comparison",
+   "target_field": "mass",
+   "target_accession": "Q9NUQ2",
+   "accessions": [
+    "Q9NUQ2",
+    "Q9BV23"
+   ],
+   "params": {
+    "gene_A": "AGPAT5",
+    "gene_B": "ABHD6",
+    "acc_A": "Q9NUQ2",
+    "acc_B": "Q9BV23"
+   },
+   "answer_type": "string",
+   "n_calls_expected": 2,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "mass": -42072
+     },
+     "clean_value": 42072,
+     "corrupted_value": -42072,
+     "factor": null,
+     "implied": "ABHD6"
+    },
+    "plausible": {
+     "fields": {
+      "length": 273,
+      "mass": 31554
+     },
+     "clean_value": 42072,
+     "corrupted_value": 31554,
+     "factor": 0.75,
+     "implied": "ABHD6"
+    }
+   },
+   "gold": "AGPAT5",
+   "prompt": "Which is heavier, the protein encoded by AGPAT5 or ABHD6? Give the gene symbol and both masses in kDa. Put only the gene symbol of the heavier protein in the JSON \"answer\" field.",
+   "task_id": "t033"
+  },
+  {
+   "template": "organism",
+   "target_field": "organism",
+   "target_accession": "Q9BV23",
+   "accessions": [
+    "Q9BV23"
+   ],
+   "params": {
+    "accession": "Q9BV23"
+   },
+   "answer_type": "string",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "organism": "Escherichia coli K-12"
+     },
+     "clean_value": "Homo sapiens",
+     "corrupted_value": "Escherichia coli K-12",
+     "factor": null,
+     "implied": "Escherichia coli K-12"
+    },
+    "plausible": {
+     "fields": {
+      "organism": "Mus musculus"
+     },
+     "clean_value": "Homo sapiens",
+     "corrupted_value": "Mus musculus",
+     "factor": null,
+     "implied": "Mus musculus"
+    }
+   },
+   "gold": "Homo sapiens",
+   "prompt": "What organism is Q9BV23 from, and is it a mammal? Answer with organism and yes/no. Put only the organism name in the JSON \"answer\" field.",
+   "task_id": "t034"
+  },
+  {
+   "template": "gene_symbol",
+   "target_field": "gene_symbol",
+   "target_accession": "P98155",
+   "accessions": [
+    "P98155"
+   ],
+   "params": {
+    "accession": "P98155"
+   },
+   "answer_type": "string",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "gene_symbol": "DNV2"
+     },
+     "clean_value": "VLDLR",
+     "corrupted_value": "DNV2",
+     "factor": null,
+     "implied": "DNV2"
+    },
+    "plausible": {
+     "fields": {
+      "gene_symbol": "CLSTN3"
+     },
+     "clean_value": "VLDLR",
+     "corrupted_value": "CLSTN3",
+     "factor": null,
+     "implied": "CLSTN3"
+    }
+   },
+   "gold": "VLDLR",
+   "prompt": "What gene encodes P98155? Answer with the gene symbol. Put only the gene symbol in the JSON \"answer\" field.",
+   "task_id": "t035"
+  },
+  {
+   "template": "length_threshold",
+   "target_field": "length",
+   "target_accession": "Q8NBU5",
+   "accessions": [
+    "Q8NBU5"
+   ],
+   "params": {
+    "accession": "Q8NBU5",
+    "threshold": 316
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "length": 3
+     },
+     "clean_value": 361,
+     "corrupted_value": 3,
+     "factor": null,
+     "implied": "no"
+    },
+    "plausible": {
+     "fields": {
+      "length": 271,
+      "mass": 30558
+     },
+     "clean_value": 361,
+     "corrupted_value": 271,
+     "factor": 0.75,
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does protein Q8NBU5 have more than 316 residues? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "t036"
+  },
+  {
+   "template": "mass_comparison",
+   "target_field": "mass",
+   "target_accession": "Q8N6D2",
+   "accessions": [
+    "P27144",
+    "Q8N6D2"
+   ],
+   "params": {
+    "gene_A": "AK4",
+    "gene_B": "RNF182",
+    "acc_A": "P27144",
+    "acc_B": "Q8N6D2"
+   },
+   "answer_type": "string",
+   "n_calls_expected": 2,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "mass": -27402
+     },
+     "clean_value": 27402,
+     "corrupted_value": -27402,
+     "factor": null,
+     "implied": "AK4"
+    },
+    "plausible": {
+     "fields": {
+      "length": 198,
+      "mass": 21922
+     },
+     "clean_value": 27402,
+     "corrupted_value": 21922,
+     "factor": 0.8,
+     "implied": "AK4"
+    }
+   },
+   "gold": "RNF182",
+   "prompt": "Which is heavier, the protein encoded by AK4 or RNF182? Give the gene symbol and both masses in kDa. Put only the gene symbol of the heavier protein in the JSON \"answer\" field.",
+   "task_id": "t037"
+  },
+  {
+   "template": "organism",
+   "target_field": "organism",
+   "target_accession": "P68543",
+   "accessions": [
+    "P68543"
+   ],
+   "params": {
+    "accession": "P68543"
+   },
+   "answer_type": "string",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "organism": "Escherichia coli K-12"
+     },
+     "clean_value": "Homo sapiens",
+     "corrupted_value": "Escherichia coli K-12",
+     "factor": null,
+     "implied": "Escherichia coli K-12"
+    },
+    "plausible": {
+     "fields": {
+      "organism": "Mus musculus"
+     },
+     "clean_value": "Homo sapiens",
+     "corrupted_value": "Mus musculus",
+     "factor": null,
+     "implied": "Mus musculus"
+    }
+   },
+   "gold": "Homo sapiens",
+   "prompt": "What organism is P68543 from, and is it a mammal? Answer with organism and yes/no. Put only the organism name in the JSON \"answer\" field.",
+   "task_id": "t038"
+  },
+  {
+   "template": "gene_symbol",
+   "target_field": "gene_symbol",
+   "target_accession": "O95750",
+   "accessions": [
+    "O95750"
+   ],
+   "params": {
+    "accession": "O95750"
+   },
+   "answer_type": "string",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "gene_symbol": "DMX9"
+     },
+     "clean_value": "FGF19",
+     "corrupted_value": "DMX9",
+     "factor": null,
+     "implied": "DMX9"
+    },
+    "plausible": {
+     "fields": {
+      "gene_symbol": "RNF182"
+     },
+     "clean_value": "FGF19",
+     "corrupted_value": "RNF182",
+     "factor": null,
+     "implied": "RNF182"
+    }
+   },
+   "gold": "FGF19",
+   "prompt": "What gene encodes O95750? Answer with the gene symbol. Put only the gene symbol in the JSON \"answer\" field.",
+   "task_id": "t039"
+  }
+ ]
+}

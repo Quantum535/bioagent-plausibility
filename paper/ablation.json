@@ -1,0 +1,226 @@
+{
+ "summary": {
+  "adaptive|clean": {
+   "n": 120,
+   "accuracy": 1.0,
+   "flagged": 0.008333333333333333,
+   "silent": 0.0,
+   "recall": 0.0,
+   "tool_calls": 1.375,
+   "any_tool": 1.0,
+   "saw_corrupt": 0.0,
+   "parse_fail": 0,
+   "cost": 0.627804,
+   "propagation": null
+  },
+  "adaptive|impossible": {
+   "n": 120,
+   "accuracy": 0.25833333333333336,
+   "flagged": 1.0,
+   "silent": 0.0,
+   "recall": 0.09166666666666666,
+   "tool_calls": 1.4666666666666666,
+   "any_tool": 1.0,
+   "saw_corrupt": 1.0,
+   "parse_fail": 0,
+   "cost": 1.108428,
+   "propagation": 0.7416666666666667,
+   "prop_ci": [
+    0.6567130404034741,
+    0.8116271619194934
+   ],
+   "prop_kn": "89/120"
+  },
+  "adaptive|plausible": {
+   "n": 120,
+   "accuracy": 0.025,
+   "flagged": 0.30833333333333335,
+   "silent": 0.6916666666666667,
+   "recall": 0.041666666666666664,
+   "tool_calls": 1.4333333333333333,
+   "any_tool": 1.0,
+   "saw_corrupt": 1.0,
+   "parse_fail": 0,
+   "cost": 0.724498,
+   "propagation": 0.975,
+   "prop_ci": [
+    0.9290687625956524,
+    0.9914619799012145
+   ],
+   "prop_kn": "117/120"
+  },
+  "adaptive|clean+verify": {
+   "n": 120,
+   "accuracy": 1.0,
+   "flagged": 0.041666666666666664,
+   "silent": 0.0,
+   "recall": 0.008333333333333333,
+   "tool_calls": 1.3916666666666666,
+   "any_tool": 1.0,
+   "saw_corrupt": 0.0,
+   "parse_fail": 0,
+   "cost": 0.661386,
+   "propagation": null
+  },
+  "adaptive|impossible+verify": {
+   "n": 120,
+   "accuracy": 0.6333333333333333,
+   "flagged": 1.0,
+   "silent": 0.0,
+   "recall": 0.24166666666666667,
+   "tool_calls": 1.6916666666666667,
+   "any_tool": 1.0,
+   "saw_corrupt": 1.0,
+   "parse_fail": 0,
+   "cost": 1.416998,
+   "propagation": 0.38333333333333336,
+   "prop_ci": [
+    0.30124387764148153,
+    0.47266085227156884
+   ],
+   "prop_kn": "46/120"
+  },
+  "adaptive|plausible+verify": {
+   "n": 120,
+   "accuracy": 0.19166666666666668,
+   "flagged": 0.5333333333333333,
+   "silent": 0.4666666666666667,
+   "recall": 0.2,
+   "tool_calls": 1.75,
+   "any_tool": 1.0,
+   "saw_corrupt": 1.0,
+   "parse_fail": 0,
+   "cost": 1.085758,
+   "propagation": 0.8083333333333333,
+   "prop_ci": [
+    0.7287868300416364,
+    0.8687506694738739
+   ],
+   "prop_kn": "97/120"
+  },
+  "disabled|clean": {
+   "n": 40,
+   "accuracy": 1.0,
+   "flagged": 0.0,
+   "silent": 0.0,
+   "recall": 0.0,
+   "tool_calls": 1.375,
+   "any_tool": 1.0,
+   "saw_corrupt": 0.0,
+   "parse_fail": 0,
+   "cost": 0.209348,
+   "propagation": null
+  },
+  "disabled|impossible": {
+   "n": 40,
+   "accuracy": 0.3,
+   "flagged": 0.975,
+   "silent": 0.025,
+   "recall": 0.0,
+   "tool_calls": 1.375,
+   "any_tool": 1.0,
+   "saw_corrupt": 1.0,
+   "parse_fail": 0,
+   "cost": 0.300036,
+   "propagation": 0.7,
+   "prop_ci": [
+    0.545696893456796,
+    0.8192532908430471
+   ],
+   "prop_kn": "28/40"
+  },
+  "disabled|plausible": {
+   "n": 40,
+   "accuracy": 0.075,
+   "flagged": 0.35,
+   "silent": 0.65,
+   "recall": 0.075,
+   "tool_calls": 1.45,
+   "any_tool": 1.0,
+   "saw_corrupt": 1.0,
+   "parse_fail": 0,
+   "cost": 0.24981,
+   "propagation": 0.925,
+   "prop_ci": [
+    0.8013546984090248,
+    0.9741644432281419
+   ],
+   "prop_kn": "37/40"
+  },
+  "disabled|clean+verify": {
+   "n": 40,
+   "accuracy": 1.0,
+   "flagged": 0.075,
+   "silent": 0.0,
+   "recall": 0.0,
+   "tool_calls": 1.375,
+   "any_tool": 1.0,
+   "saw_corrupt": 0.0,
+   "parse_fail": 0,
+   "cost": 0.224322,
+   "propagation": null
+  },
+  "disabled|impossible+verify": {
+   "n": 40,
+   "accuracy": 0.7,
+   "flagged": 1.0,
+   "silent": 0.0,
+   "recall": 0.175,
+   "tool_calls": 1.55,
+   "any_tool": 1.0,
+   "saw_corrupt": 1.0,
+   "parse_fail": 0,
+   "cost": 0.375062,
+   "propagation": 0.375,
+   "prop_ci": [
+    0.2422277353579172,
+    0.529678399454681
+   ],
+   "prop_kn": "15/40"
+  },
+  "disabled|plausible+verify": {
+   "n": 40,
+   "accuracy": 0.225,
+   "flagged": 0.4,
+   "silent": 0.6,
+   "recall": 0.225,
+   "tool_calls": 1.65,
+   "any_tool": 1.0,
+   "saw_corrupt": 1.0,
+   "parse_fail": 0,
+   "cost": 0.30659,
+   "propagation": 0.775,
+   "prop_ci": [
+    0.6249660359590695,
+    0.8768404674532148
+   ],
+   "prop_kn": "31/40"
+  }
+ },
+ "cues": {
+  "adaptive|impossible": {
+   "n": 120,
+   "crossfield": 0.7,
+   "recall": 0.525,
+   "rule": 0.23333333333333334
+  },
+  "adaptive|plausible": {
+   "n": 37,
+   "crossfield": 0.7837837837837838,
+   "recall": 0.7567567567567568,
+   "rule": 0.0
+  },
+  "disabled|impossible": {
+   "n": 39,
+   "crossfield": 0.7435897435897436,
+   "recall": 0.5641025641025641,
+   "rule": 0.20512820512820512
+  },
+  "disabled|plausible": {
+   "n": 14,
+   "crossfield": 0.7142857142857143,
+   "recall": 0.5714285714285714,
+   "rule": 0.0
+  }
+ }
+}
