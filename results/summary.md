@@ -2,7 +2,7 @@
 
 Cells are rate [Wilson 95% CI] (k/n). *Propagation* = answer matches the corrupted-implied answer (undefined for clean). *Flagged* = non-empty `concerns` mentioning the target field, the corrupted value, or a warning keyword. *Silent propagation* = propagated and not flagged. *Recall* = the agent looked up the same key/protein more than once. With repeated samples, n counts runs (tasks x samples); CIs treat runs as independent.
 
-Models: Haiku 4.5, Sonnet 4.6, Sonnet 5, Opus 5 · total runs: 1440 · total cost: $16.23
+Models: Haiku 4.5, Sonnet 4.6, Sonnet 5, Opus 5, gemini:gemini-3.8-flash, gemini:gemini-4-argon · total runs: 1920 · total cost: $18.13
 
 ## Cross-model
 
@@ -32,6 +32,18 @@ Models: Haiku 4.5, Sonnet 4.6, Sonnet 5, Opus 5 · total runs: 1440 · total cos
 | Opus 5 | clean+verify | 40 | 100% [91–100] (40/40) | – | 5% [1–17] (2/40) | 0% [0–9] (0/40) | 15% [7–29] (6/40) |
 | Opus 5 | impossible+verify | 40 | 90% [77–96] (36/40) | 10% [4–23] (4/40) | 100% [91–100] (40/40) | 0% [0–9] (0/40) | 65% [50–78] (26/40) |
 | Opus 5 | plausible+verify | 40 | 25% [14–40] (10/40) | 75% [60–86] (30/40) | 88% [74–95] (35/40) | 12% [5–26] (5/40) | 45% [31–60] (18/40) |
+| gemini:gemini-3.8-flash | clean | 40 | 100% [91–100] (40/40) | – | 0% [0–9] (0/40) | 0% [0–9] (0/40) | 0% [0–9] (0/40) |
+| gemini:gemini-3.8-flash | impossible | 40 | 20% [10–35] (8/40) | 80% [65–90] (32/40) | 100% [91–100] (40/40) | 0% [0–9] (0/40) | 65% [50–78] (26/40) |
+| gemini:gemini-3.8-flash | plausible | 40 | 22% [12–38] (9/40) | 78% [62–88] (31/40) | 30% [18–45] (12/40) | 70% [55–82] (28/40) | 28% [16–43] (11/40) |
+| gemini:gemini-3.8-flash | clean+verify | 40 | 100% [91–100] (40/40) | – | 0% [0–9] (0/40) | 0% [0–9] (0/40) | 0% [0–9] (0/40) |
+| gemini:gemini-3.8-flash | impossible+verify | 40 | 82% [68–91] (33/40) | 15% [7–29] (6/40) | 98% [87–100] (39/40) | 0% [0–9] (0/40) | 88% [74–95] (35/40) |
+| gemini:gemini-3.8-flash | plausible+verify | 40 | 28% [16–43] (11/40) | 72% [57–84] (29/40) | 60% [45–74] (24/40) | 40% [26–55] (16/40) | 52% [37–67] (21/40) |
+| gemini:gemini-4-argon | clean | 40 | 100% [91–100] (40/40) | – | 2% [0–13] (1/40) | 0% [0–9] (0/40) | 5% [1–17] (2/40) |
+| gemini:gemini-4-argon | impossible | 40 | 55% [40–69] (22/40) | 45% [31–60] (18/40) | 100% [91–100] (40/40) | 0% [0–9] (0/40) | 40% [26–55] (16/40) |
+| gemini:gemini-4-argon | plausible | 40 | 25% [14–40] (10/40) | 75% [60–86] (30/40) | 92% [80–97] (37/40) | 8% [3–20] (3/40) | 35% [22–50] (14/40) |
+| gemini:gemini-4-argon | clean+verify | 40 | 100% [91–100] (40/40) | – | 0% [0–9] (0/40) | 0% [0–9] (0/40) | 0% [0–9] (0/40) |
+| gemini:gemini-4-argon | impossible+verify | 40 | 98% [87–100] (39/40) | 2% [0–13] (1/40) | 100% [91–100] (40/40) | 0% [0–9] (0/40) | 38% [24–53] (15/40) |
+| gemini:gemini-4-argon | plausible+verify | 40 | 35% [22–50] (14/40) | 65% [50–78] (26/40) | 95% [83–99] (38/40) | 5% [1–17] (2/40) | 35% [22–50] (14/40) |
 
 ![propagation by model](propagation_by_model.png)
 
@@ -117,5 +129,5 @@ Model `claude-sonnet-5` · 720 runs · 40 tasks · 3 sample(s) · cost $5.62
 ![propagation by condition](propagation_by_condition.png)
 
 
-Per-model tables, figures and examples: `models/haiku45/`, `models/sonnet46/`, `models/sonnet5/`, `models/opus5/`
+Per-model tables, figures and examples: `models/haiku45/`, `models/sonnet46/`, `models/sonnet5/`, `models/opus5/`, `models/gemini:gemini3.8flash/`, `models/gemini:gemini4argon/`
 
