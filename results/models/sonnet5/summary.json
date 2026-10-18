@@ -12,6 +12,8 @@
  "by_condition": {
   "clean": {
    "n": 120,
+   "n_answered": 120,
+   "unanswered": 0,
    "accuracy": {
     "k": 120,
     "n": 120,
@@ -61,6 +63,8 @@
   },
   "impossible": {
    "n": 120,
+   "n_answered": 120,
+   "unanswered": 0,
    "accuracy": {
     "k": 31,
     "n": 120,
@@ -110,6 +114,8 @@
   },
   "plausible": {
    "n": 120,
+   "n_answered": 120,
+   "unanswered": 0,
    "accuracy": {
     "k": 3,
     "n": 120,
@@ -159,6 +165,8 @@
   },
   "clean+verify": {
    "n": 120,
+   "n_answered": 120,
+   "unanswered": 0,
    "accuracy": {
     "k": 120,
     "n": 120,
@@ -208,6 +216,8 @@
   },
   "impossible+verify": {
    "n": 120,
+   "n_answered": 120,
+   "unanswered": 0,
    "accuracy": {
     "k": 76,
     "n": 120,
@@ -257,6 +267,8 @@
   },
   "plausible+verify": {
    "n": 120,
+   "n_answered": 120,
+   "unanswered": 0,
    "accuracy": {
     "k": 23,
     "n": 120,
@@ -308,6 +320,8 @@
  "by_condition_field": {
   "clean|length": {
    "n": 30,
+   "n_answered": 30,
+   "unanswered": 0,
    "accuracy": {
     "k": 30,
     "n": 30,
@@ -357,6 +371,8 @@
   },
   "clean|mass": {
    "n": 30,
+   "n_answered": 30,
+   "unanswered": 0,
    "accuracy": {
     "k": 30,
     "n": 30,
@@ -406,6 +422,8 @@
   },
   "clean|organism": {
    "n": 30,
+   "n_answered": 30,
+   "unanswered": 0,
    "accuracy": {
     "k": 30,
     "n": 30,
@@ -455,6 +473,8 @@
   },
   "clean|gene_symbol": {
    "n": 30,
+   "n_answered": 30,
+   "unanswered": 0,
    "accuracy": {
     "k": 30,
     "n": 30,
@@ -504,6 +524,8 @@
   },
   "impossible|length": {
    "n": 30,
+   "n_answered": 30,
+   "unanswered": 0,
    "accuracy": {
     "k": 3,
     "n": 30,
@@ -553,6 +575,8 @@
   },
   "impossible|mass": {
    "n": 30,
+   "n_answered": 30,
+   "unanswered": 0,
    "accuracy": {
     "k": 22,
     "n": 30,
@@ -602,6 +626,8 @@
   },
   "impossible|organism": {
    "n": 30,
+   "n_answered": 30,
+   "unanswered": 0,
    "accuracy": {
     "k": 0,
     "n": 30,
@@ -651,6 +677,8 @@
   },
   "impossible|gene_symbol": {
    "n": 30,
+   "n_answered": 30,
+   "unanswered": 0,
    "accuracy": {
     "k": 6,
     "n": 30,
@@ -700,6 +728,8 @@
   },
   "plausible|length": {
    "n": 30,
+   "n_answered": 30,
+   "unanswered": 0,
    "accuracy": {
     "k": 0,
     "n": 30,
@@ -749,6 +779,8 @@
   },
   "plausible|mass": {
    "n": 30,
+   "n_answered": 30,
+   "unanswered": 0,
    "accuracy": {
     "k": 0,
     "n": 30,
@@ -798,6 +830,8 @@
   },
   "plausible|organism": {
    "n": 30,
+   "n_answered": 30,
+   "unanswered": 0,
    "accuracy": {
     "k": 0,
     "n": 30,
@@ -847,6 +881,8 @@
   },
   "plausible|gene_symbol": {
    "n": 30,
+   "n_answered": 30,
+   "unanswered": 0,
    "accuracy": {
     "k": 3,
     "n": 30,
@@ -896,6 +932,8 @@
   },
   "clean+verify|length": {
    "n": 30,
+   "n_answered": 30,
+   "unanswered": 0,
    "accuracy": {
     "k": 30,
     "n": 30,
@@ -945,6 +983,8 @@
   },
   "clean+verify|mass": {
    "n": 30,
+   "n_answered": 30,
+   "unanswered": 0,
    "accuracy": {
     "k": 30,
     "n": 30,
@@ -994,6 +1034,8 @@
   },
   "clean+verify|organism": {
    "n": 30,
+   "n_answered": 30,
+   "unanswered": 0,
    "accuracy": {
     "k": 30,
     "n": 30,
@@ -1043,6 +1085,8 @@
   },
   "clean+verify|gene_symbol": {
    "n": 30,
+   "n_answered": 30,
+   "unanswered": 0,
    "accuracy": {
     "k": 30,
     "n": 30,
@@ -1092,6 +1136,8 @@
   },
   "impossible+verify|length": {
    "n": 30,
+   "n_answered": 30,
+   "unanswered": 0,
    "accuracy": {
     "k": 21,
     "n": 30,
@@ -1141,6 +1187,8 @@
   },
   "impossible+verify|mass": {
    "n": 30,
+   "n_answered": 30,
+   "unanswered": 0,
    "accuracy": {
     "k": 25,
     "n": 30,
@@ -1190,6 +1238,8 @@
   },
   "impossible+verify|organism": {
    "n": 30,
+   "n_answered": 30,
+   "unanswered": 0,
    "accuracy": {
     "k": 4,
     "n": 30,
@@ -1239,6 +1289,8 @@
   },
   "impossible+verify|gene_symbol": {
    "n": 30,
+   "n_answered": 30,
+   "unanswered": 0,
    "accuracy": {
     "k": 26,
     "n": 30,
@@ -1288,6 +1340,8 @@
   },
   "plausible+verify|length": {
    "n": 30,
+   "n_answered": 30,
+   "unanswered": 0,
    "accuracy": {
     "k": 0,
     "n": 30,
@@ -1337,6 +1391,8 @@
   },
   "plausible+verify|mass": {
    "n": 30,
+   "n_answered": 30,
+   "unanswered": 0,
    "accuracy": {
     "k": 0,
     "n": 30,
@@ -1386,6 +1442,8 @@
   },
   "plausible+verify|organism": {
    "n": 30,
+   "n_answered": 30,
+   "unanswered": 0,
    "accuracy": {
     "k": 0,
     "n": 30,
@@ -1435,6 +1493,8 @@
   },
   "plausible+verify|gene_symbol": {
    "n": 30,
+   "n_answered": 30,
+   "unanswered": 0,
    "accuracy": {
     "k": 23,
     "n": 30,
@@ -1506,6 +1566,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.00651,
    "usage": {
     "input_tokens": 2025,
@@ -1537,6 +1598,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.00663,
    "usage": {
     "input_tokens": 2015,
@@ -1568,6 +1630,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.006624,
    "usage": {
     "input_tokens": 2012,
@@ -1601,6 +1664,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.0094,
    "usage": {
     "input_tokens": 2025,
@@ -1632,6 +1696,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.00454,
    "usage": {
     "input_tokens": 1755,
@@ -1663,6 +1728,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.00645,
    "usage": {
     "input_tokens": 2020,
@@ -1694,6 +1760,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004558,
    "usage": {
     "input_tokens": 1754,
@@ -1727,6 +1794,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.012018,
    "usage": {
     "input_tokens": 2029,
@@ -1760,6 +1828,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.009096,
    "usage": {
     "input_tokens": 1758,
@@ -1791,6 +1860,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004362,
    "usage": {
     "input_tokens": 1746,
@@ -1822,6 +1892,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004816,
    "usage": {
     "input_tokens": 1758,
@@ -1855,6 +1926,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004966,
    "usage": {
     "input_tokens": 1748,
@@ -1888,6 +1960,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.00568,
    "usage": {
     "input_tokens": 1750,
@@ -1921,6 +1994,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.005866,
    "usage": {
     "input_tokens": 1748,
@@ -1954,6 +2028,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.009074,
    "usage": {
     "input_tokens": 1762,
@@ -1985,6 +2060,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.006322,
    "usage": {
     "input_tokens": 2041,
@@ -2016,6 +2092,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.00457,
    "usage": {
     "input_tokens": 1730,
@@ -2047,6 +2124,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.006332,
    "usage": {
     "input_tokens": 2016,
@@ -2078,6 +2156,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004208,
    "usage": {
     "input_tokens": 1734,
@@ -2109,6 +2188,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004468,
    "usage": {
     "input_tokens": 1729,
@@ -2142,6 +2222,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.009122,
    "usage": {
     "input_tokens": 2016,
@@ -2175,6 +2256,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.008576,
    "usage": {
     "input_tokens": 1733,
@@ -2208,6 +2290,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.006346,
    "usage": {
     "input_tokens": 1733,
@@ -2239,6 +2322,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.006114,
    "usage": {
     "input_tokens": 1997,
@@ -2272,6 +2356,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.007388,
    "usage": {
     "input_tokens": 1734,
@@ -2303,6 +2388,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.006618,
    "usage": {
     "input_tokens": 2009,
@@ -2334,6 +2420,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.006148,
    "usage": {
     "input_tokens": 2034,
@@ -2365,6 +2452,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004558,
    "usage": {
     "input_tokens": 1754,
@@ -2396,6 +2484,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.006478,
    "usage": {
     "input_tokens": 2039,
@@ -2427,6 +2516,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004672,
    "usage": {
     "input_tokens": 1766,
@@ -2460,6 +2550,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.010064,
    "usage": {
     "input_tokens": 1997,
@@ -2491,6 +2582,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004318,
    "usage": {
     "input_tokens": 1739,
@@ -2524,6 +2616,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.007714,
    "usage": {
     "input_tokens": 1757,
@@ -2557,6 +2650,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.005876,
    "usage": {
     "input_tokens": 1728,
@@ -2588,6 +2682,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.00473,
    "usage": {
     "input_tokens": 1765,
@@ -2622,6 +2717,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.013146,
    "usage": {
     "input_tokens": 2033,
@@ -2655,6 +2751,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.006762,
    "usage": {
     "input_tokens": 1766,
@@ -2688,6 +2785,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004602,
    "usage": {
     "input_tokens": 1766,
@@ -2719,6 +2817,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.006632,
    "usage": {
     "input_tokens": 2026,
@@ -2750,6 +2849,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004524,
    "usage": {
     "input_tokens": 1737,
@@ -2781,6 +2881,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.006856,
    "usage": {
     "input_tokens": 2038,
@@ -2814,6 +2915,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.009458,
    "usage": {
     "input_tokens": 2009,
@@ -2848,6 +2950,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.01369,
    "usage": {
     "input_tokens": 2920,
@@ -2879,6 +2982,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.00446,
    "usage": {
     "input_tokens": 1755,
@@ -2910,6 +3014,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004492,
    "usage": {
     "input_tokens": 1736,
@@ -2943,6 +3048,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.005942,
    "usage": {
     "input_tokens": 1751,
@@ -2976,6 +3082,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.00904,
    "usage": {
     "input_tokens": 1740,
@@ -3007,6 +3114,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.006414,
    "usage": {
     "input_tokens": 2017,
@@ -3040,6 +3148,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.00569,
    "usage": {
     "input_tokens": 1735,
@@ -3071,6 +3180,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.006182,
    "usage": {
     "input_tokens": 2001,
@@ -3102,6 +3212,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.006452,
    "usage": {
     "input_tokens": 2006,
@@ -3133,6 +3244,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004516,
    "usage": {
     "input_tokens": 1753,
@@ -3164,6 +3276,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.006612,
    "usage": {
     "input_tokens": 2006,
@@ -3198,6 +3311,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.009842,
    "usage": {
     "input_tokens": 2001,
@@ -3229,6 +3343,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004146,
    "usage": {
     "input_tokens": 1718,
@@ -3262,6 +3377,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.009632,
    "usage": {
     "input_tokens": 2006,
@@ -3295,6 +3411,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.005804,
    "usage": {
     "input_tokens": 1752,
@@ -3328,6 +3445,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.007582,
    "usage": {
     "input_tokens": 1756,
@@ -3359,6 +3477,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004724,
    "usage": {
     "input_tokens": 1762,
@@ -3390,6 +3509,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004724,
    "usage": {
     "input_tokens": 1762,
@@ -3423,6 +3543,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.007726,
    "usage": {
     "input_tokens": 1733,
@@ -3454,6 +3575,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.006918,
    "usage": {
     "input_tokens": 2034,
@@ -3488,6 +3610,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.012934,
    "usage": {
     "input_tokens": 2872,
@@ -3519,6 +3642,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.00455,
    "usage": {
     "input_tokens": 1750,
@@ -3550,6 +3674,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.008362,
    "usage": {
     "input_tokens": 2051,
@@ -3584,6 +3709,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.01195,
    "usage": {
     "input_tokens": 3010,
@@ -3615,6 +3741,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004558,
    "usage": {
     "input_tokens": 1749,
@@ -3648,6 +3775,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.007806,
    "usage": {
     "input_tokens": 1753,
@@ -3679,6 +3807,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004174,
    "usage": {
     "input_tokens": 1732,
@@ -3712,6 +3841,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.005584,
    "usage": {
     "input_tokens": 1732,
@@ -3745,6 +3875,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.005688,
    "usage": {
     "input_tokens": 1734,
@@ -3776,6 +3907,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.006304,
    "usage": {
     "input_tokens": 1997,
@@ -3807,6 +3939,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.00661,
    "usage": {
     "input_tokens": 1980,
@@ -3838,6 +3971,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004466,
    "usage": {
     "input_tokens": 1738,
@@ -3869,6 +4003,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.00637,
    "usage": {
     "input_tokens": 2000,
@@ -3900,6 +4035,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.00626,
    "usage": {
     "input_tokens": 2000,
@@ -3933,6 +4069,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.009672,
    "usage": {
     "input_tokens": 1996,
@@ -3966,6 +4103,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.00909,
    "usage": {
     "input_tokens": 2000,
@@ -4000,6 +4138,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.01891,
    "usage": {
     "input_tokens": 2050,
@@ -4031,6 +4170,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004308,
    "usage": {
     "input_tokens": 1739,
@@ -4062,6 +4202,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004504,
    "usage": {
     "input_tokens": 1737,
@@ -4093,6 +4234,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004676,
    "usage": {
     "input_tokens": 1758,
@@ -4126,6 +4268,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.005296,
    "usage": {
     "input_tokens": 1728,
@@ -4159,6 +4302,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.005798,
    "usage": {
     "input_tokens": 1744,
@@ -4192,6 +4336,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.009332,
    "usage": {
     "input_tokens": 1741,
@@ -4223,6 +4368,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004696,
    "usage": {
     "input_tokens": 1758,
@@ -4254,6 +4400,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.006846,
    "usage": {
     "input_tokens": 2018,
@@ -4285,6 +4432,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.00472,
    "usage": {
     "input_tokens": 1770,
@@ -4316,6 +4464,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.00699,
    "usage": {
     "input_tokens": 2045,
@@ -4347,6 +4496,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004584,
    "usage": {
     "input_tokens": 1757,
@@ -4380,6 +4530,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.009896,
    "usage": {
     "input_tokens": 2018,
@@ -4411,6 +4562,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.0043,
    "usage": {
     "input_tokens": 1740,
@@ -4444,6 +4596,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.007682,
    "usage": {
     "input_tokens": 1761,
@@ -4477,6 +4630,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.005646,
    "usage": {
     "input_tokens": 1738,
@@ -4510,6 +4664,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.011656,
    "usage": {
     "input_tokens": 1758,
@@ -4543,6 +4698,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.006762,
    "usage": {
     "input_tokens": 2011,
@@ -4574,6 +4730,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.006542,
    "usage": {
     "input_tokens": 2031,
@@ -4605,6 +4762,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.006456,
    "usage": {
     "input_tokens": 2048,
@@ -4636,6 +4794,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.006536,
    "usage": {
     "input_tokens": 2048,
@@ -4667,6 +4826,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004538,
    "usage": {
     "input_tokens": 1754,
@@ -4702,6 +4862,7 @@
    "n_tool_calls": 3,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.015258,
    "usage": {
     "input_tokens": 3189,
@@ -4735,6 +4896,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.009266,
    "usage": {
     "input_tokens": 2048,
@@ -4766,6 +4928,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004556,
    "usage": {
     "input_tokens": 1753,
@@ -4797,6 +4960,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004166,
    "usage": {
     "input_tokens": 1723,
@@ -4830,6 +4994,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.007358,
    "usage": {
     "input_tokens": 1769,
@@ -4861,6 +5026,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004578,
    "usage": {
     "input_tokens": 1774,
@@ -4894,6 +5060,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.014294,
    "usage": {
     "input_tokens": 2022,
@@ -4927,6 +5094,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.00687,
    "usage": {
     "input_tokens": 1735,
@@ -4958,6 +5126,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.00503,
    "usage": {
     "input_tokens": 1790,
@@ -4991,6 +5160,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.007068,
    "usage": {
     "input_tokens": 1724,
@@ -5022,6 +5192,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.006732,
    "usage": {
     "input_tokens": 2021,
@@ -5055,6 +5226,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.007802,
    "usage": {
     "input_tokens": 1786,
@@ -5086,6 +5258,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.006548,
    "usage": {
     "input_tokens": 2009,
@@ -5117,6 +5290,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004656,
    "usage": {
     "input_tokens": 1753,
@@ -5150,6 +5324,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.009178,
    "usage": {
     "input_tokens": 2034,
@@ -5181,6 +5356,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004486,
    "usage": {
     "input_tokens": 1738,
@@ -5212,6 +5388,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.00436,
    "usage": {
     "input_tokens": 1735,
@@ -5245,6 +5422,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.005626,
    "usage": {
     "input_tokens": 1733,
@@ -5278,6 +5456,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.005666,
    "usage": {
     "input_tokens": 1718,
@@ -5311,6 +5490,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.008798,
    "usage": {
     "input_tokens": 1754,
@@ -5342,6 +5522,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.006784,
    "usage": {
     "input_tokens": 2082,
@@ -5373,6 +5554,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.006646,
    "usage": {
     "input_tokens": 2073,
@@ -5406,6 +5588,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.007058,
    "usage": {
     "input_tokens": 2069,
@@ -5437,6 +5620,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.0047,
    "usage": {
     "input_tokens": 1825,
@@ -5471,6 +5655,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.012216,
    "usage": {
     "input_tokens": 2073,
@@ -5502,6 +5687,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004502,
    "usage": {
     "input_tokens": 1816,
@@ -5535,6 +5721,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.006688,
    "usage": {
     "input_tokens": 1824,
@@ -5569,6 +5756,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.015144,
    "usage": {
     "input_tokens": 2072,
@@ -5602,6 +5790,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.010696,
    "usage": {
     "input_tokens": 1828,
@@ -5636,6 +5825,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.01744,
    "usage": {
     "input_tokens": 2095,
@@ -5667,6 +5857,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004776,
    "usage": {
     "input_tokens": 1818,
@@ -5698,6 +5889,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004896,
    "usage": {
     "input_tokens": 1818,
@@ -5729,6 +5921,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.006492,
    "usage": {
     "input_tokens": 2086,
@@ -5762,6 +5955,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.008196,
    "usage": {
     "input_tokens": 1818,
@@ -5795,6 +5989,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.009422,
    "usage": {
     "input_tokens": 2086,
@@ -5826,6 +6021,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.00458,
    "usage": {
     "input_tokens": 1800,
@@ -5859,6 +6055,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.010282,
    "usage": {
     "input_tokens": 2086,
@@ -5890,6 +6087,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004528,
    "usage": {
     "input_tokens": 1819,
@@ -5925,6 +6123,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.023798,
    "usage": {
     "input_tokens": 3734,
@@ -5958,6 +6157,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.008138,
    "usage": {
     "input_tokens": 1799,
@@ -5991,6 +6191,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.013066,
    "usage": {
     "input_tokens": 1803,
@@ -6024,6 +6225,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.007028,
    "usage": {
     "input_tokens": 1819,
@@ -6055,6 +6257,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.006494,
    "usage": {
     "input_tokens": 2067,
@@ -6090,6 +6293,7 @@
    "n_tool_calls": 3,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.028034,
    "usage": {
     "input_tokens": 5317,
@@ -6121,6 +6325,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.00658,
    "usage": {
     "input_tokens": 2090,
@@ -6152,6 +6357,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.006414,
    "usage": {
     "input_tokens": 2092,
@@ -6187,6 +6393,7 @@
    "n_tool_calls": 3,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.015842,
    "usage": {
     "input_tokens": 3276,
@@ -6218,6 +6425,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004698,
    "usage": {
     "input_tokens": 1824,
@@ -6249,6 +6457,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.006524,
    "usage": {
     "input_tokens": 2092,
@@ -6280,6 +6489,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004666,
    "usage": {
     "input_tokens": 1823,
@@ -6313,6 +6523,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.013864,
    "usage": {
     "input_tokens": 2087,
@@ -6346,6 +6557,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.007398,
    "usage": {
     "input_tokens": 1839,
@@ -6377,6 +6589,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.00463,
    "usage": {
     "input_tokens": 1835,
@@ -6410,6 +6623,7 @@
    "n_tool_calls": 3,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.01058,
    "usage": {
     "input_tokens": 3215,
@@ -6443,6 +6657,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.005344,
    "usage": {
     "input_tokens": 1837,
@@ -6474,6 +6689,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.006578,
    "usage": {
     "input_tokens": 2079,
@@ -6508,6 +6724,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.009404,
    "usage": {
     "input_tokens": 1822,
@@ -6542,6 +6759,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.020942,
    "usage": {
     "input_tokens": 2106,
@@ -6577,6 +6795,7 @@
    "n_tool_calls": 3,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.017742,
    "usage": {
     "input_tokens": 4816,
@@ -6610,6 +6829,7 @@
    "n_tool_calls": 4,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.024568,
    "usage": {
     "input_tokens": 7009,
@@ -6641,6 +6861,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.006976,
    "usage": {
     "input_tokens": 2108,
@@ -6672,6 +6893,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004594,
    "usage": {
     "input_tokens": 1807,
@@ -6705,6 +6927,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.009268,
    "usage": {
     "input_tokens": 2079,
@@ -6736,6 +6959,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004528,
    "usage": {
     "input_tokens": 1819,
@@ -6767,6 +6991,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004622,
    "usage": {
     "input_tokens": 1806,
@@ -6801,6 +7026,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.00997,
    "usage": {
     "input_tokens": 1810,
@@ -6832,6 +7058,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.006682,
    "usage": {
     "input_tokens": 2071,
@@ -6863,6 +7090,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.006442,
    "usage": {
     "input_tokens": 2071,
@@ -6894,6 +7122,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.006182,
    "usage": {
     "input_tokens": 2076,
@@ -6925,6 +7154,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.006596,
    "usage": {
     "input_tokens": 2093,
@@ -6958,6 +7188,7 @@
    "n_tool_calls": 3,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.013014,
    "usage": {
     "input_tokens": 3687,
@@ -6989,6 +7220,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004656,
    "usage": {
     "input_tokens": 1823,
@@ -7022,6 +7254,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.009472,
    "usage": {
     "input_tokens": 2076,
@@ -7055,6 +7288,7 @@
    "n_tool_calls": 3,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.022728,
    "usage": {
     "input_tokens": 5214,
@@ -7086,6 +7320,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.00443,
    "usage": {
     "input_tokens": 1800,
@@ -7121,6 +7356,7 @@
    "n_tool_calls": 4,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.024866,
    "usage": {
     "input_tokens": 5623,
@@ -7154,6 +7390,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.006166,
    "usage": {
     "input_tokens": 1803,
@@ -7187,6 +7424,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.007284,
    "usage": {
     "input_tokens": 1822,
@@ -7218,6 +7456,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004394,
    "usage": {
     "input_tokens": 1832,
@@ -7249,6 +7488,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.005044,
    "usage": {
     "input_tokens": 1832,
@@ -7282,6 +7522,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.011872,
    "usage": {
     "input_tokens": 1826,
@@ -7313,6 +7554,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.007132,
    "usage": {
     "input_tokens": 2121,
@@ -7344,6 +7586,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.00469,
    "usage": {
     "input_tokens": 1820,
@@ -7378,6 +7621,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.013802,
    "usage": {
     "input_tokens": 3256,
@@ -7411,6 +7655,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.011798,
    "usage": {
     "input_tokens": 2104,
@@ -7442,6 +7687,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004722,
    "usage": {
     "input_tokens": 1836,
@@ -7475,6 +7721,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.007348,
    "usage": {
     "input_tokens": 1819,
@@ -7508,6 +7755,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.009376,
    "usage": {
     "input_tokens": 1823,
@@ -7542,6 +7790,7 @@
    "n_tool_calls": 4,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.023764,
    "usage": {
     "input_tokens": 5387,
@@ -7577,6 +7826,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.016936,
    "usage": {
     "input_tokens": 2103,
@@ -7608,6 +7858,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.00642,
    "usage": {
     "input_tokens": 2050,
@@ -7639,6 +7890,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.006482,
    "usage": {
     "input_tokens": 2066,
@@ -7672,6 +7924,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.010486,
    "usage": {
     "input_tokens": 3083,
@@ -7705,6 +7958,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.010254,
    "usage": {
     "input_tokens": 3082,
@@ -7736,6 +7990,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.006504,
    "usage": {
     "input_tokens": 2082,
@@ -7767,6 +8022,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.00668,
    "usage": {
     "input_tokens": 2070,
@@ -7798,6 +8054,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004626,
    "usage": {
     "input_tokens": 1808,
@@ -7832,6 +8089,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.009744,
    "usage": {
     "input_tokens": 2082,
@@ -7863,6 +8121,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004448,
    "usage": {
     "input_tokens": 1809,
@@ -7896,6 +8155,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.01395,
    "usage": {
     "input_tokens": 2050,
@@ -7929,6 +8189,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.007674,
    "usage": {
     "input_tokens": 1807,
@@ -7962,6 +8223,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.00618,
    "usage": {
     "input_tokens": 1810,
@@ -7993,6 +8255,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004646,
    "usage": {
     "input_tokens": 1828,
@@ -8024,6 +8287,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.00492,
    "usage": {
     "input_tokens": 1840,
@@ -8057,6 +8321,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.006042,
    "usage": {
     "input_tokens": 1811,
@@ -8090,6 +8355,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.010902,
    "usage": {
     "input_tokens": 1811,
@@ -8121,6 +8387,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.00683,
    "usage": {
     "input_tokens": 2105,
@@ -8154,6 +8421,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.007816,
    "usage": {
     "input_tokens": 1828,
@@ -8185,6 +8453,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.006764,
    "usage": {
     "input_tokens": 2087,
@@ -8216,6 +8485,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004686,
    "usage": {
     "input_tokens": 1828,
@@ -8247,6 +8517,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004724,
    "usage": {
     "input_tokens": 1827,
@@ -8281,6 +8552,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.01003,
    "usage": {
     "input_tokens": 2105,
@@ -8312,6 +8584,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004782,
    "usage": {
     "input_tokens": 1811,
@@ -8345,6 +8618,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.007484,
    "usage": {
     "input_tokens": 2092,
@@ -8378,6 +8652,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.011102,
    "usage": {
     "input_tokens": 1831,
@@ -8409,6 +8684,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.006726,
    "usage": {
     "input_tokens": 2068,
@@ -8442,6 +8718,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.009474,
    "usage": {
     "input_tokens": 3052,
@@ -8473,6 +8750,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004658,
    "usage": {
     "input_tokens": 1824,
@@ -8506,6 +8784,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.008626,
    "usage": {
     "input_tokens": 2118,
@@ -8541,6 +8820,7 @@
    "n_tool_calls": 3,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.019206,
    "usage": {
     "input_tokens": 4748,
@@ -8575,6 +8855,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.012742,
    "usage": {
     "input_tokens": 2096,
@@ -8608,6 +8889,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.009616,
    "usage": {
     "input_tokens": 2118,
@@ -8641,6 +8923,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.008874,
    "usage": {
     "input_tokens": 2127,
@@ -8672,6 +8955,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004486,
    "usage": {
     "input_tokens": 1808,
@@ -8703,6 +8987,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004718,
    "usage": {
     "input_tokens": 1844,
@@ -8736,6 +9021,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.00675,
    "usage": {
     "input_tokens": 1835,
@@ -8769,6 +9055,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.009218,
    "usage": {
     "input_tokens": 3029,
@@ -8802,6 +9089,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.010494,
    "usage": {
     "input_tokens": 1827,
@@ -8833,6 +9121,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.006592,
    "usage": {
     "input_tokens": 2096,
@@ -8866,6 +9155,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.005708,
    "usage": {
     "input_tokens": 1844,
@@ -8897,6 +9187,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.006898,
    "usage": {
     "input_tokens": 2099,
@@ -8930,6 +9221,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.009858,
    "usage": {
     "input_tokens": 1844,
@@ -8963,6 +9255,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.010158,
    "usage": {
     "input_tokens": 2079,
@@ -8994,6 +9287,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.00443,
    "usage": {
     "input_tokens": 1800,
@@ -9028,6 +9322,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.01938,
    "usage": {
     "input_tokens": 3435,
@@ -9059,6 +9354,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.0048,
    "usage": {
     "input_tokens": 1820,
@@ -9090,6 +9386,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004762,
    "usage": {
     "input_tokens": 1821,
@@ -9125,6 +9422,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.010244,
    "usage": {
     "input_tokens": 1812,
@@ -9158,6 +9456,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.005646,
    "usage": {
     "input_tokens": 1788,
@@ -9193,6 +9492,7 @@
    "n_tool_calls": 3,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.021362,
    "usage": {
     "input_tokens": 4946,
@@ -9224,6 +9524,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.006346,
    "usage": {
     "input_tokens": 2013,
@@ -9255,6 +9556,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.006566,
    "usage": {
     "input_tokens": 2003,
@@ -9286,6 +9588,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.00651,
    "usage": {
     "input_tokens": 2025,
@@ -9317,6 +9620,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.00452,
    "usage": {
     "input_tokens": 1755,
@@ -9350,6 +9654,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.01058,
    "usage": {
     "input_tokens": 2025,
@@ -9381,6 +9686,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.00668,
    "usage": {
     "input_tokens": 2030,
@@ -9412,6 +9718,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004578,
    "usage": {
     "input_tokens": 1754,
@@ -9443,6 +9750,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004446,
    "usage": {
     "input_tokens": 1753,
@@ -9476,6 +9784,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.013814,
    "usage": {
     "input_tokens": 2002,
@@ -9509,6 +9818,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.008316,
    "usage": {
     "input_tokens": 1758,
@@ -9542,6 +9852,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.00586,
    "usage": {
     "input_tokens": 1750,
@@ -9575,6 +9886,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.005766,
    "usage": {
     "input_tokens": 1748,
@@ -9606,6 +9918,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004546,
    "usage": {
     "input_tokens": 1748,
@@ -9637,6 +9950,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004874,
    "usage": {
     "input_tokens": 1762,
@@ -9668,6 +9982,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.006626,
    "usage": {
     "input_tokens": 2028,
@@ -9699,6 +10014,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.006142,
    "usage": {
     "input_tokens": 2016,
@@ -9732,6 +10048,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.010136,
    "usage": {
     "input_tokens": 1748,
@@ -9763,6 +10080,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.00451,
    "usage": {
     "input_tokens": 1730,
@@ -9796,6 +10114,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.008722,
    "usage": {
     "input_tokens": 2016,
@@ -9827,6 +10146,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004478,
    "usage": {
     "input_tokens": 1729,
@@ -9858,6 +10178,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004376,
    "usage": {
     "input_tokens": 1748,
@@ -9891,6 +10212,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.005686,
    "usage": {
     "input_tokens": 1733,
@@ -9924,6 +10246,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.005938,
    "usage": {
     "input_tokens": 1734,
@@ -9955,6 +10278,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.00648,
    "usage": {
     "input_tokens": 2020,
@@ -9988,6 +10312,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.009586,
    "usage": {
     "input_tokens": 1733,
@@ -10019,6 +10344,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.006214,
    "usage": {
     "input_tokens": 1997,
@@ -10050,6 +10376,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.006424,
    "usage": {
     "input_tokens": 2022,
@@ -10081,6 +10408,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.006254,
    "usage": {
     "input_tokens": 2022,
@@ -10112,6 +10440,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004508,
    "usage": {
     "input_tokens": 1754,
@@ -10145,6 +10474,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.012238,
    "usage": {
     "input_tokens": 2019,
@@ -10176,6 +10506,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004546,
    "usage": {
     "input_tokens": 1753,
@@ -10207,6 +10538,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004342,
    "usage": {
     "input_tokens": 1741,
@@ -10240,6 +10572,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.008034,
    "usage": {
     "input_tokens": 1757,
@@ -10273,6 +10606,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.005578,
    "usage": {
     "input_tokens": 1739,
@@ -10308,6 +10642,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.016206,
    "usage": {
     "input_tokens": 2033,
@@ -10339,6 +10674,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004714,
    "usage": {
     "input_tokens": 1767,
@@ -10372,6 +10708,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.010628,
    "usage": {
     "input_tokens": 2934,
@@ -10403,6 +10740,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004504,
    "usage": {
     "input_tokens": 1752,
@@ -10434,6 +10772,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.006458,
    "usage": {
     "input_tokens": 2009,
@@ -10465,6 +10804,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.006352,
    "usage": {
     "input_tokens": 2026,
@@ -10496,6 +10836,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004474,
    "usage": {
     "input_tokens": 1737,
@@ -10531,6 +10872,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.008892,
    "usage": {
     "input_tokens": 1766,
@@ -10564,6 +10906,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.009008,
    "usage": {
     "input_tokens": 2009,
@@ -10595,6 +10938,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004652,
    "usage": {
     "input_tokens": 1736,
@@ -10626,6 +10970,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.00446,
    "usage": {
     "input_tokens": 1755,
@@ -10659,6 +11004,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.00742,
    "usage": {
     "input_tokens": 1740,
@@ -10692,6 +11038,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.005644,
    "usage": {
     "input_tokens": 1747,
@@ -10725,6 +11072,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.006568,
    "usage": {
     "input_tokens": 1734,
@@ -10756,6 +11104,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.006242,
    "usage": {
     "input_tokens": 2001,
@@ -10787,6 +11136,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.006472,
    "usage": {
     "input_tokens": 2006,
@@ -10818,6 +11168,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.006732,
    "usage": {
     "input_tokens": 2001,
@@ -10851,6 +11202,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.010566,
    "usage": {
     "input_tokens": 2018,
@@ -10884,6 +11236,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.009022,
    "usage": {
     "input_tokens": 2006,
@@ -10915,6 +11268,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004546,
    "usage": {
     "input_tokens": 1753,
@@ -10946,6 +11300,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.006272,
    "usage": {
     "input_tokens": 2006,
@@ -10977,6 +11332,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004146,
    "usage": {
     "input_tokens": 1718,
@@ -11010,6 +11366,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.006504,
    "usage": {
     "input_tokens": 1752,
@@ -11043,6 +11400,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.00621,
    "usage": {
     "input_tokens": 1735,
@@ -11076,6 +11434,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.007492,
    "usage": {
     "input_tokens": 1756,
@@ -11107,6 +11466,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004724,
    "usage": {
     "input_tokens": 1762,
@@ -11138,6 +11498,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004724,
    "usage": {
     "input_tokens": 1762,
@@ -11171,6 +11532,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.00589,
    "usage": {
     "input_tokens": 1730,
@@ -11204,6 +11566,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.008164,
    "usage": {
     "input_tokens": 1762,
@@ -11235,6 +11598,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.006812,
    "usage": {
     "input_tokens": 2051,
@@ -11268,6 +11632,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.009482,
    "usage": {
     "input_tokens": 2051,
@@ -11299,6 +11664,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.00454,
    "usage": {
     "input_tokens": 1750,
@@ -11330,6 +11696,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004548,
    "usage": {
     "input_tokens": 1749,
@@ -11361,6 +11728,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004174,
    "usage": {
     "input_tokens": 1732,
@@ -11394,6 +11762,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.013126,
    "usage": {
     "input_tokens": 2033,
@@ -11427,6 +11796,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.008416,
    "usage": {
     "input_tokens": 1753,
@@ -11458,6 +11828,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.00615,
    "usage": {
     "input_tokens": 1980,
@@ -11491,6 +11862,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.005888,
    "usage": {
     "input_tokens": 1734,
@@ -11524,6 +11896,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.008418,
    "usage": {
     "input_tokens": 1994,
@@ -11557,6 +11930,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.013434,
    "usage": {
     "input_tokens": 2947,
@@ -11588,6 +11962,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.00668,
    "usage": {
     "input_tokens": 2005,
@@ -11619,6 +11994,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.00642,
    "usage": {
     "input_tokens": 2000,
@@ -11650,6 +12026,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.00606,
    "usage": {
     "input_tokens": 2000,
@@ -11681,6 +12058,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004466,
    "usage": {
     "input_tokens": 1738,
@@ -11714,6 +12092,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.009,
    "usage": {
     "input_tokens": 2000,
@@ -11747,6 +12126,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.007832,
    "usage": {
     "input_tokens": 1741,
@@ -11778,6 +12158,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004504,
    "usage": {
     "input_tokens": 1737,
@@ -11809,6 +12190,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004308,
    "usage": {
     "input_tokens": 1739,
@@ -11840,6 +12222,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004666,
    "usage": {
     "input_tokens": 1758,
@@ -11873,6 +12256,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.005744,
    "usage": {
     "input_tokens": 1742,
@@ -11906,6 +12290,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.005746,
    "usage": {
     "input_tokens": 1743,
@@ -11937,6 +12322,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004686,
    "usage": {
     "input_tokens": 1758,
@@ -11970,6 +12356,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.007656,
    "usage": {
     "input_tokens": 1758,
@@ -12001,6 +12388,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.006696,
    "usage": {
     "input_tokens": 2018,
@@ -12032,6 +12420,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004576,
    "usage": {
     "input_tokens": 1758,
@@ -12065,6 +12454,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.009996,
    "usage": {
     "input_tokens": 2018,
@@ -12096,6 +12486,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.006644,
    "usage": {
     "input_tokens": 2017,
@@ -12127,6 +12518,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004584,
    "usage": {
     "input_tokens": 1757,
@@ -12158,6 +12550,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.0043,
    "usage": {
     "input_tokens": 1740,
@@ -12191,6 +12584,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.00567,
    "usage": {
     "input_tokens": 1740,
@@ -12224,6 +12618,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.010122,
    "usage": {
     "input_tokens": 1761,
@@ -12255,6 +12650,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.006424,
    "usage": {
     "input_tokens": 2022,
@@ -12286,6 +12682,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.006456,
    "usage": {
     "input_tokens": 2023,
@@ -12319,6 +12716,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.011044,
    "usage": {
     "input_tokens": 2952,
@@ -12350,6 +12748,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.0071,
    "usage": {
     "input_tokens": 2065,
@@ -12383,6 +12782,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.009206,
    "usage": {
     "input_tokens": 2013,
@@ -12414,6 +12814,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.006306,
    "usage": {
     "input_tokens": 2048,
@@ -12445,6 +12846,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004588,
    "usage": {
     "input_tokens": 1754,
@@ -12478,6 +12880,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.009996,
    "usage": {
     "input_tokens": 2048,
@@ -12509,6 +12912,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004556,
    "usage": {
     "input_tokens": 1753,
@@ -12542,6 +12946,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.007608,
    "usage": {
     "input_tokens": 1769,
@@ -12573,6 +12978,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004166,
    "usage": {
     "input_tokens": 1723,
@@ -12604,6 +13010,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004578,
    "usage": {
     "input_tokens": 1774,
@@ -12637,6 +13044,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.010674,
    "usage": {
     "input_tokens": 2907,
@@ -12670,6 +13078,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.005878,
    "usage": {
     "input_tokens": 1724,
@@ -12701,6 +13110,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004578,
    "usage": {
     "input_tokens": 1774,
@@ -12734,6 +13144,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.007018,
    "usage": {
     "input_tokens": 1774,
@@ -12765,6 +13176,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.006688,
    "usage": {
     "input_tokens": 2019,
@@ -12796,6 +13208,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004448,
    "usage": {
     "input_tokens": 1739,
@@ -12827,6 +13240,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.00686,
    "usage": {
     "input_tokens": 2035,
@@ -12860,6 +13274,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.009698,
    "usage": {
     "input_tokens": 2009,
@@ -12891,6 +13306,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004486,
    "usage": {
     "input_tokens": 1738,
@@ -12922,6 +13338,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.00442,
    "usage": {
     "input_tokens": 1740,
@@ -12955,6 +13372,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.00596,
    "usage": {
     "input_tokens": 1735,
@@ -12988,6 +13406,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.009414,
    "usage": {
     "input_tokens": 1757,
@@ -13019,6 +13438,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.00649,
    "usage": {
     "input_tokens": 2025,
@@ -13050,6 +13470,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.00655,
    "usage": {
     "input_tokens": 2025,
@@ -13081,6 +13502,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.006486,
    "usage": {
     "input_tokens": 2003,
@@ -13114,6 +13536,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.013986,
    "usage": {
     "input_tokens": 2923,
@@ -13148,6 +13571,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.01042,
    "usage": {
     "input_tokens": 2025,
@@ -13179,6 +13603,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.00454,
    "usage": {
     "input_tokens": 1755,
@@ -13210,6 +13635,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.00654,
    "usage": {
     "input_tokens": 2020,
@@ -13241,6 +13667,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004558,
    "usage": {
     "input_tokens": 1754,
@@ -13272,6 +13699,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004218,
    "usage": {
     "input_tokens": 1734,
@@ -13305,6 +13733,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.011174,
    "usage": {
     "input_tokens": 2002,
@@ -13338,6 +13767,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.010006,
    "usage": {
     "input_tokens": 1758,
@@ -13371,6 +13801,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.00581,
    "usage": {
     "input_tokens": 1750,
@@ -13402,6 +13833,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004596,
    "usage": {
     "input_tokens": 1748,
@@ -13435,6 +13867,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.006234,
    "usage": {
     "input_tokens": 1752,
@@ -13468,6 +13901,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.005012,
    "usage": {
     "input_tokens": 1761,
@@ -13499,6 +13933,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.005962,
    "usage": {
     "input_tokens": 2016,
@@ -13532,6 +13967,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.007726,
    "usage": {
     "input_tokens": 1748,
@@ -13563,6 +13999,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.006142,
    "usage": {
     "input_tokens": 2016,
@@ -13596,6 +14033,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.009452,
    "usage": {
     "input_tokens": 2016,
@@ -13627,6 +14065,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.00455,
    "usage": {
     "input_tokens": 1730,
@@ -13658,6 +14097,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004208,
    "usage": {
     "input_tokens": 1734,
@@ -13689,6 +14129,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004478,
    "usage": {
     "input_tokens": 1729,
@@ -13722,6 +14163,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.009636,
    "usage": {
     "input_tokens": 1733,
@@ -13755,6 +14197,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.005978,
    "usage": {
     "input_tokens": 1734,
@@ -13788,6 +14231,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.010174,
    "usage": {
     "input_tokens": 2992,
@@ -13819,6 +14263,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.00633,
    "usage": {
     "input_tokens": 2020,
@@ -13850,6 +14295,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.006204,
    "usage": {
     "input_tokens": 2007,
@@ -13881,6 +14327,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.006898,
    "usage": {
     "input_tokens": 2039,
@@ -13912,6 +14359,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004668,
    "usage": {
     "input_tokens": 1769,
@@ -13943,6 +14391,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.006404,
    "usage": {
     "input_tokens": 2022,
@@ -13976,6 +14425,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.011524,
    "usage": {
     "input_tokens": 1997,
@@ -14007,6 +14457,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.00467,
    "usage": {
     "input_tokens": 1765,
@@ -14038,6 +14489,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004186,
    "usage": {
     "input_tokens": 1728,
@@ -14071,6 +14523,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.007924,
    "usage": {
     "input_tokens": 1757,
@@ -14104,6 +14557,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.015782,
    "usage": {
     "input_tokens": 2021,
@@ -14135,6 +14589,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004566,
    "usage": {
     "input_tokens": 1753,
@@ -14168,6 +14623,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.007332,
    "usage": {
     "input_tokens": 1766,
@@ -14201,6 +14657,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.011128,
    "usage": {
     "input_tokens": 3069,
@@ -14234,6 +14691,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004534,
    "usage": {
     "input_tokens": 1752,
@@ -14268,6 +14726,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.015606,
    "usage": {
     "input_tokens": 2923,
@@ -14299,6 +14758,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.006468,
    "usage": {
     "input_tokens": 2009,
@@ -14330,6 +14790,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.006488,
    "usage": {
     "input_tokens": 2009,
@@ -14361,6 +14822,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004474,
    "usage": {
     "input_tokens": 1737,
@@ -14394,6 +14856,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.008828,
    "usage": {
     "input_tokens": 2009,
@@ -14425,6 +14888,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004482,
    "usage": {
     "input_tokens": 1736,
@@ -14456,6 +14920,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.00446,
    "usage": {
     "input_tokens": 1755,
@@ -14489,6 +14954,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.008984,
    "usage": {
     "input_tokens": 1752,
@@ -14522,6 +14988,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.00619,
    "usage": {
     "input_tokens": 1735,
@@ -14555,6 +15022,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.005998,
    "usage": {
     "input_tokens": 1734,
@@ -14586,6 +15054,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.006202,
    "usage": {
     "input_tokens": 2001,
@@ -14617,6 +15086,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.006482,
    "usage": {
     "input_tokens": 2006,
@@ -14648,6 +15118,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.006642,
    "usage": {
     "input_tokens": 2001,
@@ -14681,6 +15152,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.008538,
    "usage": {
     "input_tokens": 2014,
@@ -14712,6 +15184,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004536,
    "usage": {
     "input_tokens": 1753,
@@ -14743,6 +15216,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.006432,
    "usage": {
     "input_tokens": 2006,
@@ -14776,6 +15250,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.009432,
    "usage": {
     "input_tokens": 2006,
@@ -14807,6 +15282,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.005008,
    "usage": {
     "input_tokens": 1764,
@@ -14838,6 +15314,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004326,
    "usage": {
     "input_tokens": 1733,
@@ -14871,6 +15348,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.007622,
    "usage": {
     "input_tokens": 1756,
@@ -14902,6 +15380,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004254,
    "usage": {
     "input_tokens": 1762,
@@ -14935,6 +15414,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.00613,
    "usage": {
     "input_tokens": 1735,
@@ -14968,6 +15448,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.007376,
    "usage": {
     "input_tokens": 1733,
@@ -14999,6 +15480,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004694,
    "usage": {
     "input_tokens": 1762,
@@ -15030,6 +15512,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.006992,
    "usage": {
     "input_tokens": 2051,
@@ -15061,6 +15544,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.007732,
    "usage": {
     "input_tokens": 2051,
@@ -15094,6 +15578,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.009994,
    "usage": {
     "input_tokens": 1762,
@@ -15125,6 +15610,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004718,
    "usage": {
     "input_tokens": 1764,
@@ -15156,6 +15642,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004558,
    "usage": {
     "input_tokens": 1749,
@@ -15187,6 +15674,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004174,
    "usage": {
     "input_tokens": 1732,
@@ -15220,6 +15708,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.00726,
    "usage": {
     "input_tokens": 1765,
@@ -15253,6 +15742,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.005764,
    "usage": {
     "input_tokens": 1732,
@@ -15287,6 +15777,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.017804,
    "usage": {
     "input_tokens": 2052,
@@ -15318,6 +15809,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.00613,
    "usage": {
     "input_tokens": 1980,
@@ -15349,6 +15841,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.006364,
    "usage": {
     "input_tokens": 1997,
@@ -15380,6 +15873,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.006604,
    "usage": {
     "input_tokens": 2012,
@@ -15414,6 +15908,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.01037,
    "usage": {
     "input_tokens": 1980,
@@ -15445,6 +15940,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.006684,
    "usage": {
     "input_tokens": 2017,
@@ -15478,6 +15974,7 @@
    "n_tool_calls": 3,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.017704,
    "usage": {
     "input_tokens": 4687,
@@ -15511,6 +16008,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.008684,
    "usage": {
     "input_tokens": 2017,
@@ -15542,6 +16040,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004496,
    "usage": {
     "input_tokens": 1738,
@@ -15573,6 +16072,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004494,
    "usage": {
     "input_tokens": 1737,
@@ -15604,6 +16104,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004308,
    "usage": {
     "input_tokens": 1739,
@@ -15637,6 +16138,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.008732,
    "usage": {
     "input_tokens": 1741,
@@ -15670,6 +16172,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.00577,
    "usage": {
     "input_tokens": 1740,
@@ -15703,6 +16206,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.005662,
    "usage": {
     "input_tokens": 1741,
@@ -15734,6 +16238,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004496,
    "usage": {
     "input_tokens": 1758,
@@ -15765,6 +16270,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004676,
    "usage": {
     "input_tokens": 1758,
@@ -15796,6 +16302,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.006566,
    "usage": {
     "input_tokens": 2018,
@@ -15829,6 +16336,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.00791,
    "usage": {
     "input_tokens": 1770,
@@ -15862,6 +16370,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.011046,
    "usage": {
     "input_tokens": 2018,
@@ -15893,6 +16402,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004546,
    "usage": {
     "input_tokens": 1758,
@@ -15924,6 +16434,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.006454,
    "usage": {
     "input_tokens": 2017,
@@ -15955,6 +16466,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004302,
    "usage": {
     "input_tokens": 1741,
@@ -15986,6 +16498,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004584,
    "usage": {
     "input_tokens": 1757,
@@ -16019,6 +16532,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.009272,
    "usage": {
     "input_tokens": 1761,
@@ -16050,6 +16564,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.006436,
    "usage": {
     "input_tokens": 2023,
@@ -16083,6 +16598,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.01175,
    "usage": {
     "input_tokens": 3040,
@@ -16116,6 +16632,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.009718,
    "usage": {
     "input_tokens": 2954,
@@ -16147,6 +16664,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.00648,
    "usage": {
     "input_tokens": 2025,
@@ -16178,6 +16696,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.00707,
    "usage": {
     "input_tokens": 2060,
@@ -16212,6 +16731,7 @@
    "n_tool_calls": 3,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.01381,
    "usage": {
     "input_tokens": 3525,
@@ -16243,6 +16763,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.006376,
    "usage": {
     "input_tokens": 2048,
@@ -16274,6 +16795,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004548,
    "usage": {
     "input_tokens": 1754,
@@ -16307,6 +16829,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.009616,
    "usage": {
     "input_tokens": 2048,
@@ -16338,6 +16861,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004546,
    "usage": {
     "input_tokens": 1753,
@@ -16371,6 +16895,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.007284,
    "usage": {
     "input_tokens": 1757,
@@ -16402,6 +16927,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.00431,
    "usage": {
     "input_tokens": 1735,
@@ -16435,6 +16961,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.005758,
    "usage": {
     "input_tokens": 1734,
@@ -16466,6 +16993,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004778,
    "usage": {
     "input_tokens": 1774,
@@ -16499,6 +17027,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.005768,
    "usage": {
     "input_tokens": 1724,
@@ -16530,6 +17059,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.00478,
    "usage": {
     "input_tokens": 1790,
@@ -16561,6 +17091,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.006548,
    "usage": {
     "input_tokens": 2009,
@@ -16594,6 +17125,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.006888,
    "usage": {
     "input_tokens": 1774,
@@ -16627,6 +17159,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.009104,
    "usage": {
     "input_tokens": 2022,
@@ -16658,6 +17191,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004458,
    "usage": {
     "input_tokens": 1739,
@@ -16689,6 +17223,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.006528,
    "usage": {
     "input_tokens": 2009,
@@ -16720,6 +17255,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.00429,
    "usage": {
     "input_tokens": 1730,
@@ -16751,6 +17287,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004486,
    "usage": {
     "input_tokens": 1738,
@@ -16784,6 +17321,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.009054,
    "usage": {
     "input_tokens": 1742,
@@ -16817,6 +17355,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.00622,
    "usage": {
     "input_tokens": 1730,
@@ -16850,6 +17389,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.00602,
    "usage": {
     "input_tokens": 1740,
@@ -16881,6 +17421,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.006506,
    "usage": {
     "input_tokens": 2073,
@@ -16912,6 +17453,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.006428,
    "usage": {
     "input_tokens": 2069,
@@ -16943,6 +17485,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.006818,
    "usage": {
     "input_tokens": 2069,
@@ -16974,6 +17517,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.00466,
    "usage": {
     "input_tokens": 1825,
@@ -17008,6 +17552,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.012056,
    "usage": {
     "input_tokens": 2083,
@@ -17039,6 +17584,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.005558,
    "usage": {
     "input_tokens": 1824,
@@ -17072,6 +17618,7 @@
    "n_tool_calls": 3,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.014734,
    "usage": {
     "input_tokens": 3707,
@@ -17103,6 +17650,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004502,
    "usage": {
     "input_tokens": 1816,
@@ -17136,6 +17684,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.013614,
    "usage": {
     "input_tokens": 2072,
@@ -17170,6 +17719,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.012926,
    "usage": {
     "input_tokens": 1828,
@@ -17201,6 +17751,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004796,
    "usage": {
     "input_tokens": 1818,
@@ -17235,6 +17786,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.011714,
    "usage": {
     "input_tokens": 3037,
@@ -17268,6 +17820,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.005406,
    "usage": {
     "input_tokens": 1818,
@@ -17301,6 +17854,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.009426,
    "usage": {
     "input_tokens": 1828,
@@ -17332,6 +17886,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.006596,
    "usage": {
     "input_tokens": 2103,
@@ -17366,6 +17921,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.017598,
    "usage": {
     "input_tokens": 3264,
@@ -17397,6 +17953,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.00458,
    "usage": {
     "input_tokens": 1800,
@@ -17431,6 +17988,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.009242,
    "usage": {
     "input_tokens": 2111,
@@ -17462,6 +18020,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004552,
    "usage": {
     "input_tokens": 1821,
@@ -17493,6 +18052,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004762,
    "usage": {
     "input_tokens": 1811,
@@ -17526,6 +18086,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.010326,
    "usage": {
     "input_tokens": 1803,
@@ -17560,6 +18121,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.013352,
    "usage": {
     "input_tokens": 2086,
@@ -17591,6 +18153,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.006254,
    "usage": {
     "input_tokens": 2067,
@@ -17624,6 +18187,7 @@
    "n_tool_calls": 3,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.015434,
    "usage": {
     "input_tokens": 4552,
@@ -17657,6 +18221,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.00987,
    "usage": {
     "input_tokens": 2090,
@@ -17688,6 +18253,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.00676,
    "usage": {
     "input_tokens": 2090,
@@ -17719,6 +18285,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.006214,
    "usage": {
     "input_tokens": 2092,
@@ -17753,6 +18320,7 @@
    "n_tool_calls": 4,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.021356,
    "usage": {
     "input_tokens": 5318,
@@ -17784,6 +18352,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.006804,
    "usage": {
     "input_tokens": 2092,
@@ -17815,6 +18384,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004902,
    "usage": {
     "input_tokens": 1836,
@@ -17846,6 +18416,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.00447,
    "usage": {
     "input_tokens": 1810,
@@ -17877,6 +18448,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004706,
    "usage": {
     "input_tokens": 1823,
@@ -17910,6 +18482,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.008394,
    "usage": {
     "input_tokens": 1827,
@@ -17943,6 +18516,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.014676,
    "usage": {
     "input_tokens": 2108,
@@ -17974,6 +18548,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.00487,
    "usage": {
     "input_tokens": 1835,
@@ -18005,6 +18580,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004784,
    "usage": {
     "input_tokens": 1822,
@@ -18036,6 +18612,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.006488,
    "usage": {
     "input_tokens": 2079,
@@ -18070,6 +18647,7 @@
    "n_tool_calls": 3,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.019914,
    "usage": {
     "input_tokens": 5027,
@@ -18105,6 +18683,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.011524,
    "usage": {
     "input_tokens": 1822,
@@ -18140,6 +18719,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.01886,
    "usage": {
     "input_tokens": 3225,
@@ -18171,6 +18751,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004624,
    "usage": {
     "input_tokens": 1807,
@@ -18202,6 +18783,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.006702,
    "usage": {
     "input_tokens": 2091,
@@ -18235,6 +18817,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.009088,
    "usage": {
     "input_tokens": 2079,
@@ -18266,6 +18849,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004652,
    "usage": {
     "input_tokens": 1806,
@@ -18297,6 +18881,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004384,
    "usage": {
     "input_tokens": 1807,
@@ -18330,6 +18915,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.00888,
    "usage": {
     "input_tokens": 1810,
@@ -18361,6 +18947,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.006812,
    "usage": {
     "input_tokens": 2071,
@@ -18395,6 +18982,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.01122,
    "usage": {
     "input_tokens": 3125,
@@ -18426,6 +19014,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.006862,
    "usage": {
     "input_tokens": 2071,
@@ -18457,6 +19046,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.006792,
    "usage": {
     "input_tokens": 2076,
@@ -18491,6 +19081,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.017314,
    "usage": {
     "input_tokens": 3152,
@@ -18524,6 +19115,7 @@
    "n_tool_calls": 3,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.018006,
    "usage": {
     "input_tokens": 3818,
@@ -18555,6 +19147,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.006422,
    "usage": {
     "input_tokens": 2076,
@@ -18586,6 +19179,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004716,
    "usage": {
     "input_tokens": 1823,
@@ -18620,6 +19214,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.010396,
    "usage": {
     "input_tokens": 2093,
@@ -18651,6 +19246,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004454,
    "usage": {
     "input_tokens": 1802,
@@ -18684,6 +19280,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.007614,
    "usage": {
     "input_tokens": 1822,
@@ -18717,6 +19314,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.005996,
    "usage": {
     "input_tokens": 1803,
@@ -18748,6 +19346,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004394,
    "usage": {
     "input_tokens": 1832,
@@ -18781,6 +19380,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.010542,
    "usage": {
     "input_tokens": 1826,
@@ -18814,6 +19414,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.006458,
    "usage": {
     "input_tokens": 1804,
@@ -18845,6 +19446,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.007018,
    "usage": {
     "input_tokens": 2104,
@@ -18878,6 +19480,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.006114,
    "usage": {
     "input_tokens": 1832,
@@ -18911,6 +19514,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.011464,
    "usage": {
     "input_tokens": 1832,
@@ -18942,6 +19546,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.00465,
    "usage": {
     "input_tokens": 1820,
@@ -18975,6 +19580,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.011638,
    "usage": {
     "input_tokens": 2104,
@@ -19008,6 +19614,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.006858,
    "usage": {
     "input_tokens": 1819,
@@ -19041,6 +19648,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.008556,
    "usage": {
     "input_tokens": 1823,
@@ -19072,6 +19680,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004758,
    "usage": {
     "input_tokens": 1839,
@@ -19106,6 +19715,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.01992,
    "usage": {
     "input_tokens": 2120,
@@ -19139,6 +19749,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.00673,
    "usage": {
     "input_tokens": 2075,
@@ -19172,6 +19783,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.010836,
    "usage": {
     "input_tokens": 3048,
@@ -19203,6 +19815,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.0064,
    "usage": {
     "input_tokens": 2070,
@@ -19234,6 +19847,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.00657,
    "usage": {
     "input_tokens": 2075,
@@ -19268,6 +19882,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.01244,
    "usage": {
     "input_tokens": 3070,
@@ -19299,6 +19914,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.006804,
    "usage": {
     "input_tokens": 2087,
@@ -19330,6 +19946,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004596,
    "usage": {
     "input_tokens": 1808,
@@ -19364,6 +19981,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.01339,
    "usage": {
     "input_tokens": 2050,
@@ -19398,6 +20016,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.010074,
    "usage": {
     "input_tokens": 2082,
@@ -19429,6 +20048,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004508,
    "usage": {
     "input_tokens": 1814,
@@ -19462,6 +20082,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.007114,
    "usage": {
     "input_tokens": 1807,
@@ -19495,6 +20116,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.005882,
    "usage": {
     "input_tokens": 1811,
@@ -19526,6 +20148,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004346,
    "usage": {
     "input_tokens": 1828,
@@ -19559,6 +20182,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.005912,
    "usage": {
     "input_tokens": 1811,
@@ -19593,6 +20217,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.011262,
    "usage": {
     "input_tokens": 1811,
@@ -19624,6 +20249,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004336,
    "usage": {
     "input_tokens": 1828,
@@ -19655,6 +20281,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.006994,
    "usage": {
     "input_tokens": 2107,
@@ -19686,6 +20313,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004686,
    "usage": {
     "input_tokens": 1828,
@@ -19717,6 +20345,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.007118,
    "usage": {
     "input_tokens": 2104,
@@ -19750,6 +20379,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.009616,
    "usage": {
     "input_tokens": 2088,
@@ -19785,6 +20415,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.013338,
    "usage": {
     "input_tokens": 3364,
@@ -19816,6 +20447,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004714,
    "usage": {
     "input_tokens": 1827,
@@ -19847,6 +20479,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004892,
    "usage": {
     "input_tokens": 1811,
@@ -19880,6 +20513,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.009702,
    "usage": {
     "input_tokens": 1831,
@@ -19913,6 +20547,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.006582,
    "usage": {
     "input_tokens": 2101,
@@ -19946,6 +20581,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.010694,
    "usage": {
     "input_tokens": 3142,
@@ -19977,6 +20613,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.00688,
    "usage": {
     "input_tokens": 2095,
@@ -20008,6 +20645,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.00698,
    "usage": {
     "input_tokens": 2130,
@@ -20042,6 +20680,7 @@
    "n_tool_calls": 3,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.012682,
    "usage": {
     "input_tokens": 3656,
@@ -20075,6 +20714,7 @@
    "n_tool_calls": 3,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.020318,
    "usage": {
     "input_tokens": 4939,
@@ -20108,6 +20748,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.00828,
    "usage": {
     "input_tokens": 2130,
@@ -20141,6 +20782,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.00954,
    "usage": {
     "input_tokens": 2125,
@@ -20172,6 +20814,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004894,
    "usage": {
     "input_tokens": 1842,
@@ -20203,6 +20846,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004498,
    "usage": {
     "input_tokens": 1809,
@@ -20236,6 +20880,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.006486,
    "usage": {
     "input_tokens": 1823,
@@ -20269,6 +20914,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.007624,
    "usage": {
     "input_tokens": 1827,
@@ -20302,6 +20948,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.00979,
    "usage": {
     "input_tokens": 2980,
@@ -20333,6 +20980,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.005152,
    "usage": {
     "input_tokens": 1861,
@@ -20366,6 +21014,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.00503,
    "usage": {
     "input_tokens": 1860,
@@ -20397,6 +21046,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.006848,
    "usage": {
     "input_tokens": 2089,
@@ -20431,6 +21081,7 @@
    "n_tool_calls": 3,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.019368,
    "usage": {
     "input_tokens": 4734,
@@ -20462,6 +21113,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.006708,
    "usage": {
     "input_tokens": 2079,
@@ -20498,6 +21150,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.01615,
    "usage": {
     "input_tokens": 3280,
@@ -20532,6 +21185,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.011938,
    "usage": {
     "input_tokens": 2079,
@@ -20563,6 +21217,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004762,
    "usage": {
     "input_tokens": 1821,
@@ -20594,6 +21249,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.00504,
    "usage": {
     "input_tokens": 1820,
@@ -20625,6 +21281,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.00443,
    "usage": {
     "input_tokens": 1800,
@@ -20658,6 +21315,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.009758,
    "usage": {
     "input_tokens": 1824,
@@ -20691,6 +21349,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.005676,
    "usage": {
     "input_tokens": 1798,
@@ -20722,6 +21381,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.006588,
    "usage": {
     "input_tokens": 2069,
@@ -20755,6 +21415,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.009654,
    "usage": {
     "input_tokens": 3007,
@@ -20786,6 +21447,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.006788,
    "usage": {
     "input_tokens": 2069,
@@ -20817,6 +21479,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.006436,
    "usage": {
     "input_tokens": 2073,
@@ -20850,6 +21513,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.010468,
    "usage": {
     "input_tokens": 2069,
@@ -20881,6 +21545,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.0047,
    "usage": {
     "input_tokens": 1825,
@@ -20914,6 +21579,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.009906,
    "usage": {
     "input_tokens": 2073,
@@ -20947,6 +21613,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.006968,
    "usage": {
     "input_tokens": 1824,
@@ -20978,6 +21645,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.005078,
    "usage": {
     "input_tokens": 1804,
@@ -21012,6 +21680,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.010396,
    "usage": {
     "input_tokens": 1828,
@@ -21043,6 +21712,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004796,
    "usage": {
     "input_tokens": 1818,
@@ -21077,6 +21747,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.026494,
    "usage": {
     "input_tokens": 2072,
@@ -21112,6 +21783,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.009164,
    "usage": {
     "input_tokens": 1832,
@@ -21146,6 +21818,7 @@
    "n_tool_calls": 3,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.022602,
    "usage": {
     "input_tokens": 4876,
@@ -21180,6 +21853,7 @@
    "n_tool_calls": 3,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.017906,
    "usage": {
     "input_tokens": 4663,
@@ -21213,6 +21887,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.005966,
    "usage": {
     "input_tokens": 1818,
@@ -21246,6 +21921,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.008448,
    "usage": {
     "input_tokens": 2099,
@@ -21279,6 +21955,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.00852,
    "usage": {
     "input_tokens": 2095,
@@ -21310,6 +21987,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.00458,
    "usage": {
     "input_tokens": 1800,
@@ -21343,6 +22021,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.010292,
    "usage": {
     "input_tokens": 2086,
@@ -21374,6 +22053,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004552,
    "usage": {
     "input_tokens": 1821,
@@ -21407,6 +22087,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.006188,
    "usage": {
     "input_tokens": 1799,
@@ -21438,6 +22119,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.006364,
    "usage": {
     "input_tokens": 2067,
@@ -21473,6 +22155,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.012436,
    "usage": {
     "input_tokens": 1803,
@@ -21504,6 +22187,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.006504,
    "usage": {
     "input_tokens": 2067,
@@ -21537,6 +22221,7 @@
    "n_tool_calls": 4,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.02214,
    "usage": {
     "input_tokens": 5365,
@@ -21568,6 +22253,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.006374,
    "usage": {
     "input_tokens": 2092,
@@ -21601,6 +22287,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.012408,
    "usage": {
     "input_tokens": 2079,
@@ -21635,6 +22322,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.021974,
    "usage": {
     "input_tokens": 3142,
@@ -21666,6 +22354,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.006394,
    "usage": {
     "input_tokens": 2092,
@@ -21697,6 +22386,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004822,
    "usage": {
     "input_tokens": 1836,
@@ -21728,6 +22418,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004666,
    "usage": {
     "input_tokens": 1823,
@@ -21759,6 +22450,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.005556,
    "usage": {
     "input_tokens": 1813,
@@ -21792,6 +22484,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.008874,
    "usage": {
     "input_tokens": 1827,
@@ -21823,6 +22516,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004356,
    "usage": {
     "input_tokens": 1823,
@@ -21856,6 +22550,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.010932,
    "usage": {
     "input_tokens": 3066,
@@ -21890,6 +22585,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.018156,
    "usage": {
     "input_tokens": 2108,
@@ -21925,6 +22621,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.009446,
    "usage": {
     "input_tokens": 1798,
@@ -21956,6 +22653,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.005114,
    "usage": {
     "input_tokens": 1822,
@@ -21989,6 +22687,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.010778,
    "usage": {
     "input_tokens": 3144,
@@ -22020,6 +22719,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.007238,
    "usage": {
     "input_tokens": 2079,
@@ -22051,6 +22751,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.006638,
    "usage": {
     "input_tokens": 2079,
@@ -22084,6 +22785,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.009128,
    "usage": {
     "input_tokens": 2079,
@@ -22115,6 +22817,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004594,
    "usage": {
     "input_tokens": 1807,
@@ -22146,6 +22849,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004622,
    "usage": {
     "input_tokens": 1806,
@@ -22177,6 +22881,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004384,
    "usage": {
     "input_tokens": 1807,
@@ -22210,6 +22915,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.00931,
    "usage": {
     "input_tokens": 1810,
@@ -22241,6 +22947,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.006746,
    "usage": {
     "input_tokens": 2088,
@@ -22274,6 +22981,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.010928,
    "usage": {
     "input_tokens": 3084,
@@ -22305,6 +23013,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.006922,
    "usage": {
     "input_tokens": 2076,
@@ -22336,6 +23045,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.006762,
    "usage": {
     "input_tokens": 2071,
@@ -22371,6 +23081,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.016376,
    "usage": {
     "input_tokens": 3063,
@@ -22402,6 +23113,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.006736,
    "usage": {
     "input_tokens": 2093,
@@ -22433,6 +23145,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004646,
    "usage": {
     "input_tokens": 1823,
@@ -22466,6 +23179,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.009852,
    "usage": {
     "input_tokens": 2076,
@@ -22497,6 +23211,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.00443,
    "usage": {
     "input_tokens": 1800,
@@ -22530,6 +23245,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.006754,
    "usage": {
     "input_tokens": 1822,
@@ -22564,6 +23280,7 @@
    "n_tool_calls": 4,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.026138,
    "usage": {
     "input_tokens": 6079,
@@ -22597,6 +23314,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.010162,
    "usage": {
     "input_tokens": 1826,
@@ -22628,6 +23346,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004394,
    "usage": {
     "input_tokens": 1832,
@@ -22661,6 +23380,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.00667,
    "usage": {
     "input_tokens": 1805,
@@ -22694,6 +23414,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.005404,
    "usage": {
     "input_tokens": 1832,
@@ -22725,6 +23446,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.007372,
    "usage": {
     "input_tokens": 2121,
@@ -22759,6 +23481,7 @@
    "n_tool_calls": 3,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.016606,
    "usage": {
     "input_tokens": 4518,
@@ -22794,6 +23517,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.012898,
    "usage": {
     "input_tokens": 1844,
@@ -22825,6 +23549,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.00469,
    "usage": {
     "input_tokens": 1820,
@@ -22858,6 +23583,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.010202,
    "usage": {
     "input_tokens": 2116,
@@ -22891,6 +23617,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.006978,
    "usage": {
     "input_tokens": 1819,
@@ -22924,6 +23651,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.009296,
    "usage": {
     "input_tokens": 1823,
@@ -22955,6 +23683,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004758,
    "usage": {
     "input_tokens": 1839,
@@ -22990,6 +23719,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.01767,
    "usage": {
     "input_tokens": 2120,
@@ -23023,6 +23753,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.006158,
    "usage": {
     "input_tokens": 1814,
@@ -23056,6 +23787,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.006488,
    "usage": {
     "input_tokens": 2064,
@@ -23089,6 +23821,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.010412,
    "usage": {
     "input_tokens": 3101,
@@ -23120,6 +23853,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.006906,
    "usage": {
     "input_tokens": 2063,
@@ -23151,6 +23885,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.00638,
    "usage": {
     "input_tokens": 2070,
@@ -23184,6 +23919,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.012898,
    "usage": {
     "input_tokens": 2074,
@@ -23215,6 +23951,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004606,
    "usage": {
     "input_tokens": 1808,
@@ -23246,6 +23983,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.00642,
    "usage": {
     "input_tokens": 2070,
@@ -23280,6 +24018,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.00993,
    "usage": {
     "input_tokens": 2070,
@@ -23311,6 +24050,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004448,
    "usage": {
     "input_tokens": 1809,
@@ -23344,6 +24084,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.006404,
    "usage": {
     "input_tokens": 1807,
@@ -23377,6 +24118,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.005916,
    "usage": {
     "input_tokens": 1813,
@@ -23410,6 +24152,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.011232,
    "usage": {
     "input_tokens": 1811,
@@ -23443,6 +24186,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.005942,
    "usage": {
     "input_tokens": 1811,
@@ -23474,6 +24218,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.00474,
    "usage": {
     "input_tokens": 1840,
@@ -23505,6 +24250,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004336,
    "usage": {
     "input_tokens": 1828,
@@ -23536,6 +24282,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.00689,
    "usage": {
     "input_tokens": 2105,
@@ -23571,6 +24318,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.008566,
    "usage": {
     "input_tokens": 1828,
@@ -23604,6 +24352,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.010196,
    "usage": {
     "input_tokens": 2088,
@@ -23635,6 +24384,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.006818,
    "usage": {
     "input_tokens": 2104,
@@ -23666,6 +24416,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004686,
    "usage": {
     "input_tokens": 1828,
@@ -23697,6 +24448,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004968,
    "usage": {
     "input_tokens": 1844,
@@ -23728,6 +24480,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.00518,
    "usage": {
     "input_tokens": 1810,
@@ -23762,6 +24515,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.009042,
    "usage": {
     "input_tokens": 1831,
@@ -23795,6 +24549,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.009634,
    "usage": {
     "input_tokens": 3052,
@@ -23828,6 +24583,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.00716,
    "usage": {
     "input_tokens": 2090,
@@ -23859,6 +24615,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.00671,
    "usage": {
     "input_tokens": 2095,
@@ -23892,6 +24649,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.00879,
    "usage": {
     "input_tokens": 2135,
@@ -23925,6 +24683,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.00954,
    "usage": {
     "input_tokens": 2130,
@@ -23958,6 +24717,7 @@
    "n_tool_calls": 4,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.020598,
    "usage": {
     "input_tokens": 5154,
@@ -23991,6 +24751,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.008242,
    "usage": {
     "input_tokens": 2131,
@@ -24024,6 +24785,7 @@
    "n_tool_calls": 3,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.01867,
    "usage": {
     "input_tokens": 3875,
@@ -24055,6 +24817,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004778,
    "usage": {
     "input_tokens": 1824,
@@ -24086,6 +24849,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004306,
    "usage": {
     "input_tokens": 1793,
@@ -24119,6 +24883,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.008106,
    "usage": {
     "input_tokens": 1823,
@@ -24154,6 +24919,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.010154,
    "usage": {
     "input_tokens": 1827,
@@ -24185,6 +24951,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004718,
    "usage": {
     "input_tokens": 1844,
@@ -24219,6 +24986,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.010704,
    "usage": {
     "input_tokens": 2977,
@@ -24252,6 +25020,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.005098,
    "usage": {
     "input_tokens": 1844,
@@ -24283,6 +25052,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.006538,
    "usage": {
     "input_tokens": 2079,
@@ -24316,6 +25086,7 @@
    "n_tool_calls": 3,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.018356,
    "usage": {
     "input_tokens": 4978,
@@ -24347,6 +25118,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.006348,
    "usage": {
     "input_tokens": 2079,
@@ -24382,6 +25154,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.013438,
    "usage": {
     "input_tokens": 1844,
@@ -24413,6 +25186,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004756,
    "usage": {
     "input_tokens": 1823,
@@ -24447,6 +25221,7 @@
    "n_tool_calls": 2,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.010858,
    "usage": {
     "input_tokens": 2079,
@@ -24478,6 +25253,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.00478,
    "usage": {
     "input_tokens": 1820,
@@ -24509,6 +25285,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.004466,
    "usage": {
     "input_tokens": 1803,
@@ -24542,6 +25319,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.00592,
    "usage": {
     "input_tokens": 1800,
@@ -24576,6 +25354,7 @@
    "n_tool_calls": 1,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.010578,
    "usage": {
     "input_tokens": 1824,
@@ -24611,6 +25390,7 @@
    "n_tool_calls": 4,
    "parsed_ok": true,
    "error": null,
+   "unanswered": false,
    "cost_usd": 0.019808,
    "usage": {
     "input_tokens": 5059,

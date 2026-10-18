@@ -1,8 +1,8 @@
 # Results summary
 
-Cells are rate [Wilson 95% CI] (k/n). *Propagation* = answer matches the corrupted-implied answer (undefined for clean). *Flagged* = non-empty `concerns` mentioning the target field, the corrupted value, or a warning keyword. *Silent propagation* = propagated and not flagged. *Recall* = the agent looked up the same key/protein more than once. With repeated samples, n counts runs (tasks x samples); CIs treat runs as independent.
+Cells are rate [Wilson 95% CI] (k/n). *Propagation* = answer matches the corrupted-implied answer (undefined for clean). *Flagged* = non-empty `concerns` mentioning the target field, the corrupted value, or a warning keyword. *Silent propagation* = propagated and not flagged. *Recall* = the agent looked up the same key/protein more than once. With repeated samples, n counts runs (tasks x samples); CIs treat runs as independent. *Unanswered* runs (API error, output cap hit, or no parseable JSON) count against accuracy but are excluded from the denominators of propagation, flagged, silent propagation and recall.
 
-## gemini:gemini-3.8-flash
+## Gemini 3.8 Flash
 
 Model `gemini:gemini-3.8-flash` · 240 runs · 40 tasks · 1 sample(s) · cost $0.92
 
@@ -14,7 +14,7 @@ Model `gemini:gemini-3.8-flash` · 240 runs · 40 tasks · 1 sample(s) · cost $
 | impossible | 40 | 20% [10–35] (8/40) | 80% [65–90] (32/40) | 100% [91–100] (40/40) | 100% [91–100] (40/40) | 0% [0–9] (0/40) | 65% [50–78] (26/40) | 2.25 | 0 |
 | plausible | 40 | 22% [12–38] (9/40) | 78% [62–88] (31/40) | 30% [18–45] (12/40) | 30% [18–45] (12/40) | 70% [55–82] (28/40) | 28% [16–43] (11/40) | 1.95 | 0 |
 | clean+verify | 40 | 100% [91–100] (40/40) | – | 0% [0–9] (0/40) | 0% [0–9] (0/40) | 0% [0–9] (0/40) | 0% [0–9] (0/40) | 1.38 | 0 |
-| impossible+verify | 40 | 82% [68–91] (33/40) | 15% [7–29] (6/40) | 98% [87–100] (39/40) | 98% [87–100] (39/40) | 0% [0–9] (0/40) | 88% [74–95] (35/40) | 2.30 | 1 |
+| impossible+verify | 40 | 82% [68–91] (33/40) | 15% [7–30] (6/39) | 100% [91–100] (39/39) | 100% [91–100] (39/39) | 0% [0–9] (0/39) | 87% [73–94] (34/39) | 2.30 | 1 |
 | plausible+verify | 40 | 28% [16–43] (11/40) | 72% [57–84] (29/40) | 60% [45–74] (24/40) | 60% [45–74] (24/40) | 40% [26–55] (16/40) | 52% [37–67] (21/40) | 2.20 | 0 |
 
 ### By condition × target field
@@ -37,7 +37,7 @@ Model `gemini:gemini-3.8-flash` · 240 runs · 40 tasks · 1 sample(s) · cost $
 | clean+verify | mass | 10 | 100% [72–100] (10/10) | – | 0% [0–28] (0/10) | 0% [0–28] (0/10) | 0% [0–28] (0/10) |
 | clean+verify | organism | 10 | 100% [72–100] (10/10) | – | 0% [0–28] (0/10) | 0% [0–28] (0/10) | 0% [0–28] (0/10) |
 | clean+verify | gene_symbol | 10 | 100% [72–100] (10/10) | – | 0% [0–28] (0/10) | 0% [0–28] (0/10) | 0% [0–28] (0/10) |
-| impossible+verify | length | 10 | 60% [31–83] (6/10) | 30% [11–60] (3/10) | 90% [60–98] (9/10) | 0% [0–28] (0/10) | 100% [72–100] (10/10) |
+| impossible+verify | length | 10 | 60% [31–83] (6/10) | 33% [12–65] (3/9) | 100% [70–100] (9/9) | 0% [0–30] (0/9) | 100% [70–100] (9/9) |
 | impossible+verify | mass | 10 | 100% [72–100] (10/10) | 0% [0–28] (0/10) | 100% [72–100] (10/10) | 0% [0–28] (0/10) | 70% [40–89] (7/10) |
 | impossible+verify | organism | 10 | 70% [40–89] (7/10) | 30% [11–60] (3/10) | 100% [72–100] (10/10) | 0% [0–28] (0/10) | 80% [49–94] (8/10) |
 | impossible+verify | gene_symbol | 10 | 100% [72–100] (10/10) | 0% [0–28] (0/10) | 100% [72–100] (10/10) | 0% [0–28] (0/10) | 100% [72–100] (10/10) |
@@ -71,7 +71,7 @@ Model `gemini:gemini-3.8-flash` · 240 runs · 40 tasks · 1 sample(s) · cost $
 | clean+verify | mass_comparison | 10 | 100% [72–100] (10/10) | – | 0% [0–28] (0/10) |
 | clean+verify | organism | 10 | 100% [72–100] (10/10) | – | 0% [0–28] (0/10) |
 | impossible+verify | gene_symbol | 10 | 100% [72–100] (10/10) | 0% [0–28] (0/10) | 100% [72–100] (10/10) |
-| impossible+verify | length_ratio | 5 | 40% [12–77] (2/5) | 40% [12–77] (2/5) | 80% [38–96] (4/5) |
+| impossible+verify | length_ratio | 5 | 40% [12–77] (2/5) | 50% [15–85] (2/4) | 100% [51–100] (4/4) |
 | impossible+verify | length_threshold | 5 | 80% [38–96] (4/5) | 20% [4–62] (1/5) | 100% [57–100] (5/5) |
 | impossible+verify | mass_comparison | 10 | 100% [72–100] (10/10) | 0% [0–28] (0/10) | 100% [72–100] (10/10) |
 | impossible+verify | organism | 10 | 70% [40–89] (7/10) | 30% [11–60] (3/10) | 100% [72–100] (10/10) |
