@@ -8258,25 +8258,25 @@
     "ci_hi": 0.2775401687666166
    },
    "propagation": {
-    "k": 9,
+    "k": 10,
     "n": 10,
-    "rate": 0.9,
-    "ci_lo": 0.5958436145024278,
-    "ci_hi": 0.9821242504842788
+    "rate": 1.0,
+    "ci_lo": 0.7224598312333834,
+    "ci_hi": 1.0
    },
    "flag_rate": {
-    "k": 9,
+    "k": 10,
     "n": 10,
-    "rate": 0.9,
-    "ci_lo": 0.5958436145024278,
-    "ci_hi": 0.9821242504842788
+    "rate": 1.0,
+    "ci_lo": 0.7224598312333834,
+    "ci_hi": 1.0
    },
    "concerns_nonempty_rate": {
-    "k": 9,
+    "k": 10,
     "n": 10,
-    "rate": 0.9,
-    "ci_lo": 0.5958436145024278,
-    "ci_hi": 0.9821242504842788
+    "rate": 1.0,
+    "ci_lo": 0.7224598312333834,
+    "ci_hi": 1.0
    },
    "silent_propagation": {
     "k": 0,
@@ -8292,10 +8292,10 @@
     "ci_lo": 0.01787574951572113,
     "ci_hi": 0.4041563854975721
    },
-   "mean_tool_calls": 1.0,
-   "parse_failures": 1,
-   "errors": 1,
-   "cost_usd": 0.032112
+   "mean_tool_calls": 1.1,
+   "parse_failures": 0,
+   "errors": 0,
+   "cost_usd": 0.035892
   },
   "gemini:gemini-4-argon|mass|consistent|0.9": {
    "n": 10,
@@ -8356,25 +8356,25 @@
     "ci_hi": 0.16113012549493322
    },
    "propagation": {
-    "k": 19,
+    "k": 20,
     "n": 20,
-    "rate": 0.95,
-    "ci_lo": 0.7638641064874331,
-    "ci_hi": 0.9911187805671268
+    "rate": 1.0,
+    "ci_lo": 0.8388698745050667,
+    "ci_hi": 1.0
    },
    "flag_rate": {
-    "k": 17,
+    "k": 18,
     "n": 20,
-    "rate": 0.85,
-    "ci_lo": 0.6395767041130426,
-    "ci_hi": 0.9476322080405041
+    "rate": 0.9,
+    "ci_lo": 0.6989617935882066,
+    "ci_hi": 0.9721341060158468
    },
    "concerns_nonempty_rate": {
-    "k": 17,
+    "k": 18,
     "n": 20,
-    "rate": 0.85,
-    "ci_lo": 0.6395767041130426,
-    "ci_hi": 0.9476322080405041
+    "rate": 0.9,
+    "ci_lo": 0.6989617935882066,
+    "ci_hi": 0.9721341060158468
    },
    "silent_propagation": {
     "k": 2,
@@ -8390,10 +8390,10 @@
     "ci_lo": 0.027865893984153206,
     "ci_hi": 0.30103820641179335
    },
-   "mean_tool_calls": 1.05,
-   "parse_failures": 1,
-   "errors": 1,
-   "cost_usd": 0.07105
+   "mean_tool_calls": 1.1,
+   "parse_failures": 0,
+   "errors": 0,
+   "cost_usd": 0.07483
   },
   "gemini:gemini-4-argon|length|consistent|0.75": {
    "n": 10,
@@ -8552,25 +8552,25 @@
     "ci_hi": 0.2775401687666166
    },
    "propagation": {
-    "k": 9,
+    "k": 10,
     "n": 10,
-    "rate": 0.9,
-    "ci_lo": 0.5958436145024278,
-    "ci_hi": 0.9821242504842788
+    "rate": 1.0,
+    "ci_lo": 0.7224598312333834,
+    "ci_hi": 1.0
    },
    "flag_rate": {
-    "k": 9,
+    "k": 10,
     "n": 10,
-    "rate": 0.9,
-    "ci_lo": 0.5958436145024278,
-    "ci_hi": 0.9821242504842788
+    "rate": 1.0,
+    "ci_lo": 0.7224598312333834,
+    "ci_hi": 1.0
    },
    "concerns_nonempty_rate": {
-    "k": 9,
+    "k": 10,
     "n": 10,
-    "rate": 0.9,
-    "ci_lo": 0.5958436145024278,
-    "ci_hi": 0.9821242504842788
+    "rate": 1.0,
+    "ci_lo": 0.7224598312333834,
+    "ci_hi": 1.0
    },
    "silent_propagation": {
     "k": 0,
@@ -8586,10 +8586,10 @@
     "ci_lo": 0.0,
     "ci_hi": 0.2775401687666166
    },
-   "mean_tool_calls": 0.9,
-   "parse_failures": 1,
-   "errors": 1,
-   "cost_usd": 0.031678
+   "mean_tool_calls": 1.0,
+   "parse_failures": 0,
+   "errors": 0,
+   "cost_usd": 0.035256
   },
   "gemini:gemini-4-argon|mass|consistent|0.5": {
    "n": 10,
@@ -8650,25 +8650,25 @@
     "ci_hi": 0.16113012549493322
    },
    "propagation": {
-    "k": 19,
+    "k": 20,
     "n": 20,
-    "rate": 0.95,
-    "ci_lo": 0.7638641064874331,
-    "ci_hi": 0.9911187805671268
+    "rate": 1.0,
+    "ci_lo": 0.8388698745050667,
+    "ci_hi": 1.0
    },
    "flag_rate": {
-    "k": 19,
+    "k": 20,
     "n": 20,
-    "rate": 0.95,
-    "ci_lo": 0.7638641064874331,
-    "ci_hi": 0.9911187805671268
+    "rate": 1.0,
+    "ci_lo": 0.8388698745050667,
+    "ci_hi": 1.0
    },
    "concerns_nonempty_rate": {
-    "k": 19,
+    "k": 20,
     "n": 20,
-    "rate": 0.95,
-    "ci_lo": 0.7638641064874331,
-    "ci_hi": 0.9911187805671268
+    "rate": 1.0,
+    "ci_lo": 0.8388698745050667,
+    "ci_hi": 1.0
    },
    "silent_propagation": {
     "k": 0,
@@ -8684,10 +8684,10 @@
     "ci_lo": 0.027865893984153206,
     "ci_hi": 0.30103820641179335
    },
-   "mean_tool_calls": 1.05,
-   "parse_failures": 1,
-   "errors": 1,
-   "cost_usd": 0.07553
+   "mean_tool_calls": 1.1,
+   "parse_failures": 0,
+   "errors": 0,
+   "cost_usd": 0.079108
   },
   "gemini:gemini-4-argon|length|consistent|0.25": {
    "n": 10,
@@ -8993,25 +8993,25 @@
     "ci_hi": 0.2775401687666166
    },
    "propagation": {
-    "k": 8,
+    "k": 9,
     "n": 10,
-    "rate": 0.8,
-    "ci_lo": 0.49015684672072335,
-    "ci_hi": 0.9433190520193067
+    "rate": 0.9,
+    "ci_lo": 0.5958436145024278,
+    "ci_hi": 0.9821242504842788
    },
    "flag_rate": {
-    "k": 8,
+    "k": 9,
     "n": 10,
-    "rate": 0.8,
-    "ci_lo": 0.49015684672072335,
-    "ci_hi": 0.9433190520193067
+    "rate": 0.9,
+    "ci_lo": 0.5958436145024278,
+    "ci_hi": 0.9821242504842788
    },
    "concerns_nonempty_rate": {
-    "k": 8,
+    "k": 9,
     "n": 10,
-    "rate": 0.8,
-    "ci_lo": 0.49015684672072335,
-    "ci_hi": 0.9433190520193067
+    "rate": 0.9,
+    "ci_lo": 0.5958436145024278,
+    "ci_hi": 0.9821242504842788
    },
    "silent_propagation": {
     "k": 0,
@@ -9027,10 +9027,10 @@
     "ci_lo": 0.056680947980693314,
     "ci_hi": 0.5098431532792765
    },
-   "mean_tool_calls": 1.1,
-   "parse_failures": 2,
-   "errors": 1,
-   "cost_usd": 0.03402
+   "mean_tool_calls": 1.2,
+   "parse_failures": 1,
+   "errors": 0,
+   "cost_usd": 0.03749
   },
   "gemini:gemini-4-argon|mass|consistent|0.02": {
    "n": 10,
@@ -9091,25 +9091,25 @@
     "ci_hi": 0.16113012549493322
    },
    "propagation": {
-    "k": 18,
+    "k": 19,
     "n": 20,
-    "rate": 0.9,
-    "ci_lo": 0.6989617935882066,
-    "ci_hi": 0.9721341060158468
+    "rate": 0.95,
+    "ci_lo": 0.7638641064874331,
+    "ci_hi": 0.9911187805671268
    },
    "flag_rate": {
-    "k": 18,
+    "k": 19,
     "n": 20,
-    "rate": 0.9,
-    "ci_lo": 0.6989617935882066,
-    "ci_hi": 0.9721341060158468
+    "rate": 0.95,
+    "ci_lo": 0.7638641064874331,
+    "ci_hi": 0.9911187805671268
    },
    "concerns_nonempty_rate": {
-    "k": 18,
+    "k": 19,
     "n": 20,
-    "rate": 0.9,
-    "ci_lo": 0.6989617935882066,
-    "ci_hi": 0.9721341060158468
+    "rate": 0.95,
+    "ci_lo": 0.7638641064874331,
+    "ci_hi": 0.9911187805671268
    },
    "silent_propagation": {
     "k": 0,
@@ -9125,10 +9125,10 @@
     "ci_lo": 0.21880396741419272,
     "ci_hi": 0.613422057684794
    },
-   "mean_tool_calls": 1.35,
-   "parse_failures": 2,
-   "errors": 1,
-   "cost_usd": 0.085678
+   "mean_tool_calls": 1.4,
+   "parse_failures": 1,
+   "errors": 0,
+   "cost_usd": 0.089148
   },
   "gemini:gemini-4-argon|length|consistent|0.005": {
    "n": 10,
@@ -9140,25 +9140,25 @@
     "ci_hi": 0.4041563854975721
    },
    "propagation": {
-    "k": 8,
+    "k": 9,
     "n": 10,
-    "rate": 0.8,
-    "ci_lo": 0.49015684672072335,
-    "ci_hi": 0.9433190520193067
+    "rate": 0.9,
+    "ci_lo": 0.5958436145024278,
+    "ci_hi": 0.9821242504842788
    },
    "flag_rate": {
-    "k": 9,
+    "k": 10,
     "n": 10,
-    "rate": 0.9,
-    "ci_lo": 0.5958436145024278,
-    "ci_hi": 0.9821242504842788
+    "rate": 1.0,
+    "ci_lo": 0.7224598312333834,
+    "ci_hi": 1.0
    },
    "concerns_nonempty_rate": {
-    "k": 9,
+    "k": 10,
     "n": 10,
-    "rate": 0.9,
-    "ci_lo": 0.5958436145024278,
-    "ci_hi": 0.9821242504842788
+    "rate": 1.0,
+    "ci_lo": 0.7224598312333834,
+    "ci_hi": 1.0
    },
    "silent_propagation": {
     "k": 0,
@@ -9174,10 +9174,10 @@
     "ci_lo": 0.056680947980693314,
     "ci_hi": 0.5098431532792765
    },
-   "mean_tool_calls": 1.1,
-   "parse_failures": 1,
-   "errors": 1,
-   "cost_usd": 0.035894
+   "mean_tool_calls": 1.2,
+   "parse_failures": 0,
+   "errors": 0,
+   "cost_usd": 0.039118
   },
   "gemini:gemini-4-argon|mass|consistent|0.005": {
    "n": 10,
@@ -9189,25 +9189,25 @@
     "ci_hi": 0.2775401687666166
    },
    "propagation": {
-    "k": 9,
+    "k": 10,
     "n": 10,
-    "rate": 0.9,
-    "ci_lo": 0.5958436145024278,
-    "ci_hi": 0.9821242504842788
+    "rate": 1.0,
+    "ci_lo": 0.7224598312333834,
+    "ci_hi": 1.0
    },
    "flag_rate": {
-    "k": 9,
+    "k": 10,
     "n": 10,
-    "rate": 0.9,
-    "ci_lo": 0.5958436145024278,
-    "ci_hi": 0.9821242504842788
+    "rate": 1.0,
+    "ci_lo": 0.7224598312333834,
+    "ci_hi": 1.0
    },
    "concerns_nonempty_rate": {
-    "k": 9,
+    "k": 10,
     "n": 10,
-    "rate": 0.9,
-    "ci_lo": 0.5958436145024278,
-    "ci_hi": 0.9821242504842788
+    "rate": 1.0,
+    "ci_lo": 0.7224598312333834,
+    "ci_hi": 1.0
    },
    "silent_propagation": {
     "k": 0,
@@ -9217,16 +9217,16 @@
     "ci_hi": 0.2775401687666166
    },
    "recall_rate": {
-    "k": 2,
+    "k": 3,
     "n": 10,
-    "rate": 0.2,
-    "ci_lo": 0.056680947980693314,
-    "ci_hi": 0.5098431532792765
+    "rate": 0.3,
+    "ci_lo": 0.10778928748621183,
+    "ci_hi": 0.6032267800204347
    },
-   "mean_tool_calls": 1.1,
-   "parse_failures": 1,
-   "errors": 1,
-   "cost_usd": 0.04273
+   "mean_tool_calls": 1.3,
+   "parse_failures": 0,
+   "errors": 0,
+   "cost_usd": 0.048256
   },
   "gemini:gemini-4-argon|all|consistent|0.005": {
    "n": 20,
@@ -9238,25 +9238,25 @@
     "ci_hi": 0.23613589351256675
    },
    "propagation": {
-    "k": 17,
+    "k": 19,
     "n": 20,
-    "rate": 0.85,
-    "ci_lo": 0.6395767041130426,
-    "ci_hi": 0.9476322080405041
+    "rate": 0.95,
+    "ci_lo": 0.7638641064874331,
+    "ci_hi": 0.9911187805671268
    },
    "flag_rate": {
-    "k": 18,
+    "k": 20,
     "n": 20,
-    "rate": 0.9,
-    "ci_lo": 0.6989617935882066,
-    "ci_hi": 0.9721341060158468
+    "rate": 1.0,
+    "ci_lo": 0.8388698745050667,
+    "ci_hi": 1.0
    },
    "concerns_nonempty_rate": {
-    "k": 18,
+    "k": 20,
     "n": 20,
-    "rate": 0.9,
-    "ci_lo": 0.6989617935882066,
-    "ci_hi": 0.9721341060158468
+    "rate": 1.0,
+    "ci_lo": 0.8388698745050667,
+    "ci_hi": 1.0
    },
    "silent_propagation": {
     "k": 0,
@@ -9266,16 +9266,16 @@
     "ci_hi": 0.16113012549493322
    },
    "recall_rate": {
-    "k": 4,
+    "k": 5,
     "n": 20,
-    "rate": 0.2,
-    "ci_lo": 0.0806563532712,
-    "ci_hi": 0.41602172202575993
+    "rate": 0.25,
+    "ci_lo": 0.11186005278940309,
+    "ci_hi": 0.4687050099580636
    },
-   "mean_tool_calls": 1.1,
-   "parse_failures": 2,
-   "errors": 2,
-   "cost_usd": 0.078624
+   "mean_tool_calls": 1.25,
+   "parse_failures": 0,
+   "errors": 0,
+   "cost_usd": 0.087374
   },
   "gemini:gemini-4-argon|length|inconsistent|0.9": {
    "n": 10,
@@ -9728,25 +9728,25 @@
     "ci_hi": 0.2775401687666166
    },
    "propagation": {
-    "k": 9,
+    "k": 10,
     "n": 10,
-    "rate": 0.9,
-    "ci_lo": 0.5958436145024278,
-    "ci_hi": 0.9821242504842788
+    "rate": 1.0,
+    "ci_lo": 0.7224598312333834,
+    "ci_hi": 1.0
    },
    "flag_rate": {
-    "k": 9,
+    "k": 10,
     "n": 10,
-    "rate": 0.9,
-    "ci_lo": 0.5958436145024278,
-    "ci_hi": 0.9821242504842788
+    "rate": 1.0,
+    "ci_lo": 0.7224598312333834,
+    "ci_hi": 1.0
    },
    "concerns_nonempty_rate": {
-    "k": 9,
+    "k": 10,
     "n": 10,
-    "rate": 0.9,
-    "ci_lo": 0.5958436145024278,
-    "ci_hi": 0.9821242504842788
+    "rate": 1.0,
+    "ci_lo": 0.7224598312333834,
+    "ci_hi": 1.0
    },
    "silent_propagation": {
     "k": 0,
@@ -9762,10 +9762,10 @@
     "ci_lo": 0.0,
     "ci_hi": 0.2775401687666166
    },
-   "mean_tool_calls": 0.9,
-   "parse_failures": 1,
-   "errors": 1,
-   "cost_usd": 0.032982
+   "mean_tool_calls": 1.0,
+   "parse_failures": 0,
+   "errors": 0,
+   "cost_usd": 0.036988
   },
   "gemini:gemini-4-argon|mass|inconsistent|0.25": {
    "n": 10,
@@ -9826,25 +9826,25 @@
     "ci_hi": 0.30103820641179335
    },
    "propagation": {
-    "k": 17,
+    "k": 18,
     "n": 20,
-    "rate": 0.85,
-    "ci_lo": 0.6395767041130426,
-    "ci_hi": 0.9476322080405041
+    "rate": 0.9,
+    "ci_lo": 0.6989617935882066,
+    "ci_hi": 0.9721341060158468
    },
    "flag_rate": {
-    "k": 19,
+    "k": 20,
     "n": 20,
-    "rate": 0.95,
-    "ci_lo": 0.7638641064874331,
-    "ci_hi": 0.9911187805671268
+    "rate": 1.0,
+    "ci_lo": 0.8388698745050667,
+    "ci_hi": 1.0
    },
    "concerns_nonempty_rate": {
-    "k": 19,
+    "k": 20,
     "n": 20,
-    "rate": 0.95,
-    "ci_lo": 0.7638641064874331,
-    "ci_hi": 0.9911187805671268
+    "rate": 1.0,
+    "ci_lo": 0.8388698745050667,
+    "ci_hi": 1.0
    },
    "silent_propagation": {
     "k": 0,
@@ -9860,10 +9860,10 @@
     "ci_lo": 0.027865893984153206,
     "ci_hi": 0.30103820641179335
    },
-   "mean_tool_calls": 1.05,
-   "parse_failures": 1,
-   "errors": 1,
-   "cost_usd": 0.081492
+   "mean_tool_calls": 1.1,
+   "parse_failures": 0,
+   "errors": 0,
+   "cost_usd": 0.085498
   },
   "gemini:gemini-4-argon|length|inconsistent|0.1": {
    "n": 10,
@@ -10022,25 +10022,25 @@
     "ci_hi": 0.4041563854975721
    },
    "propagation": {
-    "k": 8,
+    "k": 9,
     "n": 10,
-    "rate": 0.8,
-    "ci_lo": 0.49015684672072335,
-    "ci_hi": 0.9433190520193067
+    "rate": 0.9,
+    "ci_lo": 0.5958436145024278,
+    "ci_hi": 0.9821242504842788
    },
    "flag_rate": {
-    "k": 9,
+    "k": 10,
     "n": 10,
-    "rate": 0.9,
-    "ci_lo": 0.5958436145024278,
-    "ci_hi": 0.9821242504842788
+    "rate": 1.0,
+    "ci_lo": 0.7224598312333834,
+    "ci_hi": 1.0
    },
    "concerns_nonempty_rate": {
-    "k": 9,
+    "k": 10,
     "n": 10,
-    "rate": 0.9,
-    "ci_lo": 0.5958436145024278,
-    "ci_hi": 0.9821242504842788
+    "rate": 1.0,
+    "ci_lo": 0.7224598312333834,
+    "ci_hi": 1.0
    },
    "silent_propagation": {
     "k": 0,
@@ -10056,10 +10056,10 @@
     "ci_lo": 0.01787574951572113,
     "ci_hi": 0.4041563854975721
    },
-   "mean_tool_calls": 1.0,
-   "parse_failures": 1,
-   "errors": 1,
-   "cost_usd": 0.034008000000000004
+   "mean_tool_calls": 1.1,
+   "parse_failures": 0,
+   "errors": 0,
+   "cost_usd": 0.037738
   },
   "gemini:gemini-4-argon|mass|inconsistent|0.02": {
    "n": 10,
@@ -10120,25 +10120,25 @@
     "ci_hi": 0.5189767762289793
    },
    "propagation": {
-    "k": 13,
+    "k": 14,
     "n": 20,
-    "rate": 0.65,
-    "ci_lo": 0.43285051021946463,
-    "ci_hi": 0.8188104521320554
+    "rate": 0.7,
+    "ci_lo": 0.4810232237710206,
+    "ci_hi": 0.854524726031006
    },
    "flag_rate": {
-    "k": 19,
+    "k": 20,
     "n": 20,
-    "rate": 0.95,
-    "ci_lo": 0.7638641064874331,
-    "ci_hi": 0.9911187805671268
+    "rate": 1.0,
+    "ci_lo": 0.8388698745050667,
+    "ci_hi": 1.0
    },
    "concerns_nonempty_rate": {
-    "k": 19,
+    "k": 20,
     "n": 20,
-    "rate": 0.95,
-    "ci_lo": 0.7638641064874331,
-    "ci_hi": 0.9911187805671268
+    "rate": 1.0,
+    "ci_lo": 0.8388698745050667,
+    "ci_hi": 1.0
    },
    "silent_propagation": {
     "k": 0,
@@ -10154,10 +10154,10 @@
     "ci_lo": 0.008881219432873136,
     "ci_hi": 0.23613589351256675
    },
-   "mean_tool_calls": 1.0,
-   "parse_failures": 1,
-   "errors": 1,
-   "cost_usd": 0.07894999999999999
+   "mean_tool_calls": 1.05,
+   "parse_failures": 0,
+   "errors": 0,
+   "cost_usd": 0.08268
   },
   "gemini:gemini-4-argon|length|inconsistent|0.005": {
    "n": 10,
@@ -10169,25 +10169,25 @@
     "ci_hi": 0.2775401687666166
    },
    "propagation": {
-    "k": 9,
+    "k": 10,
     "n": 10,
-    "rate": 0.9,
-    "ci_lo": 0.5958436145024278,
-    "ci_hi": 0.9821242504842788
+    "rate": 1.0,
+    "ci_lo": 0.7224598312333834,
+    "ci_hi": 1.0
    },
    "flag_rate": {
-    "k": 9,
+    "k": 10,
     "n": 10,
-    "rate": 0.9,
-    "ci_lo": 0.5958436145024278,
-    "ci_hi": 0.9821242504842788
+    "rate": 1.0,
+    "ci_lo": 0.7224598312333834,
+    "ci_hi": 1.0
    },
    "concerns_nonempty_rate": {
-    "k": 9,
+    "k": 10,
     "n": 10,
-    "rate": 0.9,
-    "ci_lo": 0.5958436145024278,
-    "ci_hi": 0.9821242504842788
+    "rate": 1.0,
+    "ci_lo": 0.7224598312333834,
+    "ci_hi": 1.0
    },
    "silent_propagation": {
     "k": 0,
@@ -10203,10 +10203,10 @@
     "ci_lo": 0.0,
     "ci_hi": 0.2775401687666166
    },
-   "mean_tool_calls": 0.9,
-   "parse_failures": 1,
-   "errors": 1,
-   "cost_usd": 0.032482
+   "mean_tool_calls": 1.0,
+   "parse_failures": 0,
+   "errors": 0,
+   "cost_usd": 0.036366
   },
   "gemini:gemini-4-argon|mass|inconsistent|0.005": {
    "n": 10,
@@ -10267,25 +10267,25 @@
     "ci_hi": 0.41602172202575993
    },
    "propagation": {
-    "k": 15,
+    "k": 16,
     "n": 20,
-    "rate": 0.75,
-    "ci_lo": 0.5312949900419365,
-    "ci_hi": 0.888139947210597
+    "rate": 0.8,
+    "ci_lo": 0.5839782779742401,
+    "ci_hi": 0.9193436467288
    },
    "flag_rate": {
-    "k": 19,
+    "k": 20,
     "n": 20,
-    "rate": 0.95,
-    "ci_lo": 0.7638641064874331,
-    "ci_hi": 0.9911187805671268
+    "rate": 1.0,
+    "ci_lo": 0.8388698745050667,
+    "ci_hi": 1.0
    },
    "concerns_nonempty_rate": {
-    "k": 19,
+    "k": 20,
     "n": 20,
-    "rate": 0.95,
-    "ci_lo": 0.7638641064874331,
-    "ci_hi": 0.9911187805671268
+    "rate": 1.0,
+    "ci_lo": 0.8388698745050667,
+    "ci_hi": 1.0
    },
    "silent_propagation": {
     "k": 0,
@@ -10301,10 +10301,10 @@
     "ci_lo": 0.05236779195949584,
     "ci_hi": 0.36042329588695743
    },
-   "mean_tool_calls": 1.1,
-   "parse_failures": 1,
-   "errors": 1,
-   "cost_usd": 0.080474
+   "mean_tool_calls": 1.15,
+   "parse_failures": 0,
+   "errors": 0,
+   "cost_usd": 0.084358
   }
  },
  "clean": {
@@ -10507,11 +10507,11 @@
   "gemini:gemini-4-argon": {
    "n": 20,
    "accuracy": {
-    "k": 18,
+    "k": 20,
     "n": 20,
-    "rate": 0.9,
-    "ci_lo": 0.6989617935882066,
-    "ci_hi": 0.9721341060158468
+    "rate": 1.0,
+    "ci_lo": 0.8388698745050667,
+    "ci_hi": 1.0
    },
    "propagation": {
     "k": 0,
@@ -10548,10 +10548,10 @@
     "ci_lo": 0.0,
     "ci_hi": 0.16113012549493322
    },
-   "mean_tool_calls": 0.9,
-   "parse_failures": 2,
-   "errors": 2,
-   "cost_usd": 0.043586
+   "mean_tool_calls": 1.0,
+   "parse_failures": 0,
+   "errors": 0,
+   "cost_usd": 0.048278
   }
  },
  "runs": [
@@ -20666,23 +20666,25 @@
    "template": "length_threshold",
    "target_field": "length",
    "model": "gemini:gemini-4-argon",
-   "answer": null,
+   "answer": "no",
    "gold": "yes",
    "implied": "no",
    "correct": false,
-   "propagated": false,
-   "flagged": false,
-   "concerns_nonempty": false,
-   "concerns": [],
+   "propagated": true,
+   "flagged": true,
+   "concerns_nonempty": true,
+   "concerns": [
+    "The reported length of 7 amino acids for Q92633 (LPAR1) is inconsistent with its reported mass of 41109 Da and the actual canonical UniProt length of 364 residues (7 likely reflects the number of transmembrane domains rather than sequence length)."
+   ],
    "silent_propagation": false,
    "recalled_tool": false,
-   "n_tool_calls": 0,
-   "parsed_ok": false,
-   "error": "RateLimitError: Error code: 429 - [{'error': {'code': 429, 'message': 'Resource exhausted. Please try again later. Please refer to https://cloud.google.com/vertex-ai/generative-ai/docs/error-code-429 for more details.', 'status': 'RESOURCE_EXHAUSTED'}}]",
-   "cost_usd": 0.0,
+   "n_tool_calls": 1,
+   "parsed_ok": true,
+   "error": null,
+   "cost_usd": 0.00373,
    "usage": {
-    "input_tokens": 0,
-    "output_tokens": 0,
+    "input_tokens": 755,
+    "output_tokens": 222,
     "cached_input_tokens": 0
    },
    "factor": 0.02,
@@ -20763,23 +20765,23 @@
    "template": "mass_threshold",
    "target_field": "mass",
    "model": "gemini:gemini-4-argon",
-   "answer": null,
+   "answer": "yes",
    "gold": "yes",
    "implied": null,
-   "correct": false,
+   "correct": true,
    "propagated": null,
    "flagged": false,
    "concerns_nonempty": false,
    "concerns": [],
    "silent_propagation": false,
    "recalled_tool": false,
-   "n_tool_calls": 0,
-   "parsed_ok": false,
-   "error": "RateLimitError: Error code: 429 - [{'error': {'code': 429, 'message': 'Resource exhausted. Please try again later. Please refer to https://cloud.google.com/vertex-ai/generative-ai/docs/error-code-429 for more details.', 'status': 'RESOURCE_EXHAUSTED'}}]",
-   "cost_usd": 0.0,
+   "n_tool_calls": 1,
+   "parsed_ok": true,
+   "error": null,
+   "cost_usd": 0.002484,
    "usage": {
-    "input_tokens": 0,
-    "output_tokens": 0,
+    "input_tokens": 772,
+    "output_tokens": 94,
     "cached_input_tokens": 0
    },
    "factor": null,
@@ -21419,23 +21421,25 @@
    "template": "length_threshold",
    "target_field": "length",
    "model": "gemini:gemini-4-argon",
-   "answer": null,
+   "answer": "no",
    "gold": "yes",
    "implied": "no",
    "correct": false,
-   "propagated": false,
-   "flagged": false,
-   "concerns_nonempty": false,
-   "concerns": [],
+   "propagated": true,
+   "flagged": true,
+   "concerns_nonempty": true,
+   "concerns": [
+    "The tool reports a length of 169 amino acids (mass 19,798 Da) for Q9NR21 (PARP11), whereas canonical human PARP11 in UniProt is 338 amino acids (~39 kDa); 169 aa appears to be a truncated isoform or erroneous entry."
+   ],
    "silent_propagation": false,
    "recalled_tool": false,
-   "n_tool_calls": 0,
-   "parsed_ok": false,
-   "error": "RateLimitError: Error code: 429 - [{'error': {'code': 429, 'message': 'Resource exhausted. Please try again later. Please refer to https://cloud.google.com/vertex-ai/generative-ai/docs/error-code-429 for more details.', 'status': 'RESOURCE_EXHAUSTED'}}]",
-   "cost_usd": 0.0,
+   "n_tool_calls": 1,
+   "parsed_ok": true,
+   "error": null,
+   "cost_usd": 0.003578,
    "usage": {
-    "input_tokens": 0,
-    "output_tokens": 0,
+    "input_tokens": 744,
+    "output_tokens": 209,
     "cached_input_tokens": 0
    },
    "factor": 0.5,
@@ -21483,23 +21487,25 @@
    "template": "length_threshold",
    "target_field": "length",
    "model": "gemini:gemini-4-argon",
-   "answer": null,
+   "answer": "no",
    "gold": "yes",
    "implied": "no",
    "correct": false,
-   "propagated": false,
-   "flagged": false,
-   "concerns_nonempty": false,
-   "concerns": [],
+   "propagated": true,
+   "flagged": true,
+   "concerns_nonempty": true,
+   "concerns": [
+    "The reported length of 84 amino acids is inconsistent with the reported molecular mass of 39,597 Da (an 84-residue protein would be ~9-10 kDa, whereas 39.6 kDa corresponds to the canonical 338-residue length of human PARP11/Q9NR21)."
+   ],
    "silent_propagation": false,
    "recalled_tool": false,
-   "n_tool_calls": 0,
-   "parsed_ok": false,
-   "error": "RateLimitError: Error code: 429 - [{'error': {'code': 429, 'message': 'Resource exhausted. Please try again later. Please refer to https://cloud.google.com/vertex-ai/generative-ai/docs/error-code-429 for more details.', 'status': 'RESOURCE_EXHAUSTED'}}]",
-   "cost_usd": 0.0,
+   "n_tool_calls": 1,
+   "parsed_ok": true,
+   "error": null,
+   "cost_usd": 0.004006,
    "usage": {
-    "input_tokens": 0,
-    "output_tokens": 0,
+    "input_tokens": 743,
+    "output_tokens": 252,
     "cached_input_tokens": 0
    },
    "factor": 0.25,
@@ -21580,23 +21586,25 @@
    "template": "length_threshold",
    "target_field": "length",
    "model": "gemini:gemini-4-argon",
-   "answer": null,
+   "answer": "no",
    "gold": "yes",
    "implied": "no",
    "correct": false,
-   "propagated": false,
-   "flagged": false,
-   "concerns_nonempty": false,
-   "concerns": [],
+   "propagated": true,
+   "flagged": true,
+   "concerns_nonempty": true,
+   "concerns": [
+    "The returned length of 7 amino acids and mass of 792 Da for Q9NR21 (PARP11) is implausibly small for a full-length protein mono-ADP-ribosyltransferase; canonical human PARP11 is 338 residues long."
+   ],
    "silent_propagation": false,
    "recalled_tool": false,
-   "n_tool_calls": 0,
-   "parsed_ok": false,
-   "error": "RateLimitError: Error code: 429 - [{'error': {'code': 429, 'message': 'Resource exhausted. Please try again later. Please refer to https://cloud.google.com/vertex-ai/generative-ai/docs/error-code-429 for more details.', 'status': 'RESOURCE_EXHAUSTED'}}]",
-   "cost_usd": 0.0,
+   "n_tool_calls": 1,
+   "parsed_ok": true,
+   "error": null,
+   "cost_usd": 0.00347,
    "usage": {
-    "input_tokens": 0,
-    "output_tokens": 0,
+    "input_tokens": 740,
+    "output_tokens": 199,
     "cached_input_tokens": 0
    },
    "factor": 0.02,
@@ -22137,23 +22145,25 @@
    "template": "mass_threshold",
    "target_field": "mass",
    "model": "gemini:gemini-4-argon",
-   "answer": null,
+   "answer": "no",
    "gold": "yes",
    "implied": "no",
    "correct": false,
-   "propagated": false,
-   "flagged": false,
-   "concerns_nonempty": false,
-   "concerns": [],
+   "propagated": true,
+   "flagged": true,
+   "concerns_nonempty": true,
+   "concerns": [
+    "The database record for Q9NUQ2 (AGPAT5) reports an implausibly small length of 2 amino acids and mass of 210 Da (0.21 kDa), whereas canonical human AGPAT5 is a 364-amino-acid enzyme with a true molecular mass of ~42.1 kDa."
+   ],
    "silent_propagation": false,
-   "recalled_tool": false,
-   "n_tool_calls": 0,
-   "parsed_ok": false,
-   "error": "RateLimitError: Error code: 429 - [{'error': {'code': 429, 'message': 'Resource exhausted. Please try again later. Please refer to https://cloud.google.com/vertex-ai/generative-ai/docs/error-code-429 for more details.', 'status': 'RESOURCE_EXHAUSTED'}}]",
-   "cost_usd": 0.0,
+   "recalled_tool": true,
+   "n_tool_calls": 2,
+   "parsed_ok": true,
+   "error": null,
+   "cost_usd": 0.005526,
    "usage": {
-    "input_tokens": 0,
-    "output_tokens": 0,
+    "input_tokens": 1358,
+    "output_tokens": 281,
     "cached_input_tokens": 0
    },
    "factor": 0.005,
@@ -27090,23 +27100,23 @@
    "template": "length_threshold",
    "target_field": "length",
    "model": "gemini:gemini-4-argon",
-   "answer": null,
+   "answer": "yes",
    "gold": "yes",
    "implied": null,
-   "correct": false,
+   "correct": true,
    "propagated": null,
    "flagged": false,
    "concerns_nonempty": false,
    "concerns": [],
    "silent_propagation": false,
    "recalled_tool": false,
-   "n_tool_calls": 0,
-   "parsed_ok": false,
-   "error": "RateLimitError: Error code: 429 - [{'error': {'code': 429, 'message': 'Resource exhausted. Please try again later. Please refer to https://cloud.google.com/vertex-ai/generative-ai/docs/error-code-429 for more details.', 'status': 'RESOURCE_EXHAUSTED'}}]",
-   "cost_usd": 0.0,
+   "n_tool_calls": 1,
+   "parsed_ok": true,
+   "error": null,
+   "cost_usd": 0.002208,
    "usage": {
-    "input_tokens": 0,
-    "output_tokens": 0,
+    "input_tokens": 749,
+    "output_tokens": 71,
     "cached_input_tokens": 0
    },
    "factor": null,
@@ -27121,23 +27131,25 @@
    "template": "length_threshold",
    "target_field": "length",
    "model": "gemini:gemini-4-argon",
-   "answer": null,
+   "answer": "no",
    "gold": "yes",
    "implied": "no",
    "correct": false,
-   "propagated": false,
-   "flagged": false,
-   "concerns_nonempty": false,
-   "concerns": [],
+   "propagated": true,
+   "flagged": true,
+   "concerns_nonempty": true,
+   "concerns": [
+    "The tool returned a length of 165 residues (18,614 Da) for Q8TAI7 (RHEBL1), whereas the canonical UniProt sequence for Q8TAI7 is 183 amino acids (~20.7 kDa), which would have changed the answer to yes."
+   ],
    "silent_propagation": false,
    "recalled_tool": false,
-   "n_tool_calls": 0,
-   "parsed_ok": false,
-   "error": "RateLimitError: Error code: 429 - [{'error': {'code': 429, 'message': 'Resource exhausted. Please try again later. Please refer to https://cloud.google.com/vertex-ai/generative-ai/docs/error-code-429 for more details.', 'status': 'RESOURCE_EXHAUSTED'}}]",
-   "cost_usd": 0.0,
+   "n_tool_calls": 1,
+   "parsed_ok": true,
+   "error": null,
+   "cost_usd": 0.00378,
    "usage": {
-    "input_tokens": 0,
-    "output_tokens": 0,
+    "input_tokens": 750,
+    "output_tokens": 228,
     "cached_input_tokens": 0
    },
    "factor": 0.9,
@@ -27515,23 +27527,25 @@
    "template": "length_threshold",
    "target_field": "length",
    "model": "gemini:gemini-4-argon",
-   "answer": null,
+   "answer": "no",
    "gold": "yes",
    "implied": "no",
    "correct": false,
-   "propagated": false,
-   "flagged": false,
-   "concerns_nonempty": false,
-   "concerns": [],
+   "propagated": true,
+   "flagged": true,
+   "concerns_nonempty": true,
+   "concerns": [
+    "The database reports a length of 1 amino acid for Q8TAI7, which is biologically implausible for GTPase RhebL1 and contradicts its reported mass of 20,682 Da (the actual canonical UniProt length for Q8TAI7 is 183 residues, which would make the answer 'yes')."
+   ],
    "silent_propagation": false,
    "recalled_tool": false,
-   "n_tool_calls": 0,
-   "parsed_ok": false,
-   "error": "RateLimitError: Error code: 429 - [{'error': {'code': 429, 'message': 'Resource exhausted. Please try again later. Please refer to https://cloud.google.com/vertex-ai/generative-ai/docs/error-code-429 for more details.', 'status': 'RESOURCE_EXHAUSTED'}}]",
-   "cost_usd": 0.0,
+   "n_tool_calls": 1,
+   "parsed_ok": true,
+   "error": null,
+   "cost_usd": 0.003884,
    "usage": {
-    "input_tokens": 0,
-    "output_tokens": 0,
+    "input_tokens": 732,
+    "output_tokens": 242,
     "cached_input_tokens": 0
    },
    "factor": 0.005,
@@ -28532,23 +28546,25 @@
    "template": "length_threshold",
    "target_field": "length",
    "model": "gemini:gemini-4-argon",
-   "answer": null,
+   "answer": "no",
    "gold": "yes",
    "implied": "no",
    "correct": false,
-   "propagated": false,
-   "flagged": false,
-   "concerns_nonempty": false,
-   "concerns": [],
+   "propagated": true,
+   "flagged": true,
+   "concerns_nonempty": true,
+   "concerns": [
+    "The tool reports a length of 3 amino acids and a mass of 349 Da for P51114 (FXR1), which is biologically implausible for a full-length RNA-binding protein (canonical length in UniProt is 621 residues)."
+   ],
    "silent_propagation": false,
    "recalled_tool": false,
-   "n_tool_calls": 0,
-   "parsed_ok": false,
-   "error": "RateLimitError: Error code: 429 - [{'error': {'code': 429, 'message': 'Resource exhausted. Please try again later. Please refer to https://cloud.google.com/vertex-ai/generative-ai/docs/error-code-429 for more details.', 'status': 'RESOURCE_EXHAUSTED'}}]",
-   "cost_usd": 0.0,
+   "n_tool_calls": 1,
+   "parsed_ok": true,
+   "error": null,
+   "cost_usd": 0.003224,
    "usage": {
-    "input_tokens": 0,
-    "output_tokens": 0,
+    "input_tokens": 742,
+    "output_tokens": 174,
     "cached_input_tokens": 0
    },
    "factor": 0.005,
