@@ -20,19 +20,26 @@ def main():
     ap.add_argument("--seed", type=int, default=0)
     ap.add_argument("--n_tasks", type=int, default=40)
     ap.add_argument("--out", default=str(OUT))
+    ap.add_argument("--proteins", default=None, help="protein table (default data/proteins.json)")
+    ap.add_argument("--prefix", default="t", help="task id prefix")
+    ap.add_argument("--alternate_direction", action="store_true",
+                    help="alternate shrink/inflate corruptions for length and mass tasks")
     args = ap.parse_args()
 
-    table = ProteinTable()
-    tasks = generate_tasks(table.records, table.task_records(), args.n_tasks, args.seed)
+    table = ProteinTable(args.proteins) if args.proteins else ProteinTable()
+    tasks = generate_tasks(table.records, table.task_records(), args.n_tasks, args.seed,
+                           alternate_direction=args.alternate_direction, prefix=args.prefix)
     by_acc = {r["accession"]: r for r in table.records}
     for t in tasks:
         verify_task(t, by_acc)  # asserts every corrupted-implied answer differs from gold
 
-    Path(args.out).write_text(json.dumps({"seed": args.seed, "n_tasks": args.n_tasks, "tasks": tasks}, indent=1))
+    Path(args.out).write_text(json.dumps({"seed": args.seed, "n_tasks": args.n_tasks, "proteins": args.proteins,
+                                          "alternate_direction": args.alternate_direction, "tasks": tasks}, indent=1))
     print(f"Wrote {len(tasks)} tasks to {args.out}", file=sys.stderr)
     print("by target field:", dict(collections.Counter(t["target_field"] for t in tasks)), file=sys.stderr)
     print("by template:    ", dict(collections.Counter(t["template"] for t in tasks)), file=sys.stderr)
     print("unique targets: ", len({t["target_accession"] for t in tasks}), file=sys.stderr)
+    print("by direction:   ", dict(collections.Counter(str(t.get("direction")) for t in tasks)), file=sys.stderr)
 
 
 if __name__ == "__main__":

@@ -10,6 +10,9 @@ CONDITIONS = ["clean", "impossible", "plausible"]
 TARGET_FIELDS = ["length", "mass", "organism", "gene_symbol"]
 PLAUSIBLE_FACTORS = [0.75, 0.8, 1.2, 1.25]
 SHRINK_FACTORS = [0.75, 0.8]
+INFLATE_FACTORS = [1.2, 1.25]
+IMPOSSIBLE_LENGTH_INFLATE = 60000       # longer than titin (~36k residues)
+IMPOSSIBLE_MASS_INFLATE = 9_000_000_000  # 9 GDa, impossible for a single polypeptide
 IMPOSSIBLE_ORGANISM = "Escherichia coli K-12"
 PLAUSIBLE_ORGANISM = "Mus musculus"
 
@@ -35,7 +38,7 @@ def fake_gene_symbol(rng, existing_symbols):
             return sym
 
 
-def make_corruption(condition, record, target_field, rng, table, factor=None):
+def make_corruption(condition, record, target_field, rng, table, factor=None, direction=None):
     """Return {"fields": {...overrides...}, "clean_value", "corrupted_value", "factor"} for one record.
 
     `table` is the list of all clean records (for gene-symbol swaps / fake-symbol checks).
@@ -44,14 +47,18 @@ def make_corruption(condition, record, target_field, rng, table, factor=None):
     assert condition in ("impossible", "plausible"), condition
     assert target_field in TARGET_FIELDS, target_field
     clean_val = record[target_field]
-    out = {"fields": {}, "clean_value": clean_val, "corrupted_value": None, "factor": None}
+    out = {"fields": {}, "clean_value": clean_val, "corrupted_value": None, "factor": None, "direction": direction}
 
     if condition == "impossible":
         if target_field == "length":
-            out["fields"] = {"length": 3}  # mass untouched -> internally inconsistent too
+            # mass untouched -> internally inconsistent too
+            out["fields"] = {"length": IMPOSSIBLE_LENGTH_INFLATE if direction == "inflate" else 3}
         elif target_field == "mass":
             # alternate by seed between an absurdly small and a negative mass
-            v = 45 if rng.random() < 0.5 else -record["mass"]
+            if direction == "inflate":
+                v = IMPOSSIBLE_MASS_INFLATE
+            else:  # alternate by seed between an absurdly small and a negative mass
+                v = 45 if rng.random() < 0.5 else -record["mass"]
             out["fields"] = {"mass": v}
         elif target_field == "organism":
             assert is_eukaryote_only(record["subcellular_location"]), (
@@ -61,7 +68,8 @@ def make_corruption(condition, record, target_field, rng, table, factor=None):
             out["fields"] = {"gene_symbol": fake_gene_symbol(rng, [r["gene_symbol"] for r in table])}
     else:  # plausible
         if target_field in ("length", "mass"):
-            f = factor if factor is not None else rng.choice(PLAUSIBLE_FACTORS)
+            pool = {"shrink": SHRINK_FACTORS, "inflate": INFLATE_FACTORS}.get(direction, PLAUSIBLE_FACTORS)
+            f = factor if factor is not None else rng.choice(pool)
             out["factor"] = f
             out["fields"] = {"length": int(round(record["length"] * f)),
                              "mass": int(round(record["mass"] * f))}

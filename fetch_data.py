@@ -103,6 +103,8 @@ def main():
     ap.add_argument("--n_task", type=int, default=40, help="how many of the sample are marked for tasks; rest are spare")
     ap.add_argument("--pool_size", type=int, default=3000)
     ap.add_argument("--refresh", action="store_true", help="re-download even if the raw pool is cached")
+    ap.add_argument("--out", default=str(OUT_PATH))
+    ap.add_argument("--exclude", default=None, help="proteins.json whose accessions and gene symbols are excluded")
     args = ap.parse_args()
     DATA_DIR.mkdir(exist_ok=True)
 
@@ -128,6 +130,11 @@ def main():
         seen.add(p["gene_symbol"].upper())
         uniq.append(p)
     print(f"Complete human records with unique gene symbols: {len(uniq)} / {len(raw)}", file=sys.stderr)
+    if args.exclude:
+        ex = json.loads(Path(args.exclude).read_text())
+        ex_acc = {r["accession"] for r in ex}; ex_gene = {r["gene_symbol"].upper() for r in ex}
+        uniq = [p for p in uniq if p["accession"] not in ex_acc and p["gene_symbol"].upper() not in ex_gene]
+        print(f"After excluding {len(ex)} proteins from {args.exclude}: {len(uniq)}", file=sys.stderr)
     if len(uniq) < args.n_sample:
         print("ERROR: not enough complete records; aborting.", file=sys.stderr)
         sys.exit(1)
@@ -136,8 +143,8 @@ def main():
     sample = rng.sample(uniq, args.n_sample)
     for i, rec in enumerate(sample):
         rec["split"] = "task" if i < args.n_task else "spare"
-    OUT_PATH.write_text(json.dumps(sample, indent=1))
-    print(f"Wrote {len(sample)} proteins ({args.n_task} task / {args.n_sample - args.n_task} spare) to {OUT_PATH}", file=sys.stderr)
+    Path(args.out).write_text(json.dumps(sample, indent=1))
+    print(f"Wrote {len(sample)} proteins ({args.n_task} task / {args.n_sample - args.n_task} spare) to {args.out}", file=sys.stderr)
 
 
 if __name__ == "__main__":

@@ -9,13 +9,17 @@ import itertools
 import math
 import random
 
-from corrupt import (PLAUSIBLE_FACTORS, SHRINK_FACTORS, TARGET_FIELDS, apply_corruption,
+from corrupt import (INFLATE_FACTORS, PLAUSIBLE_FACTORS, SHRINK_FACTORS, TARGET_FIELDS, apply_corruption,
                      is_eukaryote_only, make_corruption, make_scaled_corruption)
 from matching import match_answer
 
 FIELD_CYCLE = ["length", "mass", "organism", "gene_symbol"]
 CORRUPT_CONDITIONS = ["impossible", "plausible"]
 MARGIN = 0.05  # categorical answers must not sit within 5% of the decision boundary
+
+
+def _factors(direction):
+    return {"shrink": SHRINK_FACTORS, "inflate": INFLATE_FACTORS}.get(direction)
 
 
 def _yesno(b):
@@ -153,7 +157,7 @@ def verify_task(task, by_acc):
 
 
 # ---------------------------------------------------------------- builders
-def build_single(template, rng, candidates, table, used):
+def build_single(template, rng, candidates, table, used, direction=None):
     field = TEMPLATES[template]["field"]
     pool = [r for r in candidates if r["accession"] not in used]
     if template == "organism":
@@ -167,16 +171,16 @@ def build_single(template, rng, candidates, table, used):
         if template == "length_threshold":
             # shrink-only: T sits between the plausibly shrunk length and the true length, and the
             # impossible length (3) also falls below T, so both corruptions flip yes -> no.
-            f = rng.choice(SHRINK_FACTORS)
+            f = rng.choice(_factors(direction) or SHRINK_FACTORS)
             params["threshold"] = (rec["length"] + int(round(rec["length"] * f))) // 2
-        corr = {c: make_corruption(c, rec, field, rng, table, factor=f) for c in CORRUPT_CONDITIONS}
+        corr = {c: make_corruption(c, rec, field, rng, table, factor=f, direction=direction) for c in CORRUPT_CONDITIONS}
         task = assemble(template, params, acc, [acc], corr, by_acc)
         if task:
             return task
     return None
 
 
-def build_pair(template, rng, candidates, table, used):
+def build_pair(template, rng, candidates, table, used, direction=None):
     field = TEMPLATES[template]["field"]
     by_acc = {r["accession"]: r for r in table}
     pairs = list(itertools.permutations(candidates, 2))
@@ -185,17 +189,18 @@ def build_pair(template, rng, candidates, table, used):
         for target in rng.sample([A, B], 2):
             if target["accession"] in used:
                 continue
-            for f in rng.sample(PLAUSIBLE_FACTORS, len(PLAUSIBLE_FACTORS)):
+            facs = _factors(direction) or PLAUSIBLE_FACTORS
+            for f in rng.sample(facs, len(facs)):
                 params = {"gene_A": A["gene_symbol"], "gene_B": B["gene_symbol"],
                           "acc_A": A["accession"], "acc_B": B["accession"]}
-                corr = {c: make_corruption(c, target, field, rng, table, factor=f) for c in CORRUPT_CONDITIONS}
+                corr = {c: make_corruption(c, target, field, rng, table, factor=f, direction=direction) for c in CORRUPT_CONDITIONS}
                 task = assemble(template, params, target["accession"], [A["accession"], B["accession"]], corr, by_acc)
                 if task:
                     return task
     return None
 
 
-def generate_tasks(table_records, task_split_records, n_tasks, seed):
+def generate_tasks(table_records, task_split_records, n_tasks, seed, alternate_direction=False, prefix="t"):
     rng = random.Random(seed)
     used = set()
     tasks = []
@@ -206,14 +211,18 @@ def generate_tasks(table_records, task_split_records, n_tasks, seed):
         if template is None:
             template = next(length_templates)
         builder = build_pair if TEMPLATES[template]["n_calls"] == 2 else build_single
+        direction = None
+        if alternate_direction and field in ("length", "mass"):
+            direction = "shrink" if (i // len(FIELD_CYCLE)) % 2 == 0 else "inflate"
         task = None
-        for cands in (task_split_records, table_records):  # prefer the 40 task proteins, then spares
-            task = builder(template, rng, list(cands), table_records, used)
+        for cands in (task_split_records, table_records):  # prefer the task proteins, then spares
+            task = builder(template, rng, list(cands), table_records, used, direction=direction)
             if task:
                 break
         if task is None:
             raise RuntimeError(f"could not build a task for template {template} (task {i})")
-        task["task_id"] = f"t{i:03d}"
+        task["task_id"] = f"{prefix}{i:03d}"
+        task["direction"] = direction
         used.add(task["target_accession"])
         tasks.append(task)
     return tasks

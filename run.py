@@ -87,6 +87,7 @@ def main():
     ap.add_argument("--effort", choices=["low", "medium", "high", "xhigh", "max"], default=None)
     ap.add_argument("--workers", type=int, default=4)
     ap.add_argument("--tasks", default=str(ROOT / "data" / "tasks.json"))
+    ap.add_argument("--proteins", default=None, help="protein table; default is the one named in the task file, else data/proteins.json")
     ap.add_argument("--out", default=str(ROOT / "results" / "traces.jsonl"))
     ap.add_argument("--mock", action="store_true", help="scripted tool-trusting agent, no API calls (pipeline test)")
     ap.add_argument("--no_cache", action="store_true")
@@ -103,7 +104,8 @@ def main():
         if missing:
             print(f"condition '{c}' is not defined for tasks {missing[:5]}... in {args.tasks}", file=sys.stderr)
             sys.exit(2)
-    table = ProteinTable()
+    proteins = args.proteins or tasks_file.get("proteins")
+    table = ProteinTable(proteins) if proteins else ProteinTable()
     samples = range(args.sample_start, args.sample_start + args.samples)
     jobs = [(t, c, s) for s in samples for t in tasks for c in args.conditions]
 
