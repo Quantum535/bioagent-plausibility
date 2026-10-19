@@ -20,8 +20,10 @@ from matching import match_answer, tokens
 ROOT = Path(__file__).parent
 CONDITION_ORDER = ["clean", "impossible", "plausible", "clean+verify", "impossible+verify", "plausible+verify"]
 FIELD_ORDER = ["length", "mass", "organism", "gene_symbol"]
-MODEL_ORDER = ["claude-haiku-4-5", "claude-sonnet-4-6", "claude-sonnet-5", "claude-opus-5", "gemini:gemini-3.8-flash", "gemini:gemini-4-argon", "together:deepseek-ai/DeepSeek-V4.1-Flash-1017", "together:moonshotai/Kimi-K3"]
+MODEL_ORDER = ["claude-haiku-4-5", "claude-sonnet-4-6", "claude-sonnet-5", "claude-opus-5", "gemini:gemini-3.8-flash", "gemini:gemini-4-argon", "together:deepseek-ai/DeepSeek-V4.1-Flash-1017", "together:moonshotai/Kimi-K3", "openai:gpt-6-luna", "openai:gpt-6.1-sol"]
 MODEL_LABEL = {
+    "openai:gpt-6.1-sol": "GPT-6.1 Sol",
+    "openai:gpt-6-luna": "GPT-6 Luna",
     "together:deepseek-ai/DeepSeek-V4.1-Flash-1017": "DeepSeek V4.1 Flash",
     "together:moonshotai/Kimi-K3": "Kimi K3",
     "gemini:gemini-4-argon": "Gemini 4 Argon",

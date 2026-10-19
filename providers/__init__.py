@@ -3,6 +3,7 @@ import os
 from providers.anthropic_p import AnthropicProvider
 from providers.openai_p import OpenAICompatProvider
 from providers.vertex_p import VertexGeminiProvider
+from providers.openai_responses_p import OpenAIResponsesProvider
 
 
 def make_provider(spec, system, tools, thinking="adaptive", effort=None):
@@ -13,7 +14,7 @@ def make_provider(spec, system, tools, thinking="adaptive", effort=None):
     if kind == "anthropic":
         return AnthropicProvider(model, system, tools, thinking=thinking, effort=effort)
     if kind == "openai":
-        return OpenAICompatProvider(model, system, tools, reasoning_effort=effort, name="openai")
+        return OpenAIResponsesProvider(model, system, tools, reasoning_effort=effort)
     if kind == "gemini":
         return VertexGeminiProvider(model, system, tools, reasoning_effort=effort)
     if kind == "together":
