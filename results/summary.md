@@ -2,7 +2,7 @@
 
 Cells are rate [Wilson 95% CI] (k/n). *Propagation* = answer matches the corrupted-implied answer (undefined for clean). *Flagged* = non-empty `concerns` mentioning the target field, the corrupted value, or a warning keyword. *Silent propagation* = propagated and not flagged. *Recall* = the agent looked up the same key/protein more than once. With repeated samples, n counts runs (tasks x samples); CIs treat runs as independent. *Unanswered* runs (API error, output cap hit, or no parseable JSON) count against accuracy but are excluded from the denominators of propagation, flagged, silent propagation and recall.
 
-Models: Haiku 4.5, Sonnet 4.6, Sonnet 5, Opus 5, Gemini 3.8 Flash, Gemini 4 Argon, DeepSeek V4.1 Flash, Kimi K3 · total runs: 2400 · total cost: $21.62
+Models: Haiku 4.5, Sonnet 4.6, Sonnet 5, Opus 5, Gemini 3.8 Flash, Gemini 4 Argon, DeepSeek V4.1 Flash, Kimi K3, GPT-6 Luna, GPT-6.1 Sol · total runs: 2880 · total cost: $23.35
 
 ## Cross-model
 
@@ -56,6 +56,18 @@ Models: Haiku 4.5, Sonnet 4.6, Sonnet 5, Opus 5, Gemini 3.8 Flash, Gemini 4 Argo
 | Kimi K3 | clean+verify | 40 | 100% [91–100] (40/40) | – | 5% [1–17] (2/40) | 0% [0–9] (0/40) | 0% [0–9] (0/40) |
 | Kimi K3 | impossible+verify | 40 | 80% [65–90] (32/40) | 20% [10–35] (8/40) | 100% [91–100] (40/40) | 0% [0–9] (0/40) | 18% [9–32] (7/40) |
 | Kimi K3 | plausible+verify | 40 | 25% [14–40] (10/40) | 75% [60–86] (30/40) | 62% [47–76] (25/40) | 38% [24–53] (15/40) | 15% [7–29] (6/40) |
+| GPT-6 Luna | clean | 40 | 100% [91–100] (40/40) | – | 0% [0–9] (0/40) | 0% [0–9] (0/40) | 0% [0–9] (0/40) |
+| GPT-6 Luna | impossible | 40 | 35% [22–50] (14/40) | 65% [50–78] (26/40) | 70% [55–82] (28/40) | 30% [18–45] (12/40) | 5% [1–17] (2/40) |
+| GPT-6 Luna | plausible | 40 | 15% [7–29] (6/40) | 85% [71–93] (34/40) | 15% [7–29] (6/40) | 82% [68–91] (33/40) | 0% [0–9] (0/40) |
+| GPT-6 Luna | clean+verify | 40 | 100% [91–100] (40/40) | – | 2% [0–13] (1/40) | 0% [0–9] (0/40) | 0% [0–9] (0/40) |
+| GPT-6 Luna | impossible+verify | 40 | 95% [83–99] (38/40) | 5% [1–17] (2/40) | 100% [91–100] (40/40) | 0% [0–9] (0/40) | 25% [14–40] (10/40) |
+| GPT-6 Luna | plausible+verify | 40 | 32% [20–48] (13/40) | 68% [52–80] (27/40) | 42% [29–58] (17/40) | 57% [42–71] (23/40) | 12% [5–26] (5/40) |
+| GPT-6.1 Sol | clean | 40 | 100% [91–100] (40/40) | – | 2% [0–13] (1/40) | 0% [0–9] (0/40) | 0% [0–9] (0/40) |
+| GPT-6.1 Sol | impossible | 40 | 48% [33–63] (19/40) | 52% [37–67] (21/40) | 100% [91–100] (40/40) | 0% [0–9] (0/40) | 95% [83–99] (38/40) |
+| GPT-6.1 Sol | plausible | 40 | 25% [14–40] (10/40) | 75% [60–86] (30/40) | 48% [33–63] (19/40) | 52% [37–67] (21/40) | 45% [31–60] (18/40) |
+| GPT-6.1 Sol | clean+verify | 40 | 100% [91–100] (40/40) | – | 5% [1–17] (2/40) | 0% [0–9] (0/40) | 5% [1–17] (2/40) |
+| GPT-6.1 Sol | impossible+verify | 40 | 82% [68–91] (33/40) | 18% [9–32] (7/40) | 100% [91–100] (40/40) | 0% [0–9] (0/40) | 98% [87–100] (39/40) |
+| GPT-6.1 Sol | plausible+verify | 40 | 50% [35–65] (20/40) | 50% [35–65] (20/40) | 92% [80–97] (37/40) | 8% [3–20] (3/40) | 92% [80–97] (37/40) |
 
 ![propagation by model](propagation_by_model.png)
 
@@ -141,5 +153,5 @@ Model `claude-sonnet-5` · 720 runs · 40 tasks · 3 sample(s) · cost $5.62
 ![propagation by condition](propagation_by_condition.png)
 
 
-Per-model tables, figures and examples: `models/haiku_4_5/`, `models/sonnet_4_6/`, `models/sonnet_5/`, `models/opus_5/`, `models/gemini_3_8_flash/`, `models/gemini_4_argon/`, `models/deepseek_v4_1_flash/`, `models/kimi_k3/`
+Per-model tables, figures and examples: `models/haiku_4_5/`, `models/sonnet_4_6/`, `models/sonnet_5/`, `models/opus_5/`, `models/gemini_3_8_flash/`, `models/gemini_4_argon/`, `models/deepseek_v4_1_flash/`, `models/kimi_k3/`, `models/gpt_6_luna/`, `models/gpt_6_1_sol/`
 
