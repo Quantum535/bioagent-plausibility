@@ -8,7 +8,7 @@ from providers.base import Provider, Turn, ToolCall
 class OpenAICompatProvider(Provider):
     def __init__(self, model, system, tools, base_url=None, api_key=None, reasoning_effort=None,
                  max_tokens=8000, name="openai", price=(2.0, 10.0, 0.2)):
-        self.client = OpenAI(base_url=base_url, api_key=api_key)
+        self.client = OpenAI(base_url=base_url, api_key=api_key, max_retries=8)
         self.name, self.model, self.system = name, model, system
         self.tools = [{"type": "function", "function": {
             "name": t["name"], "description": t["description"], "parameters": t["input_schema"]}}
