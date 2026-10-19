@@ -141,5 +141,5 @@ Model `claude-sonnet-5` · 720 runs · 40 tasks · 3 sample(s) · cost $5.62
 ![propagation by condition](propagation_by_condition.png)
 
 
-Per-model tables, figures and examples: `models/haiku45/`, `models/sonnet46/`, `models/sonnet5/`, `models/opus5/`, `models/gemini:gemini3.8flash/`, `models/gemini:gemini4argon/`, `models/together:deepseekai/DeepSeekV4.1Flash1017/`, `models/together:moonshotai/KimiK3/`
+Per-model tables, figures and examples: `models/haiku_4_5/`, `models/sonnet_4_6/`, `models/sonnet_5/`, `models/opus_5/`, `models/gemini_3_8_flash/`, `models/gemini_4_argon/`, `models/deepseek_v4_1_flash/`, `models/kimi_k3/`
 

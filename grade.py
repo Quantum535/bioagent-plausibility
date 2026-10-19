@@ -10,6 +10,7 @@ import argparse
 import collections
 import glob
 import json
+import re
 import math
 import sys
 from pathlib import Path
@@ -46,7 +47,7 @@ def model_label(m):
 
 
 def model_slug(m):
-    return m.replace("claude-", "").replace("-", "")
+    return re.sub(r"[^A-Za-z0-9]+", "_", model_label(m)).strip("_").lower()
 
 
 def sort_models(models):
