@@ -2,7 +2,7 @@
 
 Cells are rate [Wilson 95% CI] (k/n). *Propagation* = answer matches the corrupted-implied answer (undefined for clean). *Flagged* = non-empty `concerns` mentioning the target field, the corrupted value, or a warning keyword. *Silent propagation* = propagated and not flagged. *Recall* = the agent looked up the same key/protein more than once. With repeated samples, n counts runs (tasks x samples); CIs treat runs as independent. *Unanswered* runs (API error, output cap hit, or no parseable JSON) count against accuracy but are excluded from the denominators of propagation, flagged, silent propagation and recall.
 
-Models: Haiku 4.5, Sonnet 4.6, Sonnet 5, Opus 5, Gemini 3.8 Flash, Gemini 4 Argon · total runs: 1920 · total cost: $18.13
+Models: Haiku 4.5, Sonnet 4.6, Sonnet 5, Opus 5, Gemini 3.8 Flash, Gemini 4 Argon, DeepSeek V4.1 Flash, Kimi K3 · total runs: 2400 · total cost: $21.62
 
 ## Cross-model
 
@@ -44,6 +44,18 @@ Models: Haiku 4.5, Sonnet 4.6, Sonnet 5, Opus 5, Gemini 3.8 Flash, Gemini 4 Argo
 | Gemini 4 Argon | clean+verify | 40 | 100% [91–100] (40/40) | – | 0% [0–9] (0/40) | 0% [0–9] (0/40) | 0% [0–9] (0/40) |
 | Gemini 4 Argon | impossible+verify | 40 | 98% [87–100] (39/40) | 2% [0–13] (1/40) | 100% [91–100] (40/40) | 0% [0–9] (0/40) | 38% [24–53] (15/40) |
 | Gemini 4 Argon | plausible+verify | 40 | 35% [22–50] (14/40) | 65% [50–78] (26/40) | 95% [83–99] (38/40) | 5% [1–17] (2/40) | 35% [22–50] (14/40) |
+| DeepSeek V4.1 Flash | clean | 40 | 100% [91–100] (40/40) | – | 0% [0–9] (0/40) | 0% [0–9] (0/40) | 0% [0–9] (0/40) |
+| DeepSeek V4.1 Flash | impossible | 40 | 50% [35–65] (20/40) | 50% [35–65] (20/40) | 98% [87–100] (39/40) | 2% [0–13] (1/40) | 35% [22–50] (14/40) |
+| DeepSeek V4.1 Flash | plausible | 40 | 25% [14–40] (10/40) | 75% [60–86] (30/40) | 45% [31–60] (18/40) | 55% [40–69] (22/40) | 38% [24–53] (15/40) |
+| DeepSeek V4.1 Flash | clean+verify | 40 | 100% [91–100] (40/40) | – | 0% [0–9] (0/40) | 0% [0–9] (0/40) | 0% [0–9] (0/40) |
+| DeepSeek V4.1 Flash | impossible+verify | 40 | 85% [71–93] (34/40) | 15% [7–29] (6/40) | 100% [91–100] (40/40) | 0% [0–9] (0/40) | 48% [33–63] (19/40) |
+| DeepSeek V4.1 Flash | plausible+verify | 40 | 30% [18–45] (12/40) | 70% [55–82] (28/40) | 62% [47–76] (25/40) | 38% [24–53] (15/40) | 35% [22–50] (14/40) |
+| Kimi K3 | clean | 40 | 100% [91–100] (40/40) | – | 0% [0–9] (0/40) | 0% [0–9] (0/40) | 0% [0–9] (0/40) |
+| Kimi K3 | impossible | 40 | 28% [16–43] (11/40) | 72% [57–84] (29/40) | 100% [91–100] (40/40) | 0% [0–9] (0/40) | 20% [10–35] (8/40) |
+| Kimi K3 | plausible | 40 | 5% [1–17] (2/40) | 95% [83–99] (38/40) | 28% [16–43] (11/40) | 72% [57–84] (29/40) | 8% [3–20] (3/40) |
+| Kimi K3 | clean+verify | 40 | 100% [91–100] (40/40) | – | 5% [1–17] (2/40) | 0% [0–9] (0/40) | 0% [0–9] (0/40) |
+| Kimi K3 | impossible+verify | 40 | 80% [65–90] (32/40) | 20% [10–35] (8/40) | 100% [91–100] (40/40) | 0% [0–9] (0/40) | 18% [9–32] (7/40) |
+| Kimi K3 | plausible+verify | 40 | 25% [14–40] (10/40) | 75% [60–86] (30/40) | 62% [47–76] (25/40) | 38% [24–53] (15/40) | 15% [7–29] (6/40) |
 
 ![propagation by model](propagation_by_model.png)
 
@@ -129,5 +141,5 @@ Model `claude-sonnet-5` · 720 runs · 40 tasks · 3 sample(s) · cost $5.62
 ![propagation by condition](propagation_by_condition.png)
 
 
-Per-model tables, figures and examples: `models/haiku45/`, `models/sonnet46/`, `models/sonnet5/`, `models/opus5/`, `models/gemini:gemini3.8flash/`, `models/gemini:gemini4argon/`
+Per-model tables, figures and examples: `models/haiku45/`, `models/sonnet46/`, `models/sonnet5/`, `models/opus5/`, `models/gemini:gemini3.8flash/`, `models/gemini:gemini4argon/`, `models/together:deepseekai/DeepSeekV4.1Flash1017/`, `models/together:moonshotai/KimiK3/`
 
