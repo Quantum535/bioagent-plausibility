@@ -18,7 +18,7 @@ from agent import prompt_hash, run_agent, run_mock_agent, system_prompt
 from corrupt import apply_corruption
 from matching import match_answer
 from providers import make_provider
-from tools import TOOL_SCHEMAS, CorruptingToolLayer, ProteinTable, record_to_json
+from tools import CorruptingToolLayer, ProteinTable, render_record, tool_schemas
 
 ROOT = Path(__file__).parent
 CACHE_DIR = ROOT / "cache"
@@ -37,11 +37,11 @@ def check_no_leak(trace, task, condition, table):
     for c in trace["tool_calls"]:
         if c["is_error"]:
             continue
-        clean = record_to_json(by_acc[c["accession"]])
+        clean = render_record(table, by_acc[c["accession"]])
         if condition == "clean":
             assert not c["corrupted"] and c["output"] == clean, f"LEAK: corrupted record in clean run {task['task_id']}"
         elif c["accession"] == task["target_accession"]:
-            expect = record_to_json(apply_corruption(by_acc[c["accession"]], task["corruptions"][condition]))
+            expect = render_record(table, by_acc[c["accession"]], task["corruptions"][condition])
             assert c["corrupted"] and c["output"] == expect, f"target record not corrupted in {task['task_id']}/{condition}"
         else:
             assert not c["corrupted"] and c["output"] == clean, f"non-target record altered in {task['task_id']}/{condition}"
@@ -87,6 +87,8 @@ def main():
     ap.add_argument("--effort", choices=["low", "medium", "high", "xhigh", "max"], default=None)
     ap.add_argument("--workers", type=int, default=4)
     ap.add_argument("--tasks", default=str(ROOT / "data" / "tasks.json"))
+    ap.add_argument("--record_format", choices=["summary", "full"], default="summary",
+                    help="summary = 7-field mock record; full = real UniProtKB entry (minus references/xrefs)")
     ap.add_argument("--proteins", default=None, help="protein table; default is the one named in the task file, else data/proteins.json")
     ap.add_argument("--out", default=str(ROOT / "results" / "traces.jsonl"))
     ap.add_argument("--mock", action="store_true", help="scripted tool-trusting agent, no API calls (pipeline test)")
@@ -105,7 +107,7 @@ def main():
             print(f"condition '{c}' is not defined for tasks {missing[:5]}... in {args.tasks}", file=sys.stderr)
             sys.exit(2)
     proteins = args.proteins or tasks_file.get("proteins")
-    table = ProteinTable(proteins) if proteins else ProteinTable()
+    table = ProteinTable(proteins, record_format=args.record_format) if proteins else ProteinTable(record_format=args.record_format)
     samples = range(args.sample_start, args.sample_start + args.samples)
     jobs = [(t, c, s) for s in samples for t in tasks for c in args.conditions]
 
@@ -119,7 +121,7 @@ def main():
     provider, cfg_for_hash = None, {}
     if not args.mock:
         try:
-            provider = make_provider(args.model, system_prompt(args.verify_prompt), TOOL_SCHEMAS,
+            provider = make_provider(args.model, system_prompt(args.verify_prompt), tool_schemas(args.record_format),
                                      thinking=args.thinking, effort=args.effort)
             if provider.name == "anthropic":  # preflight: credentials resolve and the model id exists (free call)
                 provider.client.models.retrieve(provider.model)
