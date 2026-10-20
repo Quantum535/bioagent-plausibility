@@ -152,7 +152,8 @@ def main():
                         "verify": int(r["verify_prompt"]), "field": r["target_field"], "task": r["task_id"], "two_call": int(r["n_tool_calls"] >= 2)}
                        for r in main_rows if r["base_condition"] != "clean"])
     df["model"] = pd.Categorical(df["model"], categories=[model_label(m) for m in models])
-    df["model"] = df["model"].cat.reorder_categories([model_label("claude-sonnet-5")] + [model_label(m) for m in models if m != "claude-sonnet-5"])
+    ref = next((m for m in models if m.endswith("claude-sonnet-5")), models[0])
+    df["model"] = df["model"].cat.reorder_categories([model_label(ref)] + [model_label(m) for m in models if m != ref])
     fit = smf.logit("propagated ~ C(model) + impossible + verify + C(field)", data=df).fit(disp=0, cov_type="cluster", cov_kwds={"groups": df["task"]})
     reg = {}
     for name in fit.params.index:
