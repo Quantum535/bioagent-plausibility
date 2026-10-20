@@ -20,8 +20,10 @@ from matching import match_answer, tokens
 ROOT = Path(__file__).parent
 CONDITION_ORDER = ["clean", "impossible", "plausible", "clean+verify", "impossible+verify", "plausible+verify"]
 FIELD_ORDER = ["length", "mass", "organism", "gene_symbol"]
-MODEL_ORDER = ["claude-haiku-4-5", "claude-sonnet-4-6", "claude-sonnet-5", "claude-opus-5", "gemini:gemini-3.8-flash", "gemini:gemini-4-argon", "together:deepseek-ai/DeepSeek-V4.1-Flash-1017", "together:moonshotai/Kimi-K3", "openai:gpt-6-luna", "openai:gpt-6.1-sol"]
+MODEL_ORDER = ["anthropic:claude-haiku-4-5", "anthropic:claude-sonnet-4-6", "anthropic:claude-sonnet-5", "anthropic:claude-opus-5", "claude-haiku-4-5", "claude-sonnet-4-6", "claude-sonnet-5", "claude-opus-5", "gemini:gemini-3.8-flash", "gemini:gemini-4-argon", "together:deepseek-ai/DeepSeek-V4.1-Flash-1017", "together:moonshotai/Kimi-K3", "openai:gpt-6-luna", "openai:gpt-6.1-sol"]
 MODEL_LABEL = {
+    "anthropic:claude-haiku-4-5": "Haiku 4.5", "anthropic:claude-sonnet-4-6": "Sonnet 4.6",
+    "anthropic:claude-sonnet-5": "Sonnet 5", "anthropic:claude-opus-5": "Opus 5",
     "openai:gpt-6.1-sol": "GPT-6.1 Sol",
     "openai:gpt-6-luna": "GPT-6 Luna",
     "together:deepseek-ai/DeepSeek-V4.1-Flash-1017": "DeepSeek V4.1 Flash",
