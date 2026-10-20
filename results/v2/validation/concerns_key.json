@@ -1,0 +1,2402 @@
+[
+ {
+  "id": "c000",
+  "model": "gemini:gemini-3.8-flash",
+  "condition": "plausible+verify",
+  "task_id": "u127",
+  "target_field": "gene_symbol",
+  "classifier": {
+   "crossfield": true,
+   "recall": false,
+   "rule": false
+  }
+ },
+ {
+  "id": "c001",
+  "model": "openai:gpt-6.1-sol",
+  "condition": "plausible+verify",
+  "task_id": "u183",
+  "target_field": "gene_symbol",
+  "classifier": {
+   "crossfield": true,
+   "recall": false,
+   "rule": false
+  }
+ },
+ {
+  "id": "c002",
+  "model": "openai:gpt-6.1-sol",
+  "condition": "plausible",
+  "task_id": "u170",
+  "target_field": "organism",
+  "classifier": {
+   "crossfield": true,
+   "recall": false,
+   "rule": false
+  }
+ },
+ {
+  "id": "c003",
+  "model": "gemini:gemini-3.8-flash",
+  "condition": "impossible+verify",
+  "task_id": "u031",
+  "target_field": "gene_symbol",
+  "classifier": {
+   "crossfield": true,
+   "recall": false,
+   "rule": false
+  }
+ },
+ {
+  "id": "c004",
+  "model": "gemini:gemini-4-argon",
+  "condition": "impossible+verify",
+  "task_id": "u052",
+  "target_field": "length",
+  "classifier": {
+   "crossfield": true,
+   "recall": true,
+   "rule": false
+  }
+ },
+ {
+  "id": "c005",
+  "model": "openai:gpt-6-luna",
+  "condition": "impossible+verify",
+  "task_id": "u084",
+  "target_field": "length",
+  "classifier": {
+   "crossfield": false,
+   "recall": false,
+   "rule": false
+  }
+ },
+ {
+  "id": "c006",
+  "model": "anthropic:claude-sonnet-5",
+  "condition": "impossible+verify",
+  "task_id": "u168",
+  "target_field": "length",
+  "classifier": {
+   "crossfield": true,
+   "recall": true,
+   "rule": false
+  }
+ },
+ {
+  "id": "c007",
+  "model": "gemini:gemini-3.8-flash",
+  "condition": "plausible",
+  "task_id": "u039",
+  "target_field": "gene_symbol",
+  "classifier": {
+   "crossfield": true,
+   "recall": false,
+   "rule": false
+  }
+ },
+ {
+  "id": "c008",
+  "model": "anthropic:claude-opus-5",
+  "condition": "impossible+verify",
+  "task_id": "u092",
+  "target_field": "length",
+  "classifier": {
+   "crossfield": true,
+   "recall": false,
+   "rule": false
+  }
+ },
+ {
+  "id": "c009",
+  "model": "together:deepseek-ai/DeepSeek-V4.1-Flash-1017",
+  "condition": "plausible",
+  "task_id": "u082",
+  "target_field": "organism",
+  "classifier": {
+   "crossfield": false,
+   "recall": false,
+   "rule": false
+  }
+ },
+ {
+  "id": "c010",
+  "model": "anthropic:claude-sonnet-4-6",
+  "condition": "impossible",
+  "task_id": "u188",
+  "target_field": "length",
+  "classifier": {
+   "crossfield": true,
+   "recall": true,
+   "rule": false
+  }
+ },
+ {
+  "id": "c011",
+  "model": "together:moonshotai/Kimi-K3",
+  "condition": "plausible+verify",
+  "task_id": "u031",
+  "target_field": "gene_symbol",
+  "classifier": {
+   "crossfield": true,
+   "recall": true,
+   "rule": false
+  }
+ },
+ {
+  "id": "c012",
+  "model": "anthropic:claude-haiku-4-5",
+  "condition": "plausible+verify",
+  "task_id": "u199",
+  "target_field": "gene_symbol",
+  "classifier": {
+   "crossfield": true,
+   "recall": false,
+   "rule": false
+  }
+ },
+ {
+  "id": "c013",
+  "model": "openai:gpt-6.1-sol",
+  "condition": "impossible+verify",
+  "task_id": "u022",
+  "target_field": "organism",
+  "classifier": {
+   "crossfield": true,
+   "recall": false,
+   "rule": false
+  }
+ },
+ {
+  "id": "c014",
+  "model": "gemini:gemini-3.8-flash",
+  "condition": "plausible",
+  "task_id": "u175",
+  "target_field": "gene_symbol",
+  "classifier": {
+   "crossfield": true,
+   "recall": false,
+   "rule": false
+  }
+ },
+ {
+  "id": "c015",
+  "model": "together:deepseek-ai/DeepSeek-V4.1-Flash-1017",
+  "condition": "plausible+verify",
+  "task_id": "u160",
+  "target_field": "length",
+  "classifier": {
+   "crossfield": false,
+   "recall": true,
+   "rule": false
+  }
+ },
+ {
+  "id": "c016",
+  "model": "gemini:gemini-4-argon",
+  "condition": "plausible",
+  "task_id": "u171",
+  "target_field": "gene_symbol",
+  "classifier": {
+   "crossfield": false,
+   "recall": false,
+   "rule": false
+  }
+ },
+ {
+  "id": "c017",
+  "model": "openai:gpt-6.1-sol",
+  "condition": "plausible+verify",
+  "task_id": "u140",
+  "target_field": "length",
+  "classifier": {
+   "crossfield": false,
+   "recall": true,
+   "rule": false
+  }
+ },
+ {
+  "id": "c018",
+  "model": "gemini:gemini-3.8-flash",
+  "condition": "plausible+verify",
+  "task_id": "u199",
+  "target_field": "gene_symbol",
+  "classifier": {
+   "crossfield": true,
+   "recall": false,
+   "rule": false
+  }
+ },
+ {
+  "id": "c019",
+  "model": "anthropic:claude-opus-5",
+  "condition": "plausible+verify",
+  "task_id": "u173",
+  "target_field": "mass",
+  "classifier": {
+   "crossfield": false,
+   "recall": true,
+   "rule": false
+  }
+ },
+ {
+  "id": "c020",
+  "model": "openai:gpt-6.1-sol",
+  "condition": "plausible+verify",
+  "task_id": "u196",
+  "target_field": "length",
+  "classifier": {
+   "crossfield": false,
+   "recall": true,
+   "rule": false
+  }
+ },
+ {
+  "id": "c021",
+  "model": "gemini:gemini-3.8-flash",
+  "condition": "plausible",
+  "task_id": "u043",
+  "target_field": "gene_symbol",
+  "classifier": {
+   "crossfield": false,
+   "recall": false,
+   "rule": false
+  }
+ },
+ {
+  "id": "c022",
+  "model": "anthropic:claude-sonnet-5",
+  "condition": "impossible+verify",
+  "task_id": "u167",
+  "target_field": "gene_symbol",
+  "classifier": {
+   "crossfield": true,
+   "recall": false,
+   "rule": false
+  }
+ },
+ {
+  "id": "c023",
+  "model": "together:deepseek-ai/DeepSeek-V4.1-Flash-1017",
+  "condition": "plausible",
+  "task_id": "u114",
+  "target_field": "organism",
+  "classifier": {
+   "crossfield": false,
+   "recall": true,
+   "rule": false
+  }
+ },
+ {
+  "id": "c024",
+  "model": "anthropic:claude-opus-5",
+  "condition": "plausible",
+  "task_id": "u058",
+  "target_field": "organism",
+  "classifier": {
+   "crossfield": true,
+   "recall": false,
+   "rule": false
+  }
+ },
+ {
+  "id": "c025",
+  "model": "together:deepseek-ai/DeepSeek-V4.1-Flash-1017",
+  "condition": "impossible+verify",
+  "task_id": "u043",
+  "target_field": "gene_symbol",
+  "classifier": {
+   "crossfield": true,
+   "recall": false,
+   "rule": false
+  }
+ },
+ {
+  "id": "c026",
+  "model": "openai:gpt-6-luna",
+  "condition": "plausible",
+  "task_id": "u019",
+  "target_field": "gene_symbol",
+  "classifier": {
+   "crossfield": true,
+   "recall": false,
+   "rule": false
+  }
+ },
+ {
+  "id": "c027",
+  "model": "together:moonshotai/Kimi-K3",
+  "condition": "impossible",
+  "task_id": "u097",
+  "target_field": "mass",
+  "classifier": {
+   "crossfield": false,
+   "recall": false,
+   "rule": false
+  }
+ },
+ {
+  "id": "c028",
+  "model": "anthropic:claude-opus-5",
+  "condition": "impossible+verify",
+  "task_id": "u054",
+  "target_field": "organism",
+  "classifier": {
+   "crossfield": true,
+   "recall": true,
+   "rule": false
+  }
+ },
+ {
+  "id": "c029",
+  "model": "gemini:gemini-3.8-flash",
+  "condition": "impossible",
+  "task_id": "u172",
+  "target_field": "length",
+  "classifier": {
+   "crossfield": true,
+   "recall": true,
+   "rule": false
+  }
+ },
+ {
+  "id": "c030",
+  "model": "openai:gpt-6.1-sol",
+  "condition": "impossible+verify",
+  "task_id": "u141",
+  "target_field": "mass",
+  "classifier": {
+   "crossfield": true,
+   "recall": false,
+   "rule": false
+  }
+ },
+ {
+  "id": "c031",
+  "model": "gemini:gemini-3.8-flash",
+  "condition": "impossible",
+  "task_id": "u121",
+  "target_field": "mass",
+  "classifier": {
+   "crossfield": true,
+   "recall": true,
+   "rule": true
+  }
+ },
+ {
+  "id": "c032",
+  "model": "openai:gpt-6-luna",
+  "condition": "impossible",
+  "task_id": "u084",
+  "target_field": "length",
+  "classifier": {
+   "crossfield": false,
+   "recall": false,
+   "rule": false
+  }
+ },
+ {
+  "id": "c033",
+  "model": "openai:gpt-6.1-sol",
+  "condition": "impossible",
+  "task_id": "u067",
+  "target_field": "gene_symbol",
+  "classifier": {
+   "crossfield": true,
+   "recall": false,
+   "rule": false
+  }
+ },
+ {
+  "id": "c034",
+  "model": "anthropic:claude-sonnet-5",
+  "condition": "impossible+verify",
+  "task_id": "u049",
+  "target_field": "mass",
+  "classifier": {
+   "crossfield": false,
+   "recall": false,
+   "rule": true
+  }
+ },
+ {
+  "id": "c035",
+  "model": "openai:gpt-6-luna",
+  "condition": "impossible",
+  "task_id": "u163",
+  "target_field": "gene_symbol",
+  "classifier": {
+   "crossfield": false,
+   "recall": false,
+   "rule": false
+  }
+ },
+ {
+  "id": "c036",
+  "model": "anthropic:claude-haiku-4-5",
+  "condition": "plausible",
+  "task_id": "u191",
+  "target_field": "gene_symbol",
+  "classifier": {
+   "crossfield": true,
+   "recall": true,
+   "rule": false
+  }
+ },
+ {
+  "id": "c037",
+  "model": "gemini:gemini-3.8-flash",
+  "condition": "impossible",
+  "task_id": "u035",
+  "target_field": "gene_symbol",
+  "classifier": {
+   "crossfield": true,
+   "recall": false,
+   "rule": false
+  }
+ },
+ {
+  "id": "c038",
+  "model": "anthropic:claude-sonnet-4-6",
+  "condition": "impossible",
+  "task_id": "u173",
+  "target_field": "mass",
+  "classifier": {
+   "crossfield": true,
+   "recall": true,
+   "rule": true
+  }
+ },
+ {
+  "id": "c039",
+  "model": "anthropic:claude-sonnet-5",
+  "condition": "plausible+verify",
+  "task_id": "u091",
+  "target_field": "gene_symbol",
+  "classifier": {
+   "crossfield": true,
+   "recall": false,
+   "rule": false
+  }
+ },
+ {
+  "id": "c040",
+  "model": "anthropic:claude-sonnet-4-6",
+  "condition": "plausible+verify",
+  "task_id": "u059",
+  "target_field": "gene_symbol",
+  "classifier": {
+   "crossfield": true,
+   "recall": false,
+   "rule": false
+  }
+ },
+ {
+  "id": "c041",
+  "model": "anthropic:claude-haiku-4-5",
+  "condition": "plausible+verify",
+  "task_id": "u067",
+  "target_field": "gene_symbol",
+  "classifier": {
+   "crossfield": false,
+   "recall": false,
+   "rule": false
+  }
+ },
+ {
+  "id": "c042",
+  "model": "openai:gpt-6-luna",
+  "condition": "plausible+verify",
+  "task_id": "u040",
+  "target_field": "length",
+  "classifier": {
+   "crossfield": false,
+   "recall": true,
+   "rule": false
+  }
+ },
+ {
+  "id": "c043",
+  "model": "openai:gpt-6-luna",
+  "condition": "plausible",
+  "task_id": "u007",
+  "target_field": "gene_symbol",
+  "classifier": {
+   "crossfield": true,
+   "recall": false,
+   "rule": false
+  }
+ },
+ {
+  "id": "c044",
+  "model": "together:moonshotai/Kimi-K3",
+  "condition": "plausible",
+  "task_id": "u154",
+  "target_field": "organism",
+  "classifier": {
+   "crossfield": false,
+   "recall": false,
+   "rule": false
+  }
+ },
+ {
+  "id": "c045",
+  "model": "openai:gpt-6-luna",
+  "condition": "impossible+verify",
+  "task_id": "u134",
+  "target_field": "organism",
+  "classifier": {
+   "crossfield": false,
+   "recall": false,
+   "rule": true
+  }
+ },
+ {
+  "id": "c046",
+  "model": "gemini:gemini-4-argon",
+  "condition": "plausible+verify",
+  "task_id": "u108",
+  "target_field": "length",
+  "classifier": {
+   "crossfield": false,
+   "recall": true,
+   "rule": false
+  }
+ },
+ {
+  "id": "c047",
+  "model": "anthropic:claude-sonnet-4-6",
+  "condition": "plausible",
+  "task_id": "u191",
+  "target_field": "gene_symbol",
+  "classifier": {
+   "crossfield": true,
+   "recall": true,
+   "rule": false
+  }
+ },
+ {
+  "id": "c048",
+  "model": "gemini:gemini-3.8-flash",
+  "condition": "impossible",
+  "task_id": "u017",
+  "target_field": "mass",
+  "classifier": {
+   "crossfield": true,
+   "recall": true,
+   "rule": false
+  }
+ },
+ {
+  "id": "c049",
+  "model": "openai:gpt-6-luna",
+  "condition": "plausible",
+  "task_id": "u047",
+  "target_field": "gene_symbol",
+  "classifier": {
+   "crossfield": true,
+   "recall": false,
+   "rule": false
+  }
+ },
+ {
+  "id": "c050",
+  "model": "anthropic:claude-sonnet-4-6",
+  "condition": "plausible",
+  "task_id": "u027",
+  "target_field": "gene_symbol",
+  "classifier": {
+   "crossfield": true,
+   "recall": true,
+   "rule": false
+  }
+ },
+ {
+  "id": "c051",
+  "model": "anthropic:claude-sonnet-4-6",
+  "condition": "impossible+verify",
+  "task_id": "u139",
+  "target_field": "gene_symbol",
+  "classifier": {
+   "crossfield": true,
+   "recall": true,
+   "rule": true
+  }
+ },
+ {
+  "id": "c052",
+  "model": "anthropic:claude-opus-5",
+  "condition": "plausible",
+  "task_id": "u154",
+  "target_field": "organism",
+  "classifier": {
+   "crossfield": true,
+   "recall": false,
+   "rule": false
+  }
+ },
+ {
+  "id": "c053",
+  "model": "gemini:gemini-4-argon",
+  "condition": "impossible",
+  "task_id": "u076",
+  "target_field": "length",
+  "classifier": {
+   "crossfield": true,
+   "recall": true,
+   "rule": false
+  }
+ },
+ {
+  "id": "c054",
+  "model": "together:deepseek-ai/DeepSeek-V4.1-Flash-1017",
+  "condition": "impossible+verify",
+  "task_id": "u117",
+  "target_field": "mass",
+  "classifier": {
+   "crossfield": false,
+   "recall": true,
+   "rule": false
+  }
+ },
+ {
+  "id": "c055",
+  "model": "openai:gpt-6.1-sol",
+  "condition": "impossible",
+  "task_id": "u051",
+  "target_field": "gene_symbol",
+  "classifier": {
+   "crossfield": false,
+   "recall": false,
+   "rule": false
+  }
+ },
+ {
+  "id": "c056",
+  "model": "together:moonshotai/Kimi-K3",
+  "condition": "plausible",
+  "task_id": "u175",
+  "target_field": "gene_symbol",
+  "classifier": {
+   "crossfield": true,
+   "recall": false,
+   "rule": false
+  }
+ },
+ {
+  "id": "c057",
+  "model": "gemini:gemini-4-argon",
+  "condition": "impossible+verify",
+  "task_id": "u180",
+  "target_field": "length",
+  "classifier": {
+   "crossfield": true,
+   "recall": true,
+   "rule": false
+  }
+ },
+ {
+  "id": "c058",
+  "model": "anthropic:claude-sonnet-5",
+  "condition": "plausible",
+  "task_id": "u006",
+  "target_field": "organism",
+  "classifier": {
+   "crossfield": false,
+   "recall": true,
+   "rule": false
+  }
+ },
+ {
+  "id": "c059",
+  "model": "anthropic:claude-sonnet-5",
+  "condition": "impossible",
+  "task_id": "u171",
+  "target_field": "gene_symbol",
+  "classifier": {
+   "crossfield": true,
+   "recall": true,
+   "rule": false
+  }
+ },
+ {
+  "id": "c060",
+  "model": "anthropic:claude-sonnet-4-6",
+  "condition": "plausible",
+  "task_id": "u171",
+  "target_field": "gene_symbol",
+  "classifier": {
+   "crossfield": true,
+   "recall": true,
+   "rule": false
+  }
+ },
+ {
+  "id": "c061",
+  "model": "anthropic:claude-haiku-4-5",
+  "condition": "impossible",
+  "task_id": "u064",
+  "target_field": "length",
+  "classifier": {
+   "crossfield": false,
+   "recall": false,
+   "rule": false
+  }
+ },
+ {
+  "id": "c062",
+  "model": "anthropic:claude-opus-5",
+  "condition": "plausible+verify",
+  "task_id": "u126",
+  "target_field": "organism",
+  "classifier": {
+   "crossfield": false,
+   "recall": false,
+   "rule": false
+  }
+ },
+ {
+  "id": "c063",
+  "model": "gemini:gemini-4-argon",
+  "condition": "plausible",
+  "task_id": "u192",
+  "target_field": "length",
+  "classifier": {
+   "crossfield": false,
+   "recall": true,
+   "rule": false
+  }
+ },
+ {
+  "id": "c064",
+  "model": "anthropic:claude-sonnet-5",
+  "condition": "plausible",
+  "task_id": "u083",
+  "target_field": "gene_symbol",
+  "classifier": {
+   "crossfield": true,
+   "recall": true,
+   "rule": false
+  }
+ },
+ {
+  "id": "c065",
+  "model": "anthropic:claude-haiku-4-5",
+  "condition": "plausible",
+  "task_id": "u119",
+  "target_field": "gene_symbol",
+  "classifier": {
+   "crossfield": false,
+   "recall": true,
+   "rule": false
+  }
+ },
+ {
+  "id": "c066",
+  "model": "together:moonshotai/Kimi-K3",
+  "condition": "impossible",
+  "task_id": "u093",
+  "target_field": "mass",
+  "classifier": {
+   "crossfield": true,
+   "recall": true,
+   "rule": false
+  }
+ },
+ {
+  "id": "c067",
+  "model": "gemini:gemini-4-argon",
+  "condition": "plausible",
+  "task_id": "u161",
+  "target_field": "mass",
+  "classifier": {
+   "crossfield": false,
+   "recall": true,
+   "rule": false
+  }
+ },
+ {
+  "id": "c068",
+  "model": "anthropic:claude-sonnet-4-6",
+  "condition": "impossible+verify",
+  "task_id": "u101",
+  "target_field": "mass",
+  "classifier": {
+   "crossfield": true,
+   "recall": true,
+   "rule": false
+  }
+ },
+ {
+  "id": "c069",
+  "model": "gemini:gemini-3.8-flash",
+  "condition": "impossible+verify",
+  "task_id": "u042",
+  "target_field": "organism",
+  "classifier": {
+   "crossfield": true,
+   "recall": false,
+   "rule": true
+  }
+ },
+ {
+  "id": "c070",
+  "model": "openai:gpt-6-luna",
+  "condition": "impossible",
+  "task_id": "u164",
+  "target_field": "length",
+  "classifier": {
+   "crossfield": false,
+   "recall": false,
+   "rule": false
+  }
+ },
+ {
+  "id": "c071",
+  "model": "anthropic:claude-sonnet-5",
+  "condition": "impossible+verify",
+  "task_id": "u023",
+  "target_field": "gene_symbol",
+  "classifier": {
+   "crossfield": false,
+   "recall": false,
+   "rule": false
+  }
+ },
+ {
+  "id": "c072",
+  "model": "gemini:gemini-4-argon",
+  "condition": "impossible",
+  "task_id": "u002",
+  "target_field": "organism",
+  "classifier": {
+   "crossfield": true,
+   "recall": false,
+   "rule": false
+  }
+ },
+ {
+  "id": "c073",
+  "model": "gemini:gemini-3.8-flash",
+  "condition": "impossible+verify",
+  "task_id": "u135",
+  "target_field": "gene_symbol",
+  "classifier": {
+   "crossfield": false,
+   "recall": true,
+   "rule": false
+  }
+ },
+ {
+  "id": "c074",
+  "model": "anthropic:claude-sonnet-5",
+  "condition": "plausible",
+  "task_id": "u047",
+  "target_field": "gene_symbol",
+  "classifier": {
+   "crossfield": true,
+   "recall": true,
+   "rule": false
+  }
+ },
+ {
+  "id": "c075",
+  "model": "together:moonshotai/Kimi-K3",
+  "condition": "impossible",
+  "task_id": "u141",
+  "target_field": "mass",
+  "classifier": {
+   "crossfield": true,
+   "recall": true,
+   "rule": true
+  }
+ },
+ {
+  "id": "c076",
+  "model": "together:moonshotai/Kimi-K3",
+  "condition": "plausible+verify",
+  "task_id": "u007",
+  "target_field": "gene_symbol",
+  "classifier": {
+   "crossfield": true,
+   "recall": false,
+   "rule": false
+  }
+ },
+ {
+  "id": "c077",
+  "model": "together:deepseek-ai/DeepSeek-V4.1-Flash-1017",
+  "condition": "impossible",
+  "task_id": "u114",
+  "target_field": "organism",
+  "classifier": {
+   "crossfield": true,
+   "recall": true,
+   "rule": false
+  }
+ },
+ {
+  "id": "c078",
+  "model": "together:deepseek-ai/DeepSeek-V4.1-Flash-1017",
+  "condition": "plausible+verify",
+  "task_id": "u067",
+  "target_field": "gene_symbol",
+  "classifier": {
+   "crossfield": true,
+   "recall": false,
+   "rule": false
+  }
+ },
+ {
+  "id": "c079",
+  "model": "gemini:gemini-4-argon",
+  "condition": "plausible",
+  "task_id": "u105",
+  "target_field": "mass",
+  "classifier": {
+   "crossfield": false,
+   "recall": true,
+   "rule": false
+  }
+ },
+ {
+  "id": "c080",
+  "model": "anthropic:claude-sonnet-5",
+  "condition": "impossible+verify",
+  "task_id": "u147",
+  "target_field": "gene_symbol",
+  "classifier": {
+   "crossfield": true,
+   "recall": true,
+   "rule": false
+  }
+ },
+ {
+  "id": "c081",
+  "model": "openai:gpt-6-luna",
+  "condition": "plausible+verify",
+  "task_id": "u028",
+  "target_field": "length",
+  "classifier": {
+   "crossfield": false,
+   "recall": true,
+   "rule": false
+  }
+ },
+ {
+  "id": "c082",
+  "model": "anthropic:claude-opus-5",
+  "condition": "impossible",
+  "task_id": "u100",
+  "target_field": "length",
+  "classifier": {
+   "crossfield": true,
+   "recall": true,
+   "rule": false
+  }
+ },
+ {
+  "id": "c083",
+  "model": "gemini:gemini-3.8-flash",
+  "condition": "impossible+verify",
+  "task_id": "u081",
+  "target_field": "mass",
+  "classifier": {
+   "crossfield": false,
+   "recall": true,
+   "rule": true
+  }
+ },
+ {
+  "id": "c084",
+  "model": "gemini:gemini-3.8-flash",
+  "condition": "impossible+verify",
+  "task_id": "u150",
+  "target_field": "organism",
+  "classifier": {
+   "crossfield": true,
+   "recall": false,
+   "rule": false
+  }
+ },
+ {
+  "id": "c085",
+  "model": "anthropic:claude-sonnet-4-6",
+  "condition": "plausible",
+  "task_id": "u055",
+  "target_field": "gene_symbol",
+  "classifier": {
+   "crossfield": true,
+   "recall": false,
+   "rule": false
+  }
+ },
+ {
+  "id": "c086",
+  "model": "anthropic:claude-sonnet-5",
+  "condition": "impossible",
+  "task_id": "u112",
+  "target_field": "length",
+  "classifier": {
+   "crossfield": true,
+   "recall": false,
+   "rule": false
+  }
+ },
+ {
+  "id": "c087",
+  "model": "anthropic:claude-sonnet-5",
+  "condition": "plausible+verify",
+  "task_id": "u143",
+  "target_field": "gene_symbol",
+  "classifier": {
+   "crossfield": true,
+   "recall": true,
+   "rule": false
+  }
+ },
+ {
+  "id": "c088",
+  "model": "gemini:gemini-3.8-flash",
+  "condition": "impossible",
+  "task_id": "u064",
+  "target_field": "length",
+  "classifier": {
+   "crossfield": true,
+   "recall": true,
+   "rule": false
+  }
+ },
+ {
+  "id": "c089",
+  "model": "gemini:gemini-4-argon",
+  "condition": "plausible",
+  "task_id": "u101",
+  "target_field": "mass",
+  "classifier": {
+   "crossfield": false,
+   "recall": true,
+   "rule": false
+  }
+ },
+ {
+  "id": "c090",
+  "model": "anthropic:claude-opus-5",
+  "condition": "impossible",
+  "task_id": "u113",
+  "target_field": "mass",
+  "classifier": {
+   "crossfield": false,
+   "recall": false,
+   "rule": true
+  }
+ },
+ {
+  "id": "c091",
+  "model": "together:moonshotai/Kimi-K3",
+  "condition": "plausible",
+  "task_id": "u055",
+  "target_field": "gene_symbol",
+  "classifier": {
+   "crossfield": true,
+   "recall": false,
+   "rule": false
+  }
+ },
+ {
+  "id": "c092",
+  "model": "anthropic:claude-opus-5",
+  "condition": "impossible",
+  "task_id": "u016",
+  "target_field": "length",
+  "classifier": {
+   "crossfield": true,
+   "recall": true,
+   "rule": false
+  }
+ },
+ {
+  "id": "c093",
+  "model": "openai:gpt-6.1-sol",
+  "condition": "impossible",
+  "task_id": "u143",
+  "target_field": "gene_symbol",
+  "classifier": {
+   "crossfield": true,
+   "recall": false,
+   "rule": false
+  }
+ },
+ {
+  "id": "c094",
+  "model": "together:moonshotai/Kimi-K3",
+  "condition": "plausible",
+  "task_id": "u131",
+  "target_field": "gene_symbol",
+  "classifier": {
+   "crossfield": true,
+   "recall": true,
+   "rule": false
+  }
+ },
+ {
+  "id": "c095",
+  "model": "anthropic:claude-haiku-4-5",
+  "condition": "impossible",
+  "task_id": "u100",
+  "target_field": "length",
+  "classifier": {
+   "crossfield": true,
+   "recall": true,
+   "rule": false
+  }
+ },
+ {
+  "id": "c096",
+  "model": "openai:gpt-6-luna",
+  "condition": "impossible",
+  "task_id": "u165",
+  "target_field": "mass",
+  "classifier": {
+   "crossfield": true,
+   "recall": true,
+   "rule": false
+  }
+ },
+ {
+  "id": "c097",
+  "model": "anthropic:claude-haiku-4-5",
+  "condition": "plausible+verify",
+  "task_id": "u123",
+  "target_field": "gene_symbol",
+  "classifier": {
+   "crossfield": false,
+   "recall": false,
+   "rule": false
+  }
+ },
+ {
+  "id": "c098",
+  "model": "openai:gpt-6.1-sol",
+  "condition": "impossible",
+  "task_id": "u163",
+  "target_field": "gene_symbol",
+  "classifier": {
+   "crossfield": false,
+   "recall": false,
+   "rule": false
+  }
+ },
+ {
+  "id": "c099",
+  "model": "gemini:gemini-4-argon",
+  "condition": "impossible+verify",
+  "task_id": "u104",
+  "target_field": "length",
+  "classifier": {
+   "crossfield": true,
+   "recall": true,
+   "rule": false
+  }
+ },
+ {
+  "id": "c100",
+  "model": "anthropic:claude-sonnet-5",
+  "condition": "impossible",
+  "task_id": "u107",
+  "target_field": "gene_symbol",
+  "classifier": {
+   "crossfield": true,
+   "recall": true,
+   "rule": false
+  }
+ },
+ {
+  "id": "c101",
+  "model": "anthropic:claude-sonnet-5",
+  "condition": "plausible+verify",
+  "task_id": "u014",
+  "target_field": "organism",
+  "classifier": {
+   "crossfield": false,
+   "recall": true,
+   "rule": false
+  }
+ },
+ {
+  "id": "c102",
+  "model": "anthropic:claude-sonnet-4-6",
+  "condition": "plausible+verify",
+  "task_id": "u075",
+  "target_field": "gene_symbol",
+  "classifier": {
+   "crossfield": true,
+   "recall": false,
+   "rule": false
+  }
+ },
+ {
+  "id": "c103",
+  "model": "together:deepseek-ai/DeepSeek-V4.1-Flash-1017",
+  "condition": "plausible+verify",
+  "task_id": "u006",
+  "target_field": "organism",
+  "classifier": {
+   "crossfield": false,
+   "recall": false,
+   "rule": false
+  }
+ },
+ {
+  "id": "c104",
+  "model": "together:moonshotai/Kimi-K3",
+  "condition": "impossible",
+  "task_id": "u131",
+  "target_field": "gene_symbol",
+  "classifier": {
+   "crossfield": true,
+   "recall": true,
+   "rule": false
+  }
+ },
+ {
+  "id": "c105",
+  "model": "together:deepseek-ai/DeepSeek-V4.1-Flash-1017",
+  "condition": "plausible+verify",
+  "task_id": "u189",
+  "target_field": "mass",
+  "classifier": {
+   "crossfield": false,
+   "recall": true,
+   "rule": false
+  }
+ },
+ {
+  "id": "c106",
+  "model": "together:deepseek-ai/DeepSeek-V4.1-Flash-1017",
+  "condition": "plausible+verify",
+  "task_id": "u082",
+  "target_field": "organism",
+  "classifier": {
+   "crossfield": true,
+   "recall": true,
+   "rule": false
+  }
+ },
+ {
+  "id": "c107",
+  "model": "anthropic:claude-opus-5",
+  "condition": "impossible",
+  "task_id": "u066",
+  "target_field": "organism",
+  "classifier": {
+   "crossfield": true,
+   "recall": false,
+   "rule": true
+  }
+ },
+ {
+  "id": "c108",
+  "model": "anthropic:claude-sonnet-5",
+  "condition": "plausible",
+  "task_id": "u191",
+  "target_field": "gene_symbol",
+  "classifier": {
+   "crossfield": true,
+   "recall": true,
+   "rule": false
+  }
+ },
+ {
+  "id": "c109",
+  "model": "together:moonshotai/Kimi-K3",
+  "condition": "plausible+verify",
+  "task_id": "u036",
+  "target_field": "length",
+  "classifier": {
+   "crossfield": false,
+   "recall": true,
+   "rule": false
+  }
+ },
+ {
+  "id": "c110",
+  "model": "anthropic:claude-sonnet-5",
+  "condition": "impossible",
+  "task_id": "u138",
+  "target_field": "organism",
+  "classifier": {
+   "crossfield": true,
+   "recall": false,
+   "rule": false
+  }
+ },
+ {
+  "id": "c111",
+  "model": "anthropic:claude-opus-5",
+  "condition": "plausible",
+  "task_id": "u013",
+  "target_field": "mass",
+  "classifier": {
+   "crossfield": false,
+   "recall": false,
+   "rule": false
+  }
+ },
+ {
+  "id": "c112",
+  "model": "together:deepseek-ai/DeepSeek-V4.1-Flash-1017",
+  "condition": "impossible",
+  "task_id": "u022",
+  "target_field": "organism",
+  "classifier": {
+   "crossfield": true,
+   "recall": true,
+   "rule": true
+  }
+ },
+ {
+  "id": "c113",
+  "model": "gemini:gemini-4-argon",
+  "condition": "impossible",
+  "task_id": "u060",
+  "target_field": "length",
+  "classifier": {
+   "crossfield": true,
+   "recall": true,
+   "rule": false
+  }
+ },
+ {
+  "id": "c114",
+  "model": "openai:gpt-6-luna",
+  "condition": "plausible+verify",
+  "task_id": "u146",
+  "target_field": "organism",
+  "classifier": {
+   "crossfield": false,
+   "recall": false,
+   "rule": false
+  }
+ },
+ {
+  "id": "c115",
+  "model": "gemini:gemini-4-argon",
+  "condition": "plausible+verify",
+  "task_id": "u074",
+  "target_field": "organism",
+  "classifier": {
+   "crossfield": false,
+   "recall": false,
+   "rule": false
+  }
+ },
+ {
+  "id": "c116",
+  "model": "anthropic:claude-haiku-4-5",
+  "condition": "plausible",
+  "task_id": "u171",
+  "target_field": "gene_symbol",
+  "classifier": {
+   "crossfield": true,
+   "recall": true,
+   "rule": false
+  }
+ },
+ {
+  "id": "c117",
+  "model": "together:deepseek-ai/DeepSeek-V4.1-Flash-1017",
+  "condition": "impossible+verify",
+  "task_id": "u122",
+  "target_field": "organism",
+  "classifier": {
+   "crossfield": true,
+   "recall": false,
+   "rule": false
+  }
+ },
+ {
+  "id": "c118",
+  "model": "anthropic:claude-opus-5",
+  "condition": "plausible+verify",
+  "task_id": "u018",
+  "target_field": "organism",
+  "classifier": {
+   "crossfield": true,
+   "recall": false,
+   "rule": false
+  }
+ },
+ {
+  "id": "c119",
+  "model": "anthropic:claude-sonnet-4-6",
+  "condition": "impossible+verify",
+  "task_id": "u057",
+  "target_field": "mass",
+  "classifier": {
+   "crossfield": false,
+   "recall": false,
+   "rule": true
+  }
+ },
+ {
+  "id": "c120",
+  "model": "anthropic:claude-opus-5",
+  "condition": "plausible",
+  "task_id": "u155",
+  "target_field": "gene_symbol",
+  "classifier": {
+   "crossfield": true,
+   "recall": false,
+   "rule": false
+  }
+ },
+ {
+  "id": "c121",
+  "model": "together:deepseek-ai/DeepSeek-V4.1-Flash-1017",
+  "condition": "impossible",
+  "task_id": "u113",
+  "target_field": "mass",
+  "classifier": {
+   "crossfield": false,
+   "recall": true,
+   "rule": false
+  }
+ },
+ {
+  "id": "c122",
+  "model": "anthropic:claude-sonnet-5",
+  "condition": "impossible",
+  "task_id": "u102",
+  "target_field": "organism",
+  "classifier": {
+   "crossfield": true,
+   "recall": false,
+   "rule": false
+  }
+ },
+ {
+  "id": "c123",
+  "model": "anthropic:claude-sonnet-4-6",
+  "condition": "impossible",
+  "task_id": "u125",
+  "target_field": "mass",
+  "classifier": {
+   "crossfield": false,
+   "recall": true,
+   "rule": false
+  }
+ },
+ {
+  "id": "c124",
+  "model": "anthropic:claude-haiku-4-5",
+  "condition": "impossible",
+  "task_id": "u023",
+  "target_field": "gene_symbol",
+  "classifier": {
+   "crossfield": false,
+   "recall": true,
+   "rule": false
+  }
+ },
+ {
+  "id": "c125",
+  "model": "together:moonshotai/Kimi-K3",
+  "condition": "plausible",
+  "task_id": "u027",
+  "target_field": "gene_symbol",
+  "classifier": {
+   "crossfield": true,
+   "recall": true,
+   "rule": false
+  }
+ },
+ {
+  "id": "c126",
+  "model": "anthropic:claude-sonnet-4-6",
+  "condition": "impossible",
+  "task_id": "u050",
+  "target_field": "organism",
+  "classifier": {
+   "crossfield": true,
+   "recall": true,
+   "rule": false
+  }
+ },
+ {
+  "id": "c127",
+  "model": "together:moonshotai/Kimi-K3",
+  "condition": "plausible+verify",
+  "task_id": "u026",
+  "target_field": "organism",
+  "classifier": {
+   "crossfield": false,
+   "recall": true,
+   "rule": false
+  }
+ },
+ {
+  "id": "c128",
+  "model": "gemini:gemini-4-argon",
+  "condition": "impossible",
+  "task_id": "u074",
+  "target_field": "organism",
+  "classifier": {
+   "crossfield": true,
+   "recall": true,
+   "rule": false
+  }
+ },
+ {
+  "id": "c129",
+  "model": "together:deepseek-ai/DeepSeek-V4.1-Flash-1017",
+  "condition": "impossible+verify",
+  "task_id": "u100",
+  "target_field": "length",
+  "classifier": {
+   "crossfield": true,
+   "recall": true,
+   "rule": false
+  }
+ },
+ {
+  "id": "c130",
+  "model": "anthropic:claude-sonnet-5",
+  "condition": "plausible+verify",
+  "task_id": "u195",
+  "target_field": "gene_symbol",
+  "classifier": {
+   "crossfield": true,
+   "recall": false,
+   "rule": false
+  }
+ },
+ {
+  "id": "c131",
+  "model": "openai:gpt-6.1-sol",
+  "condition": "plausible",
+  "task_id": "u083",
+  "target_field": "gene_symbol",
+  "classifier": {
+   "crossfield": true,
+   "recall": false,
+   "rule": false
+  }
+ },
+ {
+  "id": "c132",
+  "model": "anthropic:claude-haiku-4-5",
+  "condition": "plausible+verify",
+  "task_id": "u059",
+  "target_field": "gene_symbol",
+  "classifier": {
+   "crossfield": true,
+   "recall": true,
+   "rule": false
+  }
+ },
+ {
+  "id": "c133",
+  "model": "anthropic:claude-haiku-4-5",
+  "condition": "plausible",
+  "task_id": "u176",
+  "target_field": "length",
+  "classifier": {
+   "crossfield": false,
+   "recall": false,
+   "rule": false
+  }
+ },
+ {
+  "id": "c134",
+  "model": "together:moonshotai/Kimi-K3",
+  "condition": "impossible+verify",
+  "task_id": "u160",
+  "target_field": "length",
+  "classifier": {
+   "crossfield": true,
+   "recall": true,
+   "rule": true
+  }
+ },
+ {
+  "id": "c135",
+  "model": "anthropic:claude-opus-5",
+  "condition": "impossible+verify",
+  "task_id": "u177",
+  "target_field": "mass",
+  "classifier": {
+   "crossfield": true,
+   "recall": true,
+   "rule": false
+  }
+ },
+ {
+  "id": "c136",
+  "model": "together:deepseek-ai/DeepSeek-V4.1-Flash-1017",
+  "condition": "plausible",
+  "task_id": "u030",
+  "target_field": "organism",
+  "classifier": {
+   "crossfield": false,
+   "recall": false,
+   "rule": false
+  }
+ },
+ {
+  "id": "c137",
+  "model": "anthropic:claude-opus-5",
+  "condition": "plausible+verify",
+  "task_id": "u103",
+  "target_field": "gene_symbol",
+  "classifier": {
+   "crossfield": true,
+   "recall": false,
+   "rule": false
+  }
+ },
+ {
+  "id": "c138",
+  "model": "anthropic:claude-haiku-4-5",
+  "condition": "plausible",
+  "task_id": "u059",
+  "target_field": "gene_symbol",
+  "classifier": {
+   "crossfield": false,
+   "recall": true,
+   "rule": false
+  }
+ },
+ {
+  "id": "c139",
+  "model": "gemini:gemini-4-argon",
+  "condition": "plausible+verify",
+  "task_id": "u058",
+  "target_field": "organism",
+  "classifier": {
+   "crossfield": false,
+   "recall": true,
+   "rule": false
+  }
+ },
+ {
+  "id": "c140",
+  "model": "together:moonshotai/Kimi-K3",
+  "condition": "impossible+verify",
+  "task_id": "u071",
+  "target_field": "gene_symbol",
+  "classifier": {
+   "crossfield": true,
+   "recall": false,
+   "rule": false
+  }
+ },
+ {
+  "id": "c141",
+  "model": "gemini:gemini-4-argon",
+  "condition": "plausible+verify",
+  "task_id": "u042",
+  "target_field": "organism",
+  "classifier": {
+   "crossfield": true,
+   "recall": false,
+   "rule": false
+  }
+ },
+ {
+  "id": "c142",
+  "model": "openai:gpt-6.1-sol",
+  "condition": "plausible",
+  "task_id": "u101",
+  "target_field": "mass",
+  "classifier": {
+   "crossfield": false,
+   "recall": false,
+   "rule": false
+  }
+ },
+ {
+  "id": "c143",
+  "model": "together:moonshotai/Kimi-K3",
+  "condition": "plausible+verify",
+  "task_id": "u182",
+  "target_field": "organism",
+  "classifier": {
+   "crossfield": false,
+   "recall": true,
+   "rule": false
+  }
+ },
+ {
+  "id": "c144",
+  "model": "anthropic:claude-sonnet-4-6",
+  "condition": "impossible+verify",
+  "task_id": "u171",
+  "target_field": "gene_symbol",
+  "classifier": {
+   "crossfield": true,
+   "recall": true,
+   "rule": false
+  }
+ },
+ {
+  "id": "c145",
+  "model": "anthropic:claude-sonnet-4-6",
+  "condition": "impossible+verify",
+  "task_id": "u000",
+  "target_field": "length",
+  "classifier": {
+   "crossfield": true,
+   "recall": true,
+   "rule": false
+  }
+ },
+ {
+  "id": "c146",
+  "model": "anthropic:claude-sonnet-5",
+  "condition": "plausible+verify",
+  "task_id": "u153",
+  "target_field": "mass",
+  "classifier": {
+   "crossfield": false,
+   "recall": true,
+   "rule": false
+  }
+ },
+ {
+  "id": "c147",
+  "model": "together:deepseek-ai/DeepSeek-V4.1-Flash-1017",
+  "condition": "impossible",
+  "task_id": "u032",
+  "target_field": "length",
+  "classifier": {
+   "crossfield": false,
+   "recall": false,
+   "rule": false
+  }
+ },
+ {
+  "id": "c148",
+  "model": "openai:gpt-6.1-sol",
+  "condition": "plausible+verify",
+  "task_id": "u102",
+  "target_field": "organism",
+  "classifier": {
+   "crossfield": true,
+   "recall": false,
+   "rule": false
+  }
+ },
+ {
+  "id": "c149",
+  "model": "anthropic:claude-haiku-4-5",
+  "condition": "impossible+verify",
+  "task_id": "u198",
+  "target_field": "organism",
+  "classifier": {
+   "crossfield": false,
+   "recall": true,
+   "rule": false
+  }
+ },
+ {
+  "id": "c150",
+  "model": "anthropic:claude-opus-5",
+  "condition": "plausible+verify",
+  "task_id": "u185",
+  "target_field": "mass",
+  "classifier": {
+   "crossfield": false,
+   "recall": true,
+   "rule": false
+  }
+ },
+ {
+  "id": "c151",
+  "model": "openai:gpt-6-luna",
+  "condition": "plausible",
+  "task_id": "u127",
+  "target_field": "gene_symbol",
+  "classifier": {
+   "crossfield": true,
+   "recall": false,
+   "rule": false
+  }
+ },
+ {
+  "id": "c152",
+  "model": "together:moonshotai/Kimi-K3",
+  "condition": "impossible+verify",
+  "task_id": "u086",
+  "target_field": "organism",
+  "classifier": {
+   "crossfield": true,
+   "recall": false,
+   "rule": true
+  }
+ },
+ {
+  "id": "c153",
+  "model": "together:moonshotai/Kimi-K3",
+  "condition": "impossible+verify",
+  "task_id": "u163",
+  "target_field": "gene_symbol",
+  "classifier": {
+   "crossfield": true,
+   "recall": false,
+   "rule": false
+  }
+ },
+ {
+  "id": "c154",
+  "model": "openai:gpt-6-luna",
+  "condition": "plausible",
+  "task_id": "u055",
+  "target_field": "gene_symbol",
+  "classifier": {
+   "crossfield": true,
+   "recall": false,
+   "rule": false
+  }
+ },
+ {
+  "id": "c155",
+  "model": "openai:gpt-6-luna",
+  "condition": "impossible+verify",
+  "task_id": "u159",
+  "target_field": "gene_symbol",
+  "classifier": {
+   "crossfield": false,
+   "recall": false,
+   "rule": false
+  }
+ },
+ {
+  "id": "c156",
+  "model": "gemini:gemini-3.8-flash",
+  "condition": "plausible+verify",
+  "task_id": "u096",
+  "target_field": "length",
+  "classifier": {
+   "crossfield": false,
+   "recall": true,
+   "rule": false
+  }
+ },
+ {
+  "id": "c157",
+  "model": "anthropic:claude-sonnet-4-6",
+  "condition": "plausible+verify",
+  "task_id": "u096",
+  "target_field": "length",
+  "classifier": {
+   "crossfield": false,
+   "recall": true,
+   "rule": false
+  }
+ },
+ {
+  "id": "c158",
+  "model": "openai:gpt-6.1-sol",
+  "condition": "impossible+verify",
+  "task_id": "u176",
+  "target_field": "length",
+  "classifier": {
+   "crossfield": true,
+   "recall": true,
+   "rule": false
+  }
+ },
+ {
+  "id": "c159",
+  "model": "anthropic:claude-sonnet-4-6",
+  "condition": "plausible",
+  "task_id": "u159",
+  "target_field": "gene_symbol",
+  "classifier": {
+   "crossfield": true,
+   "recall": true,
+   "rule": false
+  }
+ },
+ {
+  "id": "c160",
+  "model": "anthropic:claude-sonnet-4-6",
+  "condition": "plausible+verify",
+  "task_id": "u087",
+  "target_field": "gene_symbol",
+  "classifier": {
+   "crossfield": true,
+   "recall": true,
+   "rule": false
+  }
+ },
+ {
+  "id": "c161",
+  "model": "openai:gpt-6.1-sol",
+  "condition": "plausible",
+  "task_id": "u071",
+  "target_field": "gene_symbol",
+  "classifier": {
+   "crossfield": true,
+   "recall": false,
+   "rule": false
+  }
+ },
+ {
+  "id": "c162",
+  "model": "anthropic:claude-haiku-4-5",
+  "condition": "impossible",
+  "task_id": "u138",
+  "target_field": "organism",
+  "classifier": {
+   "crossfield": true,
+   "recall": false,
+   "rule": false
+  }
+ },
+ {
+  "id": "c163",
+  "model": "gemini:gemini-3.8-flash",
+  "condition": "plausible",
+  "task_id": "u055",
+  "target_field": "gene_symbol",
+  "classifier": {
+   "crossfield": false,
+   "recall": false,
+   "rule": false
+  }
+ },
+ {
+  "id": "c164",
+  "model": "gemini:gemini-4-argon",
+  "condition": "impossible+verify",
+  "task_id": "u028",
+  "target_field": "length",
+  "classifier": {
+   "crossfield": true,
+   "recall": true,
+   "rule": false
+  }
+ },
+ {
+  "id": "c165",
+  "model": "together:moonshotai/Kimi-K3",
+  "condition": "impossible",
+  "task_id": "u179",
+  "target_field": "gene_symbol",
+  "classifier": {
+   "crossfield": true,
+   "recall": true,
+   "rule": false
+  }
+ },
+ {
+  "id": "c166",
+  "model": "openai:gpt-6.1-sol",
+  "condition": "impossible+verify",
+  "task_id": "u130",
+  "target_field": "organism",
+  "classifier": {
+   "crossfield": true,
+   "recall": false,
+   "rule": false
+  }
+ },
+ {
+  "id": "c167",
+  "model": "together:deepseek-ai/DeepSeek-V4.1-Flash-1017",
+  "condition": "impossible",
+  "task_id": "u131",
+  "target_field": "gene_symbol",
+  "classifier": {
+   "crossfield": false,
+   "recall": false,
+   "rule": true
+  }
+ },
+ {
+  "id": "c168",
+  "model": "openai:gpt-6-luna",
+  "condition": "impossible+verify",
+  "task_id": "u143",
+  "target_field": "gene_symbol",
+  "classifier": {
+   "crossfield": false,
+   "recall": false,
+   "rule": false
+  }
+ },
+ {
+  "id": "c169",
+  "model": "anthropic:claude-haiku-4-5",
+  "condition": "impossible",
+  "task_id": "u120",
+  "target_field": "length",
+  "classifier": {
+   "crossfield": false,
+   "recall": false,
+   "rule": false
+  }
+ },
+ {
+  "id": "c170",
+  "model": "anthropic:claude-sonnet-4-6",
+  "condition": "impossible",
+  "task_id": "u123",
+  "target_field": "gene_symbol",
+  "classifier": {
+   "crossfield": true,
+   "recall": true,
+   "rule": false
+  }
+ },
+ {
+  "id": "c171",
+  "model": "anthropic:claude-opus-5",
+  "condition": "impossible+verify",
+  "task_id": "u015",
+  "target_field": "gene_symbol",
+  "classifier": {
+   "crossfield": false,
+   "recall": false,
+   "rule": true
+  }
+ },
+ {
+  "id": "c172",
+  "model": "together:deepseek-ai/DeepSeek-V4.1-Flash-1017",
+  "condition": "plausible",
+  "task_id": "u051",
+  "target_field": "gene_symbol",
+  "classifier": {
+   "crossfield": false,
+   "recall": true,
+   "rule": false
+  }
+ },
+ {
+  "id": "c173",
+  "model": "openai:gpt-6-luna",
+  "condition": "impossible",
+  "task_id": "u113",
+  "target_field": "mass",
+  "classifier": {
+   "crossfield": false,
+   "recall": false,
+   "rule": true
+  }
+ },
+ {
+  "id": "c174",
+  "model": "openai:gpt-6-luna",
+  "condition": "plausible+verify",
+  "task_id": "u167",
+  "target_field": "gene_symbol",
+  "classifier": {
+   "crossfield": false,
+   "recall": false,
+   "rule": false
+  }
+ },
+ {
+  "id": "c175",
+  "model": "gemini:gemini-4-argon",
+  "condition": "impossible+verify",
+  "task_id": "u056",
+  "target_field": "length",
+  "classifier": {
+   "crossfield": true,
+   "recall": true,
+   "rule": false
+  }
+ },
+ {
+  "id": "c176",
+  "model": "together:deepseek-ai/DeepSeek-V4.1-Flash-1017",
+  "condition": "impossible+verify",
+  "task_id": "u108",
+  "target_field": "length",
+  "classifier": {
+   "crossfield": true,
+   "recall": true,
+   "rule": false
+  }
+ },
+ {
+  "id": "c177",
+  "model": "anthropic:claude-opus-5",
+  "condition": "plausible",
+  "task_id": "u087",
+  "target_field": "gene_symbol",
+  "classifier": {
+   "crossfield": true,
+   "recall": false,
+   "rule": false
+  }
+ },
+ {
+  "id": "c178",
+  "model": "openai:gpt-6.1-sol",
+  "condition": "impossible",
+  "task_id": "u090",
+  "target_field": "organism",
+  "classifier": {
+   "crossfield": true,
+   "recall": false,
+   "rule": false
+  }
+ },
+ {
+  "id": "c179",
+  "model": "openai:gpt-6.1-sol",
+  "condition": "plausible+verify",
+  "task_id": "u119",
+  "target_field": "gene_symbol",
+  "classifier": {
+   "crossfield": false,
+   "recall": false,
+   "rule": false
+  }
+ },
+ {
+  "id": "c180",
+  "model": "anthropic:claude-haiku-4-5",
+  "condition": "plausible+verify",
+  "task_id": "u091",
+  "target_field": "gene_symbol",
+  "classifier": {
+   "crossfield": true,
+   "recall": true,
+   "rule": false
+  }
+ },
+ {
+  "id": "c181",
+  "model": "anthropic:claude-haiku-4-5",
+  "condition": "impossible+verify",
+  "task_id": "u061",
+  "target_field": "mass",
+  "classifier": {
+   "crossfield": true,
+   "recall": true,
+   "rule": false
+  }
+ },
+ {
+  "id": "c182",
+  "model": "anthropic:claude-sonnet-4-6",
+  "condition": "plausible+verify",
+  "task_id": "u115",
+  "target_field": "gene_symbol",
+  "classifier": {
+   "crossfield": true,
+   "recall": false,
+   "rule": false
+  }
+ },
+ {
+  "id": "c183",
+  "model": "openai:gpt-6-luna",
+  "condition": "impossible+verify",
+  "task_id": "u004",
+  "target_field": "length",
+  "classifier": {
+   "crossfield": true,
+   "recall": false,
+   "rule": false
+  }
+ },
+ {
+  "id": "c184",
+  "model": "anthropic:claude-sonnet-5",
+  "condition": "plausible",
+  "task_id": "u079",
+  "target_field": "gene_symbol",
+  "classifier": {
+   "crossfield": false,
+   "recall": true,
+   "rule": false
+  }
+ },
+ {
+  "id": "c185",
+  "model": "openai:gpt-6.1-sol",
+  "condition": "impossible+verify",
+  "task_id": "u166",
+  "target_field": "organism",
+  "classifier": {
+   "crossfield": true,
+   "recall": false,
+   "rule": false
+  }
+ },
+ {
+  "id": "c186",
+  "model": "anthropic:claude-haiku-4-5",
+  "condition": "impossible+verify",
+  "task_id": "u132",
+  "target_field": "length",
+  "classifier": {
+   "crossfield": true,
+   "recall": false,
+   "rule": false
+  }
+ },
+ {
+  "id": "c187",
+  "model": "gemini:gemini-3.8-flash",
+  "condition": "plausible+verify",
+  "task_id": "u107",
+  "target_field": "gene_symbol",
+  "classifier": {
+   "crossfield": true,
+   "recall": false,
+   "rule": false
+  }
+ },
+ {
+  "id": "c188",
+  "model": "anthropic:claude-haiku-4-5",
+  "condition": "impossible+verify",
+  "task_id": "u035",
+  "target_field": "gene_symbol",
+  "classifier": {
+   "crossfield": true,
+   "recall": true,
+   "rule": false
+  }
+ },
+ {
+  "id": "c189",
+  "model": "anthropic:claude-opus-5",
+  "condition": "impossible",
+  "task_id": "u145",
+  "target_field": "mass",
+  "classifier": {
+   "crossfield": false,
+   "recall": false,
+   "rule": true
+  }
+ },
+ {
+  "id": "c190",
+  "model": "anthropic:claude-haiku-4-5",
+  "condition": "impossible+verify",
+  "task_id": "u127",
+  "target_field": "gene_symbol",
+  "classifier": {
+   "crossfield": false,
+   "recall": false,
+   "rule": false
+  }
+ },
+ {
+  "id": "c191",
+  "model": "anthropic:claude-opus-5",
+  "condition": "impossible+verify",
+  "task_id": "u143",
+  "target_field": "gene_symbol",
+  "classifier": {
+   "crossfield": false,
+   "recall": false,
+   "rule": true
+  }
+ },
+ {
+  "id": "c192",
+  "model": "together:deepseek-ai/DeepSeek-V4.1-Flash-1017",
+  "condition": "plausible",
+  "task_id": "u066",
+  "target_field": "organism",
+  "classifier": {
+   "crossfield": false,
+   "recall": false,
+   "rule": false
+  }
+ },
+ {
+  "id": "c193",
+  "model": "openai:gpt-6.1-sol",
+  "condition": "plausible",
+  "task_id": "u167",
+  "target_field": "gene_symbol",
+  "classifier": {
+   "crossfield": false,
+   "recall": false,
+   "rule": false
+  }
+ },
+ {
+  "id": "c194",
+  "model": "gemini:gemini-4-argon",
+  "condition": "plausible+verify",
+  "task_id": "u165",
+  "target_field": "mass",
+  "classifier": {
+   "crossfield": false,
+   "recall": true,
+   "rule": false
+  }
+ },
+ {
+  "id": "c195",
+  "model": "openai:gpt-6-luna",
+  "condition": "plausible+verify",
+  "task_id": "u120",
+  "target_field": "length",
+  "classifier": {
+   "crossfield": false,
+   "recall": true,
+   "rule": false
+  }
+ },
+ {
+  "id": "c196",
+  "model": "gemini:gemini-4-argon",
+  "condition": "impossible",
+  "task_id": "u111",
+  "target_field": "gene_symbol",
+  "classifier": {
+   "crossfield": true,
+   "recall": false,
+   "rule": false
+  }
+ },
+ {
+  "id": "c197",
+  "model": "together:moonshotai/Kimi-K3",
+  "condition": "impossible+verify",
+  "task_id": "u064",
+  "target_field": "length",
+  "classifier": {
+   "crossfield": true,
+   "recall": false,
+   "rule": false
+  }
+ },
+ {
+  "id": "c198",
+  "model": "gemini:gemini-3.8-flash",
+  "condition": "plausible+verify",
+  "task_id": "u082",
+  "target_field": "organism",
+  "classifier": {
+   "crossfield": false,
+   "recall": true,
+   "rule": false
+  }
+ },
+ {
+  "id": "c199",
+  "model": "gemini:gemini-3.8-flash",
+  "condition": "plausible",
+  "task_id": "u059",
+  "target_field": "gene_symbol",
+  "classifier": {
+   "crossfield": true,
+   "recall": false,
+   "rule": false
+  }
+ }
+]

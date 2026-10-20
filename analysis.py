@@ -83,8 +83,17 @@ def cluster_bootstrap(rows, key, reps=2000, seed=0):
 
 
 def main():
-    main_rows = [score(r) for r in load_runs([str(ROOT / "results" / "traces*.jsonl")])]
-    sweep_rows = [score(r) for r in load_runs([str(ROOT / "results" / "sweep_traces*.jsonl")])]
+    import argparse
+    global OUT
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--traces", nargs="+", default=[str(ROOT / "results" / "traces*.jsonl")])
+    ap.add_argument("--sweep", nargs="+", default=[str(ROOT / "results" / "sweep_traces*.jsonl")])
+    ap.add_argument("--out_dir", default=str(OUT))
+    args = ap.parse_args()
+    OUT = Path(args.out_dir)
+    (OUT / "tables").mkdir(parents=True, exist_ok=True)
+    main_rows = [score(r) for r in load_runs(args.traces)]
+    sweep_rows = [score(r) for r in load_runs(args.sweep)]
     for r in main_rows + sweep_rows:
         r.update({f"cue_{k}": v for k, v in classify(r["concerns"]).items()})
     for r in sweep_rows:
