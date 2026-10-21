@@ -1,0 +1,1202 @@
+[
+ {
+  "id": "c000",
+  "model": "anthropic:claude-haiku-4-5",
+  "condition": "plausible",
+  "task_id": "c070",
+  "target_field": "h_bond_donors",
+  "classifier": {
+   "crossfield": false,
+   "recall": false,
+   "rule": false
+  }
+ },
+ {
+  "id": "c001",
+  "model": "gemini:gemini-4-argon",
+  "condition": "plausible",
+  "task_id": "c098",
+  "target_field": "h_bond_donors",
+  "classifier": {
+   "crossfield": false,
+   "recall": true,
+   "rule": false
+  }
+ },
+ {
+  "id": "c002",
+  "model": "anthropic:claude-opus-5",
+  "condition": "plausible",
+  "task_id": "c096",
+  "target_field": "molecular_weight",
+  "classifier": {
+   "crossfield": true,
+   "recall": false,
+   "rule": false
+  }
+ },
+ {
+  "id": "c003",
+  "model": "gemini:gemini-4-argon",
+  "condition": "impossible",
+  "task_id": "c072",
+  "target_field": "molecular_weight",
+  "classifier": {
+   "crossfield": false,
+   "recall": false,
+   "rule": true
+  }
+ },
+ {
+  "id": "c004",
+  "model": "openai:gpt-6.1-sol",
+  "condition": "impossible",
+  "task_id": "c057",
+  "target_field": "heavy_atom_count",
+  "classifier": {
+   "crossfield": false,
+   "recall": false,
+   "rule": true
+  }
+ },
+ {
+  "id": "c005",
+  "model": "anthropic:claude-sonnet-4-6",
+  "condition": "impossible",
+  "task_id": "c077",
+  "target_field": "heavy_atom_count",
+  "classifier": {
+   "crossfield": false,
+   "recall": true,
+   "rule": false
+  }
+ },
+ {
+  "id": "c006",
+  "model": "anthropic:claude-haiku-4-5",
+  "condition": "impossible",
+  "task_id": "c093",
+  "target_field": "heavy_atom_count",
+  "classifier": {
+   "crossfield": false,
+   "recall": true,
+   "rule": false
+  }
+ },
+ {
+  "id": "c007",
+  "model": "together:moonshotai/Kimi-K3",
+  "condition": "impossible",
+  "task_id": "c038",
+  "target_field": "h_bond_donors",
+  "classifier": {
+   "crossfield": false,
+   "recall": true,
+   "rule": false
+  }
+ },
+ {
+  "id": "c008",
+  "model": "anthropic:claude-sonnet-5",
+  "condition": "plausible",
+  "task_id": "c070",
+  "target_field": "h_bond_donors",
+  "classifier": {
+   "crossfield": false,
+   "recall": true,
+   "rule": false
+  }
+ },
+ {
+  "id": "c009",
+  "model": "gemini:gemini-3.8-flash",
+  "condition": "impossible",
+  "task_id": "c022",
+  "target_field": "h_bond_donors",
+  "classifier": {
+   "crossfield": false,
+   "recall": false,
+   "rule": true
+  }
+ },
+ {
+  "id": "c010",
+  "model": "anthropic:claude-opus-5",
+  "condition": "plausible",
+  "task_id": "c068",
+  "target_field": "molecular_weight",
+  "classifier": {
+   "crossfield": false,
+   "recall": true,
+   "rule": false
+  }
+ },
+ {
+  "id": "c011",
+  "model": "anthropic:claude-sonnet-4-6",
+  "condition": "impossible",
+  "task_id": "c084",
+  "target_field": "molecular_weight",
+  "classifier": {
+   "crossfield": false,
+   "recall": true,
+   "rule": false
+  }
+ },
+ {
+  "id": "c012",
+  "model": "together:deepseek-ai/DeepSeek-V4.1-Flash-1017",
+  "condition": "impossible",
+  "task_id": "c099",
+  "target_field": "name",
+  "classifier": {
+   "crossfield": false,
+   "recall": false,
+   "rule": false
+  }
+ },
+ {
+  "id": "c013",
+  "model": "together:moonshotai/Kimi-K3",
+  "condition": "plausible",
+  "task_id": "c002",
+  "target_field": "h_bond_donors",
+  "classifier": {
+   "crossfield": false,
+   "recall": true,
+   "rule": false
+  }
+ },
+ {
+  "id": "c014",
+  "model": "anthropic:claude-haiku-4-5",
+  "condition": "impossible",
+  "task_id": "c048",
+  "target_field": "molecular_weight",
+  "classifier": {
+   "crossfield": false,
+   "recall": false,
+   "rule": true
+  }
+ },
+ {
+  "id": "c015",
+  "model": "anthropic:claude-sonnet-5",
+  "condition": "plausible",
+  "task_id": "c065",
+  "target_field": "heavy_atom_count",
+  "classifier": {
+   "crossfield": false,
+   "recall": false,
+   "rule": false
+  }
+ },
+ {
+  "id": "c016",
+  "model": "gemini:gemini-3.8-flash",
+  "condition": "plausible",
+  "task_id": "c061",
+  "target_field": "heavy_atom_count",
+  "classifier": {
+   "crossfield": true,
+   "recall": true,
+   "rule": false
+  }
+ },
+ {
+  "id": "c017",
+  "model": "gemini:gemini-3.8-flash",
+  "condition": "plausible",
+  "task_id": "c003",
+  "target_field": "name",
+  "classifier": {
+   "crossfield": false,
+   "recall": true,
+   "rule": false
+  }
+ },
+ {
+  "id": "c018",
+  "model": "gemini:gemini-4-argon",
+  "condition": "impossible",
+  "task_id": "c001",
+  "target_field": "heavy_atom_count",
+  "classifier": {
+   "crossfield": true,
+   "recall": true,
+   "rule": false
+  }
+ },
+ {
+  "id": "c019",
+  "model": "anthropic:claude-opus-5",
+  "condition": "impossible",
+  "task_id": "c015",
+  "target_field": "name",
+  "classifier": {
+   "crossfield": false,
+   "recall": false,
+   "rule": false
+  }
+ },
+ {
+  "id": "c020",
+  "model": "gemini:gemini-3.8-flash",
+  "condition": "impossible",
+  "task_id": "c099",
+  "target_field": "name",
+  "classifier": {
+   "crossfield": false,
+   "recall": false,
+   "rule": false
+  }
+ },
+ {
+  "id": "c021",
+  "model": "openai:gpt-6.1-sol",
+  "condition": "plausible",
+  "task_id": "c059",
+  "target_field": "name",
+  "classifier": {
+   "crossfield": false,
+   "recall": false,
+   "rule": false
+  }
+ },
+ {
+  "id": "c022",
+  "model": "anthropic:claude-haiku-4-5",
+  "condition": "impossible",
+  "task_id": "c030",
+  "target_field": "h_bond_donors",
+  "classifier": {
+   "crossfield": false,
+   "recall": true,
+   "rule": false
+  }
+ },
+ {
+  "id": "c023",
+  "model": "anthropic:claude-sonnet-5",
+  "condition": "impossible",
+  "task_id": "c014",
+  "target_field": "h_bond_donors",
+  "classifier": {
+   "crossfield": false,
+   "recall": false,
+   "rule": false
+  }
+ },
+ {
+  "id": "c024",
+  "model": "together:deepseek-ai/DeepSeek-V4.1-Flash-1017",
+  "condition": "plausible",
+  "task_id": "c004",
+  "target_field": "molecular_weight",
+  "classifier": {
+   "crossfield": false,
+   "recall": true,
+   "rule": true
+  }
+ },
+ {
+  "id": "c025",
+  "model": "anthropic:claude-sonnet-5",
+  "condition": "plausible",
+  "task_id": "c067",
+  "target_field": "name",
+  "classifier": {
+   "crossfield": true,
+   "recall": true,
+   "rule": false
+  }
+ },
+ {
+  "id": "c026",
+  "model": "openai:gpt-6.1-sol",
+  "condition": "plausible",
+  "task_id": "c038",
+  "target_field": "h_bond_donors",
+  "classifier": {
+   "crossfield": false,
+   "recall": false,
+   "rule": false
+  }
+ },
+ {
+  "id": "c027",
+  "model": "together:deepseek-ai/DeepSeek-V4.1-Flash-1017",
+  "condition": "impossible",
+  "task_id": "c094",
+  "target_field": "h_bond_donors",
+  "classifier": {
+   "crossfield": true,
+   "recall": false,
+   "rule": false
+  }
+ },
+ {
+  "id": "c028",
+  "model": "openai:gpt-6.1-sol",
+  "condition": "impossible",
+  "task_id": "c005",
+  "target_field": "heavy_atom_count",
+  "classifier": {
+   "crossfield": false,
+   "recall": false,
+   "rule": false
+  }
+ },
+ {
+  "id": "c029",
+  "model": "gemini:gemini-3.8-flash",
+  "condition": "impossible",
+  "task_id": "c018",
+  "target_field": "h_bond_donors",
+  "classifier": {
+   "crossfield": false,
+   "recall": true,
+   "rule": true
+  }
+ },
+ {
+  "id": "c030",
+  "model": "together:deepseek-ai/DeepSeek-V4.1-Flash-1017",
+  "condition": "plausible",
+  "task_id": "c003",
+  "target_field": "name",
+  "classifier": {
+   "crossfield": false,
+   "recall": true,
+   "rule": false
+  }
+ },
+ {
+  "id": "c031",
+  "model": "together:moonshotai/Kimi-K3",
+  "condition": "impossible",
+  "task_id": "c001",
+  "target_field": "heavy_atom_count",
+  "classifier": {
+   "crossfield": true,
+   "recall": true,
+   "rule": false
+  }
+ },
+ {
+  "id": "c032",
+  "model": "anthropic:claude-opus-5",
+  "condition": "plausible",
+  "task_id": "c011",
+  "target_field": "name",
+  "classifier": {
+   "crossfield": false,
+   "recall": true,
+   "rule": true
+  }
+ },
+ {
+  "id": "c033",
+  "model": "together:moonshotai/Kimi-K3",
+  "condition": "impossible",
+  "task_id": "c072",
+  "target_field": "molecular_weight",
+  "classifier": {
+   "crossfield": false,
+   "recall": false,
+   "rule": false
+  }
+ },
+ {
+  "id": "c034",
+  "model": "openai:gpt-6-luna",
+  "condition": "plausible",
+  "task_id": "c047",
+  "target_field": "name",
+  "classifier": {
+   "crossfield": false,
+   "recall": false,
+   "rule": false
+  }
+ },
+ {
+  "id": "c035",
+  "model": "openai:gpt-6.1-sol",
+  "condition": "impossible",
+  "task_id": "c028",
+  "target_field": "molecular_weight",
+  "classifier": {
+   "crossfield": true,
+   "recall": false,
+   "rule": false
+  }
+ },
+ {
+  "id": "c036",
+  "model": "gemini:gemini-3.8-flash",
+  "condition": "impossible",
+  "task_id": "c009",
+  "target_field": "heavy_atom_count",
+  "classifier": {
+   "crossfield": false,
+   "recall": true,
+   "rule": false
+  }
+ },
+ {
+  "id": "c037",
+  "model": "openai:gpt-6-luna",
+  "condition": "impossible",
+  "task_id": "c009",
+  "target_field": "heavy_atom_count",
+  "classifier": {
+   "crossfield": true,
+   "recall": false,
+   "rule": true
+  }
+ },
+ {
+  "id": "c038",
+  "model": "anthropic:claude-opus-5",
+  "condition": "impossible",
+  "task_id": "c091",
+  "target_field": "name",
+  "classifier": {
+   "crossfield": false,
+   "recall": true,
+   "rule": false
+  }
+ },
+ {
+  "id": "c039",
+  "model": "gemini:gemini-4-argon",
+  "condition": "plausible",
+  "task_id": "c043",
+  "target_field": "name",
+  "classifier": {
+   "crossfield": false,
+   "recall": true,
+   "rule": false
+  }
+ },
+ {
+  "id": "c040",
+  "model": "anthropic:claude-sonnet-5",
+  "condition": "impossible",
+  "task_id": "c008",
+  "target_field": "molecular_weight",
+  "classifier": {
+   "crossfield": false,
+   "recall": false,
+   "rule": true
+  }
+ },
+ {
+  "id": "c041",
+  "model": "gemini:gemini-3.8-flash",
+  "condition": "impossible",
+  "task_id": "c002",
+  "target_field": "h_bond_donors",
+  "classifier": {
+   "crossfield": false,
+   "recall": false,
+   "rule": true
+  }
+ },
+ {
+  "id": "c042",
+  "model": "anthropic:claude-sonnet-4-6",
+  "condition": "plausible",
+  "task_id": "c099",
+  "target_field": "name",
+  "classifier": {
+   "crossfield": false,
+   "recall": true,
+   "rule": false
+  }
+ },
+ {
+  "id": "c043",
+  "model": "openai:gpt-6.1-sol",
+  "condition": "impossible",
+  "task_id": "c026",
+  "target_field": "h_bond_donors",
+  "classifier": {
+   "crossfield": false,
+   "recall": true,
+   "rule": true
+  }
+ },
+ {
+  "id": "c044",
+  "model": "anthropic:claude-sonnet-4-6",
+  "condition": "plausible",
+  "task_id": "c087",
+  "target_field": "name",
+  "classifier": {
+   "crossfield": false,
+   "recall": true,
+   "rule": false
+  }
+ },
+ {
+  "id": "c045",
+  "model": "together:moonshotai/Kimi-K3",
+  "condition": "plausible",
+  "task_id": "c088",
+  "target_field": "molecular_weight",
+  "classifier": {
+   "crossfield": false,
+   "recall": true,
+   "rule": false
+  }
+ },
+ {
+  "id": "c046",
+  "model": "openai:gpt-6-luna",
+  "condition": "impossible",
+  "task_id": "c086",
+  "target_field": "h_bond_donors",
+  "classifier": {
+   "crossfield": false,
+   "recall": true,
+   "rule": false
+  }
+ },
+ {
+  "id": "c047",
+  "model": "anthropic:claude-sonnet-5",
+  "condition": "impossible",
+  "task_id": "c091",
+  "target_field": "name",
+  "classifier": {
+   "crossfield": false,
+   "recall": false,
+   "rule": false
+  }
+ },
+ {
+  "id": "c048",
+  "model": "openai:gpt-6-luna",
+  "condition": "impossible",
+  "task_id": "c068",
+  "target_field": "molecular_weight",
+  "classifier": {
+   "crossfield": false,
+   "recall": false,
+   "rule": false
+  }
+ },
+ {
+  "id": "c049",
+  "model": "gemini:gemini-4-argon",
+  "condition": "impossible",
+  "task_id": "c086",
+  "target_field": "h_bond_donors",
+  "classifier": {
+   "crossfield": true,
+   "recall": false,
+   "rule": true
+  }
+ },
+ {
+  "id": "c050",
+  "model": "together:moonshotai/Kimi-K3",
+  "condition": "plausible",
+  "task_id": "c036",
+  "target_field": "molecular_weight",
+  "classifier": {
+   "crossfield": false,
+   "recall": true,
+   "rule": false
+  }
+ },
+ {
+  "id": "c051",
+  "model": "together:deepseek-ai/DeepSeek-V4.1-Flash-1017",
+  "condition": "plausible",
+  "task_id": "c099",
+  "target_field": "name",
+  "classifier": {
+   "crossfield": false,
+   "recall": true,
+   "rule": false
+  }
+ },
+ {
+  "id": "c052",
+  "model": "openai:gpt-6-luna",
+  "condition": "plausible",
+  "task_id": "c043",
+  "target_field": "name",
+  "classifier": {
+   "crossfield": false,
+   "recall": false,
+   "rule": false
+  }
+ },
+ {
+  "id": "c053",
+  "model": "openai:gpt-6-luna",
+  "condition": "plausible",
+  "task_id": "c027",
+  "target_field": "name",
+  "classifier": {
+   "crossfield": false,
+   "recall": false,
+   "rule": false
+  }
+ },
+ {
+  "id": "c054",
+  "model": "openai:gpt-6-luna",
+  "condition": "plausible",
+  "task_id": "c083",
+  "target_field": "name",
+  "classifier": {
+   "crossfield": false,
+   "recall": false,
+   "rule": false
+  }
+ },
+ {
+  "id": "c055",
+  "model": "openai:gpt-6.1-sol",
+  "condition": "plausible",
+  "task_id": "c061",
+  "target_field": "heavy_atom_count",
+  "classifier": {
+   "crossfield": false,
+   "recall": true,
+   "rule": false
+  }
+ },
+ {
+  "id": "c056",
+  "model": "together:moonshotai/Kimi-K3",
+  "condition": "plausible",
+  "task_id": "c039",
+  "target_field": "name",
+  "classifier": {
+   "crossfield": false,
+   "recall": true,
+   "rule": false
+  }
+ },
+ {
+  "id": "c057",
+  "model": "gemini:gemini-3.8-flash",
+  "condition": "plausible",
+  "task_id": "c091",
+  "target_field": "name",
+  "classifier": {
+   "crossfield": false,
+   "recall": false,
+   "rule": false
+  }
+ },
+ {
+  "id": "c058",
+  "model": "together:deepseek-ai/DeepSeek-V4.1-Flash-1017",
+  "condition": "plausible",
+  "task_id": "c080",
+  "target_field": "molecular_weight",
+  "classifier": {
+   "crossfield": false,
+   "recall": true,
+   "rule": false
+  }
+ },
+ {
+  "id": "c059",
+  "model": "anthropic:claude-sonnet-4-6",
+  "condition": "impossible",
+  "task_id": "c072",
+  "target_field": "molecular_weight",
+  "classifier": {
+   "crossfield": false,
+   "recall": false,
+   "rule": true
+  }
+ },
+ {
+  "id": "c060",
+  "model": "anthropic:claude-sonnet-5",
+  "condition": "impossible",
+  "task_id": "c054",
+  "target_field": "h_bond_donors",
+  "classifier": {
+   "crossfield": false,
+   "recall": false,
+   "rule": false
+  }
+ },
+ {
+  "id": "c061",
+  "model": "anthropic:claude-sonnet-4-6",
+  "condition": "impossible",
+  "task_id": "c018",
+  "target_field": "h_bond_donors",
+  "classifier": {
+   "crossfield": false,
+   "recall": true,
+   "rule": true
+  }
+ },
+ {
+  "id": "c062",
+  "model": "gemini:gemini-4-argon",
+  "condition": "plausible",
+  "task_id": "c068",
+  "target_field": "molecular_weight",
+  "classifier": {
+   "crossfield": false,
+   "recall": true,
+   "rule": false
+  }
+ },
+ {
+  "id": "c063",
+  "model": "openai:gpt-6.1-sol",
+  "condition": "plausible",
+  "task_id": "c081",
+  "target_field": "heavy_atom_count",
+  "classifier": {
+   "crossfield": false,
+   "recall": true,
+   "rule": false
+  }
+ },
+ {
+  "id": "c064",
+  "model": "anthropic:claude-sonnet-5",
+  "condition": "impossible",
+  "task_id": "c079",
+  "target_field": "name",
+  "classifier": {
+   "crossfield": false,
+   "recall": true,
+   "rule": false
+  }
+ },
+ {
+  "id": "c065",
+  "model": "anthropic:claude-opus-5",
+  "condition": "impossible",
+  "task_id": "c009",
+  "target_field": "heavy_atom_count",
+  "classifier": {
+   "crossfield": false,
+   "recall": true,
+   "rule": false
+  }
+ },
+ {
+  "id": "c066",
+  "model": "anthropic:claude-haiku-4-5",
+  "condition": "plausible",
+  "task_id": "c049",
+  "target_field": "heavy_atom_count",
+  "classifier": {
+   "crossfield": false,
+   "recall": false,
+   "rule": false
+  }
+ },
+ {
+  "id": "c067",
+  "model": "anthropic:claude-haiku-4-5",
+  "condition": "impossible",
+  "task_id": "c024",
+  "target_field": "molecular_weight",
+  "classifier": {
+   "crossfield": true,
+   "recall": true,
+   "rule": false
+  }
+ },
+ {
+  "id": "c068",
+  "model": "together:deepseek-ai/DeepSeek-V4.1-Flash-1017",
+  "condition": "plausible",
+  "task_id": "c038",
+  "target_field": "h_bond_donors",
+  "classifier": {
+   "crossfield": false,
+   "recall": true,
+   "rule": false
+  }
+ },
+ {
+  "id": "c069",
+  "model": "anthropic:claude-sonnet-5",
+  "condition": "plausible",
+  "task_id": "c079",
+  "target_field": "name",
+  "classifier": {
+   "crossfield": true,
+   "recall": true,
+   "rule": true
+  }
+ },
+ {
+  "id": "c070",
+  "model": "anthropic:claude-sonnet-4-6",
+  "condition": "impossible",
+  "task_id": "c045",
+  "target_field": "heavy_atom_count",
+  "classifier": {
+   "crossfield": false,
+   "recall": true,
+   "rule": false
+  }
+ },
+ {
+  "id": "c071",
+  "model": "gemini:gemini-3.8-flash",
+  "condition": "plausible",
+  "task_id": "c031",
+  "target_field": "name",
+  "classifier": {
+   "crossfield": true,
+   "recall": false,
+   "rule": false
+  }
+ },
+ {
+  "id": "c072",
+  "model": "anthropic:claude-sonnet-5",
+  "condition": "plausible",
+  "task_id": "c049",
+  "target_field": "heavy_atom_count",
+  "classifier": {
+   "crossfield": false,
+   "recall": true,
+   "rule": false
+  }
+ },
+ {
+  "id": "c073",
+  "model": "together:moonshotai/Kimi-K3",
+  "condition": "impossible",
+  "task_id": "c084",
+  "target_field": "molecular_weight",
+  "classifier": {
+   "crossfield": true,
+   "recall": true,
+   "rule": true
+  }
+ },
+ {
+  "id": "c074",
+  "model": "openai:gpt-6-luna",
+  "condition": "impossible",
+  "task_id": "c085",
+  "target_field": "heavy_atom_count",
+  "classifier": {
+   "crossfield": false,
+   "recall": false,
+   "rule": true
+  }
+ },
+ {
+  "id": "c075",
+  "model": "together:deepseek-ai/DeepSeek-V4.1-Flash-1017",
+  "condition": "impossible",
+  "task_id": "c044",
+  "target_field": "molecular_weight",
+  "classifier": {
+   "crossfield": false,
+   "recall": true,
+   "rule": false
+  }
+ },
+ {
+  "id": "c076",
+  "model": "together:deepseek-ai/DeepSeek-V4.1-Flash-1017",
+  "condition": "impossible",
+  "task_id": "c032",
+  "target_field": "molecular_weight",
+  "classifier": {
+   "crossfield": false,
+   "recall": false,
+   "rule": true
+  }
+ },
+ {
+  "id": "c077",
+  "model": "anthropic:claude-sonnet-4-6",
+  "condition": "plausible",
+  "task_id": "c021",
+  "target_field": "heavy_atom_count",
+  "classifier": {
+   "crossfield": false,
+   "recall": true,
+   "rule": false
+  }
+ },
+ {
+  "id": "c078",
+  "model": "together:deepseek-ai/DeepSeek-V4.1-Flash-1017",
+  "condition": "impossible",
+  "task_id": "c022",
+  "target_field": "h_bond_donors",
+  "classifier": {
+   "crossfield": true,
+   "recall": true,
+   "rule": false
+  }
+ },
+ {
+  "id": "c079",
+  "model": "anthropic:claude-haiku-4-5",
+  "condition": "impossible",
+  "task_id": "c046",
+  "target_field": "h_bond_donors",
+  "classifier": {
+   "crossfield": true,
+   "recall": true,
+   "rule": true
+  }
+ },
+ {
+  "id": "c080",
+  "model": "openai:gpt-6.1-sol",
+  "condition": "plausible",
+  "task_id": "c079",
+  "target_field": "name",
+  "classifier": {
+   "crossfield": false,
+   "recall": false,
+   "rule": false
+  }
+ },
+ {
+  "id": "c081",
+  "model": "openai:gpt-6-luna",
+  "condition": "plausible",
+  "task_id": "c091",
+  "target_field": "name",
+  "classifier": {
+   "crossfield": false,
+   "recall": false,
+   "rule": false
+  }
+ },
+ {
+  "id": "c082",
+  "model": "gemini:gemini-4-argon",
+  "condition": "plausible",
+  "task_id": "c031",
+  "target_field": "name",
+  "classifier": {
+   "crossfield": false,
+   "recall": true,
+   "rule": false
+  }
+ },
+ {
+  "id": "c083",
+  "model": "openai:gpt-6-luna",
+  "condition": "impossible",
+  "task_id": "c064",
+  "target_field": "molecular_weight",
+  "classifier": {
+   "crossfield": false,
+   "recall": false,
+   "rule": true
+  }
+ },
+ {
+  "id": "c084",
+  "model": "anthropic:claude-sonnet-4-6",
+  "condition": "plausible",
+  "task_id": "c051",
+  "target_field": "name",
+  "classifier": {
+   "crossfield": false,
+   "recall": true,
+   "rule": false
+  }
+ },
+ {
+  "id": "c085",
+  "model": "gemini:gemini-4-argon",
+  "condition": "impossible",
+  "task_id": "c098",
+  "target_field": "h_bond_donors",
+  "classifier": {
+   "crossfield": false,
+   "recall": true,
+   "rule": true
+  }
+ },
+ {
+  "id": "c086",
+  "model": "together:moonshotai/Kimi-K3",
+  "condition": "plausible",
+  "task_id": "c063",
+  "target_field": "name",
+  "classifier": {
+   "crossfield": false,
+   "recall": true,
+   "rule": false
+  }
+ },
+ {
+  "id": "c087",
+  "model": "anthropic:claude-opus-5",
+  "condition": "plausible",
+  "task_id": "c079",
+  "target_field": "name",
+  "classifier": {
+   "crossfield": false,
+   "recall": true,
+   "rule": true
+  }
+ },
+ {
+  "id": "c088",
+  "model": "gemini:gemini-4-argon",
+  "condition": "impossible",
+  "task_id": "c033",
+  "target_field": "heavy_atom_count",
+  "classifier": {
+   "crossfield": true,
+   "recall": false,
+   "rule": true
+  }
+ },
+ {
+  "id": "c089",
+  "model": "openai:gpt-6.1-sol",
+  "condition": "plausible",
+  "task_id": "c099",
+  "target_field": "name",
+  "classifier": {
+   "crossfield": false,
+   "recall": false,
+   "rule": false
+  }
+ },
+ {
+  "id": "c090",
+  "model": "anthropic:claude-opus-5",
+  "condition": "impossible",
+  "task_id": "c076",
+  "target_field": "molecular_weight",
+  "classifier": {
+   "crossfield": false,
+   "recall": true,
+   "rule": true
+  }
+ },
+ {
+  "id": "c091",
+  "model": "anthropic:claude-opus-5",
+  "condition": "plausible",
+  "task_id": "c012",
+  "target_field": "molecular_weight",
+  "classifier": {
+   "crossfield": false,
+   "recall": true,
+   "rule": false
+  }
+ },
+ {
+  "id": "c092",
+  "model": "together:moonshotai/Kimi-K3",
+  "condition": "impossible",
+  "task_id": "c046",
+  "target_field": "h_bond_donors",
+  "classifier": {
+   "crossfield": true,
+   "recall": true,
+   "rule": true
+  }
+ },
+ {
+  "id": "c093",
+  "model": "anthropic:claude-opus-5",
+  "condition": "impossible",
+  "task_id": "c041",
+  "target_field": "heavy_atom_count",
+  "classifier": {
+   "crossfield": false,
+   "recall": true,
+   "rule": false
+  }
+ },
+ {
+  "id": "c094",
+  "model": "anthropic:claude-haiku-4-5",
+  "condition": "plausible",
+  "task_id": "c029",
+  "target_field": "heavy_atom_count",
+  "classifier": {
+   "crossfield": false,
+   "recall": false,
+   "rule": false
+  }
+ },
+ {
+  "id": "c095",
+  "model": "anthropic:claude-sonnet-4-6",
+  "condition": "plausible",
+  "task_id": "c063",
+  "target_field": "name",
+  "classifier": {
+   "crossfield": false,
+   "recall": true,
+   "rule": false
+  }
+ },
+ {
+  "id": "c096",
+  "model": "gemini:gemini-3.8-flash",
+  "condition": "plausible",
+  "task_id": "c077",
+  "target_field": "heavy_atom_count",
+  "classifier": {
+   "crossfield": false,
+   "recall": true,
+   "rule": false
+  }
+ },
+ {
+  "id": "c097",
+  "model": "gemini:gemini-4-argon",
+  "condition": "plausible",
+  "task_id": "c013",
+  "target_field": "heavy_atom_count",
+  "classifier": {
+   "crossfield": false,
+   "recall": true,
+   "rule": false
+  }
+ },
+ {
+  "id": "c098",
+  "model": "openai:gpt-6.1-sol",
+  "condition": "impossible",
+  "task_id": "c090",
+  "target_field": "h_bond_donors",
+  "classifier": {
+   "crossfield": false,
+   "recall": true,
+   "rule": false
+  }
+ },
+ {
+  "id": "c099",
+  "model": "gemini:gemini-4-argon",
+  "condition": "plausible",
+  "task_id": "c061",
+  "target_field": "heavy_atom_count",
+  "classifier": {
+   "crossfield": false,
+   "recall": true,
+   "rule": false
+  }
+ }
+]

@@ -3,7 +3,7 @@
 and concerns_key.json (model/condition/classifier labels, kept separate from the labelling sheet)."""
 import argparse, csv, json, random
 from pathlib import Path
-from analysis import classify
+from analysis import classify, CHEM_FIELDS
 from grade import load_runs, score
 
 ap = argparse.ArgumentParser()
@@ -35,7 +35,7 @@ with open(out / "concerns_to_label.csv", "w", newline="") as f:
     for i, r in enumerate(sample):
         w.writerow([f"c{i:03d}", " || ".join(r["concerns"]), "", "", "", "", ""])
 key = [{"id": f"c{i:03d}", "model": r["model"], "condition": r["condition"], "task_id": r["task_id"],
-        "target_field": r["target_field"], "classifier": classify(r["concerns"])} for i, r in enumerate(sample)]
+        "target_field": r["target_field"], "classifier": classify(r["concerns"], chem=r["target_field"] in CHEM_FIELDS)} for i, r in enumerate(sample)]
 (out / "concerns_key.json").write_text(json.dumps(key, indent=1))
 print(f"wrote {len(sample)} concerns to {out}/concerns_to_label.csv (blind) and concerns_key.json")
 print("Label each row with 1/0 in cross_field, recall, rule; unspecific=1 only if the other three are all 0.")
