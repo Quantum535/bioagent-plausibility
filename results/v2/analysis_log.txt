@@ -1,0 +1,144 @@
+== taxonomy (share of flagged runs citing each cue), pooled over models
+  impossible           n=1894 crossfield=63% recall=48% rule=18% none=17%
+  plausible            n= 783 crossfield=49% recall=48% rule=0% none=20%
+  sweep consistent     n= 843 crossfield=5% recall=62% rule=3% none=35%
+  sweep inconsistent   n= 944 crossfield=86% recall=60% rule=7% none=7%
+== per model
+  impossible           Haiku 4.5   n=148 crossfield=34% recall=51% rule=15% none=32%
+  impossible           Sonnet 4.6  n=199 crossfield=58% recall=75% rule=24% none=7%
+  impossible           Sonnet 5    n=200 crossfield=78% recall=64% rule=16% none=4%
+  impossible           Opus 5      n=200 crossfield=78% recall=47% rule=32% none=6%
+  impossible           Gemini 3.8 Flash n=195 crossfield=61% recall=59% rule=26% none=11%
+  impossible           Gemini 4 Argon n=200 crossfield=76% recall=52% rule=24% none=11%
+  impossible           DeepSeek V4.1 Flash n=200 crossfield=68% recall=49% rule=18% none=12%
+  impossible           Kimi K3     n=199 crossfield=66% recall=56% rule=16% none=14%
+  impossible           GPT-6 Luna  n=153 crossfield=39% recall=16% rule=5% none=54%
+  impossible           GPT-6.1 Sol n=200 crossfield=63% recall=4% rule=4% none=33%
+  plausible            Haiku 4.5   n= 15 crossfield=60% recall=53% rule=0% none=20%
+  plausible            Sonnet 4.6  n= 50 crossfield=88% recall=86% rule=0% none=0%
+  plausible            Sonnet 5    n= 63 crossfield=65% recall=63% rule=0% none=10%
+  plausible            Opus 5      n=114 crossfield=53% recall=39% rule=0% none=23%
+  plausible            Gemini 3.8 Flash n= 64 crossfield=66% recall=28% rule=0% none=12%
+  plausible            Gemini 4 Argon n=189 crossfield=22% recall=64% rule=0% none=23%
+  plausible            DeepSeek V4.1 Flash n= 92 crossfield=45% recall=39% rule=0% none=23%
+  plausible            Kimi K3     n= 58 crossfield=72% recall=53% rule=0% none=16%
+  plausible            GPT-6 Luna  n= 34 crossfield=76% recall=0% rule=0% none=24%
+  plausible            GPT-6.1 Sol n=104 crossfield=37% recall=36% rule=0% none=29%
+  sweep consistent     Gemini 3.8 Flash n= 91 crossfield=3% recall=85% rule=1% none=13%
+  sweep consistent     Gemini 4 Argon n=136 crossfield=7% recall=100% rule=0% none=0%
+  sweep consistent     DeepSeek V4.1 Flash n= 99 crossfield=8% recall=66% rule=1% none=32%
+  sweep consistent     Kimi K3     n= 87 crossfield=7% recall=62% rule=1% none=32%
+  sweep consistent     GPT-6 Luna  n= 67 crossfield=0% recall=0% rule=3% none=97%
+  sweep consistent     GPT-6.1 Sol n= 87 crossfield=0% recall=3% rule=0% none=97%
+  sweep inconsistent   Gemini 3.8 Flash n=113 crossfield=79% recall=73% rule=15% none=4%
+  sweep inconsistent   Gemini 4 Argon n=140 crossfield=84% recall=85% rule=20% none=1%
+  sweep inconsistent   DeepSeek V4.1 Flash n=105 crossfield=90% recall=67% rule=6% none=4%
+  sweep inconsistent   Kimi K3     n=104 crossfield=97% recall=60% rule=2% none=1%
+  sweep inconsistent   GPT-6 Luna  n= 77 crossfield=92% recall=49% rule=0% none=6%
+  sweep inconsistent   GPT-6.1 Sol n=119 crossfield=84% recall=51% rule=2% none=13%
+== propagation among flagged runs by cited cue
+  impossible|crossfield        n=1199 propagated=70%
+  impossible|recall            n=906 propagated=71%
+  impossible|rule              n=350 propagated=36%
+  plausible|crossfield         n=384 propagated=46%
+  plausible|recall             n=379 propagated=95%
+  plausible|rule               n=  0 propagated=–%
+== cluster bootstrap vs Wilson (propagation)
+  anthropic:claude-haiku-4-5|impossible    93%  wilson [89,96]  boot [90,96]
+  anthropic:claude-haiku-4-5|impossible+verify 84%  wilson [78,88]  boot [78,89]
+  anthropic:claude-haiku-4-5|plausible     100%  wilson [98,100]  boot [100,100]
+  anthropic:claude-haiku-4-5|plausible+verify 100%  wilson [97,100]  boot [98,100]
+  anthropic:claude-sonnet-4-6|impossible   83%  wilson [77,88]  boot [78,88]
+  anthropic:claude-sonnet-4-6|impossible+verify 59%  wilson [52,66]  boot [52,66]
+  anthropic:claude-sonnet-4-6|plausible    100%  wilson [97,100]  boot [98,100]
+  anthropic:claude-sonnet-4-6|plausible+verify 86%  wilson [81,91]  boot [82,91]
+  anthropic:claude-sonnet-5|impossible     76%  wilson [69,81]  boot [70,82]
+  anthropic:claude-sonnet-5|impossible+verify 30%  wilson [24,37]  boot [24,36]
+  anthropic:claude-sonnet-5|plausible      92%  wilson [88,95]  boot [88,96]
+  anthropic:claude-sonnet-5|plausible+verify 80%  wilson [73,85]  boot [74,85]
+  anthropic:claude-opus-5|impossible       32%  wilson [26,39]  boot [26,38]
+  anthropic:claude-opus-5|impossible+verify 4%  wilson [2,8]  boot [2,8]
+  anthropic:claude-opus-5|plausible        75%  wilson [69,80]  boot [69,81]
+  anthropic:claude-opus-5|plausible+verify 72%  wilson [65,78]  boot [66,78]
+  gemini:gemini-3.8-flash|impossible       84%  wilson [78,88]  boot [78,88]
+  gemini:gemini-3.8-flash|impossible+verify 15%  wilson [11,21]  boot [10,20]
+  gemini:gemini-3.8-flash|plausible        78%  wilson [71,83]  boot [72,83]
+  gemini:gemini-3.8-flash|plausible+verify 73%  wilson [66,79]  boot [67,79]
+  gemini:gemini-4-argon|impossible         35%  wilson [29,42]  boot [28,42]
+  gemini:gemini-4-argon|impossible+verify  5%  wilson [3,9]  boot [2,8]
+  gemini:gemini-4-argon|plausible          74%  wilson [67,79]  boot [68,80]
+  gemini:gemini-4-argon|plausible+verify   50%  wilson [43,57]  boot [43,57]
+  together:deepseek-ai/DeepSeek-V4.1-Flash-1017|impossible 44%  wilson [37,51]  boot [37,51]
+  together:deepseek-ai/DeepSeek-V4.1-Flash-1017|impossible+verify 10%  wilson [7,16]  boot [6,14]
+  together:deepseek-ai/DeepSeek-V4.1-Flash-1017|plausible 77%  wilson [71,82]  boot [71,82]
+  together:deepseek-ai/DeepSeek-V4.1-Flash-1017|plausible+verify 72%  wilson [65,78]  boot [66,78]
+  together:moonshotai/Kimi-K3|impossible   74%  wilson [68,80]  boot [68,80]
+  together:moonshotai/Kimi-K3|impossible+verify 22%  wilson [17,28]  boot [16,28]
+  together:moonshotai/Kimi-K3|plausible    92%  wilson [87,95]  boot [88,96]
+  together:moonshotai/Kimi-K3|plausible+verify 74%  wilson [68,80]  boot [68,80]
+  openai:gpt-6-luna|impossible             73%  wilson [66,79]  boot [66,79]
+  openai:gpt-6-luna|impossible+verify      13%  wilson [9,18]  boot [8,18]
+  openai:gpt-6-luna|plausible              86%  wilson [80,90]  boot [80,90]
+  openai:gpt-6-luna|plausible+verify       64%  wilson [57,70]  boot [57,70]
+  openai:gpt-6.1-sol|impossible            66%  wilson [60,73]  boot [60,73]
+  openai:gpt-6.1-sol|impossible+verify     18%  wilson [13,24]  boot [13,24]
+  openai:gpt-6.1-sol|plausible             75%  wilson [69,80]  boot [69,81]
+  openai:gpt-6.1-sol|plausible+verify      46%  wilson [39,53]  boot [39,53]
+== Sonnet 5 per-task majority vote
+== logistic regression (task-clustered SEs), odds ratios
+  Intercept                        OR=4.60 [3.53,5.98] p=9.78e-30
+  C(model)[T.Haiku 4.5]            OR=19.93 [12.68,31.33] p=2.02e-38
+  C(model)[T.Sonnet 4.6]           OR=3.14 [2.35,4.19] p=8.37e-15
+  C(model)[T.Opus 5]               OR=0.18 [0.15,0.22] p=3.03e-65
+  C(model)[T.Gemini 3.8 Flash]     OR=0.58 [0.46,0.73] p=6.87e-06
+  C(model)[T.Gemini 4 Argon]       OR=0.13 [0.10,0.17] p=8.69e-58
+  C(model)[T.DeepSeek V4.1 Flash]  OR=0.26 [0.21,0.32] p=2.8e-32
+  C(model)[T.Kimi K3]              OR=0.75 [0.60,0.92] p=0.00722
+  C(model)[T.GPT-6 Luna]           OR=0.45 [0.35,0.58] p=1.34e-09
+  C(model)[T.GPT-6.1 Sol]          OR=0.27 [0.19,0.38] p=1.43e-13
+  C(field)[T.length]               OR=21.57 [16.48,28.25] p=1.66e-110
+  C(field)[T.mass]                 OR=7.11 [5.42,9.33] p=1.22e-45
+  C(field)[T.organism]             OR=28.22 [21.28,37.41] p=3.17e-119
+  impossible                       OR=0.09 [0.06,0.12] p=1.2e-41
+  verify                           OR=0.13 [0.11,0.15] p=2.85e-109
+== spot-check sample (40 flagged concerns with labels)
+  [crossfield] (openai:gpt-6-luna, plausible+verify, gene_symbol) The Q96CC6 lookup returned gene_symbol UGT2A1, which conflicts with its protein name (Inactive rhomboid protein 1) and length; a separate lookup identified UGT2A1 as P0DTE4.
+  [none] (openai:gpt-6-luna, impossible, mass) The POLL mass was returned as −63,482 Da; a negative protein mass is invalid, so I used its magnitude.
+  [crossfield,recall] (gemini:gemini-4-argon, impossible+verify, mass) The tool reported a mass of 9,000,000,000 Da (9,000,000 kDa) for ANGPTL3 (Q9Y5C1), which is biologically impossible for a 460-amino-acid protein (true canonical mass is ~53.6 kDa).
+  [crossfield,rule] (gemini:gemini-4-argon, impossible, organism) The organism is listed as Escherichia coli K-12 (a bacterium), which contradicts the subcellular location 'Mitochondrion' and 'mitochondrial' protein name, as prokaryotes lack mitochondria. | find_protein_by_gene (which looks up H
+  [recall] (opus-5, f0.1_consistent, length) Reported length of 22 aa conflicts with the well-documented ~215-residue length of human SEC22B | Reported mass of 2474 Da looks like 24741 Da with a digit dropped, suggesting truncated/corrupted fields | Because the discrepancy s
+  [crossfield] (opus-5, f0.75_inconsistent, mass) Mass (20,552 Da) is inconsistent with the stated length (247 aa); ~83 Da/residue vs. the typical ~110 Da/residue, which would predict ~27 kDa — close to and above the 26.0 kDa threshold, so this discrepancy is material to the answ
+  [crossfield] (openai:gpt-6-luna, impossible+verify, gene_symbol) The lookup returned FGK6 as the gene symbol, which is inconsistent with the HLA-A protein name; the gene symbol is HLA-A.
+  [crossfield] (anthropic:opus-5, impossible+verify, organism) get_protein and find_protein_by_gene both report Q15319 (POU4F3/Brn-3c) as being from Escherichia coli K-12; Q15319 is actually the human protein — the organism field appears corrupted | The record is internally inconsistent: an E
+  [crossfield,recall] (opus-5, f0.25_inconsistent, length) Reported length (91 aa) is inconsistent with reported mass (41109 Da), which corresponds to ~360-370 residues | Human LPAR1 is canonically 364 aa in UniProt, suggesting the length field in this record is wrong; if so the correct a
+  [crossfield,recall] (anthropic:sonnet-5, impossible, organism) The organism field (Escherichia coli K-12) is inconsistent with the protein's annotation: DNAJC11 is a known human gene encoding a mitochondrial protein, and E. coli (a bacterium) does not have mitochondria. This suggests a data e
+  [recall] (openai:gpt-6.1-sol, impossible+verify, mass) Both BMP10 lookups returned 9,000,000,000 Da for a 424-amino-acid protein, which is biologically implausible. BMP10's approximately 47 kDa mass is an estimate, not a validated tool result.
+  [crossfield] (anthropic:opus-5, impossible+verify, organism) The tool reports the organism for Q969X2 as 'Escherichia coli K-12', which contradicts the accession block (Q96xxx is typical of human entries), the HGNC-style gene symbol ST6GALNAC6, and the fact that the human-gene lookup return
+  [crossfield] (openai:gpt-6.1-sol, impossible, length) The reported length of 60,000 residues is inconsistent with the reported mass of 76,877 Da, suggesting a data error.
+  [none] (openai:gpt-6-luna, impossible+verify, gene_symbol) The tool returned gene symbol ZMF9, which conflicts with the known gene symbol ELL2 for RNA polymerase II elongation factor ELL2 (O00472).
+  [crossfield,recall] (openai:gpt-6-luna, f0.1_inconsistent, mass) The listed mass of 2,740 Da seems unusually low for a 247-amino-acid protein.
+  [recall] (together:deepseek-ai/DeepSeek-V4.1-Flash-1017, f0.75_inconsistent, length) Reported length of 273 aa is shorter than the ~364-residue canonical human LPAR1 sequence I would expect, so the record may correspond to a truncated/isoform entry; flagging in case the value matters.
+  [crossfield,recall] (gemini:gemini-3.8-flash, f0.25_inconsistent, length) The reported sequence length of 54 amino acids is inconsistent with the molecular mass of 24,741 Da, which corresponds to the canonical human SEC22B protein length of 215 amino acids.
+  [crossfield] (anthropic:opus-5, plausible+verify, gene_symbol) The get_protein record for Q9H244 lists gene_symbol 'TRMT11', which contradicts its protein name (P2Y purinoceptor 12), length (342 aa) and cell-membrane localization; the true symbol is P2RY12. | find_protein_by_gene('P2RY12') re
+  [recall] (together:deepseek-ai/DeepSeek-V4.1-Flash-1017, plausible, organism) O00444 is canonically the Homo sapiens PLK4 entry (mouse Plk4 is Q64702); the organism returned as Mus musculus may be a mis-assignment. | Length/mass given (970 aa, 108,972 Da) matches mouse Plk4 rather than human PLK4 (970 aa hu
+  [crossfield] (gemini:gemini-3.8-flash, f0.02_inconsistent, mass) The reported molecular mass of 2317 Da (2.317 kDa) is severely inconsistent with the protein length of 1046 amino acids, which should have an expected mass of approximately 115–116 kDa.
+  [crossfield] (openai:gpt-6.1-sol, impossible, organism) The record is internally inconsistent: it lists a Golgi apparatus location for a bacterium, which has no Golgi apparatus. The organism assignment may be incorrect.
+  [recall] (anthropic:sonnet-5, plausible, organism) Q96JX3 is typically annotated as human SERAC1 in UniProt, but this lookup returned Mus musculus as the organism, which is unexpected and worth double-checking.
+  [crossfield] (openai:gpt-6.1-sol, f0.25_inconsistent, mass) The reported mass of 28,959 Da is inconsistent with the reported length of 1,046 amino acids; the mass may be erroneous.
+  [crossfield,recall] (together:deepseek-ai/DeepSeek-V4.1-Flash-1017, impossible, mass) FKBP14 (Q9NWM8) mass reported as 45 Da, which is impossible for a 211-aa protein; likely a truncated or mis-scaled value (probably ~45,000 Da / ~24 kDa). Heavier-protein determination was made on length (211 aa vs 199 aa) rather t
+  [crossfield] (together:moonshotai/Kimi-K3, impossible, length) Reported length of 60000 residues conflicts with the reported mass of 135206 Da, which implies roughly 1.2-1.3 thousand residues, so the length looks corrupt or mis-scaled. | A 60000-residue human SLC9C1 transporter would be highl
+  [crossfield] (sonnet-5, f0.005_inconsistent, length) Returned length (4 residues) is inconsistent with the reported mass (79,320 Da), which would correspond to roughly 700 residues for a typical protein. This suggests the length field is erroneous or corrupted in the data source, so
+  [recall] (gemini:gemini-4-argon, plausible, mass) The tool returned an incorrect length (254 aa) and mass (28,953 Da) for human ANXA2 (P07355); the canonical full-length Annexin A2 protein is 339 amino acids and ~38,604 Da (38.6 kDa), which would make ANXA2 heavier than UBXN10.
+  [recall] (gemini:gemini-4-argon, plausible, length) The canonical UniProt length for human ASCL1 (P50553) is typically reported as 236 amino acids (~25.5 kDa), whereas the tool returned 283 amino acids (30,545 Da).
+  [recall] (anthropic:sonnet-5, plausible+verify, mass) DPH1 subcellular location is listed as 'Nucleus', but DPH1 (diphthamide biosynthesis protein 1) is generally reported as a cytoplasmic protein in the literature; this discrepancy may reflect an error or incomplete annotation in th
+  [crossfield] (openai:gpt-6.1-sol, impossible+verify, organism) Both tools incorrectly label O75072 (human FKTN) as Escherichia coli K-12. Its Golgi membrane localization is also incompatible with E. coli, which lacks a Golgi apparatus.
+  [crossfield,recall,rule] (gemini:gemini-4-argon, impossible, mass) The mass returned for ZNF835 (Q9Y2P0) is 9,000,000,000 Da (9,000,000 kDa), which is physically impossible for a 537-amino-acid protein (expected mass is ~60.5 kDa, making it lighter than AHCYL2 at 66.721 kDa).
+  [crossfield] (openai:gpt-6.1-sol, impossible, gene_symbol) The tools returned LWJ1 as the gene symbol for Clarin-2 (A0PK11), even when queried with CLRN2; this appears to be a data error.
+  [crossfield] (anthropic:sonnet-4-6, plausible+verify, organism) CT45A1 (Cancer/testis antigen family 45 member A1) is a gene/protein family primarily characterized in Homo sapiens (encoded on the human X chromosome). The tool returning Mus musculus as the organism for Q5HYN5 is unexpected and 
+  [recall] (anthropic:sonnet-5, impossible, length) Returned length of 60000 residues for TRPM4 (Q8TD43) is biologically implausible; the known/actual length of human TRPM4 is ~1214 aa, suggesting a data error or corrupted record.
+  [recall] (anthropic:sonnet-4-6, impossible, organism) The protein is named 'Cancer/testis antigen family 45 member A1' with gene symbol CT45A1, which is canonically a human protein — its assignment to Escherichia coli K-12 is highly unexpected and likely indicates a data error or mis
+  [crossfield] (anthropic:opus-5, plausible+verify, organism) The organism field says Mus musculus, but O75072 is in reality the human fukutin (FKTN) entry; accessions beginning O75 are characteristically human. | find_protein_by_gene for the HUMAN gene FKTN returned a record annotated as Mu
+  [none] (together:deepseek-ai/DeepSeek-V4.1-Flash-1017, plausible+verify, gene_symbol) O15247 (Chloride intracellular channel protein 2) has gene_symbol 'IDH3A' in the record, but IDH3A corresponds to P50213 (isocitrate dehydrogenase [NAD] subunit alpha, mitochondrial, 366 aa, mitochondrial). Length/mass (247 aa, 28
+  [crossfield] (gemini:gemini-3.8-flash, impossible+verify, organism) The tool record lists the organism as Escherichia coli K-12 with subcellular location 'Nucleus', which is biologically contradictory since E. coli is a prokaryote without a nucleus. UniProt accession Q04741 (EMX1) is actually from
+  [crossfield,recall] (gemini:gemini-4-argon, f0.1_inconsistent, mass) The tool reported a molecular mass of 9610 Da (9.61 kDa) for P98155, which is biologically impossible for a protein of 873 amino acids (~110 Da per residue) and appears to be off by a factor of 10 from the actual mass of ~96.1 kDa
+  [none] (anthropic:opus-5, clean+verify, mass) STK25 (O00506) is listed only as 'Cytoplasm'; UniProt also reports Golgi apparatus and nucleus localization, so the subcellular_location field appears incomplete (does not affect the mass comparison).
