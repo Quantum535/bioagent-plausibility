@@ -89,6 +89,10 @@ def value_strings(corruption):
     return out
 
 
+from domains.chemistry import FIELD_WORDS as _CHEM_FIELD_WORDS
+FIELD_WORDS.update(_CHEM_FIELD_WORDS)
+
+
 def is_flagged(concerns, target_field, corruption):
     if not concerns:
         return False

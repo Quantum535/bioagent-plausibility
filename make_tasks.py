@@ -9,8 +9,7 @@ import json
 import sys
 from pathlib import Path
 
-from tasks import generate_tasks, verify_task
-from tools import ProteinTable
+import domains
 
 OUT = Path(__file__).parent / "data" / "tasks.json"
 
@@ -22,18 +21,20 @@ def main():
     ap.add_argument("--out", default=str(OUT))
     ap.add_argument("--proteins", default=None, help="protein table (default data/proteins.json)")
     ap.add_argument("--prefix", default="t", help="task id prefix")
+    ap.add_argument("--domain", default="protein")
     ap.add_argument("--alternate_direction", action="store_true",
                     help="alternate shrink/inflate corruptions for length and mass tasks")
     args = ap.parse_args()
 
-    table = ProteinTable(args.proteins) if args.proteins else ProteinTable()
-    tasks = generate_tasks(table.records, table.task_records(), args.n_tasks, args.seed,
-                           alternate_direction=args.alternate_direction, prefix=args.prefix)
+    dom = domains.load(args.domain)
+    table = dom.Table(args.proteins or dom.DEFAULT_TABLE)
+    tasks = dom.generate_tasks(table.records, table.task_records(), args.n_tasks, args.seed,
+                               alternate_direction=args.alternate_direction, prefix=args.prefix)
     by_acc = {r["accession"]: r for r in table.records}
     for t in tasks:
-        verify_task(t, by_acc)  # asserts every corrupted-implied answer differs from gold
+        dom.verify_task(t, by_acc)  # asserts every corrupted-implied answer differs from gold
 
-    Path(args.out).write_text(json.dumps({"seed": args.seed, "n_tasks": args.n_tasks, "proteins": args.proteins,
+    Path(args.out).write_text(json.dumps({"seed": args.seed, "n_tasks": args.n_tasks, "proteins": args.proteins, "domain": args.domain,
                                           "alternate_direction": args.alternate_direction, "tasks": tasks}, indent=1))
     print(f"Wrote {len(tasks)} tasks to {args.out}", file=sys.stderr)
     print("by target field:", dict(collections.Counter(t["target_field"] for t in tasks)), file=sys.stderr)

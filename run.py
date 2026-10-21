@@ -15,10 +15,9 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 
 from agent import prompt_hash, run_agent, run_mock_agent, system_prompt
-from corrupt import apply_corruption
 from matching import match_answer
 from providers import make_provider
-from tools import CorruptingToolLayer, ProteinTable, render_record, tool_schemas
+import domains
 
 ROOT = Path(__file__).parent
 CACHE_DIR = ROOT / "cache"
@@ -31,17 +30,17 @@ def cache_key(model, condition, task_id, phash, sample=0):
     return hashlib.sha256(base.encode()).hexdigest()[:24]
 
 
-def check_no_leak(trace, task, condition, table):
+def check_no_leak(trace, task, condition, table, render):
     """Assert clean runs saw only clean records and corrupted runs saw the corrupted target record."""
     by_acc = {r["accession"]: r for r in table.records}
     for c in trace["tool_calls"]:
         if c["is_error"]:
             continue
-        clean = render_record(table, by_acc[c["accession"]])
+        clean = render(table, by_acc[c["accession"]])
         if condition == "clean":
             assert not c["corrupted"] and c["output"] == clean, f"LEAK: corrupted record in clean run {task['task_id']}"
         elif c["accession"] == task["target_accession"]:
-            expect = render_record(table, by_acc[c["accession"]], task["corruptions"][condition])
+            expect = render(table, by_acc[c["accession"]], task["corruptions"][condition])
             assert c["corrupted"] and c["output"] == expect, f"target record not corrupted in {task['task_id']}/{condition}"
         else:
             assert not c["corrupted"] and c["output"] == clean, f"non-target record altered in {task['task_id']}/{condition}"
@@ -87,6 +86,7 @@ def main():
     ap.add_argument("--effort", choices=["low", "medium", "high", "xhigh", "max"], default=None)
     ap.add_argument("--workers", type=int, default=4)
     ap.add_argument("--tasks", default=str(ROOT / "data" / "tasks.json"))
+    ap.add_argument("--domain", default=None, help="protein (default) or chemistry; defaults to the task file's domain")
     ap.add_argument("--record_format", choices=["summary", "full"], default="summary",
                     help="summary = 7-field mock record; full = real UniProtKB entry (minus references/xrefs)")
     ap.add_argument("--proteins", default=None, help="protein table; default is the one named in the task file, else data/proteins.json")
@@ -106,8 +106,9 @@ def main():
         if missing:
             print(f"condition '{c}' is not defined for tasks {missing[:5]}... in {args.tasks}", file=sys.stderr)
             sys.exit(2)
-    proteins = args.proteins or tasks_file.get("proteins")
-    table = ProteinTable(proteins, record_format=args.record_format) if proteins else ProteinTable(record_format=args.record_format)
+    dom = domains.load(args.domain or tasks_file.get("domain") or "protein")
+    table_path = args.proteins or tasks_file.get("proteins") or dom.DEFAULT_TABLE
+    table = dom.Table(table_path, record_format=args.record_format)
     samples = range(args.sample_start, args.sample_start + args.samples)
     jobs = [(t, c, s) for s in samples for t in tasks for c in args.conditions]
 
@@ -121,7 +122,7 @@ def main():
     provider, cfg_for_hash = None, {}
     if not args.mock:
         try:
-            provider = make_provider(args.model, system_prompt(args.verify_prompt), tool_schemas(args.record_format),
+            provider = make_provider(args.model, system_prompt(args.verify_prompt), dom.tool_schemas(args.record_format),
                                      thinking=args.thinking, effort=args.effort)
             if provider.name == "anthropic":  # preflight: credentials resolve and the model id exists (free call)
                 provider.client.models.retrieve(provider.model)
@@ -142,14 +143,14 @@ def main():
         if cpath.exists() and not args.no_cache and not args.mock:
             trace, cached = json.loads(cpath.read_text()), True
         else:
-            layer = CorruptingToolLayer(table, condition, task)
+            layer = dom.CorruptingToolLayer(table, condition, task)
             if args.mock:
-                trace = run_mock_agent(task, layer, args.verify_prompt)
+                trace = run_mock_agent(task, layer, args.verify_prompt, dom=dom)
             else:
                 trace = run_agent(provider, task, layer)
             if not args.mock and trace["error"] is None:
                 cpath.write_text(json.dumps(trace, default=str))
-        check_no_leak(trace, task, condition, table)
+        check_no_leak(trace, task, condition, table, dom.render)
         implied = task["corruptions"][condition]["implied"] if condition != "clean" else None
         return {
             "run_key": key, "cached": cached, "model": model, "condition": condition, "sample": sample,

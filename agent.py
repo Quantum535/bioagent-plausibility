@@ -115,21 +115,13 @@ def run_agent(provider, task, tool_layer, max_rounds=MAX_ROUNDS):
     }
 
 
-def run_mock_agent(task, tool_layer, verify_prompt=False):
+def run_mock_agent(task, tool_layer, verify_prompt=False, dom=None):
     """Scripted agent that trusts tool output completely (pipeline test; no API calls)."""
-    from tasks import TEMPLATES
-    recs = {}
-    p = task["params"]
-    if task["n_calls_expected"] == 2:
-        for g in (p["gene_A"], p["gene_B"]):
-            out, _ = tool_layer.call("find_protein_by_gene", {"gene_symbol": g})
-            rec = json.loads(out)
-            recs[rec["accession"]] = rec
-    else:
-        out, _ = tool_layer.call("get_protein", {"accession": p["accession"]})
-        rec = json.loads(out)
-        recs[rec["accession"]] = rec
-    answer = TEMPLATES[task["template"]]["compute"](task, recs)
+    if dom is None:
+        import domains
+        dom = domains.load("protein")
+    recs = dom.mock_fetch(task, tool_layer)
+    answer = dom.TEMPLATES[task["template"]]["compute"](task, recs)
     final = json.dumps({"answer": answer, "concerns": []})
     usage = {"input_tokens": 0, "output_tokens": 0, "cached_input_tokens": 0}
     return {"provider": "mock", "model": "mock", "config": {}, "thinking": None, "effort": None,

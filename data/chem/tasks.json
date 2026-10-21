@@ -1,0 +1,4048 @@
+{
+ "seed": 0,
+ "n_tasks": 100,
+ "proteins": null,
+ "domain": "chemistry",
+ "alternate_direction": true,
+ "tasks": [
+  {
+   "template": "weight_comparison",
+   "target_field": "molecular_weight",
+   "target_accession": "25047",
+   "accessions": [
+    "7714",
+    "25047"
+   ],
+   "params": {
+    "name_A": "Gamma-undecalactone",
+    "name_B": "Diethyl isobutylmalonate",
+    "acc_A": "7714",
+    "acc_B": "25047"
+   },
+   "answer_type": "string",
+   "n_calls_expected": 2,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "molecular_weight": 2.0
+     },
+     "clean_value": 216.27,
+     "corrupted_value": 2.0,
+     "factor": null,
+     "direction": "shrink",
+     "implied": "Gamma-undecalactone"
+    },
+    "plausible": {
+     "fields": {
+      "molecular_weight": 173.02,
+      "heavy_atom_count": 12
+     },
+     "clean_value": 216.27,
+     "corrupted_value": 173.02,
+     "factor": 0.8,
+     "direction": "shrink",
+     "implied": "Gamma-undecalactone"
+    }
+   },
+   "gold": "Diethyl isobutylmalonate",
+   "prompt": "Which is heavier, Gamma-undecalactone or Diethyl isobutylmalonate? Give the name and both molecular weights in Da. Put only the name of the heavier compound in the JSON \"answer\" field.",
+   "task_id": "c000",
+   "direction": "shrink"
+  },
+  {
+   "template": "heavy_atom_threshold",
+   "target_field": "heavy_atom_count",
+   "target_accession": "3671",
+   "accessions": [
+    "3671"
+   ],
+   "params": {
+    "accession": "3671",
+    "threshold": 15
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "heavy_atom_count": 0
+     },
+     "clean_value": 17,
+     "corrupted_value": 0,
+     "factor": null,
+     "direction": "shrink",
+     "implied": "no"
+    },
+    "plausible": {
+     "fields": {
+      "molecular_weight": 184.25,
+      "heavy_atom_count": 14
+     },
+     "clean_value": 17,
+     "corrupted_value": 14,
+     "factor": 0.8,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 3671 have more than 15 heavy atoms? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "c001",
+   "direction": "shrink"
+  },
+  {
+   "template": "h_bond_donors",
+   "target_field": "h_bond_donors",
+   "target_accession": "6674",
+   "accessions": [
+    "6674"
+   ],
+   "params": {
+    "accession": "6674"
+   },
+   "answer_type": "string",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "h_bond_donors": -3
+     },
+     "clean_value": 1,
+     "corrupted_value": -3,
+     "factor": null,
+     "direction": "shrink",
+     "implied": "-3"
+    },
+    "plausible": {
+     "fields": {
+      "h_bond_donors": 0
+     },
+     "clean_value": 1,
+     "corrupted_value": 0,
+     "factor": null,
+     "direction": "shrink",
+     "implied": "0"
+    }
+   },
+   "gold": "1",
+   "prompt": "How many hydrogen-bond donors does the compound with PubChem CID 6674 have? Put only the number in the JSON \"answer\" field.",
+   "task_id": "c002",
+   "direction": "shrink"
+  },
+  {
+   "template": "name",
+   "target_field": "name",
+   "target_accession": "17109",
+   "accessions": [
+    "17109"
+   ],
+   "params": {
+    "accession": "17109"
+   },
+   "answer_type": "string",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "name": "Fenvaxide"
+     },
+     "clean_value": "Chinomethionat",
+     "corrupted_value": "Fenvaxide",
+     "factor": null,
+     "direction": null,
+     "implied": "Fenvaxide"
+    },
+    "plausible": {
+     "fields": {
+      "name": "Anthracene"
+     },
+     "clean_value": "Chinomethionat",
+     "corrupted_value": "Anthracene",
+     "factor": null,
+     "direction": null,
+     "implied": "Anthracene"
+    }
+   },
+   "gold": "Chinomethionat",
+   "prompt": "What is the common name of the compound with PubChem CID 17109? Put only the compound name in the JSON \"answer\" field.",
+   "task_id": "c003",
+   "direction": null
+  },
+  {
+   "template": "weight_threshold",
+   "target_field": "molecular_weight",
+   "target_accession": "9207",
+   "accessions": [
+    "9207"
+   ],
+   "params": {
+    "accession": "9207",
+    "threshold": 146.4
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "molecular_weight": 9000000000.0
+     },
+     "clean_value": 130.15,
+     "corrupted_value": 9000000000.0,
+     "factor": null,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "molecular_weight": 162.69,
+      "heavy_atom_count": 12
+     },
+     "clean_value": 130.15,
+     "corrupted_value": 162.69,
+     "factor": 1.25,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 9207 have a molecular weight greater than 146.4 Da? Answer yes or no and give the weight. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "c004",
+   "direction": "inflate"
+  },
+  {
+   "template": "heavy_atom_threshold",
+   "target_field": "heavy_atom_count",
+   "target_accession": "2905",
+   "accessions": [
+    "2905"
+   ],
+   "params": {
+    "accession": "2905",
+    "threshold": 23
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "heavy_atom_count": 50000
+     },
+     "clean_value": 21,
+     "corrupted_value": 50000,
+     "factor": null,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "molecular_weight": 364.25,
+      "heavy_atom_count": 26
+     },
+     "clean_value": 21,
+     "corrupted_value": 26,
+     "factor": 1.25,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 2905 have more than 23 heavy atoms? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "c005",
+   "direction": "inflate"
+  },
+  {
+   "template": "h_bond_donors",
+   "target_field": "h_bond_donors",
+   "target_accession": "8091",
+   "accessions": [
+    "8091"
+   ],
+   "params": {
+    "accession": "8091"
+   },
+   "answer_type": "string",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "h_bond_donors": 500
+     },
+     "clean_value": 0,
+     "corrupted_value": 500,
+     "factor": null,
+     "direction": "inflate",
+     "implied": "500"
+    },
+    "plausible": {
+     "fields": {
+      "h_bond_donors": 1
+     },
+     "clean_value": 0,
+     "corrupted_value": 1,
+     "factor": null,
+     "direction": "inflate",
+     "implied": "1"
+    }
+   },
+   "gold": "0",
+   "prompt": "How many hydrogen-bond donors does the compound with PubChem CID 8091 have? Put only the number in the JSON \"answer\" field.",
+   "task_id": "c006",
+   "direction": "inflate"
+  },
+  {
+   "template": "name",
+   "target_field": "name",
+   "target_accession": "29430",
+   "accessions": [
+    "29430"
+   ],
+   "params": {
+    "accession": "29430"
+   },
+   "answer_type": "string",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "name": "Quinpramate"
+     },
+     "clean_value": "Dioctyl peroxide",
+     "corrupted_value": "Quinpramate",
+     "factor": null,
+     "direction": null,
+     "implied": "Quinpramate"
+    },
+    "plausible": {
+     "fields": {
+      "name": "Amiquinsin"
+     },
+     "clean_value": "Dioctyl peroxide",
+     "corrupted_value": "Amiquinsin",
+     "factor": null,
+     "direction": null,
+     "implied": "Amiquinsin"
+    }
+   },
+   "gold": "Dioctyl peroxide",
+   "prompt": "What is the common name of the compound with PubChem CID 29430? Put only the compound name in the JSON \"answer\" field.",
+   "task_id": "c007",
+   "direction": null
+  },
+  {
+   "template": "weight_comparison",
+   "target_field": "molecular_weight",
+   "target_accession": "27692",
+   "accessions": [
+    "27692",
+    "6011"
+   ],
+   "params": {
+    "name_A": "Androstenonol propionate",
+    "name_B": "Dromostanolone",
+    "acc_A": "27692",
+    "acc_B": "6011"
+   },
+   "answer_type": "string",
+   "n_calls_expected": 2,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "molecular_weight": -344.5
+     },
+     "clean_value": 344.5,
+     "corrupted_value": -344.5,
+     "factor": null,
+     "direction": "shrink",
+     "implied": "Dromostanolone"
+    },
+    "plausible": {
+     "fields": {
+      "molecular_weight": 258.38,
+      "heavy_atom_count": 19
+     },
+     "clean_value": 344.5,
+     "corrupted_value": 258.38,
+     "factor": 0.75,
+     "direction": "shrink",
+     "implied": "Dromostanolone"
+    }
+   },
+   "gold": "Androstenonol propionate",
+   "prompt": "Which is heavier, Androstenonol propionate or Dromostanolone? Give the name and both molecular weights in Da. Put only the name of the heavier compound in the JSON \"answer\" field.",
+   "task_id": "c008",
+   "direction": "shrink"
+  },
+  {
+   "template": "heavy_atom_threshold",
+   "target_field": "heavy_atom_count",
+   "target_accession": "26602",
+   "accessions": [
+    "26602"
+   ],
+   "params": {
+    "accession": "26602",
+    "threshold": 15
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "heavy_atom_count": 0
+     },
+     "clean_value": 17,
+     "corrupted_value": 0,
+     "factor": null,
+     "direction": "shrink",
+     "implied": "no"
+    },
+    "plausible": {
+     "fields": {
+      "molecular_weight": 204.59,
+      "heavy_atom_count": 14
+     },
+     "clean_value": 17,
+     "corrupted_value": 14,
+     "factor": 0.8,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 26602 have more than 15 heavy atoms? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "c009",
+   "direction": "shrink"
+  },
+  {
+   "template": "h_bond_donors",
+   "target_field": "h_bond_donors",
+   "target_accession": "3894",
+   "accessions": [
+    "3894"
+   ],
+   "params": {
+    "accession": "3894"
+   },
+   "answer_type": "string",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "h_bond_donors": -3
+     },
+     "clean_value": 5,
+     "corrupted_value": -3,
+     "factor": null,
+     "direction": "shrink",
+     "implied": "-3"
+    },
+    "plausible": {
+     "fields": {
+      "h_bond_donors": 4
+     },
+     "clean_value": 5,
+     "corrupted_value": 4,
+     "factor": null,
+     "direction": "shrink",
+     "implied": "4"
+    }
+   },
+   "gold": "5",
+   "prompt": "How many hydrogen-bond donors does the compound with PubChem CID 3894 have? Put only the number in the JSON \"answer\" field.",
+   "task_id": "c010",
+   "direction": "shrink"
+  },
+  {
+   "template": "name",
+   "target_field": "name",
+   "target_accession": "7679",
+   "accessions": [
+    "7679"
+   ],
+   "params": {
+    "accession": "7679"
+   },
+   "answer_type": "string",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "name": "Melfenol"
+     },
+     "clean_value": "Phenylacetyl chloride",
+     "corrupted_value": "Melfenol",
+     "factor": null,
+     "direction": null,
+     "implied": "Melfenol"
+    },
+    "plausible": {
+     "fields": {
+      "name": "Kitazin"
+     },
+     "clean_value": "Phenylacetyl chloride",
+     "corrupted_value": "Kitazin",
+     "factor": null,
+     "direction": null,
+     "implied": "Kitazin"
+    }
+   },
+   "gold": "Phenylacetyl chloride",
+   "prompt": "What is the common name of the compound with PubChem CID 7679? Put only the compound name in the JSON \"answer\" field.",
+   "task_id": "c011",
+   "direction": null
+  },
+  {
+   "template": "weight_threshold",
+   "target_field": "molecular_weight",
+   "target_accession": "12052",
+   "accessions": [
+    "12052"
+   ],
+   "params": {
+    "accession": "12052",
+    "threshold": 130.8
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "molecular_weight": 9000000000.0
+     },
+     "clean_value": 116.28,
+     "corrupted_value": 9000000000.0,
+     "factor": null,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "molecular_weight": 145.35,
+      "heavy_atom_count": 9
+     },
+     "clean_value": 116.28,
+     "corrupted_value": 145.35,
+     "factor": 1.25,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 12052 have a molecular weight greater than 130.8 Da? Answer yes or no and give the weight. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "c012",
+   "direction": "inflate"
+  },
+  {
+   "template": "heavy_atom_threshold",
+   "target_field": "heavy_atom_count",
+   "target_accession": "12798",
+   "accessions": [
+    "12798"
+   ],
+   "params": {
+    "accession": "12798",
+    "threshold": 13
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "heavy_atom_count": 50000
+     },
+     "clean_value": 12,
+     "corrupted_value": 50000,
+     "factor": null,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "molecular_weight": 205.43,
+      "heavy_atom_count": 14
+     },
+     "clean_value": 12,
+     "corrupted_value": 14,
+     "factor": 1.2,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 12798 have more than 13 heavy atoms? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "c013",
+   "direction": "inflate"
+  },
+  {
+   "template": "h_bond_donors",
+   "target_field": "h_bond_donors",
+   "target_accession": "4058",
+   "accessions": [
+    "4058"
+   ],
+   "params": {
+    "accession": "4058"
+   },
+   "answer_type": "string",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "h_bond_donors": 500
+     },
+     "clean_value": 0,
+     "corrupted_value": 500,
+     "factor": null,
+     "direction": "inflate",
+     "implied": "500"
+    },
+    "plausible": {
+     "fields": {
+      "h_bond_donors": 1
+     },
+     "clean_value": 0,
+     "corrupted_value": 1,
+     "factor": null,
+     "direction": "inflate",
+     "implied": "1"
+    }
+   },
+   "gold": "0",
+   "prompt": "How many hydrogen-bond donors does the compound with PubChem CID 4058 have? Put only the number in the JSON \"answer\" field.",
+   "task_id": "c014",
+   "direction": "inflate"
+  },
+  {
+   "template": "name",
+   "target_field": "name",
+   "target_accession": "3206",
+   "accessions": [
+    "3206"
+   ],
+   "params": {
+    "accession": "3206"
+   },
+   "answer_type": "string",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "name": "Tricitate"
+     },
+     "clean_value": "Ehna",
+     "corrupted_value": "Tricitate",
+     "factor": null,
+     "direction": null,
+     "implied": "Tricitate"
+    },
+    "plausible": {
+     "fields": {
+      "name": "Hexylcaine"
+     },
+     "clean_value": "Ehna",
+     "corrupted_value": "Hexylcaine",
+     "factor": null,
+     "direction": null,
+     "implied": "Hexylcaine"
+    }
+   },
+   "gold": "Ehna",
+   "prompt": "What is the common name of the compound with PubChem CID 3206? Put only the compound name in the JSON \"answer\" field.",
+   "task_id": "c015",
+   "direction": null
+  },
+  {
+   "template": "weight_comparison",
+   "target_field": "molecular_weight",
+   "target_accession": "3155",
+   "accessions": [
+    "4788",
+    "3155"
+   ],
+   "params": {
+    "name_A": "Phloretin",
+    "name_B": "Dothiepin",
+    "acc_A": "4788",
+    "acc_B": "3155"
+   },
+   "answer_type": "string",
+   "n_calls_expected": 2,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "molecular_weight": 2.0
+     },
+     "clean_value": 295.4,
+     "corrupted_value": 2.0,
+     "factor": null,
+     "direction": "shrink",
+     "implied": "Phloretin"
+    },
+    "plausible": {
+     "fields": {
+      "molecular_weight": 221.55,
+      "heavy_atom_count": 16
+     },
+     "clean_value": 295.4,
+     "corrupted_value": 221.55,
+     "factor": 0.75,
+     "direction": "shrink",
+     "implied": "Phloretin"
+    }
+   },
+   "gold": "Dothiepin",
+   "prompt": "Which is heavier, Phloretin or Dothiepin? Give the name and both molecular weights in Da. Put only the name of the heavier compound in the JSON \"answer\" field.",
+   "task_id": "c016",
+   "direction": "shrink"
+  },
+  {
+   "template": "heavy_atom_threshold",
+   "target_field": "heavy_atom_count",
+   "target_accession": "10208",
+   "accessions": [
+    "10208"
+   ],
+   "params": {
+    "accession": "10208",
+    "threshold": 17
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "heavy_atom_count": 0
+     },
+     "clean_value": 19,
+     "corrupted_value": 0,
+     "factor": null,
+     "direction": "shrink",
+     "implied": "no"
+    },
+    "plausible": {
+     "fields": {
+      "molecular_weight": 203.39,
+      "heavy_atom_count": 15
+     },
+     "clean_value": 19,
+     "corrupted_value": 15,
+     "factor": 0.8,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 10208 have more than 17 heavy atoms? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "c017",
+   "direction": "shrink"
+  },
+  {
+   "template": "h_bond_donors",
+   "target_field": "h_bond_donors",
+   "target_accession": "8102",
+   "accessions": [
+    "8102"
+   ],
+   "params": {
+    "accession": "8102"
+   },
+   "answer_type": "string",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "h_bond_donors": -3
+     },
+     "clean_value": 1,
+     "corrupted_value": -3,
+     "factor": null,
+     "direction": "shrink",
+     "implied": "-3"
+    },
+    "plausible": {
+     "fields": {
+      "h_bond_donors": 0
+     },
+     "clean_value": 1,
+     "corrupted_value": 0,
+     "factor": null,
+     "direction": "shrink",
+     "implied": "0"
+    }
+   },
+   "gold": "1",
+   "prompt": "How many hydrogen-bond donors does the compound with PubChem CID 8102 have? Put only the number in the JSON \"answer\" field.",
+   "task_id": "c018",
+   "direction": "shrink"
+  },
+  {
+   "template": "name",
+   "target_field": "name",
+   "target_accession": "6658",
+   "accessions": [
+    "6658"
+   ],
+   "params": {
+    "accession": "6658"
+   },
+   "answer_type": "string",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "name": "Tritritriol"
+     },
+     "clean_value": "Methyl Methacrylate",
+     "corrupted_value": "Tritritriol",
+     "factor": null,
+     "direction": null,
+     "implied": "Tritritriol"
+    },
+    "plausible": {
+     "fields": {
+      "name": "Diethylformamide"
+     },
+     "clean_value": "Methyl Methacrylate",
+     "corrupted_value": "Diethylformamide",
+     "factor": null,
+     "direction": null,
+     "implied": "Diethylformamide"
+    }
+   },
+   "gold": "Methyl Methacrylate",
+   "prompt": "What is the common name of the compound with PubChem CID 6658? Put only the compound name in the JSON \"answer\" field.",
+   "task_id": "c019",
+   "direction": null
+  },
+  {
+   "template": "weight_threshold",
+   "target_field": "molecular_weight",
+   "target_accession": "24556",
+   "accessions": [
+    "24556"
+   ],
+   "params": {
+    "accession": "24556",
+    "threshold": 117.1
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "molecular_weight": 9000000000.0
+     },
+     "clean_value": 104.079,
+     "corrupted_value": 9000000000.0,
+     "factor": null,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "molecular_weight": 130.1,
+      "heavy_atom_count": 6
+     },
+     "clean_value": 104.079,
+     "corrupted_value": 130.1,
+     "factor": 1.25,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 24556 have a molecular weight greater than 117.1 Da? Answer yes or no and give the weight. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "c020",
+   "direction": "inflate"
+  },
+  {
+   "template": "heavy_atom_threshold",
+   "target_field": "heavy_atom_count",
+   "target_accession": "11935",
+   "accessions": [
+    "11935"
+   ],
+   "params": {
+    "accession": "11935",
+    "threshold": 17
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "heavy_atom_count": 50000
+     },
+     "clean_value": 16,
+     "corrupted_value": 50000,
+     "factor": null,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "molecular_weight": 254.7,
+      "heavy_atom_count": 19
+     },
+     "clean_value": 16,
+     "corrupted_value": 19,
+     "factor": 1.2,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 11935 have more than 17 heavy atoms? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "c021",
+   "direction": "inflate"
+  },
+  {
+   "template": "h_bond_donors",
+   "target_field": "h_bond_donors",
+   "target_accession": "6128",
+   "accessions": [
+    "6128"
+   ],
+   "params": {
+    "accession": "6128"
+   },
+   "answer_type": "string",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "h_bond_donors": 500
+     },
+     "clean_value": 0,
+     "corrupted_value": 500,
+     "factor": null,
+     "direction": "inflate",
+     "implied": "500"
+    },
+    "plausible": {
+     "fields": {
+      "h_bond_donors": 1
+     },
+     "clean_value": 0,
+     "corrupted_value": 1,
+     "factor": null,
+     "direction": "inflate",
+     "implied": "1"
+    }
+   },
+   "gold": "0",
+   "prompt": "How many hydrogen-bond donors does the compound with PubChem CID 6128 have? Put only the number in the JSON \"answer\" field.",
+   "task_id": "c022",
+   "direction": "inflate"
+  },
+  {
+   "template": "name",
+   "target_field": "name",
+   "target_accession": "3686",
+   "accessions": [
+    "3686"
+   ],
+   "params": {
+    "accession": "3686"
+   },
+   "answer_type": "string",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "name": "Fennolate"
+     },
+     "clean_value": "Idebenone",
+     "corrupted_value": "Fennolate",
+     "factor": null,
+     "direction": null,
+     "implied": "Fennolate"
+    },
+    "plausible": {
+     "fields": {
+      "name": "NADPH"
+     },
+     "clean_value": "Idebenone",
+     "corrupted_value": "NADPH",
+     "factor": null,
+     "direction": null,
+     "implied": "NADPH"
+    }
+   },
+   "gold": "Idebenone",
+   "prompt": "What is the common name of the compound with PubChem CID 3686? Put only the compound name in the JSON \"answer\" field.",
+   "task_id": "c023",
+   "direction": null
+  },
+  {
+   "template": "weight_comparison",
+   "target_field": "molecular_weight",
+   "target_accession": "11857",
+   "accessions": [
+    "10364",
+    "11857"
+   ],
+   "params": {
+    "name_A": "Carvacrol",
+    "name_B": "Diethyl methylmalonate",
+    "acc_A": "10364",
+    "acc_B": "11857"
+   },
+   "answer_type": "string",
+   "n_calls_expected": 2,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "molecular_weight": 2.0
+     },
+     "clean_value": 174.19,
+     "corrupted_value": 2.0,
+     "factor": null,
+     "direction": "shrink",
+     "implied": "Carvacrol"
+    },
+    "plausible": {
+     "fields": {
+      "molecular_weight": 130.64,
+      "heavy_atom_count": 9
+     },
+     "clean_value": 174.19,
+     "corrupted_value": 130.64,
+     "factor": 0.75,
+     "direction": "shrink",
+     "implied": "Carvacrol"
+    }
+   },
+   "gold": "Diethyl methylmalonate",
+   "prompt": "Which is heavier, Carvacrol or Diethyl methylmalonate? Give the name and both molecular weights in Da. Put only the name of the heavier compound in the JSON \"answer\" field.",
+   "task_id": "c024",
+   "direction": "shrink"
+  },
+  {
+   "template": "heavy_atom_threshold",
+   "target_field": "heavy_atom_count",
+   "target_accession": "10770",
+   "accessions": [
+    "10770"
+   ],
+   "params": {
+    "accession": "10770",
+    "threshold": 17
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "heavy_atom_count": 0
+     },
+     "clean_value": 19,
+     "corrupted_value": 0,
+     "factor": null,
+     "direction": "shrink",
+     "implied": "no"
+    },
+    "plausible": {
+     "fields": {
+      "molecular_weight": 209.09,
+      "heavy_atom_count": 15
+     },
+     "clean_value": 19,
+     "corrupted_value": 15,
+     "factor": 0.8,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 10770 have more than 17 heavy atoms? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "c025",
+   "direction": "shrink"
+  },
+  {
+   "template": "h_bond_donors",
+   "target_field": "h_bond_donors",
+   "target_accession": "19232",
+   "accessions": [
+    "19232"
+   ],
+   "params": {
+    "accession": "19232"
+   },
+   "answer_type": "string",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "h_bond_donors": -3
+     },
+     "clean_value": 1,
+     "corrupted_value": -3,
+     "factor": null,
+     "direction": "shrink",
+     "implied": "-3"
+    },
+    "plausible": {
+     "fields": {
+      "h_bond_donors": 0
+     },
+     "clean_value": 1,
+     "corrupted_value": 0,
+     "factor": null,
+     "direction": "shrink",
+     "implied": "0"
+    }
+   },
+   "gold": "1",
+   "prompt": "How many hydrogen-bond donors does the compound with PubChem CID 19232 have? Put only the number in the JSON \"answer\" field.",
+   "task_id": "c026",
+   "direction": "shrink"
+  },
+  {
+   "template": "name",
+   "target_field": "name",
+   "target_accession": "19167",
+   "accessions": [
+    "19167"
+   ],
+   "params": {
+    "accession": "19167"
+   },
+   "answer_type": "string",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "name": "Vircittriine"
+     },
+     "clean_value": "Asomate",
+     "corrupted_value": "Vircittriine",
+     "factor": null,
+     "direction": null,
+     "implied": "Vircittriine"
+    },
+    "plausible": {
+     "fields": {
+      "name": "Ionone"
+     },
+     "clean_value": "Asomate",
+     "corrupted_value": "Ionone",
+     "factor": null,
+     "direction": null,
+     "implied": "Ionone"
+    }
+   },
+   "gold": "Asomate",
+   "prompt": "What is the common name of the compound with PubChem CID 19167? Put only the compound name in the JSON \"answer\" field.",
+   "task_id": "c027",
+   "direction": null
+  },
+  {
+   "template": "weight_threshold",
+   "target_field": "molecular_weight",
+   "target_accession": "11775",
+   "accessions": [
+    "11775"
+   ],
+   "params": {
+    "accession": "11775",
+    "threshold": 269.8
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "molecular_weight": 9000000000.0
+     },
+     "clean_value": 245.3,
+     "corrupted_value": 9000000000.0,
+     "factor": null,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "molecular_weight": 294.36,
+      "heavy_atom_count": 23
+     },
+     "clean_value": 245.3,
+     "corrupted_value": 294.36,
+     "factor": 1.2,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 11775 have a molecular weight greater than 269.8 Da? Answer yes or no and give the weight. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "c028",
+   "direction": "inflate"
+  },
+  {
+   "template": "heavy_atom_threshold",
+   "target_field": "heavy_atom_count",
+   "target_accession": "2170",
+   "accessions": [
+    "2170"
+   ],
+   "params": {
+    "accession": "2170",
+    "threshold": 24
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "heavy_atom_count": 50000
+     },
+     "clean_value": 22,
+     "corrupted_value": 50000,
+     "factor": null,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "molecular_weight": 376.56,
+      "heavy_atom_count": 26
+     },
+     "clean_value": 22,
+     "corrupted_value": 26,
+     "factor": 1.2,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 2170 have more than 24 heavy atoms? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "c029",
+   "direction": "inflate"
+  },
+  {
+   "template": "h_bond_donors",
+   "target_field": "h_bond_donors",
+   "target_accession": "16300",
+   "accessions": [
+    "16300"
+   ],
+   "params": {
+    "accession": "16300"
+   },
+   "answer_type": "string",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "h_bond_donors": 500
+     },
+     "clean_value": 0,
+     "corrupted_value": 500,
+     "factor": null,
+     "direction": "inflate",
+     "implied": "500"
+    },
+    "plausible": {
+     "fields": {
+      "h_bond_donors": 1
+     },
+     "clean_value": 0,
+     "corrupted_value": 1,
+     "factor": null,
+     "direction": "inflate",
+     "implied": "1"
+    }
+   },
+   "gold": "0",
+   "prompt": "How many hydrogen-bond donors does the compound with PubChem CID 16300 have? Put only the number in the JSON \"answer\" field.",
+   "task_id": "c030",
+   "direction": "inflate"
+  },
+  {
+   "template": "name",
+   "target_field": "name",
+   "target_accession": "107",
+   "accessions": [
+    "107"
+   ],
+   "params": {
+    "accession": "107"
+   },
+   "answer_type": "string",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "name": "Citquinide"
+     },
+     "clean_value": "Benzenepropanoic acid",
+     "corrupted_value": "Citquinide",
+     "factor": null,
+     "direction": null,
+     "implied": "Citquinide"
+    },
+    "plausible": {
+     "fields": {
+      "name": "Diethylmercury"
+     },
+     "clean_value": "Benzenepropanoic acid",
+     "corrupted_value": "Diethylmercury",
+     "factor": null,
+     "direction": null,
+     "implied": "Diethylmercury"
+    }
+   },
+   "gold": "Benzenepropanoic acid",
+   "prompt": "What is the common name of the compound with PubChem CID 107? Put only the compound name in the JSON \"answer\" field.",
+   "task_id": "c031",
+   "direction": null
+  },
+  {
+   "template": "weight_comparison",
+   "target_field": "molecular_weight",
+   "target_accession": "6346",
+   "accessions": [
+    "9142",
+    "6346"
+   ],
+   "params": {
+    "name_A": "Perylene",
+    "name_B": "Diiodomethane",
+    "acc_A": "9142",
+    "acc_B": "6346"
+   },
+   "answer_type": "string",
+   "n_calls_expected": 2,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "molecular_weight": -267.835
+     },
+     "clean_value": 267.835,
+     "corrupted_value": -267.835,
+     "factor": null,
+     "direction": "shrink",
+     "implied": "Perylene"
+    },
+    "plausible": {
+     "fields": {
+      "molecular_weight": 214.27,
+      "heavy_atom_count": 2
+     },
+     "clean_value": 267.835,
+     "corrupted_value": 214.27,
+     "factor": 0.8,
+     "direction": "shrink",
+     "implied": "Perylene"
+    }
+   },
+   "gold": "Diiodomethane",
+   "prompt": "Which is heavier, Perylene or Diiodomethane? Give the name and both molecular weights in Da. Put only the name of the heavier compound in the JSON \"answer\" field.",
+   "task_id": "c032",
+   "direction": "shrink"
+  },
+  {
+   "template": "heavy_atom_threshold",
+   "target_field": "heavy_atom_count",
+   "target_accession": "3455",
+   "accessions": [
+    "3455"
+   ],
+   "params": {
+    "accession": "3455",
+    "threshold": 29
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "heavy_atom_count": 0
+     },
+     "clean_value": 33,
+     "corrupted_value": 0,
+     "factor": null,
+     "direction": "shrink",
+     "implied": "no"
+    },
+    "plausible": {
+     "fields": {
+      "molecular_weight": 337.95,
+      "heavy_atom_count": 25
+     },
+     "clean_value": 33,
+     "corrupted_value": 25,
+     "factor": 0.75,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 3455 have more than 29 heavy atoms? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "c033",
+   "direction": "shrink"
+  },
+  {
+   "template": "h_bond_donors",
+   "target_field": "h_bond_donors",
+   "target_accession": "2153",
+   "accessions": [
+    "2153"
+   ],
+   "params": {
+    "accession": "2153"
+   },
+   "answer_type": "string",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "h_bond_donors": -3
+     },
+     "clean_value": 1,
+     "corrupted_value": -3,
+     "factor": null,
+     "direction": "shrink",
+     "implied": "-3"
+    },
+    "plausible": {
+     "fields": {
+      "h_bond_donors": 0
+     },
+     "clean_value": 1,
+     "corrupted_value": 0,
+     "factor": null,
+     "direction": "shrink",
+     "implied": "0"
+    }
+   },
+   "gold": "1",
+   "prompt": "How many hydrogen-bond donors does the compound with PubChem CID 2153 have? Put only the number in the JSON \"answer\" field.",
+   "task_id": "c034",
+   "direction": "shrink"
+  },
+  {
+   "template": "name",
+   "target_field": "name",
+   "target_accession": "25436",
+   "accessions": [
+    "25436"
+   ],
+   "params": {
+    "accession": "25436"
+   },
+   "answer_type": "string",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "name": "Prambarol"
+     },
+     "clean_value": "Scillicyanoside",
+     "corrupted_value": "Prambarol",
+     "factor": null,
+     "direction": null,
+     "implied": "Prambarol"
+    },
+    "plausible": {
+     "fields": {
+      "name": "O-Methyltyramine"
+     },
+     "clean_value": "Scillicyanoside",
+     "corrupted_value": "O-Methyltyramine",
+     "factor": null,
+     "direction": null,
+     "implied": "O-Methyltyramine"
+    }
+   },
+   "gold": "Scillicyanoside",
+   "prompt": "What is the common name of the compound with PubChem CID 25436? Put only the compound name in the JSON \"answer\" field.",
+   "task_id": "c035",
+   "direction": null
+  },
+  {
+   "template": "weight_threshold",
+   "target_field": "molecular_weight",
+   "target_accession": "2090",
+   "accessions": [
+    "2090"
+   ],
+   "params": {
+    "accession": "2090",
+    "threshold": 572.4
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "molecular_weight": 9000000000.0
+     },
+     "clean_value": 508.8,
+     "corrupted_value": 9000000000.0,
+     "factor": null,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "molecular_weight": 636.0,
+      "heavy_atom_count": 45
+     },
+     "clean_value": 508.8,
+     "corrupted_value": 636.0,
+     "factor": 1.25,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 2090 have a molecular weight greater than 572.4 Da? Answer yes or no and give the weight. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "c036",
+   "direction": "inflate"
+  },
+  {
+   "template": "heavy_atom_threshold",
+   "target_field": "heavy_atom_count",
+   "target_accession": "4657",
+   "accessions": [
+    "4657"
+   ],
+   "params": {
+    "accession": "4657",
+    "threshold": 12
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "heavy_atom_count": 50000
+     },
+     "clean_value": 11,
+     "corrupted_value": 50000,
+     "factor": null,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "molecular_weight": 189.01,
+      "heavy_atom_count": 14
+     },
+     "clean_value": 11,
+     "corrupted_value": 14,
+     "factor": 1.25,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 4657 have more than 12 heavy atoms? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "c037",
+   "direction": "inflate"
+  },
+  {
+   "template": "h_bond_donors",
+   "target_field": "h_bond_donors",
+   "target_accession": "21291",
+   "accessions": [
+    "21291"
+   ],
+   "params": {
+    "accession": "21291"
+   },
+   "answer_type": "string",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "h_bond_donors": 500
+     },
+     "clean_value": 0,
+     "corrupted_value": 500,
+     "factor": null,
+     "direction": "inflate",
+     "implied": "500"
+    },
+    "plausible": {
+     "fields": {
+      "h_bond_donors": 1
+     },
+     "clean_value": 0,
+     "corrupted_value": 1,
+     "factor": null,
+     "direction": "inflate",
+     "implied": "1"
+    }
+   },
+   "gold": "0",
+   "prompt": "How many hydrogen-bond donors does the compound with PubChem CID 21291 have? Put only the number in the JSON \"answer\" field.",
+   "task_id": "c038",
+   "direction": "inflate"
+  },
+  {
+   "template": "name",
+   "target_field": "name",
+   "target_accession": "21183",
+   "accessions": [
+    "21183"
+   ],
+   "params": {
+    "accession": "21183"
+   },
+   "answer_type": "string",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "name": "Dortoline"
+     },
+     "clean_value": "Hydrindantin",
+     "corrupted_value": "Dortoline",
+     "factor": null,
+     "direction": null,
+     "implied": "Dortoline"
+    },
+    "plausible": {
+     "fields": {
+      "name": "Chrysophanol"
+     },
+     "clean_value": "Hydrindantin",
+     "corrupted_value": "Chrysophanol",
+     "factor": null,
+     "direction": null,
+     "implied": "Chrysophanol"
+    }
+   },
+   "gold": "Hydrindantin",
+   "prompt": "What is the common name of the compound with PubChem CID 21183? Put only the compound name in the JSON \"answer\" field.",
+   "task_id": "c039",
+   "direction": null
+  },
+  {
+   "template": "weight_comparison",
+   "target_field": "molecular_weight",
+   "target_accession": "6075",
+   "accessions": [
+    "6075",
+    "15910"
+   ],
+   "params": {
+    "name_A": "Pecazine",
+    "name_B": "Chlorothalonil",
+    "acc_A": "6075",
+    "acc_B": "15910"
+   },
+   "answer_type": "string",
+   "n_calls_expected": 2,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "molecular_weight": -310.5
+     },
+     "clean_value": 310.5,
+     "corrupted_value": -310.5,
+     "factor": null,
+     "direction": "shrink",
+     "implied": "Chlorothalonil"
+    },
+    "plausible": {
+     "fields": {
+      "molecular_weight": 248.4,
+      "heavy_atom_count": 18
+     },
+     "clean_value": 310.5,
+     "corrupted_value": 248.4,
+     "factor": 0.8,
+     "direction": "shrink",
+     "implied": "Chlorothalonil"
+    }
+   },
+   "gold": "Pecazine",
+   "prompt": "Which is heavier, Pecazine or Chlorothalonil? Give the name and both molecular weights in Da. Put only the name of the heavier compound in the JSON \"answer\" field.",
+   "task_id": "c040",
+   "direction": "shrink"
+  },
+  {
+   "template": "heavy_atom_threshold",
+   "target_field": "heavy_atom_count",
+   "target_accession": "10783",
+   "accessions": [
+    "10783"
+   ],
+   "params": {
+    "accession": "10783",
+    "threshold": 8
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "heavy_atom_count": 0
+     },
+     "clean_value": 9,
+     "corrupted_value": 0,
+     "factor": null,
+     "direction": "shrink",
+     "implied": "no"
+    },
+    "plausible": {
+     "fields": {
+      "molecular_weight": 129.32,
+      "heavy_atom_count": 7
+     },
+     "clean_value": 9,
+     "corrupted_value": 7,
+     "factor": 0.8,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 10783 have more than 8 heavy atoms? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "c041",
+   "direction": "shrink"
+  },
+  {
+   "template": "h_bond_donors",
+   "target_field": "h_bond_donors",
+   "target_accession": "4045",
+   "accessions": [
+    "4045"
+   ],
+   "params": {
+    "accession": "4045"
+   },
+   "answer_type": "string",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "h_bond_donors": -3
+     },
+     "clean_value": 1,
+     "corrupted_value": -3,
+     "factor": null,
+     "direction": "shrink",
+     "implied": "-3"
+    },
+    "plausible": {
+     "fields": {
+      "h_bond_donors": 0
+     },
+     "clean_value": 1,
+     "corrupted_value": 0,
+     "factor": null,
+     "direction": "shrink",
+     "implied": "0"
+    }
+   },
+   "gold": "1",
+   "prompt": "How many hydrogen-bond donors does the compound with PubChem CID 4045 have? Put only the number in the JSON \"answer\" field.",
+   "task_id": "c042",
+   "direction": "shrink"
+  },
+  {
+   "template": "name",
+   "target_field": "name",
+   "target_accession": "21289",
+   "accessions": [
+    "21289"
+   ],
+   "params": {
+    "accession": "21289"
+   },
+   "answer_type": "string",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "name": "Pramtriide"
+     },
+     "clean_value": "Pyrimitate",
+     "corrupted_value": "Pramtriide",
+     "factor": null,
+     "direction": null,
+     "implied": "Pramtriide"
+    },
+    "plausible": {
+     "fields": {
+      "name": "p-Xylyl bromide"
+     },
+     "clean_value": "Pyrimitate",
+     "corrupted_value": "p-Xylyl bromide",
+     "factor": null,
+     "direction": null,
+     "implied": "p-Xylyl bromide"
+    }
+   },
+   "gold": "Pyrimitate",
+   "prompt": "What is the common name of the compound with PubChem CID 21289? Put only the compound name in the JSON \"answer\" field.",
+   "task_id": "c043",
+   "direction": null
+  },
+  {
+   "template": "weight_threshold",
+   "target_field": "molecular_weight",
+   "target_accession": "26404",
+   "accessions": [
+    "26404"
+   ],
+   "params": {
+    "accession": "26404",
+    "threshold": 315.1
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "molecular_weight": 9000000000.0
+     },
+     "clean_value": 286.41,
+     "corrupted_value": 9000000000.0,
+     "factor": null,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "molecular_weight": 343.69,
+      "heavy_atom_count": 24
+     },
+     "clean_value": 286.41,
+     "corrupted_value": 343.69,
+     "factor": 1.2,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 26404 have a molecular weight greater than 315.1 Da? Answer yes or no and give the weight. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "c044",
+   "direction": "inflate"
+  },
+  {
+   "template": "heavy_atom_threshold",
+   "target_field": "heavy_atom_count",
+   "target_accession": "6760",
+   "accessions": [
+    "6760"
+   ],
+   "params": {
+    "accession": "6760",
+    "threshold": 21
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "heavy_atom_count": 50000
+     },
+     "clean_value": 19,
+     "corrupted_value": 50000,
+     "factor": null,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "molecular_weight": 324.07,
+      "heavy_atom_count": 24
+     },
+     "clean_value": 19,
+     "corrupted_value": 24,
+     "factor": 1.25,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 6760 have more than 21 heavy atoms? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "c045",
+   "direction": "inflate"
+  },
+  {
+   "template": "h_bond_donors",
+   "target_field": "h_bond_donors",
+   "target_accession": "12651",
+   "accessions": [
+    "12651"
+   ],
+   "params": {
+    "accession": "12651"
+   },
+   "answer_type": "string",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "h_bond_donors": 500
+     },
+     "clean_value": 0,
+     "corrupted_value": 500,
+     "factor": null,
+     "direction": "inflate",
+     "implied": "500"
+    },
+    "plausible": {
+     "fields": {
+      "h_bond_donors": 1
+     },
+     "clean_value": 0,
+     "corrupted_value": 1,
+     "factor": null,
+     "direction": "inflate",
+     "implied": "1"
+    }
+   },
+   "gold": "0",
+   "prompt": "How many hydrogen-bond donors does the compound with PubChem CID 12651 have? Put only the number in the JSON \"answer\" field.",
+   "task_id": "c046",
+   "direction": "inflate"
+  },
+  {
+   "template": "name",
+   "target_field": "name",
+   "target_accession": "11773",
+   "accessions": [
+    "11773"
+   ],
+   "params": {
+    "accession": "11773"
+   },
+   "answer_type": "string",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "name": "Citprambarol"
+     },
+     "clean_value": "Triphenylarsine",
+     "corrupted_value": "Citprambarol",
+     "factor": null,
+     "direction": null,
+     "implied": "Citprambarol"
+    },
+    "plausible": {
+     "fields": {
+      "name": "Ethylparaben"
+     },
+     "clean_value": "Triphenylarsine",
+     "corrupted_value": "Ethylparaben",
+     "factor": null,
+     "direction": null,
+     "implied": "Ethylparaben"
+    }
+   },
+   "gold": "Triphenylarsine",
+   "prompt": "What is the common name of the compound with PubChem CID 11773? Put only the compound name in the JSON \"answer\" field.",
+   "task_id": "c047",
+   "direction": null
+  },
+  {
+   "template": "weight_comparison",
+   "target_field": "molecular_weight",
+   "target_accession": "20202",
+   "accessions": [
+    "20202",
+    "11166"
+   ],
+   "params": {
+    "name_A": "p-Propionylbenzoic acid",
+    "name_B": "Allyl iodide",
+    "acc_A": "20202",
+    "acc_B": "11166"
+   },
+   "answer_type": "string",
+   "n_calls_expected": 2,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "molecular_weight": -178.18
+     },
+     "clean_value": 178.18,
+     "corrupted_value": -178.18,
+     "factor": null,
+     "direction": "shrink",
+     "implied": "Allyl iodide"
+    },
+    "plausible": {
+     "fields": {
+      "molecular_weight": 133.63,
+      "heavy_atom_count": 10
+     },
+     "clean_value": 178.18,
+     "corrupted_value": 133.63,
+     "factor": 0.75,
+     "direction": "shrink",
+     "implied": "Allyl iodide"
+    }
+   },
+   "gold": "p-Propionylbenzoic acid",
+   "prompt": "Which is heavier, p-Propionylbenzoic acid or Allyl iodide? Give the name and both molecular weights in Da. Put only the name of the heavier compound in the JSON \"answer\" field.",
+   "task_id": "c048",
+   "direction": "shrink"
+  },
+  {
+   "template": "heavy_atom_threshold",
+   "target_field": "heavy_atom_count",
+   "target_accession": "17697",
+   "accessions": [
+    "17697"
+   ],
+   "params": {
+    "accession": "17697",
+    "threshold": 14
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "heavy_atom_count": 0
+     },
+     "clean_value": 16,
+     "corrupted_value": 0,
+     "factor": null,
+     "direction": "shrink",
+     "implied": "no"
+    },
+    "plausible": {
+     "fields": {
+      "molecular_weight": 181.12,
+      "heavy_atom_count": 13
+     },
+     "clean_value": 16,
+     "corrupted_value": 13,
+     "factor": 0.8,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 17697 have more than 14 heavy atoms? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "c049",
+   "direction": "shrink"
+  },
+  {
+   "template": "h_bond_donors",
+   "target_field": "h_bond_donors",
+   "target_accession": "2754",
+   "accessions": [
+    "2754"
+   ],
+   "params": {
+    "accession": "2754"
+   },
+   "answer_type": "string",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "h_bond_donors": -3
+     },
+     "clean_value": 1,
+     "corrupted_value": -3,
+     "factor": null,
+     "direction": "shrink",
+     "implied": "-3"
+    },
+    "plausible": {
+     "fields": {
+      "h_bond_donors": 0
+     },
+     "clean_value": 1,
+     "corrupted_value": 0,
+     "factor": null,
+     "direction": "shrink",
+     "implied": "0"
+    }
+   },
+   "gold": "1",
+   "prompt": "How many hydrogen-bond donors does the compound with PubChem CID 2754 have? Put only the number in the JSON \"answer\" field.",
+   "task_id": "c050",
+   "direction": "shrink"
+  },
+  {
+   "template": "name",
+   "target_field": "name",
+   "target_accession": "5865",
+   "accessions": [
+    "5865"
+   ],
+   "params": {
+    "accession": "5865"
+   },
+   "answer_type": "string",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "name": "Bartolide"
+     },
+     "clean_value": "Prednisone",
+     "corrupted_value": "Bartolide",
+     "factor": null,
+     "direction": null,
+     "implied": "Bartolide"
+    },
+    "plausible": {
+     "fields": {
+      "name": "Lysinoalanine"
+     },
+     "clean_value": "Prednisone",
+     "corrupted_value": "Lysinoalanine",
+     "factor": null,
+     "direction": null,
+     "implied": "Lysinoalanine"
+    }
+   },
+   "gold": "Prednisone",
+   "prompt": "What is the common name of the compound with PubChem CID 5865? Put only the compound name in the JSON \"answer\" field.",
+   "task_id": "c051",
+   "direction": null
+  },
+  {
+   "template": "weight_threshold",
+   "target_field": "molecular_weight",
+   "target_accession": "10624",
+   "accessions": [
+    "10624"
+   ],
+   "params": {
+    "accession": "10624",
+    "threshold": 319.8
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "molecular_weight": 9000000000.0
+     },
+     "clean_value": 284.25,
+     "corrupted_value": 9000000000.0,
+     "factor": null,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "molecular_weight": 355.31,
+      "heavy_atom_count": 24
+     },
+     "clean_value": 284.25,
+     "corrupted_value": 355.31,
+     "factor": 1.25,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 10624 have a molecular weight greater than 319.8 Da? Answer yes or no and give the weight. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "c052",
+   "direction": "inflate"
+  },
+  {
+   "template": "heavy_atom_threshold",
+   "target_field": "heavy_atom_count",
+   "target_accession": "12448",
+   "accessions": [
+    "12448"
+   ],
+   "params": {
+    "accession": "12448",
+    "threshold": 26
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "heavy_atom_count": 50000
+     },
+     "clean_value": 23,
+     "corrupted_value": 50000,
+     "factor": null,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "molecular_weight": 376.75,
+      "heavy_atom_count": 29
+     },
+     "clean_value": 23,
+     "corrupted_value": 29,
+     "factor": 1.25,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 12448 have more than 26 heavy atoms? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "c053",
+   "direction": "inflate"
+  },
+  {
+   "template": "h_bond_donors",
+   "target_field": "h_bond_donors",
+   "target_accession": "4929",
+   "accessions": [
+    "4929"
+   ],
+   "params": {
+    "accession": "4929"
+   },
+   "answer_type": "string",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "h_bond_donors": 500
+     },
+     "clean_value": 2,
+     "corrupted_value": 500,
+     "factor": null,
+     "direction": "inflate",
+     "implied": "500"
+    },
+    "plausible": {
+     "fields": {
+      "h_bond_donors": 3
+     },
+     "clean_value": 2,
+     "corrupted_value": 3,
+     "factor": null,
+     "direction": "inflate",
+     "implied": "3"
+    }
+   },
+   "gold": "2",
+   "prompt": "How many hydrogen-bond donors does the compound with PubChem CID 4929 have? Put only the number in the JSON \"answer\" field.",
+   "task_id": "c054",
+   "direction": "inflate"
+  },
+  {
+   "template": "name",
+   "target_field": "name",
+   "target_accession": "18142",
+   "accessions": [
+    "18142"
+   ],
+   "params": {
+    "accession": "18142"
+   },
+   "answer_type": "string",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "name": "Quinfenide"
+     },
+     "clean_value": "Quingestanol Acetate",
+     "corrupted_value": "Quinfenide",
+     "factor": null,
+     "direction": null,
+     "implied": "Quinfenide"
+    },
+    "plausible": {
+     "fields": {
+      "name": "Diiodomethane"
+     },
+     "clean_value": "Quingestanol Acetate",
+     "corrupted_value": "Diiodomethane",
+     "factor": null,
+     "direction": null,
+     "implied": "Diiodomethane"
+    }
+   },
+   "gold": "Quingestanol Acetate",
+   "prompt": "What is the common name of the compound with PubChem CID 18142? Put only the compound name in the JSON \"answer\" field.",
+   "task_id": "c055",
+   "direction": null
+  },
+  {
+   "template": "weight_comparison",
+   "target_field": "molecular_weight",
+   "target_accession": "29269",
+   "accessions": [
+    "10189",
+    "29269"
+   ],
+   "params": {
+    "name_A": "Eugenin",
+    "name_B": "Lysinoalanine",
+    "acc_A": "10189",
+    "acc_B": "29269"
+   },
+   "answer_type": "string",
+   "n_calls_expected": 2,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "molecular_weight": -233.27
+     },
+     "clean_value": 233.27,
+     "corrupted_value": -233.27,
+     "factor": null,
+     "direction": "shrink",
+     "implied": "Eugenin"
+    },
+    "plausible": {
+     "fields": {
+      "molecular_weight": 174.95,
+      "heavy_atom_count": 12
+     },
+     "clean_value": 233.27,
+     "corrupted_value": 174.95,
+     "factor": 0.75,
+     "direction": "shrink",
+     "implied": "Eugenin"
+    }
+   },
+   "gold": "Lysinoalanine",
+   "prompt": "Which is heavier, Eugenin or Lysinoalanine? Give the name and both molecular weights in Da. Put only the name of the heavier compound in the JSON \"answer\" field.",
+   "task_id": "c056",
+   "direction": "shrink"
+  },
+  {
+   "template": "heavy_atom_threshold",
+   "target_field": "heavy_atom_count",
+   "target_accession": "10767",
+   "accessions": [
+    "10767"
+   ],
+   "params": {
+    "accession": "10767",
+    "threshold": 15
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "heavy_atom_count": 0
+     },
+     "clean_value": 17,
+     "corrupted_value": 0,
+     "factor": null,
+     "direction": "shrink",
+     "implied": "no"
+    },
+    "plausible": {
+     "fields": {
+      "molecular_weight": 176.49,
+      "heavy_atom_count": 13
+     },
+     "clean_value": 17,
+     "corrupted_value": 13,
+     "factor": 0.75,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 10767 have more than 15 heavy atoms? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "c057",
+   "direction": "shrink"
+  },
+  {
+   "template": "h_bond_donors",
+   "target_field": "h_bond_donors",
+   "target_accession": "2317",
+   "accessions": [
+    "2317"
+   ],
+   "params": {
+    "accession": "2317"
+   },
+   "answer_type": "string",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "h_bond_donors": -3
+     },
+     "clean_value": 4,
+     "corrupted_value": -3,
+     "factor": null,
+     "direction": "shrink",
+     "implied": "-3"
+    },
+    "plausible": {
+     "fields": {
+      "h_bond_donors": 3
+     },
+     "clean_value": 4,
+     "corrupted_value": 3,
+     "factor": null,
+     "direction": "shrink",
+     "implied": "3"
+    }
+   },
+   "gold": "4",
+   "prompt": "How many hydrogen-bond donors does the compound with PubChem CID 2317 have? Put only the number in the JSON \"answer\" field.",
+   "task_id": "c058",
+   "direction": "shrink"
+  },
+  {
+   "template": "name",
+   "target_field": "name",
+   "target_accession": "23483",
+   "accessions": [
+    "23483"
+   ],
+   "params": {
+    "accession": "23483"
+   },
+   "answer_type": "string",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "name": "Dortritriine"
+     },
+     "clean_value": "Ampyzine",
+     "corrupted_value": "Dortritriine",
+     "factor": null,
+     "direction": null,
+     "implied": "Dortritriine"
+    },
+    "plausible": {
+     "fields": {
+      "name": "Methdilazine"
+     },
+     "clean_value": "Ampyzine",
+     "corrupted_value": "Methdilazine",
+     "factor": null,
+     "direction": null,
+     "implied": "Methdilazine"
+    }
+   },
+   "gold": "Ampyzine",
+   "prompt": "What is the common name of the compound with PubChem CID 23483? Put only the compound name in the JSON \"answer\" field.",
+   "task_id": "c059",
+   "direction": null
+  },
+  {
+   "template": "weight_threshold",
+   "target_field": "molecular_weight",
+   "target_accession": "17150",
+   "accessions": [
+    "17150"
+   ],
+   "params": {
+    "accession": "17150",
+    "threshold": 378.8
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "molecular_weight": 9000000000.0
+     },
+     "clean_value": 344.4,
+     "corrupted_value": 9000000000.0,
+     "factor": null,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "molecular_weight": 413.28,
+      "heavy_atom_count": 30
+     },
+     "clean_value": 344.4,
+     "corrupted_value": 413.28,
+     "factor": 1.2,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 17150 have a molecular weight greater than 378.8 Da? Answer yes or no and give the weight. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "c060",
+   "direction": "inflate"
+  },
+  {
+   "template": "heavy_atom_threshold",
+   "target_field": "heavy_atom_count",
+   "target_accession": "7960",
+   "accessions": [
+    "7960"
+   ],
+   "params": {
+    "accession": "7960",
+    "threshold": 8
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "heavy_atom_count": 50000
+     },
+     "clean_value": 7,
+     "corrupted_value": 50000,
+     "factor": null,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "molecular_weight": 203.82,
+      "heavy_atom_count": 9
+     },
+     "clean_value": 7,
+     "corrupted_value": 9,
+     "factor": 1.25,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 7960 have more than 8 heavy atoms? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "c061",
+   "direction": "inflate"
+  },
+  {
+   "template": "h_bond_donors",
+   "target_field": "h_bond_donors",
+   "target_accession": "6040",
+   "accessions": [
+    "6040"
+   ],
+   "params": {
+    "accession": "6040"
+   },
+   "answer_type": "string",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "h_bond_donors": 500
+     },
+     "clean_value": 0,
+     "corrupted_value": 500,
+     "factor": null,
+     "direction": "inflate",
+     "implied": "500"
+    },
+    "plausible": {
+     "fields": {
+      "h_bond_donors": 1
+     },
+     "clean_value": 0,
+     "corrupted_value": 1,
+     "factor": null,
+     "direction": "inflate",
+     "implied": "1"
+    }
+   },
+   "gold": "0",
+   "prompt": "How many hydrogen-bond donors does the compound with PubChem CID 6040 have? Put only the number in the JSON \"answer\" field.",
+   "task_id": "c062",
+   "direction": "inflate"
+  },
+  {
+   "template": "name",
+   "target_field": "name",
+   "target_accession": "1005",
+   "accessions": [
+    "1005"
+   ],
+   "params": {
+    "accession": "1005"
+   },
+   "answer_type": "string",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "name": "Barquinol"
+     },
+     "clean_value": "Phosphoenolpyruvate",
+     "corrupted_value": "Barquinol",
+     "factor": null,
+     "direction": null,
+     "implied": "Barquinol"
+    },
+    "plausible": {
+     "fields": {
+      "name": "Isopropyl cyanoacetate"
+     },
+     "clean_value": "Phosphoenolpyruvate",
+     "corrupted_value": "Isopropyl cyanoacetate",
+     "factor": null,
+     "direction": null,
+     "implied": "Isopropyl cyanoacetate"
+    }
+   },
+   "gold": "Phosphoenolpyruvate",
+   "prompt": "What is the common name of the compound with PubChem CID 1005? Put only the compound name in the JSON \"answer\" field.",
+   "task_id": "c063",
+   "direction": null
+  },
+  {
+   "template": "weight_comparison",
+   "target_field": "molecular_weight",
+   "target_accession": "749",
+   "accessions": [
+    "21500",
+    "749"
+   ],
+   "params": {
+    "name_A": "Sorboflavin",
+    "name_B": "Glutathionylspermidine I",
+    "acc_A": "21500",
+    "acc_B": "749"
+   },
+   "answer_type": "string",
+   "n_calls_expected": 2,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "molecular_weight": -434.6
+     },
+     "clean_value": 434.6,
+     "corrupted_value": -434.6,
+     "factor": null,
+     "direction": "shrink",
+     "implied": "Sorboflavin"
+    },
+    "plausible": {
+     "fields": {
+      "molecular_weight": 325.95,
+      "heavy_atom_count": 22
+     },
+     "clean_value": 434.6,
+     "corrupted_value": 325.95,
+     "factor": 0.75,
+     "direction": "shrink",
+     "implied": "Sorboflavin"
+    }
+   },
+   "gold": "Glutathionylspermidine I",
+   "prompt": "Which is heavier, Sorboflavin or Glutathionylspermidine I? Give the name and both molecular weights in Da. Put only the name of the heavier compound in the JSON \"answer\" field.",
+   "task_id": "c064",
+   "direction": "shrink"
+  },
+  {
+   "template": "heavy_atom_threshold",
+   "target_field": "heavy_atom_count",
+   "target_accession": "16462",
+   "accessions": [
+    "16462"
+   ],
+   "params": {
+    "accession": "16462",
+    "threshold": 11
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "heavy_atom_count": 0
+     },
+     "clean_value": 13,
+     "corrupted_value": 0,
+     "factor": null,
+     "direction": "shrink",
+     "implied": "no"
+    },
+    "plausible": {
+     "fields": {
+      "molecular_weight": 181.12,
+      "heavy_atom_count": 10
+     },
+     "clean_value": 13,
+     "corrupted_value": 10,
+     "factor": 0.75,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 16462 have more than 11 heavy atoms? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "c065",
+   "direction": "shrink"
+  },
+  {
+   "template": "h_bond_donors",
+   "target_field": "h_bond_donors",
+   "target_accession": "21500",
+   "accessions": [
+    "21500"
+   ],
+   "params": {
+    "accession": "21500"
+   },
+   "answer_type": "string",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "h_bond_donors": -3
+     },
+     "clean_value": 6,
+     "corrupted_value": -3,
+     "factor": null,
+     "direction": "shrink",
+     "implied": "-3"
+    },
+    "plausible": {
+     "fields": {
+      "h_bond_donors": 5
+     },
+     "clean_value": 6,
+     "corrupted_value": 5,
+     "factor": null,
+     "direction": "shrink",
+     "implied": "5"
+    }
+   },
+   "gold": "6",
+   "prompt": "How many hydrogen-bond donors does the compound with PubChem CID 21500 have? Put only the number in the JSON \"answer\" field.",
+   "task_id": "c066",
+   "direction": "shrink"
+  },
+  {
+   "template": "name",
+   "target_field": "name",
+   "target_accession": "7714",
+   "accessions": [
+    "7714"
+   ],
+   "params": {
+    "accession": "7714"
+   },
+   "answer_type": "string",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "name": "Dorquinine"
+     },
+     "clean_value": "Gamma-undecalactone",
+     "corrupted_value": "Dorquinine",
+     "factor": null,
+     "direction": null,
+     "implied": "Dorquinine"
+    },
+    "plausible": {
+     "fields": {
+      "name": "Ethynodiol"
+     },
+     "clean_value": "Gamma-undecalactone",
+     "corrupted_value": "Ethynodiol",
+     "factor": null,
+     "direction": null,
+     "implied": "Ethynodiol"
+    }
+   },
+   "gold": "Gamma-undecalactone",
+   "prompt": "What is the common name of the compound with PubChem CID 7714? Put only the compound name in the JSON \"answer\" field.",
+   "task_id": "c067",
+   "direction": null
+  },
+  {
+   "template": "weight_threshold",
+   "target_field": "molecular_weight",
+   "target_accession": "14820",
+   "accessions": [
+    "14820"
+   ],
+   "params": {
+    "accession": "14820",
+    "threshold": 134.7
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "molecular_weight": 9000000000.0
+     },
+     "clean_value": 119.69,
+     "corrupted_value": 9000000000.0,
+     "factor": null,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "molecular_weight": 149.61,
+      "heavy_atom_count": 2
+     },
+     "clean_value": 119.69,
+     "corrupted_value": 149.61,
+     "factor": 1.25,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 14820 have a molecular weight greater than 134.7 Da? Answer yes or no and give the weight. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "c068",
+   "direction": "inflate"
+  },
+  {
+   "template": "heavy_atom_threshold",
+   "target_field": "heavy_atom_count",
+   "target_accession": "16784",
+   "accessions": [
+    "16784"
+   ],
+   "params": {
+    "accession": "16784",
+    "threshold": 12
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "heavy_atom_count": 50000
+     },
+     "clean_value": 11,
+     "corrupted_value": 50000,
+     "factor": null,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "molecular_weight": 354.28,
+      "heavy_atom_count": 14
+     },
+     "clean_value": 11,
+     "corrupted_value": 14,
+     "factor": 1.25,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 16784 have more than 12 heavy atoms? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "c069",
+   "direction": "inflate"
+  },
+  {
+   "template": "h_bond_donors",
+   "target_field": "h_bond_donors",
+   "target_accession": "24634",
+   "accessions": [
+    "24634"
+   ],
+   "params": {
+    "accession": "24634"
+   },
+   "answer_type": "string",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "h_bond_donors": 500
+     },
+     "clean_value": 0,
+     "corrupted_value": 500,
+     "factor": null,
+     "direction": "inflate",
+     "implied": "500"
+    },
+    "plausible": {
+     "fields": {
+      "h_bond_donors": 1
+     },
+     "clean_value": 0,
+     "corrupted_value": 1,
+     "factor": null,
+     "direction": "inflate",
+     "implied": "1"
+    }
+   },
+   "gold": "0",
+   "prompt": "How many hydrogen-bond donors does the compound with PubChem CID 24634 have? Put only the number in the JSON \"answer\" field.",
+   "task_id": "c070",
+   "direction": "inflate"
+  },
+  {
+   "template": "name",
+   "target_field": "name",
+   "target_accession": "6011",
+   "accessions": [
+    "6011"
+   ],
+   "params": {
+    "accession": "6011"
+   },
+   "answer_type": "string",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "name": "Citbarol"
+     },
+     "clean_value": "Dromostanolone",
+     "corrupted_value": "Citbarol",
+     "factor": null,
+     "direction": null,
+     "implied": "Citbarol"
+    },
+    "plausible": {
+     "fields": {
+      "name": "Dimercaptosuccinic Acid"
+     },
+     "clean_value": "Dromostanolone",
+     "corrupted_value": "Dimercaptosuccinic Acid",
+     "factor": null,
+     "direction": null,
+     "implied": "Dimercaptosuccinic Acid"
+    }
+   },
+   "gold": "Dromostanolone",
+   "prompt": "What is the common name of the compound with PubChem CID 6011? Put only the compound name in the JSON \"answer\" field.",
+   "task_id": "c071",
+   "direction": null
+  },
+  {
+   "template": "weight_comparison",
+   "target_field": "molecular_weight",
+   "target_accession": "25072",
+   "accessions": [
+    "7679",
+    "25072"
+   ],
+   "params": {
+    "name_A": "Phenylacetyl chloride",
+    "name_B": "Aminomatacil",
+    "acc_A": "7679",
+    "acc_B": "25072"
+   },
+   "answer_type": "string",
+   "n_calls_expected": 2,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "molecular_weight": -180.2
+     },
+     "clean_value": 180.2,
+     "corrupted_value": -180.2,
+     "factor": null,
+     "direction": "shrink",
+     "implied": "Phenylacetyl chloride"
+    },
+    "plausible": {
+     "fields": {
+      "molecular_weight": 135.15,
+      "heavy_atom_count": 10
+     },
+     "clean_value": 180.2,
+     "corrupted_value": 135.15,
+     "factor": 0.75,
+     "direction": "shrink",
+     "implied": "Phenylacetyl chloride"
+    }
+   },
+   "gold": "Aminomatacil",
+   "prompt": "Which is heavier, Phenylacetyl chloride or Aminomatacil? Give the name and both molecular weights in Da. Put only the name of the heavier compound in the JSON \"answer\" field.",
+   "task_id": "c072",
+   "direction": "shrink"
+  },
+  {
+   "template": "heavy_atom_threshold",
+   "target_field": "heavy_atom_count",
+   "target_accession": "8809",
+   "accessions": [
+    "8809"
+   ],
+   "params": {
+    "accession": "8809",
+    "threshold": 19
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "heavy_atom_count": 0
+     },
+     "clean_value": 21,
+     "corrupted_value": 0,
+     "factor": null,
+     "direction": "shrink",
+     "implied": "no"
+    },
+    "plausible": {
+     "fields": {
+      "molecular_weight": 267.92,
+      "heavy_atom_count": 17
+     },
+     "clean_value": 21,
+     "corrupted_value": 17,
+     "factor": 0.8,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 8809 have more than 19 heavy atoms? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "c073",
+   "direction": "shrink"
+  },
+  {
+   "template": "h_bond_donors",
+   "target_field": "h_bond_donors",
+   "target_accession": "29334",
+   "accessions": [
+    "29334"
+   ],
+   "params": {
+    "accession": "29334"
+   },
+   "answer_type": "string",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "h_bond_donors": -3
+     },
+     "clean_value": 6,
+     "corrupted_value": -3,
+     "factor": null,
+     "direction": "shrink",
+     "implied": "-3"
+    },
+    "plausible": {
+     "fields": {
+      "h_bond_donors": 5
+     },
+     "clean_value": 6,
+     "corrupted_value": 5,
+     "factor": null,
+     "direction": "shrink",
+     "implied": "5"
+    }
+   },
+   "gold": "6",
+   "prompt": "How many hydrogen-bond donors does the compound with PubChem CID 29334 have? Put only the number in the JSON \"answer\" field.",
+   "task_id": "c074",
+   "direction": "shrink"
+  },
+  {
+   "template": "name",
+   "target_field": "name",
+   "target_accession": "19917",
+   "accessions": [
+    "19917"
+   ],
+   "params": {
+    "accession": "19917"
+   },
+   "answer_type": "string",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "name": "Vaxbaride"
+     },
+     "clean_value": "Iproheptine",
+     "corrupted_value": "Vaxbaride",
+     "factor": null,
+     "direction": null,
+     "implied": "Vaxbaride"
+    },
+    "plausible": {
+     "fields": {
+      "name": "Amsacrine"
+     },
+     "clean_value": "Iproheptine",
+     "corrupted_value": "Amsacrine",
+     "factor": null,
+     "direction": null,
+     "implied": "Amsacrine"
+    }
+   },
+   "gold": "Iproheptine",
+   "prompt": "What is the common name of the compound with PubChem CID 19917? Put only the compound name in the JSON \"answer\" field.",
+   "task_id": "c075",
+   "direction": null
+  },
+  {
+   "template": "weight_threshold",
+   "target_field": "molecular_weight",
+   "target_accession": "7343",
+   "accessions": [
+    "7343"
+   ],
+   "params": {
+    "accession": "7343",
+    "threshold": 128.4
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "molecular_weight": 9000000000.0
+     },
+     "clean_value": 114.14,
+     "corrupted_value": 9000000000.0,
+     "factor": null,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "molecular_weight": 142.68,
+      "heavy_atom_count": 10
+     },
+     "clean_value": 114.14,
+     "corrupted_value": 142.68,
+     "factor": 1.25,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 7343 have a molecular weight greater than 128.4 Da? Answer yes or no and give the weight. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "c076",
+   "direction": "inflate"
+  },
+  {
+   "template": "heavy_atom_threshold",
+   "target_field": "heavy_atom_count",
+   "target_accession": "11166",
+   "accessions": [
+    "11166"
+   ],
+   "params": {
+    "accession": "11166",
+    "threshold": 4
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "heavy_atom_count": 50000
+     },
+     "clean_value": 4,
+     "corrupted_value": 50000,
+     "factor": null,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "molecular_weight": 209.97,
+      "heavy_atom_count": 5
+     },
+     "clean_value": 4,
+     "corrupted_value": 5,
+     "factor": 1.25,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 11166 have more than 4 heavy atoms? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "c077",
+   "direction": "inflate"
+  },
+  {
+   "template": "h_bond_donors",
+   "target_field": "h_bond_donors",
+   "target_accession": "6253",
+   "accessions": [
+    "6253"
+   ],
+   "params": {
+    "accession": "6253"
+   },
+   "answer_type": "string",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "h_bond_donors": 500
+     },
+     "clean_value": 4,
+     "corrupted_value": 500,
+     "factor": null,
+     "direction": "inflate",
+     "implied": "500"
+    },
+    "plausible": {
+     "fields": {
+      "h_bond_donors": 5
+     },
+     "clean_value": 4,
+     "corrupted_value": 5,
+     "factor": null,
+     "direction": "inflate",
+     "implied": "5"
+    }
+   },
+   "gold": "4",
+   "prompt": "How many hydrogen-bond donors does the compound with PubChem CID 6253 have? Put only the number in the JSON \"answer\" field.",
+   "task_id": "c078",
+   "direction": "inflate"
+  },
+  {
+   "template": "name",
+   "target_field": "name",
+   "target_accession": "4778",
+   "accessions": [
+    "4778"
+   ],
+   "params": {
+    "accession": "4778"
+   },
+   "answer_type": "string",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "name": "Zorluxcitine"
+     },
+     "clean_value": "Phenylarsine Oxide",
+     "corrupted_value": "Zorluxcitine",
+     "factor": null,
+     "direction": null,
+     "implied": "Zorluxcitine"
+    },
+    "plausible": {
+     "fields": {
+      "name": "Cuprizone"
+     },
+     "clean_value": "Phenylarsine Oxide",
+     "corrupted_value": "Cuprizone",
+     "factor": null,
+     "direction": null,
+     "implied": "Cuprizone"
+    }
+   },
+   "gold": "Phenylarsine Oxide",
+   "prompt": "What is the common name of the compound with PubChem CID 4778? Put only the compound name in the JSON \"answer\" field.",
+   "task_id": "c079",
+   "direction": null
+  },
+  {
+   "template": "weight_comparison",
+   "target_field": "molecular_weight",
+   "target_accession": "28315",
+   "accessions": [
+    "9142",
+    "28315"
+   ],
+   "params": {
+    "name_A": "Perylene",
+    "name_B": "Desmonomethylpromazine",
+    "acc_A": "9142",
+    "acc_B": "28315"
+   },
+   "answer_type": "string",
+   "n_calls_expected": 2,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "molecular_weight": 2.0
+     },
+     "clean_value": 270.4,
+     "corrupted_value": 2.0,
+     "factor": null,
+     "direction": "shrink",
+     "implied": "Perylene"
+    },
+    "plausible": {
+     "fields": {
+      "molecular_weight": 216.32,
+      "heavy_atom_count": 15
+     },
+     "clean_value": 270.4,
+     "corrupted_value": 216.32,
+     "factor": 0.8,
+     "direction": "shrink",
+     "implied": "Perylene"
+    }
+   },
+   "gold": "Desmonomethylpromazine",
+   "prompt": "Which is heavier, Perylene or Desmonomethylpromazine? Give the name and both molecular weights in Da. Put only the name of the heavier compound in the JSON \"answer\" field.",
+   "task_id": "c080",
+   "direction": "shrink"
+  },
+  {
+   "template": "heavy_atom_threshold",
+   "target_field": "heavy_atom_count",
+   "target_accession": "10364",
+   "accessions": [
+    "10364"
+   ],
+   "params": {
+    "accession": "10364",
+    "threshold": 9
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "heavy_atom_count": 0
+     },
+     "clean_value": 11,
+     "corrupted_value": 0,
+     "factor": null,
+     "direction": "shrink",
+     "implied": "no"
+    },
+    "plausible": {
+     "fields": {
+      "molecular_weight": 112.66,
+      "heavy_atom_count": 8
+     },
+     "clean_value": 11,
+     "corrupted_value": 8,
+     "factor": 0.75,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 10364 have more than 9 heavy atoms? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "c081",
+   "direction": "shrink"
+  },
+  {
+   "template": "h_bond_donors",
+   "target_field": "h_bond_donors",
+   "target_accession": "10665",
+   "accessions": [
+    "10665"
+   ],
+   "params": {
+    "accession": "10665"
+   },
+   "answer_type": "string",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "h_bond_donors": -3
+     },
+     "clean_value": 1,
+     "corrupted_value": -3,
+     "factor": null,
+     "direction": "shrink",
+     "implied": "-3"
+    },
+    "plausible": {
+     "fields": {
+      "h_bond_donors": 0
+     },
+     "clean_value": 1,
+     "corrupted_value": 0,
+     "factor": null,
+     "direction": "shrink",
+     "implied": "0"
+    }
+   },
+   "gold": "1",
+   "prompt": "How many hydrogen-bond donors does the compound with PubChem CID 10665 have? Put only the number in the JSON \"answer\" field.",
+   "task_id": "c082",
+   "direction": "shrink"
+  },
+  {
+   "template": "name",
+   "target_field": "name",
+   "target_accession": "16928",
+   "accessions": [
+    "16928"
+   ],
+   "params": {
+    "accession": "16928"
+   },
+   "answer_type": "string",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "name": "Vaxmelzorate"
+     },
+     "clean_value": "Homovanillyl alcohol",
+     "corrupted_value": "Vaxmelzorate",
+     "factor": null,
+     "direction": null,
+     "implied": "Vaxmelzorate"
+    },
+    "plausible": {
+     "fields": {
+      "name": "Allyl iodide"
+     },
+     "clean_value": "Homovanillyl alcohol",
+     "corrupted_value": "Allyl iodide",
+     "factor": null,
+     "direction": null,
+     "implied": "Allyl iodide"
+    }
+   },
+   "gold": "Homovanillyl alcohol",
+   "prompt": "What is the common name of the compound with PubChem CID 16928? Put only the compound name in the JSON \"answer\" field.",
+   "task_id": "c083",
+   "direction": null
+  },
+  {
+   "template": "weight_threshold",
+   "target_field": "molecular_weight",
+   "target_accession": "24680",
+   "accessions": [
+    "24680"
+   ],
+   "params": {
+    "accession": "24680",
+    "threshold": 216.3
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "molecular_weight": 9000000000.0
+     },
+     "clean_value": 192.3,
+     "corrupted_value": 9000000000.0,
+     "factor": null,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "molecular_weight": 240.38,
+      "heavy_atom_count": 18
+     },
+     "clean_value": 192.3,
+     "corrupted_value": 240.38,
+     "factor": 1.25,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 24680 have a molecular weight greater than 216.3 Da? Answer yes or no and give the weight. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "c084",
+   "direction": "inflate"
+  },
+  {
+   "template": "heavy_atom_threshold",
+   "target_field": "heavy_atom_count",
+   "target_accession": "2136",
+   "accessions": [
+    "2136"
+   ],
+   "params": {
+    "accession": "2136",
+    "threshold": 21
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "heavy_atom_count": 50000
+     },
+     "clean_value": 19,
+     "corrupted_value": 50000,
+     "factor": null,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "molecular_weight": 319.09,
+      "heavy_atom_count": 24
+     },
+     "clean_value": 19,
+     "corrupted_value": 24,
+     "factor": 1.25,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 2136 have more than 21 heavy atoms? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "c085",
+   "direction": "inflate"
+  },
+  {
+   "template": "h_bond_donors",
+   "target_field": "h_bond_donors",
+   "target_accession": "8434",
+   "accessions": [
+    "8434"
+   ],
+   "params": {
+    "accession": "8434"
+   },
+   "answer_type": "string",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "h_bond_donors": 500
+     },
+     "clean_value": 1,
+     "corrupted_value": 500,
+     "factor": null,
+     "direction": "inflate",
+     "implied": "500"
+    },
+    "plausible": {
+     "fields": {
+      "h_bond_donors": 2
+     },
+     "clean_value": 1,
+     "corrupted_value": 2,
+     "factor": null,
+     "direction": "inflate",
+     "implied": "2"
+    }
+   },
+   "gold": "1",
+   "prompt": "How many hydrogen-bond donors does the compound with PubChem CID 8434 have? Put only the number in the JSON \"answer\" field.",
+   "task_id": "c086",
+   "direction": "inflate"
+  },
+  {
+   "template": "name",
+   "target_field": "name",
+   "target_accession": "20345",
+   "accessions": [
+    "20345"
+   ],
+   "params": {
+    "accession": "20345"
+   },
+   "answer_type": "string",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "name": "Cittriide"
+     },
+     "clean_value": "Kinetin riboside",
+     "corrupted_value": "Cittriide",
+     "factor": null,
+     "direction": null,
+     "implied": "Cittriide"
+    },
+    "plausible": {
+     "fields": {
+      "name": "Phosphoethanolamine"
+     },
+     "clean_value": "Kinetin riboside",
+     "corrupted_value": "Phosphoethanolamine",
+     "factor": null,
+     "direction": null,
+     "implied": "Phosphoethanolamine"
+    }
+   },
+   "gold": "Kinetin riboside",
+   "prompt": "What is the common name of the compound with PubChem CID 20345? Put only the compound name in the JSON \"answer\" field.",
+   "task_id": "c087",
+   "direction": null
+  },
+  {
+   "template": "weight_comparison",
+   "target_field": "molecular_weight",
+   "target_accession": "8378",
+   "accessions": [
+    "24885",
+    "8378"
+   ],
+   "params": {
+    "name_A": "Asaphan",
+    "name_B": "Neomycin",
+    "acc_A": "24885",
+    "acc_B": "8378"
+   },
+   "answer_type": "string",
+   "n_calls_expected": 2,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "molecular_weight": 2.0
+     },
+     "clean_value": 614.6,
+     "corrupted_value": 2.0,
+     "factor": null,
+     "direction": "shrink",
+     "implied": "Asaphan"
+    },
+    "plausible": {
+     "fields": {
+      "molecular_weight": 460.95,
+      "heavy_atom_count": 32
+     },
+     "clean_value": 614.6,
+     "corrupted_value": 460.95,
+     "factor": 0.75,
+     "direction": "shrink",
+     "implied": "Asaphan"
+    }
+   },
+   "gold": "Neomycin",
+   "prompt": "Which is heavier, Asaphan or Neomycin? Give the name and both molecular weights in Da. Put only the name of the heavier compound in the JSON \"answer\" field.",
+   "task_id": "c088",
+   "direction": "shrink"
+  },
+  {
+   "template": "heavy_atom_threshold",
+   "target_field": "heavy_atom_count",
+   "target_accession": "8852",
+   "accessions": [
+    "8852"
+   ],
+   "params": {
+    "accession": "8852",
+    "threshold": 15
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "heavy_atom_count": 0
+     },
+     "clean_value": 17,
+     "corrupted_value": 0,
+     "factor": null,
+     "direction": "shrink",
+     "implied": "no"
+    },
+    "plausible": {
+     "fields": {
+      "molecular_weight": 248.54,
+      "heavy_atom_count": 14
+     },
+     "clean_value": 17,
+     "corrupted_value": 14,
+     "factor": 0.8,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 8852 have more than 15 heavy atoms? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "c089",
+   "direction": "shrink"
+  },
+  {
+   "template": "h_bond_donors",
+   "target_field": "h_bond_donors",
+   "target_accession": "21786",
+   "accessions": [
+    "21786"
+   ],
+   "params": {
+    "accession": "21786"
+   },
+   "answer_type": "string",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "h_bond_donors": -3
+     },
+     "clean_value": 1,
+     "corrupted_value": -3,
+     "factor": null,
+     "direction": "shrink",
+     "implied": "-3"
+    },
+    "plausible": {
+     "fields": {
+      "h_bond_donors": 0
+     },
+     "clean_value": 1,
+     "corrupted_value": 0,
+     "factor": null,
+     "direction": "shrink",
+     "implied": "0"
+    }
+   },
+   "gold": "1",
+   "prompt": "How many hydrogen-bond donors does the compound with PubChem CID 21786 have? Put only the number in the JSON \"answer\" field.",
+   "task_id": "c090",
+   "direction": "shrink"
+  },
+  {
+   "template": "name",
+   "target_field": "name",
+   "target_accession": "12051",
+   "accessions": [
+    "12051"
+   ],
+   "params": {
+    "accession": "12051"
+   },
+   "answer_type": "string",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "name": "Tridorviride"
+     },
+     "clean_value": "Diethylformamide",
+     "corrupted_value": "Tridorviride",
+     "factor": null,
+     "direction": null,
+     "implied": "Tridorviride"
+    },
+    "plausible": {
+     "fields": {
+      "name": "Clenbuterol"
+     },
+     "clean_value": "Diethylformamide",
+     "corrupted_value": "Clenbuterol",
+     "factor": null,
+     "direction": null,
+     "implied": "Clenbuterol"
+    }
+   },
+   "gold": "Diethylformamide",
+   "prompt": "What is the common name of the compound with PubChem CID 12051? Put only the compound name in the JSON \"answer\" field.",
+   "task_id": "c091",
+   "direction": null
+  },
+  {
+   "template": "weight_threshold",
+   "target_field": "molecular_weight",
+   "target_accession": "25834",
+   "accessions": [
+    "25834"
+   ],
+   "params": {
+    "accession": "25834",
+    "threshold": 286.3
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "molecular_weight": 9000000000.0
+     },
+     "clean_value": 260.29,
+     "corrupted_value": 9000000000.0,
+     "factor": null,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "molecular_weight": 312.35,
+      "heavy_atom_count": 19
+     },
+     "clean_value": 260.29,
+     "corrupted_value": 312.35,
+     "factor": 1.2,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 25834 have a molecular weight greater than 286.3 Da? Answer yes or no and give the weight. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "c092",
+   "direction": "inflate"
+  },
+  {
+   "template": "heavy_atom_threshold",
+   "target_field": "heavy_atom_count",
+   "target_accession": "21693",
+   "accessions": [
+    "21693"
+   ],
+   "params": {
+    "accession": "21693",
+    "threshold": 36
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "heavy_atom_count": 50000
+     },
+     "clean_value": 33,
+     "corrupted_value": 50000,
+     "factor": null,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "molecular_weight": 539.52,
+      "heavy_atom_count": 40
+     },
+     "clean_value": 33,
+     "corrupted_value": 40,
+     "factor": 1.2,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 21693 have more than 36 heavy atoms? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "c093",
+   "direction": "inflate"
+  },
+  {
+   "template": "h_bond_donors",
+   "target_field": "h_bond_donors",
+   "target_accession": "4975",
+   "accessions": [
+    "4975"
+   ],
+   "params": {
+    "accession": "4975"
+   },
+   "answer_type": "string",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "h_bond_donors": 500
+     },
+     "clean_value": 6,
+     "corrupted_value": 500,
+     "factor": null,
+     "direction": "inflate",
+     "implied": "500"
+    },
+    "plausible": {
+     "fields": {
+      "h_bond_donors": 7
+     },
+     "clean_value": 6,
+     "corrupted_value": 7,
+     "factor": null,
+     "direction": "inflate",
+     "implied": "7"
+    }
+   },
+   "gold": "6",
+   "prompt": "How many hydrogen-bond donors does the compound with PubChem CID 4975 have? Put only the number in the JSON \"answer\" field.",
+   "task_id": "c094",
+   "direction": "inflate"
+  },
+  {
+   "template": "name",
+   "target_field": "name",
+   "target_accession": "16584",
+   "accessions": [
+    "16584"
+   ],
+   "params": {
+    "accession": "16584"
+   },
+   "answer_type": "string",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "name": "Vaxtolate"
+     },
+     "clean_value": "Pentachloropyridine",
+     "corrupted_value": "Vaxtolate",
+     "factor": null,
+     "direction": null,
+     "implied": "Vaxtolate"
+    },
+    "plausible": {
+     "fields": {
+      "name": "Prometryn"
+     },
+     "clean_value": "Pentachloropyridine",
+     "corrupted_value": "Prometryn",
+     "factor": null,
+     "direction": null,
+     "implied": "Prometryn"
+    }
+   },
+   "gold": "Pentachloropyridine",
+   "prompt": "What is the common name of the compound with PubChem CID 16584? Put only the compound name in the JSON \"answer\" field.",
+   "task_id": "c095",
+   "direction": null
+  },
+  {
+   "template": "weight_comparison",
+   "target_field": "molecular_weight",
+   "target_accession": "2599",
+   "accessions": [
+    "2599",
+    "16316"
+   ],
+   "params": {
+    "name_A": "Caulibugulone E",
+    "name_B": "Dipentylamine",
+    "acc_A": "2599",
+    "acc_B": "16316"
+   },
+   "answer_type": "string",
+   "n_calls_expected": 2,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "molecular_weight": -187.2
+     },
+     "clean_value": 187.2,
+     "corrupted_value": -187.2,
+     "factor": null,
+     "direction": "shrink",
+     "implied": "Dipentylamine"
+    },
+    "plausible": {
+     "fields": {
+      "molecular_weight": 149.76,
+      "heavy_atom_count": 11
+     },
+     "clean_value": 187.2,
+     "corrupted_value": 149.76,
+     "factor": 0.8,
+     "direction": "shrink",
+     "implied": "Dipentylamine"
+    }
+   },
+   "gold": "Caulibugulone E",
+   "prompt": "Which is heavier, Caulibugulone E or Dipentylamine? Give the name and both molecular weights in Da. Put only the name of the heavier compound in the JSON \"answer\" field.",
+   "task_id": "c096",
+   "direction": "shrink"
+  },
+  {
+   "template": "heavy_atom_threshold",
+   "target_field": "heavy_atom_count",
+   "target_accession": "2753",
+   "accessions": [
+    "2753"
+   ],
+   "params": {
+    "accession": "2753",
+    "threshold": 22
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "heavy_atom_count": 0
+     },
+     "clean_value": 25,
+     "corrupted_value": 0,
+     "factor": null,
+     "direction": "shrink",
+     "implied": "no"
+    },
+    "plausible": {
+     "fields": {
+      "molecular_weight": 256.8,
+      "heavy_atom_count": 19
+     },
+     "clean_value": 25,
+     "corrupted_value": 19,
+     "factor": 0.75,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 2753 have more than 22 heavy atoms? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "c097",
+   "direction": "shrink"
+  },
+  {
+   "template": "h_bond_donors",
+   "target_field": "h_bond_donors",
+   "target_accession": "13471",
+   "accessions": [
+    "13471"
+   ],
+   "params": {
+    "accession": "13471"
+   },
+   "answer_type": "string",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "h_bond_donors": -3
+     },
+     "clean_value": 1,
+     "corrupted_value": -3,
+     "factor": null,
+     "direction": "shrink",
+     "implied": "-3"
+    },
+    "plausible": {
+     "fields": {
+      "h_bond_donors": 0
+     },
+     "clean_value": 1,
+     "corrupted_value": 0,
+     "factor": null,
+     "direction": "shrink",
+     "implied": "0"
+    }
+   },
+   "gold": "1",
+   "prompt": "How many hydrogen-bond donors does the compound with PubChem CID 13471 have? Put only the number in the JSON \"answer\" field.",
+   "task_id": "c098",
+   "direction": "shrink"
+  },
+  {
+   "template": "name",
+   "target_field": "name",
+   "target_accession": "5884",
+   "accessions": [
+    "5884"
+   ],
+   "params": {
+    "accession": "5884"
+   },
+   "answer_type": "string",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "name": "Vaxquinbarate"
+     },
+     "clean_value": "NADPH",
+     "corrupted_value": "Vaxquinbarate",
+     "factor": null,
+     "direction": null,
+     "implied": "Vaxquinbarate"
+    },
+    "plausible": {
+     "fields": {
+      "name": "Triphenylamine"
+     },
+     "clean_value": "NADPH",
+     "corrupted_value": "Triphenylamine",
+     "factor": null,
+     "direction": null,
+     "implied": "Triphenylamine"
+    }
+   },
+   "gold": "NADPH",
+   "prompt": "What is the common name of the compound with PubChem CID 5884? Put only the compound name in the JSON \"answer\" field.",
+   "task_id": "c099",
+   "direction": null
+  }
+ ]
+}
