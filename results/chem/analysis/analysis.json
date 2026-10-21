@@ -1,0 +1,797 @@
+{
+ "taxonomy": {
+  "impossible|all": {
+   "n_flagged": 855,
+   "crossfield": 0.32280701754385965,
+   "recall": 0.6350877192982456,
+   "rule": 0.4654970760233918,
+   "none": 0.12982456140350876
+  },
+  "impossible|anthropic:claude-haiku-4-5": {
+   "n_flagged": 75,
+   "crossfield": 0.24,
+   "recall": 0.6,
+   "rule": 0.32,
+   "none": 0.08
+  },
+  "impossible|anthropic:claude-sonnet-4-6": {
+   "n_flagged": 84,
+   "crossfield": 0.11904761904761904,
+   "recall": 0.8928571428571429,
+   "rule": 0.5,
+   "none": 0.023809523809523808
+  },
+  "impossible|anthropic:claude-sonnet-5": {
+   "n_flagged": 90,
+   "crossfield": 0.4111111111111111,
+   "recall": 0.6,
+   "rule": 0.37777777777777777,
+   "none": 0.1
+  },
+  "impossible|anthropic:claude-opus-5": {
+   "n_flagged": 100,
+   "crossfield": 0.4,
+   "recall": 0.8,
+   "rule": 0.44,
+   "none": 0.11
+  },
+  "impossible|gemini:gemini-3.8-flash": {
+   "n_flagged": 77,
+   "crossfield": 0.2857142857142857,
+   "recall": 0.6883116883116883,
+   "rule": 0.6363636363636364,
+   "none": 0.025974025974025976
+  },
+  "impossible|gemini:gemini-4-argon": {
+   "n_flagged": 91,
+   "crossfield": 0.4945054945054945,
+   "recall": 0.7252747252747253,
+   "rule": 0.6813186813186813,
+   "none": 0.06593406593406594
+  },
+  "impossible|together:deepseek-ai/DeepSeek-V4.1-Flash-1017": {
+   "n_flagged": 97,
+   "crossfield": 0.23711340206185566,
+   "recall": 0.7319587628865979,
+   "rule": 0.5051546391752577,
+   "none": 0.13402061855670103
+  },
+  "impossible|together:moonshotai/Kimi-K3": {
+   "n_flagged": 88,
+   "crossfield": 0.4090909090909091,
+   "recall": 0.6931818181818182,
+   "rule": 0.42045454545454547,
+   "none": 0.10227272727272728
+  },
+  "impossible|openai:gpt-6-luna": {
+   "n_flagged": 75,
+   "crossfield": 0.13333333333333333,
+   "recall": 0.16,
+   "rule": 0.25333333333333335,
+   "none": 0.56
+  },
+  "impossible|openai:gpt-6.1-sol": {
+   "n_flagged": 78,
+   "crossfield": 0.44871794871794873,
+   "recall": 0.3333333333333333,
+   "rule": 0.48717948717948717,
+   "none": 0.14102564102564102
+  },
+  "plausible|all": {
+   "n_flagged": 547,
+   "crossfield": 0.17184643510054845,
+   "recall": 0.8391224862888482,
+   "rule": 0.0603290676416819,
+   "none": 0.12431444241316271
+  },
+  "plausible|anthropic:claude-haiku-4-5": {
+   "n_flagged": 3,
+   "crossfield": 0.0,
+   "recall": 0.0,
+   "rule": 0.0,
+   "none": 1.0
+  },
+  "plausible|anthropic:claude-sonnet-4-6": {
+   "n_flagged": 36,
+   "crossfield": 0.05555555555555555,
+   "recall": 0.9444444444444444,
+   "rule": 0.0,
+   "none": 0.05555555555555555
+  },
+  "plausible|anthropic:claude-sonnet-5": {
+   "n_flagged": 49,
+   "crossfield": 0.22448979591836735,
+   "recall": 0.9183673469387755,
+   "rule": 0.02040816326530612,
+   "none": 0.061224489795918366
+  },
+  "plausible|anthropic:claude-opus-5": {
+   "n_flagged": 96,
+   "crossfield": 0.17708333333333334,
+   "recall": 0.9791666666666666,
+   "rule": 0.11458333333333333,
+   "none": 0.010416666666666666
+  },
+  "plausible|gemini:gemini-3.8-flash": {
+   "n_flagged": 56,
+   "crossfield": 0.35714285714285715,
+   "recall": 0.8571428571428571,
+   "rule": 0.03571428571428571,
+   "none": 0.05357142857142857
+  },
+  "plausible|gemini:gemini-4-argon": {
+   "n_flagged": 90,
+   "crossfield": 0.18888888888888888,
+   "recall": 0.8888888888888888,
+   "rule": 0.06666666666666667,
+   "none": 0.044444444444444446
+  },
+  "plausible|together:deepseek-ai/DeepSeek-V4.1-Flash-1017": {
+   "n_flagged": 71,
+   "crossfield": 0.22535211267605634,
+   "recall": 0.9295774647887324,
+   "rule": 0.09859154929577464,
+   "none": 0.04225352112676056
+  },
+  "plausible|together:moonshotai/Kimi-K3": {
+   "n_flagged": 60,
+   "crossfield": 0.11666666666666667,
+   "recall": 0.9,
+   "rule": 0.05,
+   "none": 0.06666666666666667
+  },
+  "plausible|openai:gpt-6-luna": {
+   "n_flagged": 16,
+   "crossfield": 0.0,
+   "recall": 0.1875,
+   "rule": 0.0,
+   "none": 0.8125
+  },
+  "plausible|openai:gpt-6.1-sol": {
+   "n_flagged": 70,
+   "crossfield": 0.05714285714285714,
+   "recall": 0.5,
+   "rule": 0.04285714285714286,
+   "none": 0.45714285714285713
+  },
+  "sweep consistent|all": {
+   "n_flagged": 0,
+   "crossfield": null,
+   "recall": null,
+   "rule": null,
+   "none": null
+  },
+  "sweep consistent|anthropic:claude-haiku-4-5": {
+   "n_flagged": 0,
+   "crossfield": null,
+   "recall": null,
+   "rule": null,
+   "none": null
+  },
+  "sweep consistent|anthropic:claude-sonnet-4-6": {
+   "n_flagged": 0,
+   "crossfield": null,
+   "recall": null,
+   "rule": null,
+   "none": null
+  },
+  "sweep consistent|anthropic:claude-sonnet-5": {
+   "n_flagged": 0,
+   "crossfield": null,
+   "recall": null,
+   "rule": null,
+   "none": null
+  },
+  "sweep consistent|anthropic:claude-opus-5": {
+   "n_flagged": 0,
+   "crossfield": null,
+   "recall": null,
+   "rule": null,
+   "none": null
+  },
+  "sweep consistent|gemini:gemini-3.8-flash": {
+   "n_flagged": 0,
+   "crossfield": null,
+   "recall": null,
+   "rule": null,
+   "none": null
+  },
+  "sweep consistent|gemini:gemini-4-argon": {
+   "n_flagged": 0,
+   "crossfield": null,
+   "recall": null,
+   "rule": null,
+   "none": null
+  },
+  "sweep consistent|together:deepseek-ai/DeepSeek-V4.1-Flash-1017": {
+   "n_flagged": 0,
+   "crossfield": null,
+   "recall": null,
+   "rule": null,
+   "none": null
+  },
+  "sweep consistent|together:moonshotai/Kimi-K3": {
+   "n_flagged": 0,
+   "crossfield": null,
+   "recall": null,
+   "rule": null,
+   "none": null
+  },
+  "sweep consistent|openai:gpt-6-luna": {
+   "n_flagged": 0,
+   "crossfield": null,
+   "recall": null,
+   "rule": null,
+   "none": null
+  },
+  "sweep consistent|openai:gpt-6.1-sol": {
+   "n_flagged": 0,
+   "crossfield": null,
+   "recall": null,
+   "rule": null,
+   "none": null
+  },
+  "sweep inconsistent|all": {
+   "n_flagged": 0,
+   "crossfield": null,
+   "recall": null,
+   "rule": null,
+   "none": null
+  },
+  "sweep inconsistent|anthropic:claude-haiku-4-5": {
+   "n_flagged": 0,
+   "crossfield": null,
+   "recall": null,
+   "rule": null,
+   "none": null
+  },
+  "sweep inconsistent|anthropic:claude-sonnet-4-6": {
+   "n_flagged": 0,
+   "crossfield": null,
+   "recall": null,
+   "rule": null,
+   "none": null
+  },
+  "sweep inconsistent|anthropic:claude-sonnet-5": {
+   "n_flagged": 0,
+   "crossfield": null,
+   "recall": null,
+   "rule": null,
+   "none": null
+  },
+  "sweep inconsistent|anthropic:claude-opus-5": {
+   "n_flagged": 0,
+   "crossfield": null,
+   "recall": null,
+   "rule": null,
+   "none": null
+  },
+  "sweep inconsistent|gemini:gemini-3.8-flash": {
+   "n_flagged": 0,
+   "crossfield": null,
+   "recall": null,
+   "rule": null,
+   "none": null
+  },
+  "sweep inconsistent|gemini:gemini-4-argon": {
+   "n_flagged": 0,
+   "crossfield": null,
+   "recall": null,
+   "rule": null,
+   "none": null
+  },
+  "sweep inconsistent|together:deepseek-ai/DeepSeek-V4.1-Flash-1017": {
+   "n_flagged": 0,
+   "crossfield": null,
+   "recall": null,
+   "rule": null,
+   "none": null
+  },
+  "sweep inconsistent|together:moonshotai/Kimi-K3": {
+   "n_flagged": 0,
+   "crossfield": null,
+   "recall": null,
+   "rule": null,
+   "none": null
+  },
+  "sweep inconsistent|openai:gpt-6-luna": {
+   "n_flagged": 0,
+   "crossfield": null,
+   "recall": null,
+   "rule": null,
+   "none": null
+  },
+  "sweep inconsistent|openai:gpt-6.1-sol": {
+   "n_flagged": 0,
+   "crossfield": null,
+   "recall": null,
+   "rule": null,
+   "none": null
+  }
+ },
+ "cue_propagation": {
+  "impossible|crossfield": {
+   "n": 276,
+   "propagated": 0.5760869565217391
+  },
+  "impossible|recall": {
+   "n": 543,
+   "propagated": 0.5138121546961326
+  },
+  "impossible|rule": {
+   "n": 398,
+   "propagated": 0.5753768844221105
+  },
+  "plausible|crossfield": {
+   "n": 94,
+   "propagated": 0.9893617021276596
+  },
+  "plausible|recall": {
+   "n": 459,
+   "propagated": 0.9673202614379085
+  },
+  "plausible|rule": {
+   "n": 33,
+   "propagated": 0.9393939393939394
+  }
+ },
+ "bootstrap": {
+  "anthropic:claude-haiku-4-5|impossible": {
+   "n": 100,
+   "rate": 0.91,
+   "wilson": [
+    0.8377362530335634,
+    0.9519280048361151
+   ],
+   "cluster_boot": [
+    0.85,
+    0.96
+   ],
+   "flag_rate": 0.75,
+   "flag_boot": [
+    0.6697500000000001,
+    0.84
+   ]
+  },
+  "anthropic:claude-haiku-4-5|plausible": {
+   "n": 100,
+   "rate": 1.0,
+   "wilson": [
+    0.9630051925239981,
+    1.0
+   ],
+   "cluster_boot": [
+    1.0,
+    1.0
+   ],
+   "flag_rate": 0.03,
+   "flag_boot": [
+    0.0,
+    0.07
+   ]
+  },
+  "anthropic:claude-sonnet-4-6|impossible": {
+   "n": 100,
+   "rate": 0.83,
+   "wilson": [
+    0.7445181876635703,
+    0.8910652394022684
+   ],
+   "cluster_boot": [
+    0.75,
+    0.9
+   ],
+   "flag_rate": 0.84,
+   "flag_boot": [
+    0.76,
+    0.91
+   ]
+  },
+  "anthropic:claude-sonnet-4-6|plausible": {
+   "n": 100,
+   "rate": 1.0,
+   "wilson": [
+    0.9630051925239981,
+    1.0
+   ],
+   "cluster_boot": [
+    1.0,
+    1.0
+   ],
+   "flag_rate": 0.36,
+   "flag_boot": [
+    0.27,
+    0.45
+   ]
+  },
+  "anthropic:claude-sonnet-5|impossible": {
+   "n": 100,
+   "rate": 0.73,
+   "wilson": [
+    0.6356769977376873,
+    0.8073053908233518
+   ],
+   "cluster_boot": [
+    0.64,
+    0.81
+   ],
+   "flag_rate": 0.9,
+   "flag_boot": [
+    0.84,
+    0.95
+   ]
+  },
+  "anthropic:claude-sonnet-5|plausible": {
+   "n": 100,
+   "rate": 1.0,
+   "wilson": [
+    0.9630051925239981,
+    1.0
+   ],
+   "cluster_boot": [
+    1.0,
+    1.0
+   ],
+   "flag_rate": 0.49,
+   "flag_boot": [
+    0.39,
+    0.59
+   ]
+  },
+  "anthropic:claude-opus-5|impossible": {
+   "n": 100,
+   "rate": 0.46,
+   "wilson": [
+    0.36560643853331865,
+    0.5573531460647615
+   ],
+   "cluster_boot": [
+    0.36,
+    0.55
+   ],
+   "flag_rate": 1.0,
+   "flag_boot": [
+    1.0,
+    1.0
+   ]
+  },
+  "anthropic:claude-opus-5|plausible": {
+   "n": 100,
+   "rate": 0.98,
+   "wilson": [
+    0.9299868370580063,
+    0.9944981477650318
+   ],
+   "cluster_boot": [
+    0.95,
+    1.0
+   ],
+   "flag_rate": 0.96,
+   "flag_boot": [
+    0.92,
+    0.99
+   ]
+  },
+  "gemini:gemini-3.8-flash|impossible": {
+   "n": 100,
+   "rate": 0.62,
+   "wilson": [
+    0.5220957382071033,
+    0.7090255079986562
+   ],
+   "cluster_boot": [
+    0.53,
+    0.72
+   ],
+   "flag_rate": 0.77,
+   "flag_boot": [
+    0.68,
+    0.85
+   ]
+  },
+  "gemini:gemini-3.8-flash|plausible": {
+   "n": 100,
+   "rate": 1.0,
+   "wilson": [
+    0.9630051925239981,
+    1.0
+   ],
+   "cluster_boot": [
+    1.0,
+    1.0
+   ],
+   "flag_rate": 0.56,
+   "flag_boot": [
+    0.46,
+    0.65
+   ]
+  },
+  "gemini:gemini-4-argon|impossible": {
+   "n": 100,
+   "rate": 0.62,
+   "wilson": [
+    0.5220957382071033,
+    0.7090255079986562
+   ],
+   "cluster_boot": [
+    0.52,
+    0.72
+   ],
+   "flag_rate": 0.91,
+   "flag_boot": [
+    0.85,
+    0.96
+   ]
+  },
+  "gemini:gemini-4-argon|plausible": {
+   "n": 100,
+   "rate": 0.98,
+   "wilson": [
+    0.9299868370580063,
+    0.9944981477650318
+   ],
+   "cluster_boot": [
+    0.95,
+    1.0
+   ],
+   "flag_rate": 0.9,
+   "flag_boot": [
+    0.84,
+    0.9502499999999986
+   ]
+  },
+  "together:deepseek-ai/DeepSeek-V4.1-Flash-1017|impossible": {
+   "n": 100,
+   "rate": 0.38,
+   "wilson": [
+    0.2909744920013438,
+    0.47790426179289663
+   ],
+   "cluster_boot": [
+    0.28,
+    0.47
+   ],
+   "flag_rate": 0.97,
+   "flag_boot": [
+    0.93,
+    1.0
+   ]
+  },
+  "together:deepseek-ai/DeepSeek-V4.1-Flash-1017|plausible": {
+   "n": 100,
+   "rate": 0.95,
+   "wilson": [
+    0.8882480347279118,
+    0.9784566385436864
+   ],
+   "cluster_boot": [
+    0.9,
+    0.99
+   ],
+   "flag_rate": 0.71,
+   "flag_boot": [
+    0.62,
+    0.79
+   ]
+  },
+  "together:moonshotai/Kimi-K3|impossible": {
+   "n": 100,
+   "rate": 0.63,
+   "wilson": [
+    0.5322034757513312,
+    0.7181778743049083
+   ],
+   "cluster_boot": [
+    0.53,
+    0.72
+   ],
+   "flag_rate": 0.88,
+   "flag_boot": [
+    0.81,
+    0.94
+   ]
+  },
+  "together:moonshotai/Kimi-K3|plausible": {
+   "n": 100,
+   "rate": 0.99,
+   "wilson": [
+    0.9455124752390653,
+    0.9982326134344526
+   ],
+   "cluster_boot": [
+    0.97,
+    1.0
+   ],
+   "flag_rate": 0.6,
+   "flag_boot": [
+    0.5,
+    0.69
+   ]
+  },
+  "openai:gpt-6-luna|impossible": {
+   "n": 100,
+   "rate": 0.68,
+   "wilson": [
+    0.5833719774632081,
+    0.7633098918454312
+   ],
+   "cluster_boot": [
+    0.58,
+    0.76
+   ],
+   "flag_rate": 0.75,
+   "flag_boot": [
+    0.67,
+    0.84
+   ]
+  },
+  "openai:gpt-6-luna|plausible": {
+   "n": 100,
+   "rate": 1.0,
+   "wilson": [
+    0.9630051925239981,
+    1.0
+   ],
+   "cluster_boot": [
+    1.0,
+    1.0
+   ],
+   "flag_rate": 0.16,
+   "flag_boot": [
+    0.1,
+    0.23
+   ]
+  },
+  "openai:gpt-6.1-sol|impossible": {
+   "n": 100,
+   "rate": 0.67,
+   "wilson": [
+    0.5730516033971139,
+    0.7543701620610456
+   ],
+   "cluster_boot": [
+    0.57,
+    0.76
+   ],
+   "flag_rate": 0.78,
+   "flag_boot": [
+    0.7,
+    0.86
+   ]
+  },
+  "openai:gpt-6.1-sol|plausible": {
+   "n": 100,
+   "rate": 0.93,
+   "wilson": [
+    0.8625032899347025,
+    0.965681175635936
+   ],
+   "cluster_boot": [
+    0.87,
+    0.98
+   ],
+   "flag_rate": 0.7,
+   "flag_boot": [
+    0.61,
+    0.79
+   ]
+  }
+ },
+ "majority_sonnet5": {},
+ "regression": {
+  "Intercept": {
+   "or": 584.4301529478544,
+   "ci": [
+    256.1010768193203,
+    1333.6867143109378
+   ],
+   "p": 9.720138626057397e-52
+  },
+  "C(model)[T.Haiku 4.5]": {
+   "or": 4.69978592302585,
+   "ci": [
+    2.3387444580012526,
+    9.444378434208614
+   ],
+   "p": 1.3864959330743884e-05
+  },
+  "C(model)[T.Sonnet 4.6]": {
+   "or": 2.066328365230395,
+   "ci": [
+    1.0759824134771807,
+    3.968199535118394
+   ],
+   "p": 0.029262674701140776
+  },
+  "C(model)[T.Opus 5]": {
+   "or": 0.17933062397020164,
+   "ci": [
+    0.09712924800527711,
+    0.3310997804883098
+   ],
+   "p": 3.9516172123332024e-08
+  },
+  "C(model)[T.Gemini 3.8 Flash]": {
+   "or": 0.5082716991474686,
+   "ci": [
+    0.2813979172541327,
+    0.9180598160609194
+   ],
+   "p": 0.024872977056473188
+  },
+  "C(model)[T.Gemini 4 Argon]": {
+   "or": 0.4518548716984969,
+   "ci": [
+    0.2606945074527236,
+    0.7831880582090568
+   ],
+   "p": 0.004642892325663702
+  },
+  "C(model)[T.DeepSeek V4.1 Flash]": {
+   "or": 0.09597009546238709,
+   "ci": [
+    0.053719079542568465,
+    0.17145229034986034
+   ],
+   "p": 2.4459676723537994e-15
+  },
+  "C(model)[T.Kimi K3]": {
+   "or": 0.5082716991474687,
+   "ci": [
+    0.2883887776352481,
+    0.8958050388528
+   ],
+   "p": 0.019257264386865768
+  },
+  "C(model)[T.GPT-6 Luna]": {
+   "or": 0.7291001215812736,
+   "ci": [
+    0.40269281058986345,
+    1.320080650337811
+   ],
+   "p": 0.29688912668515366
+  },
+  "C(model)[T.GPT-6.1 Sol]": {
+   "or": 0.451854871698497,
+   "ci": [
+    0.20491205781857386,
+    0.9963924390356608
+   ],
+   "p": 0.04896209910796976
+  },
+  "C(field)[T.heavy_atom_count]": {
+   "or": 0.22210330492426963,
+   "ci": [
+    0.11882726973119696,
+    0.41513937137387574
+   ],
+   "p": 2.4192410433435066e-06
+  },
+  "C(field)[T.molecular_weight]": {
+   "or": 0.09990965124250345,
+   "ci": [
+    0.04830244600865437,
+    0.20665492612134392
+   ],
+   "p": 5.232693812683242e-10
+  },
+  "C(field)[T.name]": {
+   "or": 17.22419106995769,
+   "ci": [
+    4.571570747902223,
+    64.89514750494584
+   ],
+   "p": 2.60283808557646e-05
+  },
+  "impossible": {
+   "or": 0.013240142877163042,
+   "ci": [
+    0.006929605661113299,
+    0.025297454426797452
+   ],
+   "p": 3.699838459795867e-39
+  }
+ },
+ "n_main": 3000,
+ "n_sweep": 0
+}

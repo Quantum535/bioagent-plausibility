@@ -43,17 +43,35 @@ def _classify_one(text):
     return {"crossfield": cross, "recall": bool(RECALL.search(text)) or bool(RECALL_CS.search(text)), "rule": bool(RULE.search(text))}
 
 
-def classify(concerns):
+def classify(concerns, chem=False):
     """Classify each concern separately and combine by OR, so a remark about a second record cannot mask the first."""
     out = {"crossfield": False, "recall": False, "rule": False}
     for c in (concerns or []):
         if str(c).strip():
             for k, v in _classify_one(str(c)).items():
                 out[k] = out[k] or v
+            if chem:
+                for k, v in _classify_one_chem(str(c)).items():
+                    out[k] = out[k] or v
     return out
 
 
 CUES = ["crossfield", "recall", "rule"]
+
+# ---------------- chemistry vocabulary (only applied to chemistry target fields)
+CHEM_FIELDS = {"molecular_weight", "heavy_atom_count", "h_bond_donors", "name"}
+_W = r"(molecular[-_ ]weight|mol\.? ?w(eigh)?t|\bmw\b|\bweight\b|\bmass\b|\bda\b|g/mol|dalton)"
+_A = r"(heavy[-_ ]?atoms?|heavy[-_ ]?atom[-_ ]count|atom[_ ]count|non[- ]hydrogen atoms?|\batoms\b)"
+_D = r"(h[-_ ]?bond[-_ ]donors?|hydrogen[- ]bond(ing)? donors?|\bhbd\b|\bdonors?\b)"
+_L = r"(inconsisten|implausib|impossib|incompatib|mismatch|does not (match|fit|correspond|agree)|doesn't (match|fit)|not (consistent|compatible|plausible)|conflict|contradict|implies|would (imply|require|correspond|give|be)|expected|too (low|high|small|large|few|many)|cannot|can't|unrealistic|for a|for its|given (its|the)|at odds)"
+_G = r"[^.;|]{0,120}"
+CH_CROSS = re.compile(rf"({_W}{_G}{_L}{_G}{_A})|({_A}{_G}{_L}{_G}{_W})|({_D}{_G}{_L}{_G}{_A})|({_A}{_G}{_L}{_G}{_D})|(per heavy atom|da per atom|per atom|for a (\d+|[a-z]+)[- ]heavy[- ]atom|more donors than (heavy )?atoms|(reverse|name|second|cross)[- ]?(lookup|look-up|check)[^.;|]{0,80}(no compound|returned no|not found|nothing|failed|different|does not|doesn't|another|maps to|resolves to|cid \d)|(looking up|looked up|lookup)[^.;|]{0,40}by name[^.;|]{0,80}(different|does not|doesn't|returns?|yields?|gives?|maps?|resolves?)|donors? (exceeds?|greater than|larger than) (the )?(number of |total )?(heavy )?atoms)", re.I | re.S)
+CH_RECALL = re.compile(r"\bC[\d₀-₉]{1,3}H[\d₀-₉]{1,3}|\(([A-Z][a-z]?[\d₀-₉]*){2,}\)|which is actually|actually (cid|corresponds|refers|is|has|belongs|a |an |the )|\b(known|actual|true|real|correct|canonical|accepted|published|literature|reference|textbook|documented|standard|pubchem|chemspider)[- ](molecular[- ]weight|mw|mass|formula|structure|value|count|name|heavy)|(according to|from|in) (pubchem|the literature|chemspider|my knowledge)|based on (its|the|my) (structure|formula|knowledge|known|chemical)|(its|the) (chemical )?(structure|formula) (has|contains|implies|indicates|suggests|gives|shows|should|would|is|only)|(should|would|ought to) (be|have|contain) (about|around|approximately|roughly|~|\d|only|no |zero|one|two|three|four|at least|at most|exactly)|expected (value|molecular weight|mw|mass|count|number|heavy[- ]atom|donor|formula|weight|about|around|approximately|roughly|~|\d)|(is|as) (a|an) (known |common |well[- ]known |simple |small |typical )?(drug|compound|molecule|solvent|ester|amine|alcohol|acid|ketone|amide|alkane|alkene|aromatic|steroid|alkaloid|antibiotic|anesthetic|pesticide|herbicide|fungicide|insecticide|dye|sugar|lipid|peptide|vitamin|hormone|salt|benzodiazepine|barbiturate|phenothiazine|lactone|lactam)|\b(ester|ketone|amide|lactam|lactone|ether|hydroxyl|phenol|carboxyl|carboxylic|amine|amino group|imidazole|indole|pyridine|-OH\b|N-?H\b|NH2?\b|O-?H\b)|no (OH|NH|hydroxyl|amine|amide|acidic|N-H|O-H)|(one|two|three|four|single|zero) (hydroxyl|amine|amide|carboxyl|phenolic|N-H|O-H|donors?)|typically|usually|normally|commonly|generally|well[- ]known|i (would )?expect|my (knowledge|understanding)|~\s?\d[\d.,]*\s?(da|g/mol)", re.I | re.S)
+CH_RULE = re.compile(r"cannot be negative|can't be negative|can ?not be (a )?negative|negative (value|number|count|molecular weight|weight|mass|mw|h[- ]?bond)|(must|should|has to|needs to) be (non[- ]negative|positive|a positive|≥ ?0|>= ?0|at least (0|zero|1|one)|zero or (more|greater|positive))|(is|are) (physically|chemically|mathematically) (impossible|meaningless|invalid)|not (physically|chemically) (possible|valid|meaningful)|impossible (value|number|count|weight|figure)|(below|less than|lighter than|smaller than) (the mass of )?(a|one|a single) (hydrogen|proton|atom|carbon|electron)|(lighter|smaller) than (a|any) (single )?(atom|hydrogen|molecule)|no (known |real |possible )?(molecule|compound|organic molecule) (has|can|could|weighs|is)|(larger|heavier|more massive|bigger) than (any|all) (known |real )?(molecule|compound|protein|virus|macromolecule)|exceeds (any|all) (known )?(molecule|compound)|(zero|0|no) heavy atoms|heavy[- ]?atom count (of |= ?|is )?(0|zero)|cannot have (zero|0|no) (heavy )?atoms|(every|any|all) (molecule|compound)s? (must|has|have|contains?) at least (one|1)|not a (valid|real|known|recogni[sz]ed|standard|plausible|genuine|chemical|systematic|legitimate) (compound |chemical |common |drug )?name|(garbled|misspell|malformed|nonsense|fabricated|made[- ]up|invented|fictitious|placeholder|unrecogni[sz]ed|no (such|known) compound|not (a )?(known|real|recognized) (compound|chemical|substance))", re.I | re.S)
+
+
+def _classify_one_chem(text):
+    return {"crossfield": bool(CH_CROSS.search(text)), "recall": bool(CH_RECALL.search(text)), "rule": bool(CH_RULE.search(text))}
 
 
 def wilson(k, n, z=1.96):
@@ -93,9 +111,9 @@ def main():
     OUT = Path(args.out_dir)
     (OUT / "tables").mkdir(parents=True, exist_ok=True)
     main_rows = [score(r) for r in load_runs(args.traces)]
-    sweep_rows = [score(r) for r in load_runs(args.sweep)]
+    sweep_rows = [] if args.sweep == ["none"] else [score(r) for r in load_runs(args.sweep)]
     for r in main_rows + sweep_rows:
-        r.update({f"cue_{k}": v for k, v in classify(r["concerns"]).items()})
+        r.update({f"cue_{k}": v for k, v in classify(r["concerns"], chem=r["target_field"] in CHEM_FIELDS).items()})
     for r in sweep_rows:
         r["group"] = "sweep " + ("consistent" if r["base_condition"].endswith("_consistent") else "inconsistent") if r["base_condition"] != "clean" else "clean"
     models = sort_models({r["model"] for r in main_rows})
@@ -154,7 +172,8 @@ def main():
     df["model"] = pd.Categorical(df["model"], categories=[model_label(m) for m in models])
     ref = next((m for m in models if m.endswith("claude-sonnet-5")), models[0])
     df["model"] = df["model"].cat.reorder_categories([model_label(ref)] + [model_label(m) for m in models if m != ref])
-    fit = smf.logit("propagated ~ C(model) + impossible + verify + C(field)", data=df).fit(disp=0, cov_type="cluster", cov_kwds={"groups": df["task"]})
+    terms = ["C(model)"] + [t for t in ("impossible", "verify") if df[t].nunique() > 1] + ["C(field)"]
+    fit = smf.logit("propagated ~ " + " + ".join(terms), data=df).fit(disp=0, cov_type="cluster", cov_kwds={"groups": df["task"]})
     reg = {}
     for name in fit.params.index:
         ci = fit.conf_int().loc[name]

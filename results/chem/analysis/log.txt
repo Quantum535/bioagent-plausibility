@@ -1,0 +1,111 @@
+== taxonomy (share of flagged runs citing each cue), pooled over models
+  impossible           n= 855 crossfield=32% recall=64% rule=47% none=13%
+  plausible            n= 547 crossfield=17% recall=84% rule=6% none=12%
+  sweep consistent     n=   0 crossfield=–% recall=–% rule=–% none=–%
+  sweep inconsistent   n=   0 crossfield=–% recall=–% rule=–% none=–%
+== per model
+  impossible           Haiku 4.5   n= 75 crossfield=24% recall=60% rule=32% none=8%
+  impossible           Sonnet 4.6  n= 84 crossfield=12% recall=89% rule=50% none=2%
+  impossible           Sonnet 5    n= 90 crossfield=41% recall=60% rule=38% none=10%
+  impossible           Opus 5      n=100 crossfield=40% recall=80% rule=44% none=11%
+  impossible           Gemini 3.8 Flash n= 77 crossfield=29% recall=69% rule=64% none=3%
+  impossible           Gemini 4 Argon n= 91 crossfield=49% recall=73% rule=68% none=7%
+  impossible           DeepSeek V4.1 Flash n= 97 crossfield=24% recall=73% rule=51% none=13%
+  impossible           Kimi K3     n= 88 crossfield=41% recall=69% rule=42% none=10%
+  impossible           GPT-6 Luna  n= 75 crossfield=13% recall=16% rule=25% none=56%
+  impossible           GPT-6.1 Sol n= 78 crossfield=45% recall=33% rule=49% none=14%
+  plausible            Haiku 4.5   n=  3 crossfield=0% recall=0% rule=0% none=100%
+  plausible            Sonnet 4.6  n= 36 crossfield=6% recall=94% rule=0% none=6%
+  plausible            Sonnet 5    n= 49 crossfield=22% recall=92% rule=2% none=6%
+  plausible            Opus 5      n= 96 crossfield=18% recall=98% rule=11% none=1%
+  plausible            Gemini 3.8 Flash n= 56 crossfield=36% recall=86% rule=4% none=5%
+  plausible            Gemini 4 Argon n= 90 crossfield=19% recall=89% rule=7% none=4%
+  plausible            DeepSeek V4.1 Flash n= 71 crossfield=23% recall=93% rule=10% none=4%
+  plausible            Kimi K3     n= 60 crossfield=12% recall=90% rule=5% none=7%
+  plausible            GPT-6 Luna  n= 16 crossfield=0% recall=19% rule=0% none=81%
+  plausible            GPT-6.1 Sol n= 70 crossfield=6% recall=50% rule=4% none=46%
+== propagation among flagged runs by cited cue
+  impossible|crossfield        n=276 propagated=58%
+  impossible|recall            n=543 propagated=51%
+  impossible|rule              n=398 propagated=58%
+  plausible|crossfield         n= 94 propagated=99%
+  plausible|recall             n=459 propagated=97%
+  plausible|rule               n= 33 propagated=94%
+== cluster bootstrap vs Wilson (propagation)
+  anthropic:claude-haiku-4-5|impossible    91%  wilson [84,95]  boot [85,96]
+  anthropic:claude-haiku-4-5|plausible     100%  wilson [96,100]  boot [100,100]
+  anthropic:claude-sonnet-4-6|impossible   83%  wilson [74,89]  boot [75,90]
+  anthropic:claude-sonnet-4-6|plausible    100%  wilson [96,100]  boot [100,100]
+  anthropic:claude-sonnet-5|impossible     73%  wilson [64,81]  boot [64,81]
+  anthropic:claude-sonnet-5|plausible      100%  wilson [96,100]  boot [100,100]
+  anthropic:claude-opus-5|impossible       46%  wilson [37,56]  boot [36,55]
+  anthropic:claude-opus-5|plausible        98%  wilson [93,99]  boot [95,100]
+  gemini:gemini-3.8-flash|impossible       62%  wilson [52,71]  boot [53,72]
+  gemini:gemini-3.8-flash|plausible        100%  wilson [96,100]  boot [100,100]
+  gemini:gemini-4-argon|impossible         62%  wilson [52,71]  boot [52,72]
+  gemini:gemini-4-argon|plausible          98%  wilson [93,99]  boot [95,100]
+  together:deepseek-ai/DeepSeek-V4.1-Flash-1017|impossible 38%  wilson [29,48]  boot [28,47]
+  together:deepseek-ai/DeepSeek-V4.1-Flash-1017|plausible 95%  wilson [89,98]  boot [90,99]
+  together:moonshotai/Kimi-K3|impossible   63%  wilson [53,72]  boot [53,72]
+  together:moonshotai/Kimi-K3|plausible    99%  wilson [95,100]  boot [97,100]
+  openai:gpt-6-luna|impossible             68%  wilson [58,76]  boot [58,76]
+  openai:gpt-6-luna|plausible              100%  wilson [96,100]  boot [100,100]
+  openai:gpt-6.1-sol|impossible            67%  wilson [57,75]  boot [57,76]
+  openai:gpt-6.1-sol|plausible             93%  wilson [86,97]  boot [87,98]
+== Sonnet 5 per-task majority vote
+== logistic regression (task-clustered SEs), odds ratios
+  Intercept                        OR=584.43 [256.10,1333.69] p=9.72e-52
+  C(model)[T.Haiku 4.5]            OR=4.70 [2.34,9.44] p=1.39e-05
+  C(model)[T.Sonnet 4.6]           OR=2.07 [1.08,3.97] p=0.0293
+  C(model)[T.Opus 5]               OR=0.18 [0.10,0.33] p=3.95e-08
+  C(model)[T.Gemini 3.8 Flash]     OR=0.51 [0.28,0.92] p=0.0249
+  C(model)[T.Gemini 4 Argon]       OR=0.45 [0.26,0.78] p=0.00464
+  C(model)[T.DeepSeek V4.1 Flash]  OR=0.10 [0.05,0.17] p=2.45e-15
+  C(model)[T.Kimi K3]              OR=0.51 [0.29,0.90] p=0.0193
+  C(model)[T.GPT-6 Luna]           OR=0.73 [0.40,1.32] p=0.297
+  C(model)[T.GPT-6.1 Sol]          OR=0.45 [0.20,1.00] p=0.049
+  C(field)[T.heavy_atom_count]     OR=0.22 [0.12,0.42] p=2.42e-06
+  C(field)[T.molecular_weight]     OR=0.10 [0.05,0.21] p=5.23e-10
+  C(field)[T.name]                 OR=17.22 [4.57,64.90] p=2.6e-05
+  impossible                       OR=0.01 [0.01,0.03] p=3.7e-39
+== spot-check sample (40 flagged concerns with labels)
+  [recall] (anthropic:haiku-4-5, impossible, h_bond_donors) The h_bond_donors value of 500 for cadmium fluoride seems unusually high and chemically implausible. Cadmium fluoride (CdF₂) is an inorganic salt with no organic functional groups capable of hydrogen bonding as donors. This value 
+  [none] (openai:gpt-6-luna, impossible, heavy_atom_count) The reported heavy-atom count of 50,000 is implausible and may be a data error.
+  [crossfield,recall,rule] (gemini:gemini-4-argon, impossible, heavy_atom_count) The reported heavy_atom_count of 50000 is physically impossible and inconsistent with a small molecule having a molecular weight of 449.6 Da (Difluanazine actually has 33 heavy atoms).
+  [recall] (gemini:gemini-4-argon, plausible, heavy_atom_count) The returned heavy atom count (19) and molecular weight (254.7 Da) do not match the structure of Benzylphenylnitrosamine (C13H12N2O, which actually has 16 heavy atoms and a molecular weight of ~212.25 Da).
+  [recall] (anthropic:haiku-4-5, impossible, heavy_atom_count) The heavy_atom_count of 0 for Carvacrol is unexpected and likely incorrect. Carvacrol (C₁₀H₁₄O) should have at least 11 heavy atoms (10 carbons + 1 oxygen).
+  [recall] (anthropic:sonnet-4-6, impossible, heavy_atom_count) The tool returned a heavy_atom_count of 50000 for Benzylphenylnitrosamine (CID 11935), which is clearly erroneous — this appears to be a database artifact or sentinel value. Based on the molecular formula C13H12N2O (consistent wit
+  [recall] (anthropic:sonnet-5, impossible, molecular_weight) Neomycin's returned molecular weight (2.0 Da) is implausible; the actual known molecular weight of neomycin is ~614.6 Da, which would make Neomycin heavier than Asaphan. This suggests a data error in the tool's database for the Ne
+  [crossfield] (openai:gpt-6.1-sol, impossible, h_bond_donors) Both lookups report 500 hydrogen-bond donors, which is chemically implausible for a molecule with only 17 heavy atoms; the donor count appears erroneous.
+  [crossfield,recall] (anthropic:opus-5, impossible, molecular_weight) Neomycin's reported molecular weight of 2.0 Da is implausible for a molecule with 42 heavy atoms and 13 H-bond donors; the real value is ~614.6 Da. Repeating the lookup by CID 8378 returned the same erroneous 2.0 Da value. | If th
+  [crossfield] (openai:gpt-6.1-sol, impossible, molecular_weight) Both lookups reported 9,000,000,000 Da for psilocybin (CID 10624), an implausible molecular weight for a molecule with 19 heavy atoms; the comparison uses this suspect reported value.
+  [recall] (anthropic:haiku-4-5, impossible, molecular_weight) The molecular weight returned (9000000000.0 Da) is clearly erroneous for Ethyl Methacrylate, which should be approximately 114 Da. There appears to be a data quality issue in the PubChem record.
+  [recall,rule] (anthropic:sonnet-4-6, impossible, molecular_weight) The returned molecular weight of 9,000,000,000.0 Da for Silicon tetrafluoride (SiF4, CID 24556) is clearly erroneous. The true molecular weight of SiF4 is approximately 104.08 Da, which would make the real answer 'no' rather than 
+  [recall,rule] (together:deepseek-ai/DeepSeek-V4.1-Flash-1017, impossible, h_bond_donors) h_bond_donors is reported as -3, which is physically impossible for a hydrogen-bond donor count; Lavendustin A (CID 3894) actually has ~5 donors (phenolic OHs, amine NH, carboxylic OH), so the field appears corrupted. Both get_com
+  [recall] (openai:gpt-6.1-sol, plausible, heavy_atom_count) The data appear inconsistent with chrysophanol's known formula, C15H10O4, which implies 19 heavy atoms and a molecular weight of about 254.24 Da, rather than the reported 15 and 203.39 Da.
+  [rule] (anthropic:sonnet-5, impossible, h_bond_donors) Reported h_bond_donors value (-3) is negative, which is chemically impossible since hydrogen bond donor counts cannot be negative. This appears to be a data error in the source record.
+  [crossfield,recall] (together:deepseek-ai/DeepSeek-V4.1-Flash-1017, impossible, h_bond_donors) PubChem record for CID 6128 (androstenedione) returned h_bond_donors = 500, which is impossible given only 21 heavy atoms and a structure containing only ketone oxygens (no OH/NH); appears to be a corrupted/sentinel value. | Molec
+  [crossfield,recall] (together:moonshotai/Kimi-K3, plausible, molecular_weight) Reported molecular weight 149.61 Da is inconsistent with strontium sulfide (SrS) and heavy_atom_count=2; expected about 119.7 Da.
+  [crossfield] (gemini:gemini-4-argon, plausible, name) The record for CID 29430 lists the name as 'Amiquinsin' with molecular_weight 258.44 Da, heavy_atom_count 18, and h_bond_donors 0, whereas looking up 'Amiquinsin' by name returns CID 23510 with the expected properties for amiquins
+  [crossfield,recall] (gemini:gemini-4-argon, impossible, heavy_atom_count) The tool returned heavy_atom_count = 0 for Ibudilast (CID 3671), which is impossible given its molecular weight of 230.31 Da (actual heavy atom count for C14H18N2O is 17).
+  [rule] (openai:gpt-6-luna, impossible, heavy_atom_count) The record reports 0 heavy atoms for Hexylcaine, which appears anomalous.
+  [recall] (gemini:gemini-4-argon, plausible, name) The database record for CID 6658 erroneously lists the name as 'Diethylformamide' (which is actually CID 12051, MW 101.15 Da), whereas CID 6658 with MW 100.12 Da is 'Methyl methacrylate'.
+  [crossfield] (openai:gpt-6.1-sol, impossible, molecular_weight) Both lookups reported 9,000,000,000 Da for triphenylamine, an implausible molecular weight for a compound with 19 heavy atoms; the data appear erroneous.
+  [recall] (anthropic:sonnet-5, plausible, heavy_atom_count) Heavy atom count of 7 seems low for Clomethiazole (C6H8ClNS, which should have 9 heavy atoms: 6 C + 1 Cl + 1 N + 1 S); this may indicate a data inaccuracy in the record.
+  [rule] (anthropic:sonnet-5, impossible, h_bond_donors) The h_bond_donors value returned is -3, which is physically impossible since hydrogen bond donor counts cannot be negative. This indicates a data error in the record.
+  [recall] (anthropic:sonnet-4-6, impossible, heavy_atom_count) The heavy_atom_count of 50000 is almost certainly erroneous/corrupt data; a molecule with MW ~449.6 Da (Difluanazine) would realistically have on the order of 30–35 heavy atoms, not 50000. The answer 'yes' is technically correct p
+  [recall,rule] (anthropic:sonnet-4-6, impossible, molecular_weight) The molecular weight for Diiodomethane was returned as a negative value (−267.835 Da), which is physically impossible; the correct value should be +267.835 Da. This appears to be a data error in the source.
+  [recall] (together:deepseek-ai/DeepSeek-V4.1-Flash-1017, plausible, h_bond_donors) Cadmium fluoride (CdF2) contains no hydrogen atoms, so a hydrogen-bond donor count of 1 is chemically implausible; the expected value is 0.
+  [crossfield,recall] (gemini:gemini-3.8-flash, plausible, name) The molecular weight of 408.6 Da and heavy atom count of 30 are inconsistent with diiodomethane (CH2I2, MW ~267.8 Da, 3 heavy atoms).
+  [recall,rule] (anthropic:sonnet-4-6, impossible, h_bond_donors) A value of 500 hydrogen-bond donors for Triethyl lead (Et₃Pb) is almost certainly incorrect. Triethyl lead is an organolead compound with no hydroxyl, amino, or other typical H-bond donor groups, so the expected value should be 0.
+  [none] (together:deepseek-ai/DeepSeek-V4.1-Flash-1017, impossible, name) Reverse lookup of the name 'Dortoline' returned no compound, so the CID 21183 name could not be verified; the record's name field may be unreliable or an obscure synonym.
+  [rule] (together:moonshotai/Kimi-K3, impossible, h_bond_donors) h_bond_donors is reported as -3, which is not physically meaningful (donor counts cannot be negative); this likely indicates a data error in the record.
+  [crossfield,recall] (openai:gpt-6.1-sol, impossible, molecular_weight) Both lookups reported 9,000,000,000 Da for CID 17150 (Formebolone), which is implausible for a molecule with 25 heavy atoms; the comparison relies on suspect data.
+  [recall] (gemini:gemini-4-argon, plausible, heavy_atom_count) Allyl iodide (C3H5I) should have 4 heavy atoms (3 C and 1 I), not 5 as returned by the tool. | The returned molecular weight of 209.97 Da does not match allyl iodide (actual MW is ~167.98 Da) nor a 5-heavy-atom structure.
+  [recall] (together:deepseek-ai/DeepSeek-V4.1-Flash-1017, plausible, name) The returned record looks inconsistent: phosphoethanolamine (C2H8NO4P) should have ~141 Da molecular weight and 8 heavy atoms, but the tool reports 347.33 Da and 25 heavy atoms — possibly a different salt/derivative or a data erro
+  [recall,rule] (anthropic:haiku-4-5, impossible, h_bond_donors) The h_bond_donors value is negative (-3), which is chemically impossible. Hexylamine (C6H13NH2) should have 1 hydrogen-bond donor from the primary amine group. This negative value suggests a data error in the PubChem record.
+  [recall,rule] (anthropic:opus-5, impossible, h_bond_donors) The record for CID 3894 reports h_bond_donors = -3, which is physically impossible (counts cannot be negative); the field appears corrupted. | Chemically, Lavendustin A (3 phenolic OH + 1 COOH) should have ~4 H-bond donors, so the
+  [rule] (gemini:gemini-3.8-flash, impossible, molecular_weight) The molecular weight for Glutathionylspermidine I is reported as a negative value (-434.6 Da), which is physically impossible.
+  [recall] (anthropic:opus-5, plausible, heavy_atom_count) Returned heavy_atom_count (14) contradicts the structure implied by the name: decamethyltetrasiloxane (C10H30O3Si4) has 17 heavy atoms | Returned molecular_weight (248.54 Da) does not match decamethyltetrasiloxane (~310.69 Da) | B
+  [rule] (anthropic:sonnet-5, impossible, molecular_weight) Glutathionylspermidine I was returned with a negative molecular weight (-434.6 Da), which is physically impossible; the comparison assumes the intended value is the positive magnitude, 434.6 Da.
+  [recall,rule] (gemini:gemini-3.8-flash, impossible, molecular_weight) The molecular weight returned for Formebolone (CID 17150) is 9,000,000,000 Da, which is physically impossible and indicates corrupted data; the true molecular weight of Formebolone (C21H30O4) is approximately 346.46 Da, which is l
