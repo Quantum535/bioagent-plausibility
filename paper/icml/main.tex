@@ -1,0 +1,49 @@
+\documentclass{article}
+\usepackage[T1]{fontenc}
+\usepackage{microtype}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{amsmath,amssymb}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage[accepted]{icml2026}   % swap for icml2026 (review) before submission; icml2027 when released
+\graphicspath{{../figures/}}
+\newcommand{\ir}[1]{\input{../tables/#1}}
+\newcommand{\todo}[1]{\textcolor{red}{[#1]}}
+
+\icmltitlerunning{Consistency, Not Plausibility}
+
+\begin{document}
+\twocolumn[
+\icmltitle{Consistency, Not Plausibility: Dissociating Detection from Correction\\of Corrupted Tool Records in Scientific LLM Agents}
+\icmlsetsymbol{equal}{*}
+\begin{icmlauthorlist}
+\icmlauthor{George Xu}{hms}
+\end{icmlauthorlist}
+\icmlaffiliation{hms}{Harvard Medical School and Massachusetts General Hospital, Boston, MA, USA}
+\icmlcorrespondingauthor{George Xu}{}
+\icmlkeywords{tool use, agents, knowledge conflicts, scientific agents, evaluation}
+\vskip 0.3in
+]
+\printAffiliationsAndNotice{}
+
+\begin{abstract}
+\input{sections/00_abstract}
+\end{abstract}
+
+\input{sections/01_intro}
+\input{sections/02_related}
+\input{sections/03_design}
+\input{sections/04_results}
+\input{sections/05_discussion}
+\input{sections/06_conclusion}
+
+\bibliography{refs}
+\bibliographystyle{icml2026}
+
+\newpage
+\appendix
+\onecolumn
+\input{sections/appendix}
+\end{document}

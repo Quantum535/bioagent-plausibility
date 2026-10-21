@@ -1,0 +1,1274 @@
+{
+ "a|opus-5|impossible": {
+  "flagged": 1.0,
+  "propagated": 0.32,
+  "ci": [
+   0.2592642960770526,
+   0.38752026605354306
+  ],
+  "n": 200
+ },
+ "a|opus-5|impossible+verify": {
+  "flagged": 1.0,
+  "propagated": 0.045,
+  "ci": [
+   0.023852271724704166,
+   0.08329759366096785
+  ],
+  "n": 200
+ },
+ "a|opus-5|plausible": {
+  "flagged": 0.57,
+  "propagated": 0.75,
+  "ci": [
+   0.6856577652038048,
+   0.8049192318370347
+  ],
+  "n": 200
+ },
+ "a|gemini-4-argon|impossible": {
+  "flagged": 1.0,
+  "propagated": 0.35,
+  "ci": [
+   0.28728715939415395,
+   0.41836664238134236
+  ],
+  "n": 200
+ },
+ "a|gemini-4-argon|impossible+verify": {
+  "flagged": 1.0,
+  "propagated": 0.05,
+  "ci": [
+   0.027382349028644986,
+   0.08957905629784384
+  ],
+  "n": 200
+ },
+ "a|gemini-4-argon|plausible": {
+  "flagged": 0.945,
+  "propagated": 0.735,
+  "ci": [
+   0.6698229773344888,
+   0.7913193998839003
+  ],
+  "n": 200
+ },
+ "a|deepseek-v4.1-flash-1017|impossible": {
+  "flagged": 1.0,
+  "propagated": 0.44,
+  "ci": [
+   0.3729770042058236,
+   0.509284516504375
+  ],
+  "n": 200
+ },
+ "a|deepseek-v4.1-flash-1017|impossible+verify": {
+  "flagged": 1.0,
+  "propagated": 0.105,
+  "ci": [
+   0.0697069624619373,
+   0.15518138221353622
+  ],
+  "n": 200
+ },
+ "a|deepseek-v4.1-flash-1017|plausible": {
+  "flagged": 0.46,
+  "propagated": 0.77,
+  "ci": [
+   0.7069157192180299,
+   0.8229074375860769
+  ],
+  "n": 200
+ },
+ "a|gpt-6.1-sol|impossible": {
+  "flagged": 1.0,
+  "propagated": 0.665,
+  "ci": [
+   0.5970206277343806,
+   0.7267601903125736
+  ],
+  "n": 200
+ },
+ "a|gpt-6.1-sol|impossible+verify": {
+  "flagged": 1.0,
+  "propagated": 0.18,
+  "ci": [
+   0.13294550662534108,
+   0.2391159371623843
+  ],
+  "n": 200
+ },
+ "a|gpt-6.1-sol|plausible": {
+  "flagged": 0.52,
+  "propagated": 0.75,
+  "ci": [
+   0.6856577652038048,
+   0.8049192318370347
+  ],
+  "n": 200
+ },
+ "a|gpt-6-luna|impossible": {
+  "flagged": 0.765,
+  "propagated": 0.73,
+  "ci": [
+   0.664564384587978,
+   0.7867664526895944
+  ],
+  "n": 200
+ },
+ "a|gpt-6-luna|impossible+verify": {
+  "flagged": 0.99,
+  "propagated": 0.13,
+  "ci": [
+   0.09028141365225628,
+   0.18366463072730121
+  ],
+  "n": 200
+ },
+ "a|gpt-6-luna|plausible": {
+  "flagged": 0.17,
+  "propagated": 0.855,
+  "ci": [
+   0.7995121871510563,
+   0.8971071486469359
+  ],
+  "n": 200
+ },
+ "a|kimi-k3|impossible": {
+  "flagged": 0.995,
+  "propagated": 0.745,
+  "ci": [
+   0.6803694869280502,
+   0.8003959701719726
+  ],
+  "n": 200
+ },
+ "a|kimi-k3|impossible+verify": {
+  "flagged": 1.0,
+  "propagated": 0.22,
+  "ci": [
+   0.16816453539463405,
+   0.2823892279196257
+  ],
+  "n": 200
+ },
+ "a|kimi-k3|plausible": {
+  "flagged": 0.29,
+  "propagated": 0.92,
+  "ci": [
+   0.8740095102048769,
+   0.9501598448237337
+  ],
+  "n": 200
+ },
+ "a|sonnet-5|impossible": {
+  "flagged": 1.0,
+  "propagated": 0.755,
+  "ci": [
+   0.6909563161285153,
+   0.809432220853141
+  ],
+  "n": 200
+ },
+ "a|sonnet-5|impossible+verify": {
+  "flagged": 1.0,
+  "propagated": 0.3,
+  "ci": [
+   0.24074644243406385,
+   0.3667919599332645
+  ],
+  "n": 200
+ },
+ "a|sonnet-5|plausible": {
+  "flagged": 0.315,
+  "propagated": 0.925,
+  "ci": [
+   0.8799554020266798,
+   0.9540254929427476
+  ],
+  "n": 200
+ },
+ "a|sonnet-4-6|impossible": {
+  "flagged": 0.995,
+  "propagated": 0.83,
+  "ci": [
+   0.7718399896049648,
+   0.8757216464889435
+  ],
+  "n": 200
+ },
+ "a|sonnet-4-6|impossible+verify": {
+  "flagged": 1.0,
+  "propagated": 0.59,
+  "ci": [
+   0.5207633107255152,
+   0.655844408209187
+  ],
+  "n": 200
+ },
+ "a|sonnet-4-6|plausible": {
+  "flagged": 0.25,
+  "propagated": 0.995,
+  "ci": [
+   0.9722256001302286,
+   0.999116854010634
+  ],
+  "n": 200
+ },
+ "a|gemini-3.8-flash|impossible": {
+  "flagged": 0.975,
+  "propagated": 0.835,
+  "ci": [
+   0.7773410172613647,
+   0.8800321587733603
+  ],
+  "n": 200
+ },
+ "a|gemini-3.8-flash|impossible+verify": {
+  "flagged": 0.98,
+  "propagated": 0.15,
+  "ci": [
+   0.107135265876273,
+   0.20605693826655166
+  ],
+  "n": 200
+ },
+ "a|gemini-3.8-flash|plausible": {
+  "flagged": 0.32,
+  "propagated": 0.775,
+  "ci": [
+   0.7122575346140798,
+   0.8273771621308439
+  ],
+  "n": 200
+ },
+ "a|haiku-4-5|impossible": {
+  "flagged": 0.74,
+  "propagated": 0.93,
+  "ci": [
+   0.8859442178331628,
+   0.9578482170770813
+  ],
+  "n": 200
+ },
+ "a|haiku-4-5|impossible+verify": {
+  "flagged": 0.855,
+  "propagated": 0.84,
+  "ci": [
+   0.7828581380609876,
+   0.8843265779145542
+  ],
+  "n": 200
+ },
+ "a|haiku-4-5|plausible": {
+  "flagged": 0.075,
+  "propagated": 1.0,
+  "ci": [
+   0.9811539940816791,
+   1
+  ],
+  "n": 200
+ },
+ "b|opus-5|impossible": {
+  "flagged": 1.0,
+  "propagated": 0.46,
+  "ci": [
+   0.36560643853331865,
+   0.5573531460647615
+  ],
+  "n": 100
+ },
+ "b|opus-5|plausible": {
+  "flagged": 0.96,
+  "propagated": 0.98,
+  "ci": [
+   0.9299868370580063,
+   0.9944981477650318
+  ],
+  "n": 100
+ },
+ "b|gemini-4-argon|impossible": {
+  "flagged": 0.91,
+  "propagated": 0.62,
+  "ci": [
+   0.5220957382071033,
+   0.7090255079986562
+  ],
+  "n": 100
+ },
+ "b|gemini-4-argon|plausible": {
+  "flagged": 0.9,
+  "propagated": 0.98,
+  "ci": [
+   0.9299868370580063,
+   0.9944981477650318
+  ],
+  "n": 100
+ },
+ "b|deepseek-v4.1-flash-1017|impossible": {
+  "flagged": 0.97,
+  "propagated": 0.38,
+  "ci": [
+   0.2909744920013438,
+   0.47790426179289663
+  ],
+  "n": 100
+ },
+ "b|deepseek-v4.1-flash-1017|plausible": {
+  "flagged": 0.71,
+  "propagated": 0.95,
+  "ci": [
+   0.8882480347279118,
+   0.9784566385436864
+  ],
+  "n": 100
+ },
+ "b|gpt-6.1-sol|impossible": {
+  "flagged": 0.78,
+  "propagated": 0.67,
+  "ci": [
+   0.5730516033971139,
+   0.7543701620610456
+  ],
+  "n": 100
+ },
+ "b|gpt-6.1-sol|plausible": {
+  "flagged": 0.7,
+  "propagated": 0.93,
+  "ci": [
+   0.8625032899347025,
+   0.965681175635936
+  ],
+  "n": 100
+ },
+ "b|gpt-6-luna|impossible": {
+  "flagged": 0.75,
+  "propagated": 0.68,
+  "ci": [
+   0.5833719774632081,
+   0.7633098918454312
+  ],
+  "n": 100
+ },
+ "b|gpt-6-luna|plausible": {
+  "flagged": 0.16,
+  "propagated": 1.0,
+  "ci": [
+   0.9630051925239981,
+   0.9999999999999999
+  ],
+  "n": 100
+ },
+ "b|kimi-k3|impossible": {
+  "flagged": 0.88,
+  "propagated": 0.63,
+  "ci": [
+   0.5322034757513312,
+   0.7181778743049083
+  ],
+  "n": 100
+ },
+ "b|kimi-k3|plausible": {
+  "flagged": 0.6,
+  "propagated": 0.99,
+  "ci": [
+   0.9455124752390653,
+   0.9982326134344526
+  ],
+  "n": 100
+ },
+ "b|sonnet-5|impossible": {
+  "flagged": 0.9,
+  "propagated": 0.73,
+  "ci": [
+   0.6356769977376873,
+   0.8073053908233518
+  ],
+  "n": 100
+ },
+ "b|sonnet-5|plausible": {
+  "flagged": 0.49,
+  "propagated": 1.0,
+  "ci": [
+   0.9630051925239981,
+   0.9999999999999999
+  ],
+  "n": 100
+ },
+ "b|sonnet-4-6|impossible": {
+  "flagged": 0.84,
+  "propagated": 0.83,
+  "ci": [
+   0.7445181876635703,
+   0.8910652394022684
+  ],
+  "n": 100
+ },
+ "b|sonnet-4-6|plausible": {
+  "flagged": 0.36,
+  "propagated": 1.0,
+  "ci": [
+   0.9630051925239981,
+   0.9999999999999999
+  ],
+  "n": 100
+ },
+ "b|gemini-3.8-flash|impossible": {
+  "flagged": 0.77,
+  "propagated": 0.62,
+  "ci": [
+   0.5220957382071033,
+   0.7090255079986562
+  ],
+  "n": 100
+ },
+ "b|gemini-3.8-flash|plausible": {
+  "flagged": 0.56,
+  "propagated": 1.0,
+  "ci": [
+   0.9630051925239981,
+   0.9999999999999999
+  ],
+  "n": 100
+ },
+ "b|haiku-4-5|impossible": {
+  "flagged": 0.75,
+  "propagated": 0.91,
+  "ci": [
+   0.8377362530335634,
+   0.9519280048361151
+  ],
+  "n": 100
+ },
+ "b|haiku-4-5|plausible": {
+  "flagged": 0.03,
+  "propagated": 1.0,
+  "ci": [
+   0.9630051925239981,
+   0.9999999999999999
+  ],
+  "n": 100
+ },
+ "sweep|opus-5|consistent": {
+  "0.9": 1.0,
+  "0.75": 1.0,
+  "0.5": 1.0,
+  "0.25": 1.0,
+  "0.1": 1.0,
+  "0.02": 1.0,
+  "0.005": 1.0
+ },
+ "sweep|gemini-4-argon|consistent": {
+  "0.9": 1.0,
+  "0.75": 1.0,
+  "0.5": 1.0,
+  "0.25": 1.0,
+  "0.1": 0.95,
+  "0.02": 0.95,
+  "0.005": 0.95
+ },
+ "sweep|deepseek-v4.1-flash-1017|consistent": {
+  "0.9": 1.0,
+  "0.75": 1.0,
+  "0.5": 1.0,
+  "0.25": 1.0,
+  "0.1": 1.0,
+  "0.02": 1.0,
+  "0.005": 0.9
+ },
+ "sweep|gpt-6.1-sol|consistent": {
+  "0.9": 1.0,
+  "0.75": 1.0,
+  "0.5": 1.0,
+  "0.25": 1.0,
+  "0.1": 1.0,
+  "0.02": 1.0,
+  "0.005": 1.0
+ },
+ "sweep|gpt-6-luna|consistent": {
+  "0.9": 1.0,
+  "0.75": 1.0,
+  "0.5": 1.0,
+  "0.25": 0.95,
+  "0.1": 1.0,
+  "0.02": 0.9,
+  "0.005": 0.8
+ },
+ "sweep|kimi-k3|consistent": {
+  "0.9": 1.0,
+  "0.75": 1.0,
+  "0.5": 1.0,
+  "0.25": 1.0,
+  "0.1": 1.0,
+  "0.02": 1.0,
+  "0.005": 1.0
+ },
+ "sweep|sonnet-5|consistent": {
+  "0.9": 1.0,
+  "0.75": 1.0,
+  "0.5": 1.0,
+  "0.25": 1.0,
+  "0.1": 1.0,
+  "0.02": 1.0,
+  "0.005": 0.95
+ },
+ "sweep|gemini-3.8-flash|consistent": {
+  "0.9": 1.0,
+  "0.75": 1.0,
+  "0.5": 1.0,
+  "0.25": 1.0,
+  "0.1": 1.0,
+  "0.02": 1.0,
+  "0.005": 1.0
+ },
+ "sweep|haiku-4-5|consistent": {
+  "0.9": 1.0,
+  "0.75": 1.0,
+  "0.5": 1.0,
+  "0.25": 1.0,
+  "0.1": 1.0,
+  "0.02": 1.0,
+  "0.005": 1.0
+ },
+ "sweep|opus-5|inconsistent": {
+  "0.9": 1.0,
+  "0.75": 1.0,
+  "0.5": 1.0,
+  "0.25": 1.0,
+  "0.1": 0.65,
+  "0.02": 0.95,
+  "0.005": 0.55
+ },
+ "sweep|gemini-4-argon|inconsistent": {
+  "0.9": 1.0,
+  "0.75": 1.0,
+  "0.5": 1.0,
+  "0.25": 0.9,
+  "0.1": 0.65,
+  "0.02": 0.7,
+  "0.005": 0.8
+ },
+ "sweep|deepseek-v4.1-flash-1017|inconsistent": {
+  "0.9": 1.0,
+  "0.75": 1.0,
+  "0.5": 1.0,
+  "0.25": 0.95,
+  "0.1": 0.4,
+  "0.02": 0.5,
+  "0.005": 0.35
+ },
+ "sweep|gpt-6.1-sol|inconsistent": {
+  "0.9": 1.0,
+  "0.75": 1.0,
+  "0.5": 1.0,
+  "0.25": 1.0,
+  "0.1": 1.0,
+  "0.02": 1.0,
+  "0.005": 1.0
+ },
+ "sweep|gpt-6-luna|inconsistent": {
+  "0.9": 1.0,
+  "0.75": 1.0,
+  "0.5": 1.0,
+  "0.25": 1.0,
+  "0.1": 0.85,
+  "0.02": 0.9,
+  "0.005": 0.6
+ },
+ "sweep|kimi-k3|inconsistent": {
+  "0.9": 1.0,
+  "0.75": 1.0,
+  "0.5": 1.0,
+  "0.25": 0.95,
+  "0.1": 0.65,
+  "0.02": 0.85,
+  "0.005": 0.5
+ },
+ "sweep|sonnet-5|inconsistent": {
+  "0.9": 1.0,
+  "0.75": 1.0,
+  "0.5": 1.0,
+  "0.25": 1.0,
+  "0.1": 0.8,
+  "0.02": 0.75,
+  "0.005": 0.55
+ },
+ "sweep|gemini-3.8-flash|inconsistent": {
+  "0.9": 1.0,
+  "0.75": 1.0,
+  "0.5": 1.0,
+  "0.25": 1.0,
+  "0.1": 0.75,
+  "0.02": 0.95,
+  "0.005": 0.85
+ },
+ "sweep|haiku-4-5|inconsistent": {
+  "0.9": 0.95,
+  "0.75": 1.0,
+  "0.5": 0.95,
+  "0.25": 1.0,
+  "0.1": 0.9,
+  "0.02": 0.95,
+  "0.005": 0.85
+ },
+ "cue|protein, impossible|opus-5|crossfield": 0.775,
+ "cue|protein, impossible|opus-5|recall": 0.47,
+ "cue|protein, impossible|opus-5|rule": 0.325,
+ "cue|protein, impossible|opus-5|none": 0.065,
+ "cue|protein, impossible|gemini-4-argon|crossfield": 0.76,
+ "cue|protein, impossible|gemini-4-argon|recall": 0.515,
+ "cue|protein, impossible|gemini-4-argon|rule": 0.245,
+ "cue|protein, impossible|gemini-4-argon|none": 0.11,
+ "cue|protein, impossible|deepseek-v4.1-flash-1017|crossfield": 0.675,
+ "cue|protein, impossible|deepseek-v4.1-flash-1017|recall": 0.49,
+ "cue|protein, impossible|deepseek-v4.1-flash-1017|rule": 0.185,
+ "cue|protein, impossible|deepseek-v4.1-flash-1017|none": 0.12,
+ "cue|protein, impossible|gpt-6.1-sol|crossfield": 0.63,
+ "cue|protein, impossible|gpt-6.1-sol|recall": 0.035,
+ "cue|protein, impossible|gpt-6.1-sol|rule": 0.045,
+ "cue|protein, impossible|gpt-6.1-sol|none": 0.33,
+ "cue|protein, impossible|gpt-6-luna|crossfield": 0.38562091503267976,
+ "cue|protein, impossible|gpt-6-luna|recall": 0.1568627450980392,
+ "cue|protein, impossible|gpt-6-luna|rule": 0.0457516339869281,
+ "cue|protein, impossible|gpt-6-luna|none": 0.5359477124183006,
+ "cue|protein, impossible|kimi-k3|crossfield": 0.6633165829145728,
+ "cue|protein, impossible|kimi-k3|recall": 0.5628140703517588,
+ "cue|protein, impossible|kimi-k3|rule": 0.15577889447236182,
+ "cue|protein, impossible|kimi-k3|none": 0.135678391959799,
+ "cue|protein, impossible|sonnet-5|crossfield": 0.78,
+ "cue|protein, impossible|sonnet-5|recall": 0.635,
+ "cue|protein, impossible|sonnet-5|rule": 0.165,
+ "cue|protein, impossible|sonnet-5|none": 0.04,
+ "cue|protein, impossible|sonnet-4-6|crossfield": 0.5778894472361809,
+ "cue|protein, impossible|sonnet-4-6|recall": 0.7487437185929648,
+ "cue|protein, impossible|sonnet-4-6|rule": 0.23618090452261306,
+ "cue|protein, impossible|sonnet-4-6|none": 0.06532663316582915,
+ "cue|protein, impossible|gemini-3.8-flash|crossfield": 0.6051282051282051,
+ "cue|protein, impossible|gemini-3.8-flash|recall": 0.5948717948717949,
+ "cue|protein, impossible|gemini-3.8-flash|rule": 0.2564102564102564,
+ "cue|protein, impossible|gemini-3.8-flash|none": 0.11282051282051282,
+ "cue|protein, impossible|haiku-4-5|crossfield": 0.34459459459459457,
+ "cue|protein, impossible|haiku-4-5|recall": 0.5135135135135135,
+ "cue|protein, impossible|haiku-4-5|rule": 0.14864864864864866,
+ "cue|protein, impossible|haiku-4-5|none": 0.31756756756756754,
+ "cue|protein, plausible|opus-5|crossfield": 0.5263157894736842,
+ "cue|protein, plausible|opus-5|recall": 0.39473684210526316,
+ "cue|protein, plausible|opus-5|rule": 0.0,
+ "cue|protein, plausible|opus-5|none": 0.22807017543859648,
+ "cue|protein, plausible|gemini-4-argon|crossfield": 0.21693121693121692,
+ "cue|protein, plausible|gemini-4-argon|recall": 0.6402116402116402,
+ "cue|protein, plausible|gemini-4-argon|rule": 0.0,
+ "cue|protein, plausible|gemini-4-argon|none": 0.2275132275132275,
+ "cue|protein, plausible|deepseek-v4.1-flash-1017|crossfield": 0.44565217391304346,
+ "cue|protein, plausible|deepseek-v4.1-flash-1017|recall": 0.391304347826087,
+ "cue|protein, plausible|deepseek-v4.1-flash-1017|rule": 0.0,
+ "cue|protein, plausible|deepseek-v4.1-flash-1017|none": 0.22826086956521738,
+ "cue|protein, plausible|gpt-6.1-sol|crossfield": 0.36538461538461536,
+ "cue|protein, plausible|gpt-6.1-sol|recall": 0.3557692307692308,
+ "cue|protein, plausible|gpt-6.1-sol|rule": 0.0,
+ "cue|protein, plausible|gpt-6.1-sol|none": 0.28846153846153844,
+ "cue|protein, plausible|gpt-6-luna|crossfield": 0.7647058823529411,
+ "cue|protein, plausible|gpt-6-luna|recall": 0.0,
+ "cue|protein, plausible|gpt-6-luna|rule": 0.0,
+ "cue|protein, plausible|gpt-6-luna|none": 0.23529411764705882,
+ "cue|protein, plausible|kimi-k3|crossfield": 0.7241379310344828,
+ "cue|protein, plausible|kimi-k3|recall": 0.5344827586206896,
+ "cue|protein, plausible|kimi-k3|rule": 0.0,
+ "cue|protein, plausible|kimi-k3|none": 0.15517241379310345,
+ "cue|protein, plausible|sonnet-5|crossfield": 0.6507936507936508,
+ "cue|protein, plausible|sonnet-5|recall": 0.6349206349206349,
+ "cue|protein, plausible|sonnet-5|rule": 0.0,
+ "cue|protein, plausible|sonnet-5|none": 0.09523809523809523,
+ "cue|protein, plausible|sonnet-4-6|crossfield": 0.88,
+ "cue|protein, plausible|sonnet-4-6|recall": 0.86,
+ "cue|protein, plausible|sonnet-4-6|rule": 0.0,
+ "cue|protein, plausible|sonnet-4-6|none": 0.0,
+ "cue|protein, plausible|gemini-3.8-flash|crossfield": 0.65625,
+ "cue|protein, plausible|gemini-3.8-flash|recall": 0.28125,
+ "cue|protein, plausible|gemini-3.8-flash|rule": 0.0,
+ "cue|protein, plausible|gemini-3.8-flash|none": 0.125,
+ "cue|protein, plausible|haiku-4-5|crossfield": 0.6,
+ "cue|protein, plausible|haiku-4-5|recall": 0.5333333333333333,
+ "cue|protein, plausible|haiku-4-5|rule": 0.0,
+ "cue|protein, plausible|haiku-4-5|none": 0.2,
+ "cue|sweep, consistent|opus-5|crossfield": 0.06956521739130435,
+ "cue|sweep, consistent|opus-5|recall": 0.9043478260869565,
+ "cue|sweep, consistent|opus-5|rule": 0.008695652173913044,
+ "cue|sweep, consistent|opus-5|none": 0.0782608695652174,
+ "cue|sweep, consistent|gemini-4-argon|crossfield": 0.0661764705882353,
+ "cue|sweep, consistent|gemini-4-argon|recall": 1.0,
+ "cue|sweep, consistent|gemini-4-argon|rule": 0.0,
+ "cue|sweep, consistent|gemini-4-argon|none": 0.0,
+ "cue|sweep, consistent|deepseek-v4.1-flash-1017|crossfield": 0.08080808080808081,
+ "cue|sweep, consistent|deepseek-v4.1-flash-1017|recall": 0.6565656565656566,
+ "cue|sweep, consistent|deepseek-v4.1-flash-1017|rule": 0.010101010101010102,
+ "cue|sweep, consistent|deepseek-v4.1-flash-1017|none": 0.32323232323232326,
+ "cue|sweep, consistent|gpt-6.1-sol|crossfield": 0.0,
+ "cue|sweep, consistent|gpt-6.1-sol|recall": 0.034482758620689655,
+ "cue|sweep, consistent|gpt-6.1-sol|rule": 0.0,
+ "cue|sweep, consistent|gpt-6.1-sol|none": 0.9655172413793104,
+ "cue|sweep, consistent|gpt-6-luna|crossfield": 0.0,
+ "cue|sweep, consistent|gpt-6-luna|recall": 0.0,
+ "cue|sweep, consistent|gpt-6-luna|rule": 0.029850746268656716,
+ "cue|sweep, consistent|gpt-6-luna|none": 0.9701492537313433,
+ "cue|sweep, consistent|kimi-k3|crossfield": 0.06896551724137931,
+ "cue|sweep, consistent|kimi-k3|recall": 0.6206896551724138,
+ "cue|sweep, consistent|kimi-k3|rule": 0.011494252873563218,
+ "cue|sweep, consistent|kimi-k3|none": 0.3218390804597701,
+ "cue|sweep, consistent|sonnet-5|crossfield": 0.029411764705882353,
+ "cue|sweep, consistent|sonnet-5|recall": 0.696078431372549,
+ "cue|sweep, consistent|sonnet-5|rule": 0.11764705882352941,
+ "cue|sweep, consistent|sonnet-5|none": 0.2647058823529412,
+ "cue|sweep, consistent|sonnet-4-6|crossfield": NaN,
+ "cue|sweep, consistent|sonnet-4-6|recall": NaN,
+ "cue|sweep, consistent|sonnet-4-6|rule": NaN,
+ "cue|sweep, consistent|sonnet-4-6|none": NaN,
+ "cue|sweep, consistent|gemini-3.8-flash|crossfield": 0.03296703296703297,
+ "cue|sweep, consistent|gemini-3.8-flash|recall": 0.8461538461538461,
+ "cue|sweep, consistent|gemini-3.8-flash|rule": 0.01098901098901099,
+ "cue|sweep, consistent|gemini-3.8-flash|none": 0.13186813186813187,
+ "cue|sweep, consistent|haiku-4-5|crossfield": 0.05084745762711865,
+ "cue|sweep, consistent|haiku-4-5|recall": 0.22033898305084745,
+ "cue|sweep, consistent|haiku-4-5|rule": 0.1864406779661017,
+ "cue|sweep, consistent|haiku-4-5|none": 0.6440677966101694,
+ "cue|sweep, inconsistent|opus-5|crossfield": 0.9915966386554622,
+ "cue|sweep, inconsistent|opus-5|recall": 0.5630252100840336,
+ "cue|sweep, inconsistent|opus-5|rule": 0.05042016806722689,
+ "cue|sweep, inconsistent|opus-5|none": 0.008403361344537815,
+ "cue|sweep, inconsistent|gemini-4-argon|crossfield": 0.8357142857142857,
+ "cue|sweep, inconsistent|gemini-4-argon|recall": 0.85,
+ "cue|sweep, inconsistent|gemini-4-argon|rule": 0.2,
+ "cue|sweep, inconsistent|gemini-4-argon|none": 0.014285714285714285,
+ "cue|sweep, inconsistent|deepseek-v4.1-flash-1017|crossfield": 0.8952380952380953,
+ "cue|sweep, inconsistent|deepseek-v4.1-flash-1017|recall": 0.6666666666666666,
+ "cue|sweep, inconsistent|deepseek-v4.1-flash-1017|rule": 0.05714285714285714,
+ "cue|sweep, inconsistent|deepseek-v4.1-flash-1017|none": 0.0380952380952381,
+ "cue|sweep, inconsistent|gpt-6.1-sol|crossfield": 0.8403361344537815,
+ "cue|sweep, inconsistent|gpt-6.1-sol|recall": 0.5126050420168067,
+ "cue|sweep, inconsistent|gpt-6.1-sol|rule": 0.01680672268907563,
+ "cue|sweep, inconsistent|gpt-6.1-sol|none": 0.13445378151260504,
+ "cue|sweep, inconsistent|gpt-6-luna|crossfield": 0.922077922077922,
+ "cue|sweep, inconsistent|gpt-6-luna|recall": 0.4935064935064935,
+ "cue|sweep, inconsistent|gpt-6-luna|rule": 0.0,
+ "cue|sweep, inconsistent|gpt-6-luna|none": 0.06493506493506493,
+ "cue|sweep, inconsistent|kimi-k3|crossfield": 0.9711538461538461,
+ "cue|sweep, inconsistent|kimi-k3|recall": 0.5961538461538461,
+ "cue|sweep, inconsistent|kimi-k3|rule": 0.019230769230769232,
+ "cue|sweep, inconsistent|kimi-k3|none": 0.009615384615384616,
+ "cue|sweep, inconsistent|sonnet-5|crossfield": 0.8018867924528302,
+ "cue|sweep, inconsistent|sonnet-5|recall": 0.39622641509433965,
+ "cue|sweep, inconsistent|sonnet-5|rule": 0.009433962264150943,
+ "cue|sweep, inconsistent|sonnet-5|none": 0.16037735849056603,
+ "cue|sweep, inconsistent|sonnet-4-6|crossfield": NaN,
+ "cue|sweep, inconsistent|sonnet-4-6|recall": NaN,
+ "cue|sweep, inconsistent|sonnet-4-6|rule": NaN,
+ "cue|sweep, inconsistent|sonnet-4-6|none": NaN,
+ "cue|sweep, inconsistent|gemini-3.8-flash|crossfield": 0.7876106194690266,
+ "cue|sweep, inconsistent|gemini-3.8-flash|recall": 0.7345132743362832,
+ "cue|sweep, inconsistent|gemini-3.8-flash|rule": 0.1504424778761062,
+ "cue|sweep, inconsistent|gemini-3.8-flash|none": 0.035398230088495575,
+ "cue|sweep, inconsistent|haiku-4-5|crossfield": 0.5737704918032787,
+ "cue|sweep, inconsistent|haiku-4-5|recall": 0.47540983606557374,
+ "cue|sweep, inconsistent|haiku-4-5|rule": 0.06557377049180328,
+ "cue|sweep, inconsistent|haiku-4-5|none": 0.29508196721311475,
+ "cue|chemistry, impossible|opus-5|crossfield": 0.4,
+ "cue|chemistry, impossible|opus-5|recall": 0.8,
+ "cue|chemistry, impossible|opus-5|rule": 0.44,
+ "cue|chemistry, impossible|opus-5|none": 0.11,
+ "cue|chemistry, impossible|gemini-4-argon|crossfield": 0.4945054945054945,
+ "cue|chemistry, impossible|gemini-4-argon|recall": 0.7252747252747253,
+ "cue|chemistry, impossible|gemini-4-argon|rule": 0.6813186813186813,
+ "cue|chemistry, impossible|gemini-4-argon|none": 0.06593406593406594,
+ "cue|chemistry, impossible|deepseek-v4.1-flash-1017|crossfield": 0.23711340206185566,
+ "cue|chemistry, impossible|deepseek-v4.1-flash-1017|recall": 0.7319587628865979,
+ "cue|chemistry, impossible|deepseek-v4.1-flash-1017|rule": 0.5051546391752577,
+ "cue|chemistry, impossible|deepseek-v4.1-flash-1017|none": 0.13402061855670103,
+ "cue|chemistry, impossible|gpt-6.1-sol|crossfield": 0.44871794871794873,
+ "cue|chemistry, impossible|gpt-6.1-sol|recall": 0.3333333333333333,
+ "cue|chemistry, impossible|gpt-6.1-sol|rule": 0.48717948717948717,
+ "cue|chemistry, impossible|gpt-6.1-sol|none": 0.14102564102564102,
+ "cue|chemistry, impossible|gpt-6-luna|crossfield": 0.13333333333333333,
+ "cue|chemistry, impossible|gpt-6-luna|recall": 0.16,
+ "cue|chemistry, impossible|gpt-6-luna|rule": 0.25333333333333335,
+ "cue|chemistry, impossible|gpt-6-luna|none": 0.56,
+ "cue|chemistry, impossible|kimi-k3|crossfield": 0.4090909090909091,
+ "cue|chemistry, impossible|kimi-k3|recall": 0.6931818181818182,
+ "cue|chemistry, impossible|kimi-k3|rule": 0.42045454545454547,
+ "cue|chemistry, impossible|kimi-k3|none": 0.10227272727272728,
+ "cue|chemistry, impossible|sonnet-5|crossfield": 0.4111111111111111,
+ "cue|chemistry, impossible|sonnet-5|recall": 0.6,
+ "cue|chemistry, impossible|sonnet-5|rule": 0.37777777777777777,
+ "cue|chemistry, impossible|sonnet-5|none": 0.1,
+ "cue|chemistry, impossible|sonnet-4-6|crossfield": 0.11904761904761904,
+ "cue|chemistry, impossible|sonnet-4-6|recall": 0.8928571428571429,
+ "cue|chemistry, impossible|sonnet-4-6|rule": 0.5,
+ "cue|chemistry, impossible|sonnet-4-6|none": 0.023809523809523808,
+ "cue|chemistry, impossible|gemini-3.8-flash|crossfield": 0.2857142857142857,
+ "cue|chemistry, impossible|gemini-3.8-flash|recall": 0.6883116883116883,
+ "cue|chemistry, impossible|gemini-3.8-flash|rule": 0.6363636363636364,
+ "cue|chemistry, impossible|gemini-3.8-flash|none": 0.025974025974025976,
+ "cue|chemistry, impossible|haiku-4-5|crossfield": 0.24,
+ "cue|chemistry, impossible|haiku-4-5|recall": 0.6,
+ "cue|chemistry, impossible|haiku-4-5|rule": 0.32,
+ "cue|chemistry, impossible|haiku-4-5|none": 0.08,
+ "cue|chemistry, plausible|opus-5|crossfield": 0.17708333333333334,
+ "cue|chemistry, plausible|opus-5|recall": 0.9791666666666666,
+ "cue|chemistry, plausible|opus-5|rule": 0.11458333333333333,
+ "cue|chemistry, plausible|opus-5|none": 0.010416666666666666,
+ "cue|chemistry, plausible|gemini-4-argon|crossfield": 0.18888888888888888,
+ "cue|chemistry, plausible|gemini-4-argon|recall": 0.8888888888888888,
+ "cue|chemistry, plausible|gemini-4-argon|rule": 0.06666666666666667,
+ "cue|chemistry, plausible|gemini-4-argon|none": 0.044444444444444446,
+ "cue|chemistry, plausible|deepseek-v4.1-flash-1017|crossfield": 0.22535211267605634,
+ "cue|chemistry, plausible|deepseek-v4.1-flash-1017|recall": 0.9295774647887324,
+ "cue|chemistry, plausible|deepseek-v4.1-flash-1017|rule": 0.09859154929577464,
+ "cue|chemistry, plausible|deepseek-v4.1-flash-1017|none": 0.04225352112676056,
+ "cue|chemistry, plausible|gpt-6.1-sol|crossfield": 0.05714285714285714,
+ "cue|chemistry, plausible|gpt-6.1-sol|recall": 0.5,
+ "cue|chemistry, plausible|gpt-6.1-sol|rule": 0.04285714285714286,
+ "cue|chemistry, plausible|gpt-6.1-sol|none": 0.45714285714285713,
+ "cue|chemistry, plausible|gpt-6-luna|crossfield": 0.0,
+ "cue|chemistry, plausible|gpt-6-luna|recall": 0.1875,
+ "cue|chemistry, plausible|gpt-6-luna|rule": 0.0,
+ "cue|chemistry, plausible|gpt-6-luna|none": 0.8125,
+ "cue|chemistry, plausible|kimi-k3|crossfield": 0.11666666666666667,
+ "cue|chemistry, plausible|kimi-k3|recall": 0.9,
+ "cue|chemistry, plausible|kimi-k3|rule": 0.05,
+ "cue|chemistry, plausible|kimi-k3|none": 0.06666666666666667,
+ "cue|chemistry, plausible|sonnet-5|crossfield": 0.22448979591836735,
+ "cue|chemistry, plausible|sonnet-5|recall": 0.9183673469387755,
+ "cue|chemistry, plausible|sonnet-5|rule": 0.02040816326530612,
+ "cue|chemistry, plausible|sonnet-5|none": 0.061224489795918366,
+ "cue|chemistry, plausible|sonnet-4-6|crossfield": 0.05555555555555555,
+ "cue|chemistry, plausible|sonnet-4-6|recall": 0.9444444444444444,
+ "cue|chemistry, plausible|sonnet-4-6|rule": 0.0,
+ "cue|chemistry, plausible|sonnet-4-6|none": 0.05555555555555555,
+ "cue|chemistry, plausible|gemini-3.8-flash|crossfield": 0.35714285714285715,
+ "cue|chemistry, plausible|gemini-3.8-flash|recall": 0.8571428571428571,
+ "cue|chemistry, plausible|gemini-3.8-flash|rule": 0.03571428571428571,
+ "cue|chemistry, plausible|gemini-3.8-flash|none": 0.05357142857142857,
+ "cue|chemistry, plausible|haiku-4-5|crossfield": 0.0,
+ "cue|chemistry, plausible|haiku-4-5|recall": 0.0,
+ "cue|chemistry, plausible|haiku-4-5|rule": 0.0,
+ "cue|chemistry, plausible|haiku-4-5|none": 1.0,
+ "redundancy|proteins, impossible|opus-5|length": {
+  "summary": 0.24,
+  "full": 0.0,
+  "n_summary": 25,
+  "n_full": 25
+ },
+ "redundancy|proteins, impossible|opus-5|mass": {
+  "summary": 0.08,
+  "full": 0.0,
+  "n_summary": 25,
+  "n_full": 25
+ },
+ "redundancy|proteins, impossible|opus-5|organism": {
+  "summary": 1.0,
+  "full": 0.0,
+  "n_summary": 25,
+  "n_full": 25
+ },
+ "redundancy|proteins, impossible|opus-5|gene_symbol": {
+  "summary": 0.0,
+  "full": 0.04,
+  "n_summary": 25,
+  "n_full": 25
+ },
+ "redundancy|proteins, impossible|gemini-4-argon|length": {
+  "summary": 0.52,
+  "full": 0.0,
+  "n_summary": 25,
+  "n_full": 25
+ },
+ "redundancy|proteins, impossible|gemini-4-argon|mass": {
+  "summary": 0.0,
+  "full": 0.0,
+  "n_summary": 25,
+  "n_full": 25
+ },
+ "redundancy|proteins, impossible|gemini-4-argon|organism": {
+  "summary": 0.92,
+  "full": 0.0,
+  "n_summary": 25,
+  "n_full": 25
+ },
+ "redundancy|proteins, impossible|gemini-4-argon|gene_symbol": {
+  "summary": 0.04,
+  "full": 0.0,
+  "n_summary": 25,
+  "n_full": 25
+ },
+ "redundancy|proteins, impossible|deepseek-v4.1-flash-1017|length": {
+  "summary": 0.44,
+  "full": 0.0,
+  "n_summary": 25,
+  "n_full": 25
+ },
+ "redundancy|proteins, impossible|deepseek-v4.1-flash-1017|mass": {
+  "summary": 0.04,
+  "full": 0.0,
+  "n_summary": 25,
+  "n_full": 25
+ },
+ "redundancy|proteins, impossible|deepseek-v4.1-flash-1017|organism": {
+  "summary": 0.84,
+  "full": 0.0,
+  "n_summary": 25,
+  "n_full": 25
+ },
+ "redundancy|proteins, impossible|deepseek-v4.1-flash-1017|gene_symbol": {
+  "summary": 0.4,
+  "full": 0.44,
+  "n_summary": 25,
+  "n_full": 25
+ },
+ "redundancy|proteins, plausible|opus-5|length": {
+  "summary": 1.0,
+  "full": 0.12,
+  "n_summary": 25,
+  "n_full": 25
+ },
+ "redundancy|proteins, plausible|opus-5|mass": {
+  "summary": 1.0,
+  "full": 0.24,
+  "n_summary": 25,
+  "n_full": 25
+ },
+ "redundancy|proteins, plausible|opus-5|organism": {
+  "summary": 1.0,
+  "full": 0.0,
+  "n_summary": 25,
+  "n_full": 25
+ },
+ "redundancy|proteins, plausible|opus-5|gene_symbol": {
+  "summary": 0.0,
+  "full": 0.0,
+  "n_summary": 25,
+  "n_full": 25
+ },
+ "redundancy|proteins, plausible|gemini-4-argon|length": {
+  "summary": 1.0,
+  "full": 0.08,
+  "n_summary": 25,
+  "n_full": 25
+ },
+ "redundancy|proteins, plausible|gemini-4-argon|mass": {
+  "summary": 1.0,
+  "full": 0.2,
+  "n_summary": 25,
+  "n_full": 25
+ },
+ "redundancy|proteins, plausible|gemini-4-argon|organism": {
+  "summary": 0.92,
+  "full": 0.0,
+  "n_summary": 25,
+  "n_full": 25
+ },
+ "redundancy|proteins, plausible|gemini-4-argon|gene_symbol": {
+  "summary": 0.04,
+  "full": 0.0,
+  "n_summary": 25,
+  "n_full": 25
+ },
+ "redundancy|proteins, plausible|deepseek-v4.1-flash-1017|length": {
+  "summary": 1.0,
+  "full": 1.0,
+  "n_summary": 25,
+  "n_full": 25
+ },
+ "redundancy|proteins, plausible|deepseek-v4.1-flash-1017|mass": {
+  "summary": 1.0,
+  "full": 1.0,
+  "n_summary": 25,
+  "n_full": 25
+ },
+ "redundancy|proteins, plausible|deepseek-v4.1-flash-1017|organism": {
+  "summary": 1.0,
+  "full": 0.0,
+  "n_summary": 25,
+  "n_full": 25
+ },
+ "redundancy|proteins, plausible|deepseek-v4.1-flash-1017|gene_symbol": {
+  "summary": 0.12,
+  "full": 0.16,
+  "n_summary": 25,
+  "n_full": 25
+ },
+ "redundancy|molecules, impossible|gemini-4-argon|molecular_weight": {
+  "summary": 0.12,
+  "full": 0.0,
+  "n_summary": 25,
+  "n_full": 25
+ },
+ "redundancy|molecules, impossible|gemini-4-argon|heavy_atom_count": {
+  "summary": 0.44,
+  "full": 0.0,
+  "n_summary": 25,
+  "n_full": 25
+ },
+ "redundancy|molecules, impossible|gemini-4-argon|h_bond_donors": {
+  "summary": 0.96,
+  "full": 0.0,
+  "n_summary": 25,
+  "n_full": 25
+ },
+ "redundancy|molecules, impossible|gemini-4-argon|name": {
+  "summary": 0.96,
+  "full": 0.64,
+  "n_summary": 25,
+  "n_full": 25
+ },
+ "redundancy|molecules, impossible|deepseek-v4.1-flash-1017|molecular_weight": {
+  "summary": 0.04,
+  "full": 0.0,
+  "n_summary": 25,
+  "n_full": 25
+ },
+ "redundancy|molecules, impossible|deepseek-v4.1-flash-1017|heavy_atom_count": {
+  "summary": 0.08,
+  "full": 0.0,
+  "n_summary": 25,
+  "n_full": 25
+ },
+ "redundancy|molecules, impossible|deepseek-v4.1-flash-1017|h_bond_donors": {
+  "summary": 0.4,
+  "full": 0.0,
+  "n_summary": 25,
+  "n_full": 25
+ },
+ "redundancy|molecules, impossible|deepseek-v4.1-flash-1017|name": {
+  "summary": 1.0,
+  "full": 0.8,
+  "n_summary": 25,
+  "n_full": 25
+ },
+ "redundancy|molecules, plausible|gemini-4-argon|molecular_weight": {
+  "summary": 1.0,
+  "full": 0.44,
+  "n_summary": 25,
+  "n_full": 25
+ },
+ "redundancy|molecules, plausible|gemini-4-argon|heavy_atom_count": {
+  "summary": 1.0,
+  "full": 0.4,
+  "n_summary": 25,
+  "n_full": 25
+ },
+ "redundancy|molecules, plausible|gemini-4-argon|h_bond_donors": {
+  "summary": 1.0,
+  "full": 0.44,
+  "n_summary": 25,
+  "n_full": 25
+ },
+ "redundancy|molecules, plausible|gemini-4-argon|name": {
+  "summary": 0.92,
+  "full": 0.6,
+  "n_summary": 25,
+  "n_full": 25
+ },
+ "redundancy|molecules, plausible|deepseek-v4.1-flash-1017|molecular_weight": {
+  "summary": 0.92,
+  "full": 0.44,
+  "n_summary": 25,
+  "n_full": 25
+ },
+ "redundancy|molecules, plausible|deepseek-v4.1-flash-1017|heavy_atom_count": {
+  "summary": 0.96,
+  "full": 0.44,
+  "n_summary": 25,
+  "n_full": 25
+ },
+ "redundancy|molecules, plausible|deepseek-v4.1-flash-1017|h_bond_donors": {
+  "summary": 0.92,
+  "full": 0.6,
+  "n_summary": 25,
+  "n_full": 25
+ },
+ "redundancy|molecules, plausible|deepseek-v4.1-flash-1017|name": {
+  "summary": 1.0,
+  "full": 0.56,
+  "n_summary": 25,
+  "n_full": 25
+ },
+ "verify|opus-5|impossible": {
+  "baseline": 0.32,
+  "verify": 0.045,
+  "flag_baseline": 1.0,
+  "flag_verify": 1.0
+ },
+ "verify|gemini-4-argon|impossible": {
+  "baseline": 0.35,
+  "verify": 0.05,
+  "flag_baseline": 1.0,
+  "flag_verify": 1.0
+ },
+ "verify|deepseek-v4.1-flash-1017|impossible": {
+  "baseline": 0.44,
+  "verify": 0.105,
+  "flag_baseline": 1.0,
+  "flag_verify": 1.0
+ },
+ "verify|gpt-6.1-sol|impossible": {
+  "baseline": 0.665,
+  "verify": 0.18,
+  "flag_baseline": 1.0,
+  "flag_verify": 1.0
+ },
+ "verify|gpt-6-luna|impossible": {
+  "baseline": 0.73,
+  "verify": 0.13,
+  "flag_baseline": 0.765,
+  "flag_verify": 0.99
+ },
+ "verify|kimi-k3|impossible": {
+  "baseline": 0.745,
+  "verify": 0.22,
+  "flag_baseline": 0.995,
+  "flag_verify": 1.0
+ },
+ "verify|sonnet-5|impossible": {
+  "baseline": 0.755,
+  "verify": 0.3,
+  "flag_baseline": 1.0,
+  "flag_verify": 1.0
+ },
+ "verify|sonnet-4-6|impossible": {
+  "baseline": 0.83,
+  "verify": 0.59,
+  "flag_baseline": 0.995,
+  "flag_verify": 1.0
+ },
+ "verify|gemini-3.8-flash|impossible": {
+  "baseline": 0.835,
+  "verify": 0.15,
+  "flag_baseline": 0.975,
+  "flag_verify": 0.98
+ },
+ "verify|haiku-4-5|impossible": {
+  "baseline": 0.93,
+  "verify": 0.84,
+  "flag_baseline": 0.74,
+  "flag_verify": 0.855
+ },
+ "verify|opus-5|plausible": {
+  "baseline": 0.75,
+  "verify": 0.72,
+  "flag_baseline": 0.57,
+  "flag_verify": 0.875
+ },
+ "verify|gemini-4-argon|plausible": {
+  "baseline": 0.735,
+  "verify": 0.5,
+  "flag_baseline": 0.945,
+  "flag_verify": 0.985
+ },
+ "verify|deepseek-v4.1-flash-1017|plausible": {
+  "baseline": 0.77,
+  "verify": 0.72,
+  "flag_baseline": 0.46,
+  "flag_verify": 0.73
+ },
+ "verify|gpt-6.1-sol|plausible": {
+  "baseline": 0.75,
+  "verify": 0.46,
+  "flag_baseline": 0.52,
+  "flag_verify": 0.965
+ },
+ "verify|gpt-6-luna|plausible": {
+  "baseline": 0.855,
+  "verify": 0.635,
+  "flag_baseline": 0.17,
+  "flag_verify": 0.51
+ },
+ "verify|kimi-k3|plausible": {
+  "baseline": 0.92,
+  "verify": 0.74,
+  "flag_baseline": 0.29,
+  "flag_verify": 0.655
+ },
+ "verify|sonnet-5|plausible": {
+  "baseline": 0.925,
+  "verify": 0.795,
+  "flag_baseline": 0.315,
+  "flag_verify": 0.505
+ },
+ "verify|sonnet-4-6|plausible": {
+  "baseline": 0.995,
+  "verify": 0.865,
+  "flag_baseline": 0.25,
+  "flag_verify": 0.415
+ },
+ "verify|gemini-3.8-flash|plausible": {
+  "baseline": 0.775,
+  "verify": 0.73,
+  "flag_baseline": 0.32,
+  "flag_verify": 0.585
+ },
+ "verify|haiku-4-5|plausible": {
+  "baseline": 1.0,
+  "verify": 0.995,
+  "flag_baseline": 0.075,
+  "flag_verify": 0.17
+ },
+ "taxonomy|protein, impossible": {
+  "n": 1894,
+  "crossfield": 0.633051742344245,
+  "recall": 0.4783526927138332,
+  "rule": 0.18479408658922913,
+  "none": 0.17106652587117213,
+  "prop_crossfield": 0.7047539616346956,
+  "prop_recall": 0.7075055187637969,
+  "prop_rule": 0.36
+ },
+ "taxonomy|protein, plausible": {
+  "n": 783,
+  "crossfield": 0.4904214559386973,
+  "recall": 0.4840357598978289,
+  "rule": 0.0,
+  "none": 0.1966794380587484,
+  "prop_crossfield": 0.4557291666666667,
+  "prop_recall": 0.9472295514511874,
+  "prop_rule": NaN
+ },
+ "taxonomy|sweep, consistent": {
+  "n": 843,
+  "crossfield": 0.04744958481613286,
+  "recall": 0.6204033214709371,
+  "rule": 0.03440094899169632,
+  "none": 0.3499406880189798,
+  "prop_crossfield": 1.0,
+  "prop_recall": 0.9904397705544933,
+  "prop_rule": 1.0
+ },
+ "taxonomy|sweep, inconsistent": {
+  "n": 944,
+  "crossfield": 0.8580508474576272,
+  "recall": 0.6048728813559322,
+  "rule": 0.06991525423728813,
+  "none": 0.07203389830508475,
+  "prop_crossfield": 0.8592592592592593,
+  "prop_recall": 0.8371278458844134,
+  "prop_rule": 0.7272727272727273
+ },
+ "taxonomy|chemistry, impossible": {
+  "n": 855,
+  "crossfield": 0.32280701754385965,
+  "recall": 0.6350877192982456,
+  "rule": 0.4654970760233918,
+  "none": 0.12982456140350876,
+  "prop_crossfield": 0.5760869565217391,
+  "prop_recall": 0.5138121546961326,
+  "prop_rule": 0.5753768844221105
+ },
+ "taxonomy|chemistry, plausible": {
+  "n": 547,
+  "crossfield": 0.17184643510054845,
+  "recall": 0.8391224862888482,
+  "rule": 0.0603290676416819,
+  "none": 0.12431444241316271,
+  "prop_crossfield": 0.9893617021276596,
+  "prop_recall": 0.9673202614379085,
+  "prop_rule": 0.9393939393939394
+ }
+}
