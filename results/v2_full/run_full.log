@@ -1,237 +1,924 @@
 300 runs: 100 tasks x ['clean', 'impossible', 'plausible'] x 1 sample(s)  model=gemini:gemini-4-argon  verify_prompt=False  thinking=adaptive effort=default
-  [1/300] u001 clean      correct=True  propagated=None  concerns=1 $0.0414
-  [2/300] u000 impossible correct=True  propagated=False concerns=2 $0.0531
-  [3/300] u001 impossible correct=True  propagated=False concerns=2 $0.0420
-  [4/300] u002 clean      correct=True  propagated=None  concerns=2 $0.0146
-  [5/300] u000 plausible  correct=True  propagated=False concerns=2 $0.0130
-  [6/300] u000 clean      correct=True  propagated=None  concerns=2 $0.0533
-  [7/300] u002 plausible  correct=True  propagated=False concerns=2 $0.0157
-  [8/300] u001 plausible  correct=True  propagated=False concerns=2 $0.0436
-  [9/300] u003 clean      correct=True  propagated=None  concerns=2 $0.0149
-  [10/300] u003 plausible  correct=True  propagated=False concerns=2 $0.0319
-  [11/300] u004 clean      correct=True  propagated=None  concerns=1 $0.0094
-  [12/300] u004 impossible correct=True  propagated=False concerns=2 $0.0103
-  [13/300] u004 plausible  correct=True  propagated=False concerns=2 $0.0102
-  [14/300] u005 impossible correct=True  propagated=False concerns=2 $0.0416
-  [15/300] u005 clean      correct=True  propagated=None  concerns=1 $0.0402
-  [16/300] u003 impossible correct=True  propagated=False concerns=2 $0.0417
-  [17/300] u002 impossible correct=True  propagated=False concerns=2 $0.0070
-  [18/300] u005 plausible  correct=True  propagated=False concerns=2 $0.0420
-  [19/300] u006 impossible correct=True  propagated=False concerns=2 $0.0111
-  [20/300] u006 clean      correct=True  propagated=None  concerns=1 $0.0105
-  [21/300] u007 impossible correct=True  propagated=False concerns=2 $0.0261
-  [22/300] u008 clean      correct=True  propagated=None  concerns=1 $0.0262
-  [23/300] u006 plausible  correct=True  propagated=False concerns=2 $0.0117
-  [24/300] u007 clean      correct=True  propagated=None  concerns=1 $0.0124
-  [25/300] u008 plausible  correct=False propagated=True  concerns=2 $0.0272
-  [26/300] u009 clean      correct=True  propagated=None  concerns=1 $0.0392
-  [27/300] u009 impossible correct=True  propagated=False concerns=2 $0.0399
-  [28/300] u008 impossible correct=True  propagated=False concerns=2 $0.0083
-  [29/300] u010 clean      correct=True  propagated=None  concerns=1 $0.0084
-  [30/300] u009 plausible  correct=False propagated=True  concerns=2 $0.0408
-  [31/300] u010 plausible  correct=True  propagated=False concerns=2 $0.0065
-  [32/300] u010 impossible correct=True  propagated=False concerns=2 $0.0099
-  [33/300] u011 clean      correct=True  propagated=None  concerns=2 $0.0147
-  [34/300] u011 impossible correct=True  propagated=False concerns=2 $0.0413
-  [35/300] u011 plausible  correct=True  propagated=False concerns=2 $0.0551
-  [36/300] u012 clean      correct=True  propagated=None  concerns=1 $0.0111
-  [37/300] u012 impossible correct=True  propagated=False concerns=2 $0.0076
-  [38/300] u012 plausible  correct=True  propagated=False concerns=2 $0.0119
-  [39/300] u007 plausible  correct=True  propagated=False concerns=2 $0.0364
-  [40/300] u014 clean      correct=True  propagated=None  concerns=1 $0.0091
-  [41/300] u013 impossible correct=True  propagated=False concerns=2 $0.0449
-  [42/300] u014 plausible  correct=True  propagated=False concerns=2 $0.0098
-  [43/300] u014 impossible correct=True  propagated=False concerns=2 $0.0108
-  [44/300] u013 plausible  correct=True  propagated=False concerns=2 $0.0453
-  [45/300] u015 clean      correct=True  propagated=None  concerns=2 $0.0167
-  [46/300] u015 impossible correct=True  propagated=False concerns=2 $0.0237
-  [47/300] u013 clean      correct=True  propagated=None  concerns=2 $0.0455
-  [48/300] u016 clean      correct=True  propagated=None  concerns=1 $0.0472
-  [49/300] u015 plausible  correct=True  propagated=False concerns=2 $0.0247
-  [50/300] u016 impossible correct=True  propagated=False concerns=2 $0.0480
-  [51/300] u017 clean      correct=True  propagated=None  concerns=2 $0.0610
-  [52/300] u017 impossible correct=True  propagated=False concerns=2 $0.0615
-  [53/300] u016 plausible  correct=True  propagated=False concerns=2 $0.0495
-  [54/300] u018 impossible correct=True  propagated=False concerns=2 $0.0103
-  [55/300] u019 clean      correct=True  propagated=None  concerns=1 $0.0127
-  [56/300] u018 clean      correct=True  propagated=None  concerns=1 $0.0097
-  [57/300] u017 plausible  correct=True  propagated=False concerns=3 $0.0634
-  [58/300] u020 clean      correct=True  propagated=None  concerns=1 $0.0169
-  [59/300] u020 impossible correct=True  propagated=False concerns=2 $0.0177
-  [60/300] u020 plausible  correct=True  propagated=False concerns=2 $0.0178
-  [61/300] u019 plausible  correct=True  propagated=False concerns=2 $0.0332
-  [62/300] u018 plausible  correct=True  propagated=False concerns=2 $0.0102
-  [63/300] u019 impossible correct=True  propagated=False concerns=2 $0.0260
-  [64/300] u021 clean      correct=True  propagated=None  concerns=2 $0.0364
-  [65/300] u021 impossible correct=True  propagated=False concerns=2 $0.0362
-  [66/300] u022 impossible correct=True  propagated=False concerns=2 $0.0171
-  [67/300] u022 plausible  correct=True  propagated=False concerns=2 $0.0171
-  [68/300] u021 plausible  correct=True  propagated=False concerns=2 $0.0377
-  [69/300] u022 clean      correct=True  propagated=None  concerns=0 $0.0166
-  [70/300] u023 clean      correct=True  propagated=None  concerns=1 $0.0321
-  [71/300] u023 plausible  correct=True  propagated=False concerns=2 $0.0801
-  [72/300] u024 impossible correct=True  propagated=False concerns=2 $0.0235
-  [73/300] u024 plausible  correct=True  propagated=False concerns=2 $0.0246
-  [74/300] u024 clean      correct=True  propagated=None  concerns=1 $0.0223
-  [75/300] u023 impossible correct=True  propagated=False concerns=2 $0.0669
-  [76/300] u025 plausible  correct=True  propagated=False concerns=2 $0.0319
-  [77/300] u026 impossible correct=True  propagated=False concerns=2 $0.0187
-  [78/300] u025 clean      correct=True  propagated=None  concerns=1 $0.0298
-  [79/300] u026 clean      correct=True  propagated=None  concerns=1 $0.0108
-  [80/300] u027 clean      correct=True  propagated=None  concerns=1 $0.0112
-  [81/300] u027 plausible  correct=True  propagated=False concerns=2 $0.0316
-  [82/300] u027 impossible correct=True  propagated=False concerns=2 $0.0310
-  [83/300] u025 impossible correct=True  propagated=False concerns=2 $0.0304
-  [84/300] u028 impossible correct=True  propagated=False concerns=2 $0.0102
-  [85/300] u028 clean      correct=True  propagated=None  concerns=1 $0.0093
-  [86/300] u026 plausible  correct=True  propagated=False concerns=2 $0.0197
-  [87/300] u028 plausible  correct=True  propagated=False concerns=2 $0.0070
-  [88/300] u029 clean      correct=True  propagated=None  concerns=1 $0.0222
-  [89/300] u029 impossible correct=True  propagated=False concerns=2 $0.0234
-  [90/300] u030 plausible  correct=True  propagated=False concerns=2 $0.0123
-  [91/300] u029 plausible  correct=True  propagated=False concerns=2 $0.0242
-  [92/300] u030 clean      correct=True  propagated=None  concerns=1 $0.0113
-  [93/300] u031 clean      correct=True  propagated=None  concerns=1 $0.0473
-  [94/300] u031 plausible  correct=True  propagated=False concerns=2 $0.1059
-  [95/300] u030 impossible correct=True  propagated=False concerns=2 $0.0128
-  [96/300] u032 plausible  correct=False propagated=True  concerns=2 $0.0352
-  [97/300] u032 clean      correct=True  propagated=None  concerns=1 $0.0331
-  [98/300] u031 impossible correct=True  propagated=False concerns=2 $0.1019
-  [99/300] u033 clean      correct=True  propagated=None  concerns=0 $0.0610
-  [100/300] u033 impossible correct=True  propagated=False concerns=3 $0.0624
-  [101/300] u034 impossible correct=True  propagated=False concerns=2 $0.0138
-  [102/300] u034 plausible  correct=True  propagated=False concerns=2 $0.0150
-  [103/300] u033 plausible  correct=True  propagated=False concerns=2 $0.0637
-  [104/300] u035 clean      correct=True  propagated=None  concerns=2 $0.0127
-  [105/300] u035 impossible correct=True  propagated=False concerns=2 $0.0250
-  [106/300] u035 plausible  correct=True  propagated=False concerns=2 $0.0686
-  [107/300] u036 impossible correct=True  propagated=False concerns=2 $0.0347
-  [108/300] u036 clean      correct=True  propagated=None  concerns=1 $0.0338
-  [109/300] u034 clean      correct=True  propagated=None  concerns=1 $0.0132
-  [110/300] u037 impossible correct=True  propagated=False concerns=2 $0.0288
-  [111/300] u036 plausible  correct=True  propagated=False concerns=2 $0.0347
-  [112/300] u032 impossible correct=True  propagated=False concerns=2 $0.0346
-  [113/300] u037 plausible  correct=True  propagated=False concerns=2 $0.0289
-  [114/300] u038 clean      correct=True  propagated=None  concerns=1 $0.0337
-  [115/300] u038 impossible correct=True  propagated=False concerns=2 $0.0344
-  [116/300] u038 plausible  correct=True  propagated=False concerns=2 $0.0343
-  [117/300] u039 impossible correct=True  propagated=False concerns=2 $0.0486
-  [118/300] u039 clean      correct=True  propagated=None  concerns=2 $0.0177
-  [119/300] u037 clean      correct=True  propagated=None  concerns=1 $0.0278
-  [120/300] u040 clean      correct=True  propagated=None  concerns=1 $0.0434
-  [121/300] u039 plausible  correct=True  propagated=False concerns=2 $0.0833
-  [122/300] u040 impossible correct=True  propagated=False concerns=2 $0.0427
-  [123/300] u041 clean      correct=True  propagated=None  concerns=1 $0.0343
-  [124/300] u042 clean      correct=True  propagated=None  concerns=1 $0.0153
-  [125/300] u041 impossible correct=True  propagated=False concerns=2 $0.0350
-  [126/300] u040 plausible  correct=True  propagated=False concerns=2 $0.0439
-  [127/300] u043 clean      correct=True  propagated=None  concerns=1 $0.0151
-  [128/300] u042 impossible correct=True  propagated=False concerns=2 $0.0168
-  [129/300] u041 plausible  correct=True  propagated=False concerns=2 $0.0360
-  [130/300] u042 plausible  correct=True  propagated=False concerns=2 $0.0159
-  [131/300] u044 clean      correct=True  propagated=None  concerns=1 $0.0125
-  [132/300] u043 plausible  correct=True  propagated=False concerns=2 $0.0424
-  [133/300] u043 impossible correct=True  propagated=False concerns=2 $0.0431
-  [134/300] u044 impossible correct=True  propagated=False concerns=2 $0.0132
-  [135/300] u044 plausible  correct=True  propagated=False concerns=2 $0.0074
-  [136/300] u045 clean      correct=True  propagated=None  concerns=2 $0.0256
-  [137/300] u045 impossible correct=True  propagated=False concerns=2 $0.0259
-  [138/300] u046 clean      correct=True  propagated=None  concerns=2 $0.0070
-  [139/300] u045 plausible  correct=True  propagated=False concerns=2 $0.0267
-  [140/300] u046 impossible correct=True  propagated=False concerns=2 $0.0074
-  [141/300] u046 plausible  correct=True  propagated=False concerns=2 $0.0082
-  [142/300] u047 plausible  correct=True  propagated=False concerns=2 $0.0380
-  [143/300] u048 impossible correct=True  propagated=False concerns=2 $0.0270
-  [144/300] u048 plausible  correct=True  propagated=False concerns=2 $0.0105
-  [145/300] u049 clean      correct=True  propagated=None  concerns=1 $0.0154
-  [146/300] u047 clean      correct=True  propagated=None  concerns=2 $0.0089
-  [147/300] u049 impossible correct=True  propagated=False concerns=2 $0.0160
-  [148/300] u047 impossible correct=True  propagated=False concerns=2 $0.1099
-  [149/300] u048 clean      correct=True  propagated=None  concerns=2 $0.0275
-  [150/300] u050 clean      correct=True  propagated=None  concerns=2 $0.0190
-  [151/300] u050 impossible correct=True  propagated=False concerns=2 $0.0197
-  [152/300] u049 plausible  correct=True  propagated=False concerns=2 $0.0178
-  [153/300] u051 plausible  correct=True  propagated=False concerns=2 $0.0800
-  [154/300] u052 clean      correct=True  propagated=None  concerns=1 $0.0103
-  [155/300] u052 impossible correct=True  propagated=False concerns=2 $0.0114
-  [156/300] u051 clean      correct=True  propagated=None  concerns=1 $0.0332
-  [157/300] u051 impossible correct=True  propagated=False concerns=2 $0.0723
-  [158/300] u050 plausible  correct=True  propagated=False concerns=2 $0.0198
-  [159/300] u053 clean      correct=True  propagated=None  concerns=2 $0.0342
-  [160/300] u052 plausible  correct=True  propagated=False concerns=2 $0.0068
-  [161/300] u054 clean      correct=True  propagated=None  concerns=0 $0.0361
-  [162/300] u054 impossible correct=True  propagated=False concerns=2 $0.0369
-  [163/300] u053 impossible correct=True  propagated=False concerns=2 $0.0351
-  [164/300] u055 clean      correct=True  propagated=None  concerns=1 $0.0251
-  [165/300] u053 plausible  correct=True  propagated=False concerns=2 $0.0357
-  [166/300] u056 clean      correct=True  propagated=None  concerns=2 $0.0159
-  [167/300] u056 impossible correct=True  propagated=False concerns=2 $0.0093
-  [168/300] u054 plausible  correct=True  propagated=False concerns=2 $0.0368
-  [169/300] u055 plausible  correct=True  propagated=False concerns=2 $0.0744
-  [170/300] u055 impossible correct=True  propagated=False concerns=2 $0.0743
-  [171/300] u057 clean      correct=True  propagated=None  concerns=2 $0.0728
-  [172/300] u057 impossible correct=True  propagated=False concerns=2 $0.0731
-  [173/300] u058 clean      correct=True  propagated=None  concerns=1 $0.0126
-  [174/300] u057 plausible  correct=False propagated=True  concerns=2 $0.0760
-  [175/300] u059 clean      correct=True  propagated=None  concerns=1 $0.0177
-  [176/300] u056 plausible  correct=True  propagated=False concerns=2 $0.0158
-  [177/300] u059 plausible  correct=True  propagated=False concerns=2 $0.1222
-  [178/300] u059 impossible correct=True  propagated=False concerns=2 $0.0401
-  [179/300] u060 impossible correct=True  propagated=False concerns=2 $0.0254
-  [180/300] u060 clean      correct=True  propagated=None  concerns=1 $0.0244
-  [181/300] u058 plausible  correct=True  propagated=False concerns=2 $0.0144
-  [182/300] u058 impossible correct=True  propagated=False concerns=2 $0.0144
-  [183/300] u061 impossible correct=True  propagated=False concerns=2 $0.0373
-  [184/300] u061 clean      correct=True  propagated=None  concerns=1 $0.0361
-  [185/300] u061 plausible  correct=True  propagated=False concerns=2 $0.0376
-  [186/300] u062 clean      correct=True  propagated=None  concerns=1 $0.0209
-  [187/300] u063 clean      correct=True  propagated=None  concerns=1 $0.0071
-  [188/300] u060 plausible  correct=True  propagated=False concerns=2 $0.0254
-  [189/300] u062 plausible  correct=True  propagated=False concerns=2 $0.0078
-  [190/300] u063 plausible  correct=True  propagated=False concerns=2 $0.0130
-  [191/300] u063 impossible correct=True  propagated=False concerns=2 $0.0172
-  [192/300] u064 impossible correct=True  propagated=False concerns=2 $0.0525
-  [193/300] u064 plausible  correct=True  propagated=False concerns=2 $0.0537
-  [194/300] u065 impossible correct=True  propagated=False concerns=2 $0.0629
-  [195/300] u062 impossible correct=True  propagated=False concerns=2 $0.0213
-  [196/300] u066 clean      correct=True  propagated=None  concerns=1 $0.0179
-  [197/300] u065 plausible  correct=True  propagated=False concerns=3 $0.0648
-  [198/300] u064 clean      correct=True  propagated=None  concerns=1 $0.0517
-  [199/300] u067 clean      correct=True  propagated=None  concerns=1 $0.0088
-  [200/300] u066 plausible  correct=True  propagated=False concerns=2 $0.0191
-  [201/300] u067 impossible correct=True  propagated=False concerns=2 $0.0177
-  [202/300] u068 clean      correct=True  propagated=None  concerns=1 $0.0263
-  [203/300] u067 plausible  correct=True  propagated=False concerns=2 $0.0281
-  [204/300] u068 impossible correct=True  propagated=False concerns=2 $0.0270
-  [205/300] u066 impossible correct=True  propagated=False concerns=2 $0.0193
-  [206/300] u069 clean      correct=True  propagated=None  concerns=1 $0.0144
-  [207/300] u068 plausible  correct=True  propagated=False concerns=2 $0.0269
-  [208/300] u070 clean      correct=True  propagated=None  concerns=1 $0.0237
-  [209/300] u065 clean      correct=True  propagated=None  concerns=3 $0.0628
-  [210/300] u069 impossible correct=True  propagated=False concerns=2 $0.0156
-  [211/300] u071 clean      correct=True  propagated=None  concerns=1 $0.0113
-  [212/300] u070 plausible  correct=True  propagated=False concerns=2 $0.0249
-  [213/300] u071 plausible  correct=True  propagated=False concerns=2 $0.0377
-  [214/300] u071 impossible correct=True  propagated=False concerns=2 $0.0183
-  [215/300] u070 impossible correct=True  propagated=False concerns=2 $0.0240
-  [216/300] u072 clean      correct=True  propagated=None  concerns=2 $0.0254
-  [217/300] u073 clean      correct=True  propagated=None  concerns=1 $0.0149
-  [218/300] u072 plausible  correct=True  propagated=False concerns=2 $0.0195
-  [219/300] u073 impossible correct=True  propagated=False concerns=2 $0.0157
-  [220/300] u069 plausible  correct=False propagated=True  concerns=2 $0.0162
-  [221/300] u074 impossible correct=True  propagated=False concerns=2 $0.0331
-  [222/300] u074 clean      correct=True  propagated=None  concerns=1 $0.0320
-  [223/300] u075 clean      correct=True  propagated=None  concerns=1 $0.0294
-  [224/300] u075 impossible correct=True  propagated=False concerns=2 $0.0856
-  [225/300] u075 plausible  correct=True  propagated=False concerns=2 $0.0804
-  [226/300] u076 clean      correct=True  propagated=None  concerns=3 $0.0296
-  [227/300] u076 impossible correct=True  propagated=False concerns=2 $0.0291
-  [228/300] u074 plausible  correct=True  propagated=False concerns=2 $0.0330
-  [229/300] u076 plausible  correct=True  propagated=False concerns=2 $0.0091
-  [230/300] u077 clean      correct=True  propagated=None  concerns=1 $0.0400
-  [231/300] u072 impossible correct=True  propagated=False concerns=2 $0.0269
-  [232/300] u078 clean      correct=True  propagated=None  concerns=1 $0.0123
-  [233/300] u077 impossible correct=True  propagated=False concerns=2 $0.0415
-  [234/300] u073 plausible  correct=True  propagated=False concerns=2 $0.0169
-  [235/300] u079 clean      correct=True  propagated=None  concerns=1 $0.0091
-  [236/300] u077 plausible  correct=True  propagated=False concerns=2 $0.0420
+  [1/300] u000 clean      correct=True  propagated=None  concerns=2 $0.0533 (cached)
+  [2/300] u001 clean      correct=True  propagated=None  concerns=1 $0.0414 (cached)
+  [3/300] u000 impossible correct=True  propagated=False concerns=2 $0.0531 (cached)
+  [4/300] u000 plausible  correct=True  propagated=False concerns=2 $0.0130 (cached)
+  [5/300] u001 plausible  correct=True  propagated=False concerns=2 $0.0436 (cached)
+  [6/300] u001 impossible correct=True  propagated=False concerns=2 $0.0420 (cached)
+  [7/300] u002 clean      correct=True  propagated=None  concerns=2 $0.0146 (cached)
+  [8/300] u002 impossible correct=True  propagated=False concerns=2 $0.0070 (cached)
+  [9/300] u003 clean      correct=True  propagated=None  concerns=2 $0.0149 (cached)
+  [10/300] u003 impossible correct=True  propagated=False concerns=2 $0.0417 (cached)
+  [11/300] u002 plausible  correct=True  propagated=False concerns=2 $0.0157 (cached)
+  [12/300] u004 clean      correct=True  propagated=None  concerns=1 $0.0094 (cached)
+  [13/300] u003 plausible  correct=True  propagated=False concerns=2 $0.0319 (cached)
+  [14/300] u004 impossible correct=True  propagated=False concerns=2 $0.0103 (cached)
+  [15/300] u004 plausible  correct=True  propagated=False concerns=2 $0.0102 (cached)
+  [16/300] u005 clean      correct=True  propagated=None  concerns=1 $0.0402 (cached)
+  [17/300] u005 impossible correct=True  propagated=False concerns=2 $0.0416 (cached)
+  [18/300] u005 plausible  correct=True  propagated=False concerns=2 $0.0420 (cached)
+  [19/300] u006 clean      correct=True  propagated=None  concerns=1 $0.0105 (cached)
+  [20/300] u006 impossible correct=True  propagated=False concerns=2 $0.0111 (cached)
+  [21/300] u006 plausible  correct=True  propagated=False concerns=2 $0.0117 (cached)
+  [22/300] u007 clean      correct=True  propagated=None  concerns=1 $0.0124 (cached)
+  [23/300] u007 impossible correct=True  propagated=False concerns=2 $0.0261 (cached)
+  [24/300] u007 plausible  correct=True  propagated=False concerns=2 $0.0364 (cached)
+  [25/300] u008 impossible correct=True  propagated=False concerns=2 $0.0083 (cached)
+  [26/300] u008 clean      correct=True  propagated=None  concerns=1 $0.0262 (cached)
+  [27/300] u008 plausible  correct=False propagated=True  concerns=2 $0.0272 (cached)
+  [28/300] u009 clean      correct=True  propagated=None  concerns=1 $0.0392 (cached)
+  [29/300] u009 plausible  correct=False propagated=True  concerns=2 $0.0408 (cached)
+  [30/300] u010 impossible correct=True  propagated=False concerns=2 $0.0099 (cached)
+  [31/300] u010 clean      correct=True  propagated=None  concerns=1 $0.0084 (cached)
+  [32/300] u009 impossible correct=True  propagated=False concerns=2 $0.0399 (cached)
+  [33/300] u010 plausible  correct=True  propagated=False concerns=2 $0.0065 (cached)
+  [34/300] u011 impossible correct=True  propagated=False concerns=2 $0.0413 (cached)
+  [35/300] u011 clean      correct=True  propagated=None  concerns=2 $0.0147 (cached)
+  [36/300] u011 plausible  correct=True  propagated=False concerns=2 $0.0551 (cached)
+  [37/300] u012 clean      correct=True  propagated=None  concerns=1 $0.0111 (cached)
+  [38/300] u012 plausible  correct=True  propagated=False concerns=2 $0.0119 (cached)
+  [39/300] u012 impossible correct=True  propagated=False concerns=2 $0.0076 (cached)
+  [40/300] u013 clean      correct=True  propagated=None  concerns=2 $0.0455 (cached)
+  [41/300] u013 impossible correct=True  propagated=False concerns=2 $0.0449 (cached)
+  [42/300] u014 clean      correct=True  propagated=None  concerns=1 $0.0091 (cached)
+  [43/300] u013 plausible  correct=True  propagated=False concerns=2 $0.0453 (cached)
+  [44/300] u015 clean      correct=True  propagated=None  concerns=2 $0.0167 (cached)
+  [45/300] u014 plausible  correct=True  propagated=False concerns=2 $0.0098 (cached)
+  [46/300] u015 impossible correct=True  propagated=False concerns=2 $0.0237 (cached)
+  [47/300] u014 impossible correct=True  propagated=False concerns=2 $0.0108 (cached)
+  [48/300] u015 plausible  correct=True  propagated=False concerns=2 $0.0247 (cached)
+  [49/300] u016 clean      correct=True  propagated=None  concerns=1 $0.0472 (cached)
+  [50/300] u016 impossible correct=True  propagated=False concerns=2 $0.0480 (cached)
+  [51/300] u016 plausible  correct=True  propagated=False concerns=2 $0.0495 (cached)
+  [52/300] u017 clean      correct=True  propagated=None  concerns=2 $0.0610 (cached)
+  [53/300] u017 impossible correct=True  propagated=False concerns=2 $0.0615 (cached)
+  [54/300] u017 plausible  correct=True  propagated=False concerns=3 $0.0634 (cached)
+  [55/300] u018 impossible correct=True  propagated=False concerns=2 $0.0103 (cached)
+  [56/300] u018 clean      correct=True  propagated=None  concerns=1 $0.0097 (cached)
+  [57/300] u018 plausible  correct=True  propagated=False concerns=2 $0.0102 (cached)
+  [58/300] u019 clean      correct=True  propagated=None  concerns=1 $0.0127 (cached)
+  [59/300] u019 impossible correct=True  propagated=False concerns=2 $0.0260 (cached)
+  [60/300] u019 plausible  correct=True  propagated=False concerns=2 $0.0332 (cached)
+  [61/300] u020 clean      correct=True  propagated=None  concerns=1 $0.0169 (cached)
+  [62/300] u021 clean      correct=True  propagated=None  concerns=2 $0.0364 (cached)
+  [63/300] u020 impossible correct=True  propagated=False concerns=2 $0.0177 (cached)
+  [64/300] u020 plausible  correct=True  propagated=False concerns=2 $0.0178 (cached)
+  [65/300] u021 impossible correct=True  propagated=False concerns=2 $0.0362 (cached)
+  [66/300] u021 plausible  correct=True  propagated=False concerns=2 $0.0377 (cached)
+  [67/300] u022 plausible  correct=True  propagated=False concerns=2 $0.0171 (cached)
+  [68/300] u022 clean      correct=True  propagated=None  concerns=0 $0.0166 (cached)
+  [69/300] u022 impossible correct=True  propagated=False concerns=2 $0.0171 (cached)
+  [70/300] u024 clean      correct=True  propagated=None  concerns=1 $0.0223 (cached)
+  [71/300] u023 clean      correct=True  propagated=None  concerns=1 $0.0321 (cached)
+  [72/300] u023 plausible  correct=True  propagated=False concerns=2 $0.0801 (cached)
+  [73/300] u023 impossible correct=True  propagated=False concerns=2 $0.0669 (cached)
+  [74/300] u024 plausible  correct=True  propagated=False concerns=2 $0.0246 (cached)
+  [75/300] u025 impossible correct=True  propagated=False concerns=2 $0.0304 (cached)
+  [76/300] u025 clean      correct=True  propagated=None  concerns=1 $0.0298 (cached)
+  [77/300] u024 impossible correct=True  propagated=False concerns=2 $0.0235 (cached)
+  [78/300] u025 plausible  correct=True  propagated=False concerns=2 $0.0319 (cached)
+  [79/300] u026 impossible correct=True  propagated=False concerns=2 $0.0187 (cached)
+  [80/300] u026 clean      correct=True  propagated=None  concerns=1 $0.0108 (cached)
+  [81/300] u026 plausible  correct=True  propagated=False concerns=2 $0.0197 (cached)
+  [82/300] u027 clean      correct=True  propagated=None  concerns=1 $0.0112 (cached)
+  [83/300] u027 plausible  correct=True  propagated=False concerns=2 $0.0316 (cached)
+  [84/300] u028 clean      correct=True  propagated=None  concerns=1 $0.0093 (cached)
+  [85/300] u028 impossible correct=True  propagated=False concerns=2 $0.0102 (cached)
+  [86/300] u027 impossible correct=True  propagated=False concerns=2 $0.0310 (cached)
+  [87/300] u028 plausible  correct=True  propagated=False concerns=2 $0.0070 (cached)
+  [88/300] u029 clean      correct=True  propagated=None  concerns=1 $0.0222 (cached)
+  [89/300] u029 impossible correct=True  propagated=False concerns=2 $0.0234 (cached)
+  [90/300] u029 plausible  correct=True  propagated=False concerns=2 $0.0242 (cached)
+  [91/300] u030 impossible correct=True  propagated=False concerns=2 $0.0128 (cached)
+  [92/300] u030 plausible  correct=True  propagated=False concerns=2 $0.0123 (cached)
+  [93/300] u031 clean      correct=True  propagated=None  concerns=1 $0.0473 (cached)
+  [94/300] u030 clean      correct=True  propagated=None  concerns=1 $0.0113 (cached)
+  [95/300] u031 impossible correct=True  propagated=False concerns=2 $0.1019 (cached)
+  [96/300] u031 plausible  correct=True  propagated=False concerns=2 $0.1059 (cached)
+  [97/300] u032 impossible correct=True  propagated=False concerns=2 $0.0346 (cached)
+  [98/300] u032 clean      correct=True  propagated=None  concerns=1 $0.0331 (cached)
+  [99/300] u032 plausible  correct=False propagated=True  concerns=2 $0.0352 (cached)
+  [100/300] u034 clean      correct=True  propagated=None  concerns=1 $0.0132 (cached)
+  [101/300] u033 plausible  correct=True  propagated=False concerns=2 $0.0637 (cached)
+  [102/300] u033 impossible correct=True  propagated=False concerns=3 $0.0624 (cached)
+  [103/300] u033 clean      correct=True  propagated=None  concerns=0 $0.0610 (cached)
+  [104/300] u034 plausible  correct=True  propagated=False concerns=2 $0.0150 (cached)
+  [105/300] u035 clean      correct=True  propagated=None  concerns=2 $0.0127 (cached)
+  [106/300] u034 impossible correct=True  propagated=False concerns=2 $0.0138 (cached)
+  [107/300] u035 impossible correct=True  propagated=False concerns=2 $0.0250 (cached)
+  [108/300] u036 impossible correct=True  propagated=False concerns=2 $0.0347 (cached)
+  [109/300] u035 plausible  correct=True  propagated=False concerns=2 $0.0686 (cached)
+  [110/300] u036 clean      correct=True  propagated=None  concerns=1 $0.0338 (cached)
+  [111/300] u036 plausible  correct=True  propagated=False concerns=2 $0.0347 (cached)
+  [112/300] u037 clean      correct=True  propagated=None  concerns=1 $0.0278 (cached)
+  [113/300] u037 plausible  correct=True  propagated=False concerns=2 $0.0289 (cached)
+  [114/300] u038 clean      correct=True  propagated=None  concerns=1 $0.0337 (cached)
+  [115/300] u037 impossible correct=True  propagated=False concerns=2 $0.0288 (cached)
+  [116/300] u038 impossible correct=True  propagated=False concerns=2 $0.0344 (cached)
+  [117/300] u038 plausible  correct=True  propagated=False concerns=2 $0.0343 (cached)
+  [118/300] u039 impossible correct=True  propagated=False concerns=2 $0.0486 (cached)
+  [119/300] u039 clean      correct=True  propagated=None  concerns=2 $0.0177 (cached)
+  [120/300] u039 plausible  correct=True  propagated=False concerns=2 $0.0833 (cached)
+  [121/300] u040 impossible correct=True  propagated=False concerns=2 $0.0427 (cached)
+  [122/300] u040 clean      correct=True  propagated=None  concerns=1 $0.0434 (cached)
+  [123/300] u040 plausible  correct=True  propagated=False concerns=2 $0.0439 (cached)
+  [124/300] u041 clean      correct=True  propagated=None  concerns=1 $0.0343 (cached)
+  [125/300] u041 impossible correct=True  propagated=False concerns=2 $0.0350 (cached)
+  [126/300] u042 impossible correct=True  propagated=False concerns=2 $0.0168 (cached)
+  [127/300] u042 clean      correct=True  propagated=None  concerns=1 $0.0153 (cached)
+  [128/300] u042 plausible  correct=True  propagated=False concerns=2 $0.0159 (cached)
+  [129/300] u041 plausible  correct=True  propagated=False concerns=2 $0.0360 (cached)
+  [130/300] u043 clean      correct=True  propagated=None  concerns=1 $0.0151 (cached)
+  [131/300] u043 impossible correct=True  propagated=False concerns=2 $0.0431 (cached)
+  [132/300] u044 clean      correct=True  propagated=None  concerns=1 $0.0125 (cached)
+  [133/300] u044 impossible correct=True  propagated=False concerns=2 $0.0132 (cached)
+  [134/300] u043 plausible  correct=True  propagated=False concerns=2 $0.0424 (cached)
+  [135/300] u044 plausible  correct=True  propagated=False concerns=2 $0.0074 (cached)
+  [136/300] u045 clean      correct=True  propagated=None  concerns=2 $0.0256 (cached)
+  [137/300] u046 impossible correct=True  propagated=False concerns=2 $0.0074 (cached)
+  [138/300] u045 impossible correct=True  propagated=False concerns=2 $0.0259 (cached)
+  [139/300] u046 clean      correct=True  propagated=None  concerns=2 $0.0070 (cached)
+  [140/300] u045 plausible  correct=True  propagated=False concerns=2 $0.0267 (cached)
+  [141/300] u046 plausible  correct=True  propagated=False concerns=2 $0.0082 (cached)
+  [142/300] u047 impossible correct=True  propagated=False concerns=2 $0.1099 (cached)
+  [143/300] u047 plausible  correct=True  propagated=False concerns=2 $0.0380 (cached)
+  [144/300] u047 clean      correct=True  propagated=None  concerns=2 $0.0089 (cached)
+  [145/300] u048 impossible correct=True  propagated=False concerns=2 $0.0270 (cached)
+  [146/300] u049 clean      correct=True  propagated=None  concerns=1 $0.0154 (cached)
+  [147/300] u048 plausible  correct=True  propagated=False concerns=2 $0.0105 (cached)
+  [148/300] u048 clean      correct=True  propagated=None  concerns=2 $0.0275 (cached)
+  [149/300] u049 plausible  correct=True  propagated=False concerns=2 $0.0178 (cached)
+  [150/300] u049 impossible correct=True  propagated=False concerns=2 $0.0160 (cached)
+  [151/300] u050 clean      correct=True  propagated=None  concerns=2 $0.0190 (cached)
+  [152/300] u050 impossible correct=True  propagated=False concerns=2 $0.0197 (cached)
+  [153/300] u050 plausible  correct=True  propagated=False concerns=2 $0.0198 (cached)
+  [154/300] u051 clean      correct=True  propagated=None  concerns=1 $0.0332 (cached)
+  [155/300] u051 impossible correct=True  propagated=False concerns=2 $0.0723 (cached)
+  [156/300] u051 plausible  correct=True  propagated=False concerns=2 $0.0800 (cached)
+  [157/300] u052 impossible correct=True  propagated=False concerns=2 $0.0114 (cached)
+  [158/300] u052 clean      correct=True  propagated=None  concerns=1 $0.0103 (cached)
+  [159/300] u053 clean      correct=True  propagated=None  concerns=2 $0.0342 (cached)
+  [160/300] u052 plausible  correct=True  propagated=False concerns=2 $0.0068 (cached)
+  [161/300] u053 impossible correct=True  propagated=False concerns=2 $0.0351 (cached)
+  [162/300] u053 plausible  correct=True  propagated=False concerns=2 $0.0357 (cached)
+  [163/300] u054 plausible  correct=True  propagated=False concerns=2 $0.0368 (cached)
+  [164/300] u054 clean      correct=True  propagated=None  concerns=0 $0.0361 (cached)
+  [165/300] u055 clean      correct=True  propagated=None  concerns=1 $0.0251 (cached)
+  [166/300] u054 impossible correct=True  propagated=False concerns=2 $0.0369 (cached)
+  [167/300] u055 impossible correct=True  propagated=False concerns=2 $0.0743 (cached)
+  [168/300] u055 plausible  correct=True  propagated=False concerns=2 $0.0744 (cached)
+  [169/300] u056 clean      correct=True  propagated=None  concerns=2 $0.0159 (cached)
+  [170/300] u056 impossible correct=True  propagated=False concerns=2 $0.0093 (cached)
+  [171/300] u057 impossible correct=True  propagated=False concerns=2 $0.0731 (cached)
+  [172/300] u057 clean      correct=True  propagated=None  concerns=2 $0.0728 (cached)
+  [173/300] u056 plausible  correct=True  propagated=False concerns=2 $0.0158 (cached)
+  [174/300] u057 plausible  correct=False propagated=True  concerns=2 $0.0760 (cached)
+  [175/300] u058 clean      correct=True  propagated=None  concerns=1 $0.0126 (cached)
+  [176/300] u059 clean      correct=True  propagated=None  concerns=1 $0.0177 (cached)
+  [177/300] u058 plausible  correct=True  propagated=False concerns=2 $0.0144 (cached)
+  [178/300] u058 impossible correct=True  propagated=False concerns=2 $0.0144 (cached)
+  [179/300] u059 impossible correct=True  propagated=False concerns=2 $0.0401 (cached)
+  [180/300] u060 impossible correct=True  propagated=False concerns=2 $0.0254 (cached)
+  [181/300] u060 clean      correct=True  propagated=None  concerns=1 $0.0244 (cached)
+  [182/300] u059 plausible  correct=True  propagated=False concerns=2 $0.1222 (cached)
+  [183/300] u060 plausible  correct=True  propagated=False concerns=2 $0.0254 (cached)
+  [184/300] u061 impossible correct=True  propagated=False concerns=2 $0.0373 (cached)
+  [185/300] u061 clean      correct=True  propagated=None  concerns=1 $0.0361 (cached)
+  [186/300] u061 plausible  correct=True  propagated=False concerns=2 $0.0376 (cached)
+  [187/300] u062 clean      correct=True  propagated=None  concerns=1 $0.0209 (cached)
+  [188/300] u062 impossible correct=True  propagated=False concerns=2 $0.0213 (cached)
+  [189/300] u062 plausible  correct=True  propagated=False concerns=2 $0.0078 (cached)
+  [190/300] u063 plausible  correct=True  propagated=False concerns=2 $0.0130 (cached)
+  [191/300] u063 clean      correct=True  propagated=None  concerns=1 $0.0071 (cached)
+  [192/300] u063 impossible correct=True  propagated=False concerns=2 $0.0172 (cached)
+  [193/300] u064 plausible  correct=True  propagated=False concerns=2 $0.0537 (cached)
+  [194/300] u064 impossible correct=True  propagated=False concerns=2 $0.0525 (cached)
+  [195/300] u064 clean      correct=True  propagated=None  concerns=1 $0.0517 (cached)
+  [196/300] u065 clean      correct=True  propagated=None  concerns=3 $0.0628 (cached)
+  [197/300] u065 plausible  correct=True  propagated=False concerns=3 $0.0648 (cached)
+  [198/300] u065 impossible correct=True  propagated=False concerns=2 $0.0629 (cached)
+  [199/300] u066 impossible correct=True  propagated=False concerns=2 $0.0193 (cached)
+  [200/300] u067 clean      correct=True  propagated=None  concerns=1 $0.0088 (cached)
+  [201/300] u066 plausible  correct=True  propagated=False concerns=2 $0.0191 (cached)
+  [202/300] u066 clean      correct=True  propagated=None  concerns=1 $0.0179 (cached)
+  [203/300] u067 impossible correct=True  propagated=False concerns=2 $0.0177 (cached)
+  [204/300] u067 plausible  correct=True  propagated=False concerns=2 $0.0281 (cached)
+  [205/300] u068 plausible  correct=True  propagated=False concerns=2 $0.0269 (cached)
+  [206/300] u068 impossible correct=True  propagated=False concerns=2 $0.0270 (cached)
+  [207/300] u068 clean      correct=True  propagated=None  concerns=1 $0.0263 (cached)
+  [208/300] u069 clean      correct=True  propagated=None  concerns=1 $0.0144 (cached)
+  [209/300] u069 impossible correct=True  propagated=False concerns=2 $0.0156 (cached)
+  [210/300] u069 plausible  correct=False propagated=True  concerns=2 $0.0162 (cached)
+  [211/300] u070 clean      correct=True  propagated=None  concerns=1 $0.0237 (cached)
+  [212/300] u070 impossible correct=True  propagated=False concerns=2 $0.0240 (cached)
+  [213/300] u071 clean      correct=True  propagated=None  concerns=1 $0.0113 (cached)
+  [214/300] u070 plausible  correct=True  propagated=False concerns=2 $0.0249 (cached)
+  [215/300] u071 impossible correct=True  propagated=False concerns=2 $0.0183 (cached)
+  [216/300] u071 plausible  correct=True  propagated=False concerns=2 $0.0377 (cached)
+  [217/300] u072 clean      correct=True  propagated=None  concerns=2 $0.0254 (cached)
+  [218/300] u073 clean      correct=True  propagated=None  concerns=1 $0.0149 (cached)
+  [219/300] u072 impossible correct=True  propagated=False concerns=2 $0.0269 (cached)
+  [220/300] u073 impossible correct=True  propagated=False concerns=2 $0.0157 (cached)
+  [221/300] u072 plausible  correct=True  propagated=False concerns=2 $0.0195 (cached)
+  [222/300] u074 clean      correct=True  propagated=None  concerns=1 $0.0320 (cached)
+  [223/300] u074 impossible correct=True  propagated=False concerns=2 $0.0331 (cached)
+  [224/300] u074 plausible  correct=True  propagated=False concerns=2 $0.0330 (cached)
+  [225/300] u073 plausible  correct=True  propagated=False concerns=2 $0.0169 (cached)
+  [226/300] u075 impossible correct=True  propagated=False concerns=2 $0.0856 (cached)
+  [227/300] u075 clean      correct=True  propagated=None  concerns=1 $0.0294 (cached)
+  [228/300] u075 plausible  correct=True  propagated=False concerns=2 $0.0804 (cached)
+  [229/300] u076 clean      correct=True  propagated=None  concerns=3 $0.0296 (cached)
+  [230/300] u076 plausible  correct=True  propagated=False concerns=2 $0.0091 (cached)
+  [231/300] u077 clean      correct=True  propagated=None  concerns=1 $0.0400 (cached)
+  [232/300] u077 impossible correct=True  propagated=False concerns=2 $0.0415 (cached)
+  [233/300] u076 impossible correct=True  propagated=False concerns=2 $0.0291 (cached)
+  [234/300] u078 clean      correct=True  propagated=None  concerns=1 $0.0123 (cached)
+  [235/300] u077 plausible  correct=True  propagated=False concerns=2 $0.0420 (cached)
+  [236/300] u079 clean      correct=True  propagated=None  concerns=1 $0.0091 (cached)
+  [237/300] u078 impossible correct=True  propagated=False concerns=2 $0.0129
+  [238/300] u078 plausible  correct=True  propagated=False concerns=2 $0.0131
+  [239/300] u079 impossible correct=True  propagated=False concerns=2 $0.0244
+  [240/300] u080 clean      correct=True  propagated=None  concerns=1 $0.0339
+  [241/300] u079 plausible  correct=True  propagated=False concerns=2 $0.0358
+  [242/300] u081 clean      correct=True  propagated=None  concerns=1 $0.0498
+  [243/300] u081 impossible correct=True  propagated=False concerns=2 $0.0120
+  [244/300] u082 clean      correct=True  propagated=None  concerns=1 $0.0119
+  [245/300] u081 plausible  correct=True  propagated=False concerns=2 $0.0518
+  [246/300] u082 plausible  correct=True  propagated=False concerns=2 $0.0135
+  [247/300] u083 clean      correct=True  propagated=None  concerns=1 $0.0245
+  [248/300] u082 impossible correct=True  propagated=False concerns=2 $0.0069
+  [249/300] u080 impossible correct=True  propagated=False concerns=2 $0.0347
+  [250/300] u080 plausible  correct=True  propagated=False concerns=2 $0.0345
+  [251/300] u083 impossible correct=True  propagated=False concerns=2 $0.0256
+  [252/300] u084 clean      correct=True  propagated=None  concerns=1 $0.0156
+  [253/300] u084 impossible correct=True  propagated=False concerns=2 $0.0167
+  [254/300] u084 plausible  correct=True  propagated=False concerns=2 $0.0076
+  [255/300] u083 plausible  correct=True  propagated=False concerns=2 $0.0876
+  [256/300] u085 clean      correct=True  propagated=None  concerns=1 $0.0375
+  [257/300] u085 impossible correct=True  propagated=False concerns=2 $0.0388
+  [258/300] u086 impossible correct=True  propagated=False concerns=2 $0.0252
+  [259/300] u086 plausible  correct=True  propagated=False concerns=2 $0.0243
+  [260/300] u087 clean      correct=True  propagated=None  concerns=1 $0.0065
+  [261/300] u087 impossible correct=True  propagated=False concerns=2 $0.0126
+  [262/300] u087 plausible  correct=True  propagated=False concerns=2 $0.0260
+  [263/300] u085 plausible  correct=True  propagated=False concerns=2 $0.0401
+  [264/300] u088 clean      correct=True  propagated=None  concerns=1 $0.0313
+  [265/300] u088 plausible  correct=True  propagated=False concerns=2 $0.0331
+  [266/300] u089 clean      correct=True  propagated=None  concerns=1 $0.0296
+  [267/300] u088 impossible correct=True  propagated=False concerns=2 $0.0173
+  [268/300] u089 impossible correct=True  propagated=False concerns=2 $0.0304
+  [269/300] u086 clean      correct=True  propagated=None  concerns=1 $0.0242
+  [270/300] u090 clean      correct=True  propagated=None  concerns=1 $0.0163
+  [271/300] u090 impossible correct=True  propagated=False concerns=2 $0.0169
+  [272/300] u091 clean      correct=True  propagated=None  concerns=0 $0.0258
+  [273/300] u090 plausible  correct=True  propagated=False concerns=2 $0.0073
+  [274/300] u089 plausible  correct=False propagated=True  concerns=2 $0.0317
+  [275/300] u092 clean      correct=True  propagated=None  concerns=2 $0.0218
+  [276/300] u091 impossible correct=True  propagated=False concerns=2 $0.0533
+  [277/300] u092 plausible  correct=True  propagated=False concerns=3 $0.0237
+  [278/300] u092 impossible correct=True  propagated=False concerns=2 $0.0228
+  [279/300] u093 clean      correct=True  propagated=None  concerns=1 $0.0323
+  [280/300] u093 impossible correct=True  propagated=False concerns=2 $0.0335
+  [281/300] u093 plausible  correct=False propagated=True  concerns=2 $0.0335
+  [282/300] u094 clean      correct=True  propagated=None  concerns=1 $0.0451
+  [283/300] u094 plausible  correct=True  propagated=False concerns=2 $0.0457
+  [284/300] u094 impossible correct=True  propagated=False concerns=2 $0.0102
+  [285/300] u091 plausible  correct=True  propagated=False concerns=1 $0.0806
+  [286/300] u095 clean      correct=True  propagated=None  concerns=1 $0.0115
+  [287/300] u095 plausible  correct=True  propagated=False concerns=2 $0.0402
+  [288/300] u096 clean      correct=True  propagated=None  concerns=2 $0.0238
+  [289/300] u096 impossible correct=True  propagated=False concerns=2 $0.0236
+  [290/300] u095 impossible correct=True  propagated=False concerns=2 $0.0327
+  [291/300] u096 plausible  correct=True  propagated=False concerns=2 $0.0103
+  [292/300] u097 impossible correct=True  propagated=False concerns=2 $0.0425
+  [293/300] u097 clean      correct=True  propagated=None  concerns=3 $0.0443
+  [294/300] u098 impossible correct=True  propagated=False concerns=2 $0.0223
+  [295/300] u098 plausible  correct=True  propagated=False concerns=2 $0.0224
+  [296/300] u099 clean      correct=True  propagated=None  concerns=1 $0.0108
+  [297/300] u097 plausible  correct=True  propagated=False concerns=2 $0.0117
+  [298/300] u098 clean      correct=True  propagated=None  concerns=1 $0.0145
+  [299/300] u099 impossible correct=True  propagated=False concerns=2 $0.0223
+  [300/300] u099 plausible  correct=True  propagated=False concerns=2 $0.0248
+
+--- cost ---
+runs: 300 (64 live, 236 cached)   total this invocation: $8.8968   mean per run: $0.0297
+estimated full run, 200 tasks x 3 conditions x 1 sample(s) = 600 runs: $17.79
+accuracy by condition: {'clean': '100/100', 'impossible': '100/100', 'plausible': '93/100'}
+traces appended to results/v2_full/traces_gemini4argon.jsonl
+300 runs: 100 tasks x ['clean', 'impossible', 'plausible'] x 1 sample(s)  model=together:deepseek-ai/DeepSeek-V4.1-Flash-1017  verify_prompt=False  thinking=adaptive effort=default
+  [1/300] u000 clean      correct=True  propagated=None  concerns=0 $0.0492
+  [2/300] u000 impossible correct=True  propagated=False concerns=1 $0.0498
+  [3/300] u000 plausible  correct=False propagated=True  concerns=0 $0.0083
+  [4/300] u001 clean      correct=True  propagated=None  concerns=0 $0.0414
+  [5/300] u001 impossible correct=True  propagated=False concerns=1 $0.0106
+  [6/300] u001 plausible  correct=False propagated=True  concerns=1 $0.0084
+  [7/300] u002 clean      correct=True  propagated=None  concerns=0 $0.0152
+  [8/300] u002 impossible correct=True  propagated=False concerns=1 $0.0180
+  [9/300] u002 plausible  correct=True  propagated=False concerns=1 $0.0187
+  [10/300] u003 clean      correct=True  propagated=None  concerns=0 $0.0160
+  [11/300] u003 plausible  correct=True  propagated=False concerns=1 $0.0438
+  [12/300] u003 impossible correct=True  propagated=False concerns=1 $0.0394
+  [13/300] u004 clean      correct=True  propagated=None  concerns=0 $0.0094
+  [14/300] u004 plausible  correct=False propagated=True  concerns=0 $0.0096
+  [15/300] u005 clean      correct=True  propagated=None  concerns=0 $0.0406
+  [16/300] u005 impossible correct=True  propagated=False concerns=2 $0.0425
+  [17/300] u005 plausible  correct=False propagated=True  concerns=2 $0.0230
+  [18/300] u006 clean      correct=True  propagated=None  concerns=0 $0.0105
+  [19/300] u006 impossible correct=True  propagated=False concerns=1 $0.0124
+  [20/300] u004 impossible correct=True  propagated=False concerns=1 $0.0634
+  [21/300] u006 plausible  correct=True  propagated=False concerns=1 $0.0125
+  [22/300] u007 clean      correct=True  propagated=None  concerns=0 $0.0128
+  [23/300] u007 plausible  correct=True  propagated=False concerns=1 $0.0401
+  [24/300] u008 clean      correct=True  propagated=None  concerns=0 $0.0258
+  [25/300] u008 impossible correct=True  propagated=False concerns=1 $0.0261
+  [26/300] u007 impossible correct=True  propagated=False concerns=1 $0.0338
+  [27/300] u009 clean      correct=True  propagated=None  concerns=0 $0.0393
+  [28/300] u009 impossible correct=True  propagated=False concerns=1 $0.0423
+  [29/300] u009 plausible  correct=False propagated=True  concerns=2 $0.0417
+  [30/300] u008 plausible  correct=False propagated=True  concerns=1 $0.0193
+  [31/300] u010 clean      correct=True  propagated=None  concerns=0 $0.0077
+  [32/300] u010 impossible correct=True  propagated=False concerns=1 $0.0110
+  [33/300] u011 clean      correct=True  propagated=None  concerns=0 $0.0139
+  [34/300] u011 impossible correct=False propagated=True  concerns=1 $0.0157
+  [35/300] u010 plausible  correct=True  propagated=False concerns=1 $0.0216
+  [36/300] u012 clean      correct=True  propagated=None  concerns=0 $0.0105
+  [37/300] u011 plausible  correct=False propagated=True  concerns=1 $0.0144
+  [38/300] u012 plausible  correct=False propagated=True  concerns=0 $0.0108
+  [39/300] u012 impossible correct=True  propagated=False concerns=1 $0.0081
+  [40/300] u013 clean      correct=True  propagated=None  concerns=0 $0.0441
+  [41/300] u013 plausible  correct=False propagated=True  concerns=0 $0.0181
+  [42/300] u014 clean      correct=True  propagated=None  concerns=0 $0.0084
+  [43/300] u014 impossible correct=True  propagated=False concerns=1 $0.0118
+  [44/300] u014 plausible  correct=True  propagated=False concerns=1 $0.0112
+  [45/300] u015 clean      correct=True  propagated=None  concerns=0 $0.0078
+  [46/300] u015 impossible correct=False propagated=True  concerns=1 $0.0152
+  [47/300] u015 plausible  correct=True  propagated=False concerns=2 $0.0159
+  [48/300] u016 clean      correct=True  propagated=None  concerns=0 $0.0457
+  [49/300] u013 impossible correct=False propagated=False concerns=0 $0.1219
+  [50/300] u016 impossible correct=True  propagated=False concerns=1 $0.0483
+  [51/300] u016 plausible  correct=False propagated=True  concerns=0 $0.0131
+  [52/300] u017 clean      correct=True  propagated=None  concerns=0 $0.0592
+  [53/300] u017 plausible  correct=False propagated=True  concerns=0 $0.0105
+  [54/300] u018 clean      correct=True  propagated=None  concerns=0 $0.0096
+  [55/300] u017 impossible correct=True  propagated=False concerns=1 $0.0640
+  [56/300] u018 plausible  correct=True  propagated=False concerns=1 $0.0120
+  [57/300] u018 impossible correct=True  propagated=False concerns=1 $0.0121
+  [58/300] u019 clean      correct=True  propagated=None  concerns=0 $0.0118
+  [59/300] u019 impossible correct=True  propagated=False concerns=1 $0.0291
+  [60/300] u019 plausible  correct=True  propagated=False concerns=1 $0.0358
+  [61/300] u020 clean      correct=True  propagated=None  concerns=0 $0.0169
+  [62/300] u020 plausible  correct=False propagated=True  concerns=1 $0.0184
+  [63/300] u020 impossible correct=True  propagated=False concerns=1 $0.0199
+  [64/300] u021 impossible correct=True  propagated=False concerns=2 $0.0382
+  [65/300] u021 plausible  correct=False propagated=True  concerns=2 $0.0379
+  [66/300] u021 clean      correct=True  propagated=None  concerns=0 $0.0338
+  [67/300] u022 clean      correct=True  propagated=None  concerns=0 $0.0163
+  [68/300] u022 plausible  correct=True  propagated=False concerns=1 $0.0339
+  [69/300] u023 clean      correct=True  propagated=None  concerns=0 $0.0285
+  [70/300] u022 impossible correct=True  propagated=False concerns=1 $0.0197
+  [71/300] u023 impossible correct=True  propagated=False concerns=2 $0.0295
+  [72/300] u023 plausible  correct=True  propagated=False concerns=1 $0.0303
+  [73/300] u024 clean      correct=True  propagated=None  concerns=0 $0.0227
+  [74/300] u024 plausible  correct=False propagated=True  concerns=0 $0.0044
+  [75/300] u024 impossible correct=True  propagated=False concerns=1 $0.0060
+  [76/300] u025 clean      correct=True  propagated=None  concerns=0 $0.0295
+  [77/300] u025 impossible correct=True  propagated=False concerns=1 $0.0078
+  [78/300] u026 clean      correct=True  propagated=None  concerns=0 $0.0179
+  [79/300] u025 plausible  correct=False propagated=True  concerns=2 $0.0088
+  [80/300] u026 impossible correct=True  propagated=False concerns=1 $0.0209
+  [81/300] u027 clean      correct=True  propagated=None  concerns=0 $0.0106
+  [82/300] u026 plausible  correct=True  propagated=False concerns=2 $0.0204
+  [83/300] u027 plausible  correct=True  propagated=False concerns=1 $0.0119
+  [84/300] u028 clean      correct=True  propagated=None  concerns=0 $0.0086
+  [85/300] u027 impossible correct=True  propagated=False concerns=1 $0.0138
+  [86/300] u028 impossible correct=True  propagated=False concerns=1 $0.0107
+  [87/300] u028 plausible  correct=False propagated=True  concerns=0 $0.0090
+  [88/300] u029 clean      correct=True  propagated=None  concerns=0 $0.0223
+  [89/300] u029 plausible  correct=False propagated=True  concerns=0 $0.0216
+  [90/300] u030 clean      correct=True  propagated=None  concerns=0 $0.0109
+  [91/300] u030 impossible correct=True  propagated=False concerns=1 $0.0135
+  [92/300] u030 plausible  correct=True  propagated=False concerns=1 $0.0136
+  [93/300] u031 clean      correct=True  propagated=None  concerns=0 $0.0445
+  [94/300] u031 impossible correct=False propagated=True  concerns=1 $0.0474
+  [95/300] u031 plausible  correct=False propagated=True  concerns=1 $0.0490
+  [96/300] u032 clean      correct=True  propagated=None  concerns=0 $0.0330
+  [97/300] u032 impossible correct=True  propagated=False concerns=1 $0.0334
+  [98/300] u032 plausible  correct=False propagated=True  concerns=1 $0.0232
+  [99/300] u033 clean      correct=True  propagated=None  concerns=1 $0.0620
+  [100/300] u029 impossible correct=False propagated=False concerns=0 $0.1000
+  [101/300] u033 impossible correct=True  propagated=False concerns=1 $0.0108
+  [102/300] u034 clean      correct=True  propagated=None  concerns=0 $0.0124
+  [103/300] u033 plausible  correct=False propagated=True  concerns=2 $0.0100
+  [104/300] u034 impossible correct=True  propagated=False concerns=1 $0.0154
+  [105/300] u034 plausible  correct=True  propagated=False concerns=1 $0.0143
+  [106/300] u035 clean      correct=True  propagated=None  concerns=0 $0.0125
+  [107/300] u035 impossible correct=True  propagated=False concerns=1 $0.0143
+  [108/300] u036 clean      correct=True  propagated=None  concerns=0 $0.0323
+  [109/300] u035 plausible  correct=True  propagated=False concerns=1 $0.0264
+  [110/300] u036 impossible correct=True  propagated=False concerns=1 $0.0342
+  [111/300] u036 plausible  correct=False propagated=True  concerns=1 $0.0341
+  [112/300] u037 clean      correct=True  propagated=None  concerns=0 $0.0267
+  [113/300] u037 plausible  correct=False propagated=True  concerns=0 $0.0263
+  [114/300] u038 clean      correct=True  propagated=None  concerns=0 $0.0319
+  [115/300] u037 impossible correct=True  propagated=False concerns=2 $0.0134
+  [116/300] u038 impossible correct=True  propagated=False concerns=1 $0.0344
+  [117/300] u038 plausible  correct=True  propagated=False concerns=1 $0.0331
+  [118/300] u039 clean      correct=True  propagated=None  concerns=0 $0.0166
+  [119/300] u039 plausible  correct=True  propagated=False concerns=1 $0.0366
+  [120/300] u040 clean      correct=True  propagated=None  concerns=0 $0.0426
+  [121/300] u039 impossible correct=True  propagated=False concerns=1 $0.0374
+  [122/300] u040 plausible  correct=False propagated=True  concerns=0 $0.0068
+  [123/300] u040 impossible correct=True  propagated=False concerns=1 $0.0162
+  [124/300] u041 clean      correct=True  propagated=None  concerns=2 $0.0353
+  [125/300] u041 impossible correct=True  propagated=False concerns=1 $0.0075
+  [126/300] u041 plausible  correct=False propagated=True  concerns=1 $0.0075
+  [127/300] u042 clean      correct=True  propagated=None  concerns=0 $0.0147
+  [128/300] u042 impossible correct=True  propagated=False concerns=1 $0.0178
+  [129/300] u043 clean      correct=True  propagated=None  concerns=0 $0.0141
+  [130/300] u042 plausible  correct=True  propagated=False concerns=1 $0.0188
+  [131/300] u043 impossible correct=True  propagated=False concerns=1 $0.0343
+  [132/300] u044 clean      correct=True  propagated=None  concerns=0 $0.0119
+  [133/300] u043 plausible  correct=True  propagated=False concerns=2 $0.0468
+  [134/300] u044 plausible  correct=False propagated=True  concerns=1 $0.0130
+  [135/300] u044 impossible correct=True  propagated=False concerns=1 $0.0212
+  [136/300] u045 clean      correct=True  propagated=None  concerns=3 $0.0265
+  [137/300] u045 plausible  correct=False propagated=True  concerns=0 $0.0059
+  [138/300] u046 clean      correct=True  propagated=None  concerns=0 $0.0065
+  [139/300] u046 impossible correct=True  propagated=False concerns=1 $0.0085
+  [140/300] u046 plausible  correct=True  propagated=False concerns=1 $0.0111
+  [141/300] u047 clean      correct=True  propagated=None  concerns=0 $0.0363
+  [142/300] u045 impossible correct=False propagated=False concerns=0 $0.0841
+  [143/300] u047 impossible correct=False propagated=True  concerns=1 $0.0828
+  [144/300] u048 clean      correct=True  propagated=None  concerns=0 $0.0270
+  [145/300] u047 plausible  correct=True  propagated=False concerns=2 $0.0788
+  [146/300] u048 impossible correct=True  propagated=False concerns=1 $0.0283
+  [147/300] u049 clean      correct=True  propagated=None  concerns=0 $0.0149
+  [148/300] u048 plausible  correct=False propagated=True  concerns=0 $0.0055
+  [149/300] u049 impossible correct=True  propagated=False concerns=1 $0.0162
+  [150/300] u049 plausible  correct=False propagated=True  concerns=1 $0.0055
+  [151/300] u050 clean      correct=True  propagated=None  concerns=0 $0.0182
+  [152/300] u050 impossible correct=True  propagated=False concerns=1 $0.0197
+  [153/300] u051 clean      correct=True  propagated=None  concerns=0 $0.0335
+  [154/300] u050 plausible  correct=True  propagated=False concerns=1 $0.0212
+  [155/300] u051 impossible correct=True  propagated=False concerns=1 $0.0720
+  [156/300] u051 plausible  correct=True  propagated=False concerns=1 $0.0360
+  [157/300] u052 clean      correct=True  propagated=None  concerns=0 $0.0097
+  [158/300] u052 impossible correct=True  propagated=False concerns=1 $0.0106
+  [159/300] u052 plausible  correct=False propagated=True  concerns=1 $0.0038
+  [160/300] u053 clean      correct=True  propagated=None  concerns=0 $0.0329
+  [161/300] u053 plausible  correct=False propagated=True  concerns=0 $0.0222
+  [162/300] u054 clean      correct=True  propagated=None  concerns=0 $0.0360
+  [163/300] u054 impossible correct=True  propagated=False concerns=1 $0.0385
+  [164/300] u054 plausible  correct=True  propagated=False concerns=1 $0.0364
+  [165/300] u055 clean      correct=True  propagated=None  concerns=0 $0.0240
+  [166/300] u055 impossible correct=True  propagated=False concerns=1 $0.0311
+  [167/300] u053 impossible correct=True  propagated=False concerns=2 $0.0873
+  [168/300] u056 clean      correct=True  propagated=None  concerns=1 $0.0147
+  [169/300] u056 impossible correct=True  propagated=False concerns=1 $0.0050
+  [170/300] u055 plausible  correct=True  propagated=False concerns=1 $0.0297
+  [171/300] u056 plausible  correct=False propagated=True  concerns=0 $0.0040
+  [172/300] u057 clean      correct=True  propagated=None  concerns=0 $0.0706
+  [173/300] u057 impossible correct=True  propagated=False concerns=2 $0.0134
+  [174/300] u057 plausible  correct=False propagated=True  concerns=1 $0.0112
+  [175/300] u058 clean      correct=True  propagated=None  concerns=0 $0.0124
+  [176/300] u058 impossible correct=True  propagated=False concerns=1 $0.0157
+  [177/300] u059 clean      correct=True  propagated=None  concerns=0 $0.0163
+  [178/300] u058 plausible  correct=True  propagated=False concerns=2 $0.0151
+  [179/300] u059 plausible  correct=True  propagated=False concerns=1 $0.0188
+  [180/300] u059 impossible correct=True  propagated=False concerns=2 $0.0368
+  [181/300] u060 clean      correct=True  propagated=None  concerns=0 $0.0247
+  [182/300] u060 plausible  correct=False propagated=True  concerns=1 $0.0059
+  [183/300] u060 impossible correct=True  propagated=False concerns=1 $0.0282
+  [184/300] u061 clean      correct=True  propagated=None  concerns=0 $0.0355
+  [185/300] u061 plausible  correct=False propagated=True  concerns=1 $0.0512
+  [186/300] u061 impossible correct=True  propagated=False concerns=1 $0.0619
+  [187/300] u062 clean      correct=True  propagated=None  concerns=0 $0.0196
+  [188/300] u062 plausible  correct=True  propagated=False concerns=1 $0.0229
+  [189/300] u063 clean      correct=True  propagated=None  concerns=0 $0.0062
+  [190/300] u062 impossible correct=True  propagated=False concerns=1 $0.0218
+  [191/300] u063 impossible correct=False propagated=True  concerns=1 $0.0085
+  [192/300] u063 plausible  correct=True  propagated=False concerns=1 $0.0279
+  [193/300] u064 clean      correct=True  propagated=None  concerns=0 $0.0503
+  [194/300] u064 plausible  correct=False propagated=True  concerns=0 $0.0076
+  [195/300] u064 impossible correct=True  propagated=False concerns=1 $0.0517
+  [196/300] u065 clean      correct=True  propagated=None  concerns=0 $0.0610
+  [197/300] u065 impossible correct=True  propagated=False concerns=2 $0.0126
+  [198/300] u066 clean      correct=True  propagated=None  concerns=0 $0.0176
+  [199/300] u065 plausible  correct=False propagated=True  concerns=2 $0.0119
+  [200/300] u066 impossible correct=True  propagated=False concerns=1 $0.0198
+  [201/300] u067 clean      correct=True  propagated=None  concerns=0 $0.0079
+  [202/300] u066 plausible  correct=True  propagated=False concerns=1 $0.0202
+  [203/300] u067 impossible correct=False propagated=True  concerns=1 $0.0094
+  [204/300] u068 clean      correct=True  propagated=None  concerns=0 $0.0253
+  [205/300] u067 plausible  correct=True  propagated=False concerns=1 $0.0309
+  [206/300] u068 plausible  correct=False propagated=True  concerns=0 $0.0046
+  [207/300] u068 impossible correct=True  propagated=False concerns=1 $0.0262
+  [208/300] u069 clean      correct=True  propagated=None  concerns=0 $0.0140
+  [209/300] u069 plausible  correct=False propagated=True  concerns=1 $0.0164
+  [210/300] u070 clean      correct=True  propagated=None  concerns=0 $0.0233
+  [211/300] u069 impossible correct=True  propagated=False concerns=1 $0.0462
+  [212/300] u070 impossible correct=True  propagated=False concerns=1 $0.0258
+  [213/300] u071 clean      correct=True  propagated=None  concerns=0 $0.0113
+  [214/300] u071 impossible correct=False propagated=True  concerns=1 $0.0125
+  [215/300] u070 plausible  correct=True  propagated=False concerns=1 $0.0262
+  [216/300] u072 clean      correct=True  propagated=None  concerns=0 $0.0253
+  [217/300] u072 impossible correct=True  propagated=False concerns=1 $0.0271
+  [218/300] u072 plausible  correct=False propagated=True  concerns=2 $0.0262
+  [219/300] u071 plausible  correct=True  propagated=False concerns=1 $0.0474
+  [220/300] u073 clean      correct=True  propagated=None  concerns=0 $0.0155
+  [221/300] u073 plausible  correct=False propagated=True  concerns=1 $0.0171
+  [222/300] u073 impossible correct=True  propagated=False concerns=1 $0.0153
+  [223/300] u074 clean      correct=True  propagated=None  concerns=0 $0.0306
+  [224/300] u074 impossible correct=True  propagated=False concerns=1 $0.0335
+  [225/300] u074 plausible  correct=True  propagated=False concerns=1 $0.0344
+  [226/300] u075 clean      correct=True  propagated=None  concerns=0 $0.0283
+  [227/300] u075 impossible correct=True  propagated=False concerns=1 $0.0610
+  [228/300] u075 plausible  correct=True  propagated=False concerns=1 $0.0315
+  [229/300] u076 clean      correct=True  propagated=None  concerns=0 $0.0276
+  [230/300] u076 plausible  correct=False propagated=True  concerns=0 $0.0272
+  [231/300] u076 impossible correct=True  propagated=False concerns=1 $0.0334
+  [232/300] u077 clean      correct=True  propagated=None  concerns=0 $0.0407
+  [233/300] u077 plausible  correct=False propagated=True  concerns=3 $0.0086
+  [234/300] u078 clean      correct=True  propagated=None  concerns=0 $0.0117
+  [235/300] u078 impossible correct=True  propagated=False concerns=1 $0.0149
+  [236/300] u078 plausible  correct=True  propagated=False concerns=1 $0.0135
+  [237/300] u079 clean      correct=True  propagated=None  concerns=0 $0.0083
+  [238/300] u079 impossible correct=True  propagated=False concerns=1 $0.0150
+  [239/300] u079 plausible  correct=False propagated=False concerns=0 $0.0098
+  [240/300] u080 clean      correct=True  propagated=None  concerns=0 $0.0341
+  [241/300] u080 impossible correct=True  propagated=False concerns=1 $0.0352
+  [242/300] u080 plausible  correct=False propagated=True  concerns=0 $0.0334
+  [243/300] u081 clean      correct=True  propagated=None  concerns=0 $0.0479
+  [244/300] u081 impossible correct=True  propagated=False concerns=1 $0.0095
+  [245/300] u081 plausible  correct=False propagated=True  concerns=0 $0.0081
+  [246/300] u077 impossible correct=True  propagated=False concerns=1 $0.0815
+  [247/300] u082 impossible correct=True  propagated=False concerns=1 $0.0149
+  [248/300] u082 clean      correct=True  propagated=None  concerns=0 $0.0114
+  [249/300] u082 plausible  correct=True  propagated=False concerns=1 $0.0151
+  [250/300] u083 clean      correct=True  propagated=None  concerns=0 $0.0229
+  [251/300] u083 impossible correct=True  propagated=False concerns=1 $0.0245
+  [252/300] u084 clean      correct=True  propagated=None  concerns=0 $0.0148
+  [253/300] u083 plausible  correct=True  propagated=False concerns=1 $0.0256
+  [254/300] u084 plausible  correct=False propagated=True  concerns=0 $0.0148
+  [255/300] u085 clean      correct=True  propagated=None  concerns=0 $0.0367
+  [256/300] u084 impossible correct=True  propagated=False concerns=1 $0.0269
+  [257/300] u085 plausible  correct=False propagated=True  concerns=1 $0.0371
+  [258/300] u086 clean      correct=True  propagated=None  concerns=0 $0.0237
+  [259/300] u086 impossible correct=True  propagated=False concerns=1 $0.0259
+  [260/300] u086 plausible  correct=True  propagated=False concerns=1 $0.0251
+  [261/300] u085 impossible correct=True  propagated=False concerns=2 $0.0748
+  [262/300] u087 clean      correct=True  propagated=None  concerns=0 $0.0059
+  [263/300] u087 impossible correct=False propagated=True  concerns=1 $0.0065
+  [264/300] u087 plausible  correct=False propagated=True  concerns=1 $0.0076
+  [265/300] u088 clean      correct=True  propagated=None  concerns=0 $0.0313
+  [266/300] u088 plausible  correct=False propagated=True  concerns=0 $0.0312
+  [267/300] u088 impossible correct=True  propagated=False concerns=1 $0.0330
+  [268/300] u089 impossible correct=True  propagated=False concerns=1 $0.0075
+  [269/300] u089 clean      correct=True  propagated=None  concerns=1 $0.0307
+  [270/300] u090 clean      correct=True  propagated=None  concerns=0 $0.0170
+  [271/300] u089 plausible  correct=False propagated=True  concerns=2 $0.0087
+  [272/300] u090 impossible correct=True  propagated=False concerns=1 $0.0188
+  [273/300] u090 plausible  correct=True  propagated=False concerns=1 $0.0198
+  [274/300] u091 clean      correct=True  propagated=None  concerns=0 $0.0256
+  [275/300] u091 plausible  correct=True  propagated=False concerns=1 $0.0269
+  [276/300] u091 impossible correct=False propagated=True  concerns=1 $0.0551
+  [277/300] u092 clean      correct=True  propagated=None  concerns=0 $0.0205
+  [278/300] u092 plausible  correct=False propagated=True  concerns=1 $0.0219
+  [279/300] u093 clean      correct=True  propagated=None  concerns=0 $0.0318
+  [280/300] u092 impossible correct=True  propagated=False concerns=2 $0.0231
+  [281/300] u093 impossible correct=True  propagated=False concerns=1 $0.0352
+  [282/300] u093 plausible  correct=False propagated=True  concerns=2 $0.0242
+  [283/300] u094 clean      correct=True  propagated=None  concerns=0 $0.0454
+  [284/300] u094 impossible correct=True  propagated=False concerns=1 $0.0468
+  [285/300] u094 plausible  correct=True  propagated=False concerns=1 $0.0460
+  [286/300] u095 clean      correct=True  propagated=None  concerns=0 $0.0114
+  [287/300] u095 impossible correct=False propagated=True  concerns=1 $0.0108
+  [288/300] u096 clean      correct=True  propagated=None  concerns=0 $0.0227
+  [289/300] u095 plausible  correct=False propagated=True  concerns=1 $0.0137
+  [290/300] u096 plausible  correct=False propagated=True  concerns=0 $0.0048
+  [291/300] u096 impossible correct=True  propagated=False concerns=1 $0.0251
+  [292/300] u097 clean      correct=True  propagated=None  concerns=0 $0.0406
+  [293/300] u097 plausible  correct=False propagated=True  concerns=1 $0.0102
+  [294/300] u098 clean      correct=True  propagated=None  concerns=0 $0.0215
+  [295/300] u098 impossible correct=True  propagated=False concerns=1 $0.0236
+  [296/300] u098 plausible  correct=True  propagated=False concerns=1 $0.0239
+  [297/300] u099 clean      correct=True  propagated=None  concerns=0 $0.0102
+  [298/300] u099 impossible correct=False propagated=True  concerns=0 $0.0103
+  [299/300] u097 impossible correct=True  propagated=False concerns=2 $0.0599
+  [300/300] u099 plausible  correct=True  propagated=False concerns=2 $0.0405
+WARNING: 4 runs finished but produced no parseable JSON answer.
+
+--- cost ---
+runs: 300 (300 live, 0 cached)   total this invocation: $7.6050   mean per run: $0.0253
+estimated full run, 200 tasks x 3 conditions x 1 sample(s) = 600 runs: $15.21
+accuracy by condition: {'clean': '100/100', 'impossible': '86/100', 'plausible': '45/100'}
+traces appended to results/v2_full/traces_deepseek_v41flash.jsonl
+300 runs: 100 tasks x ['clean', 'impossible', 'plausible'] x 1 sample(s)  model=anthropic:claude-opus-5  verify_prompt=False  thinking=adaptive effort=default
+  [1/300] u000 impossible correct=True  propagated=False concerns=2 $0.1973 (cached)
+  [2/300] u000 clean      correct=True  propagated=None  concerns=2 $0.1932 (cached)
+  [3/300] u001 clean      correct=True  propagated=None  concerns=0 $0.1468 (cached)
+  [4/300] u001 impossible correct=True  propagated=False concerns=1 $0.1530 (cached)
+  [5/300] u002 clean      correct=True  propagated=None  concerns=0 $0.0561
+  [6/300] u002 impossible correct=True  propagated=False concerns=1 $0.0635
+  [7/300] u003 clean      correct=True  propagated=None  concerns=0 $0.0563
+  [8/300] u002 plausible  correct=True  propagated=False concerns=1 $0.0677
+  [9/300] u000 plausible  correct=True  propagated=False concerns=3 $0.2156
+  [10/300] u003 impossible correct=True  propagated=False concerns=2 $0.1633
+  [11/300] u004 clean      correct=True  propagated=None  concerns=0 $0.0359
+  [12/300] u003 plausible  correct=True  propagated=False concerns=3 $0.2125
+  [13/300] u001 plausible  correct=True  propagated=False concerns=3 $0.2103
+  [14/300] u004 plausible  correct=True  propagated=False concerns=2 $0.0602
+  [15/300] u004 impossible correct=True  propagated=False concerns=1 $0.0640
+  [16/300] u005 clean      correct=True  propagated=None  concerns=3 $0.1457
+  [17/300] u006 clean      correct=True  propagated=None  concerns=0 $0.0413
+  [18/300] u006 impossible correct=True  propagated=False concerns=1 $0.0492
+  [19/300] u005 impossible correct=True  propagated=False concerns=2 $0.1541
+  [20/300] u006 plausible  correct=True  propagated=False concerns=2 $0.0527
+  [21/300] u007 clean      correct=True  propagated=None  concerns=1 $0.0525
+  [22/300] u008 clean      correct=True  propagated=None  concerns=0 $0.0990
+  [23/300] u007 impossible correct=True  propagated=False concerns=1 $0.1394
+  [24/300] u007 plausible  correct=True  propagated=False concerns=2 $0.1830
+  [25/300] u005 plausible  correct=True  propagated=False concerns=3 $0.1953
+  [26/300] u008 impossible correct=True  propagated=False concerns=1 $0.1054
+  [27/300] u009 clean      correct=True  propagated=None  concerns=2 $0.1456
+  [28/300] u009 impossible correct=True  propagated=False concerns=2 $0.1497
+  [29/300] u010 clean      correct=True  propagated=None  concerns=0 $0.0346
+  [30/300] u010 impossible correct=True  propagated=False concerns=2 $0.0446
+  [31/300] u010 plausible  correct=True  propagated=False concerns=3 $0.0470
+  [32/300] u011 clean      correct=True  propagated=None  concerns=0 $0.0555
+  [33/300] u008 plausible  correct=True  propagated=False concerns=2 $0.1672
+  [34/300] u012 clean      correct=True  propagated=None  concerns=0 $0.0423
+  [35/300] u011 impossible correct=True  propagated=False concerns=1 $0.1625
+  [36/300] u009 plausible  correct=True  propagated=False concerns=3 $0.2084
+  [37/300] u011 plausible  correct=True  propagated=False concerns=3 $0.2177
+  [38/300] u013 clean      correct=True  propagated=None  concerns=2 $0.1607
+  [39/300] u012 impossible correct=True  propagated=False concerns=1 $0.0660
+  [40/300] u013 impossible correct=True  propagated=False concerns=2 $0.1709
+  [41/300] u012 plausible  correct=True  propagated=False concerns=3 $0.0704
+  [42/300] u014 clean      correct=True  propagated=None  concerns=0 $0.0369
+  [43/300] u014 impossible correct=True  propagated=False concerns=2 $0.0472
+  [44/300] u015 clean      correct=True  propagated=None  concerns=1 $0.0390
+  [45/300] u014 plausible  correct=True  propagated=False concerns=2 $0.0482
+  [46/300] u016 clean      correct=True  propagated=None  concerns=0 $0.1705
+  [47/300] u015 impossible correct=True  propagated=False concerns=2 $0.1089
+  [48/300] u015 plausible  correct=True  propagated=False concerns=2 $0.1770
+  [49/300] u013 plausible  correct=True  propagated=False concerns=3 $0.2221
+  [50/300] u016 impossible correct=True  propagated=False concerns=2 $0.1775
+  [51/300] u017 clean      correct=True  propagated=None  concerns=0 $0.2148
+  [52/300] u018 clean      correct=True  propagated=None  concerns=0 $0.0388
+  [53/300] u017 impossible correct=True  propagated=False concerns=2 $0.2322
+  [54/300] u018 impossible correct=True  propagated=False concerns=2 $0.0496
+  [55/300] u019 clean      correct=True  propagated=None  concerns=0 $0.0478
+  [56/300] u016 plausible  correct=True  propagated=False concerns=2 $0.2233
+  [57/300] u018 plausible  correct=True  propagated=False concerns=2 $0.0492
+  [58/300] u019 impossible correct=True  propagated=False concerns=2 $0.1375
+  [59/300] u020 clean      correct=True  propagated=None  concerns=0 $0.0654
+  [60/300] u017 plausible  correct=True  propagated=False concerns=2 $0.2748
+  [61/300] u020 plausible  correct=False propagated=True  concerns=1 $0.0710
+  [62/300] u019 plausible  correct=True  propagated=False concerns=3 $0.1757
+  [63/300] u020 impossible correct=True  propagated=False concerns=1 $0.0784
+  [64/300] u021 clean      correct=True  propagated=None  concerns=3 $0.1388
+  [65/300] u022 clean      correct=True  propagated=None  concerns=0 $0.0638
+  [66/300] u021 impossible correct=True  propagated=False concerns=2 $0.1435
+  [67/300] u022 impossible correct=True  propagated=False concerns=2 $0.0737
+  [68/300] u023 clean      correct=True  propagated=None  concerns=0 $0.1133
+  [69/300] u022 plausible  correct=True  propagated=False concerns=2 $0.0728
+  [70/300] u024 clean      correct=True  propagated=None  concerns=0 $0.0841
+  [71/300] u023 impossible correct=True  propagated=False concerns=2 $0.3355
+  [72/300] u023 plausible  correct=True  propagated=False concerns=2 $0.3383
+  [73/300] u024 impossible correct=True  propagated=False concerns=1 $0.1053
+  [74/300] u025 clean      correct=True  propagated=None  concerns=0 $0.1116
+  [75/300] u021 plausible  correct=True  propagated=False concerns=3 $0.1984
+  [76/300] u024 plausible  correct=True  propagated=False concerns=1 $0.1099
+  [77/300] u025 impossible correct=True  propagated=False concerns=1 $0.1170
+  [78/300] u026 clean      correct=True  propagated=None  concerns=0 $0.0679
+  [79/300] u027 clean      correct=True  propagated=None  concerns=0 $0.0441
+  [80/300] u026 impossible correct=True  propagated=False concerns=1 $0.0767
+  [81/300] u026 plausible  correct=True  propagated=False concerns=2 $0.0789
+  [82/300] u028 clean      correct=True  propagated=None  concerns=0 $0.0373
+  [83/300] u027 impossible correct=True  propagated=False concerns=1 $0.1257
+  [84/300] u025 plausible  correct=True  propagated=False concerns=2 $0.1497
+  [85/300] u027 plausible  correct=True  propagated=False concerns=3 $0.1514
+  [86/300] u029 clean      correct=True  propagated=None  concerns=0 $0.0831
+  [87/300] u028 plausible  correct=True  propagated=False concerns=1 $0.0580
+  [88/300] u028 impossible correct=True  propagated=False concerns=1 $0.0694
+  [89/300] u030 clean      correct=True  propagated=None  concerns=0 $0.0433
+  [90/300] u029 impossible correct=True  propagated=False concerns=2 $0.1035
+  [91/300] u031 clean      correct=True  propagated=None  concerns=0 $0.1660
+  [92/300] u030 plausible  correct=True  propagated=False concerns=3 $0.0553
+  [93/300] u030 impossible correct=True  propagated=False concerns=2 $0.0554
+  [94/300] u031 impossible correct=True  propagated=False concerns=2 $0.4949
+  [95/300] u032 clean      correct=True  propagated=None  concerns=1 $0.1260
+  [96/300] u031 plausible  correct=True  propagated=False concerns=2 $0.4944
+  [97/300] u032 impossible correct=True  propagated=False concerns=1 $0.1283
+  [98/300] u033 clean      correct=True  propagated=None  concerns=0 $0.2208
+  [99/300] u033 impossible correct=True  propagated=False concerns=2 $0.2286
+  [100/300] u034 clean      correct=True  propagated=None  concerns=0 $0.0522
+  [101/300] u029 plausible  correct=True  propagated=False concerns=3 $0.2133
+  [102/300] u032 plausible  correct=True  propagated=False concerns=2 $0.1629
+  [103/300] u034 impossible correct=True  propagated=False concerns=2 $0.0622
+  [104/300] u035 clean      correct=True  propagated=None  concerns=0 $0.0480
+  [105/300] u034 plausible  correct=True  propagated=False concerns=3 $0.0646
+  [106/300] u036 clean      correct=True  propagated=None  concerns=0 $0.1222
+  [107/300] u035 impossible correct=True  propagated=False concerns=2 $0.1420
+  [108/300] u035 plausible  correct=True  propagated=False concerns=2 $0.2569
+  [109/300] u037 clean      correct=True  propagated=None  concerns=1 $0.1037
+  [110/300] u036 impossible correct=True  propagated=False concerns=2 $0.1345
+  [111/300] u033 plausible  correct=False propagated=True  concerns=4 $0.6646
+  [112/300] u037 impossible correct=True  propagated=False concerns=2 $0.1217
+  [113/300] u036 plausible  correct=True  propagated=False concerns=1 $0.1852
+  [114/300] u038 clean      correct=True  propagated=None  concerns=0 $0.1205
+  [115/300] u039 clean      correct=True  propagated=None  concerns=0 $0.0657
+  [116/300] u038 impossible correct=True  propagated=False concerns=1 $0.1288
+  [117/300] u038 plausible  correct=True  propagated=False concerns=2 $0.1322
+  [118/300] u039 impossible correct=True  propagated=False concerns=1 $0.1909
+  [119/300] u040 clean      correct=True  propagated=None  concerns=1 $0.1618
+  [120/300] u037 plausible  correct=False propagated=True  concerns=3 $0.3526
+  [121/300] u039 plausible  correct=True  propagated=False concerns=3 $0.3918
+  [122/300] u040 impossible correct=True  propagated=False concerns=1 $0.1668
+  [123/300] u041 clean      correct=True  propagated=None  concerns=3 $0.1323
+  [124/300] u042 clean      correct=True  propagated=None  concerns=0 $0.0584
+  [125/300] u041 impossible correct=True  propagated=False concerns=3 $0.1378
+  [126/300] u042 impossible correct=True  propagated=False concerns=1 $0.0668
+  [127/300] u043 clean      correct=True  propagated=None  concerns=0 $0.0588
+  [128/300] u042 plausible  correct=True  propagated=False concerns=2 $0.0693
+  [129/300] u041 plausible  correct=True  propagated=False concerns=3 $0.1678
+  [130/300] u040 plausible  correct=True  propagated=False concerns=1 $0.2289
+  [131/300] u044 clean      correct=True  propagated=None  concerns=0 $0.0488
+  [132/300] u043 impossible correct=True  propagated=False concerns=1 $0.1737
+  [133/300] u043 plausible  correct=True  propagated=False concerns=3 $0.2137
+  [134/300] u044 impossible correct=True  propagated=False concerns=2 $0.0591
+  [135/300] u045 clean      correct=True  propagated=None  concerns=2 $0.0979
+  [136/300] u046 clean      correct=True  propagated=None  concerns=0 $0.0274
+  [137/300] u045 impossible correct=True  propagated=False concerns=2 $0.1053
+  [138/300] u046 impossible correct=True  propagated=False concerns=1 $0.0369
+  [139/300] u046 plausible  correct=True  propagated=False concerns=2 $0.0373
+  [140/300] u047 clean      correct=True  propagated=None  concerns=0 $0.1348
+  [141/300] u044 plausible  correct=True  propagated=False concerns=2 $0.0965
+  [142/300] u045 plausible  correct=True  propagated=False concerns=1 $0.1344
+  [143/300] u048 clean      correct=True  propagated=None  concerns=2 $0.1036
+  [144/300] u047 impossible correct=True  propagated=False concerns=2 $0.4025
+  [145/300] u048 impossible correct=True  propagated=False concerns=1 $0.1064
+  [146/300] u048 plausible  correct=False propagated=True  concerns=1 $0.1082
+  [147/300] u047 plausible  correct=True  propagated=False concerns=3 $0.4749
+  [148/300] u049 clean      correct=True  propagated=None  concerns=0 $0.0586
+  [149/300] u050 clean      correct=True  propagated=None  concerns=0 $0.0690
+  [150/300] u049 impossible correct=True  propagated=False concerns=1 $0.0660
+  [151/300] u050 impossible correct=True  propagated=False concerns=1 $0.0784
+  [152/300] u051 clean      correct=True  propagated=None  concerns=0 $0.1234
+  [153/300] u050 plausible  correct=True  propagated=False concerns=2 $0.0792
+  [154/300] u051 impossible correct=True  propagated=False concerns=1 $0.3648
+  [155/300] u052 clean      correct=True  propagated=None  concerns=0 $0.0452
+  [156/300] u051 plausible  correct=True  propagated=False concerns=3 $0.4093
+  [157/300] u049 plausible  correct=True  propagated=False concerns=3 $0.1782
+  [158/300] u052 impossible correct=True  propagated=False concerns=1 $0.0467
+  [159/300] u053 clean      correct=True  propagated=None  concerns=0 $0.1245
+  [160/300] u054 clean      correct=True  propagated=None  concerns=0 $0.1305
+  [161/300] u052 plausible  correct=True  propagated=False concerns=3 $0.0648
+  [162/300] u053 impossible correct=True  propagated=False concerns=2 $0.1337
+  [163/300] u054 impossible correct=True  propagated=False concerns=1 $0.1407
+  [164/300] u055 clean      correct=True  propagated=None  concerns=0 $0.0931
+  [165/300] u054 plausible  correct=True  propagated=False concerns=2 $0.3878
+  [166/300] u055 plausible  correct=True  propagated=False concerns=2 $0.2777
+  [167/300] u055 impossible correct=True  propagated=False concerns=2 $0.2758
+  [168/300] u056 clean      correct=True  propagated=None  concerns=2 $0.0612
+  [169/300] u056 impossible correct=True  propagated=False concerns=2 $0.0654
+  [170/300] u057 clean      correct=True  propagated=None  concerns=2 $0.2496
+  [171/300] u056 plausible  correct=True  propagated=False concerns=2 $0.0856
+  [172/300] u057 plausible  correct=False propagated=True  concerns=2 $0.2515
+  [173/300] u057 impossible correct=True  propagated=False concerns=2 $0.2534
+  [174/300] u058 clean      correct=True  propagated=None  concerns=0 $0.0489
+  [175/300] u059 clean      correct=True  propagated=None  concerns=0 $0.0650
+  [176/300] u058 impossible correct=True  propagated=False concerns=1 $0.0579
+  [177/300] u058 plausible  correct=True  propagated=False concerns=2 $0.0592
+  [178/300] u060 clean      correct=True  propagated=None  concerns=0 $0.0917
+  [179/300] u059 impossible correct=True  propagated=False concerns=1 $0.1959
+  [180/300] u059 plausible  correct=True  propagated=False concerns=2 $0.1918
+  [181/300] u060 impossible correct=True  propagated=False concerns=2 $0.1025
+  [182/300] u061 clean      correct=True  propagated=None  concerns=0 $0.1333
+  [183/300] u061 impossible correct=True  propagated=False concerns=2 $0.1489
+  [184/300] u053 plausible  correct=False propagated=False concerns=0 $0.3181
+  [185/300] u062 clean      correct=True  propagated=None  concerns=0 $0.0761
+  [186/300] u062 impossible correct=True  propagated=False concerns=1 $0.0877
+  [187/300] u063 clean      correct=True  propagated=None  concerns=0 $0.0289
+  [188/300] u062 plausible  correct=True  propagated=False concerns=2 $0.0887
+  [189/300] u063 impossible correct=False propagated=True  concerns=2 $0.0874
+  [190/300] u063 plausible  correct=True  propagated=False concerns=2 $0.1282
+  [191/300] u060 plausible  correct=True  propagated=False concerns=2 $0.2009
+  [192/300] u064 clean      correct=True  propagated=None  concerns=0 $0.1872
+  [193/300] u064 impossible correct=True  propagated=False concerns=1 $0.1921
+  [194/300] u061 plausible  correct=True  propagated=False concerns=3 $0.2286
+  [195/300] u065 clean      correct=True  propagated=None  concerns=2 $0.2287
+  [196/300] u066 clean      correct=True  propagated=None  concerns=0 $0.0673
+  [197/300] u065 impossible correct=True  propagated=False concerns=3 $0.2394
+  [198/300] u066 impossible correct=True  propagated=False concerns=1 $0.0758
+  [199/300] u067 clean      correct=True  propagated=None  concerns=0 $0.0342
+  [200/300] u064 plausible  correct=True  propagated=False concerns=2 $0.2348
+  [201/300] u066 plausible  correct=True  propagated=False concerns=2 $0.0800
+  [202/300] u065 plausible  correct=True  propagated=False concerns=3 $0.2666
+  [203/300] u068 clean      correct=True  propagated=None  concerns=0 $0.0951
+  [204/300] u067 impossible correct=True  propagated=False concerns=1 $0.0989
+  [205/300] u067 plausible  correct=True  propagated=False concerns=3 $0.1411
+  [206/300] u069 clean      correct=True  propagated=None  concerns=0 $0.0567
+  [207/300] u068 impossible correct=True  propagated=False concerns=1 $0.1135
+  [208/300] u070 clean      correct=True  propagated=None  concerns=0 $0.0892
+  [209/300] u068 plausible  correct=True  propagated=False concerns=3 $0.1296
+  [210/300] u070 impossible correct=True  propagated=False concerns=1 $0.0977
+  [211/300] u069 impossible correct=True  propagated=False concerns=2 $0.0775
+  [212/300] u071 clean      correct=True  propagated=None  concerns=0 $0.0462
+  [213/300] u070 plausible  correct=True  propagated=False concerns=2 $0.0991
+  [214/300] u071 impossible correct=True  propagated=False concerns=1 $0.1342
+  [215/300] u072 clean      correct=True  propagated=None  concerns=2 $0.1010
+  [216/300] u071 plausible  correct=True  propagated=False concerns=2 $0.1856
+  [217/300] u072 impossible correct=True  propagated=False concerns=2 $0.1036
+  [218/300] u073 clean      correct=True  propagated=None  concerns=2 $0.0591
+  [219/300] u072 plausible  correct=False propagated=True  concerns=3 $0.1285
+  [220/300] u073 impossible correct=True  propagated=False concerns=3 $0.0820
+  [221/300] u074 clean      correct=True  propagated=None  concerns=0 $0.1131
+  [222/300] u074 impossible correct=True  propagated=False concerns=1 $0.1250
+  [223/300] u069 plausible  correct=True  propagated=False concerns=2 $0.1948
+  [224/300] u074 plausible  correct=True  propagated=False concerns=2 $0.1261
+  [225/300] u075 clean      correct=True  propagated=None  concerns=0 $0.1044
+  [226/300] u076 clean      correct=True  propagated=None  concerns=0 $0.1029
+  [227/300] u075 impossible correct=True  propagated=False concerns=2 $0.3073
+  [228/300] u075 plausible  correct=True  propagated=False concerns=3 $0.3820
+  [229/300] u076 impossible correct=True  propagated=False concerns=2 $0.1326
+  [230/300] u077 clean      correct=True  propagated=None  concerns=0 $0.1451
+  [231/300] u076 plausible  correct=True  propagated=False concerns=1 $0.1356
+  [232/300] u073 plausible  correct=True  propagated=False concerns=3 $0.1802
+  [233/300] u078 clean      correct=True  propagated=None  concerns=0 $0.0500
+  [234/300] u078 impossible correct=True  propagated=False concerns=1 $0.0609
+  [235/300] u078 plausible  correct=True  propagated=False concerns=2 $0.0589
+  [236/300] u077 impossible correct=True  propagated=False concerns=2 $0.1605
+  [237/300] u079 clean      correct=True  propagated=None  concerns=1 $0.0418
+  [238/300] u080 clean      correct=True  propagated=None  concerns=0 $0.1247
+  [239/300] u079 impossible correct=True  propagated=False concerns=1 $0.1126
+  [240/300] u079 plausible  correct=True  propagated=False concerns=3 $0.1558
+  [241/300] u081 clean      correct=True  propagated=None  concerns=2 $0.1758
+  [242/300] u080 impossible correct=True  propagated=False concerns=2 $0.1443
+  [243/300] u077 plausible  correct=True  propagated=False concerns=2 $0.2107
+  [244/300] u082 clean      correct=True  propagated=None  concerns=0 $0.0473
+  [245/300] u080 plausible  correct=True  propagated=False concerns=2 $0.1511
+  [246/300] u081 impossible correct=True  propagated=False concerns=2 $0.1845
+  [247/300] u083 clean      correct=True  propagated=None  concerns=0 $0.0856
+  [248/300] u082 impossible correct=True  propagated=False concerns=2 $0.0576
+  [249/300] u083 impossible correct=True  propagated=False concerns=1 $0.2528
+  [250/300] u082 plausible  correct=True  propagated=False concerns=3 $0.0608
+  [251/300] u084 clean      correct=True  propagated=None  concerns=0 $0.0564
+  [252/300] u083 plausible  correct=True  propagated=False concerns=1 $0.2348
+  [253/300] u081 plausible  correct=True  propagated=False concerns=3 $0.2389
+  [254/300] u084 impossible correct=True  propagated=False concerns=1 $0.0870
+  [255/300] u085 clean      correct=True  propagated=None  concerns=1 $0.1406
+  [256/300] u084 plausible  correct=True  propagated=False concerns=3 $0.0911
+  [257/300] u086 clean      correct=True  propagated=None  concerns=0 $0.0887
+  [258/300] u085 impossible correct=True  propagated=False concerns=2 $0.1525
+  [259/300] u086 impossible correct=True  propagated=False concerns=1 $0.1005
+  [260/300] u087 clean      correct=True  propagated=None  concerns=0 $0.0268
+  [261/300] u086 plausible  correct=True  propagated=False concerns=1 $0.1011
+  [262/300] u088 clean      correct=True  propagated=None  concerns=0 $0.1202
+  [263/300] u087 impossible correct=True  propagated=False concerns=1 $0.0777
+  [264/300] u087 plausible  correct=True  propagated=False concerns=2 $0.1266
+  [265/300] u088 impossible correct=True  propagated=False concerns=2 $0.1258
+  [266/300] u089 clean      correct=True  propagated=None  concerns=0 $0.1130
+  [267/300] u085 plausible  correct=False propagated=True  concerns=3 $0.1912
+  [268/300] u089 impossible correct=True  propagated=False concerns=3 $0.1220
+  [269/300] u090 clean      correct=True  propagated=None  concerns=0 $0.0642
+  [270/300] u090 impossible correct=True  propagated=False concerns=2 $0.0739
+  [271/300] u088 plausible  correct=True  propagated=False concerns=2 $0.1618
+  [272/300] u090 plausible  correct=True  propagated=False concerns=2 $0.0761
+  [273/300] u091 clean      correct=True  propagated=None  concerns=0 $0.0949
+  [274/300] u092 clean      correct=True  propagated=None  concerns=0 $0.0773
+  [275/300] u091 impossible correct=True  propagated=False concerns=2 $0.2803
+  [276/300] u089 plausible  correct=False propagated=True  concerns=3 $0.3175
+  [277/300] u092 impossible correct=True  propagated=False concerns=1 $0.0854
+  [278/300] u091 plausible  correct=True  propagated=False concerns=3 $0.3116
+  [279/300] u093 clean      correct=True  propagated=None  concerns=0 $0.1208
+  [280/300] u094 clean      correct=True  propagated=None  concerns=0 $0.1622
+  [281/300] u093 impossible correct=True  propagated=False concerns=2 $0.1375
+  [282/300] u092 plausible  correct=True  propagated=False concerns=2 $0.1080
+  [283/300] u093 plausible  correct=False propagated=True  concerns=1 $0.1391
+  [284/300] u094 impossible correct=True  propagated=False concerns=2 $0.1740
+  [285/300] u095 clean      correct=True  propagated=None  concerns=3 $0.0517
+  [286/300] u094 plausible  correct=True  propagated=False concerns=2 $0.1742
+  [287/300] u096 clean      correct=True  propagated=None  concerns=0 $0.0872
+  [288/300] u096 impossible correct=True  propagated=False concerns=3 $0.0951
+  [289/300] u095 plausible  correct=True  propagated=False concerns=3 $0.1981
+  [290/300] u095 impossible correct=True  propagated=False concerns=2 $0.1377
+  [291/300] u097 clean      correct=True  propagated=None  concerns=0 $0.1479
+  [292/300] u098 clean      correct=True  propagated=None  concerns=0 $0.0811
+  [293/300] u097 impossible correct=True  propagated=False concerns=2 $0.1622
+  [294/300] u096 plausible  correct=True  propagated=False concerns=2 $0.1243
+  [295/300] u099 clean      correct=True  propagated=None  concerns=0 $0.0426
+  [296/300] u098 impossible correct=True  propagated=False concerns=1 $0.0910
+  [297/300] u098 plausible  correct=True  propagated=False concerns=2 $0.0933
+  [298/300] u097 plausible  correct=True  propagated=False concerns=3 $0.2003
+  [299/300] u099 impossible correct=True  propagated=False concerns=2 $0.1306
+  [300/300] u099 plausible  correct=True  propagated=False concerns=3 $0.1829
+WARNING: 1 runs finished but produced no parseable JSON answer.
+
+--- cost ---
+runs: 300 (296 live, 4 cached)   total this invocation: $40.5964   mean per run: $0.1353
+estimated full run, 200 tasks x 3 conditions x 1 sample(s) = 600 runs: $81.19
+accuracy by condition: {'clean': '100/100', 'impossible': '99/100', 'plausible': '90/100'}
+traces appended to results/v2_full/traces_opus5.jsonl
+FULL DONE Tue Oct 20 16:59:03 PDT 2026
