@@ -21,8 +21,13 @@ VERIFY_SENTENCE = (
 )
 
 
-def system_prompt(verify_prompt):
-    return SYSTEM_PROMPT + (VERIFY_SENTENCE if verify_prompt else "")
+ROLES = {"protein": "bioinformatics", "chemistry": "chemistry"}
+
+
+def system_prompt(verify_prompt, domain="protein"):
+    assert "bioinformatics assistant" in SYSTEM_PROMPT
+    base = SYSTEM_PROMPT.replace("bioinformatics assistant", f"{ROLES[domain]} assistant", 1)
+    return base + (VERIFY_SENTENCE if verify_prompt else "")
 
 
 def cost_usd(price, usage):
@@ -125,7 +130,7 @@ def run_mock_agent(task, tool_layer, verify_prompt=False, dom=None):
     final = json.dumps({"answer": answer, "concerns": []})
     usage = {"input_tokens": 0, "output_tokens": 0, "cached_input_tokens": 0}
     return {"provider": "mock", "model": "mock", "config": {}, "thinking": None, "effort": None,
-            "system_prompt": system_prompt(verify_prompt),
+            "system_prompt": system_prompt(verify_prompt, dom.__name__.split(".")[-1]),
             "task_prompt": task["prompt"], "rounds": [], "tool_calls": tool_layer.calls,
             "final_text": final, "final_json_raw": final, "answer": answer, "concerns": [],
             "parsed_ok": True, "stop_reason": "end_turn", "error": None, "n_api_calls": 0,

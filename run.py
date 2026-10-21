@@ -106,7 +106,8 @@ def main():
         if missing:
             print(f"condition '{c}' is not defined for tasks {missing[:5]}... in {args.tasks}", file=sys.stderr)
             sys.exit(2)
-    dom = domains.load(args.domain or tasks_file.get("domain") or "protein")
+    domain_name = args.domain or tasks_file.get("domain") or "protein"
+    dom = domains.load(domain_name)
     table_path = args.proteins or tasks_file.get("proteins") or dom.DEFAULT_TABLE
     table = dom.Table(table_path, record_format=args.record_format)
     samples = range(args.sample_start, args.sample_start + args.samples)
@@ -122,7 +123,7 @@ def main():
     provider, cfg_for_hash = None, {}
     if not args.mock:
         try:
-            provider = make_provider(args.model, system_prompt(args.verify_prompt), dom.tool_schemas(args.record_format),
+            provider = make_provider(args.model, system_prompt(args.verify_prompt, domain_name), dom.tool_schemas(args.record_format),
                                      thinking=args.thinking, effort=args.effort)
             if provider.name == "anthropic":  # preflight: credentials resolve and the model id exists (free call)
                 provider.client.models.retrieve(provider.model)
