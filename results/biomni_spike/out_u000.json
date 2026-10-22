@@ -1,0 +1,7 @@
+{
+ "task_id": "u000",
+ "prompt": "Is UGT2A1 at least twice as long as AGPAT2? Answer yes or no with both lengths. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+ "gold": "no",
+ "elapsed": 0,
+ "result": "ERROR Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': '`temperature` is deprecated for this model.'}, 'request_id': 'req_011CgGV86zWyFm1rijQ7WpVm'}\n(\n  File \"/Users/georgexu/biomni-env/lib/python3.12/site-packages/langchain_core/language_models/chat_models.py\", line 2022, in _generate_with_cache\n    result = self._generate(\n             ^^^^^^^^^^^^^^^\n  File \"/Users/georgexu/biomni-env/lib/python3.12/site-packages/langchain_anthropic/chat_models.py\", line 2599, in _generate\n    _handle_anthropic_bad_request(e)\n  File \"/Users/georgexu/biomni-env/lib/python3.12/site-packages/langchain_anthropic/chat_models.py\", line 1281, in _handle_anthropic_bad_request\n    raise AnthropicInvalidRequestError(\nlangchain_anthropic.chat_models.AnthropicInvalidRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': '`temperature` is deprecated for this model.'}, 'request_id': 'req_011CgGV86zWyFm1rijQ7WpVm'}\n"
+}

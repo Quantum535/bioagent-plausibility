@@ -33,3 +33,7 @@ baseline plaus flag/prop: Opus 57/75 Argon 94/74 DeepSeek 46/77 Sol 52/75 Luna 1
 +verify plaus prop: Argon 50 Sol 46 Luna 64 Opus 72 DeepSeek 72 Flash 73 Kimi 74 Sonnet5 80 Sonnet4.6 86 Haiku 100
 clean false alarm: baseline <=2%, +verify <=9%. Spearman rho chem vs protein (baseline imp prop) = 0.71, p=0.02.
 Duplicate rows removed from v2 (Kimi 5481->1200, Sonnet5 2400->1200, Opus 1681->1200) and v2_full (Argon 536->300).
+
+## Harness tolerances (calibrated on clean records, 2026-10-21) — harness/tolerances.json
+Protein mass vs Biopython recount of UniProt sequence: n=360, median 0.60 Da, p99 1.72, max 2.38 (Q9NYV4); tolerance ±3 Da. Length exact.
+Compound MW vs RDKit MolWt from SMILES: n=300, median 0.006 Da, p99 0.056, max 0.394 (CID 21291); tolerance ±0.5 Da. Heavy atoms exact (300/300).

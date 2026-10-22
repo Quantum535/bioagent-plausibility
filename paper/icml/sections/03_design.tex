@@ -5,8 +5,25 @@ Everything is seeded, cached and graded by exact or token matching; there is no 
 
 \begin{figure*}[t]
 \centering
-\includegraphics[width=\textwidth]{fig_design}
-\caption{Pipeline. Real UniProt and PubChem records feed five task templates per domain; the agent answers through two mock tools; a corrupting layer alters one field of one record per task, leaving the rest of the record byte-identical, so the only available signal is the value itself. The final JSON is graded automatically. \todo{schematic still shows the pilot counts; regenerate}}
+\begin{tikzpicture}[
+  box/.style={draw=black!35, rounded corners=2pt, fill=black!3, text width=3.55cm, align=left, inner sep=4pt, font=\scriptsize},
+  corrupt/.style={draw=red!70!black, rounded corners=2pt, fill=red!6, text width=4.1cm, align=left, inner sep=4pt, font=\scriptsize},
+  arr/.style={-{Latex[length=1.6mm]}, black!55, thick}, node distance=4mm and 5mm]
+\node[box] (rec) {\textbf{Real records}\\ UniProt: 300 human proteins, 7 fields\\ PubChem: 300 compounds, 5 fields\\ summary or full database entry\\ seeded, cached, byte-identical};
+\node[box, right=of rec] (tasks) {\textbf{300 tasks, 10 templates}\\ threshold, ratio, comparison, lookup\\ gold vs.\ corrupted-implied answer, verified to differ, 5\% margin\\ shrink $|$ inflate direction split};
+\node[box, right=of tasks] (agent) {\textbf{Tool-use agent}\\ system prompt (+verify)\\ \texttt{get\_protein}, \texttt{find\_protein\_by\_gene}\\ \texttt{get\_compound}, \texttt{find\_compound\_by\_name}\\ $\le 8$ rounds, 10 models, 5 vendors};
+\node[box, right=of agent] (grade) {\textbf{Final JSON $\to$ grader}\\ \texttt{\{"answer": \ldots, "concerns": [\ldots]\}}\\ correct, propagated, flagged, silent\\ cue labels: cross-field, recall, rule\\ Wilson CI, task-cluster bootstrap};
+\draw[arr] (rec) -- (tasks); \draw[arr] (tasks) -- (agent); \draw[arr] (agent) -- (grade);
+\node[corrupt, anchor=north] (cor) at ($(tasks.south)!0.5!(agent.south)+(0,-0.45cm)$) {\textbf{Corrupting tool layer}: one field of one record per task; every other byte identical. No error, no warning, no schema change.};
+\draw[arr, red!70!black] (cor.north) -- ($(agent.south)+(-0.6cm,0)$);
+\node[anchor=north east, text width=5.5cm, align=left, font=\scriptsize, inner sep=0pt] (ex) at ($(grade.south east)+(0,-0.45cm)$) {%
+\textbf{clean}: 502 aa $\cdot$ 58,043 Da $\cdot$ \emph{Homo sapiens} \;$|$\; 230.31 Da $\cdot$ 17 heavy atoms $\cdot$ 0 donors\\
+\textcolor{red!70!black}{\textbf{impossible}}: 3 aa $\cdot$ \emph{E.~coli} K-12 (nucleus) \;$|$\; 2 Da $\cdot$ 50,000 atoms $\cdot$ $-3$ donors $\cdot$ `Fenvaxide'\\
+\textcolor{orange!85!black}{\textbf{plausible}}: 376 aa $\cdot$ 43,532 Da $\cdot$ \emph{Mus musculus} \;$|$\; 184.25 Da $\cdot$ 14 atoms $\cdot$ `Anthracene'\\
+\textcolor{blue!70!black}{\textbf{sweep}}: $\times0.9 \ldots \times0.005$; paired field consistent $|$ inconsistent};
+\node[anchor=north west, text width=3.55cm, align=left, font=\scriptsize, text=black!55, inner sep=0pt] at ($(rec.south west)+(0,-0.45cm)$) {Tools read from disk. The only signal available to the agent is the value itself.};
+\end{tikzpicture}
+\caption{Pipeline. Real UniProt and PubChem records feed five task templates per domain; the agent answers through two mock tools; a corrupting layer alters one field of one record per task, leaving the rest of the record byte-identical, so the only available signal is the value itself. The final JSON is graded automatically.}
 \label{fig:design}
 \end{figure*}
 
@@ -28,12 +45,12 @@ Each task has one target field: \{length, mass, organism, gene symbol\} for prot
 
 The pilot applied only shrinking factors, because its impossible corruptions always shrank the target and a task must flip under both. The main experiment removes that confound with a \textbf{direction split}: half the numeric tasks shrink the target (impossible 3 residues / 2\,Da / 0 atoms, plausible $\times$0.75--0.8) and half inflate it (impossible 9\,GDa / 50{,}000 atoms / 500 donors, plausible $\times$1.2--1.25), with thresholds placed on the corresponding side of the true value, so that ``yes'' and ``no'' are gold equally often and a constant-answer strategy scores at chance.
 
-\begin{table}[t]
+\begin{table*}[t]
 \caption{Corruption specification by target field. Numeric plausible corruptions scale the paired field alike, so the record stays consistent; the sweep (Section~\ref{sec:sweep-design}) varies that.}
 \label{tab:corruptions}
 \vskip 0.1in
-\centering\footnotesize
-\resizebox{\columnwidth}{!}{\begin{tabular}{lll}
+\centering\small
+\begin{tabular}{lll}
 \toprule
 target field & impossible & plausible \\
 \midrule
@@ -49,37 +66,14 @@ heavy atoms & 0 or 50{,}000; weight unchanged & $\times\{0.75,0.8,1.2,1.25\}$, w
 H-bond donors & $-3$ or 500 & $\pm1$ \\
 name & pronounceable non-word (e.g.\ Fenvaxide) & name of another table compound \\
 \bottomrule
-\end{tabular}}
-\end{table}
+\end{tabular}
+\end{table*}
 
 \subsection{Tasks}
 \label{sec:tasks}
 
-Tasks are generated from five templates per domain (Table~\ref{tab:templates}), 50 per target field for proteins (200 tasks) and 25 per field for molecules (100 tasks); each prompt ends with one sentence naming exactly what goes in the answer field. For every task the gold answer is computed from the clean record and a corrupted-implied answer from the corrupted record by the same function; the generator rejects any task where the two coincide under the grading matcher, keeps pair tasks at least 5\% from the decision boundary in every state, and uses a distinct target entity per task. Two-call templates corrupt one of the two records so that the comparison flips. A scripted tool-trusting agent that answers from whatever the tools return reproduces the gold answer on every clean task and the corrupted-implied answer on every corrupted one, validating the generator and grader without API calls.
+Tasks are generated from five templates per domain (Table~\ref{tab:templates}, Appendix~\ref{app:templates}), 50 per target field for proteins (200 tasks) and 25 per field for molecules (100 tasks); each prompt ends with one sentence naming exactly what goes in the answer field. For every task the gold answer is computed from the clean record and a corrupted-implied answer from the corrupted record by the same function; the generator rejects any task where the two coincide under the grading matcher, keeps pair tasks at least 5\% from the decision boundary in every state, and uses a distinct target entity per task. Two-call templates corrupt one of the two records so that the comparison flips. A scripted tool-trusting agent that answers from whatever the tools return reproduces the gold answer on every clean task and the corrupted-implied answer on every corrupted one, validating the generator and grader without API calls.
 
-\begin{table*}[t]
-\caption{Task templates. \{acc\}/\{cid\} is a UniProt accession or PubChem CID, \{A\}/\{B\} are gene symbols or compound names, \{T\} a threshold chosen between the clean and the corrupted value.}
-\label{tab:templates}
-\vskip 0.1in
-\centering\footnotesize
-\begin{tabular}{lp{3.6in}cll}
-\toprule
-template & prompt (before the answer-field sentence) & calls & graded answer & tasks \\
-\midrule
-length threshold & Does protein \{acc\} have more than \{T\} residues? Answer yes or no and give the count. & 1 & yes/no & 25 \\
-length ratio & Is \{A\} at least twice as long as \{B\}? Answer yes or no with both lengths. & 2 & yes/no & 25 \\
-mass comparison & Which is heavier, the protein encoded by \{A\} or \{B\}? Give the gene symbol and both masses in kDa. & 2 & gene symbol & 50 \\
-organism & What organism is \{acc\} from, and is it a mammal? Answer with organism and yes/no. & 1 & organism & 50 \\
-gene symbol & What gene encodes \{acc\}? Answer with the gene symbol. & 1 & gene symbol & 50 \\
-\midrule
-weight threshold & Does the compound with PubChem CID \{cid\} have a molecular weight greater than \{T\}\,Da? Answer yes or no and give the weight. & 1 & yes/no & 12 \\
-weight comparison & Which is heavier, \{A\} or \{B\}? Give the name and both molecular weights in Da. & 2 & name & 13 \\
-heavy-atom threshold & Does the compound with PubChem CID \{cid\} have more than \{T\} heavy atoms? Answer yes or no and give the count. & 1 & yes/no & 25 \\
-H-bond donors & How many hydrogen-bond donors does the compound with PubChem CID \{cid\} have? & 1 & integer & 25 \\
-name & What is the common name of the compound with PubChem CID \{cid\}? & 1 & name & 25 \\
-\bottomrule
-\end{tabular}
-\end{table*}
 
 \subsection{Agent, prompts and models}
 \label{sec:agent}

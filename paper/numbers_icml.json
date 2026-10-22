@@ -1,452 +1,242 @@
 {
- "a|opus-5|impossible": {
+ "main|proteins, impossible|opus-5": {
   "flagged": 1.0,
   "propagated": 0.32,
-  "ci": [
-   0.2592642960770526,
-   0.38752026605354306
-  ],
+  "flagged_and_propagated": 0.32,
   "n": 200
  },
- "a|opus-5|impossible+verify": {
-  "flagged": 1.0,
-  "propagated": 0.045,
-  "ci": [
-   0.023852271724704166,
-   0.08329759366096785
-  ],
-  "n": 200
- },
- "a|opus-5|plausible": {
-  "flagged": 0.57,
-  "propagated": 0.75,
-  "ci": [
-   0.6856577652038048,
-   0.8049192318370347
-  ],
-  "n": 200
- },
- "a|gemini-4-argon|impossible": {
+ "main|proteins, impossible|gemini-4-argon": {
   "flagged": 1.0,
   "propagated": 0.35,
-  "ci": [
-   0.28728715939415395,
-   0.41836664238134236
-  ],
+  "flagged_and_propagated": 0.35,
   "n": 200
  },
- "a|gemini-4-argon|impossible+verify": {
-  "flagged": 1.0,
-  "propagated": 0.05,
-  "ci": [
-   0.027382349028644986,
-   0.08957905629784384
-  ],
-  "n": 200
- },
- "a|gemini-4-argon|plausible": {
-  "flagged": 0.945,
-  "propagated": 0.735,
-  "ci": [
-   0.6698229773344888,
-   0.7913193998839003
-  ],
-  "n": 200
- },
- "a|deepseek-v4.1-flash-1017|impossible": {
+ "main|proteins, impossible|deepseek-v4.1-flash-1017": {
   "flagged": 1.0,
   "propagated": 0.44,
-  "ci": [
-   0.3729770042058236,
-   0.509284516504375
-  ],
+  "flagged_and_propagated": 0.44,
   "n": 200
  },
- "a|deepseek-v4.1-flash-1017|impossible+verify": {
-  "flagged": 1.0,
-  "propagated": 0.105,
-  "ci": [
-   0.0697069624619373,
-   0.15518138221353622
-  ],
-  "n": 200
- },
- "a|deepseek-v4.1-flash-1017|plausible": {
-  "flagged": 0.46,
-  "propagated": 0.77,
-  "ci": [
-   0.7069157192180299,
-   0.8229074375860769
-  ],
-  "n": 200
- },
- "a|gpt-6.1-sol|impossible": {
+ "main|proteins, impossible|gpt-6.1-sol": {
   "flagged": 1.0,
   "propagated": 0.665,
-  "ci": [
-   0.5970206277343806,
-   0.7267601903125736
-  ],
+  "flagged_and_propagated": 0.665,
   "n": 200
  },
- "a|gpt-6.1-sol|impossible+verify": {
-  "flagged": 1.0,
-  "propagated": 0.18,
-  "ci": [
-   0.13294550662534108,
-   0.2391159371623843
-  ],
-  "n": 200
- },
- "a|gpt-6.1-sol|plausible": {
-  "flagged": 0.52,
-  "propagated": 0.75,
-  "ci": [
-   0.6856577652038048,
-   0.8049192318370347
-  ],
-  "n": 200
- },
- "a|gpt-6-luna|impossible": {
+ "main|proteins, impossible|gpt-6-luna": {
   "flagged": 0.765,
   "propagated": 0.73,
-  "ci": [
-   0.664564384587978,
-   0.7867664526895944
-  ],
+  "flagged_and_propagated": 0.495,
   "n": 200
  },
- "a|gpt-6-luna|impossible+verify": {
-  "flagged": 0.99,
-  "propagated": 0.13,
-  "ci": [
-   0.09028141365225628,
-   0.18366463072730121
-  ],
-  "n": 200
- },
- "a|gpt-6-luna|plausible": {
-  "flagged": 0.17,
-  "propagated": 0.855,
-  "ci": [
-   0.7995121871510563,
-   0.8971071486469359
-  ],
-  "n": 200
- },
- "a|kimi-k3|impossible": {
+ "main|proteins, impossible|kimi-k3": {
   "flagged": 0.995,
   "propagated": 0.745,
-  "ci": [
-   0.6803694869280502,
-   0.8003959701719726
-  ],
+  "flagged_and_propagated": 0.74,
   "n": 200
  },
- "a|kimi-k3|impossible+verify": {
-  "flagged": 1.0,
-  "propagated": 0.22,
-  "ci": [
-   0.16816453539463405,
-   0.2823892279196257
-  ],
-  "n": 200
- },
- "a|kimi-k3|plausible": {
-  "flagged": 0.29,
-  "propagated": 0.92,
-  "ci": [
-   0.8740095102048769,
-   0.9501598448237337
-  ],
-  "n": 200
- },
- "a|sonnet-5|impossible": {
+ "main|proteins, impossible|sonnet-5": {
   "flagged": 1.0,
   "propagated": 0.755,
-  "ci": [
-   0.6909563161285153,
-   0.809432220853141
-  ],
+  "flagged_and_propagated": 0.755,
   "n": 200
  },
- "a|sonnet-5|impossible+verify": {
-  "flagged": 1.0,
-  "propagated": 0.3,
-  "ci": [
-   0.24074644243406385,
-   0.3667919599332645
-  ],
-  "n": 200
- },
- "a|sonnet-5|plausible": {
-  "flagged": 0.315,
-  "propagated": 0.925,
-  "ci": [
-   0.8799554020266798,
-   0.9540254929427476
-  ],
-  "n": 200
- },
- "a|sonnet-4-6|impossible": {
+ "main|proteins, impossible|sonnet-4-6": {
   "flagged": 0.995,
   "propagated": 0.83,
-  "ci": [
-   0.7718399896049648,
-   0.8757216464889435
-  ],
+  "flagged_and_propagated": 0.825,
   "n": 200
  },
- "a|sonnet-4-6|impossible+verify": {
-  "flagged": 1.0,
-  "propagated": 0.59,
-  "ci": [
-   0.5207633107255152,
-   0.655844408209187
-  ],
-  "n": 200
- },
- "a|sonnet-4-6|plausible": {
-  "flagged": 0.25,
-  "propagated": 0.995,
-  "ci": [
-   0.9722256001302286,
-   0.999116854010634
-  ],
-  "n": 200
- },
- "a|gemini-3.8-flash|impossible": {
+ "main|proteins, impossible|gemini-3.8-flash": {
   "flagged": 0.975,
   "propagated": 0.835,
-  "ci": [
-   0.7773410172613647,
-   0.8800321587733603
-  ],
+  "flagged_and_propagated": 0.82,
   "n": 200
  },
- "a|gemini-3.8-flash|impossible+verify": {
-  "flagged": 0.98,
-  "propagated": 0.15,
-  "ci": [
-   0.107135265876273,
-   0.20605693826655166
-  ],
-  "n": 200
- },
- "a|gemini-3.8-flash|plausible": {
-  "flagged": 0.32,
-  "propagated": 0.775,
-  "ci": [
-   0.7122575346140798,
-   0.8273771621308439
-  ],
-  "n": 200
- },
- "a|haiku-4-5|impossible": {
+ "main|proteins, impossible|haiku-4-5": {
   "flagged": 0.74,
   "propagated": 0.93,
-  "ci": [
-   0.8859442178331628,
-   0.9578482170770813
-  ],
+  "flagged_and_propagated": 0.67,
   "n": 200
  },
- "a|haiku-4-5|impossible+verify": {
-  "flagged": 0.855,
-  "propagated": 0.84,
-  "ci": [
-   0.7828581380609876,
-   0.8843265779145542
-  ],
+ "main|proteins, plausible|opus-5": {
+  "flagged": 0.57,
+  "propagated": 0.75,
+  "flagged_and_propagated": 0.32,
   "n": 200
  },
- "a|haiku-4-5|plausible": {
+ "main|proteins, plausible|gemini-4-argon": {
+  "flagged": 0.945,
+  "propagated": 0.735,
+  "flagged_and_propagated": 0.685,
+  "n": 200
+ },
+ "main|proteins, plausible|deepseek-v4.1-flash-1017": {
+  "flagged": 0.46,
+  "propagated": 0.77,
+  "flagged_and_propagated": 0.23,
+  "n": 200
+ },
+ "main|proteins, plausible|gpt-6.1-sol": {
+  "flagged": 0.52,
+  "propagated": 0.75,
+  "flagged_and_propagated": 0.27,
+  "n": 200
+ },
+ "main|proteins, plausible|gpt-6-luna": {
+  "flagged": 0.17,
+  "propagated": 0.855,
+  "flagged_and_propagated": 0.03,
+  "n": 200
+ },
+ "main|proteins, plausible|kimi-k3": {
+  "flagged": 0.29,
+  "propagated": 0.92,
+  "flagged_and_propagated": 0.21,
+  "n": 200
+ },
+ "main|proteins, plausible|sonnet-5": {
+  "flagged": 0.315,
+  "propagated": 0.925,
+  "flagged_and_propagated": 0.24,
+  "n": 200
+ },
+ "main|proteins, plausible|sonnet-4-6": {
+  "flagged": 0.25,
+  "propagated": 0.995,
+  "flagged_and_propagated": 0.245,
+  "n": 200
+ },
+ "main|proteins, plausible|gemini-3.8-flash": {
+  "flagged": 0.32,
+  "propagated": 0.775,
+  "flagged_and_propagated": 0.095,
+  "n": 200
+ },
+ "main|proteins, plausible|haiku-4-5": {
   "flagged": 0.075,
   "propagated": 1.0,
-  "ci": [
-   0.9811539940816791,
-   1
-  ],
+  "flagged_and_propagated": 0.075,
   "n": 200
  },
- "b|opus-5|impossible": {
+ "main|molecules, impossible|opus-5": {
   "flagged": 1.0,
   "propagated": 0.46,
-  "ci": [
-   0.36560643853331865,
-   0.5573531460647615
-  ],
+  "flagged_and_propagated": 0.46,
   "n": 100
  },
- "b|opus-5|plausible": {
-  "flagged": 0.96,
-  "propagated": 0.98,
-  "ci": [
-   0.9299868370580063,
-   0.9944981477650318
-  ],
-  "n": 100
- },
- "b|gemini-4-argon|impossible": {
+ "main|molecules, impossible|gemini-4-argon": {
   "flagged": 0.91,
   "propagated": 0.62,
-  "ci": [
-   0.5220957382071033,
-   0.7090255079986562
-  ],
+  "flagged_and_propagated": 0.53,
   "n": 100
  },
- "b|gemini-4-argon|plausible": {
-  "flagged": 0.9,
-  "propagated": 0.98,
-  "ci": [
-   0.9299868370580063,
-   0.9944981477650318
-  ],
-  "n": 100
- },
- "b|deepseek-v4.1-flash-1017|impossible": {
+ "main|molecules, impossible|deepseek-v4.1-flash-1017": {
   "flagged": 0.97,
   "propagated": 0.38,
-  "ci": [
-   0.2909744920013438,
-   0.47790426179289663
-  ],
+  "flagged_and_propagated": 0.35,
   "n": 100
  },
- "b|deepseek-v4.1-flash-1017|plausible": {
-  "flagged": 0.71,
-  "propagated": 0.95,
-  "ci": [
-   0.8882480347279118,
-   0.9784566385436864
-  ],
-  "n": 100
- },
- "b|gpt-6.1-sol|impossible": {
+ "main|molecules, impossible|gpt-6.1-sol": {
   "flagged": 0.78,
   "propagated": 0.67,
-  "ci": [
-   0.5730516033971139,
-   0.7543701620610456
-  ],
+  "flagged_and_propagated": 0.45,
   "n": 100
  },
- "b|gpt-6.1-sol|plausible": {
-  "flagged": 0.7,
-  "propagated": 0.93,
-  "ci": [
-   0.8625032899347025,
-   0.965681175635936
-  ],
-  "n": 100
- },
- "b|gpt-6-luna|impossible": {
+ "main|molecules, impossible|gpt-6-luna": {
   "flagged": 0.75,
   "propagated": 0.68,
-  "ci": [
-   0.5833719774632081,
-   0.7633098918454312
-  ],
+  "flagged_and_propagated": 0.43,
   "n": 100
  },
- "b|gpt-6-luna|plausible": {
-  "flagged": 0.16,
-  "propagated": 1.0,
-  "ci": [
-   0.9630051925239981,
-   0.9999999999999999
-  ],
-  "n": 100
- },
- "b|kimi-k3|impossible": {
+ "main|molecules, impossible|kimi-k3": {
   "flagged": 0.88,
   "propagated": 0.63,
-  "ci": [
-   0.5322034757513312,
-   0.7181778743049083
-  ],
+  "flagged_and_propagated": 0.51,
   "n": 100
  },
- "b|kimi-k3|plausible": {
-  "flagged": 0.6,
-  "propagated": 0.99,
-  "ci": [
-   0.9455124752390653,
-   0.9982326134344526
-  ],
-  "n": 100
- },
- "b|sonnet-5|impossible": {
+ "main|molecules, impossible|sonnet-5": {
   "flagged": 0.9,
   "propagated": 0.73,
-  "ci": [
-   0.6356769977376873,
-   0.8073053908233518
-  ],
+  "flagged_and_propagated": 0.63,
   "n": 100
  },
- "b|sonnet-5|plausible": {
-  "flagged": 0.49,
-  "propagated": 1.0,
-  "ci": [
-   0.9630051925239981,
-   0.9999999999999999
-  ],
-  "n": 100
- },
- "b|sonnet-4-6|impossible": {
+ "main|molecules, impossible|sonnet-4-6": {
   "flagged": 0.84,
   "propagated": 0.83,
-  "ci": [
-   0.7445181876635703,
-   0.8910652394022684
-  ],
+  "flagged_and_propagated": 0.67,
   "n": 100
  },
- "b|sonnet-4-6|plausible": {
-  "flagged": 0.36,
-  "propagated": 1.0,
-  "ci": [
-   0.9630051925239981,
-   0.9999999999999999
-  ],
-  "n": 100
- },
- "b|gemini-3.8-flash|impossible": {
+ "main|molecules, impossible|gemini-3.8-flash": {
   "flagged": 0.77,
   "propagated": 0.62,
-  "ci": [
-   0.5220957382071033,
-   0.7090255079986562
-  ],
+  "flagged_and_propagated": 0.4,
   "n": 100
  },
- "b|gemini-3.8-flash|plausible": {
-  "flagged": 0.56,
-  "propagated": 1.0,
-  "ci": [
-   0.9630051925239981,
-   0.9999999999999999
-  ],
-  "n": 100
- },
- "b|haiku-4-5|impossible": {
+ "main|molecules, impossible|haiku-4-5": {
   "flagged": 0.75,
   "propagated": 0.91,
-  "ci": [
-   0.8377362530335634,
-   0.9519280048361151
-  ],
+  "flagged_and_propagated": 0.66,
   "n": 100
  },
- "b|haiku-4-5|plausible": {
+ "main|molecules, plausible|opus-5": {
+  "flagged": 0.96,
+  "propagated": 0.98,
+  "flagged_and_propagated": 0.94,
+  "n": 100
+ },
+ "main|molecules, plausible|gemini-4-argon": {
+  "flagged": 0.9,
+  "propagated": 0.98,
+  "flagged_and_propagated": 0.88,
+  "n": 100
+ },
+ "main|molecules, plausible|deepseek-v4.1-flash-1017": {
+  "flagged": 0.71,
+  "propagated": 0.95,
+  "flagged_and_propagated": 0.67,
+  "n": 100
+ },
+ "main|molecules, plausible|gpt-6.1-sol": {
+  "flagged": 0.7,
+  "propagated": 0.93,
+  "flagged_and_propagated": 0.63,
+  "n": 100
+ },
+ "main|molecules, plausible|gpt-6-luna": {
+  "flagged": 0.16,
+  "propagated": 1.0,
+  "flagged_and_propagated": 0.16,
+  "n": 100
+ },
+ "main|molecules, plausible|kimi-k3": {
+  "flagged": 0.6,
+  "propagated": 0.99,
+  "flagged_and_propagated": 0.59,
+  "n": 100
+ },
+ "main|molecules, plausible|sonnet-5": {
+  "flagged": 0.49,
+  "propagated": 1.0,
+  "flagged_and_propagated": 0.49,
+  "n": 100
+ },
+ "main|molecules, plausible|sonnet-4-6": {
+  "flagged": 0.36,
+  "propagated": 1.0,
+  "flagged_and_propagated": 0.36,
+  "n": 100
+ },
+ "main|molecules, plausible|gemini-3.8-flash": {
+  "flagged": 0.56,
+  "propagated": 1.0,
+  "flagged_and_propagated": 0.56,
+  "n": 100
+ },
+ "main|molecules, plausible|haiku-4-5": {
   "flagged": 0.03,
   "propagated": 1.0,
-  "ci": [
-   0.9630051925239981,
-   0.9999999999999999
-  ],
+  "flagged_and_propagated": 0.03,
   "n": 100
  },
  "sweep|opus-5|consistent": {
@@ -610,6 +400,122 @@
   "0.1": 0.9,
   "0.02": 0.95,
   "0.005": 0.85
+ },
+ "direction|opus-5": {
+  "shrink": 0.14,
+  "inflate": 0.14
+ },
+ "direction|gemini-4-argon": {
+  "shrink": 0.3,
+  "inflate": 0.2
+ },
+ "direction|deepseek-v4.1-flash-1017": {
+  "shrink": 0.36,
+  "inflate": 0.12
+ },
+ "direction|gpt-6.1-sol": {
+  "shrink": 0.72,
+  "inflate": 1.0
+ },
+ "direction|gpt-6-luna": {
+  "shrink": 0.62,
+  "inflate": 0.78
+ },
+ "direction|kimi-k3": {
+  "shrink": 0.56,
+  "inflate": 0.72
+ },
+ "direction|sonnet-5": {
+  "shrink": 0.54,
+  "inflate": 0.62
+ },
+ "direction|sonnet-4-6": {
+  "shrink": 0.58,
+  "inflate": 0.74
+ },
+ "direction|gemini-3.8-flash": {
+  "shrink": 0.62,
+  "inflate": 0.96
+ },
+ "direction|haiku-4-5": {
+  "shrink": 0.82,
+  "inflate": 0.96
+ },
+ "cueprop|prot. imp.|crossfield": {
+  "propagated": 0.7047539616346956,
+  "n": 1199
+ },
+ "cueprop|prot. imp.|recall": {
+  "propagated": 0.7075055187637969,
+  "n": 906
+ },
+ "cueprop|prot. imp.|rule": {
+  "propagated": 0.36,
+  "n": 350
+ },
+ "cueprop|chem. imp.|crossfield": {
+  "propagated": 0.5760869565217391,
+  "n": 276
+ },
+ "cueprop|chem. imp.|recall": {
+  "propagated": 0.5138121546961326,
+  "n": 543
+ },
+ "cueprop|chem. imp.|rule": {
+  "propagated": 0.5753768844221105,
+  "n": 398
+ },
+ "cueprop|sweep inc.|crossfield": {
+  "propagated": 0.8592592592592593,
+  "n": 810
+ },
+ "cueprop|sweep inc.|recall": {
+  "propagated": 0.8371278458844134,
+  "n": 571
+ },
+ "cueprop|sweep inc.|rule": {
+  "propagated": 0.7272727272727273,
+  "n": 66
+ },
+ "cueprop|prot. plaus.|crossfield": {
+  "propagated": 0.4557291666666667,
+  "n": 384
+ },
+ "cueprop|prot. plaus.|recall": {
+  "propagated": 0.9472295514511874,
+  "n": 379
+ },
+ "cueprop|chem. plaus.|crossfield": {
+  "propagated": 0.9893617021276596,
+  "n": 94
+ },
+ "cueprop|chem. plaus.|recall": {
+  "propagated": 0.9673202614379085,
+  "n": 459
+ },
+ "cueprop|chem. plaus.|rule": {
+  "propagated": 0.9393939393939394,
+  "n": 33
+ },
+ "route|none": {
+  "n_cells": 20,
+  "median": 0.94,
+  "mean": 0.8630000000000001
+ },
+ "route|re-query only": {
+  "n_cells": 25,
+  "median": 0.86,
+  "mean": 0.6928
+ },
+ "route|partner field": {
+  "n_cells": 40,
+  "median": 0.48,
+  "mean": 0.4965
+ },
+ "route|exact derivation": {
+  "n_cells": 15,
+  "median": 0.0,
+  "mean": 0.0
  },
  "cue|protein, impossible|opus-5|crossfield": 0.775,
  "cue|protein, impossible|opus-5|recall": 0.47,
@@ -853,243 +759,163 @@
  "cue|chemistry, plausible|haiku-4-5|none": 1.0,
  "redundancy|proteins, impossible|opus-5|length": {
   "summary": 0.24,
-  "full": 0.0,
-  "n_summary": 25,
-  "n_full": 25
+  "full": 0.0
  },
  "redundancy|proteins, impossible|opus-5|mass": {
   "summary": 0.08,
-  "full": 0.0,
-  "n_summary": 25,
-  "n_full": 25
+  "full": 0.0
  },
  "redundancy|proteins, impossible|opus-5|organism": {
   "summary": 1.0,
-  "full": 0.0,
-  "n_summary": 25,
-  "n_full": 25
+  "full": 0.0
  },
  "redundancy|proteins, impossible|opus-5|gene_symbol": {
   "summary": 0.0,
-  "full": 0.04,
-  "n_summary": 25,
-  "n_full": 25
+  "full": 0.04
  },
  "redundancy|proteins, impossible|gemini-4-argon|length": {
   "summary": 0.52,
-  "full": 0.0,
-  "n_summary": 25,
-  "n_full": 25
+  "full": 0.0
  },
  "redundancy|proteins, impossible|gemini-4-argon|mass": {
   "summary": 0.0,
-  "full": 0.0,
-  "n_summary": 25,
-  "n_full": 25
+  "full": 0.0
  },
  "redundancy|proteins, impossible|gemini-4-argon|organism": {
   "summary": 0.92,
-  "full": 0.0,
-  "n_summary": 25,
-  "n_full": 25
+  "full": 0.0
  },
  "redundancy|proteins, impossible|gemini-4-argon|gene_symbol": {
   "summary": 0.04,
-  "full": 0.0,
-  "n_summary": 25,
-  "n_full": 25
+  "full": 0.0
  },
  "redundancy|proteins, impossible|deepseek-v4.1-flash-1017|length": {
   "summary": 0.44,
-  "full": 0.0,
-  "n_summary": 25,
-  "n_full": 25
+  "full": 0.0
  },
  "redundancy|proteins, impossible|deepseek-v4.1-flash-1017|mass": {
   "summary": 0.04,
-  "full": 0.0,
-  "n_summary": 25,
-  "n_full": 25
+  "full": 0.0
  },
  "redundancy|proteins, impossible|deepseek-v4.1-flash-1017|organism": {
   "summary": 0.84,
-  "full": 0.0,
-  "n_summary": 25,
-  "n_full": 25
+  "full": 0.0
  },
  "redundancy|proteins, impossible|deepseek-v4.1-flash-1017|gene_symbol": {
   "summary": 0.4,
-  "full": 0.44,
-  "n_summary": 25,
-  "n_full": 25
+  "full": 0.44
  },
  "redundancy|proteins, plausible|opus-5|length": {
   "summary": 1.0,
-  "full": 0.12,
-  "n_summary": 25,
-  "n_full": 25
+  "full": 0.12
  },
  "redundancy|proteins, plausible|opus-5|mass": {
   "summary": 1.0,
-  "full": 0.24,
-  "n_summary": 25,
-  "n_full": 25
+  "full": 0.24
  },
  "redundancy|proteins, plausible|opus-5|organism": {
   "summary": 1.0,
-  "full": 0.0,
-  "n_summary": 25,
-  "n_full": 25
+  "full": 0.0
  },
  "redundancy|proteins, plausible|opus-5|gene_symbol": {
   "summary": 0.0,
-  "full": 0.0,
-  "n_summary": 25,
-  "n_full": 25
+  "full": 0.0
  },
  "redundancy|proteins, plausible|gemini-4-argon|length": {
   "summary": 1.0,
-  "full": 0.08,
-  "n_summary": 25,
-  "n_full": 25
+  "full": 0.08
  },
  "redundancy|proteins, plausible|gemini-4-argon|mass": {
   "summary": 1.0,
-  "full": 0.2,
-  "n_summary": 25,
-  "n_full": 25
+  "full": 0.2
  },
  "redundancy|proteins, plausible|gemini-4-argon|organism": {
   "summary": 0.92,
-  "full": 0.0,
-  "n_summary": 25,
-  "n_full": 25
+  "full": 0.0
  },
  "redundancy|proteins, plausible|gemini-4-argon|gene_symbol": {
   "summary": 0.04,
-  "full": 0.0,
-  "n_summary": 25,
-  "n_full": 25
+  "full": 0.0
  },
  "redundancy|proteins, plausible|deepseek-v4.1-flash-1017|length": {
   "summary": 1.0,
-  "full": 1.0,
-  "n_summary": 25,
-  "n_full": 25
+  "full": 1.0
  },
  "redundancy|proteins, plausible|deepseek-v4.1-flash-1017|mass": {
   "summary": 1.0,
-  "full": 1.0,
-  "n_summary": 25,
-  "n_full": 25
+  "full": 1.0
  },
  "redundancy|proteins, plausible|deepseek-v4.1-flash-1017|organism": {
   "summary": 1.0,
-  "full": 0.0,
-  "n_summary": 25,
-  "n_full": 25
+  "full": 0.0
  },
  "redundancy|proteins, plausible|deepseek-v4.1-flash-1017|gene_symbol": {
   "summary": 0.12,
-  "full": 0.16,
-  "n_summary": 25,
-  "n_full": 25
+  "full": 0.16
  },
  "redundancy|molecules, impossible|gemini-4-argon|molecular_weight": {
   "summary": 0.12,
-  "full": 0.0,
-  "n_summary": 25,
-  "n_full": 25
+  "full": 0.0
  },
  "redundancy|molecules, impossible|gemini-4-argon|heavy_atom_count": {
   "summary": 0.44,
-  "full": 0.0,
-  "n_summary": 25,
-  "n_full": 25
+  "full": 0.0
  },
  "redundancy|molecules, impossible|gemini-4-argon|h_bond_donors": {
   "summary": 0.96,
-  "full": 0.0,
-  "n_summary": 25,
-  "n_full": 25
+  "full": 0.0
  },
  "redundancy|molecules, impossible|gemini-4-argon|name": {
   "summary": 0.96,
-  "full": 0.64,
-  "n_summary": 25,
-  "n_full": 25
+  "full": 0.64
  },
  "redundancy|molecules, impossible|deepseek-v4.1-flash-1017|molecular_weight": {
   "summary": 0.04,
-  "full": 0.0,
-  "n_summary": 25,
-  "n_full": 25
+  "full": 0.0
  },
  "redundancy|molecules, impossible|deepseek-v4.1-flash-1017|heavy_atom_count": {
   "summary": 0.08,
-  "full": 0.0,
-  "n_summary": 25,
-  "n_full": 25
+  "full": 0.0
  },
  "redundancy|molecules, impossible|deepseek-v4.1-flash-1017|h_bond_donors": {
   "summary": 0.4,
-  "full": 0.0,
-  "n_summary": 25,
-  "n_full": 25
+  "full": 0.0
  },
  "redundancy|molecules, impossible|deepseek-v4.1-flash-1017|name": {
   "summary": 1.0,
-  "full": 0.8,
-  "n_summary": 25,
-  "n_full": 25
+  "full": 0.8
  },
  "redundancy|molecules, plausible|gemini-4-argon|molecular_weight": {
   "summary": 1.0,
-  "full": 0.44,
-  "n_summary": 25,
-  "n_full": 25
+  "full": 0.44
  },
  "redundancy|molecules, plausible|gemini-4-argon|heavy_atom_count": {
   "summary": 1.0,
-  "full": 0.4,
-  "n_summary": 25,
-  "n_full": 25
+  "full": 0.4
  },
  "redundancy|molecules, plausible|gemini-4-argon|h_bond_donors": {
   "summary": 1.0,
-  "full": 0.44,
-  "n_summary": 25,
-  "n_full": 25
+  "full": 0.44
  },
  "redundancy|molecules, plausible|gemini-4-argon|name": {
   "summary": 0.92,
-  "full": 0.6,
-  "n_summary": 25,
-  "n_full": 25
+  "full": 0.6
  },
  "redundancy|molecules, plausible|deepseek-v4.1-flash-1017|molecular_weight": {
   "summary": 0.92,
-  "full": 0.44,
-  "n_summary": 25,
-  "n_full": 25
+  "full": 0.44
  },
  "redundancy|molecules, plausible|deepseek-v4.1-flash-1017|heavy_atom_count": {
   "summary": 0.96,
-  "full": 0.44,
-  "n_summary": 25,
-  "n_full": 25
+  "full": 0.44
  },
  "redundancy|molecules, plausible|deepseek-v4.1-flash-1017|h_bond_donors": {
   "summary": 0.92,
-  "full": 0.6,
-  "n_summary": 25,
-  "n_full": 25
+  "full": 0.6
  },
  "redundancy|molecules, plausible|deepseek-v4.1-flash-1017|name": {
   "summary": 1.0,
-  "full": 0.56,
-  "n_summary": 25,
-  "n_full": 25
+  "full": 0.56
  },
  "verify|opus-5|impossible": {
   "baseline": 0.32,
@@ -1216,59 +1042,41 @@
   "crossfield": 0.633051742344245,
   "recall": 0.4783526927138332,
   "rule": 0.18479408658922913,
-  "none": 0.17106652587117213,
-  "prop_crossfield": 0.7047539616346956,
-  "prop_recall": 0.7075055187637969,
-  "prop_rule": 0.36
+  "none": 0.17106652587117213
  },
  "taxonomy|protein, plausible": {
   "n": 783,
   "crossfield": 0.4904214559386973,
   "recall": 0.4840357598978289,
   "rule": 0.0,
-  "none": 0.1966794380587484,
-  "prop_crossfield": 0.4557291666666667,
-  "prop_recall": 0.9472295514511874,
-  "prop_rule": NaN
+  "none": 0.1966794380587484
  },
  "taxonomy|sweep, consistent": {
   "n": 843,
   "crossfield": 0.04744958481613286,
   "recall": 0.6204033214709371,
   "rule": 0.03440094899169632,
-  "none": 0.3499406880189798,
-  "prop_crossfield": 1.0,
-  "prop_recall": 0.9904397705544933,
-  "prop_rule": 1.0
+  "none": 0.3499406880189798
  },
  "taxonomy|sweep, inconsistent": {
   "n": 944,
   "crossfield": 0.8580508474576272,
   "recall": 0.6048728813559322,
   "rule": 0.06991525423728813,
-  "none": 0.07203389830508475,
-  "prop_crossfield": 0.8592592592592593,
-  "prop_recall": 0.8371278458844134,
-  "prop_rule": 0.7272727272727273
+  "none": 0.07203389830508475
  },
  "taxonomy|chemistry, impossible": {
   "n": 855,
   "crossfield": 0.32280701754385965,
   "recall": 0.6350877192982456,
   "rule": 0.4654970760233918,
-  "none": 0.12982456140350876,
-  "prop_crossfield": 0.5760869565217391,
-  "prop_recall": 0.5138121546961326,
-  "prop_rule": 0.5753768844221105
+  "none": 0.12982456140350876
  },
  "taxonomy|chemistry, plausible": {
   "n": 547,
   "crossfield": 0.17184643510054845,
   "recall": 0.8391224862888482,
   "rule": 0.0603290676416819,
-  "none": 0.12431444241316271,
-  "prop_crossfield": 0.9893617021276596,
-  "prop_recall": 0.9673202614379085,
-  "prop_rule": 0.9393939393939394
+  "none": 0.12431444241316271
  }
 }
