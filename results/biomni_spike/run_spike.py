@@ -1,27 +1,30 @@
 import json, os, sys, time, traceback
 from pathlib import Path
+ROOT = Path(__file__).resolve().parents[2]; OUT = Path(__file__).parent
+for line in (ROOT / ".env").read_text().splitlines():            # load API keys from the repo .env
+    if "=" in line and not line.startswith("#"):
+        k, v = line.split("=", 1); os.environ.setdefault(k.strip(), v.strip().strip('"'))
+from biomni.config import default_config
+default_config.temperature = None
+# Claude 5 models reject the temperature parameter; strip it from every outgoing request body at the SDK's request builder
 import anthropic._base_client as _bc
-_seen = []
-def _patch(cls):
-    orig = cls.post
-    def post(self, path, *a, **k):
-        b = k.get("body")
-        if isinstance(b, dict) and "temperature" in b:
-            b.pop("temperature")
-            if not _seen: _seen.append(1); print("[patch] stripped temperature on", path)
-        return orig(self, path, *a, **k)
-    cls.post = post
-_patch(_bc.SyncAPIClient); _patch(_bc.AsyncAPIClient)
+_orig_build = _bc.BaseClient._build_request
+def _build(self, options, *a, **k):
+    jd = getattr(options, "json_data", None)
+    if isinstance(jd, dict): jd.pop("temperature", None)
+    return _orig_build(self, options, *a, **k)
+_bc.BaseClient._build_request = _build
+print("anthropic request builder patched")
 from biomni.agent import A1
-OUT = Path("results/biomni_spike"); LOG = OUT / "net.jsonl"
-os.environ["NETLOG"] = str(LOG)
-N = int(sys.argv[1]) if len(sys.argv) > 1 else 25
-tasks = (json.load(open("data/tasks_v2.json"))["tasks"][:15] + json.load(open("data/chem/tasks.json"))["tasks"][:10])[:N]
-agent = A1(path=str(OUT / "biomni_data"), llm="claude-sonnet-5", source="Anthropic", timeout_seconds=600, expected_data_lake_files=[])
+tasks = json.load(open(ROOT / "data/tasks_v2.json"))["tasks"][:15] + json.load(open(ROOT / "data/chem/tasks.json"))["tasks"][:10]
+agent = A1(path=str(OUT / "biomni_data"), llm="deepseek-ai/DeepSeek-V4.1-Flash-1017", source="Custom", base_url="https://api.together.xyz/v1",
+           api_key=os.environ["TOGETHER_API_KEY"], timeout_seconds=600, expected_data_lake_files=[])
 for t in tasks:
-    with open(LOG, "a") as f: f.write(json.dumps({"kind": "task_start", "task_id": t["task_id"], "t": time.time()}) + "\n")
+    log = OUT / f"net_{t['task_id']}.jsonl"; os.environ["NETLOG"] = str(log)
     t0 = time.time()
     try: result = agent.go(t["prompt"])
     except Exception as e: result = f"ERROR {e}\n{traceback.format_exc()[-800:]}"
-    (OUT / f"out_{t['task_id']}.json").write_text(json.dumps({"task_id": t["task_id"], "prompt": t["prompt"], "gold": t["gold"], "elapsed": round(time.time()-t0), "result": str(result)}, indent=1))
-    print(t["task_id"], f"{time.time()-t0:.0f}s")
+    (OUT / f"out_{t['task_id']}.json").write_text(json.dumps({"task_id": t["task_id"], "prompt": t["prompt"], "gold": t["gold"],
+                                                               "elapsed": time.time() - t0, "result": str(result)}, indent=1))
+    n = sum(1 for _ in open(log)) if log.exists() else 0
+    print(f"{t['task_id']}  {time.time()-t0:5.0f}s  net lines: {n}", flush=True)

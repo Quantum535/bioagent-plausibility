@@ -37,3 +37,8 @@ Duplicate rows removed from v2 (Kimi 5481->1200, Sonnet5 2400->1200, Opus 1681->
 ## Harness tolerances (calibrated on clean records, 2026-10-21) — harness/tolerances.json
 Protein mass vs Biopython recount of UniProt sequence: n=360, median 0.60 Da, p99 1.72, max 2.38 (Q9NYV4); tolerance ±3 Da. Length exact.
 Compound MW vs RDKit MolWt from SMILES: n=300, median 0.006 Da, p99 0.056, max 0.394 (CID 21291); tolerance ±0.5 Da. Heavy atoms exact (300/300).
+
+## Biomni coverage spike (2026-10-22) — results/biomni_spike/
+Biomni A1, DeepSeek V4.1 Flash via Together (Claude 4.6/5 rejected: temperature param + assistant prefill unsupported), data lake off, 25 tasks (15 protein, 10 chem).
+25/25 tasks hit a live database; hosts = rest.uniprot.org (50 hits), pubchem.ncbi.nlm.nih.gov (42); all via http.client (requests/urllib); no httpx/aiohttp/curl.
+Endpoints: uniprotkb/search, uniprotkb/<acc>; PubChem property JSON/TXT/CSV, synonyms/JSON. Answers end in <solution>{"answer":...}</solution>. 6-23 s/task.
