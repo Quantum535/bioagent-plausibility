@@ -1,0 +1,10 @@
+{"t": 1792914971.1285708, "kind": "dns", "lib": "netlog_shim.py", "host": "aiplatform.googleapis.com"}
+{"t": 1792914989.883472, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact:UGT2A1+AND+organism_id:9606+AND+reviewed:true&format=json"}
+{"t": 1792914989.8838358, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792914990.406213, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact:AGPAT2+AND+organism_id:9606+AND+reviewed:true&format=json"}
+{"t": 1792914990.40642, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792914995.003607, "kind": "http", "lib": "netlog_shim.py", "host": "rest.ensembl.org", "method": "GET", "path": "/lookup/symbol/homo_sapiens/UGT2A1?expand=1;content-type=application/json"}
+{"t": 1792914995.004069, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792914997.349004, "kind": "http", "lib": "netlog_shim.py", "host": "rest.ensembl.org", "method": "GET", "path": "/lookup/symbol/homo_sapiens/AGPAT2?expand=1;content-type=application/json"}
+{"t": 1792914997.34933, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792915000.642764, "kind": "dns", "lib": "netlog_shim.py", "host": "aiplatform.googleapis.com"}

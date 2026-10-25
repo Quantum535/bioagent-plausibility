@@ -1,0 +1,7 @@
+{
+ "task_id": "u013",
+ "condition": "clean",
+ "elapsed": 81.36155200004578,
+ "final": "To determine whether the protein encoded by *AOAH* or *ZNF219* is heavier, we examine the canonical human protein sequences from UniProt:\n\n- **AOAH** (UniProt accession: [P28039](https://www.uniprot.org/uniprotkb/P28039)):\n  - Protein name: Acyloxyacyl hydrolase\n  - Length: 575 amino acids\n  - Molecular mass: approximately **65.1 kDa** (65,105 Da; isoform 2 is ~61.6 kDa)\n\n- **ZNF219** (UniProt accession: [Q9P2Y4](https://www.uniprot.org/uniprotkb/Q9P2Y4)):\n  - Protein name: Zinc finger protein 219\n  - Length: 722 amino acids\n  - Molecular mass: approximately **76.9 kDa** (76,877 Da)\n\nTherefore, the protein encoded by **ZNF219** is heavier.\n\n<solution>\n```json\n{\n  \"answer\": \"ZNF219\",\n  \"concerns\": []\n}\n```\n</solution>",
+ "error": null
+}

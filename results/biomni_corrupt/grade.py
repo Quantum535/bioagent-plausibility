@@ -4,7 +4,7 @@ from collections import defaultdict
 sys.path.insert(0, ".")
 from matching import match_answer
 from grade import is_flagged
-OUT = "results/biomni_corrupt"
+OUT = sys.argv[1] if len(sys.argv) > 1 else "results/biomni_corrupt"
 TASKS = {t["task_id"]: t for p in ("data/tasks_v2.json", "data/chem/tasks.json") for t in json.load(open(p))["tasks"]}
 delivered = defaultdict(int); errs = []
 for r in map(json.loads, open(f"{OUT}/proxy.jsonl")):

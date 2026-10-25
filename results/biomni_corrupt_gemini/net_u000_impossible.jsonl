@@ -1,0 +1,8 @@
+{"t": 1792911984.5184152, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792911985.004529, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=(gene:UGT2A1)+AND+(organism_id:9606)+AND+(reviewed:true)&format=json"}
+{"t": 1792911985.290672, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792911985.7434409, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=(gene:AGPAT2)+AND+(organism_id:9606)+AND+(reviewed:true)&format=json"}
+{"t": 1792911985.998917, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792911986.470867, "kind": "http", "lib": "netlog_shim.py", "host": "rest.ensembl.org", "method": "GET", "path": "/lookup/symbol/homo_sapiens/UGT2A1?expand=1"}
+{"t": 1792911986.657961, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792911987.239101, "kind": "http", "lib": "netlog_shim.py", "host": "rest.ensembl.org", "method": "GET", "path": "/lookup/symbol/homo_sapiens/AGPAT2?expand=1"}

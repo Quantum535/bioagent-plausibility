@@ -54,3 +54,11 @@ DeepSeek V4.1 Flash, live UniProt/PubChem via caching mitmproxy, 25 tasks x 3 co
 Delivery 25/25 + 25/25, 0 proxy errors, 0 parse failures. Clean 24/25 correct.
 Impossible: propagated 0/25, flagged 24/25, flagged&propagated 0. Plausible: propagated 7/25, flagged 17/25, flagged&propagated 0.
 => In Biomni the "noticed yet answered" dissociation vanishes; residual failures are all silent plausible propagations. Pilot only.
+
+## Biomni corruption in transit, Flash pilot (2026-10-25) — results/biomni_corrupt_flash/
+Gemini 3.8 Flash via Vertex OpenAI-compatible endpoint (global location). Two runner patches needed and documented: (1) Biomni appends tool
+observations as assistant messages (a1.py:1464) so requests end with a model turn, which Gemini/Anthropic reject -> trailing assistant turn
+relabelled as user; (2) Vertex can return message=null on blocked responses -> mapped to empty assistant message; plus 429 backoff.
+25 tasks x 3: delivery 25/25 + 24/25 (one task computed heavy atoms from SMILES, never fetched the field). Clean 21/25 correct.
+Impossible: propagated 0/25, flagged 20. Plausible: propagated 3/24, flagged 15, flagged&propagated 2. Same pattern as DeepSeek.
+Argon in Biomni is ~10 min/task (long per-step reasoning, many re-queries); reserved for a small 10-task check, not the full run.

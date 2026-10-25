@@ -1,0 +1,4 @@
+{"t": 1792912751.750664, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792912752.2243378, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact:BMP10+AND+organism_id:9606+AND+reviewed:true&format=json"}
+{"t": 1792912752.235754, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792912752.685559, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact:FKTN+AND+organism_id:9606+AND+reviewed:true&format=json"}

@@ -1,0 +1,7 @@
+{
+ "task_id": "u005",
+ "condition": "plausible",
+ "elapsed": 55.92480731010437,
+ "final": "Here is the plan to solve the task:\n1. [ ] Query UniProt for the canonical human proteins encoded by BMP10 and FKTN to retrieve their molecular masses and lengths.\n2. [ ] Compare the protein masses in kDa and check if there are any surprising data points or discrepancies.\n3. [ ] Format the final response with the required JSON object inside the `<solution>` tag.\n\nLet's start by querying UniProt for human BMP10 and FKTN.\n\n<execute>\nimport requests\n\ndef get_uniprot_info(gene_symbol):\n    url = f\"https://rest.uniprot.org/uniprotkb/search?query=gene_exact:{gene_symbol}+AND+organism_id:9606+AND+reviewed:true&format=json\"\n    res = requests.get(url).json()\n    for entry in res.get('results', []):\n        acc = entry['primaryAccession']\n        name = entry['uniProtkbId']\n        seq = entry['sequence']\n        mass_da = seq['molWeight']\n        length = seq['length']\n        print(f\"Gene: {gene_symbol}, Accession: {acc}, ID: {name}, Length: {length} aa, Mass: {mass_da} Da ({mass_da/1000:.2f} kDa)\")\n\nget_uniprot_info(\"BMP10\")\nget_uniprot_info(\"FKTN\")\n</execute></solution>",
+ "error": null
+}
