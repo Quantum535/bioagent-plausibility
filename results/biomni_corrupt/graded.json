@@ -1,0 +1,677 @@
+[
+ {
+  "task": "c000",
+  "cond": "clean",
+  "field": "molecular_weight",
+  "parsed": true,
+  "correct": true
+ },
+ {
+  "task": "c000",
+  "cond": "impossible",
+  "field": "molecular_weight",
+  "parsed": true,
+  "correct": true,
+  "propagated": false,
+  "flagged": true,
+  "delivered": true
+ },
+ {
+  "task": "c000",
+  "cond": "plausible",
+  "field": "molecular_weight",
+  "parsed": true,
+  "correct": true,
+  "propagated": false,
+  "flagged": true,
+  "delivered": true
+ },
+ {
+  "task": "c001",
+  "cond": "clean",
+  "field": "heavy_atom_count",
+  "parsed": true,
+  "correct": true
+ },
+ {
+  "task": "c001",
+  "cond": "impossible",
+  "field": "heavy_atom_count",
+  "parsed": true,
+  "correct": true,
+  "propagated": false,
+  "flagged": true,
+  "delivered": true
+ },
+ {
+  "task": "c001",
+  "cond": "plausible",
+  "field": "heavy_atom_count",
+  "parsed": true,
+  "correct": true,
+  "propagated": false,
+  "flagged": true,
+  "delivered": true
+ },
+ {
+  "task": "c002",
+  "cond": "clean",
+  "field": "h_bond_donors",
+  "parsed": true,
+  "correct": true
+ },
+ {
+  "task": "c002",
+  "cond": "impossible",
+  "field": "h_bond_donors",
+  "parsed": true,
+  "correct": true,
+  "propagated": false,
+  "flagged": true,
+  "delivered": true
+ },
+ {
+  "task": "c002",
+  "cond": "plausible",
+  "field": "h_bond_donors",
+  "parsed": true,
+  "correct": false,
+  "propagated": true,
+  "flagged": false,
+  "delivered": true
+ },
+ {
+  "task": "c003",
+  "cond": "clean",
+  "field": "name",
+  "parsed": true,
+  "correct": false
+ },
+ {
+  "task": "c003",
+  "cond": "impossible",
+  "field": "name",
+  "parsed": true,
+  "correct": true,
+  "propagated": false,
+  "flagged": true,
+  "delivered": true
+ },
+ {
+  "task": "c003",
+  "cond": "plausible",
+  "field": "name",
+  "parsed": true,
+  "correct": true,
+  "propagated": false,
+  "flagged": true,
+  "delivered": true
+ },
+ {
+  "task": "c004",
+  "cond": "clean",
+  "field": "molecular_weight",
+  "parsed": true,
+  "correct": true
+ },
+ {
+  "task": "c004",
+  "cond": "impossible",
+  "field": "molecular_weight",
+  "parsed": true,
+  "correct": true,
+  "propagated": false,
+  "flagged": true,
+  "delivered": true
+ },
+ {
+  "task": "c004",
+  "cond": "plausible",
+  "field": "molecular_weight",
+  "parsed": true,
+  "correct": false,
+  "propagated": true,
+  "flagged": false,
+  "delivered": true
+ },
+ {
+  "task": "c005",
+  "cond": "clean",
+  "field": "heavy_atom_count",
+  "parsed": true,
+  "correct": true
+ },
+ {
+  "task": "c005",
+  "cond": "impossible",
+  "field": "heavy_atom_count",
+  "parsed": true,
+  "correct": true,
+  "propagated": false,
+  "flagged": true,
+  "delivered": true
+ },
+ {
+  "task": "c005",
+  "cond": "plausible",
+  "field": "heavy_atom_count",
+  "parsed": true,
+  "correct": true,
+  "propagated": false,
+  "flagged": true,
+  "delivered": true
+ },
+ {
+  "task": "c006",
+  "cond": "clean",
+  "field": "h_bond_donors",
+  "parsed": true,
+  "correct": true
+ },
+ {
+  "task": "c006",
+  "cond": "impossible",
+  "field": "h_bond_donors",
+  "parsed": true,
+  "correct": true,
+  "propagated": false,
+  "flagged": true,
+  "delivered": true
+ },
+ {
+  "task": "c006",
+  "cond": "plausible",
+  "field": "h_bond_donors",
+  "parsed": true,
+  "correct": false,
+  "propagated": true,
+  "flagged": false,
+  "delivered": true
+ },
+ {
+  "task": "c007",
+  "cond": "clean",
+  "field": "name",
+  "parsed": true,
+  "correct": true
+ },
+ {
+  "task": "c007",
+  "cond": "impossible",
+  "field": "name",
+  "parsed": true,
+  "correct": true,
+  "propagated": false,
+  "flagged": false,
+  "delivered": true
+ },
+ {
+  "task": "c007",
+  "cond": "plausible",
+  "field": "name",
+  "parsed": true,
+  "correct": false,
+  "propagated": false,
+  "flagged": true,
+  "delivered": true
+ },
+ {
+  "task": "c008",
+  "cond": "clean",
+  "field": "molecular_weight",
+  "parsed": true,
+  "correct": true
+ },
+ {
+  "task": "c008",
+  "cond": "impossible",
+  "field": "molecular_weight",
+  "parsed": true,
+  "correct": true,
+  "propagated": false,
+  "flagged": true,
+  "delivered": true
+ },
+ {
+  "task": "c008",
+  "cond": "plausible",
+  "field": "molecular_weight",
+  "parsed": true,
+  "correct": true,
+  "propagated": false,
+  "flagged": true,
+  "delivered": true
+ },
+ {
+  "task": "c009",
+  "cond": "clean",
+  "field": "heavy_atom_count",
+  "parsed": true,
+  "correct": true
+ },
+ {
+  "task": "c009",
+  "cond": "impossible",
+  "field": "heavy_atom_count",
+  "parsed": true,
+  "correct": true,
+  "propagated": false,
+  "flagged": true,
+  "delivered": true
+ },
+ {
+  "task": "c009",
+  "cond": "plausible",
+  "field": "heavy_atom_count",
+  "parsed": true,
+  "correct": true,
+  "propagated": false,
+  "flagged": true,
+  "delivered": true
+ },
+ {
+  "task": "u000",
+  "cond": "clean",
+  "field": "length",
+  "parsed": true,
+  "correct": true
+ },
+ {
+  "task": "u000",
+  "cond": "impossible",
+  "field": "length",
+  "parsed": true,
+  "correct": true,
+  "propagated": false,
+  "flagged": true,
+  "delivered": true
+ },
+ {
+  "task": "u000",
+  "cond": "plausible",
+  "field": "length",
+  "parsed": true,
+  "correct": false,
+  "propagated": true,
+  "flagged": false,
+  "delivered": true
+ },
+ {
+  "task": "u001",
+  "cond": "clean",
+  "field": "mass",
+  "parsed": true,
+  "correct": true
+ },
+ {
+  "task": "u001",
+  "cond": "impossible",
+  "field": "mass",
+  "parsed": true,
+  "correct": true,
+  "propagated": false,
+  "flagged": true,
+  "delivered": true
+ },
+ {
+  "task": "u001",
+  "cond": "plausible",
+  "field": "mass",
+  "parsed": true,
+  "correct": true,
+  "propagated": false,
+  "flagged": true,
+  "delivered": true
+ },
+ {
+  "task": "u002",
+  "cond": "clean",
+  "field": "organism",
+  "parsed": true,
+  "correct": true
+ },
+ {
+  "task": "u002",
+  "cond": "impossible",
+  "field": "organism",
+  "parsed": true,
+  "correct": true,
+  "propagated": false,
+  "flagged": true,
+  "delivered": true
+ },
+ {
+  "task": "u002",
+  "cond": "plausible",
+  "field": "organism",
+  "parsed": true,
+  "correct": true,
+  "propagated": false,
+  "flagged": true,
+  "delivered": true
+ },
+ {
+  "task": "u003",
+  "cond": "clean",
+  "field": "gene_symbol",
+  "parsed": true,
+  "correct": true
+ },
+ {
+  "task": "u003",
+  "cond": "impossible",
+  "field": "gene_symbol",
+  "parsed": true,
+  "correct": true,
+  "propagated": false,
+  "flagged": true,
+  "delivered": true
+ },
+ {
+  "task": "u003",
+  "cond": "plausible",
+  "field": "gene_symbol",
+  "parsed": true,
+  "correct": false,
+  "propagated": true,
+  "flagged": false,
+  "delivered": true
+ },
+ {
+  "task": "u004",
+  "cond": "clean",
+  "field": "length",
+  "parsed": true,
+  "correct": true
+ },
+ {
+  "task": "u004",
+  "cond": "impossible",
+  "field": "length",
+  "parsed": true,
+  "correct": true,
+  "propagated": false,
+  "flagged": true,
+  "delivered": true
+ },
+ {
+  "task": "u004",
+  "cond": "plausible",
+  "field": "length",
+  "parsed": true,
+  "correct": false,
+  "propagated": true,
+  "flagged": false,
+  "delivered": true
+ },
+ {
+  "task": "u005",
+  "cond": "clean",
+  "field": "mass",
+  "parsed": true,
+  "correct": true
+ },
+ {
+  "task": "u005",
+  "cond": "impossible",
+  "field": "mass",
+  "parsed": true,
+  "correct": true,
+  "propagated": false,
+  "flagged": true,
+  "delivered": true
+ },
+ {
+  "task": "u005",
+  "cond": "plausible",
+  "field": "mass",
+  "parsed": true,
+  "correct": true,
+  "propagated": false,
+  "flagged": true,
+  "delivered": true
+ },
+ {
+  "task": "u006",
+  "cond": "clean",
+  "field": "organism",
+  "parsed": true,
+  "correct": true
+ },
+ {
+  "task": "u006",
+  "cond": "impossible",
+  "field": "organism",
+  "parsed": true,
+  "correct": true,
+  "propagated": false,
+  "flagged": true,
+  "delivered": true
+ },
+ {
+  "task": "u006",
+  "cond": "plausible",
+  "field": "organism",
+  "parsed": true,
+  "correct": true,
+  "propagated": false,
+  "flagged": true,
+  "delivered": true
+ },
+ {
+  "task": "u007",
+  "cond": "clean",
+  "field": "gene_symbol",
+  "parsed": true,
+  "correct": true
+ },
+ {
+  "task": "u007",
+  "cond": "impossible",
+  "field": "gene_symbol",
+  "parsed": true,
+  "correct": true,
+  "propagated": false,
+  "flagged": true,
+  "delivered": true
+ },
+ {
+  "task": "u007",
+  "cond": "plausible",
+  "field": "gene_symbol",
+  "parsed": true,
+  "correct": true,
+  "propagated": false,
+  "flagged": true,
+  "delivered": true
+ },
+ {
+  "task": "u008",
+  "cond": "clean",
+  "field": "length",
+  "parsed": true,
+  "correct": true
+ },
+ {
+  "task": "u008",
+  "cond": "impossible",
+  "field": "length",
+  "parsed": true,
+  "correct": true,
+  "propagated": false,
+  "flagged": true,
+  "delivered": true
+ },
+ {
+  "task": "u008",
+  "cond": "plausible",
+  "field": "length",
+  "parsed": true,
+  "correct": true,
+  "propagated": false,
+  "flagged": false,
+  "delivered": true
+ },
+ {
+  "task": "u009",
+  "cond": "clean",
+  "field": "mass",
+  "parsed": true,
+  "correct": true
+ },
+ {
+  "task": "u009",
+  "cond": "impossible",
+  "field": "mass",
+  "parsed": true,
+  "correct": true,
+  "propagated": false,
+  "flagged": true,
+  "delivered": true
+ },
+ {
+  "task": "u009",
+  "cond": "plausible",
+  "field": "mass",
+  "parsed": true,
+  "correct": true,
+  "propagated": false,
+  "flagged": true,
+  "delivered": true
+ },
+ {
+  "task": "u010",
+  "cond": "clean",
+  "field": "organism",
+  "parsed": true,
+  "correct": true
+ },
+ {
+  "task": "u010",
+  "cond": "impossible",
+  "field": "organism",
+  "parsed": true,
+  "correct": true,
+  "propagated": false,
+  "flagged": true,
+  "delivered": true
+ },
+ {
+  "task": "u010",
+  "cond": "plausible",
+  "field": "organism",
+  "parsed": true,
+  "correct": true,
+  "propagated": false,
+  "flagged": true,
+  "delivered": true
+ },
+ {
+  "task": "u011",
+  "cond": "clean",
+  "field": "gene_symbol",
+  "parsed": true,
+  "correct": true
+ },
+ {
+  "task": "u011",
+  "cond": "impossible",
+  "field": "gene_symbol",
+  "parsed": true,
+  "correct": true,
+  "propagated": false,
+  "flagged": true,
+  "delivered": true
+ },
+ {
+  "task": "u011",
+  "cond": "plausible",
+  "field": "gene_symbol",
+  "parsed": true,
+  "correct": false,
+  "propagated": true,
+  "flagged": false,
+  "delivered": true
+ },
+ {
+  "task": "u012",
+  "cond": "clean",
+  "field": "length",
+  "parsed": true,
+  "correct": true
+ },
+ {
+  "task": "u012",
+  "cond": "impossible",
+  "field": "length",
+  "parsed": true,
+  "correct": true,
+  "propagated": false,
+  "flagged": true,
+  "delivered": true
+ },
+ {
+  "task": "u012",
+  "cond": "plausible",
+  "field": "length",
+  "parsed": true,
+  "correct": true,
+  "propagated": false,
+  "flagged": true,
+  "delivered": true
+ },
+ {
+  "task": "u013",
+  "cond": "clean",
+  "field": "mass",
+  "parsed": true,
+  "correct": true
+ },
+ {
+  "task": "u013",
+  "cond": "impossible",
+  "field": "mass",
+  "parsed": true,
+  "correct": true,
+  "propagated": false,
+  "flagged": true,
+  "delivered": true
+ },
+ {
+  "task": "u013",
+  "cond": "plausible",
+  "field": "mass",
+  "parsed": true,
+  "correct": true,
+  "propagated": false,
+  "flagged": true,
+  "delivered": true
+ },
+ {
+  "task": "u014",
+  "cond": "clean",
+  "field": "organism",
+  "parsed": true,
+  "correct": true
+ },
+ {
+  "task": "u014",
+  "cond": "impossible",
+  "field": "organism",
+  "parsed": true,
+  "correct": true,
+  "propagated": false,
+  "flagged": true,
+  "delivered": true
+ },
+ {
+  "task": "u014",
+  "cond": "plausible",
+  "field": "organism",
+  "parsed": true,
+  "correct": true,
+  "propagated": false,
+  "flagged": true,
+  "delivered": true
+ }
+]

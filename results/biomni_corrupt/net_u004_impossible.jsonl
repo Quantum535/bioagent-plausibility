@@ -1,0 +1,11 @@
+{"t": 1792900038.493333, "kind": "dns", "lib": "netlog_shim.py", "host": "api.anthropic.com"}
+{"t": 1792900041.009892, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792900041.490491, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/P50553?format=json&fields=accession,length,sequence"}
+{"t": 1792900044.390325, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792900044.9312818, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/P50553"}
+{"t": 1792900046.52108, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/P50553.json?fields=accession,sequence,length"}
+{"t": 1792900046.521495, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792900048.6172931, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/P50553.json"}
+{"t": 1792900048.617701, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792900050.4939892, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/P50553.fasta"}
+{"t": 1792900050.4943879, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}

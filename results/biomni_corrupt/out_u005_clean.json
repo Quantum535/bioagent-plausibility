@@ -1,0 +1,7 @@
+{
+ "task_id": "u005",
+ "condition": "clean",
+ "elapsed": 27.814597129821777,
+ "final": "<solution>\nUsing canonical reviewed human UniProt sequences:\n- BMP10 (O95393): 424 aa, 48.047 kDa\n- FKTN (O75072): 461 aa, 53.723 kDa\n\nFKTN is heavier.\n\n{\"answer\": \"FKTN\", \"concerns\": [\"BMP10 is annotated as a precursor, so its calculated mass reflects the full-length unprocessed sequence rather than the mature processed protein.\", \"Masses are computed from unmodified canonical sequences and do not account for signal peptide cleavage, post-translational modifications, or disulfide-linked dimerization.\"]}</solution>",
+ "error": null
+}

@@ -1,0 +1,9 @@
+{"t": 1792901010.172572, "kind": "dns", "lib": "netlog_shim.py", "host": "api.anthropic.com"}
+{"t": 1792901012.261079, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792901012.367844, "kind": "http", "lib": "netlog_shim.py", "host": "pubchem.ncbi.nlm.nih.gov", "method": "GET", "path": "/rest/pug/compound/name/gamma-undecalactone/property/MolecularFormula,MolecularWeight/CSV"}
+{"t": 1792901014.878849, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792901014.9619682, "kind": "http", "lib": "netlog_shim.py", "host": "pubchem.ncbi.nlm.nih.gov", "method": "GET", "path": "/rest/pug/compound/name/diethyl%20isobutylmalonate/property/MolecularFormula,MolecularWeight/CSV"}
+{"t": 1792901016, "kind": "curl", "lib": "curl", "args": ["-s", "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/6116/property/MolecularFormula,MolecularWeight,IUPACName/JSON"]}
+{"t": 1792901017, "kind": "curl", "lib": "curl", "args": ["-s", "https://pubchem.ncbi.nlm.nih.gov/rest/pico/compound/name/diethyl%20isobutylmalmonate/xrefs/RegistryID/JSON"]}
+{"t": 1792901020, "kind": "curl", "lib": "curl", "args": ["-s", "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/25047/property/MolecularFormula,MolecularWeight,IUPACName,Title/JSON"]}
+{"t": 1792901021, "kind": "curl", "lib": "curl", "args": ["-s", "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/7714/property/MolecularFormula,MolecularWeight,IUPACName,Title/JSON"]}

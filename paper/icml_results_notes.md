@@ -48,3 +48,9 @@ mitmproxy 12.3 (HTTPS_PROXY + CA bundle set after agent construction; model clie
 Biomni 0.0.8, DeepSeek V4.1 Flash via Together, 25 tasks: proxy saw 48/48 database calls logged in-process (100%), 0 bypassed, 0 TLS errors, 25/25 answers in <solution> format.
 Response formats: UniProt application/json (20), text/plain (6); PubChem application/json (15), text/plain (5), text/csv (3).
 Note: one network inspected TLS to api.together.xyz (untrusted per-device certificate); all runs must be done on an uninspected network.
+
+## Biomni corruption in transit, pilot (2026-10-24) — results/biomni_corrupt/
+DeepSeek V4.1 Flash, live UniProt/PubChem via caching mitmproxy, 25 tasks x 3 conditions, fresh agent per run.
+Delivery 25/25 + 25/25, 0 proxy errors, 0 parse failures. Clean 24/25 correct.
+Impossible: propagated 0/25, flagged 24/25, flagged&propagated 0. Plausible: propagated 7/25, flagged 17/25, flagged&propagated 0.
+=> In Biomni the "noticed yet answered" dissociation vanishes; residual failures are all silent plausible propagations. Pilot only.

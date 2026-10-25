@@ -1,0 +1,7 @@
+{
+ "task_id": "u001",
+ "condition": "plausible",
+ "elapsed": 50.07369017601013,
+ "final": "1. [\u2713] Identify canonical UniProt entries for human WBP4 (O75554) and TEKT4 (Q8WW24).\n2. [\u2713] Retrieve canonical protein sequences and molecular weights.\n3. [\u2717] Found discrepancy for TEKT4: sequence is 435 aa but UniProt length/molWeight metadata says 326 aa / 37987 Da (stale fields).\n4. [\u2713] Resolved via FASTA + md5 + Ensembl canonical protein (435 aa).\n5. [\u2713] Final mass comparison complete.\n\n**Result**\n\n| Gene | UniProt | Length | Mass |\n|------|---------|--------|------|\n| WBP4 (WW domain-binding protein 4) | O75554 | 376 aa | **42.51 kDa** |\n| TEKT4 (Tektin-4) | Q8WW24 | 435 aa | **50.65 kDa** |\n\nTEKT4 is the heavier protein (~8.1 kDa larger). Masses are average (unmodified) masses computed from the canonical sequences.\n\n<solution>TEKT4 is heavier: WBP4 = 42.51 kDa, TEKT4 = 50.65 kDa. {\"answer\": \"TEKT4\", \"concerns\": [\"UniProt entry Q8WW24 (TEKT4) has inconsistent metadata: the sequence/molWeight fields report 326 aa and 37987 Da, but the actual FASTA/JSON sequence is 435 aa (md5 verified) and Ensembl's canonical transcript ENST00000295201 also encodes a 435-aa protein. The 326-aa/37.99 kDa value appears to be stale legacy metadata, so masses were computed from the full 435-aa sequence (50.65 kDa).\"]}</solution>",
+ "error": null
+}

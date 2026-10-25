@@ -1,0 +1,7 @@
+{
+ "task_id": "c008",
+ "condition": "clean",
+ "elapsed": 39.927948236465454,
+ "final": "Both sources agree. Final comparison:\n- Androstenonol propionate: C22H32O3, MW 344.5 Da\n- Dromostanolone: C20H32O2, MW 304.5 Da\n\nAndrostenonol propionate is heavier.\n\n<solution>\nAndrostenonol propionate (C22H32O3) has a molecular weight of 344.5 Da, while Dromostanolone (C20H32O2) has a molecular weight of 304.5 Da. Therefore, Androstenonol propionate is the heavier compound.\n\n{\"answer\": \"Androstenonol propionate\", \"concerns\": [\"'Androstenonol propionate' is an unusual/ambiguous name that closely resembles 'androstanolone propionate' (dihydrotestosterone propionate, C22H34O3, MW 346.5 Da); PubChem's name match resolved it to 5\u03b1-androst-1-en-3-one-17\u03b2-ol propionate (CID 27692, C22H32O3), which is a different, unsaturated structure. If the intended compound was androstanolone propionate, the weight would be 346.5 Da (still heavier than Dromostanolone, so the conclusion is unchanged).\", \"Dromostanolone (drostanolone) should not be confused with dromostanolone propionate (C23H36O3, MW 360.5 Da), which is a distinct ester.\"]}</solution>",
+ "error": null
+}

@@ -1,0 +1,7 @@
+{
+ "task_id": "u011",
+ "condition": "impossible",
+ "elapsed": 31.087560176849365,
+ "final": "1. [\u2713] Retrieve protein O75554 from UniProt (listed gene `EHU7`, aliases FBP21/FNBP21).\n2. [\u2713] Cross-check NCBI: gene = `WBP4`.\n3. [\u2713] Cross-check HGNC: `WBP4` exists; `EHU7` does not.\n4. [\u2713] Resolve symbol and return required output.\n\nThe UniProt gene field `EHU7` appears to be erroneous/stale; NCBI and HGNC both support `WBP4` (WW domain-binding protein 4).\n\n<solution>{\"answer\": \"WBP4\", \"concerns\": [\"UniProt REST entry for O75554 lists gene name 'EHU7', which conflicts with NCBI (/gene=\\\"WBP4\\\") and HGNC (WBP4 found, EHU7 not found); 'EHU7' appears erroneous/stale and was not used.\"]}</solution>",
+ "error": null
+}

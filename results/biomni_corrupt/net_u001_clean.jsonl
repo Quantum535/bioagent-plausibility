@@ -1,0 +1,22 @@
+{"t": 1792899717.008839, "kind": "dns", "lib": "netlog_shim.py", "host": "api.anthropic.com"}
+{"t": 1792899720.384299, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792899720.83813, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact:WBP4+AND+organism_id:9606+AND+reviewed:true&format=fasta&includeIsoform=false"}
+{"t": 1792899724.160073, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792899724.6225111, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact:TEKT4+AND+organism_id:9606+AND+reviewed:true&format=fasta&includeIsoform=false"}
+{"t": 1792899724.877802, "kind": "dns", "lib": "netlog_shim.py", "host": "api.together.xyz"}
+{"t": 1792899733.6692438, "kind": "dns", "lib": "netlog_shim.py", "host": "api.anthropic.com"}
+{"t": 1792899737.1158469, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792899737.579817, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact:WBP4+AND+organism_id:9606+AND+reviewed:true&format=json&fields=accession,id,gene_names,protein_name,organism_name,sequence,length,mass"}
+{"t": 1792899741.493067, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792899741.952356, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact:TEKT4+AND+organism_id:9606+AND+reviewed:true&format=json&fields=accession,id,gene_names,protein_name,organism_name,sequence,length,mass"}
+{"t": 1792899742.245248, "kind": "dns", "lib": "netlog_shim.py", "host": "api.together.xyz"}
+{"t": 1792899746.005238, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact:WBP4+AND+organism_id:9606+AND+reviewed:true&format=json&fields=accession,id,gene_names,protein_name,mass,length"}
+{"t": 1792899746.005555, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792899746.824842, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact:TEKT4+AND+organism_id:9606+AND+reviewed:true&format=json&fields=accession,id,gene_names,protein_name,mass,length"}
+{"t": 1792899746.825196, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792899751.6387231, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=full_name:WBP4+AND+organism_id:9606+AND+reviewed:true&format=json&fields=accession,gene_names,sequence,length,mass"}
+{"t": 1792899751.639094, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792899754.1146162, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact:WBP4+AND+organism_id:9606+AND+reviewed:true&format=json&fields=accession,gene_names,sequence,length,mass"}
+{"t": 1792899754.115071, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792899754.8382442, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact:TEKT4+AND+organism_id:9606+AND+reviewed:true&format=json&fields=accession,gene_names,sequence,length,mass"}
+{"t": 1792899754.838603, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
