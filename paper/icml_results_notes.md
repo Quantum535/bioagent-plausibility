@@ -62,3 +62,7 @@ relabelled as user; (2) Vertex can return message=null on blocked responses -> m
 25 tasks x 3: delivery 25/25 + 24/25 (one task computed heavy atoms from SMILES, never fetched the field). Clean 21/25 correct.
 Impossible: propagated 0/25, flagged 20. Plausible: propagated 3/24, flagged 15, flagged&propagated 2. Same pattern as DeepSeek.
 Argon in Biomni is ~10 min/task (long per-step reasoning, many re-queries); reserved for a small 10-task check, not the full run.
+
+## Pre-registration (2026-10-25)
+OSF registration https://osf.io/vq5cp — hypotheses H1-H3, primary outcome, exclusions and the 95% coverage threshold for the full Biomni runs,
+registered after the 25-task pilots and before any full-scale run.
