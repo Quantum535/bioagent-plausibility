@@ -42,3 +42,9 @@ Compound MW vs RDKit MolWt from SMILES: n=300, median 0.006 Da, p99 0.056, max 0
 Biomni A1, DeepSeek V4.1 Flash via Together (Claude 4.6/5 rejected: temperature param + assistant prefill unsupported), data lake off, 25 tasks (15 protein, 10 chem).
 25/25 tasks hit a live database; hosts = rest.uniprot.org (50 hits), pubchem.ncbi.nlm.nih.gov (42); all via http.client (requests/urllib); no httpx/aiohttp/curl.
 Endpoints: uniprotkb/search, uniprotkb/<acc>; PubChem property JSON/TXT/CSV, synonyms/JSON. Answers end in <solution>{"answer":...}</solution>. 6-23 s/task.
+
+## Biomni proxy coverage test (2026-10-24) — results/biomni_proxy/
+mitmproxy 12.3 (HTTPS_PROXY + CA bundle set after agent construction; model client httpx trust_env=False so only database traffic is proxied).
+Biomni 0.0.8, DeepSeek V4.1 Flash via Together, 25 tasks: proxy saw 48/48 database calls logged in-process (100%), 0 bypassed, 0 TLS errors, 25/25 answers in <solution> format.
+Response formats: UniProt application/json (20), text/plain (6); PubChem application/json (15), text/plain (5), text/csv (3).
+Note: one network inspected TLS to api.together.xyz (untrusted per-device certificate); all runs must be done on an uninspected network.
