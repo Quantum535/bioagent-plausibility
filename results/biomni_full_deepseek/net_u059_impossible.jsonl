@@ -1,1 +1,10 @@
 {"t": 1792971077, "kind": "curl", "lib": "curl", "args": ["-s", "--max-time", "15", "https://rest.uniprot.org/uniprotkb/O14508.txt"]}
+{"t": 1792997977.405796, "kind": "dns", "lib": "netlog_shim.py", "host": "api.anthropic.com"}
+{"t": 1792997979.269323, "kind": "dns", "lib": "netlog_shim.py", "host": "rest.uniprot.org"}
+{"t": 1792997979.702206, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/O14508"}
+{"t": 1792998172.528757, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/O14508.json"}
+{"t": 1792998172.529291, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792998174.218177, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/O14508.json"}
+{"t": 1792998174.2186291, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792998174.663768, "kind": "http", "lib": "netlog_shim.py", "host": "rest.genenames.org", "method": "GET", "path": "/fetch/hgnc_id/19382"}
+{"t": 1792998174.6640131, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}

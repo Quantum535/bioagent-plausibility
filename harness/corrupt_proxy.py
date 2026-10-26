@@ -59,8 +59,26 @@ def uni_json(text, target, fields):
     return json.dumps(d, separators=(",", ":"), ensure_ascii=False), hits, seen
 
 
+def uni_flat(text, target, fields):
+    """UniProt flat-file (.txt): ID/SQ carry length, SQ carries mass, OS organism, GN gene symbol."""
+    hits, seen = {}, False
+    if not re.search(rf"^AC   {re.escape(target)};", text, re.M): return text, hits, seen
+    seen = True
+    def sub(pat, repl, f, flags=re.M):
+        nonlocal text
+        m = re.search(pat, text, flags)
+        if m: hits.setdefault(f, (m.group(2), str(repl))); text = re.sub(pat, lambda g: g.group(1) + str(repl) + g.group(3), text, count=1, flags=flags)
+    if "length" in fields:
+        v = int(round(fields["length"])); sub(r"(^ID   \S+\s+\S+\s+)(\d+)( AA\.)", v, "length"); sub(r"(^SQ   SEQUENCE\s+)(\d+)( AA;)", v, "length")
+    if "mass" in fields: sub(r"(^SQ   SEQUENCE\s+\d+ AA;\s+)(-?\d+)( MW;)", int(round(fields["mass"])), "mass")
+    if "organism" in fields: sub(r"(^OS   )([^\n(]+?)(\s*\(|\.$|$)", fields["organism"] + " ", "organism")
+    if "gene_symbol" in fields: sub(r"(^GN   Name=)([^;{]+)(;| \{)", fields["gene_symbol"], "gene_symbol")
+    return text, hits, seen
+
+
 def uni_text(text, target, fields):
     hits, seen = {}, False
+    if text.startswith("ID   "): return uni_flat(text, target, fields)
     if text.startswith(">"):                                   # FASTA
         lines = text.split("\n")
         for i, ln in enumerate(lines):

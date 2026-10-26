@@ -1,1 +1,21 @@
 {"t": 1792972711, "kind": "curl", "lib": "curl", "args": ["-sS", "--max-time", "20", "https://rest.uniprot.org/uniprotkb/P17643.txt"]}
+{"t": 1792997989.622035, "kind": "dns", "lib": "netlog_shim.py", "host": "api.anthropic.com"}
+{"t": 1792997991.5957491, "kind": "dns", "lib": "netlog_shim.py", "host": "rest.uniprot.org"}
+{"t": 1792997992.0446668, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/P17643"}
+{"t": 1792998186.608598, "kind": "dns", "lib": "netlog_shim.py", "host": "api.anthropic.com"}
+{"t": 1792998188.544636, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792998188.998965, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/P17643"}
+{"t": 1792998192.129762, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792998192.6586938, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/P17643"}
+{"t": 1792998193.431723, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792998193.969739, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/P17643.json"}
+{"t": 1792998194.850837, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792998195.391783, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/P17643.tsv?fields=accession,id,organism_name,organism_id"}
+{"t": 1792998195.562908, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792998196.094912, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=accession:P17643&fields=accession,id,organism_name,organism_id&format=tsv"}
+{"t": 1792998197.457846, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792998197.962959, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene:TYRP1+AND+organism_id:10090&fields=accession,id,organism_name,organism_id,protein_name&format=tsv"}
+{"t": 1792998198.292927, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792998198.743985, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene:TYRP1+AND+organism_id:9606&fields=accession,id,organism_name,organism_id,protein_name&format=tsv"}
+{"t": 1792998200.005424, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792998200.4620001, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/P17643.json"}

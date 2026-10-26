@@ -1,1 +1,16 @@
 {"t": 1792970976, "kind": "curl", "lib": "curl", "args": ["-s", "--max-time", "15", "https://rest.uniprot.org/uniprotkb/Q96NL3.txt"]}
+{"t": 1792997960.273561, "kind": "dns", "lib": "netlog_shim.py", "host": "api.anthropic.com"}
+{"t": 1792997962.261861, "kind": "dns", "lib": "netlog_shim.py", "host": "rest.uniprot.org"}
+{"t": 1792997962.700038, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/Q96NL3?fields=organism_name,organism_id"}
+{"t": 1792998145, "kind": "curl", "lib": "curl", "args": ["-s", "https://rest.uniprot.org/uniprotkb/Q96NL3.json"]}
+{"t": 1792998148, "kind": "curl", "lib": "curl", "args": ["-s", "https://rest.uniprot.org/uniprotkb/Q96NL3.json"]}
+{"t": 1792998150, "kind": "curl", "lib": "curl", "args": ["-s", "https://rest.uniprot.org/uniprotkb/Q96NL3.txt"]}
+{"t": 1792998152, "kind": "curl", "lib": "curl", "args": ["-s", "https://rest.uniprot.org/uniprotkb/search?query=gene:ZNF599+AND+organism_id:9606&fields=accession,id,protein_name,organism_name,lineage&format=tsv"]}
+{"t": 1792998153, "kind": "curl", "lib": "curl", "args": ["-s", "https://rest.uniprot.org/uniprotkb/Q96NL3.fasta"]}
+{"t": 1792998154, "kind": "curl", "lib": "curl", "args": ["-s", "https://rest.uniprot.org/uniprotkb/search?query=accession:Q96NL3&fields=accession,organism_name,organism_id&format=tsv"]}
+{"t": 1792998156, "kind": "curl", "lib": "curl", "args": ["-s", "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=taxonomy&id=9606&retmode=json"]}
+{"t": 1792998157, "kind": "curl", "lib": "curl", "args": ["-s", "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=taxonomy&id=9606&retmode=json"]}
+{"t": 1792998158, "kind": "curl", "lib": "curl", "args": ["-s", "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=taxonomy&id=83333&retmode=json"]}
+{"t": 1792998160, "kind": "curl", "lib": "curl", "args": ["-s", "https://rest.uniprot.org/uniprotkb/search?query=organism_id:83333+AND+protein_name:%22zinc+finger+protein+599%22&fields=accession,protein_name,organism_name&format=tsv"]}
+{"t": 1792998161, "kind": "curl", "lib": "curl", "args": ["-s", "https://rest.uniprot.org/uniprotkb/search?query=gene:ZNF599+AND+organism_id:9606+AND+reviewed:true&fields=accession,length,organism_name&format=tsv"]}
+{"t": 1792998162, "kind": "curl", "lib": "curl", "args": ["-s", "https://rest.uniprot.org/uniprotkb/Q96NL3.fasta"]}
