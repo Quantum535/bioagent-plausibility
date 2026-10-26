@@ -1,0 +1,23 @@
+{"t": 1792983345.508502, "kind": "dns", "lib": "netlog_shim.py", "host": "api.anthropic.com"}
+{"t": 1792983347.650113, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792983348.1378071, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/O95445"}
+{"t": 1792983349.901303, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792983350.357187, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/O95477"}
+{"t": 1792983350.7681391, "kind": "dns", "lib": "netlog_shim.py", "host": "api.together.xyz"}
+{"t": 1792983353.5016232, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792983353.96854, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/O95445.json"}
+{"t": 1792983356.854574, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792983357.533588, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/O95445?fields=accession,id,gene_names,gene_primary,gene_synonym,gene_oln,gene_orf,protein_name,organism_name,organism_id"}
+{"t": 1792983358.958771, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792983359.5780742, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/O95445.json"}
+{"t": 1792983359.587678, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792983360.127839, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact%3AAPOM+AND+organism_id%3A9606+AND+reviewed%3Atrue&fields=accession%2Cid%2Cprotein_name%2Cgene_names&format=tsv&size=5"}
+{"t": 1792983360.369534, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792983360.816109, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact%3ACOA7+AND+organism_id%3A9606+AND+reviewed%3Atrue&fields=accession%2Cid%2Cprotein_name%2Cgene_names&format=tsv&size=5"}
+{"t": 1792983363.1288161, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792983363.586771, "kind": "http", "lib": "netlog_shim.py", "host": "rest.ensembl.org", "method": "GET", "path": "/lookup/id/ENSG00000204444?expand=0"}
+{"t": 1792983410.660424, "kind": "dns", "lib": "netlog_shim.py", "host": "api.together.xyz"}
+{"t": 1792983413.5118048, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792983413.676959, "kind": "http", "lib": "netlog_shim.py", "host": "eutils.ncbi.nlm.nih.gov", "method": "GET", "path": "/entrez/eutils/esummary.fcgi?db=gene&id=55937&retmode=json"}
+{"t": 1792983413.983105, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792983414.46317, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=accession%3AO95445&fields=accession%2Cgene_primary%2Cgene_names%2Cprotein_name&format=tsv"}

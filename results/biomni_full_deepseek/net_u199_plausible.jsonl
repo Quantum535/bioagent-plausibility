@@ -1,0 +1,17 @@
+{"t": 1792987329.5840168, "kind": "dns", "lib": "netlog_shim.py", "host": "api.anthropic.com"}
+{"t": 1792987331.596752, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792987332.079301, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/P08912"}
+{"t": 1792987337.134718, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792987337.797811, "kind": "http", "lib": "netlog_shim.py", "host": "rest.ensembl.org", "method": "GET", "path": "/lookup/symbol/homo_sapiens/CHRM5?expand=1"}
+{"t": 1792987373.522687, "kind": "dns", "lib": "netlog_shim.py", "host": "api.anthropic.com"}
+{"t": 1792987375.8285198, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792987376.2932951, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/P08912"}
+{"t": 1792987376.325908, "kind": "dns", "lib": "netlog_shim.py", "host": "api.together.xyz"}
+{"t": 1792987377.5746639, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792987377.687072, "kind": "http", "lib": "netlog_shim.py", "host": "eutils.ncbi.nlm.nih.gov", "method": "GET", "path": "/entrez/eutils/esearch.fcgi?db=protein&term=P08912&retmode=json"}
+{"t": 1792987377.804457, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792987378.298208, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene:CHRM5+AND+organism_id:9606+AND+reviewed:true&fields=accession,id,gene_primary,protein_name&format=json&size=5"}
+{"t": 1792987379.5382621, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792987380.075083, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/P08912.txt"}
+{"t": 1792987380.0851011, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792987380.438786, "kind": "http", "lib": "netlog_shim.py", "host": "eutils.ncbi.nlm.nih.gov", "method": "GET", "path": "/entrez/eutils/esummary.fcgi?db=protein&id=543761&retmode=json"}

@@ -1,0 +1,18 @@
+{"t": 1792974526.89362, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/Q9UHQ1.json"}
+{"t": 1792974526.895385, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792974530.1486552, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/Q9UHQ1.json"}
+{"t": 1792974530.1488519, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792974531.676309, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=accession:Q9UHQ1&fields=accession,gene_names,protein_name,id&format=tsv"}
+{"t": 1792974531.676491, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792974532.547441, "kind": "http", "lib": "netlog_shim.py", "host": "eutils.ncbi.nlm.nih.gov", "method": "GET", "path": "/entrez/eutils/esearch.fcgi?db=protein&term=Q9UHQ1&retmode=json"}
+{"t": 1792974532.547897, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792974534.469655, "kind": "http", "lib": "netlog_shim.py", "host": "eutils.ncbi.nlm.nih.gov", "method": "GET", "path": "/entrez/eutils/esummary.fcgi?db=protein&id=74735021&retmode=json"}
+{"t": 1792974534.4698439, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792974534.631704, "kind": "http", "lib": "netlog_shim.py", "host": "eutils.ncbi.nlm.nih.gov", "method": "GET", "path": "/entrez/eutils/efetch.fcgi?db=protein&id=74735021&rettype=gb&retmode=text"}
+{"t": 1792974534.631948, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792974536.8116128, "kind": "http", "lib": "netlog_shim.py", "host": "rest.genenames.org", "method": "GET", "path": "/search/symbol/NARF"}
+{"t": 1792974536.8118532, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792974537.049083, "kind": "http", "lib": "netlog_shim.py", "host": "rest.genenames.org", "method": "GET", "path": "/search/symbol/NKN6"}
+{"t": 1792974537.049644, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792974537.2977788, "kind": "http", "lib": "netlog_shim.py", "host": "rest.genenames.org", "method": "GET", "path": "/fetch/symbol/NARF"}
+{"t": 1792974537.298317, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}

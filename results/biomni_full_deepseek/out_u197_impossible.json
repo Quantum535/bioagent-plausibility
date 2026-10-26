@@ -1,0 +1,7 @@
+{
+ "task_id": "u197",
+ "condition": "impossible",
+ "elapsed": 31.230642795562744,
+ "final": "## Results\n\n| Gene | UniProt | Length | Molecular weight |\n|------|---------|--------|------------------|\n| **ELL2** | O00472 (ELL2_HUMAN) | 640 aa | **72.32 kDa** |\n| **AHCYL2** | Q96HN2 (SAHH3_HUMAN) | 611 aa | **66.72 kDa** |\n\nELL2 (72.32 kDa) is heavier than AHCYL2 (66.72 kDa) by ~5.6 kDa.\n\nNotes on method: masses were computed from the canonical reviewed UniProt sequences using BioPython `ProteinAnalysis.molecular_weight()` (average residue masses, unmodified polypeptide). ELL2's computed mass (72,323.5 Da) matches the UniProt-listed mass (72,324 Da) exactly, validating the approach. The UniProt mass field for AHCYL2 returned a corrupted value (9,000,000,000 Da), so that entry's mass was taken from the sequence calculation instead; 611 aa \u00d7 ~109 Da/aa \u2248 66.7 kDa is consistent.\n\n<solution>ELL2 (72.32 kDa) is the heavier protein, versus AHCYL2 (66.72 kDa).\n\n{\"answer\": \"ELL2\", \"concerns\": [\"The UniProt 'mass' field for AHCYL2 (Q96HN2) returned a nonsensical value of 9,000,000,000 Da, so its mass was computed from the canonical sequence (611 aa \u2192 66,720 Da). ELL2's computed mass (72,323.5 Da) matched the UniProt-listed 72,324 Da, confirming the calculation method.\", \"Masses are average (unmodified) polypeptide masses; post-translational modifications and signal-peptide/propeptide processing were not considered.\"]}</solution>",
+ "error": null
+}

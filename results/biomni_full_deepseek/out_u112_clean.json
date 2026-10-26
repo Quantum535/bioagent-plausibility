@@ -1,0 +1,7 @@
+{
+ "task_id": "u112",
+ "condition": "clean",
+ "elapsed": 23.072831869125366,
+ "final": "1. [\u2713] Query UniProt for human ACOT7 and PTRH2 canonical protein lengths\n2. [\u2713] Verify gene identity and compare lengths (ACOT7 \u2265 2 \u00d7 PTRH2)\n3. [\u2713] Return yes/no with both lengths and any data concerns\n\n**Results (reviewed human Swiss-Prot entries):**\n\n| Gene | UniProt ID | Entry name | Canonical length |\n|------|-----------|------------|------------------|\n| ACOT7 | O00154 | BACH_HUMAN | **380 aa** |\n| PTRH2 | Q9Y3E5 | PTH2_HUMAN | **179 aa** |\n\nThreshold: 2 \u00d7 179 = 358 aa. Since 380 \u2265 358, ACOT7 is at least twice as long as PTRH2 (ratio \u2248 2.12). Both entries were confirmed as the correct canonical human proteins by accession lookup.\n\n<solution>Yes \u2014 ACOT7 is 380 amino acids and PTRH2 is 179 amino acids; 380 \u2265 2 \u00d7 179 = 358, so ACOT7 is about 2.12\u00d7 the length of PTRH2.\n\n{\"answer\": \"yes\", \"concerns\": [\"Lengths are canonical (reviewed Swiss-Prot) isoforms only; ACOT7 has multiple alternatively spliced isoforms of differing length (e.g., shorter variants ~350 aa), though the canonical 380 aa still satisfies the \u22652\u00d7 criterion.\", \"The UniProt entry audit field for PTRH2 (Q9Y3E5) returned a 'lastAnnotationUpdateDate' of 2026-09-02, a future date that looks anomalous and may reflect a database/metadata artifact rather than a real error in the sequence length.\"]}</solution>",
+ "error": null
+}

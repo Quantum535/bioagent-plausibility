@@ -1,0 +1,17 @@
+{"t": 1792975111.965267, "kind": "dns", "lib": "netlog_shim.py", "host": "api.anthropic.com"}
+{"t": 1792975114.449892, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792975114.956417, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/Q9UPN6?format=json"}
+{"t": 1792975116.720108, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792975117.2639098, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/Q9UPN6.json"}
+{"t": 1792975119.1637702, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792975119.6284192, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/Q9UPN6.tsv?fields=accession,id,protein_name,gene_names,organism_name,organism_id"}
+{"t": 1792975119.783693, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792975121.246631, "kind": "http", "lib": "netlog_shim.py", "host": "rest.ensembl.org", "method": "GET", "path": "/lookup/symbol/homo_sapiens/SCAF8?content-type=application/json"}
+{"t": 1792975123.668697, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792975123.762593, "kind": "http", "lib": "netlog_shim.py", "host": "eutils.ncbi.nlm.nih.gov", "method": "GET", "path": "/entrez/eutils/esearch.fcgi?db=gene&term=SCAF8%5Bsym%5D+AND+human%5Borgn%5D&retmode=json"}
+{"t": 1792975123.949281, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792975124.407701, "kind": "http", "lib": "netlog_shim.py", "host": "rest.ensembl.org", "method": "GET", "path": "/lookup/symbol/homo_sapiens/SCAF8?content-type=application/json;expand=0"}
+{"t": 1792975124.583599, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792975125.04041, "kind": "http", "lib": "netlog_shim.py", "host": "rest.ensembl.org", "method": "GET", "path": "/xrefs/symbol/homo_sapiens/SCAF8?content-type=application/json"}
+{"t": 1792975125.214699, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792975125.6676679, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/Q9UPN6.json"}

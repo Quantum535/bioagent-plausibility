@@ -1,0 +1,16 @@
+{"t": 1792980501.3212411, "kind": "http", "lib": "netlog_shim.py", "host": "rest.ensembl.org", "method": "GET", "path": "/lookup/symbol/homo_sapiens/IFIT1?content-type=application/json"}
+{"t": 1792980501.3219368, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792980501.9716108, "kind": "http", "lib": "netlog_shim.py", "host": "eutils.ncbi.nlm.nih.gov", "method": "GET", "path": "/entrez/eutils/esearch.fcgi?db=gene&term=IFIT1[sym]+AND+human[orgn]&retmode=json"}
+{"t": 1792980501.972039, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792980504.141761, "kind": "http", "lib": "netlog_shim.py", "host": "eutils.ncbi.nlm.nih.gov", "method": "GET", "path": "/entrez/eutils/esearch.fcgi?db=gene&term=MS4A1[sym]+AND+human[orgn]&retmode=json"}
+{"t": 1792980504.141999, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792980506.269388, "kind": "http", "lib": "netlog_shim.py", "host": "eutils.ncbi.nlm.nih.gov", "method": "GET", "path": "/entrez/eutils/esummary.fcgi?db=gene&id=3434,8374,931&retmode=json"}
+{"t": 1792980506.269584, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792980509.682295, "kind": "http", "lib": "netlog_shim.py", "host": "eutils.ncbi.nlm.nih.gov", "method": "GET", "path": "/entrez/eutils/elink.fcgi?dbfrom=gene&db=nuccore&id=3434&linkname=gene_nuccore_refseqrna&retmode=json"}
+{"t": 1792980509.682527, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792980510.279485, "kind": "http", "lib": "netlog_shim.py", "host": "eutils.ncbi.nlm.nih.gov", "method": "GET", "path": "/entrez/eutils/elink.fcgi?dbfrom=gene&db=nuccore&id=931&linkname=gene_nuccore_refseqrna&retmode=json"}
+{"t": 1792980510.2799308, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792980514.383254, "kind": "http", "lib": "netlog_shim.py", "host": "eutils.ncbi.nlm.nih.gov", "method": "GET", "path": "/entrez/eutils/esummary.fcgi?db=nuccore&id=1890261935,1676317958,1675117023,1675114151,1519312689&retmode=json"}
+{"t": 1792980514.383488, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792980514.561635, "kind": "http", "lib": "netlog_shim.py", "host": "eutils.ncbi.nlm.nih.gov", "method": "GET", "path": "/entrez/eutils/esummary.fcgi?db=nuccore&id=1889455730,1752310531,1752310241&retmode=json"}
+{"t": 1792980514.562447, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}

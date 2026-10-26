@@ -1,0 +1,14 @@
+{"t": 1792968308.5260658, "kind": "dns", "lib": "netlog_shim.py", "host": "api.anthropic.com"}
+{"t": 1792968311.9016519, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792968312.440667, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact:ZBTB10+AND+organism_id:9606+AND+reviewed:true&format=json&fields=accession,id,gene_names,protein_name,length,mass"}
+{"t": 1792968315.7032268, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792968316.183143, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact:HDAC7+AND+organism_id:9606+AND+reviewed:true&format=json&fields=accession,id,gene_names,protein_name,length,mass"}
+{"t": 1792968316.4284968, "kind": "dns", "lib": "netlog_shim.py", "host": "api.together.xyz"}
+{"t": 1792968318.013366, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792968318.4712052, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/Q8WUI4?format=json&fields=accession,id,gene_names,protein_name,length,mass"}
+{"t": 1792968318.632905, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792968319.090733, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/Q8N8D4"}
+{"t": 1792968319.2492769, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792968319.715748, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene:ZBTB10+AND+organism_id:9600&fields=accession,id,length,mass"}
+{"t": 1792968321.06967, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792968321.552188, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact:ZBTB10+AND+organism_id:9606&fields=accession,id,gene_names,protein_name,length,mass"}

@@ -1,0 +1,19 @@
+{"t": 1792968436.262023, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/P14770.json"}
+{"t": 1792968436.262414, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792968437.861897, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/P14770.json"}
+{"t": 1792968437.862338, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792968441.073148, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/P14770.tsv?fields=accession,gene_primary,gene_names,protein_name"}
+{"t": 1792968441.073396, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792968441.7258492, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene:GP9+AND+organism_id:9606&fields=accession,gene_primary,protein_name&format=tsv"}
+{"t": 1792968441.72625, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792968442.411873, "kind": "http", "lib": "netlog_shim.py", "host": "eutils.ncbi.nlm.nih.gov", "method": "GET", "path": "/entrez/eutils/esearch.fcgi?db=protein&term=P14770&retmode=json"}
+{"t": 1792968442.41221, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792968443.791043, "kind": "http", "lib": "netlog_shim.py", "host": "eutils.ncbi.nlm.nih.gov", "method": "GET", "path": "/entrez/eutils/efetch.fcgi?db=protein&id=2822110&rettype=gb&retmode=text"}
+{"t": 1792968443.7914612, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792968445.5884092, "kind": "http", "lib": "netlog_shim.py", "host": "mygene.info", "method": "GET", "path": "/v3/query?q=2815&species=human&fields=symbol,name,entrezgene,uniprot"}
+{"t": 1792968445.5888991, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792968445.743284, "kind": "http", "lib": "netlog_shim.py", "host": "mygene.info", "method": "GET", "path": "/v3/query?q=P14770&species=human&fields=symbol,name,entrezgene,uniprot"}
+{"t": 1792968445.7435038, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792968445.851497, "kind": "http", "lib": "netlog_shim.py", "host": "rest.ensembl.org", "method": "GET", "path": "/lookup/id/ENSG00000169704?content-type=application/json"}
+{"t": 1792968445.851659, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792968462.641422, "kind": "dns", "lib": "netlog_shim.py", "host": "api.together.xyz"}

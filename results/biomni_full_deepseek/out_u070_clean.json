@@ -1,0 +1,7 @@
+{
+ "task_id": "u070",
+ "condition": "clean",
+ "elapsed": 22.27021598815918,
+ "final": "1. [\u2713] Query UniProt for P55809 \u2014 entry `SCOT1_HUMAN`, organism *Homo sapiens* (taxon 9606).\n2. [\u2713] Check taxonomy \u2014 lineage includes `Mammalia`, so yes, it is a mammal.\n3. [\u2713] Return JSON with organism name only in `answer`.\n\n<solution>P55809 (SCOT1_HUMAN, succinyl-CoA:3-ketoacid coenzyme A transferase 1, mitochondrial) is from **Homo sapiens** (human), taxon ID 9606. Its UniProt lineage includes Mammalia (Eukaryota \u2192 Metazoa \u2192 Chordata \u2192 Craniata \u2192 Vertebrata \u2192 Euteleostomi \u2192 Mammalia \u2192 Eutheria \u2192 Euarchontoglires \u2192 Primates \u2192 Hominidae \u2192 Homo), so yes, it is a mammal.\n\n{\"answer\": \"Homo sapiens\", \"concerns\": []}</solution>",
+ "error": null
+}

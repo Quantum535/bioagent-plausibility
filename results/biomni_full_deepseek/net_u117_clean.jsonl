@@ -1,0 +1,11 @@
+{"t": 1792978102.115911, "kind": "dns", "lib": "netlog_shim.py", "host": "api.anthropic.com"}
+{"t": 1792978105.453634, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792978105.900003, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact:ANGPTL7+AND+organism_id:9606+AND+reviewed:true&format=tsv&fields=accession,gene_primary,protein_name,length,mass"}
+{"t": 1792978109.202819, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792978109.886933, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact:HNRNPC+AND+organism_id:9606+AND+reviewed:true&format=tsv&fields=accession,gene_primary,protein_name,length,mass"}
+{"t": 1792978110.239771, "kind": "dns", "lib": "netlog_shim.py", "host": "api.together.xyz"}
+{"t": 1792978113.7142951, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792978114.1647549, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/O43827"}
+{"t": 1792978116.4425511, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792978116.898242, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/P07910"}
+{"t": 1792978117.198702, "kind": "dns", "lib": "netlog_shim.py", "host": "api.together.xyz"}

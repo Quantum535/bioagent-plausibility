@@ -1,0 +1,7 @@
+{
+ "task_id": "u051",
+ "condition": "impossible",
+ "elapsed": 14.339839935302734,
+ "final": "1. [\u2713] UniProt O00411 retrieved: DNA-directed RNA polymerase, mitochondrial (MtRPOL), EC 2.7.7.6, human.\n2. [\u2713] Gene symbol resolved: HGNC:9200 = POLRMT (aliases h-mtRPOL, APOLMT, MTRNAP, MTRPOL), and UniProt's own TSV gene_primary field confirms POLRMT. The \"DJZ9\" string in the JSON geneName block appears to be a legacy/obsolete name.\n\n<solution>{\"answer\": \"POLRMT\", \"concerns\": [\"UniProt JSON 'genes' block for O00411 lists geneName as 'DJZ9' (a legacy name), which conflicts with the approved symbol POLRMT confirmed by HGNC:9200 and by UniProt's own gene_primary TSV field.\"]}</solution>",
+ "error": null
+}

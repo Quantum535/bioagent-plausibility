@@ -1,0 +1,4 @@
+{"t": 1792979826, "kind": "curl", "lib": "curl", "args": ["-s", "-m", "10", "https://rest.uniprot.org/uniprotkb/Q9H6E5.json?fields=accession,gene_names,protein_name"]}
+{"t": 1792979827.28747, "kind": "dns", "lib": "netlog_shim.py", "host": "api.together.xyz"}
+{"t": 1792979828, "kind": "curl", "lib": "curl", "args": ["-s", "-m", "10", "https://rest.uniprot.org/uniprotkb/Q9H6E5.txt"]}
+{"t": 1792979830, "kind": "curl", "lib": "curl", "args": ["-s", "-m", "10", "https://rest.uniprot.org/uniprotkb/Q9H6E5.txt"]}

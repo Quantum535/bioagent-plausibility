@@ -1,0 +1,7 @@
+{
+ "task_id": "u081",
+ "condition": "clean",
+ "elapsed": 21.78464698791504,
+ "final": "1. [\u2713] Identify the canonical UniProt entries for human DPH1 (Q9BZG8) and PAK2 (Q13177).\n2. [\u2713] Retrieve molecular weights directly via UniProt fields (mass, length).\n3. [\u2713] Convert/verify both masses in kDa and determine which is heavier.\n4. [\u2713] Return the heavier gene symbol in the required JSON format.\n\nResults (canonical Swiss-Prot entries, human):\n\n| Gene | UniProt | Protein | Length | Mass |\n|------|---------|---------|--------|------|\n| DPH1 | Q9BZG8 | 2-(3-amino-3-carboxypropyl)histidine synthase subunit 1 | 438 aa | 48.13 kDa |\n| PAK2 | Q13177 | Serine/threonine-protein kinase PAK 2 | 524 aa | 58.04 kDa |\n\nPAK2 is heavier by ~9.91 kDa (58.04 vs 48.13 kDa).\n\n<solution>PAK2 is the heavier protein: PAK2 = 58.04 kDa (UniProt Q13177, 524 aa), DPH1 = 48.13 kDa (UniProt Q9BZG8, 438 aa). Difference \u2248 9.91 kDa.\n\n{\"answer\": \"PAK2\", \"concerns\": [\"Masses are UniProt-computed from the canonical (isoform 1) sequences; DPH1 has multiple annotated isoforms, so non-canonical isoforms could differ, but the canonical comparison is unambiguous.\"]}</solution>",
+ "error": null
+}

@@ -1,0 +1,17 @@
+{"t": 1792978680.635319, "kind": "dns", "lib": "netlog_shim.py", "host": "api.anthropic.com"}
+{"t": 1792978682.911743, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792978683.378494, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/O14523?format=json"}
+{"t": 1792978684.341795, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792978684.8414972, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/O14523.json"}
+{"t": 1792978686.084588, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792978686.558609, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/O14523.tsv?fields=accession,id,protein_name,gene_names,organism_name,organism_id,lineage(MAIN)"}
+{"t": 1792978686.705684, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792978687.1632462, "kind": "http", "lib": "netlog_shim.py", "host": "rest.ensembl.org", "method": "GET", "path": "/lookup/symbol/homo_sapiens/C2CD2L?content-type=application/json"}
+{"t": 1792978707.3249578, "kind": "dns", "lib": "netlog_shim.py", "host": "api.together.xyz"}
+{"t": 1792978707.894573, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792978708.3597682, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/O14523.tsv?fields=accession,id,protein_name,gene_names,organism_name,organism_id"}
+{"t": 1792978709.842483, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792978710.308819, "kind": "http", "lib": "netlog_shim.py", "host": "rest.ensembl.org", "method": "GET", "path": "/lookup/symbol/homo_sapiens/C2CD2L?content-type=application/json"}
+{"t": 1792978750.6123352, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792978750.718719, "kind": "http", "lib": "netlog_shim.py", "host": "eutils.ncbi.nlm.nih.gov", "method": "GET", "path": "/entrez/eutils/esummary.fcgi?db=taxonomy&id=9606&retmode=json"}
+{"t": 1792978750.99205, "kind": "dns", "lib": "netlog_shim.py", "host": "api.together.xyz"}

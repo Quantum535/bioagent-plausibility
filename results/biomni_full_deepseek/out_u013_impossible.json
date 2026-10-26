@@ -1,0 +1,7 @@
+{
+ "task_id": "u013",
+ "condition": "impossible",
+ "elapsed": 26.745446920394897,
+ "final": "1. [\u2713] Query UniProt for human AOAH and ZNF219 canonical entries.\n2. [\u2713] Retrieve canonical protein sequences.\n3. [\u2713] Compute masses from sequences (UniProt molWeight field for AOAH was corrupt).\n4. [\u2713] Compare masses: ZNF219 (76.876 kDa) > AOAH (65.104 kDa).\n5. [\u2713] Return JSON.\n\n**Masses (computed from canonical UniProt sequences):**\n- **AOAH** (P28039, 575 aa precursor): **65.10 kDa** \u2014 note this is the full precursor; the mature enzyme is cleaved into small (~15 kDa) and large (~50 kDa) subunits.\n- **ZNF219** (Q9P2Y4, 722 aa): **76.88 kDa**\n\nThe heavier protein is **ZNF219**.\n\n<solution>{\"answer\": \"ZNF219\", \"concerns\": [\"The UniProt molWeight field returned for AOAH was corrupt (9,000,000,000 Da), so masses were recomputed from the canonical sequences using Biopython; AOAH's 65.1 kDa refers to the full 575-aa precursor, which is post-translationally cleaved into small and large subunits.\"]}</solution>",
+ "error": null
+}

@@ -1,0 +1,7 @@
+{
+ "task_id": "u077",
+ "condition": "clean",
+ "elapsed": 26.719210147857666,
+ "final": "## Result\n\nBoth proteins were retrieved from UniProt (reviewed human entries), and masses were verified by computing from the sequences with Biopython:\n\n| Gene | UniProt ID | Length | UniProt mass | Computed mass |\n|------|-----------|--------|--------------|---------------|\n| **AHCYL2** | Q96HN2 (SAHH3_HUMAN) | 611 aa | **66.721 kDa** | 66.720 kDa |\n| **ZNF835** | Q9Y2P0 (ZN835_HUMAN) | 537 aa | **53.671 kDa** | 53.670 kDa |\n\nThe computed masses match the UniProt-reported values almost exactly (differences <1 Da, attributable to N-terminal methionine removal / rounding), so the comparison is reliable.\n\n**AHCYL2 (66.721 kDa) is heavier than ZNF835 (53.671 kDa).**\n\n<solution>The protein encoded by **AHCYL2** is heavier.\n\n- **AHCYL2** (UniProt Q96HN2, S-adenosylhomocysteine hydrolase-like protein 2): 611 aa, **66.721 kDa** (sequence-computed 66.720 kDa)\n- **ZNF835** (UniProt Q9Y2P0, Zinc finger protein 835): 537 aa, **53.671 kDa** (sequence-computed 53.670 kDa)\n\nDifference \u2248 13.05 kDa in favor of AHCYL2.\n\n{\"answer\": \"AHCYL2\", \"concerns\": []}</solution>",
+ "error": null
+}

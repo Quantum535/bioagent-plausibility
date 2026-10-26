@@ -1,0 +1,7 @@
+{
+ "task_id": "u056",
+ "condition": "clean",
+ "elapsed": 22.48878002166748,
+ "final": "1. [\u2713] Query UniProt for human USP50 and RLN2 canonical lengths\n2. [\u2713] Query UniProt search API directly by gene symbol (USP50 = Q70EL3, 339 aa; RLN2 = P04090, 185 aa)\n3. [\u2713] Compare: 2 \u00d7 185 = 370 aa > 339 aa \u2192 USP50 is not at least twice as long\n4. [\u2713] Return answer\n\n<solution>\nNo. Human USP50 (UniProt Q70EL3, ubiquitin carboxyl-terminal hydrolase 50) has a canonical length of **339 amino acids**, while human RLN2 (UniProt P04090, prorelaxin H2) has a canonical length of **185 amino acids**. Twice RLN2 would be 370 aa, which exceeds USP50's 339 aa, so USP50 is only ~1.83\u00d7 as long \u2014 not at least twice as long.\n\n{\"answer\": \"no\", \"concerns\": [\"RLN2's UniProt canonical entry (P04090, 185 aa) is the preproprotein; the mature secreted relaxin-2 peptide is only ~24 aa after signal peptide and C-peptide removal. If 'length' were interpreted as the mature hormone, USP50 would be far more than twice as long, flipping the answer. The comparison uses the canonical preproprotein sequences.\", \"An initial natural-language UniProt query returned the wrong entry (Q6P4Q7/CNNM4) instead of USP50; results were corrected by direct gene-symbol search.\"]}</solution>",
+ "error": null
+}

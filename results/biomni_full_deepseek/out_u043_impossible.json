@@ -1,0 +1,7 @@
+{
+ "task_id": "u043",
+ "condition": "impossible",
+ "elapsed": 28.072668075561523,
+ "final": "The HGNC cross-reference confirms the official symbol is **ZC3H3**, while the UniProt gene-name field anomalously lists NCU9.\n\n<solution>{\"answer\": \"ZC3H3\", \"concerns\": [\"UniProt entry Q8IXZ2 lists the gene name as NCU9 (synonyms KIAA0150, SMICL, ZC3HDC3), which conflicts with the HGNC cross-reference HGNC:28972 giving the official symbol ZC3H3; NCU9 appears to be an outdated/erroneous gene name.\"]}</solution>",
+ "error": null
+}

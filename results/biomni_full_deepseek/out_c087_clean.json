@@ -1,0 +1,7 @@
+{
+ "task_id": "c087",
+ "condition": "clean",
+ "elapsed": 24.93827199935913,
+ "final": "1. [\u2713] Query PubChem PUG REST for CID 20345.\n2. [\u2713] Extract the common name / title.\n3. [\u2713] Verify with synonym list and return JSON.\n\nThe PubChem record for CID 20345 lists the title \"Kinetin riboside,\" and the synonym list confirms this as the primary common name (also known as N6-furfuryladenosine).\n\n<solution>{\"answer\": \"Kinetin riboside\", \"concerns\": []}</solution>",
+ "error": null
+}

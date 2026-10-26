@@ -1,0 +1,26 @@
+{"t": 1792981828.180522, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792981828.717907, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/Q96KP4.json"}
+{"t": 1792981831.247623, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792981831.6962612, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene%3ACNDP2+AND+organism_id%3A9606+AND+reviewed%3Atrue&fields=accession%2Cid%2Cgene_names%2Cprotein_name&format=tsv&size=5"}
+{"t": 1792981831.9330308, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792981832.382642, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene%3AFEV+AND+organism_id%3A9606+AND+reviewed%3Atrue&fields=accession%2Cid%2Cgene_names%2Cprotein_name&format=tsv&size=5"}
+{"t": 1792981832.639511, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792981833.089039, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/Q96KP4.fasta"}
+{"t": 1792981836.743129, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792981836.8318532, "kind": "http", "lib": "netlog_shim.py", "host": "rest.genenames.org", "method": "GET", "path": "/search/symbol/CNDP2"}
+{"t": 1792981837.013636, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792981837.0969758, "kind": "http", "lib": "netlog_shim.py", "host": "rest.genenames.org", "method": "GET", "path": "/search/symbol/FEV"}
+{"t": 1792981837.27459, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792981837.3607738, "kind": "http", "lib": "netlog_shim.py", "host": "rest.genenames.org", "method": "GET", "path": "/info/HGNC:24437"}
+{"t": 1792981838.0376372, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792981838.124106, "kind": "http", "lib": "netlog_shim.py", "host": "rest.genenames.org", "method": "GET", "path": "/search/symbol/CNDP2"}
+{"t": 1792981840.201969, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792981840.646407, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/Q96KP4.json"}
+{"t": 1792981840.6618829, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792981840.7315269, "kind": "http", "lib": "netlog_shim.py", "host": "rest.genenames.org", "method": "GET", "path": "/info/HGNC:24437"}
+{"t": 1792981840.933147, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792981841.187273, "kind": "http", "lib": "netlog_shim.py", "host": "mygene.info", "method": "GET", "path": "/v3/query?q=uniprot%3AQ96KP4&fields=symbol%2Cname%2Centrezgene%2Censembl.gene"}
+{"t": 1792981843.283475, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792981843.500997, "kind": "http", "lib": "netlog_shim.py", "host": "eutils.ncbi.nlm.nih.gov", "method": "GET", "path": "/entrez/eutils/esummary.fcgi?db=gene&id=55748&retmode=json"}
+{"t": 1792981843.816288, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792981844.373239, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/Q96KP4.json"}

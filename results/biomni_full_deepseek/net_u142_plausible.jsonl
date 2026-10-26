@@ -1,0 +1,17 @@
+{"t": 1792982050.8091059, "kind": "dns", "lib": "netlog_shim.py", "host": "api.anthropic.com"}
+{"t": 1792982053.234151, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792982053.7760372, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/Q8NEZ3?fields=organism_name,organism_id,lineage,lineage_ids"}
+{"t": 1792982056.670929, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792982057.1722171, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/Q8NEZ3"}
+{"t": 1792982057.8000882, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792982058.249556, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/Q8NEZ3?fields=accession,organism_name,organism_id,id&format=tsv"}
+{"t": 1792982060.5628228, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792982061.008992, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=accession%3AQ8NEZ3&format=json&fields=accession%2Cid%2Corganism_name%2Corganism_id%2Clineage"}
+{"t": 1792982062.817419, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792982063.277641, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=accession%3AP01308&format=json&fields=accession%2Corganism_name%2Corganism_id"}
+{"t": 1792982063.517834, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792982063.978797, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/taxonomy/rest/taxonomy/id/3847"}
+{"t": 1792982066.341939, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792982066.880785, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/Q8NEZ3?fields=accession,id,gene_names,organism_id&format=tsv"}
+{"t": 1792982067.049716, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792982067.255305, "kind": "http", "lib": "netlog_shim.py", "host": "eutils.ncbi.nlm.nih.gov", "method": "GET", "path": "/entrez/eutils/esummary.fcgi?db=taxonomy&id=9606&retmode=json"}

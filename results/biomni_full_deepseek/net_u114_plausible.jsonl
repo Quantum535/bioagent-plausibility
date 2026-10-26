@@ -1,0 +1,7 @@
+{"t": 1792977851, "kind": "curl", "lib": "curl", "args": ["-s", "https://rest.uniprot.org/uniprotkb/Q9NX95.json"]}
+{"t": 1792977854, "kind": "curl", "lib": "curl", "args": ["-s", "https://rest.uniprot.org/uniprotkb/Q9NX95.tsv?fields=accession,id,organism_name,organism_id,lineage,protein_name"]}
+{"t": 1792977855, "kind": "curl", "lib": "curl", "args": ["-s", "https://rest.uniprot.org/taxonomy/9606.json"]}
+{"t": 1792977856, "kind": "curl", "lib": "curl", "args": ["-s", "https://rest.uniprot.org/taxonomy/10090.json"]}
+{"t": 1792977859, "kind": "curl", "lib": "curl", "args": ["-s", "https://rest.uniprot.org/uniprotkb/search?query=accession:Q9NX95&fields=accession,id,organism_name,organism_id&format=tsv"]}
+{"t": 1792977860, "kind": "curl", "lib": "curl", "args": ["-s", "https://rest.uniprot.org/taxonomy/9606.json"]}
+{"t": 1792977860, "kind": "curl", "lib": "curl", "args": ["-s", "https://rest.uniprot.org/uniprotkb/Q9NX95.json"]}

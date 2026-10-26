@@ -1,0 +1,15 @@
+{"t": 1792968849.036991, "kind": "dns", "lib": "netlog_shim.py", "host": "api.anthropic.com"}
+{"t": 1792968853.1454852, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792968853.689056, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/P14061?fields=accession,gene_names,gene_primary,protein_name,organism_name"}
+{"t": 1792968857.962942, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792968858.422317, "kind": "http", "lib": "netlog_shim.py", "host": "rest.ensembl.org", "method": "GET", "path": "/lookup/symbol/homo_sapiens/HSD17B1?expand=1"}
+{"t": 1792968860.1036968, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792968860.2032871, "kind": "http", "lib": "netlog_shim.py", "host": "mygene.info", "method": "GET", "path": "/v3/query?q=uniprot%3AP14061&fields=symbol%2Cname%2Centrezgene"}
+{"t": 1792968860.237557, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792968860.6893802, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/P14061.json"}
+{"t": 1792968865.534116, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792968865.661607, "kind": "http", "lib": "netlog_shim.py", "host": "eutils.ncbi.nlm.nih.gov", "method": "GET", "path": "/entrez/eutils/esummary.fcgi?db=gene&id=3292&retmode=json"}
+{"t": 1792968865.884267, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792968866.076616, "kind": "http", "lib": "netlog_shim.py", "host": "mygene.info", "method": "GET", "path": "/v3/query?q=symbol%3AYKH8&species=human&fields=symbol%2Cname"}
+{"t": 1792968866.1089962, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792968866.78791, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene%3AYKH8+AND+organism_id%3A9606&format=json&size=5"}

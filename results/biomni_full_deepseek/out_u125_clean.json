@@ -1,0 +1,7 @@
+{
+ "task_id": "u125",
+ "condition": "clean",
+ "elapsed": 23.02495813369751,
+ "final": "1. [\u2713] Identify UniProt accessions (PLPP3 = O14495; MAS1 = P04201)\n2. [\u2713] Compute molecular masses from canonical sequences (PLPP3 35.116 kDa; MAS1 37.465 kDa)\n3. [\u2713] Cross-check against UniProt-annotated masses (MAS1 37,465 Da matches exactly; PLPP3 consistent at ~35 kDa)\n4. [\u2713] Compare and produce JSON answer\n\nComparison: MAS1 (37.47 kDa) > PLPP3 (35.12 kDa). The heavier protein is encoded by MAS1.\n\n<solution>\nMAS1 encodes the heavier protein.\n\n- PLPP3 (UniProt O14495, phospholipid phosphatase 3): 311 aa, 35.12 kDa\n- MAS1 (UniProt P04201, MAS proto-oncogene / MRG receptor): 325 aa, 37.47 kDa\n\nDifference: ~2.35 kDa heavier for MAS1. Masses were computed from the canonical UniProt sequences using average residue masses (Biopython ProteinAnalysis.molecular_weight), and the MAS1 value exactly matches the UniProt-annotated mass (37,465 Da). Note that these are unmodified precursor masses; PLPP3 is a membrane protein with predicted N-glycosylation that could increase its apparent mass on a gel.\n\n{\"answer\": \"MAS1\", \"concerns\": []}</solution>",
+ "error": null
+}

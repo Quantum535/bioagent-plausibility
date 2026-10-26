@@ -1,0 +1,14 @@
+{"t": 1792966379.106142, "kind": "dns", "lib": "netlog_shim.py", "host": "api.anthropic.com"}
+{"t": 1792966381.448844, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792966381.919907, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/P17861?format=json"}
+{"t": 1792966386.89748, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792966387.442461, "kind": "http", "lib": "netlog_shim.py", "host": "rest.ensembl.org", "method": "GET", "path": "/lookup/symbol/homo_sapiens/XBP1?expand=1"}
+{"t": 1792966419.8057501, "kind": "dns", "lib": "netlog_shim.py", "host": "api.anthropic.com"}
+{"t": 1792966422.312821, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792966422.766117, "kind": "http", "lib": "netlog_shim.py", "host": "rest.ensembl.org", "method": "GET", "path": "/xrefs/symbol/homo_sapiens/XBP1"}
+{"t": 1792966422.9487739, "kind": "dns", "lib": "netlog_shim.py", "host": "api.together.xyz"}
+{"t": 1792966428.942572, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792966429.431059, "kind": "http", "lib": "netlog_shim.py", "host": "rest.ensembl.org", "method": "GET", "path": "/lookup/symbol/homo_sapiens/BRCA2?content-type=application%2Fjson"}
+{"t": 1792966429.620447, "kind": "dns", "lib": "netlog_shim.py", "host": "api.together.xyz"}
+{"t": 1792966432, "kind": "curl", "lib": "curl", "args": ["-s", "https://mygene.info/v3/query?q=uniprot:P17861&fields=symbol,name,entrezgene,ensembl.gene&species=human"]}
+{"t": 1792966432, "kind": "curl", "lib": "curl", "args": ["-s", "https://mygene.info/v3/gene/7494?fields=symbol,name,entrezgene,alias,genomic_pos.chr"]}

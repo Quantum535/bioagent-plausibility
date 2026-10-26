@@ -1,0 +1,12 @@
+{"t": 1792990874, "kind": "curl", "lib": "curl", "args": ["-s", "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/2754/property/Title,MolecularFormula,HBondDonorCount/JSON"]}
+{"t": 1792990875, "kind": "curl", "lib": "curl", "args": ["-s", "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/2754/property/CanonicalSMILES,IsomericSMILES/JSON"]}
+{"t": 1792990879, "kind": "curl", "lib": "curl", "args": ["-s", "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/2754/record/JSON"]}
+{"t": 1792990882, "kind": "curl", "lib": "curl", "args": ["-s", "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/2754/property/HBondDonorCount/CSV"]}
+{"t": 1792990882, "kind": "curl", "lib": "curl", "args": ["-s", "https://pubcgem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/2754/JSON"]}
+{"t": 1792990883, "kind": "curl", "lib": "curl", "args": ["-s", "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/2754/JSON", "-o", "/tmp/cid2754.json"]}
+{"t": 1792990885, "kind": "curl", "lib": "curl", "args": ["-s", "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/2754/property/HBondDonorCount,MolecularFormula,Title/CSV"]}
+{"t": 1792990885, "kind": "curl", "lib": "curl", "args": ["-s", "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/2754/JSON", "-o", "/tmp/cid2754.json"]}
+{"t": 1792990887.550588, "kind": "http", "lib": "netlog_shim.py", "host": "pubchem.ncbi.nlm.nih.gov", "method": "GET", "path": "/rest/pug_view/data/compound/2754/JSON"}
+{"t": 1792990887.5509849, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792990888.169141, "kind": "http", "lib": "netlog_shim.py", "host": "pubchem.ncbi.nlm.nih.gov", "method": "GET", "path": "/rest/pug_view/data/compound/2754/JSON"}
+{"t": 1792990888.169698, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}

@@ -1,0 +1,7 @@
+{"t": 1792993480.246917, "kind": "dns", "lib": "netlog_shim.py", "host": "api.anthropic.com"}
+{"t": 1792993482.153949, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792993482.2593222, "kind": "http", "lib": "netlog_shim.py", "host": "pubchem.ncbi.nlm.nih.gov", "method": "GET", "path": "/rest/pug/compound/cid/24680/property/MolecularWeight/TXT"}
+{"t": 1792993482.7669601, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792993482.875699, "kind": "http", "lib": "netlog_shim.py", "host": "pubchem.ncbi.nlm.nih.gov", "method": "GET", "path": "/rest/pug/compound/cid/24680/property/MolecularWeight,MolecularFormula,Title/JSON"}
+{"t": 1792993483.816735, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792993483.905844, "kind": "http", "lib": "netlog_shim.py", "host": "pubchem.ncbi.nlm.nih.gov", "method": "GET", "path": "/rest/pug/compound/name/ionone/property/MolecularWeight,MolecularFormula/JSON"}

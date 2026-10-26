@@ -1,0 +1,9 @@
+{"t": 1792987757.3478138, "kind": "dns", "lib": "netlog_shim.py", "host": "api.anthropic.com"}
+{"t": 1792987759.6572921, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792987759.826653, "kind": "http", "lib": "netlog_shim.py", "host": "pubchem.ncbi.nlm.nih.gov", "method": "GET", "path": "/rest/pug/compound/cid/8091/property/HBondDonorCount/TXT"}
+{"t": 1792987760.244234, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792987760.389812, "kind": "http", "lib": "netlog_shim.py", "host": "pubchem.ncbi.nlm.nih.gov", "method": "GET", "path": "/rest/pug/compound/cid/8091/property/HBondDonorCount,Title,MolecularFormula/JSON"}
+{"t": 1792987761.210426, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792987761.296969, "kind": "http", "lib": "netlog_shim.py", "host": "pubchem.ncbi.nlm.nih.gov", "method": "GET", "path": "/rest/pug_view/data/compound/8091/JSON?heading=Hydrogen+Bond+Donor+Count"}
+{"t": 1792987762.088654, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792987762.195961, "kind": "http", "lib": "netlog_shim.py", "host": "pubchem.ncbi.nlm.nih.gov", "method": "GET", "path": "/rest/pug/compound/cid/8091/property/CanonicalSMILES,IsomericSMILES/JSON"}

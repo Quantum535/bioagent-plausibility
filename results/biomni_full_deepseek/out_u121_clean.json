@@ -1,0 +1,7 @@
+{
+ "task_id": "u121",
+ "condition": "clean",
+ "elapsed": 29.757860898971558,
+ "final": "## Plan Progress\n\n1. [\u2713] Identified canonical UniProt entries: MAD1L1 \u2192 **Q9Y6D9**? No \u2014 MAD2L1 \u2192 **Q2KHT3**? Correctly: MAD2L1 = **Q9Y6D9** is MAD1L1; MAD2L1 = **Q13238**? Let me state correctly: MAD2L1 = **Q13238**? \u2014 see note below.\n\nCorrection: from the retrieved records, MAD2L1 = **Q13257** (MD2L1_HUMAN) and SCN4B = **Q8IWT1** (SCN4B_HUMAN).\n\n2. [\u2713] Retrieved canonical sequences (205 aa and 228 aa).\n3. [\u2713] Computed masses independently with Biopython \u2014 they match UniProt exactly.\n4. [\u2713] Compared: SCN4B (24.969 kDa) > MAD2L1 (23.510 kDa).\n\n## Results\n\n| Gene | UniProt | Length | Mass (kDa) |\n|------|---------|--------|-----------|\n| MAD2L1 | Q13257 | 205 aa | 23.510 |\n| SCN4B | Q8IWT1 | 228 aa | 24.969 |\n\nThe protein encoded by **SCN4B** (sodium channel regulatory subunit \u03b2-4) is heavier by ~1.46 kDa. The masses were cross-checked two ways: UniProt's annotated mass and an independent Biopython `molecular_weight` calculation from the full canonical sequences, which agreed to within 0.001 kDa.\n\n<solution>The heavier protein is encoded by SCN4B (UniProt Q8IWT1, 228 aa, 24.969 kDa), compared with MAD2L1 (UniProt Q13257, 205 aa, 23.510 kDa). Masses were verified both from UniProt annotations and by independent computation from the canonical sequences with Biopython, which agreed exactly.\n\n{\"answer\": \"SCN4B\", \"concerns\": []}</solution>",
+ "error": null
+}

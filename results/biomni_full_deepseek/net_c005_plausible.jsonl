@@ -1,0 +1,25 @@
+{"t": 1792987696.675322, "kind": "dns", "lib": "netlog_shim.py", "host": "api.anthropic.com"}
+{"t": 1792987698.9322839, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792987699.061512, "kind": "http", "lib": "netlog_shim.py", "host": "pubchem.ncbi.nlm.nih.gov", "method": "GET", "path": "/rest/pug/compound/cid/2905/property/HeavyAtomCount/TXT"}
+{"t": 1792987701.7390668, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792987701.857562, "kind": "http", "lib": "netlog_shim.py", "host": "pubchem.ncbi.nlm.nih.gov", "method": "GET", "path": "/rest/pug/compound/cid/2905/property/Title,MolecularFormula,HeavyAtomCount/JSON"}
+{"t": 1792987705.864702, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792987705.955838, "kind": "http", "lib": "netlog_shim.py", "host": "pubchem.ncbi.nlm.nih.gov", "method": "GET", "path": "/rest/pug/compound/cid/2905/property/CanonicalSMILES,MolecularFormula,HeavyAtomCount,MolecularWeight/JSON"}
+{"t": 1792987709.077409, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792987709.3653061, "kind": "http", "lib": "netlog_shim.py", "host": "pubchem.ncbi.nlm.nih.gov", "method": "GET", "path": "/rest/pug/compound/cid/2905/property/CanonicalSMILES/TXT"}
+{"t": 1792987712.6468322, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792987712.807584, "kind": "http", "lib": "netlog_shim.py", "host": "pubchem.ncbi.nlm.nih.gov", "method": "GET", "path": "/rest/pug/compound/cid/2905/property/MolecularWeight,HeavyAtomCount/CSV"}
+{"t": 1792987714.573863, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792987714.67678, "kind": "http", "lib": "netlog_shim.py", "host": "pubchem.ncbi.nlm.nih.gov", "method": "GET", "path": "/rest/pug/compound/cid/2905/property/MolecularFormula/JSON"}
+{"t": 1792987714.828734, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792987714.9354198, "kind": "http", "lib": "netlog_shim.py", "host": "pubchem.ncbi.nlm.nih.gov", "method": "GET", "path": "/rest/pug/compound/cid/2905/property/MolecularWeight/JSON"}
+{"t": 1792987715.296887, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792987715.4083571, "kind": "http", "lib": "netlog_shim.py", "host": "pubchem.ncbi.nlm.nih.gov", "method": "GET", "path": "/rest/pug/compound/cid/2905/property/HeavyAtomCount/JSON"}
+{"t": 1792987715.416437, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792987715.511002, "kind": "http", "lib": "netlog_shim.py", "host": "pubchem.ncbi.nlm.nih.gov", "method": "GET", "path": "/rest/pug/compound/cid/2905/property/Title/JSON"}
+{"t": 1792987720.1023529, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792987720.1795719, "kind": "http", "lib": "netlog_shim.py", "host": "pubchem.ncbi.nlm.nih.gov", "method": "GET", "path": "/rest/pug_view/data/compound/2905/JSON?heading=Computed+Properties"}
+{"t": 1792987721.627402, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792987721.716884, "kind": "http", "lib": "netlog_shim.py", "host": "pubchem.ncbi.nlm.nih.gov", "method": "GET", "path": "/rest/pug_view/data/compound/2905/JSON?heading=Computed+Properties"}
+{"t": 1792987722.746151, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792987723.2060502, "kind": "http", "lib": "netlog_shim.py", "host": "www.ebi.ac.uk", "method": "GET", "path": "/chembl/api/data/molecule/search.json?q=cyclopentolate&limit=20"}

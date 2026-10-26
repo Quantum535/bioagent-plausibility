@@ -1,0 +1,23 @@
+{"t": 1792985153.811029, "kind": "dns", "lib": "netlog_shim.py", "host": "api.anthropic.com"}
+{"t": 1792985156.081952, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792985156.540169, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/Q9P2W9?format=json&fields=organism_name,organism_id"}
+{"t": 1792985157.374669, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792985157.825119, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/Q9P2W9?format=json&fields=organism_name,organism_id"}
+{"t": 1792985158.740614, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792985159.196149, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/Q9P2W9.json"}
+{"t": 1792985159.865848, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792985160.3787289, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene%3ASTX18+AND+organism_id%3A9606&fields=accession%2Cgene_names%2Corganism_name%2Corganism_id&format=tsv&size=5"}
+{"t": 1792985160.626504, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792985161.076234, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene%3AStx18+AND+organism_id%3A10090&fields=accession%2Cgene_names%2Corganism_name%2Corganism_id&format=tsv&size=5"}
+{"t": 1792985162.2212632, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792985162.6789498, "kind": "http", "lib": "netlog_shim.py", "host": "www.ebi.ac.uk", "method": "GET", "path": "/QuickGO/services/annotation/search?geneProductId=UniProtKB%3AQ9P2W9&limit=3"}
+{"t": 1792985162.8350441, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792985163.2875578, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/Q9P2W9?fields=accession%2Corganism_name%2Corganism_id%2Cprotein_name&format=tsv"}
+{"t": 1792985164.2161322, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792985164.299721, "kind": "http", "lib": "netlog_shim.py", "host": "eutils.ncbi.nlm.nih.gov", "method": "GET", "path": "/entrez/eutils/esearch.fcgi?db=protein&term=Q9P2W9&retmode=json"}
+{"t": 1792985164.40356, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792985164.472283, "kind": "http", "lib": "netlog_shim.py", "host": "eutils.ncbi.nlm.nih.gov", "method": "GET", "path": "/entrez/eutils/esummary.fcgi?db=protein&id=17369347&retmode=json"}
+{"t": 1792985165.5038311, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792985166.0453131, "kind": "http", "lib": "netlog_shim.py", "host": "rest.ensembl.org", "method": "GET", "path": "/lookup/symbol/homo_sapiens/STX18?content-type=application%2Fjson"}
+{"t": 1792985166.214278, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792985166.754713, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=accession%3AQ9P2W9&fields=accession%2Corganism_name%2Corganism_id%2Clineage&format=tsv"}

@@ -1,0 +1,16 @@
+{"t": 1792977704.6758301, "kind": "dns", "lib": "netlog_shim.py", "host": "api.anthropic.com"}
+{"t": 1792977707.261597, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792977707.721511, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact:ACOT7+AND+organism_id:9606+AND+reviewed:true&format=json&size=1"}
+{"t": 1792977710.2453918, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792977710.700886, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact:PTRH2+AND+organism_id:9606+AND+reviewed:true&format=json"}
+{"t": 1792977710.96927, "kind": "dns", "lib": "netlog_shim.py", "host": "api.together.xyz"}
+{"t": 1792977712.3686678, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792977712.829251, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/O00154.json?fields=accession,id,protein_name,gene_names,length"}
+{"t": 1792977712.988651, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792977713.447658, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact:PTRH2+AND+organism_id:9606+AND+reviewed:true&format=json&fields=accession,id,length&size=5"}
+{"t": 1792977715.74514, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792977716.292748, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/O00154.json?fields=accession,length,cc_alternative_products"}
+{"t": 1792977718.106872, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792977718.64959, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/Q9Y3E5.json?fields=accession,id,length"}
+{"t": 1792977718.819977, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792977719.318697, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/O00154.json?fields=accession,id,length"}

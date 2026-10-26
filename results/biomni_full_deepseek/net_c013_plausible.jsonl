@@ -1,0 +1,11 @@
+{"t": 1792988206.813403, "kind": "dns", "lib": "netlog_shim.py", "host": "api.anthropic.com"}
+{"t": 1792988209.074643, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792988209.200396, "kind": "http", "lib": "netlog_shim.py", "host": "pubchem.ncbi.nlm.nih.gov", "method": "GET", "path": "/rest/pug/compound/cid/12798/property/MolecularFormula,CanonicalSMILES,HeavyAtomCount/JSON"}
+{"t": 1792988213.584925, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792988213.6755562, "kind": "http", "lib": "netlog_shim.py", "host": "pubchem.ncbi.nlm.nih.gov", "method": "GET", "path": "/rest/pug/compound/cid/12798/property/MolecularFormula,MolecularWeight,CanonicalSMILES,InChI,InChIKey/JSON"}
+{"t": 1792988215, "kind": "curl", "lib": "curl", "args": ["-s", "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/12798/property/MolecularFormula,MolecularWeight,HeavyAtomCount,CanonicalSMILES,IUPACName/JSON"]}
+{"t": 1792988216, "kind": "curl", "lib": "curl", "args": ["-s", "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/12798/property/Title/JSON"]}
+{"t": 1792988220, "kind": "curl", "lib": "curl", "args": ["-s", "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/12798/JSON?heading=Computed+Properties"]}
+{"t": 1792988233.034594, "kind": "dns", "lib": "netlog_shim.py", "host": "api.anthropic.com"}
+{"t": 1792988235.175141, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792988235.546119, "kind": "http", "lib": "netlog_shim.py", "host": "pubchem.ncbi.nlm.nih.gov", "method": "GET", "path": "/rest/pug/compound/cid/12798/property/HeavyAtomCount,MolecularFormula,MolecularWeight/JSON"}

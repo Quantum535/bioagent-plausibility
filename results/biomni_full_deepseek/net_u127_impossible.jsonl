@@ -1,0 +1,14 @@
+{"t": 1792979356.5173178, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792979357.0710468, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/Q6UXZ4.json"}
+{"t": 1792979357.081874, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792979357.777518, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/Q6UXZ4.json"}
+{"t": 1792979360.079912, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792979360.615801, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene%3AUNC5D+AND+organism_id%3A9606&fields=accession%2Cgene_names%2Cprotein_name&format=json&size=10"}
+{"t": 1792979360.961888, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792979361.423328, "kind": "http", "lib": "netlog_shim.py", "host": "www.ebi.ac.uk", "method": "GET", "path": "/proteins/api/proteins/Q6UXZ4"}
+{"t": 1792979363.0157871, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792979363.1107059, "kind": "http", "lib": "netlog_shim.py", "host": "rest.genenames.org", "method": "GET", "path": "/fetch/symbol/UNC5D"}
+{"t": 1792979363.2972999, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792979363.389625, "kind": "http", "lib": "netlog_shim.py", "host": "eutils.ncbi.nlm.nih.gov", "method": "GET", "path": "/entrez/eutils/esearch.fcgi?db=gene&term=UNC5D%5Bsym%5D+AND+human%5Borgn%5D&retmode=json"}
+{"t": 1792979363.489679, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792979363.572011, "kind": "http", "lib": "netlog_shim.py", "host": "rest.genenames.org", "method": "GET", "path": "/search/alias_symbol/WRA3"}

@@ -1,0 +1,7 @@
+{
+ "task_id": "u057",
+ "condition": "clean",
+ "elapsed": 30.54298710823059,
+ "final": "1. [\u2713] Query UniProt for human TNFRSF10B and KLF11 canonical entries.\n2. [\u2713] Extract canonical protein sequence lengths and molecular weights.\n3. [\u2713] Compare masses, identify heavier gene symbol, and report molecular weights.\n4. [\u2713] Verify signal peptide processing does not change the conclusion.\n\n**Result**\n\n| Gene | UniProt | Length | Mass |\n|---|---|---|---|\n| TNFRSF10B (TRAIL-R2/DR5) | O14763 | 440 aa | 47.88 kDa |\n| KLF11 (TIEG2) | O14901 | 512 aa | 55.14 kDa |\n\nKLF11 is the heavier protein (~7.3 kDa larger than full-length TNFRSF10B). Note that TNFRSF10B is annotated as a type I membrane precursor with a 1\u201355 signal peptide; the mature chain (56\u2013440) is 42.23 kDa, so the conclusion is unchanged regardless of which form is considered. Masses were computed from the canonical UniProt sequences with Biopython ProtParam and match the UniProt \"Mass\" field.\n\n<solution>{\"answer\": \"KLF11\", \"concerns\": [\"TNFRSF10B is a precursor with a 1-55 signal peptide; its mature chain is 42.23 kDa rather than the 47.88 kDa full-length value, but this does not affect which protein is heavier.\"]}</solution>",
+ "error": null
+}

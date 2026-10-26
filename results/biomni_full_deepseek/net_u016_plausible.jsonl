@@ -1,0 +1,18 @@
+{"t": 1792965761.1702678, "kind": "dns", "lib": "netlog_shim.py", "host": "api.anthropic.com"}
+{"t": 1792965764.3852081, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792965764.854555, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact:FZD4+AND+organism_id:9606+AND+reviewed:true&fields=accession,gene_primary,length&format=json"}
+{"t": 1792965768.246856, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792965768.790432, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact:TMEM33+AND+organism_id:9606+AND+reviewed:true&fields=accession,gene_primary,length&format=json"}
+{"t": 1792965769.149764, "kind": "dns", "lib": "netlog_shim.py", "host": "api.together.xyz"}
+{"t": 1792965770.215474, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792965770.838664, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact%3AFZD4+AND+organism_id%3A9606+AND+reviewed%3Atrue&fields=accession%2Cgene_primary%2Cprotein_name%2Clength&format=json&size=5"}
+{"t": 1792965771.078567, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792965771.546098, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact%3ATMEM33+AND+organism_id%3A9606+AND+reviewed%3Atrue&fields=accession%2Cgene_primary%2Cprotein_name%2Clength&format=json&size=5"}
+{"t": 1792965773.599775, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792965774.0544598, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact%3AFZD4+AND+organism_id%3A9606+AND+reviewed%3Atrue&fields=accession%2Cgene_primary%2Cprotein_name%2Clength&format=json&size=5"}
+{"t": 1792965774.06178, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792965774.508072, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact%3ATMEM33+AND+organism_id%3A9606+AND+reviewed%3Atrue&fields=accession%2Cgene_primary%2Cprotein_name%2Clength&format=json&size=5"}
+{"t": 1792965775.2938209, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792965775.7399302, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/Q9ULV1.json?fields=accession%2Cgene_primary%2Cprotein_name%2Clength"}
+{"t": 1792965776.918227, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792965777.512993, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/P57088.json?fields=accession%2Cgene_primary%2Cprotein_name%2Clength"}

@@ -1,0 +1,7 @@
+{
+ "task_id": "u012",
+ "condition": "plausible",
+ "elapsed": 32.735657930374146,
+ "final": "No. The canonical UniProt sequence for Q8N4E7 (human mitochondrial ferritin, FTMT) is **242 residues**, which is not more than 266.\n\n<solution>No. The canonical sequence length is **242 residues**.\n\n{\"answer\": \"no\", \"concerns\": [\"The UniProt API response's sequence length metadata reported 290, but the actual sequence string, FASTA sequence, and molecular weight are consistent with 242 residues; the 290 value appears erroneous.\"]}</solution>",
+ "error": null
+}

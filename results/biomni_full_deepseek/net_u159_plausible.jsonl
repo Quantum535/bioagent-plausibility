@@ -1,0 +1,8 @@
+{"t": 1792984289.7954922, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/O00472.json"}
+{"t": 1792984289.796067, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792984291.6444108, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/O00472.txt"}
+{"t": 1792984291.644644, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792984292.135464, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=accession:O00472&fields=accession,gene_names,protein_name&format=tsv"}
+{"t": 1792984292.135693, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792984294.874089, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=accession:O00472&fields=accession,id,gene_names,protein_name,organism_name&format=json"}
+{"t": 1792984294.874327, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}

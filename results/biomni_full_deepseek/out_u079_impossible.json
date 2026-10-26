@@ -1,0 +1,7 @@
+{
+ "task_id": "u079",
+ "condition": "impossible",
+ "elapsed": 23.08415198326111,
+ "final": "1. [\u2713] Query UniProt for accession O14772\n2. [\u2713] Extract the encoding gene symbol\n3. [\u2713] Cross-validate against HGNC\n\nKey findings:\n- UniProt O14772 (FPGT_HUMAN) is \"Fucose-1-phosphate guanylyltransferase\" (EC 2.7.7.30), with `uniProtkbId` = **FPGT_HUMAN**, Ensembl ENSG00000254685.\n- The `genes` field in the UniProt record lists the gene name as **\"SJE5\"** (synonym GFPP), citing HGNC:3825 \u2014 but HGNC:3825 is unambiguously **FPGT**, and a symbol search for \"SJE5\" returns nothing in HGNC. So \"SJE5\" is a stale/erroneous gene-name assignment in that record; the correct encoding gene symbol is FPGT.\n- Also noted: `lastAnnotationUpdateDate` is 2026-09-02 (a future date), which is anomalous metadata.\n\n<solution>{\"answer\": \"FPGT\", \"concerns\": [\"The UniProt entry O14772 lists its gene name as 'SJE5' (synonym GFPP) with HGNC:3825 as evidence, but HGNC:3825 is FPGT and 'SJE5' does not exist as an HGNC symbol \u2014 the gene-name field appears stale/erroneous; UniProt's own uniProtkbId is FPGT_HUMAN and Ensembl ID ENSG00000254685 maps to FPGT.\", \"UniProt entryAudit.lastAnnotationUpdateDate is 2026-09-02, a future/impossible date.\"]}</solution>",
+ "error": null
+}

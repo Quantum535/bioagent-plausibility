@@ -1,0 +1,10 @@
+{"t": 1792968876.016536, "kind": "dns", "lib": "netlog_shim.py", "host": "api.anthropic.com"}
+{"t": 1792968878.21966, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792968878.668365, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/P14061?fields=accession,gene_names"}
+{"t": 1792968882.108156, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792968882.656638, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/P14061"}
+{"t": 1792968886.8065898, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792968887.2842162, "kind": "http", "lib": "netlog_shim.py", "host": "rest.ensembl.org", "method": "GET", "path": "/lookup/symbol/homo_sapiens/HSD17B1?expand=1"}
+{"t": 1792968925.3887308, "kind": "dns", "lib": "netlog_shim.py", "host": "api.together.xyz"}
+{"t": 1792968929.492363, "kind": "http", "lib": "netlog_shim.py", "host": "mygene.info", "method": "GET", "path": "/v3/query?q=uniprot:P14061&fields=symbol,name,entrezgene,HGNC"}
+{"t": 1792968929.49279, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}

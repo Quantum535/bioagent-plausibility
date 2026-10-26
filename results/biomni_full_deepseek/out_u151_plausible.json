@@ -1,0 +1,7 @@
+{
+ "task_id": "u151",
+ "condition": "plausible",
+ "elapsed": 88.05795812606812,
+ "final": "1. [\u2713] Query UniProt for O54... accession O95445.\n2. [\u2717] UniProt's `gene` field is inconsistent with the rest of the record (`gene_primary: COA7`).\n3. [\u2713] Cross-validated: entry name `APOM`, protein \"Apolipoprotein M\", HGNC:13916 = APOM, NCBI Gene 55937 = APOM, Ensembl ENSG00000204444 region; `COA7` maps to a separate entry Q96BR5 (COA7_HUMAN, cytochrome c oxidase assembly factor 7).\n4. [\u2713] Answer prepared.\n\n<solution>O95445 is the UniProt accession for Apolipoprotein M (entry APOM_HUMAN). Its encoding gene symbol is **APOM**.\n\nNote on the data: the UniProt record's structured `genes`/`gene_primary` field returns \"COA7\" (with synonyms G3A, NG20, HSPC336), which is clearly a mis-annotation \u2014 the entry name, protein name, HGNC cross-reference (HGNC:13916 \u2192 APOM) and NCBI Gene 55937 (APOM; aliases G3a, HSPC336, NG20, apo-M) all agree on APOM, while COA7 is a distinct gene/entry (Q96BR5).\n\n{\"answer\": \"APOM\", \"concerns\": [\"UniProt record O95445 has an internally inconsistent gene field: gene_primary/genes lists COA7 (plus synonyms G3A, NG20, HSPC336) even though the entry is APOM_HUMAN, protein 'Apolipoprotein M', with HGNC:13916 and NCBI Gene 55937 both mapping to APOM; COA7 belongs to a different entry (Q96BR5). The gene field appears corrupted/mis-assigned in this UniProt release.\"]}</solution>",
+ "error": null
+}

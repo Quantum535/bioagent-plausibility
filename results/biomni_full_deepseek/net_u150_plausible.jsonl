@@ -1,0 +1,6 @@
+{"t": 1792983259, "kind": "curl", "lib": "curl", "args": ["-s", "https://rest.uniprot.org/uniprotkb/O75072.json"]}
+{"t": 1792983261, "kind": "curl", "lib": "curl", "args": ["-s", "https://rest.uniprot.org/uniprotkb/O75072.json"]}
+{"t": 1792983263, "kind": "curl", "lib": "curl", "args": ["-s", "https://rest.uniprot.org/uniprotkb/O75072.tsv?fields=accession,id,organism_name,organism_id,lineage"]}
+{"t": 1792983264, "kind": "curl", "lib": "curl", "args": ["-s", "https://rest.uniprot.org/uniprotkb/search?query=accession:O75072&fields=accession,id,organism_name,organism_id"]}
+{"t": 1792983266, "kind": "curl", "lib": "curl", "args": ["-s", "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=taxonomy&id=9606&retmode=json"]}
+{"t": 1792983266, "kind": "curl", "lib": "curl", "args": ["-s", "https://rest.uniprot.org/uniprotkb/O75072.txt"]}

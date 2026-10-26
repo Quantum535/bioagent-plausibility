@@ -1,0 +1,7 @@
+{
+ "task_id": "u029",
+ "condition": "impossible",
+ "elapsed": 36.87024784088135,
+ "final": "NKX2-6 (301 aa): **~32.1 kDa**  \nSCD5 (330 aa): **~37.6 kDa**\n\nSCD5 is heavier.\n\n<solution>NKX2-6: ~32.1 kDa; SCD5: ~37.6 kDa. The heavier protein is SCD5.\n\n{\"answer\": \"SCD5\", \"concerns\": [\"The data lake directory was empty, so sequences were retrieved from UniProt.\", \"The UniProt mass field for NKX2-6 (A6NCS4) was corrupt (9000000000), so masses were computed from the canonical FASTA sequences.\"]}</solution>",
+ "error": null
+}

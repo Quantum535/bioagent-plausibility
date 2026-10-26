@@ -1,0 +1,68 @@
+{"t": 1792965403.7941508, "kind": "dns", "lib": "netlog_shim.py", "host": "api.anthropic.com"}
+{"t": 1792965407.3477929, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792965407.84924, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact:FZD4+AND+organism_id:9606+AND+reviewed:true&fields=accession,id,gene_names,length,protein_name&format=json"}
+{"t": 1792965411.509602, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792965411.971967, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact:TMEM33+AND+organism_id:9606+AND+reviewed:true&fields=accession,id,gene_names,length,protein_name&format=json"}
+{"t": 1792965412.2206972, "kind": "dns", "lib": "netlog_shim.py", "host": "api.together.xyz"}
+{"t": 1792965413, "kind": "curl", "lib": "curl", "args": ["-s", "https://rest.uniprot.org/uniprotkb/P13569.json"]}
+{"t": 1792965414, "kind": "curl", "lib": "curl", "args": ["-s", "https://rest.uniprot.org/uniprotkb/Q9ULV4.json"]}
+{"t": 1792965415.883179, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792965416.33666, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/Q9ULV1.json"}
+{"t": 1792965416.794909, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792965417.240989, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/P57088.json"}
+{"t": 1792965418, "kind": "curl", "lib": "curl", "args": ["-s", "https://rest.uniprot.org/uniprotkb/P22417.json"]}
+{"t": 1792965419, "kind": "curl", "lib": "curl", "args": ["-s", "https://rest.uniprot.org/uniprotkb/Q9ULV1.json"]}
+{"t": 1792965420.831299, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792965421.371961, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/Q9ULV1.json"}
+{"t": 1792965421.382804, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792965421.925128, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/P57088.json"}
+{"t": 1792965422.8636, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792965423.324644, "kind": "http", "lib": "netlog_shim.py", "host": "rest.ensembl.org", "method": "GET", "path": "/lookup/symbol/homo_sapiens/FZD4?content-type=application/json"}
+{"t": 1792965431.789035, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792965432.2414489, "kind": "http", "lib": "netlog_shim.py", "host": "rest.ensembl.org", "method": "GET", "path": "/lookup/symbol/homo_sapiens/TMEM33?content-type=application/json"}
+{"t": 1792965453.6164732, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792965454.0823832, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/Q9ULV1.txt"}
+{"t": 1792965454.275727, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792965454.7257879, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/P57088.txt"}
+{"t": 1792965455.018711, "kind": "dns", "lib": "netlog_shim.py", "host": "api.together.xyz"}
+{"t": 1792965456.8692648, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792965457.32449, "kind": "http", "lib": "netlog_shim.py", "host": "rest.ensembl.org", "method": "GET", "path": "/lookup/symbol/homo_sapiens/FZD4?expand=1;content-type=application/json"}
+{"t": 1792965457.922602, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792965458.3814452, "kind": "http", "lib": "netlog_shim.py", "host": "rest.ensembl.org", "method": "GET", "path": "/lookup/symbol/homo_sapiens/TMEM33?expand=1;content-type=application/json"}
+{"t": 1792965467.401072, "kind": "dns", "lib": "netlog_shim.py", "host": "api.together.xyz"}
+{"t": 1792965468.5521789, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792965469.0084329, "kind": "http", "lib": "netlog_shim.py", "host": "rest.ensembl.org", "method": "GET", "path": "/lookup/symbol/homo_sapiens/FZD4?expand=1;content-type=application/json"}
+{"t": 1792965469.152137, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792965469.595617, "kind": "http", "lib": "netlog_shim.py", "host": "rest.ensembl.org", "method": "GET", "path": "/lookup/id/ENST00000531380.2?expand=1;content-type=application/json"}
+{"t": 1792965475.409966, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792965475.88238, "kind": "http", "lib": "netlog_shim.py", "host": "rest.ensembl.org", "method": "GET", "path": "/lookup/symbol/homo_sapiens/TMEM33?expand=1;content-type=application/json"}
+{"t": 1792965476.2056682, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792965476.659362, "kind": "http", "lib": "netlog_shim.py", "host": "rest.ensembl.org", "method": "GET", "path": "/lookup/id/ENST00000504986.6?expand=1;content-type=application/json"}
+{"t": 1792965480.650986, "kind": "dns", "lib": "netlog_shim.py", "host": "api.together.xyz"}
+{"t": 1792965481.902262, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792965482.574062, "kind": "http", "lib": "netlog_shim.py", "host": "rest.ensembl.org", "method": "GET", "path": "/lookup/symbol/homo_sapiens/FZD4?content-type=application/json"}
+{"t": 1792965482.717569, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792965483.234872, "kind": "http", "lib": "netlog_shim.py", "host": "rest.ensembl.org", "method": "GET", "path": "/sequence/id/ENST00000531380.2?type=protein;content-type=text/x-fasta"}
+{"t": 1792965495.471722, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792965496.005234, "kind": "http", "lib": "netlog_shim.py", "host": "rest.ensembl.org", "method": "GET", "path": "/lookup/symbol/homo_sapiens/TMEM33?content-type=application/json"}
+{"t": 1792965496.172868, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792965496.718336, "kind": "http", "lib": "netlog_shim.py", "host": "rest.ensembl.org", "method": "GET", "path": "/sequence/id/ENST00000504986.6?type=protein;content-type=text/x-fasta"}
+{"t": 1792965508.9555242, "kind": "dns", "lib": "netlog_shim.py", "host": "api.together.xyz"}
+{"t": 1792965509.83515, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792965510.4408581, "kind": "http", "lib": "netlog_shim.py", "host": "rest.ensembl.org", "method": "GET", "path": "/lookup/symbol/homo_sapiens/FZD4?content-type=application/json"}
+{"t": 1792965510.7424588, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792965511.285583, "kind": "http", "lib": "netlog_shim.py", "host": "rest.ensembl.org", "method": "GET", "path": "/sequence/id/ENST00000531380.2?type=protein;content-type=text/x-fasta"}
+{"t": 1792965515.037282, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792965515.48755, "kind": "http", "lib": "netlog_shim.py", "host": "rest.ensembl.org", "method": "GET", "path": "/lookup/symbol/homo_sapiens/TMEM33?content-type=application/json"}
+{"t": 1792965515.6313431, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792965516.085533, "kind": "http", "lib": "netlog_shim.py", "host": "rest.ensembl.org", "method": "GET", "path": "/sequence/id/ENST00000504986.6?type=protein;content-type=text/x-fasta"}
+{"t": 1792965538.616032, "kind": "dns", "lib": "netlog_shim.py", "host": "api.together.xyz"}
+{"t": 1792965539.805269, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792965540.273298, "kind": "http", "lib": "netlog_shim.py", "host": "rest.ensembl.org", "method": "GET", "path": "/lookup/symbol/homo_sapiens/FZD4?content-type=application/json"}
+{"t": 1792965540.415883, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792965540.862388, "kind": "http", "lib": "netlog_shim.py", "host": "rest.ensembl.org", "method": "GET", "path": "/sequence/id/ENST00000531380?type=protein;content-type=text/x-fasta"}
+{"t": 1792965741.3782358, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792965741.907001, "kind": "http", "lib": "netlog_shim.py", "host": "rest.ensembl.org", "method": "GET", "path": "/lookup/symbol/homo_sapiens/TMEM33?content-type=application/json"}
+{"t": 1792965742.0487528, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792965742.5047, "kind": "http", "lib": "netlog_shim.py", "host": "rest.ensembl.org", "method": "GET", "path": "/sequence/id/ENST00000504986?type=protein;content-type=text/x-fasta"}
+{"t": 1792965745.9769442, "kind": "dns", "lib": "netlog_shim.py", "host": "api.together.xyz"}

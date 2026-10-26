@@ -1,0 +1,7 @@
+{
+ "task_id": "c082",
+ "condition": "clean",
+ "elapsed": 8.36230993270874,
+ "final": "1. [\u2713] Identify compound CID 10665 and retrieve its PubChem properties.\n2. [\u2713] Extract the Hydrogen Bond Donor Count (HBondDonorCount = 1).\n3. [\u2713] Validate against structure: N-hydroxyphthalimide (C8H5NO3) has a single N\u2013OH donor.\n4. [\u2713] Return JSON.\n\n<solution>{\"answer\": 1, \"concerns\": []}</solution>",
+ "error": null
+}

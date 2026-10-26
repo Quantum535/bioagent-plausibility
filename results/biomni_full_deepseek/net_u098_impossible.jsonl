@@ -1,0 +1,16 @@
+{"t": 1792975808.8793778, "kind": "dns", "lib": "netlog_shim.py", "host": "api.anthropic.com"}
+{"t": 1792975811.7981598, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792975812.252794, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/P46098?format=json&fields=organism_name,organism_id,lineage,lineage_ids"}
+{"t": 1792975815.948311, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792975816.4542122, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/P46098?format=json"}
+{"t": 1792975819.330703, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792975819.830821, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/P46098.tsv?fields=accession,id,protein_name,organism_name,organism_id,lineage"}
+{"t": 1792975819.986208, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792975820.574553, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/P46098?format=json&fields=organism_name,organism_id"}
+{"t": 1792975823.421791, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792975823.940043, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=accession%3AP46098+AND+organism_id%3A9606&format=json&size=5"}
+{"t": 1792975824.212377, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792975824.65891, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/P01308?format=json&fields=organism_name,organism_id"}
+{"t": 1792975824.82203, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792975825.429826, "kind": "http", "lib": "netlog_shim.py", "host": "rest.ensembl.org", "method": "GET", "path": "/lookup/symbol/homo_sapiens/HTR3A"}
+{"t": 1792975875.390219, "kind": "dns", "lib": "netlog_shim.py", "host": "api.together.xyz"}

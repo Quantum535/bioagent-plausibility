@@ -1,0 +1,7 @@
+{
+ "task_id": "u110",
+ "condition": "clean",
+ "elapsed": 22.357564210891724,
+ "final": "## Summary\n\n**Q5TGU0** is the UniProt entry **TSPO2_HUMAN** (Translocator protein 2, gene *TSPO2*, 170 aa, reviewed/Swiss-Prot).\n\n- **Organism:** *Homo sapiens* (Human), taxon ID 9606\n- **Mammal?** Yes \u2014 \"Mammalia\" is present in the taxon lineage (Eukaryota \u2192 Metazoa \u2192 Chordata \u2192 Craniata \u2192 Vertebrata \u2192 Euteleostomi \u2192 **Mammalia** \u2192 Eutheria \u2192 Euarchontoglires \u2192 Primates \u2192 Hominidae \u2192 Homo)\n\nAll fields were internally consistent: a single organism, a single taxon ID, a coherent lineage, and a protein description/gene that match a real human TSPO-family member.\n\n<solution>Organism: Homo sapiens (Human). Mammal: Yes.\n\nThe UniProt entry Q5TGU0 (TSPO2_HUMAN, Translocator protein 2, 170 aa, Swiss-Prot reviewed) lists *Homo sapiens* as its source organism (taxon 9606), and the taxon lineage explicitly includes Mammalia.\n\n{\"answer\": \"Homo sapiens\", \"concerns\": []}</solution>",
+ "error": null
+}

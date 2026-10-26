@@ -1,0 +1,7 @@
+{
+ "task_id": "u197",
+ "condition": "clean",
+ "elapsed": 23.055545806884766,
+ "final": "<plan>\n1. [\u2713] Query UniProt for reviewed human ELL2 and AHCYL2 entries\n2. [\u2713] Extract canonical sequence, length, and molecular weight\n3. [\u2713] Independently recompute masses from sequence (both methods agree exactly)\n4. [\u2713] Identify heavier protein and format answer\n</plan>\n\nBoth UniProt's reported molecular weight and an independent Biopython computation from the canonical sequences agree:\n\n| Gene | UniProt | Length | Mass (kDa) |\n|------|---------|--------|------------|\n| **ELL2** | O00472 | 640 aa | **72.324** |\n| AHCYL2 | Q96HN2 | 611 aa | 66.721 |\n\nELL2 (72.324 kDa) is heavier than AHCYL2 (66.721 kDa).\n\n<solution>\nELL2 is the heavier protein.\n\n- ELL2 (RNA polymerase II elongation factor ELL2, UniProt O00472): 640 aa, 72.324 kDa\n- AHCYL2 (S-adenosylhomocysteine hydrolase-like protein 2, UniProt Q96HN2): 611 aa, 66.721 kDa\n\nThe masses were taken from UniProt's canonical (reviewed) human entries and independently verified by computing the molecular weight directly from each sequence with Biopython's ProteinAnalysis; both methods matched to within 0.001 kDa.\n\n{\"answer\": \"ELL2\", \"concerns\": [\"Masses are calculated apo-polypeptide molecular weights of the canonical isoforms only; they exclude post-translational modifications and do not account for alternative splice isoforms (e.g., ELL2 isoform 2), so in-gel or native masses may differ.\"]}</solution>",
+ "error": null
+}

@@ -1,0 +1,7 @@
+{
+ "task_id": "u193",
+ "condition": "plausible",
+ "elapsed": 87.99580073356628,
+ "final": "Cross-check complete. The UniProt flat-file `SQ` line for P16234 explicitly states **1089 AA; 122670 MW**, matching the FASTA (1089 aa, computed 122.67 kDa). The `length`/`molWeight` fields returned by the JSON and search endpoints (817 aa / 92.0 kDa) are internally inconsistent with the entry's own sequence \u2014 a metadata artifact, not a real alternate protein. PLK4 is consistent everywhere at 970 aa / 108.97 kDa.\n\n**Result:** PDGFRA (122.67 kDa) > PLK4 (108.97 kDa) \u2192 heavier protein is **PDGFRA**.\n\n<solution>\nThe protein encoded by **PDGFRA** is heavier.\n\n- **PDGFRA** (UniProt P16234, canonical precursor): 1089 aa, **122.67 kDa**\n- **PLK4** (UniProt O00444, canonical): 970 aa, **108.97 kDa**\n\nDifference \u2248 13.7 kDa in favor of PDGFRA.\n\n{\"answer\": \"PDGFRA\", \"concerns\": [\"UniProt REST JSON and search/TSV endpoints for P16234 reported length=817 and molWeight=92002 Da (92.0 kDa), which contradicts the entry's own sequence: the JSON 'sequence.value' field contains 1089 residues, the FASTA is 1089 aa, and the flat-file SQ line reads 'SEQUENCE 1089 AA; 122670 MW'. The 817/92 kDa values appear to be a metadata inconsistency (possibly a stale/erroneous cached field), so the mass was computed from the actual sequence (122.67 kDa). PLK4's metadata was internally consistent (970 aa / 108.97 kDa).\"]}</solution>",
+ "error": null
+}

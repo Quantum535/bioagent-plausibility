@@ -1,0 +1,7 @@
+{
+ "task_id": "c022",
+ "condition": "clean",
+ "elapsed": 9.016530275344849,
+ "final": "1. [\u2713] Query PubChem for CID 6128 compound properties, specifically hydrogen-bond donor count.\n2. [\u2713] Verify the returned value and report exactly one JSON object.\n\nVerification: CID 6128 is androstenedione (C19H26O2). It contains two ketone carbonyl oxygens (2 H-bond acceptors) and no O\u2013H or N\u2013H groups, so the hydrogen-bond donor count is 0.\n\n<solution>{\"answer\": 0, \"concerns\": []}</solution>",
+ "error": null
+}

@@ -1,0 +1,7 @@
+{
+ "task_id": "u117",
+ "condition": "clean",
+ "elapsed": 33.31430506706238,
+ "final": "1. [\u2713] Query UniProt for human ANGPTL7 and HNRNPC canonical protein entries\n2. [\u2713] Retrieve/verify molecular masses in kDa (and sequence lengths)\n3. [\u2713] Compare masses and identify the heavier protein\n4. [\u2713] Return the gene symbol and both masses, with the required JSON\n\nBoth canonical reviewed human entries were confirmed directly:\n\n| Gene | UniProt | Length | Mass (Da) | Mass (kDa) |\n|------|---------|--------|-----------|------------|\n| ANGPTL7 | O43827 | 346 aa | 40,018 | 40.02 |\n| HNRNPC | P07910 | 306 aa | 33,670 | 33.67 |\n\nANGPTL7 (40.02 kDa) is heavier than HNRNPC (33.67 kDa).\n\n<solution>\nThe protein encoded by **ANGPTL7** is heavier than that encoded by **HNRNPC**.\n\n- ANGPTL7 (UniProt O43827, Angiopoietin-related protein 7, 346 aa): **40.02 kDa**\n- HNRNPC (UniProt P07910, hnRNP C1/C2, 306 aa): **33.67 kDa**\n\n{\"answer\": \"ANGPTL7\", \"concerns\": [\"ANGPTL7 is annotated as a precursor, so its 40.02 kDa UniProt mass includes the N-terminal signal peptide; the mature secreted protein would be somewhat smaller (~37 kDa).\", \"The HNRNPC entry (P07910) represents the hnRNP C1/C2 isoforms, so the 33.67 kDa value corresponds to the canonical 306-aa sequence rather than a single isoform.\"]}</solution>",
+ "error": null
+}

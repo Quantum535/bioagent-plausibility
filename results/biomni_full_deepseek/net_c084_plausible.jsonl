@@ -1,0 +1,5 @@
+{"t": 1792993497, "kind": "curl", "lib": "curl", "args": ["-s", "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/24680/property/MolecularWeight,MolecularFormula,IUPACName,Title/JSON"]}
+{"t": 1792993499, "kind": "curl", "lib": "curl", "args": ["-s", "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/24680/property/MolecularFormula,MolecularWeight,ExactMass,Title,CanonicalSMILES/JSON"]}
+{"t": 1792993500, "kind": "curl", "lib": "curl", "args": ["-s", "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/24680/property/MolecularWeight/JSON"]}
+{"t": 1792993501, "kind": "curl", "lib": "curl", "args": ["-s", "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/24680/JSON?heading=Molecular+Weight"]}
+{"t": 1792993504, "kind": "curl", "lib": "curl", "args": ["-s", "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/24680/property/ExactMass,MolecularFormula/JSON"]}

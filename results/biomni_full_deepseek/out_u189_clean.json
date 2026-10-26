@@ -1,0 +1,7 @@
+{
+ "task_id": "u189",
+ "condition": "clean",
+ "elapsed": 32.1026668548584,
+ "final": "1. [\u2713] Retrieve canonical protein sequences and annotations for human RCVRN and GOSR2 from UniProt.\n2. [\u2713] Compute molecular weights from the canonical protein sequences.\n3. [\u2713] Compare masses and report the encoded protein with higher molecular weight.\n4. [\u2713] Return the requested answer JSON with the gene symbol and note any concerns.\n\nComputed masses (from canonical UniProt sequences, Biopython `ProteinAnalysis`):\n- **RCVRN** (Recoverin, P35243): 200 aa \u2192 23,129.99 Da \u2248 **23.13 kDa**\n- **GOSR2** (Golgi SNAP receptor complex member 2 / Membrin, O14653): 212 aa \u2192 24,775.13 Da \u2248 **24.78 kDa** (matches UniProt-reported molWeight of 24,775 Da)\n\nGOSR2 is the heavier protein by ~1.65 kDa.\n\n<solution>\nThe heavier protein is **GOSR2** (Golgi SNAP receptor complex member 2 / Membrin), with a calculated mass of ~24.78 kDa, compared to **RCVRN** (Recoverin) at ~23.13 kDa.\n\n{\"answer\": \"GOSR2\", \"concerns\": [\"RCVRN's UniProt chain is annotated as residues 2-200 because the initiator methionine is removed, and the mature protein is N-myristoylated; the 23.13 kDa value is for the full-length 200-aa precursor sequence, so the mature protein's actual mass differs slightly.\", \"GOSR2 is a membrane-anchored SNARE, so its in-cell effective mass may differ from the isolated polypeptide mass; the 24.78 kDa value is the unmodified polypeptide and matched UniProt's reported molWeight.\"]}</solution>",
+ "error": null
+}

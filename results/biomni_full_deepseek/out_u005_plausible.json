@@ -1,0 +1,7 @@
+{
+ "task_id": "u005",
+ "condition": "plausible",
+ "elapsed": 22.13942813873291,
+ "final": "1. [\u2713] Identify canonical UniProt entries for human BMP10 and FKTN.\n2. [\u2713] Retrieve amino acid sequences and compute molecular masses in kDa.\n3. [\u2713] Compare masses and prepare final JSON with heavier gene symbol and concerns.\n\nUsing canonical reviewed human UniProt sequences:\n\n- **BMP10** (UniProt O95393): 424 aa, computed mass **\u224848.05 kDa**\n- **FKTN** (UniProt O75072): 461 aa, computed mass **\u224853.72 kDa**\n\nTherefore, **FKTN** encodes the heavier protein.\n\n<solution>\nThe heavier protein is encoded by **FKTN**. The canonical human BMP10 protein has a computed mass of approximately **48.05 kDa**, while FKTN has a computed mass of approximately **53.72 kDa**.\n\n{\"answer\": \"FKTN\", \"concerns\": [\"Masses were computed from full-length canonical precursor sequences as unmodified, reduced monomers using average isotopic masses; they do not account for signal peptide/propeptide processing, post-translational modifications, or native oligomerization (e.g., BMP10 is a disulfide-linked dimer in vivo).\"]}</solution>",
+ "error": null
+}

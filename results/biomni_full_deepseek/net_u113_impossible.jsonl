@@ -1,0 +1,6 @@
+{"t": 1792977750.256688, "kind": "dns", "lib": "netlog_shim.py", "host": "api.anthropic.com"}
+{"t": 1792977753.589, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792977754.037944, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact:GPX1+AND+organism_id:9606+AND+reviewed:true&format=json&fields=accession,id,gene_names,protein_name,sequence,mass,length"}
+{"t": 1792977757.6645172, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792977758.1219132, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact:TMEM33+AND+organism_id:9606+AND+reviewed:true&format=json&fields=accession,id,gene_names,protein_name,sequence,mass,length"}
+{"t": 1792977758.411659, "kind": "dns", "lib": "netlog_shim.py", "host": "api.together.xyz"}

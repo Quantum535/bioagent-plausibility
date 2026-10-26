@@ -1,0 +1,7 @@
+{
+ "task_id": "u067",
+ "condition": "impossible",
+ "elapsed": 32.44812512397766,
+ "final": "1. [\u2713] Query UniProt for A0PK11 \u2014 gene field returned `LWJ1`.\n2. [\u2713] HGNC confirms A0PK11 \u2194 CLRN2 (HGNC:33939); `LWJ1` is not an approved symbol, alias, or previous symbol.\n3. [\u2713] NCBI Gene 645104 = CLRN2 (clarin 2), aliases only DFNB117; `LWJ1` returns 0 hits.\n4. [\u2713] Return JSON.\n\nVerification summary: UniProt entry A0PK11 is Clarin-2 (human, 4p15.32). Its own HGNC cross-reference (HGNC:33939) lists GeneName = **CLRN2**, HGNC REST confirms uniprot_ids = A0PK11 for symbol CLRN2, and NCBI Gene 645104 is CLRN2. The `geneName` value \"LWJ1\" in the UniProt flat record is inconsistent with every other source and is not a valid HGNC symbol/alias/previous symbol for this locus \u2014 it appears to be an erroneous/stray gene-name annotation in that UniProt record, so I report the authoritative symbol.\n\n<solution>{\"answer\": \"CLRN2\", \"concerns\": [\"UniProt entry A0PK11 lists geneName 'LWJ1', which conflicts with its own HGNC cross-reference (HGNC:33939 -> CLRN2); 'LWJ1' is not an HGNC approved symbol, alias, or previous symbol, and NCBI Gene returns 0 hits for it, suggesting a stray/erroneous gene-name annotation in the UniProt record.\", \"Ensembl REST lookup endpoints returned HTTP 500 during this session, so Ensembl could not be used as an independent check (HGNC and NCBI Gene were used instead).\"]}</solution>",
+ "error": null
+}

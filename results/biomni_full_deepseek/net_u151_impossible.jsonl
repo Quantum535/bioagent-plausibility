@@ -1,0 +1,15 @@
+{"t": 1792983298.8454971, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792983299.398328, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/O95445.json"}
+{"t": 1792983300.355256, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792983300.80591, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/O95445.json"}
+{"t": 1792983302.6063979, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792983303.065054, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene%3AAPOM+AND+organism_id%3A9606+AND+reviewed%3Atrue&fields=accession%2Cgene_names%2Cprotein_name&format=tsv&size=5"}
+{"t": 1792983303.296046, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792983303.74879, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene%3AFWU3+AND+organism_id%3A9606&fields=accession%2Cgene_names%2Cprotein_name&format=tsv&size=5"}
+{"t": 1792983305.2447538, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792983306.090685, "kind": "http", "lib": "netlog_shim.py", "host": "rest.ensembl.org", "method": "GET", "path": "/lookup/symbol/homo_sapiens/APOM?expand=1&content-type=application%2Fjson"}
+{"t": 1792983325.518773, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792983325.612191, "kind": "http", "lib": "netlog_shim.py", "host": "eutils.ncbi.nlm.nih.gov", "method": "GET", "path": "/entrez/eutils/esearch.fcgi?db=gene&term=APOM%5Bsym%5D+AND+human%5Borgn%5D&retmode=json"}
+{"t": 1792983325.747844, "kind": "dns", "lib": "netlog_shim.py", "host": "api.together.xyz"}
+{"t": 1792983326.910214, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792983327.1228108, "kind": "http", "lib": "netlog_shim.py", "host": "eutils.ncbi.nlm.nih.gov", "method": "GET", "path": "/entrez/eutils/esummary.fcgi?db=gene&id=55937&retmode=json"}

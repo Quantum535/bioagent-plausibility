@@ -1,0 +1,3 @@
+{"t": 1792968554, "kind": "curl", "lib": "curl", "args": ["-s", "--max-time", "20", "https://rest.uniprot.org/uniprotkb/P51795.fasta"]}
+{"t": 1792968556, "kind": "curl", "lib": "curl", "args": ["-s", "--max-time", "20", "https://rest.uniprot.org/uniprotkb/P51795.fasta", "-o", "/tmp/p51795.fa"]}
+{"t": 1792968558, "kind": "curl", "lib": "curl", "args": ["-s", "--max-time", "20", "https://rest.uniprot.org/uniprotkb/P51795.json", "-o", "/tmp/p51795.json"]}

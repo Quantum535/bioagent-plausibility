@@ -1,0 +1,4 @@
+{"t": 1792985954, "kind": "curl", "lib": "curl", "args": ["-s", "https://rest.uniprot.org/uniprotkb/Q9NVH1.json"]}
+{"t": 1792985956, "kind": "curl", "lib": "curl", "args": ["-s", "https://rest.uniprot.org/uniprotkb/Q9NVH1.json"]}
+{"t": 1792985958, "kind": "curl", "lib": "curl", "args": ["-s", "https://rest.uniprot.org/uniprotkb/Q9NVH1.tsv?fields=accession,id,protein_name,organism_name,organism_id,lineage"]}
+{"t": 1792985959, "kind": "curl", "lib": "curl", "args": ["-s", "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=taxonomy&id=9606&retmode=json"]}

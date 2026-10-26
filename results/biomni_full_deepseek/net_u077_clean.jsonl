@@ -1,0 +1,10 @@
+{"t": 1792972927.350753, "kind": "dns", "lib": "netlog_shim.py", "host": "api.anthropic.com"}
+{"t": 1792972930.088497, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792972930.633307, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact:AHCYL2+AND+organism_id:9606+AND+reviewed:true&format=json&size=1"}
+{"t": 1792972933.673933, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792972934.1186628, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact:ZNF835+AND+organism_id:9606+AND+reviewed:true&format=json&size=1"}
+{"t": 1792972934.399188, "kind": "dns", "lib": "netlog_shim.py", "host": "api.together.xyz"}
+{"t": 1792972935.580512, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792972936.031769, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact:AHCYL2+AND+organism_id:9606+AND+reviewed:true&fields=accession,id,gene_names,protein_name,mass,length,sequence&format=tsv&size=5"}
+{"t": 1792972936.265294, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792972936.711843, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact:ZNF835+AND+organism_id:9606+AND+reviewed:true&fields=accession,id,gene_names,protein_name,mass,length,sequence&format=tsv&size=5"}

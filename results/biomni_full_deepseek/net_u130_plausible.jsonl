@@ -1,0 +1,13 @@
+{"t": 1792979747.869689, "kind": "dns", "lib": "netlog_shim.py", "host": "api.anthropic.com"}
+{"t": 1792979751.095349, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792979751.551015, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/Q9BT40?format=json"}
+{"t": 1792979755.3558242, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792979755.852926, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/Q9BT40?format=json&fields=organism_name,organism_id,lineage,lineage_ids"}
+{"t": 1792979759.1969569, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792979759.64979, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/Q9BT40?format=json"}
+{"t": 1792979760, "kind": "curl", "lib": "curl", "args": ["-s", "https://rest.uniprot.org/uniprotkb/Q9BT40?format=json"]}
+{"t": 1792979765.158808, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792979765.697752, "kind": "http", "lib": "netlog_shim.py", "host": "rest.ensembl.org", "method": "GET", "path": "/lookup/symbol/homo_sapiens/INPP5K?expand=1"}
+{"t": 1792979792.776434, "kind": "dns", "lib": "netlog_shim.py", "host": "api.together.xyz"}
+{"t": 1792979795, "kind": "curl", "lib": "curl", "args": ["-s", "https://rest.uniprot.org/uniprotkb/Q9BT40?format=tsv&fields=accession,id,organism_name,organism_id,lineage,protein_name,gene_names"]}
+{"t": 1792979796, "kind": "curl", "lib": "curl", "args": ["-s", "https://rest.uniprot.org/uniprotkb/Q8C5L6?format=tsv&fields=accession,id,organism_name,organism_id,gene_names"]}

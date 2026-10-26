@@ -1,0 +1,15 @@
+{"t": 1792987246.61085, "kind": "dns", "lib": "netlog_shim.py", "host": "api.anthropic.com"}
+{"t": 1792987248.8561301, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792987249.343746, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/A8MTJ6?fields=organism_name,organism_id"}
+{"t": 1792987250.4933739, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792987250.963181, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/A8MTJ6.json"}
+{"t": 1792987253.033789, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792987253.50802, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/A8MTJ6.tsv?fields=accession,organism_name,organism_id,protein_name"}
+{"t": 1792987253.666152, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792987254.353463, "kind": "http", "lib": "netlog_shim.py", "host": "www.uniprot.org", "method": "GET", "path": "/uniprotkb/A8MTJ6/entry"}
+{"t": 1792987256.331386, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792987256.78559, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/A8MTJ6.json"}
+{"t": 1792987256.803587, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792987257.268994, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene%3AFOXI3+AND+organism_id%3A9606+AND+reviewed%3Atrue&fields=accession%2Cid%2Cprotein_name%2Cgene_names%2Corganism_name%2Corganism_id%2Clength&format=tsv&size=10"}
+{"t": 1792987258.329653, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792987258.793055, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/A8MTJ6.json"}

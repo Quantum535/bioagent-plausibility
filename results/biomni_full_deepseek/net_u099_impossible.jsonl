@@ -1,0 +1,9 @@
+{"t": 1792975967.4852538, "kind": "dns", "lib": "netlog_shim.py", "host": "api.anthropic.com"}
+{"t": 1792975969.648224, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792975970.124047, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/Q9NRJ7?format=json"}
+{"t": 1792975974.571979, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792975975.027103, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/Q9NRJ7?fields=gene_names"}
+{"t": 1792975979.07669, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792975979.582433, "kind": "http", "lib": "netlog_shim.py", "host": "rest.ensembl.org", "method": "GET", "path": "/xrefs/name/homo_sapiens/HGNC:14546?content-type=application%2Fjson"}
+{"t": 1792975999.7434251, "kind": "dns", "lib": "netlog_shim.py", "host": "api.together.xyz"}
+{"t": 1792976001, "kind": "curl", "lib": "curl", "args": ["-s", "https://rest.genenames.org/fetch/hgnc_id/14546", "-H", "Accept: application/json"]}

@@ -1,0 +1,14 @@
+{"t": 1792970730.875228, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792970731.353518, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/P09914.json"}
+{"t": 1792970733.821669, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792970734.338851, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=HGNC%3A5407&fields=accession%2Cgene_names%2Cprotein_name&format=json&size=5"}
+{"t": 1792970734.600857, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792970735.123688, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene%3AIFIT1+AND+organism_id%3A9606&fields=accession%2Cgene_names%2Cprotein_name&format=json&size=5"}
+{"t": 1792970735.470805, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792970736.015043, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=accession%3AP09914&fields=accession%2Cgene_names%2Cprotein_name&format=json&size=5"}
+{"t": 1792970738.1389802, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792970738.278112, "kind": "http", "lib": "netlog_shim.py", "host": "rest.genenames.org", "method": "GET", "path": "/fetch/hgnc_id/HGNC:5407"}
+{"t": 1792970738.4702668, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792970738.556353, "kind": "http", "lib": "netlog_shim.py", "host": "rest.genenames.org", "method": "GET", "path": "/fetch/symbol/IFIT1"}
+{"t": 1792970738.7464478, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792970738.825768, "kind": "http", "lib": "netlog_shim.py", "host": "rest.genenames.org", "method": "GET", "path": "/fetch/symbol/SAT1"}

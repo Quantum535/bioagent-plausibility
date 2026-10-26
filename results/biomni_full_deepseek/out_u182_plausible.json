@@ -1,0 +1,7 @@
+{
+ "task_id": "u182",
+ "condition": "plausible",
+ "elapsed": 31.019869089126587,
+ "final": "The FASTA header confirms human: `DJC11_HUMAN`, `OX=9606`, gene `DNAJC11`. The \"Mus musculus\" string appears to be a corrupted field. Let me cross-check with an independent source.\n\n<solution>\n<execute>\nimport requests\n# Cross-check via Ensembl REST for human DNAJC11\nr = requests.get(\"https://rest.ensembl.org/lookup/symbol/homo_sapiens/DNAJC11?content-type=application/json\", timeout=30)\nd = r.json()\nprint(\"Ensembl human DNAJC11:\", d.get(\"id\"), d.get(\"display_name\"), d.get(\"species\"), d.get(\"biotype\"))\n\n# Also check whether any Mus musculus entry exists for DNAJC11\nr2 = requests.get(\"https://rest.uniprot.org/uniprotkb/search?query=gene:DNAJC11+AND+organism_id:10090&format=json&fields=accession,organism_name,organism_id&size=3\", timeout=30)\nprint(\"Mouse DNAJC11 entries:\", r2.text[:600])</execute></solution>",
+ "error": null
+}

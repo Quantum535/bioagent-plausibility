@@ -1,0 +1,7 @@
+{
+ "task_id": "c070",
+ "condition": "clean",
+ "elapsed": 23.364938020706177,
+ "final": "1. [\u2713] Query PubChem for compound CID 24634 and retrieve hydrogen-bond donor count\n2. [\u2713] Verify the property value and note any data concerns\n3. [\u2713] Return the required JSON object\n\nPubChem CID 24634 is cadmium fluoride (CdF\u2082, SMILES `F[Cd]F`). The full record confirms the Cactvs-computed \"Count / Hydrogen Bond Donor\" = 0, consistent with the molecule containing no hydrogen atoms (H-bond acceptor count = 2, TPSA = 0).\n\n<solution>\n{\"answer\": 0, \"concerns\": [\"CID 24634 is an inorganic salt (cadmium fluoride, CdF2) with no hydrogen atoms, so a hydrogen-bond donor count of zero is expected rather than a data error; the compound is not a typical organic drug-like molecule.\"]}</solution>",
+ "error": null
+}

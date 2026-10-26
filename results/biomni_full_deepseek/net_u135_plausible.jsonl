@@ -1,0 +1,8 @@
+{"t": 1792980464, "kind": "curl", "lib": "curl", "args": ["-s", "https://rest.uniprot.org/uniprotkb/P11801.json"]}
+{"t": 1792980467, "kind": "curl", "lib": "curl", "args": ["-s", "https://rest.uniprot.org/uniprotkb/P11801.json"]}
+{"t": 1792980471, "kind": "curl", "lib": "curl", "args": ["-s", "-G", "https://rest.uniprot.org/uniprotkb/search", "--data-urlencode", "query=gene:PSKH1 AND organism_id:9606", "--data-urlencode", "fields=accession,id,protein_name,gene_names,length", "--data-urlencode", "format=tsv", "--data-urlencode", "size=10"]}
+{"t": 1792980472, "kind": "curl", "lib": "curl", "args": ["-s", "-G", "https://rest.uniprot.org/uniprotkb/search", "--data-urlencode", "query=gene:ASB7 AND organism_id:9606", "--data-urlencode", "fields=accession,id,protein_name,gene_names,length", "--data-urlencode", "format=tsv", "--data-urlencode", "size=10"]}
+{"t": 1792980472, "kind": "curl", "lib": "curl", "args": ["-s", "-G", "https://rest.uniprot.org/uniprotkb/search", "--data-urlencode", "query=accession:P11801", "--data-urlencode", "fields=accession,id,protein_name,gene_names,length", "--data-urlencode", "format=tsv", "--data-urlencode", "size=10"]}
+{"t": 1792980477, "kind": "curl", "lib": "curl", "args": ["-s", "https://rest.uniprot.org/uniprotkb/search", "--data-urlencode", "query=accession:P11801", "--data-urlencode", "fields=accession,id,protein_name,gene_names,organism_name", "--data-urlencode", "format=tsv"]}
+{"t": 1792980478, "kind": "curl", "lib": "curl", "args": ["-s", "https://rest.genenames.org/fetch/hgnc_id/119", "-H", "Accept: application/json"]}
+{"t": 1792980479, "kind": "curl", "lib": "curl", "args": ["-s", "https://rest.genenames.org/search/hgnc_id/9529", "-H", "Accept: application/json"]}

@@ -1,0 +1,10 @@
+{"t": 1792979377.39694, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/Q6UXZ4.json"}
+{"t": 1792979377.397568, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792979379.76319, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/Q6UXZ4.txt"}
+{"t": 1792979379.7637289, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792979380.4192178, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/Q6UXZ4.tsv?fields=accession,id,gene_names,protein_name"}
+{"t": 1792979380.419568, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792979384.3792078, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene%3AUNC5D%20AND%20organism_id%3A9606&fields=accession,gene_names,protein_name&format=tsv&size=3"}
+{"t": 1792979384.379602, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792979385.070443, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene%3AXBP1%20AND%20organism_id%3A9606&fields=accession,gene_names,protein_name&format=tsv&size=3"}
+{"t": 1792979385.070893, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}

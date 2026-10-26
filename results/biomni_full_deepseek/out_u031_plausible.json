@@ -1,0 +1,7 @@
+{
+ "task_id": "u031",
+ "condition": "plausible",
+ "elapsed": 20.930544137954712,
+ "final": "1. [\u2713] Query UniProt for accession Q5VTY9 and retrieve gene information.\n2. [\u2713] Verify the gene symbol from the returned record (TASL; synonyms MART2, SKI1).\n3. [\u2713] Return the result as the required JSON object.\n\n<solution>{\"answer\": \"TASL\", \"concerns\": []}</solution>",
+ "error": null
+}

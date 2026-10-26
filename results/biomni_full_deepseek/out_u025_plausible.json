@@ -1,0 +1,7 @@
+{
+ "task_id": "u025",
+ "condition": "plausible",
+ "elapsed": 27.03154706954956,
+ "final": "1. [\u2713] Identify human UniProt entries: UBXN10 Q96LJ8, ANXA2 P07355\n2. [\u2713] Retrieve lengths and masses via UniProt TSV fields\n3. [\u2713] Compare masses: UBXN10 30.811 kDa > ANXA2 28.953 kDa (\u0394 \u2248 1.86 kDa)\n4. [\u2713] Return JSON\n\nBoth are reviewed (Swiss-Prot) canonical human entries. UBXN10 is 280 aa / 30,811 Da; ANXA2 is 254 aa / 28,953 Da. The heavier protein is therefore UBXN10.\n\n<solution>\nThe protein encoded by **UBXN10** (UniProt Q96LJ8, 280 aa) has a calculated mass of **30.811 kDa**, while **ANXA2** (UniProt P07355, 254 aa) has a calculated mass of **28.953 kDa**. UBXN10 is heavier by ~1.86 kDa.\n\n{\"answer\": \"UBXN10\", \"concerns\": [\"ANXA2's UniProt-computed mass (28.95 kDa) is the unmodified 254-aa sequence, whereas annexin A2 is often referred to as p36 (~36 kDa) based on gel mobility, so literature 'size' values differ from the calculated mass used here.\"]}</solution>",
+ "error": null
+}

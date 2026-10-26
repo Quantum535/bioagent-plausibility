@@ -1,0 +1,11 @@
+{"t": 1792971455.869788, "kind": "dns", "lib": "netlog_shim.py", "host": "api.anthropic.com"}
+{"t": 1792971458.5916648, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792971459.318368, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/Q96LPP?format=json&fields=gene_names"}
+{"t": 1792971464.4729621, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792971464.933829, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/Q96LJ8?fields=accession,gene_names"}
+{"t": 1792971466.5370612, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792971467.051573, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/Q96LJ8?format=json"}
+{"t": 1792971472.499694, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792971472.96669, "kind": "http", "lib": "netlog_shim.py", "host": "rest.ensembl.org", "method": "GET", "path": "/xrefs/name/homo_sapiens/Q96LJ8?external_db=Uniprot%2FSWISSPROT"}
+{"t": 1792971477.408494, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792971477.544584, "kind": "http", "lib": "netlog_shim.py", "host": "mygene.info", "method": "GET", "path": "/v3/query?q=Q96LJ8&fields=symbol%2Cname%2Centrezgene%2Cuniprot&species=human"}

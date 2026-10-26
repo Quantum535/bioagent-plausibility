@@ -1,0 +1,7 @@
+{"t": 1792984182, "kind": "curl", "lib": "curl", "args": ["-s", "https://rest.uniprot.org/uniprotkb/P53355.json"]}
+{"t": 1792984184, "kind": "curl", "lib": "curl", "args": ["-s", "https://rest.uniprot.org/uniprotkb/P53365.json"]}
+{"t": 1792984187, "kind": "curl", "lib": "curl", "args": ["-s", "https://rest.uniprot.org/uniprotkb/P53365"]}
+{"t": 1792984190.545743, "kind": "http", "lib": "netlog_shim.py", "host": "www.ebi.ac.uk", "method": "GET", "path": "/proteins/api/proteins/P53365"}
+{"t": 1792984190.546317, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792984191.3647768, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/P53365.txt"}
+{"t": 1792984191.3654568, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}

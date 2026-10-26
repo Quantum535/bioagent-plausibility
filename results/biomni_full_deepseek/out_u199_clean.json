@@ -1,0 +1,7 @@
+{
+ "task_id": "u199",
+ "condition": "clean",
+ "elapsed": 5.315566062927246,
+ "final": "1. [\u2713] Verify UniProt accession P08912 (local search returned nothing).\n2. [\u2713] Query UniProt for accession P08912.\n3. [\u2713] Extract the corresponding gene symbol: CHRM5 (Muscarinic acetylcholine receptor M5).\n4. [ ] Return the answer in the required JSON format.\n\n<solution>{\"answer\": \"CHRM5\", \"concerns\": []}</solution>",
+ "error": null
+}

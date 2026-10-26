@@ -1,0 +1,14 @@
+{"t": 1792981587.375606, "kind": "dns", "lib": "netlog_shim.py", "host": "api.anthropic.com"}
+{"t": 1792981590.4478772, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792981590.906039, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact:ELL2+AND+organism_id:9606+AND+reviewed:true&format=json&size=1"}
+{"t": 1792981594.875058, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792981595.3278022, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact:SMYD4+AND+organism_id:9606+AND+reviewed:true&format=json&fields=accession,id,gene_names,protein_name,organism_name,length,sequence"}
+{"t": 1792981595.575642, "kind": "dns", "lib": "netlog_shim.py", "host": "api.together.xyz"}
+{"t": 1792981596.8529642, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792981597.301923, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact%3AELL2+AND+organism_id%3A9606+AND+reviewed%3Atrue&format=tsv&fields=accession%2Cid%2Cgene_names%2Cprotein_name%2Clength%2Cmass%2Csequence&size=5"}
+{"t": 1792981597.534528, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792981597.986392, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact%3ASMYD4+AND+organism_id%3A9606+AND+reviewed%3Atrue&format=tsv&fields=accession%2Cid%2Cgene_names%2Cprotein_name%2Clength%2Cmass%2Csequence&size=5"}
+{"t": 1792981600.6042151, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792981601.047646, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/O00472.fasta"}
+{"t": 1792981601.269996, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792981601.809657, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/Q8IYR2.fasta"}

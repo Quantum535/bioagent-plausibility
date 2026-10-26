@@ -1,0 +1,9 @@
+{"t": 1792976259.8727, "kind": "dns", "lib": "netlog_shim.py", "host": "api.anthropic.com"}
+{"t": 1792976261.812968, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792976262.267371, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/P24278"}
+{"t": 1792976263.4136052, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792976263.866497, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/P24278.json?fields=accession%2Cid%2Corganism_name%2Corganism_id%2Clineage"}
+{"t": 1792976265.393412, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792976265.850463, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=accession%3AP24278&format=tsv&fields=accession%2Cid%2Cgene_names%2Corganism_name%2Corganism_id%2Cprotein_name"}
+{"t": 1792976266.082282, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792976266.540009, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene%3AZBTB25+AND+organism_id%3A9606&format=tsv&fields=accession%2Cid%2Cgene_names%2Corganism_name%2Corganism_id&size=5"}

@@ -1,0 +1,7 @@
+{
+ "task_id": "u020",
+ "condition": "clean",
+ "elapsed": 28.003922939300537,
+ "final": "The UniProt entry Q4G0N8 (human SLC9C1) has a canonical sequence length of **1177 residues**, which is **not more than 1324**.\n\n<solution>\nNo. Protein Q4G0N8 has 1177 residues.\n\n{\"answer\": \"no\", \"concerns\": [\"UniProt lists a SEQUENCE CAUTION of 'Erroneous gene model prediction' for a related/obsolete sequence (DAA01462.1), though the canonical entry sequence is 1177 aa.\", \"The entry's last annotation update date is listed as 2026-09-02, which is unexpectedly in the future.\"]}</solution>",
+ "error": null
+}

@@ -1,0 +1,7 @@
+{
+ "task_id": "u130",
+ "condition": "clean",
+ "elapsed": 18.609416961669922,
+ "final": "**Findings:**\n\n| Field | Value |\n|---|---|\n| Accession | Q9BT40 (INP5K_HUMAN) |\n| Gene | INPP5K (synonyms PPS, SKIP) |\n| Protein | Inositol polyphosphate 5-phosphatase K |\n| Organism | *Homo sapiens* (Human) |\n| Taxon ID | 9606 |\n| Lineage | Eukaryota \u2192 Metazoa \u2192 Chordata \u2192 Vertebrata \u2192 **Mammalia** \u2192 Eutheria \u2192 Primates \u2192 Hominidae \u2192 Homo |\n\nQ9BT40 is the human inositol polyphosphate 5-phosphatase K. Its lineage explicitly includes Mammalia (and Eutheria), so it is a mammal.\n\n**Plan status:**\n1. [\u2713] Query UniProt for Q9BT40\n2. [\u2713] Extract organism name, taxon ID, and lineage\n3. [\u2713] Confirm mammal status via lineage (Mammalia present)\n\n<solution>Q9BT40 is from *Homo sapiens* (human, taxon 9606), and yes, it is a mammal \u2014 its UniProt lineage includes Mammalia and Eutheria. The entry is INP5K_HUMAN (gene INPP5K), inositol polyphosphate 5-phosphatase K.\n\n{\"answer\": \"Homo sapiens\", \"concerns\": []}</solution>",
+ "error": null
+}

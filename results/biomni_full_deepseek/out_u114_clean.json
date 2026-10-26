@@ -1,0 +1,7 @@
+{
+ "task_id": "u114",
+ "condition": "clean",
+ "elapsed": 22.523268938064575,
+ "final": "1. [\u2713] Query UniProt for accession Q9NX95 \u2014 organism is *Homo sapiens* (Human), taxon ID 9606.\n2. [\u2713] Determine mammal status \u2014 lineage includes Mammalia (Eukaryota \u2192 Metazoa \u2192 Chordata \u2192 ... \u2192 Mammalia \u2192 Primates \u2192 Hominidae), so yes.\n2. [\u2713] Prepare answer.\n\nThe UniProt record (entry name SYBU_HUMAN, gene SYBU, protein Synuclein... actually Synthaxin-binding protein \"Syntagmin\" \u2014 precisely Syntabulin) lists organism *Homo sapiens* (common name Human, taxon 9606), and its lineage explicitly includes **Mammalia**, so it is a mammal: **yes**.\n\n<solution>Q9NX95 is from **Homo sapiens** (human), and yes, it is a mammal \u2014 the UniProt lineage includes Mammalia (Eukaryota \u2192 Metazoa \u2192 Chordata \u2192 Vertebrata \u2192 Mammalia \u2192 Primates \u2192 Hominidae). The entry is SYBU_HUMAN (Syntabulin, gene SYBU), taxon ID 9606.\n\n{\"answer\": \"Homo sapiens\", \"concerns\": []}</solution>",
+ "error": null
+}

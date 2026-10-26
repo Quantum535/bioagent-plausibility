@@ -1,0 +1,10 @@
+{"t": 1792985322.935051, "kind": "dns", "lib": "netlog_shim.py", "host": "api.anthropic.com"}
+{"t": 1792985325.6834822, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792985326.141311, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact:RCVRN+AND+organism_id:9606+AND+reviewed:true&format=json&size=1"}
+{"t": 1792985328.800951, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792985329.26909, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact:GET1+AND+organism_id:9606+AND+reviewed:true&format=json&size=1"}
+{"t": 1792985329.54664, "kind": "dns", "lib": "netlog_shim.py", "host": "api.together.xyz"}
+{"t": 1792985331.296293, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792985331.8342888, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact%3ARCVRN+AND+organism_id%3A9606+AND+reviewed%3Atrue&fields=accession%2Cid%2Cprotein_name%2Cgene_names%2Clength%2Cmass%2Csequence&format=tsv&size=5"}
+{"t": 1792985332.183816, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792985332.722812, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact%3AGET1+AND+organism_id%3A9606+AND+reviewed%3Atrue&fields=accession%2Cid%2Cprotein_name%2Cgene_names%2Clength%2Cmass%2Csequence&format=tsv&size=5"}

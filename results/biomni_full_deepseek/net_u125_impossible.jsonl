@@ -1,0 +1,16 @@
+{"t": 1792979185.601019, "kind": "dns", "lib": "netlog_shim.py", "host": "api.anthropic.com"}
+{"t": 1792979188.221845, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792979188.6762629, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact:PLPP3+AND+organism_id:9606+AND+reviewed:true&format=json&size=1"}
+{"t": 1792979192.240134, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792979192.923878, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact:MAS1+AND+organism_id:9606+AND+reviewed:true&format=json&size=1"}
+{"t": 1792979193.282036, "kind": "dns", "lib": "netlog_shim.py", "host": "api.together.xyz"}
+{"t": 1792979195.0807629, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792979196.0813, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=%28gene_exact%3APLPP3+OR+gene_exact%3AMAS1%29+AND+organism_id%3A9606+AND+reviewed%3Atrue&fields=accession%2Cgene_names%2Cprotein_name%2Clength%2Cmass%2Csequence_version&format=tsv&size=10"}
+{"t": 1792979197.8052428, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792979198.263627, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/P04201.fasta"}
+{"t": 1792979198.271272, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792979198.728302, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/O14495.fasta"}
+{"t": 1792979198.7344892, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792979199.204858, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/P04201.json"}
+{"t": 1792979199.392664, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792979199.851109, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/O14495.json"}

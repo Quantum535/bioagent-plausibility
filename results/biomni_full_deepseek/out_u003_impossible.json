@@ -1,0 +1,7 @@
+{
+ "task_id": "u003",
+ "condition": "impossible",
+ "elapsed": 21.03435206413269,
+ "final": "4. [\u2713] Final cross-check with NCBI Gene and prepare JSON (NCBI, Ensembl, HGNC, MyGene all agree on ARMC9).\n\nAll independent sources (HGNC:20730, NCBI Gene 80210, Ensembl ENSG00000135931, MyGene) map Q7Z3E5 to **ARMC9**. The UniProt entry's `geneName` field reads \"KRF3\", which is not a recognized HGNC symbol and conflicts with its own HGNC cross-reference (HGNC:20730 = ARMC9) and its entry name ARMC9_HUMAN \u2014 this looks like a UniProt gene-name annotation error, so I did not use it.\n\n<solution>{\"answer\": \"ARMC9\", \"concerns\": [\"UniProt Q7Z3E5 lists geneName 'KRF3', which is not a valid HGNC symbol and contradicts its own HGNC cross-reference (HGNC:20730), entry name ARMC9_HUMAN, and all other sources (NCBI Gene 80210, Ensembl ENSG00000135931, MyGene); likely a UniProt annotation error.\"]}</solution>",
+ "error": null
+}

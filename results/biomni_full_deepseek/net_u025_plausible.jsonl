@@ -1,0 +1,8 @@
+{"t": 1792966688.505968, "kind": "dns", "lib": "netlog_shim.py", "host": "api.anthropic.com"}
+{"t": 1792966691.48751, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792966692.018862, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact:UBXN10+AND+organism_id:9606+AND+reviewed:true&format=json"}
+{"t": 1792966695.0962508, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792966695.606527, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact:ANXA2+AND+organism_id:9606+AND+reviewed:true&format=json&size=1"}
+{"t": 1792966695.9968991, "kind": "dns", "lib": "netlog_shim.py", "host": "api.together.xyz"}
+{"t": 1792966697.662411, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792966698.1155279, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=%28gene_exact%3AUBXN10+OR+gene_exact%3AANXA2%29+AND+organism_id%3A9606+AND+reviewed%3Atrue&fields=accession%2Cgene_names%2Clength%2Cmass%2Cprotein_name&format=tsv&size=10"}

@@ -1,0 +1,5 @@
+{"t": 1792988591, "kind": "curl", "lib": "curl", "args": ["-s", "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/10208/property/MolecularFormula,MolecularWeight,HeavyAtomCount,Title/JSON"]}
+{"t": 1792988593, "kind": "curl", "lib": "curl", "args": ["-s", "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/10208/property/MolecularFormula,HeavyAtomCount,AtomStereoCount/JSON"]}
+{"t": 1792988594, "kind": "curl", "lib": "curl", "args": ["-s", "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/10208/synonyms/JSON"]}
+{"t": 1792988596, "kind": "curl", "lib": "curl", "args": ["-s", "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/10208/property/CanonicalSMILES,IsomericSMILES,InChI/JSON"]}
+{"t": 1792988597, "kind": "curl", "lib": "curl", "args": ["-s", "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/10208/record/XML"]}

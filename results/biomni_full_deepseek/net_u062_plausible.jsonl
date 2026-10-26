@@ -1,0 +1,5 @@
+{"t": 1792971331, "kind": "curl", "lib": "curl", "args": ["-s", "https://rest.uniprot.org/uniprotkb/Q9Y3B8.json"]}
+{"t": 1792971333, "kind": "curl", "lib": "curl", "args": ["-s", "https://rest.uniprot.org/uniprotkb/Q9Y3B8.json"]}
+{"t": 1792971337, "kind": "curl", "lib": "curl", "args": ["-s", "https://rest.uniprot.org/uniprotkb/Q9Y3B8.txt"]}
+{"t": 1792971338, "kind": "curl", "lib": "curl", "args": ["-s", "https://rest.uniprot.org/uniprotkb/search?query=gene:REXO2+AND+organism_id:9606&fields=accession,id,organism_name&format=tsv"]}
+{"t": 1792971339, "kind": "curl", "lib": "curl", "args": ["-s", "https://rest.uniprot.org/uniprotkb/search?query=gene:rexo2+AND+organism_id:10090&fields=accession,id,organism_name&format=tsv"]}

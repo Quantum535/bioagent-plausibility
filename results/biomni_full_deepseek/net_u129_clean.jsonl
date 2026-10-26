@@ -1,0 +1,6 @@
+{"t": 1792979607.243434, "kind": "dns", "lib": "netlog_shim.py", "host": "api.anthropic.com"}
+{"t": 1792979610.57773, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792979611.060245, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact:TASL+AND+organism_id:9606+AND+reviewed:true&format=json&fields=accession,gene_names,mass,protein_name"}
+{"t": 1792979614.181756, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792979614.728714, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact:ADA+AND+organism_id:9606+AND+reviewed:true&format=json&fields=accession,gene_primary,mass,protein_name"}
+{"t": 1792979615.079884, "kind": "dns", "lib": "netlog_shim.py", "host": "api.together.xyz"}

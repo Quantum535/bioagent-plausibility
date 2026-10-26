@@ -1,0 +1,7 @@
+{
+ "task_id": "u065",
+ "condition": "clean",
+ "elapsed": 20.63594102859497,
+ "final": "1. [\u2713] Retrieved ACOT7 canonical entry (O00154): 380 aa, 41,796 Da = 41.80 kDa.\n2. [\u2713] Retrieved CD36 canonical entry (P16671): 472 aa, 53,053 Da = 53.05 kDa.\n3. [\u2713] Compared: CD36 (53.05 kDa) > ACOT7 (41.80 kDa).\n4. [\u2713] Prepared JSON answer.\n\n<solution>\nThe heavier protein is the one encoded by **CD36**.\n\n| Gene | UniProt | Length | Mass (kDa) |\n|------|---------|--------|------------|\n| ACOT7 | O00154 | 380 aa | 41.80 |\n| CD36 | P16671 | 472 aa | 53.05 |\n\nCD36 (53.05 kDa) is heavier than ACOT7 (41.80 kDa) by ~11.3 kDa.\n\n{\"answer\": \"CD36\", \"concerns\": [\"Masses are UniProt computed molecular weights from the canonical sequences without post-translational modifications; CD36 is heavily N-glycosylated and palmitoylated, so its mature form migrates at ~88 kDa on SDS-PAGE, and ACOT7 has multiple isoforms (some shorter/longer) that were not considered.\", \"Only the reviewed canonical human isoform was used for each gene; alternative isoforms could change the comparison.\"]}</solution>",
+ "error": null
+}

@@ -1,0 +1,7 @@
+{
+ "task_id": "u134",
+ "condition": "clean",
+ "elapsed": 11.594594717025757,
+ "final": "1. [\u2713] Queried UniProt for Q9HBG6 \u2014 entry is IFT122_HUMAN, organism *Homo sapiens* (taxon 9606).\n2. [\u2713] Checked lineage: includes \"Mammalia\" \u2192 yes, it is a mammal.\n3. [\u2713] Prepared final answer with organism name only in the answer field.\n\n<solution>\nQ9HBG6 (Intraflagellar transport protein 122 homolog, IFT122) is from *Homo sapiens* (human), taxon ID 9606, and its UniProt lineage includes Mammalia \u2014 so yes, it is a mammal.\n\n{\"answer\": \"Homo sapiens\", \"concerns\": []}</solution>",
+ "error": null
+}

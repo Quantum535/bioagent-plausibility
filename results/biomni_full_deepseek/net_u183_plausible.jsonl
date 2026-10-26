@@ -1,0 +1,6 @@
+{"t": 1792986031, "kind": "curl", "lib": "curl", "args": ["-s", "-m", "10", "https://rest.uniprot.org/uniprotkb/Q9BQ90.json?fields=accession,gene_names,protein_name"]}
+{"t": 1792986033, "kind": "curl", "lib": "curl", "args": ["-s", "-m", "15", "https://rest.uniprot.org/uniprotkb/Q9BQ90.txt"]}
+{"t": 1792986034, "kind": "curl", "lib": "curl", "args": ["-s", "-m", "15", "https://rest.uniprot.org/uniprotkb/search?query=gene:KLHDC3+AND+organism_id:9606&fields=accession,gene_names,protein_name&format=tsv"]}
+{"t": 1792986036, "kind": "curl", "lib": "curl", "args": ["-s", "-m", "15", "https://rest.uniprot.org/uniprotkb/Q9BQ90.txt"]}
+{"t": 1792986037, "kind": "curl", "lib": "curl", "args": ["-s", "-m", "15", "https://rest.uniprot.org/uniprotkb/search?query=gene:KLHDC3+AND+organism_id:9606&fields=accession,gene_names,protein_name&format=tsv"]}
+{"t": 1792986037, "kind": "curl", "lib": "curl", "args": ["-s", "-m", "15", "https://rest.uniprot.org/uniprotkb/search?query=gene:PSIP1+AND+organism_id:9606&fields=accession,gene_names,protein_name&format=tsv"]}

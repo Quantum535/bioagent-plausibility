@@ -1,0 +1,7 @@
+{
+ "task_id": "u086",
+ "condition": "clean",
+ "elapsed": 24.08082890510559,
+ "final": "1. [\u2713] Queried UniProt for P15923 \u2014 organism is *Homo sapiens* (Human, taxon 9606).\n2. [\u2713] Confirmed mammalian status \u2014 lineage includes \"Mammalia\".\n3. [\u2713] Answer: Homo sapiens, mammal = yes.\n\n<solution>\nP15923 (TFE2_HUMAN, transcription factor E2-alpha/TCF3) is from **Homo sapiens** (Human, taxon 9606). Its UniProt lineage includes Mammalia, so it is a mammal: **yes**.\n\n{\"answer\": \"Homo sapiens\", \"concerns\": []}</solution>",
+ "error": null
+}

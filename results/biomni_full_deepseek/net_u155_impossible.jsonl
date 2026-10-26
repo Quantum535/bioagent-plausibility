@@ -1,0 +1,34 @@
+{"t": 1792983699.724621, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792983700.2197518, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/Q6MZP7.json"}
+{"t": 1792983702.044309, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792983702.565034, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene%3ALIN54+AND+organism_id%3A9606&fields=accession%2Cgene_names%2Cprotein_name&format=json&size=5"}
+{"t": 1792983702.915259, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792983703.4532878, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene%3AVLS8+AND+organism_id%3A9606&fields=accession%2Cgene_names%2Cprotein_name&format=json&size=5"}
+{"t": 1792983704.101564, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792983704.623523, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=CXCDC1+AND+organism_id%3A9606&fields=accession%2Cgene_names%2Cprotein_name&format=json&size=5"}
+{"t": 1792983705.861147, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792983706.363745, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/Q6MZP7.txt"}
+{"t": 1792983708.0155241, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792983708.109946, "kind": "http", "lib": "netlog_shim.py", "host": "rest.genenames.org", "method": "GET", "path": "/search/alias_symbol/CXCDC1"}
+{"t": 1792983708.3129852, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792983708.762709, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/Q6MZP2.json"}
+{"t": 1792983708.927372, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792983709.3836339, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/Q6MZP7.json?fields=accession,gene_primary,gene_synonym,protein_name,id"}
+{"t": 1792983711.60472, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792983712.0599391, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/Q6MZP7.json?fields=accession,gene_names,gene_primary,gene_oln,gene_orf,gene_synonym"}
+{"t": 1792983712.240387, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792983712.6908329, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/Q6MZP7.txt"}
+{"t": 1792983712.697057, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792983713.1563048, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene%3AVLS8&fields=accession%2Cgene_names%2Corganism_name%2Cprotein_name&format=json&size=10"}
+{"t": 1792983715.9142551, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792983716.158278, "kind": "http", "lib": "netlog_shim.py", "host": "rest.genenames.org", "method": "GET", "path": "/search/symbol/VLS8"}
+{"t": 1792983716.465815, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792983716.6768472, "kind": "http", "lib": "netlog_shim.py", "host": "rest.genenames.org", "method": "GET", "path": "/search/alias_symbol/VLS8"}
+{"t": 1792983717.5313091, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792983717.748982, "kind": "http", "lib": "netlog_shim.py", "host": "rest.genenames.org", "method": "GET", "path": "/search/prev_symbol/VLS8"}
+{"t": 1792983718.067085, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792983718.273503, "kind": "http", "lib": "netlog_shim.py", "host": "rest.genenames.org", "method": "GET", "path": "/search/symbol/LIN54"}
+{"t": 1792983718.4455318, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792983718.7828531, "kind": "http", "lib": "netlog_shim.py", "host": "rest.genenames.org", "method": "GET", "path": "/search/alias_symbol/LIN54"}
+{"t": 1792983718.964054, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792983719.208013, "kind": "http", "lib": "netlog_shim.py", "host": "rest.genenames.org", "method": "GET", "path": "/fetch/symbol/LIN54"}

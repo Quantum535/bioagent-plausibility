@@ -1,0 +1,7 @@
+{
+ "task_id": "c052",
+ "condition": "clean",
+ "elapsed": 24.842496633529663,
+ "final": "1. [\u2713] Query PubChem for CID 10624 \u2014 returned psilocybin, formula C12H17N2O4P, MW 284.25 Da.\n2. [\u2713] Compare to threshold \u2014 284.25 Da is not greater than 319.8 Da.\n3. [\u2713] Return answer with weight and JSON.\n\n<solution>\nNo. PubChem CID 10624 is psilocybin (C12H17N2O4P) with a molecular weight of 284.25 Da, which is below 319.8 Da.\n\n{\"answer\": \"no\", \"concerns\": []}</solution>",
+ "error": null
+}

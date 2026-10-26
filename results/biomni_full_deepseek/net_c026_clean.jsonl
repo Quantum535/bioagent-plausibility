@@ -1,0 +1,4 @@
+{"t": 1792989169, "kind": "curl", "lib": "curl", "args": ["-s", "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/19232/property/HydrogenBondDonorCount/JSON"]}
+{"t": 1792989171, "kind": "curl", "lib": "curl", "args": ["-s", "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/19232/property/HBondDonorCount/JSON"]}
+{"t": 1792989172, "kind": "curl", "lib": "curl", "args": ["-s", "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/19232/property/Title,MolecularFormula/JSON"]}
+{"t": 1792989177, "kind": "curl", "lib": "curl", "args": ["-s", "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/19232/property/CanonicalSMILES,HBondDonorCount,HBondAcceptorCount/JSON"]}

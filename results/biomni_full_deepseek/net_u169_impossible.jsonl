@@ -1,0 +1,4 @@
+{"t": 1792985089.626576, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792985090.4698749, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene:SERPINB6+AND+organism_id:9606+AND+reviewed:true&fields=accession,id,gene_names,protein_name,mass,length,sequence&format=json&size=5"}
+{"t": 1792985090.818969, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792985091.352463, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene:STK25+AND+organism_id:9606+AND+reviewed:true&fields=accession,id,gene_names,protein_name,mass,length,sequence&format=json&size=5"}

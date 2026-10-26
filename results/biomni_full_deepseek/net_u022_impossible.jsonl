@@ -1,0 +1,7 @@
+{"t": 1792966287, "kind": "curl", "lib": "curl", "args": ["-sS", "https://rest.uniprot.org/uniprotkb/Q969X2.json"]}
+{"t": 1792966289, "kind": "curl", "lib": "curl", "args": ["-sS", "https://rest.uniprot.org/uniprotkb/Q969X2.tsv?fields=accession,id,protein_name,gene_names,organism_name,organism_id,lineage"]}
+{"t": 1792966290, "kind": "curl", "lib": "curl", "args": ["-sS", "https://rest.uniprot.org/uniprotkb/Q969X2.fasta"]}
+{"t": 1792966293, "kind": "curl", "lib": "curl", "args": ["-sS", "https://rest.uniprot.org/taxonomy/9606.json"]}
+{"t": 1792966293, "kind": "curl", "lib": "curl", "args": ["-sS", "https://rest.uniprot.org/uniprotkb/search?query=gene:ST6GALNAC6+AND+organism_id:9606&fields=accession,id,organism_name,organism_id&format=tsv"]}
+{"t": 1792966297.121382, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/taxonomy/9606.json"}
+{"t": 1792966297.1220522, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}

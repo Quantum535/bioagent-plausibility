@@ -1,0 +1,7 @@
+{
+ "task_id": "u183",
+ "condition": "plausible",
+ "elapsed": 15.240676164627075,
+ "final": "The text-format UniProt record is definitive: entry Q9BQ90 (KLDC3_HUMAN) has `GN Name=KLHDC3` with synonym PEAS. The JSON API earlier returned \"PSIP1\", which is anomalous \u2014 PSIP1 (O75475) is a completely different protein (PC4 and SFRS1-interacting protein). The canonical gene symbol for Q9BQ90 is KLHDC3.\n\n<solution>{\"answer\": \"KLHDC3\", \"concerns\": [\"The UniProt JSON API for Q9BQ90 returned gene name 'PSIP1', which conflicts with the text-format UniProt record and the protein name 'Kelch domain-containing protein 3'. The correct gene symbol is KLHDC3 (synonym PEAS); PSIP1 (O75475) is an unrelated protein. The JSON response appears to be erroneous/misparsed.\"]}</solution>",
+ "error": null
+}

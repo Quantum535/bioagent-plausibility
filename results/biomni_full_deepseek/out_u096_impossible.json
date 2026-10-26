@@ -1,0 +1,7 @@
+{
+ "task_id": "u096",
+ "condition": "impossible",
+ "elapsed": 34.32218599319458,
+ "final": "1. [\u2713] Identify canonical human entries: MPP3 = Q13368, NEGR1 = Q7Z3B1.\n2. [\u2713] Retrieve lengths \u2014 API `length` field for NEGR1 was corrupted (reported 3), so I counted the actual sequence string.\n3. [\u2713] NEGR1 = 354 aa (molWeight 38,719 Da \u2248 109 Da/aa, consistent), MPP3 = 585 aa.\n4. [\u2713] Comparison: 2 \u00d7 354 = 708 aa; MPP3 (585) < 708 \u2192 **no**.\n\nNote: the UniProt REST `sequence.length` field for Q7Z3B1 returned \"3\" \u2014 clearly a data corruption/mis-parse, since the full 354-residue sequence string and 38.7 kDa mass are present and consistent. I used the counted sequence length instead.\n\n<solution>\nMPP3 (UniProt Q13368, MAGUK p55 subfamily member 3) canonical length = **585 aa**. NEGR1 (UniProt Q7Z3B1, Neuronal growth regulator 1) canonical length = **354 aa**. Twice NEGR1 = 708 aa, which exceeds MPP3's 585 aa, so MPP3 is not at least twice as long.\n\n{\"answer\": \"no\", \"concerns\": [\"UniProt REST API returned a corrupted sequence.length of 3 for NEGR1 (Q7Z3B1); the actual sequence string is 354 aa and molWeight 38,719 Da is consistent with ~354 aa, so the length field was unreliable and length was counted from the sequence string.\"]}</solution>",
+ "error": null
+}

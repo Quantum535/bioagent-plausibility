@@ -1,0 +1,7 @@
+{
+ "task_id": "u178",
+ "condition": "clean",
+ "elapsed": 14.067325115203857,
+ "final": "The UniProt entry confirms the organism and its lineage.\n\n- **Organism:** *Homo sapiens* (Human), taxon ID 9606\n- **Lineage includes \"Mammalia\"** \u2192 yes, it is a mammal.\n\n<solution>\nQ9NP08 is a *Homo sapiens* (human) protein. Its UniProt lineage explicitly includes \"Mammalia\" (Eukaryota \u2192 Metazoa \u2192 Chordata \u2192 Vertebrata \u2192 Euteleostomi \u2192 Mammalia \u2192 Eutheria \u2192 Primates \u2192 Hominidae \u2192 Homo), so it is a mammal: **yes**.\n\n{\"answer\": \"Homo sapiens\", \"concerns\": []}</solution>",
+ "error": null
+}

@@ -1,0 +1,7 @@
+{
+ "task_id": "u114",
+ "condition": "plausible",
+ "elapsed": 16.50905704498291,
+ "final": "1. [\u2713] Query UniProt for accession Q9NX95\n2. [\u2713] Resolve conflicting organism fields\n3. [\u2713] Confirm taxonomy and mammal status\n4. [\u2713] Return JSON\n\n**Findings:** Q9NX95 is the entry `SYBU_HUMAN` (Syntabulin, gene SYBU). The taxonId is **9606**, which UniProt's taxonomy service resolves to *Homo sapiens* (Human), and the lineage includes **Mammalia**. However, the record's `scientificName` field is corrupted \u2014 it reads \"Mus musculus\" (mouse, taxon 10090), which contradicts the taxonId, commonName, entry name, and gene symbol. All independent identifiers agree on human, so the answer is Homo sapiens, a mammal (yes).\n\n<solution>Q9NX95 is from **Homo sapiens** (human), and yes, it is a mammal.\n\n{\"answer\": \"Homo sapiens\", \"concerns\": [\"The UniProt record for Q9NX95 is internally inconsistent: the 'scientificName' field reads 'Mus musculus' (mouse, taxon 10090) while taxonId=9606, commonName='Human', entry name 'SYBU_HUMAN', and gene name SYBU all indicate Homo sapiens. The scientificName field appears corrupted/mis-assigned; all other evidence supports human.\"]}</solution>",
+ "error": null
+}

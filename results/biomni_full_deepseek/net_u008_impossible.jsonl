@@ -1,0 +1,24 @@
+{"t": 1792964607.7555451, "kind": "dns", "lib": "netlog_shim.py", "host": "api.anthropic.com"}
+{"t": 1792964610.5349262, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792964611.004213, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact:CNOT3+AND+organism_id:9606+AND+reviewed:true&format=json"}
+{"t": 1792964613.503635, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792964613.961826, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact:RTF2+AND+organism_id:9606+AND+reviewed:true&format=json"}
+{"t": 1792964613.971051, "kind": "dns", "lib": "netlog_shim.py", "host": "api.together.xyz"}
+{"t": 1792964615.142411, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792964615.588937, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact:CNOT3+AND+organism_id:9606+AND+reviewed:true&format=json&fields=accession,id,protein_name,gene_names,length"}
+{"t": 1792964615.816592, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792964616.28655, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact:RTF2+AND+organism_id:9606+AND+reviewed:true&format=json&fields=accession,id,protein_name,gene_names,length"}
+{"t": 1792964616.52669, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792964616.9825459, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact:RTF1+AND+organism_id:9606+AND+reviewed:true&format=json&fields=accession,id,protein_name,gene_names,length"}
+{"t": 1792964618.7281332, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792964619.185245, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact:CNOT3+AND+taxonomy_id:9606+AND+reviewed:true&format=json&size=5"}
+{"t": 1792964619.5376918, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792964619.988353, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact:RTF2+AND+taxonomy_id:9606+AND+reviewed:true&format=json&size=5"}
+{"t": 1792964621.572491, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792964622.257387, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/O75175.fasta"}
+{"t": 1792964622.4292438, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792964622.966423, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/Q9BY42.fasta"}
+{"t": 1792964623.140565, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792964623.678962, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/O75175.fasta"}
+{"t": 1792964623.686174, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792964624.168253, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/Q9BY42.fasta"}

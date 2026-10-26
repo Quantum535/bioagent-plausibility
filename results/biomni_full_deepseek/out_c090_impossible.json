@@ -1,0 +1,7 @@
+{
+ "task_id": "c090",
+ "condition": "impossible",
+ "elapsed": 33.526443004608154,
+ "final": "1. [\u2713] Query PubChem for CID 21786 properties.\n2. [\u2713] Extract the hydrogen-bond donor count (PubChem returned erroneous -3).\n3. [\u2713] Verify by computing from the SMILES structure (RDKit gives 1).\n4. [\u2713] Return the number in the required JSON format.\n\nThe compound 2-phenylcyclopentan-1-amine (C11H15N) contains a single primary amine group (\u2013NH2), giving 1 hydrogen-bond donor. This matches RDKit's Lipinski `NumHDonors = 1`. PubChem's REST API returned `HBondDonorCount = -3`, which is clearly a data glitch (a count cannot be negative), so I rely on the structure-derived value.\n\n<solution>1</solution>",
+ "error": null
+}

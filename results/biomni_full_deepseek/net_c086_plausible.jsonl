@@ -1,0 +1,24 @@
+{"t": 1792993572, "kind": "curl", "lib": "curl", "args": ["-s", "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/8434/property/Title,HBondDonorCount,MolecularFormula/JSON"]}
+{"t": 1792993573, "kind": "curl", "lib": "curl", "args": ["-s", "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/8434/JSON?heading=Hydrogen+Bond+Donor+Count"]}
+{"t": 1792993573, "kind": "curl", "lib": "curl", "args": ["-s", "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/8434/property/CanonicalSMILES,IsomericSMILES,HBondDonorCount,HBondAcceptorCount/JSON"]}
+{"t": 1792993574, "kind": "curl", "lib": "curl", "args": ["-s", "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/8434/property/Title,HBondDonorCount,HBondAcceptorCount,XLogP,MolecularWeight/JSON"]}
+{"t": 1792993576, "kind": "curl", "lib": "curl", "args": ["-s", "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/8434/property/Title/JSON"]}
+{"t": 1792993576, "kind": "curl", "lib": "curl", "args": ["-s", "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/8434/property/Title,HBondDonorCount/JSON"]}
+{"t": 1792993579, "kind": "curl", "lib": "curl", "args": ["-s", "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/8434/JSON", "-o", "/tmp/cid8434.json"]}
+{"t": 1792993579, "kind": "curl", "lib": "curl", "args": ["-sI", "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/8434/property/HBondDonorCount/JSON"]}
+{"t": 1792993580, "kind": "curl", "lib": "curl", "args": ["-s", "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/1983/property/Title,HBondDonorCount/JSON"]}
+{"t": 1792993580, "kind": "curl", "lib": "curl", "args": ["-s", "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/2244/property/Title,HBondDonorCount/JSON"]}
+{"t": 1792993580, "kind": "curl", "lib": "curl", "args": ["-s", "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/3672/property/Title,HBondDonorCount/JSON"]}
+{"t": 1792993581, "kind": "curl", "lib": "curl", "args": ["-s", "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5793/property/Title,HBondDonorCount/JSON"]}
+{"t": 1792993583, "kind": "curl", "lib": "curl", "args": ["-s", "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/8434/JSON?heading=Hydrogen+Bond+Acceptor+Count"]}
+{"t": 1792993583, "kind": "curl", "lib": "curl", "args": ["-s", "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/8434/JSON?heading=Lipinski"]}
+{"t": 1792993585, "kind": "curl", "lib": "curl", "args": ["-s", "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/ethylparaben/property/Title,HBondDonorCount,HBondAcceptorCount/JSON"]}
+{"t": 1792993586, "kind": "curl", "lib": "curl", "args": ["-s", "--get", "--data-urlencode", "smiles=CCOC(=O)c1ccc(O)cc1", "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/smiles/property/Title,HBondDonorCount/JSON"]}
+{"t": 1792993586, "kind": "curl", "lib": "curl", "args": ["-s", "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/inchikey/NUVBSKCKDOMJSU-UHFFFAOYSA-N/property/Title,HBondDonorCount/JSON"]}
+{"t": 1792993587, "kind": "curl", "lib": "curl", "args": ["-s", "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/7456/property/Title,HBondDonorCount/JSON"]}
+{"t": 1792993587, "kind": "curl", "lib": "curl", "args": ["-s", "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/7175/property/Title,HBondDonorCount/JSON"]}
+{"t": 1792993588, "kind": "curl", "lib": "curl", "args": ["-s", "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/7184/property/Title,HBondDonorCount/JSON"]}
+{"t": 1792993588, "kind": "curl", "lib": "curl", "args": ["-s", "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/243/property/Title,HBondDonorCount/JSON"]}
+{"t": 1792993591, "kind": "curl", "lib": "curl", "args": ["-s", "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/8434/SDF?record_type=3d", "-o", "/tmp/cid8434.sdf"]}
+{"t": 1792993592, "kind": "curl", "lib": "curl", "args": ["-s", "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/8434/SDF", "-o", "/tmp/cid8434.sdf"]}
+{"t": 1792993593, "kind": "curl", "lib": "curl", "args": ["-s", "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/8434/JSON?heading=Lipinski%27s+Rule+of+Five"]}

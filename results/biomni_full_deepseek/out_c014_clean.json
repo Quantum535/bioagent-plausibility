@@ -1,0 +1,7 @@
+{
+ "task_id": "c014",
+ "condition": "clean",
+ "elapsed": 32.55991888046265,
+ "final": "1. [\u2713] Identify compound CID 4058 from PubChem or local data.\n2. [\u2713] Retrieve/compute hydrogen-bond donor count.\n3. [\u2713] Validate count and return JSON.\n\nPubChem reports CID 4058 (meperidine) with `HBondDonorCount = 0`, and an independent RDKit check on its structure also gives 0 hydrogen-bond donors.\n\n<solution>{\"answer\": 0, \"concerns\": []}</solution>",
+ "error": null
+}

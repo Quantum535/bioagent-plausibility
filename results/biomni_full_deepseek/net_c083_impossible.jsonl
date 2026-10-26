@@ -1,0 +1,32 @@
+{"t": 1792993414.2010171, "kind": "dns", "lib": "netlog_shim.py", "host": "api.anthropic.com"}
+{"t": 1792993416.1521091, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792993416.3732271, "kind": "http", "lib": "netlog_shim.py", "host": "pubchem.ncbi.nlm.nih.gov", "method": "GET", "path": "/rest/pug/compound/cid/16928/synonyms/JSON"}
+{"t": 1792993417.040085, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792993417.402805, "kind": "http", "lib": "netlog_shim.py", "host": "pubchem.ncbi.nlm.nih.gov", "method": "GET", "path": "/rest/pug/compound/cid/16928/property/Title,IUPACName/JSON"}
+{"t": 1792993418.556113, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792993419.0917451, "kind": "http", "lib": "netlog_shim.py", "host": "www.ebi.ac.uk", "method": "GET", "path": "/chembl/api/data/molecule/search.json?q=compound&limit=5"}
+{"t": 1792993424.4984598, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792993424.580329, "kind": "http", "lib": "netlog_shim.py", "host": "pubchem.ncbi.nlm.nih.gov", "method": "GET", "path": "/rest/pug/compound/cid/16928/property/Title,MolecularFormula,CanonicalSMILES/JSON"}
+{"t": 1792993424.7787688, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792993424.8626292, "kind": "http", "lib": "netlog_shim.py", "host": "pubchem.ncbi.nlm.nih.gov", "method": "GET", "path": "/rest/pug/compound/cid/16928/synonyms/JSON"}
+{"t": 1792993427.523079, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792993427.622623, "kind": "http", "lib": "netlog_shim.py", "host": "pubchem.ncbi.nlm.nih.gov", "method": "GET", "path": "/rest/pug/compound/name/homovanillyl%20alcohol/cids/JSON"}
+{"t": 1792993427.858475, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792993427.958719, "kind": "http", "lib": "netlog_shim.py", "host": "pubchem.ncbi.nlm.nih.gov", "method": "GET", "path": "/rest/pug/compound/name/2380-78-1/cids/JSON"}
+{"t": 1792993431.729065, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792993432.271117, "kind": "http", "lib": "netlog_shim.py", "host": "www.ebi.ac.uk", "method": "GET", "path": "/chebi/backend/api/public/compound/CHEBI:173769"}
+{"t": 1792993432.4381142, "kind": "http", "lib": "netlog_shim.py", "host": "www.ebi.ac.uk", "method": "GET", "path": "/chebi/backend/api/public/compound/CHEBI:173769/"}
+{"t": 1792993432.647497, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792993432.981985, "kind": "http", "lib": "netlog_shim.py", "host": "pubchem.ncbi.nlm.nih.gov", "method": "GET", "path": "/rest/pug/compound/cid/16928/description/JSON"}
+{"t": 1792993434.574131, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792993434.65184, "kind": "http", "lib": "netlog_shim.py", "host": "pubchem.ncbi.nlm.nih.gov", "method": "GET", "path": "/rest/pug/compound/cid/16928/summary"}
+{"t": 1792993434.751101, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792993434.841502, "kind": "http", "lib": "netlog_shim.py", "host": "pubchem.ncbi.nlm.nih.gov", "method": "GET", "path": "/rest/pug/compound/cid/16928/record/JSON"}
+{"t": 1792993435.093081, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792993435.210477, "kind": "http", "lib": "netlog_shim.py", "host": "en.wikipedia.org", "method": "GET", "path": "/api/rest_v1/page/summary/Homovanillyl_alcohol"}
+{"t": 1792993436.378201, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792993436.4674282, "kind": "http", "lib": "netlog_shim.py", "host": "pubchem.ncbi.nlm.nih.gov", "method": "GET", "path": "/rest/pug/compound/name/homovanillyl%20alcohol/cids/JSON"}
+{"t": 1792993436.474294, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792993436.570967, "kind": "http", "lib": "netlog_shim.py", "host": "pubchem.ncbi.nlm.nih.gov", "method": "GET", "path": "/rest/pug/compound/name/Vaxmelzorate/cids/JSON"}
+{"t": 1792993436.793174, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792993436.928521, "kind": "http", "lib": "netlog_shim.py", "host": "query.wikidata.org", "method": "GET", "path": "/sparql?query=SELECT+%3Fitem+%3FitemLabel+WHERE+%7B+%3Fitem+wdt%3AP662+%2216928%22.+SERVICE+wikibase%3Alabel+%7B+bd%3AserviceParam+wikibase%3Alanguage+%22en%22.+%7D+%7D&format=json"}

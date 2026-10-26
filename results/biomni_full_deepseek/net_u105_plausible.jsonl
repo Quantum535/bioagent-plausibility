@@ -1,0 +1,24 @@
+{"t": 1792977020.608448, "kind": "dns", "lib": "netlog_shim.py", "host": "api.anthropic.com"}
+{"t": 1792977023.425657, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792977023.9653351, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact:COMMD4+AND+organism_id:9606+AND+reviewed:true&format=json&size=1"}
+{"t": 1792977026.780419, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792977027.2368362, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact:FKBP14+AND+organism_id:9606+AND+reviewed:true&format=json"}
+{"t": 1792977027.2485518, "kind": "dns", "lib": "netlog_shim.py", "host": "api.together.xyz"}
+{"t": 1792977028.725934, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792977029.1768708, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact%3ACOMMD4+AND+organism_id%3A9606+AND+reviewed%3Atrue&fields=accession%2Cgene_names%2Cprotein_name%2Cmass%2Clength%2Csequence&format=tsv&size=5"}
+{"t": 1792977029.415843, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792977029.869607, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact%3AFKBP14+AND+organism_id%3A9606+AND+reviewed%3Atrue&fields=accession%2Cgene_names%2Cprotein_name%2Cmass%2Clength%2Csequence&format=tsv&size=5"}
+{"t": 1792977033.43924, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792977033.8921118, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/Q9NWM8.fasta"}
+{"t": 1792977034.049328, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792977034.513609, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/Q9H0A8.fasta"}
+{"t": 1792977036.4356961, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792977036.969216, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/Q9NWM8?fields=accession%2Clength%2Cmass%2Csequence%2Cft_signal%2Cft_chain&format=tsv"}
+{"t": 1792977037.14117, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792977037.681063, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/Q9H0A8?fields=accession%2Clength%2Cmass%2Csequence%2Cft_signal%2Cft_chain&format=tsv"}
+{"t": 1792977045.146699, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792977045.5977962, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/Q9NWM8?format=json"}
+{"t": 1792977045.787116, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792977046.237549, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/Q9H0A8?format=json"}
+{"t": 1792977060.7440739, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792977061.224575, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/Q9NWM8.txt"}

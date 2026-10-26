@@ -1,0 +1,13 @@
+{"t": 1792984604.850637, "kind": "dns", "lib": "netlog_shim.py", "host": "api.anthropic.com"}
+{"t": 1792984607.009717, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792984607.600276, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/Q96BD8"}
+{"t": 1792984608.6620102, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792984609.200387, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/Q96BD8.json"}
+{"t": 1792984610.078706, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792984610.6104488, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=accession%3AQ96BD8+OR+%28gene%3ASKA1+AND+organism_id%3A9606%29&fields=accession%2Cid%2Cprotein_name%2Cgene_names%2Corganism_name%2Corganism_id&format=tsv&size=5"}
+{"t": 1792984612.324699, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792984612.8257332, "kind": "http", "lib": "netlog_shim.py", "host": "rest.ensembl.org", "method": "GET", "path": "/lookup/symbol/homo_sapiens/SKA1?content-type=application%2Fjson"}
+{"t": 1792984613.811111, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792984613.9186502, "kind": "http", "lib": "netlog_shim.py", "host": "eutils.ncbi.nlm.nih.gov", "method": "GET", "path": "/entrez/eutils/esearch.fcgi?db=gene&term=SKA1%5Bgene%5D+AND+Homo+sapiens%5Borgn%5D&retmode=json"}
+{"t": 1792984614.0164878, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792984614.104033, "kind": "http", "lib": "netlog_shim.py", "host": "eutils.ncbi.nlm.nih.gov", "method": "GET", "path": "/entrez/eutils/esummary.fcgi?db=gene&id=220134&retmode=json"}

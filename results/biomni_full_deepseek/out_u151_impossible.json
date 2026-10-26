@@ -1,0 +1,7 @@
+{
+ "task_id": "u151",
+ "condition": "impossible",
+ "elapsed": 41.21716785430908,
+ "final": "1. [\u2713] Query UniProt accession O95445 \u2014 protein is Apolipoprotein M.\n2. [\u2713] Gene entries retrieved \u2014 UniProt geneName \"FWU3\" with synonyms G3A, NG20, HSPC336.\n3. [\u2713] Cross-check via UniProt gene search \u2014 APOM query returns O95445.\n4. [\u2713] Ensembl (ENSG00000204444, HGNC:13916) and NCBI Gene (55937) both confirm APOM as the canonical symbol.\n5. [\u2713] NCBI esummary confirms official symbol APOM (aliases G3a, HSPC336, NG20, apo-M; 6p21.33).\n\n**Research log summary:** UniProt O95445 = Apolipoprotein M (ApoM). Its `geneName` field currently reads \"FWU3\" with synonyms G3A/NG20/HSPC336, which is inconsistent with the canonical symbol. Ensembl, HGNC (13916), and NCBI Gene (55937) all agree the official symbol is **APOM**. So the answer is APOM, with a noted concern about the anomalous UniProt gene name field.\n\n<solution>{\"answer\": \"APOM\", \"concerns\": [\"UniProt record O95445 lists geneName as 'FWU3' (synonyms G3A, NG20, HSPC336) rather than the canonical APOM; Ensembl (ENSG00000204444), HGNC:13916, and NCBI Gene 55937 all confirm APOM, so the UniProt gene name field appears anomalous/erroneous.\"]}</solution>",
+ "error": null
+}

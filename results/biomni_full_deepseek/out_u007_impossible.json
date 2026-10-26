@@ -1,0 +1,7 @@
+{
+ "task_id": "u007",
+ "condition": "impossible",
+ "elapsed": 23.150503158569336,
+ "final": "1. [\u2713] Query UniProt for accession Q96E93\n2. [\u2713] Extract gene symbol from UniProt response\n3. [\u2713] Cross-check against NCBI Gene\n4. [\u2713] Return JSON with answer and concerns\n\nUniProt lists the legacy gene name **WBC2** (synonyms CLEC15A, MAFA, MAFAL), but the protein is \"Killer cell lectin-like receptor subfamily G member 1,\" and NCBI Gene (Gene ID 10219) gives the current official symbol **KLRG1**. The UniProt gene name field appears to contain outdated nomenclature.\n\n<solution>{\"answer\": \"KLRG1\", \"concerns\": [\"UniProt entry Q96E93 lists the legacy gene name WBC2 (synonyms CLEC15A, MAFA, MAFAL), which conflicts with the current official HGNC/NCBI symbol KLRG1; the UniProt gene name field appears outdated.\"]}</solution>",
+ "error": null
+}

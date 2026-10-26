@@ -1,0 +1,7 @@
+{
+ "task_id": "c008",
+ "condition": "clean",
+ "elapsed": 20.286547899246216,
+ "final": "1. [\u2713] Identified \u201cAndrostenonol propionate\u201d via PubChem\n2. [\u2713] Identified Dromostanolone via PubChem\n3. [\u2713] Verified molecular formulas and weights with RDKit\n4. [\u2713] Compared weights and prepared JSON\n\n<solution>\nAndrostenonol propionate is heavier.\n\n- **Androstenonol propionate**: C22H32O3; molecular weight = **344.5 Da** (average; monoisotopic \u2248 344.235 Da)\n- **Dromostanolone**: C20H32O2; molecular weight = **304.5 Da** (average; monoisotopic \u2248 304.240 Da)\n\nConcern: \u201cAndrostenonol propionate\u201d is a nonstandard/ambiguous spelling. PubChem resolves it to testosterone propionate (CID 27692). If the intended compound was androstanolone/DHT propionate, its molecular weight is 346.5 Da, which is still heavier than dromostanolone.\n\n{\"answer\": \"Androstenonol propionate\", \"concerns\": [\"The name 'Androstenonol propionate' is nonstandard/ambiguous; PubChem resolves it to testosterone propionate (CID 27692). If androstanolone/DHT propionate was intended, its MW is 346.5 Da, but the conclusion is unchanged.\"]}</solution>",
+ "error": null
+}

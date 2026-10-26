@@ -1,0 +1,3 @@
+{"t": 1792986635, "kind": "curl", "lib": "curl", "args": ["-sS", "--max-time", "30", "https://rest.uniprot.org/uniprotkb/Q9NYV4.json", "-o", "/tmp/Q9NYV4.json"]}
+{"t": 1792986640, "kind": "curl", "lib": "curl", "args": ["-sS", "--max-time", "30", "https://rest.uniprot.org/uniprotkb/Q9NYV4.fasta"]}
+{"t": 1792986641, "kind": "curl", "lib": "curl", "args": ["-sS", "--max-time", "30", "https://rest.uniprot.org/uniprotkb/Q9NYV4.tsv?fields=accession,id,protein_name,organism_name,organism_id,lineage"]}

@@ -1,0 +1,7 @@
+{
+ "task_id": "u115",
+ "condition": "plausible",
+ "elapsed": 34.37655305862427,
+ "final": "1. [\u2713] Query UniProt accession P27037 for its gene symbol.\n2. [\u2713] Cross-check the result \u2014 found a data inconsistency in UniProt's geneName field.\n3. [\u2713] Resolve the correct symbol via HGNC and protein identity \u2014 gene symbol is ACVR2A.\n\n**Findings:** UniProt entry P27037 is *Activin receptor type-2A* (human). Its `geneName` field currently reads **PTGER1**, which is inconsistent with:\n- The protein name (Activin receptor type-2A / ACTR-IIA)\n- The synonym listed in the same entry (`ACVR2`)\n- The cited HGNC record HGNC:173, which resolves to symbol **ACVR2A** (activin A receptor type 2A)\n- PTGER1 is a distinct gene (HGNC:9593)\n\nSo the correct gene symbol is **ACVR2A**, and the PTGER1 label in the UniProt record appears to be a curation error.\n\n<solution>{\"answer\": \"ACVR2A\", \"concerns\": [\"UniProt entry P27037 lists geneName 'PTGER1', which is inconsistent with the protein (Activin receptor type-2A), the entry's own synonym 'ACVR2', and the cited HGNC:173 record (ACVR2A). PTGER1 is a separate gene (HGNC:9593), so the UniProt gene field appears to be mis-curated.\"]}</solution>",
+ "error": null
+}

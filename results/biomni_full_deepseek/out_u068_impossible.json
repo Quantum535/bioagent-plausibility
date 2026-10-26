@@ -1,0 +1,7 @@
+{
+ "task_id": "u068",
+ "condition": "impossible",
+ "elapsed": 14.633837223052979,
+ "final": "<solution>\nUniProt P50213 (IDH3A_HUMAN, isocitrate dehydrogenase [NAD] subunit alpha, mitochondrial) has 366 residues, which is not more than 412.\n\nNote: the UniProt JSON `sequence.length` field returned an implausible value (60000), but the actual sequence string, the last annotated feature end (366), and the molecular weight (~39.6 kDa) all confirm 366 residues. The FASTA count also gave 366.\n\n{\"answer\": \"no\", \"concerns\": [\"UniProt JSON sequence.length field reported 60000, which is implausible for a ~39.6 kDa protein; the actual sequence string, feature coordinates, and FASTA all indicate 366 residues.\"]}</solution>",
+ "error": null
+}

@@ -1,0 +1,7 @@
+{
+ "task_id": "u044",
+ "condition": "clean",
+ "elapsed": 19.810086250305176,
+ "final": "Both the FASTA sequence string and the UniProt JSON metadata agree: Q9H252 (KCNH6_HUMAN) has 958 residues, which is not more than 1054.\n\n<solution>No \u2014 protein Q9H252 (KCNH6_HUMAN, Voltage-gated potassium channel KCNH6) has **958 residues**, which is not more than 1054. This was verified by both the UniProt FASTA sequence string length and the UniProt JSON metadata `sequence.length` field, which agree at 958.\n\n{\"answer\": \"no\", \"concerns\": [\"The UniProt recommended protein name reads 'Voltage-gated inwardly rectifying potassium channel KCNH6', which is internally inconsistent (KCNH6 is a voltage-gated, not inwardly rectifying, potassium channel); this is a naming oddity in the record, not a sequence-length issue.\"]}</solution>",
+ "error": null
+}

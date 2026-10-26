@@ -1,0 +1,7 @@
+{
+ "task_id": "u155",
+ "condition": "plausible",
+ "elapsed": 18.052706956863403,
+ "final": "1. [\u2713] Searched data lake (empty).\n2. [\u2713] Queried UniProt: Q6MZP7 \u2192 \"Protein lin-54 homolog\".\n3. [\u2713] Cross-checked: RARG in human is P13631; Q6MZP7's synonyms CXCDC1/KIAA2037 and MANE transcript ENST00000340417.8 match HGNC LIN54.\n4. [\u2713] Confirmed gene is LIN54 (UniProt gene-name field for Q6MZP7 is mislabeled as RARG).\n\nThe protein Q6MZP7 is \"Protein lin-54 homolog\"; its synonyms (CXCDC1, KIAA2037) and MANE Select transcript (ENST00000340417.8) both map to HGNC gene **LIN54**. The \"RARG\" gene name in the UniProt record is inconsistent with the protein identity (human RARG is P13631, retinoic acid receptor gamma), so it appears to be an annotation error.\n\n<solution>{\"answer\": \"LIN54\", \"concerns\": [\"UniProt entry Q6MZP7 lists gene name 'RARG', but the protein is 'Protein lin-54 homolog' with synonyms CXCDC1/KIAA2037 and MANE transcript ENST00000340417.8, all of which correspond to HGNC gene LIN54. Human RARG is a distinct entry (P13631, retinoic acid receptor gamma), so the RARG gene assignment in Q6MZP7 appears to be an annotation error.\"]}</solution>",
+ "error": null
+}

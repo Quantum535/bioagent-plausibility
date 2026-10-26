@@ -1,0 +1,7 @@
+{
+ "task_id": "u079",
+ "condition": "clean",
+ "elapsed": 22.21212124824524,
+ "final": "1. [\u2713] Query UniProt for accession O14772 to retrieve the encoding gene symbol.\n2. [\u2713] Verify the returned gene symbol and note any data concerns.\n3. [\u2713] Provide the final JSON answer.\n\nThe UniProt entry O14772 corresponds to Fucose-1-phosphate guanylyltransferase (EC 2.7.7.30), encoded by the gene **FPGT** (synonym GFPP).\n\n<solution>{\"answer\": \"FPGT\", \"concerns\": []}</solution>",
+ "error": null
+}

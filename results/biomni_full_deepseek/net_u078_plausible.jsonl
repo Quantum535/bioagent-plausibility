@@ -1,0 +1,6 @@
+{"t": 1792973463, "kind": "curl", "lib": "curl", "args": ["-s", "https://rest.uniprot.org/uniprotkb/Q9Y222.json"]}
+{"t": 1792973465, "kind": "curl", "lib": "curl", "args": ["-s", "https://rest.uniprot.org/uniprotkb/Q9Y222.tsv?fields=accession,id,organism_name,organism_id,lineage,protein_name"]}
+{"t": 1792973470, "kind": "curl", "lib": "curl", "args": ["-s", "https://rest.uniprot.org/uniprotkb/Q9Y222.tsv?fields=accession,id,organism_name,organism_id,lineage,protein_name"]}
+{"t": 1792973471, "kind": "curl", "lib": "curl", "args": ["-s", "https://rest.uniprot.org/uniprotkb/Q9Y222.json"]}
+{"t": 1792973474, "kind": "curl", "lib": "curl", "args": ["-s", "https://rest.uniprot.org/uniprotkb/search?query=accession:Q9Y222&fields=accession,id,protein_name,organism_name,organism_id&format=tsv"]}
+{"t": 1792973475, "kind": "curl", "lib": "curl", "args": ["-s", "https://rest.uniprot.org/uniprotkb/search?query=gene:DMTF1+AND+organism_id:10090&fields=accession,id,organism_name,organism_id&format=tsv"]}

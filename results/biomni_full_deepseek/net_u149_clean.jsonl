@@ -1,0 +1,14 @@
+{"t": 1792983121.9760199, "kind": "dns", "lib": "netlog_shim.py", "host": "api.anthropic.com"}
+{"t": 1792983124.6610339, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792983125.1160588, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact:CLIC2+AND+organism_id:9606+AND+reviewed:true&format=json&size=1"}
+{"t": 1792983128.521054, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792983128.9901812, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact:GOSR2+AND+organism_id:9606+AND+reviewed:true&format=json&size=1"}
+{"t": 1792983129.2866828, "kind": "dns", "lib": "netlog_shim.py", "host": "api.together.xyz"}
+{"t": 1792983133.620966, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792983134.114608, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/O15247.json?fields=accession,id,protein_name,gene_names,length,mass,sequence"}
+{"t": 1792983134.349312, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792983135.809321, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact%3AGOSR2+AND+organism_id%3A9606+AND+reviewed%3Atrue&format=json&size=5&fields=accession%2Cid%2Cprotein_name%2Cgene_names%2Clength%2Cmass"}
+{"t": 1792983137.227339, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792983137.732055, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/O15247.json"}
+{"t": 1792983137.738517, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792983138.1961951, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/O14653.json"}

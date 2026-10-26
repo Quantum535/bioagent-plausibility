@@ -1,0 +1,7 @@
+{"t": 1792994402, "kind": "curl", "lib": "curl", "args": ["-s", "--max-time", "20", "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/13471/property/Title,HydrogenBondDonorCount,CanonicalSMILES/JSON"]}
+{"t": 1792994403, "kind": "curl", "lib": "curl", "args": ["-s", "--max-time", "20", "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/13471/property/Title,HBondDonorCount,CanonicalSMILES/JSON"]}
+{"t": 1792994408, "kind": "curl", "lib": "curl", "args": ["-s", "--max-time", "20", "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/13471/property/HBondAcceptorCount/JSON"]}
+{"t": 1792994408, "kind": "curl", "lib": "curl", "args": ["-s", "--max-time", "20", "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/13471/JSON?heading=Hydrogen+Bond+Donor+Count"]}
+{"t": 1792994412.632409, "kind": "http", "lib": "netlog_shim.py", "host": "pubchem.ncbi.nlm.nih.gov", "method": "GET", "path": "/rest/pug_view/data/compound/13471/JSON?heading=Computed+Properties"}
+{"t": 1792994412.632972, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792994412, "kind": "curl", "lib": "curl", "args": ["-s", "--max-time", "20", "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/13471/property/IsomericSMILES/JSON"]}

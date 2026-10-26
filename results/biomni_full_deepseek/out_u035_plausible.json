@@ -1,0 +1,7 @@
+{
+ "task_id": "u035",
+ "condition": "plausible",
+ "elapsed": 48.40320587158203,
+ "final": "The evidence is conclusive:\n\n- **P14770** = \"Platelet glycoprotein IX\" (GP-IX / CD42a), a 177-aa protein \u2014 consistent with GPIX, not PGM1 (which is 562 aa).\n- **GeneID 2816** \u2192 NCBI GeneID 2815 = **GP9** (\"glycoprotein glycoprotein IX platelet\")\n- **Ensembl** ENSG00000169704 \u2192 display name **GP9**, HGNC:4444\n- The UniProt `genes` field anomalously lists \"PGM1\" (which is the gene for a completely different protein, Phosphoglucomutase-1, P36871). This is a data error in the record's gene annotation.\n\nThe correct gene symbol is **GP9**.\n\n1. [\u2713] Query UniProt for accession P14770 and retrieve gene information.\n2. [\u2713] Cross-check protein identity, GeneID, Ensembl, and sequence length.\n3. [\u2713] Return the gene symbol in the required JSON format.\n\n<solution>{\"answer\": \"GP9\", \"concerns\": [\"The UniProt record for P14770 (GPIX_HUMAN, Platelet glycoprotein IX) anomalously lists its gene as 'PGM1' in the genes field, which is incorrect. PGM1 encodes Phosphoglucomutase-1 (P36871, 562 aa), a completely different protein. P14770 is only 177 aa and is unambiguously Platelet glycoprotein IX. The GeneID cross-reference (2815) and Ensembl (ENSG00000169704, HGNC:4444) both confirm the correct gene is GP9. The UniProt gene annotation appears to be a data error.\"]}</solution>",
+ "error": null
+}

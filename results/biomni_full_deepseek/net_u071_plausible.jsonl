@@ -1,0 +1,14 @@
+{"t": 1792972326, "kind": "curl", "lib": "curl", "args": ["-s", "--max-time", "20", "https://rest.uniprot.org/uniprotkb/Q5TD94.json"]}
+{"t": 1792972331, "kind": "curl", "lib": "curl", "args": ["-s", "--max-time", "20", "https://rest.uniprot.org/uniprotkb/Q5TD94.json"]}
+{"t": 1792972332, "kind": "curl", "lib": "curl", "args": ["-s", "--max-time", "20", "https://rest.uniprot.org/uniprotkb/search?query=gene:RSPH4A+AND+organism_id:9606&fields=accession,id,protein_name,gene_names&format=tsv"]}
+{"t": 1792972333, "kind": "curl", "lib": "curl", "args": ["-s", "--max-time", "20", "https://rest.uniprot.org/uniprotkb/search?query=gene:PTX3+AND+organism_id:9606&fields=accession,id,protein_name,gene_names&format=tsv"]}
+{"t": 1792972337, "kind": "curl", "lib": "curl", "args": ["-s", "--max-time", "25", "https://rest.ensembl.org/xrefs/symbol/homo_sapiens/Q5TD94?content-type=application/json"]}
+{"t": 1792972343, "kind": "curl", "lib": "curl", "args": ["-s", "--max-time", "25", "-H", "Content-Type:application/json", "https://rest.ensembl.org/lookup/id/ENSG00000111834?expand=1"]}
+{"t": 1792972364.4553401, "kind": "dns", "lib": "netlog_shim.py", "host": "api.together.xyz"}
+{"t": 1792972365, "kind": "curl", "lib": "curl", "args": ["-s", "--max-time", "25", "https://rest.ensembl.org/xrefs/symbol/homo_sapiens/Q5TD94?content-type=application/json"]}
+{"t": 1792972367, "kind": "curl", "lib": "curl", "args": ["-s", "--max-time", "25", "https://rest.ensembl.org/lookup/id/ENSG00000111834?content-type=application/json"]}
+{"t": 1792972392, "kind": "curl", "lib": "curl", "args": ["-s", "--max-time", "25", "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=gene&id=345895&rettype=json&retmode=json"]}
+{"t": 1792972393.378289, "kind": "dns", "lib": "netlog_shim.py", "host": "api.together.xyz"}
+{"t": 1792972395, "kind": "curl", "lib": "curl", "args": ["-s", "--max-time", "25", "https://rest.genenames.org/fetch/symbol/RSPH4A", "-H", "Accept: application/json"]}
+{"t": 1792972397, "kind": "curl", "lib": "curl", "args": ["-s", "--max-time", "25", "https://rest.genenames.org/fetch/symbol/RSPH4A", "-H", "Accept: application/json"]}
+{"t": 1792972398, "kind": "curl", "lib": "curl", "args": ["-s", "--max-time", "25", "https://rest.genenames.org/search/alias_symbol/PTX3", "-H", "Accept: application/json"]}

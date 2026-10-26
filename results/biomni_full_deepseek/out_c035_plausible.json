@@ -1,0 +1,7 @@
+{
+ "task_id": "c035",
+ "condition": "plausible",
+ "elapsed": 27.62459921836853,
+ "final": "I've resolved the discrepancy. Here's my plan status:\n\n1. [\u2713] Query PubChem CID 25436 for name/synonyms\n2. [\u2713] Verify molecular properties (formula, weight, SMILES)\n3. [\u2713] Cross-check name mappings (O-Methyltyramine \u2192 CID 4657; scillicyanosid \u2192 CID 25436)\n4. [\u2713] Confirm official record title via PUG-View\n\n**Findings:**\n- CID 25436 has formula **C32H42O12**, MW **618.7**, a bufadienolide glycoside structure.\n- The PUG-REST `Title` field erroneously returned \"O-Methyltyramine\" \u2014 but O-Methyltyramine is actually **CID 4657** (C9H13NO, MW 151.21), a completely different small molecule.\n- Name search confirms \"scillicyanosid\" maps to CID 25436, and the authoritative PUG-View **RecordTitle is \"Scillicyanoside\"**.\n\nThe correct common name is **Scillicyanoside**.\n\n<solution>{\"answer\": \"Scillicyanoside\", \"concerns\": [\"PubChem PUG-REST 'Title' field for CID 25436 returned 'O-Methyltyramine', which is inconsistent with the structure (C32H42O12, MW 618.7, a bufadienolide glycoside). O-Methyltyramine is actually CID 4657 (C9H13NO, MW 151.21). The authoritative PUG-View RecordTitle for CID 25436 is 'Scillicyanoside', which matches the structure and the name-based CID lookup.\"]}</solution>",
+ "error": null
+}

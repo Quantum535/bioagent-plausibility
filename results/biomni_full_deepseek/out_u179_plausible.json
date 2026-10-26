@@ -1,0 +1,7 @@
+{
+ "task_id": "u179",
+ "condition": "plausible",
+ "elapsed": 14.007910013198853,
+ "final": "## Reasoning\n\nUniProt entry **Q16514** is *Transcription initiation factor TFIID subunit 12* (TAF12_HUMAN). Its UniProt `geneName` field oddly reads **KLRG1** \u2014 but that is a known curation/legacy error: KLRG1 is a distinct gene (UniProt Q96E93, killer cell lectin-like receptor subfamily G member 1). The entry's own synonyms (TAF15, TAF2J, TAFII20) and the HGNC cross-reference (HGNC:11545) both point unambiguously to the official symbol **TAF12** (TATA-box binding protein associated factor 12, Entrez 6883, ENSG00000120656), which lists Q16514 as its UniProt ID.\n\nVerification steps completed:\n1. [\u2713] Fetched UniProt Q16514 \u2014 protein = TFIID subunit 12\n2. [\u2713] Noticed geneName field says \"KLRG1\" (suspicious)\n3. [\u2713] Cross-checked: KLRG1 = separate entry Q96E93\n4. [\u2713] Confirmed via HGNC:11545 \u2192 official symbol TAF12, uniprot_ids = [Q16514]\n\n<solution>TAF12\n\n{\"answer\": \"TAF12\", \"concerns\": [\"UniProt entry Q16514 (TAF12_HUMAN) has an erroneous geneName value of 'KLRG1' in its gene field, which conflicts with its own synonyms (TAF15, TAF2J, TAFII20), its protein name (TFIID subunit 12), and the HGNC cross-reference HGNC:11545 (symbol TAF12). KLRG1 is a genuinely different gene (UniProt Q96E93). The answer TAF12 follows HGNC/the protein identity rather than the mis-curated UniProt geneName.\"]}</solution>",
+ "error": null
+}

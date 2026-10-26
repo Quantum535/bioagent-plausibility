@@ -1,0 +1,6 @@
+{"t": 1792992326, "kind": "curl", "lib": "curl", "args": ["-s", "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/24634/property/HydrogenBondDonorCount,Title,IUPACName/JSON"]}
+{"t": 1792992328, "kind": "curl", "lib": "curl", "args": ["-s", "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/24634/property/HBondDonorCount,Title/JSON"]}
+{"t": 1792992331, "kind": "curl", "lib": "curl", "args": ["-s", "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/24634/property/MolecularFormula,MolecularWeight,HBondDonorCount,HBondAcceptorCount,Title/JSON"]}
+{"t": 1792992332, "kind": "curl", "lib": "curl", "args": ["-s", "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/24634/synonyms/JSON"]}
+{"t": 1792992333, "kind": "curl", "lib": "curl", "args": ["-s", "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/24634/property/HBondDonorCount/CSV"]}
+{"t": 1792992334, "kind": "curl", "lib": "curl", "args": ["-s", "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/24634/property/HBondDonorCount/TXT"]}

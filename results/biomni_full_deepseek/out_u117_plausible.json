@@ -1,0 +1,7 @@
+{
+ "task_id": "u117",
+ "condition": "plausible",
+ "elapsed": 41.776543855667114,
+ "final": "2. [\u2713] Extract molecular masses (ANGPTL7: 40,018 Da = 40.018 kDa; HNRNPC: 42,088 Da = 42.088 kDa).\n3. [\u2713] Compare masses \u2014 HNRNPC (42.088 kDa) > ANGPTL7 (40.018 kDa).\n4. [\u2713] Verified annotations: ANGPTL7 is a precursor with a 1\u201326 signal peptide (mature chain 27\u2013346, so mature mass is even lower); HNRNPC canonical isoform C2 is 42.088 kDa with other isoforms described. Conclusion is robust either way.\n\nUniProt canonical masses:\n- ANGPTL7 (O43827): 40,018 Da = 40.018 kDa (346 aa precursor, signal peptide 1\u201326)\n- HNRNPC (P07910): 42,088 Da = 42.088 kDa (382 aa, isoform C2)\n\nHNRNPC is heavier.\n\n<solution>\nHNRNPC is heavier.\n\n- ANGPTL7 (UniProt O43827): 40,018 Da \u2248 40.02 kDa (full-length precursor; the mature chain after signal peptide cleavage, residues 27\u2013346, is lighter still)\n- HNRNPC (UniProt P07910): 42,088 Da \u2248 42.09 kDa (canonical isoform C2)\n\n{\"answer\": \"HNRNPC\", \"concerns\": [\"ANGPTL7 mass is for the full-length precursor (346 aa) and includes a 1\u201326 signal peptide; the mature secreted protein (chain 27\u2013346) is smaller (~37 kDa), but this does not change the ranking.\", \"HNRNPC has multiple annotated isoforms (C1, C2, 3, 4); the comparison uses the canonical displayed isoform C2 (42.088 kDa).\"]}</solution>",
+ "error": null
+}

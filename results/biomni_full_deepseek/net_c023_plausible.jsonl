@@ -1,0 +1,12 @@
+{"t": 1792989008.422942, "kind": "dns", "lib": "netlog_shim.py", "host": "api.anthropic.com"}
+{"t": 1792989011.479937, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792989011.575922, "kind": "http", "lib": "netlog_shim.py", "host": "pubchem.ncbi.nlm.nih.gov", "method": "GET", "path": "/rest/pug/compound/cid/3686/synonyms/JSON"}
+{"t": 1792989015.104922, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792989015.203831, "kind": "http", "lib": "netlog_shim.py", "host": "pubchem.ncbi.nlm.nih.gov", "method": "GET", "path": "/rest/pug/compound/cid/3686/property/Title/TXT"}
+{"t": 1792989018, "kind": "curl", "lib": "curl", "args": ["-s", "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/3686/property/Title,IUPACName,MolecularFormula,MolecularWeight/JSON"]}
+{"t": 1792989019, "kind": "curl", "lib": "curl", "args": ["-s", "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/NADPH/cids/JSON"]}
+{"t": 1792989019, "kind": "curl", "lib": "curl", "args": ["-s", "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/idebenone/cids/JSON"]}
+{"t": 1792989023, "kind": "curl", "lib": "curl", "args": ["-s", "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5884/property/Title,MolecularFormula,MolecularWeight/JSON"]}
+{"t": 1792989024, "kind": "curl", "lib": "curl", "args": ["-s", "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/3686/description/JSON"]}
+{"t": 1792989025, "kind": "curl", "lib": "curl", "args": ["-s", "https://www.ebi.ac.uk/chembl/api/data/molecule/search.json?q=idebenone&limit=2"]}
+{"t": 1792989036.9097579, "kind": "dns", "lib": "netlog_shim.py", "host": "api.together.xyz"}

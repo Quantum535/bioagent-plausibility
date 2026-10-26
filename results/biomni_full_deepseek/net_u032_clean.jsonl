@@ -1,0 +1,6 @@
+{"t": 1792967250.2128088, "kind": "dns", "lib": "netlog_shim.py", "host": "api.anthropic.com"}
+{"t": 1792967253.1730309, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792967253.656474, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact:MLXIPL+AND+organism_id:9606+AND+reviewed:true&format=json&fields=accession,gene_primary,length,sequence"}
+{"t": 1792967256.705067, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792967257.165667, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact:ARFIP2+AND+organism_id:9606+AND+reviewed:true&format=json&fields=accession,gene_primary,length,sequence"}
+{"t": 1792967257.4060512, "kind": "dns", "lib": "netlog_shim.py", "host": "api.together.xyz"}

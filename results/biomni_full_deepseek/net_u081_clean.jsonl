@@ -1,0 +1,14 @@
+{"t": 1792973653.4933681, "kind": "dns", "lib": "netlog_shim.py", "host": "api.anthropic.com"}
+{"t": 1792973656.1177652, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792973656.593504, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact:DPH1+AND+organism_id:9606+AND+reviewed:true&format=json&size=1"}
+{"t": 1792973659.6426911, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792973660.10093, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact:PAK2+AND+organism_id:9606+AND+reviewed:true&format=json&size=1"}
+{"t": 1792973660.4867232, "kind": "dns", "lib": "netlog_shim.py", "host": "api.together.xyz"}
+{"t": 1792973661.896919, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792973662.357218, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/Q9BZG8.json?fields=accession,gene_names,protein_name,mass,length,sequence"}
+{"t": 1792973662.5119739, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792973662.962084, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/Q13177.json?fields=accession,gene_names,protein_name,mass,length,sequence"}
+{"t": 1792973664.737076, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792973665.2883499, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/Q9BZG8.json?fields=accession,id,gene_names,protein_name,mass,length"}
+{"t": 1792973665.4589849, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792973665.9991071, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/Q13177.json?fields=accession,id,gene_names,protein_name,mass,length"}

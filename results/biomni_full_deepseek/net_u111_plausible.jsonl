@@ -1,0 +1,22 @@
+{"t": 1792977597.228939, "kind": "dns", "lib": "netlog_shim.py", "host": "api.anthropic.com"}
+{"t": 1792977599.925947, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792977600.479726, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/O15247?fields=accession,gene_names,gene_primary,protein_name,organism_name"}
+{"t": 1792977602.078239, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792977602.530192, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/O15247.json"}
+{"t": 1792977604.2277288, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792977604.736524, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene%3ACLIC2+AND+organism_id%3A9606&fields=accession%2Cgene_names%2Cprotein_name&format=json&size=5"}
+{"t": 1792977606.147757, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792977607.211493, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792977607.670926, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene%3ACLIC2+AND+organism_id%3A9606&fields=accession%2Cgene_names%2Cprotein_name&format=json&size=5"}
+{"t": 1792977607.6774888, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792977608.1343539, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene%3AIDH3A+AND+organism_id%3A9606&fields=accession%2Cgene_names%2Cprotein_name&format=json&size=5"}
+{"t": 1792977609.6553202, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792977610.114681, "kind": "http", "lib": "netlog_shim.py", "host": "rest.ensembl.org", "method": "GET", "path": "/xrefs/symbol/homo_sapiens/O15247"}
+{"t": 1792977631.57196, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792977631.6788359, "kind": "http", "lib": "netlog_shim.py", "host": "rest.genenames.org", "method": "GET", "path": "/search/symbol/CLIC2"}
+{"t": 1792977632.281468, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792977632.382978, "kind": "http", "lib": "netlog_shim.py", "host": "rest.genenames.org", "method": "GET", "path": "/search/symbol/IDH3A"}
+{"t": 1792977632.572496, "kind": "dns", "lib": "netlog_shim.py", "host": "api.together.xyz"}
+{"t": 1792977633.401689, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792977633.84863, "kind": "http", "lib": "netlog_shim.py", "host": "rest.ensembl.org", "method": "GET", "path": "/lookup/id/ENSG00000155962"}
+{"t": 1792977644.723818, "kind": "dns", "lib": "netlog_shim.py", "host": "api.together.xyz"}

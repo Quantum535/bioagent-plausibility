@@ -1,0 +1,7 @@
+{"t": 1792994468, "kind": "curl", "lib": "curl", "args": ["-s", "--max-time", "20", "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5884/property/Title,IUPACName/JSON"]}
+{"t": 1792994470, "kind": "curl", "lib": "curl", "args": ["-s", "--max-time", "20", "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5884/property/Title,IUPACName,MolecularFormula,MolecularWeight,CanonicalSMILES/JSON"]}
+{"t": 1792994470, "kind": "curl", "lib": "curl", "args": ["-s", "--max-time", "20", "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5884/synonyms/JSON"]}
+{"t": 1792994471, "kind": "curl", "lib": "curl", "args": ["-s", "--max-time", "20", "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5893/property/Title,IUPACName,MolecularFormula/JSON"]}
+{"t": 1792994472, "kind": "curl", "lib": "curl", "args": ["-s", "--max-time", "20", "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/5884/JSON?heading=Depositor-Supplied+Synonyms"]}
+{"t": 1792994473, "kind": "curl", "lib": "curl", "args": ["-s", "--max-time", "20", "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/triphenylamine/cids/JSON"]}
+{"t": 1792994473, "kind": "curl", "lib": "curl", "args": ["-s", "--max-time", "20", "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5884/xrefs/RegistryID/JSON"]}

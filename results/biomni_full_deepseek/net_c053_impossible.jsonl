@@ -1,0 +1,5 @@
+{"t": 1792991084.2088199, "kind": "dns", "lib": "netlog_shim.py", "host": "api.anthropic.com"}
+{"t": 1792991086.7163122, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792991086.868725, "kind": "http", "lib": "netlog_shim.py", "host": "pubchem.ncbi.nlm.nih.gov", "method": "GET", "path": "/rest/pug/compound/cid/12448/property/HeavyAtomCount,CanonicalSMILES/CSV"}
+{"t": 1792991090.573885, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792991090.9012868, "kind": "http", "lib": "netlog_shim.py", "host": "pubchem.ncbi.nlm.nih.gov", "method": "GET", "path": "/rest/pug/compound/cid/12448/property/MolecularFormula,HeavyAtomCount,CanonicalSMILES/JSON"}

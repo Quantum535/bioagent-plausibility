@@ -1,0 +1,7 @@
+{"t": 1792985775, "kind": "curl", "lib": "curl", "args": ["-s", "https://rest.uniprot.org/uniprotkb/Q16514.json"]}
+{"t": 1792985777, "kind": "curl", "lib": "curl", "args": ["-s", "https://rest.uniprot.org/uniprotkb/Q16514.json"]}
+{"t": 1792985778, "kind": "curl", "lib": "curl", "args": ["-s", "https://rest.uniprot.org/uniprotkb/search?query=gene_exact:TAF12+AND+organism_id:9606+AND+reviewed:true&fields=accession,id,protein_name,gene_names&format=tsv"]}
+{"t": 1792985779, "kind": "curl", "lib": "curl", "args": ["-s", "https://rest.uniprot.org/uniprotkb/search?query=gene_exact:KLRG1+AND+organism_id:9606+AND+reviewed:true&fields=accession,id,protein_name,gene_names&format=tsv"]}
+{"t": 1792985780, "kind": "curl", "lib": "curl", "args": ["-s", "https://rest.uniprot.org/uniprotkb/Q16514?fields=accession,id,protein_name,gene_names&format=tsv"]}
+{"t": 1792985782, "kind": "curl", "lib": "curl", "args": ["-s", "https://rest.genenames.org/fetch/hgnc_id/11545", "-H", "Accept: application/json"]}
+{"t": 1792985782, "kind": "curl", "lib": "curl", "args": ["-s", "https://rest.genenames.org/fetch/symbol/TAF12", "-H", "Accept: application/json"]}

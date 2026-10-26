@@ -1,0 +1,7 @@
+{
+ "task_id": "u099",
+ "condition": "impossible",
+ "elapsed": 46.662437915802,
+ "final": "1. [\u2713] Query UniProt for accession Q9NRJ7 to retrieve gene symbol.\n2. [\u2713] Verify the gene/symbol via HGNC \u2014 UniProt's \"MWG17/MWG9\" entry is outdated; HGNC:14546 approved symbol is PCDHB16.\n3. [\u2713] Return the gene symbol in the required JSON format.\n\nUniProt's gene name field for Q9NRJ7 lists \"MWG9,\" but this is an obsolete/incorrect name. The protein is Protocadherin beta-16, and the authoritative HGNC record (HGNC:14546) gives the approved symbol **PCDHB16** (aliases include PCDH3X, KIAA1621, PCDH-BETA16).\n\n<solution>{\"answer\": \"PCDHB16\", \"concerns\": [\"UniProt record Q9NRJ7 lists gene name 'MWG9', which conflicts with the protein name (Protocadherin beta-16) and with HGNC:14546, whose approved symbol is PCDHB16. The UniProt gene name appears outdated/erroneous.\", \"Ensembl REST API returned 503 during verification; HGNC REST API was used instead.\"]}</solution>",
+ "error": null
+}

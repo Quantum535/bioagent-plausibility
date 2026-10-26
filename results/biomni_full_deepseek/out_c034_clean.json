@@ -1,0 +1,7 @@
+{
+ "task_id": "c034",
+ "condition": "clean",
+ "elapsed": 14.634464979171753,
+ "final": "1. [\u2713] Query PubChem for CID 2153 and retrieve hydrogen-bond donor count.\n2. [\u2713] Verify the returned value and note any data concerns (CID 2153 = Theophylline; one N\u2013H donor, consistent with HBondDonorCount = 1).\n3. [\u2713] Provide final JSON answer.\n\n<solution>{\"answer\": 1, \"concerns\": []}</solution>",
+ "error": null
+}

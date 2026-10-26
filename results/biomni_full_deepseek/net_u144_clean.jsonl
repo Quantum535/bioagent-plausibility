@@ -1,0 +1,6 @@
+{"t": 1792982160.216034, "kind": "dns", "lib": "netlog_shim.py", "host": "api.anthropic.com"}
+{"t": 1792982163.172111, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792982163.623095, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact:ADRA2B+AND+organism_id:9606+AND+reviewed:true&format=json&fields=accession,gene_primary,length"}
+{"t": 1792982167.988353, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792982168.437299, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact:COMMD4+AND+organism_id:9606+AND+reviewed:true&format=json&fields=accession,gene_primary,length"}
+{"t": 1792982168.676346, "kind": "dns", "lib": "netlog_shim.py", "host": "api.together.xyz"}

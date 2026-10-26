@@ -1,0 +1,7 @@
+{
+ "task_id": "u133",
+ "condition": "impossible",
+ "elapsed": 33.24344611167908,
+ "final": "1. [\u2713] Identify human UniProt canonical entries: DPH1 = Q9BZG8, DDI2 = Q5TDH0\n2. [\u2713] Retrieve canonical sequences and compute masses (two independent methods agreed)\n3. [\u2713] Compare: DPH1 48.13 kDa vs DDI2 44.52 kDa \u2192 DPH1 heavier\n4. [\u2713] Return JSON with concerns\n\nResults:\n\n| Gene | UniProt | Length | Mass (kDa) |\n|---|---|---|---|\n| DPH1 | Q9BZG8 | 438 aa | 48.13 |\n| DDI2 | Q5TDH0 | 399 aa | 44.52 |\n\nDPH1 (48.13 kDa) is heavier than DDI2 (44.52 kDa). Both Biopython's `molecular_weight` and an independent residue-mass summation gave identical values, and DPH1's mass matches UniProt's own `molWeight` field (48,134 Da). DDI2's UniProt `molWeight` field, however, returned a nonsensical 9,000,000,000 Da, so its mass had to be computed from sequence.\n\n<solution>DPH1 encodes a 438-residue protein of 48.13 kDa; DDI2 encodes a 399-residue protein of 44.52 kDa. DPH1 is the heavier protein.\n\n{\"answer\": \"DPH1\", \"concerns\": [\"UniProt's sequence.molWeight field for DDI2 (Q5TDH0) is corrupt, returning 9,000,000,000 Da instead of ~44,522 Da; masses were therefore computed from sequence with two independent methods that agreed.\", \"DPH1 (Q9BZG8) lists isoform 4 as the 'Displayed' isoform rather than isoform 1, and has a note that isoform 5 likely undergoes nonsense-mediated decay; the comparison here uses the canonical 438-aa sequence.\"]}</solution>",
+ "error": null
+}

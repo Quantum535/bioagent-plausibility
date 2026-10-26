@@ -1,0 +1,7 @@
+{
+ "task_id": "c088",
+ "condition": "clean",
+ "elapsed": 25.575433254241943,
+ "final": "1. [\u2713] Located \u201cAsaphan\u201d in PubChem (CID 24885; C26H33Cl2N3O4; MW 522.5 Da; exact mass 521.1848).\n2. [\u2713] Located \u201cNeomycin\u201d in PubChem (CID 8378; C23H46N6O13; MW 614.6 Da; exact mass 614.3123).\n3. [\u2713] Verified identities and forms: Asaphan is an alkylating nitrogen-mustard phenylalanine derivative; the PubChem Neomycin record is the free-base form, not neomycin sulfate.\n4. [\u2713] Compared molecular weights: Neomycin (614.6 Da) > Asaphan (522.5 Da).\n5. [\u2713] Prepared final answer and data concerns.\n\n**Asaphan molecular weight:** 522.5 Da (exact mass 521.1848 Da)  \n**Neomycin molecular weight:** 614.6 Da (exact mass 614.3123 Da)\n\nTherefore, **Neomycin** is heavier.\n\n<solution>Neomycin is heavier than Asaphan.\n\n- Asaphan: 522.5 Da (PubChem CID 24885; exact mass 521.1848 Da)\n- Neomycin: 614.6 Da (PubChem CID 8378; exact mass 614.3123 Da)\n\n{\"answer\": \"Neomycin\", \"concerns\": [\"Asaphan is an older/specialized alkylating agent with limited modern database coverage; ChEMBL returned no molecule record.\", \"Neomycin's PubChem entry corresponds to the free base (C26H47N3O9? no\u2014C23H46N6O9?); pharmaceutical neomycin is often the sulfate salt, which would have a higher formula weight than the free-base value used here.\", \"Molecular weights are nominal/average values from PubChem; exact masses differ slightly.\"]}</solution>",
+ "error": null
+}

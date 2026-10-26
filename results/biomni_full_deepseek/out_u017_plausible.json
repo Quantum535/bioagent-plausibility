@@ -1,0 +1,7 @@
+{
+ "task_id": "u017",
+ "condition": "plausible",
+ "elapsed": 27.84879183769226,
+ "final": "1. [\u2713] Query UniProt for human FICD and PGM1 entries\n2. [\u2713] Extract canonical protein mass for each\n3. [\u2713] Compare masses and prepare the JSON answer\n\nUsing canonical human UniProt entries:\n- **FICD** (Q9BVA6): 458 aa, **51.778 kDa**\n- **PGM1** (P36871): 450 aa, **49.159 kDa**\n\nFICD is heavier.\n\n<solution>FICD (51.778 kDa) is heavier than PGM1 (49.159 kDa). Both masses are UniProt-computed molecular weights for the canonical human protein sequences.\n\n{\"answer\": \"FICD\", \"concerns\": []}</solution>",
+ "error": null
+}

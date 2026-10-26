@@ -1,0 +1,7 @@
+{
+ "task_id": "u090",
+ "condition": "clean",
+ "elapsed": 20.08766484260559,
+ "final": "1. [\u2713] Query UniProt for Q9UPN6 to retrieve organism and taxonomy.\n2. [\u2713] Determine mammal status from taxonomy.\n3. [\u2713] Return organism name only in JSON answer field, with concerns.\n\nQ9UPN6 (SCAF8_HUMAN, SR-related and CTD-associated factor 8) is from *Homo sapiens* (taxon 9606). Its lineage includes Mammalia (Eutheria, Primates), so it is a mammal: yes.\n\n<solution>Organism: Homo sapiens. Is it a mammal? Yes.\n\n{\"answer\": \"Homo sapiens\", \"concerns\": []}</solution>",
+ "error": null
+}

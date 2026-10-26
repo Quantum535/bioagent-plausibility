@@ -1,0 +1,12 @@
+{"t": 1792969574, "kind": "curl", "lib": "curl", "args": ["-sS", "--max-time", "20", "https://rest.uniprot.org/uniprotkb/Q04741.json"]}
+{"t": 1792969577, "kind": "curl", "lib": "curl", "args": ["-sS", "--max-time", "20", "https://rest.uniprot.org/uniprotkb/Q04741.json"]}
+{"t": 1792969579, "kind": "curl", "lib": "curl", "args": ["-sS", "--max-time", "20", "https://rest.uniprot.org/uniprotkb/Q04741.txt"]}
+{"t": 1792969580, "kind": "curl", "lib": "curl", "args": ["-sS", "--max-time", "20", "https://rest.uniprot.org/uniprotkb/Q04741.fasta"]}
+{"t": 1792969581, "kind": "curl", "lib": "curl", "args": ["-sS", "--max-time", "20", "https://rest.uniprot.org/uniprotkb/search?query=accession:Q04741&fields=accession,id,protein_name,organism_name,organism_id,lineage&format=tsv"]}
+{"t": 1792969584, "kind": "curl", "lib": "curl", "args": ["-sS", "--max-time", "20", "https://rest.uniprot.org/taxonomy/9606?fields=scientificName,commonName,rank,lineage"]}
+{"t": 1792969584, "kind": "curl", "lib": "curl", "args": ["-sS", "--max-time", "20", "https://rest.uniprot.org/uniprotkb/search?query=gene:Emx1+AND+organism_id:10090+AND+reviewed:true&fields=accession,id,protein_name,organism_name,organism_id&format=tsv"]}
+{"t": 1792969585, "kind": "curl", "lib": "curl", "args": ["-sS", "--max-time", "20", "https://rest.uniprot.org/uniprotkb/search?query=gene:EMX1+AND+organism_id:9606+AND+reviewed:true&fields=accession,id,protein_name,organism_name,organism_id&format=tsv"]}
+{"t": 1792969587, "kind": "curl", "lib": "curl", "args": ["-sS", "--max-time", "20", "https://rest.uniprot.org/taxonomy/9606"]}
+{"t": 1792969588, "kind": "curl", "lib": "curl", "args": ["-sS", "-o", "/dev/null", "-w", "HTTP %{http_code}\\n", "https://rest.uniprot.org/uniprotkb/Q04739.fasta"]}
+{"t": 1792969589, "kind": "curl", "lib": "curl", "args": ["-sS", "https://rest.uniprot.org/uniprotkb/Q04741.fasta"]}
+{"t": 1792969591, "kind": "curl", "lib": "curl", "args": ["-sS", "--max-time", "20", "https://rest.uniprot.org/taxonomy/9606"]}

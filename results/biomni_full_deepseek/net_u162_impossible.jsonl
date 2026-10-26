@@ -1,0 +1,11 @@
+{"t": 1792984573.1240902, "kind": "dns", "lib": "netlog_shim.py", "host": "api.anthropic.com"}
+{"t": 1792984575.879221, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792984576.346045, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/Q96BD8?format=json"}
+{"t": 1792984580.137524, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792984580.6688151, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/Q96BD8?format=json&fields=organism_name,organism_id"}
+{"t": 1792984581.8232782, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792984582.278444, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/Q96BD8.json"}
+{"t": 1792984584.26245, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792984584.708411, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=accession%3AQ96BD8&fields=accession%2Cid%2Corganism_name%2Corganism_id%2Cprotein_name%2Cgene_names&format=tsv"}
+{"t": 1792984584.9388769, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792984585.05539, "kind": "http", "lib": "netlog_shim.py", "host": "mygene.info", "method": "GET", "path": "/v3/query?q=SKA1&species=human&fields=symbol%2Cname%2Ctaxid%2Centrezgene"}

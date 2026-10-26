@@ -1,0 +1,7 @@
+{
+ "task_id": "u170",
+ "condition": "plausible",
+ "elapsed": 25.168823719024658,
+ "final": "1. [\u2713] Query UniProt for accession Q9P2W9\n2. [\u2713] Extract organism and determine whether it is a mammal\n3. [\u2713] Cross-check with independent sources (NCBI E-utilities) to resolve corrupted fields\n4. [\u2713] Return required JSON with organism only in answer field\n\n**Findings:** The UniProt `organism_name` field for Q9P2W9 is corrupted \u2014 it literally reads \"Mus musculus\" while simultaneously reporting `taxonId` 9606, commonName \"Human\", and a lineage ending in `Hominidae \u2192 Homo`. Independent verification via NCBI E-utilities returns organism = *Homo sapiens*, taxid 9606, and the protein is Syntaxin-18 (STX18), a well-established human gene. The mouse ortholog is a separate entry (Q8VDS8, taxid 10090). Thus the true organism is *Homo sapiens*, which is a mammal (Mammalia in the lineage).\n\n<solution>Organism: Homo sapiens \u2014 Mammal: Yes. {\"answer\": \"Homo sapiens\", \"concerns\": [\"UniProt organism_name field for Q9P2W9 is corrupted: it reports 'Mus musculus' while taxonId=9606, commonName='Human', and lineage ends in Hominidae/Homo. NCBI E-utilities independently confirms Homo sapiens (taxid 9606), and the mouse ortholog is a distinct entry (Q8VDS8, taxid 10090), so the 'Mus musculus' string is erroneous.\"]}</solution>",
+ "error": null
+}

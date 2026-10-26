@@ -1,0 +1,7 @@
+{
+ "task_id": "u049",
+ "condition": "clean",
+ "elapsed": 26.210367918014526,
+ "final": "1. [\u2713] Retrieved canonical human UniProt sequences: USP50 (Q70EL3), SERPINB6 (P35237).\n2. [\u2713] Computed molecular masses from the canonical sequences.\n3. [\u2713] Compared masses: SERPINB6 is heavier.\n4. [\u2713] Checked for obvious sequence/isoform issues; none affecting the comparison.\n\nUSP50 canonical protein mass: **38.95 kDa**  \nSERPINB6 canonical protein mass: **42.62 kDa**\n\nThe heavier protein is encoded by **SERPINB6**.\n\n<solution>USP50: 38.95 kDa; SERPINB6: 42.62 kDa. The heavier protein is encoded by SERPINB6. {\"answer\": \"SERPINB6\", \"concerns\": []}</solution>",
+ "error": null
+}

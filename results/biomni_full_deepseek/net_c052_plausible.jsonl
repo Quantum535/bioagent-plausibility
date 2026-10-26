@@ -1,0 +1,8 @@
+{"t": 1792991039.785614, "kind": "dns", "lib": "netlog_shim.py", "host": "api.anthropic.com"}
+{"t": 1792991042.0099158, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792991042.094413, "kind": "http", "lib": "netlog_shim.py", "host": "pubchem.ncbi.nlm.nih.gov", "method": "GET", "path": "/rest/pug/compound/cid/10624/property/MolecularWeight/TXT"}
+{"t": 1792991044.9776828, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792991045.319415, "kind": "http", "lib": "netlog_shim.py", "host": "pubchem.ncbi.nlm.nih.gov", "method": "GET", "path": "/rest/pug/compound/cid/10624/property/IUPACName,MolecularFormula/JSON"}
+{"t": 1792991053.394281, "kind": "dns", "lib": "netlog_shim.py", "host": "api.together.xyz"}
+{"t": 1792991056.918703, "kind": "http", "lib": "netlog_shim.py", "host": "pubchem.ncbi.nlm.nih.gov", "method": "GET", "path": "/rest/pug/compound/cid/10624/property/MolecularFormula,MolecularWeight,ExactMass,MonoisotopicMass,IUPACName/JSON"}
+{"t": 1792991056.919172, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}

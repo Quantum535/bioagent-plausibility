@@ -1,0 +1,10 @@
+{"t": 1792985645.440623, "kind": "dns", "lib": "netlog_shim.py", "host": "api.anthropic.com"}
+{"t": 1792985648.101706, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792985648.719208, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact:FANCL+AND+organism_id:9606+AND+reviewed:true&format=json&size=1"}
+{"t": 1792985651.647263, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792985652.1831338, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact:MAS1+AND+organism_id:9606+AND+reviewed:true&format=json&size=1"}
+{"t": 1792985652.207098, "kind": "dns", "lib": "netlog_shim.py", "host": "api.together.xyz"}
+{"t": 1792985654.616058, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792985655.075632, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact%3AFANCL+AND+organism_id%3A9606+AND+reviewed%3Atrue&format=json&size=1&fields=accession%2Cid%2Cprotein_name%2Cgene_names%2Clength%2Cmass%2Csequence"}
+{"t": 1792985655.294945, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792985656.7570062, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact%3AMAS1+AND+organism_id%3A9606+AND+reviewed%3Atrue&format=json&size=1&fields=accession%2Cid%2Cprotein_name%2Cgene_names%2Clength%2Cmass%2Csequence"}

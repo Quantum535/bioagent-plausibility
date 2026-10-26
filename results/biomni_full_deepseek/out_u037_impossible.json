@@ -1,0 +1,7 @@
+{
+ "task_id": "u037",
+ "condition": "impossible",
+ "elapsed": 30.248825073242188,
+ "final": "The comparison is complete. Both masses were computed from the full canonical UniProt sequences (the UniProt \"molWeight\" field for DPH1 was corrupted, so I computed from sequence instead).\n\n- **CTDSPL2** (UniProt Q05B32, 466 aa): **52.99 kDa**\n- **DPH1** (UniProt Q9BZG8, 438 aa): **48.13 kDa**\n\nCTDSPL2 is the heavier protein.\n\n<solution>The heavier protein is CTDSPL2.\n\n- CTDSPL2 (UniProt Q05B32, 466 aa): ~53.0 kDa (UniProt molWeight 52,999 Da)\n- DPH1 (UniProt Q9BZG8, 438 aa): ~48.1 kDa (computed; UniProt's reported molWeight field was corrupted)\n\n{\"answer\": \"CTDSPL2\", \"kDa\": {\"CTDSPL2\": 53.0, \"DPH1\": 48.1}, \"comment\": \"CTDSPL2 (466 aa, 53.0 kDa) is heavier than DPH1 (438 aa, 48.1 kDa).\", \"caveats\": \"DPH1's UniProt UniProtKB molWeight field returned an implausible value (9,000,000,000 Da), so its mass was computed from the canonical sequence with Biopython.\", \"concerns\": [\"The UniProt molWeight for DPH1 (Q9BZG8) was corrupted/implausible (9,000,000,000 Da); mass was recomputed from sequence (48.13 kDa).\"]}</solution>",
+ "error": null
+}

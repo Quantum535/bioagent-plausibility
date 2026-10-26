@@ -1,0 +1,16 @@
+{"t": 1792971621.696048, "kind": "dns", "lib": "netlog_shim.py", "host": "api.anthropic.com"}
+{"t": 1792971624.898001, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792971625.621672, "kind": "http", "lib": "netlog_shim.py", "host": "rest.ensembl.org", "method": "GET", "path": "/lookup/id/ENSG00000097021?expand=1"}
+{"t": 1792971628.216692, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792971628.668681, "kind": "http", "lib": "netlog_shim.py", "host": "rest.ensembl.org", "method": "GET", "path": "/lookup/id/ENSG00000163586?expand=1"}
+{"t": 1792971628.840383, "kind": "dns", "lib": "netlog_shim.py", "host": "api.together.xyz"}
+{"t": 1792971633.6298082, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792971634.086514, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact:ACOT7+AND+organism_id:9606+AND+reviewed:true&format=json&fields=accession,id,gene_names,protein_name,organism_name,cc_function,ec,length,mass,cc_catalytic_activity,cc_pathway,cc_tissue_specificity,cc_subcellular_location"}
+{"t": 1792971638.0483708, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792971638.643403, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact:CD36+AND+organism_id:9606+AND+reviewed:true&format=json&fields=accession,id,gene_names,protein_name,organism_name,cc_function,length,mass,ft_topo_dom,ft_region,cc_subcellular_location"}
+{"t": 1792971638.998683, "kind": "dns", "lib": "netlog_shim.py", "host": "api.together.xyz"}
+{"t": 1792971642.916391, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792971643.3699682, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact:CD36+AND+organism_id:9606+AND+reviewed:true&format=json"}
+{"t": 1792971646.6626072, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792971647.152267, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact:ACOT7+AND+organism_id:9606+AND+reviewed:true&format=json"}
+{"t": 1792971647.448231, "kind": "dns", "lib": "netlog_shim.py", "host": "api.together.xyz"}

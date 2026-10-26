@@ -1,0 +1,7 @@
+{
+ "task_id": "u149",
+ "condition": "impossible",
+ "elapsed": 33.0752170085907,
+ "final": "5. [\u2713] Verified: GOSR2 = O14653 (212 aa, canonical), CLIC2 = O14653... i.e. O15247 (247 aa). Recomputed masses agree with independent calculation.\n\n**Result:** CLIC2 protein = 28.356 kDa (247 aa, O15247); GOSR2 protein = 24.775 kDa (212 aa, O14653). CLIC2 is heavier by ~3.58 kDa.\n\n<solution>\nThe protein encoded by **CLIC2** is heavier.\n\n- **CLIC2** (UniProt O15247, Chloride intracellular channel protein 2): 247 aa, **28.356 kDa** (matches UniProt's reported 28,356 Da)\n- **GOSR2** (UniProt O14653, Golgi SNAP receptor complex member 2): 212 aa, **24.775 kDa** (computed from the canonical sequence)\n\nDifference: ~3.58 kDa heavier for CLIC2.\n\n{\"answer\": \"CLIC2\", \"concerns\": [\"UniProt's molWeight field for GOSR2 (O14653) is corrupt, reporting 9,000,000,000 Da (9,000,000 kDa) instead of ~24,775 Da; the mass was therefore computed directly from the canonical 212-aa sequence.\", \"CLIC2's UniProt molWeight (28,356 Da) matched the sequence-derived mass exactly, so no discrepancy there.\", \"Masses are for the unmodified canonical precursor sequences (initiator Met retained); if the initiator Met is removed in vivo, both shift down by ~131 Da (CLIC2 ~28.225 kDa, GOSR2 ~24.644 kDa), which does not change the ranking.\"]}</solution>",
+ "error": null
+}

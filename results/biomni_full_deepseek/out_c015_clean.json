@@ -1,0 +1,7 @@
+{
+ "task_id": "c015",
+ "condition": "clean",
+ "elapsed": 14.559938192367554,
+ "final": "1. [\u2713] Query PubChem for compound CID 3206.\n2. [\u2713] Verify the returned common name against the CID record.\n3. [\u2713] Return only the compound name in the required JSON format.\n\nBoth the synonym list and the Title property confirm the common name is **EHNA** (erythro-9-(2-hydroxy-3-nonyl)adenine).\n\n<solution>{\"answer\": \"EHNA\", \"concerns\": []}</solution>",
+ "error": null
+}

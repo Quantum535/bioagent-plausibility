@@ -1,0 +1,7 @@
+{
+ "task_id": "u017",
+ "condition": "clean",
+ "elapsed": 26.51799988746643,
+ "final": "1. [\u2713] Query UniProt for human FICD and PGM1 canonical entries\n2. [\u2713] Extract reviewed canonical protein molecular weights in kDa\n3. [\u2713] Compare masses and identify heavier gene symbol\n4. [\u2713] Return JSON with answer and concerns\n\n**Results (UniProt Swiss-Prot, human):**\n\n| Gene | Accession | Protein | Mass (kDa) |\n|------|-----------|---------|------------|\n| FICD | Q9BVA6 | Protein adenylyltransferase FICD (AMPylator/de-AMPylase) | 51.778 |\n| PGM1 | P36871 | Phosphoglucomutase-1 | 61.449 |\n\nPGM1 is heavier by ~9.67 kDa.\n\n<solution>PGM1 encodes the heavier protein.\n\n- **FICD** (UniProt Q9BVA6, Protein adenylyltransferase FICD): **51.778 kDa**\n- **PGM1** (UniProt P36871, Phosphoglucomutase-1): **61.449 kDa**\n\n{\"answer\": \"PGM1\", \"concerns\": []}</solution>",
+ "error": null
+}

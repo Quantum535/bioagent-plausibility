@@ -1,0 +1,14 @@
+{"t": 1792965820.3896031, "kind": "dns", "lib": "netlog_shim.py", "host": "api.anthropic.com"}
+{"t": 1792965823.1265018, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792965823.610581, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact:FICD+AND+organism_id:9606+AND+reviewed:true&format=json"}
+{"t": 1792965826.564182, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792965827.055848, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact:PGM1+AND+organism_id:9606+AND+reviewed:true&format=json"}
+{"t": 1792965827.614463, "kind": "dns", "lib": "netlog_shim.py", "host": "api.together.xyz"}
+{"t": 1792965829.3588312, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792965829.925993, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact:FICD+AND+organism_id:9606+AND+reviewed:true&fields=accession,gene_names,protein_name,length,mass,sequence&format=json&size=1"}
+{"t": 1792965830.314105, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792965830.8389351, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact:PGM1+AND+organism_id:9606+AND+reviewed:true&fields=accession,gene_names,protein_name,length,mass,sequence&format=json&size=1"}
+{"t": 1792965832.4409869, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792965832.893319, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact:FICD+AND+organism_id:9606+AND+reviewed:true&fields=accession,gene_names,length,mass,sequence&format=json&size=1"}
+{"t": 1792965833.1320791, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792965833.5889568, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact:PGM1+AND+organism_id:9606+AND+reviewed:true&fields=accession,gene_names,length,mass,sequence&format=json&size=1"}

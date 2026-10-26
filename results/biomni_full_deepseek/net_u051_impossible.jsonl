@@ -1,0 +1,8 @@
+{"t": 1792970338.380924, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/O00411.json"}
+{"t": 1792970338.381335, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792970340.3259661, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/O00411.json"}
+{"t": 1792970340.326418, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792970342.424756, "kind": "http", "lib": "netlog_shim.py", "host": "rest.genenames.org", "method": "GET", "path": "/fetch/hgnc_id/9200"}
+{"t": 1792970342.4250429, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792970343.478274, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=accession:O00411&fields=gene_primary,gene_names,protein_name&format=tsv"}
+{"t": 1792970343.478794, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}

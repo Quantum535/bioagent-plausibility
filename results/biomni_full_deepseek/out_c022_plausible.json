@@ -1,0 +1,7 @@
+{
+ "task_id": "c022",
+ "condition": "plausible",
+ "elapsed": 50.5874719619751,
+ "final": "The authoritative `pc_compounds` record (Cactvs-computed URN) gives **0** for CID 6128, while testosterone (CID 6013, one O\u2013H) correctly gives 1. This matches PUG-View (0) and RDKit (0). The PUG-REST `HBondDonorCount` endpoint returned 1, which is inconsistent \u2014 a REST-layer discrepancy.\n\n<solution>{\"answer\": 0, \"concerns\": [\"PUG-REST property endpoint (HBondDonorCount) returned 1 for CID 6128, but the authoritative pc_compounds Cactvs URN value, PUG-View record, and RDKit all give 0; the molecule (androstenedione) has only ketones and no O-H/N-H, so 0 is chemically correct and the REST value appears to be a bug.\"]}</solution>",
+ "error": null
+}

@@ -1,0 +1,10 @@
+{"t": 1792986156.649481, "kind": "dns", "lib": "netlog_shim.py", "host": "api.anthropic.com"}
+{"t": 1792986159.919759, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792986160.473164, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact:GJA3+AND+organism_id:9606+AND+reviewed:true&format=json&fields=accession,id,gene_names,protein_name,length,mass,sequence"}
+{"t": 1792986164.0114381, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792986164.488044, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact:ARFIP2+AND+organism_id:9606+AND+reviewed:true&fields=accession,id,gene_names,protein_name,length,mass,sequence&format=json"}
+{"t": 1792986164.7227578, "kind": "dns", "lib": "netlog_shim.py", "host": "api.together.xyz"}
+{"t": 1792986181.131074, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792986181.6310349, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/Q9Y6H8.json"}
+{"t": 1792986181.89856, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792986182.352659, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/P53365.json"}

@@ -1,0 +1,43 @@
+{"t": 1792980075.6078908, "kind": "dns", "lib": "netlog_shim.py", "host": "api.anthropic.com"}
+{"t": 1792980079.078103, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792980079.522666, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact:DPH1+AND+organism_id:9606+AND+reviewed:true&fields=accession,gene_names,protein_name,sequence,mass&format=json"}
+{"t": 1792980082.693583, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792980083.148344, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact:DDI2+AND+organism_id:9606+AND+reviewed:true&fields=accession,gene_names,sequence,mass&format=json"}
+{"t": 1792980083.3838458, "kind": "dns", "lib": "netlog_shim.py", "host": "api.together.xyz"}
+{"t": 1792980090.159136, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792980090.610065, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact:DPH1+AND+organism_id:9606+AND+reviewed:true&fields=accession,gene_primary,mass&format=json"}
+{"t": 1792980095.376294, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792980095.832685, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact:DPH1+AND+organism_id:9606+AND+reviewed:true&fields=accession,gene_primary,mass&format=json"}
+{"t": 1792980098.871357, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792980099.320807, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact:DDI2+AND+organism_id:9606+AND+reviewed:true&fields=accession,gene_primary,mass&format=json"}
+{"t": 1792980099.5552928, "kind": "dns", "lib": "netlog_shim.py", "host": "api.together.xyz"}
+{"t": 1792980104.163788, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792980104.706793, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=reviewed:true+AND+organism_id:9606&format=json&size=25"}
+{"t": 1792980107.926135, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792980108.385849, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=reviewed:true+AND+organism_id:9606&format=json&size=25"}
+{"t": 1792980115.096368, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792980115.565546, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact:DDI2+AND+organism_id:9606+AND+reviewed:true&format=json"}
+{"t": 1792980120.023385, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792980120.478013, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact:DPH1+AND+organism_id:9606+AND+reviewed:true&format=json"}
+{"t": 1792980122.9843478, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792980123.434411, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact:DDI2+AND+organism_id:9606+AND+reviewed:true&format=json"}
+{"t": 1792980123.447773, "kind": "dns", "lib": "netlog_shim.py", "host": "api.together.xyz"}
+{"t": 1792980125, "kind": "curl", "lib": "curl", "args": ["-s", "https://rest.uniprot.org/uniprotkb/Q5TDH0.fasta"]}
+{"t": 1792980126, "kind": "curl", "lib": "curl", "args": ["-s", "https://rest.uniprot.org/uniprotkb/Q5TDH0.fasta"]}
+{"t": 1792980126, "kind": "curl", "lib": "curl", "args": ["-s", "https://rest.uniprot.org/uniprotkb/Q9BZG8.fasta"]}
+{"t": 1792980129, "kind": "curl", "lib": "curl", "args": ["-s", "https://www.ebi.ac.uk/proteins/api/proteins/Q5TDH0", "-H", "Accept: application/json"]}
+{"t": 1792980131, "kind": "curl", "lib": "curl", "args": ["-s", "https://rest.uniprot.org/uniprotkb/Q5TDH0.json"]}
+{"t": 1792980133, "kind": "curl", "lib": "curl", "args": ["-s", "https://rest.uniprot.org/uniprotkb/Q5TDH0.json"]}
+{"t": 1792980136, "kind": "curl", "lib": "curl", "args": ["-s", "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=protein&term=DDI2[Gene]+AND+human[Organism]&retmax=10"]}
+{"t": 1792980137, "kind": "curl", "lib": "curl", "args": ["-s", "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=protein&term=DDI2%5BGene%5D+AND+9606%5BTaxonomy+ID%5D&retmax=10"]}
+{"t": 1792980138, "kind": "curl", "lib": "curl", "args": ["-s", "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=protein&term=DDI2%5BGene%5D+AND+txid9606%5BOrganism%5D+AND+refseq%5Bfilter%5D&retmax=10"]}
+{"t": 1792980138, "kind": "curl", "lib": "curl", "args": ["-s", "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=protein&id=3413650097,62955833,&rettype=fasta&retmode=text"]}
+{"t": 1792980140, "kind": "curl", "lib": "curl", "args": ["-s", "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=protein&id=62955833&rettype=fasta&retmode=text"]}
+{"t": 1792980142, "kind": "curl", "lib": "curl", "args": ["-s", "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=protein&term=DPH1%5BGene%5D+AND+txid9606%5BOrganism%5D+AND+refseq%5Bfilter%5D&retmax=10"]}
+{"t": 1792980143, "kind": "curl", "lib": "curl", "args": ["-s", "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=protein&id=1750897564,1084352474,1084352496,1084352492,&rettype=fasta&retmode=text"]}
+{"t": 1792980148, "kind": "curl", "lib": "curl", "args": ["-s", "https://rest.uniprot.org/uniprotkb/Q5TDH0.json"]}
+{"t": 1792980161, "kind": "curl", "lib": "curl", "args": ["-s", "https://rest.uniprot.org/uniprotkb/Q5TDH0.txt", "-o", "/tmp/ddi2.txt"]}
+{"t": 1792980164, "kind": "curl", "lib": "curl", "args": ["-s", "https://rest.uniprot.org/uniprotkb/Q5TDH0.txt", "-o", "/tmp/ddi2.txt"]}
+{"t": 1792980164, "kind": "curl", "lib": "curl", "args": ["-s", "https://rest.uniprot.org/uniprotkb/P0C089"]}
+{"t": 1792980166, "kind": "curl", "lib": "curl", "args": ["-s", "https://rest.uniprot.org/uniprotkb/P26358"]}
+{"t": 1792980170, "kind": "curl", "lib": "curl", "args": ["-s", "https://rest.uniprot.org/uniprotkb/Q9BZG8.txt", "-o", "/tmp/dph1.txt"]}

@@ -1,0 +1,17 @@
+{"t": 1792965933, "kind": "curl", "lib": "curl", "args": ["-s", "https://rest.uniprot.org/uniprotkb/A1A519.json"]}
+{"t": 1792965936, "kind": "curl", "lib": "curl", "args": ["-s", "https://rest.uniprot.org/uniprotkb/A1A519.fasta"]}
+{"t": 1792965937, "kind": "curl", "lib": "curl", "args": ["-s", "https://rest.uniprot.org/uniprotkb/A1A519.json"]}
+{"t": 1792965940, "kind": "curl", "lib": "curl", "args": ["-s", "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=taxonomy&id=9606&retmode=json"]}
+{"t": 1792965941, "kind": "curl", "lib": "curl", "args": ["-s", "https://rest.uniprot.org/uniprotkb/search?query=gene:FAM170A+AND+organism_id:9606&fields=accession,id,organism_name,protein_name&format=tsv"]}
+{"t": 1792965941, "kind": "curl", "lib": "curl", "args": ["-s", "https://rest.uniprot.org/uniprotkb/search?query=gene:FAM170A+AND+organism_id:10090&fields=accession,id,organism_name,protein_name&format=tsv"]}
+{"t": 1792965945, "kind": "curl", "lib": "curl", "args": ["-s", "https://rest.uniprot.org/uniprotkb/A1A519.fasta"]}
+{"t": 1792965946, "kind": "curl", "lib": "curl", "args": ["-s", "https://rest.uniprot.org/uniprotkb/Q66LM6.fasta"]}
+{"t": 1792965947, "kind": "curl", "lib": "curl", "args": ["-s", "https://rest.uniprot.org/uniprotkb/A0A8Q3SHZ7.fasta"]}
+{"t": 1792965951, "kind": "curl", "lib": "curl", "args": ["-s", "https://rest.uniprot.org/uniprotkb/Q66LM8.fasta"]}
+{"t": 1792965952, "kind": "curl", "lib": "curl", "args": ["-s", "https://rest.uniprot.org/uniprotkb/Q8IW94.fasta"]}
+{"t": 1792965953, "kind": "curl", "lib": "curl", "args": ["-s", "https://rest.uniprot.org/uniprotkb/Q7Z4V2.fasta"]}
+{"t": 1792965965, "kind": "curl", "lib": "curl", "args": ["-s", "https://rest.uniprot.org/uniprotkb/Q66LM8.fasta"]}
+{"t": 1792965966, "kind": "curl", "lib": "curl", "args": ["-s", "https://rest.uniprot.org/uniprotkb/Q8IW94.fasta"]}
+{"t": 1792965967, "kind": "curl", "lib": "curl", "args": ["-s", "https://rest.uniprot.org/uniprotkb/Q7Z4V2.fasta"]}
+{"t": 1792965975, "kind": "curl", "lib": "curl", "args": ["-s", "https://rest.uniprot.org/uniprotkb/search?query=gene:FAM170A+AND+organism_id:9606+AND+reviewed:true&fields=accession,id,organism_name,length,sequence&format=tsv"]}
+{"t": 1792965979, "kind": "curl", "lib": "curl", "args": ["-s", "https://rest.uniprot.org/uniprotkb/A1A519.json"]}

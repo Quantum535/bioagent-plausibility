@@ -1,0 +1,6 @@
+{"t": 1792967231.324148, "kind": "dns", "lib": "netlog_shim.py", "host": "api.anthropic.com"}
+{"t": 1792967233.7549062, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792967234.221424, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/Q5VTY9?format=json&fields=accession,gene_names,gene_primary,organism_name"}
+{"t": 1792967240.276373, "kind": "dns", "lib": "netlog_shim.py", "host": "api.anthropic.com"}
+{"t": 1792967243.054004, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792967243.70016, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/Q5VTY9?fields=accession,id,gene_names,gene_primary,organism_name,protein_name"}

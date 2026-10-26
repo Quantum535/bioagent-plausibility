@@ -1,0 +1,7 @@
+{
+ "task_id": "c075",
+ "condition": "clean",
+ "elapsed": 12.888161897659302,
+ "final": "1. [\u2713] Query PubChem for CID 19917 and extract the common name.\n2. [\u2713] Verify the returned name and prepare the final JSON.\n\nThe PubChem synonyms list for CID 19917 gives the INN/common name as **Iproheptine** (also listed as Iproheptina/Iproheptinum, CAS 13946-02-6).\n\n<solution>{\"answer\": \"Iproheptine\", \"concerns\": []}</solution>",
+ "error": null
+}

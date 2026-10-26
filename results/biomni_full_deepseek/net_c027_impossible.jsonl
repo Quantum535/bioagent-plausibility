@@ -1,0 +1,5 @@
+{"t": 1792989307, "kind": "curl", "lib": "curl", "args": ["-s", "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/19167/property/IUPACName,Title/JSON"]}
+{"t": 1792989309, "kind": "curl", "lib": "curl", "args": ["-s", "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/19167/synonyms/JSON"]}
+{"t": 1792989312, "kind": "curl", "lib": "curl", "args": ["-s", "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/19167/property/Title,MolecularFormula,MolecularWeight/JSON"]}
+{"t": 1792989319, "kind": "curl", "lib": "curl", "args": ["-s", "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/3586-60-5/property/Title/JSON"]}
+{"t": 1792989320, "kind": "curl", "lib": "curl", "args": ["-s", "https://pubchem.ncbi.nlm.nih.gov/compound/19167"]}

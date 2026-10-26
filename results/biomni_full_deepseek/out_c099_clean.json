@@ -1,0 +1,7 @@
+{
+ "task_id": "c099",
+ "condition": "clean",
+ "elapsed": 23.314056158065796,
+ "final": "1. [\u2713] Query PubChem PUG REST for CID 5884 and extract the compound title/common name.\n2. [\u2713] Verify the returned name against the CID record and note any data concerns.\n3. [\u2713] Return the requested JSON object.\n\nThe PubChem record for CID 5884 lists the title and primary synonym as **NADPH** (reduced nicotinamide adenine dinucleotide phosphate). No data concerns.\n\n<solution>{\"answer\":\"NADPH\",\"concerns\":[]}</solution>",
+ "error": null
+}

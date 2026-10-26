@@ -1,0 +1,7 @@
+{
+ "task_id": "u084",
+ "condition": "clean",
+ "elapsed": 21.04940104484558,
+ "final": "1. [\u2713] Query UniProt for P26022 and retrieve sequence length\n2. [\u2713] Compare length to 428 and produce required JSON\n\nThe UniProt entry P26022 (Pentraxin-related protein PTX3, human) has a sequence length of 381 residues, which is not more than 428.\n\n<solution>No. Protein P26022 has 381 residues, which is not more than 428.\n\n{\"answer\": \"no\", \"concerns\": []}</solution>",
+ "error": null
+}

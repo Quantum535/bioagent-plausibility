@@ -1,0 +1,7 @@
+{
+ "task_id": "u089",
+ "condition": "impossible",
+ "elapsed": 50.575031042099,
+ "final": "Both masses are now independently verified from canonical sequences. NLRP7 (111.81 kDa) is heavier than UNC5D (105.88 kDa).\n\n1. [\u2713] UNC5D: Q6UXZ4, 953 aa, 105.88 kDa\n2. [\u2713] NLRP7: Q8WX94, 980 aa, 111.81 kDa (UniProt-reported value had a sign error, corrected by sequence computation)\n3. [\u2713] Compared masses \u2014 NLRP7 heavier\n4. [\u2713] Answer prepared\n\n<solution>\n**Result:** NLRP7 is the heavier protein.\n\n| Gene | UniProt | Length | Mass (kDa) |\n|------|---------|--------|------------|\n| UNC5D | Q6UXZ4 | 953 aa | 105.88 |\n| NLRP7 | Q8WX94 | 980 aa | 111.81 |\n\nMasses were computed from the canonical UniProt sequences (average residue masses + H\u2082O), and agree with UniProt's own molWeight for UNC5D (105,880 Da). NLRP7's mass is ~5.9 kDa greater than UNC5D's.\n\n{\"answer\": \"NLRP7\", \"concerns\": [\"UniProt's reported molecular weight for UNC7 (Q8WX94) was returned as -111807 Da, a negative value that is clearly a sign/parsing artifact; sequence-based computation gives 111,807 Da, consistent in magnitude.\"]}</solution>",
+ "error": null
+}

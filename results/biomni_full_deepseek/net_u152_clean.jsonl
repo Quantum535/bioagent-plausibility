@@ -1,0 +1,10 @@
+{"t": 1792983436.0610828, "kind": "dns", "lib": "netlog_shim.py", "host": "api.anthropic.com"}
+{"t": 1792983438.9481118, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792983439.394478, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact:SERPINB6+AND+organism_id:9606+AND+reviewed:true&format=json&fields=accession,protein_name,length"}
+{"t": 1792983442.48466, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792983442.9372659, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact:MAD2L1+AND+organism_id:9606+AND+reviewed:true&format=json&fields=accession,protein_name,length"}
+{"t": 1792983443.196662, "kind": "dns", "lib": "netlog_shim.py", "host": "api.together.xyz"}
+{"t": 1792983444.303448, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792983444.759945, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/P35237.json?fields=accession,protein_name,length"}
+{"t": 1792983444.9149492, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792983445.373239, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/Q13257.json?fields=accession,protein_name,length"}

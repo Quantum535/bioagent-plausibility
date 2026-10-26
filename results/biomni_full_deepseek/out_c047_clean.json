@@ -1,0 +1,7 @@
+{
+ "task_id": "c047",
+ "condition": "clean",
+ "elapsed": 8.49029278755188,
+ "final": "1. [x] Query PubChem for CID 11773.\n2. [x] Extract the common name from the synonyms (TRIPHENYLARSINE).\n3. [x] Verify against the Title property endpoint, which returned \"Triphenylarsine\".\n\nThe PubChem record for CID 11773 lists its title/common name as **Triphenylarsine** (also written TRIPHENYLARSINE; formula C18H15As; CAS 603-32-7).\n\n<solution>{\"answer\": \"Triphenylarsine\", \"concerns\": []}</solution>",
+ "error": null
+}

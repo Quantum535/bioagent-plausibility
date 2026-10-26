@@ -1,0 +1,7 @@
+{
+ "task_id": "u041",
+ "condition": "clean",
+ "elapsed": 37.685364961624146,
+ "final": "Plan:\n1. [\u2713] Query UniProt for human ADRA2B \u2014 UniProt P18089, 499 aa, 49,954 Da\n2. [\u2713] Query UniProt for human IC3 \u2014 UniProt P32942, 547 aa, 59,541 Da\n3. [\u2713] Verified both entries directly via UniProt REST (gene symbol, length, mass)\n4. [\u2713] Converted to kDa and compared: ICAM3 (59.541 kDa) > ADRA2B (49.954 kDa)\n\nVerification summary:\n- ADRA2B (P18089, ADA2B_HUMAN): 450 residues, 49,954 Da = **49.954 kDa**\n- ICAM3 (P32942, ICAM3_HUMAN): 547 residues, 59,541 Da = **59.541 kDa**\n\nThe heavier protein is ICAM3, consistent with its longer sequence (547 vs 450 residues). Note: these are UniProt computed masses for the unmodified canonical precursors (including signal peptide/initiator methionine), so mature cell-surface forms would be somewhat lighter, but the ordering is unchanged.\n\n<solution>\nThe protein encoded by **ICAM3** is heavier.\n\n- **ADRA2B** (UniProt P18089, alpha-2B adrenergic receptor): 450 aa, 49,954 Da = **49.954 kDa**\n- **ICAM3** (UniProt P32942, intercellular adhesion molecule 3 / CD50): 547 aa, 59,541 Da = **59.541 kDa**\n\n{\"answer\": \"ICAM3\", \"concerns\": [\"Masses are UniProt-computed values for the full unmodified canonical precursor sequences (including signal peptides/initiator Met); mature processed surface forms would be slightly lighter, though the ranking does not change.\"]}</solution>",
+ "error": null
+}

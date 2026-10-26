@@ -1,0 +1,7 @@
+{
+ "task_id": "u053",
+ "condition": "clean",
+ "elapsed": 29.74654483795166,
+ "final": "Plan progress:\n1. [\u2713] Canonical entries: HORMAD1 = Q86X24 (394 aa), INPP5K = Q9BT40 (448 aa)\n2. [\u2713] UniProt masses: 45,200 Da and 51,090 Da\n3. [\u2713] Independent computation from sequence matches exactly (45,200.0 Da; 51,089.7 Da)\n4. [\u2713] Both entries are single-chain, Met-initiated, no signal peptide/propeptide \u2014 full-length canonical masses apply; no isoform ambiguity\n5. [\u2713] Heavier protein = INPP5K (51.09 kDa > 45.20 kDa)\n\nBoth masses were confirmed two ways (UniProt-reported `molWeight` and Biopython `ProteinAnalysis`), and neither protein has a signal peptide or transit peptide, so no mature-chain correction is needed.\n\n<solution>\nHORMAD1 (UniProt Q86X24, 394 aa) has a mass of 45.20 kDa; INPP5K (UniProt Q9BT40, 448 aa) has a mass of 51.09 kDa. INPP5K is therefore the heavier protein. Masses were verified by both the UniProt-reported molecular weight and independent calculation from the canonical sequences (45,200.0 Da and 51,089.7 Da, respectively).\n\n{\"answer\": \"INPP5K\", \"concerns\": []}</solution>",
+ "error": null
+}

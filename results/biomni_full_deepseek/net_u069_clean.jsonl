@@ -1,0 +1,41 @@
+{"t": 1792971923.218285, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792971923.306813, "kind": "http", "lib": "netlog_shim.py", "host": "pypi.org", "method": "GET", "path": "/simple/beautifulsoup4/"}
+{"t": 1792971923.332992, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792971923.397229, "kind": "http", "lib": "netlog_shim.py", "host": "files.pythonhosted.org", "method": "GET", "path": "/packages/88/c6/92fcd42f1ba33e1184263f25bfabf3d27c383410470f169e4b8163bf9c17/beautifulsoup4-4.15.0-py3-none-any.whl.metadata"}
+{"t": 1792971923.416825, "kind": "http", "lib": "netlog_shim.py", "host": "pypi.org", "method": "GET", "path": "/simple/soupsieve/"}
+{"t": 1792971923.4493, "kind": "http", "lib": "netlog_shim.py", "host": "files.pythonhosted.org", "method": "GET", "path": "/packages/07/66/473f7ca0be0b06e38ee8c85ee2db184e3981bd769fac2e7c19c8a8865211/soupsieve-3.0.4-py3-none-any.whl.metadata"}
+{"t": 1792971923.4691, "kind": "http", "lib": "netlog_shim.py", "host": "files.pythonhosted.org", "method": "GET", "path": "/packages/88/c6/92fcd42f1ba33e1184263f25bfabf3d27c383410470f169e4b8163bf9c17/beautifulsoup4-4.15.0-py3-none-any.whl"}
+{"t": 1792971923.5033941, "kind": "http", "lib": "netlog_shim.py", "host": "files.pythonhosted.org", "method": "GET", "path": "/packages/07/66/473f7ca0be0b06e38ee8c85ee2db184e3981bd769fac2e7c19c8a8865211/soupsieve-3.0.4-py3-none-any.whl"}
+{"t": 1792971924.5946, "kind": "http", "lib": "netlog_shim.py", "host": "eutils.ncbi.nlm.nih.gov", "method": "GET", "path": "/entrez/eutils/esearch.fcgi?db=gene&term=Homo+sapiens%5BOrganism%5D+AND+OR10J5%5BGene%5D&retmax=5&tool=biopython&email=research%40example.com"}
+{"t": 1792971924.594723, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792971924.975429, "kind": "http", "lib": "netlog_shim.py", "host": "eutils.ncbi.nlm.nih.gov", "method": "GET", "path": "/entrez/eutils/efetch.fcgi?db=gene&id=127385&rettype=gb&retmode=xml&tool=biopython&email=research%40example.com"}
+{"t": 1792971924.976028, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792971925.532277, "kind": "http", "lib": "netlog_shim.py", "host": "eutils.ncbi.nlm.nih.gov", "method": "GET", "path": "/entrez/eutils/efetch.fcgi?db=nucleotide&id=NC_000001.11&rettype=gbwithparts&retmode=text&tool=biopython&email=research%40example.com"}
+{"t": 1792971925.5324821, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792971977.0110579, "kind": "http", "lib": "netlog_shim.py", "host": "eutils.ncbi.nlm.nih.gov", "method": "GET", "path": "/entrez/eutils/esearch.fcgi?db=gene&term=Homo+sapiens%5BOrganism%5D+AND+HMX1%5BGene%5D&retmax=5&tool=biopython&email=research%40example.com"}
+{"t": 1792971977.011359, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792971977.391958, "kind": "http", "lib": "netlog_shim.py", "host": "eutils.ncbi.nlm.nih.gov", "method": "GET", "path": "/entrez/eutils/efetch.fcgi?db=gene&id=3166&rettype=gb&retmode=xml&tool=biopython&email=research%40example.com"}
+{"t": 1792971977.392599, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792971977.976885, "kind": "http", "lib": "netlog_shim.py", "host": "eutils.ncbi.nlm.nih.gov", "method": "GET", "path": "/entrez/eutils/efetch.fcgi?db=nucleotide&id=NC_000004.12&rettype=gbwithparts&retmode=text&tool=biopython&email=research%40example.com"}
+{"t": 1792971977.97713, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792972003.7693598, "kind": "dns", "lib": "netlog_shim.py", "host": "api.together.xyz"}
+{"t": 1792972008.565114, "kind": "http", "lib": "netlog_shim.py", "host": "eutils.ncbi.nlm.nih.gov", "method": "GET", "path": "/entrez/eutils/esearch.fcgi?db=nucleotide&term=OR10J5%5Bgene%5D+AND+Homo+sapiens%5Borgn%5D+AND+refseq%5Bfilter%5D+AND+biomol_mrna%5Bprop%5D&retmax=20&tool=biopython&email=research%40example.com"}
+{"t": 1792972008.5655282, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792972008.945096, "kind": "http", "lib": "netlog_shim.py", "host": "eutils.ncbi.nlm.nih.gov", "method": "GET", "path": "/entrez/eutils/efetch.fcgi?db=nucleotide&id=52218837&rettype=gb&retmode=text&tool=biopython&email=research%40example.com"}
+{"t": 1792972008.945853, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792972009.41793, "kind": "http", "lib": "netlog_shim.py", "host": "eutils.ncbi.nlm.nih.gov", "method": "GET", "path": "/entrez/eutils/esearch.fcgi?db=nucleotide&term=HMX1%5Bgene%5D+AND+Homo+sapiens%5Borgn%5D+AND+refseq%5Bfilter%5D+AND+biomol_mrna%5Bprop%5D&retmax=20&tool=biopython&email=research%40example.com"}
+{"t": 1792972009.418488, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792972009.798356, "kind": "http", "lib": "netlog_shim.py", "host": "eutils.ncbi.nlm.nih.gov", "method": "GET", "path": "/entrez/eutils/efetch.fcgi?db=nucleotide&id=1675083622%2C1519241675&rettype=gb&retmode=text&tool=biopython&email=research%40example.com"}
+{"t": 1792972009.799139, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792972011.816511, "kind": "http", "lib": "netlog_shim.py", "host": "eutils.ncbi.nlm.nih.gov", "method": "GET", "path": "/entrez/eutils/efetch.fcgi?db=nucleotide&id=NM_001004469.1&rettype=gb&retmode=text&tool=biopython&email=research%40example.com"}
+{"t": 1792972011.816969, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792972012.197095, "kind": "http", "lib": "netlog_shim.py", "host": "eutils.ncbi.nlm.nih.gov", "method": "GET", "path": "/entrez/eutils/efetch.fcgi?db=nucleotide&id=NM_018942.3&rettype=gb&retmode=text&tool=biopython&email=research%40example.com"}
+{"t": 1792972012.197812, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792972012.62543, "kind": "http", "lib": "netlog_shim.py", "host": "eutils.ncbi.nlm.nih.gov", "method": "GET", "path": "/entrez/eutils/efetch.fcgi?db=nucleotide&id=NM_001306142.2&rettype=gb&retmode=text&tool=biopython&email=research%40example.com"}
+{"t": 1792972012.625847, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792972014.09701, "kind": "dns", "lib": "netlog_shim.py", "host": "api.anthropic.com"}
+{"t": 1792972017.316322, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792972018.001757, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact:OR10J5+AND+organism_id:9606+AND+reviewed:true&fields=accession,gene_primary,length,mass&format=json"}
+{"t": 1792972021.3554492, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792972021.8118532, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact:HMX1+AND+organism_id:9606+AND+reviewed:true&fields=accession,gene_primary,length,mass&format=json"}
+{"t": 1792972022.053827, "kind": "dns", "lib": "netlog_shim.py", "host": "api.together.xyz"}

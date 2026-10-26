@@ -1,0 +1,14 @@
+{"t": 1792991505, "kind": "curl", "lib": "curl", "args": ["-s", "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/2317/property/Title,MolecularFormula,CanonicalSMILES,HBondDonorCount/JSON"]}
+{"t": 1792991512, "kind": "curl", "lib": "curl", "args": ["-s", "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/2317/property/HBondDonorCount,HBondAcceptorCount,ExactMass,MolecularWeight/JSON"]}
+{"t": 1792991512, "kind": "curl", "lib": "curl", "args": ["-s", "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/2317/JSON?heading=Computed+Properties"]}
+{"t": 1792991516, "kind": "curl", "lib": "curl", "args": ["-s", "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/2317/JSON", "-o", "/tmp/cid2317.json"]}
+{"t": 1792991519, "kind": "curl", "lib": "curl", "args": ["-s", "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/2317/property/Title,MolecularFormula,CanonicalSMILES,IsomericSMILES,InChIKey/JSON"]}
+{"t": 1792991520, "kind": "curl", "lib": "curl", "args": ["-s", "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/2317/synonyms/JSON"]}
+{"t": 1792991522, "kind": "curl", "lib": "curl", "args": ["-s", "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/2317/property/Title,MolecularFormula,CanonicalSMILES,IsomericSMILES,InChIKey/JSON"]}
+{"t": 1792991537, "kind": "curl", "lib": "curl", "args": ["-s", "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/2317/property/HBondDonorCount/JSON"]}
+{"t": 1792991537, "kind": "curl", "lib": "curl", "args": ["-s", "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/2317/JSON", "-o", "/tmp/cid2317_full.json"]}
+{"t": 1792991547, "kind": "curl", "lib": "curl", "args": ["-s", "-A", "Mozilla/5.0", "https://pubchem.ncbi.nlm.nih.gov/compound/2317", "-o", "/tmp/cid2317.html"]}
+{"t": 1792991547, "kind": "curl", "lib": "curl", "args": ["-s", "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/1103/property/Title,HBondDonorCount/JSON"]}
+{"t": 1792991547, "kind": "curl", "lib": "curl", "args": ["-s", "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/6058/property/Title,HBondDonorCount/JSON"]}
+{"t": 1792991548, "kind": "curl", "lib": "curl", "args": ["-s", "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/1045/property/Title,HBondDonorCount/JSON"]}
+{"t": 1792991548, "kind": "curl", "lib": "curl", "args": ["-s", "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/2317/property/Title,HBondDonorCount/JSON"]}

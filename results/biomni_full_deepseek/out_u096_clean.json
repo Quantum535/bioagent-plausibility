@@ -1,0 +1,7 @@
+{
+ "task_id": "u096",
+ "condition": "clean",
+ "elapsed": 32.026071071624756,
+ "final": "2. [\u2713] Query UniProt for human NEGR1 canonical protein length\n3. [\u2713] Compare lengths and verify sequence lengths computationally\n\n**Results (UniProtKB/Swiss-Prot canonical human proteins):**\n\n| Gene | Accession | Length (aa) | Sequence verified |\n|---|---|---|---|\n| MPP3 (MAGUK p55 subfamily member 3) | Q13368 | 585 | 585 chars \u2713 |\n| NEGR1 (Neuronal growth regulator 1) | Q7Z3B1 | 354 | 354 chars \u2713 |\n\nTwice NEGR1 = 2 \u00d7 354 = **708 aa**, which is greater than MPP3's 585 aa (ratio \u2248 1.65). So MPP3 is **not** at least twice as long as NEGR1.\n\n<solution>No \u2014 MPP3 (UniProt Q13368) is 585 amino acids, while NEGR1 (UniProt Q7Z3B1) is 354 amino acids. Twice NEGR1 would be 708 aa, so MPP3 is only ~1.65\u00d7 as long, not \u22652\u00d7.\n\n{\"answer\": \"no\", \"concerns\": [\"NEGR1 is annotated as a precursor (signal peptide + GPI-anchor signal), so its mature surface protein is slightly shorter (~320 aa); using mature length would not change the answer. Both canonical UniProt lengths were cross-checked against the actual sequence strings and matched.\"]}</solution>",
+ "error": null
+}

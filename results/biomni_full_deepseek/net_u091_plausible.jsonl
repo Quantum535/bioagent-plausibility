@@ -1,0 +1,14 @@
+{"t": 1792975204.947885, "kind": "dns", "lib": "netlog_shim.py", "host": "api.anthropic.com"}
+{"t": 1792975207.307777, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792975207.852528, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/P49137?format=json"}
+{"t": 1792975212.856096, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792975213.3150039, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=protein_name:%22MAP%20kinase-activated%20protein%20kinase%202%22%20AND%20organism_id:9606%20AND%20reviewed:true&format=json&fields=accession,id,gene_names,gene_primary,protein_name,organism_name"}
+{"t": 1792975215.00811, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792975215.507102, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/P49137.txt"}
+{"t": 1792975217.0982242, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792975217.553688, "kind": "http", "lib": "netlog_shim.py", "host": "rest.ensembl.org", "method": "GET", "path": "/lookup/id/ENSG00000162889?content-type=application/json"}
+{"t": 1792975233.030175, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792975233.139155, "kind": "http", "lib": "netlog_shim.py", "host": "eutils.ncbi.nlm.nih.gov", "method": "GET", "path": "/entrez/eutils/esummary.fcgi?db=gene&id=9261&retmode=json"}
+{"t": 1792975233.233026, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792975233.6868422, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/P49137.json?fields=gene_primary,gene_names"}
+{"t": 1792975233.8579001, "kind": "dns", "lib": "netlog_shim.py", "host": "api.together.xyz"}

@@ -1,0 +1,6 @@
+{"t": 1792971658.372334, "kind": "dns", "lib": "netlog_shim.py", "host": "api.anthropic.com"}
+{"t": 1792971661.882758, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792971662.343991, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact:ACOT7+AND+organism_id:9606+AND+reviewed:true&fields=accession,gene_names,protein_name,mass&format=json"}
+{"t": 1792971665.562936, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792971666.020322, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact:CD36+AND+organism_id:9606+AND+reviewed:true&fields=accession,gene_names,protein_name,mass&format=json"}
+{"t": 1792971666.258175, "kind": "dns", "lib": "netlog_shim.py", "host": "api.together.xyz"}

@@ -1,0 +1,9 @@
+{"t": 1792989507.7521129, "kind": "dns", "lib": "netlog_shim.py", "host": "api.anthropic.com"}
+{"t": 1792989509.895068, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792989510.01073, "kind": "http", "lib": "netlog_shim.py", "host": "pubchem.ncbi.nlm.nih.gov", "method": "GET", "path": "/rest/pug/compound/cid/16300/property/HBondDonorCount/TXT"}
+{"t": 1792989510.610471, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792989510.706694, "kind": "http", "lib": "netlog_shim.py", "host": "pubchem.ncbi.nlm.nih.gov", "method": "GET", "path": "/rest/pug/compound/cid/16300/property/HBondDonorCount,HBondAcceptorCount,MolecularFormula,MolecularWeight,IUPACName/JSON"}
+{"t": 1792989512.2841978, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792989512.501826, "kind": "http", "lib": "netlog_shim.py", "host": "pubchem.ncbi.nlm.nih.gov", "method": "GET", "path": "/rest/pug/compound/cid/16300/property/CanonicalSMILES,IsomericSMILES,HBondDonorCount/JSON"}
+{"t": 1792989513.5380979, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792989513.8908212, "kind": "http", "lib": "netlog_shim.py", "host": "pubchem.ncbi.nlm.nih.gov", "method": "GET", "path": "/rest/pug/compound/cid/16300/property/SMILES,ConnectivitySMILES/JSON"}

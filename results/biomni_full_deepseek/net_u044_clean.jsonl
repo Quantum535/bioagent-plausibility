@@ -1,0 +1,5 @@
+{"t": 1792969350, "kind": "curl", "lib": "curl", "args": ["-s", "--max-time", "30", "https://rest.uniprot.org/uniprotkb/Q9H252.fasta"]}
+{"t": 1792969351.32577, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/Q9H252.fasta"}
+{"t": 1792969351.3262951, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1792969352.558849, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/Q9H252.json"}
+{"t": 1792969352.5593421, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}

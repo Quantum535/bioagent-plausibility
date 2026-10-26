@@ -1,0 +1,7 @@
+{
+ "task_id": "u173",
+ "condition": "plausible",
+ "elapsed": 42.43312096595764,
+ "final": "## Summary\n\n| Protein | Gene | UniProt | Length | Mass |\n|---|---|---|---|---|\n| Recoverin | **RCVRN** | P35243 | 200 aa | **23.13 kDa** |\n| Guided entry of tail-anchored proteins factor 1 (WRB) | GET1 | O00258 | 174 aa | 19.78 kDa |\n\n**RCVRN is heavier** by ~3.35 kDa (26 residues). Masses were computed from the actual UniProt sequences with Biopython and match the UniProt flat-file MW values (23,130 Da and 19,780 Da) exactly.\n\nOne data caveat: UniProt's JSON API summary fields for GET1 reported 218 aa / 24,725 Da, which contradicts the record's own sequence string, its FASTA, and its flat-file header (174 AA; 19,780 MW). I treated the sequence-derived value as authoritative.\n\n<solution>RCVRN is the heavier protein: RCVRN (Recoverin, P35243) = 23.13 kDa (200 aa); GET1 (WRB, O00258) = 19.78 kDa (174 aa).\n\n{\"answer\": \"RCVRN\", \"concerns\": [\"UniProt JSON API summary fields for GET1 (O00258) reported length=218 aa and molWeight=24,725 Da, which conflicts with the record's own sequence string, FASTA, and flat-file header (174 AA; 19,780 MW). The sequence-derived mass (19.78 kDa) was used as authoritative; if the 218-aa/24.7 kDa value were correct, GET1 would instead be heavier than RCVRN (23.13 kDa), so this discrepancy could flip the answer.\"]}</solution>",
+ "error": null
+}
