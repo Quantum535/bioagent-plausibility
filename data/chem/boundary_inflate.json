@@ -1,0 +1,4328 @@
+{
+ "seed": 0,
+ "n_tasks": 40,
+ "domain": "chemistry",
+ "proteins": null,
+ "tasks": [
+  {
+   "template": "weight_threshold",
+   "target_field": "molecular_weight",
+   "target_accession": "21289",
+   "accessions": [
+    "21289"
+   ],
+   "params": {
+    "accession": "21289",
+    "threshold": 320.6
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "f1.1_consistent": {
+     "fields": {
+      "molecular_weight": 335.87,
+      "heavy_atom_count": 21
+     },
+     "clean_value": 305.34,
+     "corrupted_value": 335.87,
+     "factor": 1.1,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f1.25_consistent": {
+     "fields": {
+      "molecular_weight": 381.67,
+      "heavy_atom_count": 24
+     },
+     "clean_value": 305.34,
+     "corrupted_value": 381.67,
+     "factor": 1.25,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f1.5_consistent": {
+     "fields": {
+      "molecular_weight": 458.01,
+      "heavy_atom_count": 28
+     },
+     "clean_value": 305.34,
+     "corrupted_value": 458.01,
+     "factor": 1.5,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f2_consistent": {
+     "fields": {
+      "molecular_weight": 610.68,
+      "heavy_atom_count": 38
+     },
+     "clean_value": 305.34,
+     "corrupted_value": 610.68,
+     "factor": 2,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f3_consistent": {
+     "fields": {
+      "molecular_weight": 916.02,
+      "heavy_atom_count": 57
+     },
+     "clean_value": 305.34,
+     "corrupted_value": 916.02,
+     "factor": 3,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f10_consistent": {
+     "fields": {
+      "molecular_weight": 3053.4,
+      "heavy_atom_count": 190
+     },
+     "clean_value": 305.34,
+     "corrupted_value": 3053.4,
+     "factor": 10,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f50_consistent": {
+     "fields": {
+      "molecular_weight": 15267.0,
+      "heavy_atom_count": 950
+     },
+     "clean_value": 305.34,
+     "corrupted_value": 15267.0,
+     "factor": 50,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f200_consistent": {
+     "fields": {
+      "molecular_weight": 61068.0,
+      "heavy_atom_count": 3800
+     },
+     "clean_value": 305.34,
+     "corrupted_value": 61068.0,
+     "factor": 200,
+     "consistent": true,
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 21289 have a molecular weight greater than 320.6 Da? Answer yes or no and give the weight. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "direction": "inflate",
+   "task_id": "b040"
+  },
+  {
+   "template": "weight_threshold",
+   "target_field": "molecular_weight",
+   "target_accession": "27368",
+   "accessions": [
+    "27368"
+   ],
+   "params": {
+    "accession": "27368",
+    "threshold": 276.5
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "f1.1_consistent": {
+     "fields": {
+      "molecular_weight": 289.71,
+      "heavy_atom_count": 21
+     },
+     "clean_value": 263.37,
+     "corrupted_value": 289.71,
+     "factor": 1.1,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f1.25_consistent": {
+     "fields": {
+      "molecular_weight": 329.21,
+      "heavy_atom_count": 24
+     },
+     "clean_value": 263.37,
+     "corrupted_value": 329.21,
+     "factor": 1.25,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f1.5_consistent": {
+     "fields": {
+      "molecular_weight": 395.06,
+      "heavy_atom_count": 28
+     },
+     "clean_value": 263.37,
+     "corrupted_value": 395.06,
+     "factor": 1.5,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f2_consistent": {
+     "fields": {
+      "molecular_weight": 526.74,
+      "heavy_atom_count": 38
+     },
+     "clean_value": 263.37,
+     "corrupted_value": 526.74,
+     "factor": 2,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f3_consistent": {
+     "fields": {
+      "molecular_weight": 790.11,
+      "heavy_atom_count": 57
+     },
+     "clean_value": 263.37,
+     "corrupted_value": 790.11,
+     "factor": 3,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f10_consistent": {
+     "fields": {
+      "molecular_weight": 2633.7,
+      "heavy_atom_count": 190
+     },
+     "clean_value": 263.37,
+     "corrupted_value": 2633.7,
+     "factor": 10,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f50_consistent": {
+     "fields": {
+      "molecular_weight": 13168.5,
+      "heavy_atom_count": 950
+     },
+     "clean_value": 263.37,
+     "corrupted_value": 13168.5,
+     "factor": 50,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f200_consistent": {
+     "fields": {
+      "molecular_weight": 52674.0,
+      "heavy_atom_count": 3800
+     },
+     "clean_value": 263.37,
+     "corrupted_value": 52674.0,
+     "factor": 200,
+     "consistent": true,
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 27368 have a molecular weight greater than 276.5 Da? Answer yes or no and give the weight. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "direction": "inflate",
+   "task_id": "b041"
+  },
+  {
+   "template": "weight_threshold",
+   "target_field": "molecular_weight",
+   "target_accession": "16828",
+   "accessions": [
+    "16828"
+   ],
+   "params": {
+    "accession": "16828",
+    "threshold": 249.2
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "f1.1_consistent": {
+     "fields": {
+      "molecular_weight": 261.02,
+      "heavy_atom_count": 19
+     },
+     "clean_value": 237.29,
+     "corrupted_value": 261.02,
+     "factor": 1.1,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f1.25_consistent": {
+     "fields": {
+      "molecular_weight": 296.61,
+      "heavy_atom_count": 21
+     },
+     "clean_value": 237.29,
+     "corrupted_value": 296.61,
+     "factor": 1.25,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f1.5_consistent": {
+     "fields": {
+      "molecular_weight": 355.94,
+      "heavy_atom_count": 26
+     },
+     "clean_value": 237.29,
+     "corrupted_value": 355.94,
+     "factor": 1.5,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f2_consistent": {
+     "fields": {
+      "molecular_weight": 474.58,
+      "heavy_atom_count": 34
+     },
+     "clean_value": 237.29,
+     "corrupted_value": 474.58,
+     "factor": 2,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f3_consistent": {
+     "fields": {
+      "molecular_weight": 711.87,
+      "heavy_atom_count": 51
+     },
+     "clean_value": 237.29,
+     "corrupted_value": 711.87,
+     "factor": 3,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f10_consistent": {
+     "fields": {
+      "molecular_weight": 2372.9,
+      "heavy_atom_count": 170
+     },
+     "clean_value": 237.29,
+     "corrupted_value": 2372.9,
+     "factor": 10,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f50_consistent": {
+     "fields": {
+      "molecular_weight": 11864.5,
+      "heavy_atom_count": 850
+     },
+     "clean_value": 237.29,
+     "corrupted_value": 11864.5,
+     "factor": 50,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f200_consistent": {
+     "fields": {
+      "molecular_weight": 47458.0,
+      "heavy_atom_count": 3400
+     },
+     "clean_value": 237.29,
+     "corrupted_value": 47458.0,
+     "factor": 200,
+     "consistent": true,
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 16828 have a molecular weight greater than 249.2 Da? Answer yes or no and give the weight. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "direction": "inflate",
+   "task_id": "b042"
+  },
+  {
+   "template": "weight_threshold",
+   "target_field": "molecular_weight",
+   "target_accession": "7269",
+   "accessions": [
+    "7269"
+   ],
+   "params": {
+    "accession": "7269",
+    "threshold": 140.9
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "f1.1_consistent": {
+     "fields": {
+      "molecular_weight": 147.64,
+      "heavy_atom_count": 11
+     },
+     "clean_value": 134.22,
+     "corrupted_value": 147.64,
+     "factor": 1.1,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f1.25_consistent": {
+     "fields": {
+      "molecular_weight": 167.78,
+      "heavy_atom_count": 12
+     },
+     "clean_value": 134.22,
+     "corrupted_value": 167.78,
+     "factor": 1.25,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f1.5_consistent": {
+     "fields": {
+      "molecular_weight": 201.33,
+      "heavy_atom_count": 15
+     },
+     "clean_value": 134.22,
+     "corrupted_value": 201.33,
+     "factor": 1.5,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f2_consistent": {
+     "fields": {
+      "molecular_weight": 268.44,
+      "heavy_atom_count": 20
+     },
+     "clean_value": 134.22,
+     "corrupted_value": 268.44,
+     "factor": 2,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f3_consistent": {
+     "fields": {
+      "molecular_weight": 402.66,
+      "heavy_atom_count": 30
+     },
+     "clean_value": 134.22,
+     "corrupted_value": 402.66,
+     "factor": 3,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f10_consistent": {
+     "fields": {
+      "molecular_weight": 1342.2,
+      "heavy_atom_count": 100
+     },
+     "clean_value": 134.22,
+     "corrupted_value": 1342.2,
+     "factor": 10,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f50_consistent": {
+     "fields": {
+      "molecular_weight": 6711.0,
+      "heavy_atom_count": 500
+     },
+     "clean_value": 134.22,
+     "corrupted_value": 6711.0,
+     "factor": 50,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f200_consistent": {
+     "fields": {
+      "molecular_weight": 26844.0,
+      "heavy_atom_count": 2000
+     },
+     "clean_value": 134.22,
+     "corrupted_value": 26844.0,
+     "factor": 200,
+     "consistent": true,
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 7269 have a molecular weight greater than 140.9 Da? Answer yes or no and give the weight. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "direction": "inflate",
+   "task_id": "b043"
+  },
+  {
+   "template": "weight_threshold",
+   "target_field": "molecular_weight",
+   "target_accession": "2754",
+   "accessions": [
+    "2754"
+   ],
+   "params": {
+    "accession": "2754",
+    "threshold": 388.0
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "f1.1_consistent": {
+     "fields": {
+      "molecular_weight": 406.45,
+      "heavy_atom_count": 30
+     },
+     "clean_value": 369.5,
+     "corrupted_value": 406.45,
+     "factor": 1.1,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f1.25_consistent": {
+     "fields": {
+      "molecular_weight": 461.88,
+      "heavy_atom_count": 34
+     },
+     "clean_value": 369.5,
+     "corrupted_value": 461.88,
+     "factor": 1.25,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f1.5_consistent": {
+     "fields": {
+      "molecular_weight": 554.25,
+      "heavy_atom_count": 40
+     },
+     "clean_value": 369.5,
+     "corrupted_value": 554.25,
+     "factor": 1.5,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f2_consistent": {
+     "fields": {
+      "molecular_weight": 739.0,
+      "heavy_atom_count": 54
+     },
+     "clean_value": 369.5,
+     "corrupted_value": 739.0,
+     "factor": 2,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f3_consistent": {
+     "fields": {
+      "molecular_weight": 1108.5,
+      "heavy_atom_count": 81
+     },
+     "clean_value": 369.5,
+     "corrupted_value": 1108.5,
+     "factor": 3,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f10_consistent": {
+     "fields": {
+      "molecular_weight": 3695.0,
+      "heavy_atom_count": 270
+     },
+     "clean_value": 369.5,
+     "corrupted_value": 3695.0,
+     "factor": 10,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f50_consistent": {
+     "fields": {
+      "molecular_weight": 18475.0,
+      "heavy_atom_count": 1350
+     },
+     "clean_value": 369.5,
+     "corrupted_value": 18475.0,
+     "factor": 50,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f200_consistent": {
+     "fields": {
+      "molecular_weight": 73900.0,
+      "heavy_atom_count": 5400
+     },
+     "clean_value": 369.5,
+     "corrupted_value": 73900.0,
+     "factor": 200,
+     "consistent": true,
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 2754 have a molecular weight greater than 388.0 Da? Answer yes or no and give the weight. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "direction": "inflate",
+   "task_id": "b044"
+  },
+  {
+   "template": "weight_threshold",
+   "target_field": "molecular_weight",
+   "target_accession": "8434",
+   "accessions": [
+    "8434"
+   ],
+   "params": {
+    "accession": "8434",
+    "threshold": 174.5
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "f1.1_consistent": {
+     "fields": {
+      "molecular_weight": 182.79,
+      "heavy_atom_count": 13
+     },
+     "clean_value": 166.17,
+     "corrupted_value": 182.79,
+     "factor": 1.1,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f1.25_consistent": {
+     "fields": {
+      "molecular_weight": 207.71,
+      "heavy_atom_count": 15
+     },
+     "clean_value": 166.17,
+     "corrupted_value": 207.71,
+     "factor": 1.25,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f1.5_consistent": {
+     "fields": {
+      "molecular_weight": 249.25,
+      "heavy_atom_count": 18
+     },
+     "clean_value": 166.17,
+     "corrupted_value": 249.25,
+     "factor": 1.5,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f2_consistent": {
+     "fields": {
+      "molecular_weight": 332.34,
+      "heavy_atom_count": 24
+     },
+     "clean_value": 166.17,
+     "corrupted_value": 332.34,
+     "factor": 2,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f3_consistent": {
+     "fields": {
+      "molecular_weight": 498.51,
+      "heavy_atom_count": 36
+     },
+     "clean_value": 166.17,
+     "corrupted_value": 498.51,
+     "factor": 3,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f10_consistent": {
+     "fields": {
+      "molecular_weight": 1661.7,
+      "heavy_atom_count": 120
+     },
+     "clean_value": 166.17,
+     "corrupted_value": 1661.7,
+     "factor": 10,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f50_consistent": {
+     "fields": {
+      "molecular_weight": 8308.5,
+      "heavy_atom_count": 600
+     },
+     "clean_value": 166.17,
+     "corrupted_value": 8308.5,
+     "factor": 50,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f200_consistent": {
+     "fields": {
+      "molecular_weight": 33234.0,
+      "heavy_atom_count": 2400
+     },
+     "clean_value": 166.17,
+     "corrupted_value": 33234.0,
+     "factor": 200,
+     "consistent": true,
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 8434 have a molecular weight greater than 174.5 Da? Answer yes or no and give the weight. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "direction": "inflate",
+   "task_id": "b045"
+  },
+  {
+   "template": "weight_threshold",
+   "target_field": "molecular_weight",
+   "target_accession": "24885",
+   "accessions": [
+    "24885"
+   ],
+   "params": {
+    "accession": "24885",
+    "threshold": 548.6
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "f1.1_consistent": {
+     "fields": {
+      "molecular_weight": 574.75,
+      "heavy_atom_count": 38
+     },
+     "clean_value": 522.5,
+     "corrupted_value": 574.75,
+     "factor": 1.1,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f1.25_consistent": {
+     "fields": {
+      "molecular_weight": 653.12,
+      "heavy_atom_count": 44
+     },
+     "clean_value": 522.5,
+     "corrupted_value": 653.12,
+     "factor": 1.25,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f1.5_consistent": {
+     "fields": {
+      "molecular_weight": 783.75,
+      "heavy_atom_count": 52
+     },
+     "clean_value": 522.5,
+     "corrupted_value": 783.75,
+     "factor": 1.5,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f2_consistent": {
+     "fields": {
+      "molecular_weight": 1045.0,
+      "heavy_atom_count": 70
+     },
+     "clean_value": 522.5,
+     "corrupted_value": 1045.0,
+     "factor": 2,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f3_consistent": {
+     "fields": {
+      "molecular_weight": 1567.5,
+      "heavy_atom_count": 105
+     },
+     "clean_value": 522.5,
+     "corrupted_value": 1567.5,
+     "factor": 3,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f10_consistent": {
+     "fields": {
+      "molecular_weight": 5225.0,
+      "heavy_atom_count": 350
+     },
+     "clean_value": 522.5,
+     "corrupted_value": 5225.0,
+     "factor": 10,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f50_consistent": {
+     "fields": {
+      "molecular_weight": 26125.0,
+      "heavy_atom_count": 1750
+     },
+     "clean_value": 522.5,
+     "corrupted_value": 26125.0,
+     "factor": 50,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f200_consistent": {
+     "fields": {
+      "molecular_weight": 104500.0,
+      "heavy_atom_count": 7000
+     },
+     "clean_value": 522.5,
+     "corrupted_value": 104500.0,
+     "factor": 200,
+     "consistent": true,
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 24885 have a molecular weight greater than 548.6 Da? Answer yes or no and give the weight. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "direction": "inflate",
+   "task_id": "b046"
+  },
+  {
+   "template": "weight_threshold",
+   "target_field": "molecular_weight",
+   "target_accession": "14421",
+   "accessions": [
+    "14421"
+   ],
+   "params": {
+    "accession": "14421",
+    "threshold": 344.7
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "f1.1_consistent": {
+     "fields": {
+      "molecular_weight": 361.1,
+      "heavy_atom_count": 26
+     },
+     "clean_value": 328.27,
+     "corrupted_value": 361.1,
+     "factor": 1.1,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f1.25_consistent": {
+     "fields": {
+      "molecular_weight": 410.34,
+      "heavy_atom_count": 30
+     },
+     "clean_value": 328.27,
+     "corrupted_value": 410.34,
+     "factor": 1.25,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f1.5_consistent": {
+     "fields": {
+      "molecular_weight": 492.4,
+      "heavy_atom_count": 36
+     },
+     "clean_value": 328.27,
+     "corrupted_value": 492.4,
+     "factor": 1.5,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f2_consistent": {
+     "fields": {
+      "molecular_weight": 656.54,
+      "heavy_atom_count": 48
+     },
+     "clean_value": 328.27,
+     "corrupted_value": 656.54,
+     "factor": 2,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f3_consistent": {
+     "fields": {
+      "molecular_weight": 984.81,
+      "heavy_atom_count": 72
+     },
+     "clean_value": 328.27,
+     "corrupted_value": 984.81,
+     "factor": 3,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f10_consistent": {
+     "fields": {
+      "molecular_weight": 3282.7,
+      "heavy_atom_count": 240
+     },
+     "clean_value": 328.27,
+     "corrupted_value": 3282.7,
+     "factor": 10,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f50_consistent": {
+     "fields": {
+      "molecular_weight": 16413.5,
+      "heavy_atom_count": 1200
+     },
+     "clean_value": 328.27,
+     "corrupted_value": 16413.5,
+     "factor": 50,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f200_consistent": {
+     "fields": {
+      "molecular_weight": 65654.0,
+      "heavy_atom_count": 4800
+     },
+     "clean_value": 328.27,
+     "corrupted_value": 65654.0,
+     "factor": 200,
+     "consistent": true,
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 14421 have a molecular weight greater than 344.7 Da? Answer yes or no and give the weight. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "direction": "inflate",
+   "task_id": "b047"
+  },
+  {
+   "template": "weight_threshold",
+   "target_field": "molecular_weight",
+   "target_accession": "14566",
+   "accessions": [
+    "14566"
+   ],
+   "params": {
+    "accession": "14566",
+    "threshold": 202.9
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "f1.1_consistent": {
+     "fields": {
+      "molecular_weight": 212.52,
+      "heavy_atom_count": 15
+     },
+     "clean_value": 193.2,
+     "corrupted_value": 212.52,
+     "factor": 1.1,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f1.25_consistent": {
+     "fields": {
+      "molecular_weight": 241.5,
+      "heavy_atom_count": 18
+     },
+     "clean_value": 193.2,
+     "corrupted_value": 241.5,
+     "factor": 1.25,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f1.5_consistent": {
+     "fields": {
+      "molecular_weight": 289.8,
+      "heavy_atom_count": 21
+     },
+     "clean_value": 193.2,
+     "corrupted_value": 289.8,
+     "factor": 1.5,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f2_consistent": {
+     "fields": {
+      "molecular_weight": 386.4,
+      "heavy_atom_count": 28
+     },
+     "clean_value": 193.2,
+     "corrupted_value": 386.4,
+     "factor": 2,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f3_consistent": {
+     "fields": {
+      "molecular_weight": 579.6,
+      "heavy_atom_count": 42
+     },
+     "clean_value": 193.2,
+     "corrupted_value": 579.6,
+     "factor": 3,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f10_consistent": {
+     "fields": {
+      "molecular_weight": 1932.0,
+      "heavy_atom_count": 140
+     },
+     "clean_value": 193.2,
+     "corrupted_value": 1932.0,
+     "factor": 10,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f50_consistent": {
+     "fields": {
+      "molecular_weight": 9660.0,
+      "heavy_atom_count": 700
+     },
+     "clean_value": 193.2,
+     "corrupted_value": 9660.0,
+     "factor": 50,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f200_consistent": {
+     "fields": {
+      "molecular_weight": 38640.0,
+      "heavy_atom_count": 2800
+     },
+     "clean_value": 193.2,
+     "corrupted_value": 38640.0,
+     "factor": 200,
+     "consistent": true,
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 14566 have a molecular weight greater than 202.9 Da? Answer yes or no and give the weight. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "direction": "inflate",
+   "task_id": "b048"
+  },
+  {
+   "template": "weight_threshold",
+   "target_field": "molecular_weight",
+   "target_accession": "23484",
+   "accessions": [
+    "23484"
+   ],
+   "params": {
+    "accession": "23484",
+    "threshold": 173.5
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "f1.1_consistent": {
+     "fields": {
+      "molecular_weight": 181.76,
+      "heavy_atom_count": 13
+     },
+     "clean_value": 165.24,
+     "corrupted_value": 181.76,
+     "factor": 1.1,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f1.25_consistent": {
+     "fields": {
+      "molecular_weight": 206.55,
+      "heavy_atom_count": 15
+     },
+     "clean_value": 165.24,
+     "corrupted_value": 206.55,
+     "factor": 1.25,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f1.5_consistent": {
+     "fields": {
+      "molecular_weight": 247.86,
+      "heavy_atom_count": 18
+     },
+     "clean_value": 165.24,
+     "corrupted_value": 247.86,
+     "factor": 1.5,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f2_consistent": {
+     "fields": {
+      "molecular_weight": 330.48,
+      "heavy_atom_count": 24
+     },
+     "clean_value": 165.24,
+     "corrupted_value": 330.48,
+     "factor": 2,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f3_consistent": {
+     "fields": {
+      "molecular_weight": 495.72,
+      "heavy_atom_count": 36
+     },
+     "clean_value": 165.24,
+     "corrupted_value": 495.72,
+     "factor": 3,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f10_consistent": {
+     "fields": {
+      "molecular_weight": 1652.4,
+      "heavy_atom_count": 120
+     },
+     "clean_value": 165.24,
+     "corrupted_value": 1652.4,
+     "factor": 10,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f50_consistent": {
+     "fields": {
+      "molecular_weight": 8262.0,
+      "heavy_atom_count": 600
+     },
+     "clean_value": 165.24,
+     "corrupted_value": 8262.0,
+     "factor": 50,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f200_consistent": {
+     "fields": {
+      "molecular_weight": 33048.0,
+      "heavy_atom_count": 2400
+     },
+     "clean_value": 165.24,
+     "corrupted_value": 33048.0,
+     "factor": 200,
+     "consistent": true,
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 23484 have a molecular weight greater than 173.5 Da? Answer yes or no and give the weight. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "direction": "inflate",
+   "task_id": "b049"
+  },
+  {
+   "template": "weight_threshold",
+   "target_field": "molecular_weight",
+   "target_accession": "8852",
+   "accessions": [
+    "8852"
+   ],
+   "params": {
+    "accession": "8852",
+    "threshold": 326.2
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "f1.1_consistent": {
+     "fields": {
+      "molecular_weight": 341.75,
+      "heavy_atom_count": 19
+     },
+     "clean_value": 310.68,
+     "corrupted_value": 341.75,
+     "factor": 1.1,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f1.25_consistent": {
+     "fields": {
+      "molecular_weight": 388.35,
+      "heavy_atom_count": 21
+     },
+     "clean_value": 310.68,
+     "corrupted_value": 388.35,
+     "factor": 1.25,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f1.5_consistent": {
+     "fields": {
+      "molecular_weight": 466.02,
+      "heavy_atom_count": 26
+     },
+     "clean_value": 310.68,
+     "corrupted_value": 466.02,
+     "factor": 1.5,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f2_consistent": {
+     "fields": {
+      "molecular_weight": 621.36,
+      "heavy_atom_count": 34
+     },
+     "clean_value": 310.68,
+     "corrupted_value": 621.36,
+     "factor": 2,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f3_consistent": {
+     "fields": {
+      "molecular_weight": 932.04,
+      "heavy_atom_count": 51
+     },
+     "clean_value": 310.68,
+     "corrupted_value": 932.04,
+     "factor": 3,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f10_consistent": {
+     "fields": {
+      "molecular_weight": 3106.8,
+      "heavy_atom_count": 170
+     },
+     "clean_value": 310.68,
+     "corrupted_value": 3106.8,
+     "factor": 10,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f50_consistent": {
+     "fields": {
+      "molecular_weight": 15534.0,
+      "heavy_atom_count": 850
+     },
+     "clean_value": 310.68,
+     "corrupted_value": 15534.0,
+     "factor": 50,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f200_consistent": {
+     "fields": {
+      "molecular_weight": 62136.0,
+      "heavy_atom_count": 3400
+     },
+     "clean_value": 310.68,
+     "corrupted_value": 62136.0,
+     "factor": 200,
+     "consistent": true,
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 8852 have a molecular weight greater than 326.2 Da? Answer yes or no and give the weight. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "direction": "inflate",
+   "task_id": "b050"
+  },
+  {
+   "template": "weight_threshold",
+   "target_field": "molecular_weight",
+   "target_accession": "16034",
+   "accessions": [
+    "16034"
+   ],
+   "params": {
+    "accession": "16034",
+    "threshold": 158.7
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "f1.1_consistent": {
+     "fields": {
+      "molecular_weight": 166.28,
+      "heavy_atom_count": 12
+     },
+     "clean_value": 151.16,
+     "corrupted_value": 166.28,
+     "factor": 1.1,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f1.25_consistent": {
+     "fields": {
+      "molecular_weight": 188.95,
+      "heavy_atom_count": 14
+     },
+     "clean_value": 151.16,
+     "corrupted_value": 188.95,
+     "factor": 1.25,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f1.5_consistent": {
+     "fields": {
+      "molecular_weight": 226.74,
+      "heavy_atom_count": 16
+     },
+     "clean_value": 151.16,
+     "corrupted_value": 226.74,
+     "factor": 1.5,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f2_consistent": {
+     "fields": {
+      "molecular_weight": 302.32,
+      "heavy_atom_count": 22
+     },
+     "clean_value": 151.16,
+     "corrupted_value": 302.32,
+     "factor": 2,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f3_consistent": {
+     "fields": {
+      "molecular_weight": 453.48,
+      "heavy_atom_count": 33
+     },
+     "clean_value": 151.16,
+     "corrupted_value": 453.48,
+     "factor": 3,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f10_consistent": {
+     "fields": {
+      "molecular_weight": 1511.6,
+      "heavy_atom_count": 110
+     },
+     "clean_value": 151.16,
+     "corrupted_value": 1511.6,
+     "factor": 10,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f50_consistent": {
+     "fields": {
+      "molecular_weight": 7558.0,
+      "heavy_atom_count": 550
+     },
+     "clean_value": 151.16,
+     "corrupted_value": 7558.0,
+     "factor": 50,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f200_consistent": {
+     "fields": {
+      "molecular_weight": 30232.0,
+      "heavy_atom_count": 2200
+     },
+     "clean_value": 151.16,
+     "corrupted_value": 30232.0,
+     "factor": 200,
+     "consistent": true,
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 16034 have a molecular weight greater than 158.7 Da? Answer yes or no and give the weight. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "direction": "inflate",
+   "task_id": "b051"
+  },
+  {
+   "template": "weight_threshold",
+   "target_field": "molecular_weight",
+   "target_accession": "25047",
+   "accessions": [
+    "25047"
+   ],
+   "params": {
+    "accession": "25047",
+    "threshold": 227.1
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "f1.1_consistent": {
+     "fields": {
+      "molecular_weight": 237.9,
+      "heavy_atom_count": 16
+     },
+     "clean_value": 216.27,
+     "corrupted_value": 237.9,
+     "factor": 1.1,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f1.25_consistent": {
+     "fields": {
+      "molecular_weight": 270.34,
+      "heavy_atom_count": 19
+     },
+     "clean_value": 216.27,
+     "corrupted_value": 270.34,
+     "factor": 1.25,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f1.5_consistent": {
+     "fields": {
+      "molecular_weight": 324.41,
+      "heavy_atom_count": 22
+     },
+     "clean_value": 216.27,
+     "corrupted_value": 324.41,
+     "factor": 1.5,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f2_consistent": {
+     "fields": {
+      "molecular_weight": 432.54,
+      "heavy_atom_count": 30
+     },
+     "clean_value": 216.27,
+     "corrupted_value": 432.54,
+     "factor": 2,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f3_consistent": {
+     "fields": {
+      "molecular_weight": 648.81,
+      "heavy_atom_count": 45
+     },
+     "clean_value": 216.27,
+     "corrupted_value": 648.81,
+     "factor": 3,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f10_consistent": {
+     "fields": {
+      "molecular_weight": 2162.7,
+      "heavy_atom_count": 150
+     },
+     "clean_value": 216.27,
+     "corrupted_value": 2162.7,
+     "factor": 10,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f50_consistent": {
+     "fields": {
+      "molecular_weight": 10813.5,
+      "heavy_atom_count": 750
+     },
+     "clean_value": 216.27,
+     "corrupted_value": 10813.5,
+     "factor": 50,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f200_consistent": {
+     "fields": {
+      "molecular_weight": 43254.0,
+      "heavy_atom_count": 3000
+     },
+     "clean_value": 216.27,
+     "corrupted_value": 43254.0,
+     "factor": 200,
+     "consistent": true,
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 25047 have a molecular weight greater than 227.1 Da? Answer yes or no and give the weight. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "direction": "inflate",
+   "task_id": "b052"
+  },
+  {
+   "template": "weight_threshold",
+   "target_field": "molecular_weight",
+   "target_accession": "19167",
+   "accessions": [
+    "19167"
+   ],
+   "params": {
+    "accession": "19167",
+    "threshold": 457.4
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "f1.1_consistent": {
+     "fields": {
+      "molecular_weight": 479.16,
+      "heavy_atom_count": 21
+     },
+     "clean_value": 435.6,
+     "corrupted_value": 479.16,
+     "factor": 1.1,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f1.25_consistent": {
+     "fields": {
+      "molecular_weight": 544.5,
+      "heavy_atom_count": 24
+     },
+     "clean_value": 435.6,
+     "corrupted_value": 544.5,
+     "factor": 1.25,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f1.5_consistent": {
+     "fields": {
+      "molecular_weight": 653.4,
+      "heavy_atom_count": 28
+     },
+     "clean_value": 435.6,
+     "corrupted_value": 653.4,
+     "factor": 1.5,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f2_consistent": {
+     "fields": {
+      "molecular_weight": 871.2,
+      "heavy_atom_count": 38
+     },
+     "clean_value": 435.6,
+     "corrupted_value": 871.2,
+     "factor": 2,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f3_consistent": {
+     "fields": {
+      "molecular_weight": 1306.8,
+      "heavy_atom_count": 57
+     },
+     "clean_value": 435.6,
+     "corrupted_value": 1306.8,
+     "factor": 3,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f10_consistent": {
+     "fields": {
+      "molecular_weight": 4356.0,
+      "heavy_atom_count": 190
+     },
+     "clean_value": 435.6,
+     "corrupted_value": 4356.0,
+     "factor": 10,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f50_consistent": {
+     "fields": {
+      "molecular_weight": 21780.0,
+      "heavy_atom_count": 950
+     },
+     "clean_value": 435.6,
+     "corrupted_value": 21780.0,
+     "factor": 50,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f200_consistent": {
+     "fields": {
+      "molecular_weight": 87120.0,
+      "heavy_atom_count": 3800
+     },
+     "clean_value": 435.6,
+     "corrupted_value": 87120.0,
+     "factor": 200,
+     "consistent": true,
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 19167 have a molecular weight greater than 457.4 Da? Answer yes or no and give the weight. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "direction": "inflate",
+   "task_id": "b053"
+  },
+  {
+   "template": "weight_threshold",
+   "target_field": "molecular_weight",
+   "target_accession": "749",
+   "accessions": [
+    "749"
+   ],
+   "params": {
+    "accession": "749",
+    "threshold": 456.3
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "f1.1_consistent": {
+     "fields": {
+      "molecular_weight": 478.06,
+      "heavy_atom_count": 32
+     },
+     "clean_value": 434.6,
+     "corrupted_value": 478.06,
+     "factor": 1.1,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f1.25_consistent": {
+     "fields": {
+      "molecular_weight": 543.25,
+      "heavy_atom_count": 36
+     },
+     "clean_value": 434.6,
+     "corrupted_value": 543.25,
+     "factor": 1.25,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f1.5_consistent": {
+     "fields": {
+      "molecular_weight": 651.9,
+      "heavy_atom_count": 44
+     },
+     "clean_value": 434.6,
+     "corrupted_value": 651.9,
+     "factor": 1.5,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f2_consistent": {
+     "fields": {
+      "molecular_weight": 869.2,
+      "heavy_atom_count": 58
+     },
+     "clean_value": 434.6,
+     "corrupted_value": 869.2,
+     "factor": 2,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f3_consistent": {
+     "fields": {
+      "molecular_weight": 1303.8,
+      "heavy_atom_count": 87
+     },
+     "clean_value": 434.6,
+     "corrupted_value": 1303.8,
+     "factor": 3,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f10_consistent": {
+     "fields": {
+      "molecular_weight": 4346.0,
+      "heavy_atom_count": 290
+     },
+     "clean_value": 434.6,
+     "corrupted_value": 4346.0,
+     "factor": 10,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f50_consistent": {
+     "fields": {
+      "molecular_weight": 21730.0,
+      "heavy_atom_count": 1450
+     },
+     "clean_value": 434.6,
+     "corrupted_value": 21730.0,
+     "factor": 50,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f200_consistent": {
+     "fields": {
+      "molecular_weight": 86920.0,
+      "heavy_atom_count": 5800
+     },
+     "clean_value": 434.6,
+     "corrupted_value": 86920.0,
+     "factor": 200,
+     "consistent": true,
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 749 have a molecular weight greater than 456.3 Da? Answer yes or no and give the weight. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "direction": "inflate",
+   "task_id": "b054"
+  },
+  {
+   "template": "weight_threshold",
+   "target_field": "molecular_weight",
+   "target_accession": "19514",
+   "accessions": [
+    "19514"
+   ],
+   "params": {
+    "accession": "19514",
+    "threshold": 259.7
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "f1.1_consistent": {
+     "fields": {
+      "molecular_weight": 272.06,
+      "heavy_atom_count": 20
+     },
+     "clean_value": 247.33,
+     "corrupted_value": 272.06,
+     "factor": 1.1,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f1.25_consistent": {
+     "fields": {
+      "molecular_weight": 309.16,
+      "heavy_atom_count": 22
+     },
+     "clean_value": 247.33,
+     "corrupted_value": 309.16,
+     "factor": 1.25,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f1.5_consistent": {
+     "fields": {
+      "molecular_weight": 371.0,
+      "heavy_atom_count": 27
+     },
+     "clean_value": 247.33,
+     "corrupted_value": 371.0,
+     "factor": 1.5,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f2_consistent": {
+     "fields": {
+      "molecular_weight": 494.66,
+      "heavy_atom_count": 36
+     },
+     "clean_value": 247.33,
+     "corrupted_value": 494.66,
+     "factor": 2,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f3_consistent": {
+     "fields": {
+      "molecular_weight": 741.99,
+      "heavy_atom_count": 54
+     },
+     "clean_value": 247.33,
+     "corrupted_value": 741.99,
+     "factor": 3,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f10_consistent": {
+     "fields": {
+      "molecular_weight": 2473.3,
+      "heavy_atom_count": 180
+     },
+     "clean_value": 247.33,
+     "corrupted_value": 2473.3,
+     "factor": 10,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f50_consistent": {
+     "fields": {
+      "molecular_weight": 12366.5,
+      "heavy_atom_count": 900
+     },
+     "clean_value": 247.33,
+     "corrupted_value": 12366.5,
+     "factor": 50,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f200_consistent": {
+     "fields": {
+      "molecular_weight": 49466.0,
+      "heavy_atom_count": 3600
+     },
+     "clean_value": 247.33,
+     "corrupted_value": 49466.0,
+     "factor": 200,
+     "consistent": true,
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 19514 have a molecular weight greater than 259.7 Da? Answer yes or no and give the weight. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "direction": "inflate",
+   "task_id": "b055"
+  },
+  {
+   "template": "weight_threshold",
+   "target_field": "molecular_weight",
+   "target_accession": "5995",
+   "accessions": [
+    "5995"
+   ],
+   "params": {
+    "accession": "5995",
+    "threshold": 361.7
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "f1.1_consistent": {
+     "fields": {
+      "molecular_weight": 378.95,
+      "heavy_atom_count": 28
+     },
+     "clean_value": 344.5,
+     "corrupted_value": 378.95,
+     "factor": 1.1,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f1.25_consistent": {
+     "fields": {
+      "molecular_weight": 430.62,
+      "heavy_atom_count": 31
+     },
+     "clean_value": 344.5,
+     "corrupted_value": 430.62,
+     "factor": 1.25,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f1.5_consistent": {
+     "fields": {
+      "molecular_weight": 516.75,
+      "heavy_atom_count": 38
+     },
+     "clean_value": 344.5,
+     "corrupted_value": 516.75,
+     "factor": 1.5,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f2_consistent": {
+     "fields": {
+      "molecular_weight": 689.0,
+      "heavy_atom_count": 50
+     },
+     "clean_value": 344.5,
+     "corrupted_value": 689.0,
+     "factor": 2,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f3_consistent": {
+     "fields": {
+      "molecular_weight": 1033.5,
+      "heavy_atom_count": 75
+     },
+     "clean_value": 344.5,
+     "corrupted_value": 1033.5,
+     "factor": 3,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f10_consistent": {
+     "fields": {
+      "molecular_weight": 3445.0,
+      "heavy_atom_count": 250
+     },
+     "clean_value": 344.5,
+     "corrupted_value": 3445.0,
+     "factor": 10,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f50_consistent": {
+     "fields": {
+      "molecular_weight": 17225.0,
+      "heavy_atom_count": 1250
+     },
+     "clean_value": 344.5,
+     "corrupted_value": 17225.0,
+     "factor": 50,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f200_consistent": {
+     "fields": {
+      "molecular_weight": 68900.0,
+      "heavy_atom_count": 5000
+     },
+     "clean_value": 344.5,
+     "corrupted_value": 68900.0,
+     "factor": 200,
+     "consistent": true,
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 5995 have a molecular weight greater than 361.7 Da? Answer yes or no and give the weight. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "direction": "inflate",
+   "task_id": "b056"
+  },
+  {
+   "template": "weight_threshold",
+   "target_field": "molecular_weight",
+   "target_accession": "5090",
+   "accessions": [
+    "5090"
+   ],
+   "params": {
+    "accession": "5090",
+    "threshold": 330.1
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "f1.1_consistent": {
+     "fields": {
+      "molecular_weight": 345.84,
+      "heavy_atom_count": 24
+     },
+     "clean_value": 314.4,
+     "corrupted_value": 345.84,
+     "factor": 1.1,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f1.25_consistent": {
+     "fields": {
+      "molecular_weight": 393.0,
+      "heavy_atom_count": 28
+     },
+     "clean_value": 314.4,
+     "corrupted_value": 393.0,
+     "factor": 1.25,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f1.5_consistent": {
+     "fields": {
+      "molecular_weight": 471.6,
+      "heavy_atom_count": 33
+     },
+     "clean_value": 314.4,
+     "corrupted_value": 471.6,
+     "factor": 1.5,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f2_consistent": {
+     "fields": {
+      "molecular_weight": 628.8,
+      "heavy_atom_count": 44
+     },
+     "clean_value": 314.4,
+     "corrupted_value": 628.8,
+     "factor": 2,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f3_consistent": {
+     "fields": {
+      "molecular_weight": 943.2,
+      "heavy_atom_count": 66
+     },
+     "clean_value": 314.4,
+     "corrupted_value": 943.2,
+     "factor": 3,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f10_consistent": {
+     "fields": {
+      "molecular_weight": 3144.0,
+      "heavy_atom_count": 220
+     },
+     "clean_value": 314.4,
+     "corrupted_value": 3144.0,
+     "factor": 10,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f50_consistent": {
+     "fields": {
+      "molecular_weight": 15720.0,
+      "heavy_atom_count": 1100
+     },
+     "clean_value": 314.4,
+     "corrupted_value": 15720.0,
+     "factor": 50,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f200_consistent": {
+     "fields": {
+      "molecular_weight": 62880.0,
+      "heavy_atom_count": 4400
+     },
+     "clean_value": 314.4,
+     "corrupted_value": 62880.0,
+     "factor": 200,
+     "consistent": true,
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 5090 have a molecular weight greater than 330.1 Da? Answer yes or no and give the weight. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "direction": "inflate",
+   "task_id": "b057"
+  },
+  {
+   "template": "weight_threshold",
+   "target_field": "molecular_weight",
+   "target_accession": "4543",
+   "accessions": [
+    "4543"
+   ],
+   "params": {
+    "accession": "4543",
+    "threshold": 276.6
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "f1.1_consistent": {
+     "fields": {
+      "molecular_weight": 289.74,
+      "heavy_atom_count": 22
+     },
+     "clean_value": 263.4,
+     "corrupted_value": 289.74,
+     "factor": 1.1,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f1.25_consistent": {
+     "fields": {
+      "molecular_weight": 329.25,
+      "heavy_atom_count": 25
+     },
+     "clean_value": 263.4,
+     "corrupted_value": 329.25,
+     "factor": 1.25,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f1.5_consistent": {
+     "fields": {
+      "molecular_weight": 395.1,
+      "heavy_atom_count": 30
+     },
+     "clean_value": 263.4,
+     "corrupted_value": 395.1,
+     "factor": 1.5,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f2_consistent": {
+     "fields": {
+      "molecular_weight": 526.8,
+      "heavy_atom_count": 40
+     },
+     "clean_value": 263.4,
+     "corrupted_value": 526.8,
+     "factor": 2,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f3_consistent": {
+     "fields": {
+      "molecular_weight": 790.2,
+      "heavy_atom_count": 60
+     },
+     "clean_value": 263.4,
+     "corrupted_value": 790.2,
+     "factor": 3,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f10_consistent": {
+     "fields": {
+      "molecular_weight": 2634.0,
+      "heavy_atom_count": 200
+     },
+     "clean_value": 263.4,
+     "corrupted_value": 2634.0,
+     "factor": 10,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f50_consistent": {
+     "fields": {
+      "molecular_weight": 13170.0,
+      "heavy_atom_count": 1000
+     },
+     "clean_value": 263.4,
+     "corrupted_value": 13170.0,
+     "factor": 50,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f200_consistent": {
+     "fields": {
+      "molecular_weight": 52680.0,
+      "heavy_atom_count": 4000
+     },
+     "clean_value": 263.4,
+     "corrupted_value": 52680.0,
+     "factor": 200,
+     "consistent": true,
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 4543 have a molecular weight greater than 276.6 Da? Answer yes or no and give the weight. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "direction": "inflate",
+   "task_id": "b058"
+  },
+  {
+   "template": "weight_threshold",
+   "target_field": "molecular_weight",
+   "target_accession": "3037",
+   "accessions": [
+    "3037"
+   ],
+   "params": {
+    "accession": "3037",
+    "threshold": 282.6
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "f1.1_consistent": {
+     "fields": {
+      "molecular_weight": 296.03,
+      "heavy_atom_count": 19
+     },
+     "clean_value": 269.12,
+     "corrupted_value": 296.03,
+     "factor": 1.1,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f1.25_consistent": {
+     "fields": {
+      "molecular_weight": 336.4,
+      "heavy_atom_count": 21
+     },
+     "clean_value": 269.12,
+     "corrupted_value": 336.4,
+     "factor": 1.25,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f1.5_consistent": {
+     "fields": {
+      "molecular_weight": 403.68,
+      "heavy_atom_count": 26
+     },
+     "clean_value": 269.12,
+     "corrupted_value": 403.68,
+     "factor": 1.5,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f2_consistent": {
+     "fields": {
+      "molecular_weight": 538.24,
+      "heavy_atom_count": 34
+     },
+     "clean_value": 269.12,
+     "corrupted_value": 538.24,
+     "factor": 2,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f3_consistent": {
+     "fields": {
+      "molecular_weight": 807.36,
+      "heavy_atom_count": 51
+     },
+     "clean_value": 269.12,
+     "corrupted_value": 807.36,
+     "factor": 3,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f10_consistent": {
+     "fields": {
+      "molecular_weight": 2691.2,
+      "heavy_atom_count": 170
+     },
+     "clean_value": 269.12,
+     "corrupted_value": 2691.2,
+     "factor": 10,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f50_consistent": {
+     "fields": {
+      "molecular_weight": 13456.0,
+      "heavy_atom_count": 850
+     },
+     "clean_value": 269.12,
+     "corrupted_value": 13456.0,
+     "factor": 50,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f200_consistent": {
+     "fields": {
+      "molecular_weight": 53824.0,
+      "heavy_atom_count": 3400
+     },
+     "clean_value": 269.12,
+     "corrupted_value": 53824.0,
+     "factor": 200,
+     "consistent": true,
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 3037 have a molecular weight greater than 282.6 Da? Answer yes or no and give the weight. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "direction": "inflate",
+   "task_id": "b059"
+  },
+  {
+   "template": "heavy_atom_threshold",
+   "target_field": "heavy_atom_count",
+   "target_accession": "4138",
+   "accessions": [
+    "4138"
+   ],
+   "params": {
+    "accession": "4138",
+    "threshold": 15
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "f1.1_consistent": {
+     "fields": {
+      "heavy_atom_count": 16,
+      "molecular_weight": 232.33
+     },
+     "clean_value": 15,
+     "corrupted_value": 16,
+     "factor": 1.1,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f1.25_consistent": {
+     "fields": {
+      "heavy_atom_count": 19,
+      "molecular_weight": 264.01
+     },
+     "clean_value": 15,
+     "corrupted_value": 19,
+     "factor": 1.25,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f1.5_consistent": {
+     "fields": {
+      "heavy_atom_count": 22,
+      "molecular_weight": 316.81
+     },
+     "clean_value": 15,
+     "corrupted_value": 22,
+     "factor": 1.5,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f2_consistent": {
+     "fields": {
+      "heavy_atom_count": 30,
+      "molecular_weight": 422.42
+     },
+     "clean_value": 15,
+     "corrupted_value": 30,
+     "factor": 2,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f3_consistent": {
+     "fields": {
+      "heavy_atom_count": 45,
+      "molecular_weight": 633.63
+     },
+     "clean_value": 15,
+     "corrupted_value": 45,
+     "factor": 3,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f10_consistent": {
+     "fields": {
+      "heavy_atom_count": 150,
+      "molecular_weight": 2112.1
+     },
+     "clean_value": 15,
+     "corrupted_value": 150,
+     "factor": 10,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f50_consistent": {
+     "fields": {
+      "heavy_atom_count": 750,
+      "molecular_weight": 10560.5
+     },
+     "clean_value": 15,
+     "corrupted_value": 750,
+     "factor": 50,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f200_consistent": {
+     "fields": {
+      "heavy_atom_count": 3000,
+      "molecular_weight": 42242.0
+     },
+     "clean_value": 15,
+     "corrupted_value": 3000,
+     "factor": 200,
+     "consistent": true,
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 4138 have more than 15 heavy atoms? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "direction": "inflate",
+   "task_id": "b060"
+  },
+  {
+   "template": "heavy_atom_threshold",
+   "target_field": "heavy_atom_count",
+   "target_accession": "16462",
+   "accessions": [
+    "16462"
+   ],
+   "params": {
+    "accession": "16462",
+    "threshold": 13
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "f1.1_consistent": {
+     "fields": {
+      "heavy_atom_count": 14,
+      "molecular_weight": 265.65
+     },
+     "clean_value": 13,
+     "corrupted_value": 14,
+     "factor": 1.1,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f1.25_consistent": {
+     "fields": {
+      "heavy_atom_count": 16,
+      "molecular_weight": 301.88
+     },
+     "clean_value": 13,
+     "corrupted_value": 16,
+     "factor": 1.25,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f1.5_consistent": {
+     "fields": {
+      "heavy_atom_count": 20,
+      "molecular_weight": 362.25
+     },
+     "clean_value": 13,
+     "corrupted_value": 20,
+     "factor": 1.5,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f2_consistent": {
+     "fields": {
+      "heavy_atom_count": 26,
+      "molecular_weight": 483.0
+     },
+     "clean_value": 13,
+     "corrupted_value": 26,
+     "factor": 2,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f3_consistent": {
+     "fields": {
+      "heavy_atom_count": 39,
+      "molecular_weight": 724.5
+     },
+     "clean_value": 13,
+     "corrupted_value": 39,
+     "factor": 3,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f10_consistent": {
+     "fields": {
+      "heavy_atom_count": 130,
+      "molecular_weight": 2415.0
+     },
+     "clean_value": 13,
+     "corrupted_value": 130,
+     "factor": 10,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f50_consistent": {
+     "fields": {
+      "heavy_atom_count": 650,
+      "molecular_weight": 12075.0
+     },
+     "clean_value": 13,
+     "corrupted_value": 650,
+     "factor": 50,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f200_consistent": {
+     "fields": {
+      "heavy_atom_count": 2600,
+      "molecular_weight": 48300.0
+     },
+     "clean_value": 13,
+     "corrupted_value": 2600,
+     "factor": 200,
+     "consistent": true,
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 16462 have more than 13 heavy atoms? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "direction": "inflate",
+   "task_id": "b061"
+  },
+  {
+   "template": "heavy_atom_threshold",
+   "target_field": "heavy_atom_count",
+   "target_accession": "26602",
+   "accessions": [
+    "26602"
+   ],
+   "params": {
+    "accession": "26602",
+    "threshold": 18
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "f1.1_consistent": {
+     "fields": {
+      "heavy_atom_count": 19,
+      "molecular_weight": 281.31
+     },
+     "clean_value": 17,
+     "corrupted_value": 19,
+     "factor": 1.1,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f1.25_consistent": {
+     "fields": {
+      "heavy_atom_count": 21,
+      "molecular_weight": 319.68
+     },
+     "clean_value": 17,
+     "corrupted_value": 21,
+     "factor": 1.25,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f1.5_consistent": {
+     "fields": {
+      "heavy_atom_count": 26,
+      "molecular_weight": 383.61
+     },
+     "clean_value": 17,
+     "corrupted_value": 26,
+     "factor": 1.5,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f2_consistent": {
+     "fields": {
+      "heavy_atom_count": 34,
+      "molecular_weight": 511.48
+     },
+     "clean_value": 17,
+     "corrupted_value": 34,
+     "factor": 2,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f3_consistent": {
+     "fields": {
+      "heavy_atom_count": 51,
+      "molecular_weight": 767.22
+     },
+     "clean_value": 17,
+     "corrupted_value": 51,
+     "factor": 3,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f10_consistent": {
+     "fields": {
+      "heavy_atom_count": 170,
+      "molecular_weight": 2557.4
+     },
+     "clean_value": 17,
+     "corrupted_value": 170,
+     "factor": 10,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f50_consistent": {
+     "fields": {
+      "heavy_atom_count": 850,
+      "molecular_weight": 12787.0
+     },
+     "clean_value": 17,
+     "corrupted_value": 850,
+     "factor": 50,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f200_consistent": {
+     "fields": {
+      "heavy_atom_count": 3400,
+      "molecular_weight": 51148.0
+     },
+     "clean_value": 17,
+     "corrupted_value": 3400,
+     "factor": 200,
+     "consistent": true,
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 26602 have more than 18 heavy atoms? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "direction": "inflate",
+   "task_id": "b062"
+  },
+  {
+   "template": "heavy_atom_threshold",
+   "target_field": "heavy_atom_count",
+   "target_accession": "25068",
+   "accessions": [
+    "25068"
+   ],
+   "params": {
+    "accession": "25068",
+    "threshold": 18
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "f1.1_consistent": {
+     "fields": {
+      "heavy_atom_count": 19,
+      "molecular_weight": 266.64
+     },
+     "clean_value": 17,
+     "corrupted_value": 19,
+     "factor": 1.1,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f1.25_consistent": {
+     "fields": {
+      "heavy_atom_count": 21,
+      "molecular_weight": 303.0
+     },
+     "clean_value": 17,
+     "corrupted_value": 21,
+     "factor": 1.25,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f1.5_consistent": {
+     "fields": {
+      "heavy_atom_count": 26,
+      "molecular_weight": 363.6
+     },
+     "clean_value": 17,
+     "corrupted_value": 26,
+     "factor": 1.5,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f2_consistent": {
+     "fields": {
+      "heavy_atom_count": 34,
+      "molecular_weight": 484.8
+     },
+     "clean_value": 17,
+     "corrupted_value": 34,
+     "factor": 2,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f3_consistent": {
+     "fields": {
+      "heavy_atom_count": 51,
+      "molecular_weight": 727.2
+     },
+     "clean_value": 17,
+     "corrupted_value": 51,
+     "factor": 3,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f10_consistent": {
+     "fields": {
+      "heavy_atom_count": 170,
+      "molecular_weight": 2424.0
+     },
+     "clean_value": 17,
+     "corrupted_value": 170,
+     "factor": 10,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f50_consistent": {
+     "fields": {
+      "heavy_atom_count": 850,
+      "molecular_weight": 12120.0
+     },
+     "clean_value": 17,
+     "corrupted_value": 850,
+     "factor": 50,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f200_consistent": {
+     "fields": {
+      "heavy_atom_count": 3400,
+      "molecular_weight": 48480.0
+     },
+     "clean_value": 17,
+     "corrupted_value": 3400,
+     "factor": 200,
+     "consistent": true,
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 25068 have more than 18 heavy atoms? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "direction": "inflate",
+   "task_id": "b063"
+  },
+  {
+   "template": "heavy_atom_threshold",
+   "target_field": "heavy_atom_count",
+   "target_accession": "25674",
+   "accessions": [
+    "25674"
+   ],
+   "params": {
+    "accession": "25674",
+    "threshold": 10
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "f1.1_consistent": {
+     "fields": {
+      "heavy_atom_count": 11,
+      "molecular_weight": 179.56
+     },
+     "clean_value": 10,
+     "corrupted_value": 11,
+     "factor": 1.1,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f1.25_consistent": {
+     "fields": {
+      "heavy_atom_count": 12,
+      "molecular_weight": 204.05
+     },
+     "clean_value": 10,
+     "corrupted_value": 12,
+     "factor": 1.25,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f1.5_consistent": {
+     "fields": {
+      "heavy_atom_count": 15,
+      "molecular_weight": 244.86
+     },
+     "clean_value": 10,
+     "corrupted_value": 15,
+     "factor": 1.5,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f2_consistent": {
+     "fields": {
+      "heavy_atom_count": 20,
+      "molecular_weight": 326.48
+     },
+     "clean_value": 10,
+     "corrupted_value": 20,
+     "factor": 2,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f3_consistent": {
+     "fields": {
+      "heavy_atom_count": 30,
+      "molecular_weight": 489.72
+     },
+     "clean_value": 10,
+     "corrupted_value": 30,
+     "factor": 3,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f10_consistent": {
+     "fields": {
+      "heavy_atom_count": 100,
+      "molecular_weight": 1632.4
+     },
+     "clean_value": 10,
+     "corrupted_value": 100,
+     "factor": 10,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f50_consistent": {
+     "fields": {
+      "heavy_atom_count": 500,
+      "molecular_weight": 8162.0
+     },
+     "clean_value": 10,
+     "corrupted_value": 500,
+     "factor": 50,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f200_consistent": {
+     "fields": {
+      "heavy_atom_count": 2000,
+      "molecular_weight": 32648.0
+     },
+     "clean_value": 10,
+     "corrupted_value": 2000,
+     "factor": 200,
+     "consistent": true,
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 25674 have more than 10 heavy atoms? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "direction": "inflate",
+   "task_id": "b064"
+  },
+  {
+   "template": "heavy_atom_threshold",
+   "target_field": "heavy_atom_count",
+   "target_accession": "16784",
+   "accessions": [
+    "16784"
+   ],
+   "params": {
+    "accession": "16784",
+    "threshold": 11
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "f1.1_consistent": {
+     "fields": {
+      "heavy_atom_count": 12,
+      "molecular_weight": 311.76
+     },
+     "clean_value": 11,
+     "corrupted_value": 12,
+     "factor": 1.1,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f1.25_consistent": {
+     "fields": {
+      "heavy_atom_count": 14,
+      "molecular_weight": 354.28
+     },
+     "clean_value": 11,
+     "corrupted_value": 14,
+     "factor": 1.25,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f1.5_consistent": {
+     "fields": {
+      "heavy_atom_count": 16,
+      "molecular_weight": 425.13
+     },
+     "clean_value": 11,
+     "corrupted_value": 16,
+     "factor": 1.5,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f2_consistent": {
+     "fields": {
+      "heavy_atom_count": 22,
+      "molecular_weight": 566.84
+     },
+     "clean_value": 11,
+     "corrupted_value": 22,
+     "factor": 2,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f3_consistent": {
+     "fields": {
+      "heavy_atom_count": 33,
+      "molecular_weight": 850.26
+     },
+     "clean_value": 11,
+     "corrupted_value": 33,
+     "factor": 3,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f10_consistent": {
+     "fields": {
+      "heavy_atom_count": 110,
+      "molecular_weight": 2834.2
+     },
+     "clean_value": 11,
+     "corrupted_value": 110,
+     "factor": 10,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f50_consistent": {
+     "fields": {
+      "heavy_atom_count": 550,
+      "molecular_weight": 14171.0
+     },
+     "clean_value": 11,
+     "corrupted_value": 550,
+     "factor": 50,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f200_consistent": {
+     "fields": {
+      "heavy_atom_count": 2200,
+      "molecular_weight": 56684.0
+     },
+     "clean_value": 11,
+     "corrupted_value": 2200,
+     "factor": 200,
+     "consistent": true,
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 16784 have more than 11 heavy atoms? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "direction": "inflate",
+   "task_id": "b065"
+  },
+  {
+   "template": "heavy_atom_threshold",
+   "target_field": "heavy_atom_count",
+   "target_accession": "10208",
+   "accessions": [
+    "10208"
+   ],
+   "params": {
+    "accession": "10208",
+    "threshold": 20
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "f1.1_consistent": {
+     "fields": {
+      "heavy_atom_count": 21,
+      "molecular_weight": 279.66
+     },
+     "clean_value": 19,
+     "corrupted_value": 21,
+     "factor": 1.1,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f1.25_consistent": {
+     "fields": {
+      "heavy_atom_count": 24,
+      "molecular_weight": 317.8
+     },
+     "clean_value": 19,
+     "corrupted_value": 24,
+     "factor": 1.25,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f1.5_consistent": {
+     "fields": {
+      "heavy_atom_count": 28,
+      "molecular_weight": 381.36
+     },
+     "clean_value": 19,
+     "corrupted_value": 28,
+     "factor": 1.5,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f2_consistent": {
+     "fields": {
+      "heavy_atom_count": 38,
+      "molecular_weight": 508.48
+     },
+     "clean_value": 19,
+     "corrupted_value": 38,
+     "factor": 2,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f3_consistent": {
+     "fields": {
+      "heavy_atom_count": 57,
+      "molecular_weight": 762.72
+     },
+     "clean_value": 19,
+     "corrupted_value": 57,
+     "factor": 3,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f10_consistent": {
+     "fields": {
+      "heavy_atom_count": 190,
+      "molecular_weight": 2542.4
+     },
+     "clean_value": 19,
+     "corrupted_value": 190,
+     "factor": 10,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f50_consistent": {
+     "fields": {
+      "heavy_atom_count": 950,
+      "molecular_weight": 12712.0
+     },
+     "clean_value": 19,
+     "corrupted_value": 950,
+     "factor": 50,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f200_consistent": {
+     "fields": {
+      "heavy_atom_count": 3800,
+      "molecular_weight": 50848.0
+     },
+     "clean_value": 19,
+     "corrupted_value": 3800,
+     "factor": 200,
+     "consistent": true,
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 10208 have more than 20 heavy atoms? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "direction": "inflate",
+   "task_id": "b066"
+  },
+  {
+   "template": "heavy_atom_threshold",
+   "target_field": "heavy_atom_count",
+   "target_accession": "10804",
+   "accessions": [
+    "10804"
+   ],
+   "params": {
+    "accession": "10804",
+    "threshold": 35
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "f1.1_consistent": {
+     "fields": {
+      "heavy_atom_count": 37,
+      "molecular_weight": 533.17
+     },
+     "clean_value": 34,
+     "corrupted_value": 37,
+     "factor": 1.1,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f1.25_consistent": {
+     "fields": {
+      "heavy_atom_count": 42,
+      "molecular_weight": 605.88
+     },
+     "clean_value": 34,
+     "corrupted_value": 42,
+     "factor": 1.25,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f1.5_consistent": {
+     "fields": {
+      "heavy_atom_count": 51,
+      "molecular_weight": 727.05
+     },
+     "clean_value": 34,
+     "corrupted_value": 51,
+     "factor": 1.5,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f2_consistent": {
+     "fields": {
+      "heavy_atom_count": 68,
+      "molecular_weight": 969.4
+     },
+     "clean_value": 34,
+     "corrupted_value": 68,
+     "factor": 2,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f3_consistent": {
+     "fields": {
+      "heavy_atom_count": 102,
+      "molecular_weight": 1454.1
+     },
+     "clean_value": 34,
+     "corrupted_value": 102,
+     "factor": 3,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f10_consistent": {
+     "fields": {
+      "heavy_atom_count": 340,
+      "molecular_weight": 4847.0
+     },
+     "clean_value": 34,
+     "corrupted_value": 340,
+     "factor": 10,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f50_consistent": {
+     "fields": {
+      "heavy_atom_count": 1700,
+      "molecular_weight": 24235.0
+     },
+     "clean_value": 34,
+     "corrupted_value": 1700,
+     "factor": 50,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f200_consistent": {
+     "fields": {
+      "heavy_atom_count": 6800,
+      "molecular_weight": 96940.0
+     },
+     "clean_value": 34,
+     "corrupted_value": 6800,
+     "factor": 200,
+     "consistent": true,
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 10804 have more than 35 heavy atoms? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "direction": "inflate",
+   "task_id": "b067"
+  },
+  {
+   "template": "heavy_atom_threshold",
+   "target_field": "heavy_atom_count",
+   "target_accession": "5267",
+   "accessions": [
+    "5267"
+   ],
+   "params": {
+    "accession": "5267",
+    "threshold": 30
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "f1.1_consistent": {
+     "fields": {
+      "heavy_atom_count": 32,
+      "molecular_weight": 458.26
+     },
+     "clean_value": 29,
+     "corrupted_value": 32,
+     "factor": 1.1,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f1.25_consistent": {
+     "fields": {
+      "heavy_atom_count": 36,
+      "molecular_weight": 520.75
+     },
+     "clean_value": 29,
+     "corrupted_value": 36,
+     "factor": 1.25,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f1.5_consistent": {
+     "fields": {
+      "heavy_atom_count": 44,
+      "molecular_weight": 624.9
+     },
+     "clean_value": 29,
+     "corrupted_value": 44,
+     "factor": 1.5,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f2_consistent": {
+     "fields": {
+      "heavy_atom_count": 58,
+      "molecular_weight": 833.2
+     },
+     "clean_value": 29,
+     "corrupted_value": 58,
+     "factor": 2,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f3_consistent": {
+     "fields": {
+      "heavy_atom_count": 87,
+      "molecular_weight": 1249.8
+     },
+     "clean_value": 29,
+     "corrupted_value": 87,
+     "factor": 3,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f10_consistent": {
+     "fields": {
+      "heavy_atom_count": 290,
+      "molecular_weight": 4166.0
+     },
+     "clean_value": 29,
+     "corrupted_value": 290,
+     "factor": 10,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f50_consistent": {
+     "fields": {
+      "heavy_atom_count": 1450,
+      "molecular_weight": 20830.0
+     },
+     "clean_value": 29,
+     "corrupted_value": 1450,
+     "factor": 50,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f200_consistent": {
+     "fields": {
+      "heavy_atom_count": 5800,
+      "molecular_weight": 83320.0
+     },
+     "clean_value": 29,
+     "corrupted_value": 5800,
+     "factor": 200,
+     "consistent": true,
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 5267 have more than 30 heavy atoms? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "direction": "inflate",
+   "task_id": "b068"
+  },
+  {
+   "template": "heavy_atom_threshold",
+   "target_field": "heavy_atom_count",
+   "target_accession": "26404",
+   "accessions": [
+    "26404"
+   ],
+   "params": {
+    "accession": "26404",
+    "threshold": 21
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "f1.1_consistent": {
+     "fields": {
+      "heavy_atom_count": 22,
+      "molecular_weight": 315.05
+     },
+     "clean_value": 20,
+     "corrupted_value": 22,
+     "factor": 1.1,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f1.25_consistent": {
+     "fields": {
+      "heavy_atom_count": 25,
+      "molecular_weight": 358.01
+     },
+     "clean_value": 20,
+     "corrupted_value": 25,
+     "factor": 1.25,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f1.5_consistent": {
+     "fields": {
+      "heavy_atom_count": 30,
+      "molecular_weight": 429.62
+     },
+     "clean_value": 20,
+     "corrupted_value": 30,
+     "factor": 1.5,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f2_consistent": {
+     "fields": {
+      "heavy_atom_count": 40,
+      "molecular_weight": 572.82
+     },
+     "clean_value": 20,
+     "corrupted_value": 40,
+     "factor": 2,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f3_consistent": {
+     "fields": {
+      "heavy_atom_count": 60,
+      "molecular_weight": 859.23
+     },
+     "clean_value": 20,
+     "corrupted_value": 60,
+     "factor": 3,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f10_consistent": {
+     "fields": {
+      "heavy_atom_count": 200,
+      "molecular_weight": 2864.1
+     },
+     "clean_value": 20,
+     "corrupted_value": 200,
+     "factor": 10,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f50_consistent": {
+     "fields": {
+      "heavy_atom_count": 1000,
+      "molecular_weight": 14320.5
+     },
+     "clean_value": 20,
+     "corrupted_value": 1000,
+     "factor": 50,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f200_consistent": {
+     "fields": {
+      "heavy_atom_count": 4000,
+      "molecular_weight": 57282.0
+     },
+     "clean_value": 20,
+     "corrupted_value": 4000,
+     "factor": 200,
+     "consistent": true,
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 26404 have more than 21 heavy atoms? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "direction": "inflate",
+   "task_id": "b069"
+  },
+  {
+   "template": "heavy_atom_threshold",
+   "target_field": "heavy_atom_count",
+   "target_accession": "14978",
+   "accessions": [
+    "14978"
+   ],
+   "params": {
+    "accession": "14978",
+    "threshold": 23
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "f1.1_consistent": {
+     "fields": {
+      "heavy_atom_count": 24,
+      "molecular_weight": 340.21
+     },
+     "clean_value": 22,
+     "corrupted_value": 24,
+     "factor": 1.1,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f1.25_consistent": {
+     "fields": {
+      "heavy_atom_count": 28,
+      "molecular_weight": 386.6
+     },
+     "clean_value": 22,
+     "corrupted_value": 28,
+     "factor": 1.25,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f1.5_consistent": {
+     "fields": {
+      "heavy_atom_count": 33,
+      "molecular_weight": 463.92
+     },
+     "clean_value": 22,
+     "corrupted_value": 33,
+     "factor": 1.5,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f2_consistent": {
+     "fields": {
+      "heavy_atom_count": 44,
+      "molecular_weight": 618.56
+     },
+     "clean_value": 22,
+     "corrupted_value": 44,
+     "factor": 2,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f3_consistent": {
+     "fields": {
+      "heavy_atom_count": 66,
+      "molecular_weight": 927.84
+     },
+     "clean_value": 22,
+     "corrupted_value": 66,
+     "factor": 3,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f10_consistent": {
+     "fields": {
+      "heavy_atom_count": 220,
+      "molecular_weight": 3092.8
+     },
+     "clean_value": 22,
+     "corrupted_value": 220,
+     "factor": 10,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f50_consistent": {
+     "fields": {
+      "heavy_atom_count": 1100,
+      "molecular_weight": 15464.0
+     },
+     "clean_value": 22,
+     "corrupted_value": 1100,
+     "factor": 50,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f200_consistent": {
+     "fields": {
+      "heavy_atom_count": 4400,
+      "molecular_weight": 61856.0
+     },
+     "clean_value": 22,
+     "corrupted_value": 4400,
+     "factor": 200,
+     "consistent": true,
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 14978 have more than 23 heavy atoms? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "direction": "inflate",
+   "task_id": "b070"
+  },
+  {
+   "template": "heavy_atom_threshold",
+   "target_field": "heavy_atom_count",
+   "target_accession": "8208",
+   "accessions": [
+    "8208"
+   ],
+   "params": {
+    "accession": "8208",
+    "threshold": 15
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "f1.1_consistent": {
+     "fields": {
+      "heavy_atom_count": 16,
+      "molecular_weight": 305.01
+     },
+     "clean_value": 15,
+     "corrupted_value": 16,
+     "factor": 1.1,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f1.25_consistent": {
+     "fields": {
+      "heavy_atom_count": 19,
+      "molecular_weight": 346.6
+     },
+     "clean_value": 15,
+     "corrupted_value": 19,
+     "factor": 1.25,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f1.5_consistent": {
+     "fields": {
+      "heavy_atom_count": 22,
+      "molecular_weight": 415.92
+     },
+     "clean_value": 15,
+     "corrupted_value": 22,
+     "factor": 1.5,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f2_consistent": {
+     "fields": {
+      "heavy_atom_count": 30,
+      "molecular_weight": 554.56
+     },
+     "clean_value": 15,
+     "corrupted_value": 30,
+     "factor": 2,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f3_consistent": {
+     "fields": {
+      "heavy_atom_count": 45,
+      "molecular_weight": 831.84
+     },
+     "clean_value": 15,
+     "corrupted_value": 45,
+     "factor": 3,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f10_consistent": {
+     "fields": {
+      "heavy_atom_count": 150,
+      "molecular_weight": 2772.8
+     },
+     "clean_value": 15,
+     "corrupted_value": 150,
+     "factor": 10,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f50_consistent": {
+     "fields": {
+      "heavy_atom_count": 750,
+      "molecular_weight": 13864.0
+     },
+     "clean_value": 15,
+     "corrupted_value": 750,
+     "factor": 50,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f200_consistent": {
+     "fields": {
+      "heavy_atom_count": 3000,
+      "molecular_weight": 55456.0
+     },
+     "clean_value": 15,
+     "corrupted_value": 3000,
+     "factor": 200,
+     "consistent": true,
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 8208 have more than 15 heavy atoms? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "direction": "inflate",
+   "task_id": "b071"
+  },
+  {
+   "template": "heavy_atom_threshold",
+   "target_field": "heavy_atom_count",
+   "target_accession": "5610",
+   "accessions": [
+    "5610"
+   ],
+   "params": {
+    "accession": "5610",
+    "threshold": 10
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "f1.1_consistent": {
+     "fields": {
+      "heavy_atom_count": 11,
+      "molecular_weight": 150.9
+     },
+     "clean_value": 10,
+     "corrupted_value": 11,
+     "factor": 1.1,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f1.25_consistent": {
+     "fields": {
+      "heavy_atom_count": 12,
+      "molecular_weight": 171.48
+     },
+     "clean_value": 10,
+     "corrupted_value": 12,
+     "factor": 1.25,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f1.5_consistent": {
+     "fields": {
+      "heavy_atom_count": 15,
+      "molecular_weight": 205.77
+     },
+     "clean_value": 10,
+     "corrupted_value": 15,
+     "factor": 1.5,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f2_consistent": {
+     "fields": {
+      "heavy_atom_count": 20,
+      "molecular_weight": 274.36
+     },
+     "clean_value": 10,
+     "corrupted_value": 20,
+     "factor": 2,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f3_consistent": {
+     "fields": {
+      "heavy_atom_count": 30,
+      "molecular_weight": 411.54
+     },
+     "clean_value": 10,
+     "corrupted_value": 30,
+     "factor": 3,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f10_consistent": {
+     "fields": {
+      "heavy_atom_count": 100,
+      "molecular_weight": 1371.8
+     },
+     "clean_value": 10,
+     "corrupted_value": 100,
+     "factor": 10,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f50_consistent": {
+     "fields": {
+      "heavy_atom_count": 500,
+      "molecular_weight": 6859.0
+     },
+     "clean_value": 10,
+     "corrupted_value": 500,
+     "factor": 50,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f200_consistent": {
+     "fields": {
+      "heavy_atom_count": 2000,
+      "molecular_weight": 27436.0
+     },
+     "clean_value": 10,
+     "corrupted_value": 2000,
+     "factor": 200,
+     "consistent": true,
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 5610 have more than 10 heavy atoms? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "direction": "inflate",
+   "task_id": "b072"
+  },
+  {
+   "template": "heavy_atom_threshold",
+   "target_field": "heavy_atom_count",
+   "target_accession": "29269",
+   "accessions": [
+    "29269"
+   ],
+   "params": {
+    "accession": "29269",
+    "threshold": 17
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "f1.1_consistent": {
+     "fields": {
+      "heavy_atom_count": 18,
+      "molecular_weight": 256.6
+     },
+     "clean_value": 16,
+     "corrupted_value": 18,
+     "factor": 1.1,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f1.25_consistent": {
+     "fields": {
+      "heavy_atom_count": 20,
+      "molecular_weight": 291.59
+     },
+     "clean_value": 16,
+     "corrupted_value": 20,
+     "factor": 1.25,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f1.5_consistent": {
+     "fields": {
+      "heavy_atom_count": 24,
+      "molecular_weight": 349.91
+     },
+     "clean_value": 16,
+     "corrupted_value": 24,
+     "factor": 1.5,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f2_consistent": {
+     "fields": {
+      "heavy_atom_count": 32,
+      "molecular_weight": 466.54
+     },
+     "clean_value": 16,
+     "corrupted_value": 32,
+     "factor": 2,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f3_consistent": {
+     "fields": {
+      "heavy_atom_count": 48,
+      "molecular_weight": 699.81
+     },
+     "clean_value": 16,
+     "corrupted_value": 48,
+     "factor": 3,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f10_consistent": {
+     "fields": {
+      "heavy_atom_count": 160,
+      "molecular_weight": 2332.7
+     },
+     "clean_value": 16,
+     "corrupted_value": 160,
+     "factor": 10,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f50_consistent": {
+     "fields": {
+      "heavy_atom_count": 800,
+      "molecular_weight": 11663.5
+     },
+     "clean_value": 16,
+     "corrupted_value": 800,
+     "factor": 50,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f200_consistent": {
+     "fields": {
+      "heavy_atom_count": 3200,
+      "molecular_weight": 46654.0
+     },
+     "clean_value": 16,
+     "corrupted_value": 3200,
+     "factor": 200,
+     "consistent": true,
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 29269 have more than 17 heavy atoms? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "direction": "inflate",
+   "task_id": "b073"
+  },
+  {
+   "template": "heavy_atom_threshold",
+   "target_field": "heavy_atom_count",
+   "target_accession": "6674",
+   "accessions": [
+    "6674"
+   ],
+   "params": {
+    "accession": "6674",
+    "threshold": 30
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "f1.1_consistent": {
+     "fields": {
+      "heavy_atom_count": 32,
+      "molecular_weight": 442.75
+     },
+     "clean_value": 29,
+     "corrupted_value": 32,
+     "factor": 1.1,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f1.25_consistent": {
+     "fields": {
+      "heavy_atom_count": 36,
+      "molecular_weight": 503.12
+     },
+     "clean_value": 29,
+     "corrupted_value": 36,
+     "factor": 1.25,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f1.5_consistent": {
+     "fields": {
+      "heavy_atom_count": 44,
+      "molecular_weight": 603.75
+     },
+     "clean_value": 29,
+     "corrupted_value": 44,
+     "factor": 1.5,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f2_consistent": {
+     "fields": {
+      "heavy_atom_count": 58,
+      "molecular_weight": 805.0
+     },
+     "clean_value": 29,
+     "corrupted_value": 58,
+     "factor": 2,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f3_consistent": {
+     "fields": {
+      "heavy_atom_count": 87,
+      "molecular_weight": 1207.5
+     },
+     "clean_value": 29,
+     "corrupted_value": 87,
+     "factor": 3,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f10_consistent": {
+     "fields": {
+      "heavy_atom_count": 290,
+      "molecular_weight": 4025.0
+     },
+     "clean_value": 29,
+     "corrupted_value": 290,
+     "factor": 10,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f50_consistent": {
+     "fields": {
+      "heavy_atom_count": 1450,
+      "molecular_weight": 20125.0
+     },
+     "clean_value": 29,
+     "corrupted_value": 1450,
+     "factor": 50,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f200_consistent": {
+     "fields": {
+      "heavy_atom_count": 5800,
+      "molecular_weight": 80500.0
+     },
+     "clean_value": 29,
+     "corrupted_value": 5800,
+     "factor": 200,
+     "consistent": true,
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 6674 have more than 30 heavy atoms? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "direction": "inflate",
+   "task_id": "b074"
+  },
+  {
+   "template": "heavy_atom_threshold",
+   "target_field": "heavy_atom_count",
+   "target_accession": "16773",
+   "accessions": [
+    "16773"
+   ],
+   "params": {
+    "accession": "16773",
+    "threshold": 20
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "f1.1_consistent": {
+     "fields": {
+      "heavy_atom_count": 21,
+      "molecular_weight": 415.03
+     },
+     "clean_value": 19,
+     "corrupted_value": 21,
+     "factor": 1.1,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f1.25_consistent": {
+     "fields": {
+      "heavy_atom_count": 24,
+      "molecular_weight": 471.62
+     },
+     "clean_value": 19,
+     "corrupted_value": 24,
+     "factor": 1.25,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f1.5_consistent": {
+     "fields": {
+      "heavy_atom_count": 28,
+      "molecular_weight": 565.95
+     },
+     "clean_value": 19,
+     "corrupted_value": 28,
+     "factor": 1.5,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f2_consistent": {
+     "fields": {
+      "heavy_atom_count": 38,
+      "molecular_weight": 754.6
+     },
+     "clean_value": 19,
+     "corrupted_value": 38,
+     "factor": 2,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f3_consistent": {
+     "fields": {
+      "heavy_atom_count": 57,
+      "molecular_weight": 1131.9
+     },
+     "clean_value": 19,
+     "corrupted_value": 57,
+     "factor": 3,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f10_consistent": {
+     "fields": {
+      "heavy_atom_count": 190,
+      "molecular_weight": 3773.0
+     },
+     "clean_value": 19,
+     "corrupted_value": 190,
+     "factor": 10,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f50_consistent": {
+     "fields": {
+      "heavy_atom_count": 950,
+      "molecular_weight": 18865.0
+     },
+     "clean_value": 19,
+     "corrupted_value": 950,
+     "factor": 50,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f200_consistent": {
+     "fields": {
+      "heavy_atom_count": 3800,
+      "molecular_weight": 75460.0
+     },
+     "clean_value": 19,
+     "corrupted_value": 3800,
+     "factor": 200,
+     "consistent": true,
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 16773 have more than 20 heavy atoms? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "direction": "inflate",
+   "task_id": "b075"
+  },
+  {
+   "template": "heavy_atom_threshold",
+   "target_field": "heavy_atom_count",
+   "target_accession": "13471",
+   "accessions": [
+    "13471"
+   ],
+   "params": {
+    "accession": "13471",
+    "threshold": 22
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "f1.1_consistent": {
+     "fields": {
+      "heavy_atom_count": 23,
+      "molecular_weight": 312.84
+     },
+     "clean_value": 21,
+     "corrupted_value": 23,
+     "factor": 1.1,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f1.25_consistent": {
+     "fields": {
+      "heavy_atom_count": 26,
+      "molecular_weight": 355.5
+     },
+     "clean_value": 21,
+     "corrupted_value": 26,
+     "factor": 1.25,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f1.5_consistent": {
+     "fields": {
+      "heavy_atom_count": 32,
+      "molecular_weight": 426.6
+     },
+     "clean_value": 21,
+     "corrupted_value": 32,
+     "factor": 1.5,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f2_consistent": {
+     "fields": {
+      "heavy_atom_count": 42,
+      "molecular_weight": 568.8
+     },
+     "clean_value": 21,
+     "corrupted_value": 42,
+     "factor": 2,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f3_consistent": {
+     "fields": {
+      "heavy_atom_count": 63,
+      "molecular_weight": 853.2
+     },
+     "clean_value": 21,
+     "corrupted_value": 63,
+     "factor": 3,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f10_consistent": {
+     "fields": {
+      "heavy_atom_count": 210,
+      "molecular_weight": 2844.0
+     },
+     "clean_value": 21,
+     "corrupted_value": 210,
+     "factor": 10,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f50_consistent": {
+     "fields": {
+      "heavy_atom_count": 1050,
+      "molecular_weight": 14220.0
+     },
+     "clean_value": 21,
+     "corrupted_value": 1050,
+     "factor": 50,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f200_consistent": {
+     "fields": {
+      "heavy_atom_count": 4200,
+      "molecular_weight": 56880.0
+     },
+     "clean_value": 21,
+     "corrupted_value": 4200,
+     "factor": 200,
+     "consistent": true,
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 13471 have more than 22 heavy atoms? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "direction": "inflate",
+   "task_id": "b076"
+  },
+  {
+   "template": "heavy_atom_threshold",
+   "target_field": "heavy_atom_count",
+   "target_accession": "4054",
+   "accessions": [
+    "4054"
+   ],
+   "params": {
+    "accession": "4054",
+    "threshold": 13
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "f1.1_consistent": {
+     "fields": {
+      "heavy_atom_count": 14,
+      "molecular_weight": 197.23
+     },
+     "clean_value": 13,
+     "corrupted_value": 14,
+     "factor": 1.1,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f1.25_consistent": {
+     "fields": {
+      "heavy_atom_count": 16,
+      "molecular_weight": 224.12
+     },
+     "clean_value": 13,
+     "corrupted_value": 16,
+     "factor": 1.25,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f1.5_consistent": {
+     "fields": {
+      "heavy_atom_count": 20,
+      "molecular_weight": 268.95
+     },
+     "clean_value": 13,
+     "corrupted_value": 20,
+     "factor": 1.5,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f2_consistent": {
+     "fields": {
+      "heavy_atom_count": 26,
+      "molecular_weight": 358.6
+     },
+     "clean_value": 13,
+     "corrupted_value": 26,
+     "factor": 2,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f3_consistent": {
+     "fields": {
+      "heavy_atom_count": 39,
+      "molecular_weight": 537.9
+     },
+     "clean_value": 13,
+     "corrupted_value": 39,
+     "factor": 3,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f10_consistent": {
+     "fields": {
+      "heavy_atom_count": 130,
+      "molecular_weight": 1793.0
+     },
+     "clean_value": 13,
+     "corrupted_value": 130,
+     "factor": 10,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f50_consistent": {
+     "fields": {
+      "heavy_atom_count": 650,
+      "molecular_weight": 8965.0
+     },
+     "clean_value": 13,
+     "corrupted_value": 650,
+     "factor": 50,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f200_consistent": {
+     "fields": {
+      "heavy_atom_count": 2600,
+      "molecular_weight": 35860.0
+     },
+     "clean_value": 13,
+     "corrupted_value": 2600,
+     "factor": 200,
+     "consistent": true,
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 4054 have more than 13 heavy atoms? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "direction": "inflate",
+   "task_id": "b077"
+  },
+  {
+   "template": "heavy_atom_threshold",
+   "target_field": "heavy_atom_count",
+   "target_accession": "4788",
+   "accessions": [
+    "4788"
+   ],
+   "params": {
+    "accession": "4788",
+    "threshold": 21
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "f1.1_consistent": {
+     "fields": {
+      "heavy_atom_count": 22,
+      "molecular_weight": 301.7
+     },
+     "clean_value": 20,
+     "corrupted_value": 22,
+     "factor": 1.1,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f1.25_consistent": {
+     "fields": {
+      "heavy_atom_count": 25,
+      "molecular_weight": 342.84
+     },
+     "clean_value": 20,
+     "corrupted_value": 25,
+     "factor": 1.25,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f1.5_consistent": {
+     "fields": {
+      "heavy_atom_count": 30,
+      "molecular_weight": 411.4
+     },
+     "clean_value": 20,
+     "corrupted_value": 30,
+     "factor": 1.5,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f2_consistent": {
+     "fields": {
+      "heavy_atom_count": 40,
+      "molecular_weight": 548.54
+     },
+     "clean_value": 20,
+     "corrupted_value": 40,
+     "factor": 2,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f3_consistent": {
+     "fields": {
+      "heavy_atom_count": 60,
+      "molecular_weight": 822.81
+     },
+     "clean_value": 20,
+     "corrupted_value": 60,
+     "factor": 3,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f10_consistent": {
+     "fields": {
+      "heavy_atom_count": 200,
+      "molecular_weight": 2742.7
+     },
+     "clean_value": 20,
+     "corrupted_value": 200,
+     "factor": 10,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f50_consistent": {
+     "fields": {
+      "heavy_atom_count": 1000,
+      "molecular_weight": 13713.5
+     },
+     "clean_value": 20,
+     "corrupted_value": 1000,
+     "factor": 50,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f200_consistent": {
+     "fields": {
+      "heavy_atom_count": 4000,
+      "molecular_weight": 54854.0
+     },
+     "clean_value": 20,
+     "corrupted_value": 4000,
+     "factor": 200,
+     "consistent": true,
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 4788 have more than 21 heavy atoms? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "direction": "inflate",
+   "task_id": "b078"
+  },
+  {
+   "template": "heavy_atom_threshold",
+   "target_field": "heavy_atom_count",
+   "target_accession": "3400",
+   "accessions": [
+    "3400"
+   ],
+   "params": {
+    "accession": "3400",
+    "threshold": 25
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "f1.1_consistent": {
+     "fields": {
+      "heavy_atom_count": 26,
+      "molecular_weight": 377.08
+     },
+     "clean_value": 24,
+     "corrupted_value": 26,
+     "factor": 1.1,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f1.25_consistent": {
+     "fields": {
+      "heavy_atom_count": 30,
+      "molecular_weight": 428.5
+     },
+     "clean_value": 24,
+     "corrupted_value": 30,
+     "factor": 1.25,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f1.5_consistent": {
+     "fields": {
+      "heavy_atom_count": 36,
+      "molecular_weight": 514.2
+     },
+     "clean_value": 24,
+     "corrupted_value": 36,
+     "factor": 1.5,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f2_consistent": {
+     "fields": {
+      "heavy_atom_count": 48,
+      "molecular_weight": 685.6
+     },
+     "clean_value": 24,
+     "corrupted_value": 48,
+     "factor": 2,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f3_consistent": {
+     "fields": {
+      "heavy_atom_count": 72,
+      "molecular_weight": 1028.4
+     },
+     "clean_value": 24,
+     "corrupted_value": 72,
+     "factor": 3,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f10_consistent": {
+     "fields": {
+      "heavy_atom_count": 240,
+      "molecular_weight": 3428.0
+     },
+     "clean_value": 24,
+     "corrupted_value": 240,
+     "factor": 10,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f50_consistent": {
+     "fields": {
+      "heavy_atom_count": 1200,
+      "molecular_weight": 17140.0
+     },
+     "clean_value": 24,
+     "corrupted_value": 1200,
+     "factor": 50,
+     "consistent": true,
+     "implied": "yes"
+    },
+    "f200_consistent": {
+     "fields": {
+      "heavy_atom_count": 4800,
+      "molecular_weight": 68560.0
+     },
+     "clean_value": 24,
+     "corrupted_value": 4800,
+     "factor": 200,
+     "consistent": true,
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 3400 have more than 25 heavy atoms? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "direction": "inflate",
+   "task_id": "b079"
+  }
+ ]
+}

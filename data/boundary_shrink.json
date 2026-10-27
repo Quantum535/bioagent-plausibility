@@ -1,0 +1,4328 @@
+{
+ "seed": 0,
+ "n_tasks": 40,
+ "domain": "protein",
+ "proteins": "data/proteins_v2.json",
+ "tasks": [
+  {
+   "template": "length_threshold",
+   "target_field": "length",
+   "target_accession": "B6A8C7",
+   "accessions": [
+    "B6A8C7"
+   ],
+   "params": {
+    "accession": "B6A8C7",
+    "threshold": 257
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "f0.9_consistent": {
+     "fields": {
+      "length": 244,
+      "mass": 26510
+     },
+     "clean_value": 271,
+     "corrupted_value": 244,
+     "factor": 0.9,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.8_consistent": {
+     "fields": {
+      "length": 217,
+      "mass": 23564
+     },
+     "clean_value": 271,
+     "corrupted_value": 217,
+     "factor": 0.8,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.7_consistent": {
+     "fields": {
+      "length": 190,
+      "mass": 20618
+     },
+     "clean_value": 271,
+     "corrupted_value": 190,
+     "factor": 0.7,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.5_consistent": {
+     "fields": {
+      "length": 136,
+      "mass": 14728
+     },
+     "clean_value": 271,
+     "corrupted_value": 136,
+     "factor": 0.5,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.3_consistent": {
+     "fields": {
+      "length": 81,
+      "mass": 8836
+     },
+     "clean_value": 271,
+     "corrupted_value": 81,
+     "factor": 0.3,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.1_consistent": {
+     "fields": {
+      "length": 27,
+      "mass": 2946
+     },
+     "clean_value": 271,
+     "corrupted_value": 27,
+     "factor": 0.1,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.02_consistent": {
+     "fields": {
+      "length": 5,
+      "mass": 589
+     },
+     "clean_value": 271,
+     "corrupted_value": 5,
+     "factor": 0.02,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.005_consistent": {
+     "fields": {
+      "length": 1,
+      "mass": 147
+     },
+     "clean_value": 271,
+     "corrupted_value": 1,
+     "factor": 0.005,
+     "consistent": true,
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does protein B6A8C7 have more than 257 residues? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "direction": "shrink",
+   "task_id": "b000"
+  },
+  {
+   "template": "length_threshold",
+   "target_field": "length",
+   "target_accession": "Q05D32",
+   "accessions": [
+    "Q05D32"
+   ],
+   "params": {
+    "accession": "Q05D32",
+    "threshold": 442
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "f0.9_consistent": {
+     "fields": {
+      "length": 419,
+      "mass": 47699
+     },
+     "clean_value": 466,
+     "corrupted_value": 419,
+     "factor": 0.9,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.8_consistent": {
+     "fields": {
+      "length": 373,
+      "mass": 42399
+     },
+     "clean_value": 466,
+     "corrupted_value": 373,
+     "factor": 0.8,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.7_consistent": {
+     "fields": {
+      "length": 326,
+      "mass": 37099
+     },
+     "clean_value": 466,
+     "corrupted_value": 326,
+     "factor": 0.7,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.5_consistent": {
+     "fields": {
+      "length": 233,
+      "mass": 26500
+     },
+     "clean_value": 466,
+     "corrupted_value": 233,
+     "factor": 0.5,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.3_consistent": {
+     "fields": {
+      "length": 140,
+      "mass": 15900
+     },
+     "clean_value": 466,
+     "corrupted_value": 140,
+     "factor": 0.3,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.1_consistent": {
+     "fields": {
+      "length": 47,
+      "mass": 5300
+     },
+     "clean_value": 466,
+     "corrupted_value": 47,
+     "factor": 0.1,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.02_consistent": {
+     "fields": {
+      "length": 9,
+      "mass": 1060
+     },
+     "clean_value": 466,
+     "corrupted_value": 9,
+     "factor": 0.02,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.005_consistent": {
+     "fields": {
+      "length": 2,
+      "mass": 265
+     },
+     "clean_value": 466,
+     "corrupted_value": 2,
+     "factor": 0.005,
+     "consistent": true,
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does protein Q05D32 have more than 442 residues? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "direction": "shrink",
+   "task_id": "b001"
+  },
+  {
+   "template": "length_threshold",
+   "target_field": "length",
+   "target_accession": "P28039",
+   "accessions": [
+    "P28039"
+   ],
+   "params": {
+    "accession": "P28039",
+    "threshold": 546
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "f0.9_consistent": {
+     "fields": {
+      "length": 518,
+      "mass": 58594
+     },
+     "clean_value": 575,
+     "corrupted_value": 518,
+     "factor": 0.9,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.8_consistent": {
+     "fields": {
+      "length": 460,
+      "mass": 52084
+     },
+     "clean_value": 575,
+     "corrupted_value": 460,
+     "factor": 0.8,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.7_consistent": {
+     "fields": {
+      "length": 402,
+      "mass": 45574
+     },
+     "clean_value": 575,
+     "corrupted_value": 402,
+     "factor": 0.7,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.5_consistent": {
+     "fields": {
+      "length": 288,
+      "mass": 32552
+     },
+     "clean_value": 575,
+     "corrupted_value": 288,
+     "factor": 0.5,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.3_consistent": {
+     "fields": {
+      "length": 172,
+      "mass": 19532
+     },
+     "clean_value": 575,
+     "corrupted_value": 172,
+     "factor": 0.3,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.1_consistent": {
+     "fields": {
+      "length": 58,
+      "mass": 6510
+     },
+     "clean_value": 575,
+     "corrupted_value": 58,
+     "factor": 0.1,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.02_consistent": {
+     "fields": {
+      "length": 12,
+      "mass": 1302
+     },
+     "clean_value": 575,
+     "corrupted_value": 12,
+     "factor": 0.02,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.005_consistent": {
+     "fields": {
+      "length": 3,
+      "mass": 326
+     },
+     "clean_value": 575,
+     "corrupted_value": 3,
+     "factor": 0.005,
+     "consistent": true,
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does protein P28039 have more than 546 residues? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "direction": "shrink",
+   "task_id": "b002"
+  },
+  {
+   "template": "length_threshold",
+   "target_field": "length",
+   "target_accession": "Q96QS3",
+   "accessions": [
+    "Q96QS3"
+   ],
+   "params": {
+    "accession": "Q96QS3",
+    "threshold": 534
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "f0.9_consistent": {
+     "fields": {
+      "length": 506,
+      "mass": 52344
+     },
+     "clean_value": 562,
+     "corrupted_value": 506,
+     "factor": 0.9,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.8_consistent": {
+     "fields": {
+      "length": 450,
+      "mass": 46528
+     },
+     "clean_value": 562,
+     "corrupted_value": 450,
+     "factor": 0.8,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.7_consistent": {
+     "fields": {
+      "length": 393,
+      "mass": 40712
+     },
+     "clean_value": 562,
+     "corrupted_value": 393,
+     "factor": 0.7,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.5_consistent": {
+     "fields": {
+      "length": 281,
+      "mass": 29080
+     },
+     "clean_value": 562,
+     "corrupted_value": 281,
+     "factor": 0.5,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.3_consistent": {
+     "fields": {
+      "length": 169,
+      "mass": 17448
+     },
+     "clean_value": 562,
+     "corrupted_value": 169,
+     "factor": 0.3,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.1_consistent": {
+     "fields": {
+      "length": 56,
+      "mass": 5816
+     },
+     "clean_value": 562,
+     "corrupted_value": 56,
+     "factor": 0.1,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.02_consistent": {
+     "fields": {
+      "length": 11,
+      "mass": 1163
+     },
+     "clean_value": 562,
+     "corrupted_value": 11,
+     "factor": 0.02,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.005_consistent": {
+     "fields": {
+      "length": 3,
+      "mass": 291
+     },
+     "clean_value": 562,
+     "corrupted_value": 3,
+     "factor": 0.005,
+     "consistent": true,
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does protein Q96QS3 have more than 534 residues? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "direction": "shrink",
+   "task_id": "b003"
+  },
+  {
+   "template": "length_threshold",
+   "target_field": "length",
+   "target_accession": "Q9H4F8",
+   "accessions": [
+    "Q9H4F8"
+   ],
+   "params": {
+    "accession": "Q9H4F8",
+    "threshold": 412
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "f0.9_consistent": {
+     "fields": {
+      "length": 391,
+      "mass": 43347
+     },
+     "clean_value": 434,
+     "corrupted_value": 391,
+     "factor": 0.9,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.8_consistent": {
+     "fields": {
+      "length": 347,
+      "mass": 38530
+     },
+     "clean_value": 434,
+     "corrupted_value": 347,
+     "factor": 0.8,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.7_consistent": {
+     "fields": {
+      "length": 304,
+      "mass": 33714
+     },
+     "clean_value": 434,
+     "corrupted_value": 304,
+     "factor": 0.7,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.5_consistent": {
+     "fields": {
+      "length": 217,
+      "mass": 24082
+     },
+     "clean_value": 434,
+     "corrupted_value": 217,
+     "factor": 0.5,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.3_consistent": {
+     "fields": {
+      "length": 130,
+      "mass": 14449
+     },
+     "clean_value": 434,
+     "corrupted_value": 130,
+     "factor": 0.3,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.1_consistent": {
+     "fields": {
+      "length": 43,
+      "mass": 4816
+     },
+     "clean_value": 434,
+     "corrupted_value": 43,
+     "factor": 0.1,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.02_consistent": {
+     "fields": {
+      "length": 9,
+      "mass": 963
+     },
+     "clean_value": 434,
+     "corrupted_value": 9,
+     "factor": 0.02,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.005_consistent": {
+     "fields": {
+      "length": 2,
+      "mass": 241
+     },
+     "clean_value": 434,
+     "corrupted_value": 2,
+     "factor": 0.005,
+     "consistent": true,
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does protein Q9H4F8 have more than 412 residues? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "direction": "shrink",
+   "task_id": "b004"
+  },
+  {
+   "template": "length_threshold",
+   "target_field": "length",
+   "target_accession": "P19022",
+   "accessions": [
+    "P19022"
+   ],
+   "params": {
+    "accession": "P19022",
+    "threshold": 860
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "f0.9_consistent": {
+     "fields": {
+      "length": 815,
+      "mass": 89828
+     },
+     "clean_value": 906,
+     "corrupted_value": 815,
+     "factor": 0.9,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.8_consistent": {
+     "fields": {
+      "length": 725,
+      "mass": 79847
+     },
+     "clean_value": 906,
+     "corrupted_value": 725,
+     "factor": 0.8,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.7_consistent": {
+     "fields": {
+      "length": 634,
+      "mass": 69866
+     },
+     "clean_value": 906,
+     "corrupted_value": 634,
+     "factor": 0.7,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.5_consistent": {
+     "fields": {
+      "length": 453,
+      "mass": 49904
+     },
+     "clean_value": 906,
+     "corrupted_value": 453,
+     "factor": 0.5,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.3_consistent": {
+     "fields": {
+      "length": 272,
+      "mass": 29943
+     },
+     "clean_value": 906,
+     "corrupted_value": 272,
+     "factor": 0.3,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.1_consistent": {
+     "fields": {
+      "length": 91,
+      "mass": 9981
+     },
+     "clean_value": 906,
+     "corrupted_value": 91,
+     "factor": 0.1,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.02_consistent": {
+     "fields": {
+      "length": 18,
+      "mass": 1996
+     },
+     "clean_value": 906,
+     "corrupted_value": 18,
+     "factor": 0.02,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.005_consistent": {
+     "fields": {
+      "length": 5,
+      "mass": 499
+     },
+     "clean_value": 906,
+     "corrupted_value": 5,
+     "factor": 0.005,
+     "consistent": true,
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does protein P19022 have more than 860 residues? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "direction": "shrink",
+   "task_id": "b005"
+  },
+  {
+   "template": "length_threshold",
+   "target_field": "length",
+   "target_accession": "P07199",
+   "accessions": [
+    "P07199"
+   ],
+   "params": {
+    "accession": "P07199",
+    "threshold": 569
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "f0.9_consistent": {
+     "fields": {
+      "length": 539,
+      "mass": 58654
+     },
+     "clean_value": 599,
+     "corrupted_value": 539,
+     "factor": 0.9,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.8_consistent": {
+     "fields": {
+      "length": 479,
+      "mass": 52137
+     },
+     "clean_value": 599,
+     "corrupted_value": 479,
+     "factor": 0.8,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.7_consistent": {
+     "fields": {
+      "length": 419,
+      "mass": 45620
+     },
+     "clean_value": 599,
+     "corrupted_value": 419,
+     "factor": 0.7,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.5_consistent": {
+     "fields": {
+      "length": 300,
+      "mass": 32586
+     },
+     "clean_value": 599,
+     "corrupted_value": 300,
+     "factor": 0.5,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.3_consistent": {
+     "fields": {
+      "length": 180,
+      "mass": 19551
+     },
+     "clean_value": 599,
+     "corrupted_value": 180,
+     "factor": 0.3,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.1_consistent": {
+     "fields": {
+      "length": 60,
+      "mass": 6517
+     },
+     "clean_value": 599,
+     "corrupted_value": 60,
+     "factor": 0.1,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.02_consistent": {
+     "fields": {
+      "length": 12,
+      "mass": 1303
+     },
+     "clean_value": 599,
+     "corrupted_value": 12,
+     "factor": 0.02,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.005_consistent": {
+     "fields": {
+      "length": 3,
+      "mass": 326
+     },
+     "clean_value": 599,
+     "corrupted_value": 3,
+     "factor": 0.005,
+     "consistent": true,
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does protein P07199 have more than 569 residues? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "direction": "shrink",
+   "task_id": "b006"
+  },
+  {
+   "template": "length_threshold",
+   "target_field": "length",
+   "target_accession": "Q8WU68",
+   "accessions": [
+    "Q8WU68"
+   ],
+   "params": {
+    "accession": "Q8WU68",
+    "threshold": 209
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "f0.9_consistent": {
+     "fields": {
+      "length": 198,
+      "mass": 23170
+     },
+     "clean_value": 220,
+     "corrupted_value": 198,
+     "factor": 0.9,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.8_consistent": {
+     "fields": {
+      "length": 176,
+      "mass": 20595
+     },
+     "clean_value": 220,
+     "corrupted_value": 176,
+     "factor": 0.8,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.7_consistent": {
+     "fields": {
+      "length": 154,
+      "mass": 18021
+     },
+     "clean_value": 220,
+     "corrupted_value": 154,
+     "factor": 0.7,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.5_consistent": {
+     "fields": {
+      "length": 110,
+      "mass": 12872
+     },
+     "clean_value": 220,
+     "corrupted_value": 110,
+     "factor": 0.5,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.3_consistent": {
+     "fields": {
+      "length": 66,
+      "mass": 7723
+     },
+     "clean_value": 220,
+     "corrupted_value": 66,
+     "factor": 0.3,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.1_consistent": {
+     "fields": {
+      "length": 22,
+      "mass": 2574
+     },
+     "clean_value": 220,
+     "corrupted_value": 22,
+     "factor": 0.1,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.02_consistent": {
+     "fields": {
+      "length": 4,
+      "mass": 515
+     },
+     "clean_value": 220,
+     "corrupted_value": 4,
+     "factor": 0.02,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.005_consistent": {
+     "fields": {
+      "length": 1,
+      "mass": 129
+     },
+     "clean_value": 220,
+     "corrupted_value": 1,
+     "factor": 0.005,
+     "consistent": true,
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does protein Q8WU68 have more than 209 residues? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "direction": "shrink",
+   "task_id": "b007"
+  },
+  {
+   "template": "length_threshold",
+   "target_field": "length",
+   "target_accession": "Q9Y6H8",
+   "accessions": [
+    "Q9Y6H8"
+   ],
+   "params": {
+    "accession": "Q9Y6H8",
+    "threshold": 413
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "f0.9_consistent": {
+     "fields": {
+      "length": 392,
+      "mass": 42669
+     },
+     "clean_value": 435,
+     "corrupted_value": 392,
+     "factor": 0.9,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.8_consistent": {
+     "fields": {
+      "length": 348,
+      "mass": 37928
+     },
+     "clean_value": 435,
+     "corrupted_value": 348,
+     "factor": 0.8,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.7_consistent": {
+     "fields": {
+      "length": 304,
+      "mass": 33187
+     },
+     "clean_value": 435,
+     "corrupted_value": 304,
+     "factor": 0.7,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.5_consistent": {
+     "fields": {
+      "length": 218,
+      "mass": 23705
+     },
+     "clean_value": 435,
+     "corrupted_value": 218,
+     "factor": 0.5,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.3_consistent": {
+     "fields": {
+      "length": 130,
+      "mass": 14223
+     },
+     "clean_value": 435,
+     "corrupted_value": 130,
+     "factor": 0.3,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.1_consistent": {
+     "fields": {
+      "length": 44,
+      "mass": 4741
+     },
+     "clean_value": 435,
+     "corrupted_value": 44,
+     "factor": 0.1,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.02_consistent": {
+     "fields": {
+      "length": 9,
+      "mass": 948
+     },
+     "clean_value": 435,
+     "corrupted_value": 9,
+     "factor": 0.02,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.005_consistent": {
+     "fields": {
+      "length": 2,
+      "mass": 237
+     },
+     "clean_value": 435,
+     "corrupted_value": 2,
+     "factor": 0.005,
+     "consistent": true,
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does protein Q9Y6H8 have more than 413 residues? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "direction": "shrink",
+   "task_id": "b008"
+  },
+  {
+   "template": "length_threshold",
+   "target_field": "length",
+   "target_accession": "O15120",
+   "accessions": [
+    "O15120"
+   ],
+   "params": {
+    "accession": "O15120",
+    "threshold": 264
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "f0.9_consistent": {
+     "fields": {
+      "length": 250,
+      "mass": 27823
+     },
+     "clean_value": 278,
+     "corrupted_value": 250,
+     "factor": 0.9,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.8_consistent": {
+     "fields": {
+      "length": 222,
+      "mass": 24731
+     },
+     "clean_value": 278,
+     "corrupted_value": 222,
+     "factor": 0.8,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.7_consistent": {
+     "fields": {
+      "length": 195,
+      "mass": 21640
+     },
+     "clean_value": 278,
+     "corrupted_value": 195,
+     "factor": 0.7,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.5_consistent": {
+     "fields": {
+      "length": 139,
+      "mass": 15457
+     },
+     "clean_value": 278,
+     "corrupted_value": 139,
+     "factor": 0.5,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.3_consistent": {
+     "fields": {
+      "length": 83,
+      "mass": 9274
+     },
+     "clean_value": 278,
+     "corrupted_value": 83,
+     "factor": 0.3,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.1_consistent": {
+     "fields": {
+      "length": 28,
+      "mass": 3091
+     },
+     "clean_value": 278,
+     "corrupted_value": 28,
+     "factor": 0.1,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.02_consistent": {
+     "fields": {
+      "length": 6,
+      "mass": 618
+     },
+     "clean_value": 278,
+     "corrupted_value": 6,
+     "factor": 0.02,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.005_consistent": {
+     "fields": {
+      "length": 1,
+      "mass": 155
+     },
+     "clean_value": 278,
+     "corrupted_value": 1,
+     "factor": 0.005,
+     "consistent": true,
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does protein O15120 have more than 264 residues? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "direction": "shrink",
+   "task_id": "b009"
+  },
+  {
+   "template": "length_threshold",
+   "target_field": "length",
+   "target_accession": "Q9BQ90",
+   "accessions": [
+    "Q9BQ90"
+   ],
+   "params": {
+    "accession": "Q9BQ90",
+    "threshold": 363
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "f0.9_consistent": {
+     "fields": {
+      "length": 344,
+      "mass": 38779
+     },
+     "clean_value": 382,
+     "corrupted_value": 344,
+     "factor": 0.9,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.8_consistent": {
+     "fields": {
+      "length": 306,
+      "mass": 34470
+     },
+     "clean_value": 382,
+     "corrupted_value": 306,
+     "factor": 0.8,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.7_consistent": {
+     "fields": {
+      "length": 267,
+      "mass": 30162
+     },
+     "clean_value": 382,
+     "corrupted_value": 267,
+     "factor": 0.7,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.5_consistent": {
+     "fields": {
+      "length": 191,
+      "mass": 21544
+     },
+     "clean_value": 382,
+     "corrupted_value": 191,
+     "factor": 0.5,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.3_consistent": {
+     "fields": {
+      "length": 115,
+      "mass": 12926
+     },
+     "clean_value": 382,
+     "corrupted_value": 115,
+     "factor": 0.3,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.1_consistent": {
+     "fields": {
+      "length": 38,
+      "mass": 4309
+     },
+     "clean_value": 382,
+     "corrupted_value": 38,
+     "factor": 0.1,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.02_consistent": {
+     "fields": {
+      "length": 8,
+      "mass": 862
+     },
+     "clean_value": 382,
+     "corrupted_value": 8,
+     "factor": 0.02,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.005_consistent": {
+     "fields": {
+      "length": 2,
+      "mass": 215
+     },
+     "clean_value": 382,
+     "corrupted_value": 2,
+     "factor": 0.005,
+     "consistent": true,
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does protein Q9BQ90 have more than 363 residues? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "direction": "shrink",
+   "task_id": "b010"
+  },
+  {
+   "template": "length_threshold",
+   "target_field": "length",
+   "target_accession": "Q9BWT1",
+   "accessions": [
+    "Q9BWT1"
+   ],
+   "params": {
+    "accession": "Q9BWT1",
+    "threshold": 352
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "f0.9_consistent": {
+     "fields": {
+      "length": 334,
+      "mass": 38316
+     },
+     "clean_value": 371,
+     "corrupted_value": 334,
+     "factor": 0.9,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.8_consistent": {
+     "fields": {
+      "length": 297,
+      "mass": 34058
+     },
+     "clean_value": 371,
+     "corrupted_value": 297,
+     "factor": 0.8,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.7_consistent": {
+     "fields": {
+      "length": 260,
+      "mass": 29801
+     },
+     "clean_value": 371,
+     "corrupted_value": 260,
+     "factor": 0.7,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.5_consistent": {
+     "fields": {
+      "length": 186,
+      "mass": 21286
+     },
+     "clean_value": 371,
+     "corrupted_value": 186,
+     "factor": 0.5,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.3_consistent": {
+     "fields": {
+      "length": 111,
+      "mass": 12772
+     },
+     "clean_value": 371,
+     "corrupted_value": 111,
+     "factor": 0.3,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.1_consistent": {
+     "fields": {
+      "length": 37,
+      "mass": 4257
+     },
+     "clean_value": 371,
+     "corrupted_value": 37,
+     "factor": 0.1,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.02_consistent": {
+     "fields": {
+      "length": 7,
+      "mass": 851
+     },
+     "clean_value": 371,
+     "corrupted_value": 7,
+     "factor": 0.02,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.005_consistent": {
+     "fields": {
+      "length": 2,
+      "mass": 213
+     },
+     "clean_value": 371,
+     "corrupted_value": 2,
+     "factor": 0.005,
+     "consistent": true,
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does protein Q9BWT1 have more than 352 residues? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "direction": "shrink",
+   "task_id": "b011"
+  },
+  {
+   "template": "length_threshold",
+   "target_field": "length",
+   "target_accession": "O76075",
+   "accessions": [
+    "O76075"
+   ],
+   "params": {
+    "accession": "O76075",
+    "threshold": 321
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "f0.9_consistent": {
+     "fields": {
+      "length": 304,
+      "mass": 35199
+     },
+     "clean_value": 338,
+     "corrupted_value": 304,
+     "factor": 0.9,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.8_consistent": {
+     "fields": {
+      "length": 270,
+      "mass": 31288
+     },
+     "clean_value": 338,
+     "corrupted_value": 270,
+     "factor": 0.8,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.7_consistent": {
+     "fields": {
+      "length": 237,
+      "mass": 27377
+     },
+     "clean_value": 338,
+     "corrupted_value": 237,
+     "factor": 0.7,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.5_consistent": {
+     "fields": {
+      "length": 169,
+      "mass": 19555
+     },
+     "clean_value": 338,
+     "corrupted_value": 169,
+     "factor": 0.5,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.3_consistent": {
+     "fields": {
+      "length": 101,
+      "mass": 11733
+     },
+     "clean_value": 338,
+     "corrupted_value": 101,
+     "factor": 0.3,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.1_consistent": {
+     "fields": {
+      "length": 34,
+      "mass": 3911
+     },
+     "clean_value": 338,
+     "corrupted_value": 34,
+     "factor": 0.1,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.02_consistent": {
+     "fields": {
+      "length": 7,
+      "mass": 782
+     },
+     "clean_value": 338,
+     "corrupted_value": 7,
+     "factor": 0.02,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.005_consistent": {
+     "fields": {
+      "length": 2,
+      "mass": 196
+     },
+     "clean_value": 338,
+     "corrupted_value": 2,
+     "factor": 0.005,
+     "consistent": true,
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does protein O76075 have more than 321 residues? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "direction": "shrink",
+   "task_id": "b012"
+  },
+  {
+   "template": "length_threshold",
+   "target_field": "length",
+   "target_accession": "Q12962",
+   "accessions": [
+    "Q12962"
+   ],
+   "params": {
+    "accession": "Q12962",
+    "threshold": 207
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "f0.9_consistent": {
+     "fields": {
+      "length": 196,
+      "mass": 19540
+     },
+     "clean_value": 218,
+     "corrupted_value": 196,
+     "factor": 0.9,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.8_consistent": {
+     "fields": {
+      "length": 174,
+      "mass": 17369
+     },
+     "clean_value": 218,
+     "corrupted_value": 174,
+     "factor": 0.8,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.7_consistent": {
+     "fields": {
+      "length": 153,
+      "mass": 15198
+     },
+     "clean_value": 218,
+     "corrupted_value": 153,
+     "factor": 0.7,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.5_consistent": {
+     "fields": {
+      "length": 109,
+      "mass": 10856
+     },
+     "clean_value": 218,
+     "corrupted_value": 109,
+     "factor": 0.5,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.3_consistent": {
+     "fields": {
+      "length": 65,
+      "mass": 6513
+     },
+     "clean_value": 218,
+     "corrupted_value": 65,
+     "factor": 0.3,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.1_consistent": {
+     "fields": {
+      "length": 22,
+      "mass": 2171
+     },
+     "clean_value": 218,
+     "corrupted_value": 22,
+     "factor": 0.1,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.02_consistent": {
+     "fields": {
+      "length": 4,
+      "mass": 434
+     },
+     "clean_value": 218,
+     "corrupted_value": 4,
+     "factor": 0.02,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.005_consistent": {
+     "fields": {
+      "length": 1,
+      "mass": 109
+     },
+     "clean_value": 218,
+     "corrupted_value": 1,
+     "factor": 0.005,
+     "consistent": true,
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does protein Q12962 have more than 207 residues? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "direction": "shrink",
+   "task_id": "b013"
+  },
+  {
+   "template": "length_threshold",
+   "target_field": "length",
+   "target_accession": "O14843",
+   "accessions": [
+    "O14843"
+   ],
+   "params": {
+    "accession": "O14843",
+    "threshold": 328
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "f0.9_consistent": {
+     "fields": {
+      "length": 311,
+      "mass": 34784
+     },
+     "clean_value": 346,
+     "corrupted_value": 311,
+     "factor": 0.9,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.8_consistent": {
+     "fields": {
+      "length": 277,
+      "mass": 30919
+     },
+     "clean_value": 346,
+     "corrupted_value": 277,
+     "factor": 0.8,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.7_consistent": {
+     "fields": {
+      "length": 242,
+      "mass": 27054
+     },
+     "clean_value": 346,
+     "corrupted_value": 242,
+     "factor": 0.7,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.5_consistent": {
+     "fields": {
+      "length": 173,
+      "mass": 19324
+     },
+     "clean_value": 346,
+     "corrupted_value": 173,
+     "factor": 0.5,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.3_consistent": {
+     "fields": {
+      "length": 104,
+      "mass": 11595
+     },
+     "clean_value": 346,
+     "corrupted_value": 104,
+     "factor": 0.3,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.1_consistent": {
+     "fields": {
+      "length": 35,
+      "mass": 3865
+     },
+     "clean_value": 346,
+     "corrupted_value": 35,
+     "factor": 0.1,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.02_consistent": {
+     "fields": {
+      "length": 7,
+      "mass": 773
+     },
+     "clean_value": 346,
+     "corrupted_value": 7,
+     "factor": 0.02,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.005_consistent": {
+     "fields": {
+      "length": 2,
+      "mass": 193
+     },
+     "clean_value": 346,
+     "corrupted_value": 2,
+     "factor": 0.005,
+     "consistent": true,
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does protein O14843 have more than 328 residues? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "direction": "shrink",
+   "task_id": "b014"
+  },
+  {
+   "template": "length_threshold",
+   "target_field": "length",
+   "target_accession": "P43268",
+   "accessions": [
+    "P43268"
+   ],
+   "params": {
+    "accession": "P43268",
+    "threshold": 460
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "f0.9_consistent": {
+     "fields": {
+      "length": 436,
+      "mass": 48544
+     },
+     "clean_value": 484,
+     "corrupted_value": 436,
+     "factor": 0.9,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.8_consistent": {
+     "fields": {
+      "length": 387,
+      "mass": 43150
+     },
+     "clean_value": 484,
+     "corrupted_value": 387,
+     "factor": 0.8,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.7_consistent": {
+     "fields": {
+      "length": 339,
+      "mass": 37757
+     },
+     "clean_value": 484,
+     "corrupted_value": 339,
+     "factor": 0.7,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.5_consistent": {
+     "fields": {
+      "length": 242,
+      "mass": 26969
+     },
+     "clean_value": 484,
+     "corrupted_value": 242,
+     "factor": 0.5,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.3_consistent": {
+     "fields": {
+      "length": 145,
+      "mass": 16181
+     },
+     "clean_value": 484,
+     "corrupted_value": 145,
+     "factor": 0.3,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.1_consistent": {
+     "fields": {
+      "length": 48,
+      "mass": 5394
+     },
+     "clean_value": 484,
+     "corrupted_value": 48,
+     "factor": 0.1,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.02_consistent": {
+     "fields": {
+      "length": 10,
+      "mass": 1079
+     },
+     "clean_value": 484,
+     "corrupted_value": 10,
+     "factor": 0.02,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.005_consistent": {
+     "fields": {
+      "length": 2,
+      "mass": 270
+     },
+     "clean_value": 484,
+     "corrupted_value": 2,
+     "factor": 0.005,
+     "consistent": true,
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does protein P43268 have more than 460 residues? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "direction": "shrink",
+   "task_id": "b015"
+  },
+  {
+   "template": "length_threshold",
+   "target_field": "length",
+   "target_accession": "O14653",
+   "accessions": [
+    "O14653"
+   ],
+   "params": {
+    "accession": "O14653",
+    "threshold": 201
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "f0.9_consistent": {
+     "fields": {
+      "length": 191,
+      "mass": 22298
+     },
+     "clean_value": 212,
+     "corrupted_value": 191,
+     "factor": 0.9,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.8_consistent": {
+     "fields": {
+      "length": 170,
+      "mass": 19820
+     },
+     "clean_value": 212,
+     "corrupted_value": 170,
+     "factor": 0.8,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.7_consistent": {
+     "fields": {
+      "length": 148,
+      "mass": 17342
+     },
+     "clean_value": 212,
+     "corrupted_value": 148,
+     "factor": 0.7,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.5_consistent": {
+     "fields": {
+      "length": 106,
+      "mass": 12388
+     },
+     "clean_value": 212,
+     "corrupted_value": 106,
+     "factor": 0.5,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.3_consistent": {
+     "fields": {
+      "length": 64,
+      "mass": 7432
+     },
+     "clean_value": 212,
+     "corrupted_value": 64,
+     "factor": 0.3,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.1_consistent": {
+     "fields": {
+      "length": 21,
+      "mass": 2478
+     },
+     "clean_value": 212,
+     "corrupted_value": 21,
+     "factor": 0.1,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.02_consistent": {
+     "fields": {
+      "length": 4,
+      "mass": 496
+     },
+     "clean_value": 212,
+     "corrupted_value": 4,
+     "factor": 0.02,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.005_consistent": {
+     "fields": {
+      "length": 1,
+      "mass": 124
+     },
+     "clean_value": 212,
+     "corrupted_value": 1,
+     "factor": 0.005,
+     "consistent": true,
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does protein O14653 have more than 201 residues? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "direction": "shrink",
+   "task_id": "b016"
+  },
+  {
+   "template": "length_threshold",
+   "target_field": "length",
+   "target_accession": "O14508",
+   "accessions": [
+    "O14508"
+   ],
+   "params": {
+    "accession": "O14508",
+    "threshold": 188
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "f0.9_consistent": {
+     "fields": {
+      "length": 178,
+      "mass": 19955
+     },
+     "clean_value": 198,
+     "corrupted_value": 178,
+     "factor": 0.9,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.8_consistent": {
+     "fields": {
+      "length": 158,
+      "mass": 17738
+     },
+     "clean_value": 198,
+     "corrupted_value": 158,
+     "factor": 0.8,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.7_consistent": {
+     "fields": {
+      "length": 139,
+      "mass": 15520
+     },
+     "clean_value": 198,
+     "corrupted_value": 139,
+     "factor": 0.7,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.5_consistent": {
+     "fields": {
+      "length": 99,
+      "mass": 11086
+     },
+     "clean_value": 198,
+     "corrupted_value": 99,
+     "factor": 0.5,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.3_consistent": {
+     "fields": {
+      "length": 59,
+      "mass": 6652
+     },
+     "clean_value": 198,
+     "corrupted_value": 59,
+     "factor": 0.3,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.1_consistent": {
+     "fields": {
+      "length": 20,
+      "mass": 2217
+     },
+     "clean_value": 198,
+     "corrupted_value": 20,
+     "factor": 0.1,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.02_consistent": {
+     "fields": {
+      "length": 4,
+      "mass": 443
+     },
+     "clean_value": 198,
+     "corrupted_value": 4,
+     "factor": 0.02,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.005_consistent": {
+     "fields": {
+      "length": 1,
+      "mass": 111
+     },
+     "clean_value": 198,
+     "corrupted_value": 1,
+     "factor": 0.005,
+     "consistent": true,
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does protein O14508 have more than 188 residues? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "direction": "shrink",
+   "task_id": "b017"
+  },
+  {
+   "template": "length_threshold",
+   "target_field": "length",
+   "target_accession": "Q96F10",
+   "accessions": [
+    "Q96F10"
+   ],
+   "params": {
+    "accession": "Q96F10",
+    "threshold": 161
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "f0.9_consistent": {
+     "fields": {
+      "length": 153,
+      "mass": 17240
+     },
+     "clean_value": 170,
+     "corrupted_value": 153,
+     "factor": 0.9,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.8_consistent": {
+     "fields": {
+      "length": 136,
+      "mass": 15324
+     },
+     "clean_value": 170,
+     "corrupted_value": 136,
+     "factor": 0.8,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.7_consistent": {
+     "fields": {
+      "length": 119,
+      "mass": 13408
+     },
+     "clean_value": 170,
+     "corrupted_value": 119,
+     "factor": 0.7,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.5_consistent": {
+     "fields": {
+      "length": 85,
+      "mass": 9578
+     },
+     "clean_value": 170,
+     "corrupted_value": 85,
+     "factor": 0.5,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.3_consistent": {
+     "fields": {
+      "length": 51,
+      "mass": 5746
+     },
+     "clean_value": 170,
+     "corrupted_value": 51,
+     "factor": 0.3,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.1_consistent": {
+     "fields": {
+      "length": 17,
+      "mass": 1916
+     },
+     "clean_value": 170,
+     "corrupted_value": 17,
+     "factor": 0.1,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.02_consistent": {
+     "fields": {
+      "length": 3,
+      "mass": 383
+     },
+     "clean_value": 170,
+     "corrupted_value": 3,
+     "factor": 0.02,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.005_consistent": {
+     "fields": {
+      "length": 1,
+      "mass": 96
+     },
+     "clean_value": 170,
+     "corrupted_value": 1,
+     "factor": 0.005,
+     "consistent": true,
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does protein Q96F10 have more than 161 residues? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "direction": "shrink",
+   "task_id": "b018"
+  },
+  {
+   "template": "length_threshold",
+   "target_field": "length",
+   "target_accession": "P14770",
+   "accessions": [
+    "P14770"
+   ],
+   "params": {
+    "accession": "P14770",
+    "threshold": 168
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "f0.9_consistent": {
+     "fields": {
+      "length": 159,
+      "mass": 17141
+     },
+     "clean_value": 177,
+     "corrupted_value": 159,
+     "factor": 0.9,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.8_consistent": {
+     "fields": {
+      "length": 142,
+      "mass": 15237
+     },
+     "clean_value": 177,
+     "corrupted_value": 142,
+     "factor": 0.8,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.7_consistent": {
+     "fields": {
+      "length": 124,
+      "mass": 13332
+     },
+     "clean_value": 177,
+     "corrupted_value": 124,
+     "factor": 0.7,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.5_consistent": {
+     "fields": {
+      "length": 88,
+      "mass": 9523
+     },
+     "clean_value": 177,
+     "corrupted_value": 88,
+     "factor": 0.5,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.3_consistent": {
+     "fields": {
+      "length": 53,
+      "mass": 5714
+     },
+     "clean_value": 177,
+     "corrupted_value": 53,
+     "factor": 0.3,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.1_consistent": {
+     "fields": {
+      "length": 18,
+      "mass": 1905
+     },
+     "clean_value": 177,
+     "corrupted_value": 18,
+     "factor": 0.1,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.02_consistent": {
+     "fields": {
+      "length": 4,
+      "mass": 381
+     },
+     "clean_value": 177,
+     "corrupted_value": 4,
+     "factor": 0.02,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.005_consistent": {
+     "fields": {
+      "length": 1,
+      "mass": 95
+     },
+     "clean_value": 177,
+     "corrupted_value": 1,
+     "factor": 0.005,
+     "consistent": true,
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does protein P14770 have more than 168 residues? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "direction": "shrink",
+   "task_id": "b019"
+  },
+  {
+   "template": "mass_threshold",
+   "target_field": "mass",
+   "target_accession": "P18440",
+   "accessions": [
+    "P18440"
+   ],
+   "params": {
+    "accession": "P18440",
+    "threshold_kda": 32.2
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "f0.9_consistent": {
+     "fields": {
+      "mass": 30509,
+      "length": 261
+     },
+     "clean_value": 33899,
+     "corrupted_value": 30509,
+     "factor": 0.9,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.8_consistent": {
+     "fields": {
+      "mass": 27119,
+      "length": 232
+     },
+     "clean_value": 33899,
+     "corrupted_value": 27119,
+     "factor": 0.8,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.7_consistent": {
+     "fields": {
+      "mass": 23729,
+      "length": 203
+     },
+     "clean_value": 33899,
+     "corrupted_value": 23729,
+     "factor": 0.7,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.5_consistent": {
+     "fields": {
+      "mass": 16950,
+      "length": 145
+     },
+     "clean_value": 33899,
+     "corrupted_value": 16950,
+     "factor": 0.5,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.3_consistent": {
+     "fields": {
+      "mass": 10170,
+      "length": 87
+     },
+     "clean_value": 33899,
+     "corrupted_value": 10170,
+     "factor": 0.3,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.1_consistent": {
+     "fields": {
+      "mass": 3390,
+      "length": 29
+     },
+     "clean_value": 33899,
+     "corrupted_value": 3390,
+     "factor": 0.1,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.02_consistent": {
+     "fields": {
+      "mass": 678,
+      "length": 6
+     },
+     "clean_value": 33899,
+     "corrupted_value": 678,
+     "factor": 0.02,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.005_consistent": {
+     "fields": {
+      "mass": 169,
+      "length": 1
+     },
+     "clean_value": 33899,
+     "corrupted_value": 169,
+     "factor": 0.005,
+     "consistent": true,
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does protein P18440 have a molecular mass greater than 32.2 kDa? Answer yes or no and give the mass in kDa. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "direction": "shrink",
+   "task_id": "b020"
+  },
+  {
+   "template": "mass_threshold",
+   "target_field": "mass",
+   "target_accession": "O75781",
+   "accessions": [
+    "O75781"
+   ],
+   "params": {
+    "accession": "O75781",
+    "threshold_kda": 40.0
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "f0.9_consistent": {
+     "fields": {
+      "mass": 37868,
+      "length": 348
+     },
+     "clean_value": 42076,
+     "corrupted_value": 37868,
+     "factor": 0.9,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.8_consistent": {
+     "fields": {
+      "mass": 33661,
+      "length": 310
+     },
+     "clean_value": 42076,
+     "corrupted_value": 33661,
+     "factor": 0.8,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.7_consistent": {
+     "fields": {
+      "mass": 29453,
+      "length": 271
+     },
+     "clean_value": 42076,
+     "corrupted_value": 29453,
+     "factor": 0.7,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.5_consistent": {
+     "fields": {
+      "mass": 21038,
+      "length": 194
+     },
+     "clean_value": 42076,
+     "corrupted_value": 21038,
+     "factor": 0.5,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.3_consistent": {
+     "fields": {
+      "mass": 12623,
+      "length": 116
+     },
+     "clean_value": 42076,
+     "corrupted_value": 12623,
+     "factor": 0.3,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.1_consistent": {
+     "fields": {
+      "mass": 4208,
+      "length": 39
+     },
+     "clean_value": 42076,
+     "corrupted_value": 4208,
+     "factor": 0.1,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.02_consistent": {
+     "fields": {
+      "mass": 842,
+      "length": 8
+     },
+     "clean_value": 42076,
+     "corrupted_value": 842,
+     "factor": 0.02,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.005_consistent": {
+     "fields": {
+      "mass": 210,
+      "length": 2
+     },
+     "clean_value": 42076,
+     "corrupted_value": 210,
+     "factor": 0.005,
+     "consistent": true,
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does protein O75781 have a molecular mass greater than 40.0 kDa? Answer yes or no and give the mass in kDa. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "direction": "shrink",
+   "task_id": "b021"
+  },
+  {
+   "template": "mass_threshold",
+   "target_field": "mass",
+   "target_accession": "Q9UJY5",
+   "accessions": [
+    "Q9UJY5"
+   ],
+   "params": {
+    "accession": "Q9UJY5",
+    "threshold_kda": 66.9
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "f0.9_consistent": {
+     "fields": {
+      "mass": 63346,
+      "length": 575
+     },
+     "clean_value": 70384,
+     "corrupted_value": 63346,
+     "factor": 0.9,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.8_consistent": {
+     "fields": {
+      "mass": 56307,
+      "length": 511
+     },
+     "clean_value": 70384,
+     "corrupted_value": 56307,
+     "factor": 0.8,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.7_consistent": {
+     "fields": {
+      "mass": 49269,
+      "length": 447
+     },
+     "clean_value": 70384,
+     "corrupted_value": 49269,
+     "factor": 0.7,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.5_consistent": {
+     "fields": {
+      "mass": 35192,
+      "length": 320
+     },
+     "clean_value": 70384,
+     "corrupted_value": 35192,
+     "factor": 0.5,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.3_consistent": {
+     "fields": {
+      "mass": 21115,
+      "length": 192
+     },
+     "clean_value": 70384,
+     "corrupted_value": 21115,
+     "factor": 0.3,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.1_consistent": {
+     "fields": {
+      "mass": 7038,
+      "length": 64
+     },
+     "clean_value": 70384,
+     "corrupted_value": 7038,
+     "factor": 0.1,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.02_consistent": {
+     "fields": {
+      "mass": 1408,
+      "length": 13
+     },
+     "clean_value": 70384,
+     "corrupted_value": 1408,
+     "factor": 0.02,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.005_consistent": {
+     "fields": {
+      "mass": 352,
+      "length": 3
+     },
+     "clean_value": 70384,
+     "corrupted_value": 352,
+     "factor": 0.005,
+     "consistent": true,
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does protein Q9UJY5 have a molecular mass greater than 66.9 kDa? Answer yes or no and give the mass in kDa. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "direction": "shrink",
+   "task_id": "b022"
+  },
+  {
+   "template": "mass_threshold",
+   "target_field": "mass",
+   "target_accession": "P11836",
+   "accessions": [
+    "P11836"
+   ],
+   "params": {
+    "accession": "P11836",
+    "threshold_kda": 31.4
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "f0.9_consistent": {
+     "fields": {
+      "mass": 29769,
+      "length": 267
+     },
+     "clean_value": 33077,
+     "corrupted_value": 29769,
+     "factor": 0.9,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.8_consistent": {
+     "fields": {
+      "mass": 26462,
+      "length": 238
+     },
+     "clean_value": 33077,
+     "corrupted_value": 26462,
+     "factor": 0.8,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.7_consistent": {
+     "fields": {
+      "mass": 23154,
+      "length": 208
+     },
+     "clean_value": 33077,
+     "corrupted_value": 23154,
+     "factor": 0.7,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.5_consistent": {
+     "fields": {
+      "mass": 16538,
+      "length": 148
+     },
+     "clean_value": 33077,
+     "corrupted_value": 16538,
+     "factor": 0.5,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.3_consistent": {
+     "fields": {
+      "mass": 9923,
+      "length": 89
+     },
+     "clean_value": 33077,
+     "corrupted_value": 9923,
+     "factor": 0.3,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.1_consistent": {
+     "fields": {
+      "mass": 3308,
+      "length": 30
+     },
+     "clean_value": 33077,
+     "corrupted_value": 3308,
+     "factor": 0.1,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.02_consistent": {
+     "fields": {
+      "mass": 662,
+      "length": 6
+     },
+     "clean_value": 33077,
+     "corrupted_value": 662,
+     "factor": 0.02,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.005_consistent": {
+     "fields": {
+      "mass": 165,
+      "length": 1
+     },
+     "clean_value": 33077,
+     "corrupted_value": 165,
+     "factor": 0.005,
+     "consistent": true,
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does protein P11836 have a molecular mass greater than 31.4 kDa? Answer yes or no and give the mass in kDa. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "direction": "shrink",
+   "task_id": "b023"
+  },
+  {
+   "template": "mass_threshold",
+   "target_field": "mass",
+   "target_accession": "Q9BVA6",
+   "accessions": [
+    "Q9BVA6"
+   ],
+   "params": {
+    "accession": "Q9BVA6",
+    "threshold_kda": 49.2
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "f0.9_consistent": {
+     "fields": {
+      "mass": 46600,
+      "length": 412
+     },
+     "clean_value": 51778,
+     "corrupted_value": 46600,
+     "factor": 0.9,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.8_consistent": {
+     "fields": {
+      "mass": 41422,
+      "length": 366
+     },
+     "clean_value": 51778,
+     "corrupted_value": 41422,
+     "factor": 0.8,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.7_consistent": {
+     "fields": {
+      "mass": 36245,
+      "length": 321
+     },
+     "clean_value": 51778,
+     "corrupted_value": 36245,
+     "factor": 0.7,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.5_consistent": {
+     "fields": {
+      "mass": 25889,
+      "length": 229
+     },
+     "clean_value": 51778,
+     "corrupted_value": 25889,
+     "factor": 0.5,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.3_consistent": {
+     "fields": {
+      "mass": 15533,
+      "length": 137
+     },
+     "clean_value": 51778,
+     "corrupted_value": 15533,
+     "factor": 0.3,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.1_consistent": {
+     "fields": {
+      "mass": 5178,
+      "length": 46
+     },
+     "clean_value": 51778,
+     "corrupted_value": 5178,
+     "factor": 0.1,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.02_consistent": {
+     "fields": {
+      "mass": 1036,
+      "length": 9
+     },
+     "clean_value": 51778,
+     "corrupted_value": 1036,
+     "factor": 0.02,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.005_consistent": {
+     "fields": {
+      "mass": 259,
+      "length": 2
+     },
+     "clean_value": 51778,
+     "corrupted_value": 259,
+     "factor": 0.005,
+     "consistent": true,
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does protein Q9BVA6 have a molecular mass greater than 49.2 kDa? Answer yes or no and give the mass in kDa. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "direction": "shrink",
+   "task_id": "b024"
+  },
+  {
+   "template": "mass_threshold",
+   "target_field": "mass",
+   "target_accession": "Q6XZB0",
+   "accessions": [
+    "Q6XZB0"
+   ],
+   "params": {
+    "accession": "Q6XZB0",
+    "threshold_kda": 50.3
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "f0.9_consistent": {
+     "fields": {
+      "mass": 47630,
+      "length": 414
+     },
+     "clean_value": 52922,
+     "corrupted_value": 47630,
+     "factor": 0.9,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.8_consistent": {
+     "fields": {
+      "mass": 42338,
+      "length": 368
+     },
+     "clean_value": 52922,
+     "corrupted_value": 42338,
+     "factor": 0.8,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.7_consistent": {
+     "fields": {
+      "mass": 37045,
+      "length": 322
+     },
+     "clean_value": 52922,
+     "corrupted_value": 37045,
+     "factor": 0.7,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.5_consistent": {
+     "fields": {
+      "mass": 26461,
+      "length": 230
+     },
+     "clean_value": 52922,
+     "corrupted_value": 26461,
+     "factor": 0.5,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.3_consistent": {
+     "fields": {
+      "mass": 15877,
+      "length": 138
+     },
+     "clean_value": 52922,
+     "corrupted_value": 15877,
+     "factor": 0.3,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.1_consistent": {
+     "fields": {
+      "mass": 5292,
+      "length": 46
+     },
+     "clean_value": 52922,
+     "corrupted_value": 5292,
+     "factor": 0.1,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.02_consistent": {
+     "fields": {
+      "mass": 1058,
+      "length": 9
+     },
+     "clean_value": 52922,
+     "corrupted_value": 1058,
+     "factor": 0.02,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.005_consistent": {
+     "fields": {
+      "mass": 265,
+      "length": 2
+     },
+     "clean_value": 52922,
+     "corrupted_value": 265,
+     "factor": 0.005,
+     "consistent": true,
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does protein Q6XZB0 have a molecular mass greater than 50.3 kDa? Answer yes or no and give the mass in kDa. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "direction": "shrink",
+   "task_id": "b025"
+  },
+  {
+   "template": "mass_threshold",
+   "target_field": "mass",
+   "target_accession": "Q96DT7",
+   "accessions": [
+    "Q96DT7"
+   ],
+   "params": {
+    "accession": "Q96DT7",
+    "threshold_kda": 90.1
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "f0.9_consistent": {
+     "fields": {
+      "mass": 85405,
+      "length": 784
+     },
+     "clean_value": 94894,
+     "corrupted_value": 85405,
+     "factor": 0.9,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.8_consistent": {
+     "fields": {
+      "mass": 75915,
+      "length": 697
+     },
+     "clean_value": 94894,
+     "corrupted_value": 75915,
+     "factor": 0.8,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.7_consistent": {
+     "fields": {
+      "mass": 66426,
+      "length": 610
+     },
+     "clean_value": 94894,
+     "corrupted_value": 66426,
+     "factor": 0.7,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.5_consistent": {
+     "fields": {
+      "mass": 47447,
+      "length": 436
+     },
+     "clean_value": 94894,
+     "corrupted_value": 47447,
+     "factor": 0.5,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.3_consistent": {
+     "fields": {
+      "mass": 28468,
+      "length": 261
+     },
+     "clean_value": 94894,
+     "corrupted_value": 28468,
+     "factor": 0.3,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.1_consistent": {
+     "fields": {
+      "mass": 9489,
+      "length": 87
+     },
+     "clean_value": 94894,
+     "corrupted_value": 9489,
+     "factor": 0.1,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.02_consistent": {
+     "fields": {
+      "mass": 1898,
+      "length": 17
+     },
+     "clean_value": 94894,
+     "corrupted_value": 1898,
+     "factor": 0.02,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.005_consistent": {
+     "fields": {
+      "mass": 474,
+      "length": 4
+     },
+     "clean_value": 94894,
+     "corrupted_value": 474,
+     "factor": 0.005,
+     "consistent": true,
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does protein Q96DT7 have a molecular mass greater than 90.1 kDa? Answer yes or no and give the mass in kDa. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "direction": "shrink",
+   "task_id": "b026"
+  },
+  {
+   "template": "mass_threshold",
+   "target_field": "mass",
+   "target_accession": "P0DML3",
+   "accessions": [
+    "P0DML3"
+   ],
+   "params": {
+    "accession": "P0DML3",
+    "threshold_kda": 23.7
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "f0.9_consistent": {
+     "fields": {
+      "mass": 22495,
+      "length": 195
+     },
+     "clean_value": 24994,
+     "corrupted_value": 22495,
+     "factor": 0.9,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.8_consistent": {
+     "fields": {
+      "mass": 19995,
+      "length": 174
+     },
+     "clean_value": 24994,
+     "corrupted_value": 19995,
+     "factor": 0.8,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.7_consistent": {
+     "fields": {
+      "mass": 17496,
+      "length": 152
+     },
+     "clean_value": 24994,
+     "corrupted_value": 17496,
+     "factor": 0.7,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.5_consistent": {
+     "fields": {
+      "mass": 12497,
+      "length": 108
+     },
+     "clean_value": 24994,
+     "corrupted_value": 12497,
+     "factor": 0.5,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.3_consistent": {
+     "fields": {
+      "mass": 7498,
+      "length": 65
+     },
+     "clean_value": 24994,
+     "corrupted_value": 7498,
+     "factor": 0.3,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.1_consistent": {
+     "fields": {
+      "mass": 2499,
+      "length": 22
+     },
+     "clean_value": 24994,
+     "corrupted_value": 2499,
+     "factor": 0.1,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.02_consistent": {
+     "fields": {
+      "mass": 500,
+      "length": 4
+     },
+     "clean_value": 24994,
+     "corrupted_value": 500,
+     "factor": 0.02,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.005_consistent": {
+     "fields": {
+      "mass": 125,
+      "length": 1
+     },
+     "clean_value": 24994,
+     "corrupted_value": 125,
+     "factor": 0.005,
+     "consistent": true,
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does protein P0DML3 have a molecular mass greater than 23.7 kDa? Answer yes or no and give the mass in kDa. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "direction": "shrink",
+   "task_id": "b027"
+  },
+  {
+   "template": "mass_threshold",
+   "target_field": "mass",
+   "target_accession": "Q96GN5",
+   "accessions": [
+    "Q96GN5"
+   ],
+   "params": {
+    "accession": "Q96GN5",
+    "threshold_kda": 49.6
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "f0.9_consistent": {
+     "fields": {
+      "mass": 46985,
+      "length": 409
+     },
+     "clean_value": 52206,
+     "corrupted_value": 46985,
+     "factor": 0.9,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.8_consistent": {
+     "fields": {
+      "mass": 41765,
+      "length": 363
+     },
+     "clean_value": 52206,
+     "corrupted_value": 41765,
+     "factor": 0.8,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.7_consistent": {
+     "fields": {
+      "mass": 36544,
+      "length": 318
+     },
+     "clean_value": 52206,
+     "corrupted_value": 36544,
+     "factor": 0.7,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.5_consistent": {
+     "fields": {
+      "mass": 26103,
+      "length": 227
+     },
+     "clean_value": 52206,
+     "corrupted_value": 26103,
+     "factor": 0.5,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.3_consistent": {
+     "fields": {
+      "mass": 15662,
+      "length": 136
+     },
+     "clean_value": 52206,
+     "corrupted_value": 15662,
+     "factor": 0.3,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.1_consistent": {
+     "fields": {
+      "mass": 5221,
+      "length": 45
+     },
+     "clean_value": 52206,
+     "corrupted_value": 5221,
+     "factor": 0.1,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.02_consistent": {
+     "fields": {
+      "mass": 1044,
+      "length": 9
+     },
+     "clean_value": 52206,
+     "corrupted_value": 1044,
+     "factor": 0.02,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.005_consistent": {
+     "fields": {
+      "mass": 261,
+      "length": 2
+     },
+     "clean_value": 52206,
+     "corrupted_value": 261,
+     "factor": 0.005,
+     "consistent": true,
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does protein Q96GN5 have a molecular mass greater than 49.6 kDa? Answer yes or no and give the mass in kDa. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "direction": "shrink",
+   "task_id": "b028"
+  },
+  {
+   "template": "mass_threshold",
+   "target_field": "mass",
+   "target_accession": "Q9H7Z6",
+   "accessions": [
+    "Q9H7Z6"
+   ],
+   "params": {
+    "accession": "Q9H7Z6",
+    "threshold_kda": 49.8
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "f0.9_consistent": {
+     "fields": {
+      "mass": 47163,
+      "length": 412
+     },
+     "clean_value": 52403,
+     "corrupted_value": 47163,
+     "factor": 0.9,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.8_consistent": {
+     "fields": {
+      "mass": 41922,
+      "length": 366
+     },
+     "clean_value": 52403,
+     "corrupted_value": 41922,
+     "factor": 0.8,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.7_consistent": {
+     "fields": {
+      "mass": 36682,
+      "length": 321
+     },
+     "clean_value": 52403,
+     "corrupted_value": 36682,
+     "factor": 0.7,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.5_consistent": {
+     "fields": {
+      "mass": 26202,
+      "length": 229
+     },
+     "clean_value": 52403,
+     "corrupted_value": 26202,
+     "factor": 0.5,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.3_consistent": {
+     "fields": {
+      "mass": 15721,
+      "length": 137
+     },
+     "clean_value": 52403,
+     "corrupted_value": 15721,
+     "factor": 0.3,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.1_consistent": {
+     "fields": {
+      "mass": 5240,
+      "length": 46
+     },
+     "clean_value": 52403,
+     "corrupted_value": 5240,
+     "factor": 0.1,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.02_consistent": {
+     "fields": {
+      "mass": 1048,
+      "length": 9
+     },
+     "clean_value": 52403,
+     "corrupted_value": 1048,
+     "factor": 0.02,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.005_consistent": {
+     "fields": {
+      "mass": 262,
+      "length": 2
+     },
+     "clean_value": 52403,
+     "corrupted_value": 262,
+     "factor": 0.005,
+     "consistent": true,
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does protein Q9H7Z6 have a molecular mass greater than 49.8 kDa? Answer yes or no and give the mass in kDa. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "direction": "shrink",
+   "task_id": "b029"
+  },
+  {
+   "template": "mass_threshold",
+   "target_field": "mass",
+   "target_accession": "P49639",
+   "accessions": [
+    "P49639"
+   ],
+   "params": {
+    "accession": "P49639",
+    "threshold_kda": 34.8
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "f0.9_consistent": {
+     "fields": {
+      "mass": 32994,
+      "length": 302
+     },
+     "clean_value": 36660,
+     "corrupted_value": 32994,
+     "factor": 0.9,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.8_consistent": {
+     "fields": {
+      "mass": 29328,
+      "length": 268
+     },
+     "clean_value": 36660,
+     "corrupted_value": 29328,
+     "factor": 0.8,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.7_consistent": {
+     "fields": {
+      "mass": 25662,
+      "length": 234
+     },
+     "clean_value": 36660,
+     "corrupted_value": 25662,
+     "factor": 0.7,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.5_consistent": {
+     "fields": {
+      "mass": 18330,
+      "length": 168
+     },
+     "clean_value": 36660,
+     "corrupted_value": 18330,
+     "factor": 0.5,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.3_consistent": {
+     "fields": {
+      "mass": 10998,
+      "length": 100
+     },
+     "clean_value": 36660,
+     "corrupted_value": 10998,
+     "factor": 0.3,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.1_consistent": {
+     "fields": {
+      "mass": 3666,
+      "length": 34
+     },
+     "clean_value": 36660,
+     "corrupted_value": 3666,
+     "factor": 0.1,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.02_consistent": {
+     "fields": {
+      "mass": 733,
+      "length": 7
+     },
+     "clean_value": 36660,
+     "corrupted_value": 733,
+     "factor": 0.02,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.005_consistent": {
+     "fields": {
+      "mass": 183,
+      "length": 2
+     },
+     "clean_value": 36660,
+     "corrupted_value": 183,
+     "factor": 0.005,
+     "consistent": true,
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does protein P49639 have a molecular mass greater than 34.8 kDa? Answer yes or no and give the mass in kDa. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "direction": "shrink",
+   "task_id": "b030"
+  },
+  {
+   "template": "mass_threshold",
+   "target_field": "mass",
+   "target_accession": "Q9Y574",
+   "accessions": [
+    "Q9Y574"
+   ],
+   "params": {
+    "accession": "Q9Y574",
+    "threshold_kda": 45.8
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "f0.9_consistent": {
+     "fields": {
+      "mass": 43376,
+      "length": 383
+     },
+     "clean_value": 48195,
+     "corrupted_value": 43376,
+     "factor": 0.9,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.8_consistent": {
+     "fields": {
+      "mass": 38556,
+      "length": 341
+     },
+     "clean_value": 48195,
+     "corrupted_value": 38556,
+     "factor": 0.8,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.7_consistent": {
+     "fields": {
+      "mass": 33736,
+      "length": 298
+     },
+     "clean_value": 48195,
+     "corrupted_value": 33736,
+     "factor": 0.7,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.5_consistent": {
+     "fields": {
+      "mass": 24098,
+      "length": 213
+     },
+     "clean_value": 48195,
+     "corrupted_value": 24098,
+     "factor": 0.5,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.3_consistent": {
+     "fields": {
+      "mass": 14458,
+      "length": 128
+     },
+     "clean_value": 48195,
+     "corrupted_value": 14458,
+     "factor": 0.3,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.1_consistent": {
+     "fields": {
+      "mass": 4820,
+      "length": 43
+     },
+     "clean_value": 48195,
+     "corrupted_value": 4820,
+     "factor": 0.1,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.02_consistent": {
+     "fields": {
+      "mass": 964,
+      "length": 9
+     },
+     "clean_value": 48195,
+     "corrupted_value": 964,
+     "factor": 0.02,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.005_consistent": {
+     "fields": {
+      "mass": 241,
+      "length": 2
+     },
+     "clean_value": 48195,
+     "corrupted_value": 241,
+     "factor": 0.005,
+     "consistent": true,
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does protein Q9Y574 have a molecular mass greater than 45.8 kDa? Answer yes or no and give the mass in kDa. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "direction": "shrink",
+   "task_id": "b031"
+  },
+  {
+   "template": "mass_threshold",
+   "target_field": "mass",
+   "target_accession": "Q96BR5",
+   "accessions": [
+    "Q96BR5"
+   ],
+   "params": {
+    "accession": "Q96BR5",
+    "threshold_kda": 24.4
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "f0.9_consistent": {
+     "fields": {
+      "mass": 23138,
+      "length": 208
+     },
+     "clean_value": 25709,
+     "corrupted_value": 23138,
+     "factor": 0.9,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.8_consistent": {
+     "fields": {
+      "mass": 20567,
+      "length": 185
+     },
+     "clean_value": 25709,
+     "corrupted_value": 20567,
+     "factor": 0.8,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.7_consistent": {
+     "fields": {
+      "mass": 17996,
+      "length": 162
+     },
+     "clean_value": 25709,
+     "corrupted_value": 17996,
+     "factor": 0.7,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.5_consistent": {
+     "fields": {
+      "mass": 12854,
+      "length": 116
+     },
+     "clean_value": 25709,
+     "corrupted_value": 12854,
+     "factor": 0.5,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.3_consistent": {
+     "fields": {
+      "mass": 7713,
+      "length": 69
+     },
+     "clean_value": 25709,
+     "corrupted_value": 7713,
+     "factor": 0.3,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.1_consistent": {
+     "fields": {
+      "mass": 2571,
+      "length": 23
+     },
+     "clean_value": 25709,
+     "corrupted_value": 2571,
+     "factor": 0.1,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.02_consistent": {
+     "fields": {
+      "mass": 514,
+      "length": 5
+     },
+     "clean_value": 25709,
+     "corrupted_value": 514,
+     "factor": 0.02,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.005_consistent": {
+     "fields": {
+      "mass": 129,
+      "length": 1
+     },
+     "clean_value": 25709,
+     "corrupted_value": 129,
+     "factor": 0.005,
+     "consistent": true,
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does protein Q96BR5 have a molecular mass greater than 24.4 kDa? Answer yes or no and give the mass in kDa. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "direction": "shrink",
+   "task_id": "b032"
+  },
+  {
+   "template": "mass_threshold",
+   "target_field": "mass",
+   "target_accession": "Q9NX95",
+   "accessions": [
+    "Q9NX95"
+   ],
+   "params": {
+    "accession": "Q9NX95",
+    "threshold_kda": 68.8
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "f0.9_consistent": {
+     "fields": {
+      "mass": 65149,
+      "length": 597
+     },
+     "clean_value": 72388,
+     "corrupted_value": 65149,
+     "factor": 0.9,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.8_consistent": {
+     "fields": {
+      "mass": 57910,
+      "length": 530
+     },
+     "clean_value": 72388,
+     "corrupted_value": 57910,
+     "factor": 0.8,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.7_consistent": {
+     "fields": {
+      "mass": 50672,
+      "length": 464
+     },
+     "clean_value": 72388,
+     "corrupted_value": 50672,
+     "factor": 0.7,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.5_consistent": {
+     "fields": {
+      "mass": 36194,
+      "length": 332
+     },
+     "clean_value": 72388,
+     "corrupted_value": 36194,
+     "factor": 0.5,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.3_consistent": {
+     "fields": {
+      "mass": 21716,
+      "length": 199
+     },
+     "clean_value": 72388,
+     "corrupted_value": 21716,
+     "factor": 0.3,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.1_consistent": {
+     "fields": {
+      "mass": 7239,
+      "length": 66
+     },
+     "clean_value": 72388,
+     "corrupted_value": 7239,
+     "factor": 0.1,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.02_consistent": {
+     "fields": {
+      "mass": 1448,
+      "length": 13
+     },
+     "clean_value": 72388,
+     "corrupted_value": 1448,
+     "factor": 0.02,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.005_consistent": {
+     "fields": {
+      "mass": 362,
+      "length": 3
+     },
+     "clean_value": 72388,
+     "corrupted_value": 362,
+     "factor": 0.005,
+     "consistent": true,
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does protein Q9NX95 have a molecular mass greater than 68.8 kDa? Answer yes or no and give the mass in kDa. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "direction": "shrink",
+   "task_id": "b033"
+  },
+  {
+   "template": "mass_threshold",
+   "target_field": "mass",
+   "target_accession": "P04201",
+   "accessions": [
+    "P04201"
+   ],
+   "params": {
+    "accession": "P04201",
+    "threshold_kda": 35.6
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "f0.9_consistent": {
+     "fields": {
+      "mass": 33718,
+      "length": 292
+     },
+     "clean_value": 37465,
+     "corrupted_value": 33718,
+     "factor": 0.9,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.8_consistent": {
+     "fields": {
+      "mass": 29972,
+      "length": 260
+     },
+     "clean_value": 37465,
+     "corrupted_value": 29972,
+     "factor": 0.8,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.7_consistent": {
+     "fields": {
+      "mass": 26226,
+      "length": 227
+     },
+     "clean_value": 37465,
+     "corrupted_value": 26226,
+     "factor": 0.7,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.5_consistent": {
+     "fields": {
+      "mass": 18732,
+      "length": 162
+     },
+     "clean_value": 37465,
+     "corrupted_value": 18732,
+     "factor": 0.5,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.3_consistent": {
+     "fields": {
+      "mass": 11240,
+      "length": 98
+     },
+     "clean_value": 37465,
+     "corrupted_value": 11240,
+     "factor": 0.3,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.1_consistent": {
+     "fields": {
+      "mass": 3746,
+      "length": 32
+     },
+     "clean_value": 37465,
+     "corrupted_value": 3746,
+     "factor": 0.1,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.02_consistent": {
+     "fields": {
+      "mass": 749,
+      "length": 6
+     },
+     "clean_value": 37465,
+     "corrupted_value": 749,
+     "factor": 0.02,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.005_consistent": {
+     "fields": {
+      "mass": 187,
+      "length": 2
+     },
+     "clean_value": 37465,
+     "corrupted_value": 187,
+     "factor": 0.005,
+     "consistent": true,
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does protein P04201 have a molecular mass greater than 35.6 kDa? Answer yes or no and give the mass in kDa. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "direction": "shrink",
+   "task_id": "b034"
+  },
+  {
+   "template": "mass_threshold",
+   "target_field": "mass",
+   "target_accession": "P21673",
+   "accessions": [
+    "P21673"
+   ],
+   "params": {
+    "accession": "P21673",
+    "threshold_kda": 19.0
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "f0.9_consistent": {
+     "fields": {
+      "mass": 18022,
+      "length": 154
+     },
+     "clean_value": 20024,
+     "corrupted_value": 18022,
+     "factor": 0.9,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.8_consistent": {
+     "fields": {
+      "mass": 16019,
+      "length": 137
+     },
+     "clean_value": 20024,
+     "corrupted_value": 16019,
+     "factor": 0.8,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.7_consistent": {
+     "fields": {
+      "mass": 14017,
+      "length": 120
+     },
+     "clean_value": 20024,
+     "corrupted_value": 14017,
+     "factor": 0.7,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.5_consistent": {
+     "fields": {
+      "mass": 10012,
+      "length": 86
+     },
+     "clean_value": 20024,
+     "corrupted_value": 10012,
+     "factor": 0.5,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.3_consistent": {
+     "fields": {
+      "mass": 6007,
+      "length": 51
+     },
+     "clean_value": 20024,
+     "corrupted_value": 6007,
+     "factor": 0.3,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.1_consistent": {
+     "fields": {
+      "mass": 2002,
+      "length": 17
+     },
+     "clean_value": 20024,
+     "corrupted_value": 2002,
+     "factor": 0.1,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.02_consistent": {
+     "fields": {
+      "mass": 400,
+      "length": 3
+     },
+     "clean_value": 20024,
+     "corrupted_value": 400,
+     "factor": 0.02,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.005_consistent": {
+     "fields": {
+      "mass": 100,
+      "length": 1
+     },
+     "clean_value": 20024,
+     "corrupted_value": 100,
+     "factor": 0.005,
+     "consistent": true,
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does protein P21673 have a molecular mass greater than 19.0 kDa? Answer yes or no and give the mass in kDa. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "direction": "shrink",
+   "task_id": "b035"
+  },
+  {
+   "template": "mass_threshold",
+   "target_field": "mass",
+   "target_accession": "Q99581",
+   "accessions": [
+    "Q99581"
+   ],
+   "params": {
+    "accession": "Q99581",
+    "threshold_kda": 23.8
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "f0.9_consistent": {
+     "fields": {
+      "mass": 22527,
+      "length": 214
+     },
+     "clean_value": 25030,
+     "corrupted_value": 22527,
+     "factor": 0.9,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.8_consistent": {
+     "fields": {
+      "mass": 20024,
+      "length": 190
+     },
+     "clean_value": 25030,
+     "corrupted_value": 20024,
+     "factor": 0.8,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.7_consistent": {
+     "fields": {
+      "mass": 17521,
+      "length": 167
+     },
+     "clean_value": 25030,
+     "corrupted_value": 17521,
+     "factor": 0.7,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.5_consistent": {
+     "fields": {
+      "mass": 12515,
+      "length": 119
+     },
+     "clean_value": 25030,
+     "corrupted_value": 12515,
+     "factor": 0.5,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.3_consistent": {
+     "fields": {
+      "mass": 7509,
+      "length": 71
+     },
+     "clean_value": 25030,
+     "corrupted_value": 7509,
+     "factor": 0.3,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.1_consistent": {
+     "fields": {
+      "mass": 2503,
+      "length": 24
+     },
+     "clean_value": 25030,
+     "corrupted_value": 2503,
+     "factor": 0.1,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.02_consistent": {
+     "fields": {
+      "mass": 501,
+      "length": 5
+     },
+     "clean_value": 25030,
+     "corrupted_value": 501,
+     "factor": 0.02,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.005_consistent": {
+     "fields": {
+      "mass": 125,
+      "length": 1
+     },
+     "clean_value": 25030,
+     "corrupted_value": 125,
+     "factor": 0.005,
+     "consistent": true,
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does protein Q99581 have a molecular mass greater than 23.8 kDa? Answer yes or no and give the mass in kDa. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "direction": "shrink",
+   "task_id": "b036"
+  },
+  {
+   "template": "mass_threshold",
+   "target_field": "mass",
+   "target_accession": "P34995",
+   "accessions": [
+    "P34995"
+   ],
+   "params": {
+    "accession": "P34995",
+    "threshold_kda": 39.7
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "f0.9_consistent": {
+     "fields": {
+      "mass": 37621,
+      "length": 362
+     },
+     "clean_value": 41801,
+     "corrupted_value": 37621,
+     "factor": 0.9,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.8_consistent": {
+     "fields": {
+      "mass": 33441,
+      "length": 322
+     },
+     "clean_value": 41801,
+     "corrupted_value": 33441,
+     "factor": 0.8,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.7_consistent": {
+     "fields": {
+      "mass": 29261,
+      "length": 281
+     },
+     "clean_value": 41801,
+     "corrupted_value": 29261,
+     "factor": 0.7,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.5_consistent": {
+     "fields": {
+      "mass": 20900,
+      "length": 201
+     },
+     "clean_value": 41801,
+     "corrupted_value": 20900,
+     "factor": 0.5,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.3_consistent": {
+     "fields": {
+      "mass": 12540,
+      "length": 121
+     },
+     "clean_value": 41801,
+     "corrupted_value": 12540,
+     "factor": 0.3,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.1_consistent": {
+     "fields": {
+      "mass": 4180,
+      "length": 40
+     },
+     "clean_value": 41801,
+     "corrupted_value": 4180,
+     "factor": 0.1,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.02_consistent": {
+     "fields": {
+      "mass": 836,
+      "length": 8
+     },
+     "clean_value": 41801,
+     "corrupted_value": 836,
+     "factor": 0.02,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.005_consistent": {
+     "fields": {
+      "mass": 209,
+      "length": 2
+     },
+     "clean_value": 41801,
+     "corrupted_value": 209,
+     "factor": 0.005,
+     "consistent": true,
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does protein P34995 have a molecular mass greater than 39.7 kDa? Answer yes or no and give the mass in kDa. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "direction": "shrink",
+   "task_id": "b037"
+  },
+  {
+   "template": "mass_threshold",
+   "target_field": "mass",
+   "target_accession": "O43237",
+   "accessions": [
+    "O43237"
+   ],
+   "params": {
+    "accession": "O43237",
+    "threshold_kda": 51.4
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "f0.9_consistent": {
+     "fields": {
+      "mass": 48689,
+      "length": 443
+     },
+     "clean_value": 54099,
+     "corrupted_value": 48689,
+     "factor": 0.9,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.8_consistent": {
+     "fields": {
+      "mass": 43279,
+      "length": 394
+     },
+     "clean_value": 54099,
+     "corrupted_value": 43279,
+     "factor": 0.8,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.7_consistent": {
+     "fields": {
+      "mass": 37869,
+      "length": 344
+     },
+     "clean_value": 54099,
+     "corrupted_value": 37869,
+     "factor": 0.7,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.5_consistent": {
+     "fields": {
+      "mass": 27050,
+      "length": 246
+     },
+     "clean_value": 54099,
+     "corrupted_value": 27050,
+     "factor": 0.5,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.3_consistent": {
+     "fields": {
+      "mass": 16230,
+      "length": 148
+     },
+     "clean_value": 54099,
+     "corrupted_value": 16230,
+     "factor": 0.3,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.1_consistent": {
+     "fields": {
+      "mass": 5410,
+      "length": 49
+     },
+     "clean_value": 54099,
+     "corrupted_value": 5410,
+     "factor": 0.1,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.02_consistent": {
+     "fields": {
+      "mass": 1082,
+      "length": 10
+     },
+     "clean_value": 54099,
+     "corrupted_value": 1082,
+     "factor": 0.02,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.005_consistent": {
+     "fields": {
+      "mass": 270,
+      "length": 2
+     },
+     "clean_value": 54099,
+     "corrupted_value": 270,
+     "factor": 0.005,
+     "consistent": true,
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does protein O43237 have a molecular mass greater than 51.4 kDa? Answer yes or no and give the mass in kDa. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "direction": "shrink",
+   "task_id": "b038"
+  },
+  {
+   "template": "mass_threshold",
+   "target_field": "mass",
+   "target_accession": "O76050",
+   "accessions": [
+    "O76050"
+   ],
+   "params": {
+    "accession": "O76050",
+    "threshold_kda": 58.8
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "f0.9_consistent": {
+     "fields": {
+      "mass": 55674,
+      "length": 517
+     },
+     "clean_value": 61860,
+     "corrupted_value": 55674,
+     "factor": 0.9,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.8_consistent": {
+     "fields": {
+      "mass": 49488,
+      "length": 459
+     },
+     "clean_value": 61860,
+     "corrupted_value": 49488,
+     "factor": 0.8,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.7_consistent": {
+     "fields": {
+      "mass": 43302,
+      "length": 402
+     },
+     "clean_value": 61860,
+     "corrupted_value": 43302,
+     "factor": 0.7,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.5_consistent": {
+     "fields": {
+      "mass": 30930,
+      "length": 287
+     },
+     "clean_value": 61860,
+     "corrupted_value": 30930,
+     "factor": 0.5,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.3_consistent": {
+     "fields": {
+      "mass": 18558,
+      "length": 172
+     },
+     "clean_value": 61860,
+     "corrupted_value": 18558,
+     "factor": 0.3,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.1_consistent": {
+     "fields": {
+      "mass": 6186,
+      "length": 57
+     },
+     "clean_value": 61860,
+     "corrupted_value": 6186,
+     "factor": 0.1,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.02_consistent": {
+     "fields": {
+      "mass": 1237,
+      "length": 11
+     },
+     "clean_value": 61860,
+     "corrupted_value": 1237,
+     "factor": 0.02,
+     "consistent": true,
+     "implied": "no"
+    },
+    "f0.005_consistent": {
+     "fields": {
+      "mass": 309,
+      "length": 3
+     },
+     "clean_value": 61860,
+     "corrupted_value": 309,
+     "factor": 0.005,
+     "consistent": true,
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does protein O76050 have a molecular mass greater than 58.8 kDa? Answer yes or no and give the mass in kDa. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "direction": "shrink",
+   "task_id": "b039"
+  }
+ ]
+}
