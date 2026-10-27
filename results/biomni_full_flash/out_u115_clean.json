@@ -1,0 +1,7 @@
+{
+ "task_id": "u115",
+ "condition": "clean",
+ "elapsed": 28.331299781799316,
+ "final": "1. [\u2713] Query UniProt for accession P27037 to find the gene symbol.\n2. [\u2713] Verify details and formulate the response.\n\nUniProt entry P27037 corresponds to human Activin receptor type-2A, which is encoded by the gene *ACVR2A*.\n\n<solution>\n```json\n{\n  \"answer\": \"ACVR2A\",\n  \"concerns\": []\n}\n```\n</solution>",
+ "error": null
+}

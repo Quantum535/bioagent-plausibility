@@ -1,0 +1,9 @@
+{"t": 1793022285.3291452, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793022285.813834, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact:UPB1+AND+organism_id:9606+AND+reviewed:true&format=json"}
+{"t": 1793022285.824652, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793022286.276993, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact:NDUFS8+AND+organism_id:9606+AND+reviewed:true&format=json"}
+{"t": 1793022291.452575, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793022291.935472, "kind": "http", "lib": "netlog_shim.py", "host": "rest.ensembl.org", "method": "GET", "path": "/lookup/symbol/homo_sapiens/UPB1?content-type=application/json;expand=1"}
+{"t": 1793022295.882159, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793022296.485197, "kind": "http", "lib": "netlog_shim.py", "host": "rest.ensembl.org", "method": "GET", "path": "/lookup/symbol/homo_sapiens/NDUFS8?content-type=application/json;expand=1"}
+{"t": 1793022306.481889, "kind": "dns", "lib": "netlog_shim.py", "host": "aiplatform.googleapis.com"}

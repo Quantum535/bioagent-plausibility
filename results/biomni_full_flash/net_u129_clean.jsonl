@@ -1,0 +1,9 @@
+{"t": 1793022619.205846, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact:TASL AND organism_id:9606 AND reviewed:true&format=json&size=3"}
+{"t": 1793022624.930101, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact%3ATASL%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&format=json&size=3"}
+{"t": 1793022624.9305012, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793022625.957819, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact%3AADA%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&format=json&size=3"}
+{"t": 1793022625.958115, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793022633.040294, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/Q9HAI6.json"}
+{"t": 1793022633.040731, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793022633.564637, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/P00813.json"}
+{"t": 1793022633.564744, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}

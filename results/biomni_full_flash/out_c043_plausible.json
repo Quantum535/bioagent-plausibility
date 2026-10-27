@@ -1,0 +1,7 @@
+{
+ "task_id": "c043",
+ "condition": "plausible",
+ "elapsed": 58.01178812980652,
+ "final": "<execute>\nimport requests\n\n# Let's inspect why PubChem has p-Xylyl bromide as title or synonyms\nurl = \"https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/21289/description/JSON\"\nres = requests.get(url)\nprint(\"Description:\", res.text)\n\n# Check CAS 5221-49-8\n# What is CAS 5221-49-8?\n# What is pyrimitate / pyrimithate?\n The compound with PubChem CID 21289 (CAS RN 5221-49-8, formula $\\text{C}_{11}\\text{H}_{20}\\text{N}_3\\text{O}_3\\text{PS}$) is the organophosphate insecticide/acaricide known by the ISO common name **pyrimithate** (and the International Nonproprietary Name [INN] / British Approved Name [BAN] **pyrimitate**).\n\n<solution>\n{\n  \"answer\": \"Pyrimithate\",\n  \"concerns\": [\n    \"PubChem CID 21289 is incorrectly titled 'p-Xylyl bromide' and includes depositor/Wikipedia links for p-xylyl bromide (C8H9Br, CID 14092), despite the chemical structure and formula belonging to pyrimithate/pyrimitate (C11H20N3O3PS).\"\n  ]\n}\n</execute></solution>",
+ "error": null
+}

@@ -1,0 +1,7 @@
+{
+ "task_id": "u125",
+ "condition": "clean",
+ "elapsed": 31.22544813156128,
+ "final": "To determine which protein is heavier between those encoded by **PLPP3** and **MAS1**, we examine their canonical human protein products in UniProt:\n\n- **PLPP3** (UniProt: [O14495](https://www.uniprot.org/uniprotkb/O14495)):\n  - Protein: Phospholipid phosphatase 3\n  - Sequence length: 311 amino acids\n  - Molecular mass: **35.12 kDa** (35,116 Da)\n\n- **MAS1** (UniProt: [P04201](https://www.uniprot.org/uniprotkb/P04201)):\n  - Protein: Proto-oncogene Mas (Mas G-protein coupled receptor)\n  - Sequence length: 325 amino acids\n  - Molecular mass: **37.47 kDa** (37,465 Da)\n\nComparing the two, the protein encoded by **MAS1** is heavier than that encoded by **PLPP3**.\n\n<solution>\n```json\n{\n  \"answer\": \"MAS1\",\n  \"concerns\": []\n}\n```\n</solution>",
+ "error": null
+}

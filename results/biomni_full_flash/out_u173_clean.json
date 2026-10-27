@@ -1,0 +1,7 @@
+{
+ "task_id": "u173",
+ "condition": "clean",
+ "elapsed": 37.4617338180542,
+ "final": "Let's check the details of isoform 2 of GET1:\n\n<execute>\nurl = \"https://rest.uniprot.org/uniprotkb/O00258.json\"\nres = requests.get(url).json()\nfor feat in res.get('features', []):\n    if feat.get('type') == 'Alternative sequence':\n        print(feat)\n To determine which protein is heavier between those encoded by **RCVRN** and **GET1**:\n\n1. **RCVRN** encodes human **Recoverin** (UniProt: [P35243](https://www.uniprot.org/uniprotkb/P35243)):\n   - Length: 200 amino acids\n   - Molecular mass: **23.13 kDa** (23,130 Da)\n\n2. **GET1** encodes human **Guided entry of tail-anchored proteins factor 1** (UniProt: [O00258](https://www.uniprot.org/uniprotkb/O00258)):\n   - Length: 174 amino acids (canonical isoform 1)\n   - Molecular mass: **19.78 kDa** (19,780 Da)\n\nComparing the two, the protein encoded by **RCVRN** (23.13 kDa) is heavier than the protein encoded by **GET1** (19.78 kDa).\n\n<solution>\n```json\n{\n  \"answer\": \"RCVRN\",\n  \"concerns\": []\n}\n```\n</execute></solution>",
+ "error": null
+}

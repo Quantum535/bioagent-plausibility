@@ -1,0 +1,13 @@
+{"t": 1793024308.629798, "kind": "dns", "lib": "netlog_shim.py", "host": "api.anthropic.com"}
+{"t": 1793024311.7923, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793024312.4223518, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact:IFIT1+AND+organism_id:9606+AND+reviewed:true&format=json&fields=accession,gene_names,length,sequence"}
+{"t": 1793024316.120529, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793024316.577281, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact:MS4A1+AND+organism_id:9606+AND+reviewed:true&fields=accession,gene_names,protein_name,length,sequence&format=json"}
+{"t": 1793024316.818273, "kind": "dns", "lib": "netlog_shim.py", "host": "aiplatform.googleapis.com"}
+{"t": 1793024322.1349251, "kind": "dns", "lib": "netlog_shim.py", "host": "api.anthropic.com"}
+{"t": 1793024324.9673622, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793024325.441626, "kind": "http", "lib": "netlog_shim.py", "host": "rest.ensembl.org", "method": "GET", "path": "/lookup/symbol/homo_sapiens/IFIT1?expand=1"}
+{"t": 1793024368.4780679, "kind": "dns", "lib": "netlog_shim.py", "host": "api.anthropic.com"}
+{"t": 1793024371.51006, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793024371.974379, "kind": "http", "lib": "netlog_shim.py", "host": "rest.ensembl.org", "method": "GET", "path": "/lookup/symbol/homo_sapiens/MS4A1?expand=1"}
+{"t": 1793024381.09822, "kind": "dns", "lib": "netlog_shim.py", "host": "aiplatform.googleapis.com"}

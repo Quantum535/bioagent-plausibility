@@ -1,0 +1,7 @@
+{
+ "task_id": "u023",
+ "condition": "impossible",
+ "elapsed": 35.36013889312744,
+ "final": "<execute>\nimport requests\n\nurl = \"https://rest.uniprot.org/uniprotkb/P17861.txt\"\nresponse = requests.get(url)\nfor line in response.text.splitlines()[:30]:\n    print(line)\n <execute>\nimport requests\nimport json\n\nurl = \"https://rest.uniprot.org/uniprotkb/P17861.json\"\nresponse = requests.get(url)\ndata = response.json()\nprint(json.dumps(data.get('genes'), indent=2))\n To determine which gene encodes UniProt accession **P17861**, we queried UniProt and HGNC:\n\n- **UniProt Entry**: P17861 (`XBP1_HUMAN`)\n- **Protein Name**: X-box-binding protein 1 (XBP-1)\n- **Organism**: *Homo sapiens*\n- **HGNC ID**: HGNC:12801\n- **Approved Gene Symbol**: XBP1\n\n<solution>\n```json\n{\n  \"answer\": \"XBP1\",\n  \"concerns\": []\n}\n```\n</execute></solution>",
+ "error": null
+}

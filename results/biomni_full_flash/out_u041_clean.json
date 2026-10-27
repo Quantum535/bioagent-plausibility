@@ -1,0 +1,7 @@
+{
+ "task_id": "u041",
+ "condition": "clean",
+ "elapsed": 35.3670072555542,
+ "final": "To determine whether the protein encoded by **ADRA2B** or **ICAM3** is heavier, we can retrieve the canonical protein sequences and their corresponding molecular masses from UniProt (human):\n\n1. **ADRA2B** (Alpha-2B adrenergic receptor, UniProt: [P18089](https://www.uniprot.org/uniprotkb/P18089/entry)):\n   - Length: 450 amino acids\n   - Calculated molecular mass: **49.95 kDa** (49,954 Da)\n\n2. **ICAM3** (Intercellular adhesion molecule 3, UniProt: [P32942](https://www.uniprot.org/uniprotkb/P32942/entry)):\n   - Length: 547 amino acids (precursor)\n   - Calculated unmodified precursor mass: **59.54 kDa** (59,541 Da)\n   - Calculated mature chain mass (residues 30\u2013547, post-cleavage of signal peptide): **56.41 kDa**\n\nIn either case (precursor or mature form, as well as with post-translational glycosylation which further increases ICAM-3's apparent mass to ~120\u2013160 kDa), **ICAM3** is heavier than **ADRA2B**.\n\n<solution>\n```json\n{\n  \"answer\": \"ICAM3\",\n  \"concerns\": []\n}\n```\n</solution>",
+ "error": null
+}

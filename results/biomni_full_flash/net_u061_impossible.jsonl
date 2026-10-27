@@ -1,0 +1,10 @@
+{"t": 1793009481.692415, "kind": "dns", "lib": "netlog_shim.py", "host": "api.anthropic.com"}
+{"t": 1793009485.003402, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793009485.484548, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact:KCNQ3+AND+organism_id:9606+AND+reviewed:true&fields=accession,mass,length,cc_alternative_products&format=json"}
+{"t": 1793009488.901459, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793009489.429612, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact:ZC3H3+AND+organism_id:9606+AND+reviewed:true&fields=accession,gene_primary,length,mass,cc_alternative_products&format=json"}
+{"t": 1793009489.676579, "kind": "dns", "lib": "netlog_shim.py", "host": "aiplatform.googleapis.com"}
+{"t": 1793009495.0323179, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793009495.488589, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/O43525.json"}
+{"t": 1793009495.516906, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793009495.963964, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/Q8IXZ2.json"}

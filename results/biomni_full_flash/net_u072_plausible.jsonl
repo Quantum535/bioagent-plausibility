@@ -1,0 +1,19 @@
+{"t": 1793011978.482381, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793011978.956502, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact:KCNH4+AND+organism_id:9606+AND+reviewed:true&format=json"}
+{"t": 1793011978.9693089, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793011979.414915, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact:SMOC1+AND+organism_id:9606+AND+reviewed:true&format=json"}
+{"t": 1793011984.666027, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793011985.163023, "kind": "http", "lib": "netlog_shim.py", "host": "rest.ensembl.org", "method": "GET", "path": "/lookup/symbol/homo_sapiens/KCNH4?expand=1"}
+{"t": 1793011990.965503, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793011991.4269922, "kind": "http", "lib": "netlog_shim.py", "host": "rest.ensembl.org", "method": "GET", "path": "/lookup/symbol/homo_sapiens/SMOC1?expand=1"}
+{"t": 1793012014.598327, "kind": "dns", "lib": "netlog_shim.py", "host": "aiplatform.googleapis.com"}
+{"t": 1793012019.704315, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793012020.159036, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/Q9UQ05.json"}
+{"t": 1793012020.1703942, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793012020.620511, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/Q9H4F8.json"}
+{"t": 1793012046.385695, "kind": "http", "lib": "netlog_shim.py", "host": "eutils.ncbi.nlm.nih.gov", "method": "GET", "path": "/entrez/eutils/esearch.fcgi?db=gene&term=KCNH4%5BGene+Name%5D+AND+Homo+sapiens%5BOrganism%5D&tool=biopython&email=test%40example.com"}
+{"t": 1793012046.38621, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793012046.759423, "kind": "http", "lib": "netlog_shim.py", "host": "eutils.ncbi.nlm.nih.gov", "method": "GET", "path": "/entrez/eutils/esearch.fcgi?db=gene&term=SMOC1%5BGene+Name%5D+AND+Homo+sapiens%5BOrganism%5D&tool=biopython&email=test%40example.com"}
+{"t": 1793012046.760022, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793012047.134701, "kind": "http", "lib": "netlog_shim.py", "host": "eutils.ncbi.nlm.nih.gov", "method": "GET", "path": "/entrez/eutils/esummary.fcgi?db=gene&id=23415%2C64093&tool=biopython&email=test%40example.com"}
+{"t": 1793012047.135346, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}

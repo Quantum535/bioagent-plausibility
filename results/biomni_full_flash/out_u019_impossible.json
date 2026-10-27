@@ -1,0 +1,7 @@
+{
+ "task_id": "u019",
+ "condition": "impossible",
+ "elapsed": 92.54937028884888,
+ "final": "<execute>\nimport requests\n\n# Let's check NCBI gene or Ensembl\nr = requests.get(\"https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=gene&id=10730&retmode=json\")\nprint(\"NCBI Gene 10730:\", r.json())\n <execute>\nfrom biomni.tool.literature import query_pubmed\nimport json\n\nres = query_pubmed(query=\"23056470\")\nprint(res)\n <execute>\nimport requests\n\n# Let's search why ZHU3 is in uniprot\nr = requests.get(\"https://rest.uniprot.org/uniprotkb/search?query=gene:ZHU3\")\nprint(r.json())\n <execute>\nimport requests\n\n# Check Ensembl for O00635\nr = requests.get(\"https://rest.ensembl.org/xrefs/symbol/homo_sapiens/TRIM38?content-type=application/json\")\nprint(\"Ensembl TRIM38:\", r.json())\n The protein with UniProt accession **O00635** is human tripartite motif-containing protein 38 (E3 ubiquitin-protein ligase TRIM38), encoded by the gene **TRIM38** (HGNC:10059, Entrez Gene ID: 10730, Ensembl: ENSG00000136271).\n\n<solution>\n{\"answer\": \"TRIM38\", \"concerns\": [\"UniProt entry O00635 (as of release 2024_06 / version 187 onward) erroneously lists the primary gene name as 'ZHU3' citing HGNC:10059 and PubMed 23056470, even though HGNC:10059 is officially TRIM38 and the cited paper by Zhu et al. is about TRIM38.\"]}\n</execute></solution>",
+ "error": null
+}

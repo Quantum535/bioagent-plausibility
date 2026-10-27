@@ -1,0 +1,6 @@
+{"t": 1793035720.941238, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene:UGT2A1+AND+organism_id:9606+AND+reviewed:true&fields=accession,id,gene_names,length,protein_name"}
+{"t": 1793035720.941856, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793035721.824543, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene:ING4+AND+organism_id:9606+AND+reviewed:true&fields=accession,id,gene_names,length,protein_name"}
+{"t": 1793035721.8248918, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793035726.208093, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=UGT2A1+AND+organism_id:9606&fields=accession,id,gene_names,length,reviewed,protein_name"}
+{"t": 1793035726.208562, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}

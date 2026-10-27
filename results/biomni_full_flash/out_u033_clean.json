@@ -1,0 +1,7 @@
+{
+ "task_id": "u033",
+ "condition": "clean",
+ "elapsed": 37.122138023376465,
+ "final": "To determine which protein is heavier between the proteins encoded by **ZBTB10** and **HDAC7**, we examined the canonical human protein sequences from UniProt:\n\n- **ZBTB10** (UniProt: Q96DT7): 871 amino acids, molecular weight of approximately **94.89 kDa** (94,894 Da).\n- **HDAC7** (UniProt: Q8WUI4): 952 amino acids, molecular weight of approximately **102.93 kDa** (102,927 Da).\n\nComparing the two, the protein encoded by **HDAC7** is heavier than that encoded by **ZBTB10**.\n\n<solution>\n```json\n{\n  \"answer\": \"HDAC7\",\n  \"concerns\": []\n}\n```\n</solution>",
+ "error": null
+}

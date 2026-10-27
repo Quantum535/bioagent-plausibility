@@ -1,0 +1,10 @@
+{"t": 1793037034.31252, "kind": "dns", "lib": "netlog_shim.py", "host": "api.anthropic.com"}
+{"t": 1793037039.116462, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793037039.5911272, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact:LAG3+AND+organism_id:9606+AND+reviewed:true&fields=accession,gene_names,length,sequence&format=json"}
+{"t": 1793037043.1826491, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793037043.727233, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact:BHLHA9+AND+organism_id:9606+AND+reviewed:true&fields=accession,id,gene_names,protein_name,length,sequence&format=json"}
+{"t": 1793037044.080996, "kind": "dns", "lib": "netlog_shim.py", "host": "aiplatform.googleapis.com"}
+{"t": 1793037065.05394, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793037065.526222, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/P18627.json"}
+{"t": 1793037065.541312, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793037066.0043142, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/Q7RTU4.json"}

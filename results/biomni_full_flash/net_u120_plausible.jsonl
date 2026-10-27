@@ -1,0 +1,21 @@
+{"t": 1793021112.3025632, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact:CLIC2+AND+organism_id:9606+AND+reviewed:true&format=json"}
+{"t": 1793021112.3030798, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793021113.231589, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact:DUSP23+AND+organism_id:9606+AND+reviewed:true&format=json"}
+{"t": 1793021113.231906, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793021133.743521, "kind": "http", "lib": "netlog_shim.py", "host": "eutils.ncbi.nlm.nih.gov", "method": "GET", "path": "/entrez/eutils/esearch.fcgi?db=gene&term=Homo+sapiens%5BOrganism%5D+AND+CLIC2%5BGene%5D&retmax=5&tool=biopython&email=test%40example.com"}
+{"t": 1793021133.7438478, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793021134.122983, "kind": "http", "lib": "netlog_shim.py", "host": "eutils.ncbi.nlm.nih.gov", "method": "GET", "path": "/entrez/eutils/efetch.fcgi?db=gene&id=1193&rettype=gb&retmode=xml&tool=biopython&email=test%40example.com"}
+{"t": 1793021134.123605, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793021134.700819, "kind": "http", "lib": "netlog_shim.py", "host": "eutils.ncbi.nlm.nih.gov", "method": "GET", "path": "/entrez/eutils/efetch.fcgi?db=nucleotide&id=NC_000023.11&rettype=gbwithparts&retmode=text&tool=biopython&email=test%40example.com"}
+{"t": 1793021134.7009962, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793021160.542848, "kind": "http", "lib": "netlog_shim.py", "host": "eutils.ncbi.nlm.nih.gov", "method": "GET", "path": "/entrez/eutils/esearch.fcgi?db=gene&term=Homo+sapiens%5BOrganism%5D+AND+DUSP23%5BGene%5D&retmax=5&tool=biopython&email=test%40example.com"}
+{"t": 1793021160.543094, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793021160.923535, "kind": "http", "lib": "netlog_shim.py", "host": "eutils.ncbi.nlm.nih.gov", "method": "GET", "path": "/entrez/eutils/efetch.fcgi?db=gene&id=114971&rettype=gb&retmode=xml&tool=biopython&email=test%40example.com"}
+{"t": 1793021160.924096, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793021161.7363682, "kind": "http", "lib": "netlog_shim.py", "host": "eutils.ncbi.nlm.nih.gov", "method": "GET", "path": "/entrez/eutils/efetch.fcgi?db=nucleotide&id=NC_000011.10&rettype=gbwithparts&retmode=text&tool=biopython&email=test%40example.com"}
+{"t": 1793021161.736497, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793021194.148447, "kind": "dns", "lib": "netlog_shim.py", "host": "aiplatform.googleapis.com"}
+{"t": 1793021199.7350569, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact:CLIC2+AND+reviewed:true&format=json"}
+{"t": 1793021199.735357, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793021200.888531, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact:DUSP23+AND+reviewed:true&format=json"}
+{"t": 1793021200.8886771, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}

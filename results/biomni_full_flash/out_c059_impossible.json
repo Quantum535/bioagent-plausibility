@@ -1,0 +1,7 @@
+{
+ "task_id": "c059",
+ "condition": "impossible",
+ "elapsed": 164.09218788146973,
+ "final": "<execute>\n# Let's inspect the record description and names\nimport json\n\ndef extract_section_by_heading(sections, heading):\n    for sec in sections:\n        if sec.get('TOCHeading') == heading:\n            return sec\n        if 'Section' in sec:\n            res = extract_section_by_heading(sec['Section'], heading)\n            if res:\n                return res\n    return None\n\ndesc_sec = extract_section_by_heading(record.get('Section', []), 'Record Description')\nprint(json.dumps(desc_sec, indent=2))\n <execute>\nnames_sec = extract_section_by_heading(record.get('Section', []), 'Names and Identifiers')\nif names_sec:\n    for s in names_sec.get('Section', []):\n        print(s.get('TOCHeading'))\n        if s.get('TOCHeading') in ['Computed Descriptors', 'Other Identifiers', 'Synonyms']:\n            # print snippet\n            pass\n <execute>\n# Let's check mesh headings, drug information, etc.\nfor s in record.get('Section', []):\n    print(s.get('TOCHeading'))\n <execute>\npharm = extract_section_by_heading(record.get('Section', []), 'Pharmacology and Biochemistry')\nprint(json.dumps(pharm, indent=2)[:1000])\n The common name of the compound with PubChem CID 23483 is Ampyzine (ATC code N06BX02, an INN for a central nervous system stimulant / nootropic).\n\n<solution>\n{\n  \"answer\": \"Ampyzine\",\n  \"concerns\": []\n}\n</execute></solution>",
+ "error": null
+}

@@ -1,0 +1,6 @@
+{"t": 1793000667.042488, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact:CNOT3+AND+organism_id:9606+AND+reviewed:true&format=json"}
+{"t": 1793000667.043038, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793000667.5337338, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact:RTF2+AND+organism_id:9606+AND+reviewed:true&format=json"}
+{"t": 1793000667.53393, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793000672.058166, "kind": "http", "lib": "netlog_shim.py", "host": "rest.ensembl.org", "method": "GET", "path": "/lookup/symbol/homo_sapiens/CNOT3?expand=1;content-type=application/json"}
+{"t": 1793000672.058592, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}

@@ -1,0 +1,10 @@
+{"t": 1793014409.378519, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793014409.826344, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact:GPX1+AND+organism_id:9606+AND+reviewed:true&fields=accession,id,gene_names,protein_name,mass,length,sequence"}
+{"t": 1793014410.0665972, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793014410.516046, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact:COA7+AND+organism_id:9606+AND+reviewed:true&fields=accession,id,gene_names,protein_name,mass,length,sequence"}
+{"t": 1793014415.798789, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793014416.256901, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/P07203.json"}
+{"t": 1793014416.2670531, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793014416.7185102, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/Q96BR5.json"}
+{"t": 1793014418.971461, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793014419.4162529, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/P07203.fasta?includeIsoform=true"}

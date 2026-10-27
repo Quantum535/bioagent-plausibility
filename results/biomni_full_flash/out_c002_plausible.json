@@ -1,0 +1,7 @@
+{
+ "task_id": "c002",
+ "condition": "plausible",
+ "elapsed": 49.87266492843628,
+ "final": "<execute>\nimport requests\n\nurl = \"https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/6674/property/HBondDonorCount/JSON\"\nres = requests.get(url).json()\nprint(\"Property table HBondDonorCount:\", res)\n\n# Let's check PubChem web page / data\ncompound_json = requests.get(\"https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/6674/JSON\").json()\nfor prop in compound_json['PC_Compounds'][0]['props']:\n    if prop.get('urn', {}).get('name') == 'Hydrogen Bond Donor':\n        print(\"Raw compound props:\", prop)\n <execute>\nurl = \"https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/6674/property/MolecularFormula,MolecularWeight,IUPACName,HBondDonorCount,HBondAcceptorCount/JSON\"\nprint(requests.get(url).json())\n To determine the number of hydrogen-bond donors for PubChem CID 6674:\n\n1. PubChem CID 6674 corresponds to dehydrocholic acid (molecular formula $\\text{C}_{24}\\text{H}_{34}\\text{O}_5$).\n2. The structure contains three ketone carbonyl groups and one carboxylic acid group ($-\\text{COOH}$).\n3. The only hydrogen-bond donor present in the molecule is the hydroxyl group of the carboxylic acid, giving a total of 1 hydrogen-bond donor (and 5 hydrogen-bond acceptors).\n\n<solution>\n```json\n{\n  \"answer\": 1,\n  \"concerns\": []\n}\n```\n</execute></solution>",
+ "error": null
+}

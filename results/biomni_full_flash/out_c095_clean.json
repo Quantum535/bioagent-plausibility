@@ -1,0 +1,7 @@
+{
+ "task_id": "c095",
+ "condition": "clean",
+ "elapsed": 62.16063165664673,
+ "final": "```markdown\n1. [\u2713] Query PubChem API for CID 16584 details and synonyms/title.\n2. [\u2713] Determine the common name of the compound.\n3. [\u2713] Output the solution in the required JSON format.\n```\n\nThe compound with PubChem CID 16584 has the molecular formula $\\text{C}_5\\text{Cl}_5\\text{N}$ and IUPAC name 2,3,4,5,6-pentachloropyridine. Its common name is pentachloropyridine.\n\n<solution>\n{\n  \"answer\": \"pentachloropyridine\",\n  \"concerns\": []\n}\n</solution>",
+ "error": null
+}

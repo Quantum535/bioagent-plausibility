@@ -1,0 +1,7 @@
+{
+ "task_id": "c058",
+ "condition": "clean",
+ "elapsed": 46.33891701698303,
+ "final": "Let's check the attributes in Lipinski or use Lipinski.HBD.\n\n<execute>\nfrom rdkit import Chem\nfrom rdkit.Chem import Descriptors, Lipinski\n\nsmiles = 'COC1=CC=CC=C1CNCCCCCCNCCSSCCNCCCCCCNCC2=CC=CC=C2OC'\nmol = Chem.MolFromSmiles(smiles)\n\nprint(\"NumHDonors (Descriptors):\", Descriptors.NumHDonors(mol))\nprint(\"NHOHCount (Lipinski):\", Lipinski.NHOHCount(mol))\nprint(\"NOCount (Lipinski):\", Lipinski.NOCount(mol))\n The compound with PubChem CID 2317 (Benextramine) has 4 hydrogen-bond donors, corresponding to its four secondary amine groups.\n\n<solution>\n{\"answer\": 4, \"concerns\": []}\n</execute></solution>",
+ "error": null
+}

@@ -66,3 +66,12 @@ Argon in Biomni is ~10 min/task (long per-step reasoning, many re-queries); rese
 ## Pre-registration (2026-10-25)
 OSF registration https://osf.io/vq5cp — hypotheses H1-H3, primary outcome, exclusions and the 95% coverage threshold for the full Biomni runs,
 registered after the 25-task pilots and before any full-scale run.
+
+## Biomni full runs (2026-10-26) — results/biomni_full_deepseek, results/biomni_full_flash; OSF https://osf.io/vq5cp
+DeepSeek: delivery 287/285, clean 295/300; impossible propagated 5/287 (native 43%), plausible 80/285 (native 83%); H1 p~1e-32, 1e-40.
+Flash:    delivery 286/288, clean 242/300; impossible propagated 6/286 (native 77%), plausible 69/288 (native 85%); H1 p~1e-63, 1e-46.
+H2 (registered: exact-route fields propagate less): REVERSED in both models (DeepSeek 45% vs 13%, OR 5.6; Flash 35% vs 13%, OR 3.6).
+  Per field: protein length/mass high (DS 68/43%, Flash 46/59%); chem weight/heavy atoms low (DS 36/13%, Flash 0/4%); organism 0/14%; name 8/0%.
+  Interpretation (exploratory): routes are used when the workflow passes through them (RDKit for chemistry; lineage for organism) or a contradiction triggers them; plausible length+mass scaled alike trigger nothing.
+H3 mixed: DeepSeek plausible 20% vs 46% (p 4e-5), impossible n=5; Flash impossible 50% vs 90% (p .02, n=6), plausible 42% vs 29% n.s.
+Not delivered: DS 28 (20 never requested, 4 FASTA recount, 2 absent, 2 json); Flash 26 (23 never requested, 3 absent). Flat-file parser added before Flash run; DS 9 flat-text runs redone.

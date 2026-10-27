@@ -1,0 +1,10 @@
+{"t": 1793008809.4041579, "kind": "dns", "lib": "netlog_shim.py", "host": "api.anthropic.com"}
+{"t": 1793008815.768929, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793008816.238701, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact:USP50+AND+organism_id:9606+AND+reviewed:true&fields=accession,gene_names,length,sequence&format=json"}
+{"t": 1793008819.888222, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793008820.357891, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact:RLN2+AND+organism_id:9606+AND+reviewed:true&fields=accession,gene_names,length,sequence&format=json"}
+{"t": 1793008820.690646, "kind": "dns", "lib": "netlog_shim.py", "host": "aiplatform.googleapis.com"}
+{"t": 1793008841.21858, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/P04090.json"}
+{"t": 1793008841.219041, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793008841.764579, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/Q70EL3.json"}
+{"t": 1793008841.764844, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}

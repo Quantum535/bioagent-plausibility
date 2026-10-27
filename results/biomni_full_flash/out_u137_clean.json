@@ -1,0 +1,7 @@
+{
+ "task_id": "u137",
+ "condition": "clean",
+ "elapsed": 33.877482891082764,
+ "final": "To determine which protein is heavier between those encoded by **ELL2** and **SMYD4**, we examine their canonical human protein products in UniProt:\n\n- **ELL2** (RNA polymerase II elongation factor ELL2; UniProt [O00472](https://www.uniprot.org/uniprotkb/O00472)): \n  - Length: 640 amino acids\n  - Molecular mass: **72.32 kDa** (72,324 Da)\n\n- **SMYD4** (Protein-lysine N-methyltransferase SMYD4; UniProt [Q8IYR2](https://www.uniprot.org/uniprotkb/Q8IYR2)): \n  - Length: 804 amino acids\n  - Molecular mass: **89.23 kDa** (89,225 Da)\n\nTherefore, the protein encoded by **SMYD4** is heavier than the protein encoded by **ELL2**.\n\n<solution>\n```json\n{\n  \"answer\": \"SMYD4\",\n  \"concerns\": []\n}\n```\n</solution>",
+ "error": null
+}

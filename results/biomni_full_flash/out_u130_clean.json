@@ -1,0 +1,7 @@
+{
+ "task_id": "u130",
+ "condition": "clean",
+ "elapsed": 34.52330183982849,
+ "final": "1. [\u2713] Query UniProt API for accession Q9BT40 to find organism and taxonomy.\n2. [\u2713] Determine whether the organism is a mammal.\n3. [\u2713] Format the final answer and concerns as requested.\n\nThe UniProt accession **Q9BT40** corresponds to the protein **Inositol polyphosphate 5-phosphatase K (INP5K)** from ***Homo sapiens* (Human)**. \n\n*Homo sapiens* belongs to the class **Mammalia**, so it is a mammal.\n\n- **Organism:** *Homo sapiens*\n- **Is it a mammal:** Yes\n\n<solution>\n{\n  \"answer\": \"Homo sapiens\",\n  \"concerns\": []\n}\n</solution>",
+ "error": null
+}

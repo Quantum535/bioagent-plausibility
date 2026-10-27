@@ -1,0 +1,12 @@
+{"t": 1793005181.7948449, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact:MLXIPL+AND+organism_id:9606+AND+reviewed:true&fields=accession,id,gene_names,length,sequence"}
+{"t": 1793005181.795329, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793005182.4869592, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact:ARFIP2+AND+organism_id:9606+AND+reviewed:true&fields=accession,id,gene_names,length,sequence"}
+{"t": 1793005182.4872692, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793005187.216827, "kind": "http", "lib": "netlog_shim.py", "host": "eutils.ncbi.nlm.nih.gov", "method": "GET", "path": "/entrez/eutils/esearch.fcgi?db=gene&term=MLXIPL[Gene+Name]+AND+human[Organism]&retmode=json"}
+{"t": 1793005187.217234, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793005187.488835, "kind": "http", "lib": "netlog_shim.py", "host": "eutils.ncbi.nlm.nih.gov", "method": "GET", "path": "/entrez/eutils/esummary.fcgi?db=gene&id=51085&retmode=json"}
+{"t": 1793005187.489353, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793005187.74082, "kind": "http", "lib": "netlog_shim.py", "host": "eutils.ncbi.nlm.nih.gov", "method": "GET", "path": "/entrez/eutils/esearch.fcgi?db=gene&term=ARFIP2[Gene+Name]+AND+human[Organism]&retmode=json"}
+{"t": 1793005187.741257, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793005187.912151, "kind": "http", "lib": "netlog_shim.py", "host": "eutils.ncbi.nlm.nih.gov", "method": "GET", "path": "/entrez/eutils/esummary.fcgi?db=gene&id=23647&retmode=json"}
+{"t": 1793005187.9126132, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}

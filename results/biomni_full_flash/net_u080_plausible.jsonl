@@ -1,0 +1,16 @@
+{"t": 1793013510.022888, "kind": "http", "lib": "netlog_shim.py", "host": "rest.ensembl.org", "method": "GET", "path": "/lookup/symbol/homo_sapiens/NEGR1?expand=1;content-type=application/json"}
+{"t": 1793013510.023395, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793013530.67414, "kind": "http", "lib": "netlog_shim.py", "host": "rest.ensembl.org", "method": "GET", "path": "/lookup/symbol/homo_sapiens/BCL2L2?expand=1;content-type=application/json"}
+{"t": 1793013530.675344, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793013559.118119, "kind": "dns", "lib": "netlog_shim.py", "host": "aiplatform.googleapis.com"}
+{"t": 1793013561.439678, "kind": "http", "lib": "netlog_shim.py", "host": "rest.ensembl.org", "method": "GET", "path": "/lookup/symbol/homo_sapiens/NEGR1?expand=1;content-type=application/json"}
+{"t": 1793013561.439935, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793013578.4907362, "kind": "dns", "lib": "netlog_shim.py", "host": "aiplatform.googleapis.com"}
+{"t": 1793013586.021149, "kind": "http", "lib": "netlog_shim.py", "host": "rest.ensembl.org", "method": "GET", "path": "/lookup/symbol/homo_sapiens/BCL2L2?expand=1;content-type=application/json"}
+{"t": 1793013586.021579, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793013597.4185421, "kind": "http", "lib": "netlog_shim.py", "host": "eutils.ncbi.nlm.nih.gov", "method": "GET", "path": "/entrez/eutils/esearch.fcgi?db=gene&term=NEGR1[Gene%20Name]+AND+Homo+sapiens[Organism]&retmode=json"}
+{"t": 1793013597.41904, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793013597.719949, "kind": "http", "lib": "netlog_shim.py", "host": "eutils.ncbi.nlm.nih.gov", "method": "GET", "path": "/entrez/eutils/esearch.fcgi?db=gene&term=BCL2L2[Gene%20Name]+AND+Homo+sapiens[Organism]&retmode=json"}
+{"t": 1793013597.720358, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793013597.875726, "kind": "http", "lib": "netlog_shim.py", "host": "eutils.ncbi.nlm.nih.gov", "method": "GET", "path": "/entrez/eutils/esummary.fcgi?db=gene&id=257194,599&retmode=json"}
+{"t": 1793013597.8761148, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}

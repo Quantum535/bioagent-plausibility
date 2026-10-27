@@ -1,0 +1,7 @@
+{
+ "task_id": "u097",
+ "condition": "clean",
+ "elapsed": 34.67566990852356,
+ "final": "To determine whether the protein encoded by *SKA1* or *ASB7* is heavier, we can examine their canonical human protein products in the UniProt database:\n\n- **SKA1** encodes the **SKA complex subunit 1** (UniProt: [Q96BD8](https://www.uniprot.org/uniprotkb/Q96BD8)):\n  - Length: 255 amino acids\n  - Molecular mass: **29.484 kDa** (29,484 Da)\n  - Isoform 2: 209 amino acids, 24.390 kDa\n\n- **ASB7** encodes the **Ankyrin repeat and SOCS box protein 7** (UniProt: [Q9H672](https://www.uniprot.org/uniprotkb/Q9H672)):\n  - Length: 318 amino acids\n  - Molecular mass: **36.011 kDa** (36,011 Da)\n  - Isoform 2: 274 amino acids, 30.713 kDa\n\nComparing both the canonical proteins and their respective isoforms, the protein encoded by **ASB7** is heavier than the protein encoded by **SKA1**.\n\n<solution>\n{\n  \"answer\": \"ASB7\",\n  \"concerns\": []\n}\n</solution>",
+ "error": null
+}

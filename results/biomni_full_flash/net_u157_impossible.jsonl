@@ -1,0 +1,6 @@
+{"t": 1793033737.9612029, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793033738.427721, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact:DPH1+AND+taxonomy_id:9606+AND+reviewed:true&fields=accession,id,gene_names,protein_name,mass,length,sequence"}
+{"t": 1793033743.381941, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793033743.948086, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact:DPH1+AND+taxonomy_id:9606+AND+reviewed:true"}
+{"t": 1793033744.260976, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793033744.7696462, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact:PALM+AND+taxonomy_id:9606+AND+reviewed:true"}

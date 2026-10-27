@@ -1,0 +1,8 @@
+{"t": 1793020994.304055, "kind": "dns", "lib": "netlog_shim.py", "host": "api.anthropic.com"}
+{"t": 1793020997.6223931, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793020998.0927098, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact:CLIC2+AND+organism_id:9606+AND+reviewed:true&fields=accession,gene_names,length,sequence&format=json"}
+{"t": 1793021001.4308312, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793021002.120634, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact:DUSP23+AND+organism_id:9606+AND+reviewed:true&fields=accession,gene_names,length,sequence&format=json"}
+{"t": 1793021002.471371, "kind": "dns", "lib": "netlog_shim.py", "host": "aiplatform.googleapis.com"}
+{"t": 1793021021.921424, "kind": "dns", "lib": "netlog_shim.py", "host": "api.anthropic.com"}
+{"t": 1793021027.350358, "kind": "dns", "lib": "netlog_shim.py", "host": "aiplatform.googleapis.com"}

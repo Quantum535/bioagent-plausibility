@@ -1,0 +1,10 @@
+{"t": 1793029935.881205, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene:ADRA2B+AND+organism_id:9606+AND+reviewed:true&format=json"}
+{"t": 1793029935.882136, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793029936.393078, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene:COMMD4+AND+organism_id:9606+AND+reviewed:true&format=json"}
+{"t": 1793029936.393427, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793029939.7945359, "kind": "dns", "lib": "netlog_shim.py", "host": "api.anthropic.com"}
+{"t": 1793029942.109948, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793029942.6272829, "kind": "http", "lib": "netlog_shim.py", "host": "rest.ensembl.org", "method": "GET", "path": "/lookup/symbol/homo_sapiens/ADRA2B"}
+{"t": 1793029948.1952362, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793029948.6727161, "kind": "http", "lib": "netlog_shim.py", "host": "rest.ensembl.org", "method": "GET", "path": "/lookup/symbol/homo_sapiens/COMMD4?expand=1"}
+{"t": 1793029949.250324, "kind": "dns", "lib": "netlog_shim.py", "host": "aiplatform.googleapis.com"}

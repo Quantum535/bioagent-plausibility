@@ -1,0 +1,7 @@
+{
+ "task_id": "u025",
+ "condition": "clean",
+ "elapsed": 28.665562868118286,
+ "final": "To determine which protein is heavier between UBXN10 and ANXA2, we retrieved the molecular weights of their canonical human protein products from UniProt:\n\n1. **UBXN10** (UBX domain-containing protein 10; UniProt ID: **Q96LJ8**):\n   - Length: 280 amino acids\n   - Molecular mass: 30,811 Da (**~30.81 kDa**)\n\n2. **ANXA2** (Annexin A2; UniProt ID: **P07355**):\n   - Length: 339 amino acids\n   - Molecular mass: 38,604 Da (**~38.60 kDa**)\n\nComparing the two, the protein encoded by **ANXA2** is heavier than the protein encoded by **UBXN10**.\n\n<solution>\n```json\n{\n  \"answer\": \"ANXA2\",\n  \"concerns\": []\n}\n```\n</solution>",
+ "error": null
+}

@@ -1,0 +1,4 @@
+{"t": 1793034533.106812, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793034533.638752, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact:OR10J5+AND+organism_name:%22Homo%20sapiens%22+AND+reviewed:true&format=json"}
+{"t": 1793034533.895893, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793034534.3639302, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact:UPB1+AND+organism_name:%22Homo%20sapiens%22+AND+reviewed:true&format=json"}

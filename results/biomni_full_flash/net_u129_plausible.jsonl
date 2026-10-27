@@ -1,0 +1,20 @@
+{"t": 1793022721.306498, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793022721.785467, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact:TASL+AND+organism_id:9606+AND+reviewed:true&format=json"}
+{"t": 1793022721.794603, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793022722.244075, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact:CXorf21+AND+organism_id:9606+AND+reviewed:true&format=json"}
+{"t": 1793022722.4967208, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793022722.9538078, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact:ADA+AND+organism_id:9606+AND+reviewed:true&format=json"}
+{"t": 1793022726.839232, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793022727.302407, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/P00813.json"}
+{"t": 1793022727.313846, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793022727.910059, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=(gene:ADA%20OR%20gene_exact:ADA)+AND+taxonomy_id:9606+AND+reviewed:true&format=json"}
+{"t": 1793022736.352532, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793022736.8202891, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/P00813.json"}
+{"t": 1793022736.8320289, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793022737.279552, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=name:%22adenosine+deaminase%22+AND+taxonomy_id:9606+AND+reviewed:true&format=json"}
+{"t": 1793022798.2070432, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793022798.682094, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/P00813.json"}
+{"t": 1793022798.700747, "kind": "http", "lib": "netlog_shim.py", "host": "eutils.ncbi.nlm.nih.gov", "method": "GET", "path": "/entrez/eutils/esearch.fcgi?db=protein&term=ADA[Gene+Name]+AND+Homo+sapiens[Organism]+AND+refseq[filter]&retmode=json"}
+{"t": 1793022798.700991, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793022861.301074, "kind": "http", "lib": "netlog_shim.py", "host": "eutils.ncbi.nlm.nih.gov", "method": "GET", "path": "/entrez/eutils/esummary.fcgi?db=protein&id=47078295,1015205523,1015210247&retmode=json"}
+{"t": 1793022861.302204, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}

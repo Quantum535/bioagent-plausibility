@@ -1,0 +1,7 @@
+{
+ "task_id": "c018",
+ "condition": "clean",
+ "elapsed": 47.14395499229431,
+ "final": "<execute>\nfrom rdkit import Chem\nfrom rdkit.Chem import Lipinski, Descriptors\n\nmol = Chem.MolFromSmiles('CCCCCCN')\nprint(\"NumHDonors:\", Lipinski.NumHDonors(mol))\nprint(\"NHOHCount:\", Lipinski.NHOHCount(mol))\n The compound with PubChem CID 8102 is hexan-1-amine (hexylamine, molecular formula $\\text{C}_6\\text{H}_{15}\\text{N}$). \n\nAccording to PubChem's computed chemical properties (computed by Cactvs), the hydrogen-bond donor count for CID 8102 is 1.\n\n<solution>\n```json\n{\n  \"answer\": 1,\n  \"concerns\": [\n    \"PubChem (via Cactvs) defines the hydrogen-bond donor count as 1 for hexan-1-amine, whereas some definitions that count each individual NH hydrogen (such as Lipinski NHOH count) consider the primary amine group (-NH2) to have 2 hydrogen-bond donors.\"\n  ]\n}\n```\n</execute></solution>",
+ "error": null
+}

@@ -1,0 +1,11 @@
+{"t": 1793013403.506996, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793013403.991672, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact:NEGR1+AND+organism_id:9606+AND+reviewed:true&format=json"}
+{"t": 1793013404.00081, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793013404.4581912, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact:BCL2L2+AND+organism_id:9606+AND+reviewed:true&format=json"}
+{"t": 1793013409.619243, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793013410.343759, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/Q92843.json"}
+{"t": 1793013410.588595, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793013411.1437771, "kind": "http", "lib": "netlog_shim.py", "host": "rest.ensembl.org", "method": "GET", "path": "/lookup/symbol/homo_sapiens/NEGR1?expand=1"}
+{"t": 1793013433.3876631, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793013433.83394, "kind": "http", "lib": "netlog_shim.py", "host": "rest.ensembl.org", "method": "GET", "path": "/lookup/symbol/homo_sapiens/BCL2L2?expand=1"}
+{"t": 1793013435.2706969, "kind": "dns", "lib": "netlog_shim.py", "host": "aiplatform.googleapis.com"}

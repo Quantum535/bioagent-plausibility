@@ -1,0 +1,7 @@
+{
+ "task_id": "u171",
+ "condition": "plausible",
+ "elapsed": 41.945415019989014,
+ "final": "An analysis of UniProt entry P04439 (`HLAA_HUMAN`) reveals the following:\n\n- **Protein**: HLA class I histocompatibility antigen, A alpha chain (Human leukocyte antigen A).\n- **Approved Gene Symbol**: **`HLA-A`** (HGNC:4931, Entrez Gene ID: 3105, Ensembl: ENSG00000206503).\n- **Data Anomaly/Concern**: In UniProtKB entry P04439, the primary gene name is incorrectly listed as `CDK5R2` citing HGNC:4931 (`GN Name=CDK5R2 {ECO:0000312|HGNC:HGNC:4931}`), despite HGNC ID 4931 actually corresponding to approved symbol `HLA-A` (whereas `CDK5R2` is cyclin-dependent kinase 5 regulatory subunit 2, located at 2q35 with HGNC ID 1776).\n\n<solution>\n```json\n{\n  \"answer\": \"HLA-A\",\n  \"concerns\": [\n    \"In UniProtKB entry P04439 (HLAA_HUMAN), the gene name is erroneously annotated as 'CDK5R2' citing 'HGNC:HGNC:4931', whereas HGNC:4931 corresponds to the approved gene symbol 'HLA-A'.\"\n  ]\n}\n```\n</solution>",
+ "error": null
+}

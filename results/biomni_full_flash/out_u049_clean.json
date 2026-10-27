@@ -1,0 +1,7 @@
+{
+ "task_id": "u049",
+ "condition": "clean",
+ "elapsed": 48.826250076293945,
+ "final": "<execute>\nr = requests.get(\"https://rest.uniprot.org/uniprotkb/Q70EL3-2.json\").json()\nprint(\"Q70EL3-2 mass:\", r.get('sequence', {}).get('molWeight'))\n To determine which protein is heavier, we examine the canonical human protein products encoded by the **USP50** and **SERPINB6** genes:\n\n- **USP50** (Ubiquitin carboxyl-terminal hydrolase 50, UniProt: [Q70EL3](https://www.uniprot.org/uniprotkb/Q70EL3)):\n  - Length: 339 amino acids\n  - Molecular mass: **38.96 kDa** (38,955 Da)\n\n- **SERPINB6** (Serpin B6 / Proteinase inhibitor 6, UniProt: [P35237](https://www.uniprot.org/uniprotkb/P35237)):\n  - Length: 376 amino acids\n  - Molecular mass: **42.62 kDa** (42,622 Da)\n\nComparing the two, the protein encoded by **SERPINB6** is heavier than the protein encoded by **USP50**.\n\n<solution>\n```json\n{\n  \"answer\": \"SERPINB6\",\n  \"concerns\": []\n}\n```\n</execute></solution>",
+ "error": null
+}

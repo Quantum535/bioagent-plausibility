@@ -1,0 +1,7 @@
+{"t": 1793024523.5334132, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact:IFIT1+AND+organism_id:9606+AND+reviewed:true&format=json"}
+{"t": 1793024523.534047, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793024524.0126872, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact:MS4A1+AND+organism_id:9606+AND+reviewed:true&format=json"}
+{"t": 1793024524.012871, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793024533.097096, "kind": "http", "lib": "netlog_shim.py", "host": "rest.ensembl.org", "method": "GET", "path": "/lookup/symbol/homo_sapiens/IFIT1?content-type=application/json;expand=1"}
+{"t": 1793024533.097582, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793024553.689721, "kind": "dns", "lib": "netlog_shim.py", "host": "aiplatform.googleapis.com"}

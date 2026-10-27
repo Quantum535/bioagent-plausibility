@@ -1,0 +1,12 @@
+{"t": 1793011700.145107, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact:KCNH4+AND+organism_id:9606+AND+reviewed:true&format=json"}
+{"t": 1793011700.145808, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793011701.157231, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact:SMOC1+AND+organism_id:9606+AND+reviewed:true&format=json"}
+{"t": 1793011701.1574771, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793011708.4861262, "kind": "http", "lib": "netlog_shim.py", "host": "rest.ensembl.org", "method": "GET", "path": "/lookup/symbol/homo_sapiens/KCNH4?content-type=application/json"}
+{"t": 1793011708.48672, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793011729.116877, "kind": "http", "lib": "netlog_shim.py", "host": "rest.ensembl.org", "method": "GET", "path": "/lookup/symbol/homo_sapiens/SMOC1?content-type=application/json"}
+{"t": 1793011729.117397, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793011733.728597, "kind": "dns", "lib": "netlog_shim.py", "host": "aiplatform.googleapis.com"}
+{"t": 1793011737.500389, "kind": "http", "lib": "netlog_shim.py", "host": "rest.ensembl.org", "method": "GET", "path": "/lookup/symbol/homo_sapiens/KCNH4?content-type=application/json"}
+{"t": 1793011737.501384, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793011772.832643, "kind": "dns", "lib": "netlog_shim.py", "host": "aiplatform.googleapis.com"}

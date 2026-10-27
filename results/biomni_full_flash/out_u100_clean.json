@@ -1,0 +1,7 @@
+{
+ "task_id": "u100",
+ "condition": "clean",
+ "elapsed": 32.5340039730072,
+ "final": "<execute>\nurl = \"https://rest.uniprot.org/uniprotkb/Q9GZR2-2.fasta\"\nresp = requests.get(url)\nprint(resp.text[:200])\nseq2 = \"\".join(resp.text.strip().split(\"\\n\")[1:])\nprint(f\"Length of Q9GZR2-2: {len(seq2)}\")\n <execute>\nurl = \"https://rest.uniprot.org/uniprotkb/Q9GZR2.json\"\ndata = requests.get(url).json()\nfor feat in data.get(\"features\", []):\n    if feat.get(\"type\") == \"Alternative sequence\":\n        print(feat)\n No, protein Q9GZR2 (human RNA exonuclease 4, REXO4) does not have more than 475 residues; its canonical sequence contains 422 residues (isoform 2 is shorter, containing 292 residues).\n\n<solution>\n```json\n{\n  \"answer\": \"no\",\n  \"concerns\": []\n}\n```\n</execute></solution>",
+ "error": null
+}

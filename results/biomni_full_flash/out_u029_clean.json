@@ -1,0 +1,7 @@
+{
+ "task_id": "u029",
+ "condition": "clean",
+ "elapsed": 28.03191304206848,
+ "final": "To determine which protein is heavier, we consult the UniProt database for the canonical human protein sequences encoded by **NKX2-6** and **SCD5**:\n\n1. **NKX2-6** (Homeobox protein Nkx-2.6; UniProt: [A6NCS4](https://www.uniprot.org/uniprotkb/A6NCS4)):\n   - Length: 301 amino acids\n   - Molecular mass: **32.12 kDa** (32,121 Da)\n\n2. **SCD5** (Stearoyl-CoA desaturase 5; UniProt: [Q86SK9](https://www.uniprot.org/uniprotkb/Q86SK9)):\n   - Length: 330 amino acids\n   - Molecular mass: **37.61 kDa** (37,610 Da)\n\nComparing the two, the protein encoded by **SCD5** is heavier.\n\n<solution>\n{\n  \"answer\": \"SCD5\",\n  \"concerns\": []\n}\n</solution>",
+ "error": null
+}

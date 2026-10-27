@@ -1,0 +1,7 @@
+{
+ "task_id": "c094",
+ "condition": "plausible",
+ "elapsed": 56.152509927749634,
+ "final": "<execute>\nprint(r)\n <execute>\nsmiles = r['PropertyTable']['Properties'][0]['IsomericSMILES']\nmol = Chem.MolFromSmiles(smiles)\nprint(\"Lipinski H-bond donors (RDKit):\", Lipinski.NumHDonors(mol))\nprint(\"Lipinski H-bond acceptors (RDKit):\", Lipinski.NumHAcceptors(mol))\n <execute>\nurl = \"https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/4975/synonyms/JSON\"\nsynonyms = requests.get(url).json()\nprint(synonyms['InformationList']['Information'][0]['Synonym'][:5])\n To determine the number of hydrogen-bond donors for PubChem CID 4975 (Protoveratrine A):\n\n1. PubChem's compound property record lists `HBondDonorCount` as **7**.\n2. Computing the Lipinski hydrogen-bond donors via RDKit on the isomeric SMILES structure also yields **7** (corresponding to 7 hydroxyl groups: `-OH`).\n\n<solution>\n{\"answer\": 7, \"concerns\": []}\n</execute></solution>",
+ "error": null
+}

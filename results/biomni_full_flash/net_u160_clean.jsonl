@@ -1,0 +1,9 @@
+{"t": 1793034312.1283252, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793034312.867336, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact:KLHDC3+AND+organism_id:9606+AND+reviewed:true&format=json"}
+{"t": 1793034312.877012, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793034313.3400571, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact:PSMD10+AND+organism_id:9606+AND+reviewed:true&format=json"}
+{"t": 1793034317.868031, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793034318.940654, "kind": "http", "lib": "netlog_shim.py", "host": "rest.ensembl.org", "method": "GET", "path": "/lookup/symbol/homo_sapiens/KLHDC3?expand=1"}
+{"t": 1793034327.147902, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793034327.615222, "kind": "http", "lib": "netlog_shim.py", "host": "rest.ensembl.org", "method": "GET", "path": "/lookup/symbol/homo_sapiens/PSMD10?expand=1"}
+{"t": 1793034329.129587, "kind": "dns", "lib": "netlog_shim.py", "host": "aiplatform.googleapis.com"}

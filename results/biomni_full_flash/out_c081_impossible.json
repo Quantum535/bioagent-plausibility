@@ -1,0 +1,7 @@
+{
+ "task_id": "c081",
+ "condition": "impossible",
+ "elapsed": 45.519113063812256,
+ "final": "<execute>\nurl = \"https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/10364/property/Title,IUPACName/JSON\"\nr = requests.get(url)\nprint(r.json())\n The compound with PubChem CID 10364 is carvacrol (IUPAC name: 5-isopropyl-2-methylphenol), with molecular formula $\\text{C}_{10}\\text{H}_{14}\\text{O}$. It contains 11 heavy atoms (10 carbon atoms and 1 oxygen atom). \n\nSince 11 is greater than 9, the answer is **yes**, with a count of **11**.\n\n<solution>\n{\n  \"answer\": \"yes\",\n  \"concerns\": [\n    \"PubChem PUG-REST property table API (property/HeavyAtomCount/JSON) erroneously reports HeavyAtomCount as 0, despite the molecular formula C10H14O containing 11 heavy atoms and the full compound record listing 11 heavy atoms.\"\n  ]\n}\n</execute></solution>",
+ "error": null
+}

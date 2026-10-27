@@ -1,0 +1,8 @@
+{"t": 1793040452.33871, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact:PDGFRA+AND+organism_id:9606+AND+reviewed:true&format=json"}
+{"t": 1793040452.339398, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793040452.841502, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact:KAT7+AND+organism_id:9606+AND+reviewed:true&format=json"}
+{"t": 1793040452.841763, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793040460.364178, "kind": "http", "lib": "netlog_shim.py", "host": "rest.ensembl.org", "method": "GET", "path": "/lookup/symbol/homo_sapiens/PDGFRA?expand=1"}
+{"t": 1793040460.364776, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793040462.089447, "kind": "http", "lib": "netlog_shim.py", "host": "rest.ensembl.org", "method": "GET", "path": "/lookup/symbol/homo_sapiens/KAT7?expand=1"}
+{"t": 1793040462.090168, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}

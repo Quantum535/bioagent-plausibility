@@ -1,0 +1,9 @@
+{"t": 1793007618.6952, "kind": "dns", "lib": "netlog_shim.py", "host": "api.anthropic.com"}
+{"t": 1793007621.991074, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793007622.479688, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact:CC2D1B+AND+organism_id:9606+AND+reviewed:true&fields=accession,gene_primary,length&format=json"}
+{"t": 1793007625.790601, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793007626.350754, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact:MMP20+AND+organism_id:9606+AND+reviewed:true&fields=accession,gene_names,length&format=json"}
+{"t": 1793007626.601126, "kind": "dns", "lib": "netlog_shim.py", "host": "aiplatform.googleapis.com"}
+{"t": 1793007634.313808, "kind": "http", "lib": "netlog_shim.py", "host": "rest.ensembl.org", "method": "GET", "path": "/lookup/symbol/homo_sapiens/CC2D1B?expand=1;content-type=application/json"}
+{"t": 1793007634.314188, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793007654.996168, "kind": "dns", "lib": "netlog_shim.py", "host": "aiplatform.googleapis.com"}

@@ -1,0 +1,7 @@
+{
+ "task_id": "u185",
+ "condition": "clean",
+ "elapsed": 45.30064797401428,
+ "final": "To determine which protein is heavier, we examine the canonical molecular masses of the proteins encoded by **GJA3** and **ARFIP2** (human, UniProtKB):\n\n- **GJA3** (Gap junction alpha-3 protein, UniProt: Q9Y6H8): \n  - Length: 435 amino acids\n  - Molecular mass: **47.41 kDa** (47,410 Da)\n\n- **ARFIP2** (Arfaptin-2, UniProt: P53365): \n  - Length: 341 amino acids\n  - Molecular mass: **37.86 kDa** (37,856 Da)\n\nTherefore, the protein encoded by **GJA3** is heavier.\n\n<solution>\n```json\n{\n  \"answer\": \"GJA3\",\n  \"concerns\": []\n}\n```\n</solution>",
+ "error": null
+}

@@ -1,0 +1,7 @@
+{"t": 1793006619.3152351, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact:JARID2+AND+organism_id:9606+AND+reviewed:true&fields=id,gene_names,length"}
+{"t": 1793006619.315784, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793006620.0151072, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact:LRRC32+AND+organism_id:9606+AND+reviewed:true&fields=id,gene_names,length"}
+{"t": 1793006620.0153222, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793006632.126082, "kind": "http", "lib": "netlog_shim.py", "host": "rest.ensembl.org", "method": "GET", "path": "/lookup/symbol/homo_sapiens/JARID2?content-type=application/json"}
+{"t": 1793006632.1264598, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793006653.011114, "kind": "dns", "lib": "netlog_shim.py", "host": "aiplatform.googleapis.com"}

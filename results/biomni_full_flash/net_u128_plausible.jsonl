@@ -1,0 +1,19 @@
+{"t": 1793022409.3033159, "kind": "dns", "lib": "netlog_shim.py", "host": "api.anthropic.com"}
+{"t": 1793022412.546133, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793022413.158378, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact:UPB1+AND+organism_id:9606+AND+reviewed:true&fields=accession,gene_primary,length&format=json"}
+{"t": 1793022416.441746, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793022416.9347541, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact:NDUFS8+AND+organism_id:9606+AND+reviewed:true&fields=accession,gene_primary,length&format=json"}
+{"t": 1793022417.166861, "kind": "dns", "lib": "netlog_shim.py", "host": "aiplatform.googleapis.com"}
+{"t": 1793022421.164431, "kind": "http", "lib": "netlog_shim.py", "host": "eutils.ncbi.nlm.nih.gov", "method": "GET", "path": "/entrez/eutils/esearch.fcgi?db=gene&term=Homo+sapiens%5BOrganism%5D+AND+UPB1%5BGene%5D&retmax=5&tool=biopython&email=test%40example.com"}
+{"t": 1793022421.164887, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793022421.5447192, "kind": "http", "lib": "netlog_shim.py", "host": "eutils.ncbi.nlm.nih.gov", "method": "GET", "path": "/entrez/eutils/efetch.fcgi?db=gene&id=51733&rettype=gb&retmode=xml&tool=biopython&email=test%40example.com"}
+{"t": 1793022421.545453, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793022422.331809, "kind": "http", "lib": "netlog_shim.py", "host": "eutils.ncbi.nlm.nih.gov", "method": "GET", "path": "/entrez/eutils/efetch.fcgi?db=nucleotide&id=NC_000022.11&rettype=gbwithparts&retmode=text&tool=biopython&email=test%40example.com"}
+{"t": 1793022422.3319721, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793022434.33567, "kind": "http", "lib": "netlog_shim.py", "host": "eutils.ncbi.nlm.nih.gov", "method": "GET", "path": "/entrez/eutils/esearch.fcgi?db=gene&term=Homo+sapiens%5BOrganism%5D+AND+NDUFS8%5BGene%5D&retmax=5&tool=biopython&email=test%40example.com"}
+{"t": 1793022434.336423, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793022434.716119, "kind": "http", "lib": "netlog_shim.py", "host": "eutils.ncbi.nlm.nih.gov", "method": "GET", "path": "/entrez/eutils/efetch.fcgi?db=gene&id=4728&rettype=gb&retmode=xml&tool=biopython&email=test%40example.com"}
+{"t": 1793022434.716694, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793022435.5056279, "kind": "http", "lib": "netlog_shim.py", "host": "eutils.ncbi.nlm.nih.gov", "method": "GET", "path": "/entrez/eutils/efetch.fcgi?db=nucleotide&id=NC_000011.10&rettype=gbwithparts&retmode=text&tool=biopython&email=test%40example.com"}
+{"t": 1793022435.505749, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793022469.844028, "kind": "dns", "lib": "netlog_shim.py", "host": "aiplatform.googleapis.com"}
