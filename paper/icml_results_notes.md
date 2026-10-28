@@ -75,3 +75,10 @@ H2 (registered: exact-route fields propagate less): REVERSED in both models (Dee
   Interpretation (exploratory): routes are used when the workflow passes through them (RDKit for chemistry; lineage for organism) or a contradiction triggers them; plausible length+mass scaled alike trigger nothing.
 H3 mixed: DeepSeek plausible 20% vs 46% (p 4e-5), impossible n=5; Flash impossible 50% vs 90% (p .02, n=6), plausible 42% vs 29% n.s.
 Not delivered: DS 28 (20 never requested, 4 FASTA recount, 2 absent, 2 json); Flash 26 (23 never requested, 3 absent). Flat-file parser added before Flash run; DS 9 flat-text runs redone.
+
+## Override boundary (Phase 1, 2026-10-27) — results/boundary/, fits.txt, curves.json, paper/figures/icml_boundary.pdf
+Full record (sequence / formula+SMILES present), paired field scaled alike, 40 tasks per point, 8 factors per direction, 5 models.
+50% override point (factor): Opus x0.91/x1.13 (protein), ~x0.9-1.1 (chem); Argon x0.85/x1.04, x0.68/x1.18; Flash x0.89/x1.20, chem non-monotonic;
+DeepSeek <x0.9 / x1.77, x0.95/x1.48; Sonnet 5 x0.54/x2.30, x0.51/x5.20.
+=> three tiers (~10-20% | 50-80% | ~2x). Inflation harder than shrinking for DeepSeek/Sonnet 5, symmetric for Opus.
+=> Biomni plausible residuals (x0.75-1.25 on length/mass) are predicted by the native curves at those factors (DeepSeek 25-78%, Flash 42-65%).
