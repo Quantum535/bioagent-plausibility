@@ -1,0 +1,3033 @@
+{
+ "seed": 1,
+ "n_tasks": 50,
+ "proteins": "data/proteins_v2.json",
+ "alternate_direction": true,
+ "tasks": [
+  {
+   "template": "length_threshold",
+   "target_field": "length",
+   "target_accession": "P50553",
+   "accessions": [
+    "P50553"
+   ],
+   "params": {
+    "accession": "P50553",
+    "threshold": 259
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "length": 60000
+     },
+     "clean_value": 236,
+     "corrupted_value": 60000,
+     "factor": null,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "length": 283,
+      "mass": 30545
+     },
+     "clean_value": 236,
+     "corrupted_value": 283,
+     "factor": 1.2,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "coherent_plausible": {
+     "fields": {
+      "length": 283,
+      "mass": 30632
+     },
+     "clean_value": 236,
+     "corrupted_value": 283,
+     "factor": 1.2,
+     "full_patch": {
+      "sequence": "MESSAKMESGGAGQQPQPQPQQPFLPPAACFFATAAAAAAAAAAAAAQSAQQQQQQQQQQQQAPQLRPAADGQPSGGGHKSAPKQVKRQRSSSPELMRCKRRLNFSGFGYSLPQQQPAAVARRNERERNRVKLVNLGFATLREHVPNGAANKKMSKVETLRSAVEYIRALQQLLDEHDAVSAAFQAGVLSPTISPNYSNDLNSMAGSPVSSYSSDEGSYDPLSPEEQELLDFTNWFGKGKEGESDRRHSKGCNCKRSGCLKNYCECYEAKIMCSSICKCIGCK",
+      "mass": 30632
+     },
+     "coherent": true,
+     "implied": "yes",
+     "construction": "natural_segment",
+     "donor": "Q6MZP7",
+     "donor_start": 583
+    }
+   },
+   "gold": "no",
+   "prompt": "Does protein P50553 have more than 259 residues? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "u004",
+   "direction": "inflate"
+  },
+  {
+   "template": "mass_comparison",
+   "target_field": "mass",
+   "target_accession": "O95393",
+   "accessions": [
+    "O95393",
+    "O75072"
+   ],
+   "params": {
+    "gene_A": "BMP10",
+    "gene_B": "FKTN",
+    "acc_A": "O95393",
+    "acc_B": "O75072"
+   },
+   "answer_type": "string",
+   "n_calls_expected": 2,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "mass": 9000000000
+     },
+     "clean_value": 48047,
+     "corrupted_value": 9000000000,
+     "factor": null,
+     "direction": "inflate",
+     "implied": "BMP10"
+    },
+    "plausible": {
+     "fields": {
+      "length": 530,
+      "mass": 60059
+     },
+     "clean_value": 48047,
+     "corrupted_value": 60059,
+     "factor": 1.25,
+     "direction": "inflate",
+     "implied": "BMP10"
+    },
+    "coherent_plausible": {
+     "fields": {
+      "length": 530,
+      "mass": 60350
+     },
+     "clean_value": 48047,
+     "corrupted_value": 60350,
+     "factor": 1.25,
+     "full_patch": {
+      "sequence": "MGSLVLTLCALFCLAAYLVSGSPIMNLEQSPLEEDMSLFGDVFSEQDGVDFNTLLQSMKDEFLKTLNLSDIPTQDSAKVDPPEYMLELYNKFATDRTSMPSANIIRSFKNEDLFSQPVSFNGLRKYPLLFNVSIPHHEEVIMAELRLYTLVQRDRMIYDGVDRKITIFEVLESKGDNEGERNMLVLVSGEIYGTNSEWETFDVTDAIRRWQKSGSSTHQLEVHIESKHDEAEDASSGRLEIDTSAQNKHNPLLIVFSDDQSSDKERKEELNEMISHEQLPELDNLGLDSFSSGPGEEALLQMRSNIIYDSTARIRRNAKGNYCKRTPLYIDFKEIGWDSWIIAPPGYEAYECRGVCNYPLAEHLTPTKHAIIQALVHLKNSQKASKACCVPTKLEPISILYLDKGVVTYKFKYEGMAVSECGCRPLVEYFLTGKYITALQKFLLPSDCSEVATAFAYLMTDMWLGDSDCVSPEIFWSALGNLYPAFTKKMQQDAQEFLICVLNELHEALKKYHYSRRRSYEKGSTQRCCR",
+      "mass": 60350
+     },
+     "coherent": true,
+     "implied": "BMP10",
+     "construction": "natural_segment",
+     "donor": "Q70EL3",
+     "donor_start": 66
+    }
+   },
+   "gold": "FKTN",
+   "prompt": "Which is heavier, the protein encoded by BMP10 or FKTN? Give the gene symbol and both masses in kDa. Put only the gene symbol of the heavier protein in the JSON \"answer\" field.",
+   "task_id": "u005",
+   "direction": "inflate"
+  },
+  {
+   "template": "length_threshold",
+   "target_field": "length",
+   "target_accession": "Q8N4E7",
+   "accessions": [
+    "Q8N4E7"
+   ],
+   "params": {
+    "accession": "Q8N4E7",
+    "threshold": 266
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "length": 60000
+     },
+     "clean_value": 242,
+     "corrupted_value": 60000,
+     "factor": null,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "length": 290,
+      "mass": 33046
+     },
+     "clean_value": 242,
+     "corrupted_value": 290,
+     "factor": 1.2,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "coherent_plausible": {
+     "fields": {
+      "length": 290,
+      "mass": 33128
+     },
+     "clean_value": 242,
+     "corrupted_value": 290,
+     "factor": 1.2,
+     "full_patch": {
+      "sequence": "MLSCFRLLSRHISPSLASLRPVRCCFALPLRWAPGRPLDPRQIAPRRPLAAAASSRDPTGPAAGPSRVRQNFHPDSEAAINRQINLELYASYVYLSMAYYFSRDDVALNNFSRYFLHQSREETEHAEKLMRLQNQRGGRIRLQDIKKPEQDDWESGLHAMECALLLEKNVNQSLLELHALASDKGDPHLCDFLETYYLNEQVKSIKELGDHVHNLVKMGAPDAGLAEYLFDTHTLGNENKQNRHAYDKLRGLYIPARFQKSIELGTLTIRAKPFHDSEELVPLCYRCSTN",
+      "mass": 33128
+     },
+     "coherent": true,
+     "implied": "yes",
+     "construction": "natural_segment",
+     "donor": "Q9HBG6",
+     "donor_start": 1015
+    }
+   },
+   "gold": "no",
+   "prompt": "Does protein Q8N4E7 have more than 266 residues? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "u012",
+   "direction": "inflate"
+  },
+  {
+   "template": "mass_comparison",
+   "target_field": "mass",
+   "target_accession": "P28039",
+   "accessions": [
+    "P28039",
+    "Q9P2Y4"
+   ],
+   "params": {
+    "gene_A": "AOAH",
+    "gene_B": "ZNF219",
+    "acc_A": "P28039",
+    "acc_B": "Q9P2Y4"
+   },
+   "answer_type": "string",
+   "n_calls_expected": 2,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "mass": 9000000000
+     },
+     "clean_value": 65105,
+     "corrupted_value": 9000000000,
+     "factor": null,
+     "direction": "inflate",
+     "implied": "AOAH"
+    },
+    "plausible": {
+     "fields": {
+      "length": 719,
+      "mass": 81381
+     },
+     "clean_value": 65105,
+     "corrupted_value": 81381,
+     "factor": 1.25,
+     "direction": "inflate",
+     "implied": "AOAH"
+    },
+    "coherent_plausible": {
+     "fields": {
+      "length": 719,
+      "mass": 81576
+     },
+     "clean_value": 65105,
+     "corrupted_value": 81576,
+     "factor": 1.25,
+     "full_patch": {
+      "sequence": "MQSPWKILTVAPLFLLLSLQSSASPANDDQSRPSLSNGHTCVGCVLVVSVIEQLAQVHNSTVQASMERLCSYLPEKLFLKTTCYLVIDKFGSDIIKLLSADMNADVVCHTLEFCKQNTGQPLCHLYPLPKETWKFTLQKARQIVKKSPILKYSRSGSDICSLPVLAKICQKIKLAMEQSVPFKDVDSDKYSVFPTLRGYHWRGRDCNDSDESVYPGRRPNNWDVHQDSNCNGIWGVDPKDGVPYEKKFCEGSQPRGIILLGDSAGAHFHISPEWITASQMSLNSFINLPTALTNELDWPQLSGATGFLDSTVGIKEKSIYLRLWKRNHCNHRDYQNISRNGASSRNLKKFIESLSRNKVLDYPAIVIYAMIGNDVCSGKSDPVPAMTTPEKLYSNVMQTLKHLNSHLPNGSHVILYGLPDGTFLWDNLHNRYHPLGQLNKDMTYAQLYSFLNCLQVSPCHGWMSSNKTLRTLTSERAEQLSNTLKKIAASEKFTNFNLFYMDFAFHEIIQEWQKRGGQPWQLIEPVDGFHPNEVALLLLADHFWKKVQLQWPQILGKENPFNPQIKQVFGDQGGHPMSERRHEQSGGPEHGPERGPFRGGQDCRGPPDRRGPHPDFPDDFSRPDDFHPDKRFGHRLREFEGRGGPLPQEEKWRRGGPGPPFPPDHREFSEGDGRGAARGPPGAWEGRRPGDERFPRDPEDPRFRGRREESFRRGAPPRH",
+      "mass": 81576
+     },
+     "coherent": true,
+     "implied": "AOAH",
+     "construction": "natural_segment",
+     "donor": "Q9C0J8",
+     "donor_start": 968
+    }
+   },
+   "gold": "ZNF219",
+   "prompt": "Which is heavier, the protein encoded by AOAH or ZNF219? Give the gene symbol and both masses in kDa. Put only the gene symbol of the heavier protein in the JSON \"answer\" field.",
+   "task_id": "u013",
+   "direction": "inflate"
+  },
+  {
+   "template": "length_threshold",
+   "target_field": "length",
+   "target_accession": "Q4G0N8",
+   "accessions": [
+    "Q4G0N8"
+   ],
+   "params": {
+    "accession": "Q4G0N8",
+    "threshold": 1324
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "length": 60000
+     },
+     "clean_value": 1177,
+     "corrupted_value": 60000,
+     "factor": null,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "length": 1471,
+      "mass": 169008
+     },
+     "clean_value": 1177,
+     "corrupted_value": 1471,
+     "factor": 1.25,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "coherent_plausible": {
+     "fields": {
+      "length": 1471,
+      "mass": 169612
+     },
+     "clean_value": 1177,
+     "corrupted_value": 1471,
+     "factor": 1.25,
+     "full_patch": {
+      "sequence": "MAGIFKEFFFSTEDLPEVILTLSLISSIGAFLNRHLEDFPIPVPVILFLLGCSFEVLSFTSSQVQRYANAIQWMSPDLFFRIFTPVVFFTTAFDMDTYMLQKLFWQILLISIPGFLVNYILVLWHLASVNQLLLKPTQWLLFSAILVSSDPMLTAAAIRDLGLSRSLISLINGESLMTSVISLITFTSIMDFDQRLQSKRNHTLAEEIVGGICSYIIASFLFGILSSKLIQFWMSTVFGDDVNHISLIFSILYLIFYICELVGMSGIFTLAIVGLLLNSTSFKAAIEETLLLEFWTFLSRIAFLMVFTFFGLLIPAHTYLYIEFVDIYYSLNIYLTLIVLRFLTLLLISPVLSRVGHEFSWRWIFIMVCSEMKGMPNINMALLLAYSDLYFGSDKEKSQILFHGVLVCLITLVVNRFILPVAVTILGLRDATSTKYKSVCCTFQHFQELTKSAASALKFDKDLANADWNMIEKAITLENPYMLNEEETTEHQKVKCPHCNKEIDEIFNTEAMELANRRLLSAQIASYQRQYRNEILSQSAVQVLVGAAESFGEKKGKCMSLDTIKNYSESQKTVTFARKLLLNWVYNTRKEKEGPSKYFFFRICHTIVFTEEFEHVGYLVILMNIFPFIISWISQLNVIYHSELKHTNYCFLTLYILEALLKIAAMRKDFFSHAWNIFELAITLIGILHVILIEIDTIKYIFNETEVIVFIKVVQFFRILRIFKLIAPKLLQIIDKRMSHQKTFWYGILKGYVQGEADIMTIIDQITSSKQIKQMLLKQVIRNMEHAIKELGYLEYDHPEIAVTVKTKEEINVMLNMATEILKAFGLKGIISKTEGAGINKLIMAKKKEVLDSQSIIRPLTVEEVLYHIPWLDKNKDYINFIQEKAKVVTFDCGNDIFEEGDEPKGIYIIISGMVKLEKSKPGLGIDQMVESKEKDFPIIDTDYMLSGEIIGEINCLTNEPMKYSATCKTVVETCFIPKTHLYDAFEQCSPLIKQKMWLKLGLAITARKIREHLSYEDWNYNMQLKLSNIYVVDIPMSTKTDIYDENLIYVILIHGAVEDCLLRKTYRAPFLIPITCHQIQSIEDFTKVVIIQTPINMKTFRRNIRKFVPKHKSYLTPGLIGSVGTLEEGIQEERNVKEDGAHSAATARSPQPCSLLGTKFNCKESPRINLRKVRKEVGRSREIAFKENRRLQDDLATMARENQEISLELEAAVQEKEEMKSRVHKYITEVSRWESLMAAKEKENQDLLDRFQMLHNRAEDWEVKAHQAEGESSSVRLELLSIDTERRHLRERVELLEKEIQEHINAHHAYESQISSMAKAMSRLEEELRHQEDEKATVLNDLSSLRELCIKLDSGKDIMTQQLNSKNLEFERVVVELENVKSESDLLKKQLSNERHTVKNLESLLATNRDKEFHSHLTSHEKDTEIQLLKEKLTLSESKLTSQSRENTMLRAKVAQLQTDYDALKRQIST",
+      "mass": 169612
+     },
+     "coherent": true,
+     "implied": "yes",
+     "construction": "natural_segment",
+     "donor": "Q66GS9",
+     "donor_start": 808
+    }
+   },
+   "gold": "no",
+   "prompt": "Does protein Q4G0N8 have more than 1324 residues? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "u020",
+   "direction": "inflate"
+  },
+  {
+   "template": "mass_comparison",
+   "target_field": "mass",
+   "target_accession": "O75475",
+   "accessions": [
+    "O75475",
+    "O14772"
+   ],
+   "params": {
+    "gene_A": "PSIP1",
+    "gene_B": "FPGT",
+    "acc_A": "O75475",
+    "acc_B": "O14772"
+   },
+   "answer_type": "string",
+   "n_calls_expected": 2,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "mass": 9000000000
+     },
+     "clean_value": 60103,
+     "corrupted_value": 9000000000,
+     "factor": null,
+     "direction": "inflate",
+     "implied": "PSIP1"
+    },
+    "plausible": {
+     "fields": {
+      "length": 662,
+      "mass": 75129
+     },
+     "clean_value": 60103,
+     "corrupted_value": 75129,
+     "factor": 1.25,
+     "direction": "inflate",
+     "implied": "PSIP1"
+    },
+    "coherent_plausible": {
+     "fields": {
+      "length": 662,
+      "mass": 74494
+     },
+     "clean_value": 60103,
+     "corrupted_value": 74494,
+     "factor": 1.25,
+     "full_patch": {
+      "sequence": "MTRDFKPGDLIFAKMKGYPHWPARVDEVPDGAVKPPTNKLPIFFFGTHETAFLGPKDIFPYSENKEKYGKPNKRKGFNEGLWEIDNNPKVKFSSQQAATKQSNASSDVEVEEKETSVSKEDTDHEEKASNEDVTKAVDITTPKAARRGRKRKAEKQVETEEAGVVTTATASVNLKVSPKRGRPAATEVKIPKPRGRPKMVKQPCPSESDIITEEDKSKKKGQEEKQPKKQPKKDEEGQKEEDKPRKEPDKKEGKKEVESKRKNLAKTGVTSTSDSEEEGDDQEGEKKRKGGRNFQTAHRRNMLKGQHEKEAADRKRKQEEQMETEQQNKDEGKKPEVKKVEKKRETSMDSRLQRIHAEIKNSLKIDNLDVNRCIEALDELASLQVTMQQAQKHTEMITTLKKIRRFKVSQVIMEKSTMLYNKFKNMFLVGEGDSVITQVLNKSLAEQRQHEEANKTKDQGKKGPNKKLEKEQTGSKTLNGGSDAQDGNQPQHNGESNEDSKDNHEASTKKKPSSEERETEISLKDSTLDNHLEHLSLAHNRLAMATALSAGGLGPLPRVTSLDLSGNSLYSGLLERLLGEAPSLHTLSLAENSLTRLTRHTFRDMPALEQLDLHSNVLMDIEDGAFEGLPRLTHLNLSRNSLTCISDFSLQQLRVLDLSCNS",
+      "mass": 74494
+     },
+     "coherent": true,
+     "implied": "PSIP1",
+     "construction": "natural_segment",
+     "donor": "Q14392",
+     "donor_start": 97
+    }
+   },
+   "gold": "FPGT",
+   "prompt": "Which is heavier, the protein encoded by PSIP1 or FPGT? Give the gene symbol and both masses in kDa. Put only the gene symbol of the heavier protein in the JSON \"answer\" field.",
+   "task_id": "u021",
+   "direction": "inflate"
+  },
+  {
+   "template": "length_threshold",
+   "target_field": "length",
+   "target_accession": "O76075",
+   "accessions": [
+    "O76075"
+   ],
+   "params": {
+    "accession": "O76075",
+    "threshold": 380
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "length": 60000
+     },
+     "clean_value": 338,
+     "corrupted_value": 60000,
+     "factor": null,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "length": 422,
+      "mass": 48888
+     },
+     "clean_value": 338,
+     "corrupted_value": 422,
+     "factor": 1.25,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "coherent_plausible": {
+     "fields": {
+      "length": 422,
+      "mass": 48703
+     },
+     "clean_value": 338,
+     "corrupted_value": 422,
+     "factor": 1.25,
+     "full_patch": {
+      "sequence": "MLQKPKSVKLRALRSPRKFGVAGRSCQEVLRKGCLRFQLPERGSRLCLYEDGTELTEDYFPSVPDNAELVLLTLGQAWQGYVSDIRRFLSAFHEPQVGLIQAAQQLLCDEQAPQRQRLLADLLHNVSQNIAAETRAEDPPWFEGLESRFQSKSGYLRYSCESRIRSYLREVSSYPSTVGAEAQEEFLRVLGSMCQRLRSMQYNGSYFDRGAKGGSRLCTPEGWFSCQGPFDMDSCLSRHSINPYSNRESRILFSTWNLDHIIEKKRTIIPTLVEAIKEQDGREVDWEYFYGLLFTSENLKLVHIVCHKKTTHKLNCDPSRIYKPQTRLKRKQPVRKRQLLIFYKTKEIARTEEHQETQLIGDGELSLSRSLVNSSDKIIRKAGSSIFQHNVEGWKINSSLVLEIRKNILRFLDAERDVSVVK",
+      "mass": 48703
+     },
+     "coherent": true,
+     "implied": "yes",
+     "construction": "natural_segment",
+     "donor": "Q92187",
+     "donor_start": 15
+    }
+   },
+   "gold": "no",
+   "prompt": "Does protein O76075 have more than 380 residues? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "u028",
+   "direction": "inflate"
+  },
+  {
+   "template": "mass_comparison",
+   "target_field": "mass",
+   "target_accession": "A6NCS4",
+   "accessions": [
+    "A6NCS4",
+    "Q86SK9"
+   ],
+   "params": {
+    "gene_A": "NKX2-6",
+    "gene_B": "SCD5",
+    "acc_A": "A6NCS4",
+    "acc_B": "Q86SK9"
+   },
+   "answer_type": "string",
+   "n_calls_expected": 2,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "mass": 9000000000
+     },
+     "clean_value": 32121,
+     "corrupted_value": 9000000000,
+     "factor": null,
+     "direction": "inflate",
+     "implied": "NKX2-6"
+    },
+    "plausible": {
+     "fields": {
+      "length": 376,
+      "mass": 40151
+     },
+     "clean_value": 32121,
+     "corrupted_value": 40151,
+     "factor": 1.25,
+     "direction": "inflate",
+     "implied": "NKX2-6"
+    },
+    "coherent_plausible": {
+     "fields": {
+      "length": 376,
+      "mass": 40706
+     },
+     "clean_value": 32121,
+     "corrupted_value": 40706,
+     "factor": 1.25,
+     "full_patch": {
+      "sequence": "MLLSPVTSTPFSVKDILRLERERSCPAASPHPRVRKSPENFQYLRMDAEPRGSEVHNAGGGGGDRKLDGSEPPGGPCEAVLEMDAERMGEPQPGLNAASPLGGGTRVPERGVGNSGDSVRGGRSEQPKARQRRKPRVLFSQAQVLALERRFKQQRYLSAPEREHLASALQLTSTQVKIWFQNRRYKCKRQRQDKSLELAGHPLTPRRVAVPVLVRDGKPCLGPGPGAPAFPSPYSAAVSPYSCYGGYSGAPYGAGYGTCYAGAPSGPAPHTPLASAGFGHGGQNATPQGHLAATLQGVRAWRGVYENVKYVQQENFWIGPSSEALIHLGAKFSPCMRQDPQVHSFIRSAREREKHSACCVRNDRSGCVQTSEEECS",
+      "mass": 40706
+     },
+     "coherent": true,
+     "implied": "NKX2-6",
+     "construction": "natural_segment",
+     "donor": "Q96CC6",
+     "donor_start": 444
+    }
+   },
+   "gold": "SCD5",
+   "prompt": "Which is heavier, the protein encoded by NKX2-6 or SCD5? Give the gene symbol and both masses in kDa. Put only the gene symbol of the heavier protein in the JSON \"answer\" field.",
+   "task_id": "u029",
+   "direction": "inflate"
+  },
+  {
+   "template": "length_threshold",
+   "target_field": "length",
+   "target_accession": "P51795",
+   "accessions": [
+    "P51795"
+   ],
+   "params": {
+    "accession": "P51795",
+    "threshold": 918
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "length": 60000
+     },
+     "clean_value": 816,
+     "corrupted_value": 60000,
+     "factor": null,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "length": 1020,
+      "mass": 113481
+     },
+     "clean_value": 816,
+     "corrupted_value": 1020,
+     "factor": 1.25,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "coherent_plausible": {
+     "fields": {
+      "length": 1020,
+      "mass": 114284
+     },
+     "clean_value": 816,
+     "corrupted_value": 1020,
+     "factor": 1.25,
+     "full_patch": {
+      "sequence": "MAMWQGAMDNRGFQQGSFSSFQNSSSDEDLMDIPATAMDFSMRDDVPPLDREVGEDKSYNGGGIGSSNRIMDFLEEPIPGVGTYDDFNTIDWVREKSRDRDRHREITNKSKESTWALIHSVSDAFSGWLLMLLIGLLSGSLAGLIDISAHWMTDLKEGICTGGFWFNHEHCCWNSEHVTFEERDKCPEWNSWSQLIISTDEGAFAYIVNYFMYVLWALLFAFLAVSLVKVFAPYACGSGIPEIKTILSGFIIRGYLGKWTLVIKTITLVLAVSSGLSLGKEGPLVHVACCCGNILCHCFNKYRKNEAKRREVLSAAAAAGVSVAFGAPIGGVLFSLEEVSYYFPLKTLWRSFFAALVAAFTLRSINPFGNSRLVLFYVEFHTPWHLFELVPFILLGIFGGLWGALFIRTNIAWCRKRKTTQLGKYPVIEVLVVTAITAILAFPNEYTRMSTSELISELFNDCGLLDSSKLCDYENRFNTSKGGELPDRPAGVGVYSAMWQLALTLILKIVITIFTFGMKIPSGLFIPSMAVGAIAGRLLGVGMEQLAYYHQEWTVFNSWCSQGADCITPGLYAMVGAAACLGGVTRMTVSLVVIMFELTGGLEYIVPLMAAAMTSKWVADALGREGIYDAHIRLNGYPFLEAKEEFAHKTLAMDVMKPRRNDPLLTVLTQDSMTVEDVETIISETTYSGFPVVVSRESQRLVGFVLRRDLIISIENARKKQDGVVSTSIIYFTEHSPPLPPYTPPTLKLRNILDLSPFTVTDLTPMEIVVDIFRKLGLRQCLVTHNGRLLGIITKKDVLKHIAQMANQDPDSILFNYTWTNPTCCVHNVIIGKLWIEQYGTVEILNHRTGHKCVLHFKPCGLFGKELHKVEGHIQDKNKKKLFMIYGKWTECLWGIDPVSYESFKKQERRGDHLRKAKLDEDSGKADSDVADDVPVAQETVQVIPGSKLLWRINTRPPNSAQMYNFTSFTVSLNELETGMEKTLPPTDCRLRPDIRGMENGNMDLASQEKERLEEKQREA",
+      "mass": 114284
+     },
+     "coherent": true,
+     "implied": "yes",
+     "construction": "natural_segment",
+     "donor": "Q9H1P3",
+     "donor_start": 229
+    }
+   },
+   "gold": "no",
+   "prompt": "Does protein P51795 have more than 918 residues? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "u036",
+   "direction": "inflate"
+  },
+  {
+   "template": "mass_comparison",
+   "target_field": "mass",
+   "target_accession": "Q9BZG8",
+   "accessions": [
+    "Q05D32",
+    "Q9BZG8"
+   ],
+   "params": {
+    "gene_A": "CTDSPL2",
+    "gene_B": "DPH1",
+    "acc_A": "Q05D32",
+    "acc_B": "Q9BZG8"
+   },
+   "answer_type": "string",
+   "n_calls_expected": 2,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "mass": 9000000000
+     },
+     "clean_value": 48134,
+     "corrupted_value": 9000000000,
+     "factor": null,
+     "direction": "inflate",
+     "implied": "DPH1"
+    },
+    "plausible": {
+     "fields": {
+      "length": 548,
+      "mass": 60168
+     },
+     "clean_value": 48134,
+     "corrupted_value": 60168,
+     "factor": 1.25,
+     "direction": "inflate",
+     "implied": "DPH1"
+    },
+    "coherent_plausible": {
+     "fields": {
+      "length": 548,
+      "mass": 61196
+     },
+     "clean_value": 48134,
+     "corrupted_value": 61196,
+     "factor": 1.25,
+     "full_patch": {
+      "sequence": "MAALVVSGAAEQGGRDGPGRGRAPRGRVANQIPPEILKNPQLQAAIRVLPSNYNFEIPKTIWRIQQAQAKKVALQMPEGLLLFACTIVDILERFTEAEVMVMGDVTYGACCVDDFTARALGADFLVHYGHSCLIPMDTSAQDFRVLYVFVDIRIDTTHLLDSLRLTFPPATALALVSTIQFVSTLQAAAQELKAEYRVSVPQCKPLSPGEILGCTSPRLSKEVEAVVYLGDGRFHLESVMIANPNVPAYRYDPYSKVLSREHYDHQRMQAARQEAIATARSAKSWGLILGTLGRQGSPKILEHLESRLRALGLSFVRLLLSEIFPSKLSLLPEVDVWVQVACPRLSIDWGTAFPKPLLTPYEAAVALRDISWQQPYPMDFYAGSSLGPWTVNHGQDRRPHAPGRPARGKVQEGSARPPSAVACEDCSCRDEKVAPLAPKGSDCSPIMRRSGRYMSCGENHGVRPPNPEQYLTPLQQKEVTVRHLKTKLKESERRLHERESEIVELKSQLARMREDWIEEECHRVEAQLALKEARKEIKQLKQVIETMR",
+      "mass": 61196
+     },
+     "coherent": true,
+     "implied": "DPH1",
+     "construction": "natural_segment",
+     "donor": "Q9NX95",
+     "donor_start": 235
+    }
+   },
+   "gold": "CTDSPL2",
+   "prompt": "Which is heavier, the protein encoded by CTDSPL2 or DPH1? Give the gene symbol and both masses in kDa. Put only the gene symbol of the heavier protein in the JSON \"answer\" field.",
+   "task_id": "u037",
+   "direction": "inflate"
+  },
+  {
+   "template": "length_threshold",
+   "target_field": "length",
+   "target_accession": "Q9H252",
+   "accessions": [
+    "Q9H252"
+   ],
+   "params": {
+    "accession": "Q9H252",
+    "threshold": 1054
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "length": 60000
+     },
+     "clean_value": 958,
+     "corrupted_value": 60000,
+     "factor": null,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "length": 1150,
+      "mass": 127710
+     },
+     "clean_value": 958,
+     "corrupted_value": 1150,
+     "factor": 1.2,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "coherent_plausible": {
+     "fields": {
+      "length": 1150,
+      "mass": 127004
+     },
+     "clean_value": 958,
+     "corrupted_value": 1150,
+     "factor": 1.2,
+     "full_patch": {
+      "sequence": "MPVRRGHVAPQNTYLDTIIRKFEGQSRKFLIANAQMENCAIIYCNDGFCELFGYSRVEVMQQPCTCDFLTGPNTPSSAVSRLAQALLGAEECKVDILYYRKDASSFRCLVDVVPVKNEDGAVIMFILNFEDLAQLLAKCSSRSLSQRLLSQSFLGSEGSHGRPGGPGPGTGRGKYRTISQIPQFTLNFVEFNLEKHRSSSTTEIEIIAPHKVVERTQNVTEKVTQVLSLGADVLPEYKLQAPRIHRWTILHYSPFKAVWDWLILLLVIYTAVFTPYSAAFLLSDQDESRRGACSYTCSPLTVVDLIVDIMFVVDIVINFRTTYVNTNDEVVSHPRRIAVHYFKGWFLIDMVAAIPFDLLIFRTGSDETTTLIGLLKTARLLRLVRVARKLDRYSEYGAAVLFLLMCTFALIAHWLACIWYAIGNVERPYLEHKIGWLDSLGVQLGKRYNGSDPASGPSVQDKYVTALYFTFSSLTSVGFGNVSPNTNSEKVFSICVMLIGSLMYASIFGNVSAIIQRLYSGTARYHTQMLRVKEFIRFHQIPNPLRQRLEEYFQHAWSYTNGIDMNAVLKGFPECLQADICLHLHRALLQHCPAFSGAGKGCLRALAVKFKTTHAPPGDTLVHLGDVLSTLYFISRGSIEILRDDVVVAILGKNDIFGEPVSLHAQPGKSSADVRALTYCDLHKIQRADLLEVLDMYPAFAESFWSKLEVTFNLRDAAGGLHSSPRQAPGSQDHQGFFLSDNQSDAAPPLSISDASGLWPELLQEMPPRHSPQSPQEDPDCWPLKLGSRLEQLQAQMNRLESRVSSDLSRILQLLQKPMPQGHASYILEAPASNDLALVPIASETTSPGPRLPQGFLPPAQTPSYGDLDDCSPKHRNSSPRMPHLAVATDKTLAPSSEQEQPEGLWPPLASPLHPLEVQGLICGPCFSSLPEHLGSVPKQLDFQRHGSDPGFAGSWGHQPFLPPAACFFATAAAAAAAAAAAAAQSAQQQQQQQQQQQQAPQLRPAADGQPSGGGHKSAPKQVKRQRSSSPELMRCKRRLNFSGFGYSLPQQQPAAVARRNERERNRVKLVNLGFATLREHVPNGAANKKMSKVETLRSAVEYIRALQQLLDEHDAVSAAFQAGVLSPTISPNYSNDLNSMAGSPVSSYS",
+      "mass": 127004
+     },
+     "coherent": true,
+     "implied": "yes",
+     "construction": "natural_segment",
+     "donor": "P50553",
+     "donor_start": 21
+    }
+   },
+   "gold": "no",
+   "prompt": "Does protein Q9H252 have more than 1054 residues? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "u044",
+   "direction": "inflate"
+  },
+  {
+   "template": "mass_comparison",
+   "target_field": "mass",
+   "target_accession": "P43268",
+   "accessions": [
+    "Q8TDF5",
+    "P43268"
+   ],
+   "params": {
+    "gene_A": "NETO1",
+    "gene_B": "ETV4",
+    "acc_A": "Q8TDF5",
+    "acc_B": "P43268"
+   },
+   "answer_type": "string",
+   "n_calls_expected": 2,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "mass": 9000000000
+     },
+     "clean_value": 53938,
+     "corrupted_value": 9000000000,
+     "factor": null,
+     "direction": "inflate",
+     "implied": "ETV4"
+    },
+    "plausible": {
+     "fields": {
+      "length": 605,
+      "mass": 67422
+     },
+     "clean_value": 53938,
+     "corrupted_value": 67422,
+     "factor": 1.25,
+     "direction": "inflate",
+     "implied": "ETV4"
+    },
+    "coherent_plausible": {
+     "fields": {
+      "length": 605,
+      "mass": 67924
+     },
+     "clean_value": 53938,
+     "corrupted_value": 67924,
+     "factor": 1.25,
+     "full_patch": {
+      "sequence": "MERRMKAGYLDQQVPYTFSSKSPGNGSLREALIGPLGKLMDPGSLPPLDSEDLFQDLSHFQETWLAEAQVPDSDEQFVPDFHSENLAFHSPTTRIKKEPQSPRTDPALSCSRKPPLPYHHGEQCLYSSAYDPPRQIAIKSPAPGALGQSPLQPFPRAEQRNFLRSSGTSQPHPGHGYLGEHSSVFQQPLDICHSFTSQGGGREPLPAPYQHQLSEPCPPYPQQSFKQEYHDPLYEQAGQPAVDQGGVNGHRYPGAGVVIKQEQTDFAYDSDVTGCASMYLHTEGFSGPSPGDGAMGYGYEKPLRPFPDDVCVVPEKFEGDIKQEGVGAFREGPPYQRRGALQLWQFLVALLDDPTNAHFIAWTGRGMEFKLIEPEEVARLWGIQKNRPAMNYDKLSRSLRYYYEKGIMQKVAGERYVYKFVCEPEALFSLAFPDNQRPALKAEFDRPVSEEDTVPLSHLDESPAYLPELAGPAQPFGPKGGYSYVRRLSRQSTRKEPVTKQVRLCVSPSGLRCEPEPGRSQQWDPLIYSSIFECKPQRVHKLIHNSHDPSYFACLIKEDAVHRQSICYVFKADDQTKVPEIISSIRQAGKIARQEELHCPSEFDD",
+      "mass": 67924
+     },
+     "coherent": true,
+     "implied": "ETV4",
+     "construction": "natural_segment",
+     "donor": "Q86TI0",
+     "donor_start": 46
+    }
+   },
+   "gold": "NETO1",
+   "prompt": "Which is heavier, the protein encoded by NETO1 or ETV4? Give the gene symbol and both masses in kDa. Put only the gene symbol of the heavier protein in the JSON \"answer\" field.",
+   "task_id": "u045",
+   "direction": "inflate"
+  },
+  {
+   "template": "length_threshold",
+   "target_field": "length",
+   "target_accession": "Q9H0A8",
+   "accessions": [
+    "Q9H0A8"
+   ],
+   "params": {
+    "accession": "Q9H0A8",
+    "threshold": 219
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "length": 60000
+     },
+     "clean_value": 199,
+     "corrupted_value": 60000,
+     "factor": null,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "length": 239,
+      "mass": 26117
+     },
+     "clean_value": 199,
+     "corrupted_value": 239,
+     "factor": 1.2,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "coherent_plausible": {
+     "fields": {
+      "length": 239,
+      "mass": 26211
+     },
+     "clean_value": 199,
+     "corrupted_value": 239,
+     "factor": 1.2,
+     "full_patch": {
+      "sequence": "MRFRFCGDLDCPDWVLAEISTLAKMSSVKLRLLCSQVLKELLGQGIDYEKILKLTADAKFESGDVKATVAVLSFILSSAAKHSVDGESLSSELQQLGLPKEHAASLCRCYEEKQSPLQKHLRVCSLRMNRLAGVGWRVDYTLSSSLLQSVEEPMVHLRLEVAAAPGTPAQPVAMSLSADKFQVLLAELKQAQTLMSSLGPEAPRNGTVHLYLTKPLYTSAPSLQHLCRLTINKCTGAIW",
+      "mass": 26211
+     },
+     "coherent": true,
+     "implied": "yes",
+     "construction": "natural_segment",
+     "donor": "O14508",
+     "donor_start": 139
+    }
+   },
+   "gold": "no",
+   "prompt": "Does protein Q9H0A8 have more than 219 residues? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "u052",
+   "direction": "inflate"
+  },
+  {
+   "template": "mass_comparison",
+   "target_field": "mass",
+   "target_accession": "Q86X24",
+   "accessions": [
+    "Q86X24",
+    "Q9BT40"
+   ],
+   "params": {
+    "gene_A": "HORMAD1",
+    "gene_B": "INPP5K",
+    "acc_A": "Q86X24",
+    "acc_B": "Q9BT40"
+   },
+   "answer_type": "string",
+   "n_calls_expected": 2,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "mass": 9000000000
+     },
+     "clean_value": 45200,
+     "corrupted_value": 9000000000,
+     "factor": null,
+     "direction": "inflate",
+     "implied": "HORMAD1"
+    },
+    "plausible": {
+     "fields": {
+      "length": 473,
+      "mass": 54240
+     },
+     "clean_value": 45200,
+     "corrupted_value": 54240,
+     "factor": 1.2,
+     "direction": "inflate",
+     "implied": "HORMAD1"
+    },
+    "coherent_plausible": {
+     "fields": {
+      "length": 473,
+      "mass": 53968
+     },
+     "clean_value": 45200,
+     "corrupted_value": 53968,
+     "factor": 1.2,
+     "full_patch": {
+      "sequence": "MATAQLQRTPMSALVFPNKISTEHQSLVLVKRLLAVSVSCITYLRGIFPECAYGTRYLDDLCVKILREDKNCPGSTQLVKWMLGCYDALQKKYLRMVVLAVYTNPEDPQTISECYQFKFKYTNNGPLMDFISKNQSNESSMLSTDTKKASILLIRKIYILMQNLGPLPNDVCLTMKLFYYDEVTPPDYQPPGFKDGDCEGVIFEGEPMYLNVGEVSTPFHIFKVKVTTERERMENIDSTILSPKQIKTPFQKILRDKDVEDEQEHYTSDDLDIETKMEEQEKNPASSELEEPSLVCEEDEIMRSKESPDLSISHSQVEQLVNKTSELDMSESKTRSGKVFQNKMANGNQPVKSSKENRKRSQHESGRIVLHHFDSSSQESVPKRRKFSEPKEHISANREPSAFPTNHERISEKKLPSTQMSGETLQRPVWNINRELGLPHPPFSQQPVHESPQLHQNEGLAGREPDCSASSMS",
+      "mass": 53968
+     },
+     "coherent": true,
+     "implied": "HORMAD1",
+     "construction": "natural_segment",
+     "donor": "O94898",
+     "donor_start": 962
+    }
+   },
+   "gold": "INPP5K",
+   "prompt": "Which is heavier, the protein encoded by HORMAD1 or INPP5K? Give the gene symbol and both masses in kDa. Put only the gene symbol of the heavier protein in the JSON \"answer\" field.",
+   "task_id": "u053",
+   "direction": "inflate"
+  },
+  {
+   "template": "length_threshold",
+   "target_field": "length",
+   "target_accession": "Q9C0J8",
+   "accessions": [
+    "Q9C0J8"
+   ],
+   "params": {
+    "accession": "Q9C0J8",
+    "threshold": 1503
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "length": 60000
+     },
+     "clean_value": 1336,
+     "corrupted_value": 60000,
+     "factor": null,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "length": 1670,
+      "mass": 182364
+     },
+     "clean_value": 1336,
+     "corrupted_value": 1670,
+     "factor": 1.25,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "coherent_plausible": {
+     "fields": {
+      "length": 1670,
+      "mass": 184922
+     },
+     "clean_value": 1336,
+     "corrupted_value": 1670,
+     "factor": 1.25,
+     "full_patch": {
+      "sequence": "MATEIGSPPRFFHMPRFQHQAPRQLFYKRPDFAQQQAMQQLTFDGKRMRKAVNRKTIDYNPSVIKYLENRIWQRDQRDMRAIQPDAGYYNDLVPPIGMLNNPMNAVTTKFVRTSTNKVKCPVFVVRWTPEGRRLVTGASSGEFTLWNGLTFNFETILQAHDSPVRAMTWSHNDMWMLTADHGGYVKYWQSNMNNVKMFQAHKEAIREASFSPTDNKFATCSDDGTVRIWDFLRCHEERILRGHGADVKCVDWHPTKGLVVSGSKDSQQPIKFWDPKTGQSLATLHAHKNTVMEVKLNLNGNWLLTASRDHLCKLFDIRNLKEELQVFRGHKKEATAVAWHPVHEGLFASGGSDGSLLFWHVGVEKEVGGMEMAHEGMIWSLAWHPLGHILCSGSNDHTSKFWTRNRPGDKMRDRYNLNLLPGMSEDGVEYDDLEPNSLAVIPGMGIPEQLKLAMEQEQMGKDESNEIEMTIPGLDWGMEEVMQKDQKKVPQKKVPYAKPIPAQFQQAWMQNKVPIPAPNEVLNDRKEDIKLEEKKKTQAEIEQEMATLQYTNPQLLEQLKIERLAQKQVEQIQPPPSSGTPLLGPQPFPGQGPMSQIPQGFQQPHPSQQMPMNMAQMGPPGPQGQFRPPGPQGQMGPQGPPLHQGGGGPQGFMGPQGPQGPPQGLPRPQDMHGPQGMQRHPGPHGPLGPQGPPGPQGSSGPQGHMGPQGPPGPQGHIGPQGPPGPQGHLGPQGPPGTQGMQGPPGPRGMQGPPHPHGIQGGPGSQGIQGPVSQGPLMGLNPRGMQGPPGPRENQGPAPQGMIMGHPPQEMRGPHPPGGLLGHGPQEMRGPQEIRGMQGPPPQGSMLGPPQELRGPPGSQSQQGPPQGSLGPPPQGGMQGPPGPQGQQNPARGPHPSQGPIPFQQQKTPLLGDGPRAPFNQEGQSTGPPPLIPGLGQQGAQGRIPPLNPGQGPGPNKGDSRGPPNHHMGPMSERRHEQSGGPEHGPERGPFRGGQDCRGPPDRRGPHPDFPDDFSRPDDFHPDKRFGHRLREFEGRGGPLPQEEKWRRGGPGPPFPPDHREFSEGDGRGAARGPPGAWEGRRPGDERFPRDPEDPRFRGRREESFRRGAPPRHEGRAPPRGRDGFPGPEDFGPEENFDASEEAARGRDLRGRGRGTPRGGRKGLLPTPDEFPRFEGGRKPDSWDGNREPGPGHEHFRDTPRPDHPPHDGHSPASRERSSSLQGMDMASLPPRKRPWHDGPGTSEHREMEAPGGPSEDRGGKGRGGPGPAQRVPKSGRSSSLDGEHHDGYHRDEPFGGPPGSGTPSRGGRSGSNWGRGSNMNSGPPRRGASRGGGRGRLEEKIDELNLKMTSQDEEAHVMKKTIGVIDKEKDFLQETVDEKTEKIANLQENLANKEKAVAQMKIMISECESSVNQLKETLVNRDREINSLRRQLDAAHKELDEVGRSREIAFKENRRLQDDLATMARENQEISLELEAAVQEKEEMKSRVHKYITEVSRWESLMAAKEKENQDLLDRFQMLHNRAEDWEVKAHQAEGESSSVRLELLSIDTERRHLRERVELLEKEIQEHINAHHAYESQISSMAKAMSRLEEELRHQEDEKATVLNDLSSLRELCIKLDSGKDIMTQQLNSKNLEFERVVVELENVKSESDLLKKQLSNERHTVKNLESLL",
+      "mass": 184922
+     },
+     "coherent": true,
+     "implied": "yes",
+     "construction": "natural_segment",
+     "donor": "Q66GS9",
+     "donor_start": 703
+    }
+   },
+   "gold": "no",
+   "prompt": "Does protein Q9C0J8 have more than 1503 residues? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "u060",
+   "direction": "inflate"
+  },
+  {
+   "template": "mass_comparison",
+   "target_field": "mass",
+   "target_accession": "O43525",
+   "accessions": [
+    "O43525",
+    "Q8IXZ2"
+   ],
+   "params": {
+    "gene_A": "KCNQ3",
+    "gene_B": "ZC3H3",
+    "acc_A": "O43525",
+    "acc_B": "Q8IXZ2"
+   },
+   "answer_type": "string",
+   "n_calls_expected": 2,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "mass": 9000000000
+     },
+     "clean_value": 96742,
+     "corrupted_value": 9000000000,
+     "factor": null,
+     "direction": "inflate",
+     "implied": "KCNQ3"
+    },
+    "plausible": {
+     "fields": {
+      "length": 1090,
+      "mass": 120928
+     },
+     "clean_value": 96742,
+     "corrupted_value": 120928,
+     "factor": 1.25,
+     "direction": "inflate",
+     "implied": "KCNQ3"
+    },
+    "coherent_plausible": {
+     "fields": {
+      "length": 1090,
+      "mass": 121613
+     },
+     "clean_value": 96742,
+     "corrupted_value": 121613,
+     "factor": 1.25,
+     "full_patch": {
+      "sequence": "MGLKARRAAGAAGGGGDGGGGGGGAANPAGGDAAAAGDEERKVGLAPGDVEQVTLALGAGADKDGTLLLEGGGRDEGQRRTPQGIGLLAKTPLSRPVKRNNAKYRRIQTLIYDALERPRGWALLYHALVFLIVLGCLILAVLTTFKEYETVSGDWLLLLETFAIFIFGAEFALRIWAAGCCCRYKGWRGRLKFARKPLCMLDIFVLIASVPVVAVGNQGNVLATSLRSLRFLQILRMLRMDRRGGTWKLLGSAICAHSKELITAWYIGFLTLILSSFLVYLVEKDVPEVDAQGEEMKEEFETYADALWWGLITLATIGYGDKTPKTWEGRLIAATFSLIGVSFFALPAGILGSGLALKVQEQHRQKHFEKRRKPAAELIQAAWRYYATNPNRIDLVATWRFYESVVSFPFFRKEQLEAASSQKLGLLDRVRLSNPRGSNTKGKLFTPLNVDAIEESPSKEPKPVGLNNKERFRTAFRMKAYAFWQSSEDAGTGDPMAEDRGYGNDFPIEDMIPTLKAAIRAVRILQFRLYKKKFKETLRPYDVKDVIEQYSAGHLDMLSRIKYLQTRIDMIFTPGPPSTPKHKKSQKGSAFTFPSQQSPRNEPYVARPSTSEIEDQSMMGKFVKVERQVQDMGKKLDFLVDMHMQHMERLQVQVTEYYPTKGTSSPAEAEKKEDNRYSDLKTIICNYSETGPPEPPYSFHQVTIDKVSPYGFFAHDPVNLPRGGPSSGKVQATPPSSATTYVERPTVLPILTLLDSRVSCHSQADLQGPYSDRISPRQRRSITRDSDTPLSLMSVNHEELERSPSGFSISQDRDDYVFGPNGGSSWMREKRYLAEGETDTDTDPFTPSGSMPLSSTGDGISDSVWTPSNKPIGGSHGRFGARGVREGGAAMAAGESMAQRMVWVDLEMTGLDIEKDQIIEMACLITDSDLNILAEGPNLIIKQPDELLDSMSDWCKEHHGKSGLTKAVKESTITLQQAEYEFLSFVRQQTPPGLCPLAGNSVHEDKKFLDKYMPQFMKHLHYRIIDVSTVKELCRRWYPEEYEFAPKKAASHRALDDISESIKELQFYRNNIFKKKIDEKKRKIIENGEN",
+      "mass": 121613
+     },
+     "coherent": true,
+     "implied": "KCNQ3",
+     "construction": "natural_segment",
+     "donor": "Q9Y3B8",
+     "donor_start": 14
+    }
+   },
+   "gold": "ZC3H3",
+   "prompt": "Which is heavier, the protein encoded by KCNQ3 or ZC3H3? Give the gene symbol and both masses in kDa. Put only the gene symbol of the heavier protein in the JSON \"answer\" field.",
+   "task_id": "u061",
+   "direction": "inflate"
+  },
+  {
+   "template": "length_threshold",
+   "target_field": "length",
+   "target_accession": "P50213",
+   "accessions": [
+    "P50213"
+   ],
+   "params": {
+    "accession": "P50213",
+    "threshold": 412
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "length": 60000
+     },
+     "clean_value": 366,
+     "corrupted_value": 60000,
+     "factor": null,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "length": 458,
+      "mass": 49490
+     },
+     "clean_value": 366,
+     "corrupted_value": 458,
+     "factor": 1.25,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "coherent_plausible": {
+     "fields": {
+      "length": 458,
+      "mass": 50257
+     },
+     "clean_value": 366,
+     "corrupted_value": 458,
+     "factor": 1.25,
+     "full_patch": {
+      "sequence": "MAGPAWISKVSRLLGAFHNPKQVTRGFTGGVQTVTLIPGDGIGPEISAAVMKIFDAAKAPIQWEERNVTAIQGPGGKWMIPSEAKESMDKNKMGLKGPLKTPIAAGHPSMNLLLRKTFDLYANVRPCVSIEGYKTPYTDVNIVTIRENTEGEYSGIEHVIVDGVVQSIKLITEGASKRIAEFAFEYARNNHRSNVTAVHKANIMRMSDGLFLQKCREVAESCKDIKFNEMYLDTVCLNMVQDPSQFDVLVMPNLYGDILSDLCAGLIGGLGVTPSGNIGANGVAIFESVHGTAPDIAGKDMANPTALLLSAVMMLRHMGLFDHAARIEAACFATIKDGKSLTKDLGGNAKCSDFTEEICRRVKDLDARKLQYQRAALQAKRSQDLEQAKAYLRVAKWLEAQIIQARSGRPVDLSKVPSPLTDEEGDFILIHHEDLRLSQKAEEVYAQLQKMLLEQQEK",
+      "mass": 50257
+     },
+     "coherent": true,
+     "implied": "yes",
+     "construction": "natural_segment",
+     "donor": "Q5T0F9",
+     "donor_start": 541
+    }
+   },
+   "gold": "no",
+   "prompt": "Does protein P50213 have more than 412 residues? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "u068",
+   "direction": "inflate"
+  },
+  {
+   "template": "mass_comparison",
+   "target_field": "mass",
+   "target_accession": "Q8NHC4",
+   "accessions": [
+    "Q8NHC4",
+    "Q9NP08"
+   ],
+   "params": {
+    "gene_A": "OR10J5",
+    "gene_B": "HMX1",
+    "acc_A": "Q8NHC4",
+    "acc_B": "Q9NP08"
+   },
+   "answer_type": "string",
+   "n_calls_expected": 2,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "mass": 9000000000
+     },
+     "clean_value": 34401,
+     "corrupted_value": 9000000000,
+     "factor": null,
+     "direction": "inflate",
+     "implied": "OR10J5"
+    },
+    "plausible": {
+     "fields": {
+      "length": 371,
+      "mass": 41281
+     },
+     "clean_value": 34401,
+     "corrupted_value": 41281,
+     "factor": 1.2,
+     "direction": "inflate",
+     "implied": "OR10J5"
+    },
+    "coherent_plausible": {
+     "fields": {
+      "length": 371,
+      "mass": 41554
+     },
+     "clean_value": 34401,
+     "corrupted_value": 41554,
+     "factor": 1.2,
+     "full_patch": {
+      "sequence": "MKRKNFTEVSEFIFLGFSSFGKHQITLFVVFLTVYILTLVANIIIVTIICIDHHLHTPMYFFLSMLASSETVYTLVIVPRMLLSLIFHNQPISLAGCATQMFFFVILATNNCFLLTAMGYDRYVAICRPLRYTVIMSKGLCAQLVCGSFGIGLTMAVLHVTAMFNLPFCGTVVDHFFCDIYPVMKLSCIDTTINEIINYGVSSFVIFVPIGLIFISYVLVISSILQIASAEGRKKTFATCVSHLTVVIVHCGCASIAYLKPKSESSIEKDLVLSVTYTIITPLLNPVVYSLRNKEVKDALCRVVGRNISEGKGKIPPESTLIFNIDLLEIRNGPRSHESFQEMDLNDDWKLSKDEVKAYLKKEFEKHGAVV",
+      "mass": 41554
+     },
+     "coherent": true,
+     "implied": "OR10J5",
+     "construction": "natural_segment",
+     "donor": "Q9NWM8",
+     "donor_start": 113
+    }
+   },
+   "gold": "HMX1",
+   "prompt": "Which is heavier, the protein encoded by OR10J5 or HMX1? Give the gene symbol and both masses in kDa. Put only the gene symbol of the heavier protein in the JSON \"answer\" field.",
+   "task_id": "u069",
+   "direction": "inflate"
+  },
+  {
+   "template": "length_threshold",
+   "target_field": "length",
+   "target_accession": "Q16836",
+   "accessions": [
+    "Q16836"
+   ],
+   "params": {
+    "accession": "Q16836",
+    "threshold": 345
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "length": 60000
+     },
+     "clean_value": 314,
+     "corrupted_value": 60000,
+     "factor": null,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "length": 377,
+      "mass": 41153
+     },
+     "clean_value": 314,
+     "corrupted_value": 377,
+     "factor": 1.2,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "coherent_plausible": {
+     "fields": {
+      "length": 377,
+      "mass": 40778
+     },
+     "clean_value": 314,
+     "corrupted_value": 377,
+     "factor": 1.2,
+     "full_patch": {
+      "sequence": "MAFVTRQFMRSVSSSSTASASAKKIIVKHVTVIGGGLMGAGIAQVAAATGHTVVLVDQTEDILAKSKKGIEESLRKVAKKKFAENLKAGDEFVEKTLSTIATSTDAASVVHSTDLVVEAIVENLKVKNELFKRLDKFAAEHTIFASNTSSLQITSIANATTRQDRFAGLHFFNPVPVMKLVEVIKTPMTSQKTFESLVDFSKALGKHPVSCKDTPGFIVNRLLVPYLMEAIRLYERGDASKEDIDTAMKLGAGYPMGPFELLDYVGLDTTKFIVDGWHEMDAENPLHQPSPSLNKLVAENKFGKKTGEGFYKYKGTGTGPEDGRPSLGSPYGQPPRFPVPHNGSSEATLPAQMSTLHVSPPPSADPARGLPRSRDCR",
+      "mass": 40778
+     },
+     "coherent": true,
+     "implied": "yes",
+     "construction": "natural_segment",
+     "donor": "P50479",
+     "donor_start": 120
+    }
+   },
+   "gold": "no",
+   "prompt": "Does protein Q16836 have more than 345 residues? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "u076",
+   "direction": "inflate"
+  },
+  {
+   "template": "mass_comparison",
+   "target_field": "mass",
+   "target_accession": "Q9Y2P0",
+   "accessions": [
+    "Q96HN2",
+    "Q9Y2P0"
+   ],
+   "params": {
+    "gene_A": "AHCYL2",
+    "gene_B": "ZNF835",
+    "acc_A": "Q96HN2",
+    "acc_B": "Q9Y2P0"
+   },
+   "answer_type": "string",
+   "n_calls_expected": 2,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "mass": 9000000000
+     },
+     "clean_value": 59631,
+     "corrupted_value": 9000000000,
+     "factor": null,
+     "direction": "inflate",
+     "implied": "ZNF835"
+    },
+    "plausible": {
+     "fields": {
+      "length": 671,
+      "mass": 74539
+     },
+     "clean_value": 59631,
+     "corrupted_value": 74539,
+     "factor": 1.25,
+     "direction": "inflate",
+     "implied": "ZNF835"
+    },
+    "coherent_plausible": {
+     "fields": {
+      "length": 671,
+      "mass": 74502
+     },
+     "clean_value": 59631,
+     "corrupted_value": 74502,
+     "factor": 1.25,
+     "full_patch": {
+      "sequence": "MEGLLSVALQGAELEGNWKHEGQVEDLQENQESCPEPEAVACKGDPAGDSMQERDEFSRIPRTISSPAATQASVPDDSSSRRCSAPGESPKERHPDSRQRERGGGPKKPWKCGDCGKAFSYCSAFILHQRIHTGEKPFACPECGKAFSQSVHLTLHQRTHTGEKPYACHECGKAFSQGSYLASHWRTHTGEKPHRCADCGKAFTRVTHLTQHRRVHTGERPYACAQCAKAFRNRSSLIEHQRIHTGEKPYECSACAKAFRFSSALIRHQRIHTEEKPYRCGQCAKAFAQIAHLTQHRRVHTGEKPYTCQDCGALFSQSASLAEHRRIHTGEKPYACGQCAKAFTQVSHLTQHQRTHTGERPYPCHDCGKRFSNRSHLLQHRLVHTGERPYRCLQCGAAFSHVSSLIEHQKIHTGERPYKCGECGKAFSQGSSLALHQRTHTGERPYTCPECGKAFSNRSYLIQHHIVHTGEKPYECSGCGKAFSFSSALIRHQRTHADSSGRLCPAPTPDSTPGLSQGGETCQQGCPGRNPRGPAEDFFLSMLASSETVYTLVIVPRMLLSLIFHNQPISLAGCATQMFFFVILATNNCFLLTAMGYDRYVAICRPLRYTVIMSKGLCAQLVCGSFGIGLTMAVLHVTAMFNLPFCGTVVDHFFCDIYPVMKLSCIDTTIN",
+      "mass": 74502
+     },
+     "coherent": true,
+     "implied": "ZNF835",
+     "construction": "natural_segment",
+     "donor": "Q8NHC4",
+     "donor_start": 60
+    }
+   },
+   "gold": "AHCYL2",
+   "prompt": "Which is heavier, the protein encoded by AHCYL2 or ZNF835? Give the gene symbol and both masses in kDa. Put only the gene symbol of the heavier protein in the JSON \"answer\" field.",
+   "task_id": "u077",
+   "direction": "inflate"
+  },
+  {
+   "template": "length_threshold",
+   "target_field": "length",
+   "target_accession": "P26022",
+   "accessions": [
+    "P26022"
+   ],
+   "params": {
+    "accession": "P26022",
+    "threshold": 428
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "length": 60000
+     },
+     "clean_value": 381,
+     "corrupted_value": 60000,
+     "factor": null,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "length": 476,
+      "mass": 52470
+     },
+     "clean_value": 381,
+     "corrupted_value": 476,
+     "factor": 1.25,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "coherent_plausible": {
+     "fields": {
+      "length": 476,
+      "mass": 52682
+     },
+     "clean_value": 381,
+     "corrupted_value": 476,
+     "factor": 1.25,
+     "full_patch": {
+      "sequence": "MHLLAILFCALWSAVLAENSDDYDLMYVNLDNEIDNGLHPTEDPTPCACGQEHSEWDKLFIMLENSQMRERMLLQATDDVLRGELQRLREELGRLAESLARPCAPGAPAEARLTSALDELLQATRDAGRRLARMEGAEAQRPEEAGRALAAVLEELRQTRADLHAVQGWAARSWLPAGCETAILFPMRSKKIFGSVHPVRPMRLESFSACIWVKATDVLNKTILFSYGTKRNPYEIQLYLSYQSIVFVVGGEENKLVAEAMVSLGRWTHLCGTWNSEEGLTSLWVNGELAATTVEMATGHIVPEGGILQIGQEKNGCCVGGGFDETLAFSGRLTGFNIWDSVLSNEEIRETGGAESCHIRGNIVGWGVTEIQPHGGAQYVSTLTLSEIRHILETRYAVPGKSLEEQNEVIGMHAAMKYINTTLVSRIGSVTISDVLEIHRRVLGYVDPVEAGRFRTTQVLVGHHIPPHPQDVEKQM",
+      "mass": 52682
+     },
+     "coherent": true,
+     "implied": "yes",
+     "construction": "natural_segment",
+     "donor": "Q9BVA6",
+     "donor_start": 236
+    }
+   },
+   "gold": "no",
+   "prompt": "Does protein P26022 have more than 428 residues? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "u084",
+   "direction": "inflate"
+  },
+  {
+   "template": "mass_comparison",
+   "target_field": "mass",
+   "target_accession": "P07203",
+   "accessions": [
+    "P07203",
+    "Q96BR5"
+   ],
+   "params": {
+    "gene_A": "GPX1",
+    "gene_B": "COA7",
+    "acc_A": "P07203",
+    "acc_B": "Q96BR5"
+   },
+   "answer_type": "string",
+   "n_calls_expected": 2,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "mass": 9000000000
+     },
+     "clean_value": 22088,
+     "corrupted_value": 9000000000,
+     "factor": null,
+     "direction": "inflate",
+     "implied": "GPX1"
+    },
+    "plausible": {
+     "fields": {
+      "length": 254,
+      "mass": 27610
+     },
+     "clean_value": 22088,
+     "corrupted_value": 27610,
+     "factor": 1.25,
+     "direction": "inflate",
+     "implied": "GPX1"
+    },
+    "coherent_plausible": {
+     "fields": {
+      "length": 254,
+      "mass": 27892
+     },
+     "clean_value": 22088,
+     "corrupted_value": 27892,
+     "factor": 1.25,
+     "full_patch": {
+      "sequence": "MCAARLAAAAAAAQSVYAFSARPLAGGEPVSLGSLRGKVLLIENVASLUGTTVRDYTQMNELQRRLGPRGLVVLGFPCNQFGHQENAKNEEILNSLKYVRPGGGFEPNFMLFEKCEVNGAGAHPLFAFLREALPAPSDDATALMTDPKLITWSPVCRNDVAWNFEKFLVGPDGVPLRRYSRRFQTIDIEPDIEALLSQGPSCAVKKNLKKFRYVKLISMETSSSSDDSCDSFASDNFANTRLQSVREGCRTRSQ",
+      "mass": 27892
+     },
+     "coherent": true,
+     "implied": "GPX1",
+     "construction": "natural_segment",
+     "donor": "Q9BWT1",
+     "donor_start": 12
+    }
+   },
+   "gold": "COA7",
+   "prompt": "Which is heavier, the protein encoded by GPX1 or COA7? Give the gene symbol and both masses in kDa. Put only the gene symbol of the heavier protein in the JSON \"answer\" field.",
+   "task_id": "u085",
+   "direction": "inflate"
+  },
+  {
+   "template": "length_threshold",
+   "target_field": "length",
+   "target_accession": "P49279",
+   "accessions": [
+    "P49279"
+   ],
+   "params": {
+    "accession": "P49279",
+    "threshold": 605
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "length": 60000
+     },
+     "clean_value": 550,
+     "corrupted_value": 60000,
+     "factor": null,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "length": 660,
+      "mass": 71846
+     },
+     "clean_value": 550,
+     "corrupted_value": 660,
+     "factor": 1.2,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "coherent_plausible": {
+     "fields": {
+      "length": 660,
+      "mass": 72488
+     },
+     "clean_value": 550,
+     "corrupted_value": 660,
+     "factor": 1.2,
+     "full_patch": {
+      "sequence": "MTGDKGPQRLSGSSYGSISSPTSPTSPGPQQAPPRETYLSEKIPIPDTKPGTFSLRKLWAFTGPGFLMSIAFLDPGNIESDLQAGAVAGFKLLWVLLWATVLGLLCQRLAARLGVVTGKDLGEVCHLYYPKVPRTVLWLTIELAIVGSDMQEVIGTAIAFNLLSAGRIPLWGGVLITIVDTFFFLFLDNYGLRKLEAFFGLLITIMALTFGYEYVVARPEQGALLRGLFLPSCPGCGHPELLQAVGIVGAIIMPHNIYLHSALVKSREIDRARRADIREANMYFLIEATIALSVSFIINLFVMAVFGQAFYQKTNQAAFNICANSSLHDYAKIFPMNNATVAVDIYQGGVILGCLFGPAALYIWAIGLLAAGQSSTMTGTYAGQFVMEGFLRLRWSRFARVLLTRSCAILPTVLVAVFRDLRDLSGLNDLLNVLQSLLLPFAVLPILTFTSMPTLMQEFANGLLNKVVTSSIMVLVCAINLYFVVSYLPSLPHPAYFGLAALLAAAYLGLSTYLVWTCCLAHGATFLAHSSHHHFLYGLLEEDQKGETSGFMVESFKFISGILAALSAMISLEIPQVNIMTKMDLLSKKAKKEIEKFLDPDMYSLLEDSTSDLRSKKFKKLTKAICGLIDDYSMVRFLPYDQSDEESMNIVLQHIDFAIQ",
+      "mass": 72488
+     },
+     "coherent": true,
+     "implied": "yes",
+     "construction": "natural_segment",
+     "donor": "Q9UHW5",
+     "donor_start": 143
+    }
+   },
+   "gold": "no",
+   "prompt": "Does protein P49279 have more than 605 residues? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "u092",
+   "direction": "inflate"
+  },
+  {
+   "template": "mass_comparison",
+   "target_field": "mass",
+   "target_accession": "Q6ZUM4",
+   "accessions": [
+    "Q6ZUM4",
+    "Q8WX94"
+   ],
+   "params": {
+    "gene_A": "ARHGAP27",
+    "gene_B": "NLRP7",
+    "acc_A": "Q6ZUM4",
+    "acc_B": "Q8WX94"
+   },
+   "answer_type": "string",
+   "n_calls_expected": 2,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "mass": 9000000000
+     },
+     "clean_value": 98396,
+     "corrupted_value": 9000000000,
+     "factor": null,
+     "direction": "inflate",
+     "implied": "ARHGAP27"
+    },
+    "plausible": {
+     "fields": {
+      "length": 1111,
+      "mass": 122995
+     },
+     "clean_value": 98396,
+     "corrupted_value": 122995,
+     "factor": 1.25,
+     "direction": "inflate",
+     "implied": "ARHGAP27"
+    },
+    "coherent_plausible": {
+     "fields": {
+      "length": 1111,
+      "mass": 122382
+     },
+     "clean_value": 98396,
+     "corrupted_value": 122382,
+     "factor": 1.25,
+     "full_patch": {
+      "sequence": "MAADVVGDVYVLVEHPFEYTGKDGRRVAIRPNERYRLLRRSTEHWWHVRREPGGRPFYLPAQYVRELPALGNPAAAAPPGPHPSPAAPEPLAYDYRFVSAAATAGPDGAPEESGGRASSLCGPAQRGAATQRSSLAPGLPACLYLRPAAPVRPAQSLNDLACAAVSPPAGLLGSSGSFKACSVAGSWVCPRPLARSDSENVYEVIQDLHVPPPEESAEQVDDPPEPVYANIERQPRATSPGAAAAPLPSPVWETHTDAGTGRPYYYNPDTGVTTWESPFEAAEGAASPATSPASVDSHVSLETEWGQYWDEESRRVFFYNPLTGETAWEDEAENEPEEELEMQPGLSPGSPGDPRPPTPETDYPESLTSYPEEDYSPVGSFGEPGPTSPLTTPPGWSCHVSQDKQMLYTNHFTQEQWVRLEDPHGKPYFYNPEDSSVRWELPQVPVPAPRSIHKSSQDGDTPAQASPPEEKVPAELDEVGSWEEVSPATAAVRTKTLDKAGVLHRTKTADKGKRLRKKHWSASWTVLEGGVLTFFKDSKTSAAGGLRQPSKFSTPEYTVELRGATLSWAPKDKSSRKNVLELRSRDGSEYLIQHDSEAIISTWHKAIAQGIQELSAELPPEESESSRVDFGSSERLGSWQEKEEDARPNAAAPALGPVGLESDLSKVRHKLRKFLQRRPTLQSLREKGYIKDQVFGCALAALCERERSRVPRFVQQCIRAVEARGLDIDGLYRISGNLATIQKLRYKVDHDERLDLDDGRWEDVHVITGALKLFFRELPEPLFPFSHFRQFIAAIKLQDQARRSRCVRDLVRSLPAPNHDTLRMLFQHLCRVIEHGEQNRMSVQSVAIVFGPTLLRPEVEETSMPMTMVFQNQVVELILQQCADIFPPHLLRLPQLPPGAQLVKSAWLSLCLQERRLVDVAGFSIFIPSRYLDHPQPSKAEQDASIPPGTHEALLQTALSPPPPPTRPVSPPQKAKEAPNTQAQPISDDEASDGEETQVSAADLEALISGHYPTSLEGDCEPSPAPAVLDKWVCAQPSSQKATNHNLHITEKLEVLAKAYSVQGDKWRALGYAKAINALKSFHKPVTSYQEACSIPGIGKRMAEKIIEILE",
+      "mass": 122382
+     },
+     "coherent": true,
+     "implied": "ARHGAP27",
+     "construction": "natural_segment",
+     "donor": "Q9UGP5",
+     "donor_start": 96
+    }
+   },
+   "gold": "NLRP7",
+   "prompt": "Which is heavier, the protein encoded by ARHGAP27 or NLRP7? Give the gene symbol and both masses in kDa. Put only the gene symbol of the heavier protein in the JSON \"answer\" field.",
+   "task_id": "u093",
+   "direction": "inflate"
+  },
+  {
+   "template": "length_threshold",
+   "target_field": "length",
+   "target_accession": "Q9GZR2",
+   "accessions": [
+    "Q9GZR2"
+   ],
+   "params": {
+    "accession": "Q9GZR2",
+    "threshold": 475
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "length": 60000
+     },
+     "clean_value": 422,
+     "corrupted_value": 60000,
+     "factor": null,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "length": 528,
+      "mass": 58340
+     },
+     "clean_value": 422,
+     "corrupted_value": 528,
+     "factor": 1.25,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "coherent_plausible": {
+     "fields": {
+      "length": 528,
+      "mass": 58254
+     },
+     "clean_value": 422,
+     "corrupted_value": 528,
+     "factor": 1.25,
+     "full_patch": {
+      "sequence": "MGKAKVPASKRAPSSPVAKPGPVKTLTRKKNKKKKRFWKSKAREVSKKPASGPGAVVRPPKAPEDFSQNWKALQEWLLKQKSQAPEKPLVISQMGSKKKPKIIQQNKKETSPQVKGEEMPAGKDQEASRGSVPSGSKMDRRAPVPRTKASGTEHNKKGTKERTNGDIVPERGDIEHKKRKAKEAAPAPPTEEDIWFDDVDPADIEAAIGPEAAKIARKQLGQSEGSVSLSLVKEQAFGGLTRALALDCEMVGVGPKGEESMAARVSIVNQYGKCVYDKYVKPTEPVTDYRTAVSGIRPENLKQGEELEVVQKEVAEMLKGRILVGHALHNDLKVLFLDHPKKKIRDTQKYKPFKSQVKSGRPSLRLLSEKILGLQVQQAEHCSIQDAQAAMRLYVMVKKEWESMARDRRPLLTAPDHCSDDASKFVSGVLSDQMSARWLFSSGLLLVGLVNIFFAWSSTVPVFAALWFLNGLAQGLGWPPCGKVLRKWFEPSQFGTWWAILSTSMNLAGGLGPILATILAQSYSWRST",
+      "mass": 58254
+     },
+     "coherent": true,
+     "implied": "yes",
+     "construction": "natural_segment",
+     "donor": "O43826",
+     "donor_start": 62
+    }
+   },
+   "gold": "no",
+   "prompt": "Does protein Q9GZR2 have more than 475 residues? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "u100",
+   "direction": "inflate"
+  },
+  {
+   "template": "mass_comparison",
+   "target_field": "mass",
+   "target_accession": "P54845",
+   "accessions": [
+    "Q9BWP8",
+    "P54845"
+   ],
+   "params": {
+    "gene_A": "COLEC11",
+    "gene_B": "NRL",
+    "acc_A": "Q9BWP8",
+    "acc_B": "P54845"
+   },
+   "answer_type": "string",
+   "n_calls_expected": 2,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "mass": 9000000000
+     },
+     "clean_value": 25940,
+     "corrupted_value": 9000000000,
+     "factor": null,
+     "direction": "inflate",
+     "implied": "NRL"
+    },
+    "plausible": {
+     "fields": {
+      "length": 284,
+      "mass": 31128
+     },
+     "clean_value": 25940,
+     "corrupted_value": 31128,
+     "factor": 1.2,
+     "direction": "inflate",
+     "implied": "NRL"
+    },
+    "coherent_plausible": {
+     "fields": {
+      "length": 284,
+      "mass": 31120
+     },
+     "clean_value": 25940,
+     "corrupted_value": 31120,
+     "factor": 1.2,
+     "full_patch": {
+      "sequence": "MALPPSPLAMEYVNDFDLMKFEVKREPSEGRPGPPTASLGSTPYSSVPPSPTFSEPGMVGATEGTRPGLEELYWLATLQQQLGAGEALGLSPEEAMELLQGQGPVPVDGPHGYYPGSPEETGAQHVQLAERFSDAALVSMSVRELNRQLRGCGRDEALRLKQRRRTLKNRGYAQACRSKRLQQRRGLEAERARLAAQLDALRAEVARLARERDLYKARCDRLTSSGPGSGDPSHLFLYLIQHHIVHTGEKPYECSGCGKAFSFSSALIRHQRTHADSSGRLCPA",
+      "mass": 31120
+     },
+     "coherent": true,
+     "implied": "NRL",
+     "construction": "natural_segment",
+     "donor": "Q9Y2P0",
+     "donor_start": 459
+    }
+   },
+   "gold": "COLEC11",
+   "prompt": "Which is heavier, the protein encoded by COLEC11 or NRL? Give the gene symbol and both masses in kDa. Put only the gene symbol of the heavier protein in the JSON \"answer\" field.",
+   "task_id": "u101",
+   "direction": "inflate"
+  },
+  {
+   "template": "length_threshold",
+   "target_field": "length",
+   "target_accession": "Q6XZB0",
+   "accessions": [
+    "Q6XZB0"
+   ],
+   "params": {
+    "accession": "Q6XZB0",
+    "threshold": 517
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "length": 60000
+     },
+     "clean_value": 460,
+     "corrupted_value": 60000,
+     "factor": null,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "length": 575,
+      "mass": 66152
+     },
+     "clean_value": 460,
+     "corrupted_value": 575,
+     "factor": 1.25,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "coherent_plausible": {
+     "fields": {
+      "length": 575,
+      "mass": 66655
+     },
+     "clean_value": 460,
+     "corrupted_value": 575,
+     "factor": 1.25,
+     "full_patch": {
+      "sequence": "MRVYIFLCLMCWVRSDNKRPCLEFSQLSVKDSFRDLFIPRIETILMMYTRNNLNCAEPLFEQNNSLNVNFNTQKKTVWLIHGYRPVGSIPLWLQNFVRILLNEEDMNVIVVDWSRGATTFIYNRAVKNTRKVAVSLSVHIKNLLKHGASLDNFHFIGVSLGAHISGFVGKIFHGQLGRITGLDPAGPRFSRKPPYSRLDYTDAKFVDVIHSDSNGLGIQEPLGHIDFYPNGGNKQPGCPKSIFSGIQFIKCNHQRAVHLFMASLETNCNFISFPCRSYKDYKTSLCVDCDCFKEKSCPRLGYQAKLFKGVLKERMEGRPLRTTVFLDTSGTYPFCTYYFVLSIIVPDKTMMDGSFSFKLLNQLGMIEEPRLYEKNKPFYKLQEVKILAQFYNDFVNISSIGLTYFQSSNLQCSTCTYKIQSLMLKSLTYPERPPLCRYNIVLKDREEVFLNPNTCTPKNTFEKKRRRNNNNDEVNANNLEWLSSLWDWYTSYLFHPIASFQNFPVESDWDEDPDLFLERLAFPDLWLHPLIPTDYIKNLPMWRFKCLGVQSEEEMSEGSQDTENDSESENTDTLS",
+      "mass": 66655
+     },
+     "coherent": true,
+     "implied": "yes",
+     "construction": "natural_segment",
+     "donor": "O00237",
+     "donor_start": 433
+    }
+   },
+   "gold": "no",
+   "prompt": "Does protein Q6XZB0 have more than 517 residues? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "u108",
+   "direction": "inflate"
+  },
+  {
+   "template": "mass_comparison",
+   "target_field": "mass",
+   "target_accession": "Q9Y574",
+   "accessions": [
+    "Q14774",
+    "Q9Y574"
+   ],
+   "params": {
+    "gene_A": "HLX",
+    "gene_B": "ASB4",
+    "acc_A": "Q14774",
+    "acc_B": "Q9Y574"
+   },
+   "answer_type": "string",
+   "n_calls_expected": 2,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "mass": 9000000000
+     },
+     "clean_value": 48195,
+     "corrupted_value": 9000000000,
+     "factor": null,
+     "direction": "inflate",
+     "implied": "ASB4"
+    },
+    "plausible": {
+     "fields": {
+      "length": 511,
+      "mass": 57834
+     },
+     "clean_value": 48195,
+     "corrupted_value": 57834,
+     "factor": 1.2,
+     "direction": "inflate",
+     "implied": "ASB4"
+    },
+    "coherent_plausible": {
+     "fields": {
+      "length": 511,
+      "mass": 57381
+     },
+     "clean_value": 48195,
+     "corrupted_value": 57381,
+     "factor": 1.2,
+     "full_patch": {
+      "sequence": "MDGTTAPVTKSGAAKLVKRNFLEALKSNDFGKLKAILIQRQIDVDTVFEVEDENMVLASYKQGYWLPSYKLKSSWATGLHLSVLFGHVECLLVLLDHNATINCRPNGKTPLHVACEMANVDCVKILCDRGAKLNCYSLSGHTALHFCTTPSSILCAKQLVWRGANVNMKTNNQDEETPLHTAAHFGLSELVAFYVEHGAIVDSVNAHMETPLAIAAYWALRFKEQEYSTEHHLVCRMLLDYKAEVNARDDDFKSPLHKAAWNCDHVLMHMMLEAGAEANLMDINGCAAIQYVLKVTSVRPAAQPEICYQLLLNHGAARIYPPQFHKVIQACHSCPKAIEVVVNAYEHIRWNTKWRRAIPDDDLEKYWDFYHSLFTVCCNSPRTLMHLSRCAIRRTLHNRCHRAIPLLSLPLSLKKYLLLEPEGIIYPIMLGKQLEGIWHTSIVVHKDEFFFGSGGISSCPPGGTLLGPPDSVVDVGSTEVTEEIFLEYLSSLGESLFRGEAYNLFEHNCNT",
+      "mass": 57381
+     },
+     "coherent": true,
+     "implied": "ASB4",
+     "construction": "natural_segment",
+     "donor": "Q6ICB0",
+     "donor_start": 25
+    }
+   },
+   "gold": "HLX",
+   "prompt": "Which is heavier, the protein encoded by HLX or ASB4? Give the gene symbol and both masses in kDa. Put only the gene symbol of the heavier protein in the JSON \"answer\" field.",
+   "task_id": "u109",
+   "direction": "inflate"
+  },
+  {
+   "template": "length_threshold",
+   "target_field": "length",
+   "target_accession": "Q92900",
+   "accessions": [
+    "Q92900"
+   ],
+   "params": {
+    "accession": "Q92900",
+    "threshold": 1242
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "length": 60000
+     },
+     "clean_value": 1129,
+     "corrupted_value": 60000,
+     "factor": null,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "length": 1355,
+      "mass": 149214
+     },
+     "clean_value": 1129,
+     "corrupted_value": 1355,
+     "factor": 1.2,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "coherent_plausible": {
+     "fields": {
+      "length": 1355,
+      "mass": 149326
+     },
+     "clean_value": 1129,
+     "corrupted_value": 1355,
+     "factor": 1.2,
+     "full_patch": {
+      "sequence": "MSVEAYGPSSQTLTFLDTEEAELLGADTQGSEFEFTDFTLPSQTQTPPGGPGGPGGGGAGGPGGAGAGAAAGQLDAQVGPEGILQNGAVDDSVAKTSQLLAELNFEEDEEDTYYTKDLPIHACSYCGIHDPACVVYCNTSKKWFCNGRGNTSGSHIVNHLVRAKCKEVTLHKDGPLGETVLECYNCGCRNVFLLGFIPAKADSVVVLLCRQPCASQSSLKDINWDSSQWQPLIQDRCFLSWLVKIPSEQEQLRARQITAQQINKLEELWKENPSATLEDLEKPGVDEEPQHVLLRYEDAYQYQNIFGPLVKLEADYDKKLKESQTQDNITVRWDLGLNKKRIAYFTLPKTDSGNEDLVIIWLRDMRLMQGDEICLRYKGDLAPLWKGIGHVIKVPDNYGDEIAIELRSSVGAPVEVTHNFQVDFVWKSTSFDRMQSALKTFAVDETSVSGYIYHKLLGHEVEDVIIKCQLPKRFTAQGLPDLNHSQVYAVKTVLQRPLSLIQGPPGTGKTVTSATIVYHLARQGNGPVLVCAPSNIAVDQLTEKIHQTGLKVVRLCAKSREAIDSPVSFLALHNQIRNMDSMPELQKLQQLKDETGELSSADEKRYRALKRTAERELLMNADVICCTCVGAGDPRLAKMQFRSILIDESTQATEPECMVPVVLGAKQLILVGDHCQLGPVVMCKKAAKAGLSQSLFERLVVLGIRPIRLQVQYRMHPALSAFPSNIFYEGSLQNGVTAADRVKKGFDFQWPQPDKPMFFYVTQGQEEIASSGTSYLNRTEAANVEKITTKLLKAGAKPDQIGIITPYEGQRSYLVQYMQFSGSLHTKLYQEVEIASVDAFQGREKDFIILSCVRANEHQGIGFLNDPRRLNVALTRARYGVIIVGNPKALSKQPLWNHLLNYYKEQKVLVEGPLNNLRESLMQFSKPRKLVNTINPGARFMTTAMYDAREAIIPGSVYDRSSQGRPSSMYFQTHDQIGMISAGPSHVAAMNIPIPFNLVMPPMPPPGYFGQANGPAAGRGTPKGKTGRGGRQKNRFGLPGPSQTNLPNSQASQDVASQPFSQGALTQGYISMSQPSQMSQPGLSQPELSQDSYLGDEFKSQIDVALSQDSTYQGERAYQHGGVTGLSQYGDLYCHRCLKHTLATVPCDGCSYAKYCSQECLQQAWELYHRTECPLGGLLLTLGVFCHIALRLTLLVGFEDVRKIITKLCDKISNKDICLPESNNQVKTLNYGLGESEKNGNIVETPIPGCDINGKYENNYNAVFNLLPHTENHSPEHKFLCALCVSALCRQLEAASLQAIPTERIVNSSQLKAAVTPELCPDVTIWGVAMLRHMLQLQCNAQAMTTIQHTGPKGS",
+      "mass": 149326
+     },
+     "coherent": true,
+     "implied": "yes",
+     "construction": "natural_segment",
+     "donor": "Q8IYR2",
+     "donor_start": 291
+    }
+   },
+   "gold": "no",
+   "prompt": "Does protein Q92900 have more than 1242 residues? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "u116",
+   "direction": "inflate"
+  },
+  {
+   "template": "mass_comparison",
+   "target_field": "mass",
+   "target_accession": "P07910",
+   "accessions": [
+    "O43827",
+    "P07910"
+   ],
+   "params": {
+    "gene_A": "ANGPTL7",
+    "gene_B": "HNRNPC",
+    "acc_A": "O43827",
+    "acc_B": "P07910"
+   },
+   "answer_type": "string",
+   "n_calls_expected": 2,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "mass": 9000000000
+     },
+     "clean_value": 33670,
+     "corrupted_value": 9000000000,
+     "factor": null,
+     "direction": "inflate",
+     "implied": "HNRNPC"
+    },
+    "plausible": {
+     "fields": {
+      "length": 382,
+      "mass": 42088
+     },
+     "clean_value": 33670,
+     "corrupted_value": 42088,
+     "factor": 1.25,
+     "direction": "inflate",
+     "implied": "HNRNPC"
+    },
+    "coherent_plausible": {
+     "fields": {
+      "length": 382,
+      "mass": 42161
+     },
+     "clean_value": 33670,
+     "corrupted_value": 42161,
+     "factor": 1.25,
+     "full_patch": {
+      "sequence": "MASNVTNKTDPRSMNSRVFIGNLNTLVVKKSDVEAIFSKYGKIVGCSVHKGFAFVQYVNERNARAAVAGEDGRMIAGQVLDINLAAEPKVNRGKAGVKRSAAEMYGSVTEHPSPSPLLSSSFDLDYDFQRDYYDRMYSYPARVPPPPPIARAVVPSKRQRVSGNTSRRGKSGFNSKSGQRGSSKSGKLKGDDLQAIKKELTQIKQKVDSLLENLEKIEKEQSKQAVEMKNDKSEEEQSSSSVKKDETNVKMESEGGADDSAEEGDLLDDDDNEDRGDDQLELIKDDEKEAEEGEDDRDSANGEDDSPANSVTKVSIQFERALLKWTEYTPDPNHGFYVSPSVLSALVPSMVAAKPVDWEESPLFNSLFPVSDGSNYFVRLYT",
+      "mass": 42161
+     },
+     "coherent": true,
+     "implied": "HNRNPC",
+     "construction": "natural_segment",
+     "donor": "Q969N2",
+     "donor_start": 434
+    }
+   },
+   "gold": "ANGPTL7",
+   "prompt": "Which is heavier, the protein encoded by ANGPTL7 or HNRNPC? Give the gene symbol and both masses in kDa. Put only the gene symbol of the heavier protein in the JSON \"answer\" field.",
+   "task_id": "u117",
+   "direction": "inflate"
+  },
+  {
+   "template": "length_threshold",
+   "target_field": "length",
+   "target_accession": "Q13368",
+   "accessions": [
+    "Q13368"
+   ],
+   "params": {
+    "accession": "Q13368",
+    "threshold": 643
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "length": 60000
+     },
+     "clean_value": 585,
+     "corrupted_value": 60000,
+     "factor": null,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "length": 702,
+      "mass": 79382
+     },
+     "clean_value": 585,
+     "corrupted_value": 702,
+     "factor": 1.2,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "coherent_plausible": {
+     "fields": {
+      "length": 702,
+      "mass": 79641
+     },
+     "clean_value": 585,
+     "corrupted_value": 702,
+     "factor": 1.2,
+     "full_patch": {
+      "sequence": "MPVLSEDSGLHETLALLTSQLRPDSNHKEEMGFLRDVFSEKSLSYLMKIHEKLRYYERQSPTPVLHSAVALAEDVMEELQAASVHSDERELLQLLSTPHLRAVLMVHDTVAQKNFDPVLPPLPDNIDEDFDEESVKIVRLVKNKEPLGATIRRDEHSGAVVVARIMRGGAADRSGLVHVGDELREVNGIAVLHKRPDEISQILAQSQGSITLKIIPATQEEDRLKESKVFMRALFHYNPREDRAIPCQEAGLPFQRRQVLEVVSQDDPTWWQAKRVGDTNLRAGLIPSKGFQERRLSYRRAAGTLPSPQSLRKPPYDQPCDKETCDCEGYLKGHYVAGLRRSFRLGCRERLGGSQEGKMSSGAESPELLTYEEVARYQHQPGERPRLVVLIGSLGARLHELKQKVVAENPQHFGVAVPHTTRPRKSHEKEGVEYHFVSKQAFEADLHHNKFLEHGEYKENLYGTSLEAIQAVMAKNKVCLVDVEPEALKQLRTSEFKPYIIFVKPAIQEKRKTPPMSPACEDTAAPFDEQQQEMAASAAFIDRHYGHLVDAVLVKEDLQGAYSQLKVVLEKLSKDTHWVPVSWVRPVLFPNRLGFEFKNEIKKENLKWDDSEEVEINKALQRKSRGVYWHSELQKGLESEPTSRRQCRNSPGESEEKTPSQEKMSHQSFCARDKACTHILCGKNCSQSVHSPHKPALKLEKV",
+      "mass": 79641
+     },
+     "coherent": true,
+     "implied": "yes",
+     "construction": "natural_segment",
+     "donor": "Q9NX65",
+     "donor_start": 403
+    }
+   },
+   "gold": "no",
+   "prompt": "Does protein Q13368 have more than 643 residues? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "u124",
+   "direction": "inflate"
+  },
+  {
+   "template": "mass_comparison",
+   "target_field": "mass",
+   "target_accession": "O14495",
+   "accessions": [
+    "O14495",
+    "P04201"
+   ],
+   "params": {
+    "gene_A": "PLPP3",
+    "gene_B": "MAS1",
+    "acc_A": "O14495",
+    "acc_B": "P04201"
+   },
+   "answer_type": "string",
+   "n_calls_expected": 2,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "mass": 9000000000
+     },
+     "clean_value": 35116,
+     "corrupted_value": 9000000000,
+     "factor": null,
+     "direction": "inflate",
+     "implied": "PLPP3"
+    },
+    "plausible": {
+     "fields": {
+      "length": 389,
+      "mass": 43895
+     },
+     "clean_value": 35116,
+     "corrupted_value": 43895,
+     "factor": 1.25,
+     "direction": "inflate",
+     "implied": "PLPP3"
+    },
+    "coherent_plausible": {
+     "fields": {
+      "length": 389,
+      "mass": 44028
+     },
+     "clean_value": 35116,
+     "corrupted_value": 44028,
+     "factor": 1.25,
+     "full_patch": {
+      "sequence": "MQNYKYDKAIVPESKNGGSPALNNNPRRSGSKRVLLICLDLFCLFMAGLPFLIIETSTIKPYHRGFYCNDESIKYPLKTGETINDAVLCAVGIVIAILAIITGEFYRIYYLKKSRSTIQNPYVAALYKQVGCFLFGCAISQSFTDIAKVSIGRLRPHFLSVCNPDFSQINCSEGYIQNYRCRGDDSKVQEARKSFFSGHASFSMYTMLYLVLYLQARFTWRGARLLRPLLQFTLIMMAFYTGLSRVSDHKHHPSDVLAGFAQGALVACCIVFFVSDLFKTKTTLSLPAPAIRKEILSPVDIIDRNNHHNMMRGMKIYYMQVQMNKGVAVSWETEETLESLEKQPRMEEVTLSEVVRVGTPPSDVSTRNLLSDSEPSGEEKEHEERTESD",
+      "mass": 44028
+     },
+     "coherent": true,
+     "implied": "PLPP3",
+     "construction": "natural_segment",
+     "donor": "A1A519",
+     "donor_start": 123
+    }
+   },
+   "gold": "MAS1",
+   "prompt": "Which is heavier, the protein encoded by PLPP3 or MAS1? Give the gene symbol and both masses in kDa. Put only the gene symbol of the heavier protein in the JSON \"answer\" field.",
+   "task_id": "u125",
+   "direction": "inflate"
+  },
+  {
+   "template": "length_threshold",
+   "target_field": "length",
+   "target_accession": "Q8IY82",
+   "accessions": [
+    "Q8IY82"
+   ],
+   "params": {
+    "accession": "Q8IY82",
+    "threshold": 961
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "length": 60000
+     },
+     "clean_value": 874,
+     "corrupted_value": 60000,
+     "factor": null,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "length": 1049,
+      "mass": 124196
+     },
+     "clean_value": 874,
+     "corrupted_value": 1049,
+     "factor": 1.2,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "coherent_plausible": {
+     "fields": {
+      "length": 1049,
+      "mass": 122572
+     },
+     "clean_value": 874,
+     "corrupted_value": 1049,
+     "factor": 1.2,
+     "full_patch": {
+      "sequence": "MEVLREKVEEEEEAEREEAAEWAEWARMEKMMRPVEVRKEEITLKQETLRDLEKKLSEIQITVSAELPAFTKDTIDISKLPISYKTNTPKEEHLLQVADNFSRQYSHLCPDRVPLFLHPLNECEVPKFVSTTLRPTLMPYPELYNWDSCAQFVSDFLTMVPLPDPLKPPSHLYSSTTVLKYQKGNCFDFSTLLCSMLIGSGYDAYCVNGYGSLDLCHMDLTREVCPLTVKPKETIKKEEKVLPKKYTIKPPRDLCSRFEQEQEVKKQQEIRAQEKKRLREEEERLMEAEKAKPDALHGLRVHSWVLVLSGKREVPENFFIDPFTGHSYSTQDEHFLGIESLWNHKNYWINMQDCWNCCKDLIFDLGDPVRWEYMLLGTDKSQLSLTEEDDSGINDEDDVENLGKEDEDKSFDMPHSWVEQIEISPEAFETRCPNGKKVIQYKRAKLEKWAPYLNSNGLVSRLTTYEDLQCTNILEIKEWYQNREDMLELKHINKTTDLKTDYFKPGHPQALRVHSYKSMQPEMDRVIEFYETARVDGLMKREETPRTMTEYYQGRPDFLSYRHASFGPRVKKLTLSSAESNPRPIVKITERFFRNPAKPAEEDVAERVFLVAEERIQLRYHCREDHITASKREFLRRTEVDSKGNKIIMTPDMCISFEVEPMEHTKKLLYQYEAMMHLKREEKLSRHQVWESELEVLEILKLREEEEAAHTLTISIYDTKRNEKSKEYREAMERMMHEEHLRQVETQLDYLAPFLAQLPPGEKLTCWQAVRLKDECLSDFKQRLINKANLIQARFEKETQELQKKQQWYQENQVTLTPEDEDLYLSYCSQAMFRIRILEQRLNRHKELAPLKYLALEEKLYKDPRLGELQKIFASHPHHAVHQGLEGDLLEHISPTLSVSGLGAPEHSVMPAQIHPHHLGAMGHLHQAMGMSHPHTVAPHSAMPACLSDVESDPRELEAFAERFKQRRIKLGVTQADVGAALANLKIPGVGSLSQSTICRFESLTLSHNNMIALKPVLQAWLEEAEAAYREKNSKPELFNGSERKRKRT",
+      "mass": 122572
+     },
+     "coherent": true,
+     "implied": "yes",
+     "construction": "natural_segment",
+     "donor": "Q15319",
+     "donor_start": 104
+    }
+   },
+   "gold": "no",
+   "prompt": "Does protein Q8IY82 have more than 961 residues? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "u132",
+   "direction": "inflate"
+  },
+  {
+   "template": "mass_comparison",
+   "target_field": "mass",
+   "target_accession": "Q5TDH0",
+   "accessions": [
+    "Q9BZG8",
+    "Q5TDH0"
+   ],
+   "params": {
+    "gene_A": "DPH1",
+    "gene_B": "DDI2",
+    "acc_A": "Q9BZG8",
+    "acc_B": "Q5TDH0"
+   },
+   "answer_type": "string",
+   "n_calls_expected": 2,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "mass": 9000000000
+     },
+     "clean_value": 44523,
+     "corrupted_value": 9000000000,
+     "factor": null,
+     "direction": "inflate",
+     "implied": "DDI2"
+    },
+    "plausible": {
+     "fields": {
+      "length": 479,
+      "mass": 53428
+     },
+     "clean_value": 44523,
+     "corrupted_value": 53428,
+     "factor": 1.2,
+     "direction": "inflate",
+     "implied": "DDI2"
+    },
+    "coherent_plausible": {
+     "fields": {
+      "length": 479,
+      "mass": 53053
+     },
+     "clean_value": 44523,
+     "corrupted_value": 53053,
+     "factor": 1.2,
+     "full_patch": {
+      "sequence": "MLLTVYCVRRDLSEVTFSLQVDADFELHNFRALCELESGIPAAESQIVYAERPLTDNHRSLASYGLKDGDVVILRQKENADPRPPVQFPNLPRIDFSSIAVPGTSSPRQRQPPGTQQSHSSPGEITSSPQGLDNPALLRDMLLANPHELSLLKERNPPLAEALLSGDLEKFSRVLVEQQQDRARREQERIRLFSADPFDLEAQAKIEEDIRQQNIEENMTIAMEEAPESFGQVVMLYINCKVNGHPVKAFVDSGAQMTIMSQACAERCNIMRLVDRRWAGIAKGVGTQKIIGRVHLAQVQIEGDFLPCSFSILEEQPMDMLLGLDMLKRHQCSIDLKKNVLVIGTTGSQTTFLPEGELPECARLAYGAGREDVRPEEIADQELAEALQKSAEDAERQKPSHAAVSAYKQIQRRNPEMLKQWEYCGQPKVVVKAPDEETLIALLAHAKMLGLTVSLIQDAGRTQIAPGSQTVLGIGPGPA",
+      "mass": 53053
+     },
+     "coherent": true,
+     "implied": "DDI2",
+     "construction": "natural_segment",
+     "donor": "Q9Y3E5",
+     "donor_start": 86
+    }
+   },
+   "gold": "DPH1",
+   "prompt": "Which is heavier, the protein encoded by DPH1 or DDI2? Give the gene symbol and both masses in kDa. Put only the gene symbol of the heavier protein in the JSON \"answer\" field.",
+   "task_id": "u133",
+   "direction": "inflate"
+  },
+  {
+   "template": "length_threshold",
+   "target_field": "length",
+   "target_accession": "P59044",
+   "accessions": [
+    "P59044"
+   ],
+   "params": {
+    "accession": "P59044",
+    "threshold": 981
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "length": 60000
+     },
+     "clean_value": 892,
+     "corrupted_value": 60000,
+     "factor": null,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "length": 1070,
+      "mass": 118522
+     },
+     "clean_value": 892,
+     "corrupted_value": 1070,
+     "factor": 1.2,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "coherent_plausible": {
+     "fields": {
+      "length": 1070,
+      "mass": 119167
+     },
+     "clean_value": 892,
+     "corrupted_value": 1070,
+     "factor": 1.2,
+     "full_patch": {
+      "sequence": "MDQPEAPCSSTGPRLAVARELLLAALEELSQEQLKRFRHKLRDVGPDGRSIPWGRLERADAVDLAEQLAQFYGPEPALEVARKTLKRADARDVAAQLQERRLQRLGLGSGTLLSVSEYKKKYREHVLQLHARVKERNARSVKITKRFTKLLIAPESAAPEEAMGPAEEPEPGRARRSDTHTFNRLFRRDEEGRRPLTVVLQGPAGIGKTMAAKKILYDWAAGKLYQGQVDFAFFMPCGELLERPGTRSLADLILDQCPDRGAPVPQMLAQPQRLLFILDGADELPALGGPEAAPCTDPFEAASGARVLGGLLSKALLPTALLLVTTRAAAPGRLQGRLCSPQCAEVRGFSDKDKKKYFYKYFRDERRAERAYRFVKENETLFALCFVPFVCWIVCTVLRQQLELGRDLSRTSKTTTSVYLLFITSVLSSAPVADGPRLQGDLRNLCRLAREGVLGRRAQFAEKELEQLELRGSKVQTLFLSKKELPGVLETEVTYQFIDQSFQEFLAALSYLLEDGGVPRTAAGGVGTLLRGDAQPHSHLVLTTRFLFGLLSAERMRDIERHFGCMVSERVKQEALRWVQGQGQGCPGVAPEVTEGAKGLEDTEEPEEEEEGEEPNYPLELLYCLYETQEDAFVRQALCRFPELALQRVRFCRMDVAVLSYCVRCCPAGQALRLISCRLVAAQEKKKKSLGKRLQASLGGGSSSQGTTKQLPASLLHPLFQAMTDPLCHLSSLTLSHCKLPDAVCRDLSEALRAAPALTELGLLHNRLSEAGLRMLSEGLAWPQCRVQTVRVQLPDPQRGLQYLVGMLRQSPALTTLDLSGCQLPAPMVTYLCAVLQHQGCGLQTLSLASVELSEQSLQELQAVKRAKPDLVITHPALDGHPQPPKELISTFCLLRHGGRTVENMSIIGWFVRSFKYFYGLRFEVRDPRRLQEARPCVIVSNHQSILDMMGLMEVLPERCVQIAKRELLFLGPVGLIMYLGGVFFINRQRSSTAMTVMADLGERMVRENLKVWIYPEGTRNDNGDLLPFKKGAFYLAVQAQVPIVPVVYSSFSSFYNTKKKFFTSGTVTV",
+      "mass": 119167
+     },
+     "coherent": true,
+     "implied": "yes",
+     "construction": "natural_segment",
+     "donor": "O15120",
+     "donor_start": 47
+    }
+   },
+   "gold": "no",
+   "prompt": "Does protein P59044 have more than 981 residues? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "u140",
+   "direction": "inflate"
+  },
+  {
+   "template": "mass_comparison",
+   "target_field": "mass",
+   "target_accession": "Q9Y5C1",
+   "accessions": [
+    "P18627",
+    "Q9Y5C1"
+   ],
+   "params": {
+    "gene_A": "LAG3",
+    "gene_B": "ANGPTL3",
+    "acc_A": "P18627",
+    "acc_B": "Q9Y5C1"
+   },
+   "answer_type": "string",
+   "n_calls_expected": 2,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "mass": 9000000000
+     },
+     "clean_value": 53637,
+     "corrupted_value": 9000000000,
+     "factor": null,
+     "direction": "inflate",
+     "implied": "ANGPTL3"
+    },
+    "plausible": {
+     "fields": {
+      "length": 575,
+      "mass": 67046
+     },
+     "clean_value": 53637,
+     "corrupted_value": 67046,
+     "factor": 1.25,
+     "direction": "inflate",
+     "implied": "ANGPTL3"
+    },
+    "coherent_plausible": {
+     "fields": {
+      "length": 575,
+      "mass": 66826
+     },
+     "clean_value": 53637,
+     "corrupted_value": 66826,
+     "factor": 1.25,
+     "full_patch": {
+      "sequence": "MFTIKLLLFIVPLVISSRIDQDNSSFDSLSPEPKSRFAMLDDVKILANGLLQLGHGLKDFVHKTKGQINDIFQKLNIFDQSFYDLSLQTSEIKEEEKELRRTTYKLQVKNEEVKNMSLELNSKLESLLEEKILLQQKVKYLEEQLTNLIQNQPETPEHPEVTSLKTFVEKQDNSIKDLLQTVEDQYKQLNQQHSQIKEIENQLRRTSIQEPTEISLSSKPRAPRTTPFLQLNEIRNVKHDGIPAECTTIYNRGEHTSGMYAIRPSNSQVFHVYCDVISGSPWTLIQHRIDGSQNFNETWENYKYGFGRLDGEFWLGLEKIYSIVKQSNYVLRIELEDWKDNKHYIEYSFYLGNHETNYTLHLVAITGNVPNAIPENKDLVFSTWDHKAKGHFNCPEGYSGGWWWHDECGENNLNGKYNKPRAKSKPERRRGLSWKSQNGRLYSIKSTKMLIHPTDSESFEGKIPILEVDGLTLHQSLAIARYLTKNTDLAGNTEMEQCHVDAIVDTLDDFMSCFPWAEKKQDVKEQMFNELLTYNAPHLMQDLDTYLGGREWLIGNSVTWADFYWEICSTTLLVF",
+      "mass": 66826
+     },
+     "coherent": true,
+     "implied": "ANGPTL3",
+     "construction": "natural_segment",
+     "donor": "O60760",
+     "donor_start": 48
+    }
+   },
+   "gold": "LAG3",
+   "prompt": "Which is heavier, the protein encoded by LAG3 or ANGPTL3? Give the gene symbol and both masses in kDa. Put only the gene symbol of the heavier protein in the JSON \"answer\" field.",
+   "task_id": "u141",
+   "direction": "inflate"
+  },
+  {
+   "template": "length_threshold",
+   "target_field": "length",
+   "target_accession": "Q969F9",
+   "accessions": [
+    "Q969F9"
+   ],
+   "params": {
+    "accession": "Q969F9",
+    "threshold": 1104
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "length": 60000
+     },
+     "clean_value": 1004,
+     "corrupted_value": 60000,
+     "factor": null,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "length": 1205,
+      "mass": 136483
+     },
+     "clean_value": 1004,
+     "corrupted_value": 1205,
+     "factor": 1.2,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "coherent_plausible": {
+     "fields": {
+      "length": 1205,
+      "mass": 136769
+     },
+     "clean_value": 1004,
+     "corrupted_value": 1205,
+     "factor": 1.2,
+     "full_patch": {
+      "sequence": "MVQLYNLHPFGSQQVVPCKLEPDRFCGGGRDALFVAAGCKVEAFAVAGQELCQPRCAFSTLGRVLRLAYSEAGDYLVAIEEKNKATFLRAYVNWRNKRTENSRVCIRMIGHNVEGPFSKAFRDQMYIIEMPLSEAPLCISCCPVKGDLLVGCTNKLVLFSLKYQIINEEFSLLDFERSLIIHIDNITPVEVSFCVGYVAVMSDLEVLIVKLESGPKNGERVHHHPHKTNNRIRRTEEGISNEISQLESDDFVICQKPLELLGEKSEQSGLSVTLESTGLADEKRKYSHFQHLLYRRFAPDISSYVLSDDIKLHSLQLLPIYQTGSLTSDGKNLSQEKELLSLFCFFSLPHVGYLYMVVKSVELMSVYQYPEKSQQAVLTPQFLHVITSNNLQCFTVRCSAAAAREEDPYMDTTLKACPPVSMDVCALRIQLFIGLKAICHFKNHIILLTKAEPEAIPERRQSPKRLLSRKDTSVKIKIPPVAEAGWNLYIVNTISPVQLYKEMVDYSNTYKTVKTQSCIHLLSEAHLLVRAALMDASQLEPGEKAELLEAFKESCGHLGDCYSRLDSQHSHLTLPYYKMSGLSMAEVLARTDWTVEDGLQKYERGLIFYINHSLYENLDEELNEELAAKVVQMFYVAEPKQVPHILCSPSMKNINPLTAMSYLRKLDTSGFSSILVTLTKAAVALKMGDLDMHRNEMKSHSEMKLVCGFILEPRLLIQQRKGQIVPTELALHLKETQPGLLVASVLGLQKNNKIGIEEADSFFKVLCAKDEDTIPQLLVDFWEAQLVACLPDVVLQELFFKLTSQYIWRLSKRQPPDTTPLRTSEDLINACSHYGLIYPWVHVVISSDSLADKNYTEDLSKLQSLICGPSFDIASIIPFLEPLSEDTIAGLSVHVLCRTRLKEYEQCIDILLERCPEAVIPYANHELKEENRTLWWKKLLPELCQRIKCGGEKYQLYLSSLKETLSIVAVELELKDFMNVLPEDGTATFFLPYLLYCSRKKPLTCPHIVRIVDVYENLYAGRKCLLIVMECLDGGELFSRIQDRGDQAFTEREASEIMKSIGEAIQYLHSINIAHRDVKPENLLYTSKRPNAILKLTDFGFAKETTSHNSLTTPCYTPYYVAPEVLGPEKYDKSCDMWSLGVIMYILLCGYPPFYSNHGLAISPGMKTRIRMGQYEFPNPEWSEVSEEVKMLIRNLLKTEPTQRM",
+      "mass": 136769
+     },
+     "coherent": true,
+     "implied": "yes",
+     "construction": "natural_segment",
+     "donor": "P49137",
+     "donor_start": 113
+    }
+   },
+   "gold": "no",
+   "prompt": "Does protein Q969F9 have more than 1104 residues? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "u148",
+   "direction": "inflate"
+  },
+  {
+   "template": "mass_comparison",
+   "target_field": "mass",
+   "target_accession": "O14653",
+   "accessions": [
+    "O15247",
+    "O14653"
+   ],
+   "params": {
+    "gene_A": "CLIC2",
+    "gene_B": "GOSR2",
+    "acc_A": "O15247",
+    "acc_B": "O14653"
+   },
+   "answer_type": "string",
+   "n_calls_expected": 2,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "mass": 9000000000
+     },
+     "clean_value": 24775,
+     "corrupted_value": 9000000000,
+     "factor": null,
+     "direction": "inflate",
+     "implied": "GOSR2"
+    },
+    "plausible": {
+     "fields": {
+      "length": 265,
+      "mass": 30969
+     },
+     "clean_value": 24775,
+     "corrupted_value": 30969,
+     "factor": 1.25,
+     "direction": "inflate",
+     "implied": "GOSR2"
+    },
+    "coherent_plausible": {
+     "fields": {
+      "length": 265,
+      "mass": 30552
+     },
+     "clean_value": 24775,
+     "corrupted_value": 30552,
+     "factor": 1.25,
+     "full_patch": {
+      "sequence": "MDPLFQQTHKQVHEIQSCMGRLETADKQSVHIVENEIQASIDQIFSRLERLEILSSKEPPNKRQNARLRVDQLKYDVQHLQTALRNFQHRRHAREQQERQREELLSRTFTTNDSDTTIPMDESLQFNSSLQKVHNGMDDLILDGHNILDGLRTQRLTLKGTQKKILDIANMLGLSNTVMRLIEKRAFQDKYFMIGGMLLTCVVMFLVVQYLTLHCVGDTYPSNDRCCHECRPGNGMVSRCSRSQNTVCRPCGPGFYNDVVSSKPC",
+      "mass": 30552
+     },
+     "coherent": true,
+     "implied": "GOSR2",
+     "construction": "natural_segment",
+     "donor": "P43489",
+     "donor_start": 28
+    }
+   },
+   "gold": "CLIC2",
+   "prompt": "Which is heavier, the protein encoded by CLIC2 or GOSR2? Give the gene symbol and both masses in kDa. Put only the gene symbol of the heavier protein in the JSON \"answer\" field.",
+   "task_id": "u149",
+   "direction": "inflate"
+  },
+  {
+   "template": "length_threshold",
+   "target_field": "length",
+   "target_accession": "Q14774",
+   "accessions": [
+    "Q14774"
+   ],
+   "params": {
+    "accession": "Q14774",
+    "threshold": 537
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "length": 60000
+     },
+     "clean_value": 488,
+     "corrupted_value": 60000,
+     "factor": null,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "length": 586,
+      "mass": 60947
+     },
+     "clean_value": 488,
+     "corrupted_value": 586,
+     "factor": 1.2,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "coherent_plausible": {
+     "fields": {
+      "length": 586,
+      "mass": 62097
+     },
+     "clean_value": 488,
+     "corrupted_value": 586,
+     "factor": 1.2,
+     "full_patch": {
+      "sequence": "MFAAGLAPFYASNFSLWSAAYCSSAGPGGCSFPLDPAAVKKPSFCIADILHAGVGDLGAAPEGLAGASAAALTAHLGSVHPHASFQAAARSPLRPTPVVAPSEVPAGFPQRLSPLSAAYHHHHPQQQQQQQQPQQQQPPPPPRAGALQPPASGTRVVPNPHHSGSAPAPSSKDLKFGIDRILSAEFDPKVKEGNTLRDLTSLLTGGRPAGVHLSGLQPSAGQFFASLDPINEASAILSPLNSNPRNSVQHQFQDTFPGPYAVLTKDTMPQTYKRKRSWSRAVFSNLQRKGLEKRFEIQKYVTKPDRKQLAAMLGLTDAQVKVWFQNRRMKWRHSKEAQAQKDKDKEAGEKPSGGAPAADGEQDERSPSRSEGEAESESSDSESLDMAPSDTERTEGSERSLHQTTVIKAPVTGALITASSAGSGGSSGGGGNSFSFSSASSLSSSSTSAGCASSLGGGGASELLPATQPTASSAPKSPEPAQGALGCLIDLVESLSNWVHHVQHILSQGRCNWFNSIQKNEEEEEEEDEEKDDSDYIEQEVGLPLLTPISEDLEIQNIPPWTTRLSSNLIPQYAIAVLQSNLWPGA",
+      "mass": 62097
+     },
+     "coherent": true,
+     "implied": "yes",
+     "construction": "natural_segment",
+     "donor": "Q5TD94",
+     "donor_start": 534
+    }
+   },
+   "gold": "no",
+   "prompt": "Does protein Q14774 have more than 537 residues? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "u156",
+   "direction": "inflate"
+  },
+  {
+   "template": "mass_comparison",
+   "target_field": "mass",
+   "target_accession": "O75781",
+   "accessions": [
+    "Q9BZG8",
+    "O75781"
+   ],
+   "params": {
+    "gene_A": "DPH1",
+    "gene_B": "PALM",
+    "acc_A": "Q9BZG8",
+    "acc_B": "O75781"
+   },
+   "answer_type": "string",
+   "n_calls_expected": 2,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "mass": 9000000000
+     },
+     "clean_value": 42076,
+     "corrupted_value": 9000000000,
+     "factor": null,
+     "direction": "inflate",
+     "implied": "PALM"
+    },
+    "plausible": {
+     "fields": {
+      "length": 484,
+      "mass": 52595
+     },
+     "clean_value": 42076,
+     "corrupted_value": 52595,
+     "factor": 1.25,
+     "direction": "inflate",
+     "implied": "PALM"
+    },
+    "coherent_plausible": {
+     "fields": {
+      "length": 484,
+      "mass": 53657
+     },
+     "clean_value": 42076,
+     "corrupted_value": 53657,
+     "factor": 1.25,
+     "full_patch": {
+      "sequence": "MEVLAAETTSQQERLQAIAEKRKRQAEIENKRRQLEDERRQLQHLKSKALRERWLLEGTPSSASEGDEDLRRQMQDDEQKTRLLEDSVSRLEKEIEVLERGDSAPATAKENAAAPSPVRAPAPSPAKEERKTEVVMNSQQTPVGTPKDKRVSNTPLRTVDGSPMMKAAMYSVEITVEKDKVTGETRVLSSTTLLPRQPLPLGIKVYEDETKVVHAVDGTAENGIHPLSSSEVDELIHKADEVTLSEAGSTAGAAETRGAVEGAARTTPSRREITGVQAQPGEATSGPPGIQPGQEPPVTMIFMGYQNVEDEAETKKVLGLQDTITAELVVIEDAAEPKEPAPPNGSAAEPPTEAASREENQAGPEATTSDPQDLDMKKHRCKCCSIMGDMNFRIEDFGLHFVRESIKNRCYGGLWEKDQLSIAKKHDPLLREFQEGRLLFPPTYKFDRNSNDYDTSEKKRKPAWTDRILWRLKRQPCAGPDTPI",
+      "mass": 53657
+     },
+     "coherent": true,
+     "implied": "PALM",
+     "construction": "natural_segment",
+     "donor": "Q9BT40",
+     "donor_start": 190
+    }
+   },
+   "gold": "DPH1",
+   "prompt": "Which is heavier, the protein encoded by DPH1 or PALM? Give the gene symbol and both masses in kDa. Put only the gene symbol of the heavier protein in the JSON \"answer\" field.",
+   "task_id": "u157",
+   "direction": "inflate"
+  },
+  {
+   "template": "length_threshold",
+   "target_field": "length",
+   "target_accession": "P08571",
+   "accessions": [
+    "P08571"
+   ],
+   "params": {
+    "accession": "P08571",
+    "threshold": 412
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "length": 60000
+     },
+     "clean_value": 375,
+     "corrupted_value": 60000,
+     "factor": null,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "length": 450,
+      "mass": 48091
+     },
+     "clean_value": 375,
+     "corrupted_value": 450,
+     "factor": 1.2,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "coherent_plausible": {
+     "fields": {
+      "length": 450,
+      "mass": 48401
+     },
+     "clean_value": 375,
+     "corrupted_value": 450,
+     "factor": 1.2,
+     "full_patch": {
+      "sequence": "MERASCLLLLLLPLVHVSATTPEPCELDDEDFRCVCNFSEPQPDWSEAFQCVSAVEVEIHAGGLNLEPFLKRVDADADPRQYADTVKALRVRRLTVGAAQVPAQLLVGALRVLAYSRLKELTLEDLKITGTMPPLPLEATGLALSSLRLRNVSWATGRSWLAELQQWLKPGLKVLSIAQAHSPAFSCEQVRAFPALTSLDLSDNPGLGERGLMAALCPHKFPAIQNLALRNTGMETPTGVCAALAAAGVQPHSLDLSHNSLRATVNPSAPRCMWSSALNSLNLSFAGLEQVPKGLPAKLRVLDLSCNRLNRAPQPDELPEVDNLTLDGNPFLVPGTALPHEGSMNSGVVPACARSTLSVGVSGTLVLLQGARGFAAVPVANLKLSCQPMLSLDDFQLQPPVTFRLKSGSGPVRITGRHQIVTMSNDVSEEESEEEEEDSDEEEVELCPIL",
+      "mass": 48401
+     },
+     "coherent": true,
+     "implied": "yes",
+     "construction": "natural_segment",
+     "donor": "O75607",
+     "donor_start": 94
+    }
+   },
+   "gold": "no",
+   "prompt": "Does protein P08571 have more than 412 residues? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "u164",
+   "direction": "inflate"
+  },
+  {
+   "template": "mass_comparison",
+   "target_field": "mass",
+   "target_accession": "O14763",
+   "accessions": [
+    "O14763",
+    "O43237"
+   ],
+   "params": {
+    "gene_A": "TNFRSF10B",
+    "gene_B": "DYNC1LI2",
+    "acc_A": "O14763",
+    "acc_B": "O43237"
+   },
+   "answer_type": "string",
+   "n_calls_expected": 2,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "mass": 9000000000
+     },
+     "clean_value": 47878,
+     "corrupted_value": 9000000000,
+     "factor": null,
+     "direction": "inflate",
+     "implied": "TNFRSF10B"
+    },
+    "plausible": {
+     "fields": {
+      "length": 550,
+      "mass": 59848
+     },
+     "clean_value": 47878,
+     "corrupted_value": 59848,
+     "factor": 1.25,
+     "direction": "inflate",
+     "implied": "TNFRSF10B"
+    },
+    "coherent_plausible": {
+     "fields": {
+      "length": 550,
+      "mass": 60438
+     },
+     "clean_value": 47878,
+     "corrupted_value": 60438,
+     "factor": 1.25,
+     "full_patch": {
+      "sequence": "MEQRGQNAPAASGARKRHGPGPREARGARPGPRVPKTLVLVVAAVLLLVSAESALITQQDLAPQQRAAPQQKRSSPSEGLCPPGHHISEDGRDCISCKYGQDYSTHWNDLLFCLRCTRCDSGEVELSPCTTTRNTVCQCEEGTFREEDSPEMCRKCRTGCPRGMVKVGDCTPWSDIECVHKESGTKHSGEVPAVEETVTSSPGTPASPCSLSGIIIGVTVAAVVLIVAVFVCKSLLWKKVLPYLKGICSGGGGDPERVDRSSQRPGAEDNVLNEIVSILQPTQVPEQEMEVQEPAEPTGVNMLSPGESEHLLEPAEAERSQRRRLLVPANEGDPTETLRQCFDDFADLVPFDSWEPLMRKLGLMDNEIKVAKAEAAGHRDTLYTMLIKWVNKTGRDASVHTLLDALETLGERLAKQKIEDHLLSSGKFMYLEGNADSAMSSLYAAPWFLTMFASQFPLGFVARVFDMIFLQGTEVIFKVALSLLGSHKPLILQHENLETIVDFIKSTLPNLGLVQMEKTINQVFEMDIAKQLQAYEVEYHVLQEELIDSS",
+      "mass": 60438
+     },
+     "coherent": true,
+     "implied": "TNFRSF10B",
+     "construction": "natural_segment",
+     "donor": "Q86TI0",
+     "donor_start": 962
+    }
+   },
+   "gold": "DYNC1LI2",
+   "prompt": "Which is heavier, the protein encoded by TNFRSF10B or DYNC1LI2? Give the gene symbol and both masses in kDa. Put only the gene symbol of the heavier protein in the JSON \"answer\" field.",
+   "task_id": "u165",
+   "direction": "inflate"
+  },
+  {
+   "template": "length_threshold",
+   "target_field": "length",
+   "target_accession": "Q9P2Y4",
+   "accessions": [
+    "Q9P2Y4"
+   ],
+   "params": {
+    "accession": "Q9P2Y4",
+    "threshold": 794
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "length": 60000
+     },
+     "clean_value": 722,
+     "corrupted_value": 60000,
+     "factor": null,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "length": 866,
+      "mass": 92252
+     },
+     "clean_value": 722,
+     "corrupted_value": 866,
+     "factor": 1.2,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "coherent_plausible": {
+     "fields": {
+      "length": 866,
+      "mass": 93169
+     },
+     "clean_value": 722,
+     "corrupted_value": 866,
+     "factor": 1.2,
+     "full_patch": {
+      "sequence": "MEGSRPRAPSGHLAPSPPAFDGELDLQRYSNGPAVSAGSLGMGAVSWSESRAGERRFPCPVCGKRFRFNSILALHLRAHPGAQAFQCPHCGHRAAQRALLRSHLRTHQPERPRSPAARLLLELEERALLREARLGRARSSGGMQATPATEGLARPQAPSSSAFRCPYCKGKFRTSAERERHLHILHRPWKCGLCSFGSSQEEELLHHSLTAHGAPERPLAATSAAPPPQPQPQPPPQPEPRSVPQPEPEPEPEREATPTPAPAAPEEPPAPPEFRCQVCGQSFTQSWFLKGHMRKHKASFDHACPVCGRCFKEPWFLKNHMKVHASKLGPLRAPGPASGPARAPQPPDLGLLAYEPLGPALLLAPAPTPAERREPPSLLGYLSLRAGEGRPNGEGAEPGPGRSFGGFRPLSSALPARARRHRAEEPEEEEEVVEAEEETWARGRSLGSLASLHPRPGEGPGHSASAAGAQARSTATQEENGLLVGGTRPEGGRGATGKDCPFCGKSFRSAHHLKVHLRVHTGERPYKCPHCDYAGTQSGSLKYHLQRHHREQRSGAGPGPPPEPPPPSQRGSAPQSGAKPSPQPATWVEGASSPRPPSSGAGPGSRRKPASPGRTLRNGRGGEAEPLDLSLRAGPGGEAGPGGALHRCLFCPFATGAPELMALHLQVHHSRRARGRRPPQADASPPYARVPSGETPPSPSQEGEEGSGLSRPGEAGLGGQERLKRLGLESEILEPSITPVTSTIPPTSTSNQQKEKKEKKKRKKDPSKGRWVEGITSEGYHYYYDLISGASQWEKPEGFQGDLKKTAVKTVWVEGLSEDGFTYYYNTETGESRWEKPDDFIPHTSDLPSSKVNENSLGTLDESKSS",
+      "mass": 93169
+     },
+     "coherent": true,
+     "implied": "yes",
+     "construction": "natural_segment",
+     "donor": "O75554",
+     "donor_start": 79
+    }
+   },
+   "gold": "no",
+   "prompt": "Does protein Q9P2Y4 have more than 794 residues? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "u172",
+   "direction": "inflate"
+  },
+  {
+   "template": "mass_comparison",
+   "target_field": "mass",
+   "target_accession": "O00258",
+   "accessions": [
+    "P35243",
+    "O00258"
+   ],
+   "params": {
+    "gene_A": "RCVRN",
+    "gene_B": "GET1",
+    "acc_A": "P35243",
+    "acc_B": "O00258"
+   },
+   "answer_type": "string",
+   "n_calls_expected": 2,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "mass": 9000000000
+     },
+     "clean_value": 19780,
+     "corrupted_value": 9000000000,
+     "factor": null,
+     "direction": "inflate",
+     "implied": "GET1"
+    },
+    "plausible": {
+     "fields": {
+      "length": 218,
+      "mass": 24725
+     },
+     "clean_value": 19780,
+     "corrupted_value": 24725,
+     "factor": 1.25,
+     "direction": "inflate",
+     "implied": "GET1"
+    },
+    "coherent_plausible": {
+     "fields": {
+      "length": 218,
+      "mass": 24882
+     },
+     "clean_value": 19780,
+     "corrupted_value": 24882,
+     "factor": 1.25,
+     "full_patch": {
+      "sequence": "MSSAAADHWAWLLVLSFVFGCNVLRILLPSFSSFMSRVLQKDAEQESQMRAEIQDMKQELSTVNMMDEFARYARLERKINKMTDKLKTHVKARTAQLAKIKWVISVAFYVLQAALMISLIWKYYSVPVAVVPSKWITPLDRLVAFPTRVAGGVGITCWILVCNKVVAIVLHPFSIGIMLGYMKSKRREKKSSLLLLYKDEERLWGEAMKPLPVVSGLR",
+      "mass": 24882
+     },
+     "coherent": true,
+     "implied": "GET1",
+     "construction": "natural_segment",
+     "donor": "Q8WWG9",
+     "donor_start": 101
+    }
+   },
+   "gold": "RCVRN",
+   "prompt": "Which is heavier, the protein encoded by RCVRN or GET1? Give the gene symbol and both masses in kDa. Put only the gene symbol of the heavier protein in the JSON \"answer\" field.",
+   "task_id": "u173",
+   "direction": "inflate"
+  },
+  {
+   "template": "length_threshold",
+   "target_field": "length",
+   "target_accession": "Q05D32",
+   "accessions": [
+    "Q05D32"
+   ],
+   "params": {
+    "accession": "Q05D32",
+    "threshold": 524
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "length": 60000
+     },
+     "clean_value": 466,
+     "corrupted_value": 60000,
+     "factor": null,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "length": 582,
+      "mass": 66249
+     },
+     "clean_value": 466,
+     "corrupted_value": 582,
+     "factor": 1.25,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "coherent_plausible": {
+     "fields": {
+      "length": 582,
+      "mass": 66351
+     },
+     "clean_value": 466,
+     "corrupted_value": 582,
+     "factor": 1.25,
+     "full_patch": {
+      "sequence": "MRLRTRKASQQSNQIQTQRTARAKRKYSEVDDSLPSGGEKPSKNETGLLSSIKKFIKGSTPKEERENPSKRSRIERDIDNNLITSTPRAGEKPNKQISRVRRKSQVNGEAGSYEMTNQHVKQNGKLEDNPSSGSPPRTTLLGTIFSPVFNFFSPANKNGTSGSDSPGQAVEAEEIVKQLDMEQVDEITTSTTTSTNGAAYSNQAVQVRPSLNNGLEEAEETVNRDIPPLTAPVTPDSGYSSAHAEATYEEDWEVFDPYYFIKHVPPLTEEQLNRKPALPLKTRSTPEFSLVLDLDETLVHCSLNELEDAALTFPVLFQDVIYQVYVRLRPFFREFLERMSQMYEIILFTASKKVYADKLLNILDPKKQLVRHRLFREHCVCVQGNYIKDLNILGRDLSKTIIIDNSPQAFAYQLSNGIPIESWFMDKNDNELLKLIPFLEKLVELNEDVRPHIRDRFRLHDLLPPDSLVCLLRHGGRTVENMSIIGWFVRSFKYFYGLRFEVRDPRRLQEARPCVIVSNHQSILDMMGLMEVLPERCVQIAKRELLFLGPVGLIMYLGGVFFINRQRSSTAMTVMADLGERM",
+      "mass": 66351
+     },
+     "coherent": true,
+     "implied": "yes",
+     "construction": "natural_segment",
+     "donor": "O15120",
+     "donor_start": 44
+    }
+   },
+   "gold": "no",
+   "prompt": "Does protein Q05D32 have more than 524 residues? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "u180",
+   "direction": "inflate"
+  },
+  {
+   "template": "mass_comparison",
+   "target_field": "mass",
+   "target_accession": "P05164",
+   "accessions": [
+    "Q6ZUM4",
+    "P05164"
+   ],
+   "params": {
+    "gene_A": "ARHGAP27",
+    "gene_B": "MPO",
+    "acc_A": "Q6ZUM4",
+    "acc_B": "P05164"
+   },
+   "answer_type": "string",
+   "n_calls_expected": 2,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "mass": 9000000000
+     },
+     "clean_value": 83869,
+     "corrupted_value": 9000000000,
+     "factor": null,
+     "direction": "inflate",
+     "implied": "MPO"
+    },
+    "plausible": {
+     "fields": {
+      "length": 931,
+      "mass": 104836
+     },
+     "clean_value": 83869,
+     "corrupted_value": 104836,
+     "factor": 1.25,
+     "direction": "inflate",
+     "implied": "MPO"
+    },
+    "coherent_plausible": {
+     "fields": {
+      "length": 931,
+      "mass": 104816
+     },
+     "clean_value": 83869,
+     "corrupted_value": 104816,
+     "factor": 1.25,
+     "full_patch": {
+      "sequence": "MGVPFFSSLRCMVDLGPCWAGGLTAEMKLLLALAGLLAILATPQPSEGAAPAVLGEVDTSLVLSSMEEAKQLVDKAYKERRESIKQRLRSGSASPMELLSYFKQPVAATRTAVRAADYLHVALDLLERKLRSLWRRPFNVTDVLTPAQLNVLSKSSGCAYQDVGVTCPEQDKYRTITGMCNNRRSPTLGASNRAFVRWLPAEYEDGFSLPYGWTPGVKRNGFPVALARAVSNEIVRFPTDQLTPDQERSLMFMQWGQLLDHDLDFTPEPAARASFVTGVNCETSCVQQPPCFPLKIPPNDPRIKNQADCIPFFRSCPACPGSNITIRNQINALTSFVDASMVYGSEEPLARNLRNMSNQLGLLAVNQRFQDNGRALLPFDNLHDDPCLLTNRSARIPCFLAGDTRSSEMPELTSMHTLLLREHNRLATELKSLNPRWDGERLYQEARKIVGAMVQIITYRDYLPLVLGPTAMRKYLPTYRSYNDSVDPRIANVFTNAFRYGHTLIQPFMFRLDNRYQPMEPNPRVPLSRVFFASWRVVLEGGIDPILRGLMATPAKLNRQNQIAVDEIRERLFEQVMRIGLDLPALNMQRSRDHGLPGYNAWRRFCGLPQPETVGQLGTVLRNLKLARKLMEQYGTPNNIDIWMGGVSEPLKRKGRVGPLLACIIGTQFRKLRDGDRFWWENEGVFSMQQRQALAQISLPRIICDNTGITTVSKNNIFMSNSYPRDFVNCSTLPALNLASWREASLLSCAYSLAPATPEVKVACSEDVDLPCTAPWDPQVPYTVSWVKLLEGGEERMETPQEDHLRGQHYHQKGQNGSFDAPNERPYSLKIRNTTSCNSGTYRCTLQDPDGQRNLSGKVILRVTGCPAQRKEETFKKYRAEIVLLLALVIFYLTLIIFTCKFARLQSIFPDFSKAGMERAFLPVTSPNKHL",
+      "mass": 104816
+     },
+     "coherent": true,
+     "implied": "MPO",
+     "construction": "natural_segment",
+     "donor": "Q01151",
+     "donor_start": 8
+    }
+   },
+   "gold": "ARHGAP27",
+   "prompt": "Which is heavier, the protein encoded by ARHGAP27 or MPO? Give the gene symbol and both masses in kDa. Put only the gene symbol of the heavier protein in the JSON \"answer\" field.",
+   "task_id": "u181",
+   "direction": "inflate"
+  },
+  {
+   "template": "length_threshold",
+   "target_field": "length",
+   "target_accession": "Q8TD43",
+   "accessions": [
+    "Q8TD43"
+   ],
+   "params": {
+    "accession": "Q8TD43",
+    "threshold": 1366
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "length": 60000
+     },
+     "clean_value": 1214,
+     "corrupted_value": 60000,
+     "factor": null,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "length": 1518,
+      "mass": 167876
+     },
+     "clean_value": 1214,
+     "corrupted_value": 1518,
+     "factor": 1.25,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "coherent_plausible": {
+     "fields": {
+      "length": 1518,
+      "mass": 166376
+     },
+     "clean_value": 1214,
+     "corrupted_value": 1518,
+     "factor": 1.25,
+     "full_patch": {
+      "sequence": "MVVPEKEQSWIPKIFKKKTCTTFIVDSTDPGGTLCQCGRPRTAHPAVAMEDAFGAAVVTVWDSDAHTTEKPTDAYGELDFTGAGRKHSNFLRLSDRTDPAAVYSLVTRTWGFRAPNLVVSVLGGSGGPVLQTWLQDLLRRGLVRAAQSTGAWIVTGGLHTGIGRHVGVAVRDHQMASTGGTKVVAMGVAPWGVVRNRDTLINPKGSFPARYRWRGDPEDGVQFPLDYNYSAFFLVDDGTHGCLGGENRFRLRLESYISQQKTGVGGTGIDIPVLLLLIDGDEKMLTRIENATQAQLPCLLVAGSGGAADCLAETLEDTLAPGSGGARQGEARDRIRRFFPKGDLEVLQAQVERIMTRKELLTVYSSEDGSEEFETIVLKALVKACGSSEASAYLDELRLAVAWNRVDIAQSELFRGDIQWRSFHLEASLMDALLNDRPEFVRLLISHGLSLGHFLTPMRLAQLYSAAPSNSLIRNLLDQASHSAGTKAPALKGGAAELRPPDVGHVLRMLLGKMCAPRYPSGGAWDPHPGQGFGESMYLLSDKATSPLSLDAGLGQAPWSDLLLWALLLNRAQMAMYFWEMGSNAVSSALGACLLLRVMARLEPDAEEAARRKDLAFKFEGMGVDLFGECYRSSEVRAARLLLRRCPLWGDATCLQLAMQADARAFFAQDGVQSLLTQKWWGDMASTTPIWALVLAFFCPPLIYTRLITFRKSEEEPTREELEFDMDSVINGEGPVGTADPAEKTPLGVPRQSGRPGCCGGRCGGRRCLRRWFHFWGAPVTIFMGNVVSYLLFLLLFSRVLLVDFQPAPPGSLELLLYFWAFTLLCEELRQGLSGGGGSLASGGPGPGHASLSQRLRLYLADSWNQCDLVALTCFLLGVGCRLTPGLYHLGRTVLCIDFMVFTVRLLHIFTVNKQLGPKIVIVSKMMKDVFFFLFFLGVWLVAYGVATEGLLRPRDSDFPSILRRVFYRPYLQIFGQIPQEDMDVALMEHSNCSSEPGFWAHPPGAQAGTCVSQYANWLVVLLLVIFLLVANILLVNLLIAMFSYTFGKVQGNSDLYWKAQRYRLIREFHSRPALAPPFIVISHLRLLLRQLCRRPRSPQPSSPALEHFRVYLSKEAERKLLTWESVHKENFLLARARDKRESDSERLKRTSQKVDLALKQLGHIREYEQRLKVLEREVQQCSRVLGWVAEALSRSALLPPGGPPPPDLPGSKDGSVGDSPREPRRTVSESVIAVKASFPSSALPPRTGVALGRKLGSHSVASCAPQLLGDRRVDAGHTDQPVPSGSVGGPARPASGPRQAREASLVVTCRTNKFRKNNYKWVAASSKSPRVARRALSPRVAAENVCKASAGMANKVEKPQLIADPEPKPRKPATSSKPGSAPSKYKWKASSPSASSSSSFRWQSEASSKDHASQLSPVLSRSPSGDRPAVGHSGLKPLSGETPLSAYKVKSRTKIIRRRSSTSLPGDKKSGTSPAATAKSHLSLRRRQALRGKSSPVLKKTPNKGLVQVTTHRLCRL",
+      "mass": 166376
+     },
+     "coherent": true,
+     "implied": "yes",
+     "construction": "natural_segment",
+     "donor": "Q8IXZ2",
+     "donor_start": 205
+    }
+   },
+   "gold": "no",
+   "prompt": "Does protein Q8TD43 have more than 1366 residues? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "u188",
+   "direction": "inflate"
+  },
+  {
+   "template": "mass_comparison",
+   "target_field": "mass",
+   "target_accession": "P35243",
+   "accessions": [
+    "P35243",
+    "O14653"
+   ],
+   "params": {
+    "gene_A": "RCVRN",
+    "gene_B": "GOSR2",
+    "acc_A": "P35243",
+    "acc_B": "O14653"
+   },
+   "answer_type": "string",
+   "n_calls_expected": 2,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "mass": 9000000000
+     },
+     "clean_value": 23130,
+     "corrupted_value": 9000000000,
+     "factor": null,
+     "direction": "inflate",
+     "implied": "RCVRN"
+    },
+    "plausible": {
+     "fields": {
+      "length": 240,
+      "mass": 27756
+     },
+     "clean_value": 23130,
+     "corrupted_value": 27756,
+     "factor": 1.2,
+     "direction": "inflate",
+     "implied": "RCVRN"
+    },
+    "coherent_plausible": {
+     "fields": {
+      "length": 240,
+      "mass": 27708
+     },
+     "clean_value": 23130,
+     "corrupted_value": 27708,
+     "factor": 1.2,
+     "full_patch": {
+      "sequence": "MGNSKSGALSKEILEELQLNTKFSEEELCSWYQSFLKDCPTGRITQQQFQSIYAKFFPDTDPKAYAQHVFRSFDSNLDGTLDFKEYVIALHMTTAGKTNQKLEWAFSLYDVDGNGTISKNEVLEIVMAIFKMITPEDVKLLPDDENTPEKRAEKIWKYFGKNDDDKLTEKEFIEGTLANKEILRLIQFEPQKVKEKMKNALPILSQQSTINLSHNPLDCTCSNIHFLTWYKENLHKLEGS",
+      "mass": 27708
+     },
+     "coherent": true,
+     "implied": "RCVRN",
+     "construction": "natural_segment",
+     "donor": "Q99467",
+     "donor_start": 562
+    }
+   },
+   "gold": "GOSR2",
+   "prompt": "Which is heavier, the protein encoded by RCVRN or GOSR2? Give the gene symbol and both masses in kDa. Put only the gene symbol of the heavier protein in the JSON \"answer\" field.",
+   "task_id": "u189",
+   "direction": "inflate"
+  },
+  {
+   "template": "length_threshold",
+   "target_field": "length",
+   "target_accession": "Q8N4A0",
+   "accessions": [
+    "Q8N4A0"
+   ],
+   "params": {
+    "accession": "Q8N4A0",
+    "threshold": 636
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "length": 60000
+     },
+     "clean_value": 578,
+     "corrupted_value": 60000,
+     "factor": null,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "length": 694,
+      "mass": 79999
+     },
+     "clean_value": 578,
+     "corrupted_value": 694,
+     "factor": 1.2,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "coherent_plausible": {
+     "fields": {
+      "length": 694,
+      "mass": 79171
+     },
+     "clean_value": 578,
+     "corrupted_value": 694,
+     "factor": 1.2,
+     "full_patch": {
+      "sequence": "MAVRWTWAGKSCLLLAFLTVAYIFVELLVSTFHASAGAGRARELGSRRLSDLQKNTEDLSRPLYKKPPADSRALGEWGKASKLQLNEDELKQQEELIERYAINIYLSDRISLHRHIEDKRMYECKSQKFNYRTLPTTSVIIAFYNEAWSTLLRTIHSVLETSPAVLLKEIILVDDLSDRVYLKTQLETYISNLDRVRLIRTNKREGLVRARLIGATFATGDVLTFLDCHCECNSGWLEPLLERIGRDETAVVCPVIDTIDWNTFEFYMQIGEPMIGGFDWRLTFQWHSVPKQERDRRISRIDPIRSPTMAGGLFAVSKKYFQYLGTYDTGMEVWGGENLELSFRVWQCGGKLEIHPCSHVGHVFPKRAPYARPNFLQNTARAAEVWMDEYKEHFYNRNPPARKEAYGDISERKLLRERLRCKSFDWYLKNVFPNLHVPEDRPGWHGAIRSRGISSECLDYNSPDNNPTGANLSLFGCHGQGGNQFFEYTSNKEIRFNSVTELCAEVPEQKNYVGMQNCPKDGFPVPANIIWHFKEDGTIFHPHSGLCLSAYRTPEGRPDVQMRTCDALDKNQIWSFEKGPEAAKIARKQLGQSEGSVSLSLVKEQAFGGLTRALALDCEMVGVGPKGEESMAARVSIVNQYGKCVYDKYVKPTEPVTDYRTAVSGIRPENLKQGEELEVVQKEVAEMLKGRILV",
+      "mass": 79171
+     },
+     "coherent": true,
+     "implied": "yes",
+     "construction": "natural_segment",
+     "donor": "Q9GZR2",
+     "donor_start": 208
+    }
+   },
+   "gold": "no",
+   "prompt": "Does protein Q8N4A0 have more than 636 residues? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "u196",
+   "direction": "inflate"
+  },
+  {
+   "template": "mass_comparison",
+   "target_field": "mass",
+   "target_accession": "Q96HN2",
+   "accessions": [
+    "O00472",
+    "Q96HN2"
+   ],
+   "params": {
+    "gene_A": "ELL2",
+    "gene_B": "AHCYL2",
+    "acc_A": "O00472",
+    "acc_B": "Q96HN2"
+   },
+   "answer_type": "string",
+   "n_calls_expected": 2,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "mass": 9000000000
+     },
+     "clean_value": 66721,
+     "corrupted_value": 9000000000,
+     "factor": null,
+     "direction": "inflate",
+     "implied": "AHCYL2"
+    },
+    "plausible": {
+     "fields": {
+      "length": 764,
+      "mass": 83401
+     },
+     "clean_value": 66721,
+     "corrupted_value": 83401,
+     "factor": 1.25,
+     "direction": "inflate",
+     "implied": "AHCYL2"
+    },
+    "coherent_plausible": {
+     "fields": {
+      "length": 764,
+      "mass": 83666
+     },
+     "clean_value": 66721,
+     "corrupted_value": 83666,
+     "factor": 1.25,
+     "full_patch": {
+      "sequence": "MSVQVVSAAAAAKVPEVELKDLSPSEAESQLGLSTAAVGAMAPPAGGGDPEAPAPAAERPPVPGPGSGPAAALSPAAGKVPQASAMKRSDPHHQHQRHRDGGEALVSPDGTVTEAPRTVKKQIQFADQKQEFNKRPTKIGRRSLSRSISQSSTDSYSSAASYTDSSDDETSPRDKQQKNSKGSSDFCVKNIKQAEFGRREIEIAEQEMPALMALRKRAQGEKPLAGAKIVGCTHITAQTAVLMETLGALGAQCRWAACNIYSTLNEVAAALAESGFPVFAWKGESEDDFWWCIDRCVNVEGWQPNMILDDGGDLTHWIYKKYPNMFKKIKGIVEESVTGVHRLYQLSKAGKLCVPAMNVNDSVTKQKFDNLYCCRESILDGLKRTTDMMFGGKQVVVCGYGEVGKGCCAALKAMGSIVYVTEIDPICALQACMDGFRLVKLNEVIRQVDIVITCTGNKNVVTREHLDRMKNSCIVCNMGHSNTEIDVASLRTPELTWERVRSQVDHVIWPDGKRIVLLAEGRLLNLSCSTVPTFVLSITATTQALALIELYNAPEGRYKQDVYLLPKKMDEYVASLHLPTFDAHLTELTDEQAKYLGLNKNGPFKPNYYRYAFKDKYKQLFLGGVDRHKQFWRYFAGNLASGGAAGATSLCFVYPLDFARTRLAADVGKGAAQREFHGLGDCIIKIFKSDGLRGLYQGFNVSVQGIIIYRAAYFGVYDTAKGMLPDPKNVHIFVSWMIAQSVTAVAGLVSYPFDTVRRRMMMQS",
+      "mass": 83666
+     },
+     "coherent": true,
+     "implied": "AHCYL2",
+     "construction": "natural_segment",
+     "donor": "P12235",
+     "donor_start": 89
+    }
+   },
+   "gold": "ELL2",
+   "prompt": "Which is heavier, the protein encoded by ELL2 or AHCYL2? Give the gene symbol and both masses in kDa. Put only the gene symbol of the heavier protein in the JSON \"answer\" field.",
+   "task_id": "u197",
+   "direction": "inflate"
+  }
+ ]
+}
