@@ -80,6 +80,7 @@ def apply_corruption(record, corruption):
 
 def render(table, rec, corruption=None):
     fields = FULL_FIELDS if table.record_format == "full" else SUMMARY_FIELDS
+    fields = fields + [f for f in EXTRA_FIELDS if f in rec]
     r = apply_corruption(rec, corruption)
     return json.dumps({k: r[k] for k in fields})
 
@@ -379,3 +380,62 @@ def mock_fetch(task, layer):
         out, _ = layer.call("get_compound", {"cid": p["accession"]})
         rec = json.loads(out); recs[str(rec["cid"])] = rec
     return recs
+
+
+# ---------------------------------------------------------------- Phase 4 fields: active only for tables whose records carry them,
+# so every existing chemistry prompt and tool description stays byte-identical.
+EXTRA_FIELDS = ["monoisotopic_mass", "tpsa", "complexity"]
+_EXTRA_ACTIVE = False
+FIELD_WORDS.update({"monoisotopic_mass": ["monoisotopic", "exact mass"], "tpsa": ["tpsa", "polar surface"], "complexity": ["complexity"]})
+
+
+def c_mono_threshold(task, recs): return _yn(recs[task["params"]["accession"]]["monoisotopic_mass"] > task["params"]["threshold"])
+def c_tpsa_threshold(task, recs): return _yn(recs[task["params"]["accession"]]["tpsa"] > task["params"]["threshold"])
+def c_complexity_threshold(task, recs): return _yn(recs[task["params"]["accession"]]["complexity"] > task["params"]["threshold"])
+
+
+TEMPLATES.update({
+    "mono_threshold": {"field": "monoisotopic_mass", "answer_type": "yesno", "n_calls": 1, "compute": c_mono_threshold, "margin": None},
+    "tpsa_threshold": {"field": "tpsa", "answer_type": "yesno", "n_calls": 1, "compute": c_tpsa_threshold, "margin": None},
+    "complexity_threshold": {"field": "complexity", "answer_type": "yesno", "n_calls": 1, "compute": c_complexity_threshold, "margin": None},
+})
+ANSWER_INSTR.update({k: 'Put exactly "yes" or "no" in the JSON "answer" field.' for k in ("mono_threshold", "tpsa_threshold", "complexity_threshold")})
+_P4_Q = {
+    "mono_threshold": "Does the compound with PubChem CID {accession} have a monoisotopic mass greater than {threshold} Da? Answer yes or no and give the monoisotopic mass.",
+    "tpsa_threshold": "Does the compound with PubChem CID {accession} have a topological polar surface area (TPSA) greater than {threshold} square angstroms? Answer yes or no and give the TPSA.",
+    "complexity_threshold": "Does the compound with PubChem CID {accession} have a PubChem complexity score greater than {threshold}? Answer yes or no and give the complexity score.",
+}
+_base_make_prompt = make_prompt
+
+
+def make_prompt(template, p):
+    if template in _P4_Q:
+        return _P4_Q[template].format(**p) + " " + ANSWER_INSTR[template]
+    return _base_make_prompt(template, p)
+
+
+_base_table_init = Table.__init__
+
+
+def _table_init(self, *a, **k):
+    global _EXTRA_ACTIVE
+    _base_table_init(self, *a, **k)
+    if self.records and all(f in self.records[0] for f in EXTRA_FIELDS):
+        _EXTRA_ACTIVE = True
+
+
+Table.__init__ = _table_init
+_base_tool_schemas = tool_schemas
+
+
+def tool_schemas(record_format="summary"):
+    s = _base_tool_schemas(record_format)
+    if not _EXTRA_ACTIVE:
+        return s
+    s, n = json.loads(json.dumps(s)), 0
+    for t in s:
+        d = t.get("description", "")
+        if "and h_bond_donors" in d:
+            t["description"] = d.replace("and h_bond_donors", "h_bond_donors, monoisotopic_mass (Da), tpsa (topological polar surface area, square angstroms) and complexity (PubChem complexity score)"); n += 1
+    assert n, "phase 4: tool description anchor 'and h_bond_donors' not found"
+    return s

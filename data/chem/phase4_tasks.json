@@ -1,0 +1,7269 @@
+{
+ "domain": "chemistry",
+ "proteins": "data/chem/compounds_phase4.json",
+ "seed": 4,
+ "phase": 4,
+ "n_tasks": 180,
+ "tasks": [
+  {
+   "template": "mono_threshold",
+   "target_field": "monoisotopic_mass",
+   "target_accession": "4921",
+   "accessions": [
+    "4921"
+   ],
+   "params": {
+    "accession": "4921",
+    "threshold": 759.1
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "monoisotopic_mass": 0.0,
+      "molecular_weight": 0.0,
+      "heavy_atom_count": 0
+     },
+     "clean_value": 843.397,
+     "corrupted_value": 0.0,
+     "direction": "shrink",
+     "implied": "no"
+    },
+    "plausible": {
+     "fields": {
+      "monoisotopic_mass": 674.718,
+      "molecular_weight": 675.52,
+      "heavy_atom_count": 48
+     },
+     "clean_value": 843.397,
+     "corrupted_value": 674.718,
+     "factor": 0.8,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 4921 have a monoisotopic mass greater than 759.1 Da? Answer yes or no and give the monoisotopic mass. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_000",
+   "direction": "shrink"
+  },
+  {
+   "template": "tpsa_threshold",
+   "target_field": "tpsa",
+   "target_accession": "26602",
+   "accessions": [
+    "26602"
+   ],
+   "params": {
+    "accession": "26602",
+    "threshold": 34.5
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "tpsa": -50.0
+     },
+     "clean_value": 38.3,
+     "corrupted_value": -50.0,
+     "direction": "shrink",
+     "implied": "no"
+    },
+    "plausible": {
+     "fields": {
+      "tpsa": 30.6
+     },
+     "clean_value": 38.3,
+     "corrupted_value": 30.6,
+     "factor": 0.8,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 26602 have a topological polar surface area (TPSA) greater than 34.5 square angstroms? Answer yes or no and give the TPSA. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_001",
+   "direction": "shrink"
+  },
+  {
+   "template": "complexity_threshold",
+   "target_field": "complexity",
+   "target_accession": "14003",
+   "accessions": [
+    "14003"
+   ],
+   "params": {
+    "accession": "14003",
+    "threshold": 846
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "complexity": -100
+     },
+     "clean_value": 967,
+     "corrupted_value": -100,
+     "direction": "shrink",
+     "implied": "no"
+    },
+    "plausible": {
+     "fields": {
+      "complexity": 725
+     },
+     "clean_value": 967,
+     "corrupted_value": 725,
+     "factor": 0.75,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 14003 have a PubChem complexity score greater than 846? Answer yes or no and give the complexity score. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_002",
+   "direction": "shrink"
+  },
+  {
+   "template": "mono_threshold",
+   "target_field": "monoisotopic_mass",
+   "target_accession": "9387",
+   "accessions": [
+    "9387"
+   ],
+   "params": {
+    "accession": "9387",
+    "threshold": 481.8
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "monoisotopic_mass": 9000000000.0,
+      "molecular_weight": 9000000000.0,
+      "heavy_atom_count": 50000
+     },
+     "clean_value": 437.971,
+     "corrupted_value": 9000000000.0,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "monoisotopic_mass": 525.565,
+      "molecular_weight": 525.67,
+      "heavy_atom_count": 31
+     },
+     "clean_value": 437.971,
+     "corrupted_value": 525.565,
+     "factor": 1.2,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 9387 have a monoisotopic mass greater than 481.8 Da? Answer yes or no and give the monoisotopic mass. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_003",
+   "direction": "inflate"
+  },
+  {
+   "template": "tpsa_threshold",
+   "target_field": "tpsa",
+   "target_accession": "14296",
+   "accessions": [
+    "14296"
+   ],
+   "params": {
+    "accession": "14296",
+    "threshold": 29.0
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "tpsa": 50000.0
+     },
+     "clean_value": 25.8,
+     "corrupted_value": 50000.0,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "tpsa": 32.2
+     },
+     "clean_value": 25.8,
+     "corrupted_value": 32.2,
+     "factor": 1.25,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 14296 have a topological polar surface area (TPSA) greater than 29.0 square angstroms? Answer yes or no and give the TPSA. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_004",
+   "direction": "inflate"
+  },
+  {
+   "template": "complexity_threshold",
+   "target_field": "complexity",
+   "target_accession": "4041",
+   "accessions": [
+    "4041"
+   ],
+   "params": {
+    "accession": "4041",
+    "threshold": 378
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "complexity": 10000000
+     },
+     "clean_value": 336,
+     "corrupted_value": 10000000,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "complexity": 420
+     },
+     "clean_value": 336,
+     "corrupted_value": 420,
+     "factor": 1.25,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 4041 have a PubChem complexity score greater than 378? Answer yes or no and give the complexity score. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_005",
+   "direction": "inflate"
+  },
+  {
+   "template": "mono_threshold",
+   "target_field": "monoisotopic_mass",
+   "target_accession": "5411",
+   "accessions": [
+    "5411"
+   ],
+   "params": {
+    "accession": "5411",
+    "threshold": 237.8
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "monoisotopic_mass": 0.0,
+      "molecular_weight": 0.0,
+      "heavy_atom_count": 0
+     },
+     "clean_value": 264.184,
+     "corrupted_value": 0.0,
+     "direction": "shrink",
+     "implied": "no"
+    },
+    "plausible": {
+     "fields": {
+      "monoisotopic_mass": 211.347,
+      "molecular_weight": 211.49,
+      "heavy_atom_count": 15
+     },
+     "clean_value": 264.184,
+     "corrupted_value": 211.347,
+     "factor": 0.8,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 5411 have a monoisotopic mass greater than 237.8 Da? Answer yes or no and give the monoisotopic mass. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_006",
+   "direction": "shrink"
+  },
+  {
+   "template": "tpsa_threshold",
+   "target_field": "tpsa",
+   "target_accession": "8196",
+   "accessions": [
+    "8196"
+   ],
+   "params": {
+    "accession": "8196",
+    "threshold": 59.1
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "tpsa": -50.0
+     },
+     "clean_value": 67.6,
+     "corrupted_value": -50.0,
+     "direction": "shrink",
+     "implied": "no"
+    },
+    "plausible": {
+     "fields": {
+      "tpsa": 50.7
+     },
+     "clean_value": 67.6,
+     "corrupted_value": 50.7,
+     "factor": 0.75,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 8196 have a topological polar surface area (TPSA) greater than 59.1 square angstroms? Answer yes or no and give the TPSA. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_007",
+   "direction": "shrink"
+  },
+  {
+   "template": "complexity_threshold",
+   "target_field": "complexity",
+   "target_accession": "8370",
+   "accessions": [
+    "8370"
+   ],
+   "params": {
+    "accession": "8370",
+    "threshold": 91
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "complexity": -100
+     },
+     "clean_value": 104,
+     "corrupted_value": -100,
+     "direction": "shrink",
+     "implied": "no"
+    },
+    "plausible": {
+     "fields": {
+      "complexity": 78
+     },
+     "clean_value": 104,
+     "corrupted_value": 78,
+     "factor": 0.75,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 8370 have a PubChem complexity score greater than 91? Answer yes or no and give the complexity score. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_008",
+   "direction": "shrink"
+  },
+  {
+   "template": "mono_threshold",
+   "target_field": "monoisotopic_mass",
+   "target_accession": "7710",
+   "accessions": [
+    "7710"
+   ],
+   "params": {
+    "accession": "7710",
+    "threshold": 175.6
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "monoisotopic_mass": 9000000000.0,
+      "molecular_weight": 9000000000.0,
+      "heavy_atom_count": 50000
+     },
+     "clean_value": 156.115,
+     "corrupted_value": 9000000000.0,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "monoisotopic_mass": 195.144,
+      "molecular_weight": 195.28,
+      "heavy_atom_count": 14
+     },
+     "clean_value": 156.115,
+     "corrupted_value": 195.144,
+     "factor": 1.25,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 7710 have a monoisotopic mass greater than 175.6 Da? Answer yes or no and give the monoisotopic mass. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_009",
+   "direction": "inflate"
+  },
+  {
+   "template": "tpsa_threshold",
+   "target_field": "tpsa",
+   "target_accession": "2783",
+   "accessions": [
+    "2783"
+   ],
+   "params": {
+    "accession": "2783",
+    "threshold": 64.1
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "tpsa": 50000.0
+     },
+     "clean_value": 58.3,
+     "corrupted_value": 50000.0,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "tpsa": 70.0
+     },
+     "clean_value": 58.3,
+     "corrupted_value": 70.0,
+     "factor": 1.2,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 2783 have a topological polar surface area (TPSA) greater than 64.1 square angstroms? Answer yes or no and give the TPSA. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_010",
+   "direction": "inflate"
+  },
+  {
+   "template": "complexity_threshold",
+   "target_field": "complexity",
+   "target_accession": "15677",
+   "accessions": [
+    "15677"
+   ],
+   "params": {
+    "accession": "15677",
+    "threshold": 236
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "complexity": 10000000
+     },
+     "clean_value": 215,
+     "corrupted_value": 10000000,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "complexity": 258
+     },
+     "clean_value": 215,
+     "corrupted_value": 258,
+     "factor": 1.2,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 15677 have a PubChem complexity score greater than 236? Answer yes or no and give the complexity score. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_011",
+   "direction": "inflate"
+  },
+  {
+   "template": "mono_threshold",
+   "target_field": "monoisotopic_mass",
+   "target_accession": "763",
+   "accessions": [
+    "763"
+   ],
+   "params": {
+    "accession": "763",
+    "threshold": 102.4
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "monoisotopic_mass": 0.0,
+      "molecular_weight": 0.0,
+      "heavy_atom_count": 0
+     },
+     "clean_value": 117.054,
+     "corrupted_value": 0.0,
+     "direction": "shrink",
+     "implied": "no"
+    },
+    "plausible": {
+     "fields": {
+      "monoisotopic_mass": 87.791,
+      "molecular_weight": 87.83,
+      "heavy_atom_count": 6
+     },
+     "clean_value": 117.054,
+     "corrupted_value": 87.791,
+     "factor": 0.75,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 763 have a monoisotopic mass greater than 102.4 Da? Answer yes or no and give the monoisotopic mass. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_012",
+   "direction": "shrink"
+  },
+  {
+   "template": "tpsa_threshold",
+   "target_field": "tpsa",
+   "target_accession": "10767",
+   "accessions": [
+    "10767"
+   ],
+   "params": {
+    "accession": "10767",
+    "threshold": 26.6
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "tpsa": -50.0
+     },
+     "clean_value": 29.5,
+     "corrupted_value": -50.0,
+     "direction": "shrink",
+     "implied": "no"
+    },
+    "plausible": {
+     "fields": {
+      "tpsa": 23.6
+     },
+     "clean_value": 29.5,
+     "corrupted_value": 23.6,
+     "factor": 0.8,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 10767 have a topological polar surface area (TPSA) greater than 26.6 square angstroms? Answer yes or no and give the TPSA. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_013",
+   "direction": "shrink"
+  },
+  {
+   "template": "complexity_threshold",
+   "target_field": "complexity",
+   "target_accession": "7155",
+   "accessions": [
+    "7155"
+   ],
+   "params": {
+    "accession": "7155",
+    "threshold": 218
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "complexity": -100
+     },
+     "clean_value": 242,
+     "corrupted_value": -100,
+     "direction": "shrink",
+     "implied": "no"
+    },
+    "plausible": {
+     "fields": {
+      "complexity": 194
+     },
+     "clean_value": 242,
+     "corrupted_value": 194,
+     "factor": 0.8,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 7155 have a PubChem complexity score greater than 218? Answer yes or no and give the complexity score. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_014",
+   "direction": "shrink"
+  },
+  {
+   "template": "mono_threshold",
+   "target_field": "monoisotopic_mass",
+   "target_accession": "18096",
+   "accessions": [
+    "18096"
+   ],
+   "params": {
+    "accession": "18096",
+    "threshold": 204.8
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "monoisotopic_mass": 9000000000.0,
+      "molecular_weight": 9000000000.0,
+      "heavy_atom_count": 50000
+     },
+     "clean_value": 182.061,
+     "corrupted_value": 9000000000.0,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "monoisotopic_mass": 227.576,
+      "molecular_weight": 227.8,
+      "heavy_atom_count": 14
+     },
+     "clean_value": 182.061,
+     "corrupted_value": 227.576,
+     "factor": 1.25,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 18096 have a monoisotopic mass greater than 204.8 Da? Answer yes or no and give the monoisotopic mass. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_015",
+   "direction": "inflate"
+  },
+  {
+   "template": "tpsa_threshold",
+   "target_field": "tpsa",
+   "target_accession": "23510",
+   "accessions": [
+    "23510"
+   ],
+   "params": {
+    "accession": "23510",
+    "threshold": 64.6
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "tpsa": 50000.0
+     },
+     "clean_value": 57.4,
+     "corrupted_value": 50000.0,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "tpsa": 71.8
+     },
+     "clean_value": 57.4,
+     "corrupted_value": 71.8,
+     "factor": 1.25,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 23510 have a topological polar surface area (TPSA) greater than 64.6 square angstroms? Answer yes or no and give the TPSA. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_016",
+   "direction": "inflate"
+  },
+  {
+   "template": "complexity_threshold",
+   "target_field": "complexity",
+   "target_accession": "9133",
+   "accessions": [
+    "9133"
+   ],
+   "params": {
+    "accession": "9133",
+    "threshold": 302
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "complexity": 10000000
+     },
+     "clean_value": 275,
+     "corrupted_value": 10000000,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "complexity": 330
+     },
+     "clean_value": 275,
+     "corrupted_value": 330,
+     "factor": 1.2,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 9133 have a PubChem complexity score greater than 302? Answer yes or no and give the complexity score. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_017",
+   "direction": "inflate"
+  },
+  {
+   "template": "mono_threshold",
+   "target_field": "monoisotopic_mass",
+   "target_accession": "3634",
+   "accessions": [
+    "3634"
+   ],
+   "params": {
+    "accession": "3634",
+    "threshold": 311.6
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "monoisotopic_mass": 0.0,
+      "molecular_weight": 0.0,
+      "heavy_atom_count": 0
+     },
+     "clean_value": 356.156,
+     "corrupted_value": 0.0,
+     "direction": "shrink",
+     "implied": "no"
+    },
+    "plausible": {
+     "fields": {
+      "monoisotopic_mass": 267.117,
+      "molecular_weight": 267.38,
+      "heavy_atom_count": 19
+     },
+     "clean_value": 356.156,
+     "corrupted_value": 267.117,
+     "factor": 0.75,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 3634 have a monoisotopic mass greater than 311.6 Da? Answer yes or no and give the monoisotopic mass. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_018",
+   "direction": "shrink"
+  },
+  {
+   "template": "tpsa_threshold",
+   "target_field": "tpsa",
+   "target_accession": "4054",
+   "accessions": [
+    "4054"
+   ],
+   "params": {
+    "accession": "4054",
+    "threshold": 22.8
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "tpsa": -50.0
+     },
+     "clean_value": 26.0,
+     "corrupted_value": -50.0,
+     "direction": "shrink",
+     "implied": "no"
+    },
+    "plausible": {
+     "fields": {
+      "tpsa": 19.5
+     },
+     "clean_value": 26.0,
+     "corrupted_value": 19.5,
+     "factor": 0.75,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 4054 have a topological polar surface area (TPSA) greater than 22.8 square angstroms? Answer yes or no and give the TPSA. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_019",
+   "direction": "shrink"
+  },
+  {
+   "template": "complexity_threshold",
+   "target_field": "complexity",
+   "target_accession": "11773",
+   "accessions": [
+    "11773"
+   ],
+   "params": {
+    "accession": "11773",
+    "threshold": 182
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "complexity": -100
+     },
+     "clean_value": 202,
+     "corrupted_value": -100,
+     "direction": "shrink",
+     "implied": "no"
+    },
+    "plausible": {
+     "fields": {
+      "complexity": 162
+     },
+     "clean_value": 202,
+     "corrupted_value": 162,
+     "factor": 0.8,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 11773 have a PubChem complexity score greater than 182? Answer yes or no and give the complexity score. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_020",
+   "direction": "shrink"
+  },
+  {
+   "template": "mono_threshold",
+   "target_field": "monoisotopic_mass",
+   "target_accession": "21183",
+   "accessions": [
+    "21183"
+   ],
+   "params": {
+    "accession": "21183",
+    "threshold": 354.3
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "monoisotopic_mass": 9000000000.0,
+      "molecular_weight": 9000000000.0,
+      "heavy_atom_count": 50000
+     },
+     "clean_value": 322.048,
+     "corrupted_value": 9000000000.0,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "monoisotopic_mass": 386.458,
+      "molecular_weight": 386.76,
+      "heavy_atom_count": 29
+     },
+     "clean_value": 322.048,
+     "corrupted_value": 386.458,
+     "factor": 1.2,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 21183 have a monoisotopic mass greater than 354.3 Da? Answer yes or no and give the monoisotopic mass. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_021",
+   "direction": "inflate"
+  },
+  {
+   "template": "tpsa_threshold",
+   "target_field": "tpsa",
+   "target_accession": "5865",
+   "accessions": [
+    "5865"
+   ],
+   "params": {
+    "accession": "5865",
+    "threshold": 100.9
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "tpsa": 50000.0
+     },
+     "clean_value": 91.7,
+     "corrupted_value": 50000.0,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "tpsa": 110.0
+     },
+     "clean_value": 91.7,
+     "corrupted_value": 110.0,
+     "factor": 1.2,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 5865 have a topological polar surface area (TPSA) greater than 100.9 square angstroms? Answer yes or no and give the TPSA. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_022",
+   "direction": "inflate"
+  },
+  {
+   "template": "complexity_threshold",
+   "target_field": "complexity",
+   "target_accession": "4975",
+   "accessions": [
+    "4975"
+   ],
+   "params": {
+    "accession": "4975",
+    "threshold": 1867
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "complexity": 10000000
+     },
+     "clean_value": 1660,
+     "corrupted_value": 10000000,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "complexity": 2075
+     },
+     "clean_value": 1660,
+     "corrupted_value": 2075,
+     "factor": 1.25,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 4975 have a PubChem complexity score greater than 1867? Answer yes or no and give the complexity score. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_023",
+   "direction": "inflate"
+  },
+  {
+   "template": "mono_threshold",
+   "target_field": "monoisotopic_mass",
+   "target_accession": "908",
+   "accessions": [
+    "908"
+   ],
+   "params": {
+    "accession": "908",
+    "threshold": 91.8
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "monoisotopic_mass": 0.0,
+      "molecular_weight": 0.0,
+      "heavy_atom_count": 0
+     },
+     "clean_value": 102.043,
+     "corrupted_value": 0.0,
+     "direction": "shrink",
+     "implied": "no"
+    },
+    "plausible": {
+     "fields": {
+      "monoisotopic_mass": 81.634,
+      "molecular_weight": 81.67,
+      "heavy_atom_count": 6
+     },
+     "clean_value": 102.043,
+     "corrupted_value": 81.634,
+     "factor": 0.8,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 908 have a monoisotopic mass greater than 91.8 Da? Answer yes or no and give the monoisotopic mass. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_024",
+   "direction": "shrink"
+  },
+  {
+   "template": "tpsa_threshold",
+   "target_field": "tpsa",
+   "target_accession": "22740",
+   "accessions": [
+    "22740"
+   ],
+   "params": {
+    "accession": "22740",
+    "threshold": 68.2
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "tpsa": -50.0
+     },
+     "clean_value": 77.9,
+     "corrupted_value": -50.0,
+     "direction": "shrink",
+     "implied": "no"
+    },
+    "plausible": {
+     "fields": {
+      "tpsa": 58.4
+     },
+     "clean_value": 77.9,
+     "corrupted_value": 58.4,
+     "factor": 0.75,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 22740 have a topological polar surface area (TPSA) greater than 68.2 square angstroms? Answer yes or no and give the TPSA. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_025",
+   "direction": "shrink"
+  },
+  {
+   "template": "complexity_threshold",
+   "target_field": "complexity",
+   "target_accession": "10158",
+   "accessions": [
+    "10158"
+   ],
+   "params": {
+    "accession": "10158",
+    "threshold": 626
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "complexity": -100
+     },
+     "clean_value": 716,
+     "corrupted_value": -100,
+     "direction": "shrink",
+     "implied": "no"
+    },
+    "plausible": {
+     "fields": {
+      "complexity": 537
+     },
+     "clean_value": 716,
+     "corrupted_value": 537,
+     "factor": 0.75,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 10158 have a PubChem complexity score greater than 626? Answer yes or no and give the complexity score. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_026",
+   "direction": "shrink"
+  },
+  {
+   "template": "mono_threshold",
+   "target_field": "monoisotopic_mass",
+   "target_accession": "684",
+   "accessions": [
+    "684"
+   ],
+   "params": {
+    "accession": "684",
+    "threshold": 634.6
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "monoisotopic_mass": 9000000000.0,
+      "molecular_weight": 9000000000.0,
+      "heavy_atom_count": 50000
+     },
+     "clean_value": 564.076,
+     "corrupted_value": 9000000000.0,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "monoisotopic_mass": 705.095,
+      "molecular_weight": 705.38,
+      "heavy_atom_count": 45
+     },
+     "clean_value": 564.076,
+     "corrupted_value": 705.095,
+     "factor": 1.25,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 684 have a monoisotopic mass greater than 634.6 Da? Answer yes or no and give the monoisotopic mass. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_027",
+   "direction": "inflate"
+  },
+  {
+   "template": "tpsa_threshold",
+   "target_field": "tpsa",
+   "target_accession": "16301",
+   "accessions": [
+    "16301"
+   ],
+   "params": {
+    "accession": "16301",
+    "threshold": 59.2
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "tpsa": 50000.0
+     },
+     "clean_value": 52.6,
+     "corrupted_value": 50000.0,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "tpsa": 65.8
+     },
+     "clean_value": 52.6,
+     "corrupted_value": 65.8,
+     "factor": 1.25,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 16301 have a topological polar surface area (TPSA) greater than 59.2 square angstroms? Answer yes or no and give the TPSA. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_028",
+   "direction": "inflate"
+  },
+  {
+   "template": "complexity_threshold",
+   "target_field": "complexity",
+   "target_accession": "14566",
+   "accessions": [
+    "14566"
+   ],
+   "params": {
+    "accession": "14566",
+    "threshold": 235
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "complexity": 10000000
+     },
+     "clean_value": 209,
+     "corrupted_value": 10000000,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "complexity": 261
+     },
+     "clean_value": 209,
+     "corrupted_value": 261,
+     "factor": 1.25,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 14566 have a PubChem complexity score greater than 235? Answer yes or no and give the complexity score. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_029",
+   "direction": "inflate"
+  },
+  {
+   "template": "mono_threshold",
+   "target_field": "monoisotopic_mass",
+   "target_accession": "24885",
+   "accessions": [
+    "24885"
+   ],
+   "params": {
+    "accession": "24885",
+    "threshold": 456.0
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "monoisotopic_mass": 0.0,
+      "molecular_weight": 0.0,
+      "heavy_atom_count": 0
+     },
+     "clean_value": 521.185,
+     "corrupted_value": 0.0,
+     "direction": "shrink",
+     "implied": "no"
+    },
+    "plausible": {
+     "fields": {
+      "monoisotopic_mass": 390.889,
+      "molecular_weight": 391.88,
+      "heavy_atom_count": 26
+     },
+     "clean_value": 521.185,
+     "corrupted_value": 390.889,
+     "factor": 0.75,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 24885 have a monoisotopic mass greater than 456.0 Da? Answer yes or no and give the monoisotopic mass. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_030",
+   "direction": "shrink"
+  },
+  {
+   "template": "tpsa_threshold",
+   "target_field": "tpsa",
+   "target_accession": "6674",
+   "accessions": [
+    "6674"
+   ],
+   "params": {
+    "accession": "6674",
+    "threshold": 77.4
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "tpsa": -50.0
+     },
+     "clean_value": 88.5,
+     "corrupted_value": -50.0,
+     "direction": "shrink",
+     "implied": "no"
+    },
+    "plausible": {
+     "fields": {
+      "tpsa": 66.4
+     },
+     "clean_value": 88.5,
+     "corrupted_value": 66.4,
+     "factor": 0.75,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 6674 have a topological polar surface area (TPSA) greater than 77.4 square angstroms? Answer yes or no and give the TPSA. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_031",
+   "direction": "shrink"
+  },
+  {
+   "template": "complexity_threshold",
+   "target_field": "complexity",
+   "target_accession": "21500",
+   "accessions": [
+    "21500"
+   ],
+   "params": {
+    "accession": "21500",
+    "threshold": 636
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "complexity": -100
+     },
+     "clean_value": 727,
+     "corrupted_value": -100,
+     "direction": "shrink",
+     "implied": "no"
+    },
+    "plausible": {
+     "fields": {
+      "complexity": 545
+     },
+     "clean_value": 727,
+     "corrupted_value": 545,
+     "factor": 0.75,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 21500 have a PubChem complexity score greater than 636? Answer yes or no and give the complexity score. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_032",
+   "direction": "shrink"
+  },
+  {
+   "template": "mono_threshold",
+   "target_field": "monoisotopic_mass",
+   "target_accession": "11517",
+   "accessions": [
+    "11517"
+   ],
+   "params": {
+    "accession": "11517",
+    "threshold": 220.2
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "monoisotopic_mass": 9000000000.0,
+      "molecular_weight": 9000000000.0,
+      "heavy_atom_count": 50000
+     },
+     "clean_value": 200.178,
+     "corrupted_value": 9000000000.0,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "monoisotopic_mass": 240.214,
+      "molecular_weight": 240.38,
+      "heavy_atom_count": 17
+     },
+     "clean_value": 200.178,
+     "corrupted_value": 240.214,
+     "factor": 1.2,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 11517 have a monoisotopic mass greater than 220.2 Da? Answer yes or no and give the monoisotopic mass. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_033",
+   "direction": "inflate"
+  },
+  {
+   "template": "tpsa_threshold",
+   "target_field": "tpsa",
+   "target_accession": "4616",
+   "accessions": [
+    "4616"
+   ],
+   "params": {
+    "accession": "4616",
+    "threshold": 69.4
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "tpsa": 50000.0
+     },
+     "clean_value": 61.7,
+     "corrupted_value": 50000.0,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "tpsa": 77.1
+     },
+     "clean_value": 61.7,
+     "corrupted_value": 77.1,
+     "factor": 1.25,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 4616 have a topological polar surface area (TPSA) greater than 69.4 square angstroms? Answer yes or no and give the TPSA. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_034",
+   "direction": "inflate"
+  },
+  {
+   "template": "complexity_threshold",
+   "target_field": "complexity",
+   "target_accession": "13134",
+   "accessions": [
+    "13134"
+   ],
+   "params": {
+    "accession": "13134",
+    "threshold": 91
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "complexity": 10000000
+     },
+     "clean_value": 81,
+     "corrupted_value": 10000000,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "complexity": 101
+     },
+     "clean_value": 81,
+     "corrupted_value": 101,
+     "factor": 1.25,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 13134 have a PubChem complexity score greater than 91? Answer yes or no and give the complexity score. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_035",
+   "direction": "inflate"
+  },
+  {
+   "template": "mono_threshold",
+   "target_field": "monoisotopic_mass",
+   "target_accession": "3671",
+   "accessions": [
+    "3671"
+   ],
+   "params": {
+    "accession": "3671",
+    "threshold": 207.1
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "monoisotopic_mass": 0.0,
+      "molecular_weight": 0.0,
+      "heavy_atom_count": 0
+     },
+     "clean_value": 230.142,
+     "corrupted_value": 0.0,
+     "direction": "shrink",
+     "implied": "no"
+    },
+    "plausible": {
+     "fields": {
+      "monoisotopic_mass": 184.114,
+      "molecular_weight": 184.25,
+      "heavy_atom_count": 14
+     },
+     "clean_value": 230.142,
+     "corrupted_value": 184.114,
+     "factor": 0.8,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 3671 have a monoisotopic mass greater than 207.1 Da? Answer yes or no and give the monoisotopic mass. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_036",
+   "direction": "shrink"
+  },
+  {
+   "template": "tpsa_threshold",
+   "target_field": "tpsa",
+   "target_accession": "14687",
+   "accessions": [
+    "14687"
+   ],
+   "params": {
+    "accession": "14687",
+    "threshold": 36.5
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "tpsa": -50.0
+     },
+     "clean_value": 40.5,
+     "corrupted_value": -50.0,
+     "direction": "shrink",
+     "implied": "no"
+    },
+    "plausible": {
+     "fields": {
+      "tpsa": 32.4
+     },
+     "clean_value": 40.5,
+     "corrupted_value": 32.4,
+     "factor": 0.8,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 14687 have a topological polar surface area (TPSA) greater than 36.5 square angstroms? Answer yes or no and give the TPSA. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_037",
+   "direction": "shrink"
+  },
+  {
+   "template": "complexity_threshold",
+   "target_field": "complexity",
+   "target_accession": "8086",
+   "accessions": [
+    "8086"
+   ],
+   "params": {
+    "accession": "8086",
+    "threshold": 54
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "complexity": -100
+     },
+     "clean_value": 60,
+     "corrupted_value": -100,
+     "direction": "shrink",
+     "implied": "no"
+    },
+    "plausible": {
+     "fields": {
+      "complexity": 48
+     },
+     "clean_value": 60,
+     "corrupted_value": 48,
+     "factor": 0.8,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 8086 have a PubChem complexity score greater than 54? Answer yes or no and give the complexity score. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_038",
+   "direction": "shrink"
+  },
+  {
+   "template": "mono_threshold",
+   "target_field": "monoisotopic_mass",
+   "target_accession": "10468",
+   "accessions": [
+    "10468"
+   ],
+   "params": {
+    "accession": "10468",
+    "threshold": 430.2
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "monoisotopic_mass": 9000000000.0,
+      "molecular_weight": 9000000000.0,
+      "heavy_atom_count": 50000
+     },
+     "clean_value": 382.381,
+     "corrupted_value": 9000000000.0,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "monoisotopic_mass": 477.976,
+      "molecular_weight": 478.38,
+      "heavy_atom_count": 34
+     },
+     "clean_value": 382.381,
+     "corrupted_value": 477.976,
+     "factor": 1.25,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 10468 have a monoisotopic mass greater than 430.2 Da? Answer yes or no and give the monoisotopic mass. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_039",
+   "direction": "inflate"
+  },
+  {
+   "template": "tpsa_threshold",
+   "target_field": "tpsa",
+   "target_accession": "8809",
+   "accessions": [
+    "8809"
+   ],
+   "params": {
+    "accession": "8809",
+    "threshold": 70.4
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "tpsa": 50000.0
+     },
+     "clean_value": 64.0,
+     "corrupted_value": 50000.0,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "tpsa": 76.8
+     },
+     "clean_value": 64.0,
+     "corrupted_value": 76.8,
+     "factor": 1.2,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 8809 have a topological polar surface area (TPSA) greater than 70.4 square angstroms? Answer yes or no and give the TPSA. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_040",
+   "direction": "inflate"
+  },
+  {
+   "template": "complexity_threshold",
+   "target_field": "complexity",
+   "target_accession": "22591",
+   "accessions": [
+    "22591"
+   ],
+   "params": {
+    "accession": "22591",
+    "threshold": 79
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "complexity": 10000000
+     },
+     "clean_value": 70,
+     "corrupted_value": 10000000,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "complexity": 88
+     },
+     "clean_value": 70,
+     "corrupted_value": 88,
+     "factor": 1.25,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 22591 have a PubChem complexity score greater than 79? Answer yes or no and give the complexity score. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_041",
+   "direction": "inflate"
+  },
+  {
+   "template": "mono_threshold",
+   "target_field": "monoisotopic_mass",
+   "target_accession": "3455",
+   "accessions": [
+    "3455"
+   ],
+   "params": {
+    "accession": "3455",
+    "threshold": 405.2
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "monoisotopic_mass": 0.0,
+      "molecular_weight": 0.0,
+      "heavy_atom_count": 0
+     },
+     "clean_value": 450.248,
+     "corrupted_value": 0.0,
+     "direction": "shrink",
+     "implied": "no"
+    },
+    "plausible": {
+     "fields": {
+      "monoisotopic_mass": 360.198,
+      "molecular_weight": 360.48,
+      "heavy_atom_count": 26
+     },
+     "clean_value": 450.248,
+     "corrupted_value": 360.198,
+     "factor": 0.8,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 3455 have a monoisotopic mass greater than 405.2 Da? Answer yes or no and give the monoisotopic mass. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_042",
+   "direction": "shrink"
+  },
+  {
+   "template": "tpsa_threshold",
+   "target_field": "tpsa",
+   "target_accession": "834",
+   "accessions": [
+    "834"
+   ],
+   "params": {
+    "accession": "834",
+    "threshold": 136.8
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "tpsa": -50.0
+     },
+     "clean_value": 152.0,
+     "corrupted_value": -50.0,
+     "direction": "shrink",
+     "implied": "no"
+    },
+    "plausible": {
+     "fields": {
+      "tpsa": 121.6
+     },
+     "clean_value": 152.0,
+     "corrupted_value": 121.6,
+     "factor": 0.8,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 834 have a topological polar surface area (TPSA) greater than 136.8 square angstroms? Answer yes or no and give the TPSA. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_043",
+   "direction": "shrink"
+  },
+  {
+   "template": "complexity_threshold",
+   "target_field": "complexity",
+   "target_accession": "17800",
+   "accessions": [
+    "17800"
+   ],
+   "params": {
+    "accession": "17800",
+    "threshold": 297
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "complexity": -100
+     },
+     "clean_value": 340,
+     "corrupted_value": -100,
+     "direction": "shrink",
+     "implied": "no"
+    },
+    "plausible": {
+     "fields": {
+      "complexity": 255
+     },
+     "clean_value": 340,
+     "corrupted_value": 255,
+     "factor": 0.75,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 17800 have a PubChem complexity score greater than 297? Answer yes or no and give the complexity score. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_044",
+   "direction": "shrink"
+  },
+  {
+   "template": "mono_threshold",
+   "target_field": "monoisotopic_mass",
+   "target_accession": "12827",
+   "accessions": [
+    "12827"
+   ],
+   "params": {
+    "accession": "12827",
+    "threshold": 225.1
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "monoisotopic_mass": 9000000000.0,
+      "molecular_weight": 9000000000.0,
+      "heavy_atom_count": 50000
+     },
+     "clean_value": 200.062,
+     "corrupted_value": 9000000000.0,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "monoisotopic_mass": 250.078,
+      "molecular_weight": 250.32,
+      "heavy_atom_count": 16
+     },
+     "clean_value": 200.062,
+     "corrupted_value": 250.078,
+     "factor": 1.25,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 12827 have a monoisotopic mass greater than 225.1 Da? Answer yes or no and give the monoisotopic mass. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_045",
+   "direction": "inflate"
+  },
+  {
+   "template": "tpsa_threshold",
+   "target_field": "tpsa",
+   "target_accession": "19514",
+   "accessions": [
+    "19514"
+   ],
+   "params": {
+    "accession": "19514",
+    "threshold": 32.5
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "tpsa": 50000.0
+     },
+     "clean_value": 29.5,
+     "corrupted_value": 50000.0,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "tpsa": 35.4
+     },
+     "clean_value": 29.5,
+     "corrupted_value": 35.4,
+     "factor": 1.2,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 19514 have a topological polar surface area (TPSA) greater than 32.5 square angstroms? Answer yes or no and give the TPSA. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_046",
+   "direction": "inflate"
+  },
+  {
+   "template": "complexity_threshold",
+   "target_field": "complexity",
+   "target_accession": "9215",
+   "accessions": [
+    "9215"
+   ],
+   "params": {
+    "accession": "9215",
+    "threshold": 199
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "complexity": 10000000
+     },
+     "clean_value": 181,
+     "corrupted_value": 10000000,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "complexity": 217
+     },
+     "clean_value": 181,
+     "corrupted_value": 217,
+     "factor": 1.2,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 9215 have a PubChem complexity score greater than 199? Answer yes or no and give the complexity score. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_047",
+   "direction": "inflate"
+  },
+  {
+   "template": "mono_threshold",
+   "target_field": "monoisotopic_mass",
+   "target_accession": "3039",
+   "accessions": [
+    "3039"
+   ],
+   "params": {
+    "accession": "3039",
+    "threshold": 192.5
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "monoisotopic_mass": 0.0,
+      "molecular_weight": 0.0,
+      "heavy_atom_count": 0
+     },
+     "clean_value": 219.946,
+     "corrupted_value": 0.0,
+     "direction": "shrink",
+     "implied": "no"
+    },
+    "plausible": {
+     "fields": {
+      "monoisotopic_mass": 164.959,
+      "molecular_weight": 165.73,
+      "heavy_atom_count": 8
+     },
+     "clean_value": 219.946,
+     "corrupted_value": 164.959,
+     "factor": 0.75,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 3039 have a monoisotopic mass greater than 192.5 Da? Answer yes or no and give the monoisotopic mass. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_048",
+   "direction": "shrink"
+  },
+  {
+   "template": "tpsa_threshold",
+   "target_field": "tpsa",
+   "target_accession": "1775",
+   "accessions": [
+    "1775"
+   ],
+   "params": {
+    "accession": "1775",
+    "threshold": 52.4
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "tpsa": -50.0
+     },
+     "clean_value": 58.2,
+     "corrupted_value": -50.0,
+     "direction": "shrink",
+     "implied": "no"
+    },
+    "plausible": {
+     "fields": {
+      "tpsa": 46.6
+     },
+     "clean_value": 58.2,
+     "corrupted_value": 46.6,
+     "factor": 0.8,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 1775 have a topological polar surface area (TPSA) greater than 52.4 square angstroms? Answer yes or no and give the TPSA. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_049",
+   "direction": "shrink"
+  },
+  {
+   "template": "complexity_threshold",
+   "target_field": "complexity",
+   "target_accession": "5144",
+   "accessions": [
+    "5144"
+   ],
+   "params": {
+    "accession": "5144",
+    "threshold": 150
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "complexity": -100
+     },
+     "clean_value": 167,
+     "corrupted_value": -100,
+     "direction": "shrink",
+     "implied": "no"
+    },
+    "plausible": {
+     "fields": {
+      "complexity": 134
+     },
+     "clean_value": 167,
+     "corrupted_value": 134,
+     "factor": 0.8,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 5144 have a PubChem complexity score greater than 150? Answer yes or no and give the complexity score. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_050",
+   "direction": "shrink"
+  },
+  {
+   "template": "mono_threshold",
+   "target_field": "monoisotopic_mass",
+   "target_accession": "4350",
+   "accessions": [
+    "4350"
+   ],
+   "params": {
+    "accession": "4350",
+    "threshold": 363.2
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "monoisotopic_mass": 9000000000.0,
+      "molecular_weight": 9000000000.0,
+      "heavy_atom_count": 50000
+     },
+     "clean_value": 330.158,
+     "corrupted_value": 9000000000.0,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "monoisotopic_mass": 396.19,
+      "molecular_weight": 396.48,
+      "heavy_atom_count": 29
+     },
+     "clean_value": 330.158,
+     "corrupted_value": 396.19,
+     "factor": 1.2,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 4350 have a monoisotopic mass greater than 363.2 Da? Answer yes or no and give the monoisotopic mass. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_051",
+   "direction": "inflate"
+  },
+  {
+   "template": "tpsa_threshold",
+   "target_field": "tpsa",
+   "target_accession": "2599",
+   "accessions": [
+    "2599"
+   ],
+   "params": {
+    "accession": "2599",
+    "threshold": 76.8
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "tpsa": 50000.0
+     },
+     "clean_value": 68.3,
+     "corrupted_value": 50000.0,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "tpsa": 85.4
+     },
+     "clean_value": 68.3,
+     "corrupted_value": 85.4,
+     "factor": 1.25,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 2599 have a topological polar surface area (TPSA) greater than 76.8 square angstroms? Answer yes or no and give the TPSA. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_052",
+   "direction": "inflate"
+  },
+  {
+   "template": "complexity_threshold",
+   "target_field": "complexity",
+   "target_accession": "2753",
+   "accessions": [
+    "2753"
+   ],
+   "params": {
+    "accession": "2753",
+    "threshold": 549
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "complexity": 10000000
+     },
+     "clean_value": 499,
+     "corrupted_value": 10000000,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "complexity": 599
+     },
+     "clean_value": 499,
+     "corrupted_value": 599,
+     "factor": 1.2,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 2753 have a PubChem complexity score greater than 549? Answer yes or no and give the complexity score. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_053",
+   "direction": "inflate"
+  },
+  {
+   "template": "mono_threshold",
+   "target_field": "monoisotopic_mass",
+   "target_accession": "12051",
+   "accessions": [
+    "12051"
+   ],
+   "params": {
+    "accession": "12051",
+    "threshold": 88.4
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "monoisotopic_mass": 0.0,
+      "molecular_weight": 0.0,
+      "heavy_atom_count": 0
+     },
+     "clean_value": 101.084,
+     "corrupted_value": 0.0,
+     "direction": "shrink",
+     "implied": "no"
+    },
+    "plausible": {
+     "fields": {
+      "monoisotopic_mass": 75.813,
+      "molecular_weight": 75.86,
+      "heavy_atom_count": 5
+     },
+     "clean_value": 101.084,
+     "corrupted_value": 75.813,
+     "factor": 0.75,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 12051 have a monoisotopic mass greater than 88.4 Da? Answer yes or no and give the monoisotopic mass. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_054",
+   "direction": "shrink"
+  },
+  {
+   "template": "tpsa_threshold",
+   "target_field": "tpsa",
+   "target_accession": "10217",
+   "accessions": [
+    "10217"
+   ],
+   "params": {
+    "accession": "10217",
+    "threshold": 36.2
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "tpsa": -50.0
+     },
+     "clean_value": 40.2,
+     "corrupted_value": -50.0,
+     "direction": "shrink",
+     "implied": "no"
+    },
+    "plausible": {
+     "fields": {
+      "tpsa": 32.2
+     },
+     "clean_value": 40.2,
+     "corrupted_value": 32.2,
+     "factor": 0.8,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 10217 have a topological polar surface area (TPSA) greater than 36.2 square angstroms? Answer yes or no and give the TPSA. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_055",
+   "direction": "shrink"
+  },
+  {
+   "template": "complexity_threshold",
+   "target_field": "complexity",
+   "target_accession": "11775",
+   "accessions": [
+    "11775"
+   ],
+   "params": {
+    "accession": "11775",
+    "threshold": 177
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "complexity": -100
+     },
+     "clean_value": 202,
+     "corrupted_value": -100,
+     "direction": "shrink",
+     "implied": "no"
+    },
+    "plausible": {
+     "fields": {
+      "complexity": 152
+     },
+     "clean_value": 202,
+     "corrupted_value": 152,
+     "factor": 0.75,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 11775 have a PubChem complexity score greater than 177? Answer yes or no and give the complexity score. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_056",
+   "direction": "shrink"
+  },
+  {
+   "template": "mono_threshold",
+   "target_field": "monoisotopic_mass",
+   "target_accession": "8834",
+   "accessions": [
+    "8834"
+   ],
+   "params": {
+    "accession": "8834",
+    "threshold": 238.7
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "monoisotopic_mass": 9000000000.0,
+      "molecular_weight": 9000000000.0,
+      "heavy_atom_count": 50000
+     },
+     "clean_value": 212.178,
+     "corrupted_value": 9000000000.0,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "monoisotopic_mass": 265.222,
+      "molecular_weight": 265.41,
+      "heavy_atom_count": 19
+     },
+     "clean_value": 212.178,
+     "corrupted_value": 265.222,
+     "factor": 1.25,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 8834 have a monoisotopic mass greater than 238.7 Da? Answer yes or no and give the monoisotopic mass. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_057",
+   "direction": "inflate"
+  },
+  {
+   "template": "tpsa_threshold",
+   "target_field": "tpsa",
+   "target_accession": "6231",
+   "accessions": [
+    "6231"
+   ],
+   "params": {
+    "accession": "6231",
+    "threshold": 42.0
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "tpsa": 50000.0
+     },
+     "clean_value": 37.3,
+     "corrupted_value": 50000.0,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "tpsa": 46.6
+     },
+     "clean_value": 37.3,
+     "corrupted_value": 46.6,
+     "factor": 1.25,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 6231 have a topological polar surface area (TPSA) greater than 42.0 square angstroms? Answer yes or no and give the TPSA. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_058",
+   "direction": "inflate"
+  },
+  {
+   "template": "complexity_threshold",
+   "target_field": "complexity",
+   "target_accession": "3155",
+   "accessions": [
+    "3155"
+   ],
+   "params": {
+    "accession": "3155",
+    "threshold": 408
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "complexity": 10000000
+     },
+     "clean_value": 363,
+     "corrupted_value": 10000000,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "complexity": 454
+     },
+     "clean_value": 363,
+     "corrupted_value": 454,
+     "factor": 1.25,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 3155 have a PubChem complexity score greater than 408? Answer yes or no and give the complexity score. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_059",
+   "direction": "inflate"
+  },
+  {
+   "template": "mono_threshold",
+   "target_field": "monoisotopic_mass",
+   "target_accession": "17697",
+   "accessions": [
+    "17697"
+   ],
+   "params": {
+    "accession": "17697",
+    "threshold": 198.0
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "monoisotopic_mass": 0.0,
+      "molecular_weight": 0.0,
+      "heavy_atom_count": 0
+     },
+     "clean_value": 226.23,
+     "corrupted_value": 0.0,
+     "direction": "shrink",
+     "implied": "no"
+    },
+    "plausible": {
+     "fields": {
+      "monoisotopic_mass": 169.672,
+      "molecular_weight": 169.8,
+      "heavy_atom_count": 12
+     },
+     "clean_value": 226.23,
+     "corrupted_value": 169.672,
+     "factor": 0.75,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 17697 have a monoisotopic mass greater than 198.0 Da? Answer yes or no and give the monoisotopic mass. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_060",
+   "direction": "shrink"
+  },
+  {
+   "template": "tpsa_threshold",
+   "target_field": "tpsa",
+   "target_accession": "27692",
+   "accessions": [
+    "27692"
+   ],
+   "params": {
+    "accession": "27692",
+    "threshold": 39.1
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "tpsa": -50.0
+     },
+     "clean_value": 43.4,
+     "corrupted_value": -50.0,
+     "direction": "shrink",
+     "implied": "no"
+    },
+    "plausible": {
+     "fields": {
+      "tpsa": 34.7
+     },
+     "clean_value": 43.4,
+     "corrupted_value": 34.7,
+     "factor": 0.8,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 27692 have a topological polar surface area (TPSA) greater than 39.1 square angstroms? Answer yes or no and give the TPSA. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_061",
+   "direction": "shrink"
+  },
+  {
+   "template": "complexity_threshold",
+   "target_field": "complexity",
+   "target_accession": "8208",
+   "accessions": [
+    "8208"
+   ],
+   "params": {
+    "accession": "8208",
+    "threshold": 89
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "complexity": -100
+     },
+     "clean_value": 102,
+     "corrupted_value": -100,
+     "direction": "shrink",
+     "implied": "no"
+    },
+    "plausible": {
+     "fields": {
+      "complexity": 76
+     },
+     "clean_value": 102,
+     "corrupted_value": 76,
+     "factor": 0.75,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 8208 have a PubChem complexity score greater than 89? Answer yes or no and give the complexity score. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_062",
+   "direction": "shrink"
+  },
+  {
+   "template": "mono_threshold",
+   "target_field": "monoisotopic_mass",
+   "target_accession": "2136",
+   "accessions": [
+    "2136"
+   ],
+   "params": {
+    "accession": "2136",
+    "threshold": 280.6
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "monoisotopic_mass": 9000000000.0,
+      "molecular_weight": 9000000000.0,
+      "heavy_atom_count": 50000
+     },
+     "clean_value": 255.09,
+     "corrupted_value": 9000000000.0,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "monoisotopic_mass": 306.108,
+      "molecular_weight": 306.32,
+      "heavy_atom_count": 23
+     },
+     "clean_value": 255.09,
+     "corrupted_value": 306.108,
+     "factor": 1.2,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 2136 have a monoisotopic mass greater than 280.6 Da? Answer yes or no and give the monoisotopic mass. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_063",
+   "direction": "inflate"
+  },
+  {
+   "template": "tpsa_threshold",
+   "target_field": "tpsa",
+   "target_accession": "19675",
+   "accessions": [
+    "19675"
+   ],
+   "params": {
+    "accession": "19675",
+    "threshold": 76.0
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "tpsa": 50000.0
+     },
+     "clean_value": 69.1,
+     "corrupted_value": 50000.0,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "tpsa": 82.9
+     },
+     "clean_value": 69.1,
+     "corrupted_value": 82.9,
+     "factor": 1.2,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 19675 have a topological polar surface area (TPSA) greater than 76.0 square angstroms? Answer yes or no and give the TPSA. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_064",
+   "direction": "inflate"
+  },
+  {
+   "template": "complexity_threshold",
+   "target_field": "complexity",
+   "target_accession": "7232",
+   "accessions": [
+    "7232"
+   ],
+   "params": {
+    "accession": "7232",
+    "threshold": 274
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "complexity": 10000000
+     },
+     "clean_value": 244,
+     "corrupted_value": 10000000,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "complexity": 305
+     },
+     "clean_value": 244,
+     "corrupted_value": 305,
+     "factor": 1.25,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 7232 have a PubChem complexity score greater than 274? Answer yes or no and give the complexity score. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_065",
+   "direction": "inflate"
+  },
+  {
+   "template": "mono_threshold",
+   "target_field": "monoisotopic_mass",
+   "target_accession": "8852",
+   "accessions": [
+    "8852"
+   ],
+   "params": {
+    "accession": "8852",
+    "threshold": 271.4
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "monoisotopic_mass": 0.0,
+      "molecular_weight": 0.0,
+      "heavy_atom_count": 0
+     },
+     "clean_value": 310.127,
+     "corrupted_value": 0.0,
+     "direction": "shrink",
+     "implied": "no"
+    },
+    "plausible": {
+     "fields": {
+      "monoisotopic_mass": 232.595,
+      "molecular_weight": 233.01,
+      "heavy_atom_count": 13
+     },
+     "clean_value": 310.127,
+     "corrupted_value": 232.595,
+     "factor": 0.75,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 8852 have a monoisotopic mass greater than 271.4 Da? Answer yes or no and give the monoisotopic mass. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_066",
+   "direction": "shrink"
+  },
+  {
+   "template": "tpsa_threshold",
+   "target_field": "tpsa",
+   "target_accession": "14421",
+   "accessions": [
+    "14421"
+   ],
+   "params": {
+    "accession": "14421",
+    "threshold": 70.3
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "tpsa": -50.0
+     },
+     "clean_value": 80.3,
+     "corrupted_value": -50.0,
+     "direction": "shrink",
+     "implied": "no"
+    },
+    "plausible": {
+     "fields": {
+      "tpsa": 60.2
+     },
+     "clean_value": 80.3,
+     "corrupted_value": 60.2,
+     "factor": 0.75,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 14421 have a topological polar surface area (TPSA) greater than 70.3 square angstroms? Answer yes or no and give the TPSA. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_067",
+   "direction": "shrink"
+  },
+  {
+   "template": "complexity_threshold",
+   "target_field": "complexity",
+   "target_accession": "3496",
+   "accessions": [
+    "3496"
+   ],
+   "params": {
+    "accession": "3496",
+    "threshold": 142
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "complexity": -100
+     },
+     "clean_value": 162,
+     "corrupted_value": -100,
+     "direction": "shrink",
+     "implied": "no"
+    },
+    "plausible": {
+     "fields": {
+      "complexity": 122
+     },
+     "clean_value": 162,
+     "corrupted_value": 122,
+     "factor": 0.75,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 3496 have a PubChem complexity score greater than 142? Answer yes or no and give the complexity score. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_068",
+   "direction": "shrink"
+  },
+  {
+   "template": "mono_threshold",
+   "target_field": "monoisotopic_mass",
+   "target_accession": "7714",
+   "accessions": [
+    "7714"
+   ],
+   "params": {
+    "accession": "7714",
+    "threshold": 207.2
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "monoisotopic_mass": 9000000000.0,
+      "molecular_weight": 9000000000.0,
+      "heavy_atom_count": 50000
+     },
+     "clean_value": 184.146,
+     "corrupted_value": 9000000000.0,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "monoisotopic_mass": 230.182,
+      "molecular_weight": 230.34,
+      "heavy_atom_count": 16
+     },
+     "clean_value": 184.146,
+     "corrupted_value": 230.182,
+     "factor": 1.25,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 7714 have a monoisotopic mass greater than 207.2 Da? Answer yes or no and give the monoisotopic mass. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_069",
+   "direction": "inflate"
+  },
+  {
+   "template": "tpsa_threshold",
+   "target_field": "tpsa",
+   "target_accession": "4540",
+   "accessions": [
+    "4540"
+   ],
+   "params": {
+    "accession": "4540",
+    "threshold": 45.6
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "tpsa": 50000.0
+     },
+     "clean_value": 41.5,
+     "corrupted_value": 50000.0,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "tpsa": 49.8
+     },
+     "clean_value": 41.5,
+     "corrupted_value": 49.8,
+     "factor": 1.2,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 4540 have a topological polar surface area (TPSA) greater than 45.6 square angstroms? Answer yes or no and give the TPSA. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_070",
+   "direction": "inflate"
+  },
+  {
+   "template": "complexity_threshold",
+   "target_field": "complexity",
+   "target_accession": "18142",
+   "accessions": [
+    "18142"
+   ],
+   "params": {
+    "accession": "18142",
+    "threshold": 904
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "complexity": 10000000
+     },
+     "clean_value": 822,
+     "corrupted_value": 10000000,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "complexity": 986
+     },
+     "clean_value": 822,
+     "corrupted_value": 986,
+     "factor": 1.2,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 18142 have a PubChem complexity score greater than 904? Answer yes or no and give the complexity score. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_071",
+   "direction": "inflate"
+  },
+  {
+   "template": "mono_threshold",
+   "target_field": "monoisotopic_mass",
+   "target_accession": "16316",
+   "accessions": [
+    "16316"
+   ],
+   "params": {
+    "accession": "16316",
+    "threshold": 137.5
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "monoisotopic_mass": 0.0,
+      "molecular_weight": 0.0,
+      "heavy_atom_count": 0
+     },
+     "clean_value": 157.183,
+     "corrupted_value": 0.0,
+     "direction": "shrink",
+     "implied": "no"
+    },
+    "plausible": {
+     "fields": {
+      "monoisotopic_mass": 117.887,
+      "molecular_weight": 117.98,
+      "heavy_atom_count": 8
+     },
+     "clean_value": 157.183,
+     "corrupted_value": 117.887,
+     "factor": 0.75,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 16316 have a monoisotopic mass greater than 137.5 Da? Answer yes or no and give the monoisotopic mass. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_072",
+   "direction": "shrink"
+  },
+  {
+   "template": "tpsa_threshold",
+   "target_field": "tpsa",
+   "target_accession": "13471",
+   "accessions": [
+    "13471"
+   ],
+   "params": {
+    "accession": "13471",
+    "threshold": 18.2
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "tpsa": -50.0
+     },
+     "clean_value": 20.2,
+     "corrupted_value": -50.0,
+     "direction": "shrink",
+     "implied": "no"
+    },
+    "plausible": {
+     "fields": {
+      "tpsa": 16.2
+     },
+     "clean_value": 20.2,
+     "corrupted_value": 16.2,
+     "factor": 0.8,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 13471 have a topological polar surface area (TPSA) greater than 18.2 square angstroms? Answer yes or no and give the TPSA. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_073",
+   "direction": "shrink"
+  },
+  {
+   "template": "complexity_threshold",
+   "target_field": "complexity",
+   "target_accession": "23483",
+   "accessions": [
+    "23483"
+   ],
+   "params": {
+    "accession": "23483",
+    "threshold": 72
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "complexity": -100
+     },
+     "clean_value": 82,
+     "corrupted_value": -100,
+     "direction": "shrink",
+     "implied": "no"
+    },
+    "plausible": {
+     "fields": {
+      "complexity": 62
+     },
+     "clean_value": 82,
+     "corrupted_value": 62,
+     "factor": 0.75,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 23483 have a PubChem complexity score greater than 72? Answer yes or no and give the complexity score. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_074",
+   "direction": "shrink"
+  },
+  {
+   "template": "mono_threshold",
+   "target_field": "monoisotopic_mass",
+   "target_accession": "7269",
+   "accessions": [
+    "7269"
+   ],
+   "params": {
+    "accession": "7269",
+    "threshold": 150.9
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "monoisotopic_mass": 9000000000.0,
+      "molecular_weight": 9000000000.0,
+      "heavy_atom_count": 50000
+     },
+     "clean_value": 134.11,
+     "corrupted_value": 9000000000.0,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "monoisotopic_mass": 167.638,
+      "molecular_weight": 167.78,
+      "heavy_atom_count": 12
+     },
+     "clean_value": 134.11,
+     "corrupted_value": 167.638,
+     "factor": 1.25,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 7269 have a monoisotopic mass greater than 150.9 Da? Answer yes or no and give the monoisotopic mass. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_075",
+   "direction": "inflate"
+  },
+  {
+   "template": "tpsa_threshold",
+   "target_field": "tpsa",
+   "target_accession": "6011",
+   "accessions": [
+    "6011"
+   ],
+   "params": {
+    "accession": "6011",
+    "threshold": 42.0
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "tpsa": 50000.0
+     },
+     "clean_value": 37.3,
+     "corrupted_value": 50000.0,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "tpsa": 46.6
+     },
+     "clean_value": 37.3,
+     "corrupted_value": 46.6,
+     "factor": 1.25,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 6011 have a topological polar surface area (TPSA) greater than 42.0 square angstroms? Answer yes or no and give the TPSA. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_076",
+   "direction": "inflate"
+  },
+  {
+   "template": "complexity_threshold",
+   "target_field": "complexity",
+   "target_accession": "4086",
+   "accessions": [
+    "4086"
+   ],
+   "params": {
+    "accession": "4086",
+    "threshold": 194
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "complexity": 10000000
+     },
+     "clean_value": 177,
+     "corrupted_value": 10000000,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "complexity": 212
+     },
+     "clean_value": 177,
+     "corrupted_value": 212,
+     "factor": 1.2,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 4086 have a PubChem complexity score greater than 194? Answer yes or no and give the complexity score. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_077",
+   "direction": "inflate"
+  },
+  {
+   "template": "mono_threshold",
+   "target_field": "monoisotopic_mass",
+   "target_accession": "6029",
+   "accessions": [
+    "6029"
+   ],
+   "params": {
+    "accession": "6029",
+    "threshold": 219.7
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "monoisotopic_mass": 0.0,
+      "molecular_weight": 0.0,
+      "heavy_atom_count": 0
+     },
+     "clean_value": 244.07,
+     "corrupted_value": 0.0,
+     "direction": "shrink",
+     "implied": "no"
+    },
+    "plausible": {
+     "fields": {
+      "monoisotopic_mass": 195.256,
+      "molecular_weight": 195.36,
+      "heavy_atom_count": 14
+     },
+     "clean_value": 244.07,
+     "corrupted_value": 195.256,
+     "factor": 0.8,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 6029 have a monoisotopic mass greater than 219.7 Da? Answer yes or no and give the monoisotopic mass. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_078",
+   "direction": "shrink"
+  },
+  {
+   "template": "tpsa_threshold",
+   "target_field": "tpsa",
+   "target_accession": "24107",
+   "accessions": [
+    "24107"
+   ],
+   "params": {
+    "accession": "24107",
+    "threshold": 20.7
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "tpsa": -50.0
+     },
+     "clean_value": 23.6,
+     "corrupted_value": -50.0,
+     "direction": "shrink",
+     "implied": "no"
+    },
+    "plausible": {
+     "fields": {
+      "tpsa": 17.7
+     },
+     "clean_value": 23.6,
+     "corrupted_value": 17.7,
+     "factor": 0.75,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 24107 have a topological polar surface area (TPSA) greater than 20.7 square angstroms? Answer yes or no and give the TPSA. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_079",
+   "direction": "shrink"
+  },
+  {
+   "template": "complexity_threshold",
+   "target_field": "complexity",
+   "target_accession": "24680",
+   "accessions": [
+    "24680"
+   ],
+   "params": {
+    "accession": "24680",
+    "threshold": 254
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "complexity": -100
+     },
+     "clean_value": 282,
+     "corrupted_value": -100,
+     "direction": "shrink",
+     "implied": "no"
+    },
+    "plausible": {
+     "fields": {
+      "complexity": 226
+     },
+     "clean_value": 282,
+     "corrupted_value": 226,
+     "factor": 0.8,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 24680 have a PubChem complexity score greater than 254? Answer yes or no and give the complexity score. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_080",
+   "direction": "shrink"
+  },
+  {
+   "template": "mono_threshold",
+   "target_field": "monoisotopic_mass",
+   "target_accession": "19232",
+   "accessions": [
+    "19232"
+   ],
+   "params": {
+    "accession": "19232",
+    "threshold": 285.7
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "monoisotopic_mass": 9000000000.0,
+      "molecular_weight": 9000000000.0,
+      "heavy_atom_count": 50000
+     },
+     "clean_value": 253.963,
+     "corrupted_value": 9000000000.0,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "monoisotopic_mass": 317.454,
+      "molecular_weight": 318.78,
+      "heavy_atom_count": 19
+     },
+     "clean_value": 253.963,
+     "corrupted_value": 317.454,
+     "factor": 1.25,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 19232 have a monoisotopic mass greater than 285.7 Da? Answer yes or no and give the monoisotopic mass. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_081",
+   "direction": "inflate"
+  },
+  {
+   "template": "tpsa_threshold",
+   "target_field": "tpsa",
+   "target_accession": "4078",
+   "accessions": [
+    "4078"
+   ],
+   "params": {
+    "accession": "4078",
+    "threshold": 74.9
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "tpsa": 50000.0
+     },
+     "clean_value": 68.1,
+     "corrupted_value": 50000.0,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "tpsa": 81.7
+     },
+     "clean_value": 68.1,
+     "corrupted_value": 81.7,
+     "factor": 1.2,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 4078 have a topological polar surface area (TPSA) greater than 74.9 square angstroms? Answer yes or no and give the TPSA. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_082",
+   "direction": "inflate"
+  },
+  {
+   "template": "complexity_threshold",
+   "target_field": "complexity",
+   "target_accession": "8167",
+   "accessions": [
+    "8167"
+   ],
+   "params": {
+    "accession": "8167",
+    "threshold": 148
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "complexity": 10000000
+     },
+     "clean_value": 132,
+     "corrupted_value": 10000000,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "complexity": 165
+     },
+     "clean_value": 132,
+     "corrupted_value": 165,
+     "factor": 1.25,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 8167 have a PubChem complexity score greater than 148? Answer yes or no and give the complexity score. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_083",
+   "direction": "inflate"
+  },
+  {
+   "template": "mono_threshold",
+   "target_field": "monoisotopic_mass",
+   "target_accession": "8794",
+   "accessions": [
+    "8794"
+   ],
+   "params": {
+    "accession": "8794",
+    "threshold": 105.4
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "monoisotopic_mass": 0.0,
+      "molecular_weight": 0.0,
+      "heavy_atom_count": 0
+     },
+     "clean_value": 117.058,
+     "corrupted_value": 0.0,
+     "direction": "shrink",
+     "implied": "no"
+    },
+    "plausible": {
+     "fields": {
+      "monoisotopic_mass": 93.646,
+      "molecular_weight": 93.72,
+      "heavy_atom_count": 7
+     },
+     "clean_value": 117.058,
+     "corrupted_value": 93.646,
+     "factor": 0.8,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 8794 have a monoisotopic mass greater than 105.4 Da? Answer yes or no and give the monoisotopic mass. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_084",
+   "direction": "shrink"
+  },
+  {
+   "template": "tpsa_threshold",
+   "target_field": "tpsa",
+   "target_accession": "5318",
+   "accessions": [
+    "5318"
+   ],
+   "params": {
+    "accession": "5318",
+    "threshold": 38.8
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "tpsa": -50.0
+     },
+     "clean_value": 43.1,
+     "corrupted_value": -50.0,
+     "direction": "shrink",
+     "implied": "no"
+    },
+    "plausible": {
+     "fields": {
+      "tpsa": 34.5
+     },
+     "clean_value": 43.1,
+     "corrupted_value": 34.5,
+     "factor": 0.8,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 5318 have a topological polar surface area (TPSA) greater than 38.8 square angstroms? Answer yes or no and give the TPSA. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_085",
+   "direction": "shrink"
+  },
+  {
+   "template": "complexity_threshold",
+   "target_field": "complexity",
+   "target_accession": "11108",
+   "accessions": [
+    "11108"
+   ],
+   "params": {
+    "accession": "11108",
+    "threshold": 106
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "complexity": -100
+     },
+     "clean_value": 118,
+     "corrupted_value": -100,
+     "direction": "shrink",
+     "implied": "no"
+    },
+    "plausible": {
+     "fields": {
+      "complexity": 94
+     },
+     "clean_value": 118,
+     "corrupted_value": 94,
+     "factor": 0.8,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 11108 have a PubChem complexity score greater than 106? Answer yes or no and give the complexity score. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_086",
+   "direction": "shrink"
+  },
+  {
+   "template": "mono_threshold",
+   "target_field": "monoisotopic_mass",
+   "target_accession": "5610",
+   "accessions": [
+    "5610"
+   ],
+   "params": {
+    "accession": "5610",
+    "threshold": 154.2
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "monoisotopic_mass": 9000000000.0,
+      "molecular_weight": 9000000000.0,
+      "heavy_atom_count": 50000
+     },
+     "clean_value": 137.084,
+     "corrupted_value": 9000000000.0,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "monoisotopic_mass": 171.355,
+      "molecular_weight": 171.48,
+      "heavy_atom_count": 12
+     },
+     "clean_value": 137.084,
+     "corrupted_value": 171.355,
+     "factor": 1.25,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 5610 have a monoisotopic mass greater than 154.2 Da? Answer yes or no and give the monoisotopic mass. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_087",
+   "direction": "inflate"
+  },
+  {
+   "template": "tpsa_threshold",
+   "target_field": "tpsa",
+   "target_accession": "5336",
+   "accessions": [
+    "5336"
+   ],
+   "params": {
+    "accession": "5336",
+    "threshold": 105.2
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "tpsa": 50000.0
+     },
+     "clean_value": 93.5,
+     "corrupted_value": 50000.0,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "tpsa": 116.9
+     },
+     "clean_value": 93.5,
+     "corrupted_value": 116.9,
+     "factor": 1.25,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 5336 have a topological polar surface area (TPSA) greater than 105.2 square angstroms? Answer yes or no and give the TPSA. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_088",
+   "direction": "inflate"
+  },
+  {
+   "template": "complexity_threshold",
+   "target_field": "complexity",
+   "target_accession": "25674",
+   "accessions": [
+    "25674"
+   ],
+   "params": {
+    "accession": "25674",
+    "threshold": 121
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "complexity": 10000000
+     },
+     "clean_value": 108,
+     "corrupted_value": 10000000,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "complexity": 135
+     },
+     "clean_value": 108,
+     "corrupted_value": 135,
+     "factor": 1.25,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 25674 have a PubChem complexity score greater than 121? Answer yes or no and give the complexity score. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_089",
+   "direction": "inflate"
+  },
+  {
+   "template": "mono_threshold",
+   "target_field": "monoisotopic_mass",
+   "target_accession": "7197",
+   "accessions": [
+    "7197"
+   ],
+   "params": {
+    "accession": "7197",
+    "threshold": 147.7
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "monoisotopic_mass": 0.0,
+      "molecular_weight": 0.0,
+      "heavy_atom_count": 0
+     },
+     "clean_value": 164.084,
+     "corrupted_value": 0.0,
+     "direction": "shrink",
+     "implied": "no"
+    },
+    "plausible": {
+     "fields": {
+      "monoisotopic_mass": 131.267,
+      "molecular_weight": 131.36,
+      "heavy_atom_count": 10
+     },
+     "clean_value": 164.084,
+     "corrupted_value": 131.267,
+     "factor": 0.8,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 7197 have a monoisotopic mass greater than 147.7 Da? Answer yes or no and give the monoisotopic mass. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_090",
+   "direction": "shrink"
+  },
+  {
+   "template": "tpsa_threshold",
+   "target_field": "tpsa",
+   "target_accession": "7708",
+   "accessions": [
+    "7708"
+   ],
+   "params": {
+    "accession": "7708",
+    "threshold": 23.0
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "tpsa": -50.0
+     },
+     "clean_value": 26.3,
+     "corrupted_value": -50.0,
+     "direction": "shrink",
+     "implied": "no"
+    },
+    "plausible": {
+     "fields": {
+      "tpsa": 19.7
+     },
+     "clean_value": 26.3,
+     "corrupted_value": 19.7,
+     "factor": 0.75,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 7708 have a topological polar surface area (TPSA) greater than 23.0 square angstroms? Answer yes or no and give the TPSA. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_091",
+   "direction": "shrink"
+  },
+  {
+   "template": "complexity_threshold",
+   "target_field": "complexity",
+   "target_accession": "3675",
+   "accessions": [
+    "3675"
+   ],
+   "params": {
+    "accession": "3675",
+    "threshold": 69
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "complexity": -100
+     },
+     "clean_value": 77,
+     "corrupted_value": -100,
+     "direction": "shrink",
+     "implied": "no"
+    },
+    "plausible": {
+     "fields": {
+      "complexity": 62
+     },
+     "clean_value": 77,
+     "corrupted_value": 62,
+     "factor": 0.8,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 3675 have a PubChem complexity score greater than 69? Answer yes or no and give the complexity score. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_092",
+   "direction": "shrink"
+  },
+  {
+   "template": "mono_threshold",
+   "target_field": "monoisotopic_mass",
+   "target_accession": "13027",
+   "accessions": [
+    "13027"
+   ],
+   "params": {
+    "accession": "13027",
+    "threshold": 147.5
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "monoisotopic_mass": 9000000000.0,
+      "molecular_weight": 9000000000.0,
+      "heavy_atom_count": 50000
+     },
+     "clean_value": 134.048,
+     "corrupted_value": 9000000000.0,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "monoisotopic_mass": 160.858,
+      "molecular_weight": 160.97,
+      "heavy_atom_count": 12
+     },
+     "clean_value": 134.048,
+     "corrupted_value": 160.858,
+     "factor": 1.2,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 13027 have a monoisotopic mass greater than 147.5 Da? Answer yes or no and give the monoisotopic mass. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_093",
+   "direction": "inflate"
+  },
+  {
+   "template": "tpsa_threshold",
+   "target_field": "tpsa",
+   "target_accession": "16773",
+   "accessions": [
+    "16773"
+   ],
+   "params": {
+    "accession": "16773",
+    "threshold": 113.6
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "tpsa": 50000.0
+     },
+     "clean_value": 101.0,
+     "corrupted_value": 50000.0,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "tpsa": 126.2
+     },
+     "clean_value": 101.0,
+     "corrupted_value": 126.2,
+     "factor": 1.25,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 16773 have a topological polar surface area (TPSA) greater than 113.6 square angstroms? Answer yes or no and give the TPSA. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_094",
+   "direction": "inflate"
+  },
+  {
+   "template": "complexity_threshold",
+   "target_field": "complexity",
+   "target_accession": "16034",
+   "accessions": [
+    "16034"
+   ],
+   "params": {
+    "accession": "16034",
+    "threshold": 146
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "complexity": 10000000
+     },
+     "clean_value": 130,
+     "corrupted_value": 10000000,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "complexity": 162
+     },
+     "clean_value": 130,
+     "corrupted_value": 162,
+     "factor": 1.25,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 16034 have a PubChem complexity score greater than 146? Answer yes or no and give the complexity score. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_095",
+   "direction": "inflate"
+  },
+  {
+   "template": "mono_threshold",
+   "target_field": "monoisotopic_mass",
+   "target_accession": "5780",
+   "accessions": [
+    "5780"
+   ],
+   "params": {
+    "accession": "5780",
+    "threshold": 163.9
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "monoisotopic_mass": 0.0,
+      "molecular_weight": 0.0,
+      "heavy_atom_count": 0
+     },
+     "clean_value": 182.079,
+     "corrupted_value": 0.0,
+     "direction": "shrink",
+     "implied": "no"
+    },
+    "plausible": {
+     "fields": {
+      "monoisotopic_mass": 145.663,
+      "molecular_weight": 145.74,
+      "heavy_atom_count": 10
+     },
+     "clean_value": 182.079,
+     "corrupted_value": 145.663,
+     "factor": 0.8,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 5780 have a monoisotopic mass greater than 163.9 Da? Answer yes or no and give the monoisotopic mass. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_096",
+   "direction": "shrink"
+  },
+  {
+   "template": "tpsa_threshold",
+   "target_field": "tpsa",
+   "target_accession": "199",
+   "accessions": [
+    "199"
+   ],
+   "params": {
+    "accession": "199",
+    "threshold": 81.4
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "tpsa": -50.0
+     },
+     "clean_value": 90.4,
+     "corrupted_value": -50.0,
+     "direction": "shrink",
+     "implied": "no"
+    },
+    "plausible": {
+     "fields": {
+      "tpsa": 72.3
+     },
+     "clean_value": 90.4,
+     "corrupted_value": 72.3,
+     "factor": 0.8,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 199 have a topological polar surface area (TPSA) greater than 81.4 square angstroms? Answer yes or no and give the TPSA. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_097",
+   "direction": "shrink"
+  },
+  {
+   "template": "complexity_threshold",
+   "target_field": "complexity",
+   "target_accession": "26098",
+   "accessions": [
+    "26098"
+   ],
+   "params": {
+    "accession": "26098",
+    "threshold": 451
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "complexity": -100
+     },
+     "clean_value": 516,
+     "corrupted_value": -100,
+     "direction": "shrink",
+     "implied": "no"
+    },
+    "plausible": {
+     "fields": {
+      "complexity": 387
+     },
+     "clean_value": 516,
+     "corrupted_value": 387,
+     "factor": 0.75,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 26098 have a PubChem complexity score greater than 451? Answer yes or no and give the complexity score. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_098",
+   "direction": "shrink"
+  },
+  {
+   "template": "mono_threshold",
+   "target_field": "monoisotopic_mass",
+   "target_accession": "8102",
+   "accessions": [
+    "8102"
+   ],
+   "params": {
+    "accession": "8102",
+    "threshold": 111.2
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "monoisotopic_mass": 9000000000.0,
+      "molecular_weight": 9000000000.0,
+      "heavy_atom_count": 50000
+     },
+     "clean_value": 101.12,
+     "corrupted_value": 9000000000.0,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "monoisotopic_mass": 121.344,
+      "molecular_weight": 121.43,
+      "heavy_atom_count": 8
+     },
+     "clean_value": 101.12,
+     "corrupted_value": 121.344,
+     "factor": 1.2,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 8102 have a monoisotopic mass greater than 111.2 Da? Answer yes or no and give the monoisotopic mass. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_099",
+   "direction": "inflate"
+  },
+  {
+   "template": "tpsa_threshold",
+   "target_field": "tpsa",
+   "target_accession": "19756",
+   "accessions": [
+    "19756"
+   ],
+   "params": {
+    "accession": "19756",
+    "threshold": 46.0
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "tpsa": 50000.0
+     },
+     "clean_value": 41.8,
+     "corrupted_value": 50000.0,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "tpsa": 50.2
+     },
+     "clean_value": 41.8,
+     "corrupted_value": 50.2,
+     "factor": 1.2,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 19756 have a topological polar surface area (TPSA) greater than 46.0 square angstroms? Answer yes or no and give the TPSA. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_100",
+   "direction": "inflate"
+  },
+  {
+   "template": "complexity_threshold",
+   "target_field": "complexity",
+   "target_accession": "10574",
+   "accessions": [
+    "10574"
+   ],
+   "params": {
+    "accession": "10574",
+    "threshold": 824
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "complexity": 10000000
+     },
+     "clean_value": 733,
+     "corrupted_value": 10000000,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "complexity": 916
+     },
+     "clean_value": 733,
+     "corrupted_value": 916,
+     "factor": 1.25,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 10574 have a PubChem complexity score greater than 824? Answer yes or no and give the complexity score. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_101",
+   "direction": "inflate"
+  },
+  {
+   "template": "mono_threshold",
+   "target_field": "monoisotopic_mass",
+   "target_accession": "6346",
+   "accessions": [
+    "6346"
+   ],
+   "params": {
+    "accession": "6346",
+    "threshold": 241.0
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "monoisotopic_mass": 0.0,
+      "molecular_weight": 0.0,
+      "heavy_atom_count": 0
+     },
+     "clean_value": 267.825,
+     "corrupted_value": 0.0,
+     "direction": "shrink",
+     "implied": "no"
+    },
+    "plausible": {
+     "fields": {
+      "monoisotopic_mass": 214.26,
+      "molecular_weight": 214.27,
+      "heavy_atom_count": 2
+     },
+     "clean_value": 267.825,
+     "corrupted_value": 214.26,
+     "factor": 0.8,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 6346 have a monoisotopic mass greater than 241.0 Da? Answer yes or no and give the monoisotopic mass. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_102",
+   "direction": "shrink"
+  },
+  {
+   "template": "tpsa_threshold",
+   "target_field": "tpsa",
+   "target_accession": "23559",
+   "accessions": [
+    "23559"
+   ],
+   "params": {
+    "accession": "23559",
+    "threshold": 77.5
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "tpsa": -50.0
+     },
+     "clean_value": 86.1,
+     "corrupted_value": -50.0,
+     "direction": "shrink",
+     "implied": "no"
+    },
+    "plausible": {
+     "fields": {
+      "tpsa": 68.9
+     },
+     "clean_value": 86.1,
+     "corrupted_value": 68.9,
+     "factor": 0.8,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 23559 have a topological polar surface area (TPSA) greater than 77.5 square angstroms? Answer yes or no and give the TPSA. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_103",
+   "direction": "shrink"
+  },
+  {
+   "template": "complexity_threshold",
+   "target_field": "complexity",
+   "target_accession": "16828",
+   "accessions": [
+    "16828"
+   ],
+   "params": {
+    "accession": "16828",
+    "threshold": 186
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "complexity": -100
+     },
+     "clean_value": 213,
+     "corrupted_value": -100,
+     "direction": "shrink",
+     "implied": "no"
+    },
+    "plausible": {
+     "fields": {
+      "complexity": 160
+     },
+     "clean_value": 213,
+     "corrupted_value": 160,
+     "factor": 0.75,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 16828 have a PubChem complexity score greater than 186? Answer yes or no and give the complexity score. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_104",
+   "direction": "shrink"
+  },
+  {
+   "template": "mono_threshold",
+   "target_field": "monoisotopic_mass",
+   "target_accession": "7520",
+   "accessions": [
+    "7520"
+   ],
+   "params": {
+    "accession": "7520",
+    "threshold": 139.5
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "monoisotopic_mass": 9000000000.0,
+      "molecular_weight": 9000000000.0,
+      "heavy_atom_count": 50000
+     },
+     "clean_value": 124.035,
+     "corrupted_value": 9000000000.0,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "monoisotopic_mass": 155.044,
+      "molecular_weight": 155.26,
+      "heavy_atom_count": 10
+     },
+     "clean_value": 124.035,
+     "corrupted_value": 155.044,
+     "factor": 1.25,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 7520 have a monoisotopic mass greater than 139.5 Da? Answer yes or no and give the monoisotopic mass. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_105",
+   "direction": "inflate"
+  },
+  {
+   "template": "tpsa_threshold",
+   "target_field": "tpsa",
+   "target_accession": "1005",
+   "accessions": [
+    "1005"
+   ],
+   "params": {
+    "accession": "1005",
+    "threshold": 117.0
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "tpsa": 50000.0
+     },
+     "clean_value": 104.0,
+     "corrupted_value": 50000.0,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "tpsa": 130.0
+     },
+     "clean_value": 104.0,
+     "corrupted_value": 130.0,
+     "factor": 1.25,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 1005 have a topological polar surface area (TPSA) greater than 117.0 square angstroms? Answer yes or no and give the TPSA. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_106",
+   "direction": "inflate"
+  },
+  {
+   "template": "complexity_threshold",
+   "target_field": "complexity",
+   "target_accession": "4543",
+   "accessions": [
+    "4543"
+   ],
+   "params": {
+    "accession": "4543",
+    "threshold": 337
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "complexity": 10000000
+     },
+     "clean_value": 307,
+     "corrupted_value": 10000000,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "complexity": 368
+     },
+     "clean_value": 307,
+     "corrupted_value": 368,
+     "factor": 1.2,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 4543 have a PubChem complexity score greater than 337? Answer yes or no and give the complexity score. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_107",
+   "direction": "inflate"
+  },
+  {
+   "template": "mono_threshold",
+   "target_field": "monoisotopic_mass",
+   "target_accession": "6391",
+   "accessions": [
+    "6391"
+   ],
+   "params": {
+    "accession": "6391",
+    "threshold": 107.9
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "monoisotopic_mass": 0.0,
+      "molecular_weight": 0.0,
+      "heavy_atom_count": 0
+     },
+     "clean_value": 119.935,
+     "corrupted_value": 0.0,
+     "direction": "shrink",
+     "implied": "no"
+    },
+    "plausible": {
+     "fields": {
+      "monoisotopic_mass": 95.948,
+      "molecular_weight": 96.73,
+      "heavy_atom_count": 4
+     },
+     "clean_value": 119.935,
+     "corrupted_value": 95.948,
+     "factor": 0.8,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 6391 have a monoisotopic mass greater than 107.9 Da? Answer yes or no and give the monoisotopic mass. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_108",
+   "direction": "shrink"
+  },
+  {
+   "template": "tpsa_threshold",
+   "target_field": "tpsa",
+   "target_accession": "20966",
+   "accessions": [
+    "20966"
+   ],
+   "params": {
+    "accession": "20966",
+    "threshold": 98.9
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "tpsa": -50.0
+     },
+     "clean_value": 113.0,
+     "corrupted_value": -50.0,
+     "direction": "shrink",
+     "implied": "no"
+    },
+    "plausible": {
+     "fields": {
+      "tpsa": 84.8
+     },
+     "clean_value": 113.0,
+     "corrupted_value": 84.8,
+     "factor": 0.75,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 20966 have a topological polar surface area (TPSA) greater than 98.9 square angstroms? Answer yes or no and give the TPSA. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_109",
+   "direction": "shrink"
+  },
+  {
+   "template": "complexity_threshold",
+   "target_field": "complexity",
+   "target_accession": "16072",
+   "accessions": [
+    "16072"
+   ],
+   "params": {
+    "accession": "16072",
+    "threshold": 176
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "complexity": -100
+     },
+     "clean_value": 201,
+     "corrupted_value": -100,
+     "direction": "shrink",
+     "implied": "no"
+    },
+    "plausible": {
+     "fields": {
+      "complexity": 151
+     },
+     "clean_value": 201,
+     "corrupted_value": 151,
+     "factor": 0.75,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 16072 have a PubChem complexity score greater than 176? Answer yes or no and give the complexity score. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_110",
+   "direction": "shrink"
+  },
+  {
+   "template": "mono_threshold",
+   "target_field": "monoisotopic_mass",
+   "target_accession": "8434",
+   "accessions": [
+    "8434"
+   ],
+   "params": {
+    "accession": "8434",
+    "threshold": 182.7
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "monoisotopic_mass": 9000000000.0,
+      "molecular_weight": 9000000000.0,
+      "heavy_atom_count": 50000
+     },
+     "clean_value": 166.063,
+     "corrupted_value": 9000000000.0,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "monoisotopic_mass": 199.276,
+      "molecular_weight": 199.4,
+      "heavy_atom_count": 14
+     },
+     "clean_value": 166.063,
+     "corrupted_value": 199.276,
+     "factor": 1.2,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 8434 have a monoisotopic mass greater than 182.7 Da? Answer yes or no and give the monoisotopic mass. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_111",
+   "direction": "inflate"
+  },
+  {
+   "template": "tpsa_threshold",
+   "target_field": "tpsa",
+   "target_accession": "4045",
+   "accessions": [
+    "4045"
+   ],
+   "params": {
+    "accession": "4045",
+    "threshold": 55.9
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "tpsa": 50000.0
+     },
+     "clean_value": 50.8,
+     "corrupted_value": 50000.0,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "tpsa": 61.0
+     },
+     "clean_value": 50.8,
+     "corrupted_value": 61.0,
+     "factor": 1.2,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 4045 have a topological polar surface area (TPSA) greater than 55.9 square angstroms? Answer yes or no and give the TPSA. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_112",
+   "direction": "inflate"
+  },
+  {
+   "template": "complexity_threshold",
+   "target_field": "complexity",
+   "target_accession": "6729",
+   "accessions": [
+    "6729"
+   ],
+   "params": {
+    "accession": "6729",
+    "threshold": 578
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "complexity": 10000000
+     },
+     "clean_value": 514,
+     "corrupted_value": 10000000,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "complexity": 642
+     },
+     "clean_value": 514,
+     "corrupted_value": 642,
+     "factor": 1.25,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 6729 have a PubChem complexity score greater than 578? Answer yes or no and give the complexity score. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_113",
+   "direction": "inflate"
+  },
+  {
+   "template": "mono_threshold",
+   "target_field": "monoisotopic_mass",
+   "target_accession": "26404",
+   "accessions": [
+    "26404"
+   ],
+   "params": {
+    "accession": "26404",
+    "threshold": 250.4
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "monoisotopic_mass": 0.0,
+      "molecular_weight": 0.0,
+      "heavy_atom_count": 0
+     },
+     "clean_value": 286.214,
+     "corrupted_value": 0.0,
+     "direction": "shrink",
+     "implied": "no"
+    },
+    "plausible": {
+     "fields": {
+      "monoisotopic_mass": 214.661,
+      "molecular_weight": 214.81,
+      "heavy_atom_count": 15
+     },
+     "clean_value": 286.214,
+     "corrupted_value": 214.661,
+     "factor": 0.75,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 26404 have a monoisotopic mass greater than 250.4 Da? Answer yes or no and give the monoisotopic mass. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_114",
+   "direction": "shrink"
+  },
+  {
+   "template": "tpsa_threshold",
+   "target_field": "tpsa",
+   "target_accession": "10624",
+   "accessions": [
+    "10624"
+   ],
+   "params": {
+    "accession": "10624",
+    "threshold": 75.1
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "tpsa": -50.0
+     },
+     "clean_value": 85.8,
+     "corrupted_value": -50.0,
+     "direction": "shrink",
+     "implied": "no"
+    },
+    "plausible": {
+     "fields": {
+      "tpsa": 64.3
+     },
+     "clean_value": 85.8,
+     "corrupted_value": 64.3,
+     "factor": 0.75,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 10624 have a topological polar surface area (TPSA) greater than 75.1 square angstroms? Answer yes or no and give the TPSA. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_115",
+   "direction": "shrink"
+  },
+  {
+   "template": "complexity_threshold",
+   "target_field": "complexity",
+   "target_accession": "19917",
+   "accessions": [
+    "19917"
+   ],
+   "params": {
+    "accession": "19917",
+    "threshold": 85
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "complexity": -100
+     },
+     "clean_value": 97,
+     "corrupted_value": -100,
+     "direction": "shrink",
+     "implied": "no"
+    },
+    "plausible": {
+     "fields": {
+      "complexity": 73
+     },
+     "clean_value": 97,
+     "corrupted_value": 73,
+     "factor": 0.75,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 19917 have a PubChem complexity score greater than 85? Answer yes or no and give the complexity score. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_116",
+   "direction": "shrink"
+  },
+  {
+   "template": "mono_threshold",
+   "target_field": "monoisotopic_mass",
+   "target_accession": "6490",
+   "accessions": [
+    "6490"
+   ],
+   "params": {
+    "accession": "6490",
+    "threshold": 243.2
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "monoisotopic_mass": 9000000000.0,
+      "molecular_weight": 9000000000.0,
+      "heavy_atom_count": 50000
+     },
+     "clean_value": 216.173,
+     "corrupted_value": 9000000000.0,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "monoisotopic_mass": 270.216,
+      "molecular_weight": 270.4,
+      "heavy_atom_count": 19
+     },
+     "clean_value": 216.173,
+     "corrupted_value": 270.216,
+     "factor": 1.25,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 6490 have a monoisotopic mass greater than 243.2 Da? Answer yes or no and give the monoisotopic mass. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_117",
+   "direction": "inflate"
+  },
+  {
+   "template": "tpsa_threshold",
+   "target_field": "tpsa",
+   "target_accession": "13066",
+   "accessions": [
+    "13066"
+   ],
+   "params": {
+    "accession": "13066",
+    "threshold": 58.3
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "tpsa": 50000.0
+     },
+     "clean_value": 51.8,
+     "corrupted_value": 50000.0,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "tpsa": 64.8
+     },
+     "clean_value": 51.8,
+     "corrupted_value": 64.8,
+     "factor": 1.25,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 13066 have a topological polar surface area (TPSA) greater than 58.3 square angstroms? Answer yes or no and give the TPSA. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_118",
+   "direction": "inflate"
+  },
+  {
+   "template": "complexity_threshold",
+   "target_field": "complexity",
+   "target_accession": "16584",
+   "accessions": [
+    "16584"
+   ],
+   "params": {
+    "accession": "16584",
+    "threshold": 142
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "complexity": 10000000
+     },
+     "clean_value": 129,
+     "corrupted_value": 10000000,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "complexity": 155
+     },
+     "clean_value": 129,
+     "corrupted_value": 155,
+     "factor": 1.2,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 16584 have a PubChem complexity score greater than 142? Answer yes or no and give the complexity score. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_119",
+   "direction": "inflate"
+  },
+  {
+   "template": "mono_threshold",
+   "target_field": "monoisotopic_mass",
+   "target_accession": "22541",
+   "accessions": [
+    "22541"
+   ],
+   "params": {
+    "accession": "22541",
+    "threshold": 113.9
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "monoisotopic_mass": 0.0,
+      "molecular_weight": 0.0,
+      "heavy_atom_count": 0
+     },
+     "clean_value": 130.136,
+     "corrupted_value": 0.0,
+     "direction": "shrink",
+     "implied": "no"
+    },
+    "plausible": {
+     "fields": {
+      "monoisotopic_mass": 97.602,
+      "molecular_weight": 97.67,
+      "heavy_atom_count": 7
+     },
+     "clean_value": 130.136,
+     "corrupted_value": 97.602,
+     "factor": 0.75,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 22541 have a monoisotopic mass greater than 113.9 Da? Answer yes or no and give the monoisotopic mass. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_120",
+   "direction": "shrink"
+  },
+  {
+   "template": "tpsa_threshold",
+   "target_field": "tpsa",
+   "target_accession": "5832",
+   "accessions": [
+    "5832"
+   ],
+   "params": {
+    "accession": "5832",
+    "threshold": 38.0
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "tpsa": -50.0
+     },
+     "clean_value": 43.4,
+     "corrupted_value": -50.0,
+     "direction": "shrink",
+     "implied": "no"
+    },
+    "plausible": {
+     "fields": {
+      "tpsa": 32.5
+     },
+     "clean_value": 43.4,
+     "corrupted_value": 32.5,
+     "factor": 0.75,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 5832 have a topological polar surface area (TPSA) greater than 38.0 square angstroms? Answer yes or no and give the TPSA. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_121",
+   "direction": "shrink"
+  },
+  {
+   "template": "complexity_threshold",
+   "target_field": "complexity",
+   "target_accession": "6786",
+   "accessions": [
+    "6786"
+   ],
+   "params": {
+    "accession": "6786",
+    "threshold": 280
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "complexity": -100
+     },
+     "clean_value": 320,
+     "corrupted_value": -100,
+     "direction": "shrink",
+     "implied": "no"
+    },
+    "plausible": {
+     "fields": {
+      "complexity": 240
+     },
+     "clean_value": 320,
+     "corrupted_value": 240,
+     "factor": 0.75,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 6786 have a PubChem complexity score greater than 280? Answer yes or no and give the complexity score. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_122",
+   "direction": "shrink"
+  },
+  {
+   "template": "mono_threshold",
+   "target_field": "monoisotopic_mass",
+   "target_accession": "16270",
+   "accessions": [
+    "16270"
+   ],
+   "params": {
+    "accession": "16270",
+    "threshold": 123.3
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "monoisotopic_mass": 9000000000.0,
+      "molecular_weight": 9000000000.0,
+      "heavy_atom_count": 50000
+     },
+     "clean_value": 112.125,
+     "corrupted_value": 9000000000.0,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "monoisotopic_mass": 134.55,
+      "molecular_weight": 134.65,
+      "heavy_atom_count": 10
+     },
+     "clean_value": 112.125,
+     "corrupted_value": 134.55,
+     "factor": 1.2,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 16270 have a monoisotopic mass greater than 123.3 Da? Answer yes or no and give the monoisotopic mass. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_123",
+   "direction": "inflate"
+  },
+  {
+   "template": "tpsa_threshold",
+   "target_field": "tpsa",
+   "target_accession": "4138",
+   "accessions": [
+    "4138"
+   ],
+   "params": {
+    "accession": "4138",
+    "threshold": 114.4
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "tpsa": 50000.0
+     },
+     "clean_value": 104.0,
+     "corrupted_value": 50000.0,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "tpsa": 124.8
+     },
+     "clean_value": 104.0,
+     "corrupted_value": 124.8,
+     "factor": 1.2,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 4138 have a topological polar surface area (TPSA) greater than 114.4 square angstroms? Answer yes or no and give the TPSA. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_124",
+   "direction": "inflate"
+  },
+  {
+   "template": "complexity_threshold",
+   "target_field": "complexity",
+   "target_accession": "12433",
+   "accessions": [
+    "12433"
+   ],
+   "params": {
+    "accession": "12433",
+    "threshold": 67
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "complexity": 10000000
+     },
+     "clean_value": 60,
+     "corrupted_value": 10000000,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "complexity": 75
+     },
+     "clean_value": 60,
+     "corrupted_value": 75,
+     "factor": 1.25,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 12433 have a PubChem complexity score greater than 67? Answer yes or no and give the complexity score. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_125",
+   "direction": "inflate"
+  },
+  {
+   "template": "mono_threshold",
+   "target_field": "monoisotopic_mass",
+   "target_accession": "6128",
+   "accessions": [
+    "6128"
+   ],
+   "params": {
+    "accession": "6128",
+    "threshold": 250.4
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "monoisotopic_mass": 0.0,
+      "molecular_weight": 0.0,
+      "heavy_atom_count": 0
+     },
+     "clean_value": 286.193,
+     "corrupted_value": 0.0,
+     "direction": "shrink",
+     "implied": "no"
+    },
+    "plausible": {
+     "fields": {
+      "monoisotopic_mass": 214.645,
+      "molecular_weight": 214.8,
+      "heavy_atom_count": 16
+     },
+     "clean_value": 286.193,
+     "corrupted_value": 214.645,
+     "factor": 0.75,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 6128 have a monoisotopic mass greater than 250.4 Da? Answer yes or no and give the monoisotopic mass. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_126",
+   "direction": "shrink"
+  },
+  {
+   "template": "tpsa_threshold",
+   "target_field": "tpsa",
+   "target_accession": "4846",
+   "accessions": [
+    "4846"
+   ],
+   "params": {
+    "accession": "4846",
+    "threshold": 91.9
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "tpsa": -50.0
+     },
+     "clean_value": 105.0,
+     "corrupted_value": -50.0,
+     "direction": "shrink",
+     "implied": "no"
+    },
+    "plausible": {
+     "fields": {
+      "tpsa": 78.8
+     },
+     "clean_value": 105.0,
+     "corrupted_value": 78.8,
+     "factor": 0.75,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 4846 have a topological polar surface area (TPSA) greater than 91.9 square angstroms? Answer yes or no and give the TPSA. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_127",
+   "direction": "shrink"
+  },
+  {
+   "template": "complexity_threshold",
+   "target_field": "complexity",
+   "target_accession": "29430",
+   "accessions": [
+    "29430"
+   ],
+   "params": {
+    "accession": "29430",
+    "threshold": 109
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "complexity": -100
+     },
+     "clean_value": 121,
+     "corrupted_value": -100,
+     "direction": "shrink",
+     "implied": "no"
+    },
+    "plausible": {
+     "fields": {
+      "complexity": 97
+     },
+     "clean_value": 121,
+     "corrupted_value": 97,
+     "factor": 0.8,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 29430 have a PubChem complexity score greater than 109? Answer yes or no and give the complexity score. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_128",
+   "direction": "shrink"
+  },
+  {
+   "template": "mono_threshold",
+   "target_field": "monoisotopic_mass",
+   "target_accession": "29161",
+   "accessions": [
+    "29161"
+   ],
+   "params": {
+    "accession": "29161",
+    "threshold": 158.6
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "monoisotopic_mass": 9000000000.0,
+      "molecular_weight": 9000000000.0,
+      "heavy_atom_count": 50000
+     },
+     "clean_value": 144.151,
+     "corrupted_value": 9000000000.0,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "monoisotopic_mass": 172.981,
+      "molecular_weight": 173.1,
+      "heavy_atom_count": 12
+     },
+     "clean_value": 144.151,
+     "corrupted_value": 172.981,
+     "factor": 1.2,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 29161 have a monoisotopic mass greater than 158.6 Da? Answer yes or no and give the monoisotopic mass. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_129",
+   "direction": "inflate"
+  },
+  {
+   "template": "tpsa_threshold",
+   "target_field": "tpsa",
+   "target_accession": "7685",
+   "accessions": [
+    "7685"
+   ],
+   "params": {
+    "accession": "7685",
+    "threshold": 29.6
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "tpsa": 50000.0
+     },
+     "clean_value": 26.3,
+     "corrupted_value": 50000.0,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "tpsa": 32.9
+     },
+     "clean_value": 26.3,
+     "corrupted_value": 32.9,
+     "factor": 1.25,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 7685 have a topological polar surface area (TPSA) greater than 29.6 square angstroms? Answer yes or no and give the TPSA. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_130",
+   "direction": "inflate"
+  },
+  {
+   "template": "complexity_threshold",
+   "target_field": "complexity",
+   "target_accession": "2239",
+   "accessions": [
+    "2239"
+   ],
+   "params": {
+    "accession": "2239",
+    "threshold": 446
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "complexity": 10000000
+     },
+     "clean_value": 406,
+     "corrupted_value": 10000000,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "complexity": 487
+     },
+     "clean_value": 406,
+     "corrupted_value": 487,
+     "factor": 1.2,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 2239 have a PubChem complexity score greater than 446? Answer yes or no and give the complexity score. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_131",
+   "direction": "inflate"
+  },
+  {
+   "template": "mono_threshold",
+   "target_field": "monoisotopic_mass",
+   "target_accession": "9502",
+   "accessions": [
+    "9502"
+   ],
+   "params": {
+    "accession": "9502",
+    "threshold": 217.0
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "monoisotopic_mass": 0.0,
+      "molecular_weight": 0.0,
+      "heavy_atom_count": 0
+     },
+     "clean_value": 248.012,
+     "corrupted_value": 0.0,
+     "direction": "shrink",
+     "implied": "no"
+    },
+    "plausible": {
+     "fields": {
+      "monoisotopic_mass": 186.009,
+      "molecular_weight": 186.82,
+      "heavy_atom_count": 11
+     },
+     "clean_value": 248.012,
+     "corrupted_value": 186.009,
+     "factor": 0.75,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 9502 have a monoisotopic mass greater than 217.0 Da? Answer yes or no and give the monoisotopic mass. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_132",
+   "direction": "shrink"
+  },
+  {
+   "template": "tpsa_threshold",
+   "target_field": "tpsa",
+   "target_accession": "1179",
+   "accessions": [
+    "1179"
+   ],
+   "params": {
+    "accession": "1179",
+    "threshold": 325.8
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "tpsa": -50.0
+     },
+     "clean_value": 362.0,
+     "corrupted_value": -50.0,
+     "direction": "shrink",
+     "implied": "no"
+    },
+    "plausible": {
+     "fields": {
+      "tpsa": 289.6
+     },
+     "clean_value": 362.0,
+     "corrupted_value": 289.6,
+     "factor": 0.8,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 1179 have a topological polar surface area (TPSA) greater than 325.8 square angstroms? Answer yes or no and give the TPSA. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_133",
+   "direction": "shrink"
+  },
+  {
+   "template": "complexity_threshold",
+   "target_field": "complexity",
+   "target_accession": "3206",
+   "accessions": [
+    "3206"
+   ],
+   "params": {
+    "accession": "3206",
+    "threshold": 254
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "complexity": -100
+     },
+     "clean_value": 291,
+     "corrupted_value": -100,
+     "direction": "shrink",
+     "implied": "no"
+    },
+    "plausible": {
+     "fields": {
+      "complexity": 218
+     },
+     "clean_value": 291,
+     "corrupted_value": 218,
+     "factor": 0.75,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 3206 have a PubChem complexity score greater than 254? Answer yes or no and give the complexity score. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_134",
+   "direction": "shrink"
+  },
+  {
+   "template": "mono_threshold",
+   "target_field": "monoisotopic_mass",
+   "target_accession": "7960",
+   "accessions": [
+    "7960"
+   ],
+   "params": {
+    "accession": "7960",
+    "threshold": 178.2
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "monoisotopic_mass": 9000000000.0,
+      "molecular_weight": 9000000000.0,
+      "heavy_atom_count": 50000
+     },
+     "clean_value": 162.004,
+     "corrupted_value": 9000000000.0,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "monoisotopic_mass": 194.405,
+      "molecular_weight": 195.67,
+      "heavy_atom_count": 8
+     },
+     "clean_value": 162.004,
+     "corrupted_value": 194.405,
+     "factor": 1.2,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 7960 have a monoisotopic mass greater than 178.2 Da? Answer yes or no and give the monoisotopic mass. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_135",
+   "direction": "inflate"
+  },
+  {
+   "template": "tpsa_threshold",
+   "target_field": "tpsa",
+   "target_accession": "6253",
+   "accessions": [
+    "6253"
+   ],
+   "params": {
+    "accession": "6253",
+    "threshold": 145.1
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "tpsa": 50000.0
+     },
+     "clean_value": 129.0,
+     "corrupted_value": 50000.0,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "tpsa": 161.2
+     },
+     "clean_value": 129.0,
+     "corrupted_value": 161.2,
+     "factor": 1.25,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 6253 have a topological polar surface area (TPSA) greater than 145.1 square angstroms? Answer yes or no and give the TPSA. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_136",
+   "direction": "inflate"
+  },
+  {
+   "template": "complexity_threshold",
+   "target_field": "complexity",
+   "target_accession": "6594",
+   "accessions": [
+    "6594"
+   ],
+   "params": {
+    "accession": "6594",
+    "threshold": 79
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "complexity": 10000000
+     },
+     "clean_value": 72,
+     "corrupted_value": 10000000,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "complexity": 86
+     },
+     "clean_value": 72,
+     "corrupted_value": 86,
+     "factor": 1.2,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 6594 have a PubChem complexity score greater than 79? Answer yes or no and give the complexity score. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_137",
+   "direction": "inflate"
+  },
+  {
+   "template": "mono_threshold",
+   "target_field": "monoisotopic_mass",
+   "target_accession": "20345",
+   "accessions": [
+    "20345"
+   ],
+   "params": {
+    "accession": "20345",
+    "threshold": 303.7
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "monoisotopic_mass": 0.0,
+      "molecular_weight": 0.0,
+      "heavy_atom_count": 0
+     },
+     "clean_value": 347.123,
+     "corrupted_value": 0.0,
+     "direction": "shrink",
+     "implied": "no"
+    },
+    "plausible": {
+     "fields": {
+      "monoisotopic_mass": 260.342,
+      "molecular_weight": 260.5,
+      "heavy_atom_count": 19
+     },
+     "clean_value": 347.123,
+     "corrupted_value": 260.342,
+     "factor": 0.75,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 20345 have a monoisotopic mass greater than 303.7 Da? Answer yes or no and give the monoisotopic mass. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_138",
+   "direction": "shrink"
+  },
+  {
+   "template": "tpsa_threshold",
+   "target_field": "tpsa",
+   "target_accession": "10783",
+   "accessions": [
+    "10783"
+   ],
+   "params": {
+    "accession": "10783",
+    "threshold": 37.0
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "tpsa": -50.0
+     },
+     "clean_value": 41.1,
+     "corrupted_value": -50.0,
+     "direction": "shrink",
+     "implied": "no"
+    },
+    "plausible": {
+     "fields": {
+      "tpsa": 32.9
+     },
+     "clean_value": 41.1,
+     "corrupted_value": 32.9,
+     "factor": 0.8,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 10783 have a topological polar surface area (TPSA) greater than 37.0 square angstroms? Answer yes or no and give the TPSA. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_139",
+   "direction": "shrink"
+  },
+  {
+   "template": "complexity_threshold",
+   "target_field": "complexity",
+   "target_accession": "7527",
+   "accessions": [
+    "7527"
+   ],
+   "params": {
+    "accession": "7527",
+    "threshold": 62
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "complexity": -100
+     },
+     "clean_value": 71,
+     "corrupted_value": -100,
+     "direction": "shrink",
+     "implied": "no"
+    },
+    "plausible": {
+     "fields": {
+      "complexity": 53
+     },
+     "clean_value": 71,
+     "corrupted_value": 53,
+     "factor": 0.75,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 7527 have a PubChem complexity score greater than 62? Answer yes or no and give the complexity score. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_140",
+   "direction": "shrink"
+  },
+  {
+   "template": "mono_threshold",
+   "target_field": "monoisotopic_mass",
+   "target_accession": "12318",
+   "accessions": [
+    "12318"
+   ],
+   "params": {
+    "accession": "12318",
+    "threshold": 286.1
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "monoisotopic_mass": 9000000000.0,
+      "molecular_weight": 9000000000.0,
+      "heavy_atom_count": 50000
+     },
+     "clean_value": 260.049,
+     "corrupted_value": 9000000000.0,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "monoisotopic_mass": 312.059,
+      "molecular_weight": 310.45,
+      "heavy_atom_count": 6
+     },
+     "clean_value": 260.049,
+     "corrupted_value": 312.059,
+     "factor": 1.2,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 12318 have a monoisotopic mass greater than 286.1 Da? Answer yes or no and give the monoisotopic mass. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_141",
+   "direction": "inflate"
+  },
+  {
+   "template": "tpsa_threshold",
+   "target_field": "tpsa",
+   "target_accession": "16928",
+   "accessions": [
+    "16928"
+   ],
+   "params": {
+    "accession": "16928",
+    "threshold": 55.9
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "tpsa": 50000.0
+     },
+     "clean_value": 49.7,
+     "corrupted_value": 50000.0,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "tpsa": 62.1
+     },
+     "clean_value": 49.7,
+     "corrupted_value": 62.1,
+     "factor": 1.25,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 16928 have a topological polar surface area (TPSA) greater than 55.9 square angstroms? Answer yes or no and give the TPSA. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_142",
+   "direction": "inflate"
+  },
+  {
+   "template": "complexity_threshold",
+   "target_field": "complexity",
+   "target_accession": "4117",
+   "accessions": [
+    "4117"
+   ],
+   "params": {
+    "accession": "4117",
+    "threshold": 155
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "complexity": 10000000
+     },
+     "clean_value": 138,
+     "corrupted_value": 10000000,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "complexity": 172
+     },
+     "clean_value": 138,
+     "corrupted_value": 172,
+     "factor": 1.25,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 4117 have a PubChem complexity score greater than 155? Answer yes or no and give the complexity score. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_143",
+   "direction": "inflate"
+  },
+  {
+   "template": "mono_threshold",
+   "target_field": "monoisotopic_mass",
+   "target_accession": "11166",
+   "accessions": [
+    "11166"
+   ],
+   "params": {
+    "accession": "11166",
+    "threshold": 147.0
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "monoisotopic_mass": 0.0,
+      "molecular_weight": 0.0,
+      "heavy_atom_count": 0
+     },
+     "clean_value": 167.944,
+     "corrupted_value": 0.0,
+     "direction": "shrink",
+     "implied": "no"
+    },
+    "plausible": {
+     "fields": {
+      "monoisotopic_mass": 125.958,
+      "molecular_weight": 125.98,
+      "heavy_atom_count": 3
+     },
+     "clean_value": 167.944,
+     "corrupted_value": 125.958,
+     "factor": 0.75,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 11166 have a monoisotopic mass greater than 147.0 Da? Answer yes or no and give the monoisotopic mass. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_144",
+   "direction": "shrink"
+  },
+  {
+   "template": "tpsa_threshold",
+   "target_field": "tpsa",
+   "target_accession": "11857",
+   "accessions": [
+    "11857"
+   ],
+   "params": {
+    "accession": "11857",
+    "threshold": 47.3
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "tpsa": -50.0
+     },
+     "clean_value": 52.6,
+     "corrupted_value": -50.0,
+     "direction": "shrink",
+     "implied": "no"
+    },
+    "plausible": {
+     "fields": {
+      "tpsa": 42.1
+     },
+     "clean_value": 52.6,
+     "corrupted_value": 42.1,
+     "factor": 0.8,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 11857 have a topological polar surface area (TPSA) greater than 47.3 square angstroms? Answer yes or no and give the TPSA. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_145",
+   "direction": "shrink"
+  },
+  {
+   "template": "complexity_threshold",
+   "target_field": "complexity",
+   "target_accession": "7647",
+   "accessions": [
+    "7647"
+   ],
+   "params": {
+    "accession": "7647",
+    "threshold": 105
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "complexity": -100
+     },
+     "clean_value": 120,
+     "corrupted_value": -100,
+     "direction": "shrink",
+     "implied": "no"
+    },
+    "plausible": {
+     "fields": {
+      "complexity": 90
+     },
+     "clean_value": 120,
+     "corrupted_value": 90,
+     "factor": 0.75,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 7647 have a PubChem complexity score greater than 105? Answer yes or no and give the complexity score. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_146",
+   "direction": "shrink"
+  },
+  {
+   "template": "mono_threshold",
+   "target_field": "monoisotopic_mass",
+   "target_accession": "7721",
+   "accessions": [
+    "7721"
+   ],
+   "params": {
+    "accession": "7721",
+    "threshold": 202.4
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "monoisotopic_mass": 9000000000.0,
+      "molecular_weight": 9000000000.0,
+      "heavy_atom_count": 50000
+     },
+     "clean_value": 183.989,
+     "corrupted_value": 9000000000.0,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "monoisotopic_mass": 220.787,
+      "molecular_weight": 222.07,
+      "heavy_atom_count": 11
+     },
+     "clean_value": 183.989,
+     "corrupted_value": 220.787,
+     "factor": 1.2,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 7721 have a monoisotopic mass greater than 202.4 Da? Answer yes or no and give the monoisotopic mass. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_147",
+   "direction": "inflate"
+  },
+  {
+   "template": "tpsa_threshold",
+   "target_field": "tpsa",
+   "target_accession": "8247",
+   "accessions": [
+    "8247"
+   ],
+   "params": {
+    "accession": "8247",
+    "threshold": 46.2
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "tpsa": 50000.0
+     },
+     "clean_value": 41.1,
+     "corrupted_value": 50000.0,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "tpsa": 51.4
+     },
+     "clean_value": 41.1,
+     "corrupted_value": 51.4,
+     "factor": 1.25,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 8247 have a topological polar surface area (TPSA) greater than 46.2 square angstroms? Answer yes or no and give the TPSA. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_148",
+   "direction": "inflate"
+  },
+  {
+   "template": "complexity_threshold",
+   "target_field": "complexity",
+   "target_accession": "8378",
+   "accessions": [
+    "8378"
+   ],
+   "params": {
+    "accession": "8378",
+    "threshold": 981
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "complexity": 10000000
+     },
+     "clean_value": 872,
+     "corrupted_value": 10000000,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "complexity": 1090
+     },
+     "clean_value": 872,
+     "corrupted_value": 1090,
+     "factor": 1.25,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 8378 have a PubChem complexity score greater than 981? Answer yes or no and give the complexity score. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_149",
+   "direction": "inflate"
+  },
+  {
+   "template": "mono_threshold",
+   "target_field": "monoisotopic_mass",
+   "target_accession": "21291",
+   "accessions": [
+    "21291"
+   ],
+   "params": {
+    "accession": "21291",
+    "threshold": 266.5
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "monoisotopic_mass": 0.0,
+      "molecular_weight": 0.0,
+      "heavy_atom_count": 0
+     },
+     "clean_value": 296.102,
+     "corrupted_value": 0.0,
+     "direction": "shrink",
+     "implied": "no"
+    },
+    "plausible": {
+     "fields": {
+      "monoisotopic_mass": 236.882,
+      "molecular_weight": 236.0,
+      "heavy_atom_count": 6
+     },
+     "clean_value": 296.102,
+     "corrupted_value": 236.882,
+     "factor": 0.8,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 21291 have a monoisotopic mass greater than 266.5 Da? Answer yes or no and give the monoisotopic mass. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_150",
+   "direction": "shrink"
+  },
+  {
+   "template": "tpsa_threshold",
+   "target_field": "tpsa",
+   "target_accession": "10665",
+   "accessions": [
+    "10665"
+   ],
+   "params": {
+    "accession": "10665",
+    "threshold": 51.8
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "tpsa": -50.0
+     },
+     "clean_value": 57.6,
+     "corrupted_value": -50.0,
+     "direction": "shrink",
+     "implied": "no"
+    },
+    "plausible": {
+     "fields": {
+      "tpsa": 46.1
+     },
+     "clean_value": 57.6,
+     "corrupted_value": 46.1,
+     "factor": 0.8,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 10665 have a topological polar surface area (TPSA) greater than 51.8 square angstroms? Answer yes or no and give the TPSA. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_151",
+   "direction": "shrink"
+  },
+  {
+   "template": "complexity_threshold",
+   "target_field": "complexity",
+   "target_accession": "4266",
+   "accessions": [
+    "4266"
+   ],
+   "params": {
+    "accession": "4266",
+    "threshold": 127
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "complexity": -100
+     },
+     "clean_value": 141,
+     "corrupted_value": -100,
+     "direction": "shrink",
+     "implied": "no"
+    },
+    "plausible": {
+     "fields": {
+      "complexity": 113
+     },
+     "clean_value": 141,
+     "corrupted_value": 113,
+     "factor": 0.8,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 4266 have a PubChem complexity score greater than 127? Answer yes or no and give the complexity score. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_152",
+   "direction": "shrink"
+  },
+  {
+   "template": "mono_threshold",
+   "target_field": "monoisotopic_mass",
+   "target_accession": "17235",
+   "accessions": [
+    "17235"
+   ],
+   "params": {
+    "accession": "17235",
+    "threshold": 341.3
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "monoisotopic_mass": 9000000000.0,
+      "molecular_weight": 9000000000.0,
+      "heavy_atom_count": 50000
+     },
+     "clean_value": 310.287,
+     "corrupted_value": 9000000000.0,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "monoisotopic_mass": 372.344,
+      "molecular_weight": 372.6,
+      "heavy_atom_count": 26
+     },
+     "clean_value": 310.287,
+     "corrupted_value": 372.344,
+     "factor": 1.2,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 17235 have a monoisotopic mass greater than 341.3 Da? Answer yes or no and give the monoisotopic mass. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_153",
+   "direction": "inflate"
+  },
+  {
+   "template": "tpsa_threshold",
+   "target_field": "tpsa",
+   "target_accession": "23484",
+   "accessions": [
+    "23484"
+   ],
+   "params": {
+    "accession": "23484",
+    "threshold": 32.6
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "tpsa": 50000.0
+     },
+     "clean_value": 29.0,
+     "corrupted_value": 50000.0,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "tpsa": 36.2
+     },
+     "clean_value": 29.0,
+     "corrupted_value": 36.2,
+     "factor": 1.25,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 23484 have a topological polar surface area (TPSA) greater than 32.6 square angstroms? Answer yes or no and give the TPSA. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_154",
+   "direction": "inflate"
+  },
+  {
+   "template": "complexity_threshold",
+   "target_field": "complexity",
+   "target_accession": "9142",
+   "accessions": [
+    "9142"
+   ],
+   "params": {
+    "accession": "9142",
+    "threshold": 334
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "complexity": 10000000
+     },
+     "clean_value": 304,
+     "corrupted_value": 10000000,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "complexity": 365
+     },
+     "clean_value": 304,
+     "corrupted_value": 365,
+     "factor": 1.2,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 9142 have a PubChem complexity score greater than 334? Answer yes or no and give the complexity score. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_155",
+   "direction": "inflate"
+  },
+  {
+   "template": "mono_threshold",
+   "target_field": "monoisotopic_mass",
+   "target_accession": "3037",
+   "accessions": [
+    "3037"
+   ],
+   "params": {
+    "accession": "3037",
+    "threshold": 241.2
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "monoisotopic_mass": 0.0,
+      "molecular_weight": 0.0,
+      "heavy_atom_count": 0
+     },
+     "clean_value": 268.006,
+     "corrupted_value": 0.0,
+     "direction": "shrink",
+     "implied": "no"
+    },
+    "plausible": {
+     "fields": {
+      "monoisotopic_mass": 214.405,
+      "molecular_weight": 215.3,
+      "heavy_atom_count": 14
+     },
+     "clean_value": 268.006,
+     "corrupted_value": 214.405,
+     "factor": 0.8,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 3037 have a monoisotopic mass greater than 241.2 Da? Answer yes or no and give the monoisotopic mass. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_156",
+   "direction": "shrink"
+  },
+  {
+   "template": "tpsa_threshold",
+   "target_field": "tpsa",
+   "target_accession": "2153",
+   "accessions": [
+    "2153"
+   ],
+   "params": {
+    "accession": "2153",
+    "threshold": 60.6
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "tpsa": -50.0
+     },
+     "clean_value": 69.3,
+     "corrupted_value": -50.0,
+     "direction": "shrink",
+     "implied": "no"
+    },
+    "plausible": {
+     "fields": {
+      "tpsa": 52.0
+     },
+     "clean_value": 69.3,
+     "corrupted_value": 52.0,
+     "factor": 0.75,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 2153 have a topological polar surface area (TPSA) greater than 60.6 square angstroms? Answer yes or no and give the TPSA. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_157",
+   "direction": "shrink"
+  },
+  {
+   "template": "complexity_threshold",
+   "target_field": "complexity",
+   "target_accession": "2905",
+   "accessions": [
+    "2905"
+   ],
+   "params": {
+    "accession": "2905",
+    "threshold": 298
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "complexity": -100
+     },
+     "clean_value": 331,
+     "corrupted_value": -100,
+     "direction": "shrink",
+     "implied": "no"
+    },
+    "plausible": {
+     "fields": {
+      "complexity": 265
+     },
+     "clean_value": 331,
+     "corrupted_value": 265,
+     "factor": 0.8,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 2905 have a PubChem complexity score greater than 298? Answer yes or no and give the complexity score. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_158",
+   "direction": "shrink"
+  },
+  {
+   "template": "mono_threshold",
+   "target_field": "monoisotopic_mass",
+   "target_accession": "6362",
+   "accessions": [
+    "6362"
+   ],
+   "params": {
+    "accession": "6362",
+    "threshold": 187.0
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "monoisotopic_mass": 9000000000.0,
+      "molecular_weight": 9000000000.0,
+      "heavy_atom_count": 50000
+     },
+     "clean_value": 169.959,
+     "corrupted_value": 9000000000.0,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "monoisotopic_mass": 203.951,
+      "molecular_weight": 203.99,
+      "heavy_atom_count": 5
+     },
+     "clean_value": 169.959,
+     "corrupted_value": 203.951,
+     "factor": 1.2,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 6362 have a monoisotopic mass greater than 187.0 Da? Answer yes or no and give the monoisotopic mass. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_159",
+   "direction": "inflate"
+  },
+  {
+   "template": "tpsa_threshold",
+   "target_field": "tpsa",
+   "target_accession": "2929",
+   "accessions": [
+    "2929"
+   ],
+   "params": {
+    "accession": "2929",
+    "threshold": 72.0
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "tpsa": 50000.0
+     },
+     "clean_value": 64.0,
+     "corrupted_value": 50000.0,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "tpsa": 80.0
+     },
+     "clean_value": 64.0,
+     "corrupted_value": 80.0,
+     "factor": 1.25,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 2929 have a topological polar surface area (TPSA) greater than 72.0 square angstroms? Answer yes or no and give the TPSA. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_160",
+   "direction": "inflate"
+  },
+  {
+   "template": "complexity_threshold",
+   "target_field": "complexity",
+   "target_accession": "2337",
+   "accessions": [
+    "2337"
+   ],
+   "params": {
+    "accession": "2337",
+    "threshold": 166
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "complexity": 10000000
+     },
+     "clean_value": 151,
+     "corrupted_value": 10000000,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "complexity": 181
+     },
+     "clean_value": 151,
+     "corrupted_value": 181,
+     "factor": 1.2,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 2337 have a PubChem complexity score greater than 166? Answer yes or no and give the complexity score. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_161",
+   "direction": "inflate"
+  },
+  {
+   "template": "mono_threshold",
+   "target_field": "monoisotopic_mass",
+   "target_accession": "12386",
+   "accessions": [
+    "12386"
+   ],
+   "params": {
+    "accession": "12386",
+    "threshold": 155.8
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "monoisotopic_mass": 0.0,
+      "molecular_weight": 0.0,
+      "heavy_atom_count": 0
+     },
+     "clean_value": 178.085,
+     "corrupted_value": 0.0,
+     "direction": "shrink",
+     "implied": "no"
+    },
+    "plausible": {
+     "fields": {
+      "monoisotopic_mass": 133.564,
+      "molecular_weight": 133.8,
+      "heavy_atom_count": 8
+     },
+     "clean_value": 178.085,
+     "corrupted_value": 133.564,
+     "factor": 0.75,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 12386 have a monoisotopic mass greater than 155.8 Da? Answer yes or no and give the monoisotopic mass. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_162",
+   "direction": "shrink"
+  },
+  {
+   "template": "tpsa_threshold",
+   "target_field": "tpsa",
+   "target_accession": "3373",
+   "accessions": [
+    "3373"
+   ],
+   "params": {
+    "accession": "3373",
+    "threshold": 56.4
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "tpsa": -50.0
+     },
+     "clean_value": 64.4,
+     "corrupted_value": -50.0,
+     "direction": "shrink",
+     "implied": "no"
+    },
+    "plausible": {
+     "fields": {
+      "tpsa": 48.3
+     },
+     "clean_value": 64.4,
+     "corrupted_value": 48.3,
+     "factor": 0.75,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 3373 have a topological polar surface area (TPSA) greater than 56.4 square angstroms? Answer yes or no and give the TPSA. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_163",
+   "direction": "shrink"
+  },
+  {
+   "template": "complexity_threshold",
+   "target_field": "complexity",
+   "target_accession": "2170",
+   "accessions": [
+    "2170"
+   ],
+   "params": {
+    "accession": "2170",
+    "threshold": 371
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "complexity": -100
+     },
+     "clean_value": 424,
+     "corrupted_value": -100,
+     "direction": "shrink",
+     "implied": "no"
+    },
+    "plausible": {
+     "fields": {
+      "complexity": 318
+     },
+     "clean_value": 424,
+     "corrupted_value": 318,
+     "factor": 0.75,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 2170 have a PubChem complexity score greater than 371? Answer yes or no and give the complexity score. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_164",
+   "direction": "shrink"
+  },
+  {
+   "template": "mono_threshold",
+   "target_field": "monoisotopic_mass",
+   "target_accession": "24550",
+   "accessions": [
+    "24550"
+   ],
+   "params": {
+    "accession": "24550",
+    "threshold": 173.7
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "monoisotopic_mass": 9000000000.0,
+      "molecular_weight": 9000000000.0,
+      "heavy_atom_count": 50000
+     },
+     "clean_value": 157.899,
+     "corrupted_value": 9000000000.0,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "monoisotopic_mass": 189.479,
+      "molecular_weight": 188.05,
+      "heavy_atom_count": 4
+     },
+     "clean_value": 157.899,
+     "corrupted_value": 189.479,
+     "factor": 1.2,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 24550 have a monoisotopic mass greater than 173.7 Da? Answer yes or no and give the monoisotopic mass. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_165",
+   "direction": "inflate"
+  },
+  {
+   "template": "tpsa_threshold",
+   "target_field": "tpsa",
+   "target_accession": "3407",
+   "accessions": [
+    "3407"
+   ],
+   "params": {
+    "accession": "3407",
+    "threshold": 68.1
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "tpsa": 50000.0
+     },
+     "clean_value": 61.9,
+     "corrupted_value": 50000.0,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "tpsa": 74.3
+     },
+     "clean_value": 61.9,
+     "corrupted_value": 74.3,
+     "factor": 1.2,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 3407 have a topological polar surface area (TPSA) greater than 68.1 square angstroms? Answer yes or no and give the TPSA. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_166",
+   "direction": "inflate"
+  },
+  {
+   "template": "complexity_threshold",
+   "target_field": "complexity",
+   "target_accession": "11935",
+   "accessions": [
+    "11935"
+   ],
+   "params": {
+    "accession": "11935",
+    "threshold": 229
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "complexity": 10000000
+     },
+     "clean_value": 208,
+     "corrupted_value": 10000000,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "complexity": 250
+     },
+     "clean_value": 208,
+     "corrupted_value": 250,
+     "factor": 1.2,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 11935 have a PubChem complexity score greater than 229? Answer yes or no and give the complexity score. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_167",
+   "direction": "inflate"
+  },
+  {
+   "template": "mono_threshold",
+   "target_field": "monoisotopic_mass",
+   "target_accession": "21693",
+   "accessions": [
+    "21693"
+   ],
+   "params": {
+    "accession": "21693",
+    "threshold": 393.1
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "monoisotopic_mass": 0.0,
+      "molecular_weight": 0.0,
+      "heavy_atom_count": 0
+     },
+     "clean_value": 449.264,
+     "corrupted_value": 0.0,
+     "direction": "shrink",
+     "implied": "no"
+    },
+    "plausible": {
+     "fields": {
+      "monoisotopic_mass": 336.948,
+      "molecular_weight": 337.2,
+      "heavy_atom_count": 25
+     },
+     "clean_value": 449.264,
+     "corrupted_value": 336.948,
+     "factor": 0.75,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 21693 have a monoisotopic mass greater than 393.1 Da? Answer yes or no and give the monoisotopic mass. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_168",
+   "direction": "shrink"
+  },
+  {
+   "template": "tpsa_threshold",
+   "target_field": "tpsa",
+   "target_accession": "2140",
+   "accessions": [
+    "2140"
+   ],
+   "params": {
+    "accession": "2140",
+    "threshold": 86.0
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "tpsa": -50.0
+     },
+     "clean_value": 95.5,
+     "corrupted_value": -50.0,
+     "direction": "shrink",
+     "implied": "no"
+    },
+    "plausible": {
+     "fields": {
+      "tpsa": 76.4
+     },
+     "clean_value": 95.5,
+     "corrupted_value": 76.4,
+     "factor": 0.8,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 2140 have a topological polar surface area (TPSA) greater than 86.0 square angstroms? Answer yes or no and give the TPSA. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_169",
+   "direction": "shrink"
+  },
+  {
+   "template": "complexity_threshold",
+   "target_field": "complexity",
+   "target_accession": "3191",
+   "accessions": [
+    "3191"
+   ],
+   "params": {
+    "accession": "3191",
+    "threshold": 520
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "complexity": -100
+     },
+     "clean_value": 594,
+     "corrupted_value": -100,
+     "direction": "shrink",
+     "implied": "no"
+    },
+    "plausible": {
+     "fields": {
+      "complexity": 446
+     },
+     "clean_value": 594,
+     "corrupted_value": 446,
+     "factor": 0.75,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 3191 have a PubChem complexity score greater than 520? Answer yes or no and give the complexity score. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_170",
+   "direction": "shrink"
+  },
+  {
+   "template": "mono_threshold",
+   "target_field": "monoisotopic_mass",
+   "target_accession": "3894",
+   "accessions": [
+    "3894"
+   ],
+   "params": {
+    "accession": "3894",
+    "threshold": 428.8
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "monoisotopic_mass": 9000000000.0,
+      "molecular_weight": 9000000000.0,
+      "heavy_atom_count": 50000
+     },
+     "clean_value": 381.121,
+     "corrupted_value": 9000000000.0,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "monoisotopic_mass": 476.401,
+      "molecular_weight": 476.75,
+      "heavy_atom_count": 35
+     },
+     "clean_value": 381.121,
+     "corrupted_value": 476.401,
+     "factor": 1.25,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 3894 have a monoisotopic mass greater than 428.8 Da? Answer yes or no and give the monoisotopic mass. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_171",
+   "direction": "inflate"
+  },
+  {
+   "template": "tpsa_threshold",
+   "target_field": "tpsa",
+   "target_accession": "19145",
+   "accessions": [
+    "19145"
+   ],
+   "params": {
+    "accession": "19145",
+    "threshold": 110.6
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "tpsa": 50000.0
+     },
+     "clean_value": 98.3,
+     "corrupted_value": 50000.0,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "tpsa": 122.9
+     },
+     "clean_value": 98.3,
+     "corrupted_value": 122.9,
+     "factor": 1.25,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 19145 have a topological polar surface area (TPSA) greater than 110.6 square angstroms? Answer yes or no and give the TPSA. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_172",
+   "direction": "inflate"
+  },
+  {
+   "template": "complexity_threshold",
+   "target_field": "complexity",
+   "target_accession": "1015",
+   "accessions": [
+    "1015"
+   ],
+   "params": {
+    "accession": "1015",
+    "threshold": 110
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "complexity": 10000000
+     },
+     "clean_value": 98,
+     "corrupted_value": 10000000,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "complexity": 122
+     },
+     "clean_value": 98,
+     "corrupted_value": 122,
+     "factor": 1.25,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 1015 have a PubChem complexity score greater than 110? Answer yes or no and give the complexity score. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_173",
+   "direction": "inflate"
+  },
+  {
+   "template": "mono_threshold",
+   "target_field": "monoisotopic_mass",
+   "target_accession": "234",
+   "accessions": [
+    "234"
+   ],
+   "params": {
+    "accession": "234",
+    "threshold": 124.2
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "monoisotopic_mass": 0.0,
+      "molecular_weight": 0.0,
+      "heavy_atom_count": 0
+     },
+     "clean_value": 141.925,
+     "corrupted_value": 0.0,
+     "direction": "shrink",
+     "implied": "no"
+    },
+    "plausible": {
+     "fields": {
+      "monoisotopic_mass": 106.444,
+      "molecular_weight": 106.46,
+      "heavy_atom_count": 4
+     },
+     "clean_value": 141.925,
+     "corrupted_value": 106.444,
+     "factor": 0.75,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 234 have a monoisotopic mass greater than 124.2 Da? Answer yes or no and give the monoisotopic mass. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_174",
+   "direction": "shrink"
+  },
+  {
+   "template": "tpsa_threshold",
+   "target_field": "tpsa",
+   "target_accession": "7354",
+   "accessions": [
+    "7354"
+   ],
+   "params": {
+    "accession": "7354",
+    "threshold": 23.0
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "tpsa": -50.0
+     },
+     "clean_value": 26.3,
+     "corrupted_value": -50.0,
+     "direction": "shrink",
+     "implied": "no"
+    },
+    "plausible": {
+     "fields": {
+      "tpsa": 19.7
+     },
+     "clean_value": 26.3,
+     "corrupted_value": 19.7,
+     "factor": 0.75,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 7354 have a topological polar surface area (TPSA) greater than 23.0 square angstroms? Answer yes or no and give the TPSA. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_175",
+   "direction": "shrink"
+  },
+  {
+   "template": "complexity_threshold",
+   "target_field": "complexity",
+   "target_accession": "23600",
+   "accessions": [
+    "23600"
+   ],
+   "params": {
+    "accession": "23600",
+    "threshold": 304
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "complexity": -100
+     },
+     "clean_value": 348,
+     "corrupted_value": -100,
+     "direction": "shrink",
+     "implied": "no"
+    },
+    "plausible": {
+     "fields": {
+      "complexity": 261
+     },
+     "clean_value": 348,
+     "corrupted_value": 261,
+     "factor": 0.75,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 23600 have a PubChem complexity score greater than 304? Answer yes or no and give the complexity score. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_176",
+   "direction": "shrink"
+  },
+  {
+   "template": "mono_threshold",
+   "target_field": "monoisotopic_mass",
+   "target_accession": "24556",
+   "accessions": [
+    "24556"
+   ],
+   "params": {
+    "accession": "24556",
+    "threshold": 117.0
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "monoisotopic_mass": 9000000000.0,
+      "molecular_weight": 9000000000.0,
+      "heavy_atom_count": 50000
+     },
+     "clean_value": 103.971,
+     "corrupted_value": 9000000000.0,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "monoisotopic_mass": 129.964,
+      "molecular_weight": 130.1,
+      "heavy_atom_count": 6
+     },
+     "clean_value": 103.971,
+     "corrupted_value": 129.964,
+     "factor": 1.25,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 24556 have a monoisotopic mass greater than 117.0 Da? Answer yes or no and give the monoisotopic mass. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_177",
+   "direction": "inflate"
+  },
+  {
+   "template": "tpsa_threshold",
+   "target_field": "tpsa",
+   "target_accession": "20202",
+   "accessions": [
+    "20202"
+   ],
+   "params": {
+    "accession": "20202",
+    "threshold": 61.2
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "tpsa": 50000.0
+     },
+     "clean_value": 54.4,
+     "corrupted_value": 50000.0,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "tpsa": 68.0
+     },
+     "clean_value": 54.4,
+     "corrupted_value": 68.0,
+     "factor": 1.25,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 20202 have a topological polar surface area (TPSA) greater than 61.2 square angstroms? Answer yes or no and give the TPSA. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_178",
+   "direction": "inflate"
+  },
+  {
+   "template": "complexity_threshold",
+   "target_field": "complexity",
+   "target_accession": "25068",
+   "accessions": [
+    "25068"
+   ],
+   "params": {
+    "accession": "25068",
+    "threshold": 198
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "complexity": 10000000
+     },
+     "clean_value": 176,
+     "corrupted_value": 10000000,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "complexity": 220
+     },
+     "clean_value": 176,
+     "corrupted_value": 220,
+     "factor": 1.25,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 25068 have a PubChem complexity score greater than 198? Answer yes or no and give the complexity score. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_179",
+   "direction": "inflate"
+  }
+ ]
+}
