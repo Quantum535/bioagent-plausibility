@@ -1,6 +1,7 @@
 """Tool-layer wrapper: verify every returned record harness-side against the full database entry and
 either annotate the summary with a verification block (agent decides) or replace mismatched values (ceiling)."""
 import json
+import os
 
 
 class HarnessLayer:
@@ -18,6 +19,19 @@ class HarnessLayer:
         full = json.loads(self.dom.render(self.tf, self.ts.by_acc[acc], corr))
         v = self.check(rec, self.ts, full=full)
         bad = {f: r for f, r in v.items() if r.get("status") in ("mismatch", "not_found")}
+        if os.environ.get("HARNESS_SECOND_SOURCE") == "1":  # Phase 3: independent database
+            from harness import second_source as ss
+            if "length" in rec or "mass" in rec:
+                sv, route = ss.check_protein_ss(acc, rec), "second source: AlphaFold DB sequence for this accession"
+            else:
+                sv, route = ss.check_compound_ss(self.ts.by_acc[acc].get("cid", acc), rec), "second source: NCI CACTUS structure for this compound name"
+            for f, r in sv.items():
+                v[f + "_second_source"] = r
+                if r["status"] == "mismatch" and f not in bad:
+                    ref = r["second_source"]
+                    try: ref = round(float(ref), 2) if f in ("mass", "molecular_weight") else int(ref)
+                    except (TypeError, ValueError): pass
+                    bad[f] = {"status": "mismatch", "observed": r["record"], "derived": ref, "route": route}
         entry = self.inner.calls[-1]; entry["harness"] = {"mode": self.mode, "flagged": sorted(bad), "verdicts": v}
         if bad and self.mode == "replace":
             for f, r in bad.items():
