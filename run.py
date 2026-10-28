@@ -87,6 +87,7 @@ def main():
     ap.add_argument("--workers", type=int, default=4)
     ap.add_argument("--tasks", default=str(ROOT / "data" / "tasks.json"))
     ap.add_argument("--domain", default=None, help="protein (default) or chemistry; defaults to the task file's domain")
+    ap.add_argument("--harness", choices=["none", "annotate", "replace"], default="none", help="harness-side verification of every returned record")
     ap.add_argument("--record_format", choices=["summary", "full"], default="summary",
                     help="summary = 7-field mock record; full = real UniProtKB entry (minus references/xrefs)")
     ap.add_argument("--proteins", default=None, help="protein table; default is the one named in the task file, else data/proteins.json")
@@ -110,6 +111,14 @@ def main():
     dom = domains.load(domain_name)
     table_path = args.proteins or tasks_file.get("proteins") or dom.DEFAULT_TABLE
     table = dom.Table(table_path, record_format=args.record_format)
+    harness_check, table_full, schemas = None, None, dom.tool_schemas(args.record_format)
+    if args.harness != "none":
+        from harness.layer import HarnessLayer
+        from harness.checks import check_protein, check_compound
+        harness_check = check_compound if domain_name == "chemistry" else check_protein
+        table_full = dom.Table(table_path, record_format="full")
+        import copy; schemas = copy.deepcopy(schemas)
+        for sc in schemas: sc["description"] += " Every record includes a _verification field computed by a deterministic checker against the full database entry (sequence/formula recount, taxonomy, reverse lookup); it lists any field whose value could not be confirmed, with the derived value where one exists."
     samples = range(args.sample_start, args.sample_start + args.samples)
     jobs = [(t, c, s) for s in samples for t in tasks for c in args.conditions]
 
@@ -123,7 +132,7 @@ def main():
     provider, cfg_for_hash = None, {}
     if not args.mock:
         try:
-            provider = make_provider(args.model, system_prompt(args.verify_prompt, domain_name), dom.tool_schemas(args.record_format),
+            provider = make_provider(args.model, system_prompt(args.verify_prompt, domain_name), schemas,
                                      thinking=args.thinking, effort=args.effort)
             if provider.name == "anthropic":  # preflight: credentials resolve and the model id exists (free call)
                 provider.client.models.retrieve(provider.model)
@@ -145,6 +154,7 @@ def main():
             trace, cached = json.loads(cpath.read_text()), True
         else:
             layer = dom.CorruptingToolLayer(table, condition, task)
+            if harness_check: layer = HarnessLayer(layer, dom, table, table_full, args.harness, harness_check)
             if args.mock:
                 trace = run_mock_agent(task, layer, args.verify_prompt, dom=dom)
             else:

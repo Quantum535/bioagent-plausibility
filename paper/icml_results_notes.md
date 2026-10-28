@@ -82,3 +82,16 @@ Full record (sequence / formula+SMILES present), paired field scaled alike, 40 t
 DeepSeek <x0.9 / x1.77, x0.95/x1.48; Sonnet 5 x0.54/x2.30, x0.51/x5.20.
 => three tiers (~10-20% | 50-80% | ~2x). Inflation harder than shrinking for DeepSeek/Sonnet 5, symmetric for Opus.
 => Biomni plausible residuals (x0.75-1.25 on length/mass) are predicted by the native curves at those factors (DeepSeek 25-78%, Flash 42-65%).
+
+## Harness, post hoc (2026-10-27) — harness/checks.py, posthoc.py, gate.py
+Deterministic checks with full record: 100% detection of every corruption in both domains, 0% false alarms on 600 clean records; catches 100% of the
+4,867 values the ten models propagated. Summary-only: 100% impossible, 100% identifiers (reverse lookup), 0% plausible numeric/organism (no route).
+Donors: RDKit == PubChem on 300/300 (exact route). Ratio bands: 89.6-130.3 Da/residue; 11.4-225.9 Da/heavy atom.
+Concern gate (tf-idf + logistic on concern text+field, label = wrong answer): within-domain AUC 0.83-0.84, P 0.89-0.91 R 0.54-0.64 fires 0.29-0.39
+vs keyword flag P 0.60-0.72 R 0.55-0.66 fires 0.45-0.49. Leave-one-vendor-out AUC 0.74 (openai) to 0.86. protein->chem P 0.92 R 0.52.
+
+## Harness in the loop (2026-10-27) — results/harness/, --harness annotate|replace (harness/layer.py)
+Summary record + harness-side verification against the full entry; agent sees a _verification block. Opus/Argon/DeepSeek, 300 tasks x 3 cond.
+Proteins: propagation 0-1% (impossible and plausible) for all three; clean accuracy 100%; annotate == replace (DeepSeek identical).
+Chemistry: 12-24% residual, correctness 74-80% — concentrated in `name` (no derivation; reverse lookup can only say not_found). See per-field.
+Baselines without harness, same models: protein 32/75, 35/74, 44/77; chem 46/98, 62/98, 38/96. Cost ~$45.
