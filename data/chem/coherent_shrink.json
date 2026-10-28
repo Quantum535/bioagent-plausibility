@@ -1,0 +1,1601 @@
+{
+ "seed": 0,
+ "n_tasks": 22,
+ "proteins": null,
+ "domain": "chemistry",
+ "alternate_direction": true,
+ "tasks": [
+  {
+   "template": "weight_comparison",
+   "target_field": "molecular_weight",
+   "target_accession": "25047",
+   "accessions": [
+    "7714",
+    "25047"
+   ],
+   "params": {
+    "name_A": "Gamma-undecalactone",
+    "name_B": "Diethyl isobutylmalonate",
+    "acc_A": "7714",
+    "acc_B": "25047"
+   },
+   "answer_type": "string",
+   "n_calls_expected": 2,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "molecular_weight": 2.0
+     },
+     "clean_value": 216.27,
+     "corrupted_value": 2.0,
+     "factor": null,
+     "direction": "shrink",
+     "implied": "Gamma-undecalactone"
+    },
+    "plausible": {
+     "fields": {
+      "molecular_weight": 173.02,
+      "heavy_atom_count": 12
+     },
+     "clean_value": 216.27,
+     "corrupted_value": 173.02,
+     "factor": 0.8,
+     "direction": "shrink",
+     "implied": "Gamma-undecalactone"
+    },
+    "coherent_impossible": {
+     "fields": {
+      "molecular_weight": 16.04,
+      "heavy_atom_count": 1,
+      "h_bond_donors": 0,
+      "smiles": "C",
+      "formula": "CH4",
+      "iupac_name": "methane"
+     },
+     "clean_value": 216.27,
+     "corrupted_value": 16.04,
+     "coherent": true,
+     "swap_source": null,
+     "implied": "Gamma-undecalactone"
+    },
+    "coherent_plausible": {
+     "fields": {
+      "molecular_weight": 171.19,
+      "heavy_atom_count": 12,
+      "h_bond_donors": 1,
+      "smiles": "CCC1(COC(=O)NC1=O)CC",
+      "formula": "C8H13NO3",
+      "iupac_name": "5,5-diethyl-1,3-oxazinane-2,4-dione"
+     },
+     "clean_value": 216.27,
+     "corrupted_value": 171.19,
+     "coherent": true,
+     "swap_source": 12798,
+     "implied": "Gamma-undecalactone"
+    }
+   },
+   "gold": "Diethyl isobutylmalonate",
+   "prompt": "Which is heavier, Gamma-undecalactone or Diethyl isobutylmalonate? Give the name and both molecular weights in Da. Put only the name of the heavier compound in the JSON \"answer\" field.",
+   "task_id": "c000",
+   "direction": "shrink"
+  },
+  {
+   "template": "heavy_atom_threshold",
+   "target_field": "heavy_atom_count",
+   "target_accession": "3671",
+   "accessions": [
+    "3671"
+   ],
+   "params": {
+    "accession": "3671",
+    "threshold": 15
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "heavy_atom_count": 0
+     },
+     "clean_value": 17,
+     "corrupted_value": 0,
+     "factor": null,
+     "direction": "shrink",
+     "implied": "no"
+    },
+    "plausible": {
+     "fields": {
+      "molecular_weight": 184.25,
+      "heavy_atom_count": 14
+     },
+     "clean_value": 17,
+     "corrupted_value": 14,
+     "factor": 0.8,
+     "direction": "shrink",
+     "implied": "no"
+    },
+    "coherent_impossible": {
+     "fields": {
+      "molecular_weight": 16.04,
+      "heavy_atom_count": 1,
+      "h_bond_donors": 0,
+      "smiles": "C",
+      "formula": "CH4",
+      "iupac_name": "methane"
+     },
+     "clean_value": 17,
+     "corrupted_value": 1,
+     "coherent": true,
+     "swap_source": null,
+     "implied": "no"
+    },
+    "coherent_plausible": {
+     "fields": {
+      "molecular_weight": 179.22,
+      "heavy_atom_count": 14,
+      "h_bond_donors": 0,
+      "smiles": "C1=CC=C2C(=C1)C=C3C=CC=CC3=N2",
+      "formula": "C13H9N",
+      "iupac_name": "acridine"
+     },
+     "clean_value": 17,
+     "corrupted_value": 14,
+     "coherent": true,
+     "swap_source": 9215,
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 3671 have more than 15 heavy atoms? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "c001",
+   "direction": "shrink"
+  },
+  {
+   "template": "weight_comparison",
+   "target_field": "molecular_weight",
+   "target_accession": "27692",
+   "accessions": [
+    "27692",
+    "6011"
+   ],
+   "params": {
+    "name_A": "Androstenonol propionate",
+    "name_B": "Dromostanolone",
+    "acc_A": "27692",
+    "acc_B": "6011"
+   },
+   "answer_type": "string",
+   "n_calls_expected": 2,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "molecular_weight": -344.5
+     },
+     "clean_value": 344.5,
+     "corrupted_value": -344.5,
+     "factor": null,
+     "direction": "shrink",
+     "implied": "Dromostanolone"
+    },
+    "plausible": {
+     "fields": {
+      "molecular_weight": 258.38,
+      "heavy_atom_count": 19
+     },
+     "clean_value": 344.5,
+     "corrupted_value": 258.38,
+     "factor": 0.75,
+     "direction": "shrink",
+     "implied": "Dromostanolone"
+    },
+    "coherent_impossible": {
+     "fields": {
+      "molecular_weight": 16.04,
+      "heavy_atom_count": 1,
+      "h_bond_donors": 0,
+      "smiles": "C",
+      "formula": "CH4",
+      "iupac_name": "methane"
+     },
+     "clean_value": 344.5,
+     "corrupted_value": 16.04,
+     "coherent": true,
+     "swap_source": null,
+     "implied": "Dromostanolone"
+    },
+    "coherent_plausible": {
+     "fields": {
+      "molecular_weight": 261.36,
+      "heavy_atom_count": 19,
+      "h_bond_donors": 1,
+      "smiles": "CC(CNC1CCCCC1)OC(=O)C2=CC=CC=C2",
+      "formula": "C16H23NO2",
+      "iupac_name": "1-(cyclohexylamino)propan-2-yl benzoate"
+     },
+     "clean_value": 344.5,
+     "corrupted_value": 261.36,
+     "coherent": true,
+     "swap_source": 10770,
+     "implied": "Dromostanolone"
+    }
+   },
+   "gold": "Androstenonol propionate",
+   "prompt": "Which is heavier, Androstenonol propionate or Dromostanolone? Give the name and both molecular weights in Da. Put only the name of the heavier compound in the JSON \"answer\" field.",
+   "task_id": "c008",
+   "direction": "shrink"
+  },
+  {
+   "template": "heavy_atom_threshold",
+   "target_field": "heavy_atom_count",
+   "target_accession": "26602",
+   "accessions": [
+    "26602"
+   ],
+   "params": {
+    "accession": "26602",
+    "threshold": 15
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "heavy_atom_count": 0
+     },
+     "clean_value": 17,
+     "corrupted_value": 0,
+     "factor": null,
+     "direction": "shrink",
+     "implied": "no"
+    },
+    "plausible": {
+     "fields": {
+      "molecular_weight": 204.59,
+      "heavy_atom_count": 14
+     },
+     "clean_value": 17,
+     "corrupted_value": 14,
+     "factor": 0.8,
+     "direction": "shrink",
+     "implied": "no"
+    },
+    "coherent_impossible": {
+     "fields": {
+      "molecular_weight": 16.04,
+      "heavy_atom_count": 1,
+      "h_bond_donors": 0,
+      "smiles": "C",
+      "formula": "CH4",
+      "iupac_name": "methane"
+     },
+     "clean_value": 17,
+     "corrupted_value": 1,
+     "coherent": true,
+     "swap_source": null,
+     "implied": "no"
+    },
+    "coherent_plausible": {
+     "fields": {
+      "molecular_weight": 193.2,
+      "heavy_atom_count": 14,
+      "h_bond_donors": 1,
+      "smiles": "COC(=O)CNC(=O)C1=CC=CC=C1",
+      "formula": "C10H11NO3",
+      "iupac_name": "methyl 2-benzamidoacetate"
+     },
+     "clean_value": 17,
+     "corrupted_value": 14,
+     "coherent": true,
+     "swap_source": 14566,
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 26602 have more than 15 heavy atoms? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "c009",
+   "direction": "shrink"
+  },
+  {
+   "template": "weight_comparison",
+   "target_field": "molecular_weight",
+   "target_accession": "3155",
+   "accessions": [
+    "4788",
+    "3155"
+   ],
+   "params": {
+    "name_A": "Phloretin",
+    "name_B": "Dothiepin",
+    "acc_A": "4788",
+    "acc_B": "3155"
+   },
+   "answer_type": "string",
+   "n_calls_expected": 2,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "molecular_weight": 2.0
+     },
+     "clean_value": 295.4,
+     "corrupted_value": 2.0,
+     "factor": null,
+     "direction": "shrink",
+     "implied": "Phloretin"
+    },
+    "plausible": {
+     "fields": {
+      "molecular_weight": 221.55,
+      "heavy_atom_count": 16
+     },
+     "clean_value": 295.4,
+     "corrupted_value": 221.55,
+     "factor": 0.75,
+     "direction": "shrink",
+     "implied": "Phloretin"
+    },
+    "coherent_impossible": {
+     "fields": {
+      "molecular_weight": 16.04,
+      "heavy_atom_count": 1,
+      "h_bond_donors": 0,
+      "smiles": "C",
+      "formula": "CH4",
+      "iupac_name": "methane"
+     },
+     "clean_value": 295.4,
+     "corrupted_value": 16.04,
+     "coherent": true,
+     "swap_source": null,
+     "implied": "Phloretin"
+    },
+    "coherent_plausible": {
+     "fields": {
+      "molecular_weight": 223.34,
+      "heavy_atom_count": 15,
+      "h_bond_donors": 1,
+      "smiles": "CCNC1(CCCCC1=O)C2=CC=CS2",
+      "formula": "C12H17NOS",
+      "iupac_name": "2-(ethylamino)-2-thiophen-2-ylcyclohexan-1-one"
+     },
+     "clean_value": 295.4,
+     "corrupted_value": 223.34,
+     "coherent": true,
+     "swap_source": 26533,
+     "implied": "Phloretin"
+    }
+   },
+   "gold": "Dothiepin",
+   "prompt": "Which is heavier, Phloretin or Dothiepin? Give the name and both molecular weights in Da. Put only the name of the heavier compound in the JSON \"answer\" field.",
+   "task_id": "c016",
+   "direction": "shrink"
+  },
+  {
+   "template": "heavy_atom_threshold",
+   "target_field": "heavy_atom_count",
+   "target_accession": "10208",
+   "accessions": [
+    "10208"
+   ],
+   "params": {
+    "accession": "10208",
+    "threshold": 17
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "heavy_atom_count": 0
+     },
+     "clean_value": 19,
+     "corrupted_value": 0,
+     "factor": null,
+     "direction": "shrink",
+     "implied": "no"
+    },
+    "plausible": {
+     "fields": {
+      "molecular_weight": 203.39,
+      "heavy_atom_count": 15
+     },
+     "clean_value": 19,
+     "corrupted_value": 15,
+     "factor": 0.8,
+     "direction": "shrink",
+     "implied": "no"
+    },
+    "coherent_impossible": {
+     "fields": {
+      "molecular_weight": 16.04,
+      "heavy_atom_count": 1,
+      "h_bond_donors": 0,
+      "smiles": "C",
+      "formula": "CH4",
+      "iupac_name": "methane"
+     },
+     "clean_value": 19,
+     "corrupted_value": 1,
+     "coherent": true,
+     "swap_source": null,
+     "implied": "no"
+    },
+    "coherent_plausible": {
+     "fields": {
+      "molecular_weight": 206.19,
+      "heavy_atom_count": 15,
+      "h_bond_donors": 1,
+      "smiles": "CC1=CC(=O)C2=C(C=C(C=C2O1)OC)O",
+      "formula": "C11H10O4",
+      "iupac_name": "5-hydroxy-7-methoxy-2-methylchromen-4-one"
+     },
+     "clean_value": 19,
+     "corrupted_value": 15,
+     "coherent": true,
+     "swap_source": 10189,
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 10208 have more than 17 heavy atoms? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "c017",
+   "direction": "shrink"
+  },
+  {
+   "template": "weight_comparison",
+   "target_field": "molecular_weight",
+   "target_accession": "11857",
+   "accessions": [
+    "10364",
+    "11857"
+   ],
+   "params": {
+    "name_A": "Carvacrol",
+    "name_B": "Diethyl methylmalonate",
+    "acc_A": "10364",
+    "acc_B": "11857"
+   },
+   "answer_type": "string",
+   "n_calls_expected": 2,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "molecular_weight": 2.0
+     },
+     "clean_value": 174.19,
+     "corrupted_value": 2.0,
+     "factor": null,
+     "direction": "shrink",
+     "implied": "Carvacrol"
+    },
+    "plausible": {
+     "fields": {
+      "molecular_weight": 130.64,
+      "heavy_atom_count": 9
+     },
+     "clean_value": 174.19,
+     "corrupted_value": 130.64,
+     "factor": 0.75,
+     "direction": "shrink",
+     "implied": "Carvacrol"
+    },
+    "coherent_impossible": {
+     "fields": {
+      "molecular_weight": 16.04,
+      "heavy_atom_count": 1,
+      "h_bond_donors": 0,
+      "smiles": "C",
+      "formula": "CH4",
+      "iupac_name": "methane"
+     },
+     "clean_value": 174.19,
+     "corrupted_value": 16.04,
+     "coherent": true,
+     "swap_source": null,
+     "implied": "Carvacrol"
+    },
+    "coherent_plausible": {
+     "fields": {
+      "molecular_weight": 141.06,
+      "heavy_atom_count": 8,
+      "h_bond_donors": 3,
+      "smiles": "C(COP(=O)(O)O)N",
+      "formula": "C2H8NO4P",
+      "iupac_name": "2-aminoethyl dihydrogen phosphate"
+     },
+     "clean_value": 174.19,
+     "corrupted_value": 141.06,
+     "coherent": true,
+     "swap_source": 1015,
+     "implied": "Carvacrol"
+    }
+   },
+   "gold": "Diethyl methylmalonate",
+   "prompt": "Which is heavier, Carvacrol or Diethyl methylmalonate? Give the name and both molecular weights in Da. Put only the name of the heavier compound in the JSON \"answer\" field.",
+   "task_id": "c024",
+   "direction": "shrink"
+  },
+  {
+   "template": "heavy_atom_threshold",
+   "target_field": "heavy_atom_count",
+   "target_accession": "10770",
+   "accessions": [
+    "10770"
+   ],
+   "params": {
+    "accession": "10770",
+    "threshold": 17
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "heavy_atom_count": 0
+     },
+     "clean_value": 19,
+     "corrupted_value": 0,
+     "factor": null,
+     "direction": "shrink",
+     "implied": "no"
+    },
+    "plausible": {
+     "fields": {
+      "molecular_weight": 209.09,
+      "heavy_atom_count": 15
+     },
+     "clean_value": 19,
+     "corrupted_value": 15,
+     "factor": 0.8,
+     "direction": "shrink",
+     "implied": "no"
+    },
+    "coherent_impossible": {
+     "fields": {
+      "molecular_weight": 16.04,
+      "heavy_atom_count": 1,
+      "h_bond_donors": 0,
+      "smiles": "C",
+      "formula": "CH4",
+      "iupac_name": "methane"
+     },
+     "clean_value": 19,
+     "corrupted_value": 1,
+     "coherent": true,
+     "swap_source": null,
+     "implied": "no"
+    },
+    "coherent_plausible": {
+     "fields": {
+      "molecular_weight": 211.21,
+      "heavy_atom_count": 15,
+      "h_bond_donors": 4,
+      "smiles": "CC(CC1=CC(=C(C=C1)O)O)(C(=O)O)N",
+      "formula": "C10H13NO4",
+      "iupac_name": "2-amino-3-(3,4-dihydroxyphenyl)-2-methylpropanoic acid"
+     },
+     "clean_value": 19,
+     "corrupted_value": 15,
+     "coherent": true,
+     "swap_source": 4138,
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 10770 have more than 17 heavy atoms? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "c025",
+   "direction": "shrink"
+  },
+  {
+   "template": "weight_comparison",
+   "target_field": "molecular_weight",
+   "target_accession": "6346",
+   "accessions": [
+    "9142",
+    "6346"
+   ],
+   "params": {
+    "name_A": "Perylene",
+    "name_B": "Diiodomethane",
+    "acc_A": "9142",
+    "acc_B": "6346"
+   },
+   "answer_type": "string",
+   "n_calls_expected": 2,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "molecular_weight": -267.835
+     },
+     "clean_value": 267.835,
+     "corrupted_value": -267.835,
+     "factor": null,
+     "direction": "shrink",
+     "implied": "Perylene"
+    },
+    "plausible": {
+     "fields": {
+      "molecular_weight": 214.27,
+      "heavy_atom_count": 2
+     },
+     "clean_value": 267.835,
+     "corrupted_value": 214.27,
+     "factor": 0.8,
+     "direction": "shrink",
+     "implied": "Perylene"
+    },
+    "coherent_impossible": {
+     "fields": {
+      "molecular_weight": 16.04,
+      "heavy_atom_count": 1,
+      "h_bond_donors": 0,
+      "smiles": "C",
+      "formula": "CH4",
+      "iupac_name": "methane"
+     },
+     "clean_value": 267.835,
+     "corrupted_value": 16.04,
+     "coherent": true,
+     "swap_source": null,
+     "implied": "Perylene"
+    },
+    "coherent_plausible": {
+     "fields": {
+      "molecular_weight": 211.26,
+      "heavy_atom_count": 16,
+      "h_bond_donors": 1,
+      "smiles": "C1=CC=C(C=C1)C(C(=O)C2=CC=CC=C2)N",
+      "formula": "C14H13NO",
+      "iupac_name": "2-amino-1,2-diphenylethanone"
+     },
+     "clean_value": 267.835,
+     "corrupted_value": 211.26,
+     "coherent": true,
+     "swap_source": 13446,
+     "implied": "Perylene"
+    }
+   },
+   "gold": "Diiodomethane",
+   "prompt": "Which is heavier, Perylene or Diiodomethane? Give the name and both molecular weights in Da. Put only the name of the heavier compound in the JSON \"answer\" field.",
+   "task_id": "c032",
+   "direction": "shrink"
+  },
+  {
+   "template": "heavy_atom_threshold",
+   "target_field": "heavy_atom_count",
+   "target_accession": "3455",
+   "accessions": [
+    "3455"
+   ],
+   "params": {
+    "accession": "3455",
+    "threshold": 29
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "heavy_atom_count": 0
+     },
+     "clean_value": 33,
+     "corrupted_value": 0,
+     "factor": null,
+     "direction": "shrink",
+     "implied": "no"
+    },
+    "plausible": {
+     "fields": {
+      "molecular_weight": 337.95,
+      "heavy_atom_count": 25
+     },
+     "clean_value": 33,
+     "corrupted_value": 25,
+     "factor": 0.75,
+     "direction": "shrink",
+     "implied": "no"
+    },
+    "coherent_impossible": {
+     "fields": {
+      "molecular_weight": 16.04,
+      "heavy_atom_count": 1,
+      "h_bond_donors": 0,
+      "smiles": "C",
+      "formula": "CH4",
+      "iupac_name": "methane"
+     },
+     "clean_value": 33,
+     "corrupted_value": 1,
+     "coherent": true,
+     "swap_source": null,
+     "implied": "no"
+    },
+    "coherent_plausible": {
+     "fields": {
+      "molecular_weight": 369.5,
+      "heavy_atom_count": 27,
+      "h_bond_donors": 1,
+      "smiles": "C1CCC(CC1)N2C(=NN=N2)CCCCOC3=CC4=C(C=C3)NC(=O)CC4",
+      "formula": "C20H27N5O2",
+      "iupac_name": "6-[4-(1-cyclohexyltetrazol-5-yl)butoxy]-3,4-dihydro-1H-quinolin-2-one"
+     },
+     "clean_value": 33,
+     "corrupted_value": 27,
+     "coherent": true,
+     "swap_source": 2754,
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 3455 have more than 29 heavy atoms? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "c033",
+   "direction": "shrink"
+  },
+  {
+   "template": "heavy_atom_threshold",
+   "target_field": "heavy_atom_count",
+   "target_accession": "10783",
+   "accessions": [
+    "10783"
+   ],
+   "params": {
+    "accession": "10783",
+    "threshold": 8
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "heavy_atom_count": 0
+     },
+     "clean_value": 9,
+     "corrupted_value": 0,
+     "factor": null,
+     "direction": "shrink",
+     "implied": "no"
+    },
+    "plausible": {
+     "fields": {
+      "molecular_weight": 129.32,
+      "heavy_atom_count": 7
+     },
+     "clean_value": 9,
+     "corrupted_value": 7,
+     "factor": 0.8,
+     "direction": "shrink",
+     "implied": "no"
+    },
+    "coherent_impossible": {
+     "fields": {
+      "molecular_weight": 16.04,
+      "heavy_atom_count": 1,
+      "h_bond_donors": 0,
+      "smiles": "C",
+      "formula": "CH4",
+      "iupac_name": "methane"
+     },
+     "clean_value": 9,
+     "corrupted_value": 1,
+     "coherent": true,
+     "swap_source": null,
+     "implied": "no"
+    },
+    "coherent_plausible": {
+     "fields": {
+      "molecular_weight": 116.47,
+      "heavy_atom_count": 6,
+      "h_bond_donors": 0,
+      "smiles": "C(=C(F)Cl)(F)F",
+      "formula": "C2ClF3",
+      "iupac_name": "1-chloro-1,2,2-trifluoroethene"
+     },
+     "clean_value": 9,
+     "corrupted_value": 6,
+     "coherent": true,
+     "swap_source": 6594,
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 10783 have more than 8 heavy atoms? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "c041",
+   "direction": "shrink"
+  },
+  {
+   "template": "weight_comparison",
+   "target_field": "molecular_weight",
+   "target_accession": "20202",
+   "accessions": [
+    "20202",
+    "11166"
+   ],
+   "params": {
+    "name_A": "p-Propionylbenzoic acid",
+    "name_B": "Allyl iodide",
+    "acc_A": "20202",
+    "acc_B": "11166"
+   },
+   "answer_type": "string",
+   "n_calls_expected": 2,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "molecular_weight": -178.18
+     },
+     "clean_value": 178.18,
+     "corrupted_value": -178.18,
+     "factor": null,
+     "direction": "shrink",
+     "implied": "Allyl iodide"
+    },
+    "plausible": {
+     "fields": {
+      "molecular_weight": 133.63,
+      "heavy_atom_count": 10
+     },
+     "clean_value": 178.18,
+     "corrupted_value": 133.63,
+     "factor": 0.75,
+     "direction": "shrink",
+     "implied": "Allyl iodide"
+    },
+    "coherent_impossible": {
+     "fields": {
+      "molecular_weight": 16.04,
+      "heavy_atom_count": 1,
+      "h_bond_donors": 0,
+      "smiles": "C",
+      "formula": "CH4",
+      "iupac_name": "methane"
+     },
+     "clean_value": 178.18,
+     "corrupted_value": 16.04,
+     "coherent": true,
+     "swap_source": null,
+     "implied": "Allyl iodide"
+    },
+    "coherent_plausible": {
+     "fields": {
+      "molecular_weight": 142.2,
+      "heavy_atom_count": 10,
+      "h_bond_donors": 0,
+      "smiles": "CCCCOC(=O)C(=C)C",
+      "formula": "C8H14O2",
+      "iupac_name": "butyl 2-methylprop-2-enoate"
+     },
+     "clean_value": 178.18,
+     "corrupted_value": 142.2,
+     "coherent": true,
+     "swap_source": 7354,
+     "implied": "Allyl iodide"
+    }
+   },
+   "gold": "p-Propionylbenzoic acid",
+   "prompt": "Which is heavier, p-Propionylbenzoic acid or Allyl iodide? Give the name and both molecular weights in Da. Put only the name of the heavier compound in the JSON \"answer\" field.",
+   "task_id": "c048",
+   "direction": "shrink"
+  },
+  {
+   "template": "heavy_atom_threshold",
+   "target_field": "heavy_atom_count",
+   "target_accession": "17697",
+   "accessions": [
+    "17697"
+   ],
+   "params": {
+    "accession": "17697",
+    "threshold": 14
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "heavy_atom_count": 0
+     },
+     "clean_value": 16,
+     "corrupted_value": 0,
+     "factor": null,
+     "direction": "shrink",
+     "implied": "no"
+    },
+    "plausible": {
+     "fields": {
+      "molecular_weight": 181.12,
+      "heavy_atom_count": 13
+     },
+     "clean_value": 16,
+     "corrupted_value": 13,
+     "factor": 0.8,
+     "direction": "shrink",
+     "implied": "no"
+    },
+    "coherent_impossible": {
+     "fields": {
+      "molecular_weight": 16.04,
+      "heavy_atom_count": 1,
+      "h_bond_donors": 0,
+      "smiles": "C",
+      "formula": "CH4",
+      "iupac_name": "methane"
+     },
+     "clean_value": 16,
+     "corrupted_value": 1,
+     "coherent": true,
+     "swap_source": null,
+     "implied": "no"
+    },
+    "coherent_plausible": {
+     "fields": {
+      "molecular_weight": 171.32,
+      "heavy_atom_count": 12,
+      "h_bond_donors": 1,
+      "smiles": "CC(C)CCCC(C)NC(C)C",
+      "formula": "C11H25N",
+      "iupac_name": "6-methyl-N-propan-2-ylheptan-2-amine"
+     },
+     "clean_value": 16,
+     "corrupted_value": 12,
+     "coherent": true,
+     "swap_source": 19917,
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 17697 have more than 14 heavy atoms? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "c049",
+   "direction": "shrink"
+  },
+  {
+   "template": "weight_comparison",
+   "target_field": "molecular_weight",
+   "target_accession": "29269",
+   "accessions": [
+    "10189",
+    "29269"
+   ],
+   "params": {
+    "name_A": "Eugenin",
+    "name_B": "Lysinoalanine",
+    "acc_A": "10189",
+    "acc_B": "29269"
+   },
+   "answer_type": "string",
+   "n_calls_expected": 2,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "molecular_weight": -233.27
+     },
+     "clean_value": 233.27,
+     "corrupted_value": -233.27,
+     "factor": null,
+     "direction": "shrink",
+     "implied": "Eugenin"
+    },
+    "plausible": {
+     "fields": {
+      "molecular_weight": 174.95,
+      "heavy_atom_count": 12
+     },
+     "clean_value": 233.27,
+     "corrupted_value": 174.95,
+     "factor": 0.75,
+     "direction": "shrink",
+     "implied": "Eugenin"
+    },
+    "coherent_impossible": {
+     "fields": {
+      "molecular_weight": 16.04,
+      "heavy_atom_count": 1,
+      "h_bond_donors": 0,
+      "smiles": "C",
+      "formula": "CH4",
+      "iupac_name": "methane"
+     },
+     "clean_value": 233.27,
+     "corrupted_value": 16.04,
+     "coherent": true,
+     "swap_source": null,
+     "implied": "Eugenin"
+    },
+    "coherent_plausible": {
+     "fields": {
+      "molecular_weight": 182.24,
+      "heavy_atom_count": 11,
+      "h_bond_donors": 0,
+      "smiles": "CC(C)OS(=O)(=O)OC(C)C",
+      "formula": "C6H14O4S",
+      "iupac_name": "dipropan-2-yl sulfate"
+     },
+     "clean_value": 233.27,
+     "corrupted_value": 182.24,
+     "coherent": true,
+     "swap_source": 18096,
+     "implied": "Eugenin"
+    }
+   },
+   "gold": "Lysinoalanine",
+   "prompt": "Which is heavier, Eugenin or Lysinoalanine? Give the name and both molecular weights in Da. Put only the name of the heavier compound in the JSON \"answer\" field.",
+   "task_id": "c056",
+   "direction": "shrink"
+  },
+  {
+   "template": "heavy_atom_threshold",
+   "target_field": "heavy_atom_count",
+   "target_accession": "10767",
+   "accessions": [
+    "10767"
+   ],
+   "params": {
+    "accession": "10767",
+    "threshold": 15
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "heavy_atom_count": 0
+     },
+     "clean_value": 17,
+     "corrupted_value": 0,
+     "factor": null,
+     "direction": "shrink",
+     "implied": "no"
+    },
+    "plausible": {
+     "fields": {
+      "molecular_weight": 176.49,
+      "heavy_atom_count": 13
+     },
+     "clean_value": 17,
+     "corrupted_value": 13,
+     "factor": 0.75,
+     "direction": "shrink",
+     "implied": "no"
+    },
+    "coherent_impossible": {
+     "fields": {
+      "molecular_weight": 16.04,
+      "heavy_atom_count": 1,
+      "h_bond_donors": 0,
+      "smiles": "C",
+      "formula": "CH4",
+      "iupac_name": "methane"
+     },
+     "clean_value": 17,
+     "corrupted_value": 1,
+     "coherent": true,
+     "swap_source": null,
+     "implied": "no"
+    },
+    "coherent_plausible": {
+     "fields": {
+      "molecular_weight": 169.99,
+      "heavy_atom_count": 4,
+      "h_bond_donors": 0,
+      "smiles": "CC(C)I",
+      "formula": "C3H7I",
+      "iupac_name": "2-iodopropane"
+     },
+     "clean_value": 17,
+     "corrupted_value": 4,
+     "coherent": true,
+     "swap_source": 6362,
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 10767 have more than 15 heavy atoms? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "c057",
+   "direction": "shrink"
+  },
+  {
+   "template": "weight_comparison",
+   "target_field": "molecular_weight",
+   "target_accession": "749",
+   "accessions": [
+    "21500",
+    "749"
+   ],
+   "params": {
+    "name_A": "Sorboflavin",
+    "name_B": "Glutathionylspermidine I",
+    "acc_A": "21500",
+    "acc_B": "749"
+   },
+   "answer_type": "string",
+   "n_calls_expected": 2,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "molecular_weight": -434.6
+     },
+     "clean_value": 434.6,
+     "corrupted_value": -434.6,
+     "factor": null,
+     "direction": "shrink",
+     "implied": "Sorboflavin"
+    },
+    "plausible": {
+     "fields": {
+      "molecular_weight": 325.95,
+      "heavy_atom_count": 22
+     },
+     "clean_value": 434.6,
+     "corrupted_value": 325.95,
+     "factor": 0.75,
+     "direction": "shrink",
+     "implied": "Sorboflavin"
+    },
+    "coherent_impossible": {
+     "fields": {
+      "molecular_weight": 16.04,
+      "heavy_atom_count": 1,
+      "h_bond_donors": 0,
+      "smiles": "C",
+      "formula": "CH4",
+      "iupac_name": "methane"
+     },
+     "clean_value": 434.6,
+     "corrupted_value": 16.04,
+     "coherent": true,
+     "swap_source": null,
+     "implied": "Sorboflavin"
+    },
+    "coherent_plausible": {
+     "fields": {
+      "molecular_weight": 338.4,
+      "heavy_atom_count": 24,
+      "h_bond_donors": 1,
+      "smiles": "CC1=C(C(=O)C(=C(C1=O)OC)OC)CCCCCCCCCCO",
+      "formula": "C19H30O5",
+      "iupac_name": "2-(10-hydroxydecyl)-5,6-dimethoxy-3-methylcyclohexa-2,5-diene-1,4-dione"
+     },
+     "clean_value": 434.6,
+     "corrupted_value": 338.4,
+     "coherent": true,
+     "swap_source": 3686,
+     "implied": "Sorboflavin"
+    }
+   },
+   "gold": "Glutathionylspermidine I",
+   "prompt": "Which is heavier, Sorboflavin or Glutathionylspermidine I? Give the name and both molecular weights in Da. Put only the name of the heavier compound in the JSON \"answer\" field.",
+   "task_id": "c064",
+   "direction": "shrink"
+  },
+  {
+   "template": "heavy_atom_threshold",
+   "target_field": "heavy_atom_count",
+   "target_accession": "16462",
+   "accessions": [
+    "16462"
+   ],
+   "params": {
+    "accession": "16462",
+    "threshold": 11
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "heavy_atom_count": 0
+     },
+     "clean_value": 13,
+     "corrupted_value": 0,
+     "factor": null,
+     "direction": "shrink",
+     "implied": "no"
+    },
+    "plausible": {
+     "fields": {
+      "molecular_weight": 181.12,
+      "heavy_atom_count": 10
+     },
+     "clean_value": 13,
+     "corrupted_value": 10,
+     "factor": 0.75,
+     "direction": "shrink",
+     "implied": "no"
+    },
+    "coherent_impossible": {
+     "fields": {
+      "molecular_weight": 16.04,
+      "heavy_atom_count": 1,
+      "h_bond_donors": 0,
+      "smiles": "C",
+      "formula": "CH4",
+      "iupac_name": "methane"
+     },
+     "clean_value": 13,
+     "corrupted_value": 1,
+     "coherent": true,
+     "swap_source": null,
+     "implied": "no"
+    },
+    "coherent_plausible": {
+     "fields": {
+      "molecular_weight": 182.15,
+      "heavy_atom_count": 11,
+      "h_bond_donors": 0,
+      "smiles": "CCOP(=O)(OCC)OCC",
+      "formula": "C6H15O4P",
+      "iupac_name": "triethyl phosphate"
+     },
+     "clean_value": 13,
+     "corrupted_value": 11,
+     "coherent": true,
+     "swap_source": 6535,
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 16462 have more than 11 heavy atoms? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "c065",
+   "direction": "shrink"
+  },
+  {
+   "template": "weight_comparison",
+   "target_field": "molecular_weight",
+   "target_accession": "25072",
+   "accessions": [
+    "7679",
+    "25072"
+   ],
+   "params": {
+    "name_A": "Phenylacetyl chloride",
+    "name_B": "Aminomatacil",
+    "acc_A": "7679",
+    "acc_B": "25072"
+   },
+   "answer_type": "string",
+   "n_calls_expected": 2,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "molecular_weight": -180.2
+     },
+     "clean_value": 180.2,
+     "corrupted_value": -180.2,
+     "factor": null,
+     "direction": "shrink",
+     "implied": "Phenylacetyl chloride"
+    },
+    "plausible": {
+     "fields": {
+      "molecular_weight": 135.15,
+      "heavy_atom_count": 10
+     },
+     "clean_value": 180.2,
+     "corrupted_value": 135.15,
+     "factor": 0.75,
+     "direction": "shrink",
+     "implied": "Phenylacetyl chloride"
+    },
+    "coherent_impossible": {
+     "fields": {
+      "molecular_weight": 16.04,
+      "heavy_atom_count": 1,
+      "h_bond_donors": 0,
+      "smiles": "C",
+      "formula": "CH4",
+      "iupac_name": "methane"
+     },
+     "clean_value": 180.2,
+     "corrupted_value": 16.04,
+     "coherent": true,
+     "swap_source": null,
+     "implied": "Phenylacetyl chloride"
+    },
+    "coherent_plausible": {
+     "fields": {
+      "molecular_weight": 141.06,
+      "heavy_atom_count": 8,
+      "h_bond_donors": 3,
+      "smiles": "C(COP(=O)(O)O)N",
+      "formula": "C2H8NO4P",
+      "iupac_name": "2-aminoethyl dihydrogen phosphate"
+     },
+     "clean_value": 180.2,
+     "corrupted_value": 141.06,
+     "coherent": true,
+     "swap_source": 1015,
+     "implied": "Phenylacetyl chloride"
+    }
+   },
+   "gold": "Aminomatacil",
+   "prompt": "Which is heavier, Phenylacetyl chloride or Aminomatacil? Give the name and both molecular weights in Da. Put only the name of the heavier compound in the JSON \"answer\" field.",
+   "task_id": "c072",
+   "direction": "shrink"
+  },
+  {
+   "template": "heavy_atom_threshold",
+   "target_field": "heavy_atom_count",
+   "target_accession": "8809",
+   "accessions": [
+    "8809"
+   ],
+   "params": {
+    "accession": "8809",
+    "threshold": 19
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "heavy_atom_count": 0
+     },
+     "clean_value": 21,
+     "corrupted_value": 0,
+     "factor": null,
+     "direction": "shrink",
+     "implied": "no"
+    },
+    "plausible": {
+     "fields": {
+      "molecular_weight": 267.92,
+      "heavy_atom_count": 17
+     },
+     "clean_value": 21,
+     "corrupted_value": 17,
+     "factor": 0.8,
+     "direction": "shrink",
+     "implied": "no"
+    },
+    "coherent_impossible": {
+     "fields": {
+      "molecular_weight": 16.04,
+      "heavy_atom_count": 1,
+      "h_bond_donors": 0,
+      "smiles": "C",
+      "formula": "CH4",
+      "iupac_name": "methane"
+     },
+     "clean_value": 21,
+     "corrupted_value": 1,
+     "coherent": true,
+     "swap_source": null,
+     "implied": "no"
+    },
+    "coherent_plausible": {
+     "fields": {
+      "molecular_weight": 277.28,
+      "heavy_atom_count": 15,
+      "h_bond_donors": 0,
+      "smiles": "CCCCCCCCCCCCCCBr",
+      "formula": "C14H29Br",
+      "iupac_name": "1-bromotetradecane"
+     },
+     "clean_value": 21,
+     "corrupted_value": 15,
+     "coherent": true,
+     "swap_source": 8208,
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 8809 have more than 19 heavy atoms? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "c073",
+   "direction": "shrink"
+  },
+  {
+   "template": "weight_comparison",
+   "target_field": "molecular_weight",
+   "target_accession": "28315",
+   "accessions": [
+    "9142",
+    "28315"
+   ],
+   "params": {
+    "name_A": "Perylene",
+    "name_B": "Desmonomethylpromazine",
+    "acc_A": "9142",
+    "acc_B": "28315"
+   },
+   "answer_type": "string",
+   "n_calls_expected": 2,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "molecular_weight": 2.0
+     },
+     "clean_value": 270.4,
+     "corrupted_value": 2.0,
+     "factor": null,
+     "direction": "shrink",
+     "implied": "Perylene"
+    },
+    "plausible": {
+     "fields": {
+      "molecular_weight": 216.32,
+      "heavy_atom_count": 15
+     },
+     "clean_value": 270.4,
+     "corrupted_value": 216.32,
+     "factor": 0.8,
+     "direction": "shrink",
+     "implied": "Perylene"
+    },
+    "coherent_impossible": {
+     "fields": {
+      "molecular_weight": 16.04,
+      "heavy_atom_count": 1,
+      "h_bond_donors": 0,
+      "smiles": "C",
+      "formula": "CH4",
+      "iupac_name": "methane"
+     },
+     "clean_value": 270.4,
+     "corrupted_value": 16.04,
+     "coherent": true,
+     "swap_source": null,
+     "implied": "Perylene"
+    },
+    "coherent_plausible": {
+     "fields": {
+      "molecular_weight": 216.27,
+      "heavy_atom_count": 15,
+      "h_bond_donors": 0,
+      "smiles": "CCOC(=O)C(CC(C)C)C(=O)OCC",
+      "formula": "C11H20O4",
+      "iupac_name": "diethyl 2-(2-methylpropyl)propanedioate"
+     },
+     "clean_value": 270.4,
+     "corrupted_value": 216.27,
+     "coherent": true,
+     "swap_source": 25047,
+     "implied": "Perylene"
+    }
+   },
+   "gold": "Desmonomethylpromazine",
+   "prompt": "Which is heavier, Perylene or Desmonomethylpromazine? Give the name and both molecular weights in Da. Put only the name of the heavier compound in the JSON \"answer\" field.",
+   "task_id": "c080",
+   "direction": "shrink"
+  },
+  {
+   "template": "heavy_atom_threshold",
+   "target_field": "heavy_atom_count",
+   "target_accession": "10364",
+   "accessions": [
+    "10364"
+   ],
+   "params": {
+    "accession": "10364",
+    "threshold": 9
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "heavy_atom_count": 0
+     },
+     "clean_value": 11,
+     "corrupted_value": 0,
+     "factor": null,
+     "direction": "shrink",
+     "implied": "no"
+    },
+    "plausible": {
+     "fields": {
+      "molecular_weight": 112.66,
+      "heavy_atom_count": 8
+     },
+     "clean_value": 11,
+     "corrupted_value": 8,
+     "factor": 0.75,
+     "direction": "shrink",
+     "implied": "no"
+    },
+    "coherent_impossible": {
+     "fields": {
+      "molecular_weight": 16.04,
+      "heavy_atom_count": 1,
+      "h_bond_donors": 0,
+      "smiles": "C",
+      "formula": "CH4",
+      "iupac_name": "methane"
+     },
+     "clean_value": 11,
+     "corrupted_value": 1,
+     "coherent": true,
+     "swap_source": null,
+     "implied": "no"
+    },
+    "coherent_plausible": {
+     "fields": {
+      "molecular_weight": 117.11,
+      "heavy_atom_count": 8,
+      "h_bond_donors": 3,
+      "smiles": "C(C(=O)O)N=C(N)N",
+      "formula": "C3H7N3O2",
+      "iupac_name": "2-(diaminomethylideneamino)acetic acid"
+     },
+     "clean_value": 11,
+     "corrupted_value": 8,
+     "coherent": true,
+     "swap_source": 763,
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 10364 have more than 9 heavy atoms? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "c081",
+   "direction": "shrink"
+  },
+  {
+   "template": "heavy_atom_threshold",
+   "target_field": "heavy_atom_count",
+   "target_accession": "2753",
+   "accessions": [
+    "2753"
+   ],
+   "params": {
+    "accession": "2753",
+    "threshold": 22
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "heavy_atom_count": 0
+     },
+     "clean_value": 25,
+     "corrupted_value": 0,
+     "factor": null,
+     "direction": "shrink",
+     "implied": "no"
+    },
+    "plausible": {
+     "fields": {
+      "molecular_weight": 256.8,
+      "heavy_atom_count": 19
+     },
+     "clean_value": 25,
+     "corrupted_value": 19,
+     "factor": 0.75,
+     "direction": "shrink",
+     "implied": "no"
+    },
+    "coherent_impossible": {
+     "fields": {
+      "molecular_weight": 16.04,
+      "heavy_atom_count": 1,
+      "h_bond_donors": 0,
+      "smiles": "C",
+      "formula": "CH4",
+      "iupac_name": "methane"
+     },
+     "clean_value": 25,
+     "corrupted_value": 1,
+     "coherent": true,
+     "swap_source": null,
+     "implied": "no"
+    },
+    "coherent_plausible": {
+     "fields": {
+      "molecular_weight": 282.29,
+      "heavy_atom_count": 21,
+      "h_bond_donors": 1,
+      "smiles": "C1=CC=C(C=C1)CN2C3=CC=CC=C3C(=N2)OCC(=O)O",
+      "formula": "C16H14N2O3",
+      "iupac_name": "2-(1-benzylindazol-3-yl)oxyacetic acid"
+     },
+     "clean_value": 25,
+     "corrupted_value": 21,
+     "coherent": true,
+     "swap_source": 2313,
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 2753 have more than 22 heavy atoms? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "c097",
+   "direction": "shrink"
+  }
+ ]
+}

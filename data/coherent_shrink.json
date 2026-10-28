@@ -1,0 +1,3708 @@
+{
+ "seed": 1,
+ "n_tasks": 50,
+ "proteins": "data/proteins_v2.json",
+ "alternate_direction": true,
+ "tasks": [
+  {
+   "template": "length_ratio",
+   "target_field": "length",
+   "target_accession": "O15120",
+   "accessions": [
+    "P0DTE4",
+    "O15120"
+   ],
+   "params": {
+    "gene_A": "UGT2A1",
+    "gene_B": "AGPAT2",
+    "acc_A": "P0DTE4",
+    "acc_B": "O15120"
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 2,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "length": 3
+     },
+     "clean_value": 278,
+     "corrupted_value": 3,
+     "factor": null,
+     "direction": "shrink",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "length": 222,
+      "mass": 24731
+     },
+     "clean_value": 278,
+     "corrupted_value": 222,
+     "factor": 0.8,
+     "direction": "shrink",
+     "implied": "yes"
+    },
+    "coherent_impossible": {
+     "fields": {
+      "length": 3,
+      "mass": 391
+     },
+     "clean_value": 278,
+     "corrupted_value": 3,
+     "factor": null,
+     "full_patch": {
+      "sequence": "MEL",
+      "mass": 391
+     },
+     "coherent": true,
+     "implied": "yes"
+    },
+    "coherent_plausible": {
+     "fields": {
+      "length": 222,
+      "mass": 25174
+     },
+     "clean_value": 278,
+     "corrupted_value": 222,
+     "factor": 0.8,
+     "full_patch": {
+      "sequence": "MELWPCLAAALLLLLLLVQLSRAAEFYAKVALYCALCFTVSAVASLVCLLRHGGRTVENMSIIGWFVRSFKYFYGLRFEVRDPRRLQEARPCVIVSNHQSILDMMGLMEVLPERCVQIAKRELLFLGPVGLIMYLGGVFFINRQRSSTAMTVMADLGERMVRENLKVWIYPEGTRNDNGDLLPFKKGAFYLAVQAQVPIVPVVYSSFSSFYNTKKKFFTSGT",
+      "mass": 25174
+     },
+     "coherent": true,
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Is UGT2A1 at least twice as long as AGPAT2? Answer yes or no with both lengths. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "u000",
+   "direction": "shrink"
+  },
+  {
+   "template": "mass_comparison",
+   "target_field": "mass",
+   "target_accession": "Q8WW24",
+   "accessions": [
+    "O75554",
+    "Q8WW24"
+   ],
+   "params": {
+    "gene_A": "WBP4",
+    "gene_B": "TEKT4",
+    "acc_A": "O75554",
+    "acc_B": "Q8WW24"
+   },
+   "answer_type": "string",
+   "n_calls_expected": 2,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "mass": -50649
+     },
+     "clean_value": 50649,
+     "corrupted_value": -50649,
+     "factor": null,
+     "direction": "shrink",
+     "implied": "WBP4"
+    },
+    "plausible": {
+     "fields": {
+      "length": 326,
+      "mass": 37987
+     },
+     "clean_value": 50649,
+     "corrupted_value": 37987,
+     "factor": 0.75,
+     "direction": "shrink",
+     "implied": "WBP4"
+    },
+    "coherent_impossible": {
+     "fields": {
+      "length": 3,
+      "mass": 348
+     },
+     "clean_value": 50649,
+     "corrupted_value": 348,
+     "factor": null,
+     "full_patch": {
+      "sequence": "MAQ",
+      "mass": 348
+     },
+     "coherent": true,
+     "implied": "WBP4"
+    },
+    "coherent_plausible": {
+     "fields": {
+      "length": 326,
+      "mass": 37944
+     },
+     "clean_value": 50649,
+     "corrupted_value": 37944,
+     "factor": 0.75,
+     "full_patch": {
+      "sequence": "MAQTVPPCELPCKEYDVARNTGAYTSSGLATASFRTSKYLLEEWFQNCYARYHQAFADRDQSERQRHESQQLATETQALAQRTQQDSTRTVGERLQDTHSWKSELQREMEALAAETNLLLAQKQRLERALDATEVPFSITTDNLQCRERREHPNLVRDHVETELLKEAELIRNIQELLKRTIMQAVSQIRLNREHKETCEMDWSDKMEAYNIDETCGRHHSQSTEVQAHPYSTTFQESASTPETRAKFTQDNLCRAQRERLASANLRVLVDCILRDTSEDLRLQCDAVNLAFGRRCEELEDARYKLHHHLHKTLREITDQEHNVAA",
+      "mass": 37944
+     },
+     "coherent": true,
+     "implied": "WBP4"
+    }
+   },
+   "gold": "TEKT4",
+   "prompt": "Which is heavier, the protein encoded by WBP4 or TEKT4? Give the gene symbol and both masses in kDa. Put only the gene symbol of the heavier protein in the JSON \"answer\" field.",
+   "task_id": "u001",
+   "direction": "shrink"
+  },
+  {
+   "template": "length_ratio",
+   "target_field": "length",
+   "target_accession": "O75175",
+   "accessions": [
+    "O75175",
+    "Q9BY42"
+   ],
+   "params": {
+    "gene_A": "CNOT3",
+    "gene_B": "RTF2",
+    "acc_A": "O75175",
+    "acc_B": "Q9BY42"
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 2,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "length": 3
+     },
+     "clean_value": 753,
+     "corrupted_value": 3,
+     "factor": null,
+     "direction": "shrink",
+     "implied": "no"
+    },
+    "plausible": {
+     "fields": {
+      "length": 565,
+      "mass": 61404
+     },
+     "clean_value": 753,
+     "corrupted_value": 565,
+     "factor": 0.75,
+     "direction": "shrink",
+     "implied": "no"
+    },
+    "coherent_impossible": {
+     "fields": {
+      "length": 3,
+      "mass": 335
+     },
+     "clean_value": 753,
+     "corrupted_value": 3,
+     "factor": null,
+     "full_patch": {
+      "sequence": "MAD",
+      "mass": 335
+     },
+     "coherent": true,
+     "implied": "no"
+    },
+    "coherent_plausible": {
+     "fields": {
+      "length": 565,
+      "mass": 59538
+     },
+     "clean_value": 753,
+     "corrupted_value": 565,
+     "factor": 0.75,
+     "full_patch": {
+      "sequence": "MADKRKLQGEIDRCLKKVSEGVEQFEDIWQKLHNAANANQKEKYEADLKKEIKKLQRLRDQIKTWVASNEIKDKRQLIDNRKLIETQMERFKVVERETKTKAYSKEGLGLAQKVDPAQKEKEEVGQWLTNTIDTLNMQVDQFESEVESLSVQTRKKKGDKDKQDRIEGLKRHIEKHRYHVRMLETILRMLDNDSILVDAIRKIKDDVEYYVDSSQDPDFEENEFLYDDLDLEDIPQALVATSPPSHSHMEDEIFNQSSSTPTSTTSSSPIPPSPANCTTENSEDDKKRGRSTDSEVSQSPAKNGSKPVHSNQHPQSPAVPPTYPSGPPPAASALSTTPGNNGVPAPAAPPSALGPKASPAPSHNSGTPAPYAQAVAPPAPSGPSTTQPRPPSVQPSGGGGGGSGGGGSSSSSNSSAGGGAGKQNGATSYSSVVADSPAEVALSSSGGNNASSQALGPPSGPHNPPPSTSKEPSAAAPTGAGGVAPGSGNNSGGPSLLVPLPVNPPSSPTPSFSDAKAAGALLNGPPQFSTAPEIKAPEPLSSLKSMAERAAISSGIEDPVPTLHL",
+      "mass": 59538
+     },
+     "coherent": true,
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Is CNOT3 at least twice as long as RTF2? Answer yes or no with both lengths. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "u008",
+   "direction": "shrink"
+  },
+  {
+   "template": "mass_comparison",
+   "target_field": "mass",
+   "target_accession": "Q9UGP5",
+   "accessions": [
+    "Q8TDF5",
+    "Q9UGP5"
+   ],
+   "params": {
+    "gene_A": "NETO1",
+    "gene_B": "POLL",
+    "acc_A": "Q8TDF5",
+    "acc_B": "Q9UGP5"
+   },
+   "answer_type": "string",
+   "n_calls_expected": 2,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "mass": -63482
+     },
+     "clean_value": 63482,
+     "corrupted_value": -63482,
+     "factor": null,
+     "direction": "shrink",
+     "implied": "NETO1"
+    },
+    "plausible": {
+     "fields": {
+      "length": 431,
+      "mass": 47612
+     },
+     "clean_value": 63482,
+     "corrupted_value": 47612,
+     "factor": 0.75,
+     "direction": "shrink",
+     "implied": "NETO1"
+    },
+    "coherent_impossible": {
+     "fields": {
+      "length": 3,
+      "mass": 361
+     },
+     "clean_value": 63482,
+     "corrupted_value": 361,
+     "factor": null,
+     "full_patch": {
+      "sequence": "MDP",
+      "mass": 361
+     },
+     "coherent": true,
+     "implied": "NETO1"
+    },
+    "coherent_plausible": {
+     "fields": {
+      "length": 431,
+      "mass": 47271
+     },
+     "clean_value": 63482,
+     "corrupted_value": 47271,
+     "factor": 0.75,
+     "full_patch": {
+      "sequence": "MDPRGILKAFPKRQKIHADASSKVLAKIPRREEGEEAEEWLSSLRAHVVRTGIGRARAELFEKQIVQHGGQLCPAQGPGVTHIVVDEGMDYERALRLLRLPQLPPGAQLVKSAWLSLCLQERRLVDVAGFSIFIPSRYLDHPQPSKAEQDASIPPGTHEALLQTALSPPPPPTRPVSPPQKAKEAPNTQAQPISDDEASDGEETQVSAADLEALISGHYPTSLEGDCEPSPAPAVLDKWVCAQPSSQKATNHNLHITEKLEVLAKAYSVQGDKWRALGYAKAINALKSFHKPVTSYQEACSIPGIGKRMAEKIIEILESGHLRKLDHISESVPVLELFSNIWGAGTKTAQMWYQQGFRSLEDIRSQASLTTQQAIGLKHYSDFLERMPREEATEIEQTVQKAAQAFNSGLLCVACGSYRRGKATCGDVDVL",
+      "mass": 47271
+     },
+     "coherent": true,
+     "implied": "NETO1"
+    }
+   },
+   "gold": "POLL",
+   "prompt": "Which is heavier, the protein encoded by NETO1 or POLL? Give the gene symbol and both masses in kDa. Put only the gene symbol of the heavier protein in the JSON \"answer\" field.",
+   "task_id": "u009",
+   "direction": "shrink"
+  },
+  {
+   "template": "length_ratio",
+   "target_field": "length",
+   "target_accession": "Q9ULV1",
+   "accessions": [
+    "Q9ULV1",
+    "P57088"
+   ],
+   "params": {
+    "gene_A": "FZD4",
+    "gene_B": "TMEM33",
+    "acc_A": "Q9ULV1",
+    "acc_B": "P57088"
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 2,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "length": 3
+     },
+     "clean_value": 537,
+     "corrupted_value": 3,
+     "factor": null,
+     "direction": "shrink",
+     "implied": "no"
+    },
+    "plausible": {
+     "fields": {
+      "length": 403,
+      "mass": 44911
+     },
+     "clean_value": 537,
+     "corrupted_value": 403,
+     "factor": 0.75,
+     "direction": "shrink",
+     "implied": "no"
+    },
+    "coherent_impossible": {
+     "fields": {
+      "length": 3,
+      "mass": 406
+     },
+     "clean_value": 537,
+     "corrupted_value": 3,
+     "factor": null,
+     "full_patch": {
+      "sequence": "MAW",
+      "mass": 406
+     },
+     "coherent": true,
+     "implied": "no"
+    },
+    "coherent_plausible": {
+     "fields": {
+      "length": 403,
+      "mass": 44825
+     },
+     "clean_value": 537,
+     "corrupted_value": 403,
+     "factor": 0.75,
+     "full_patch": {
+      "sequence": "MAWRGAGPSVPGAPGGVGLSLGLLLQLLLLLGPARGFGDEEERRCDPIRISMCQNLGYNVTKMPNLVGHELQTDAELQLTTFTPLIQYGCSSQLQFFLCSVYVPMCTEKINIPIGPCGGMCLSVKRRCEPVLKEFGFAWPESLNCSKFPPQNDHNHMCMEGPGDEEVPLPHKTPIQPGEECHSVGTNSDQYIWVKRSLNCVLKCGYDAGLYSRSAKEFTDIWMAVWASLCFISTAFTVLTFLIDSSRFSYPERPIIFLSMCYNIYSIAYIVRLTVGRERISCDFEEAAEPVLIQEGLKNTGCAIIFLLMYFFGMASSIWWVILTLTWFLAAGLKWGHEAIEMHSSYFHIAAWAIPAVKTIVILIMRLVDADELTGLCYVGNQNLDALTGFVVAPLFTYLVIGT",
+      "mass": 44825
+     },
+     "coherent": true,
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Is FZD4 at least twice as long as TMEM33? Answer yes or no with both lengths. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "u016",
+   "direction": "shrink"
+  },
+  {
+   "template": "mass_comparison",
+   "target_field": "mass",
+   "target_accession": "P36871",
+   "accessions": [
+    "Q9BVA6",
+    "P36871"
+   ],
+   "params": {
+    "gene_A": "FICD",
+    "gene_B": "PGM1",
+    "acc_A": "Q9BVA6",
+    "acc_B": "P36871"
+   },
+   "answer_type": "string",
+   "n_calls_expected": 2,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "mass": 45
+     },
+     "clean_value": 61449,
+     "corrupted_value": 45,
+     "factor": null,
+     "direction": "shrink",
+     "implied": "FICD"
+    },
+    "plausible": {
+     "fields": {
+      "length": 450,
+      "mass": 49159
+     },
+     "clean_value": 61449,
+     "corrupted_value": 49159,
+     "factor": 0.8,
+     "direction": "shrink",
+     "implied": "FICD"
+    },
+    "coherent_impossible": {
+     "fields": {
+      "length": 3,
+      "mass": 377
+     },
+     "clean_value": 61449,
+     "corrupted_value": 377,
+     "factor": null,
+     "full_patch": {
+      "sequence": "MVK",
+      "mass": 377
+     },
+     "coherent": true,
+     "implied": "FICD"
+    },
+    "coherent_plausible": {
+     "fields": {
+      "length": 450,
+      "mass": 49137
+     },
+     "clean_value": 61449,
+     "corrupted_value": 49137,
+     "factor": 0.8,
+     "full_patch": {
+      "sequence": "MVKIVTVKTQAYQDQKPGTSGLRKRVKVFQSSANYAENFIQSIISTVEPAQRQEATLVVGGDGRFYMKEAIQLIARIAAANGIGRLVIGQNGILSTPAVSCIIRKIKAIGGIILTASHNPGGPNGDFGIKFNISNGGPAPEAITDKIFQISKTIEEYAVCPDLKVDLGVLGKQQFDLENKFKPFTVEIVDSVEAYATMLRSIFDFSALKELLSGPNRLKIRIDAMHGVVGPYVKKILCEELGAPANSAVNCVPLEDFGGHHPDPNLTYAADLVETMKSGEHDFGAAFDGDGDRNMILGKHGFFVNPSDSVAVIAANIFSIPYFQQTGVRGFARSMPTSGALDRVASATKIALYETPTGWKFFGNLMDASKLSLCGEESFGTGSDHIREKDGLWAVLAWLSILATRKQSVEDILKDHWQKYGRNFFTRYDYEEVEAEGANKMMKDLEALMF",
+      "mass": 49137
+     },
+     "coherent": true,
+     "implied": "FICD"
+    }
+   },
+   "gold": "PGM1",
+   "prompt": "Which is heavier, the protein encoded by FICD or PGM1? Give the gene symbol and both masses in kDa. Put only the gene symbol of the heavier protein in the JSON \"answer\" field.",
+   "task_id": "u017",
+   "direction": "shrink"
+  },
+  {
+   "template": "length_ratio",
+   "target_field": "length",
+   "target_accession": "O14613",
+   "accessions": [
+    "O75554",
+    "O14613"
+   ],
+   "params": {
+    "gene_A": "WBP4",
+    "gene_B": "CDC42EP2",
+    "acc_A": "O75554",
+    "acc_B": "O14613"
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 2,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "length": 3
+     },
+     "clean_value": 210,
+     "corrupted_value": 3,
+     "factor": null,
+     "direction": "shrink",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "length": 168,
+      "mass": 17987
+     },
+     "clean_value": 210,
+     "corrupted_value": 168,
+     "factor": 0.8,
+     "direction": "shrink",
+     "implied": "yes"
+    },
+    "coherent_impossible": {
+     "fields": {
+      "length": 3,
+      "mass": 337
+     },
+     "clean_value": 210,
+     "corrupted_value": 3,
+     "factor": null,
+     "full_patch": {
+      "sequence": "MST",
+      "mass": 337
+     },
+     "coherent": true,
+     "implied": "yes"
+    },
+    "coherent_plausible": {
+     "fields": {
+      "length": 168,
+      "mass": 17932
+     },
+     "clean_value": 210,
+     "corrupted_value": 168,
+     "factor": 0.8,
+     "full_patch": {
+      "sequence": "MSTKVPIYLKRGSRKGKKEKLRDLLSSDMISPPLGDFRHTIHIGSGGGSDMFGDISFLQGKFHLLPGTMVEGPEEDGTFDLPFQFTRTATVCGRELPDGPSPLLKNAISLPVIGGPQALTLPTAQAPPKPPRLHLETPQPSPQEGGSVDIWRIPETGSPNSGLTPESG",
+      "mass": 17932
+     },
+     "coherent": true,
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Is WBP4 at least twice as long as CDC42EP2? Answer yes or no with both lengths. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "u024",
+   "direction": "shrink"
+  },
+  {
+   "template": "mass_comparison",
+   "target_field": "mass",
+   "target_accession": "P07355",
+   "accessions": [
+    "Q96LJ8",
+    "P07355"
+   ],
+   "params": {
+    "gene_A": "UBXN10",
+    "gene_B": "ANXA2",
+    "acc_A": "Q96LJ8",
+    "acc_B": "P07355"
+   },
+   "answer_type": "string",
+   "n_calls_expected": 2,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "mass": -38604
+     },
+     "clean_value": 38604,
+     "corrupted_value": -38604,
+     "factor": null,
+     "direction": "shrink",
+     "implied": "UBXN10"
+    },
+    "plausible": {
+     "fields": {
+      "length": 254,
+      "mass": 28953
+     },
+     "clean_value": 38604,
+     "corrupted_value": 28953,
+     "factor": 0.75,
+     "direction": "shrink",
+     "implied": "UBXN10"
+    },
+    "coherent_impossible": {
+     "fields": {
+      "length": 3,
+      "mass": 337
+     },
+     "clean_value": 38604,
+     "corrupted_value": 337,
+     "factor": null,
+     "full_patch": {
+      "sequence": "MST",
+      "mass": 337
+     },
+     "coherent": true,
+     "implied": "UBXN10"
+    },
+    "coherent_plausible": {
+     "fields": {
+      "length": 254,
+      "mass": 28606
+     },
+     "clean_value": 38604,
+     "corrupted_value": 28606,
+     "factor": 0.75,
+     "full_patch": {
+      "sequence": "MSTVHEILCKLSLEGDHSTPPSAYGSVKAYTNFDAERDALNIETAIKTKGVDEVTIVNILTNRSNAQRQDIAFAYQRRTKKELASALKSALSGHLETVILGLLKTPAQYDASELKASMKGLGTDEDSLIEIICSRTNQELQEINRVYKEMYKTDLEKDIISDTSGDFRKLMVALAKGRRAEDGSVIDYELIDQDARDLYDAGVKRKGTDVPKWISIMTERSVPHLQKVFDRYKSYSPYDMLESIRKEVKGDLEN",
+      "mass": 28606
+     },
+     "coherent": true,
+     "implied": "UBXN10"
+    }
+   },
+   "gold": "ANXA2",
+   "prompt": "Which is heavier, the protein encoded by UBXN10 or ANXA2? Give the gene symbol and both masses in kDa. Put only the gene symbol of the heavier protein in the JSON \"answer\" field.",
+   "task_id": "u025",
+   "direction": "shrink"
+  },
+  {
+   "template": "length_ratio",
+   "target_field": "length",
+   "target_accession": "Q9NP71",
+   "accessions": [
+    "Q9NP71",
+    "P53365"
+   ],
+   "params": {
+    "gene_A": "MLXIPL",
+    "gene_B": "ARFIP2",
+    "acc_A": "Q9NP71",
+    "acc_B": "P53365"
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 2,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "length": 3
+     },
+     "clean_value": 852,
+     "corrupted_value": 3,
+     "factor": null,
+     "direction": "shrink",
+     "implied": "no"
+    },
+    "plausible": {
+     "fields": {
+      "length": 639,
+      "mass": 69805
+     },
+     "clean_value": 852,
+     "corrupted_value": 639,
+     "factor": 0.75,
+     "direction": "shrink",
+     "implied": "no"
+    },
+    "coherent_impossible": {
+     "fields": {
+      "length": 3,
+      "mass": 277
+     },
+     "clean_value": 852,
+     "corrupted_value": 3,
+     "factor": null,
+     "full_patch": {
+      "sequence": "MAG",
+      "mass": 277
+     },
+     "coherent": true,
+     "implied": "no"
+    },
+    "coherent_plausible": {
+     "fields": {
+      "length": 639,
+      "mass": 68914
+     },
+     "clean_value": 852,
+     "corrupted_value": 639,
+     "factor": 0.75,
+     "full_patch": {
+      "sequence": "MAGALAGLAAGLQVPRVAPSPDSDSDTDSEDPSLRRSAGGLLRSQVIHSGHFMVSSPHSDSLPRRRDQEGSVGPSDFGPRSIDPTLTRLFECLSLAYSGKLVSPKWKNFKGLKLLCRDKIRLNNAIWRAWYIQYVKRRKSPVCGFVTPLQGPEADAHRKPEAVVLEGNYWKRRIEVVMREYHKWRIYYKKRLRKPSREDDLLAPKQAEGRWPPPEQWCKQLFSSVVPVLLGDPEEEPGGRQLLDLNCFLSDISDTLFTMTQSGPSPLQLPPEDAYVGNADMIQPDLTPLQPSLDDFMDISDFFTNSRLPQPPMPSNFPEPPSFSPVVDSLFSSGTLGPEVPPASSAMTHLSGHSRLQARNSCPGPLDSSAFLSSDFLLPEDPKPRLPPPPVPPPLLHYPPPAKVPGLEPCPPPPFPPMAPPTALLQEEPLFSPRFPFPTVPPAPGVSPLPAPAAFPPTPQSVPSPAPTPFPIELLPLGYSEPAFGPCFSMPRGKPPAPSPRGQKASPPTLAPATASPPTTAGSNNPCLTQLLTAAKPEQALEPPLVSSTLLRSPGSPQETVPEFPCTFLPPTPAPTPPRPPPGPATLAPSRPLLVPKAERLSPPAPSGSERRLSGDLSSMPGPGTLSVRVSPPQPILSR",
+      "mass": 68914
+     },
+     "coherent": true,
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Is MLXIPL at least twice as long as ARFIP2? Answer yes or no with both lengths. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "u032",
+   "direction": "shrink"
+  },
+  {
+   "template": "mass_comparison",
+   "target_field": "mass",
+   "target_accession": "Q8WUI4",
+   "accessions": [
+    "Q96DT7",
+    "Q8WUI4"
+   ],
+   "params": {
+    "gene_A": "ZBTB10",
+    "gene_B": "HDAC7",
+    "acc_A": "Q96DT7",
+    "acc_B": "Q8WUI4"
+   },
+   "answer_type": "string",
+   "n_calls_expected": 2,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "mass": -102927
+     },
+     "clean_value": 102927,
+     "corrupted_value": -102927,
+     "factor": null,
+     "direction": "shrink",
+     "implied": "ZBTB10"
+    },
+    "plausible": {
+     "fields": {
+      "length": 762,
+      "mass": 82342
+     },
+     "clean_value": 102927,
+     "corrupted_value": 82342,
+     "factor": 0.8,
+     "direction": "shrink",
+     "implied": "ZBTB10"
+    },
+    "coherent_impossible": {
+     "fields": {
+      "length": 3,
+      "mass": 377
+     },
+     "clean_value": 102927,
+     "corrupted_value": 377,
+     "factor": null,
+     "full_patch": {
+      "sequence": "MDL",
+      "mass": 377
+     },
+     "coherent": true,
+     "implied": "ZBTB10"
+    },
+    "coherent_plausible": {
+     "fields": {
+      "length": 762,
+      "mass": 82703
+     },
+     "clean_value": 102927,
+     "corrupted_value": 82703,
+     "factor": 0.8,
+     "full_patch": {
+      "sequence": "MDLRVGQRPPVEPPPEPTLLALQRPQRLHHHLFLAGLQQQRSVEPMRLSMDTPMPELQVGPQEQELRQLLHKDKSKRSAVASSVVKQKLAEVILKKQQAALERTVHPNSPGIPYRTLEPLETEGATRSMLSSFLPPVPSLPSDPPEHFPLRKTVSEPNLKLRYKPKKSLERRKNPLLRKESAPPSLRRRPAETLGDSSPSSSSTPASGCSSPNDSEHGPNPILGSEALLGQRLRLQETSVAPFALPTVSLLPAITLGLPAPARADSDRRTHPTLGPRGPILGSPHTPLFLPHGLEPEAGGTLPSRLQPILLLDPSGSHAPLLTVPGLGPLPFHFAQSLMTTERLSGSGLHWPLSRTRSEPLPPSATAPPPPGPMQPRLEQLKTHVQVIKRSAKPSEKPRLRQIPSAEDLETDGGGPGQVVDDGLEHRELGHGQPEARGPAPLQQHPQVLLWEQQRLAGRLPRGSTGDTVLLPLAQGGHRPLSRAQSSPAAPASLSAPEPASQARVLSSSETPARTLPFTTGLIYDSVMLKHQCSCGDNSRHPEHAGRIQSIWSRLQERGLRSQCECLRGRKASLEELQSVHSERHVLLYGTNPLSRLKLDNGKLAGLLAQRMFVMLPCGGVGVDTDTIWNELHSSNAARWAAGSVTDLAFKVASRELKNGFAVVRPPGHHADHSTAMGFCFFNSVAIACRQLQQQSKASKILIVDWDVHHGNGTQQTFYQDPSVLYISLHRHDDGNFFPGSGAVDEVGAGSGEGFNVNVAWA",
+      "mass": 82703
+     },
+     "coherent": true,
+     "implied": "ZBTB10"
+    }
+   },
+   "gold": "HDAC7",
+   "prompt": "Which is heavier, the protein encoded by ZBTB10 or HDAC7? Give the gene symbol and both masses in kDa. Put only the gene symbol of the heavier protein in the JSON \"answer\" field.",
+   "task_id": "u033",
+   "direction": "shrink"
+  },
+  {
+   "template": "length_ratio",
+   "target_field": "length",
+   "target_accession": "Q14392",
+   "accessions": [
+    "Q92833",
+    "Q14392"
+   ],
+   "params": {
+    "gene_A": "JARID2",
+    "gene_B": "LRRC32",
+    "acc_A": "Q92833",
+    "acc_B": "Q14392"
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 2,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "length": 3
+     },
+     "clean_value": 662,
+     "corrupted_value": 3,
+     "factor": null,
+     "direction": "shrink",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "length": 530,
+      "mass": 57583
+     },
+     "clean_value": 662,
+     "corrupted_value": 530,
+     "factor": 0.8,
+     "direction": "shrink",
+     "implied": "yes"
+    },
+    "coherent_impossible": {
+     "fields": {
+      "length": 3,
+      "mass": 403
+     },
+     "clean_value": 662,
+     "corrupted_value": 3,
+     "factor": null,
+     "full_patch": {
+      "sequence": "MRP",
+      "mass": 403
+     },
+     "coherent": true,
+     "implied": "yes"
+    },
+    "coherent_plausible": {
+     "fields": {
+      "length": 530,
+      "mass": 57458
+     },
+     "clean_value": 662,
+     "corrupted_value": 530,
+     "factor": 0.8,
+     "full_patch": {
+      "sequence": "MRPQILLLLALLTLGLAAQHQDKVPCKMVDKKVSCQVLGLLQVPSVLPPDTETLDLSGNQLRSILASPLGFYTALRHLDLSTNEISFLQPGAFQALTHLEHLSLAHNRLAMATALSAGGLGPLPRVTSLDLSGNSLYSGLLERLLGEAPSLHTLSLAENSLTRLTRHTFRDMPALEQLDLHSNVLMDIEDGAFEGLPRLTHLNLSRNSLTCISDFSLQQLRVLDLSCNSIEAFQTASQPQAEFQLTWLDLRENKLLHFPDLAALPRLIYLNLSNNLIRLPTGPPQDSKGIHAPSEGWSALPLSAPSGNASGRPLSQLLNLDLSYNEIELIPDSFLEHLTSLCFLNLSRNCLRTFEARRLGSLPCLMLLDLSHNALETLELGARALGSLRTLLLQGNALRDLPPYTFANLASLQRLNLQGNRVSPCGGPDEPGPSGCVAFSGITSLRSLSLVDNEIELLRAGAFLHTPLTELDLSSNPGLEVATGALGGLEASLEVLALQGNGLMVLQVDLPCFICLKRLNLAENRLSHLP",
+      "mass": 57458
+     },
+     "coherent": true,
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Is JARID2 at least twice as long as LRRC32? Answer yes or no with both lengths. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "u040",
+   "direction": "shrink"
+  },
+  {
+   "template": "mass_comparison",
+   "target_field": "mass",
+   "target_accession": "P32942",
+   "accessions": [
+    "P18089",
+    "P32942"
+   ],
+   "params": {
+    "gene_A": "ADRA2B",
+    "gene_B": "ICAM3",
+    "acc_A": "P18089",
+    "acc_B": "P32942"
+   },
+   "answer_type": "string",
+   "n_calls_expected": 2,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "mass": -59541
+     },
+     "clean_value": 59541,
+     "corrupted_value": -59541,
+     "factor": null,
+     "direction": "shrink",
+     "implied": "ADRA2B"
+    },
+    "plausible": {
+     "fields": {
+      "length": 410,
+      "mass": 44656
+     },
+     "clean_value": 59541,
+     "corrupted_value": 44656,
+     "factor": 0.75,
+     "direction": "shrink",
+     "implied": "ADRA2B"
+    },
+    "coherent_impossible": {
+     "fields": {
+      "length": 3,
+      "mass": 321
+     },
+     "clean_value": 59541,
+     "corrupted_value": 321,
+     "factor": null,
+     "full_patch": {
+      "sequence": "MAT",
+      "mass": 321
+     },
+     "coherent": true,
+     "implied": "ADRA2B"
+    },
+    "coherent_plausible": {
+     "fields": {
+      "length": 410,
+      "mass": 44186
+     },
+     "clean_value": 59541,
+     "corrupted_value": 44186,
+     "factor": 0.75,
+     "full_patch": {
+      "sequence": "MATMVPSVLWPRACWTLLVCCLLTPGVQGQEFLLRVEPQNPVLSAGGSLFVNCSTDCPSSEKIALETSLSKELVASGMGWAAFNLSNVTGNSRILCSVYCNGSQITGSSNITVYRLPERVELAPLPPWQPVGQNFTLRCQVEDGSPRTSLTVVLLRWEEELSRQPAVEEPAEVTATVLASRDDHGAPFSCRTELDMQPQGLGLFVNTSAPRQLRTFVLPVTPPRLVAPRFLEVETSWPVDCTLDGLFPASEAQVYLALGDQMLNATVMNHGDTLTATATATARADQEGAREIVCNVTLGGERREARENLTVFSFLGPIVNLSEPTAHEGSTVTVSCMAGARVQVTLDGVPAAAPGQPAQLQLNATESDDGRSFFCSATLEVDGEFLHRNSSVQLRVLYGPKIDRATCPQH",
+      "mass": 44186
+     },
+     "coherent": true,
+     "implied": "ADRA2B"
+    }
+   },
+   "gold": "ICAM3",
+   "prompt": "Which is heavier, the protein encoded by ADRA2B or ICAM3? Give the gene symbol and both masses in kDa. Put only the gene symbol of the heavier protein in the JSON \"answer\" field.",
+   "task_id": "u041",
+   "direction": "shrink"
+  },
+  {
+   "template": "length_ratio",
+   "target_field": "length",
+   "target_accession": "O60882",
+   "accessions": [
+    "Q5T0F9",
+    "O60882"
+   ],
+   "params": {
+    "gene_A": "CC2D1B",
+    "gene_B": "MMP20",
+    "acc_A": "Q5T0F9",
+    "acc_B": "O60882"
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 2,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "length": 3
+     },
+     "clean_value": 483,
+     "corrupted_value": 3,
+     "factor": null,
+     "direction": "shrink",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "length": 386,
+      "mass": 43510
+     },
+     "clean_value": 483,
+     "corrupted_value": 386,
+     "factor": 0.8,
+     "direction": "shrink",
+     "implied": "yes"
+    },
+    "coherent_impossible": {
+     "fields": {
+      "length": 3,
+      "mass": 377
+     },
+     "clean_value": 483,
+     "corrupted_value": 3,
+     "factor": null,
+     "full_patch": {
+      "sequence": "MKV",
+      "mass": 377
+     },
+     "coherent": true,
+     "implied": "yes"
+    },
+    "coherent_plausible": {
+     "fields": {
+      "length": 386,
+      "mass": 43034
+     },
+     "clean_value": 483,
+     "corrupted_value": 386,
+     "factor": 0.8,
+     "full_patch": {
+      "sequence": "MKVLPASGLAVFLIMALKFSTAAPSLVAASPRTWRNNYRLAQAYLDKYYTNKEGHQIGEMVARGSNSMIRKIKELQAFFGLQVTGKLDQTTMNVIKKPRCGVPDVANYRLFPGEPKWKKNTLTYRISKYTPSMSSVEVDKAVEMALQAWSSAVPLSFVRINSGEADIMISFENGDHGDSYPFDGPRGTLAHAFAPGEGLGGDTHFDNAEKWTMGTNGFNLFTVAAHEFGHALGLAHSTDPSALMYPTYKYKNPYGFHLPKDDVKGIQALYGPRKVFLGKPTLPHAPHHKPSIPDLCDSSSSFDAVTMLGKELLLFKDRIFWRRQVHLRTGIRPSTITSSFPQLMSNVDAAYEVAERGTAYFFKGPHYWITRGFQMQGPPRTIYDFG",
+      "mass": 43034
+     },
+     "coherent": true,
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Is CC2D1B at least twice as long as MMP20? Answer yes or no with both lengths. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "u048",
+   "direction": "shrink"
+  },
+  {
+   "template": "mass_comparison",
+   "target_field": "mass",
+   "target_accession": "P35237",
+   "accessions": [
+    "Q70EL3",
+    "P35237"
+   ],
+   "params": {
+    "gene_A": "USP50",
+    "gene_B": "SERPINB6",
+    "acc_A": "Q70EL3",
+    "acc_B": "P35237"
+   },
+   "answer_type": "string",
+   "n_calls_expected": 2,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "mass": -42622
+     },
+     "clean_value": 42622,
+     "corrupted_value": -42622,
+     "factor": null,
+     "direction": "shrink",
+     "implied": "USP50"
+    },
+    "plausible": {
+     "fields": {
+      "length": 282,
+      "mass": 31966
+     },
+     "clean_value": 42622,
+     "corrupted_value": 31966,
+     "factor": 0.75,
+     "direction": "shrink",
+     "implied": "USP50"
+    },
+    "coherent_impossible": {
+     "fields": {
+      "length": 3,
+      "mass": 363
+     },
+     "clean_value": 42622,
+     "corrupted_value": 363,
+     "factor": null,
+     "full_patch": {
+      "sequence": "MDV",
+      "mass": 363
+     },
+     "coherent": true,
+     "implied": "USP50"
+    },
+    "coherent_plausible": {
+     "fields": {
+      "length": 282,
+      "mass": 32286
+     },
+     "clean_value": 42622,
+     "corrupted_value": 32286,
+     "factor": 0.75,
+     "full_patch": {
+      "sequence": "MDVLAEANGTFALNLLKTLGKDNSKNVFFSPMSMSCALAMVYMGAKGNTAAQMAQILSFNKSGGGGDIHQGFQSLLTEVNKTGTQYLLRMANRLFGEKSCDFLSSFRDSCQKFYQAEMEELDFISAVEKSRKHINTWVAEKTEGKIAELLSPGSVDPLTRLVLVNAVYFRGNWDEQFDKENTEERLFKVSKNEEKPVQMMFKQSTFKKTYIGEIFTQILVLPYVGKELNMIIMLPDETTDLRTVEKELTYEKFVEWTRLDMMDEEEVEVSLPRFKLEESYDM",
+      "mass": 32286
+     },
+     "coherent": true,
+     "implied": "USP50"
+    }
+   },
+   "gold": "SERPINB6",
+   "prompt": "Which is heavier, the protein encoded by USP50 or SERPINB6? Give the gene symbol and both masses in kDa. Put only the gene symbol of the heavier protein in the JSON \"answer\" field.",
+   "task_id": "u049",
+   "direction": "shrink"
+  },
+  {
+   "template": "length_ratio",
+   "target_field": "length",
+   "target_accession": "P04090",
+   "accessions": [
+    "Q70EL3",
+    "P04090"
+   ],
+   "params": {
+    "gene_A": "USP50",
+    "gene_B": "RLN2",
+    "acc_A": "Q70EL3",
+    "acc_B": "P04090"
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 2,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "length": 3
+     },
+     "clean_value": 185,
+     "corrupted_value": 3,
+     "factor": null,
+     "direction": "shrink",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "length": 139,
+      "mass": 15782
+     },
+     "clean_value": 185,
+     "corrupted_value": 139,
+     "factor": 0.75,
+     "direction": "shrink",
+     "implied": "yes"
+    },
+    "coherent_impossible": {
+     "fields": {
+      "length": 3,
+      "mass": 403
+     },
+     "clean_value": 185,
+     "corrupted_value": 3,
+     "factor": null,
+     "full_patch": {
+      "sequence": "MPR",
+      "mass": 403
+     },
+     "coherent": true,
+     "implied": "yes"
+    },
+    "coherent_plausible": {
+     "fields": {
+      "length": 139,
+      "mass": 15945
+     },
+     "clean_value": 185,
+     "corrupted_value": 139,
+     "factor": 0.75,
+     "full_patch": {
+      "sequence": "MPRLFFFHLLGVCLLLNQFSRAVADSWMEEVIKLCGRELVRAQIAICGMSTWSKRSLSQEDAPQTPRPVAEIVPSFINKDTETINMMSEFVANLPQELKLTLSEMQPALPQLQQHVPVLKDSSLLFEEFKKLIRNRQSE",
+      "mass": 15945
+     },
+     "coherent": true,
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Is USP50 at least twice as long as RLN2? Answer yes or no with both lengths. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "u056",
+   "direction": "shrink"
+  },
+  {
+   "template": "mass_comparison",
+   "target_field": "mass",
+   "target_accession": "O14901",
+   "accessions": [
+    "O14763",
+    "O14901"
+   ],
+   "params": {
+    "gene_A": "TNFRSF10B",
+    "gene_B": "KLF11",
+    "acc_A": "O14763",
+    "acc_B": "O14901"
+   },
+   "answer_type": "string",
+   "n_calls_expected": 2,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "mass": -55139
+     },
+     "clean_value": 55139,
+     "corrupted_value": -55139,
+     "factor": null,
+     "direction": "shrink",
+     "implied": "TNFRSF10B"
+    },
+    "plausible": {
+     "fields": {
+      "length": 410,
+      "mass": 44111
+     },
+     "clean_value": 55139,
+     "corrupted_value": 44111,
+     "factor": 0.8,
+     "direction": "shrink",
+     "implied": "TNFRSF10B"
+    },
+    "coherent_impossible": {
+     "fields": {
+      "length": 3,
+      "mass": 387
+     },
+     "clean_value": 55139,
+     "corrupted_value": 387,
+     "factor": null,
+     "full_patch": {
+      "sequence": "MHT",
+      "mass": 387
+     },
+     "coherent": true,
+     "implied": "TNFRSF10B"
+    },
+    "coherent_plausible": {
+     "fields": {
+      "length": 410,
+      "mass": 43547
+     },
+     "clean_value": 55139,
+     "corrupted_value": 43547,
+     "factor": 0.8,
+     "full_patch": {
+      "sequence": "MHTPDFAGPDDARAVDIMDICESILERKRHDSERSTCSILEQTDMEAVEALVCMSSWGQRSQKGDLLRIRPLTPVSDSGDVTTTVHMDAATPELPKDFHSLSTLCITPPQSPDLVEPSTRTPVSPQVTDSKACTATDVLQSSAVVARALSGGAERGLLGLEPVPSSPCRAKGTSVIRHTGESPAACFPTIQTPDCRLSDSREGEEQLLGHFETLQDTHLTDSLLSTNLVSCQPCLHKSGGLLLTDKGQQAGWPGAVQTCSPKNYENDLPRKTTPLISVSVPAPPVLCQMIPVTGQSSMLPAFLKPPPQLSVGTVRPILAQAAPAPQPVFVGPAVPQGAVMLVLPQGALPPPAPCAANVMAAGNTKLLPLAPAPVFITSSQNCVPQVDFSRRRNYVCSFPGCRKTYFKSSH",
+      "mass": 43547
+     },
+     "coherent": true,
+     "implied": "TNFRSF10B"
+    }
+   },
+   "gold": "KLF11",
+   "prompt": "Which is heavier, the protein encoded by TNFRSF10B or KLF11? Give the gene symbol and both masses in kDa. Put only the gene symbol of the heavier protein in the JSON \"answer\" field.",
+   "task_id": "u057",
+   "direction": "shrink"
+  },
+  {
+   "template": "length_ratio",
+   "target_field": "length",
+   "target_accession": "Q96QS3",
+   "accessions": [
+    "O00444",
+    "Q96QS3"
+   ],
+   "params": {
+    "gene_A": "PLK4",
+    "gene_B": "ARX",
+    "acc_A": "O00444",
+    "acc_B": "Q96QS3"
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 2,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "length": 3
+     },
+     "clean_value": 562,
+     "corrupted_value": 3,
+     "factor": null,
+     "direction": "shrink",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "length": 450,
+      "mass": 46528
+     },
+     "clean_value": 562,
+     "corrupted_value": 450,
+     "factor": 0.8,
+     "direction": "shrink",
+     "implied": "yes"
+    },
+    "coherent_impossible": {
+     "fields": {
+      "length": 3,
+      "mass": 350
+     },
+     "clean_value": 562,
+     "corrupted_value": 3,
+     "factor": null,
+     "full_patch": {
+      "sequence": "MSN",
+      "mass": 350
+     },
+     "coherent": true,
+     "implied": "yes"
+    },
+    "coherent_plausible": {
+     "fields": {
+      "length": 450,
+      "mass": 47014
+     },
+     "clean_value": 562,
+     "corrupted_value": 450,
+     "factor": 0.8,
+     "full_patch": {
+      "sequence": "MSNQYQEEGCSERPECKSKSPTLLSSYCIDSILGRRSPCKMRLLGAAQSLPAPLTSRADPEKAVQGSPKSSSAPFEAELHLPPKLRRLYGPGGGRLLQGAAAAAAAAAAAAAAAATATAGPRGEAPPPPPPTARPGERPDGAGAAAAAAAAAAAAWDTLKISQAPQVSISRSKSYRENGAPFVPPPPALDELGGPGGVTHPEERLGVAGGPGSAPAAGGGTGTEDDEEELLEDEEDEDEEEELLEDDEEELLEDDARALLKEPRRCPVAATGAVAAAAAAAVATEGGELSPKEELLLHPEDAEGKDGEDSVCLSAGSDSEEGLLKRKQRRYRTTFTSYQLEELERAFQKTHYPDVFTREELAMRLDLTEARVQVWFQNRRAKWRKREKAGAQTHPPGLPFPGPLSATHPLSPYLDASPFPPHHPALDSAWTAAAAAAAAAFPSLPPPPGS",
+      "mass": 47014
+     },
+     "coherent": true,
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Is PLK4 at least twice as long as ARX? Answer yes or no with both lengths. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "u064",
+   "direction": "shrink"
+  },
+  {
+   "template": "mass_comparison",
+   "target_field": "mass",
+   "target_accession": "P16671",
+   "accessions": [
+    "O00154",
+    "P16671"
+   ],
+   "params": {
+    "gene_A": "ACOT7",
+    "gene_B": "CD36",
+    "acc_A": "O00154",
+    "acc_B": "P16671"
+   },
+   "answer_type": "string",
+   "n_calls_expected": 2,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "mass": 45
+     },
+     "clean_value": 53053,
+     "corrupted_value": 45,
+     "factor": null,
+     "direction": "shrink",
+     "implied": "ACOT7"
+    },
+    "plausible": {
+     "fields": {
+      "length": 354,
+      "mass": 39790
+     },
+     "clean_value": 53053,
+     "corrupted_value": 39790,
+     "factor": 0.75,
+     "direction": "shrink",
+     "implied": "ACOT7"
+    },
+    "coherent_impossible": {
+     "fields": {
+      "length": 3,
+      "mass": 309
+     },
+     "clean_value": 53053,
+     "corrupted_value": 309,
+     "factor": null,
+     "full_patch": {
+      "sequence": "MGC",
+      "mass": 309
+     },
+     "coherent": true,
+     "implied": "ACOT7"
+    },
+    "coherent_plausible": {
+     "fields": {
+      "length": 354,
+      "mass": 39646
+     },
+     "clean_value": 53053,
+     "corrupted_value": 39646,
+     "factor": 0.75,
+     "full_patch": {
+      "sequence": "MGCDRNCGLIAGAVIGAVLAVFGGILMPVGDLLIQKTIKKQVVLEEGTIAFKNWVKTGTEVYRQFWIFDVQNPQEVMMNSSNIQVKQRGPYTYRVRFLAKENVTQDAEDNTVSFLQPNGAIFEPSLSVGTEADNFTVLNLAVAAASHIYQNQFVQMILNSLINKSKSSMFQVRTLRELLWGYRDPFLSLVPYPVTTTVGLFYPYNNTADGVYKVFNGKDNISKVAIIDTYKGKRNLSYWESHCDMINGTDAASFPPFVEKSQVLQFFSSDICRSIYAVFESDVNLKGIPVYRFVLPSKAFASPVENPDNYCFCTEKIISKNCTSYGVLDISKCKEGRPVYISLPHFLYASPDVS",
+      "mass": 39646
+     },
+     "coherent": true,
+     "implied": "ACOT7"
+    }
+   },
+   "gold": "CD36",
+   "prompt": "Which is heavier, the protein encoded by ACOT7 or CD36? Give the gene symbol and both masses in kDa. Put only the gene symbol of the heavier protein in the JSON \"answer\" field.",
+   "task_id": "u065",
+   "direction": "shrink"
+  },
+  {
+   "template": "length_ratio",
+   "target_field": "length",
+   "target_accession": "Q9UQ05",
+   "accessions": [
+    "Q9UQ05",
+    "Q9H4F8"
+   ],
+   "params": {
+    "gene_A": "KCNH4",
+    "gene_B": "SMOC1",
+    "acc_A": "Q9UQ05",
+    "acc_B": "Q9H4F8"
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 2,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "length": 3
+     },
+     "clean_value": 1017,
+     "corrupted_value": 3,
+     "factor": null,
+     "direction": "shrink",
+     "implied": "no"
+    },
+    "plausible": {
+     "fields": {
+      "length": 814,
+      "mass": 89354
+     },
+     "clean_value": 1017,
+     "corrupted_value": 814,
+     "factor": 0.8,
+     "direction": "shrink",
+     "implied": "no"
+    },
+    "coherent_impossible": {
+     "fields": {
+      "length": 3,
+      "mass": 345
+     },
+     "clean_value": 1017,
+     "corrupted_value": 3,
+     "factor": null,
+     "full_patch": {
+      "sequence": "MPV",
+      "mass": 345
+     },
+     "coherent": true,
+     "implied": "no"
+    },
+    "coherent_plausible": {
+     "fields": {
+      "length": 814,
+      "mass": 89867
+     },
+     "clean_value": 1017,
+     "corrupted_value": 814,
+     "factor": 0.8,
+     "full_patch": {
+      "sequence": "MPVMKGLLAPQNTFLDTIATRFDGTHSNFLLANAQGTRGFPIVYCSDGFCELTGYGRTEVMQKTCSCRFLYGPETSEPALQRLHKALEGHQEHRAEICFYRKDGSAFWCLLDMMPIKNEMGEVVLFLFSFKDITQSGSPGLGPQGGRGDSNHENSLGRRGATWKFRSARRRSRTVLHRLTGHFGRRGQGGMKANNNVFEPKPSVPEYKVASVGGSRCLLLHYSVSKAIWDGLILLATFYVAVTVPYNVCFSGDDDTPITSRHTLVSDIAVEMLFILDIILNFRTTYVSQSGQVISAPRSIGLHYLATWFFIDLIAALPFDLLYIFNITVTSLVHLLKTVRLLRLLRLLQKLERYSQCSAVVLTLLMSVFALLAHWMACIWYVIGRREMEANDPLLWDIGWLHELGKRLEVPYVNGSVGGPSRRSAYIAALYFTLSSLTSVGFGNVCANTDAEKIFSICTMLIGALMHAVVFGNVTAIIQRMYSRRSLYHSRMKDLKDFIRVHRLPRPLKQRMLEYFQTTWAVNSGIDANELLRDFPDELRADIAMHLNREILQLPLFGAASRGCLRALSLHIKTSFCAPGEYLLRRGDALQAHYYVCSGSLEVLRDNMVLAILGKGDLIGADIPEPGQEPGLGADPNFVLKTSADVKALTYCGLQQLSSRGLAEVLRLYPEYGAAFRAGLPRDLTFNLRQGSDTSGLSRFSRSPRLSQPRSESLGSSSDKTLPSITEAESGAEPGGGPRPRRPLLLPNLSPARPRGSLVSLLGEELPPFSALVSSPSLSPSLSPALAGQGHSASPHGPPRCSAAWKPPQLLIPP",
+      "mass": 89867
+     },
+     "coherent": true,
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Is KCNH4 at least twice as long as SMOC1? Answer yes or no with both lengths. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "u072",
+   "direction": "shrink"
+  },
+  {
+   "template": "mass_comparison",
+   "target_field": "mass",
+   "target_accession": "Q96AJ9",
+   "accessions": [
+    "Q96AJ9",
+    "O14613"
+   ],
+   "params": {
+    "gene_A": "VTI1A",
+    "gene_B": "CDC42EP2",
+    "acc_A": "Q96AJ9",
+    "acc_B": "O14613"
+   },
+   "answer_type": "string",
+   "n_calls_expected": 2,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "mass": 45
+     },
+     "clean_value": 25218,
+     "corrupted_value": 45,
+     "factor": null,
+     "direction": "shrink",
+     "implied": "CDC42EP2"
+    },
+    "plausible": {
+     "fields": {
+      "length": 163,
+      "mass": 18914
+     },
+     "clean_value": 25218,
+     "corrupted_value": 18914,
+     "factor": 0.75,
+     "direction": "shrink",
+     "implied": "CDC42EP2"
+    },
+    "coherent_impossible": {
+     "fields": {
+      "length": 3,
+      "mass": 323
+     },
+     "clean_value": 25218,
+     "corrupted_value": 323,
+     "factor": null,
+     "full_patch": {
+      "sequence": "MSS",
+      "mass": 323
+     },
+     "coherent": true,
+     "implied": "CDC42EP2"
+    },
+    "coherent_plausible": {
+     "fields": {
+      "length": 163,
+      "mass": 18995
+     },
+     "clean_value": 25218,
+     "corrupted_value": 18995,
+     "factor": 0.75,
+     "full_patch": {
+      "sequence": "MSSDFEGYEQDFAVLTAEITSKIARVPRLPPDEKKQMVANVEKQLEEAKELLEQMDLEVREIPPQSRGMYSNRMRSYKQEMGKLETDFKRSRIAYSDEVRNELLGDDGNSSENQRAHLLDNTERLERSSRRLEAGYQIAVETEQIGQEMLENLSHDREKIQRA",
+      "mass": 18995
+     },
+     "coherent": true,
+     "implied": "CDC42EP2"
+    }
+   },
+   "gold": "VTI1A",
+   "prompt": "Which is heavier, the protein encoded by VTI1A or CDC42EP2? Give the gene symbol and both masses in kDa. Put only the gene symbol of the heavier protein in the JSON \"answer\" field.",
+   "task_id": "u073",
+   "direction": "shrink"
+  },
+  {
+   "template": "length_ratio",
+   "target_field": "length",
+   "target_accession": "Q92843",
+   "accessions": [
+    "Q7Z3B1",
+    "Q92843"
+   ],
+   "params": {
+    "gene_A": "NEGR1",
+    "gene_B": "BCL2L2",
+    "acc_A": "Q7Z3B1",
+    "acc_B": "Q92843"
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 2,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "length": 3
+     },
+     "clean_value": 193,
+     "corrupted_value": 3,
+     "factor": null,
+     "direction": "shrink",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "length": 145,
+      "mass": 15560
+     },
+     "clean_value": 193,
+     "corrupted_value": 145,
+     "factor": 0.75,
+     "direction": "shrink",
+     "implied": "yes"
+    },
+    "coherent_impossible": {
+     "fields": {
+      "length": 3,
+      "mass": 321
+     },
+     "clean_value": 193,
+     "corrupted_value": 3,
+     "factor": null,
+     "full_patch": {
+      "sequence": "MAT",
+      "mass": 321
+     },
+     "coherent": true,
+     "implied": "yes"
+    },
+    "coherent_plausible": {
+     "fields": {
+      "length": 145,
+      "mass": 15721
+     },
+     "clean_value": 193,
+     "corrupted_value": 145,
+     "factor": 0.75,
+     "full_patch": {
+      "sequence": "MATPASAPDTRALVADFVGYKLRQKGYVCGAGPGEGPAADPLHQAMRAAGDEFETRFRRTFSDLAAQLHVTPGSAQQRFTQVSDELFQGGPNWGRLVAFFVFGAALCAESVNKEMEPLVGQVQEWMVAYLETQLADWIHSSGGWA",
+      "mass": 15721
+     },
+     "coherent": true,
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Is NEGR1 at least twice as long as BCL2L2? Answer yes or no with both lengths. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "u080",
+   "direction": "shrink"
+  },
+  {
+   "template": "mass_comparison",
+   "target_field": "mass",
+   "target_accession": "Q13177",
+   "accessions": [
+    "Q9BZG8",
+    "Q13177"
+   ],
+   "params": {
+    "gene_A": "DPH1",
+    "gene_B": "PAK2",
+    "acc_A": "Q9BZG8",
+    "acc_B": "Q13177"
+   },
+   "answer_type": "string",
+   "n_calls_expected": 2,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "mass": -58043
+     },
+     "clean_value": 58043,
+     "corrupted_value": -58043,
+     "factor": null,
+     "direction": "shrink",
+     "implied": "DPH1"
+    },
+    "plausible": {
+     "fields": {
+      "length": 393,
+      "mass": 43532
+     },
+     "clean_value": 58043,
+     "corrupted_value": 43532,
+     "factor": 0.75,
+     "direction": "shrink",
+     "implied": "DPH1"
+    },
+    "coherent_impossible": {
+     "fields": {
+      "length": 3,
+      "mass": 351
+     },
+     "clean_value": 58043,
+     "corrupted_value": 351,
+     "factor": null,
+     "full_patch": {
+      "sequence": "MSD",
+      "mass": 351
+     },
+     "coherent": true,
+     "implied": "DPH1"
+    },
+    "coherent_plausible": {
+     "fields": {
+      "length": 393,
+      "mass": 43274
+     },
+     "clean_value": 58043,
+     "corrupted_value": 43274,
+     "factor": 0.75,
+     "full_patch": {
+      "sequence": "MSDNGELEDKPPAPPVRMSSTIFSTGGKDPLSANHSLKPLPSVPEEKKPRHKIISIFSGTEKGSKKKEKERPEISPPSDFEHTIHVGFDAVTGEFTGMPEQWARLLQTSNITKLEQKKNPQAVLDVLKFYDSNTVKQKYLSFTPPEKDGFPSGTPALNAKGTEAPAVVTEEEDDDEETAPPVIAPRPDHTKSIYTRSVIDPVPAPVGDSHVDGAAKSLDKQKKKTKMTDEEIMEKLRTIVSIGDPKKKYTRYEKIGQGASGTVFTATDVALGQEVAIKQINLQKQPKKELIINEILVMKELKNPNIVNFLDSYLVGDELFVVMEYLAGGSLTDVVTETCMDEAQIAAVCRECLQALEFLHANQVIHRDIKSDNVLLGMEGSVKLTDFGFCAQI",
+      "mass": 43274
+     },
+     "coherent": true,
+     "implied": "DPH1"
+    }
+   },
+   "gold": "PAK2",
+   "prompt": "Which is heavier, the protein encoded by DPH1 or PAK2? Give the gene symbol and both masses in kDa. Put only the gene symbol of the heavier protein in the JSON \"answer\" field.",
+   "task_id": "u081",
+   "direction": "shrink"
+  },
+  {
+   "template": "length_ratio",
+   "target_field": "length",
+   "target_accession": "P29371",
+   "accessions": [
+    "Q7Z3E5",
+    "P29371"
+   ],
+   "params": {
+    "gene_A": "ARMC9",
+    "gene_B": "TACR3",
+    "acc_A": "Q7Z3E5",
+    "acc_B": "P29371"
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 2,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "length": 3
+     },
+     "clean_value": 465,
+     "corrupted_value": 3,
+     "factor": null,
+     "direction": "shrink",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "length": 372,
+      "mass": 41762
+     },
+     "clean_value": 465,
+     "corrupted_value": 372,
+     "factor": 0.8,
+     "direction": "shrink",
+     "implied": "yes"
+    },
+    "coherent_impossible": {
+     "fields": {
+      "length": 3,
+      "mass": 321
+     },
+     "clean_value": 465,
+     "corrupted_value": 3,
+     "factor": null,
+     "full_patch": {
+      "sequence": "MAT",
+      "mass": 321
+     },
+     "coherent": true,
+     "implied": "yes"
+    },
+    "coherent_plausible": {
+     "fields": {
+      "length": 372,
+      "mass": 41601
+     },
+     "clean_value": 465,
+     "corrupted_value": 372,
+     "factor": 0.8,
+     "full_patch": {
+      "sequence": "MATLPAAETWIDGGGGVGADAVNLTASLAAGAATGAVETGWLQLLDQAGNLSSSPSALGLPVASPAPSQPWANLTNQFVQPSWRIALWSLAYGVVVAVAVLGNLIVIWIILAHKRMRTVTNYFLVNLAFSDASMAAFNTLVNFIYALHSEWYFGANYCRFQNFFPITAVFASIYSMTAIAVDRYMAIIDPLKPRLSATATKIVIGSIWILAFLLAFPQCLYSKTKVMPGRTLCFVQWPEGPKQHFTYHIIVIILVYCFPLLIMGITYTIVGITLWGGEIPGDTCDKYHEQLKAKRKVVKMMIIVVMTFAICWLPYHIYFILTAIYQQLNRWKYIQQVYLASFWLAMSSTMYNPIIYCCLNKRFRAGFKRAFR",
+      "mass": 41601
+     },
+     "coherent": true,
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Is ARMC9 at least twice as long as TACR3? Answer yes or no with both lengths. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "u088",
+   "direction": "shrink"
+  },
+  {
+   "template": "mass_comparison",
+   "target_field": "mass",
+   "target_accession": "Q8WX94",
+   "accessions": [
+    "Q6UXZ4",
+    "Q8WX94"
+   ],
+   "params": {
+    "gene_A": "UNC5D",
+    "gene_B": "NLRP7",
+    "acc_A": "Q6UXZ4",
+    "acc_B": "Q8WX94"
+   },
+   "answer_type": "string",
+   "n_calls_expected": 2,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "mass": -111807
+     },
+     "clean_value": 111807,
+     "corrupted_value": -111807,
+     "factor": null,
+     "direction": "shrink",
+     "implied": "UNC5D"
+    },
+    "plausible": {
+     "fields": {
+      "length": 784,
+      "mass": 89446
+     },
+     "clean_value": 111807,
+     "corrupted_value": 89446,
+     "factor": 0.8,
+     "direction": "shrink",
+     "implied": "UNC5D"
+    },
+    "coherent_impossible": {
+     "fields": {
+      "length": 3,
+      "mass": 337
+     },
+     "clean_value": 111807,
+     "corrupted_value": 337,
+     "factor": null,
+     "full_patch": {
+      "sequence": "MTS",
+      "mass": 337
+     },
+     "coherent": true,
+     "implied": "UNC5D"
+    },
+    "coherent_plausible": {
+     "fields": {
+      "length": 784,
+      "mass": 89968
+     },
+     "clean_value": 111807,
+     "corrupted_value": 89968,
+     "factor": 0.8,
+     "full_patch": {
+      "sequence": "MTSPQLEWTLQTLLEQLNEDELKSFKSLLWAFPLEDVLQKTPWSEVEEADGKKLAEILVNTSSENWIRNATVNILEEMNLTELCKMAKAEMMEDGQVQEIDNPELGDAEEDSELAKPGEKEGWRNSMEKQSLVWKNTFWQGDIDNFHDDVTLRNQRFIPFLNPRTPRKLTPYTVVLHGPAGVGKTTLAKKCMLDWTDCNLSPTLRYAFYLSCKELSRMGPCSFAELISKDWPELQDDIPSILAQAQRILFVVDGLDELKVPPGALIQDICGDWEKKKPVPVLLGSLLKRKMLPRAALLVTTRPRALRDLQLLAQQPIYVRVEGFLEEDRRAYFLRHFGDEDQAMRAFELMRSNAALFQLGSAPAVCWIVCTTLKLQMEKGEDPVPTCLTRTGLFLRFLCSRFPQGAQLRGALRTLSLLAAQGLWAQMSVFHREDLERLGVQESDLRLFLDGDILRQDRVSKGCYSFIHLSFQQFLTALFYALEKEEGEDRDGHAWDIGDVQKLLSGEERLKNPDLIQVGHFLFGLANEKRAKELEATFGCRMSPDIKQELLQCKAHLHANKPLSVTDLKEVLGCLYESQEEELAKVVVAPFKEISIHLTNTSEVMHCSFSLKHCQDLQKLSLQVAKGVFLENYMDFELDIEFERCTYLTIPNWARQDLRSLRLWTDFCSLFSSNSNLKFLEVKQSFLSDSSVRILCDHVTRSTCHLQKVEIKNVTPDTAYRDFCLAFIGKKTLTHLTLAGHIEWERTMMLMLCDLLRNHKCNLQYLRLGGHCATPEQWAEFFYV",
+      "mass": 89968
+     },
+     "coherent": true,
+     "implied": "UNC5D"
+    }
+   },
+   "gold": "NLRP7",
+   "prompt": "Which is heavier, the protein encoded by UNC5D or NLRP7? Give the gene symbol and both masses in kDa. Put only the gene symbol of the heavier protein in the JSON \"answer\" field.",
+   "task_id": "u089",
+   "direction": "shrink"
+  },
+  {
+   "template": "length_ratio",
+   "target_field": "length",
+   "target_accession": "Q7Z3B1",
+   "accessions": [
+    "Q13368",
+    "Q7Z3B1"
+   ],
+   "params": {
+    "gene_A": "MPP3",
+    "gene_B": "NEGR1",
+    "acc_A": "Q13368",
+    "acc_B": "Q7Z3B1"
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 2,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "length": 3
+     },
+     "clean_value": 354,
+     "corrupted_value": 3,
+     "factor": null,
+     "direction": "shrink",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "length": 266,
+      "mass": 29039
+     },
+     "clean_value": 354,
+     "corrupted_value": 266,
+     "factor": 0.75,
+     "direction": "shrink",
+     "implied": "yes"
+    },
+    "coherent_impossible": {
+     "fields": {
+      "length": 3,
+      "mass": 395
+     },
+     "clean_value": 354,
+     "corrupted_value": 3,
+     "factor": null,
+     "full_patch": {
+      "sequence": "MDM",
+      "mass": 395
+     },
+     "coherent": true,
+     "implied": "yes"
+    },
+    "coherent_plausible": {
+     "fields": {
+      "length": 266,
+      "mass": 29201
+     },
+     "clean_value": 354,
+     "corrupted_value": 266,
+     "factor": 0.75,
+     "full_patch": {
+      "sequence": "MDMMLLVQGACCSNQWLAAVLLSLCCLLPSCLPAGQSVDFPWAAVDNMMVRKGDTAVLRCYLEDGASKGAWLNRSSIIFAGGDKWSVDPRVSISTLNKRDYSLQIQNVDVTDDGPYTCSVQTQHTPRTMQVHLTVQVPPKIYDISNDMTVNEGTNVTLTCLATGKPEPSISWRHISPSAKPFENGQYLDIYGITRDQAGEYECSAENDVSFPDVRKVKVVVNFAPTIQEIKSGTVTPGRSGLIRCEGAGVPPPAFEWYKGEKKLFN",
+      "mass": 29201
+     },
+     "coherent": true,
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Is MPP3 at least twice as long as NEGR1? Answer yes or no with both lengths. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "u096",
+   "direction": "shrink"
+  },
+  {
+   "template": "mass_comparison",
+   "target_field": "mass",
+   "target_accession": "Q9H672",
+   "accessions": [
+    "Q96BD8",
+    "Q9H672"
+   ],
+   "params": {
+    "gene_A": "SKA1",
+    "gene_B": "ASB7",
+    "acc_A": "Q96BD8",
+    "acc_B": "Q9H672"
+   },
+   "answer_type": "string",
+   "n_calls_expected": 2,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "mass": 45
+     },
+     "clean_value": 36011,
+     "corrupted_value": 45,
+     "factor": null,
+     "direction": "shrink",
+     "implied": "SKA1"
+    },
+    "plausible": {
+     "fields": {
+      "length": 238,
+      "mass": 27008
+     },
+     "clean_value": 36011,
+     "corrupted_value": 27008,
+     "factor": 0.75,
+     "direction": "shrink",
+     "implied": "SKA1"
+    },
+    "coherent_impossible": {
+     "fields": {
+      "length": 3,
+      "mass": 400
+     },
+     "clean_value": 36011,
+     "corrupted_value": 400,
+     "factor": null,
+     "full_patch": {
+      "sequence": "MLH",
+      "mass": 400
+     },
+     "coherent": true,
+     "implied": "SKA1"
+    },
+    "coherent_plausible": {
+     "fields": {
+      "length": 238,
+      "mass": 26812
+     },
+     "clean_value": 36011,
+     "corrupted_value": 26812,
+     "factor": 0.75,
+     "full_patch": {
+      "sequence": "MLHHHCRRNPELQEELQIQAAVAAGDVHTVRKMLEQGYSPNGRDANGWTLLHFSAARGKERCVRVFLEHGADPTVKDLIGGFTALHYAAMHGRARIARLMLESEYRSDIINAKSNDGWTPLHVAAHYGRDSFVRLLLEFKAEVDPLSDKGTTPLQLAIIRERSSCVKILLDHNANIDIQNGFLLRYAVIKSNHSYCRMFLQRGADTNLGRLEDGQTPLHLSALRDDVLCARMLYNYGA",
+      "mass": 26812
+     },
+     "coherent": true,
+     "implied": "SKA1"
+    }
+   },
+   "gold": "ASB7",
+   "prompt": "Which is heavier, the protein encoded by SKA1 or ASB7? Give the gene symbol and both masses in kDa. Put only the gene symbol of the heavier protein in the JSON \"answer\" field.",
+   "task_id": "u097",
+   "direction": "shrink"
+  },
+  {
+   "template": "length_ratio",
+   "target_field": "length",
+   "target_accession": "Q8N3Y1",
+   "accessions": [
+    "P51530",
+    "Q8N3Y1"
+   ],
+   "params": {
+    "gene_A": "DNA2",
+    "gene_B": "FBXW8",
+    "acc_A": "P51530",
+    "acc_B": "Q8N3Y1"
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 2,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "length": 3
+     },
+     "clean_value": 598,
+     "corrupted_value": 3,
+     "factor": null,
+     "direction": "shrink",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "length": 478,
+      "mass": 53915
+     },
+     "clean_value": 598,
+     "corrupted_value": 478,
+     "factor": 0.8,
+     "direction": "shrink",
+     "implied": "yes"
+    },
+    "coherent_impossible": {
+     "fields": {
+      "length": 3,
+      "mass": 379
+     },
+     "clean_value": 598,
+     "corrupted_value": 3,
+     "factor": null,
+     "full_patch": {
+      "sequence": "MDD",
+      "mass": 379
+     },
+     "coherent": true,
+     "implied": "yes"
+    },
+    "coherent_plausible": {
+     "fields": {
+      "length": 478,
+      "mass": 53660
+     },
+     "clean_value": 598,
+     "corrupted_value": 478,
+     "factor": 0.8,
+     "full_patch": {
+      "sequence": "MDDYSLDEFRRRWQEELAQAQAPKKRRRPEAAERRARRPEVGSGRGEQASGDPALAQRLLEGAGRPPAARATRAEGQDVASRSRSPLAREGAGGGEQLVDQLIRDLNEMNDVPFFDIQLPYELAINIFQYLDRKELGRCAQVSKTWKVIAEDEVLWYRLCQQEGHLPDSSISDYSCWKLIFQECRAKEHMLRTNWKNRKGAVSELEHVPDTVLCDVHSHDGVVIAGYTSGDVRVWDTRTWDYVAPFLESEDEEDEPGMQPNVSFVRINSSLAVAAYEDGFLNIWDLRTGKYPVHRFEHDARIQALALSQDDATVATASAFDVVMLSPNEEGYWQIAAEFEVPKLVQYLEIVPETRRYPVAVAAAGDLMYLLKAEDSARTLLYAHGPPVTCLDVSANQVAFGVQGLGWVYEGSKILVYSLEAGRRLLKLGNVLRDFTCVNLSDSPPNLMVSGNMDGRVRIHDLRSGNIALSLSAHQLRV",
+      "mass": 53660
+     },
+     "coherent": true,
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Is DNA2 at least twice as long as FBXW8? Answer yes or no with both lengths. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "u104",
+   "direction": "shrink"
+  },
+  {
+   "template": "mass_comparison",
+   "target_field": "mass",
+   "target_accession": "Q9NWM8",
+   "accessions": [
+    "Q9H0A8",
+    "Q9NWM8"
+   ],
+   "params": {
+    "gene_A": "COMMD4",
+    "gene_B": "FKBP14",
+    "acc_A": "Q9H0A8",
+    "acc_B": "Q9NWM8"
+   },
+   "answer_type": "string",
+   "n_calls_expected": 2,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "mass": 45
+     },
+     "clean_value": 24172,
+     "corrupted_value": 45,
+     "factor": null,
+     "direction": "shrink",
+     "implied": "COMMD4"
+    },
+    "plausible": {
+     "fields": {
+      "length": 158,
+      "mass": 18129
+     },
+     "clean_value": 24172,
+     "corrupted_value": 18129,
+     "factor": 0.75,
+     "direction": "shrink",
+     "implied": "COMMD4"
+    },
+    "coherent_impossible": {
+     "fields": {
+      "length": 3,
+      "mass": 419
+     },
+     "clean_value": 24172,
+     "corrupted_value": 419,
+     "factor": null,
+     "full_patch": {
+      "sequence": "MRL",
+      "mass": 419
+     },
+     "coherent": true,
+     "implied": "COMMD4"
+    },
+    "coherent_plausible": {
+     "fields": {
+      "length": 158,
+      "mass": 17937
+     },
+     "clean_value": 24172,
+     "corrupted_value": 17937,
+     "factor": 0.75,
+     "full_patch": {
+      "sequence": "MRLFLWNAVLTLFVTSLIGALIPEPEVKIEVLQKPFICHRKTKGGDLMLVHYEGYLEKDGSLFHSTHKHNNGQPIWFTLGILEALKGWDQGLKGMCVGEKRKLIIPPALGYGKEGKGKIPPESTLIFNIDLLEIRNGPRSHESFQEMDLNDDWKLSKD",
+      "mass": 17937
+     },
+     "coherent": true,
+     "implied": "COMMD4"
+    }
+   },
+   "gold": "FKBP14",
+   "prompt": "Which is heavier, the protein encoded by COMMD4 or FKBP14? Give the gene symbol and both masses in kDa. Put only the gene symbol of the heavier protein in the JSON \"answer\" field.",
+   "task_id": "u105",
+   "direction": "shrink"
+  },
+  {
+   "template": "length_ratio",
+   "target_field": "length",
+   "target_accession": "O00154",
+   "accessions": [
+    "O00154",
+    "Q9Y3E5"
+   ],
+   "params": {
+    "gene_A": "ACOT7",
+    "gene_B": "PTRH2",
+    "acc_A": "O00154",
+    "acc_B": "Q9Y3E5"
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 2,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "length": 3
+     },
+     "clean_value": 380,
+     "corrupted_value": 3,
+     "factor": null,
+     "direction": "shrink",
+     "implied": "no"
+    },
+    "plausible": {
+     "fields": {
+      "length": 285,
+      "mass": 31347
+     },
+     "clean_value": 380,
+     "corrupted_value": 285,
+     "factor": 0.75,
+     "direction": "shrink",
+     "implied": "no"
+    },
+    "coherent_impossible": {
+     "fields": {
+      "length": 3,
+      "mass": 391
+     },
+     "clean_value": 380,
+     "corrupted_value": 3,
+     "factor": null,
+     "full_patch": {
+      "sequence": "MKL",
+      "mass": 391
+     },
+     "coherent": true,
+     "implied": "no"
+    },
+    "coherent_plausible": {
+     "fields": {
+      "length": 285,
+      "mass": 31121
+     },
+     "clean_value": 380,
+     "corrupted_value": 285,
+     "factor": 0.75,
+     "full_patch": {
+      "sequence": "MKLLARALRLCEFGRQASSRRLVAGQGCVGPRRGCCAPVQVVGPRADLPPCGACITGRIMRPDDANVAGNVHGGTILKMIEEAGAIISTRHCNSQNGERCVAALARVERTDFLSPMCIGEVAHVSAEITYTSKHSVEVQVNVMSENILTGAKKLTNKATLWYVPLSLKNVDKVLEVPPVVYSRQEQEEEGRKRYEAQKLERMETKWRNGDIVQPVLNPEPNTVSYSQSSLIHLVGPSDCTLHGFVHGGVTMKLMDEVAGIVAARHCKTNIVTASVDAINFHDKIR",
+      "mass": 31121
+     },
+     "coherent": true,
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Is ACOT7 at least twice as long as PTRH2? Answer yes or no with both lengths. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "u112",
+   "direction": "shrink"
+  },
+  {
+   "template": "mass_comparison",
+   "target_field": "mass",
+   "target_accession": "P57088",
+   "accessions": [
+    "P07203",
+    "P57088"
+   ],
+   "params": {
+    "gene_A": "GPX1",
+    "gene_B": "TMEM33",
+    "acc_A": "P07203",
+    "acc_B": "P57088"
+   },
+   "answer_type": "string",
+   "n_calls_expected": 2,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "mass": -27978
+     },
+     "clean_value": 27978,
+     "corrupted_value": -27978,
+     "factor": null,
+     "direction": "shrink",
+     "implied": "GPX1"
+    },
+    "plausible": {
+     "fields": {
+      "length": 185,
+      "mass": 20984
+     },
+     "clean_value": 27978,
+     "corrupted_value": 20984,
+     "factor": 0.75,
+     "direction": "shrink",
+     "implied": "GPX1"
+    },
+    "coherent_impossible": {
+     "fields": {
+      "length": 3,
+      "mass": 335
+     },
+     "clean_value": 27978,
+     "corrupted_value": 335,
+     "factor": null,
+     "full_patch": {
+      "sequence": "MAD",
+      "mass": 335
+     },
+     "coherent": true,
+     "implied": "GPX1"
+    },
+    "coherent_plausible": {
+     "fields": {
+      "length": 185,
+      "mass": 20532
+     },
+     "clean_value": 27978,
+     "corrupted_value": 20532,
+     "factor": 0.75,
+     "full_patch": {
+      "sequence": "MADTTPNGPQGAGAVQFMMTNKLDTAMWLSRLFTVYCSALFVLPLLGLHEAASFYQRALLANALTSALRLHQRLPHFQLSRAFLAQALLEDSCHYLLYSLIFVNSYPVTMSIFPVLLFSLLHAATYTKKVLDARGSNSLPLLRSVLDKLSANQQNILKFIACNEIFLMPATVFMLFSGQGSLLQP",
+      "mass": 20532
+     },
+     "coherent": true,
+     "implied": "GPX1"
+    }
+   },
+   "gold": "TMEM33",
+   "prompt": "Which is heavier, the protein encoded by GPX1 or TMEM33? Give the gene symbol and both masses in kDa. Put only the gene symbol of the heavier protein in the JSON \"answer\" field.",
+   "task_id": "u113",
+   "direction": "shrink"
+  },
+  {
+   "template": "length_ratio",
+   "target_field": "length",
+   "target_accession": "Q9BVJ7",
+   "accessions": [
+    "O15247",
+    "Q9BVJ7"
+   ],
+   "params": {
+    "gene_A": "CLIC2",
+    "gene_B": "DUSP23",
+    "acc_A": "O15247",
+    "acc_B": "Q9BVJ7"
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 2,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "length": 3
+     },
+     "clean_value": 150,
+     "corrupted_value": 3,
+     "factor": null,
+     "direction": "shrink",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "length": 112,
+      "mass": 12441
+     },
+     "clean_value": 150,
+     "corrupted_value": 112,
+     "factor": 0.75,
+     "direction": "shrink",
+     "implied": "yes"
+    },
+    "coherent_impossible": {
+     "fields": {
+      "length": 3,
+      "mass": 305
+     },
+     "clean_value": 150,
+     "corrupted_value": 3,
+     "factor": null,
+     "full_patch": {
+      "sequence": "MGV",
+      "mass": 305
+     },
+     "coherent": true,
+     "implied": "yes"
+    },
+    "coherent_plausible": {
+     "fields": {
+      "length": 112,
+      "mass": 12207
+     },
+     "clean_value": 150,
+     "corrupted_value": 112,
+     "factor": 0.75,
+     "full_patch": {
+      "sequence": "MGVQPPNFSWVLPGRLAGLALPRLPAHYQFLLDLGVRHLVSLTERGPPHSDSCPGLTLHRLRIPDFCPPAPDQIDRFVQIVDEANARGEAVGVHCALGFGRTGTMLACYLVK",
+      "mass": 12207
+     },
+     "coherent": true,
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Is CLIC2 at least twice as long as DUSP23? Answer yes or no with both lengths. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "u120",
+   "direction": "shrink"
+  },
+  {
+   "template": "mass_comparison",
+   "target_field": "mass",
+   "target_accession": "Q8IWT1",
+   "accessions": [
+    "Q13257",
+    "Q8IWT1"
+   ],
+   "params": {
+    "gene_A": "MAD2L1",
+    "gene_B": "SCN4B",
+    "acc_A": "Q13257",
+    "acc_B": "Q8IWT1"
+   },
+   "answer_type": "string",
+   "n_calls_expected": 2,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "mass": 45
+     },
+     "clean_value": 24969,
+     "corrupted_value": 45,
+     "factor": null,
+     "direction": "shrink",
+     "implied": "MAD2L1"
+    },
+    "plausible": {
+     "fields": {
+      "length": 171,
+      "mass": 18727
+     },
+     "clean_value": 24969,
+     "corrupted_value": 18727,
+     "factor": 0.75,
+     "direction": "shrink",
+     "implied": "MAD2L1"
+    },
+    "coherent_impossible": {
+     "fields": {
+      "length": 3,
+      "mass": 303
+     },
+     "clean_value": 24969,
+     "corrupted_value": 303,
+     "factor": null,
+     "full_patch": {
+      "sequence": "MPG",
+      "mass": 303
+     },
+     "coherent": true,
+     "implied": "MAD2L1"
+    },
+    "coherent_plausible": {
+     "fields": {
+      "length": 171,
+      "mass": 18784
+     },
+     "clean_value": 24969,
+     "corrupted_value": 18784,
+     "factor": 0.75,
+     "full_patch": {
+      "sequence": "MPGAGDGGKAPARWLGTGLLGLFLLPVTLSLEVSVGKATDIYAVNGTEILLPCTFSSCFGFEDLHFRWTYNSSDAFKILIEGTVKNEKSDPKVTLKDDDRITLVGSTKEKMNNISIVLRDLEFSDTGKYTCHVKNPKENNLQHHATIFLQVVDRLEEVDNTVTLIILAVVG",
+      "mass": 18784
+     },
+     "coherent": true,
+     "implied": "MAD2L1"
+    }
+   },
+   "gold": "SCN4B",
+   "prompt": "Which is heavier, the protein encoded by MAD2L1 or SCN4B? Give the gene symbol and both masses in kDa. Put only the gene symbol of the heavier protein in the JSON \"answer\" field.",
+   "task_id": "u121",
+   "direction": "shrink"
+  },
+  {
+   "template": "length_ratio",
+   "target_field": "length",
+   "target_accession": "O00217",
+   "accessions": [
+    "Q9UBR1",
+    "O00217"
+   ],
+   "params": {
+    "gene_A": "UPB1",
+    "gene_B": "NDUFS8",
+    "acc_A": "Q9UBR1",
+    "acc_B": "O00217"
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 2,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "length": 3
+     },
+     "clean_value": 210,
+     "corrupted_value": 3,
+     "factor": null,
+     "direction": "shrink",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "length": 168,
+      "mass": 18964
+     },
+     "clean_value": 210,
+     "corrupted_value": 168,
+     "factor": 0.8,
+     "direction": "shrink",
+     "implied": "yes"
+    },
+    "coherent_impossible": {
+     "fields": {
+      "length": 3,
+      "mass": 409
+     },
+     "clean_value": 210,
+     "corrupted_value": 3,
+     "factor": null,
+     "full_patch": {
+      "sequence": "MRC",
+      "mass": 409
+     },
+     "coherent": true,
+     "implied": "yes"
+    },
+    "coherent_plausible": {
+     "fields": {
+      "length": 168,
+      "mass": 18704
+     },
+     "clean_value": 210,
+     "corrupted_value": 168,
+     "factor": 0.8,
+     "full_patch": {
+      "sequence": "MRCLTTPMLLRALAQAARAGPPGGRSLHSSAVAATYKYVNMQDPEMDMKSVTDRAARTLLWTELFRGLGMTLSYLFREPATINYPFEKGPLSPRFRGEHALRRYPSGEERCIACKLCEAICPAQAITIEAEPRADGSRRTTRYDIDMTKCIYCGFCQEACPVDAIVEG",
+      "mass": 18704
+     },
+     "coherent": true,
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Is UPB1 at least twice as long as NDUFS8? Answer yes or no with both lengths. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "u128",
+   "direction": "shrink"
+  },
+  {
+   "template": "mass_comparison",
+   "target_field": "mass",
+   "target_accession": "P00813",
+   "accessions": [
+    "Q9HAI6",
+    "P00813"
+   ],
+   "params": {
+    "gene_A": "TASL",
+    "gene_B": "ADA",
+    "acc_A": "Q9HAI6",
+    "acc_B": "P00813"
+   },
+   "answer_type": "string",
+   "n_calls_expected": 2,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "mass": -40764
+     },
+     "clean_value": 40764,
+     "corrupted_value": -40764,
+     "factor": null,
+     "direction": "shrink",
+     "implied": "TASL"
+    },
+    "plausible": {
+     "fields": {
+      "length": 272,
+      "mass": 30573
+     },
+     "clean_value": 40764,
+     "corrupted_value": 30573,
+     "factor": 0.75,
+     "direction": "shrink",
+     "implied": "TASL"
+    },
+    "coherent_impossible": {
+     "fields": {
+      "length": 3,
+      "mass": 348
+     },
+     "clean_value": 40764,
+     "corrupted_value": 348,
+     "factor": null,
+     "full_patch": {
+      "sequence": "MAQ",
+      "mass": 348
+     },
+     "coherent": true,
+     "implied": "TASL"
+    },
+    "coherent_plausible": {
+     "fields": {
+      "length": 272,
+      "mass": 30366
+     },
+     "clean_value": 40764,
+     "corrupted_value": 30366,
+     "factor": 0.75,
+     "full_patch": {
+      "sequence": "MAQTPAFDKPKVELHVHLDGSIKPETILYYGRRRGIALPANTAEGLLNVIGMDKPLTLPDFLAKFDYYMPAIAGCREAIKRIAYEFVEMKAKEGVVYVEVRYSPHLLANSKVEPIPWNQAEGDLTPDEVVALVGQGLQEGERDFGVKARSILCCMRHQPNWSPKVVELCKKYQQQTVVAIDLAGDETIPGSSLLPGHVQAYQEAVKSGIHRTVHAGEVGSAEVVKEAVDILKTERLGHGYHTLEDQALYNRLRQENMHFEICPWSSYLTGAW",
+      "mass": 30366
+     },
+     "coherent": true,
+     "implied": "TASL"
+    }
+   },
+   "gold": "ADA",
+   "prompt": "Which is heavier, the protein encoded by TASL or ADA? Give the gene symbol and both masses in kDa. Put only the gene symbol of the heavier protein in the JSON \"answer\" field.",
+   "task_id": "u129",
+   "direction": "shrink"
+  },
+  {
+   "template": "length_ratio",
+   "target_field": "length",
+   "target_accession": "P11836",
+   "accessions": [
+    "P09914",
+    "P11836"
+   ],
+   "params": {
+    "gene_A": "IFIT1",
+    "gene_B": "MS4A1",
+    "acc_A": "P09914",
+    "acc_B": "P11836"
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 2,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "length": 3
+     },
+     "clean_value": 297,
+     "corrupted_value": 3,
+     "factor": null,
+     "direction": "shrink",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "length": 223,
+      "mass": 24808
+     },
+     "clean_value": 297,
+     "corrupted_value": 223,
+     "factor": 0.75,
+     "direction": "shrink",
+     "implied": "yes"
+    },
+    "coherent_impossible": {
+     "fields": {
+      "length": 3,
+      "mass": 351
+     },
+     "clean_value": 297,
+     "corrupted_value": 3,
+     "factor": null,
+     "full_patch": {
+      "sequence": "MTT",
+      "mass": 351
+     },
+     "coherent": true,
+     "implied": "yes"
+    },
+    "coherent_plausible": {
+     "fields": {
+      "length": 223,
+      "mass": 24712
+     },
+     "clean_value": 297,
+     "corrupted_value": 223,
+     "factor": 0.75,
+     "full_patch": {
+      "sequence": "MTTPRNSVNGTFPAEPMKGPIAMQSGPKPLFRRMSSLVGPTQSFFMRESKTLGAVQIMNGLFHIALGGLLMIPAGIYAPICVTVWYPLWGGIMYIISGSLLAATEKNSRKCLVKGKMIMNSLSLFAAISGMILSIMDILNIKISHFLKMESLNFIRAHTPYINIYNCEPANPSEKNSPSTQYCYSIQSLFLGILSVMLIFAFFQELVIAGIVENEWKRTCSRP",
+      "mass": 24712
+     },
+     "coherent": true,
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Is IFIT1 at least twice as long as MS4A1? Answer yes or no with both lengths. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "u136",
+   "direction": "shrink"
+  },
+  {
+   "template": "mass_comparison",
+   "target_field": "mass",
+   "target_accession": "Q8IYR2",
+   "accessions": [
+    "O00472",
+    "Q8IYR2"
+   ],
+   "params": {
+    "gene_A": "ELL2",
+    "gene_B": "SMYD4",
+    "acc_A": "O00472",
+    "acc_B": "Q8IYR2"
+   },
+   "answer_type": "string",
+   "n_calls_expected": 2,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "mass": -89225
+     },
+     "clean_value": 89225,
+     "corrupted_value": -89225,
+     "factor": null,
+     "direction": "shrink",
+     "implied": "ELL2"
+    },
+    "plausible": {
+     "fields": {
+      "length": 603,
+      "mass": 66919
+     },
+     "clean_value": 89225,
+     "corrupted_value": 66919,
+     "factor": 0.75,
+     "direction": "shrink",
+     "implied": "ELL2"
+    },
+    "coherent_impossible": {
+     "fields": {
+      "length": 3,
+      "mass": 377
+     },
+     "clean_value": 89225,
+     "corrupted_value": 377,
+     "factor": null,
+     "full_patch": {
+      "sequence": "MDL",
+      "mass": 377
+     },
+     "coherent": true,
+     "implied": "ELL2"
+    },
+    "coherent_plausible": {
+     "fields": {
+      "length": 603,
+      "mass": 67150
+     },
+     "clean_value": 89225,
+     "corrupted_value": 67150,
+     "factor": 0.75,
+     "full_patch": {
+      "sequence": "MDLPVDEWKSYLLQKWASLPTSVQVTISTAETLRDIFLHSSSLLQPEDELFLKRLSKGYLVGKDSDAPLFYREEGNKKFQEKDYTGAAVLYSKGVSHSRPNTEDMSLCHANRSAALFHLGQYETCLKDINRAQTHGYPERLQPKIMLRKAECLVALGRLQEASQTISDLERNFTATPALADVLPQTLQRNLHRLKMKMQEKDSLTESFPAALAKTLEDAALREENEQLSNASSSIGLCVDPLKGRCLVATKDILPGELLVQEDAFVSVLNPGELPPPHHGLDSKWDTRVTNGDLYCHRCLKHTLATVPCDGCSYAKYCSQECLQQAWELYHRTECPLGGLLLTLGVFCHIALRLTLLVGFEDVRKIITKLCDKISNKDICLPESNNQVKTLNYGLGESEKNGNIVETPIPGCDINGKYENNYNAVFNLLPHTENHSPEHKFLCALCVSALCRQLEAASLQAIPTERIVNSSQLKAAVTPELCPDVTIWGVAMLRHMLQLQCNAQAMTTIQHTGPKGSIVTDSRQVRLATGIFPVISLLNHSCSPNTSVSFISTVATIRASQRIRKGQEILHCYGPHKSRMGVAERQQKLRSQYFFDCACPACQ",
+      "mass": 67150
+     },
+     "coherent": true,
+     "implied": "ELL2"
+    }
+   },
+   "gold": "SMYD4",
+   "prompt": "Which is heavier, the protein encoded by ELL2 or SMYD4? Give the gene symbol and both masses in kDa. Put only the gene symbol of the heavier protein in the JSON \"answer\" field.",
+   "task_id": "u137",
+   "direction": "shrink"
+  },
+  {
+   "template": "length_ratio",
+   "target_field": "length",
+   "target_accession": "P18089",
+   "accessions": [
+    "P18089",
+    "Q9H0A8"
+   ],
+   "params": {
+    "gene_A": "ADRA2B",
+    "gene_B": "COMMD4",
+    "acc_A": "P18089",
+    "acc_B": "Q9H0A8"
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 2,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "length": 3
+     },
+     "clean_value": 450,
+     "corrupted_value": 3,
+     "factor": null,
+     "direction": "shrink",
+     "implied": "no"
+    },
+    "plausible": {
+     "fields": {
+      "length": 360,
+      "mass": 39963
+     },
+     "clean_value": 450,
+     "corrupted_value": 360,
+     "factor": 0.8,
+     "direction": "shrink",
+     "implied": "no"
+    },
+    "coherent_impossible": {
+     "fields": {
+      "length": 3,
+      "mass": 401
+     },
+     "clean_value": 450,
+     "corrupted_value": 3,
+     "factor": null,
+     "full_patch": {
+      "sequence": "MDH",
+      "mass": 401
+     },
+     "coherent": true,
+     "implied": "no"
+    },
+    "coherent_plausible": {
+     "fields": {
+      "length": 360,
+      "mass": 39204
+     },
+     "clean_value": 450,
+     "corrupted_value": 360,
+     "factor": 0.8,
+     "full_patch": {
+      "sequence": "MDHQDPYSVQATAAIAAAITFLILFTIFGNALVILAVLTSRSLRAPQNLFLVSLAAADILVATLIIPFSLANELLGYWYFRRTWCEVYLALDVLFCTSSIVHLCAISLDRYWAVSRALEYNSKRTPRRIKCIILTVWLIAAVISLPPLIYKGDQGPQPRGRPQCKLNQEAWYILASSIGSFFAPCLIMILVYLRIYLIAKRSNRRGPRAKGGPGQGESKQPRPDHGGALASAKLPALASVASAREVNGHSKSTGEKEEGETPEDTGTRALPPSWAALPNSGQGQKEGVCGASPEDEAEEEEEEEEEEEECEPQAVPVSPASACSPPLQQPQGSRVLATLRGQVLLGRGVGAIGGQWWRRR",
+      "mass": 39204
+     },
+     "coherent": true,
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Is ADRA2B at least twice as long as COMMD4? Answer yes or no with both lengths. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "u144",
+   "direction": "shrink"
+  },
+  {
+   "template": "mass_comparison",
+   "target_field": "mass",
+   "target_accession": "Q155Q3",
+   "accessions": [
+    "Q155Q3",
+    "Q9NVH1"
+   ],
+   "params": {
+    "gene_A": "DIXDC1",
+    "gene_B": "DNAJC11",
+    "acc_A": "Q155Q3",
+    "acc_B": "Q9NVH1"
+   },
+   "answer_type": "string",
+   "n_calls_expected": 2,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "mass": -77478
+     },
+     "clean_value": 77478,
+     "corrupted_value": -77478,
+     "factor": null,
+     "direction": "shrink",
+     "implied": "DNAJC11"
+    },
+    "plausible": {
+     "fields": {
+      "length": 512,
+      "mass": 58108
+     },
+     "clean_value": 77478,
+     "corrupted_value": 58108,
+     "factor": 0.75,
+     "direction": "shrink",
+     "implied": "DNAJC11"
+    },
+    "coherent_impossible": {
+     "fields": {
+      "length": 3,
+      "mass": 333
+     },
+     "clean_value": 77478,
+     "corrupted_value": 333,
+     "factor": null,
+     "full_patch": {
+      "sequence": "MLA",
+      "mass": 333
+     },
+     "coherent": true,
+     "implied": "DNAJC11"
+    },
+    "coherent_plausible": {
+     "fields": {
+      "length": 512,
+      "mass": 57745
+     },
+     "clean_value": 77478,
+     "corrupted_value": 57745,
+     "factor": 0.75,
+     "full_patch": {
+      "sequence": "MLACLTRGNLLDVLQEGFNEQQLQAYVAWVNAQLKKRPAVKPVQDLRQDLRDGVILAYLIEIVAGEKLSGVQLSPGNQQEMKNNVEKVLQFVASKKIRMHQTSAKDIVDGNLKSIMRLVLALAAHFKPGSSRTVNQGRDSRAPLQSHRPHCATAVAQGAAAALADVCHDMSRSGRDVFRYRQRNSSMDEEIENPYWSVRALVQQYEGQQRSPSESSCSSLTSPSPIHSAKSESIITQSEEKADFVIIPAEGIENRTEGTDSPLSRDWRPGSPGTYLETSWEEQLLEQQEYLEKEMEEAKKMISGLQALLLNGSLPEDEQERPLALCEPGVNPEEQLIIIQSRLDQSMEENQDLKKELLKCKQEARNLQGIKDALQQRLTQQDTSVLQLKQELLRANMDKDELHNQNVDLQRKLDERNRLLGEYKKELGQKDRLLQQHQAKLEEALRKLSDVSYHQVDLERELEHKDVLLAHCMKREADEATNYNSHNSQSNGFLLPTAGKGATSVSNRGTSD",
+      "mass": 57745
+     },
+     "coherent": true,
+     "implied": "DNAJC11"
+    }
+   },
+   "gold": "DIXDC1",
+   "prompt": "Which is heavier, the protein encoded by DIXDC1 or DNAJC11? Give the gene symbol and both masses in kDa. Put only the gene symbol of the heavier protein in the JSON \"answer\" field.",
+   "task_id": "u145",
+   "direction": "shrink"
+  },
+  {
+   "template": "length_ratio",
+   "target_field": "length",
+   "target_accession": "Q13257",
+   "accessions": [
+    "P35237",
+    "Q13257"
+   ],
+   "params": {
+    "gene_A": "SERPINB6",
+    "gene_B": "MAD2L1",
+    "acc_A": "P35237",
+    "acc_B": "Q13257"
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 2,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "length": 3
+     },
+     "clean_value": 205,
+     "corrupted_value": 3,
+     "factor": null,
+     "direction": "shrink",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "length": 164,
+      "mass": 18808
+     },
+     "clean_value": 205,
+     "corrupted_value": 164,
+     "factor": 0.8,
+     "direction": "shrink",
+     "implied": "yes"
+    },
+    "coherent_impossible": {
+     "fields": {
+      "length": 3,
+      "mass": 333
+     },
+     "clean_value": 205,
+     "corrupted_value": 3,
+     "factor": null,
+     "full_patch": {
+      "sequence": "MAL",
+      "mass": 333
+     },
+     "coherent": true,
+     "implied": "yes"
+    },
+    "coherent_plausible": {
+     "fields": {
+      "length": 164,
+      "mass": 18745
+     },
+     "clean_value": 205,
+     "corrupted_value": 164,
+     "factor": 0.8,
+     "full_patch": {
+      "sequence": "MALQLSREQGITLRGSAEIVAEFFSFGINSILYQRGIYPSETFTRVQKYGLTLLVTTDLELIKYLNNVVEQLKDWLYKCSVQKLVVVISNIESGEVLERWQFDIECDKTAKDDSAPREKSQKAIQDEIRSVIRQITATVTFLPLLEVSCSFDLLIYTDKDLVVP",
+      "mass": 18745
+     },
+     "coherent": true,
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Is SERPINB6 at least twice as long as MAD2L1? Answer yes or no with both lengths. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "u152",
+   "direction": "shrink"
+  },
+  {
+   "template": "mass_comparison",
+   "target_field": "mass",
+   "target_accession": "Q9BWP8",
+   "accessions": [
+    "Q9BWP8",
+    "O00217"
+   ],
+   "params": {
+    "gene_A": "COLEC11",
+    "gene_B": "NDUFS8",
+    "acc_A": "Q9BWP8",
+    "acc_B": "O00217"
+   },
+   "answer_type": "string",
+   "n_calls_expected": 2,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "mass": 45
+     },
+     "clean_value": 28665,
+     "corrupted_value": 45,
+     "factor": null,
+     "direction": "shrink",
+     "implied": "NDUFS8"
+    },
+    "plausible": {
+     "fields": {
+      "length": 203,
+      "mass": 21499
+     },
+     "clean_value": 28665,
+     "corrupted_value": 21499,
+     "factor": 0.75,
+     "direction": "shrink",
+     "implied": "NDUFS8"
+    },
+    "coherent_impossible": {
+     "fields": {
+      "length": 3,
+      "mass": 362
+     },
+     "clean_value": 28665,
+     "corrupted_value": 362,
+     "factor": null,
+     "full_patch": {
+      "sequence": "MRG",
+      "mass": 362
+     },
+     "coherent": true,
+     "implied": "NDUFS8"
+    },
+    "coherent_plausible": {
+     "fields": {
+      "length": 203,
+      "mass": 20832
+     },
+     "clean_value": 28665,
+     "corrupted_value": 20832,
+     "factor": 0.75,
+     "full_patch": {
+      "sequence": "MRGNLALVGVLISLAFLSLLPSGHPQPAGDDACSVQILVPGLKGDAGEKGDKGAPGRPGRVGPTGEKGDMGDKGQKGSVGRHGKIGPIGSKGEKGDSGDIGPPGPNGEPGLPCECSQLRKAIGEMDNQVSQLTSELKFIKNAVAGVRETESKIYLLVKEEKRYADAQLSCQGRGGTLSMPKDEAANGLMAAYLAQAGLARVFI",
+      "mass": 20832
+     },
+     "coherent": true,
+     "implied": "NDUFS8"
+    }
+   },
+   "gold": "COLEC11",
+   "prompt": "Which is heavier, the protein encoded by COLEC11 or NDUFS8? Give the gene symbol and both masses in kDa. Put only the gene symbol of the heavier protein in the JSON \"answer\" field.",
+   "task_id": "u153",
+   "direction": "shrink"
+  },
+  {
+   "template": "length_ratio",
+   "target_field": "length",
+   "target_accession": "O75832",
+   "accessions": [
+    "Q9BQ90",
+    "O75832"
+   ],
+   "params": {
+    "gene_A": "KLHDC3",
+    "gene_B": "PSMD10",
+    "acc_A": "Q9BQ90",
+    "acc_B": "O75832"
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 2,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "length": 3
+     },
+     "clean_value": 226,
+     "corrupted_value": 3,
+     "factor": null,
+     "direction": "shrink",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "length": 170,
+      "mass": 18321
+     },
+     "clean_value": 226,
+     "corrupted_value": 170,
+     "factor": 0.75,
+     "direction": "shrink",
+     "implied": "yes"
+    },
+    "coherent_impossible": {
+     "fields": {
+      "length": 3,
+      "mass": 335
+     },
+     "clean_value": 226,
+     "corrupted_value": 3,
+     "factor": null,
+     "full_patch": {
+      "sequence": "MEG",
+      "mass": 335
+     },
+     "coherent": true,
+     "implied": "yes"
+    },
+    "coherent_plausible": {
+     "fields": {
+      "length": 170,
+      "mass": 18340
+     },
+     "clean_value": 226,
+     "corrupted_value": 170,
+     "factor": 0.75,
+     "full_patch": {
+      "sequence": "MEGCVSNLMVCNLAYSGKLEELKESILADKSLATRTDQDSRTALHWACSAGHTEIVEFLLQLGVPVNDKDDAGWSPLHIAASAGRDEIVKALLGKGAQVNAVNQNGCTPLHYAASKNRHEIAVMLLEGGANPDAKDHYEATAMHRAAAKGNLKMIHILLYYKASTNIQDT",
+      "mass": 18340
+     },
+     "coherent": true,
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Is KLHDC3 at least twice as long as PSMD10? Answer yes or no with both lengths. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "u160",
+   "direction": "shrink"
+  },
+  {
+   "template": "mass_comparison",
+   "target_field": "mass",
+   "target_accession": "Q9UBR1",
+   "accessions": [
+    "Q8NHC4",
+    "Q9UBR1"
+   ],
+   "params": {
+    "gene_A": "OR10J5",
+    "gene_B": "UPB1",
+    "acc_A": "Q8NHC4",
+    "acc_B": "Q9UBR1"
+   },
+   "answer_type": "string",
+   "n_calls_expected": 2,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "mass": -43166
+     },
+     "clean_value": 43166,
+     "corrupted_value": -43166,
+     "factor": null,
+     "direction": "shrink",
+     "implied": "OR10J5"
+    },
+    "plausible": {
+     "fields": {
+      "length": 288,
+      "mass": 32374
+     },
+     "clean_value": 43166,
+     "corrupted_value": 32374,
+     "factor": 0.75,
+     "direction": "shrink",
+     "implied": "OR10J5"
+    },
+    "coherent_impossible": {
+     "fields": {
+      "length": 3,
+      "mass": 277
+     },
+     "clean_value": 43166,
+     "corrupted_value": 277,
+     "factor": null,
+     "full_patch": {
+      "sequence": "MAG",
+      "mass": 277
+     },
+     "coherent": true,
+     "implied": "OR10J5"
+    },
+    "coherent_plausible": {
+     "fields": {
+      "length": 288,
+      "mass": 32424
+     },
+     "clean_value": 43166,
+     "corrupted_value": 32424,
+     "factor": 0.75,
+     "full_patch": {
+      "sequence": "MAGAEWKSLEECLEKHLPLPDLQEVKRVLYGKELRKLDLPREAFEAASREDFELQGYAFEAAEEQLRRPRIVHVGLVQNRIPLPANAPVAEQVSALHRRIKAIVEVAAMCGVNIICFQEAWTMPFAFCTREKLPWTEFAESAEDGPTTRFCQKLAKNHDMVVVSPILERDSEHGDVLWNTAVVISNSGAVLGKTRKNHIPRVGDFNESTYYMEGNLGHPVFQTQFGRIAVNICYGRHHPLNWLMYSINGAEIIFNPSATIGALSESLWPIEARNAAIANHCFTCAINR",
+      "mass": 32424
+     },
+     "coherent": true,
+     "implied": "OR10J5"
+    }
+   },
+   "gold": "UPB1",
+   "prompt": "Which is heavier, the protein encoded by OR10J5 or UPB1? Give the gene symbol and both masses in kDa. Put only the gene symbol of the heavier protein in the JSON \"answer\" field.",
+   "task_id": "u161",
+   "direction": "shrink"
+  },
+  {
+   "template": "length_ratio",
+   "target_field": "length",
+   "target_accession": "P0DTE4",
+   "accessions": [
+    "P0DTE4",
+    "Q9UNL4"
+   ],
+   "params": {
+    "gene_A": "UGT2A1",
+    "gene_B": "ING4",
+    "acc_A": "P0DTE4",
+    "acc_B": "Q9UNL4"
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 2,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "length": 3
+     },
+     "clean_value": 527,
+     "corrupted_value": 3,
+     "factor": null,
+     "direction": "shrink",
+     "implied": "no"
+    },
+    "plausible": {
+     "fields": {
+      "length": 422,
+      "mass": 47970
+     },
+     "clean_value": 527,
+     "corrupted_value": 422,
+     "factor": 0.8,
+     "direction": "shrink",
+     "implied": "no"
+    },
+    "coherent_impossible": {
+     "fields": {
+      "length": 3,
+      "mass": 376
+     },
+     "clean_value": 527,
+     "corrupted_value": 3,
+     "factor": null,
+     "full_patch": {
+      "sequence": "MLN",
+      "mass": 376
+     },
+     "coherent": true,
+     "implied": "no"
+    },
+    "coherent_plausible": {
+     "fields": {
+      "length": 422,
+      "mass": 47744
+     },
+     "clean_value": 527,
+     "corrupted_value": 422,
+     "factor": 0.8,
+     "full_patch": {
+      "sequence": "MLNNLLLFSLQISLIGTTLGGNVLIWPMEGSHWLNVKIIIDELIKKEHNVTVLVASGALFITPTSNPSLTFEIYKVPFGKERIEGVIKDFVLTWLENRPSPSTIWRFYQEMAKVIKDFHMVSQEICDGVLKNQQLMAKLKKSKFEVLVSDPVFPCGDIVALKLGIPFMYSLRFSPASTVEKHCGKVPYPPSYVPAVLSELTDQMSFTDRIRNFISYHLQDYMFETLWKSWDSYYSKALGGLLLCCPGWSAVADLGSLQPLLPGFKRFSRLSLHCSWDYRLPAGRPTTLCETMGKAEIWLIRTYWDFEFPRPYLPNFEFVGGLHCKPAKPLPKVLWRYKGKKPATLGNNTQLFDWIPQNDLLGHPKTKAFITHGGTNGIYEAIYHGVPMVGVPMFADQPDNIAHMKAKGAAVEVNLNTMTSVD",
+      "mass": 47744
+     },
+     "coherent": true,
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Is UGT2A1 at least twice as long as ING4? Answer yes or no with both lengths. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "u168",
+   "direction": "shrink"
+  },
+  {
+   "template": "mass_comparison",
+   "target_field": "mass",
+   "target_accession": "O00506",
+   "accessions": [
+    "P35237",
+    "O00506"
+   ],
+   "params": {
+    "gene_A": "SERPINB6",
+    "gene_B": "STK25",
+    "acc_A": "P35237",
+    "acc_B": "O00506"
+   },
+   "answer_type": "string",
+   "n_calls_expected": 2,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "mass": 45
+     },
+     "clean_value": 48112,
+     "corrupted_value": 45,
+     "factor": null,
+     "direction": "shrink",
+     "implied": "SERPINB6"
+    },
+    "plausible": {
+     "fields": {
+      "length": 320,
+      "mass": 36084
+     },
+     "clean_value": 48112,
+     "corrupted_value": 36084,
+     "factor": 0.75,
+     "direction": "shrink",
+     "implied": "SERPINB6"
+    },
+    "coherent_impossible": {
+     "fields": {
+      "length": 3,
+      "mass": 357
+     },
+     "clean_value": 48112,
+     "corrupted_value": 357,
+     "factor": null,
+     "full_patch": {
+      "sequence": "MAH",
+      "mass": 357
+     },
+     "coherent": true,
+     "implied": "SERPINB6"
+    },
+    "coherent_plausible": {
+     "fields": {
+      "length": 320,
+      "mass": 36316
+     },
+     "clean_value": 48112,
+     "corrupted_value": 36316,
+     "factor": 0.75,
+     "full_patch": {
+      "sequence": "MAHLRGFANQHSRVDPEELFTKLDRIGKGSFGEVYKGIDNHTKEVVAIKIIDLEEAEDEIEDIQQEITVLSQCDSPYITRYFGSYLKSTKLWIIMEYLGGGSALDLLKPGPLEETYIATILREILKGLDYLHSERKIHRDIKAANVLLSEQGDVKLADFGVAGQLTDTQIKRNTFVGTPFWMAPEVIKQSAYDFKADIWSLGITAIELAKGEPPNSDLHPMRVLFLIPKNSPPTLEGQHSKPFKEFVEACLNKDPRFRPTAKELLKHKFITRYTKKTSFLTELIDRYKRWKSEGHGEESSSEDSDIDGEAEDGEQGPIWT",
+      "mass": 36316
+     },
+     "coherent": true,
+     "implied": "SERPINB6"
+    }
+   },
+   "gold": "STK25",
+   "prompt": "Which is heavier, the protein encoded by SERPINB6 or STK25? Give the gene symbol and both masses in kDa. Put only the gene symbol of the heavier protein in the JSON \"answer\" field.",
+   "task_id": "u169",
+   "direction": "shrink"
+  },
+  {
+   "template": "length_ratio",
+   "target_field": "length",
+   "target_accession": "P18627",
+   "accessions": [
+    "P18627",
+    "Q7RTU4"
+   ],
+   "params": {
+    "gene_A": "LAG3",
+    "gene_B": "BHLHA9",
+    "acc_A": "P18627",
+    "acc_B": "Q7RTU4"
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 2,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "length": 3
+     },
+     "clean_value": 525,
+     "corrupted_value": 3,
+     "factor": null,
+     "direction": "shrink",
+     "implied": "no"
+    },
+    "plausible": {
+     "fields": {
+      "length": 420,
+      "mass": 45959
+     },
+     "clean_value": 525,
+     "corrupted_value": 420,
+     "factor": 0.8,
+     "direction": "shrink",
+     "implied": "no"
+    },
+    "coherent_impossible": {
+     "fields": {
+      "length": 3,
+      "mass": 465
+     },
+     "clean_value": 525,
+     "corrupted_value": 3,
+     "factor": null,
+     "full_patch": {
+      "sequence": "MWE",
+      "mass": 465
+     },
+     "coherent": true,
+     "implied": "no"
+    },
+    "coherent_plausible": {
+     "fields": {
+      "length": 420,
+      "mass": 45815
+     },
+     "clean_value": 525,
+     "corrupted_value": 420,
+     "factor": 0.8,
+     "full_patch": {
+      "sequence": "MWEAQFLGLLFLQPLWVAPVKPLQPGAEVPVVWAQEGAPAQLPCSPTIPLQDLSLLRRAGVTWQHQPDSGPPAAAPGHPLAPGPHPAAPSSWGPRPRRYTVLSVGPGGLRSGRLPLQPRVQLDERGRQRGDFSLWLRPARRADAGEYRAAVHLRDRALSCRLRLRLGQASMTASPPGSLRASDWVILNCSFSRPDRPASVHWFRNRGQGRVPVRESPHHHLAESFLFLPQVSPMDSGPWGCILTYRDGFNVSIMYNLTVLGLEPPTPLTVYAGAGSRVGLPCRLPAGVGTRSFLTAKWTPPGGGPDLLVTGDNGDFTLRLEDVSQAQAGTYTCHIHLQEQQLNATVTLAIITVTPKSFGSPGSLGKLLCEVTPVSGQERFVWSSLDTPSQRSFSGPWLEAQEAQLLSQPWQCQLYQGERL",
+      "mass": 45815
+     },
+     "coherent": true,
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Is LAG3 at least twice as long as BHLHA9? Answer yes or no with both lengths. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "u176",
+   "direction": "shrink"
+  },
+  {
+   "template": "mass_comparison",
+   "target_field": "mass",
+   "target_accession": "Q9NW38",
+   "accessions": [
+    "Q9NW38",
+    "P04201"
+   ],
+   "params": {
+    "gene_A": "FANCL",
+    "gene_B": "MAS1",
+    "acc_A": "Q9NW38",
+    "acc_B": "P04201"
+   },
+   "answer_type": "string",
+   "n_calls_expected": 2,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "mass": 45
+     },
+     "clean_value": 42905,
+     "corrupted_value": 45,
+     "factor": null,
+     "direction": "shrink",
+     "implied": "MAS1"
+    },
+    "plausible": {
+     "fields": {
+      "length": 281,
+      "mass": 32179
+     },
+     "clean_value": 42905,
+     "corrupted_value": 32179,
+     "factor": 0.75,
+     "direction": "shrink",
+     "implied": "MAS1"
+    },
+    "coherent_impossible": {
+     "fields": {
+      "length": 3,
+      "mass": 319
+     },
+     "clean_value": 42905,
+     "corrupted_value": 319,
+     "factor": null,
+     "full_patch": {
+      "sequence": "MAV",
+      "mass": 319
+     },
+     "coherent": true,
+     "implied": "MAS1"
+    },
+    "coherent_plausible": {
+     "fields": {
+      "length": 281,
+      "mass": 32154
+     },
+     "clean_value": 42905,
+     "corrupted_value": 32154,
+     "factor": 0.75,
+     "full_patch": {
+      "sequence": "MAVTEASLLRQCPLLLPQNRSKTVYEGFISAQGRDFHLRIVLPEDLQLKNARLLCSWQLRTILSGYHRIVQQRMQHSPDLMSFMMELKMLLEVALKNRQELYALPPPPQFYSSLIEEIGTLGWDKLVYADTCFSTIKLKAEDASGREHLITLKLKAKYPAESPDYFVDFPVPFCASWTPQSSLISIYSQFLAAIESLKAFWDVMDEIDEKTWVLEPEKPPRSATARRIALGNNVSINIEVDPRHPTMLPECFFLGADHVVKPLGIKLSRNIHLWDPENSVL",
+      "mass": 32154
+     },
+     "coherent": true,
+     "implied": "MAS1"
+    }
+   },
+   "gold": "FANCL",
+   "prompt": "Which is heavier, the protein encoded by FANCL or MAS1? Give the gene symbol and both masses in kDa. Put only the gene symbol of the heavier protein in the JSON \"answer\" field.",
+   "task_id": "u177",
+   "direction": "shrink"
+  },
+  {
+   "template": "length_ratio",
+   "target_field": "length",
+   "target_accession": "O60687",
+   "accessions": [
+    "Q7Z3E5",
+    "O60687"
+   ],
+   "params": {
+    "gene_A": "ARMC9",
+    "gene_B": "SRPX2",
+    "acc_A": "Q7Z3E5",
+    "acc_B": "O60687"
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 2,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "length": 3
+     },
+     "clean_value": 465,
+     "corrupted_value": 3,
+     "factor": null,
+     "direction": "shrink",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "length": 372,
+      "mass": 42378
+     },
+     "clean_value": 465,
+     "corrupted_value": 372,
+     "factor": 0.8,
+     "direction": "shrink",
+     "implied": "yes"
+    },
+    "coherent_impossible": {
+     "fields": {
+      "length": 3,
+      "mass": 307
+     },
+     "clean_value": 465,
+     "corrupted_value": 3,
+     "factor": null,
+     "full_patch": {
+      "sequence": "MAS",
+      "mass": 307
+     },
+     "coherent": true,
+     "implied": "yes"
+    },
+    "coherent_plausible": {
+     "fields": {
+      "length": 372,
+      "mass": 41767
+     },
+     "clean_value": 465,
+     "corrupted_value": 372,
+     "factor": 0.8,
+     "full_patch": {
+      "sequence": "MASQLTQRGALFLLFFLTPAVTPTWYAGSGYYPDESYNEVYAEEVPQAPALDYRVPRWCYTLNIQDGEATCYSPKGGNYHSSLGTRCELSCDRGFRLIGRRSVQCLPSRRWSGTAYCRQMRCHALPFITSGTYTCTNGVLLDSRCDYSCSSGYHLEGDRSRICMEDGRWSGGEPVCVDIDPPKIRCPHSREKMAEPEKLTARVYWDPPLVKDSADGTITRVTLRGPEPGSHFPEGEHVIRYTAYDRAYNRASCKFIVKVQVRRCPTLKPPQHGYLTCTSAGDNYGATCEYHCDGGYDRQGTPSRVCQSSRQWSGSPPICAPMKINVNVNSAAGLLDQFYEKQRLLIISAPDPSNRYYKMQISMLQQSTCGLD",
+      "mass": 41767
+     },
+     "coherent": true,
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Is ARMC9 at least twice as long as SRPX2? Answer yes or no with both lengths. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "u184",
+   "direction": "shrink"
+  },
+  {
+   "template": "mass_comparison",
+   "target_field": "mass",
+   "target_accession": "Q9Y6H8",
+   "accessions": [
+    "Q9Y6H8",
+    "P53365"
+   ],
+   "params": {
+    "gene_A": "GJA3",
+    "gene_B": "ARFIP2",
+    "acc_A": "Q9Y6H8",
+    "acc_B": "P53365"
+   },
+   "answer_type": "string",
+   "n_calls_expected": 2,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "mass": 45
+     },
+     "clean_value": 47410,
+     "corrupted_value": 45,
+     "factor": null,
+     "direction": "shrink",
+     "implied": "ARFIP2"
+    },
+    "plausible": {
+     "fields": {
+      "length": 326,
+      "mass": 35558
+     },
+     "clean_value": 47410,
+     "corrupted_value": 35558,
+     "factor": 0.75,
+     "direction": "shrink",
+     "implied": "ARFIP2"
+    },
+    "coherent_impossible": {
+     "fields": {
+      "length": 3,
+      "mass": 321
+     },
+     "clean_value": 47410,
+     "corrupted_value": 321,
+     "factor": null,
+     "full_patch": {
+      "sequence": "MGD",
+      "mass": 321
+     },
+     "coherent": true,
+     "implied": "ARFIP2"
+    },
+    "coherent_plausible": {
+     "fields": {
+      "length": 326,
+      "mass": 36586
+     },
+     "clean_value": 47410,
+     "corrupted_value": 36586,
+     "factor": 0.75,
+     "full_patch": {
+      "sequence": "MGDWSFLGRLLENAQEHSTVIGKVWLTVLFIFRILVLGAAAEDVWGDEQSDFTCNTQQPGCENVCYDRAFPISHIRFWALQIIFVSTPTLIYLGHVLHIVRMEEKKKEREEEEQLKRESPSPKEPPQDNPSSRDDRGRVRMAGALLRTYVFNIIFKTLFEVGFIAGQYFLYGFELKPLYRCDRWPCPNTVDCFISRPTEKTIFIIFMLAVACASLLLNMLEIYHLGWKKLKQGVTSRLGPDASEAPLGTADPPPLPPSSRPPAVAIGFPPYYAHTAAPLGQARAVGYPGAPPPAADFKLLALTEARGKGQSAKLYNGHHHLLMTEQ",
+      "mass": 36586
+     },
+     "coherent": true,
+     "implied": "ARFIP2"
+    }
+   },
+   "gold": "GJA3",
+   "prompt": "Which is heavier, the protein encoded by GJA3 or ARFIP2? Give the gene symbol and both masses in kDa. Put only the gene symbol of the heavier protein in the JSON \"answer\" field.",
+   "task_id": "u185",
+   "direction": "shrink"
+  },
+  {
+   "template": "length_ratio",
+   "target_field": "length",
+   "target_accession": "O95251",
+   "accessions": [
+    "P16234",
+    "O95251"
+   ],
+   "params": {
+    "gene_A": "PDGFRA",
+    "gene_B": "KAT7",
+    "acc_A": "P16234",
+    "acc_B": "O95251"
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 2,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "length": 3
+     },
+     "clean_value": 611,
+     "corrupted_value": 3,
+     "factor": null,
+     "direction": "shrink",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "length": 458,
+      "mass": 52982
+     },
+     "clean_value": 611,
+     "corrupted_value": 458,
+     "factor": 0.75,
+     "direction": "shrink",
+     "implied": "yes"
+    },
+    "coherent_impossible": {
+     "fields": {
+      "length": 3,
+      "mass": 403
+     },
+     "clean_value": 611,
+     "corrupted_value": 3,
+     "factor": null,
+     "full_patch": {
+      "sequence": "MPR",
+      "mass": 403
+     },
+     "coherent": true,
+     "implied": "yes"
+    },
+    "coherent_plausible": {
+     "fields": {
+      "length": 458,
+      "mass": 52785
+     },
+     "clean_value": 611,
+     "corrupted_value": 458,
+     "factor": 0.75,
+     "full_patch": {
+      "sequence": "MPRRKRNAGSSSDGTEDSDFSTDLEHTDSSESDGTSRRSARVTRSSARLSQSSQDSSPVRNLQSFGTEEPAYSTRRVTRSQQQPTPVTPKKYPLRQTRSSGSETEQVVDFSDRETKNTADHDESPPRTPTGNAPSSESDIDISSPNVSHDESIAKDMSLKDSGSDLSHRPKRRRFHESYNFNMKCPTPGCNSLGHLTGKHERHFSISGCPLYHNLSADECKVRAQSRDKQIEERMLSHRQDDNNRHATRHQAPTERQLRYKEKVAELRKKRNSGLSKEQKEKYMEHRQTYGNTREPLLENLTSEYDLDLFRRAQARASEDLEKLRLQGQITEGSNMIKTIAFGRYELDTWYHSPYPEEYARLGRLYMCEFCLKYMKSQTILRRHMAKCVWKHPPGDEIYRKGSISVFEVDGKKNKIYCQNLCLLAKLFLDHKTLYYDVEPFLFYVMTEADNTGCHLIG",
+      "mass": 52785
+     },
+     "coherent": true,
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Is PDGFRA at least twice as long as KAT7? Answer yes or no with both lengths. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "u192",
+   "direction": "shrink"
+  },
+  {
+   "template": "mass_comparison",
+   "target_field": "mass",
+   "target_accession": "P16234",
+   "accessions": [
+    "P16234",
+    "O00444"
+   ],
+   "params": {
+    "gene_A": "PDGFRA",
+    "gene_B": "PLK4",
+    "acc_A": "P16234",
+    "acc_B": "O00444"
+   },
+   "answer_type": "string",
+   "n_calls_expected": 2,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "mass": 45
+     },
+     "clean_value": 122670,
+     "corrupted_value": 45,
+     "factor": null,
+     "direction": "shrink",
+     "implied": "PLK4"
+    },
+    "plausible": {
+     "fields": {
+      "length": 817,
+      "mass": 92002
+     },
+     "clean_value": 122670,
+     "corrupted_value": 92002,
+     "factor": 0.75,
+     "direction": "shrink",
+     "implied": "PLK4"
+    },
+    "coherent_impossible": {
+     "fields": {
+      "length": 3,
+      "mass": 307
+     },
+     "clean_value": 122670,
+     "corrupted_value": 307,
+     "factor": null,
+     "full_patch": {
+      "sequence": "MGT",
+      "mass": 307
+     },
+     "coherent": true,
+     "implied": "PLK4"
+    },
+    "coherent_plausible": {
+     "fields": {
+      "length": 817,
+      "mass": 91790
+     },
+     "clean_value": 122670,
+     "corrupted_value": 91790,
+     "factor": 0.75,
+     "full_patch": {
+      "sequence": "MGTSHPAFLVLGCLLTGLSLILCQLSLPSILPNENEKVVQLNSSFSLRCFGESEVSWQYPMSEEESSDVEIRNEENNSGLFVTVLEVSSASAAHTGLYTCYYNHTQTEENELEGRHIYIYVPDPDVAFVPLGMTDYLVIVEDDDSAIIPCRTTDPETPVTLHNSEGVVPASYDSRQGFNGTFTVGPYICEATVKGKKFQTIPFNVYALKATSELDLEMEALKTVYKSGETIVVTCAVFNNEVVDLQWTYPGEVKGKGITMLEEIKVPSIKLVYTLTVPEATVKDSGDYECAARQATREVKEMKKVTISVHEKGFIEIKPTFSQLEAVNLHEVKHFVVEVRAYPPPRISWLKNNLTLIENLTEITTDVEKIQEIRYRSKLKLIRAKEEDSGHYTIVAQNEDAVKSYTFELLTQVPSSILDLVDDHHGSTGGQTVRCTAEGTPLPDIEWMICKDIKKCNNETSWTILANNVSNIITEIHSRDRSTVEGRVTFAKVEETIAVRCLAKNLLGAENRELKLVAPTLRSELTVAAAVLVLLVIVIISLIVLVVIWKQKPRYEIRWRVIESISPDGHEYIYVDPMQLPYDSRWEFPRDGLVLGRVLGSGAFGKVVEGTAYGLSRSQPVMKVAVKMLKPTARSSEKQALMSELKIMTHLGPHLNIVNLLGACTKSGPIYIITEYCFYGDLVNYLHKNRDSFLSHHPEKPKKELDIFGLNPADESTRSYVILSFENNGDYMDMKQADTTQYVPMLERKEVSKYSDIQRSLYDRPASYKKKSMLDSEVKNLLSDDNSEGLTLLDLLSFTYQVARGMEFLASKNCVHR",
+      "mass": 91790
+     },
+     "coherent": true,
+     "implied": "PLK4"
+    }
+   },
+   "gold": "PDGFRA",
+   "prompt": "Which is heavier, the protein encoded by PDGFRA or PLK4? Give the gene symbol and both masses in kDa. Put only the gene symbol of the heavier protein in the JSON \"answer\" field.",
+   "task_id": "u193",
+   "direction": "shrink"
+  }
+ ]
+}
