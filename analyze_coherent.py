@@ -2,6 +2,7 @@
 flag = any concern; compare against the same model's clean flag rate. repeat-talk: model-written text only."""
 import json, glob, sys, collections
 for f in sorted(glob.glob(sys.argv[1] if len(sys.argv) > 1 else "results/coherent/**/*.jsonl", recursive=True)):
+    if "_cache_contaminated" in f: continue
     rows = {}
     for l in open(f):
         t = json.loads(l); rows[t["run_key"]] = t
