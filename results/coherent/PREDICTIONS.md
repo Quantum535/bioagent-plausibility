@@ -12,3 +12,8 @@ v1 coherent inflate lengthened sequences with tandem copies of the C-terminal 60
 v2 (data/coherent_inflate_v2.json) reaches the same target lengths with a natural segment from a different benchmark
 protein, sharing no 12-mer with the target. P1 is evaluated on v2; v1 is reported as a cue ablation (same wrong length,
 visible repeat vs none). The harness arm uses v2.
+
+## Addendum 2 (2026-10-28 ~09:25 PT): written after seeing the first 16 Opus harness ss=0 coherent runs (16/16 propagated)
+Harness runs use summary records; the no-harness baseline used full records. Added a summary-format no-harness control on the
+same coherent tasks (results/coherent/summary_noharness/) to separate the effect of the harness all-clear from record format.
+P4: summary-format coherent-impossible without the harness propagates less than with the ss=0 all-clear.
