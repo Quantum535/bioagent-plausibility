@@ -8,7 +8,7 @@ rows = list(csv.DictReader(open(path, newline="")))
 cols = list(rows[0].keys())
 idc = next((c for c in cols if c.lower() in ("id", "concern_id", "item_id")), cols[0])
 hide = {c for c in cols if any(w in c.lower() for w in ("model", "cue", "label", "grader"))}
-show = [c for c in cols if c != idc and c not in hide]
+show = ["concern_text"] if "concern_text" in cols else [c for c in cols if c != idc and c not in hide]
 out = os.path.join(os.path.dirname(path), f"labels_{who}.csv")
 done = {r["id"] for r in csv.DictReader(open(out))} if os.path.exists(out) else set()
 order = list(range(len(rows))); random.Random(sum(map(ord, who))).shuffle(order)

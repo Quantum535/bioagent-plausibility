@@ -14,7 +14,7 @@ items = raw.items() if isinstance(raw, dict) else ((str(x.get("id")), x) for x i
 key = {}
 for i, v in items:
     if not isinstance(v, dict): continue
-    g = {c: int(bool(v.get(c, v.get(f"cue_{c}", False)))) for c in ("crossfield", "recall", "rule")}; g["none"] = int(not any(g.values())); key[str(i)] = g
+    src = v.get("classifier", v); g = {c: int(bool(src.get(c, src.get(f"cue_{c}", False)))) for c in ("crossfield", "recall", "rule")}; g["none"] = int(not any(g.values())); key[str(i)] = g
 ann = {os.path.basename(p)[len("labels_"):-4]: labels(p) for p in sorted(glob.glob(os.path.join(d, "labels_*.csv")))}
 print(f"{d}: grader key {len(key)} items; annotators: {list(ann) or 'none yet'}")
 def report(A, B, la, lb):
