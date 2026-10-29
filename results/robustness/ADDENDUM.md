@@ -15,3 +15,15 @@ tasks, Argon and DeepSeek on all 79); Phase 5 annotate + second source (all thre
 (Opus 5, Argon, Flash, DeepSeek). For each cell we report propagation per sample and the share of tasks with the same outcome in
 all three samples, and we check whether each original conclusion holds in every sample separately: R1 (>= 80%), R2 and R3
 (Phase 5), and the signs of E2 (C > B) and E3 (A < P4) for each model.
+
+## Part 3 (added 2026-10-29 after reading Part 1 traces, before these runs): how the replacement is presented
+Trace check of Part 1: Argon read the block's "observed" field (the original database value) as the second-source value; Opus
+cited recalled "canonical UniProt" lengths matching the superseded version. Part 1 reused annotate's field names (observed,
+derived), which are ambiguous after replacement.
+Arms (Phase 5 tasks; summary record; second source; replace mode; clean on the first 20 tasks, superseded with 3 samples;
+Opus 5, Gemini 4 Argon, DeepSeek V4.1 Flash):
+- labeled: the block states the value now shown in the record, its source, and the original database value it replaced.
+- silent: the corrected value is shown with no verification block.
+Predictions: L1, labeled propagation on covered proteins <= 2% for each model. S1, silent propagation on covered proteins <= 2%
+for each model. L2, labeled < Part 1 replace (per model x task mean over samples; one-sided Wilcoxon, pooled across models,
+alpha = 0.05). Exploratory: residual reasons in the traces (label confusion, recall of a superseded value, other).

@@ -17,3 +17,10 @@
   Flash 88 -> 91 -> 99%. A (mass alone) vs P4: Opus 77 vs 97%, Argon 72 vs 96%, Flash 85 vs 99%, DeepSeek 56 vs 88%.
   The extra agreeing field accounts for most of the Phase-1-to-Phase-4 gap for Opus and DeepSeek; for Argon the field asked matters more.
 - Mid-range cells are stochastic per task (20-46/60 tasks unanimous in arms A-C) while rates are stable; all tests treat tasks as units.
+
+## Trace check of Part 1 (replace) residuals
+Two mechanisms, at least: (1) Argon read the verification block's "observed" field (the original database value) as the
+second-source measurement and answered with it ("verification against the AlphaFold DB sequence ... gives an observed length of
+1116"); the block reused annotate's field names, which are ambiguous after replacement (a presentation flaw in our harness).
+(2) Opus cited a recalled "canonical UniProt" length that matches the superseded version ("The canonical UniProt entry for
+O60294 is 696 residues"), i.e. parametric memory of an earlier database state. Part 3 tests presentation directly.
