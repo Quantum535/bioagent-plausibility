@@ -21,3 +21,7 @@ Exploratory expectations (reported whatever the outcome):
 Analysis: E2 and E3 by logistic regression prop ~ arm + model + direction (one-sided, alpha 0.05) on Opus 5, Argon, Flash and
 DeepSeek, with per-model Fisher tests (Holm) as secondary. Exclusions as in Phase 4. If a regression cannot be fitted because a
 cell is at 0% or 100%, the per-model Fisher tests are reported instead and the failure is stated.
+
+Remaining difference from Phase 1 in arm B: threshold placement. Phase 1 placed each threshold midway between the true value and
+the value at the mildest factor (x0.9 or x1.1), the same for every factor; Phase 4 and 4b place it midway between the true and the
+corrupted value, so at x0.8 the true value is 10% (not 5%) from the threshold.
