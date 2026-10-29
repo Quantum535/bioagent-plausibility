@@ -1,0 +1,470 @@
+{
+ "excluded_runs": {
+  "flash/full/unparsed": 6,
+  "flash/summary/unparsed": 2,
+  "deepseek/full/unparsed": 2
+ },
+ "clean_acc_min": 0.9833333333333333,
+ "cells_excluded": [],
+ "plausible|opus5|full|monoisotopic_mass": [
+  57,
+  60
+ ],
+ "plausible|opus5|full|tpsa": [
+  60,
+  60
+ ],
+ "plausible|opus5|full|complexity": [
+  60,
+  60
+ ],
+ "plausible|opus5|summary|monoisotopic_mass": [
+  60,
+  60
+ ],
+ "plausible|opus5|summary|tpsa": [
+  60,
+  60
+ ],
+ "plausible|opus5|summary|complexity": [
+  60,
+  60
+ ],
+ "plausible|sonnet5|full|monoisotopic_mass": [
+  59,
+  60
+ ],
+ "plausible|sonnet5|full|tpsa": [
+  60,
+  60
+ ],
+ "plausible|sonnet5|full|complexity": [
+  60,
+  60
+ ],
+ "plausible|sonnet5|summary|monoisotopic_mass": [
+  60,
+  60
+ ],
+ "plausible|sonnet5|summary|tpsa": [
+  60,
+  60
+ ],
+ "plausible|sonnet5|summary|complexity": [
+  60,
+  60
+ ],
+ "plausible|argon|full|monoisotopic_mass": [
+  58,
+  60
+ ],
+ "plausible|argon|full|tpsa": [
+  60,
+  60
+ ],
+ "plausible|argon|full|complexity": [
+  60,
+  60
+ ],
+ "plausible|argon|summary|monoisotopic_mass": [
+  60,
+  60
+ ],
+ "plausible|argon|summary|tpsa": [
+  60,
+  60
+ ],
+ "plausible|argon|summary|complexity": [
+  60,
+  60
+ ],
+ "plausible|flash|full|monoisotopic_mass": [
+  60,
+  60
+ ],
+ "plausible|flash|full|tpsa": [
+  59,
+  60
+ ],
+ "plausible|flash|full|complexity": [
+  60,
+  60
+ ],
+ "plausible|flash|summary|monoisotopic_mass": [
+  60,
+  60
+ ],
+ "plausible|flash|summary|tpsa": [
+  60,
+  60
+ ],
+ "plausible|flash|summary|complexity": [
+  60,
+  60
+ ],
+ "plausible|deepseek|full|monoisotopic_mass": [
+  56,
+  60
+ ],
+ "plausible|deepseek|full|tpsa": [
+  60,
+  60
+ ],
+ "plausible|deepseek|full|complexity": [
+  60,
+  60
+ ],
+ "plausible|deepseek|summary|monoisotopic_mass": [
+  60,
+  60
+ ],
+ "plausible|deepseek|summary|tpsa": [
+  60,
+  60
+ ],
+ "plausible|deepseek|summary|complexity": [
+  60,
+  60
+ ],
+ "impossible|opus5|full|monoisotopic_mass": [
+  0,
+  60
+ ],
+ "impossible|opus5|full|tpsa": [
+  19,
+  60
+ ],
+ "impossible|opus5|full|complexity": [
+  60,
+  60
+ ],
+ "impossible|opus5|summary|monoisotopic_mass": [
+  20,
+  60
+ ],
+ "impossible|opus5|summary|tpsa": [
+  39,
+  60
+ ],
+ "impossible|opus5|summary|complexity": [
+  59,
+  60
+ ],
+ "impossible|sonnet5|full|monoisotopic_mass": [
+  2,
+  60
+ ],
+ "impossible|sonnet5|full|tpsa": [
+  41,
+  60
+ ],
+ "impossible|sonnet5|full|complexity": [
+  60,
+  60
+ ],
+ "impossible|sonnet5|summary|monoisotopic_mass": [
+  31,
+  60
+ ],
+ "impossible|sonnet5|summary|tpsa": [
+  55,
+  60
+ ],
+ "impossible|sonnet5|summary|complexity": [
+  60,
+  60
+ ],
+ "impossible|argon|full|monoisotopic_mass": [
+  0,
+  60
+ ],
+ "impossible|argon|full|tpsa": [
+  12,
+  60
+ ],
+ "impossible|argon|full|complexity": [
+  51,
+  60
+ ],
+ "impossible|argon|summary|monoisotopic_mass": [
+  9,
+  60
+ ],
+ "impossible|argon|summary|tpsa": [
+  45,
+  60
+ ],
+ "impossible|argon|summary|complexity": [
+  60,
+  60
+ ],
+ "impossible|flash|full|monoisotopic_mass": [
+  1,
+  58
+ ],
+ "impossible|flash|full|tpsa": [
+  30,
+  56
+ ],
+ "impossible|flash|full|complexity": [
+  57,
+  60
+ ],
+ "impossible|flash|summary|monoisotopic_mass": [
+  21,
+  60
+ ],
+ "impossible|flash|summary|tpsa": [
+  39,
+  58
+ ],
+ "impossible|flash|summary|complexity": [
+  60,
+  60
+ ],
+ "impossible|deepseek|full|monoisotopic_mass": [
+  0,
+  60
+ ],
+ "impossible|deepseek|full|tpsa": [
+  13,
+  58
+ ],
+ "impossible|deepseek|full|complexity": [
+  60,
+  60
+ ],
+ "impossible|deepseek|summary|monoisotopic_mass": [
+  11,
+  60
+ ],
+ "impossible|deepseek|summary|tpsa": [
+  26,
+  60
+ ],
+ "impossible|deepseek|summary|complexity": [
+  60,
+  60
+ ],
+ "H1": {
+  "coef": 2.414877572181663,
+  "se": 0.9784848801821955,
+  "p_one_sided": 0.0067939642718062255
+ },
+ "H1_fisher": [
+  [
+   "opus5",
+   "monoisotopic_mass",
+   "tpsa",
+   57,
+   60,
+   60,
+   60,
+   0.12184873949579833,
+   0.8529411764705883
+  ],
+  [
+   "opus5",
+   "tpsa",
+   "complexity",
+   60,
+   60,
+   60,
+   60,
+   1.0,
+   1.0
+  ],
+  [
+   "argon",
+   "monoisotopic_mass",
+   "tpsa",
+   58,
+   60,
+   60,
+   60,
+   0.24789915966386558,
+   1.0
+  ],
+  [
+   "argon",
+   "tpsa",
+   "complexity",
+   60,
+   60,
+   60,
+   60,
+   1.0,
+   1.0
+  ],
+  [
+   "flash",
+   "monoisotopic_mass",
+   "tpsa",
+   60,
+   60,
+   59,
+   60,
+   1.0,
+   1.0
+  ],
+  [
+   "flash",
+   "tpsa",
+   "complexity",
+   59,
+   60,
+   60,
+   60,
+   0.5,
+   1.0
+  ],
+  [
+   "deepseek",
+   "monoisotopic_mass",
+   "tpsa",
+   56,
+   60,
+   60,
+   60,
+   0.05936220642102994,
+   0.4748976513682395
+  ],
+  [
+   "deepseek",
+   "tpsa",
+   "complexity",
+   60,
+   60,
+   60,
+   60,
+   1.0,
+   1.0
+  ]
+ ],
+ "H2|opus5|shrink": {
+  "pred": [
+   0.314,
+   0.095,
+   0.534
+  ],
+  "obs": [
+   27,
+   30
+  ],
+  "inside": false
+ },
+ "H2|opus5|inflate": {
+  "pred": [
+   0.289,
+   0.075,
+   0.504
+  ],
+  "obs": [
+   30,
+   30
+  ],
+  "inside": false
+ },
+ "H2|sonnet5|shrink": {
+  "pred": [
+   0.951,
+   0.848,
+   1
+  ],
+  "obs": [
+   30,
+   30
+  ],
+  "inside": true
+ },
+ "H2|sonnet5|inflate": {
+  "pred": [
+   1.0,
+   0.934,
+   1
+  ],
+  "obs": [
+   29,
+   30
+  ],
+  "inside": true
+ },
+ "H2|argon|shrink": {
+  "pred": [
+   0.586,
+   0.353,
+   0.819
+  ],
+  "obs": [
+   29,
+   30
+  ],
+  "inside": false
+ },
+ "H2|argon|inflate": {
+  "pred": [
+   0.492,
+   0.255,
+   0.729
+  ],
+  "obs": [
+   29,
+   30
+  ],
+  "inside": false
+ },
+ "H2|flash|shrink": {
+  "pred": [
+   0.503,
+   0.267,
+   0.74
+  ],
+  "obs": [
+   30,
+   30
+  ],
+  "inside": false
+ },
+ "H2|flash|inflate": {
+  "pred": [
+   0.52,
+   0.283,
+   0.757
+  ],
+  "obs": [
+   30,
+   30
+  ],
+  "inside": false
+ },
+ "H2|deepseek|shrink": {
+  "pred": [
+   0.272,
+   0.061,
+   0.482
+  ],
+  "obs": [
+   28,
+   30
+  ],
+  "inside": false
+ },
+ "H2|deepseek|inflate": {
+  "pred": [
+   0.584,
+   0.351,
+   0.817
+  ],
+  "obs": [
+   28,
+   30
+  ],
+  "inside": false
+ },
+ "H2_passes": 2,
+ "H3": {
+  "coef": 1.0297283430993438,
+  "se": 13140.499642621518,
+  "p_one_sided": 0.4999687377052515
+ }
+}
