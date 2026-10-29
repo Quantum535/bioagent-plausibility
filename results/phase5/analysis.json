@@ -1,0 +1,59 @@
+{
+ "excluded_runs": {
+  "deepseek/full/api_error": 158,
+  "deepseek/summary/api_error": 158,
+  "deepseek/harness_ss1/api_error": 158
+ },
+ "cells_excluded": [],
+ "R1|opus5|full": [
+  78,
+  79
+ ],
+ "R1|opus5|summary": [
+  79,
+  79
+ ],
+ "R1|argon|full": [
+  71,
+  79
+ ],
+ "R1|argon|summary": [
+  79,
+  79
+ ],
+ "R1|deepseek|full": [
+  0,
+  0
+ ],
+ "R1|deepseek|summary": [
+  0,
+  0
+ ],
+ "R1_cells": 4,
+ "R2|opus5": [
+  7,
+  78
+ ],
+ "R2|argon": [
+  1,
+  78
+ ],
+ "R2|deepseek": [
+  0,
+  0
+ ],
+ "R3|all arm-3 runs (as registered)": [
+  7,
+  42,
+  3,
+  116,
+  0.00384334673860731
+ ],
+ "R3|covered only (sensitivity)": [
+  7,
+  42,
+  1,
+  114,
+  0.000440584318074804
+ ]
+}
