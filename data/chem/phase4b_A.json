@@ -1,0 +1,1810 @@
+{
+ "domain": "chemistry",
+ "proteins": "data/chem/compounds_phase4.json",
+ "seed": 4,
+ "phase": "4b",
+ "arm": "A",
+ "n_tasks": 60,
+ "tasks": [
+  {
+   "template": "mono_threshold",
+   "target_field": "monoisotopic_mass",
+   "target_accession": "4921",
+   "accessions": [
+    "4921"
+   ],
+   "params": {
+    "accession": "4921",
+    "threshold": 759.1
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "plausible": {
+     "fields": {
+      "monoisotopic_mass": 674.718
+     },
+     "clean_value": 843.397,
+     "corrupted_value": 674.718,
+     "factor": 0.8,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 4921 have a monoisotopic mass greater than 759.1 Da? Answer yes or no and give the monoisotopic mass. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_000",
+   "direction": "shrink"
+  },
+  {
+   "template": "mono_threshold",
+   "target_field": "monoisotopic_mass",
+   "target_accession": "9387",
+   "accessions": [
+    "9387"
+   ],
+   "params": {
+    "accession": "9387",
+    "threshold": 481.8
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "plausible": {
+     "fields": {
+      "monoisotopic_mass": 525.565
+     },
+     "clean_value": 437.971,
+     "corrupted_value": 525.565,
+     "factor": 1.2,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 9387 have a monoisotopic mass greater than 481.8 Da? Answer yes or no and give the monoisotopic mass. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_003",
+   "direction": "inflate"
+  },
+  {
+   "template": "mono_threshold",
+   "target_field": "monoisotopic_mass",
+   "target_accession": "5411",
+   "accessions": [
+    "5411"
+   ],
+   "params": {
+    "accession": "5411",
+    "threshold": 237.8
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "plausible": {
+     "fields": {
+      "monoisotopic_mass": 211.347
+     },
+     "clean_value": 264.184,
+     "corrupted_value": 211.347,
+     "factor": 0.8,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 5411 have a monoisotopic mass greater than 237.8 Da? Answer yes or no and give the monoisotopic mass. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_006",
+   "direction": "shrink"
+  },
+  {
+   "template": "mono_threshold",
+   "target_field": "monoisotopic_mass",
+   "target_accession": "7710",
+   "accessions": [
+    "7710"
+   ],
+   "params": {
+    "accession": "7710",
+    "threshold": 175.6
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "plausible": {
+     "fields": {
+      "monoisotopic_mass": 195.144
+     },
+     "clean_value": 156.115,
+     "corrupted_value": 195.144,
+     "factor": 1.25,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 7710 have a monoisotopic mass greater than 175.6 Da? Answer yes or no and give the monoisotopic mass. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_009",
+   "direction": "inflate"
+  },
+  {
+   "template": "mono_threshold",
+   "target_field": "monoisotopic_mass",
+   "target_accession": "763",
+   "accessions": [
+    "763"
+   ],
+   "params": {
+    "accession": "763",
+    "threshold": 102.4
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "plausible": {
+     "fields": {
+      "monoisotopic_mass": 87.791
+     },
+     "clean_value": 117.054,
+     "corrupted_value": 87.791,
+     "factor": 0.75,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 763 have a monoisotopic mass greater than 102.4 Da? Answer yes or no and give the monoisotopic mass. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_012",
+   "direction": "shrink"
+  },
+  {
+   "template": "mono_threshold",
+   "target_field": "monoisotopic_mass",
+   "target_accession": "18096",
+   "accessions": [
+    "18096"
+   ],
+   "params": {
+    "accession": "18096",
+    "threshold": 204.8
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "plausible": {
+     "fields": {
+      "monoisotopic_mass": 227.576
+     },
+     "clean_value": 182.061,
+     "corrupted_value": 227.576,
+     "factor": 1.25,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 18096 have a monoisotopic mass greater than 204.8 Da? Answer yes or no and give the monoisotopic mass. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_015",
+   "direction": "inflate"
+  },
+  {
+   "template": "mono_threshold",
+   "target_field": "monoisotopic_mass",
+   "target_accession": "3634",
+   "accessions": [
+    "3634"
+   ],
+   "params": {
+    "accession": "3634",
+    "threshold": 311.6
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "plausible": {
+     "fields": {
+      "monoisotopic_mass": 267.117
+     },
+     "clean_value": 356.156,
+     "corrupted_value": 267.117,
+     "factor": 0.75,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 3634 have a monoisotopic mass greater than 311.6 Da? Answer yes or no and give the monoisotopic mass. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_018",
+   "direction": "shrink"
+  },
+  {
+   "template": "mono_threshold",
+   "target_field": "monoisotopic_mass",
+   "target_accession": "21183",
+   "accessions": [
+    "21183"
+   ],
+   "params": {
+    "accession": "21183",
+    "threshold": 354.3
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "plausible": {
+     "fields": {
+      "monoisotopic_mass": 386.458
+     },
+     "clean_value": 322.048,
+     "corrupted_value": 386.458,
+     "factor": 1.2,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 21183 have a monoisotopic mass greater than 354.3 Da? Answer yes or no and give the monoisotopic mass. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_021",
+   "direction": "inflate"
+  },
+  {
+   "template": "mono_threshold",
+   "target_field": "monoisotopic_mass",
+   "target_accession": "908",
+   "accessions": [
+    "908"
+   ],
+   "params": {
+    "accession": "908",
+    "threshold": 91.8
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "plausible": {
+     "fields": {
+      "monoisotopic_mass": 81.634
+     },
+     "clean_value": 102.043,
+     "corrupted_value": 81.634,
+     "factor": 0.8,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 908 have a monoisotopic mass greater than 91.8 Da? Answer yes or no and give the monoisotopic mass. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_024",
+   "direction": "shrink"
+  },
+  {
+   "template": "mono_threshold",
+   "target_field": "monoisotopic_mass",
+   "target_accession": "684",
+   "accessions": [
+    "684"
+   ],
+   "params": {
+    "accession": "684",
+    "threshold": 634.6
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "plausible": {
+     "fields": {
+      "monoisotopic_mass": 705.095
+     },
+     "clean_value": 564.076,
+     "corrupted_value": 705.095,
+     "factor": 1.25,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 684 have a monoisotopic mass greater than 634.6 Da? Answer yes or no and give the monoisotopic mass. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_027",
+   "direction": "inflate"
+  },
+  {
+   "template": "mono_threshold",
+   "target_field": "monoisotopic_mass",
+   "target_accession": "24885",
+   "accessions": [
+    "24885"
+   ],
+   "params": {
+    "accession": "24885",
+    "threshold": 456.0
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "plausible": {
+     "fields": {
+      "monoisotopic_mass": 390.889
+     },
+     "clean_value": 521.185,
+     "corrupted_value": 390.889,
+     "factor": 0.75,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 24885 have a monoisotopic mass greater than 456.0 Da? Answer yes or no and give the monoisotopic mass. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_030",
+   "direction": "shrink"
+  },
+  {
+   "template": "mono_threshold",
+   "target_field": "monoisotopic_mass",
+   "target_accession": "11517",
+   "accessions": [
+    "11517"
+   ],
+   "params": {
+    "accession": "11517",
+    "threshold": 220.2
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "plausible": {
+     "fields": {
+      "monoisotopic_mass": 240.214
+     },
+     "clean_value": 200.178,
+     "corrupted_value": 240.214,
+     "factor": 1.2,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 11517 have a monoisotopic mass greater than 220.2 Da? Answer yes or no and give the monoisotopic mass. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_033",
+   "direction": "inflate"
+  },
+  {
+   "template": "mono_threshold",
+   "target_field": "monoisotopic_mass",
+   "target_accession": "3671",
+   "accessions": [
+    "3671"
+   ],
+   "params": {
+    "accession": "3671",
+    "threshold": 207.1
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "plausible": {
+     "fields": {
+      "monoisotopic_mass": 184.114
+     },
+     "clean_value": 230.142,
+     "corrupted_value": 184.114,
+     "factor": 0.8,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 3671 have a monoisotopic mass greater than 207.1 Da? Answer yes or no and give the monoisotopic mass. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_036",
+   "direction": "shrink"
+  },
+  {
+   "template": "mono_threshold",
+   "target_field": "monoisotopic_mass",
+   "target_accession": "10468",
+   "accessions": [
+    "10468"
+   ],
+   "params": {
+    "accession": "10468",
+    "threshold": 430.2
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "plausible": {
+     "fields": {
+      "monoisotopic_mass": 477.976
+     },
+     "clean_value": 382.381,
+     "corrupted_value": 477.976,
+     "factor": 1.25,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 10468 have a monoisotopic mass greater than 430.2 Da? Answer yes or no and give the monoisotopic mass. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_039",
+   "direction": "inflate"
+  },
+  {
+   "template": "mono_threshold",
+   "target_field": "monoisotopic_mass",
+   "target_accession": "3455",
+   "accessions": [
+    "3455"
+   ],
+   "params": {
+    "accession": "3455",
+    "threshold": 405.2
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "plausible": {
+     "fields": {
+      "monoisotopic_mass": 360.198
+     },
+     "clean_value": 450.248,
+     "corrupted_value": 360.198,
+     "factor": 0.8,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 3455 have a monoisotopic mass greater than 405.2 Da? Answer yes or no and give the monoisotopic mass. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_042",
+   "direction": "shrink"
+  },
+  {
+   "template": "mono_threshold",
+   "target_field": "monoisotopic_mass",
+   "target_accession": "12827",
+   "accessions": [
+    "12827"
+   ],
+   "params": {
+    "accession": "12827",
+    "threshold": 225.1
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "plausible": {
+     "fields": {
+      "monoisotopic_mass": 250.078
+     },
+     "clean_value": 200.062,
+     "corrupted_value": 250.078,
+     "factor": 1.25,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 12827 have a monoisotopic mass greater than 225.1 Da? Answer yes or no and give the monoisotopic mass. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_045",
+   "direction": "inflate"
+  },
+  {
+   "template": "mono_threshold",
+   "target_field": "monoisotopic_mass",
+   "target_accession": "3039",
+   "accessions": [
+    "3039"
+   ],
+   "params": {
+    "accession": "3039",
+    "threshold": 192.5
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "plausible": {
+     "fields": {
+      "monoisotopic_mass": 164.959
+     },
+     "clean_value": 219.946,
+     "corrupted_value": 164.959,
+     "factor": 0.75,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 3039 have a monoisotopic mass greater than 192.5 Da? Answer yes or no and give the monoisotopic mass. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_048",
+   "direction": "shrink"
+  },
+  {
+   "template": "mono_threshold",
+   "target_field": "monoisotopic_mass",
+   "target_accession": "4350",
+   "accessions": [
+    "4350"
+   ],
+   "params": {
+    "accession": "4350",
+    "threshold": 363.2
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "plausible": {
+     "fields": {
+      "monoisotopic_mass": 396.19
+     },
+     "clean_value": 330.158,
+     "corrupted_value": 396.19,
+     "factor": 1.2,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 4350 have a monoisotopic mass greater than 363.2 Da? Answer yes or no and give the monoisotopic mass. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_051",
+   "direction": "inflate"
+  },
+  {
+   "template": "mono_threshold",
+   "target_field": "monoisotopic_mass",
+   "target_accession": "12051",
+   "accessions": [
+    "12051"
+   ],
+   "params": {
+    "accession": "12051",
+    "threshold": 88.4
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "plausible": {
+     "fields": {
+      "monoisotopic_mass": 75.813
+     },
+     "clean_value": 101.084,
+     "corrupted_value": 75.813,
+     "factor": 0.75,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 12051 have a monoisotopic mass greater than 88.4 Da? Answer yes or no and give the monoisotopic mass. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_054",
+   "direction": "shrink"
+  },
+  {
+   "template": "mono_threshold",
+   "target_field": "monoisotopic_mass",
+   "target_accession": "8834",
+   "accessions": [
+    "8834"
+   ],
+   "params": {
+    "accession": "8834",
+    "threshold": 238.7
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "plausible": {
+     "fields": {
+      "monoisotopic_mass": 265.222
+     },
+     "clean_value": 212.178,
+     "corrupted_value": 265.222,
+     "factor": 1.25,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 8834 have a monoisotopic mass greater than 238.7 Da? Answer yes or no and give the monoisotopic mass. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_057",
+   "direction": "inflate"
+  },
+  {
+   "template": "mono_threshold",
+   "target_field": "monoisotopic_mass",
+   "target_accession": "17697",
+   "accessions": [
+    "17697"
+   ],
+   "params": {
+    "accession": "17697",
+    "threshold": 198.0
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "plausible": {
+     "fields": {
+      "monoisotopic_mass": 169.672
+     },
+     "clean_value": 226.23,
+     "corrupted_value": 169.672,
+     "factor": 0.75,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 17697 have a monoisotopic mass greater than 198.0 Da? Answer yes or no and give the monoisotopic mass. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_060",
+   "direction": "shrink"
+  },
+  {
+   "template": "mono_threshold",
+   "target_field": "monoisotopic_mass",
+   "target_accession": "2136",
+   "accessions": [
+    "2136"
+   ],
+   "params": {
+    "accession": "2136",
+    "threshold": 280.6
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "plausible": {
+     "fields": {
+      "monoisotopic_mass": 306.108
+     },
+     "clean_value": 255.09,
+     "corrupted_value": 306.108,
+     "factor": 1.2,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 2136 have a monoisotopic mass greater than 280.6 Da? Answer yes or no and give the monoisotopic mass. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_063",
+   "direction": "inflate"
+  },
+  {
+   "template": "mono_threshold",
+   "target_field": "monoisotopic_mass",
+   "target_accession": "8852",
+   "accessions": [
+    "8852"
+   ],
+   "params": {
+    "accession": "8852",
+    "threshold": 271.4
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "plausible": {
+     "fields": {
+      "monoisotopic_mass": 232.595
+     },
+     "clean_value": 310.127,
+     "corrupted_value": 232.595,
+     "factor": 0.75,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 8852 have a monoisotopic mass greater than 271.4 Da? Answer yes or no and give the monoisotopic mass. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_066",
+   "direction": "shrink"
+  },
+  {
+   "template": "mono_threshold",
+   "target_field": "monoisotopic_mass",
+   "target_accession": "7714",
+   "accessions": [
+    "7714"
+   ],
+   "params": {
+    "accession": "7714",
+    "threshold": 207.2
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "plausible": {
+     "fields": {
+      "monoisotopic_mass": 230.182
+     },
+     "clean_value": 184.146,
+     "corrupted_value": 230.182,
+     "factor": 1.25,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 7714 have a monoisotopic mass greater than 207.2 Da? Answer yes or no and give the monoisotopic mass. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_069",
+   "direction": "inflate"
+  },
+  {
+   "template": "mono_threshold",
+   "target_field": "monoisotopic_mass",
+   "target_accession": "16316",
+   "accessions": [
+    "16316"
+   ],
+   "params": {
+    "accession": "16316",
+    "threshold": 137.5
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "plausible": {
+     "fields": {
+      "monoisotopic_mass": 117.887
+     },
+     "clean_value": 157.183,
+     "corrupted_value": 117.887,
+     "factor": 0.75,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 16316 have a monoisotopic mass greater than 137.5 Da? Answer yes or no and give the monoisotopic mass. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_072",
+   "direction": "shrink"
+  },
+  {
+   "template": "mono_threshold",
+   "target_field": "monoisotopic_mass",
+   "target_accession": "7269",
+   "accessions": [
+    "7269"
+   ],
+   "params": {
+    "accession": "7269",
+    "threshold": 150.9
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "plausible": {
+     "fields": {
+      "monoisotopic_mass": 167.638
+     },
+     "clean_value": 134.11,
+     "corrupted_value": 167.638,
+     "factor": 1.25,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 7269 have a monoisotopic mass greater than 150.9 Da? Answer yes or no and give the monoisotopic mass. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_075",
+   "direction": "inflate"
+  },
+  {
+   "template": "mono_threshold",
+   "target_field": "monoisotopic_mass",
+   "target_accession": "6029",
+   "accessions": [
+    "6029"
+   ],
+   "params": {
+    "accession": "6029",
+    "threshold": 219.7
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "plausible": {
+     "fields": {
+      "monoisotopic_mass": 195.256
+     },
+     "clean_value": 244.07,
+     "corrupted_value": 195.256,
+     "factor": 0.8,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 6029 have a monoisotopic mass greater than 219.7 Da? Answer yes or no and give the monoisotopic mass. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_078",
+   "direction": "shrink"
+  },
+  {
+   "template": "mono_threshold",
+   "target_field": "monoisotopic_mass",
+   "target_accession": "19232",
+   "accessions": [
+    "19232"
+   ],
+   "params": {
+    "accession": "19232",
+    "threshold": 285.7
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "plausible": {
+     "fields": {
+      "monoisotopic_mass": 317.454
+     },
+     "clean_value": 253.963,
+     "corrupted_value": 317.454,
+     "factor": 1.25,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 19232 have a monoisotopic mass greater than 285.7 Da? Answer yes or no and give the monoisotopic mass. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_081",
+   "direction": "inflate"
+  },
+  {
+   "template": "mono_threshold",
+   "target_field": "monoisotopic_mass",
+   "target_accession": "8794",
+   "accessions": [
+    "8794"
+   ],
+   "params": {
+    "accession": "8794",
+    "threshold": 105.4
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "plausible": {
+     "fields": {
+      "monoisotopic_mass": 93.646
+     },
+     "clean_value": 117.058,
+     "corrupted_value": 93.646,
+     "factor": 0.8,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 8794 have a monoisotopic mass greater than 105.4 Da? Answer yes or no and give the monoisotopic mass. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_084",
+   "direction": "shrink"
+  },
+  {
+   "template": "mono_threshold",
+   "target_field": "monoisotopic_mass",
+   "target_accession": "5610",
+   "accessions": [
+    "5610"
+   ],
+   "params": {
+    "accession": "5610",
+    "threshold": 154.2
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "plausible": {
+     "fields": {
+      "monoisotopic_mass": 171.355
+     },
+     "clean_value": 137.084,
+     "corrupted_value": 171.355,
+     "factor": 1.25,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 5610 have a monoisotopic mass greater than 154.2 Da? Answer yes or no and give the monoisotopic mass. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_087",
+   "direction": "inflate"
+  },
+  {
+   "template": "mono_threshold",
+   "target_field": "monoisotopic_mass",
+   "target_accession": "7197",
+   "accessions": [
+    "7197"
+   ],
+   "params": {
+    "accession": "7197",
+    "threshold": 147.7
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "plausible": {
+     "fields": {
+      "monoisotopic_mass": 131.267
+     },
+     "clean_value": 164.084,
+     "corrupted_value": 131.267,
+     "factor": 0.8,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 7197 have a monoisotopic mass greater than 147.7 Da? Answer yes or no and give the monoisotopic mass. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_090",
+   "direction": "shrink"
+  },
+  {
+   "template": "mono_threshold",
+   "target_field": "monoisotopic_mass",
+   "target_accession": "13027",
+   "accessions": [
+    "13027"
+   ],
+   "params": {
+    "accession": "13027",
+    "threshold": 147.5
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "plausible": {
+     "fields": {
+      "monoisotopic_mass": 160.858
+     },
+     "clean_value": 134.048,
+     "corrupted_value": 160.858,
+     "factor": 1.2,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 13027 have a monoisotopic mass greater than 147.5 Da? Answer yes or no and give the monoisotopic mass. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_093",
+   "direction": "inflate"
+  },
+  {
+   "template": "mono_threshold",
+   "target_field": "monoisotopic_mass",
+   "target_accession": "5780",
+   "accessions": [
+    "5780"
+   ],
+   "params": {
+    "accession": "5780",
+    "threshold": 163.9
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "plausible": {
+     "fields": {
+      "monoisotopic_mass": 145.663
+     },
+     "clean_value": 182.079,
+     "corrupted_value": 145.663,
+     "factor": 0.8,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 5780 have a monoisotopic mass greater than 163.9 Da? Answer yes or no and give the monoisotopic mass. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_096",
+   "direction": "shrink"
+  },
+  {
+   "template": "mono_threshold",
+   "target_field": "monoisotopic_mass",
+   "target_accession": "8102",
+   "accessions": [
+    "8102"
+   ],
+   "params": {
+    "accession": "8102",
+    "threshold": 111.2
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "plausible": {
+     "fields": {
+      "monoisotopic_mass": 121.344
+     },
+     "clean_value": 101.12,
+     "corrupted_value": 121.344,
+     "factor": 1.2,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 8102 have a monoisotopic mass greater than 111.2 Da? Answer yes or no and give the monoisotopic mass. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_099",
+   "direction": "inflate"
+  },
+  {
+   "template": "mono_threshold",
+   "target_field": "monoisotopic_mass",
+   "target_accession": "6346",
+   "accessions": [
+    "6346"
+   ],
+   "params": {
+    "accession": "6346",
+    "threshold": 241.0
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "plausible": {
+     "fields": {
+      "monoisotopic_mass": 214.26
+     },
+     "clean_value": 267.825,
+     "corrupted_value": 214.26,
+     "factor": 0.8,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 6346 have a monoisotopic mass greater than 241.0 Da? Answer yes or no and give the monoisotopic mass. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_102",
+   "direction": "shrink"
+  },
+  {
+   "template": "mono_threshold",
+   "target_field": "monoisotopic_mass",
+   "target_accession": "7520",
+   "accessions": [
+    "7520"
+   ],
+   "params": {
+    "accession": "7520",
+    "threshold": 139.5
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "plausible": {
+     "fields": {
+      "monoisotopic_mass": 155.044
+     },
+     "clean_value": 124.035,
+     "corrupted_value": 155.044,
+     "factor": 1.25,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 7520 have a monoisotopic mass greater than 139.5 Da? Answer yes or no and give the monoisotopic mass. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_105",
+   "direction": "inflate"
+  },
+  {
+   "template": "mono_threshold",
+   "target_field": "monoisotopic_mass",
+   "target_accession": "6391",
+   "accessions": [
+    "6391"
+   ],
+   "params": {
+    "accession": "6391",
+    "threshold": 107.9
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "plausible": {
+     "fields": {
+      "monoisotopic_mass": 95.948
+     },
+     "clean_value": 119.935,
+     "corrupted_value": 95.948,
+     "factor": 0.8,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 6391 have a monoisotopic mass greater than 107.9 Da? Answer yes or no and give the monoisotopic mass. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_108",
+   "direction": "shrink"
+  },
+  {
+   "template": "mono_threshold",
+   "target_field": "monoisotopic_mass",
+   "target_accession": "8434",
+   "accessions": [
+    "8434"
+   ],
+   "params": {
+    "accession": "8434",
+    "threshold": 182.7
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "plausible": {
+     "fields": {
+      "monoisotopic_mass": 199.276
+     },
+     "clean_value": 166.063,
+     "corrupted_value": 199.276,
+     "factor": 1.2,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 8434 have a monoisotopic mass greater than 182.7 Da? Answer yes or no and give the monoisotopic mass. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_111",
+   "direction": "inflate"
+  },
+  {
+   "template": "mono_threshold",
+   "target_field": "monoisotopic_mass",
+   "target_accession": "26404",
+   "accessions": [
+    "26404"
+   ],
+   "params": {
+    "accession": "26404",
+    "threshold": 250.4
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "plausible": {
+     "fields": {
+      "monoisotopic_mass": 214.661
+     },
+     "clean_value": 286.214,
+     "corrupted_value": 214.661,
+     "factor": 0.75,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 26404 have a monoisotopic mass greater than 250.4 Da? Answer yes or no and give the monoisotopic mass. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_114",
+   "direction": "shrink"
+  },
+  {
+   "template": "mono_threshold",
+   "target_field": "monoisotopic_mass",
+   "target_accession": "6490",
+   "accessions": [
+    "6490"
+   ],
+   "params": {
+    "accession": "6490",
+    "threshold": 243.2
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "plausible": {
+     "fields": {
+      "monoisotopic_mass": 270.216
+     },
+     "clean_value": 216.173,
+     "corrupted_value": 270.216,
+     "factor": 1.25,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 6490 have a monoisotopic mass greater than 243.2 Da? Answer yes or no and give the monoisotopic mass. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_117",
+   "direction": "inflate"
+  },
+  {
+   "template": "mono_threshold",
+   "target_field": "monoisotopic_mass",
+   "target_accession": "22541",
+   "accessions": [
+    "22541"
+   ],
+   "params": {
+    "accession": "22541",
+    "threshold": 113.9
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "plausible": {
+     "fields": {
+      "monoisotopic_mass": 97.602
+     },
+     "clean_value": 130.136,
+     "corrupted_value": 97.602,
+     "factor": 0.75,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 22541 have a monoisotopic mass greater than 113.9 Da? Answer yes or no and give the monoisotopic mass. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_120",
+   "direction": "shrink"
+  },
+  {
+   "template": "mono_threshold",
+   "target_field": "monoisotopic_mass",
+   "target_accession": "16270",
+   "accessions": [
+    "16270"
+   ],
+   "params": {
+    "accession": "16270",
+    "threshold": 123.3
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "plausible": {
+     "fields": {
+      "monoisotopic_mass": 134.55
+     },
+     "clean_value": 112.125,
+     "corrupted_value": 134.55,
+     "factor": 1.2,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 16270 have a monoisotopic mass greater than 123.3 Da? Answer yes or no and give the monoisotopic mass. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_123",
+   "direction": "inflate"
+  },
+  {
+   "template": "mono_threshold",
+   "target_field": "monoisotopic_mass",
+   "target_accession": "6128",
+   "accessions": [
+    "6128"
+   ],
+   "params": {
+    "accession": "6128",
+    "threshold": 250.4
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "plausible": {
+     "fields": {
+      "monoisotopic_mass": 214.645
+     },
+     "clean_value": 286.193,
+     "corrupted_value": 214.645,
+     "factor": 0.75,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 6128 have a monoisotopic mass greater than 250.4 Da? Answer yes or no and give the monoisotopic mass. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_126",
+   "direction": "shrink"
+  },
+  {
+   "template": "mono_threshold",
+   "target_field": "monoisotopic_mass",
+   "target_accession": "29161",
+   "accessions": [
+    "29161"
+   ],
+   "params": {
+    "accession": "29161",
+    "threshold": 158.6
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "plausible": {
+     "fields": {
+      "monoisotopic_mass": 172.981
+     },
+     "clean_value": 144.151,
+     "corrupted_value": 172.981,
+     "factor": 1.2,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 29161 have a monoisotopic mass greater than 158.6 Da? Answer yes or no and give the monoisotopic mass. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_129",
+   "direction": "inflate"
+  },
+  {
+   "template": "mono_threshold",
+   "target_field": "monoisotopic_mass",
+   "target_accession": "9502",
+   "accessions": [
+    "9502"
+   ],
+   "params": {
+    "accession": "9502",
+    "threshold": 217.0
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "plausible": {
+     "fields": {
+      "monoisotopic_mass": 186.009
+     },
+     "clean_value": 248.012,
+     "corrupted_value": 186.009,
+     "factor": 0.75,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 9502 have a monoisotopic mass greater than 217.0 Da? Answer yes or no and give the monoisotopic mass. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_132",
+   "direction": "shrink"
+  },
+  {
+   "template": "mono_threshold",
+   "target_field": "monoisotopic_mass",
+   "target_accession": "7960",
+   "accessions": [
+    "7960"
+   ],
+   "params": {
+    "accession": "7960",
+    "threshold": 178.2
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "plausible": {
+     "fields": {
+      "monoisotopic_mass": 194.405
+     },
+     "clean_value": 162.004,
+     "corrupted_value": 194.405,
+     "factor": 1.2,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 7960 have a monoisotopic mass greater than 178.2 Da? Answer yes or no and give the monoisotopic mass. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_135",
+   "direction": "inflate"
+  },
+  {
+   "template": "mono_threshold",
+   "target_field": "monoisotopic_mass",
+   "target_accession": "20345",
+   "accessions": [
+    "20345"
+   ],
+   "params": {
+    "accession": "20345",
+    "threshold": 303.7
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "plausible": {
+     "fields": {
+      "monoisotopic_mass": 260.342
+     },
+     "clean_value": 347.123,
+     "corrupted_value": 260.342,
+     "factor": 0.75,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 20345 have a monoisotopic mass greater than 303.7 Da? Answer yes or no and give the monoisotopic mass. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_138",
+   "direction": "shrink"
+  },
+  {
+   "template": "mono_threshold",
+   "target_field": "monoisotopic_mass",
+   "target_accession": "12318",
+   "accessions": [
+    "12318"
+   ],
+   "params": {
+    "accession": "12318",
+    "threshold": 286.1
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "plausible": {
+     "fields": {
+      "monoisotopic_mass": 312.059
+     },
+     "clean_value": 260.049,
+     "corrupted_value": 312.059,
+     "factor": 1.2,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 12318 have a monoisotopic mass greater than 286.1 Da? Answer yes or no and give the monoisotopic mass. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_141",
+   "direction": "inflate"
+  },
+  {
+   "template": "mono_threshold",
+   "target_field": "monoisotopic_mass",
+   "target_accession": "11166",
+   "accessions": [
+    "11166"
+   ],
+   "params": {
+    "accession": "11166",
+    "threshold": 147.0
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "plausible": {
+     "fields": {
+      "monoisotopic_mass": 125.958
+     },
+     "clean_value": 167.944,
+     "corrupted_value": 125.958,
+     "factor": 0.75,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 11166 have a monoisotopic mass greater than 147.0 Da? Answer yes or no and give the monoisotopic mass. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_144",
+   "direction": "shrink"
+  },
+  {
+   "template": "mono_threshold",
+   "target_field": "monoisotopic_mass",
+   "target_accession": "7721",
+   "accessions": [
+    "7721"
+   ],
+   "params": {
+    "accession": "7721",
+    "threshold": 202.4
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "plausible": {
+     "fields": {
+      "monoisotopic_mass": 220.787
+     },
+     "clean_value": 183.989,
+     "corrupted_value": 220.787,
+     "factor": 1.2,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 7721 have a monoisotopic mass greater than 202.4 Da? Answer yes or no and give the monoisotopic mass. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_147",
+   "direction": "inflate"
+  },
+  {
+   "template": "mono_threshold",
+   "target_field": "monoisotopic_mass",
+   "target_accession": "21291",
+   "accessions": [
+    "21291"
+   ],
+   "params": {
+    "accession": "21291",
+    "threshold": 266.5
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "plausible": {
+     "fields": {
+      "monoisotopic_mass": 236.882
+     },
+     "clean_value": 296.102,
+     "corrupted_value": 236.882,
+     "factor": 0.8,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 21291 have a monoisotopic mass greater than 266.5 Da? Answer yes or no and give the monoisotopic mass. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_150",
+   "direction": "shrink"
+  },
+  {
+   "template": "mono_threshold",
+   "target_field": "monoisotopic_mass",
+   "target_accession": "17235",
+   "accessions": [
+    "17235"
+   ],
+   "params": {
+    "accession": "17235",
+    "threshold": 341.3
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "plausible": {
+     "fields": {
+      "monoisotopic_mass": 372.344
+     },
+     "clean_value": 310.287,
+     "corrupted_value": 372.344,
+     "factor": 1.2,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 17235 have a monoisotopic mass greater than 341.3 Da? Answer yes or no and give the monoisotopic mass. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_153",
+   "direction": "inflate"
+  },
+  {
+   "template": "mono_threshold",
+   "target_field": "monoisotopic_mass",
+   "target_accession": "3037",
+   "accessions": [
+    "3037"
+   ],
+   "params": {
+    "accession": "3037",
+    "threshold": 241.2
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "plausible": {
+     "fields": {
+      "monoisotopic_mass": 214.405
+     },
+     "clean_value": 268.006,
+     "corrupted_value": 214.405,
+     "factor": 0.8,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 3037 have a monoisotopic mass greater than 241.2 Da? Answer yes or no and give the monoisotopic mass. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_156",
+   "direction": "shrink"
+  },
+  {
+   "template": "mono_threshold",
+   "target_field": "monoisotopic_mass",
+   "target_accession": "6362",
+   "accessions": [
+    "6362"
+   ],
+   "params": {
+    "accession": "6362",
+    "threshold": 187.0
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "plausible": {
+     "fields": {
+      "monoisotopic_mass": 203.951
+     },
+     "clean_value": 169.959,
+     "corrupted_value": 203.951,
+     "factor": 1.2,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 6362 have a monoisotopic mass greater than 187.0 Da? Answer yes or no and give the monoisotopic mass. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_159",
+   "direction": "inflate"
+  },
+  {
+   "template": "mono_threshold",
+   "target_field": "monoisotopic_mass",
+   "target_accession": "12386",
+   "accessions": [
+    "12386"
+   ],
+   "params": {
+    "accession": "12386",
+    "threshold": 155.8
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "plausible": {
+     "fields": {
+      "monoisotopic_mass": 133.564
+     },
+     "clean_value": 178.085,
+     "corrupted_value": 133.564,
+     "factor": 0.75,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 12386 have a monoisotopic mass greater than 155.8 Da? Answer yes or no and give the monoisotopic mass. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_162",
+   "direction": "shrink"
+  },
+  {
+   "template": "mono_threshold",
+   "target_field": "monoisotopic_mass",
+   "target_accession": "24550",
+   "accessions": [
+    "24550"
+   ],
+   "params": {
+    "accession": "24550",
+    "threshold": 173.7
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "plausible": {
+     "fields": {
+      "monoisotopic_mass": 189.479
+     },
+     "clean_value": 157.899,
+     "corrupted_value": 189.479,
+     "factor": 1.2,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 24550 have a monoisotopic mass greater than 173.7 Da? Answer yes or no and give the monoisotopic mass. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_165",
+   "direction": "inflate"
+  },
+  {
+   "template": "mono_threshold",
+   "target_field": "monoisotopic_mass",
+   "target_accession": "21693",
+   "accessions": [
+    "21693"
+   ],
+   "params": {
+    "accession": "21693",
+    "threshold": 393.1
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "plausible": {
+     "fields": {
+      "monoisotopic_mass": 336.948
+     },
+     "clean_value": 449.264,
+     "corrupted_value": 336.948,
+     "factor": 0.75,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 21693 have a monoisotopic mass greater than 393.1 Da? Answer yes or no and give the monoisotopic mass. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_168",
+   "direction": "shrink"
+  },
+  {
+   "template": "mono_threshold",
+   "target_field": "monoisotopic_mass",
+   "target_accession": "3894",
+   "accessions": [
+    "3894"
+   ],
+   "params": {
+    "accession": "3894",
+    "threshold": 428.8
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "plausible": {
+     "fields": {
+      "monoisotopic_mass": 476.401
+     },
+     "clean_value": 381.121,
+     "corrupted_value": 476.401,
+     "factor": 1.25,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 3894 have a monoisotopic mass greater than 428.8 Da? Answer yes or no and give the monoisotopic mass. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_171",
+   "direction": "inflate"
+  },
+  {
+   "template": "mono_threshold",
+   "target_field": "monoisotopic_mass",
+   "target_accession": "234",
+   "accessions": [
+    "234"
+   ],
+   "params": {
+    "accession": "234",
+    "threshold": 124.2
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "plausible": {
+     "fields": {
+      "monoisotopic_mass": 106.444
+     },
+     "clean_value": 141.925,
+     "corrupted_value": 106.444,
+     "factor": 0.75,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 234 have a monoisotopic mass greater than 124.2 Da? Answer yes or no and give the monoisotopic mass. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_174",
+   "direction": "shrink"
+  },
+  {
+   "template": "mono_threshold",
+   "target_field": "monoisotopic_mass",
+   "target_accession": "24556",
+   "accessions": [
+    "24556"
+   ],
+   "params": {
+    "accession": "24556",
+    "threshold": 117.0
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "plausible": {
+     "fields": {
+      "monoisotopic_mass": 129.964
+     },
+     "clean_value": 103.971,
+     "corrupted_value": 129.964,
+     "factor": 1.25,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 24556 have a monoisotopic mass greater than 117.0 Da? Answer yes or no and give the monoisotopic mass. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "p4_177",
+   "direction": "inflate"
+  }
+ ]
+}
