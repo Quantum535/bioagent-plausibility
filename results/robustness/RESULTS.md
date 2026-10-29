@@ -24,3 +24,18 @@ second-source measurement and answered with it ("verification against the AlphaF
 1116"); the block reused annotate's field names, which are ambiguous after replacement (a presentation flaw in our harness).
 (2) Opus cited a recalled "canonical UniProt" length that matches the superseded version ("The canonical UniProt entry for
 O60294 is 696 residues"), i.e. parametric memory of an earlier database state. Part 3 tests presentation directly.
+
+## Part 3: how the replacement is presented (registered after reading Part 1 traces, before these runs)
+Covered superseded propagation, pooled over 3 samples (annotate | replace with ambiguous labels | labeled | silent):
+Opus 9.0 | 10.7 | 5.1 | 0.0%; Argon 0.9 | 7.4 | 41.1 | 0.0%; DeepSeek 32.9 | 2.6 | 7.3 | 0.0%. Clean accuracy 100% in every arm.
+- S1 supported: silent correction gave 0/702 relays across the three models.
+- L1 not supported (labeled <= 2% for every model); L2 not supported (labeled 0.187 vs Part 1 replace 0.081, Wilcoxon p = 1.0),
+  driven by Argon, which chose the value labeled "original database value" in 41% of runs ("Based on the original UniProt
+  database value ...").
+- Residual reasons (heuristic text match): Opus and DeepSeek mostly cite a recalled "canonical" length matching the superseded
+  entry (10/12, 14/17); Argon mostly defers to the labeled original. With no conflict shown (silent), no model restored a value
+  from memory: memory acts as a tie-breaker once a conflict is visible, not as an independent check.
+- Caveat: silent correction is only as safe as the second source. AlphaFold DB matched current UniProt on all 299 covered
+  proteins; a source with a non-zero false-alarm floor (NCI CACTUS, ~5%) would insert errors into clean records if applied silently.
+Operational notes: the Part 3 script was launched twice by accident (duplicate live runs, ~$15 extra, results deduplicated by run
+key); DeepSeek's first attempt failed on a network block (467 PermissionDeniedError) and was retried; failed runs are not cached.
