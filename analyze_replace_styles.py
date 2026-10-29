@@ -25,7 +25,7 @@ for lab, a in (("L1", "labeled"), ("S1", "silent")):
     oks = []
     for m in M:
         g = [t for t in data[(m, a)] if t["condition"] == "superseded" and cov(t)]
-        oks.append(sum(bool(t.get("propagated")) for t in g) / max(len(g), 1) <= 0.02)
+        oks.append(len(g) > 0 and sum(bool(t.get("propagated")) for t in g) / len(g) <= 0.02)
     print(f"{lab} ({a} <= 2% for every model): {'SUPPORTED' if all(oks) else 'NOT SUPPORTED'}")
 xl, xr = [], []
 for m in M:
