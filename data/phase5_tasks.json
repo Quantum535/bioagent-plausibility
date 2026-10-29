@@ -1,0 +1,3090 @@
+{
+ "seed": 1,
+ "n_tasks": 79,
+ "proteins": "data/proteins_v2.json",
+ "alternate_direction": true,
+ "tasks": [
+  {
+   "template": "length_threshold",
+   "target_field": "length",
+   "target_accession": "A8MTJ6",
+   "accessions": [
+    "A8MTJ6"
+   ],
+   "params": {
+    "accession": "A8MTJ6",
+    "threshold": 415
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "superseded": {
+     "fields": {
+      "length": 411,
+      "mass": 42717
+     },
+     "clean_value": 420,
+     "corrupted_value": 411,
+     "coherent": true,
+     "real": true,
+     "full_patch": {
+      "sequence": "MLSPERRDQPRSPLAAAAPQPPTAADMALYCGDNFGVYSQPGLPPPAATAAAPGAPPAARAPYGLADYAAPPAAAANPYLWLNGPGVGGPPSAAAAAAAAYLPAPAAPASPAAPAGPGELGWLSMASREDLMKMVRPPYSYSALIAMAIQSAPERKLTLSHIYQFVADSFPFYQRSKAGWQNSIRHNLSLNDCFKKVPRDEDDPGKGNYWTLDPNCEKMFDNGNFRRKRKRRSEASNGSTVAAGTSKSEEGLSSGLGSGVGGKPEEESPSTLLRPSHSPEPPEGTKSTASSPGGPMLTSTPCLNTFFSSLSSLSVSSSVSTQRALPGSRHLGIQGAQLPSSGVFSPTSISEASADTLQLSNSTSNSTGQRSSYYSPFPASTSGGQSSPFSSPFHNFSMVNSLIYPREGSEV",
+      "mass": 42717
+     },
+     "seq_version": 2,
+     "entry_version": 10,
+     "d_length": -9,
+     "direction": "old_shorter",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does protein A8MTJ6 have more than 415 residues? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "r000",
+   "direction": "old_shorter"
+  },
+  {
+   "template": "mass_threshold",
+   "target_field": "mass",
+   "target_accession": "O00154",
+   "accessions": [
+    "O00154"
+   ],
+   "params": {
+    "accession": "O00154",
+    "threshold_kda": 39.6
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "superseded": {
+     "fields": {
+      "length": 338,
+      "mass": 37419
+     },
+     "clean_value": 41796,
+     "corrupted_value": 37419,
+     "coherent": true,
+     "real": true,
+     "full_patch": {
+      "sequence": "MSGPDVETPSAIQICRIMRPDDANVAGNVHGGTILKMIEEAGAIISTRHCNSQNGERCVAALARVERTDFLSPMCIGEVAHVSAEITYTSKHSVEVQVNVMSENILTGAKKLTNKATLWYVPLSLKNVDKVLEVPPVVYSRQEQEEEGRKRYEAQKLERMETKWRNGDIVQPVLNPEPNTVSYSQSSLIHLVGPSDCTLHGFVHGGVTMKLMDEVAGIVAARHCKTNIVTASVDAINFHDKIRKGCVITISGRMTFTSNKSMEIEVLVDADPVVDSSQKRYRAASAFFTYVSLSQEGRSLPVPQLVPETEDEKKRFEEGKGRYLQMKAKRQGHAEPQP",
+      "mass": 37419
+     },
+     "seq_version": 2,
+     "entry_version": 19,
+     "d_length": -42,
+     "direction": "old_shorter",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does protein O00154 have a molecular mass greater than 39.6 kDa? Answer yes or no and give the mass in kDa. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "r001",
+   "direction": "old_shorter"
+  },
+  {
+   "template": "length_threshold",
+   "target_field": "length",
+   "target_accession": "O00268",
+   "accessions": [
+    "O00268"
+   ],
+   "params": {
+    "accession": "O00268",
+    "threshold": 1084
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "superseded": {
+     "fields": {
+      "length": 1083,
+      "mass": 109943
+     },
+     "clean_value": 1085,
+     "corrupted_value": 1083,
+     "coherent": true,
+     "real": true,
+     "full_patch": {
+      "sequence": "MAAGSDLLDEVFFNSEVDEKVVSDLVGSLESQLAASAAHHHHLAPRTPEVRAAAAGALGNHVVSGSPAGAAGAGPAAPAEGAPGAAPEPPPAGRARPGGGGPQRPGPPSPRRPLVPAGPAPPAAKLRPPPEGSAGACAPVPAAAAVAAGPEPAPAGPAKPAGPAALAARAGPGPGPGPGPGPGPGKPAGPGAAQTLNGSAALLNSHHAAAPAVSLVNNGPAALLPLPKPAAPGTVIQTPPFVGAAAPPAPAAPSPPAAPAPAAPAAAPPPPPPAPATLARPPGHPAGPPTAAPAVPPPAAAQNGGSAGAAPAPAPAAGGPAGVSGQPGPGAAAAAPAPGVKAESPKRVVQAAPPAAQTLAASGPASTAASMVIGPTMQGALPSPAAVPPPAPGTPTGLPKGAAGAVTQSLSRTPTATTSGIRATLTPTVLAPRLPQPPQNPTNIQNFQLPPGMVLVRSENGQLLMIPQQALAQMQAQAHAQPQTTMAPRPATPTSAPPVQISTVQAPGTPIIARQVTPTTIIKQVSQAQTTVQPSATLQRSPGVQPQLVLGGAAQTASLGTATAVQTGTPQRTVPGATTTSSAATETMENVKKCKNFLSTLIKLASSGKQSTETAANVKELVQNLLDGKIEAEDFTSRLYRELNSSPQPYLVPFLKRSLPALRQLTPDSAAFIQQSQQQPPPPTSQATTALTAVVLSSSVQRTAGKTAATVTSALQPPVLSLTQPTQVGVGKQGQPTPLVIQQPPKPGALIRPPQVTLTQTPMVALRQPHNRIMLTTPQQIQLNPLQPVPVVKPAVLPGTKALSAVSAQAAAAQKNKLKEPGGGSFRDDDDINDVASMAGVNLSEESARILATNSELVGTLTRSCKDETFLLQAPLQRRILEIGKKHGITELHPDVVSYVSHATQQRLQNLVEKISETAQQKNFSYKDDDRYEQASDVRAQLKFFEQLDQIEKQRKDEQEREILMRAAKSRSRQEDPEQLRLKQKAKEMQQQELAQMRQRDANLTALAAIGPRKKRKVDCPGPGSGAEGSGPGSVVPGSSGVGTPRQFTRQRITRVNLRDLIFCLENERETSHSLLLYKAFLK",
+      "mass": 109943
+     },
+     "seq_version": 1,
+     "entry_version": 45,
+     "d_length": -2,
+     "direction": "old_shorter",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does protein O00268 have more than 1084 residues? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "r002",
+   "direction": "old_shorter"
+  },
+  {
+   "template": "mass_threshold",
+   "target_field": "mass",
+   "target_accession": "O14523",
+   "accessions": [
+    "O14523"
+   ],
+   "params": {
+    "accession": "O14523",
+    "threshold_kda": 73.5
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "superseded": {
+     "fields": {
+      "length": 658,
+      "mass": 70841
+     },
+     "clean_value": 76181,
+     "corrupted_value": 70841,
+     "coherent": true,
+     "real": true,
+     "full_patch": {
+      "sequence": "GPALAGEPAGSLRELGVWRSLLRLRATRAGAAEEPGVRGLLASLFAFKSFRENWQRAWVRALNEQACRNGSSIQIAFEEVPQLPPRASISHVTCVDQSEHTMVLRCQLSAEEVRFPVSVTQQSPAAVSMETYHVTLTLPPTQLEVNLEEIPGEGLLISWAFTDRPDLSLTVLPKLQARERGEEQVELSTIEELIKDAIVSTQPAMMVNLRACSAPGGLVPSEKPPMMPQAQPAIPRPNRLFLRQLRASHLGNELEGTEELCCVAELDNPMQQKWTKPARAGSEVEWTEDLALDLGPQSRELTLKVLRSSSCGDTELLGQATLPVGSPSRPLSRRQLCPLTPGPGKALGPAATMAVELHYEEGSPRNLGTPTSSTPRPSITPTKKIELDRTIMPDGTIVTTVTTVQSRPRIDGKLDSPSRSPSKVEVTEKTTTVLSESSGPSNTSHSSSRDSHLSNGLDPVAETAIRQLTEPSGRVAKKTPTKRSTLIISGVSKVPIAQDELALSLGYAASLEASVQDDAGTSGGPSSPPSDPPAMSPGPLDALSSPTSVQEADETTRSDISERPSVDDIESETGSTGALETRSLKDHKVSFLRSGTKLIFRRRPRQKEAGLSQSHDDLSNATATPSVRKKAGSFSRRLIKRFSFKSKPKANGNPSPQL",
+      "mass": 70841
+     },
+     "seq_version": 2,
+     "entry_version": 13,
+     "d_length": -48,
+     "direction": "old_shorter",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does protein O14523 have a molecular mass greater than 73.5 kDa? Answer yes or no and give the mass in kDa. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "r003",
+   "direction": "old_shorter"
+  },
+  {
+   "template": "length_threshold",
+   "target_field": "length",
+   "target_accession": "O14556",
+   "accessions": [
+    "O14556"
+   ],
+   "params": {
+    "accession": "O14556",
+    "threshold": 412
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "superseded": {
+     "fields": {
+      "length": 417,
+      "mass": 45472
+     },
+     "clean_value": 408,
+     "corrupted_value": 417,
+     "coherent": true,
+     "real": true,
+     "full_patch": {
+      "sequence": "MSKRDIVLTNVTVVQLLRQPCPVTRAPPPPEPKAEVEPQPQPEPTPVREEIKPPPPPLPPHPATPPPKMVSVARELTVGINGFGRIGRLVLRACMEKGVKVVAVNDPFIDPEYMVYMFKYDSTHGRYKGSVEFRNGQLVVDNHEISVYQCKEPKQIPWRAVGSPYVVESTGVYLSIQAASDHISAGAQRVVISAPSPDAPMFVMGVNENDYNPGSMNIVSVRAHLGCFSNASCTTNCLAPLAKVIHERFGIVEGLMTTVHSYTATQKTVDGPSRKAWRDGRGAHQNIIPASTGAAKAVTKVIPELKGKLTGMAFRVPTPDVSVVDLTCRLAQPAPYSAIKEAVKAAAKGPMAGILAYTEDEVVSTDFLGDTHSSIFDAKAGIALNDNFVKLISWYDNEYGYSHRVVDLLRYMFSRDK",
+      "mass": 45472
+     },
+     "seq_version": 1,
+     "entry_version": 4,
+     "d_length": 9,
+     "direction": "old_longer",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does protein O14556 have more than 412 residues? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "r004",
+   "direction": "old_longer"
+  },
+  {
+   "template": "mass_threshold",
+   "target_field": "mass",
+   "target_accession": "O14772",
+   "accessions": [
+    "O14772"
+   ],
+   "params": {
+    "accession": "O14772",
+    "threshold_kda": 67.3
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "superseded": {
+     "fields": {
+      "length": 594,
+      "mass": 66598
+     },
+     "clean_value": 68010,
+     "corrupted_value": 66598,
+     "coherent": true,
+     "real": true,
+     "full_patch": {
+      "sequence": "MAAARDPPEVSLREATQRKLRRFSELRGKLVARGEFWDIVAITAADEKQELAYNQQLSEKLKRKELPLGVQYHVFVDPAGAKIGNGGSTLCALQCLEKLYGDKWNSFTILLIHSGGYSQRLPNASALGKIFTALPLGNPIYQMLELKLAMYIDFPLNMNPGILVTCADDIELYSIGEFEFIRFDKPGFTALAHPSSLTIGTTHGVFVLDPFDDLKHRDLEYRSCHRFLHKPSIEKMYQFNAVCRPGNFCQQDFAGGDIADLKLDSDYVYTDSLFYMDHKSAKMLLAFYEKIGTLSCEIDAYGDFLQALGPGATVEYTRNTSNVIKEESELVEMRQRIFHLLKGTSLNVVVLNNSKFYHIGTTEEYLFYFTSDNSLKSELGLQSITFSIFPDIPECSGKTSCIIQSILDSRCSVAPGSVVEYSRLGPDVSVGENCIISGSYILTKAALPAHSFVCSLSLKMNRCLKYATMAFGVQDNLKKSVKTLSDIKLLQFFGVCFLSCLDVWNLKVTEELFSGNKTCLSLWTARIFPVCSSLSDSVITSLKMLNAVKNKSAFSLNSYKLLSIEEMLIYKDVEDMITYREQIFLEISLKSSLM",
+      "mass": 66598
+     },
+     "seq_version": 2,
+     "entry_version": 130,
+     "d_length": -13,
+     "direction": "old_shorter",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does protein O14772 have a molecular mass greater than 67.3 kDa? Answer yes or no and give the mass in kDa. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "r005",
+   "direction": "old_shorter"
+  },
+  {
+   "template": "length_threshold",
+   "target_field": "length",
+   "target_accession": "O15247",
+   "accessions": [
+    "O15247"
+   ],
+   "params": {
+    "accession": "O15247",
+    "threshold": 245
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "superseded": {
+     "fields": {
+      "length": 243,
+      "mass": 27885
+     },
+     "clean_value": 247,
+     "corrupted_value": 243,
+     "coherent": true,
+     "real": true,
+     "full_patch": {
+      "sequence": "MSGLRPGTQVDPEIELFVKAGSDGESIGNCPFCQRLFMILWLKGVKFNVTTVDMTRKPEELKDLAPGTNPPFLVYNKELKTDFIKIEEFLEQTLAPPRYPHLSPKYKESFDVGCNLFAKFSAYIKNTQKEANKNFEKSLLKEFKRLDDYLNTPLLDEIDPDSAEEPPVSRRLFLDGDQLTLADCSLLPKLNIIKVAAKKYRDFDIPAEFSGVWRYLHNAYAREEFTHTCPEDKEIENTYANVA",
+      "mass": 27885
+     },
+     "seq_version": 2,
+     "entry_version": 40,
+     "d_length": -4,
+     "direction": "old_shorter",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does protein O15247 have more than 245 residues? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "r006",
+   "direction": "old_shorter"
+  },
+  {
+   "template": "mass_threshold",
+   "target_field": "mass",
+   "target_accession": "O43525",
+   "accessions": [
+    "O43525"
+   ],
+   "params": {
+    "accession": "O43525",
+    "threshold_kda": 94.7
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "superseded": {
+     "fields": {
+      "length": 825,
+      "mass": 92754
+     },
+     "clean_value": 96742,
+     "corrupted_value": 92754,
+     "coherent": true,
+     "real": true,
+     "full_patch": {
+      "sequence": "GDVEQVTLALGAGADKDGTLLLEGGGRDEGQRRTPQGIGLLAKTPLSRPVKRNNAKYRRIQTLIYDALERPRGWALLYHALVFLIVLGCLILAVLTTFKEYETVSGDWLLLLETFAIFIFGAEFALRIWAAGCCCRYKGWRGRLKFARKPLCMLDIFVLIASVPVVAVGNQGNVLATSLRSLRFLQILRMLRMDRRGGTWKLLGSAICAHSKELITAWYIGFLTLILSSFLVYLVEKDVPEVDAQGEEMKEEFETYADALWWGLITLATIGYGDKTPKTWEGRLIAATFSLIGVSFFALPAGILGSGLALKVQEQHRQKHFEKRRKPAAELIQAAWRYYATNPNRIDLVATWRFYESVVSFPFFRKEQLEAASSQKLGLLDRVRLSNPRGSNTKGKLFTPLNVDAIEESPSKEPKPVGLNNKERFRTAFRMKAYAFWQSSEDAGTGDPMAEDRGYGNDFPIEDMIPTLKAAIRAVRILQFRLYKKKFKETLRPYDVKDVIEQYSAGHLDMLSRIKYLQTRIDMIFTPGPPSTPKHKKSQKGSAFTFPSQQSPRNEPYVARPSTSEIEDQSMMGKFVKVERQVQDMGKKLDFLVDMHMQHMERLQVQVTEYYPTKGTSSPAEAEKKEDNRYSDLKTIICNYSETGPPEPPYSFHQVTIDKVSPYGFFAHDPVNLPRGGPSSGKVQATPPSSATTYVERPTVLPILTLLDSRVSCHSQADLQGPYSDRISPRQRRSITRDSDTPLSLMSVNHEELERSPSGFSISQDRDDYVFGPNGGSSWMREKRYLAEGETDTDTDPFTPSGSMPLSSTGDGISDSVWTPSNKPI",
+      "mass": 92754
+     },
+     "seq_version": 1,
+     "entry_version": 4,
+     "d_length": -47,
+     "direction": "old_shorter",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does protein O43525 have a molecular mass greater than 94.7 kDa? Answer yes or no and give the mass in kDa. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "r007",
+   "direction": "old_shorter"
+  },
+  {
+   "template": "length_threshold",
+   "target_field": "length",
+   "target_accession": "O60294",
+   "accessions": [
+    "O60294"
+   ],
+   "params": {
+    "accession": "O60294",
+    "threshold": 691
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "superseded": {
+     "fields": {
+      "length": 696,
+      "mass": 76607
+     },
+     "clean_value": 686,
+     "corrupted_value": 696,
+     "coherent": true,
+     "real": true,
+     "full_patch": {
+      "sequence": "QTAIPESLLAMGPRSRERRAGAVQNTNDSSALSKRSLAARGYVQDPFAALLVPGAARRAPLIHRGYYVRARAVRHCVRAFLEQIGAPQAALRAQILSLGAGFDSLYFRLKTAGRLARAAVWEVDFPDVARRKAERIGETPELCALTGPFERGEPASALCFESADYCILGLDLRQLQRVEEALGAAGLDAASPTLLLAEAVLTYLEPESAAALIAWAAQRFPNALFVVYEQMRPQDAFGQFMLQHFRQLNSPLHGLERFPDVEAQRRRFLQAGWTACGAVDINEFYHCFLPAEERRRVENIEPFDEFEEWHLKCAHYFILAASRGDTLSHTLVFPSSEAFPRVNPASPSGVFPASVVSSEGQVPNLKRYGHASVFLSPDVILSAGGFGEQEGRHCRVSQFHLLSRDCDSEWKGSQIGSCGTGVQWDGRLYHTMTRLSESRVLVLGGRLSPVSPALGVLQLHFFKSEDNNTEDLKVTITKAGRKDDSTLCCWRHSTTEVSCQNQEYLFVYGGRSVVEPVLSDWHFLHVGTMAWVRIPVEGEVPEARHSHSACTWQGGALIAGGLGASEEPLNSVLFLRPISCGFLWESVDIQPPITPRYSHTAHVLNGKLLLVGGIWIHSSSFPGVTVINLTTGLSSEYQIDTTYVPWPLMLHNHTSILLPEEQQLLLLGGGGNCFSFGTYFNPHTVTLDLSSLSAGQ",
+      "mass": 76607
+     },
+     "seq_version": 2,
+     "entry_version": 11,
+     "d_length": 10,
+     "direction": "old_longer",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does protein O60294 have more than 691 residues? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "r008",
+   "direction": "old_longer"
+  },
+  {
+   "template": "mass_threshold",
+   "target_field": "mass",
+   "target_accession": "O95049",
+   "accessions": [
+    "O95049"
+   ],
+   "params": {
+    "accession": "O95049",
+    "threshold_kda": 102.1
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "superseded": {
+     "fields": {
+      "length": 933,
+      "mass": 102799
+     },
+     "clean_value": 101397,
+     "corrupted_value": 102799,
+     "coherent": true,
+     "real": true,
+     "full_patch": {
+      "sequence": "MEELTIWEQHTATLSKDPRRGFGIAISGGRDRPGGSMVVSDVVPGGPAEGRLQTGDHIVMVNGVSMENATSAFAIQILKTCTKMANITVKRPRRIHLPATKASPSSPGRQDSDEDDGPQRVEEVDQGRGYDGDSSSGSGRSWDERSRRPRPGRRGRAGSHGRRSPGGGSEANGLALVSGFKRLPRQDVQMKPVKSVLVKRRDSEEFGVKLGSQIFIKHITDSGLAARHRGLQEGDLILQINGVSSQNLSLNDTRRLIEKSEGKLSLLVLRDRGQFLVNIPPAVSDSDSSPLEEGVTMADEMSSPPADISDLASELSQAPPSHIPPPPRHAQRSPEASQTDSPVESPRLRRESSVDSRTISEPDEQRSELPRESSYDIYRVPSSQSMEDRGYSPDTRVVRFLKGKSIGLRLAGGNDVGIFVSGVQAGSPADGQGIQEGDQILQVNDVPFQNLTREEAVQFLLGLPPGEEMELVTQRKQDIFWKMVQSRVGDSFYIRTHFELEPSPPSGLGFTRGDVFHVLDTLHPGPGQSHARGGHWLAVRMGRDLREQERGIIPNQSRAEQLASLEAAQRAVGVGPGSSAGSNARAEFWRLRGLRRGAKKTTQRSREDLSALTRQGRYPPYERVVLREASFKRPVVILGPVADIAMQKLTAEMPDQFEIAETVSRTDSPSKIIKLDTVRVIAEKDKHALLDVTPSAIERLNYVQYYPIVVFFIPESRPALKALRQWLAPASRRSTRRLYAQAQKLRKHSSHLFTATIPLNGTSDTWYQELKAIIREQQTRPIWTAEDQLDGSLEDNLDLPHHGLADSSADLSCDSRVNSDYETDGEGGAYTDGEGYTDGEGGPYTDVDDEPPAPALARSSEPVQADESQSPRDRGRISAHQGAQVDSRHPQGQWRQDSMRTYEREALKKKFMRVHDAESSDEDGYDWGPATDL",
+      "mass": 102799
+     },
+     "seq_version": 2,
+     "entry_version": 117,
+     "d_length": 14,
+     "direction": "old_longer",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does protein O95049 have a molecular mass greater than 102.1 kDa? Answer yes or no and give the mass in kDa. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "r009",
+   "direction": "old_longer"
+  },
+  {
+   "template": "length_threshold",
+   "target_field": "length",
+   "target_accession": "O95571",
+   "accessions": [
+    "O95571"
+   ],
+   "params": {
+    "accession": "O95571",
+    "threshold": 240
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "superseded": {
+     "fields": {
+      "length": 227,
+      "mass": 24857
+     },
+     "clean_value": 254,
+     "corrupted_value": 227,
+     "coherent": true,
+     "real": true,
+     "full_patch": {
+      "sequence": "MFEPVSCTFTYLLGDGESREAVLIDPVLETAPRDAQLIKELGLRLLYAVNTHCHADHITGSGLLRSLLPGCQSVISRLSGAQADLHIEDGDSIRFGRFALETRASPGHTPGCVTFVLNDHSMAFTGDALLIRGCGRTDFQQGCAKTLYHSVHEKIFTLPGDCLIYPAHDYHGFTVSTVEEERTLNPRLTLSCEEFVKIMGNLNLPKPQQIDFAVPANMRCGVQTPTA",
+      "mass": 24857
+     },
+     "seq_version": 1,
+     "entry_version": 8,
+     "d_length": -27,
+     "direction": "old_shorter",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does protein O95571 have more than 240 residues? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "r010",
+   "direction": "old_shorter"
+  },
+  {
+   "template": "mass_threshold",
+   "target_field": "mass",
+   "target_accession": "P04439",
+   "accessions": [
+    "P04439"
+   ],
+   "params": {
+    "accession": "P04439",
+    "threshold_kda": 41.1
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "superseded": {
+     "fields": {
+      "length": 370,
+      "mass": 41368
+     },
+     "clean_value": 40841,
+     "corrupted_value": 41368,
+     "coherent": true,
+     "real": true,
+     "full_patch": {
+      "sequence": "MARGDQAVMAPRTLLLLLSGALALTQTWAGSHSMRYFFTSVSRPGRGEPRFIAVGYVDDTQFVRFDSDAASQRMEPRAPWIEQEGPEYWDQETRNVKAQSQTDRVDLGTLRGYYNQSEAGSHTIQIMYGCDVGSDGRFLRGYRQDAYDGKDYIALNEDLRSWTAADMAAQITKRKWEAAHEAEQLRAYLDGTCVEWLRRYLENGKETLQRTDPPKTHMTHHPISDHEATLRCWALGFYPAEITLTWQRDGEDQTQDTELVETRPAGDGTFQKWAAVVVPSGEEQRYTCHVQHEGLPKPLTLRWELSSQPTIPIVGIIAGLVLLGAVITGAVVAAVMWRRKSSDRKGGSYTQAASSDSAQGSDVSLTACKV",
+      "mass": 41368
+     },
+     "seq_version": 1,
+     "entry_version": 31,
+     "d_length": 5,
+     "direction": "old_longer",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does protein P04439 have a molecular mass greater than 41.1 kDa? Answer yes or no and give the mass in kDa. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "r011",
+   "direction": "old_longer"
+  },
+  {
+   "template": "length_threshold",
+   "target_field": "length",
+   "target_accession": "P05787",
+   "accessions": [
+    "P05787"
+   ],
+   "params": {
+    "accession": "P05787",
+    "threshold": 482
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "superseded": {
+     "fields": {
+      "length": 482,
+      "mass": 53572
+     },
+     "clean_value": 483,
+     "corrupted_value": 482,
+     "coherent": true,
+     "real": true,
+     "full_patch": {
+      "sequence": "SIRVTQKSYKVSTSGPRAFSSRSYTSGPGSRISSSSFSRVGSSNFRGGLGGGYGGASGMGGITAVTVNQSLLSPLVLEVDPNIQAVRTQEKEQIKTLNNKFASFIDKVRFLEQQNKMLETKWSLLQQQKTARSNMDNMFESYINNLRRQLETLGQEKLKLEAELGNMQGLVEDFKNKYEDEINKRTEMENEFVLIKKDVDEAYMNKVELESRLEGLTDEINFLRQLYEEEIRELQSQISDTSVVLSMDNSRSLDMDSIIAEVKAQYEDIANRSRAEAESMYQIKYEELQSLAGKHGDDLRRTKTEISEMNRNISRLQAEIEGLKGQRASLEAAIADAEQRGELAIKDANAKLSELEAALQRAKQDMARQLREYQELMNVKLALDIEIATYRKLLEGEESRLESGMQNMSIHTKTTSGYAGGLSSAYGGLTSPGLSYSLGSSFGSGAGSSSFSRTSSSRAVVVKKIETRDGKLVSESSDVLPK",
+      "mass": 53572
+     },
+     "seq_version": 6,
+     "entry_version": 86,
+     "d_length": -1,
+     "direction": "old_shorter",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does protein P05787 have more than 482 residues? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "r012",
+   "direction": "old_shorter"
+  },
+  {
+   "template": "mass_threshold",
+   "target_field": "mass",
+   "target_accession": "P07199",
+   "accessions": [
+    "P07199"
+   ],
+   "params": {
+    "accession": "P07199",
+    "threshold_kda": 64.9
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "superseded": {
+     "fields": {
+      "length": 594,
+      "mass": 64547
+     },
+     "clean_value": 65171,
+     "corrupted_value": 64547,
+     "coherent": true,
+     "real": true,
+     "full_patch": {
+      "sequence": "RQLTFREKSRIIQEVEENPDLRKGEIARRFNIPPSTLSTILKNKRAILASERKYGVASTCRKTNKLSPYDKLEGLLIAWFQQIRAAGLPVKGIILKEKALRIAEELGMDDFTASNGWLDRFRRRHGVVSCSGVARARARNAAPRTPAAPASPAAVPSEGSGGSTTGWRAREEQPPSVAEGYASQDVFSATETSLWYDFLPDQAAGLCGGDGRPRQATQRLSVLLCANADGSEKLPPLVAGKSAKPRAGQAGLPCDYTANSKGGVTTQALAKYLKALDTRMAAESRRVLLLAGRLAAQSLDTSGLRHVQLAFFPPGTVHPLERGVVQQVKGHYRQAMLLKAMAALEGQDPSGLQLGLTEALHFVAAAWQAVEPSDIAACFREAGFGGGPNATITTSLKSEGEEEEEEEEEEEEEEGEGEEEEEEGEEEEEEGGEGEELGEEEEVEEEGDVDSDEEEEEDEESSSEGLEAEDWAQGVVEAGGSFGAYGAQEEAQCPTLHFLEGGEDSDSDSEEEDDEEEDDEDEDDDDDEEDGDEVPVPSFGEAMAYFAMVKRYLTSFPIDDRVQSHILHLEHDLVHVTMKNHARQAGLLGLGHQS",
+      "mass": 64547
+     },
+     "seq_version": 1,
+     "entry_version": 6,
+     "d_length": -5,
+     "direction": "old_shorter",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does protein P07199 have a molecular mass greater than 64.9 kDa? Answer yes or no and give the mass in kDa. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "r013",
+   "direction": "old_shorter"
+  },
+  {
+   "template": "length_threshold",
+   "target_field": "length",
+   "target_accession": "P07203",
+   "accessions": [
+    "P07203"
+   ],
+   "params": {
+    "accession": "P07203",
+    "threshold": 202
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "superseded": {
+     "fields": {
+      "length": 201,
+      "mass": 21946
+     },
+     "clean_value": 203,
+     "corrupted_value": 201,
+     "coherent": true,
+     "real": true,
+     "full_patch": {
+      "sequence": "MCAARLAAAAAQSVYAFSARPLAGGEPVSLGSLRGKVLLIENVASLUGTTVRDYTQMNELQRRLGPRGLVVLGFPCNQFGHQENAKNEEILNSLKYVRPGGGFEPNFMLFEKCEVNGAGAHPLFAFLREALPAPSDDATALMTDPKLITWSPVCRNDVAWNFEKFLVGPDGVPLRRYSRRFQTIDIEPDIEALLSQGPSCA",
+      "mass": 21946
+     },
+     "seq_version": 3,
+     "entry_version": 130,
+     "d_length": -2,
+     "direction": "old_shorter",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does protein P07203 have more than 202 residues? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "r014",
+   "direction": "old_shorter"
+  },
+  {
+   "template": "length_threshold",
+   "target_field": "length",
+   "target_accession": "P07355",
+   "accessions": [
+    "P07355"
+   ],
+   "params": {
+    "accession": "P07355",
+    "threshold": 338
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "superseded": {
+     "fields": {
+      "length": 338,
+      "mass": 38472
+     },
+     "clean_value": 339,
+     "corrupted_value": 338,
+     "coherent": true,
+     "real": true,
+     "full_patch": {
+      "sequence": "STVHEILCKLSLEGDHSTPPSAYGSVKAYTNFDAERDALNIETAIKTKGVDEVTIVNILTNRSNAQRQDIAFAYQRRTKKELASALKSALSGHLETVILGLLKTPAQYDASELKASMKGLGTDEDSLIEIICSRTNQELQEINRVYKEMYKTDLEKDIISDTSGDFRKLMVALAKGRRAEDGSVIDYELIDQDARDLYDAGVKRKGTDVPKWISIMTERSVPHLQKVFDRYKSYSPYDMLESIRKEVKGDLENAFLNLVQCIQNKPLYFADRLYDSMKGKGTRDKVLIRIMVSRSEVDMLKIRSEFKRKYGKSLYYYIQQDTKGDYQKALLYLCGGDD",
+      "mass": 38472
+     },
+     "seq_version": 1,
+     "entry_version": 87,
+     "d_length": -1,
+     "direction": "old_shorter",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does protein P07355 have more than 338 residues? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "r015",
+   "direction": "old_shorter"
+  },
+  {
+   "template": "length_threshold",
+   "target_field": "length",
+   "target_accession": "P07910",
+   "accessions": [
+    "P07910"
+   ],
+   "params": {
+    "accession": "P07910",
+    "threshold": 304
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "superseded": {
+     "fields": {
+      "length": 303,
+      "mass": 33298
+     },
+     "clean_value": 306,
+     "corrupted_value": 303,
+     "coherent": true,
+     "real": true,
+     "full_patch": {
+      "sequence": "MASNVTNKTDPRSMNSRVFIGNLNTLVVKKSDVEAIFSKYGKIVGCSVHKGFAFVQYVNERNARAAVAGEDGRMIAGQVLDINLAAEPKVNRGKAGVKRSAAEMYGSVTEHPSPSPLLSSSFDLDYDFQRDYYDRMYSYPARVPPPPPIARAVVPSKRQRVSGNTSRRGKSGFNSKSGQRGSSKSGKLKGDDLQAIKKELTQIKQKVDSLLENLEKMEKEQSKQAVEMKNDKSEEEQSSSSVKKDETNVKMESEGGADDSAEEGDLLDDDDNEDRGDDQLELIKDDEKEAEEGEDDRDSANGG",
+      "mass": 33298
+     },
+     "seq_version": 2,
+     "entry_version": 32,
+     "d_length": -3,
+     "direction": "old_shorter",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does protein P07910 have more than 304 residues? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "r016",
+   "direction": "old_shorter"
+  },
+  {
+   "template": "mass_threshold",
+   "target_field": "mass",
+   "target_accession": "P13591",
+   "accessions": [
+    "P13591"
+   ],
+   "params": {
+    "accession": "P13591",
+    "threshold_kda": 94.0
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "superseded": {
+     "fields": {
+      "length": 848,
+      "mass": 93360
+     },
+     "clean_value": 94574,
+     "corrupted_value": 93360,
+     "coherent": true,
+     "real": true,
+     "full_patch": {
+      "sequence": "MLQTKDLIWTLFFLGTAVSLQVDIVPSQGEISVGESKFFLCQVAGDAKDKDISWFSPNGEKLTPNQQRISVVWNDDSSSTLTIYNANIDDAGIYKCVVTGEDGSESEATVNVKIFQKLMFKNAPTPQEFREGEDAVIVCDVVSSLPPTIIWKHKGRDVILKKDVRFIVLSNNYLQIRGIKKTDEGTYRCEGRILARGEINFKDIQVIVNVPPTIQARQNIVNATANLGQSVTLVCDAEGFPEPTMSWTKDGEQIEQEEDDEKYIFSDDSSQLTIKKVDKNDEAEYICIAENKAGEQDATIHLKVFAKPKITYVENQTAMELEEQVTLTCEASGDPIPSITWRTSTRNISSEEKTLDGHMVVRSHARVSSLTLKSIQYTDAGEYICTASNTIGQDSQSMYLEVQYAPKLQGPVAVYTWEGNQVNITCEVFAYPSATISWFRDGQLLPSSNYSNIKIYNTPSASYLEVTPDSENDFGNYNCTAVNRIGQESLEFILVQADTPSSPSIDQVEPYSSTAQVQFDEPEATGGVPILKYKAEWRAVGEEVWHSKWYDAKEASMEGIVTIVGLKPETTYAVRLAALNGKGLGEISAASEFKTQPVQGEPSAPKLEGQMGEDGNSIKVNLIKQDDGGSPIRHYLVRYRALSSEWKPEIRLPSGSDHVMLKSLDWNAEYEVYVVAENQQGKSKAAHFVFRTSAQPTAIPANGSPTSGLSTGAIVGILIVIFVLLLVVVDITCYFLNKCGLFMCIAVNLCGKAGPGAKGKDMEEGKAAFSKDESKEPIVEVRTEEERTPNHDGGKHTEPNETTPLTEPEKGPVEAKPECQETETKPAPAEVKTVPNDATQTKENESKA",
+      "mass": 93360
+     },
+     "seq_version": 2,
+     "entry_version": 95,
+     "d_length": -10,
+     "direction": "old_shorter",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does protein P13591 have a molecular mass greater than 94.0 kDa? Answer yes or no and give the mass in kDa. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "r017",
+   "direction": "old_shorter"
+  },
+  {
+   "template": "length_threshold",
+   "target_field": "length",
+   "target_accession": "P14061",
+   "accessions": [
+    "P14061"
+   ],
+   "params": {
+    "accession": "P14061",
+    "threshold": 327
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "superseded": {
+     "fields": {
+      "length": 327,
+      "mass": 34848
+     },
+     "clean_value": 328,
+     "corrupted_value": 327,
+     "coherent": true,
+     "real": true,
+     "full_patch": {
+      "sequence": "ARTVVLITGCSSGIGLHLAVRLASDPSQSFKVYATLRDLKTQGRLWEAARALACPPGSLETLQLDVRDSKSVAAARERVTEGRVDVLVCNAGLGLLGPLEALGEDAVASVLDVNVVGTVRMLQAFLPDMKRRGSGRVLVTGSVGGLMGLPFNDVYCASKFALEGLCESLAVLLLPFGVHLSLIECGPVHTAFMEKVLGSPEEVLDRTDIHTFHRFYQYLAHSKQVFREAAQNPEEVAEVFLTALRAPKPTLRYFTTERFLPLLRMRLDDPSGSNYVTAMHREVFGDVPAKAEAGAEAGGGAGPGAEDEAGRSAVGDPELGDPPAAPQ",
+      "mass": 34848
+     },
+     "seq_version": 1,
+     "entry_version": 79,
+     "d_length": -1,
+     "direction": "old_shorter",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does protein P14061 have more than 327 residues? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "r018",
+   "direction": "old_shorter"
+  },
+  {
+   "template": "length_threshold",
+   "target_field": "length",
+   "target_accession": "P14770",
+   "accessions": [
+    "P14770"
+   ],
+   "params": {
+    "accession": "P14770",
+    "threshold": 176
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "superseded": {
+     "fields": {
+      "length": 176,
+      "mass": 18989
+     },
+     "clean_value": 177,
+     "corrupted_value": 176,
+     "coherent": true,
+     "real": true,
+     "full_patch": {
+      "sequence": "MPAWGALFLLWATAEATKDCPSPCTCRALETMGLWVDCRGHGLTALPALPARTRHLLLANNSLQSVPPGAFDHLPQLQTLDVTQNPWHCDCSLTYLRLWLEDRTPEALLQVRCASPSLAAHGPLRLTGYQLGSCGWQLQASWVRPGVLWDVALVAVAALGLALLAGLLCATTEALD",
+      "mass": 18989
+     },
+     "seq_version": 2,
+     "entry_version": 15,
+     "d_length": -1,
+     "direction": "old_shorter",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does protein P14770 have more than 176 residues? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "r019",
+   "direction": "old_shorter"
+  },
+  {
+   "template": "length_threshold",
+   "target_field": "length",
+   "target_accession": "P16410",
+   "accessions": [
+    "P16410"
+   ],
+   "params": {
+    "accession": "P16410",
+    "threshold": 204
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "superseded": {
+     "fields": {
+      "length": 186,
+      "mass": 20343
+     },
+     "clean_value": 223,
+     "corrupted_value": 186,
+     "coherent": true,
+     "real": true,
+     "full_patch": {
+      "sequence": "MHVAQPAVVLASSRGIASFVCEYASPGKATEVRVTVLRQADSQVTEVCAATYMMGNELTFLDDSICTGTSSGNQVNLTIQGLRAMDTGLYICKVELMYPPPYYLGIGNGAQIYVIDPEPCPDSDFLLWILAAVSSGLFFYSFLLTAVSLSKMLKKRSPLTTGVYVKMPPTEPECEKQFQPYFIPIN",
+      "mass": 20343
+     },
+     "seq_version": 1,
+     "entry_version": 7,
+     "d_length": -37,
+     "direction": "old_shorter",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does protein P16410 have more than 204 residues? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "r020",
+   "direction": "old_shorter"
+  },
+  {
+   "template": "length_threshold",
+   "target_field": "length",
+   "target_accession": "P16671",
+   "accessions": [
+    "P16671"
+   ],
+   "params": {
+    "accession": "P16671",
+    "threshold": 471
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "superseded": {
+     "fields": {
+      "length": 471,
+      "mass": 52922
+     },
+     "clean_value": 472,
+     "corrupted_value": 471,
+     "coherent": true,
+     "real": true,
+     "full_patch": {
+      "sequence": "GCDRNCGLIAGAVIGAVLAVFGGILMPVGDLLIQKTIKKQVVLEEGTIAFKNWVKTGTEVYRQFWIFDVQNPQEVMMNSSNIQVKQRGPYTYRVRFLAKENVTQDAEDNTVSFLQPNGAIFEPSLSVGTEADNFTVLNLAVAAASHIYQNQFVQMILNSLINKSKSSMFQVRTLRELLWGYRDPFLSLVPYPVTTTVGLFYPYNNTADGVYKVFNGKDNISKVAIIDTYKGKRNLSYWESHCDMINGTDAASFPPFVEKSQVLQFFSSDICRSIYAVFESDVNLKGIPVYRFVLPSKAFASPVENPDNYCFCTEKIISKNCTSYGVLDISKCKEGRPVYISLPHFLYASPDVSEPIDGLNPNEEEHRTYLDIEPITGFTLQFAKRLQVNLLVKPSEKIQVLKNLKRNYIVPILWLNETGTIGDEKANMFRSQVTGKINLLGLIEMILLSVGVVMFVAFMISYCACRSKTIK",
+      "mass": 52922
+     },
+     "seq_version": 1,
+     "entry_version": 79,
+     "d_length": -1,
+     "direction": "old_shorter",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does protein P16671 have more than 471 residues? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "r021",
+   "direction": "old_shorter"
+  },
+  {
+   "template": "length_threshold",
+   "target_field": "length",
+   "target_accession": "P17040",
+   "accessions": [
+    "P17040"
+   ],
+   "params": {
+    "accession": "P17040",
+    "threshold": 1010
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "superseded": {
+     "fields": {
+      "length": 977,
+      "mass": 109657
+     },
+     "clean_value": 1043,
+     "corrupted_value": 977,
+     "coherent": true,
+     "real": true,
+     "full_patch": {
+      "sequence": "MAMALELQAQASPQPEPEELLIVKLELLVLEQFLTILPREVQTWVQARHPESGEEAVALVEDWHRETRTAGQSGLELHTEETRPLKTGEEAQSFQLQPVDPWPEGQSQKKGVKNTCPDLPNHLNAEVAPQPLKESAVLTPRVPTLPKMGSVGDWEVTAESQEALGPGKHAEKELCKDPPGDDCGNSVCLGVPVSKPSNTSEKEQGPEFWGLSLINSGKRSTADYSLDNEPAQALTWRDSRAWEEQYQWDVEDMKVSGVHWGYEETKTFLAILSESPFSEKLRTCHQNRQVYRAIAEQLRARGFLRTLEQCRYRVKNLLRNYRKAKSSHPPGTCPFYEELEALVRARTAIRATDGPGEAVALPRLGDSDAEMDEQEEGGWDPEEMAEDCNGAGLVNVESTQGPRIAGAPALFQSRIAGVHWGYEETKAFLAILSESPFSEKLRTCHQNSQVYRAIAERLCALGFLRTLEQCRYRFKNLLRSYRKAKSSHPPGTCPFYEELDSLMRARAAVRAMGTVREAAGLPRCGQSSAETDAQEAWGEVANEDAVKPSTLCPKAPDMGFEMRHEDEDQISEQDIFEGLPGALSKCPTEAVCQPLDWGEDSENENEDEGQWGNPSQEQWQESSSEEDLEKLIDHQGLYLAEKPYKCDTCMKSFSRSSHFIAHQRIHTGEKPYKCLECGKNFSDRSNLNTHQRIHTGEKPYKCLECGKSFSDHSNLITHQRIHTGEKPYKCGECWKSFNQSSNLLKHQRIHLGGNPDQCSEPGGNFAQSPSFSAHWRNSTEETAPEQPQSISKDLNSPGPHSTNSGEKLYECSECGRSFSKSSALISHQRIHTGEKPYECAECGKSFSKSSTLANHQRTHTGEKPYKCVDCGKCFSERSKLITHQRVHTGEKPYKCLECGKFFRDRSNLITHQRIHTGEKPYKCRECGKCFNQSSSLIIHQRIHTGEKPYKCTECGKDFNNSSHFSAHRRTHAGGKAS",
+      "mass": 109657
+     },
+     "seq_version": 2,
+     "entry_version": 89,
+     "d_length": -66,
+     "direction": "old_shorter",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does protein P17040 have more than 1010 residues? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "r022",
+   "direction": "old_shorter"
+  },
+  {
+   "template": "mass_threshold",
+   "target_field": "mass",
+   "target_accession": "P17643",
+   "accessions": [
+    "P17643"
+   ],
+   "params": {
+    "accession": "P17643",
+    "threshold_kda": 60.2
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "superseded": {
+     "fields": {
+      "length": 527,
+      "mass": 59592
+     },
+     "clean_value": 60724,
+     "corrupted_value": 59592,
+     "coherent": true,
+     "real": true,
+     "full_patch": {
+      "sequence": "MSAPKLLSLGCIFFPLLLFQQARAQFPRQCATVEALRSGMCCPDLSPVSGPGTDRCGSSSGRGRCEAVTADSRPHSPQYPHDGRDDREVWPLRFFNRTCHCNGNFSGHNCGTCRPGWRGAACDQRVLIVRRNLLDLSKEEKNHFVRALDMAKRTTHPLFVIATRRSEEILGPDGNTPQFENISIYNYFVWTHYYSVKKTFLGVGQESFGEVDFSHEGPAFLTWHRYHLLRLEKDMQEMLQEPSFSLPYWNFATGKNVCDICTDDLMGSRSNFDSTLISPNSVFSQWRVVCDSLEDYDTLGTLCNSTEDGPIRRNPAGNVARPMVQRLPEPQDVAQCLEVGLFDTPPFYSNSTNSFRNTVEGYSDPTGKYDPAVRSLHNLAHLFLNGTGGQTHLSPNDPIFVLLHTFTDAVFDEWLRRYNADISTFPLENAPIGHNRQYNMVPFWPPVTNTEMFVTAPDNLGYTYEIQWPSREFSVPEIIAIAVVGALLLVALIFGTASYLIRARRSMDEANQPLLTDQYQCYAEERI",
+      "mass": 59592
+     },
+     "seq_version": 1,
+     "entry_version": 21,
+     "d_length": -10,
+     "direction": "old_shorter",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does protein P17643 have a molecular mass greater than 60.2 kDa? Answer yes or no and give the mass in kDa. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "r023",
+   "direction": "old_shorter"
+  },
+  {
+   "template": "length_threshold",
+   "target_field": "length",
+   "target_accession": "P17861",
+   "accessions": [
+    "P17861"
+   ],
+   "params": {
+    "accession": "P17861",
+    "threshold": 260
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "superseded": {
+     "fields": {
+      "length": 260,
+      "mass": 28666
+     },
+     "clean_value": 261,
+     "corrupted_value": 260,
+     "coherent": true,
+     "real": true,
+     "full_patch": {
+      "sequence": "MVVVAAAPNPADGTPKVLLLSGQPASAAGAPAARLPLMVPAQRGASPEAASGGLPQARKRQRLTHLSPEEKALRRKLKNRVAAQTARDRKKARMSELEQQVVDLEEENQKLLLENQLLREKTHGLVVENQELRQRLGMDALVAEEEAEAKGNEVRPVAGSAESAALRLRAPLQQVQAQLSPLQNISPWILAVLTLQIQSLISCWAFWTTWTQSCSSNALPQSLPAWRSSQRSTQKDPVPYQPPFLCQWGRHQPSWKPLMN",
+      "mass": 28666
+     },
+     "seq_version": 1,
+     "entry_version": 46,
+     "d_length": -1,
+     "direction": "old_shorter",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does protein P17861 have more than 260 residues? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "r024",
+   "direction": "old_shorter"
+  },
+  {
+   "template": "mass_threshold",
+   "target_field": "mass",
+   "target_accession": "P18627",
+   "accessions": [
+    "P18627"
+   ],
+   "params": {
+    "accession": "P18627",
+    "threshold_kda": 57.3
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "superseded": {
+     "fields": {
+      "length": 529,
+      "mass": 57185
+     },
+     "clean_value": 57449,
+     "corrupted_value": 57185,
+     "coherent": true,
+     "real": true,
+     "full_patch": {
+      "sequence": "MWEAQFLGLLFLQPLWVAPVKPLQPGAEVPVVWAQEGAPAQLPCSPTIPLQDLSLLRRAGVTWQHQPDSGPPAAAPGHPLAPGPHPAAPSSWGPRPRRYTVLSVGPGGLRSGRLPLQPRVQLDERGRQRGDFSLWLRPARRADAGEYRAAVHLRDRALSCRLRLRLGQASMTASPPGSLRASDWVILNCSFSRPDRPASVHWFRNRGQGRVPVRESPHHHLAESFLFLPQVSPMDSGPWGCILTYRDGFNVSIMYNLTVLGLEPPTPLTVYAGAGSRVGLPCRLPAGVGTRSFLTAKWTPPGGGPDLLVTGDNGDFTLRLEDVSQAQAGTYTCHIHLQEQQLNATVTLAIITVTPKSFGSPGSLGKLLCEVTPVSGQERFVWSSLDTPSQRSFSGPWLEAQEAQLLSQPWQCQLYQGERLLGAAVYFTELSSPGAQRSGRAPGALPAGHLLLFLTLGVLSLLLLVTGAFGFHLWRRQWRPRRFSALEQGIHPRQAQTQDRGAGARTGAGAGAGTGARARARAGAALTWS",
+      "mass": 57185
+     },
+     "seq_version": 3,
+     "entry_version": 27,
+     "d_length": 4,
+     "direction": "old_longer",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does protein P18627 have a molecular mass greater than 57.3 kDa? Answer yes or no and give the mass in kDa. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "r025",
+   "direction": "old_longer"
+  },
+  {
+   "template": "length_threshold",
+   "target_field": "length",
+   "target_accession": "P24278",
+   "accessions": [
+    "P24278"
+   ],
+   "params": {
+    "accession": "P24278",
+    "threshold": 434
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "superseded": {
+     "fields": {
+      "length": 433,
+      "mass": 48724
+     },
+     "clean_value": 435,
+     "corrupted_value": 433,
+     "coherent": true,
+     "real": true,
+     "full_patch": {
+      "sequence": "MDTASHSLVLLQQLNMQREFGFLCDCTVAIGDVYFKAHRAVLAAFSNYFKMIFIHQTSECIKIQPTDIQPDIFSYLLHIMYTGKGPKQIVDHSRLEEGIRFLHADYLSHIATEMNQVFSPETVQSSNLYGIQISTTQKTVVKQGLEVKEAPSSNSGNRAAVQGDLPQLSLAIGLDDGTADQQRACPATQALEEHQKPPVSIKQERCDPESVISQSHPSPSSEVTGPTFTENSVKIHLCHYCGERFDSRSNLRQHLHTHVSGSLPFGVPASILESNDLGEVHPLNENSEALECRRLSSFIVKENEQQPDHTNRGTTEPLQISQVSLISKDTEPVELNCNFSFSRKRKMSCTICGHKFPRKSQLLEHMYTHKGKSYRYNRCQRFGNALAQRFQPYCDSWSDVSLKSSRLSQEHLDLPCALESELTQENVDTILVE",
+      "mass": 48724
+     },
+     "seq_version": 1,
+     "entry_version": 58,
+     "d_length": -2,
+     "direction": "old_shorter",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does protein P24278 have more than 434 residues? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "r026",
+   "direction": "old_shorter"
+  },
+  {
+   "template": "length_threshold",
+   "target_field": "length",
+   "target_accession": "P35243",
+   "accessions": [
+    "P35243"
+   ],
+   "params": {
+    "accession": "P35243",
+    "threshold": 199
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "superseded": {
+     "fields": {
+      "length": 199,
+      "mass": 22999
+     },
+     "clean_value": 200,
+     "corrupted_value": 199,
+     "coherent": true,
+     "real": true,
+     "full_patch": {
+      "sequence": "GNSKSGALSKEILEELQLNTKFSEEELCSWYQSFLKDCPTGRITQQQFQSIYAKFFPDTDPKAYAQHVFRSFDSNLDGTLDFKEYVIALHMTTAGKTNQKLEWAFSLYDVDGNGTISKNEVLEIVMAIFKMITPEDVKLLPDDENTPEKRAEKIWKYFGKNDDDKLTEKEFIEGTLANKEILRLIQFEPQKVKEKMKNA",
+      "mass": 22999
+     },
+     "seq_version": 1,
+     "entry_version": 64,
+     "d_length": -1,
+     "direction": "old_shorter",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does protein P35243 have more than 199 residues? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "r027",
+   "direction": "old_shorter"
+  },
+  {
+   "template": "length_threshold",
+   "target_field": "length",
+   "target_accession": "P36871",
+   "accessions": [
+    "P36871"
+   ],
+   "params": {
+    "accession": "P36871",
+    "threshold": 561
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "superseded": {
+     "fields": {
+      "length": 561,
+      "mass": 61317
+     },
+     "clean_value": 562,
+     "corrupted_value": 561,
+     "coherent": true,
+     "real": true,
+     "full_patch": {
+      "sequence": "VKIVTVKTQAYQDQKPGTSGLRKRVKVFQSSANYAENFIQSIISTVEPAQRQEATLVVGGDGRFYMKEAIQLIARIAAANGIGRLVIGQNGILSTPAVSCIIRKIKAIGGIILTASHNPGGPNGDFGIKFNISNGGPAPEAITDKIFQISKTIEEYAVCPDLKVDLGVLGKQQFDLENKFKPFTVEIVDSVEAYATMLRSIFDFSALKELLSGPNRLKIRIDAMHGVVGPYVKKILCEELGAPANSAVNCVPLEDFGGHHPDPNLTYAADLVETMKSGEHDFGAAFDGDGDRNMILGKHGFFVNPSDSVAVIAANIFSIPYFQQTGVRGFARSMPTSGALDRVASATKIALYETPTGWKFFGNLMDASKLSLCGEESFGTGSDHIREKDGLWAVLAWLSILATRKQSVEDILKDHWQKYGRNFFTRYDYEEVEAEGANKMMKDLEALMFDRSFVGKQFSANDKVYTVEKADNFEYSDPVDGSISRNQGLRLIFTDGSRIVFRLSGTGSAGATIRLYIDSYEKDVAKINQDPQVMLAPLISIALKVSQLQERTGRTAPTVIT",
+      "mass": 61317
+     },
+     "seq_version": 2,
+     "entry_version": 66,
+     "d_length": -1,
+     "direction": "old_shorter",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does protein P36871 have more than 561 residues? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "r028",
+   "direction": "old_shorter"
+  },
+  {
+   "template": "mass_threshold",
+   "target_field": "mass",
+   "target_accession": "P43268",
+   "accessions": [
+    "P43268"
+   ],
+   "params": {
+    "accession": "P43268",
+    "threshold_kda": 57.3
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "superseded": {
+     "fields": {
+      "length": 551,
+      "mass": 60570
+     },
+     "clean_value": 53938,
+     "corrupted_value": 60570,
+     "coherent": true,
+     "real": true,
+     "full_patch": {
+      "sequence": "NCLLRPKNKSVRWGPGAGAALLRPSPAALGAGSRACSVPPAAPAQTPRPQVSAPAWGPGRAARGSGRMERRMKAGYLDQQVPYTFSSKSPGNGSLREALIGPLGKLMDPGSLPPLDSEDLFQDLSHFQETWLAEAQVPDSDEQFVPDFHSENLAFHSPTTRIKKEPQSPRTDPALSCSRKPPLPYHHGEQCLYSSAYDPPRQIAIKSPAPGALGQSPLQPFPRAEQRNFLRSSGTSQPHPGHGYLGEHSSVFQQPLDICHSFTSQGGGREPLPAPYQHQLSEPCPPYPQQSFKQEYHDPLYEQAGQPAVDQGGVNGHRYPGAGVVIKQEQTDFAYDSDVTGCASMYLHTEGFSGPSPGDGAMGYGYEKPLRPFPDDVCVVPEKFEGDIKQEGVGAFREGPPYQRRGALQLWQFLVALLDDPTNAHFIAWTGRGMEFKLIEPEEVARLWGIQKNRPAMNYDKLSRSLRYYYEKGIMQKVAGERYVYKFVCEPEALFSLAFPDNQRPALKAEFDRPVSEEDTVPLSHLDESPAYLPELAGPAQPFGPKGGYSY",
+      "mass": 60570
+     },
+     "seq_version": 2,
+     "entry_version": 32,
+     "d_length": 67,
+     "direction": "old_longer",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does protein P43268 have a molecular mass greater than 57.3 kDa? Answer yes or no and give the mass in kDa. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "r029",
+   "direction": "old_longer"
+  },
+  {
+   "template": "length_threshold",
+   "target_field": "length",
+   "target_accession": "P49639",
+   "accessions": [
+    "P49639"
+   ],
+   "params": {
+    "accession": "P49639",
+    "threshold": 332
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "superseded": {
+     "fields": {
+      "length": 330,
+      "mass": 36053
+     },
+     "clean_value": 335,
+     "corrupted_value": 330,
+     "coherent": true,
+     "real": true,
+     "full_patch": {
+      "sequence": "MNSFLEYPILSSGDSGTCSARAYPSDHRITTFQSCAVSANSCGGDDRFLVGRGVQIGSPHHHHHHHHHHPQPATYQTSGNLGVSYSHSSCGPSYGSQNFSAPYSPYALNQEADVSGGYPQCAPAVYSGNLSSPMVQHHHHHQGYAGGAVGSPQYIHHSYGQEHQSLALATYNNSLSPLHASHQEACRSPASETSSPAQTFDWMKVKRNPPKTGKVGEYGYLGQPNAVRTNFTTKQLTELEKEFHFNKYLTRARRVEIAASLQLNETQVKIWFQNRRMKQKKREKEGLLPISPATPPGNDEKAEESSEKSSSSPCVPSPGSSTSDTLTTSH",
+      "mass": 36053
+     },
+     "seq_version": 1,
+     "entry_version": 5,
+     "d_length": -5,
+     "direction": "old_shorter",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does protein P49639 have more than 332 residues? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "r030",
+   "direction": "old_shorter"
+  },
+  {
+   "template": "mass_threshold",
+   "target_field": "mass",
+   "target_accession": "P50479",
+   "accessions": [
+    "P50479"
+   ],
+   "params": {
+    "accession": "P50479",
+    "threshold_kda": 35.2
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "superseded": {
+     "fields": {
+      "length": 328,
+      "mass": 35082
+     },
+     "clean_value": 35398,
+     "corrupted_value": 35082,
+     "coherent": true,
+     "real": true,
+     "full_patch": {
+      "sequence": "MPHSVTLRGPSPWGFRLVGRDFSAPLTISRVHAGSKASLAALCPGDLIQAINGESTELMTHLEAQNRIKGCHDHLTLSVSRPEGRSWPSAPDDSKAQAHRIHIDPEIQDGSPTTSRRPSGTGTGPEDGRPSLGSPYGKPPCFPVPHNGSSEATLPAQMSTLHVSPPPSADPAEASRGAGSRVDLGSEVYRMLREPAEPVAAEPKQSGSFRYLQGMLEAGEGGDWPGPGGPRNLKPTASKLGAPLSGLQGLPECTRCCHGIVGTIVKERDKLYHPECFMCSDCGLNLKQRGYFFLDERLYCESHAKARVKPPEGYDVVAVYPNAKVELV",
+      "mass": 35082
+     },
+     "seq_version": 1,
+     "entry_version": 15,
+     "d_length": -2,
+     "direction": "old_shorter",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does protein P50479 have a molecular mass greater than 35.2 kDa? Answer yes or no and give the mass in kDa. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "r031",
+   "direction": "old_shorter"
+  },
+  {
+   "template": "length_threshold",
+   "target_field": "length",
+   "target_accession": "P50553",
+   "accessions": [
+    "P50553"
+   ],
+   "params": {
+    "accession": "P50553",
+    "threshold": 237
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "superseded": {
+     "fields": {
+      "length": 238,
+      "mass": 25710
+     },
+     "clean_value": 236,
+     "corrupted_value": 238,
+     "coherent": true,
+     "real": true,
+     "full_patch": {
+      "sequence": "MESSAKMESGGAGQQPQPQPQQPFLPPAACFFATAAAAAAAAAAAAAQSAQQQQQQQQQQQQQQAPQLRPAADGQPSGGGHKSAPKQVKRQRSSSPELMRCKRRLNFSGFGYSLPQQQPAAVARRNERERNRVKLVNLGFATLREHVPNGAANKKMSKVETLRSAVEYIRALQQLLDEHDAVSAAFQAGVLSPTISPNYSNDLNSMAGSPVSSYSSDEGSYDPLSPEEQELLDFTNWF",
+      "mass": 25710
+     },
+     "seq_version": 1,
+     "entry_version": 12,
+     "d_length": 2,
+     "direction": "old_longer",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does protein P50553 have more than 237 residues? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "r032",
+   "direction": "old_longer"
+  },
+  {
+   "template": "mass_threshold",
+   "target_field": "mass",
+   "target_accession": "P51530",
+   "accessions": [
+    "P51530"
+   ],
+   "params": {
+    "accession": "P51530",
+    "threshold_kda": 121.4
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "superseded": {
+     "fields": {
+      "length": 1077,
+      "mass": 122421
+     },
+     "clean_value": 120415,
+     "corrupted_value": 122421,
+     "coherent": true,
+     "real": true,
+     "full_patch": {
+      "sequence": "PRFRCLFCLQFAIPASRMEQLNELELLMEKSFWEEAELPAELFQKKVVASFPRTVLSTGMDNRYLVLAVNTVQNKEGNCEKRLVITASQSLENKELCILRNDWCSVPVEPGDIIHLEGDCTSDTWIIDKDFGYLILYPDMLISGTSIASSIRCMRRAVLSETFRSSDPATRQMLIGTVLHEVFQKAINNSFAPEKLQELAFQTIQEIRHLKEMYRLNLSQDEIKQEVEDYLPSFCKWAGDFMHKNTSTDFPQMQLSLPSDNSKDNSTCNIEVVKPMDIEESIWSPRFGLKGKIDVTVGVKIHRGYKTKYKIMPLELKTGKESNSIEHRSQVVLYTLLSQERRADPEAGLLLYLKTGQMYPVPANHLDKRELLKLRNQMAFSLFHRISKSATRQKTQLASLPQIIEEEKTCKYCSQIGNCALYSRAVEQQMDCSSVPIVMLPKIEEETQHLKQTHLEYFSLWCLMLTLESQSKDNKKNHQNIWLMPASEMEKSGSCIGNLIRMEHVKIVCDGQYLHNFQCKHGAIPVTNLMAGDRVIVSGEERSLFALSRGYVKEINMTTVTCLLDRNLSVLPESTLFRLDQEEKNCDIDTPLGNLSKLMENTFVSKKLRDLIIDFREPQFISYLSSVLPHDAKDTVACILKGLNKPQRQAMKKVLLSKDYTLIVGMPGTGKTTTICTLVRILYACGFSVLLTSYTHSAVDNILLKLAKFKIGFLRLGQIQKVHPAIQQFTEQEICRSKSIKSLALLEELYNSQLIVATTCMGINHPIFSRKIFDFCIVDEASQISQPICLGPLFFSRRFVLVGDHQQLPPLVLNREARALGMSESLFKRLEQNKSAVVQLTVQYRMNSKIMSLSNKLTYEGKLECGSDKVANAVINLRHFKDVKLELEFYADYSDNPWLMGVFEPNNPVCFLNTDKVPAPEQVEKGGVSNVTEAKLIVFLTSIFVKAGCSPSDIGIIAPYRQQLKIINDLLARSIGMVEVNTVDKYQGRDKSIVLVSFVRSNKDGTVGELLKDWRRLNVAITRAKHKLILLGCVPSLNCYPPLEKLLNHLNSEKLIIDLPSREHESLCHILGDFQRE",
+      "mass": 122421
+     },
+     "seq_version": 2,
+     "entry_version": 39,
+     "d_length": 17,
+     "direction": "old_longer",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does protein P51530 have a molecular mass greater than 121.4 kDa? Answer yes or no and give the mass in kDa. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "r033",
+   "direction": "old_longer"
+  },
+  {
+   "template": "length_threshold",
+   "target_field": "length",
+   "target_accession": "P51795",
+   "accessions": [
+    "P51795"
+   ],
+   "params": {
+    "accession": "P51795",
+    "threshold": 781
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "superseded": {
+     "fields": {
+      "length": 746,
+      "mass": 83146
+     },
+     "clean_value": 816,
+     "corrupted_value": 746,
+     "coherent": true,
+     "real": true,
+     "full_patch": {
+      "sequence": "MDFLEEPIPGVGTYDDFNTIDWVREKSRDRDRHREITNKSKESTWALIHSVSDAFSGWLLMLLIGLLSGSLAGLIDISAHWMTDLKEGICTGGFWFNHEHCCWNSEHVTFEERDKCPEWNSWSQLIISTDEGAFAYIVNYFMYVLWALLFAFLAVSLVKVFAPYACGSGIPEIKTILSGFIIRGYLGKWTLVIKTITLVLAVSSGLSLGKEGPLVHVACCCGNILCHCFNKYRKNEAKRREVLSAAAAAGVSVAFGAPIGGVLFSLEEVSYYFPLKTLWRSFFAALVAAFTLRSINPFGNSRLVLFYVEFHTPWHLFELVPFILLGIFGGLWGALFIRTNIAWCRKRKTTQLGKYPVIEVLVVTAITAILAFPNEYTRMSTSELISELFNDCGLLDSSKLCDYENRFNTSKGGELPDRPAGVGVYSAMWQLALTLILKIVITIFTFGMKIPSGLFIPSMAVGAIAGRLLGVGMEQLAYYHQEWTVFNSWCSQGADCITPGLYAMVGAAACLGGVTRMTVSLVVIMFELTGGLEYIVPLMAAAMTSKWVADALGREGIYDAHIRLNGYPFLEAKEEFAHKTLAMDVMKPRRNDPLLTVLTQDSMTVEDVETIISETTYSGFPVVVSRESQRLVGFVLRRDLIISIENARKKQDGVVSTSIIYFTEHSPPLPPYTPPTLKLRNILDLSPFTVTDLTPMEIVVDIFRKLGLRQCLVTHNGRLLGIITKKDVLKHIAQMANQDPDSILFN",
+      "mass": 83146
+     },
+     "seq_version": 1,
+     "entry_version": 190,
+     "d_length": -70,
+     "direction": "old_shorter",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does protein P51795 have more than 781 residues? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "r034",
+   "direction": "old_shorter"
+  },
+  {
+   "template": "length_threshold",
+   "target_field": "length",
+   "target_accession": "P63128",
+   "accessions": [
+    "P63128"
+   ],
+   "params": {
+    "accession": "P63128",
+    "threshold": 1116
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "superseded": {
+     "fields": {
+      "length": 1116,
+      "mass": 123488
+     },
+     "clean_value": 1117,
+     "corrupted_value": 1116,
+     "coherent": true,
+     "real": true,
+     "full_patch": {
+      "sequence": "GQTKSKIKSKYASYLSFIKILLKRGGVKVSTKNLIKLFQIIEQFCPWFPEQGTLDLKDWKRIGKELKQAGRKGNIIPLTVWNDWAIIKAALEPFQTEEDSISVSDAPGSGIIDCNEKTRKKSQKETESLHCEYVAEPVMAQSTQNVDYNQLQEVIYPETLKLEGKGPELVGPSESKPRGTSPLPAGQVPVTLQPQKQVKENKTQPPVAYQYWPPAELQYRPPPESQYGYPGMPPAPQGRAPYPQPPTRRLNPTAPPSRQGSELHEIIDKSRKEGDTEAWQFPVTLEPMPPGEGAQEGEPPTVEARYKSFSIKILKDMKEGVKQYGPNSPYMRTLLDSIAHGHRLIPYDWEILAKSSLSPSQFLQFKTWWIDGVQEQVRRNRAANPPVNIDADQLLGIGQNWSTISQQALMQNEAIEQVRAICLRAWEKIQDPGSTCPSFNTVRQGSKEPYPDFVARLQDVAQKSIADEKARKVIVELMAYENANPECQSAIKPLKGKVPAGSDVISEYVKACDGIGGAMHKAMLMAQAITGVVLGGQVRTFGGKCYNCGQIGHLKKNCPVLNKQNITIQATTTGREPPDLCPRCKKGKHWASQCRSKFDKNGQPLSGNEQRGQPQAPQQTGAFPIQPFVPQGFQGQQPPLSQVFQGISQLPQYNNCPPPQVAVQQVDLCTIQAVSLLPGEPPQKIPTGVYGPLPEGTVGLILGRSSLNLKGVQIHTSVVDSDYKGEIQLVISSSVPWSASPGDRIAQLLLLPYIKGGNSEIKRIGGLGSTDPTGKAAYWASQVSENRPVCKAIIQGKQFEGLVDTGADVSIIALNQWPKNWPKQKAVTGLVGIGTASEVYQSMEILHCLGPDNQESTVQPMITSIPLNLWGRDLLQQWGAEITMPAPLYSPTSQKIMTKRGYIPGKGLGKNEDGIKIPFEAKINQKREGIGYPFLGAATIEPPKPIPLTWKTEKPVWVNQWPLPKQKLEALHLLANEQLEKGHIEPSFSPWNSPVFVIQKKSGKWRMLTDLRAVNAVIQPMGPLQPGLPSPAMIPKDWPLIIIDLKDCFFTIPLAEQDCEKFAFTIPAINNKEPATRFQWKVLPQGMLNSPTICQTFVGRALQPVKVFRLLYYSLY",
+      "mass": 123488
+     },
+     "seq_version": 2,
+     "entry_version": 19,
+     "d_length": -1,
+     "direction": "old_shorter",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does protein P63128 have more than 1116 residues? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "r035",
+   "direction": "old_shorter"
+  },
+  {
+   "template": "length_threshold",
+   "target_field": "length",
+   "target_accession": "P80188",
+   "accessions": [
+    "P80188"
+   ],
+   "params": {
+    "accession": "P80188",
+    "threshold": 188
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "superseded": {
+     "fields": {
+      "length": 178,
+      "mass": 20547
+     },
+     "clean_value": 198,
+     "corrupted_value": 178,
+     "coherent": true,
+     "real": true,
+     "full_patch": {
+      "sequence": "QDSTSDLIPAPPLSKVPLQQNFQDNQFQGKWYVVGLAGNAILREDKDPQKMYATIYELKEDKSYNVTSVLFRKKKCDYWIRTFVPGCQPGEFTLGNIKSYPGLTSYLVRVVSTNYNQHAMVFFKKVSQNREYFKITLYGRTKELTSELKENFIRFSKSLGLPENHIVFPVPIDQCIDG",
+      "mass": 20547
+     },
+     "seq_version": 1,
+     "entry_version": 6,
+     "d_length": -20,
+     "direction": "old_shorter",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does protein P80188 have more than 188 residues? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "r036",
+   "direction": "old_shorter"
+  },
+  {
+   "template": "mass_threshold",
+   "target_field": "mass",
+   "target_accession": "Q01968",
+   "accessions": [
+    "Q01968"
+   ],
+   "params": {
+    "accession": "Q01968",
+    "threshold_kda": 107.8
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "superseded": {
+     "fields": {
+      "length": 968,
+      "mass": 111484
+     },
+     "clean_value": 104205,
+     "corrupted_value": 111484,
+     "coherent": true,
+     "real": true,
+     "full_patch": {
+      "sequence": "MKFFVFKSFLSDCYRSLLDKSQLPAPRSRLPAPGARRGAVPQTTRSRGGWVWGRGSQCRRIGPQSAVLLSPEAAWMEPPLPVGAQPLATVEGMEMKGPLREPCALTLAQRNGQYELIIQLHEKEQHVQDIIPINSHFRCVQEAEETLLIDIASNSGCKIRVQGDWIRERRFEIPDEEHCLKFLSAVLAAQKAQSQLLVPEQKDSSSWYQKLDTKDKPSVFSGLLGFEDNFSSMNLDKKINSQNQPTGIHREPPPPPFSVNKMLPREKEASNKEQPKVTNTMRKLFVPNTQSGQREGLIKHILAKREKEYVNIQTFRFFVGTWNVNGQSPDSGLEPWLNCDPNPPDIYCIGFQELDLSTEAFFYFESVKEQEWSMAVERGLHSKAKYKKVQLVRLVGMMLLIFARKDQCRYIRDIATETVGTGIMGKMGNKGGVAVRFVFHNTTFCIVNSHLAAHVEDFERRNQDYKDICARMSFVVPNQTLPQLNIMKHEVVIWLGDLNYRLCMPDANEVKSLINKKDLQRLLKFDQLNIQRTQKKAFVDFNEGEIKFIPTYKYDSKTDRWDSSGKCRVPAWCDRILWRGTNVNQLNYRSHMELKTSDHKPVSALFHIGVKVVDERRYRKVFEDSVRIMDRMENDFLPSLELSRREFVFENVKFRQLQKGKFQISNNGQVPCHFSFIPKLNDSQYCKPWLRAEPFEGYLEPNETVDISLDVYVSKDSVTILNSGEDKIEDILVLHLDRGKDYFLTISGNYLPSCFGTSLEALCRMKRPIREVPVTKLIDLEKSLLQMVPLDEGASERPLQVPKEIWLLVDHLFKYACHQEDLFQTPGMQEELQQIIDCLDTSIPETIPGSNHSVAEALLIFLEALPEPVICYELYQRCLDSAYDPRICRQVISQLPRCHRNVFRYLMAFLRELLKFSEYNSVNANMIATLFTSLLLRPPPNLMARQTPSDRQRAIQFLLGFLLGSEED",
+      "mass": 111484
+     },
+     "seq_version": 1,
+     "entry_version": 12,
+     "d_length": 67,
+     "direction": "old_longer",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does protein Q01968 have a molecular mass greater than 107.8 kDa? Answer yes or no and give the mass in kDa. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "r037",
+   "direction": "old_longer"
+  },
+  {
+   "template": "length_threshold",
+   "target_field": "length",
+   "target_accession": "Q04741",
+   "accessions": [
+    "Q04741"
+   ],
+   "params": {
+    "accession": "Q04741",
+    "threshold": 273
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "superseded": {
+     "fields": {
+      "length": 257,
+      "mass": 28038
+     },
+     "clean_value": 290,
+     "corrupted_value": 257,
+     "coherent": true,
+     "real": true,
+     "full_patch": {
+      "sequence": "MFQPAAKRGFTIESLVAKDGGTGGGTGGGGAGSHLLAAAASEEPLRPTALNYPHPSAAEAAFVSGFPAAAAAGAGRSLYGGPELVFPEAMNHPALTVHPAHQLGASPLQPPHSFFGAQHRDPLHFYPWVLRNRFFGHRFQASDVPQDGLLLHGPFARKPKRIRTAFSPSQLLRLERAFEKNHYVVGAERKQLAGSLSLSETQVKVWFQNRRTKYKRQKLEEEGPESEQKKKGSHHINRWRIATKQANGEDIDVTSND",
+      "mass": 28038
+     },
+     "seq_version": 2,
+     "entry_version": 167,
+     "d_length": -33,
+     "direction": "old_shorter",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does protein Q04741 have more than 273 residues? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "r038",
+   "direction": "old_shorter"
+  },
+  {
+   "template": "mass_threshold",
+   "target_field": "mass",
+   "target_accession": "Q05682",
+   "accessions": [
+    "Q05682"
+   ],
+   "params": {
+    "accession": "Q05682",
+    "threshold_kda": 78.0
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "superseded": {
+     "fields": {
+      "length": 538,
+      "mass": 62695
+     },
+     "clean_value": 93231,
+     "corrupted_value": 62695,
+     "coherent": true,
+     "real": true,
+     "full_patch": {
+      "sequence": "MDDFERRRELRRQKREEMRLEAERIAYQRNDDDEEEAARERRRRARQERLRQKQEEESLGQVTDQVEVNAQNSVPDEEAKTTTTNTQVEGDDEAAFLERLARREERRQKRLQEALERQKEFDPTITDASLSLPSRRMQNDTAENETTEKEEKSESRQERYEIEETETVTKSYQKNDWRDAEENKKEDKEKEEEEEEKPKRGSIGENQIKDEKIKKDKEPKEEVKSFMDRKKGFTEVKSQNGEFMTHKLKHTENTFSRPGGRASVDTKEAEGAPQMEAGKRLEELRRRRGETESEEFEKLKQKQQEAALELEELKKKREERRKVLEEEEQRRKQEEADRKLREEEEKRRLKEEIERRRAEAAEKRQKMPEDGLSDDKKPFKCFTPKGSSLKIEERAEFLNKSVQKSSGVKSTHQAAIVSKIDSRLEQYTSAIEGTKSAKPTKPAASDLPVPAEGVRNIKSMWEKGNVFSSPTAAGTPNKETAGLKVGVSSRINEWLTKTPDGNKSPAPKPSDLRPGDVSSKRNLWEKQSVDKVTSPTKV",
+      "mass": 62695
+     },
+     "seq_version": 1,
+     "entry_version": 2,
+     "d_length": -255,
+     "direction": "old_shorter",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does protein Q05682 have a molecular mass greater than 78.0 kDa? Answer yes or no and give the mass in kDa. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "r039",
+   "direction": "old_shorter"
+  },
+  {
+   "template": "length_threshold",
+   "target_field": "length",
+   "target_accession": "Q05D32",
+   "accessions": [
+    "Q05D32"
+   ],
+   "params": {
+    "accession": "Q05D32",
+    "threshold": 295
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "superseded": {
+     "fields": {
+      "length": 125,
+      "mass": 14281
+     },
+     "clean_value": 466,
+     "corrupted_value": 125,
+     "coherent": true,
+     "real": true,
+     "full_patch": {
+      "sequence": "MRLRTRKASQQSNQIQTQRTARAKRKYSEVDDSLPSGGEKPSKNETGLLSSIKKFIKGSTPKEERENPSKRSRIERDIDNNLITSTPRAGEKPNKQISRVRRKSQVNGEAGSYEMTNQHVKKKKK",
+      "mass": 14281
+     },
+     "seq_version": 1,
+     "entry_version": 9,
+     "d_length": -341,
+     "direction": "old_shorter",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does protein Q05D32 have more than 295 residues? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "r040",
+   "direction": "old_shorter"
+  },
+  {
+   "template": "mass_threshold",
+   "target_field": "mass",
+   "target_accession": "Q12797",
+   "accessions": [
+    "Q12797"
+   ],
+   "params": {
+    "accession": "Q12797",
+    "threshold_kda": 85.7
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "superseded": {
+     "fields": {
+      "length": 757,
+      "mass": 85497
+     },
+     "clean_value": 85863,
+     "corrupted_value": 85497,
+     "coherent": true,
+     "real": true,
+     "full_patch": {
+      "sequence": "MAQRKNAKSSGNSSSSGSGSGSTSAGSSSPGARRETKHGGHKNGRKGGLSGTSFFTWFMVIALLGVWTSVAVVWFDLVDYEEVLGKLGIYDADGDGDFDVDDAKVLLGLKERSTSEPAVPPEEAEPHTEPEEQVPVEAEPQNIEDEAKEQIQSLLHEMVHAEHVEGEDLQQEDGPTGEPQQEDDEFLMATDVDDRFETLEPEVSHEETEHSYHVEETVSQDCNQDMEEMMSEQENPDSSEPVVEDERLHHDTDDVTYQVYEEQAVYEPLENEGIEITEVTAPPEDNPVEDSQVIVEEVSIFPVEEQQEVPPETNRKTDDPEQKAKVKKKKPKLLNKFDKTIKAELDAAEKLRKRGKIEEAVNAFKELVRKYPQSPRARYGKAQCEDDLAEKRRSNEVLRGAIETYQEVASLPDVPADLLKLSLKRRSDRQQFLGHMRGSLLTLQRLVQLFPNDTSLKNDLGVGYLLIGDNDNAKKVYEEVLSVTPNDGFAKVHYGFILKAQNKIAESIPYLKEGIESGDPGTDDGRFYFHLGDAMQRVGNKEAYKWYELGHKRGHFASVWQRSLINVNGLKAQPCGPKETGYTQLVKSLERNWKLIRDEGLAVMDKAKGLFLPEDENLREKGDWSQFTLWQQGRRNENACKGAPKTCTLLEKFPETTGCRRGQIKYSIMHPGTHVWPHTGPTNCRLRMHLGLVIPKEGCKIRCANETKTWEEGKVLIFDDSFEHEVWQDASSFRLIFIVDVWHPELTPQQRRSLPAI",
+      "mass": 85497
+     },
+     "seq_version": 1,
+     "entry_version": 57,
+     "d_length": -1,
+     "direction": "old_shorter",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does protein Q12797 have a molecular mass greater than 85.7 kDa? Answer yes or no and give the mass in kDa. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "r041",
+   "direction": "old_shorter"
+  },
+  {
+   "template": "length_threshold",
+   "target_field": "length",
+   "target_accession": "Q13177",
+   "accessions": [
+    "Q13177"
+   ],
+   "params": {
+    "accession": "Q13177",
+    "threshold": 508
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "superseded": {
+     "fields": {
+      "length": 493,
+      "mass": 54914
+     },
+     "clean_value": 524,
+     "corrupted_value": 493,
+     "coherent": true,
+     "real": true,
+     "full_patch": {
+      "sequence": "SANHSLKPLPSVPEEKKPRHKIISIFSGTEKGSKKKEKERPEISPPSDFEHTIHVGFDTVTGEFTGMPEQWARLLQTSNITKLEQKKNPQAVLDVLKFYDSNTVKQKYLSFTPPEKDGFPSGTPALNAKGTEAPAVVTEEEDDDEETAPPVIAPRPDHTKSIYTRSVIDPVPAPVGDSHVDGAAKSLDKQKKKTKMTDEEIMEKLRTIVSIGDPKKKYTRYEKIGQGASGTVFTATDVALGQEVAIKQINLQKQPKKELIINEILVMKELKNPNIVNFLDSYLVGDELFVVMEYLAGRSLTDVVTETCMDEAQIAAVCRECLQALEFLHANQVIHRDIKSDNVLLGMEGSVKLTDFGFCAQITPEQSKRSTMVGTPYWMAPEVVTRKAYGPKVDIWSLGIMAIEMVEGEPPYLNENPLRALYLIATNGTPELQNPEKLSPIFRDFLNRCLEMDVEKRGSAKELLQHPFLKLAKPLSSLTPLIMAAKEAMKSNR",
+      "mass": 54914
+     },
+     "seq_version": 1,
+     "entry_version": 2,
+     "d_length": -31,
+     "direction": "old_shorter",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does protein Q13177 have more than 508 residues? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "r042",
+   "direction": "old_shorter"
+  },
+  {
+   "template": "mass_threshold",
+   "target_field": "mass",
+   "target_accession": "Q13435",
+   "accessions": [
+    "Q13435"
+   ],
+   "params": {
+    "accession": "Q13435",
+    "threshold_kda": 98.9
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "superseded": {
+     "fields": {
+      "length": 872,
+      "mass": 97656
+     },
+     "clean_value": 100228,
+     "corrupted_value": 97656,
+     "coherent": true,
+     "real": true,
+     "full_patch": {
+      "sequence": "MAPGAAQELQAKLAEIGAPIQGNREELVERLQSYTRQTGIVLNRPVLRGEDGDKAAPPPMSAQLPGIPMPPPPLGLPPLQPPPPPPPPPPGLGLGFPMAHPPNLGPPPPLRVGEPVALSEEERLKLAQQQAALLMQQEERAKQQGDHSLKEHELLEQQKRAAVLLEQERQQEIAKMGTPVPRPPQDMGQIGVRTPLGPRVAAPVGPVGPTPTVLPMGAPVPRPRGPPPPPGDENREMDDPSVGPKIPQALEKILQLKESRQEEMNSQQEEEEMETDARSSLGQSASETEEDTVSVSKKEKNRKRRNRKKKKKPQRVRGVSSESSGDREKDSTRSRGSDSPAADVEIEYVTEEPEIYEPNFIFFKRIFEAFKLTDDVKKEKEKEPEKLDKLENSAAPKKKGFEEEHKDSDDDSSDDEQEKKPEAPKLSKKKLRRMNRFTVAELKQLVARPDVVEMHDVTAQDPKLLVHLKATRNSVPVPRHWCFKRKYLQGKRGIEKPPFELPDFIKRTGIQEMREALQEKEEQKTMKSKMREKVRPKMGKIDIDYQKLHDAFFKWQTKPKLTIHGDLYYEGKEFETRLKEKKPGDLSDELRISLGMPVGPNAHKVPPPWLIAMQRYGPPPSYPNLKIPGLNSPIPESCSFGYHAGGWGKPPVDETGKPLYGDVFGTNAAEFQTKTEEEEIDRTPWGELEPSDEESSEEEEEEESDEDKPDETGFITPADSGLITPGGFSSVPAGMETPELIELRKKKIEEAMDGSETPQLFTVLPEKRTATVGGAMMGSTHIYDMSTVMSRKGPAPELQGVEVALAPEELELDPMAMTQKYEEHVREQQAQVEKEDFSDMVAEHAAKQKQKKRKAQPQDSRGGSKKYKEFKF",
+      "mass": 97656
+     },
+     "seq_version": 1,
+     "entry_version": 89,
+     "d_length": -23,
+     "direction": "old_shorter",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does protein Q13435 have a molecular mass greater than 98.9 kDa? Answer yes or no and give the mass in kDa. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "r043",
+   "direction": "old_shorter"
+  },
+  {
+   "template": "length_threshold",
+   "target_field": "length",
+   "target_accession": "Q14774",
+   "accessions": [
+    "Q14774"
+   ],
+   "params": {
+    "accession": "Q14774",
+    "threshold": 407
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "superseded": {
+     "fields": {
+      "length": 326,
+      "mass": 34769
+     },
+     "clean_value": 488,
+     "corrupted_value": 326,
+     "coherent": true,
+     "real": true,
+     "full_patch": {
+      "sequence": "MFAAGLAPFYASNFSLWSAAYCSSAGPGGCSFPLDPAAVKKPSFCIADILHAGVGDLGAAPEGLAGASAAALTAHLGSVHPHASFQAAARSPLRPTPVVAPSEVPAGFPQRLSPLPAAYHHHHPQQQQQQQQPQQQQPPPPPRAGALQPPASGTRVVPNPHHSGSAPAPSSKDLKFGIDRILSAEFDPKVKEGNTLRDLTSLLTGGRPAGVHLSGLQPSAGQFFASLDPINEASAILSPLNSNPRNSVQHQFQDTFPGPYAVLTKDTMPQTYKRKRSWSRAVFSNLQRKGLEKRFEIQKYVTKPDRKQLAAMLGLTDAQVKVWFQN",
+      "mass": 34769
+     },
+     "seq_version": 1,
+     "entry_version": 1,
+     "d_length": -162,
+     "direction": "old_shorter",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does protein Q14774 have more than 407 residues? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "r044",
+   "direction": "old_shorter"
+  },
+  {
+   "template": "mass_threshold",
+   "target_field": "mass",
+   "target_accession": "Q15738",
+   "accessions": [
+    "Q15738"
+   ],
+   "params": {
+    "accession": "Q15738",
+    "threshold_kda": 30.7
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "superseded": {
+     "fields": {
+      "length": 175,
+      "mass": 19580
+     },
+     "clean_value": 41900,
+     "corrupted_value": 19580,
+     "coherent": true,
+     "real": true,
+     "full_patch": {
+      "sequence": "MKFVIGNGKNLVDFTFVENVVHGHILAAEQLSRDSTLGGKAFHITNDEPIPFWTFLSRILTGLNYEAPKYHIPYWVAYYLALLLSLLVMVISPVIQLQPTFTPMRVALAGTFHYYSCERAKKAMGYQPLVTMDDAMERTVQNFPATAEGQVRDTGGWALSTRCSASHSFPCGLMK",
+      "mass": 19580
+     },
+     "seq_version": 1,
+     "entry_version": 4,
+     "d_length": -198,
+     "direction": "old_shorter",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does protein Q15738 have a molecular mass greater than 30.7 kDa? Answer yes or no and give the mass in kDa. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "r045",
+   "direction": "old_shorter"
+  },
+  {
+   "template": "length_threshold",
+   "target_field": "length",
+   "target_accession": "Q2TAK8",
+   "accessions": [
+    "Q2TAK8"
+   ],
+   "params": {
+    "accession": "Q2TAK8",
+    "threshold": 710
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "superseded": {
+     "fields": {
+      "length": 711,
+      "mass": 78866
+     },
+     "clean_value": 710,
+     "corrupted_value": 711,
+     "coherent": true,
+     "real": true,
+     "full_patch": {
+      "sequence": "MMADAKYVLCRWEKRLWPAKVLARTATSTKNKRRKEYFLAVQILSLEEKIKVKSTEVEILEKSQIEAIASSLASQNEVPAAPLEELAYRRSLRVALDVLSEGSIWSQESSAGTGRADRSLRGKPMEHVSSPCDSNSSSLPRGDVLGSSRPHRRRPCVQQSLSSSFTCEKDPECKVDHKKGLRKSENPRGPLVLPAGGGAQDESGSRIHHKNWTLASKRGRNSAQKASLCLNGSSLSEDDTERDMGSKGGSWAAPSLPSGVREDDPCANAEGHDPGLPLGSLTAPPAPEPSACSEPGECPAKKRPRLDGSQRPPAVQLEPMAAGAAPSPGPGPGPRESVTPRSTARLGPPPSHASADATRCLPCPDSQKLEKECQSSEESMGSNSMRSILEEDEEDEEPPRVLLYHEPRSFEVGMLVWHKHKKYPFWPAVVKSVRQRDKKASVLYIEGHMNPKMKGFTVSLKSLKHFDCKEKQTLLNQAREDFNQDIGWCVSLITDYRVRLGCGSFAGSFLEYYAADISYPVRKSIQQDVLGTKLPQLSKGSPEEPVVGCPLGQRQPCRKMLPDRSRAARDRANQKLVEYIVKAKGAESHLRAILKSRKPSRWLQTFLSSSQYVTCVETYLEDEGQLDLVVKYLQGVYQEVGAKVLQRTNGDRIRFILDVLLPEAIICAISAVDEVDYKTAEEKYIKGPSLSYREKEIFDNQLLEERNRRRR",
+      "mass": 78866
+     },
+     "seq_version": 1,
+     "entry_version": 9,
+     "d_length": 1,
+     "direction": "old_longer",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does protein Q2TAK8 have more than 710 residues? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "r046",
+   "direction": "old_longer"
+  },
+  {
+   "template": "mass_threshold",
+   "target_field": "mass",
+   "target_accession": "Q3I5F7",
+   "accessions": [
+    "Q3I5F7"
+   ],
+   "params": {
+    "accession": "Q3I5F7",
+    "threshold_kda": 34.9
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "superseded": {
+     "fields": {
+      "length": 207,
+      "mass": 22990
+     },
+     "clean_value": 46789,
+     "corrupted_value": 22990,
+     "coherent": true,
+     "real": true,
+     "full_patch": {
+      "sequence": "MLQHPKVKGPSIALLGFSKGGDLCLSMASFLKGITATVLINACVANTVAPLHYKDMIIPKLVDDLGKVKITKSGFLTFMDTWSNPLEEHNHQSLVPLEKAQVPFLFIVGMDDQSWKSEFYAQIASERLQAHGKERPQIICYPETGHCIDPPYFPPSRASVHAVLGEAIFYGGEPKAHSKAQVDAWQQIQTFFHKHLNGKKSVKHSKI",
+      "mass": 22990
+     },
+     "seq_version": 1,
+     "entry_version": 108,
+     "d_length": -214,
+     "direction": "old_shorter",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does protein Q3I5F7 have a molecular mass greater than 34.9 kDa? Answer yes or no and give the mass in kDa. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "r047",
+   "direction": "old_shorter"
+  },
+  {
+   "template": "length_threshold",
+   "target_field": "length",
+   "target_accession": "Q4G0N8",
+   "accessions": [
+    "Q4G0N8"
+   ],
+   "params": {
+    "accession": "Q4G0N8",
+    "threshold": 1153
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "superseded": {
+     "fields": {
+      "length": 1129,
+      "mass": 129363
+     },
+     "clean_value": 1177,
+     "corrupted_value": 1129,
+     "coherent": true,
+     "real": true,
+     "full_patch": {
+      "sequence": "MAGIFKEFFFSTEDLPEVILTLSLISSIGAFLNRHLEDFPIPVPVILFLLGCSFEVLSFTSSQVQRYANAIQWMSPDLFFRIFTPVVFFTTAFDMDTYMLQKLFWQILLISIPGFLVNYILVLWHLASVNQLLLKPTQWLLFSAILVSSDPMLTAAAIRDLGLSRSLISLINGESLMTSVISLITFTSIMDFDQRLQSKRNHTLAEEIVGGICSYIIASFLFGILSSKLIQFWMSTVFGDDVNHISLIFSILYLIFYICELVGMSGIFTLAIVGLLLNSTSFKAAIEETLLLEFLTLLLISPVLSRVGHEFSWRWIFIMVCSEMKGMPNINMALLLAYSDLYFGSDKEKSQILFHGVLVCLITLVVNRFILPVAVTILGLRDATSTKYKSVCCTFQHFQELTKSAASALKFDKDLANADWNMIEKAITLENPYMLNEEETTEHQKVKCPHCNKEIDEIFNTEAMELANRRLLSAQIASYQRQYRNEILSQSAVQVLVGAAESFGEKKGKCMSLDTIKNYSESQKTVTFARKLLLNWVYNTRKEKEGPSKYFFFRICHTIVFTEEFEHVGYLVILMNIFPFIISWISQLNVIYHSELKHTNYCFLTLYILEALLKIAAMRKDFFSHAWNIFELAITLIGILHVILIEIDTIKYIFNETEVIVFIKVVQFFRILRIFKLIAPKLLQIIDKRMSHQKTFWYGILKGYVQGEADIMTIIDQITSSKQIKQMLLKQVIRNMEHAIKELGYLEYDHPEIAVTVKTKEEINVMLNMATEILKAFGLKGIISKTEGAGINKLIMAKKKEVLDSQSIIRPLTVEEVLYHIPWLDKNKDYINFIQEKAKVVTFDCGNDIFEEGDEPKGIYIIISGMVKLEKSKPGLGIDQMVESKEKDFPIIDTDYMLSGEIIGEINCLTNEPMKYSATCKTVVETCFIPKTHLYDAFEQCSPLIKQKMWLKLGLAITARKIREHLSYEDWNYNMQLKLSNIYVVDIPMSTKTDIYDENLIYVILIHGAVEDCLLRKTYRAPFLIPITCHQIQSIEDFTKVVIIQTPINMKTFRRNIRKFVPKHKSYLTPGLIGSVGTLEEGIQEERNVKEDGAHSAATARSPQPCSLLGTKFNCKESPRINLRKVRKE",
+      "mass": 129363
+     },
+     "seq_version": 1,
+     "entry_version": 16,
+     "d_length": -48,
+     "direction": "old_shorter",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does protein Q4G0N8 have more than 1153 residues? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "r048",
+   "direction": "old_shorter"
+  },
+  {
+   "template": "mass_threshold",
+   "target_field": "mass",
+   "target_accession": "Q5T124",
+   "accessions": [
+    "Q5T124"
+   ],
+   "params": {
+    "accession": "Q5T124",
+    "threshold_kda": 55.7
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "superseded": {
+     "fields": {
+      "length": 487,
+      "mass": 53975
+     },
+     "clean_value": 57373,
+     "corrupted_value": 53975,
+     "coherent": true,
+     "real": true,
+     "full_patch": {
+      "sequence": "MSSPLASLSKTRKVPLPSEPMNPGRRGIRIYGDVPASHDSELMAFMTRKLWDLEQQVKAQTDEILSKDQKIAALEDLVQTLRPHPAEATLQRQEELETMCVQLQRQVREMERFLSDYGLQWVGEPMDQEDSESKTVSEHGERDWMTAKKFWKPGDSLAPPEVDFDRLLASLQDLSELVVEGDTQVTPVPGGARLRTLEPIPLKLYRNGIMMFDGPFQPFYDPSTQRCLRDILDGFFPSELQRLYPNGVPFKVSDLRNQVYLEDGLDPFPGEGRVVGRQLMHKALDRVEEHPGSRMTAEKFLNRLPKFVIRQGEVIDIRGPIRDTLQNCCPLPARIQEIVVETPTLAAERERSQESPNTPAPPLSMLRIKSENGEQAFLLMMQPDNTIGDVRALLAQARVMDASAFEIFSTFPPTLYQDDTLTLQAAGLVPKAALLLRARRAPKSSLKFSPGPCPGPGPGPSPGPGPGPSPGPGPGPSPCPGPSPSPQ",
+      "mass": 53975
+     },
+     "seq_version": 1,
+     "entry_version": 13,
+     "d_length": -33,
+     "direction": "old_shorter",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does protein Q5T124 have a molecular mass greater than 55.7 kDa? Answer yes or no and give the mass in kDa. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "r049",
+   "direction": "old_shorter"
+  },
+  {
+   "template": "length_threshold",
+   "target_field": "length",
+   "target_accession": "Q6XZB0",
+   "accessions": [
+    "Q6XZB0"
+   ],
+   "params": {
+    "accession": "Q6XZB0",
+    "threshold": 470
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "superseded": {
+     "fields": {
+      "length": 481,
+      "mass": 55318
+     },
+     "clean_value": 460,
+     "corrupted_value": 481,
+     "coherent": true,
+     "real": true,
+     "full_patch": {
+      "sequence": "MLLKCLHNNLCQKYSAHAFQFSPRNVLWLLVVCLRSDNKRPCLEFSQLSVKDSFRDLFIPRIETILMMYTRNNLNCAEPLFEQNNSLNVNFNTQKKTVWLIHGYRPVGSIPLWLQNFVRILLNEEDMNVIVVDWSRGATTFIYNRAVKNTRKVAVSLSVHIKNLLKHGASLDNFHFIGVSLGAHISGFVGKIFHGQLGRITGLDPAGPRFSRKPPYSRLDYTDAKFVDVIHSDSNGLGIQEPLGHIDFYPNGGNKQPGCPKSIFSGIQFIKCNHQRAVHLFMASLETNCNFISFPCRSYKDYKTSLCVDCDCFKEKSCPRLGYQAKLFKGVLKERMEGRPLRTTVFLDTSGTYPFCTYYFVLSIIVPDKTMMDGSFSFKLLNQLGMIEEPRLYEKNKPFYKLQEVKILAQFYNDFVNISSIGLTYFQSSNLQCSTCTYKIQRLMLKSLTYPERPPLCRYNIVLKDREEVFLNPNTCTPKNT",
+      "mass": 55318
+     },
+     "seq_version": 1,
+     "entry_version": 12,
+     "d_length": 21,
+     "direction": "old_longer",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does protein Q6XZB0 have more than 470 residues? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "r050",
+   "direction": "old_longer"
+  },
+  {
+   "template": "mass_threshold",
+   "target_field": "mass",
+   "target_accession": "Q6ZUM4",
+   "accessions": [
+    "Q6ZUM4"
+   ],
+   "params": {
+    "accession": "Q6ZUM4",
+    "threshold_kda": 80.1
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "superseded": {
+     "fields": {
+      "length": 548,
+      "mass": 61732
+     },
+     "clean_value": 98396,
+     "corrupted_value": 61732,
+     "coherent": true,
+     "real": true,
+     "full_patch": {
+      "sequence": "MQPGLSPGSPGDPRPPTPETDYPESLTSYPEEDYSPVGSFGEPGPTSPLTTPPGWSCHVSQDKQMLYTNHFTQEQWVRLEDPHGKPYFYNPEDSSVRWELPQVPVPAPRSIHKSSQDGDTPAQASPPEEKVPAELDEVGSWEEVSPATAAVRTKTLDKAGVLHRTKTADKGKRLRKKHWSASWTVLEGGVLTFFKDSKTSAAGGLRQPSKFSTPEYTVELRGATLSWAPKDKSSRKNVLELRSRDGSEYLIQHDSEAIISTWHKAIAQGIQELSAELPPEESESSRVDFGSSERLGSWQEKEEDARPNAAAPALGPVGLESDLSKVRHKLRKFLQRRPTLQSLREKGYIKDQVFGCALAALCERERSRVPRFVQQCIRAVEARGLDIDGLYRISGNLATIQKLRYKVDHDERLDLDDGRWEDVHVITGALKLFFRELPEPLFPFSHFRQFIAAIKLQDQARRSRCVRDLVRSLPAPNHDTLRMLFQHLCRVIEHGEQNRMSVQSVAIVFGPTLLRPEVEETSMPMTMVFQNQVVELILQQCADIFPPH",
+      "mass": 61732
+     },
+     "seq_version": 1,
+     "entry_version": 34,
+     "d_length": -341,
+     "direction": "old_shorter",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does protein Q6ZUM4 have a molecular mass greater than 80.1 kDa? Answer yes or no and give the mass in kDa. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "r051",
+   "direction": "old_shorter"
+  },
+  {
+   "template": "length_threshold",
+   "target_field": "length",
+   "target_accession": "Q7RTU4",
+   "accessions": [
+    "Q7RTU4"
+   ],
+   "params": {
+    "accession": "Q7RTU4",
+    "threshold": 320
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "superseded": {
+     "fields": {
+      "length": 406,
+      "mass": 42415
+     },
+     "clean_value": 235,
+     "corrupted_value": 406,
+     "coherent": true,
+     "real": true,
+     "full_patch": {
+      "sequence": "SARLGLPNCWDDRREPQCPALCLFLFLSALLLEAKLSTLSGNGEEECGTQTPHSGPRARQGKVPGAAWPGCPSGPRLQEPASFPPCFPSSPRFLPRRPTWRPIIKQEEGDGWTGGRGAAWCHKAQLEGACLGSVQPQEPGTVRVASRAKAVGRGQRAEGRGWGRGRVPGKAMLRGAPGLGLTARKGAEDSAEDLGGPCPEPGGDSGVLGANGASCSRGEAEEPAGRRRARPVRSKARRMAANVRERKRILDYNEAFNALRRALRHDLGGKRLSKIATLRRAIHRIAALSLVLRASPAPRGPCGHLECHGPAARGDTGDTGASPPPPAGPSLARPDAARPSVPSAPRCASCPPHAPLARPSAVAEGPGLAQASGGSWRRCPGASSAGPPPWPRGYLRSAPGMGHPRS",
+      "mass": 42415
+     },
+     "seq_version": 1,
+     "entry_version": 17,
+     "d_length": 171,
+     "direction": "old_longer",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does protein Q7RTU4 have more than 320 residues? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "r052",
+   "direction": "old_longer"
+  },
+  {
+   "template": "mass_threshold",
+   "target_field": "mass",
+   "target_accession": "Q7Z3B1",
+   "accessions": [
+    "Q7Z3B1"
+   ],
+   "params": {
+    "accession": "Q7Z3B1",
+    "threshold_kda": 38.6
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "superseded": {
+     "fields": {
+      "length": 352,
+      "mass": 38472
+     },
+     "clean_value": 38719,
+     "corrupted_value": 38472,
+     "coherent": true,
+     "real": true,
+     "full_patch": {
+      "sequence": "MMLLVQGACCSNQWLAAVLLSLCCLLPSCLPAGQSVDFPWAAVDNMMVRKGDTAVLRCYLEDGASKGAWLNRSSIIFAGGDKWSVDPRVSISTLNKRDYSLQIQNVDVTDDGPYTCSVQTQHTPRTMQVHLTVQVPPKIYDISNDMTVNEGTNVTLTCLATGKPEPSISWRHISPSAKPFENGQYLDIYGITRDQAGEYECSAENDVSFPDVRKVKVVVNFAPTIQEIKSGTVTPGRSGLIRCEGAGVPPPAFEWYKGEKKLFNGQQGIIIQNFSTRSILTVTNVTQEHFGNYTCVAANKLGTTNASLPLNPPSTAQYGITGSADVLFSCWYLVLTLSSFTSIFYLKNAILQ",
+      "mass": 38472
+     },
+     "seq_version": 2,
+     "entry_version": 23,
+     "d_length": -2,
+     "direction": "old_shorter",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does protein Q7Z3B1 have a molecular mass greater than 38.6 kDa? Answer yes or no and give the mass in kDa. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "r053",
+   "direction": "old_shorter"
+  },
+  {
+   "template": "length_threshold",
+   "target_field": "length",
+   "target_accession": "Q7Z3E5",
+   "accessions": [
+    "Q7Z3E5"
+   ],
+   "params": {
+    "accession": "Q7Z3E5",
+    "threshold": 817
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "superseded": {
+     "fields": {
+      "length": 817,
+      "mass": 91761
+     },
+     "clean_value": 818,
+     "corrupted_value": 817,
+     "coherent": true,
+     "real": true,
+     "full_patch": {
+      "sequence": "MGDILAHESELLGLVKEYLDFAEFEDTLKTFSKECKIKGKPLCKTVGGSFRDSKSLTIQKDLVAAFDNGDQKVFFDLWEEHISSSIRDGDSFAQKLEFYLHIHFAIYLLKYSVGRPDKEELDEKISYFKTYLETKGAALSQTTEFLPFYALPFVPNPMVHPSFKELFQDSWTPELKLKLIKFLALISKASNTPKLLTIYKENGQSNKEILQQLHQQLVEAERRSVTYLKRYNKIQADYHNLIGVTAELVDSLEATVSGKMITPEYLQSVCVRLFSNQMRQSLAHSVDFTRPGTASTMLRASLAPVKLKDVPLLPSLDYEKLKKDLILGSDRLKAFLLQALRWRLTTSHPGEQRETVLQAYISNDLLDCYSHNQRSVLQLLHSTSDVVRQYMARLINAFASLAEGRLYLAQNTKVLQMLEGRLKEEDKDIITRENVLGALQKFSLRRPLQTAMIQDGLIFWLVDVLKDPDCLSDYTLEYSVALLMNLCLRSTGKNMCAKVAGLVLKVLSDLLGHENHEIQPYVNGALYSILSVPSIREEARAMGMEDILRCFIKEGNAEMIRQIEFIIKQLNSEELPDGVLESDDDEDEDDEEDHDIMEADLDKDELIQPQLGELSGEKLLTTEYLGIMTNTGKTRRKGLANVQWSGDEPLQRPVTPGGHRNGYPVVEDQHTPPQTAQHARNGHPQALPAAHEAVYREGKPSTPESCVSSSSAIIAKPGEWLPRGRQEEPRPAPTTPRQPREAPQDPGNGVTTRECASAFTCKPRAPCTPEMLDWNPPKAKASVLAPLFSSCGPQQASRPGSTASSTRGLPSSQSHRK",
+      "mass": 91761
+     },
+     "seq_version": 2,
+     "entry_version": 115,
+     "d_length": -1,
+     "direction": "old_shorter",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does protein Q7Z3E5 have more than 817 residues? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "r054",
+   "direction": "old_shorter"
+  },
+  {
+   "template": "mass_threshold",
+   "target_field": "mass",
+   "target_accession": "Q8WU68",
+   "accessions": [
+    "Q8WU68"
+   ],
+   "params": {
+    "accession": "Q8WU68",
+    "threshold_kda": 23.9
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "superseded": {
+     "fields": {
+      "length": 202,
+      "mass": 22003
+     },
+     "clean_value": 25744,
+     "corrupted_value": 22003,
+     "coherent": true,
+     "real": true,
+     "full_patch": {
+      "sequence": "MAEYLASIFGTEKDKVNCSFYFKIGVCRHGDRCSRLHNKPTFSQEVFTELQEKYGEIEEMNVCDNLGDHVVGNVYVKFRREEDGERAVAELSNRWFNGQAVHGNVPEVASATSCICGPFPRTSRGSSMGGDPGAGHPRGSILATIPERGTIGVPLITGMAASEALAPLPFTPNRDRCSWQDLSSKPPSLSCPILPRLPGSIM",
+      "mass": 22003
+     },
+     "seq_version": 1,
+     "entry_version": 51,
+     "d_length": -18,
+     "direction": "old_shorter",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does protein Q8WU68 have a molecular mass greater than 23.9 kDa? Answer yes or no and give the mass in kDa. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "r055",
+   "direction": "old_shorter"
+  },
+  {
+   "template": "length_threshold",
+   "target_field": "length",
+   "target_accession": "Q8WUI4",
+   "accessions": [
+    "Q8WUI4"
+   ],
+   "params": {
+    "accession": "Q8WUI4",
+    "threshold": 783
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "superseded": {
+     "fields": {
+      "length": 614,
+      "mass": 66186
+     },
+     "clean_value": 952,
+     "corrupted_value": 614,
+     "coherent": true,
+     "real": true,
+     "full_patch": {
+      "sequence": "MTTERLSGSGLHWPLSRTRSEPLPPSATAPPPPGPMQPRLEQLKTHVQVIKRSAKPSEKPRLRQIPSAEDLETDGGGPGQVVDDGLEHRELGHGQPEARGPAPLQQHPQVLLWEQQRLAGRLPRGSTGDTVLLPLAQGGHRPLSRAQSSPAAPASLSAPEPASQARVLSSSETPARTLPFTTGLIYDSVMLKHQCSCGDNSRHPEHAGRIQSIWSRLQERGLRSQCECLRGRKASLEELQSVHSERHVLLYGTNPLSRLKLDNGKLAGLLAQRMFVMLPCGGVGVDTDTIWNELHSSNAARWAAGSVTDLAFKVASRELKNGFAVVRPPGHHADHSTAMGFCFFNSVAIACRQLQQQSKASKILIVDWDVHHGNGTQQTFYQDPSVLYISLHRHDDGNFFPGSGAVDEVGAGSGEGFNVNVAWAGGLDPPMGDPEYLAAFRIVVMPIAREFSPDLVLVSAGFDAAEGHPAPLGGYHVSAKCFGYMTQQLMNLAGGAVVLALEGGHDLTAICDASEACVAALLGNRVDPLSEEGWKQKPNLNAIRSLEAVIRVHSKYWGCMQRLASCPDSWVPRVPGADKEEVEAVTALASLSVGILAEDRPSEQLVEEEEPMNL",
+      "mass": 66186
+     },
+     "seq_version": 1,
+     "entry_version": 4,
+     "d_length": -338,
+     "direction": "old_shorter",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does protein Q8WUI4 have more than 783 residues? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "r056",
+   "direction": "old_shorter"
+  },
+  {
+   "template": "mass_threshold",
+   "target_field": "mass",
+   "target_accession": "Q8WWG9",
+   "accessions": [
+    "Q8WWG9"
+   ],
+   "params": {
+    "accession": "Q8WWG9",
+    "threshold_kda": 21.1
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "superseded": {
+     "fields": {
+      "length": 170,
+      "mass": 18425
+     },
+     "clean_value": 23806,
+     "corrupted_value": 18425,
+     "coherent": true,
+     "real": true,
+     "full_patch": {
+      "sequence": "MLKMEPLNSTHPGTAASSSPLESRAAGGGSGNGNEYFYILVVMSFYGIFLIGIMLGYMKSKRREKKSSLLLLYKDEERLWGEAMKPLPVVSGLRSVQVPLMLNMLQESVAPALSCTLCSMEGDSVSSESSSPDVHLTIQEEGADDELEETSETPLNESSEGSSENIHQNS",
+      "mass": 18425
+     },
+     "seq_version": 3,
+     "entry_version": 101,
+     "d_length": -51,
+     "direction": "old_shorter",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does protein Q8WWG9 have a molecular mass greater than 21.1 kDa? Answer yes or no and give the mass in kDa. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "r057",
+   "direction": "old_shorter"
+  },
+  {
+   "template": "length_threshold",
+   "target_field": "length",
+   "target_accession": "Q92833",
+   "accessions": [
+    "Q92833"
+   ],
+   "params": {
+    "accession": "Q92833",
+    "threshold": 1256
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "superseded": {
+     "fields": {
+      "length": 1266,
+      "mass": 141696
+     },
+     "clean_value": 1246,
+     "corrupted_value": 1266,
+     "coherent": true,
+     "real": true,
+     "full_patch": {
+      "sequence": "MSKERPKRNIIQKKYDDSDGIPWSEERVVRKVLYLSLKEFKNSQKRQHAEGIAGSLKTVNGLLGNDQSKGLGPASEQSENEKDDASQVSSTSNDVSSSDFEEGPSRKRPRLQAQRKFAQSQPNSPSTTPVKIVEPLLPPPATQISDLSKRKPKTEDFLTFLCLRGSPALPNSMVYFGSSQDEEEVEEEDDETEDVKTATNNASSSCQSTPRKGKTHKHVHNGHVFNGSSRSTREKEPVQKHKSKEATPAKEKHSDHRADSRREQASANHPAAAPSTGSSAKGLAATHHHPPLHRSAQDLRKQVSKVNGVTRMSSLGAGVTSAKKMREVRPSPSKTVKYTATVTKGAVTYTKAKRELVKDTKPNHHKPSSAVNHTISGKTESSNAKTRKQVLSLGGASKSTGPAVNGLKVSGRLNPKSCTKEVGGRQLREGLQLREGLRNSKRRLEEAHQAEKPQSPPKKMKGAAGPAEGPGKKAPAERGLLNGHVKKEVPERSLERNRPKRATAGKSTPGRQAHGKADSASCENRSTSQPESVHKPQDSGKAEKGGGKAGWAAMDEIPVLRPSAKEFHDPLIYIESVRAQVEKFGMCRVIPPPDWRPECKLNDEMRFVTQIQHIHKLGRRWGPNVQRLACIKKHLKSQGITMDELPLIGGCELDLACFFRLINEMGGMQQVTELKKWNKLSDMLRIPKTAQERLAKLQEAYCQYILSYDSLSPEEHRRLEKEVLMEKEILEKRKGPLEGHTENDHHKFHPLPRLEPKNGLIHGVAPRNGFRSKLKEVGQAQLKTGRRRLFAQEKEVVKEEEEDKGVLNDFHKCIYKGRSVSLTTFYRTARNIMSMCFSKEPAPAEIEQEYWRLVEEKDCHVAVHCGKVDTNTHGSGFPVGKSEPFSRHGWNLTVLPNNTGSILRHLGAVPGVTIPWLNIGMVFSTSCWSRDQNHLPYIDYLHTGADCIWYCIPAEEENKLEDVVHTLLQANGTPGLQMLESNVMISPEVLCKEGIKVHRTVQQSGQFVVCFPGSFVSKVCCGYSVSETVHFATTQWTSMGFETAKEMKRRHIAKPFSMEKLLYQIAQAEAKKENGPTLSTISALLDELRDTELRQRRQLFEAGLHSSARYGSHDGSSTVADGKKKPRKWLQLETSERRCQICQHLCYLSMVVQENENVVFCLECALRHVEKQKSCRGLKLMYRYDEEQIISLVNQICGKVSGKNGSIENCLHKPTPKRGPRKRATVDVPPSRAVSLQFIQKCFELHHEDAQRPWSIYIYFFVIIIF",
+      "mass": 141696
+     },
+     "seq_version": 1,
+     "entry_version": 33,
+     "d_length": 20,
+     "direction": "old_longer",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does protein Q92833 have more than 1256 residues? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "r058",
+   "direction": "old_longer"
+  },
+  {
+   "template": "mass_threshold",
+   "target_field": "mass",
+   "target_accession": "Q92900",
+   "accessions": [
+    "Q92900"
+   ],
+   "params": {
+    "accession": "Q92900",
+    "threshold_kda": 123.7
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "superseded": {
+     "fields": {
+      "length": 1118,
+      "mass": 123115
+     },
+     "clean_value": 124345,
+     "corrupted_value": 123115,
+     "coherent": true,
+     "real": true,
+     "full_patch": {
+      "sequence": "MSVEAYGPSSQTLTFLDTEEAELLGADTQGSEFEFTDFTLPSQTQTPPGGPGGPGGGGAGGPGGAGAGAAAGQLDAQVGPEGILQNGAVDDSVAKTSQLLAELNFEEDEEDTYYTKDLPIHACSYCGIHDPACVVYCNTSKKWFCNGRGNTSGSHIVNHLVRAKCKEVTLHKDGPLGETVLECYNCGCRNVFLLGFIPAKADSVVVLLCRQPCASQSSLKDINWDSSQWQPLIQDRCFLSWLVKIPSEQEQLRARQITAQQINKLEELWKENPSATLEDLEKPGVDEEPQHVLLRYEDAYQYQNIFGPLVKLEADYDKKLKESQTQDNITVRWDLGLNKKRIAYFTLPKTDSDMRLMQGDEICLRYKGDLAPLWKGIGHVIKVPDNYGDEIAIELRSSVGAPVEVTHNFQVDFVWKSTSFDRMQSALKTFAVDETSVSGYIYHKLLGHEVEDVIIKCQLPKRFTAQALPDLNHSQVYAVKTVLQRPLSLIQGPPGTGKTVTSATIVYHLARQDNGPVLVCAPSNIAVDQLTEKIHQTGLKVVRLCPKSREAIDSPVSFLALHNQIRNMDSMPELQKLQQLKDETGELSSADEKRYRALKRTAERELLMNADVICCTCVGAGDPRLAKMQFRSILIDESTQATEPECMVPVVLGAKQLILVGDHCQLGPVVMCKKAAKAGLSQSLFERLVVLGIRPIRLQVQYRMHPALSAFPSNIFYEGSLQNGVTAADRVKKGFDFQWPQPDKPMFFYVTQGQEEIASSGTSYLNRTEAANVEKITTKLLKAGAKPDQIGIITPYEGQRSYLVQYMQFSGSLHTKLYQEVEIASVDAFQGREKDFIILSCVRANEHQGIGFLNDPRRLNVALTRARYGVIIVGNPKALSKQPLWNHLLIFYKEQKVLVEGPLNNLRESLMQFSKPRKLVNTINPGARFMTTAMYDAREAIIPGSVYDRSSQGRPSSMYFQTHDQIGMISAGPSHVAAMNIPIPFNLVMPPMPPPGYFGQANGPAAGRGTPKGKTGRGGRQKNRFGLPGPSQTNLPNSQASQDVASQPFSQGALTQGYISMSQPSQMSQPGLSQPELSQDSYLGDEFKSQIDVALSQDSTYQGERAYQHGGVTGLSQY",
+      "mass": 123115
+     },
+     "seq_version": 1,
+     "entry_version": 8,
+     "d_length": -11,
+     "direction": "old_shorter",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does protein Q92900 have a molecular mass greater than 123.7 kDa? Answer yes or no and give the mass in kDa. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "r059",
+   "direction": "old_shorter"
+  },
+  {
+   "template": "length_threshold",
+   "target_field": "length",
+   "target_accession": "Q96AJ9",
+   "accessions": [
+    "Q96AJ9"
+   ],
+   "params": {
+    "accession": "Q96AJ9",
+    "threshold": 210
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "superseded": {
+     "fields": {
+      "length": 203,
+      "mass": 23435
+     },
+     "clean_value": 217,
+     "corrupted_value": 203,
+     "coherent": true,
+     "real": true,
+     "full_patch": {
+      "sequence": "MSSDFEGYEQDFAVLTAEITSKIARVPRLPPDEKKQMVANVEKQLEEAKELLEQMDLEVREIPPQSRGMYSNRMRSYKQEMGKLETDFKRSRIAYSDEVRNELLGDDGNSSENQRAHLLDNTERLERSSRRLEAGYQIAVETEQIGQEMLENLSHDREKIQRARERLRETDANLGKSSRILTGMLRRGCSVKKQCNLSLAPKA",
+      "mass": 23435
+     },
+     "seq_version": 1,
+     "entry_version": 74,
+     "d_length": -14,
+     "direction": "old_shorter",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does protein Q96AJ9 have more than 210 residues? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "r060",
+   "direction": "old_shorter"
+  },
+  {
+   "template": "mass_threshold",
+   "target_field": "mass",
+   "target_accession": "Q96DT7",
+   "accessions": [
+    "Q96DT7"
+   ],
+   "params": {
+    "accession": "Q96DT7",
+    "threshold_kda": 93.7
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "superseded": {
+     "fields": {
+      "length": 847,
+      "mass": 92443
+     },
+     "clean_value": 94894,
+     "corrupted_value": 92443,
+     "coherent": true,
+     "real": true,
+     "full_patch": {
+      "sequence": "MSFSEMNRRTLAFRGGGLVTASGGGSTNNNAGGEASAWPPQPQPRQPPPTAPPALQPPNGRGADEEVELEGLEPQDLEASAGPAAGAAEEAKELLLPQDAGGPTSLGGGAGGPLLAERNRRTLAFRGGGGGGLGNNGSSRGRPETSVWPLRHFNGRGPATVDLELDALEGKELIQDGASLSDSTEDEEEGASLGDGSGAEGGSCSSSRRSGGDGGDEVEGSGVGAGEGETVQHFPLARPKSLMQKLQCSFQTSWLKDFPWLRYSKDTGLMSCGWCQKTPADGGSVDLPPVGHDELSRGTRNYKKTLLLRHHVSTEHKLHEANAPESEIPSEEGYWDFNRRPNENSYCYQLLRQLNEQRKKGILCDVSIVVSGKIFKAHKNILVAGSRFFKTLYCFSNKESPNQNNTTHLDIAAVQGFSVILDFLYSGNLVLTSQNAIEVMTVASYLQMSEVVQTCRNFIKDALNISIKSEAPESVVVDYNNRKPVNRDGLSSSRDQKIASFWATRNLTNLASNVKIENDGCNVDEGQIENYQMNDSSWVQDGSPEMAENESEGQTKVFIWNNMGSQGIQETGKTRRKNQTTKRFIYNIPPNNETNLEDCSVMQPPVAYPEENTLLIKEEPDLDGALLSGPDGDRNVNANLLAEAGTSQDGGDAGTSHDFKYGLMPGPSNDFKYGLLPESWPKQETWENGESSLIMNKLKCPHCSYVAKYRRTLKRHLLIHTGVRSFSCDICGKLFTRREHVKRHSLVHKKDKKYKCMVCKKIFMLAASVGIRHGSRRYGVCVDCADKSQPGGQEGVDQGQDTEFPRDEEYEENEVGEADEELVDDGEDQNDPSRWDESGEVCMSLDD",
+      "mass": 92443
+     },
+     "seq_version": 1,
+     "entry_version": 74,
+     "d_length": -24,
+     "direction": "old_shorter",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does protein Q96DT7 have a molecular mass greater than 93.7 kDa? Answer yes or no and give the mass in kDa. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "r061",
+   "direction": "old_shorter"
+  },
+  {
+   "template": "length_threshold",
+   "target_field": "length",
+   "target_accession": "Q96GN5",
+   "accessions": [
+    "Q96GN5"
+   ],
+   "params": {
+    "accession": "Q96GN5",
+    "threshold": 457
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "superseded": {
+     "fields": {
+      "length": 461,
+      "mass": 53003
+     },
+     "clean_value": 454,
+     "corrupted_value": 461,
+     "coherent": true,
+     "real": true,
+     "full_patch": {
+      "sequence": "GTRRLGRMELATRYQIPKEVADIFNAPSDDEEFVGFRDDVPMETLSSEESCDSFDSLESGKQQDVRFHSKYFTEELRRIFIEDTDSETEDFAGFTQSDLNGKTNPEVMVVESDLSDDGKASLVSEEEEDEEEDKATPRRSRSRRSSIGLRVAFQFPTKKLANKPDKNSSSEQLFSSARLQNEKKTILERKKDCRQVIQREDSTSESEDDSRDESQESSDALLKRTMNIKENKAMLAQLLAELNSMPDFFPVRTPTSASRKKTVRRAFSEGQITRRMNPTRSARPPEKFALENFTVSAAKFAEEFYSFRRRKTIGGKCREYRRRHRISSFRPVEDITEEDLENVAITVRDKIYDKVLGNTCHQCRQKTIDTKTVCRNQGCCGVRGQFCGPCLRNRYGEDVRSALLDPDWVCPPCRGICNCSYCRKRDGRCATGILIHLAKFYGYDNVKEYLESLQKELVEDN",
+      "mass": 53003
+     },
+     "seq_version": 1,
+     "entry_version": 5,
+     "d_length": 7,
+     "direction": "old_longer",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does protein Q96GN5 have more than 457 residues? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "r062",
+   "direction": "old_longer"
+  },
+  {
+   "template": "mass_threshold",
+   "target_field": "mass",
+   "target_accession": "Q99943",
+   "accessions": [
+    "Q99943"
+   ],
+   "params": {
+    "accession": "Q99943",
+    "threshold_kda": 31.2
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "superseded": {
+     "fields": {
+      "length": 275,
+      "mass": 30759
+     },
+     "clean_value": 31717,
+     "corrupted_value": 30759,
+     "coherent": true,
+     "real": true,
+     "full_patch": {
+      "sequence": "MLLLLLFLLLLFLLPTLWFCSPSAKYFFKMAFYNGWILFLAVLAIPVCAVRGRNVENMKILRLMLLHIKYLYGIRVEVRGAHHFPPSQPYVVVSNHQSSLDLLGMMEVLPGRCVPIAKRELLWAGSAGLACWLAGVIFIDRKRTGDAISVMSEVAQTLLTQDVRVWVFPEGTRNHNGSMLPFKRGAFHLAVQAQVPIVPIVMSSYQDFYCKKERRFTSGQCQVRVLPPVPTEGLTPDDVPALADRVRHSMLTVFREISTDGRGGGDYLKKPGGGG",
+      "mass": 30759
+     },
+     "seq_version": 1,
+     "entry_version": 1,
+     "d_length": -8,
+     "direction": "old_shorter",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does protein Q99943 have a molecular mass greater than 31.2 kDa? Answer yes or no and give the mass in kDa. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "r063",
+   "direction": "old_shorter"
+  },
+  {
+   "template": "length_threshold",
+   "target_field": "length",
+   "target_accession": "Q9BVA6",
+   "accessions": [
+    "Q9BVA6"
+   ],
+   "params": {
+    "accession": "Q9BVA6",
+    "threshold": 453
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "superseded": {
+     "fields": {
+      "length": 449,
+      "mass": 50803
+     },
+     "clean_value": 458,
+     "corrupted_value": 449,
+     "coherent": true,
+     "real": true,
+     "full_patch": {
+      "sequence": "MAVTEPKWVSVWSRFLWVTLLSMVLGSLLALLLPLGAVEEQCLAVLKGLYLLRSKPDRAQHAATKCTSPSTELSITSRGATLLVAKTKASPAGKLEARAALNQALEMKRQGKREKAQKLFMHALKMDPDFVDALTEFGIFSEEDKDIIQADYLYTRALTISPYHEKALVNRDRTLPLVEEIDQRYFSIIDSKVKKVMSIPKGNSALRRVMEETYYHHIYHTVAIEGNTLTLSEIRHILETRYAVPGKSLEEQNEVIGMHAAMKYINTTLVSRIGSVTISDVLEIHRRVLGYVDPVEAGRFRTTQVLVGHHIPPHPQDVEKQMQEFVQWLNSEEAMNLHPVEFAALAHYKLVYIHPFIDGNGRTSRLLMNLILMQAGYPPITIRKEQRSDYYHVLEAANEGDVRPFIRFIAKCTETTLDTLLFATTEYSVALPEAQPNHSGFKETLPVKP",
+      "mass": 50803
+     },
+     "seq_version": 1,
+     "entry_version": 9,
+     "d_length": -9,
+     "direction": "old_shorter",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does protein Q9BVA6 have more than 453 residues? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "r064",
+   "direction": "old_shorter"
+  },
+  {
+   "template": "mass_threshold",
+   "target_field": "mass",
+   "target_accession": "Q9BVI0",
+   "accessions": [
+    "Q9BVI0"
+   ],
+   "params": {
+    "accession": "Q9BVI0",
+    "threshold_kda": 83.5
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "superseded": {
+     "fields": {
+      "length": 458,
+      "mass": 51701
+     },
+     "clean_value": 115386,
+     "corrupted_value": 51701,
+     "coherent": true,
+     "real": true,
+     "full_patch": {
+      "sequence": "VDTDPLQDTLSSTKESEEGQLKSALEAGQVSSALTCHSFGDGSGAAGLELNCPSMGENTMKTEPTSPLVELQEISTVEVTNTFKKTDDFGSSNAPAVDLDHKFRCKVVDCLKFFRKAKLLHYHMKYFHGMEKSLEPEESPGKRHVQTRGPSASDKPSQETLTRKRVSASSPTTKDKEKNKEKKFKEFVRVKPKKKKKKKKKRETSSLSLRLVAPMWNGRIRGIHRLGAAVAPEGNQKKKRTILQFLTNYFYDVEALRDYLLQREMYKVHEKNRSYTWLEKQHGPYGAGAFFILKQGGAVKFRDKEWIRPDKYGHFSQEFWNFCEVPVEAVDAGDCDINYEGLDNLLRLKELQSLSLQRCCHVDDWCLSRLYPLADSLQELSLAGCPRISERGLACLHHLQNLRRLDISDLPAVSNPGLTQILVEEMLPNCEVVGVDWAEGLKSGPEEQPRDTASPVPA",
+      "mass": 51701
+     },
+     "seq_version": 1,
+     "entry_version": 8,
+     "d_length": -554,
+     "direction": "old_shorter",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does protein Q9BVI0 have a molecular mass greater than 83.5 kDa? Answer yes or no and give the mass in kDa. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "r065",
+   "direction": "old_shorter"
+  },
+  {
+   "template": "length_threshold",
+   "target_field": "length",
+   "target_accession": "Q9BXW9",
+   "accessions": [
+    "Q9BXW9"
+   ],
+   "params": {
+    "accession": "Q9BXW9",
+    "threshold": 1461
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "superseded": {
+     "fields": {
+      "length": 1471,
+      "mass": 166460
+     },
+     "clean_value": 1451,
+     "corrupted_value": 1471,
+     "coherent": true,
+     "real": true,
+     "full_patch": {
+      "sequence": "MVSKRRLSKSEDKESLTEDASKTRKQPLSKKTKKSHIANEVEENDSIFVKLLKISGIILKTGESQNQLAVDQIAFQKKLFQTLRRHPSYPKIIEEFVSGLESYIEDEDSFRNCLLSCERLQDEEASMGASYSKSLIKLLLGIDILQPAIIKTLFEKLPEYFFENKNSDEINIPRLIVSQLKWLDRVVDGKDLTTKIMQLISIAPENLQHDIITSLPEILGDSQHADVGKELSDLLIENTSLTVPILDVLSSLRLDPNFLLKVRQLVMDKLSSIRLEDLPVIIKFILHSVTAMDTLEVISELREKLDLQHCVLPSRLQASQVKLKSKGRASSSGNQESSGQSCIILLFDVIKSAIRYEKTISEAWIKAIENTASVSEHKVFDLVMLFIIYSTNTQTKKYIDRVLRNKIRSGCIQEQLLQSTFSVHYLVLKDMCSSILSLAQSLLHSLDQSIISFGSLLYKYAFKFFDTYCQQEVVGALVTHICSGNEAEVDTALDVLLELVVLNPSAMMMNAVFVKGILDYLDNISPQQIRKLFYVLSTLAFSKQNEASSHIQDDMHLVIRKQLSSTVFKYKLIGIIGAVTMAGIMAADRSESPSLTQERANLSDEQCTQVTSLLQLVHSCSEQSPQASALYYDEFANLIQHEKLDPKALEWVGHTICNDFQDAFVVDSCVVPEGDFPFPVKALYGLEEYDTQDGIAINLLPLLFSQDFAKDGGPVTSQESGQKLVSPLCLAPYFRLLRLCVERQHNGNLEEIDGLLDCPIFLTDLEPGEKLESMSAKERSFMCSLIFLTLNWFREIVNAFCQETSPEMKGKVLTRLKHIVELQIILEKYLAVTPDYVPPLGNFDVETLDITPHTVTAISAKIRKKGKIERKQKTDGSKTSSSDTLSEEKNSECDPTPSHRGQLNKEFTGKEEKTSLLLHNSHAFFRELDIEVFSILHCGLVTKFILDTEMHTEATEVVQLGPPELLFLLEDLSQKLESMLTPPIARRVPFLKNKGSRNIGFSHLQQRSAQEIVHCVFQLLTPMCNHLENIHNYFQCLAAENHGVVDGPGVKVQEYHIMSSCYQRLLQIFHGLFAWSGFSQPENQNLLYSALHVLSSRLKQGEHSQPLEELLSQSVHYLQNFHQSIPSFQCALYLIRLLMVILEKSTASAQNKEKIASLARQFLCRVWPSGDKEKSNISNDQLHALLCIYLEHTESILKAIEEIAGVGVPELINSPKDASSSTFPTLTRHTFVVFFRVMMAELEKTVKKIEPGTAADSQQIHEEKLLYWNMAVRDFSILINLIKVFDSHPVLHVCLKYGRLFVEAFLKQCMPLLDFSFRKHREDVLSLLETFQLDTRLLHHLCGHSKIHQDTRLTQHVPLLKKTLELLVCRVKAMLTLNNCREAFWLGNLKNRDLQGEEIKSQNSQESTADESEDDMSSQASKSKATEVSLQNPPESGTDGCILLIVLSWWSRTLPTYVYCQMLLCPFPFPP",
+      "mass": 166460
+     },
+     "seq_version": 1,
+     "entry_version": 123,
+     "d_length": 20,
+     "direction": "old_longer",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does protein Q9BXW9 have more than 1461 residues? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "r066",
+   "direction": "old_longer"
+  },
+  {
+   "template": "mass_threshold",
+   "target_field": "mass",
+   "target_accession": "Q9BZG8",
+   "accessions": [
+    "Q9BZG8"
+   ],
+   "params": {
+    "accession": "Q9BZG8",
+    "threshold_kda": 48.5
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "superseded": {
+     "fields": {
+      "length": 443,
+      "mass": 48805
+     },
+     "clean_value": 48134,
+     "corrupted_value": 48805,
+     "coherent": true,
+     "real": true,
+     "full_patch": {
+      "sequence": "MRRQVMAALVVSGAAEQGGRDGPGRGRAPRGRVANQIPPEILKNPQLQAAIRVLPSNYNFEIPKTIWRIQQAQAKKVALQMPEGLLLFACTIVDILERFTEAEVMVMGDVTYGACCVDDFTARALGADFLVHYGHSCLIPMDTSAQDFRVLYVFVDIRIDTTHLLDSLRLTFPPATALALVSTIQFVSTLQAAAQELKAEYRVSVPQCKPLSPGEILGCTSPRLSKEVEAVVYLGDGRFHLESVMIANPNVPAYRYDPYSKVLSREHYDHQRMQAARQEAIATARSAKSWGLILGTLGRQGSPKILEHLESRLRALGLSFVRLLLSEIFPSKLSLLPEVDVWVQVACPRLSIDWGTAFPKPLLTPYEAAVALRDISWQQPYPMDFYAGSSLGPWTVNHGQDRRPHAPGRPARGKVQEGSARPPSAVACEDCSCRDEKVAPLAP",
+      "mass": 48805
+     },
+     "seq_version": 2,
+     "entry_version": 142,
+     "d_length": 5,
+     "direction": "old_longer",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does protein Q9BZG8 have a molecular mass greater than 48.5 kDa? Answer yes or no and give the mass in kDa. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "r067",
+   "direction": "old_longer"
+  },
+  {
+   "template": "length_threshold",
+   "target_field": "length",
+   "target_accession": "Q9H252",
+   "accessions": [
+    "Q9H252"
+   ],
+   "params": {
+    "accession": "Q9H252",
+    "threshold": 976
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "superseded": {
+     "fields": {
+      "length": 994,
+      "mass": 109924
+     },
+     "clean_value": 958,
+     "corrupted_value": 994,
+     "coherent": true,
+     "real": true,
+     "full_patch": {
+      "sequence": "MPVRRGHVAPQNTYLDTIIRKFEGQSRKFLIANAQMENCAIIYCNDGFCELFGYSRVEVMQQPCTCDFLTGPNTPSSAVSRLAQALLGAEECKVDILYYRKDASSFRCLVDVVPVKNEDGAVIMFILNFEDLAQLLAKCSSRSLSQRLLSQSFLGSEGSHGRPGGPGPGTGRGKYRTISQIPQFTLNFVEFNLEKHRSSSTTEIEIIAPHKVVERTQNVTEKVTQVLSLGADVLPEYKLQAPRIHRWTILHYSPFKAVWDWLILLLVIYTAVFTPYSAAFLLSDQDESRRGACSYTCSPLTVVDLIVDIMFVVDIVINFRTTYVNTNDEVVSHPRRIAVHYFKGWFLIDMVAAIPFDLLIFRTGSDETTTLIGLLKTARLLRLVRVARKLDRYSEYGAAVLFLLMCTFALIAHWLACIWYAIGNVERPYLEHKIGWLDSLGVQLGKRYNGSDPASGPSVQDKYVTALYFTFSSLTSVGFGNVSPNTNSEKVFSICVMLIGSLMYASIFGNVSAIIQRLYSGTARYHTQMLRVKEFIRFHQIPNPLRQRLEEYFQHAWSYTNGIDMNAVLKGFPECLQADICLHLHRALLQHCPAFSGAGKGCLRALAVKFKTTHAPPGDTLVHLGDVLSTLYFISRGSIEILRDDVVVAILGKNDIFGEPVSLHAQPGKSSADVRALTYCDLHKIQRADLLEVLDMYPAFAESFWSKLEVTFNLRDAAGGLHSSPRQAPGSQDHQGFFLSDNQSGSPHELGPQFPSKGYSLLGPGSQNSMGAGPCAPGHPDAAPPLSISDASGLWPELLQEMPPRHSPQSPQEDPDCWPLKLGSRLEQLQAQMNRLESRVSSDLSRILQLLQKPMPQGHASYILEAPASNDLALVPIASETTSPGPRLPQGFLPPAQTPSYGDLDDCSPKHRNSSPRMPHLAVATDKTLAPSSEQEQPEGLWPPLASPLHPLEVQGLICGPCFSSLPEHLGSVPKQLDFQRHGSDPGFAGSWGH",
+      "mass": 109924
+     },
+     "seq_version": 1,
+     "entry_version": 196,
+     "d_length": 36,
+     "direction": "old_longer",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does protein Q9H252 have more than 976 residues? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "r068",
+   "direction": "old_longer"
+  },
+  {
+   "template": "mass_threshold",
+   "target_field": "mass",
+   "target_accession": "Q9H672",
+   "accessions": [
+    "Q9H672"
+   ],
+   "params": {
+    "accession": "Q9H672",
+    "threshold_kda": 33.3
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "superseded": {
+     "fields": {
+      "length": 274,
+      "mass": 30685
+     },
+     "clean_value": 36011,
+     "corrupted_value": 30685,
+     "coherent": true,
+     "real": true,
+     "full_patch": {
+      "sequence": "MLHHHCRRNPELQEELQIQAAVAAGDVHTVRKMLEQGYSPNGRDANGWTLLHFSAARGKERCVRVFLEHGADPTVKDLIGGFTALHYAAMHGRARIARLMLESEYRSDIINAKSNDGWTPLHVAAHYGRDSFVRLLLEFKAEVDPLSDKGTTPLQLAIIREKSSCVKILLDHNANIDIQNGFLLRYAVIKSNHSYCRMFLQRGADTNLGRLEDGQTPLHLSALRDDVLCARMLYNYGADTNTRNYEGQTPLAVSISISGSSRPCLDFLQEVTSM",
+      "mass": 30685
+     },
+     "seq_version": 1,
+     "entry_version": 6,
+     "d_length": -44,
+     "direction": "old_shorter",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does protein Q9H672 have a molecular mass greater than 33.3 kDa? Answer yes or no and give the mass in kDa. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "r069",
+   "direction": "old_shorter"
+  },
+  {
+   "template": "length_threshold",
+   "target_field": "length",
+   "target_accession": "Q9HBG6",
+   "accessions": [
+    "Q9HBG6"
+   ],
+   "params": {
+    "accession": "Q9HBG6",
+    "threshold": 1241
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "superseded": {
+     "fields": {
+      "length": 1242,
+      "mass": 141968
+     },
+     "clean_value": 1241,
+     "corrupted_value": 1242,
+     "coherent": true,
+     "real": true,
+     "full_patch": {
+      "sequence": "MRAVLTWRDKAEHCINDIAFKPDGTQLILAAGSRLLVYDTSDGTLLQPLKGHKDTVYCVAYAKDGKRFASGSADKSVIIWTSKLEGILKYTHNDAIQCVSYNPITHQLASCSSSDFGLWSPEQKSVSKHKSSSKIICCSWTNDGQYLALGMFNGIISIRNKNGEEKVKIERPGGSLSPIWSICWNPSSRWESFWMNRENEDAEDVIVNRYIQEIPSTLKSAVYSSQGSEAEEEEPEEEDDSPRDDNLEERNDILAVADWGQKVSFYQLSGKQTGKDRALNFDPCCISYFTKGEYILLGGSDKQVSLFTKDGVRLGTVGEQNSWVWTCQAKPDSNYVVVGCQDGTISFYQLIFSTVHGLYKDRYAYRDSMTDVIVQHLITEQKVRIKCKELVKKIAIYRNRLAIQLPEKILIYELYSEDLSDMHYRVKEKIIKKFECNLLVVCANHIILCQEKRLQCLSFSGVKEREWQMESLIRYIKVIGGPPGREGLLVGLKNGQILKIFVDNLFAIVLLKQATAVRCLDMSASRKKLAVVDENDTCLVYDIDTKELLFQEPNANSVAWNTQCEDMLCFSGGGYLNIKASTFPVHRQKLQGFVVGYNGSKIFCLHVFSISAVEVPQSAPMYQYLDRKLFKEAYQIACLGVTDTDWRELAMEALEGLDFETAKKAFIRVQDLRYLELISSIEERKKRGETNNDLFLADVFSYQGKFHEAAKLYKRSGHENLALEMYTDLCMFEYAKDFLGSGDPKETKMLITKQADWARNIKEPKAAVEMYISAGEHVKAIEICGDHGWVDMLIDIARKLDKAEREPLLLCATYLKKLDSPGYAAETYLKMGDLKSLVQLHVETQRWDEAFALGEKHPEFKDDIYMPYAQWLAENDRFEEAQKAFHKAGRQREAVQVLEQLTNNAVAESRFNDAAYYYWMLSMQCLDIAQDPAQKDTMLGKFYHFQRLAELYHGYHAIHRHTEDPFSVHRPETLFNISRFLLHSLPKDTPSGISKVRKILFTLAKQSKALGAYRLARHAYDKLRGLYIPARFQKSIELGTLTIRAKPFHDSEELVPLCYRCSTNNPLLNNLGNVCINCRQPFIFSASSYDVLHLVEFYLEEGITDEEAISLIDLEVLRPKRDDRQLEIANNSSQILRLVETKDSIGDEDPFTAKLSFEQGGSEFVPVVVSRLVLRSMSRRDVLIKRWPPPLRWQYFRSLLPDASITMCPSCFQMFHSEDYELLVLQHGCCPYCRRCKDDPGP",
+      "mass": 141968
+     },
+     "seq_version": 1,
+     "entry_version": 54,
+     "d_length": 1,
+     "direction": "old_longer",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does protein Q9HBG6 have more than 1241 residues? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "r070",
+   "direction": "old_longer"
+  },
+  {
+   "template": "mass_threshold",
+   "target_field": "mass",
+   "target_accession": "Q9NP08",
+   "accessions": [
+    "Q9NP08"
+   ],
+   "params": {
+    "accession": "Q9NP08",
+    "threshold_kda": 37.7
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "superseded": {
+     "fields": {
+      "length": 373,
+      "mass": 39225
+     },
+     "clean_value": 36155,
+     "corrupted_value": 39225,
+     "coherent": true,
+     "real": true,
+     "full_patch": {
+      "sequence": "MPDELTEPGRATPARASSFLIENLLAAEAKGAGRDPGRRQPGGRGGGRRRPRRRGRRAGRRRRLQRRRQLLAGTGPGGEARAVPARAGALGLGPRPPPGPGPPFALGCGGAGRWYPRAHGGYGGGLSPDTSDRDSPETGEEMGRAEGAWPRGPGRSGAAGGSGAGGAWPGGRHGGGSELAEVPAAAGETRGGVGVGGGRKKKTRTVFSRSQVFQLESTFDLKRYLSTAERAGLAASLQLTETQVKIWFQNRRNKWKRHVAAELEAASLSPPGAHAWSACRCSTTKAPRPRPPLGPRPPCPSRWPAGPRRPHRCSASPGPSPTRWPPSRPPPPCPFCGRRCLAWCEPRLPGPLPTTLWTCVDARSAAGAGLRGR",
+      "mass": 39225
+     },
+     "seq_version": 1,
+     "entry_version": 52,
+     "d_length": 25,
+     "direction": "old_longer",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does protein Q9NP08 have a molecular mass greater than 37.7 kDa? Answer yes or no and give the mass in kDa. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "r071",
+   "direction": "old_longer"
+  },
+  {
+   "template": "length_threshold",
+   "target_field": "length",
+   "target_accession": "Q9NRN7",
+   "accessions": [
+    "Q9NRN7"
+   ],
+   "params": {
+    "accession": "Q9NRN7",
+    "threshold": 321
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "superseded": {
+     "fields": {
+      "length": 333,
+      "mass": 38440
+     },
+     "clean_value": 309,
+     "corrupted_value": 333,
+     "coherent": true,
+     "real": true,
+     "full_patch": {
+      "sequence": "MAGGGPRLRPRHQARDSGEVRFQCMVFPAKRFCLVPSMEGVRWAFSCGTWLPSRAEWLLAVRSIQPEEKERIGQFVFARDAKAAMAGRLMIRKLVAEKLNIPWNHIRLQRTAKGKPVLAKDSSNPYPNFNFNISHQGDYAVLAAEPELQVGIDIMKTSFPGRGSIPEFFHIMKRKFTNKEWETIRSFKDEWTQLDMFYRNWALKESFIKAIGVGLGFELQRLEFDLSPLNLDIGQVYKETRLFLDGEEEKEWAFEESKIDEHHFVAVALRKPDGSRHQDVPSQDDSKPTQRQFTILNFNDLMSSAVPMTPEDPSFWDCFCFTEEIPIRNGTKS",
+      "mass": 38440
+     },
+     "seq_version": 1,
+     "entry_version": 13,
+     "d_length": 24,
+     "direction": "old_longer",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does protein Q9NRN7 have more than 321 residues? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "r072",
+   "direction": "old_longer"
+  },
+  {
+   "template": "mass_threshold",
+   "target_field": "mass",
+   "target_accession": "Q9NUK0",
+   "accessions": [
+    "Q9NUK0"
+   ],
+   "params": {
+    "accession": "Q9NUK0",
+    "threshold_kda": 35.7
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "superseded": {
+     "fields": {
+      "length": 304,
+      "mass": 32942
+     },
+     "clean_value": 38532,
+     "corrupted_value": 32942,
+     "coherent": true,
+     "real": true,
+     "full_patch": {
+      "sequence": "MERASKNLKGRCTRENCKYLHPPPHLKTQLEINGRNNLIQQKTAAAMFAQQMQLMLQNAQMSSLGSFPMTPSIPANPPMAFNPYIPHPGMGLVPAELVPNTPVLIPGNPPLAMPGAVGPKLMRSDKLEVCREFQRGNCTRGENDCRYAHPTDASMIEASDNTVTICMDYIKGRCSREKCKYFHPPAHLQARLKAAHHQMNHSAASAMALQPGTLQLIPKRSALEKPNGATPVFNPTVFHCQQALTNLQLPQPAFIPAGPILCMAPASNIVPMMHGATPTTVSAATTPATSVPFAAPTTGNQLKF",
+      "mass": 32942
+     },
+     "seq_version": 1,
+     "entry_version": 7,
+     "d_length": -50,
+     "direction": "old_shorter",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does protein Q9NUK0 have a molecular mass greater than 35.7 kDa? Answer yes or no and give the mass in kDa. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "r073",
+   "direction": "old_shorter"
+  },
+  {
+   "template": "length_threshold",
+   "target_field": "length",
+   "target_accession": "Q9NX65",
+   "accessions": [
+    "Q9NX65"
+   ],
+   "params": {
+    "accession": "Q9NX65",
+    "threshold": 591
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "superseded": {
+     "fields": {
+      "length": 485,
+      "mass": 54928
+     },
+     "clean_value": 697,
+     "corrupted_value": 485,
+     "coherent": true,
+     "real": true,
+     "full_patch": {
+      "sequence": "MRDNRAVSLCQQEWMCPGPAQRALYRGATQRKDSHVSLATGVPWGYEETKTLLAILSSSQFYGKLQTCQQNSQIYRAMAEGLWEQGFLRTPEQCRTKFKSLQLSYRKVRRGRVPEPCIFYEEMNALSGSWASAPPMASDAVPGQEGSDIEAGELNHQNGEPTEVEDGTVDGADRDEKDFRNPGQEVRKLDLPVLFPNRLGFEFKNEIKKENLKWDDSEEVEINKALQRKSRGVYWHSELQKGLESEPTSRRQCRNSPGESEEKTPSQEKMSHQSFCARDKACTHILCGKNCSQSVHSPHKPALKLEKVSQCPECGKTFSRSSYLVRHQRIHTGEKPHKCSECGKGFSERSNLTAHLRTHTGERPYQCGQCGKSFNQSSSLIVHQRTHTGEKPYQCIVCGKRFNNSSQFSAHRRIHTGESPYKCAVCGKIFNNSSHFSAHRKTHTGEKPYRCSHCERGFTKNSALTRHQTVHMKAVLSSQEGRDAL",
+      "mass": 54928
+     },
+     "seq_version": 2,
+     "entry_version": 101,
+     "d_length": -212,
+     "direction": "old_shorter",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does protein Q9NX65 have more than 591 residues? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "r074",
+   "direction": "old_shorter"
+  },
+  {
+   "template": "mass_threshold",
+   "target_field": "mass",
+   "target_accession": "Q9NX95",
+   "accessions": [
+    "Q9NX95"
+   ],
+   "params": {
+    "accession": "Q9NX95",
+    "threshold_kda": 68.5
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "superseded": {
+     "fields": {
+      "length": 595,
+      "mass": 64597
+     },
+     "clean_value": 72388,
+     "corrupted_value": 64597,
+     "coherent": true,
+     "real": true,
+     "full_patch": {
+      "sequence": "MGPFWARKDDTGCPSSQSVSPVKTPSDAGNSPIGFCPGSDEGFTRKKCTIGMVGEGSIQSSRYKKESKSGLVKPGSEADFSSSSSTGSISAPEVHMSTAGSKRSSSSRNRGPHGRSNGASSHKPGSSPSSPREKDLLSMLCRNQLSPVNIHPSYAPSSPSSSNSGSYKGSDCSPIMRRSGRYMSCGENHGVRPPNPEQYLTPLQQKEVTVRHLKTKLKESERRLHERESEIVELKSQLARMREDWIEEECHRVEAQLALKEARKEIKQLKQVIETMRSSLADKDKGIQKYFVDINIQNKKLESLLQSMEMAHSGSLRDELCLDFPCDSPEKSLTLNPPLDTMADGLSLEEQVTGEGADRELLVGDSIANSTGLFDEIVTATTTESGDLELVHSTPGANVLELLPIVMGQEEGSVVVERAVQTDVVPYSPAISELIQSVLQKLQDPCPSSLASPDESEPDSMESFPESLSALVVDLTPRNPNSAILLSPVETPYANVDAEVHANRLMRELDFAACVEERLDGVIPLARGGVVRQYWSSSFLVDLLAVAAPVVPTVLWAFSTQRGGTDPVYNIGALLRGCCVVALHSLRRTAFRIKT",
+      "mass": 64597
+     },
+     "seq_version": 1,
+     "entry_version": 28,
+     "d_length": -68,
+     "direction": "old_shorter",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does protein Q9NX95 have a molecular mass greater than 68.5 kDa? Answer yes or no and give the mass in kDa. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "r075",
+   "direction": "old_shorter"
+  },
+  {
+   "template": "length_threshold",
+   "target_field": "length",
+   "target_accession": "Q9Y2P0",
+   "accessions": [
+    "Q9Y2P0"
+   ],
+   "params": {
+    "accession": "Q9Y2P0",
+    "threshold": 548
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "superseded": {
+     "fields": {
+      "length": 559,
+      "mass": 62084
+     },
+     "clean_value": 537,
+     "corrupted_value": 559,
+     "coherent": true,
+     "real": true,
+     "full_patch": {
+      "sequence": "MSFSQCNPEKRCEIKTAAQGSRMEGLLSVALQGAELEGNWKHEGQVEDLQENQESCPEPEAVACKGDPAGDSMQERDEFSRIPRTISSPAATQASVPDDSSSRRCSAPGESPKERHPDSRQRERGGGPKKPWKCGDCGKAFSYCSAFILHQRIHTGEKPFACPECGKAFSQSVHLTLHQRTHTGEKPYACHECGKAFSQGSYLASHWRTHTGEKPHRCADCGKAFTRVTHLTQHRRVHTGERPYACAQCAKAFRNRSSLIEHQRIHTGEKPYECSACAKAFRFSSALIRHQRIHTEEKPYRCGQCAKAFAQIAHLTQHRRVHTGEKPYTCQDCGALFSQSASLAEHRRIHTGEKPYACGQCAKAFTQVSHLTQHQRTHTGERPYPCHDCGKRFSNRSHLLQHRLVHTGERPYRCLQCGAAFSHVSSLIEHQKIHTGERPYKCGECGKAFSQGSSLALHQRTHTGERPYTCPECGKAFSNRSYLIQHHIVHTGEKPYECSGCGKAFSFSSALIRHQRTHADSSGRLCPAPTPDSTPGLSQGGETCQQGCPGRNPRGPAED",
+      "mass": 62084
+     },
+     "seq_version": 1,
+     "entry_version": 83,
+     "d_length": 22,
+     "direction": "old_longer",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does protein Q9Y2P0 have more than 548 residues? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "r076",
+   "direction": "old_longer"
+  },
+  {
+   "template": "mass_threshold",
+   "target_field": "mass",
+   "target_accession": "Q9Y3B8",
+   "accessions": [
+    "Q9Y3B8"
+   ],
+   "params": {
+    "accession": "Q9Y3B8",
+    "threshold_kda": 25.3
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "superseded": {
+     "fields": {
+      "length": 205,
+      "mass": 23754
+     },
+     "clean_value": 26833,
+     "corrupted_value": 23754,
+     "coherent": true,
+     "real": true,
+     "full_patch": {
+      "sequence": "MAAGESMAQRMVWVDLEMTGLDIEKDQIIEMACLITDSDLNILAEGPNLIIKQPDELLDSMSDWCKEHHGKSGLTKAVKESTITLQQAEYEFLSFVRQQTPPGLCPLAGNSVHEDKKFLDKYMPQFMKHLHYRIIDVSTVKELCRRWYPEEYEFAPKKAASHRALDDISESIKELQFYRNNIFKKKIDEKKRKIIENGENEKTVS",
+      "mass": 23754
+     },
+     "seq_version": 1,
+     "entry_version": 2,
+     "d_length": -32,
+     "direction": "old_shorter",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does protein Q9Y3B8 have a molecular mass greater than 25.3 kDa? Answer yes or no and give the mass in kDa. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "r077",
+   "direction": "old_shorter"
+  },
+  {
+   "template": "length_threshold",
+   "target_field": "length",
+   "target_accession": "Q9Y6H8",
+   "accessions": [
+    "Q9Y6H8"
+   ],
+   "params": {
+    "accession": "Q9Y6H8",
+    "threshold": 434
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "superseded": {
+     "fields": {
+      "length": 434,
+      "mass": 47296
+     },
+     "clean_value": 435,
+     "corrupted_value": 434,
+     "coherent": true,
+     "real": true,
+     "full_patch": {
+      "sequence": "GDWSFLGRLLENAQEHSTVIGKVWLTVLFIFRILVLGAAAEDVWGDEQSDFTCNTQQPGCENVCYDRAFPISHIRFWALQIIFVSTPTLIYLGHVLHIVRMEEKKKEREEEEQLKRESPSPKEPPQDNPSSRDDRGRVRMAGALLRTYVFNIIFKTLFEVGFIAGQYFLYGFELKPLYRCDRWPCPNTVDCFISRPTEKTIFIIFMLAVACASLLLNMLEIYHLGWKKLKQGVTSRLGPDASEAPLGTADPPPLPPSSRPPAVAIGFPPYYAHTAAPLGQARAVGYPGAPPPAADFKMLALTEARGKGQSAKLYNGHHHLLMTEQNWANQAAERQPPALKAYPAASTPAAPSPVGSSSPPLAHEAEAGAAPLLLDGSGSSLEGSALAGTPEEEEQAVTTAAQMHQPPLPLGDPGRASKASRASSGRARPEDLAI",
+      "mass": 47296
+     },
+     "seq_version": 2,
+     "entry_version": 53,
+     "d_length": -1,
+     "direction": "old_shorter",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does protein Q9Y6H8 have more than 434 residues? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "r078",
+   "direction": "old_shorter"
+  }
+ ],
+ "phase": 5
+}
