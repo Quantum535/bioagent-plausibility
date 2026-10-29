@@ -9,7 +9,7 @@ for f in sorted(glob.glob(sys.argv[1] if len(sys.argv) > 1 else "results/coheren
     c = collections.defaultdict(collections.Counter)
     for t in rows.values():
         tr = t.get("trace") or {}; x = c[t["condition"]]
-        if tr.get("error"): x["err"] += 1; continue
+        if tr.get("error"): x["undelivered" if str(tr["error"]).startswith("leak_check") else "err"] += 1; continue
         fl = bool(tr.get("concerns")); p = bool(t.get("propagated"))
         x["n"] += 1; x["prop"] += p; x["correct"] += bool(t.get("correct")); x["flag"] += fl; x["flag&prop"] += fl and p
         if "inflate" in f:

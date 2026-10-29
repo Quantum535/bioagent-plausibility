@@ -166,7 +166,10 @@ def main():
                 trace = run_agent(provider, task, layer)
             if not args.mock and trace["error"] is None:
                 cpath.write_text(json.dumps(trace, default=str))
-        check_no_leak(trace, task, condition, table, dom.render)
+        try:
+            check_no_leak(trace, task, condition, table, dom.render)
+        except AssertionError as e:
+            trace["error"] = f"leak_check: {e}"
         implied = task["corruptions"][condition]["implied"] if condition != "clean" else None
         return {
             "run_key": key, "cached": cached, "model": model, "condition": condition, "sample": sample,
