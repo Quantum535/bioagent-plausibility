@@ -46,3 +46,8 @@ Same 60 compounds, factors and directions; full record. Plausible propagation:
 A derivation route lets models detect a wrong value; whether they override it depends on how many record fields agree with it
 and on whether it looks like data or a placeholder. Limits: Phase 4b is exploratory; one sample per task; 60 tasks per arm;
 chemistry only; arm B differs from Phase 1 in compounds and threshold placement.
+
+## Repeatability update (results/robustness/RESULTS.md)
+Over three samples, Phase-1-style -> one extra agreeing field -> monoisotopic mass asked: Opus 63 -> 91 -> 97%, DeepSeek 71 -> 84 -> 88%,
+Argon 72 -> 80 -> 96%, Flash 88 -> 91 -> 99%. Sample 0 for Opus arm B (52%) was a low draw. E2 holds in 11 of 12 model x sample
+cells, E3 in all 12. The extra agreeing field explains most of the gap for Opus and DeepSeek, not for Argon.
