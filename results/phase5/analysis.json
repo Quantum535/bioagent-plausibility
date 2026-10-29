@@ -1,9 +1,5 @@
 {
- "excluded_runs": {
-  "deepseek/full/api_error": 158,
-  "deepseek/summary/api_error": 158,
-  "deepseek/harness_ss1/api_error": 158
- },
+ "excluded_runs": {},
  "cells_excluded": [],
  "R1|opus5|full": [
   78,
@@ -22,14 +18,14 @@
   79
  ],
  "R1|deepseek|full": [
-  0,
-  0
+  78,
+  79
  ],
  "R1|deepseek|summary": [
-  0,
-  0
+  79,
+  79
  ],
- "R1_cells": 4,
+ "R1_cells": 6,
  "R2|opus5": [
   7,
   78
@@ -39,21 +35,21 @@
   78
  ],
  "R2|deepseek": [
-  0,
-  0
+  24,
+  78
  ],
  "R3|all arm-3 runs (as registered)": [
-  7,
-  42,
-  3,
-  116,
-  0.00384334673860731
+  16,
+  63,
+  19,
+  174,
+  0.006584522872202776
  ],
  "R3|covered only (sensitivity)": [
-  7,
-  42,
-  1,
-  114,
-  0.000440584318074804
+  16,
+  63,
+  16,
+  171,
+  0.002311267883265022
  ]
 }
