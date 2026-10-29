@@ -152,6 +152,9 @@ def main():
             phash = f"{phash}|replace"
         if args.harness != "none" and os.environ.get("HARNESS_SECOND_SOURCE") is not None:
             phash = f"{phash}|ss{os.environ['HARNESS_SECOND_SOURCE']}"
+        if condition != "clean":  # corruption payload in the key: same task id + prompt + condition name with a different record must not collide
+            import hashlib as _hl
+            phash = f"{phash}|c{_hl.sha256(json.dumps(task['corruptions'][condition], sort_keys=True, default=str).encode()).hexdigest()[:12]}"
         key = cache_key(model, condition, task["task_id"], phash, sample)
         cpath = CACHE_DIR / f"{key}.json"
         cached = False

@@ -30,8 +30,8 @@ table = "\n".join(rows)
 doc = f"""# Phase 4 pre-registration: does a field's derivation route predict whether agents relay a corrupted value?
 
 Written {datetime.date.today()} before any Phase 4 model outcome was inspected. A 36-run cost-only pilot (6 tasks, clean and
-plausible, full record, Opus 5 / Argon / DeepSeek) was run to price the study; only its cost line was read. Those runs are
-cached and form part of the sample.
+plausible, full record, Opus 5 / Argon / DeepSeek) was run to price the study; only its cost line was read. Its clean runs are
+reused from cache; its plausible runs are excluded (a cache-key fix now hashes the corruption payload, so they are re-run).
 
 ## Background
 In the benchmark, corrupted values were corrected only when the record offered a derivation route (sequence to length and mass,
