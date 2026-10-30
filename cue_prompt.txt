@@ -28,20 +28,23 @@ Combine letters when several apply (e.g. "cr"). Use n only alone.
 
 
 ## Deciding difficult cases
-- Mark a cue only for the reason the concern actually gives. Words such as "impossible", "implausible", "clearly erroneous" or
-  "unusually high" are not a cue by themselves; ask what the value is being judged against.
-- Judged against another field of the same record, or a second lookup -> crossfield. Judged against what this particular protein
-  or compound is known to be, including what its name, accession or identity implies -> recall. Judged against a constraint that
-  holds for every protein or compound regardless of its other fields (cannot be zero or negative, lighter than a hydrogen atom,
-  larger than any molecule, not a valid name, a placeholder) -> rule.
-- A gene symbol contrasted with the protein name as it appears in the record -> crossfield; add recall if the concern also states
-  outside knowledge (which gene really encodes it, what the accession really is). A concern that only appeals to what the
-  accession or gene is known to be -> recall only.
-- Using a record field to recognise the entity from memory ("the length matches the human protein", "a compound with this name
-  should have formula Y") is recall, not crossfield.
-- Merely naming the protein or compound is not recall; recall needs a stated fact about it that is not in the record.
-- A value that conflicts with another field and is also called impossible -> crossfield, plus rule only if a general constraint
-  is stated (e.g. "a mass cannot be zero").
+- Mark a cue only for the reason the concern gives. Words such as "impossible", "implausible", "erroneous" or "unusually high"
+  are not a cue by themselves; ask what the value is judged against.
+- crossfield needs two pieces of database data set against each other: one field of the record against another field, or a
+  second lookup. An expected value the concern computes from another field of the record (about 110 Da per residue times the
+  record's length; a weight that fits the record's heavy-atom count) is crossfield. In chemistry, a value judged against the
+  record's own weight, heavy-atom count or donor count ("for a 15-heavy-atom molecule", "(MW 247, 18 heavy atoms)") is crossfield,
+  even if the compound is also named.
+- Mentioning several record fields while comparing them with remembered or "canonical" values is recall only, not crossfield.
+  Using a record field to recognise the entity from memory ("the length matches the human protein") is recall only.
+- recall needs a stated fact about this particular protein or compound that is not in the record: its known or canonical value,
+  what the accession or gene really is, what a compound with this name is or should contain. Merely naming the entity is not recall.
+- Gene symbols: a gene symbol set against the protein name quoted from the record -> crossfield and also recall (recognising that
+  the gene does not encode that protein needs knowledge). If the concern states what the accession is without referring to the
+  record's protein name -> recall only.
+- rule only when the stated reason is a constraint for any protein or compound: cannot be zero or negative, lighter than a hydrogen
+  atom, larger than any molecule, not a valid name, a placeholder. A zero or negative value called invalid on its own -> rule.
+  If the concern says the value is impossible given another field -> crossfield, not rule.
 
 You will receive several numbered concerns; classify each independently. Answer with only a JSON array with one object per
 concern, in the same order: [{"crossfield": true or false, "recall": true or false, "rule": true or false}, ...]

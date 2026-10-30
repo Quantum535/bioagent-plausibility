@@ -35,3 +35,7 @@ About 200 protein items and 100 chemistry items; 20-30 seconds each. Stop any ti
 <!-- Classifier development log: round 1 (single-item prompt) dev kappa protein c/r/u 0.64/0.32/0.59, chem 0.36/0.80/0.46.
 Round 2: decision rules added to cue_prompt.txt, batched 10 per call. At most two further dev rounds; then the prompt is frozen
 (commit hash recorded) and the test half is run once. Pass: kappa >= 0.6 for crossfield, recall and rule in both domains. -->
+<!-- Round 2 dev kappa (Haiku, batched): protein c/r/u 0.56/0.54/0.72, chem 0.34/0.82/0.51. Round 3 (final dev round): refined
+decision rules; Haiku 4.5 and Sonnet 5 both scored on dev; the better is chosen, then prompt + model are frozen and the test half
+is run once. If any of crossfield/recall/rule falls below 0.6 in either domain on test, cue rates are reported from the 300
+human-labelled concerns instead. -->
