@@ -5,10 +5,12 @@ PROMPT = open("cue_prompt.txt").read(); MODEL = os.environ.get("CUE_MODEL", "cla
 CACHE = "results/cue_classifier_cache.json"; cache = json.load(open(CACHE)) if os.path.exists(CACHE) else {}
 client = anthropic.Anthropic()
 def key(t): return hashlib.sha256((MODEL + PROMPT + "\n" + t).encode()).hexdigest()[:24]
+USAGE = [0, 0, 0]
 def call(chunk):
     body = "\n\n".join(f"[{j + 1}] {t}" for j, t in enumerate(chunk))
-    raw = client.messages.create(model=MODEL, max_tokens=60 * len(chunk) + 100, system=PROMPT,
-                                 messages=[{"role": "user", "content": f"Concerns:\n\n{body}"}]).content[0].text
+    resp = client.messages.create(model=MODEL, max_tokens=4000, system=PROMPT, messages=[{"role": "user", "content": f"Concerns:\n\n{body}"}])
+    USAGE[0] += resp.usage.input_tokens; USAGE[1] += resp.usage.output_tokens; USAGE[2] += len(chunk)
+    raw = "".join(getattr(b, "text", "") for b in resp.content if getattr(b, "type", "") == "text")
     m = re.search(r"\[.*\]", raw, re.S)
     try: arr = json.loads(m.group(0)) if m else []
     except json.JSONDecodeError: arr = []
@@ -35,3 +37,8 @@ for dom, d in (("protein", "results/v2/validation"), ("chem", "results/chem/vali
     miss = [i for i in ids if pred[i] != gold[i]]
     if part == "dev":
         for i in miss[:6]: print(f"   {i} gold {gold[i]} clf {pred[i]} :: {text[i][:150]}")
+
+PRICE = {"claude-haiku-4-5": (1, 5), "claude-sonnet-5": (3, 15)}  # assumed list prices, USD per million tokens
+if USAGE[2]:
+    pi, po = PRICE.get(MODEL, (3, 15)); per = (USAGE[0] * pi + USAGE[1] * po) / 1e6 / USAGE[2]
+    print(f"[{MODEL}] {USAGE[2]} concerns classified live: {USAGE[0]} input + {USAGE[1]} output tokens; est. full 9,559-concern run ${per * 9559:.2f}")
