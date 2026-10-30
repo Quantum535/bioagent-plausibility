@@ -31,3 +31,7 @@ Combine letters when several apply (e.g. "cr"). Use n only alone.
 5. A second lookup that merely repeats the same data is not a contradiction; tick c only if the results disagree.
 
 About 200 protein items and 100 chemistry items; 20-30 seconds each. Stop any time with q; progress is saved.
+
+<!-- Classifier development log: round 1 (single-item prompt) dev kappa protein c/r/u 0.64/0.32/0.59, chem 0.36/0.80/0.46.
+Round 2: decision rules added to cue_prompt.txt, batched 10 per call. At most two further dev rounds; then the prompt is frozen
+(commit hash recorded) and the test half is run once. Pass: kappa >= 0.6 for crossfield, recall and rule in both domains. -->

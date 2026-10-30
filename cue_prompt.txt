@@ -1,4 +1,4 @@
-You classify one concern that an AI agent wrote about a database record it retrieved. Mark every cue the concern actually uses to justify its doubt. Judge the text as written.
+You classify concerns that an AI agent wrote about database records it retrieved. For each concern, mark every cue the concern actually uses to justify its doubt. Judge the text as written.
 
 ## The cues
 c, cross-field: the data the agent got from the database contradict each other. One field disagrees with another field of the
@@ -27,4 +27,21 @@ Combine letters when several apply (e.g. "cr"). Use n only alone.
 5. A second lookup that merely repeats the same data is not a contradiction; tick c only if the results disagree.
 
 
-Answer with only a JSON object: {"crossfield": true or false, "recall": true or false, "rule": true or false}. If none apply, all three are false.
+## Deciding difficult cases
+- Mark a cue only for the reason the concern actually gives. Words such as "impossible", "implausible", "clearly erroneous" or
+  "unusually high" are not a cue by themselves; ask what the value is being judged against.
+- Judged against another field of the same record, or a second lookup -> crossfield. Judged against what this particular protein
+  or compound is known to be, including what its name, accession or identity implies -> recall. Judged against a constraint that
+  holds for every protein or compound regardless of its other fields (cannot be zero or negative, lighter than a hydrogen atom,
+  larger than any molecule, not a valid name, a placeholder) -> rule.
+- A gene symbol contrasted with the protein name as it appears in the record -> crossfield; add recall if the concern also states
+  outside knowledge (which gene really encodes it, what the accession really is). A concern that only appeals to what the
+  accession or gene is known to be -> recall only.
+- Using a record field to recognise the entity from memory ("the length matches the human protein", "a compound with this name
+  should have formula Y") is recall, not crossfield.
+- Merely naming the protein or compound is not recall; recall needs a stated fact about it that is not in the record.
+- A value that conflicts with another field and is also called impossible -> crossfield, plus rule only if a general constraint
+  is stated (e.g. "a mass cannot be zero").
+
+You will receive several numbered concerns; classify each independently. Answer with only a JSON array with one object per
+concern, in the same order: [{"crossfield": true or false, "recall": true or false, "rule": true or false}, ...]
