@@ -39,3 +39,6 @@ Round 2: decision rules added to cue_prompt.txt, batched 10 per call. At most tw
 decision rules; Haiku 4.5 and Sonnet 5 both scored on dev; the better is chosen, then prompt + model are frozen and the test half
 is run once. If any of crossfield/recall/rule falls below 0.6 in either domain on test, cue rates are reported from the 300
 human-labelled concerns instead. -->
+<!-- Round 3 dev: Haiku c/r/u protein 0.52/0.52/0.56, chem 0.31/0.79/0.78 (2/6 cells >= 0.6); Sonnet 5 protein 0.61/0.76/0.84,
+chem 0.77/0.91/0.83 (6/6). Chosen by the committed rule: Sonnet 5. FROZEN: cue_prompt.txt v3 + claude-sonnet-5, batches of 10.
+Test half run once; pass = kappa >= 0.6 for crossfield, recall and rule in both domains. -->
