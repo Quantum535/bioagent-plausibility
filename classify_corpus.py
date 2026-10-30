@@ -46,6 +46,9 @@ elif mode == "collect":
         arr = parse(r.result.message.content, len(C[r.custom_id])) if r.result.type == "succeeded" else None
         if arr is None: failed.append(r.custom_id); continue
         for t, o in zip(C[r.custom_id], arr): labels[t] = lab(o)
+    json.dump(labels, open(f"{OUT}/labels_partial.json", "w"))
+    print(f"batch results: {len(labels)} concerns labelled from {len(C) - len(failed)} requests; {len(failed)} requests need fallback", flush=True)
+    if len(failed) > 50: sys.exit("too many failed requests for automatic fallback; inspect first")
     for cid in failed:
         for t in C[cid]:
             resp = client.messages.create(**params([t])); arr = parse(resp.content, 1); labels[t] = lab(arr[0] if arr else {})
