@@ -1,23 +1,31 @@
 """Relabel benchmark concerns with the frozen cue classifier (cue_prompt.txt v3 + Sonnet 5, 10 concerns per request; freeze
 recorded in results/cue_classifier_FROZEN.txt) via the Message Batches API. Requests are identical to the validated sync calls.
-Usage: python classify_corpus.py plan FRAC | submit FRAC | collect      (FRAC = share of flagged runs, e.g. 1.0 or 0.4)"""
+Usage: python classify_corpus.py plan FRAC [GLOB ...] | submit FRAC [GLOB ...] | collect
+Default globs: results/v2/traces_*.jsonl results/chem/traces_*.jsonl. Output folder: $CUE_OUT (default results/cue_corpus).
+Concerns already labelled in another results/cue_corpus*/run_labels.jsonl are reused, not re-sent."""
 import anthropic, json, glob, sys, os, re, hashlib
 PROMPT = open("cue_prompt.txt").read(); MODEL = "claude-sonnet-5"; CUES = ["crossfield", "recall", "rule"]
-OUT = "results/cue_corpus"; os.makedirs(OUT, exist_ok=True); client = anthropic.Anthropic()
-def runs(frac):
+OUT = os.environ.get("CUE_OUT", "results/cue_corpus"); os.makedirs(OUT, exist_ok=True); client = anthropic.Anthropic()
+DEFAULT = ["results/v2/traces_*.jsonl", "results/chem/traces_*.jsonl"]
+KNOWN = {}
+for p in glob.glob("results/cue_corpus/**/run_labels.jsonl", recursive=True):
+    if os.path.abspath(os.path.dirname(p)) == os.path.abspath(OUT): continue
+    for l in open(p):
+        for c in json.loads(l)["concerns"]: KNOWN[c["text"]] = {k: c[k] for k in CUES + ["none"]}
+def runs(frac, pats):
     R = []
-    for f in sorted(glob.glob("results/v2/traces_*.jsonl") + glob.glob("results/chem/traces_*.jsonl")):
+    for f in sorted(x for p in pats for x in glob.glob(p)):
         seen = {}
-        for l in open(f):
-            t = json.loads(l); seen[t["run_key"]] = t
-        for t in seen.values():
+        for i, l in enumerate(open(f)):
+            t = json.loads(l); seen[t.get("run_key", f"{f}:{i}")] = t
+        for k, t in seen.items():
             cs = (t.get("trace") or {}).get("concerns") or []
             cs = [c if isinstance(c, str) else json.dumps(c) for c in (cs if isinstance(cs, list) else [cs])]
-            if cs and int(hashlib.sha256(t["run_key"].encode()).hexdigest()[:8], 16) / 2 ** 32 < frac:
-                R.append({"file": f, "run_key": t["run_key"], "domain": "chem" if "/chem/" in f else "protein", "concerns": cs})
+            if cs and int(hashlib.sha256(str(k).encode()).hexdigest()[:8], 16) / 2 ** 32 < frac:
+                R.append({"file": f, "run_key": str(k), "domain": "chem" if "chem" in os.path.dirname(f) else "protein", "concerns": cs})
     return R
 def chunks(R):
-    texts = {d: list(dict.fromkeys(c for r in R if r["domain"] == d for c in r["concerns"])) for d in ("protein", "chem")}
+    texts = {d: list(dict.fromkeys(c for r in R if r["domain"] == d for c in r["concerns"] if c not in KNOWN)) for d in ("protein", "chem")}
     return [texts[d][i:i + 10] for d in texts for i in range(0, len(texts[d]), 10)]
 def params(chunk):
     body = "\n\n".join(f"[{j + 1}] {t}" for j, t in enumerate(chunk))
@@ -32,8 +40,9 @@ def lab(o):
     d = {c: int(bool(o.get(c))) for c in CUES}; d["none"] = int(not any(d.values())); return d
 mode = sys.argv[1]
 if mode in ("plan", "submit"):
-    frac = float(sys.argv[2]); R = runs(frac); C = chunks(R); n = sum(len(c) for c in C)
-    print(f"frac {frac}: {len(R)} flagged runs, {n} unique concerns, {len(C)} requests; est. cost ${n * 35.10 / 9559 * 0.5:.2f} (batch price)")
+    frac = float(sys.argv[2]); pats = sys.argv[3:] or DEFAULT; R = runs(frac, pats); C = chunks(R); n = sum(len(c) for c in C)
+    reused = len({c for r in R for c in r["concerns"] if c in KNOWN})
+    print(f"{pats}: {len(R)} flagged runs, {n} new concerns ({reused} reused), {len(C)} requests; est. ${n * 35.10 / 9559 * 0.5:.2f} (batch price)")
     if mode == "submit":
         json.dump(R, open(f"{OUT}/runs.json", "w")); json.dump({f"q{i:05d}": c for i, c in enumerate(C)}, open(f"{OUT}/chunks.json", "w"))
         b = client.messages.batches.create(requests=[{"custom_id": f"q{i:05d}", "params": params(c)} for i, c in enumerate(C)])
@@ -52,6 +61,9 @@ elif mode == "collect":
     for cid in failed:
         for t in C[cid]:
             resp = client.messages.create(**params([t])); arr = parse(resp.content, 1); labels[t] = lab(arr[0] if arr else {})
+    for r in R:
+        for c in r["concerns"]:
+            if c not in labels: labels[c] = KNOWN[c]
     with open(f"{OUT}/run_labels.jsonl", "w") as f:
         for r in R:
             ls = [labels[c] for c in r["concerns"]]
