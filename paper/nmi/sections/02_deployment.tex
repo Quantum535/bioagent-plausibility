@@ -12,16 +12,13 @@ far fewer than in the controlled benchmark below (McNemar $p<10^{-30}$ for both 
 % src: results/biomni_full_deepseek, results/biomni_full_flash (delivery 287/285 and 286/288; H1 tests)
 
 Where plausible values were relayed contradicted our second prediction. We had expected fields with an exact derivation route to
-be protected; instead they were relayed more often (odds ratio 5.6 and 3.6). Protein length and mass, which follow exactly from
-the sequence, were relayed in 46--68\% of plausible runs, organism in 0--14\% and names in 0--8\%, and numeric chemistry fields
-almost never, because Biomni's own workflow recomputes them with RDKit. A derivation route protected a value only when the agent's
-workflow actually passed through it. A third prediction, about which concern an agent raises first, was supported for one model
+be protected; instead they were relayed more often (odds ratio 5.6 and 3.6). Protein length and mass, which follow exactly from the sequence, were relayed in 43--68\% of plausible runs, against 0--14\% for organism and 12--15\% for gene symbols (Fig.~\ref{fig:deploy}c). Chemistry split by model: Gemini 3.8 Flash relayed 1 of 49 corrupted molecular weights and heavy-atom counts and none of 24 compound names, whereas DeepSeek relayed 8 of 22 molecular weights and 2 of 24 names; hydrogen-bond donor counts were relayed by both (21--42\%). An exact derivation route did not, by itself, protect a value. A third prediction, about which concern an agent raises first, was supported for one model
 and not the other (Supplementary Information).
 % src: Biomni H2 per-field analysis; H3 results (DeepSeek p = 4e-5; Flash mixed)
 
 \begin{figure}[t]
 \centering
 \includegraphics[width=\linewidth]{../figures/nmi_deployment.pdf}
-\caption{\textbf{Study design and a deployed agent.} \textbf{a}, Corrupted values were injected between the database and the agent, in a tool layer or, for the deployed agent, an intercepting proxy; the agent's answer and concerns were scored. Bottom: the forms a corrupted record took (illustrative values). \textbf{b}, Biomni with live UniProt and PubChem APIs: share of corrupted runs in which the value was relayed, caught, or never requested (relayed/delivered at right). \textbf{c}, Relay of plausible values by field type, with 95\% Wilson intervals; numbers give relayed/delivered runs.}
+\caption{\textbf{Study design and a deployed agent.} \textbf{a}, Corrupted values were injected between the database and the agent, in a tool layer or, for the deployed agent, an intercepting proxy; the agent's answer and concerns were scored. Bottom: the forms a corrupted record took (illustrative values). \textbf{b}, Biomni with live UniProt and PubChem APIs: share of corrupted runs in which the value was relayed, caught, or never requested (relayed/delivered at right). \textbf{c}, Relay of plausible values by field (shaded rows, compounds; filled circles, fields with an exact derivation route; open diamonds, fields without one), with 95\% Wilson intervals; numbers give relayed/delivered runs.}
 \label{fig:deploy}
 \end{figure}

@@ -80,11 +80,11 @@ def biomni_fields(d):
         if grp is None: continue
         out[grp][0] += bool(prop); out[grp][1] += 1
     print(f"{d}: groups {dict(out)}\n    raw fields {dict(raw)}")
-    return dict(out) or None
+    return dict(raw) or None
 
 def fig1():
-    fig = plt.figure(figsize=(TW, 5.0), layout="constrained")
-    gs = fig.add_gridspec(2, 2, height_ratios=[1.2, 1], width_ratios=[1.15, 1])
+    fig = plt.figure(figsize=(TW, 5.7), layout="constrained")
+    gs = fig.add_gridspec(2, 2, height_ratios=[1.2, 1.15], width_ratios=[1.15, 1])
     ax = fig.add_subplot(gs[0, :]); ax.set_xlim(0, 100); ax.set_ylim(0, 52); ax.axis("off"); letter(ax, "a")
     def box(x, y, w, h, title, lines, fc, ec):
         ax.add_patch(FancyBboxPatch((x, y), w, h, boxstyle="round,pad=0.4,rounding_size=1.2", fc=fc, ec=ec, lw=0.8))
@@ -129,22 +129,25 @@ def fig1():
                loc="upper center", bbox_to_anchor=(0.5, -0.32), ncol=3, frameon=False)
     axc = fig.add_subplot(gs[1, 1]); letter(axc, "c")
     F = {"deepseek": biomni_fields("results/biomni_full_deepseek"), "flash": biomni_fields("results/biomni_full_flash")}
-    order = ["protein length, mass", "protein organism", "names", "chemistry numbers"]
+    ROWS = [("length", "length"), ("mass", "mass"), ("organism", "organism"), ("gene_symbol", "gene symbol"),
+            ("molecular_weight", "molecular weight"), ("heavy_atom_count", "heavy-atom count"), ("h_bond_donors", "H-bond donors"), ("name", "compound name")]
+    EXACT = {"length", "mass", "molecular_weight", "heavy_atom_count", "h_bond_donors"}
     if any(F.values()):
-        for j, m in enumerate(("deepseek", "flash")):
-            for i, grp in enumerate(order):
-                k, n = (F[m] or {}).get(grp, (0, 0))
+        axc.axhspan(3.5, 7.5, color="#f4f4f4", zorder=0)
+        for i, (fk, _) in enumerate(ROWS):
+            for j, m in enumerate(("deepseek", "flash")):
+                k, n = (F[m] or {}).get(fk, (0, 0))
                 if n == 0: continue
-                p, el, eh = pct(k, n); y = i + (-0.17 if j == 0 else 0.17)
-                axc.errorbar(p, y, xerr=[[el], [eh]], fmt="o", color=COL[m], ms=4, capsize=1.6, lw=0.8)
-                axc.text(min(p + eh + 2.5, 92), y, f"{k}/{n}", va="center", fontsize=5.8, color=MUTED)
-        axc.set_yticks(range(len(order))); axc.set_yticklabels(order); axc.set_ylim(len(order) - 0.5, -0.5); axc.set_xlim(0, 105)
-        axc.set_xlabel("Plausible value relayed (%)"); axc.set_title("Relay by field, plausible values", loc="left")
-        axc.legend(handles=[Line2D([], [], marker="o", ls="", color=COL[m], label=NAME[m]) for m in ("deepseek", "flash")],
-                   loc="upper center", bbox_to_anchor=(0.5, -0.32), ncol=2, frameon=False)
+                p, el, eh = pct(k, n); y = i + (-0.22 if j == 0 else 0.22); ex = fk in EXACT
+                axc.errorbar(p, y, xerr=[[el], [eh]], fmt="o" if ex else "D", color=COL[m], mfc=COL[m] if ex else "white", ms=3.6, capsize=1.4, lw=0.8, zorder=3)
+                axc.text(min(p + eh + 2.5, 93), y, f"{k}/{n}", va="center", fontsize=5.6, color=MUTED)
+        axc.set_yticks(range(len(ROWS))); axc.set_yticklabels([l for _, l in ROWS]); axc.set_ylim(len(ROWS) - 0.5, -0.5); axc.set_xlim(0, 105)
+        axc.grid(axis="y", visible=False); axc.set_xlabel("Plausible value relayed (%)"); axc.set_title("Relay by field, plausible values", loc="left")
+        axc.legend(handles=[Line2D([], [], marker="o", ls="", color=COL[m], label=NAME[m]) for m in ("deepseek", "flash")]
+                   + [Line2D([], [], marker="o", ls="", color=INK, label="exact derivation route"), Line2D([], [], marker="D", ls="", mfc="white", mec=INK, label="no route")],
+                   loc="upper center", bbox_to_anchor=(0.5, -0.2), ncol=2, frameon=False)
     else:
         axc.axis("off"); axc.text(0.5, 0.5, "per-field breakdown not parsed (see console)", ha="center", va="center", color="#c0392b")
-        print("WARNING: graded.json format not recognised; Fig. 1c is a placeholder")
     fig.savefig(f"{OUT}/nmi_deployment.pdf"); plt.close(fig)
 
 # ------------------------------------------------------------------ Fig. 3
