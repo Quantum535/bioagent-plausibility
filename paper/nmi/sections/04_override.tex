@@ -54,13 +54,13 @@ how many fields of the record agree with the value decides whether it acts on wh
 
 \begin{figure}[t]
 \centering
-\includegraphics[width=\linewidth]{../figures/icml_boundary.pdf}
-\caption{\textbf{Override boundaries.} Share of runs relaying a corrupted value as the corruption factor grows, with the full record available and the paired field scaled alike, for proteins (\textbf{a}, value decreased; \textbf{b}, value increased) and molecules (\textbf{c}, decreased; \textbf{d}, increased); 40 tasks per point and model.}
+\includegraphics[width=\linewidth]{../figures/nmi_boundary.pdf}
+\caption{\textbf{Override boundaries.} Share of runs relaying a corrupted value as the corruption grows, with the full record available and the paired field scaled alike, for proteins (\textbf{a}, value decreased; \textbf{b}, increased) and molecules (\textbf{c}, decreased; \textbf{d}, increased). Bands: 95\% Wilson intervals (40 tasks per point). Diamonds: fitted factor at which half of runs relay the value, with its 95\% interval, where it lies within the tested range.}
 \label{fig:boundary}
 \end{figure}
 \begin{figure}[t]
 \centering
 \includegraphics[width=\linewidth]{../figures/nmi_agreement.pdf}
-\caption{\textbf{Agreement decides override.} Share of runs relaying a plausible wrong value (60 compounds, three samples per run; 95\% Wilson intervals). \textbf{a}, Molecular weight asked: the corrupted weight agreed with the heavy-atom count only (solid) or also with the monoisotopic mass (pale). \textbf{b}, Monoisotopic mass asked: the corrupted mass agreed with molecular weight and heavy-atom count (solid) or was changed alone (pale).}
+\caption{\textbf{A derivation route raises detection; agreement decides override.} \textbf{a}, New chemistry fields with the full record, per model: uncorrupted runs raising a concern (crosses); plausible-error runs raising a concern (open circles) and relaying the value (squares); impossible-value runs relaying it (triangles). \textbf{b}, Molecular weight asked: relay when the corrupted weight agreed with one or with two other fields. \textbf{c}, Monoisotopic mass asked: relay when the corrupted mass agreed with two other fields or was changed alone. Large markers pool three samples (95\% Wilson intervals); small dots are single samples; numbers give the change in percentage points.}
 \label{fig:agreement}
 \end{figure}
