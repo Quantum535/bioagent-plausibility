@@ -71,14 +71,15 @@ def biomni_fields(d):
     groups = {"length": "protein length, mass", "mass": "protein length, mass", "organism": "protein organism", "gene_symbol": "names",
               "name": "names", "protein_name": "names", "molecular_weight": "chemistry numbers", "heavy_atom_count": "chemistry numbers",
               "h_bond_donors": "chemistry numbers"}
-    out = collections.defaultdict(lambda: [0, 0])
+    out = collections.defaultdict(lambda: [0, 0]); raw = collections.defaultdict(lambda: [0, 0])
     for r in walk(json.load(open(p)), {}):
         cond = str(pick(r, "cond") or "").lower(); prop = pick(r, "propag", "relay")
         if "plausible" not in cond or pick(r, "deliver") is False or prop is None: continue
-        grp = groups.get(str(pick(r, "field")))
+        fk_ = str(pick(r, "field")); raw[fk_][0] += bool(prop); raw[fk_][1] += 1
+        grp = groups.get(fk_)
         if grp is None: continue
         out[grp][0] += bool(prop); out[grp][1] += 1
-    print(f"{d}: per-field records found: {dict(out)}")
+    print(f"{d}: groups {dict(out)}\n    raw fields {dict(raw)}")
     return dict(out) or None
 
 def fig1():
@@ -169,27 +170,39 @@ def fig3():
     spec = {"shrink": ([0.9, 0.5, 0.1, 0.02, 0.005], (1.05, 0.0038)), "inflate": ([1.1, 2, 10, 50, 200], (0.95, 260))}
     titles = {("protein", "shrink"): "Proteins, value decreased", ("protein", "inflate"): "Proteins, value increased",
               ("chem", "shrink"): "Molecules, value decreased", ("chem", "inflate"): "Molecules, value increased"}
-    fig, axes = plt.subplots(2, 2, figsize=(TW, 5.0), layout="constrained", sharey=True)
+    fig = plt.figure(figsize=(TW, 6.6), layout="constrained")
+    gs = fig.add_gridspec(4, 2, height_ratios=[3, 1.15, 3, 1.15])
     for r, dom in enumerate(("protein", "chem")):
         for c, d in enumerate(("shrink", "inflate")):
-            ax = axes[r][c]; letter(ax, "abcd"[2 * r + c]); ticks, xl = spec[d]
-            ax.set_xscale("log"); ax.axhline(50, color=MUTED, lw=0.6, ls="--", zorder=1)
+            ticks, xl = spec[d]
+            ax = fig.add_subplot(gs[2 * r, c]); sx = fig.add_subplot(gs[2 * r + 1, c], sharex=ax)
+            letter(ax, "abcd"[2 * r + c])
+            for a_ in (ax, sx): a_.set_xscale("log")
+            ax.axhline(50, color=MUTED, lw=0.6, ls="--", zorder=1)
             for m in order:
                 pts = data.get((m, dom, d))
                 if not pts: continue
                 xs = sorted(pts); st = [wilson(*pts[x]) for x in xs]
                 ax.fill_between(xs, [100 * lo for _, lo, _ in st], [100 * hi for _, _, hi in st], color=COL[m], alpha=0.12, lw=0)
                 ax.plot(xs, [100 * p for p, _, _ in st], "-o", color=COL[m], ms=2.4, lw=1.0, zorder=3)
+            for yi, m in enumerate(order):
                 fk = fits.get((m, dom, d))
-                if fk and min(xl) <= fk[0] <= max(xl):
-                    lo_, hi_ = max(fk[1], min(xl)), min(fk[2], max(xl))
-                    ax.errorbar(fk[0], 50, xerr=[[fk[0] - lo_], [hi_ - fk[0]]], fmt="D", color=COL[m], mec="white", mew=0.5, ms=4.2, capsize=1.6, lw=0.9, zorder=5)
+                if not fk: continue
+                est, lo, hi = fk
+                if min(xl) <= est <= max(xl):
+                    lo_, hi_ = max(lo, min(xl)), min(hi, max(xl))
+                    sx.errorbar(est, yi, xerr=[[est - lo_], [hi_ - est]], fmt="D", color=COL[m], mec="white", mew=0.5, ms=4, capsize=1.6, lw=0.9)
+                else:
+                    sx.text(xl[0], yi, f"  ×{est:.2f}, outside tested range", ha="left", va="center", fontsize=5.8, color=COL[m])
             ax.set_xlim(*xl); ax.set_xticks(ticks); ax.set_xticklabels([f"×{t:g}" for t in ticks]); ax.xaxis.set_minor_locator(NullLocator())
-            ax.set_ylim(-3, 103); ax.set_title(titles[(dom, d)], loc="left")
-            if c == 0: ax.set_ylabel("Corrupted value relayed (%)")
+            ax.tick_params(axis="x", labelbottom=False); ax.set_ylim(-3, 103); ax.set_title(titles[(dom, d)], loc="left")
+            sx.set_ylim(len(order) - 0.5, -0.5); sx.set_yticks(range(len(order)))
+            sx.set_yticklabels([SHORT[m] for m in order] if c == 0 else [], fontsize=6.0)
+            sx.grid(axis="y", visible=False); sx.tick_params(axis="y", length=0)
+            if c == 0:
+                ax.set_ylabel("Corrupted value relayed (%)"); sx.set_ylabel("50% point", fontsize=6.4)
     fig.supxlabel("Corruption factor applied to the field and its paired field (full record available)", fontsize=7.2)
-    flegend(fig, [Line2D([], [], color=COL[m], marker="o", ms=3, lw=1, label=NAME[m]) for m in order]
-            + [Line2D([], [], marker="D", ls="", color=INK, ms=4, label="50% point (95% interval)")], 6)
+    flegend(fig, [Line2D([], [], color=COL[m], marker="o", ms=3, lw=1, label=NAME[m]) for m in order], 5)
     fig.savefig(f"{OUT}/nmi_boundary.pdf"); plt.close(fig)
 
 # ------------------------------------------------------------------ Fig. 4
@@ -208,10 +221,10 @@ def fig4():
             v = {"cf": 100 * sum(map(flagged, cl)) / max(len(cl), 1), "pf": 100 * sum(map(flagged, pl)) / len(pl),
                  "pr": 100 * kn(pl)[0] / len(pl), "ir": 100 * kn(im)[0] / max(len(im), 1)}
             axa.vlines(x, min(v.values()), max(v.values()), color=COL[m], lw=0.7, alpha=0.45, zorder=2)
-            axa.scatter([x], [v["cf"]], marker="x", color=MUTED, s=14, lw=0.8, zorder=3)
+            axa.scatter([x - 0.3], [v["cf"]], marker="x", color=MUTED, s=14, lw=0.8, zorder=3)
             axa.scatter([x], [v["pf"]], marker="o", facecolors="white", edgecolors=COL[m], s=26, lw=1.1, zorder=4)
             axa.scatter([x], [v["pr"]], marker="s", color=COL[m], s=22, zorder=5)
-            axa.scatter([x], [v["ir"]], marker="^", color=COL[m], s=22, alpha=0.5, zorder=4)
+            axa.scatter([x + 0.3], [v["ir"]], marker="^", color=COL[m], s=22, alpha=0.5, zorder=4)
     axa.set_xticks([gi * 6 + 2 for gi in range(3)]); axa.set_xticklabels([f for _, f in FIELDS]); axa.set_xlim(-1, 17)
     axa.set_ylim(-4, 104); axa.set_ylabel("Share of runs (%)"); axa.grid(axis="x", visible=False)
     axa.set_title("New chemistry fields with the full record", loc="left")
