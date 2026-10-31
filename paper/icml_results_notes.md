@@ -95,3 +95,7 @@ Summary record + harness-side verification against the full entry; agent sees a 
 Proteins: propagation 0-1% (impossible and plausible) for all three; clean accuracy 100%; annotate == replace (DeepSeek identical).
 Chemistry: 12-24% residual, correctness 74-80% — concentrated in `name` (no derivation; reverse lookup can only say not_found). See per-field.
 Baselines without harness, same models: protein 32/75, 35/74, 44/77; chem 46/98, 62/98, 38/96. Cost ~$45.
+
+## Validated cue numbers (2026-10-30)
+All cue-taxonomy numbers earlier in this file come from the regex grader and are superseded. Validated numbers, the human-agreement
+study and the classifier validation are in results/v2/validation/RESULTS.md; tables and figures regenerated with validated_cues.py.
