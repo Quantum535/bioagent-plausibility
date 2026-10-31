@@ -12,19 +12,23 @@ sequence in UniProt's archive. Agents increasingly sit between such databases an
 read by programs rather than people. In that setting a raised concern is easy to lose: the answer field carried the record's value,
 while the correct value, when the agent had found it, sat in a separate remark.
 
-Work on conflicts between a model's knowledge and its context has framed the adoption of retrieved information largely in terms of
-plausibility, with models accepting moderately wrong context and resisting absurd context~\citep{TODO-clasheval,TODO-conflicts}.
-Our results agree at the extreme, since values that looked like placeholders were replaced, but within the range of values that look
-like data, plausibility is not what decides. Agreement is. It can be varied without changing the wrong value at all, and doing so
-moved relay by up to 32 percentage points. The derivation route, which we expected to protect values, mattered mainly for
-detection: it let agents see the error and say so, but not change their answer.
+Work on knowledge conflicts has shown that language models adopt incorrect context readily, less so the further it departs from
+the truth~\citep{wu2024clasheval}, and that they accept coherent, convincing counter-evidence even against their own
+memory~\citep{xie2024adaptive,xu2024conflicts}. Concurrent work finds that tool-using agents adopt corrupted tool returns and may
+question a return, or state the correct value, without warning the user~\citep{yang2026overreliance}. Our results carry these
+findings into structured scientific records and identify what decides the outcome there. Values that looked like placeholders were
+replaced, consistent with a role for implausibility at the extreme, but within the range of values that look like data the deciding
+variable was agreement among the record's fields. Agreement can be varied without changing the wrong value at all, and doing so moved
+relay by up to 32 percentage points. The derivation route, which we expected to protect values, mattered mainly for detection: it let
+agents see the error and say so, but not change their answer.
 
 Three implications follow for systems that put agents on scientific databases. First, verification has to happen outside the
 model and act on the record. A one-sentence instruction to verify reduced relay of impossible values but left plausible ones largely
 untouched; derivation checks and an independent second source removed most errors, but only by changing what the agent saw. Second,
 how a correction is presented matters as much as whether it is made. Showing the agent both values reopened a decision that silent
 correction had closed: one model chose the value labelled as the original in 41\% of runs, and others resolved the conflict from a
-memory that, for revised entries, held the superseded value. Correcting silently from a high-agreement source, and keeping the
+memory that, for revised entries, held the superseded value. Reliability labels on retrieved content modestly reduce adoption~\citep{yang2026overreliance};
+a label identifying the original database value, by contrast, raised relay in one model. Correcting silently from a high-agreement source, and keeping the
 audit trail for people outside the agent's context, removed relay entirely in our tests. This cuts against an instinct for
 transparency toward the model, and the trade-off deserves study; transparency toward the people responsible for the analysis is
 unaffected. Third, a second source must be chosen for agreement and coverage, not convenience. A source that disagrees with the

@@ -1,5 +1,5 @@
 \subsection*{A deployed agent relays corrupted live database values}
-To test whether the problem arises outside a benchmark, we ran Biomni~\citep{TODO-biomni}, an open-source biomedical agent,
+To test whether the problem arises outside a benchmark, we ran Biomni~\citep{huang2026biomni}, an open-source biomedical agent,
 against the live UniProt and PubChem APIs and altered one field of selected responses in transit with an intercepting proxy
 (Methods). Biomni retrieved and processed records with its own code and tools; we changed only what the databases returned. Each
 of 300 tasks ran once without corruption, once with an impossible value and once with a plausible value within 25\% of the true
@@ -18,3 +18,11 @@ almost never, because Biomni's own workflow recomputes them with RDKit. A deriva
 workflow actually passed through it. A third prediction, about which concern an agent raises first, was supported for one model
 and not the other (Supplementary Information).
 % src: Biomni H2 per-field analysis; H3 results (DeepSeek p = 4e-5; Flash mixed)
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.55\linewidth]{../figures/nmi_deployment.pdf}
+\caption{\textbf{A deployed agent relays plausible corrupted values.} Share of delivered corrupted runs in which Biomni relayed the
+corrupted value, by model and kind of corruption (95\% Wilson intervals).}
+\label{fig:deploy}
+\end{figure}

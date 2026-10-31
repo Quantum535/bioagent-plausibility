@@ -1,2 +1,32 @@
-\section*{Introduction}
-\textit{[To be drafted.]}
+Language-model agents are moving from answering questions to doing research. Systems such as ChemCrow~\citep{bran2024chemcrow} and
+Biomni~\citep{huang2026biomni} plan multistep analyses, query scientific databases and compute on what they retrieve. Their answers
+can only be as good as the records they read, and those records contain errors. Misannotation is widespread in several major
+protein databases~\citep{schnoes2009annotation}, and even curated resources revise their entries: UniProt archives every earlier
+version of every entry~\citep{leinonen2006unisave}, and of the 300 reviewed human proteins in our benchmark, 167 have at least one
+superseded sequence. An agent that relays a database value inherits its error unless it notices the error and acts on it.
+
+How language models handle wrong information in their context has been studied mainly as a conflict between the context and the
+model's own knowledge~\citep{longpre2021entity,xu2024conflicts}. Models often adopt incorrect retrieved content, less often the
+further it departs from the truth~\citep{wu2024clasheval}, and they accept counter-evidence that is coherent and convincing even when
+it contradicts their memory~\citep{xie2024adaptive}. Concurrent work shows that tool-using agents adopt corrupted tool returns and
+may question a return, or even state the correct value, while passing the corrupted content on~\citep{yang2026overreliance}. These
+studies corrupt passages of text or single returned values. Scientific database records are different. A value sits among related
+fields that can confirm or contradict it, and the record often contains what is needed to derive the value independently: a
+protein's sequence fixes its length and mass, and a compound's formula fixes its weight. Whether agents use this structure, whether
+errors that occurred in real databases behave like constructed ones, and which corrections actually change what an agent reports,
+are open questions.
+
+We studied them in five steps. We ran a deployed biomedical agent against live database APIs and altered the responses in transit.
+We built a controlled benchmark of protein and small-molecule questions and ran ten models from five developers. We manipulated the
+internal consistency of the records and the derivation routes they offer. We presented errors that UniProt itself later corrected.
+And we tested corrections: checks of each record against its own derivations, an independent second source, and three ways of
+presenting a correction to the agent. Where we made predictions, we registered them before running the experiments, and we report
+the ones that failed.
+
+Across these experiments, agents noticed wrong values far more often than they acted on them. Whether a wrong value was relayed
+depended less on how plausible it was than on whether the rest of the record agreed with it: adding one agreeing field raised relay,
+and making the record disagree with itself lowered it, with the wrong value unchanged. A derivation route let agents detect an error,
+and often compute the correct value, without changing what they answered. Errors that UniProt later corrected, each internally
+consistent, were relayed in 90--100\% of runs, whatever the size of the revision. An independent second source removed most of
+these errors; correcting the record silently removed all of them in our tests, whereas showing the agent the original value invited
+it back.
