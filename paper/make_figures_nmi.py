@@ -53,17 +53,32 @@ def samples(ax, x, rs, color):
 def biomni_fields(d):
     p = os.path.join(d, "graded.json")
     if not os.path.exists(p): return None
-    g = json.load(open(p))
-    recs = g if isinstance(g, list) else ((g.get("runs") or g.get("records") or list(g.values())) if isinstance(g, dict) else [])
+    def walk(x, ctx):
+        if isinstance(x, dict):
+            ks = [str(k).lower() for k in x]
+            if any("propag" in k or "relay" in k for k in ks) and any("field" in k for k in ks):
+                yield {**ctx, **x}; return
+            for k, v in x.items():
+                c2 = dict(ctx)
+                if str(k).lower() in ("clean", "impossible", "plausible"): c2["condition"] = str(k).lower()
+                yield from walk(v, c2)
+        elif isinstance(x, list):
+            for v in x: yield from walk(v, ctx)
+    def pick(r, *subs):
+        for k, v in r.items():
+            if any(sb in str(k).lower() for sb in subs): return v
+        return None
     groups = {"length": "protein length, mass", "mass": "protein length, mass", "organism": "protein organism", "gene_symbol": "names",
               "name": "names", "protein_name": "names", "molecular_weight": "chemistry numbers", "heavy_atom_count": "chemistry numbers",
               "h_bond_donors": "chemistry numbers"}
     out = collections.defaultdict(lambda: [0, 0])
-    for r in recs:
-        if not isinstance(r, dict) or r.get("condition") != "plausible" or r.get("delivered") is False: continue
-        grp = groups.get(r.get("target_field") or r.get("field")); prop = r.get("propagated", r.get("relayed"))
-        if grp is None or prop is None: continue
+    for r in walk(json.load(open(p)), {}):
+        cond = str(pick(r, "cond") or "").lower(); prop = pick(r, "propag", "relay")
+        if "plausible" not in cond or pick(r, "deliver") is False or prop is None: continue
+        grp = groups.get(str(pick(r, "field")))
+        if grp is None: continue
         out[grp][0] += bool(prop); out[grp][1] += 1
+    print(f"{d}: per-field records found: {dict(out)}")
     return dict(out) or None
 
 def fig1():
@@ -72,27 +87,31 @@ def fig1():
     ax = fig.add_subplot(gs[0, :]); ax.set_xlim(0, 100); ax.set_ylim(0, 52); ax.axis("off"); letter(ax, "a")
     def box(x, y, w, h, title, lines, fc, ec):
         ax.add_patch(FancyBboxPatch((x, y), w, h, boxstyle="round,pad=0.4,rounding_size=1.2", fc=fc, ec=ec, lw=0.8))
-        ax.text(x + w / 2, y + h - 2.4, title, ha="center", va="top", fontsize=7.2, weight="bold")
-        for i, l in enumerate(lines): ax.text(x + w / 2, y + h - 7.2 - 3.8 * i, l, ha="center", va="top", fontsize=6.3)
-    box(1, 32, 19, 17, "Scientific database", ["UniProt (proteins)", "PubChem (compounds)", "UniSave (past versions)"], "#f4f4f4", RULE)
-    box(27, 32, 21, 17, "Tool layer or proxy", ["errors injected here:", "impossible, plausible,", "coherent, historical"], "#fdf1e6", "#e0a060")
-    box(55, 32, 19, 17, "Agent", ["10 models, 5 developers", "Biomni (deployed)", "summary or full record"], "#eef3fb", "#7a9fd6")
-    box(81, 32, 18, 17, "Answer and concerns", ['{"answer": ...,', '"concerns": [...]}', "relayed? flagged?"], "#f4f4f4", RULE)
+        ax.text(x + w / 2, y + h - 2.0, title, ha="center", va="top", fontsize=7.2, weight="bold")
+        for i, l in enumerate(lines): ax.text(x + w / 2, y + h - 6.6 - 3.4 * i, l, ha="center", va="top", fontsize=6.3)
+    box(1, 34, 19, 16, "Scientific database", ["UniProt (proteins)", "PubChem (compounds)", "UniSave (past versions)"], "#f4f4f4", RULE)
+    box(27, 34, 21, 16, "Tool layer or proxy", ["errors injected here:", "impossible, plausible,", "coherent, historical"], "#fdf1e6", "#e0a060")
+    box(55, 34, 19, 16, "Agent", ["10 models, 5 developers", "Biomni (deployed)", "summary or full record"], "#eef3fb", "#7a9fd6")
+    box(81, 34, 18, 16, "Answer and concerns", ['{"answer": ...,', '"concerns": [...]}', "relayed? flagged?"], "#f4f4f4", RULE)
     for x0, x1 in ((20.6, 26.4), (48.6, 54.4), (74.6, 80.4)):
-        ax.annotate("", xy=(x1, 40.5), xytext=(x0, 40.5), arrowprops=dict(arrowstyle="-|>", color=INK, lw=0.9))
-    ax.annotate("", xy=(37.5, 31.6), xytext=(37.5, 27.4), arrowprops=dict(arrowstyle="-|>", color="#2e7d4f", lw=0.9))
-    ax.text(37.5, 26.6, "harness: derivation checks; second source (AlphaFold DB, NCI CACTUS);\nannotate, replace or silent correction",
+        ax.annotate("", xy=(x1, 42), xytext=(x0, 42), arrowprops=dict(arrowstyle="-|>", color=INK, lw=0.9))
+    ax.annotate("", xy=(37.5, 33.4), xytext=(37.5, 29.8), arrowprops=dict(arrowstyle="-|>", color="#2e7d4f", lw=0.9))
+    ax.text(37.5, 29.2, "harness: derivation checks; second source (AlphaFold DB, NCI CACTUS);\nannotate, replace or silent correction",
             ha="center", va="top", fontsize=6.0, color="#2e7d4f")
-    ax.text(1, 19.8, "Example protein record (illustrative values): length | mass | sequence", fontsize=6.5, weight="bold", va="top")
-    cards = [("true record", "228 aa | 25.0 kDa | 228 aa", INK, ""), ("impossible, one field", "228 aa | 45 Da | 228 aa", "#c0392b", "contradicts its paired field"),
-             ("plausible, paired fields", "182 aa | 20.0 kDa | 228 aa", "#d68910", "contradicts only the sequence"),
-             ("coherent or historical", "182 aa | 20.0 kDa | 182 aa", "#7b4fb3", "contradicts nothing in the record")]
-    for i, (h, v, c, note) in enumerate(cards):
+    ax.text(1, 22.8, "Example protein record (illustrative values); coloured values differ from the true record", fontsize=6.6, weight="bold", va="top")
+    TRUE = ("228 aa", "25.0 kDa", "228 aa")
+    cards = [("true record", TRUE, INK, ""), ("impossible, one field", ("228 aa", "45 Da", "228 aa"), "#c0392b", "contradicts its paired field"),
+             ("plausible, paired fields", ("182 aa", "20.0 kDa", "228 aa"), "#d68910", "contradicts only the sequence"),
+             ("coherent or historical", ("182 aa", "20.0 kDa", "182 aa"), "#7b4fb3", "contradicts nothing in the record")]
+    for i, (h, vals, c, note) in enumerate(cards):
         x = 1 + i * 24.8
-        ax.add_patch(FancyBboxPatch((x, 1.5), 23.2, 13.2, boxstyle="round,pad=0.3,rounding_size=1", fc="white", ec=c, lw=0.9))
-        ax.text(x + 11.6, 13.2, h, ha="center", va="top", fontsize=6.5, weight="bold", color=c)
-        ax.text(x + 11.6, 8.6, v, ha="center", va="top", fontsize=6.2, family="monospace")
-        if note: ax.text(x + 11.6, 3.6, note, ha="center", va="center", fontsize=5.8, color=MUTED)
+        ax.add_patch(FancyBboxPatch((x, 0.8), 23.2, 18.2, boxstyle="round,pad=0.3,rounding_size=1", fc="white", ec=c, lw=0.9))
+        ax.text(x + 11.6, 18.2, h, ha="center", va="top", fontsize=6.6, weight="bold", color=c)
+        for j, (fname, v) in enumerate(zip(("length", "mass", "sequence"), vals)):
+            yy = 14.6 - 3.0 * j; diff = v != TRUE[j]
+            ax.text(x + 3.0, yy, fname, ha="left", va="top", fontsize=6.2, color=MUTED)
+            ax.text(x + 20.2, yy, v, ha="right", va="top", fontsize=6.2, color=c if diff else INK, weight="bold" if diff else "normal")
+        if note: ax.text(x + 11.6, 3.2, note, ha="center", va="center", fontsize=5.8, color=MUTED, style="italic")
     axb = fig.add_subplot(gs[1, 0]); letter(axb, "b")
     RUNS = [("DeepSeek", "impossible", 300, 287, 5), ("DeepSeek", "plausible", 300, 285, 80),
             ("Flash", "impossible", 300, 286, 6), ("Flash", "plausible", 300, 288, 69)]  # src: results/biomni_full_* (H1 analysis)
@@ -147,7 +166,7 @@ def fig3():
             if fm:
                 x = data[mm.groups()][float(fm.group(1))]; x[0] += bool(t.get("propagated")); x[1] += 1
     fits = parse_fits(); order = ["opus5", "argon", "flash", "deepseek", "sonnet5"]
-    spec = {"shrink": ([0.9, 0.5, 0.1, 0.02, 0.005], (1.05, 0.0038)), "inflate": ([1.1, 1.5, 3, 10, 50, 200], (0.95, 260))}
+    spec = {"shrink": ([0.9, 0.5, 0.1, 0.02, 0.005], (1.05, 0.0038)), "inflate": ([1.1, 2, 10, 50, 200], (0.95, 260))}
     titles = {("protein", "shrink"): "Proteins, value decreased", ("protein", "inflate"): "Proteins, value increased",
               ("chem", "shrink"): "Molecules, value decreased", ("chem", "inflate"): "Molecules, value increased"}
     fig, axes = plt.subplots(2, 2, figsize=(TW, 5.0), layout="constrained", sharey=True)
@@ -193,7 +212,7 @@ def fig4():
             axa.scatter([x], [v["pf"]], marker="o", facecolors="white", edgecolors=COL[m], s=26, lw=1.1, zorder=4)
             axa.scatter([x], [v["pr"]], marker="s", color=COL[m], s=22, zorder=5)
             axa.scatter([x], [v["ir"]], marker="^", color=COL[m], s=22, alpha=0.5, zorder=4)
-    axa.set_xticks([gi * 6 + 2 for gi in range(3)]); axa.set_xticklabels([f for _, f in FIELDS]); axa.set_xlim(-1, 16)
+    axa.set_xticks([gi * 6 + 2 for gi in range(3)]); axa.set_xticklabels([f for _, f in FIELDS]); axa.set_xlim(-1, 17)
     axa.set_ylim(-4, 104); axa.set_ylabel("Share of runs (%)"); axa.grid(axis="x", visible=False)
     axa.set_title("New chemistry fields with the full record", loc="left")
     kinds = [Line2D([], [], marker="x", ls="", color=MUTED, label="uncorrupted run flagged"),
@@ -212,13 +231,13 @@ def fig4():
                 ax.errorbar(xj, p, yerr=[[el], [eh]], fmt="o" if j == 0 else "s", color=COL[m], mfc="white" if j == 0 else COL[m], ms=4.2, capsize=1.6, lw=0.8, zorder=4)
                 samples(ax, xj, rs, COL[m]); pts.append((xj, p, eh))
             ax.plot([pts[0][0], pts[1][0]], [pts[0][1], pts[1][1]], color=COL[m], lw=1.0, alpha=0.8, zorder=2)
-            ax.text(i, min(max(pts[0][1] + pts[0][2], pts[1][1] + pts[1][2]) + 3, 104), f"{pts[1][1] - pts[0][1]:+.0f}", ha="center", fontsize=6.4, color=COL[m], weight="bold")
+            ax.text(i, 105.5, f"{pts[1][1] - pts[0][1]:+.0f}", ha="center", fontsize=6.4, color=COL[m], weight="bold")
         ax.set_xticks(range(len(M4))); ax.set_xticklabels([SHORT[m] for m in M4]); ax.set_xlim(-0.6, len(M4) - 0.4)
         ax.set_ylim(40, 109); ax.set_title(title, loc="left"); ax.grid(axis="x", visible=False)
         if col == 0: ax.set_ylabel("Wrong value relayed (%)")
         ax.legend(handles=[Line2D([], [], marker="o", ls="", mfc="white", mec=INK, label=l1), Line2D([], [], marker="s", ls="", color=INK, label=l2),
                            Line2D([], [], marker="o", ls="", color=INK, alpha=0.35, ms=2.5, label="single sample")],
-                  loc="upper center", bbox_to_anchor=(0.5, -0.12), ncol=3, frameon=False)
+                  loc="lower right" if col == 0 else "lower left", ncol=1, frameon=False)
     fig.savefig(f"{OUT}/nmi_agreement.pdf"); plt.close(fig)
 
 # ------------------------------------------------------------------ Fig. 5
@@ -253,7 +272,7 @@ def fig5():
         ax.errorbar(xc, p, yerr=[[el], [eh]], fmt="_", color=INK, ms=14, mew=1.6, capsize=2, lw=1.0, zorder=5)
         ax.text(xc, p - el - 4, f"{k}/{n}", ha="center", va="top", fontsize=6, color=INK)
     ax.set_xscale("log"); ax.set_ylim(50, 106); ax.set_xlabel("Size of the historical change in length (residues)")
-    ax.set_ylabel("Runs relaying, per protein (%)"); ax.set_title("Every protein, three models x two record formats", loc="left")
+    ax.set_ylabel("Runs relaying, per protein (%)"); ax.set_title("Every protein, three models × two record formats", loc="left")
     ax.legend(handles=[Line2D([], [], marker="o", ls="", color=LONGER, label="superseded sequence longer"), Line2D([], [], marker="o", ls="", color=SHORTER, label="superseded sequence shorter"),
                        Line2D([], [], marker="_", ls="", color=INK, ms=10, mew=1.6, label="pooled rate per size bin")], loc="lower right", frameon=False)
     ax = fig.add_subplot(gs[1, 0:2]); letter(ax, "c"); groups = M3 + ["pooled"]
@@ -306,7 +325,7 @@ def fig6():
     ax.set_ylabel("Superseded value relayed (%)"); ax.grid(axis="x", visible=False)
     ax.set_title("Real UniProt errors, covered proteins, three samples per run", loc="left")
     ax.legend(handles=[Line2D([], [], marker="o", ls="", color=COL[m], label=NAME[m]) for m in M3] + [Line2D([], [], marker="o", ls="", color=INK, alpha=0.35, ms=2.5, label="single sample")],
-              loc="upper left", frameon=False)
+              loc="upper right", frameon=False)
     ax = fig.add_subplot(gs[1]); letter(ax, "b")
     CATS = [("recalled canonical value", "#d4a017"), ("value from the verification note", "#c0392b"), ("other", "#c8c8c8")]
     rows = [(m, a, l) for a, l in ARMS[:3] for m in M3]
@@ -317,7 +336,7 @@ def fig6():
         ax.text(left + 0.8, y, f"{len(rel)}", va="center", fontsize=6.2)
     ax.set_yticks(range(len(rows))); ax.set_yticklabels([f"{SHORT[m]}, {l.split(':')[0]} ({l.split(chr(10))[1]})" for m, a, l in reversed(rows)])
     ax.set_xlabel("Relayed runs (count)"); ax.set_title("What the relayed answers cited (text match on the final answer)", loc="left"); ax.grid(axis="y", visible=False)
-    ax.legend(handles=[Patch(color=c, label=k) for k, c in CATS], loc="lower right", frameon=False)
+    ax.legend(handles=[Patch(color=c, label=k) for k, c in CATS], loc="upper right", frameon=False)
     fig.savefig(f"{OUT}/nmi_presentation.pdf"); plt.close(fig)
 
 for f in (fig1, fig3, fig4, fig5, fig6):
