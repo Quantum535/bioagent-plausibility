@@ -1,2 +1,55 @@
 \section*{Methods}
-\textit{[To be drafted.]}
+\subsection*{Benchmark}
+\textbf{Entities and tasks.} The benchmark draws on 300 human proteins from UniProt and 300 small molecules from PubChem
+[check: selection criteria]. It has 200 protein tasks over five templates (gene symbol, 50; organism, 50; mass comparison, 50;
+length threshold, 25; length ratio, 25) and 100 chemistry tasks over five (name, 25; hydrogen-bond donors, 25; heavy-atom
+threshold, 25; weight threshold, 12; weight comparison, 13). Each task has a single checkable answer and is constructed so that
+the answer implied by a corrupted record differs from the true answer; comparison tasks were kept only if the true margin exceeded
+5\% [check: protein margin].
+
+\textbf{Tools and records.} Protein agents had two tools: \texttt{get\_protein}, which looks up a record by UniProt accession,
+and \texttt{find\_protein\_by\_gene}, which looks up the human protein encoded by an HGNC gene symbol. Chemistry agents had
+\texttt{get\_compound} (by PubChem CID) and \texttt{find\_compound\_by\_name}. The summary record lists, for proteins, accession,
+protein name, gene symbol, organism, length, mass and subcellular location, and for compounds, CID, name, molecular weight,
+heavy-atom count and number of hydrogen-bond donors. The full record is the complete UniProt entry, including sequence and
+feature annotations, or, for compounds, the summary fields plus IUPAC name, molecular formula and SMILES.
+
+\textbf{Conditions.} In the clean condition all records are returned unchanged. In the impossible condition the target field of the
+target record holds a value no real entity can have (for example, a 228-residue protein weighing 45~Da, a molecular weight of
+$9\times10^{9}$~Da, or 50,000 heavy atoms). In the plausible condition a numeric target is scaled by 0.75--0.8 or 1.2--1.25, with
+directions balanced [check: protein factors], and an identifier target is replaced [check: by another entity's identifier or a
+fabricated one]. Only the target record is altered; every other record in a run is returned unchanged. In the verify arm, one
+sentence was appended to the system prompt.
+
+\textbf{Prompt.} The system prompt read: ``You are a bioinformatics assistant. Use the provided tools to answer. End your reply with
+exactly one line of JSON: \texttt{\{"answer": ..., "concerns": [...]\}} where concerns lists anything about the data that looked
+wrong or surprising (empty list if nothing).'' For chemistry, ``bioinformatics'' was replaced by ``chemistry''. The verify sentence
+read: ``Before answering, sanity-check every tool result against your biological knowledge and report inconsistencies in
+concerns.''
+
+\subsection*{Models and inference}
+We evaluated ten models: Claude Haiku~4.5, Sonnet~4.6, Sonnet~5 and Opus~5 (Anthropic API); Gemini~3.8~Flash and Gemini~4~Argon
+(Google Vertex AI); GPT-6~Luna and GPT-6.1~Sol (OpenAI API); and DeepSeek~V4.1~Flash and Kimi~K3 (Together AI). In each run the
+model received the system prompt, the task question and the tool schemas, could call the tools in any order and any number of
+times, and ended with the JSON line. We used each provider's default sampling settings, with adaptive reasoning where the model
+supports it. Unless stated otherwise, each task ran once per condition.
+
+\subsection*{Outcomes}
+The answer and concerns were parsed from the final JSON line. A run is correct if its answer matches the true answer and
+propagated if it matches the answer implied by the corrupted record [check: matching rules per answer type]; because every task
+separates the two, a parsed answer of a corrupted run is at most one of these. A run is flagged if its concerns list is non-empty.
+Runs without a parseable answer were excluded and counted, and runs that failed at the API were retried.
+
+\subsection*{Statistics}
+Proportions are reported with Wilson 95\% intervals and, where tasks repeat across models, task-cluster bootstrap intervals.
+Benchmark effects were estimated by logistic regression with task-clustered standard errors. Registered experiments used the tests
+named in their registrations: Fisher's exact test, McNemar's test, the Wilcoxon signed-rank test or logistic regression, one-sided
+where the prediction was directional and Holm-corrected where registered.
+
+\subsection*{Run cache and integrity}
+Runs were cached by model, condition, task and a hash of the prompt and settings. During the study we found three ways in which two
+different runs could share a cache key: two harness modes (annotate and replace), two harness settings (second source on and off),
+and two task sets that reused task identifiers and prompts with different records. We added the harness mode, the second-source
+setting and a hash of the corruption to the key, repeated every affected run, and kept the affected files for audit. Every run also
+passed a check that its tool outputs contained the record it was meant to receive; this check detected the third collision before
+any affected run entered an analysis. Runs failing the check are recorded as undelivered and excluded.

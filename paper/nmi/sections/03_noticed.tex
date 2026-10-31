@@ -2,7 +2,7 @@
 To separate what agents detect from what they report, we built a controlled benchmark of 300 human proteins from UniProt and 300
 small molecules from PubChem, with lookup and threshold questions across ten templates, and ran ten models from five developers
 (Methods). Agents retrieved records through a lookup tool. In corrupted conditions one field of the target record held either an
-impossible value, such as a mass of 0~Da, or a plausible one, scaled down or up by about a fifth.
+impossible value, such as a mass of 45~Da for a 228-residue protein, or a plausible one, scaled down or up by about a fifth.
 
 Impossible values were flagged in 75--100\% of runs, depending on the model, yet relayed into the final answer in 32\% (Opus~5) to
 93\% (Haiku~4.5) of protein runs and 38\% (DeepSeek~V4.1~Flash) to 91\% (Haiku~4.5) of chemistry runs (Fig.~\ref{fig:noticed}).
