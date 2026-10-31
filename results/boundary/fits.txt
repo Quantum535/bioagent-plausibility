@@ -12,8 +12,8 @@ deepseek  chem     shrink    ×0.9: 55%  ×0.8: 28%  ×0.7: 25%  ×0.5: 15%  ×0
                              50% override at ×0.95  [×0.84, ×1.22]   (n = 319 runs, 40 tasks, 1 excluded)
 deepseek  protein  inflate   ×1.1:100%  ×1.25: 78%  ×1.5: 62%  ×2: 34%  ×3:  9%  ×10:  0%  ×50:  3%  ×200:  0%
                              50% override at ×1.80  [×1.63, ×2.05]   (n = 300 runs, 40 tasks, 20 excluded)
-deepseek  protein  shrink    ×0.9:100%  ×0.8:100%  ×0.7:100%  ×0.5: 89%  ×0.3: 25%  ×0.1:  0%  ×0.02:  0%  ×0.005:  0%
-                             50% override at ×0.35  [×0.29, ×0.46]   (n = 65 runs, 10 tasks, 255 excluded)
+deepseek  protein  shrink    ×0.9: 95%  ×0.8: 85%  ×0.7: 85%  ×0.5: 54%  ×0.3: 22%  ×0.1:  0%  ×0.02:  3%  ×0.005:  0%
+                             50% override at ×0.43  [×0.35, ×0.51]   (n = 288 runs, 40 tasks, 32 excluded)
 flash     chem     inflate   ×1.1: 52%  ×1.25: 54%  ×1.5: 44%  ×2: 35%  ×3: 47%  ×10:  0%  ×50: 10%  ×200:  0%
                              50% override at ×1.29  [×0.72, ×1.99]   (n = 315 runs, 40 tasks, 5 excluded)
 flash     chem     shrink    ×0.9: 74%  ×0.8: 63%  ×0.7: 38%  ×0.5: 38%  ×0.3: 18%  ×0.1:  5%  ×0.02: 12%  ×0.005: 10%

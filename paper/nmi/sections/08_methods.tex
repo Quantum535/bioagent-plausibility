@@ -76,8 +76,7 @@ full runs (OSF vq5cp).
 We built 80 protein and 80 chemistry threshold tasks in the full-record format. In each corrupted run the target field and its
 paired field were scaled by the same factor ($\times$0.9, 0.8, 0.7, 0.5, 0.3, 0.1, 0.02 or 0.005 when shrinking; $\times$1.1, 1.25,
 1.5, 2, 3, 10, 50 or 200 when inflating), so that only the sequence or formula contradicted the value; 40 tasks per factor and
-direction. Each threshold lies midway between the true value and the value at the mildest factor. The factor at which half of runs
-overrode the corruption was estimated per model, domain and direction [check: fit method and interval]. Models: Opus~5, Sonnet~5,
+direction. Each threshold lies midway between the true value and the value at the mildest factor. The factor at which half of runs overrode the corruption was estimated per model, domain and direction by logistic regression of override on the absolute log factor, with a weak ridge penalty on the slope, and a 95\% interval from 400 task-cluster bootstrap resamples. Runs that failed at the API were rerun; runs without a parseable answer (97 of 6400) were excluded. Models: Opus~5, Sonnet~5,
 Gemini~4~Argon, Gemini~3.8~Flash and DeepSeek~V4.1~Flash.
 
 \subsection*{Coherent corruptions}
