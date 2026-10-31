@@ -1,40 +1,40 @@
 argon     chem     inflate   ×1.1: 55%  ×1.25: 48%  ×1.5: 28%  ×2: 32%  ×3: 12%  ×10:  0%  ×50:  0%  ×200:  0%
-                             50% override at ×1.18  [×0.95, ×1.43]   (n = 320 runs, 40 tasks)
+                             50% override at ×1.18  [×0.95, ×1.43]   (n = 320 runs, 40 tasks, 0 excluded)
 argon     chem     shrink    ×0.9: 70%  ×0.8: 60%  ×0.7: 55%  ×0.5: 28%  ×0.3:  8%  ×0.1:  0%  ×0.02:  0%  ×0.005:  0%
-                             50% override at ×0.68  [×0.59, ×0.79]   (n = 320 runs, 40 tasks)
+                             50% override at ×0.68  [×0.59, ×0.79]   (n = 320 runs, 40 tasks, 0 excluded)
 argon     protein  inflate   ×1.1: 38%  ×1.25: 28%  ×1.5: 10%  ×2:  0%  ×3:  0%  ×10:  0%  ×50:  0%  ×200:  0%
-                             50% override at ×1.04  [×0.93, ×1.14]   (n = 320 runs, 40 tasks)
+                             50% override at ×1.04  [×0.93, ×1.14]   (n = 320 runs, 40 tasks, 0 excluded)
 argon     protein  shrink    ×0.9: 57%  ×0.8: 40%  ×0.7: 22%  ×0.5:  2%  ×0.3:  0%  ×0.1:  0%  ×0.02:  0%  ×0.005:  0%
-                             50% override at ×0.85  [×0.79, ×0.94]   (n = 320 runs, 40 tasks)
+                             50% override at ×0.85  [×0.79, ×0.94]   (n = 320 runs, 40 tasks, 0 excluded)
 deepseek  chem     inflate   ×1.1: 75%  ×1.25: 55%  ×1.5: 48%  ×2: 32%  ×3: 12%  ×10:  0%  ×50:  0%  ×200:  0%
-                             50% override at ×1.48  [×1.28, ×1.70]   (n = 320 runs, 40 tasks)
-deepseek  chem     shrink    ×0.9: 55%  ×0.8: 28%  ×0.7: 25%  ×0.5: 15%  ×0.3:  2%  ×0.1:  0%  ×0.02:  0%  ×0.005:  0%
-                             50% override at ×0.95  [×0.84, ×1.22]   (n = 320 runs, 40 tasks)
-deepseek  protein  inflate   ×1.1:100%  ×1.25: 78%  ×1.5: 60%  ×2: 32%  ×3:  8%  ×10:  0%  ×50:  2%  ×200:  0%
-                             50% override at ×1.77  [×1.61, ×1.96]   (n = 320 runs, 40 tasks)
-deepseek  protein  shrink    ×0.9: 25%  ×0.8: 25%  ×0.7: 22%  ×0.5: 20%  ×0.3:  5%  ×0.1:  0%  ×0.02:  0%  ×0.005:  0%
-                             50% override at ×1.52  [×0.98, ×2.85]   (n = 320 runs, 40 tasks)
-flash     chem     inflate   ×1.1: 52%  ×1.25: 52%  ×1.5: 42%  ×2: 35%  ×3: 45%  ×10:  0%  ×50: 10%  ×200:  0%
-                             50% override at ×1.25  [×0.69, ×1.96]   (n = 320 runs, 40 tasks)
-flash     chem     shrink    ×0.9: 72%  ×0.8: 55%  ×0.7: 38%  ×0.5: 38%  ×0.3: 18%  ×0.1:  5%  ×0.02: 12%  ×0.005: 10%
-                             50% override at ×0.91  [×0.51, ×1.97]   (n = 320 runs, 40 tasks)
-flash     protein  inflate   ×1.1: 65%  ×1.25: 42%  ×1.5: 15%  ×2:  2%  ×3:  0%  ×10:  0%  ×50:  0%  ×200:  0%
-                             50% override at ×1.20  [×1.12, ×1.28]   (n = 320 runs, 40 tasks)
-flash     protein  shrink    ×0.9: 52%  ×0.8: 42%  ×0.7: 30%  ×0.5: 12%  ×0.3:  5%  ×0.1:  0%  ×0.02:  0%  ×0.005:  0%
-                             50% override at ×0.89  [×0.76, ×1.07]   (n = 320 runs, 40 tasks)
+                             50% override at ×1.48  [×1.28, ×1.70]   (n = 320 runs, 40 tasks, 0 excluded)
+deepseek  chem     shrink    ×0.9: 55%  ×0.8: 28%  ×0.7: 25%  ×0.5: 15%  ×0.3:  3%  ×0.1:  0%  ×0.02:  0%  ×0.005:  0%
+                             50% override at ×0.95  [×0.84, ×1.22]   (n = 319 runs, 40 tasks, 1 excluded)
+deepseek  protein  inflate   ×1.1:100%  ×1.25: 78%  ×1.5: 62%  ×2: 34%  ×3:  9%  ×10:  0%  ×50:  3%  ×200:  0%
+                             50% override at ×1.80  [×1.63, ×2.05]   (n = 300 runs, 40 tasks, 20 excluded)
+deepseek  protein  shrink    ×0.9:100%  ×0.8:100%  ×0.7:100%  ×0.5: 89%  ×0.3: 25%  ×0.1:  0%  ×0.02:  0%  ×0.005:  0%
+                             50% override at ×0.35  [×0.29, ×0.46]   (n = 65 runs, 10 tasks, 255 excluded)
+flash     chem     inflate   ×1.1: 52%  ×1.25: 54%  ×1.5: 44%  ×2: 35%  ×3: 47%  ×10:  0%  ×50: 10%  ×200:  0%
+                             50% override at ×1.29  [×0.72, ×1.99]   (n = 315 runs, 40 tasks, 5 excluded)
+flash     chem     shrink    ×0.9: 74%  ×0.8: 63%  ×0.7: 38%  ×0.5: 38%  ×0.3: 18%  ×0.1:  5%  ×0.02: 12%  ×0.005: 10%
+                             50% override at ×0.80  [×0.44, ×1.57]   (n = 312 runs, 40 tasks, 8 excluded)
+flash     protein  inflate   ×1.1: 65%  ×1.25: 44%  ×1.5: 15%  ×2:  2%  ×3:  0%  ×10:  0%  ×50:  0%  ×200:  0%
+                             50% override at ×1.20  [×1.13, ×1.28]   (n = 318 runs, 40 tasks, 2 excluded)
+flash     protein  shrink    ×0.9: 54%  ×0.8: 44%  ×0.7: 32%  ×0.5: 14%  ×0.3:  5%  ×0.1:  0%  ×0.02:  0%  ×0.005:  0%
+                             50% override at ×0.87  [×0.74, ×1.05]   (n = 313 runs, 40 tasks, 7 excluded)
 opus5     chem     inflate   ×1.1: 48%  ×1.25: 25%  ×1.5: 18%  ×2: 10%  ×3: 10%  ×10:  0%  ×50:  0%  ×200:  0%
-                             50% override at ×0.90  [×0.71, ×1.10]   (n = 320 runs, 40 tasks)
+                             50% override at ×0.90  [×0.71, ×1.10]   (n = 320 runs, 40 tasks, 0 excluded)
 opus5     chem     shrink    ×0.9: 40%  ×0.8: 35%  ×0.7: 22%  ×0.5: 10%  ×0.3:  0%  ×0.1:  2%  ×0.02:  0%  ×0.005:  0%
-                             50% override at ×1.08  [×0.87, ×1.69]   (n = 320 runs, 40 tasks)
-opus5     protein  inflate   ×1.1: 62%  ×1.25: 15%  ×1.5: 10%  ×2:  0%  ×3:  0%  ×10:  0%  ×50:  0%  ×200:  0%
-                             50% override at ×1.13  [×1.06, ×1.19]   (n = 320 runs, 40 tasks)
-opus5     protein  shrink    ×0.9: 45%  ×0.8: 20%  ×0.7:  2%  ×0.5:  0%  ×0.3:  0%  ×0.1:  0%  ×0.02:  0%  ×0.005:  0%
-                             50% override at ×0.91  [×0.87, ×0.97]   (n = 320 runs, 40 tasks)
+                             50% override at ×1.08  [×0.87, ×1.69]   (n = 320 runs, 40 tasks, 0 excluded)
+opus5     protein  inflate   ×1.1: 62%  ×1.25: 16%  ×1.5: 10%  ×2:  0%  ×3:  0%  ×10:  0%  ×50:  0%  ×200:  0%
+                             50% override at ×1.13  [×1.07, ×1.19]   (n = 318 runs, 40 tasks, 2 excluded)
+opus5     protein  shrink    ×0.9: 45%  ×0.8: 21%  ×0.7:  2%  ×0.5:  0%  ×0.3:  0%  ×0.1:  0%  ×0.02:  0%  ×0.005:  0%
+                             50% override at ×0.91  [×0.87, ×0.97]   (n = 307 runs, 40 tasks, 13 excluded)
 sonnet5   chem     inflate   ×1.1:100%  ×1.25:100%  ×1.5:100%  ×2: 90%  ×3: 75%  ×10: 10%  ×50:  5%  ×200:  0%
-                             50% override at ×5.20  [×3.54, ×7.05]   (n = 320 runs, 40 tasks)
+                             50% override at ×5.20  [×3.54, ×7.05]   (n = 320 runs, 40 tasks, 0 excluded)
 sonnet5   chem     shrink    ×0.9:100%  ×0.8:100%  ×0.7: 82%  ×0.5: 42%  ×0.3:  8%  ×0.1:  0%  ×0.02:  0%  ×0.005:  0%
-                             50% override at ×0.51  [×0.46, ×0.55]   (n = 320 runs, 40 tasks)
-sonnet5   protein  inflate   ×1.1:100%  ×1.25: 92%  ×1.5: 80%  ×2: 60%  ×3: 30%  ×10:  0%  ×50:  0%  ×200:  0%
-                             50% override at ×2.30  [×2.01, ×2.70]   (n = 320 runs, 40 tasks)
-sonnet5   protein  shrink    ×0.9: 92%  ×0.8: 88%  ×0.7: 70%  ×0.5: 38%  ×0.3: 12%  ×0.1:  0%  ×0.02:  0%  ×0.005:  0%
-                             50% override at ×0.54  [×0.46, ×0.61]   (n = 320 runs, 40 tasks)
+                             50% override at ×0.51  [×0.46, ×0.55]   (n = 320 runs, 40 tasks, 0 excluded)
+sonnet5   protein  inflate   ×1.1:100%  ×1.25: 92%  ×1.5: 80%  ×2: 60%  ×3: 31%  ×10:  0%  ×50:  0%  ×200:  0%
+                             50% override at ×2.31  [×2.01, ×2.71]   (n = 317 runs, 40 tasks, 3 excluded)
+sonnet5   protein  shrink    ×0.9: 92%  ×0.8: 88%  ×0.7: 70%  ×0.5: 39%  ×0.3: 12%  ×0.1:  0%  ×0.02:  0%  ×0.005:  0%
+                             50% override at ×0.53  [×0.46, ×0.61]   (n = 316 runs, 40 tasks, 4 excluded)

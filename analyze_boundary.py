@@ -7,12 +7,15 @@ from analysis import load_runs, score
 import numpy as np
 from scipy.optimize import minimize
 
-rows = defaultdict(list)
+rows = defaultdict(list); dropped = defaultdict(int)
 for f in sorted(glob.glob("results/boundary/traces_*.jsonl")):
     model, domain, direction = re.match(r".*/traces_(\w+?)_(protein|chem)_(shrink|inflate)\.jsonl", f).groups()
-    for r in load_runs([f]):
+    for r in {(x.get("run_key") or id(x)): x for x in load_runs([f])}.values():  # last record per run wins
         s = score(r)
         if s["base_condition"] == "clean": continue
+        tr = r.get("trace") or {}
+        if tr.get("error") or not tr.get("parsed_ok", True):  # failed at the API or no parseable answer
+            dropped[(model, domain, direction)] += 1; continue
         rows[(model, domain, direction)].append((float(s["base_condition"][1:].split("_")[0]), s["task_id"], bool(s["propagated"])))
 
 def fit50(data):
@@ -34,4 +37,4 @@ for key in sorted(rows):
     to_f = lambda v: float("nan") if math.isnan(v) else (math.exp(-v) if direction == "shrink" else math.exp(v))
     a, b = sorted([to_f(lo), to_f(hi)])
     print(f"{model:9s} {domain:8s} {direction:8s}  {curve}")
-    print(f"{'':28s} 50% override at ×{to_f(x50):.2f}  [×{a:.2f}, ×{b:.2f}]   (n = {len(data)} runs, {len(tasks)} tasks)")
+    print(f"{'':28s} 50% override at ×{to_f(x50):.2f}  [×{a:.2f}, ×{b:.2f}]   (n = {len(data)} runs, {len(tasks)} tasks, {dropped[key]} excluded)")
