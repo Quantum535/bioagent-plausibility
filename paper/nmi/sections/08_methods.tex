@@ -18,8 +18,7 @@ feature annotations, or, for compounds, the summary fields plus IUPAC name, mole
 \textbf{Conditions.} In the clean condition all records are returned unchanged. In the impossible condition the target field of
 the target record holds a value no real entity can have: a length of 3 or 60,000 residues; a mass of 45~Da, a negative mass or
 $9\times10^{9}$~Da; the organism \textit{Escherichia coli} K-12 for a protein located in a eukaryote-only compartment; or a
-fabricated gene symbol. For compounds, impossible values include a molecular weight of $9\times10^{9}$~Da, 0 or 50,000 heavy atoms,
-and a fabricated name. Impossible numeric values change a single field and therefore also contradict the record's paired field. In
+fabricated gene symbol. For compounds, impossible values are a molecular weight of $9\times10^{9}$~Da, 2~Da or the negative of the true weight; 0 or 50,000 heavy atoms; $-3$ or 500 hydrogen-bond donors; and a fabricated name. Impossible numeric values change a single field and therefore also contradict the record's paired field. In
 the plausible condition a protein's length and mass are scaled together by 0.75--0.8 or 1.2--1.25, so the summary record stays
 internally consistent, and compound weights and heavy-atom counts are scaled in the same way; identifiers are replaced by another
 real entity's value (another protein's gene symbol, the organism \textit{Mus musculus}, or another benchmark compound's name), and a compound's hydrogen-bond donor count is changed by one.
@@ -69,7 +68,7 @@ rest.uniprot.org or pubchem.ncbi.nlm.nih.gov and passed through the proxy (48 of
 each request and served it to every condition, so conditions differed only in the corruption, which an addon applied to the target
 field in JSON and flat-file responses. Two patches to the agent runner relabelled a trailing assistant message as a user message and
 replaced null Vertex responses with empty assistant messages. Each of 300 tasks ran once per condition and model (900 runs per
-model). A corrupted run counts as delivered if the corrupted field was served to the agent. Hypotheses were registered before the
+model). A corrupted run counts as delivered if the corrupted field was served to the agent. For the derivation-route comparison, protein length and mass and compound molecular weight and heavy-atom count counted as fields with an exact route, and all other fields formed the comparison group; odds ratios are crude, with Woolf 95\% intervals and two-sided Fisher exact tests. Counting hydrogen-bond donors as exact-route fields gives odds ratios of 11.3 (5.2--24.6) and 3.8 (2.0--7.1). Hypotheses were registered before the
 full runs (OSF vq5cp).
 
 \subsection*{Override boundaries}

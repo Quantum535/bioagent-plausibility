@@ -131,7 +131,7 @@ def fig1():
     F = {"deepseek": biomni_fields("results/biomni_full_deepseek"), "flash": biomni_fields("results/biomni_full_flash")}
     ROWS = [("length", "length"), ("mass", "mass"), ("organism", "organism"), ("gene_symbol", "gene symbol"),
             ("molecular_weight", "molecular weight"), ("heavy_atom_count", "heavy-atom count"), ("h_bond_donors", "H-bond donors"), ("name", "compound name")]
-    EXACT = {"length", "mass", "molecular_weight", "heavy_atom_count", "h_bond_donors"}
+    EXACT = {"length", "mass", "molecular_weight", "heavy_atom_count"}
     if any(F.values()):
         axc.axhspan(3.5, 7.5, color="#f4f4f4", zorder=0)
         for i, (fk, _) in enumerate(ROWS):
@@ -144,7 +144,7 @@ def fig1():
         axc.set_yticks(range(len(ROWS))); axc.set_yticklabels([l for _, l in ROWS]); axc.set_ylim(len(ROWS) - 0.5, -0.5); axc.set_xlim(0, 105)
         axc.grid(axis="y", visible=False); axc.set_xlabel("Plausible value relayed (%)"); axc.set_title("Relay by field, plausible values", loc="left")
         axc.legend(handles=[Line2D([], [], marker="o", ls="", color=COL[m], label=NAME[m]) for m in ("deepseek", "flash")]
-                   + [Line2D([], [], marker="o", ls="", color=INK, label="exact derivation route"), Line2D([], [], marker="D", ls="", mfc="white", mec=INK, label="no route")],
+                   + [Line2D([], [], marker="o", ls="", color=INK, label="exact-route field"), Line2D([], [], marker="D", ls="", mfc="white", mec=INK, label="other field")],
                    loc="upper center", bbox_to_anchor=(0.5, -0.2), ncol=2, frameon=False)
     else:
         axc.axis("off"); axc.text(0.5, 0.5, "per-field breakdown not parsed (see console)", ha="center", va="center", color="#c0392b")
