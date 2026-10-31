@@ -1,11 +1,7 @@
 \subsection*{Self-consistent errors pass, even when impossible}
 The full-record result suggests that agents correct a value when the record contradicts it. To measure how large a contradiction
 must be, we scaled one field of the full record by factors from $\times0.005$ to $\times200$ and scaled its paired field alike,
-so that only the sequence or formula disagreed with the value (Methods; 40 tasks per factor and direction). Every model overrode
-large contradictions, but the change at which half of runs overrode differed by model: within about 20\% for Opus~5, Gemini~4~Argon
-and Gemini~3.8~Flash, 50--80\% for DeepSeek~V4.1~Flash, and roughly twofold for Sonnet~5 ($\times0.54$ and $\times2.30$ for
-proteins; Fig.~\ref{fig:boundary}). Within each model, boundaries were similar for proteins and chemistry. They did not transfer
-to new compounds, however: in a registered follow-up, the same corruption applied to 60 other compounds was relayed more often
+so that only the sequence or formula disagreed with the value (Methods; 40 tasks per factor and direction). Every model overrode large contradictions, but the change at which half of runs overrode differed by model (Fig.~\ref{fig:boundary}). For proteins it lay within 20\% of the true value for Opus 5, Gemini 4 Argon and Gemini 3.8 Flash ($\times$0.85--0.91 for decreased values, $\times$1.04--1.20 for increased ones) but required about a twofold change for Sonnet 5 ($\times$0.53 and $\times$2.31) and DeepSeek V4.1 Flash ($\times$0.43 and $\times$1.80). A model's boundaries for molecules resembled its boundaries for proteins for Opus 5 and Gemini 3.8 Flash, but not for the others: Sonnet 5 relayed increased molecular weights up to about fivefold ($\times$5.20), DeepSeek overrode decreased weights from $\times$0.95, against $\times$0.43 for proteins, and Argon needed a larger decrease for molecules ($\times$0.68) than for proteins ($\times$0.85). Chemistry boundaries also failed to transfer to new compounds: in a registered follow-up, the same corruption applied to 60 other compounds was relayed more often
 than the curves predicted for three of five models (5 of 10 prediction intervals met).
 % src: results/boundary/fits.txt; results/phase4/RESULTS.md (Phase 4b, E1)
 

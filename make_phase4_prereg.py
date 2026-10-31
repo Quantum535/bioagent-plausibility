@@ -3,7 +3,8 @@ factors actually used in the Phase 4 tasks, plus hypotheses and analysis plan. W
 import re, math, json, datetime, subprocess
 from pathlib import Path
 fits = {}
-for line in open("results/boundary/fits.txt"):
+# Registered predictions used the boundary curves as first computed (v1); fits.txt now holds the corrected refit.
+for line in open("results/boundary/fits_v1_failed_runs_counted.txt"):
     m = re.match(r"^(\w+)\s+chem\s+(shrink|inflate)\s+(.*)$", line.strip())
     if m: fits[(m.group(1), m.group(2))] = {float(a): int(b) / 100 for a, b in re.findall(r"×([\d.]+):\s*(\d+)%", m.group(3))}
 def interp(curve, f):
