@@ -1,0 +1,11 @@
+\begin{tabular}{lp{7.6cm}clc}
+\toprule
+template & prompt (before the answer-field sentence) & calls & graded answer & tasks \\
+\midrule
+length threshold & Does protein \{acc\} have more than \{T\} residues? Answer yes or no and give the count. & 1 & yes/no & 5 \\
+length ratio & Is \{gene\_A\} at least twice as long as \{gene\_B\}? Answer yes or no with both lengths. & 2 & yes/no & 5 \\
+mass comparison & Which is heavier, the protein encoded by \{gene\_A\} or \{gene\_B\}? Give the gene symbol and both masses in kDa. & 2 & gene symbol & 10 \\
+organism & What organism is \{acc\} from, and is it a mammal? Answer with organism and yes/no. & 1 & organism & 10 \\
+gene symbol & What gene encodes \{acc\}? Answer with the gene symbol. & 1 & gene symbol & 10 \\
+\bottomrule
+\end{tabular}

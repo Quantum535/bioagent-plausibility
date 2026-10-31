@@ -1,0 +1,20 @@
+\begin{tabular}{lrrrrrrrr}
+\toprule
+& \multicolumn{4}{c}{baseline prompt} & \multicolumn{4}{c}{+verify} \\
+\cmidrule(lr){2-5}\cmidrule(lr){6-9}
+& \multicolumn{2}{c}{impossible} & \multicolumn{2}{c}{plausible} & \multicolumn{2}{c}{impossible} & \multicolumn{2}{c}{plausible} \\
+\cmidrule(lr){2-3}\cmidrule(lr){4-5}\cmidrule(lr){6-7}\cmidrule(lr){8-9}
+model & flagged & propagated & flagged & propagated & flagged & propagated & flagged & propagated \\
+\midrule
+Opus 5 & 100 & 32 [26,39] & 57 & 75 [69,80] & 100 & 4 [2,8] & 88 & 72 [65,78] \\
+Gemini 4 Argon & 100 & 35 [29,42] & 94 & 74 [67,79] & 100 & 5 [3,9] & 98 & 50 [43,57] \\
+DeepSeek V4.1 Flash & 100 & 44 [37,51] & 46 & 77 [71,82] & 100 & 10 [7,16] & 73 & 72 [65,78] \\
+GPT-6.1 Sol & 100 & 66 [60,73] & 52 & 75 [69,80] & 100 & 18 [13,24] & 96 & 46 [39,53] \\
+GPT-6 Luna & 76 & 73 [66,79] & 17 & 86 [80,90] & 99 & 13 [9,18] & 51 & 64 [57,70] \\
+Kimi K3 & 100 & 74 [68,80] & 29 & 92 [87,95] & 100 & 22 [17,28] & 66 & 74 [68,80] \\
+Sonnet 5 & 100 & 76 [69,81] & 32 & 92 [88,95] & 100 & 30 [24,37] & 50 & 80 [73,85] \\
+Sonnet 4.6 & 100 & 83 [77,88] & 25 & 100 [97,100] & 100 & 59 [52,66] & 42 & 86 [81,91] \\
+Gemini 3.8 Flash & 98 & 84 [78,88] & 32 & 78 [71,83] & 98 & 15 [11,21] & 58 & 73 [66,79] \\
+Haiku 4.5 & 74 & 93 [89,96] & 8 & 100 [98,100] & 86 & 84 [78,88] & 17 & 100 [97,100] \\
+\bottomrule
+\end{tabular}

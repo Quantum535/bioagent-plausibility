@@ -1,0 +1,1182 @@
+{
+ "taxonomy": {
+  "impossible|all": {
+   "n_flagged": 456,
+   "crossfield": 0.5877192982456141,
+   "recall": 0.4473684210526316,
+   "rule": 0.2324561403508772,
+   "none": 0.15570175438596492
+  },
+  "impossible|claude-haiku-4-5": {
+   "n_flagged": 30,
+   "crossfield": 0.2,
+   "recall": 0.3333333333333333,
+   "rule": 0.2,
+   "none": 0.36666666666666664
+  },
+  "impossible|claude-sonnet-4-6": {
+   "n_flagged": 39,
+   "crossfield": 0.5897435897435898,
+   "recall": 0.7435897435897436,
+   "rule": 0.2564102564102564,
+   "none": 0.07692307692307693
+  },
+  "impossible|claude-sonnet-5": {
+   "n_flagged": 120,
+   "crossfield": 0.7,
+   "recall": 0.525,
+   "rule": 0.23333333333333334,
+   "none": 0.03333333333333333
+  },
+  "impossible|claude-opus-5": {
+   "n_flagged": 40,
+   "crossfield": 0.725,
+   "recall": 0.45,
+   "rule": 0.35,
+   "none": 0.05
+  },
+  "impossible|gemini:gemini-3.8-flash": {
+   "n_flagged": 40,
+   "crossfield": 0.5,
+   "recall": 0.5,
+   "rule": 0.325,
+   "none": 0.1
+  },
+  "impossible|gemini:gemini-4-argon": {
+   "n_flagged": 40,
+   "crossfield": 0.55,
+   "recall": 0.525,
+   "rule": 0.325,
+   "none": 0.225
+  },
+  "impossible|together:deepseek-ai/DeepSeek-V4.1-Flash-1017": {
+   "n_flagged": 39,
+   "crossfield": 0.6666666666666666,
+   "recall": 0.4358974358974359,
+   "rule": 0.15384615384615385,
+   "none": 0.1282051282051282
+  },
+  "impossible|together:moonshotai/Kimi-K3": {
+   "n_flagged": 40,
+   "crossfield": 0.675,
+   "recall": 0.575,
+   "rule": 0.225,
+   "none": 0.075
+  },
+  "impossible|openai:gpt-6-luna": {
+   "n_flagged": 28,
+   "crossfield": 0.5,
+   "recall": 0.07142857142857142,
+   "rule": 0.17857142857142858,
+   "none": 0.32142857142857145
+  },
+  "impossible|openai:gpt-6.1-sol": {
+   "n_flagged": 40,
+   "crossfield": 0.425,
+   "recall": 0.025,
+   "rule": 0.05,
+   "none": 0.525
+  },
+  "plausible|all": {
+   "n_flagged": 181,
+   "crossfield": 0.6132596685082873,
+   "recall": 0.4972375690607735,
+   "rule": 0.0,
+   "none": 0.20441988950276244
+  },
+  "plausible|claude-haiku-4-5": {
+   "n_flagged": 7,
+   "crossfield": 0.8571428571428571,
+   "recall": 0.5714285714285714,
+   "rule": 0.0,
+   "none": 0.0
+  },
+  "plausible|claude-sonnet-4-6": {
+   "n_flagged": 11,
+   "crossfield": 0.9090909090909091,
+   "recall": 1.0,
+   "rule": 0.0,
+   "none": 0.0
+  },
+  "plausible|claude-sonnet-5": {
+   "n_flagged": 37,
+   "crossfield": 0.7837837837837838,
+   "recall": 0.7567567567567568,
+   "rule": 0.0,
+   "none": 0.13513513513513514
+  },
+  "plausible|claude-opus-5": {
+   "n_flagged": 23,
+   "crossfield": 0.6521739130434783,
+   "recall": 0.391304347826087,
+   "rule": 0.0,
+   "none": 0.13043478260869565
+  },
+  "plausible|gemini:gemini-3.8-flash": {
+   "n_flagged": 12,
+   "crossfield": 0.6666666666666666,
+   "recall": 0.16666666666666666,
+   "rule": 0.0,
+   "none": 0.25
+  },
+  "plausible|gemini:gemini-4-argon": {
+   "n_flagged": 37,
+   "crossfield": 0.2972972972972973,
+   "recall": 0.5675675675675675,
+   "rule": 0.0,
+   "none": 0.2702702702702703
+  },
+  "plausible|together:deepseek-ai/DeepSeek-V4.1-Flash-1017": {
+   "n_flagged": 18,
+   "crossfield": 0.6666666666666666,
+   "recall": 0.2777777777777778,
+   "rule": 0.0,
+   "none": 0.2222222222222222
+  },
+  "plausible|together:moonshotai/Kimi-K3": {
+   "n_flagged": 11,
+   "crossfield": 0.8181818181818182,
+   "recall": 0.6363636363636364,
+   "rule": 0.0,
+   "none": 0.09090909090909091
+  },
+  "plausible|openai:gpt-6-luna": {
+   "n_flagged": 6,
+   "crossfield": 0.5,
+   "recall": 0.0,
+   "rule": 0.0,
+   "none": 0.5
+  },
+  "plausible|openai:gpt-6.1-sol": {
+   "n_flagged": 19,
+   "crossfield": 0.42105263157894735,
+   "recall": 0.15789473684210525,
+   "rule": 0.0,
+   "none": 0.42105263157894735
+  },
+  "sweep consistent|all": {
+   "n_flagged": 843,
+   "crossfield": 0.04744958481613286,
+   "recall": 0.6204033214709371,
+   "rule": 0.03440094899169632,
+   "none": 0.3499406880189798
+  },
+  "sweep consistent|claude-haiku-4-5": {
+   "n_flagged": 59,
+   "crossfield": 0.05084745762711865,
+   "recall": 0.22033898305084745,
+   "rule": 0.1864406779661017,
+   "none": 0.6440677966101694
+  },
+  "sweep consistent|claude-sonnet-4-6": {
+   "n_flagged": 0,
+   "crossfield": null,
+   "recall": null,
+   "rule": null,
+   "none": null
+  },
+  "sweep consistent|claude-sonnet-5": {
+   "n_flagged": 102,
+   "crossfield": 0.029411764705882353,
+   "recall": 0.696078431372549,
+   "rule": 0.11764705882352941,
+   "none": 0.2647058823529412
+  },
+  "sweep consistent|claude-opus-5": {
+   "n_flagged": 115,
+   "crossfield": 0.06956521739130435,
+   "recall": 0.9043478260869565,
+   "rule": 0.008695652173913044,
+   "none": 0.0782608695652174
+  },
+  "sweep consistent|gemini:gemini-3.8-flash": {
+   "n_flagged": 91,
+   "crossfield": 0.03296703296703297,
+   "recall": 0.8461538461538461,
+   "rule": 0.01098901098901099,
+   "none": 0.13186813186813187
+  },
+  "sweep consistent|gemini:gemini-4-argon": {
+   "n_flagged": 136,
+   "crossfield": 0.0661764705882353,
+   "recall": 1.0,
+   "rule": 0.0,
+   "none": 0.0
+  },
+  "sweep consistent|together:deepseek-ai/DeepSeek-V4.1-Flash-1017": {
+   "n_flagged": 99,
+   "crossfield": 0.08080808080808081,
+   "recall": 0.6565656565656566,
+   "rule": 0.010101010101010102,
+   "none": 0.32323232323232326
+  },
+  "sweep consistent|together:moonshotai/Kimi-K3": {
+   "n_flagged": 87,
+   "crossfield": 0.06896551724137931,
+   "recall": 0.6206896551724138,
+   "rule": 0.011494252873563218,
+   "none": 0.3218390804597701
+  },
+  "sweep consistent|openai:gpt-6-luna": {
+   "n_flagged": 67,
+   "crossfield": 0.0,
+   "recall": 0.0,
+   "rule": 0.029850746268656716,
+   "none": 0.9701492537313433
+  },
+  "sweep consistent|openai:gpt-6.1-sol": {
+   "n_flagged": 87,
+   "crossfield": 0.0,
+   "recall": 0.034482758620689655,
+   "rule": 0.0,
+   "none": 0.9655172413793104
+  },
+  "sweep inconsistent|all": {
+   "n_flagged": 944,
+   "crossfield": 0.8580508474576272,
+   "recall": 0.6048728813559322,
+   "rule": 0.06991525423728813,
+   "none": 0.07203389830508475
+  },
+  "sweep inconsistent|claude-haiku-4-5": {
+   "n_flagged": 61,
+   "crossfield": 0.5737704918032787,
+   "recall": 0.47540983606557374,
+   "rule": 0.06557377049180328,
+   "none": 0.29508196721311475
+  },
+  "sweep inconsistent|claude-sonnet-4-6": {
+   "n_flagged": 0,
+   "crossfield": null,
+   "recall": null,
+   "rule": null,
+   "none": null
+  },
+  "sweep inconsistent|claude-sonnet-5": {
+   "n_flagged": 106,
+   "crossfield": 0.8018867924528302,
+   "recall": 0.39622641509433965,
+   "rule": 0.009433962264150943,
+   "none": 0.16037735849056603
+  },
+  "sweep inconsistent|claude-opus-5": {
+   "n_flagged": 119,
+   "crossfield": 0.9915966386554622,
+   "recall": 0.5630252100840336,
+   "rule": 0.05042016806722689,
+   "none": 0.008403361344537815
+  },
+  "sweep inconsistent|gemini:gemini-3.8-flash": {
+   "n_flagged": 113,
+   "crossfield": 0.7876106194690266,
+   "recall": 0.7345132743362832,
+   "rule": 0.1504424778761062,
+   "none": 0.035398230088495575
+  },
+  "sweep inconsistent|gemini:gemini-4-argon": {
+   "n_flagged": 140,
+   "crossfield": 0.8357142857142857,
+   "recall": 0.85,
+   "rule": 0.2,
+   "none": 0.014285714285714285
+  },
+  "sweep inconsistent|together:deepseek-ai/DeepSeek-V4.1-Flash-1017": {
+   "n_flagged": 105,
+   "crossfield": 0.8952380952380953,
+   "recall": 0.6666666666666666,
+   "rule": 0.05714285714285714,
+   "none": 0.0380952380952381
+  },
+  "sweep inconsistent|together:moonshotai/Kimi-K3": {
+   "n_flagged": 104,
+   "crossfield": 0.9711538461538461,
+   "recall": 0.5961538461538461,
+   "rule": 0.019230769230769232,
+   "none": 0.009615384615384616
+  },
+  "sweep inconsistent|openai:gpt-6-luna": {
+   "n_flagged": 77,
+   "crossfield": 0.922077922077922,
+   "recall": 0.4935064935064935,
+   "rule": 0.0,
+   "none": 0.06493506493506493
+  },
+  "sweep inconsistent|openai:gpt-6.1-sol": {
+   "n_flagged": 119,
+   "crossfield": 0.8403361344537815,
+   "recall": 0.5126050420168067,
+   "rule": 0.01680672268907563,
+   "none": 0.13445378151260504
+  }
+ },
+ "cue_propagation": {
+  "impossible|crossfield": {
+   "n": 268,
+   "propagated": 0.8395522388059702
+  },
+  "impossible|recall": {
+   "n": 204,
+   "propagated": 0.8235294117647058
+  },
+  "impossible|rule": {
+   "n": 106,
+   "propagated": 0.22641509433962265
+  },
+  "plausible|crossfield": {
+   "n": 111,
+   "propagated": 0.5945945945945946
+  },
+  "plausible|recall": {
+   "n": 90,
+   "propagated": 0.9444444444444444
+  },
+  "plausible|rule": {
+   "n": 0,
+   "propagated": null
+  }
+ },
+ "bootstrap": {
+  "claude-haiku-4-5|impossible": {
+   "n": 40,
+   "rate": 0.85,
+   "wilson": [
+    0.7092737396097997,
+    0.9293890829149256
+   ],
+   "cluster_boot": [
+    0.75,
+    0.95
+   ],
+   "flag_rate": 0.75,
+   "flag_boot": [
+    0.625,
+    0.875
+   ]
+  },
+  "claude-haiku-4-5|impossible+verify": {
+   "n": 40,
+   "rate": 0.775,
+   "wilson": [
+    0.6249660359590695,
+    0.8768404674532148
+   ],
+   "cluster_boot": [
+    0.65,
+    0.9
+   ],
+   "flag_rate": 0.85,
+   "flag_boot": [
+    0.725,
+    0.95
+   ]
+  },
+  "claude-haiku-4-5|plausible": {
+   "n": 40,
+   "rate": 1.0,
+   "wilson": [
+    0.9123754607496077,
+    1.0
+   ],
+   "cluster_boot": [
+    1.0,
+    1.0
+   ],
+   "flag_rate": 0.175,
+   "flag_boot": [
+    0.075,
+    0.3
+   ]
+  },
+  "claude-haiku-4-5|plausible+verify": {
+   "n": 40,
+   "rate": 1.0,
+   "wilson": [
+    0.9123754607496077,
+    1.0
+   ],
+   "cluster_boot": [
+    1.0,
+    1.0
+   ],
+   "flag_rate": 0.15,
+   "flag_boot": [
+    0.05,
+    0.275
+   ]
+  },
+  "claude-sonnet-4-6|impossible": {
+   "n": 40,
+   "rate": 0.8,
+   "wilson": [
+    0.6524239261814333,
+    0.8950013502683314
+   ],
+   "cluster_boot": [
+    0.675,
+    0.925
+   ],
+   "flag_rate": 0.975,
+   "flag_boot": [
+    0.925,
+    1.0
+   ]
+  },
+  "claude-sonnet-4-6|impossible+verify": {
+   "n": 40,
+   "rate": 0.6,
+   "wilson": [
+    0.445956198273935,
+    0.7365188938759863
+   ],
+   "cluster_boot": [
+    0.45,
+    0.75
+   ],
+   "flag_rate": 1.0,
+   "flag_boot": [
+    1.0,
+    1.0
+   ]
+  },
+  "claude-sonnet-4-6|plausible": {
+   "n": 40,
+   "rate": 1.0,
+   "wilson": [
+    0.9123754607496077,
+    1.0
+   ],
+   "cluster_boot": [
+    1.0,
+    1.0
+   ],
+   "flag_rate": 0.275,
+   "flag_boot": [
+    0.15,
+    0.425
+   ]
+  },
+  "claude-sonnet-4-6|plausible+verify": {
+   "n": 40,
+   "rate": 0.9,
+   "wilson": [
+    0.7694792561952611,
+    0.9604211124044252
+   ],
+   "cluster_boot": [
+    0.8,
+    0.975
+   ],
+   "flag_rate": 0.4,
+   "flag_boot": [
+    0.25,
+    0.55
+   ]
+  },
+  "claude-sonnet-5|impossible": {
+   "n": 120,
+   "rate": 0.7416666666666667,
+   "wilson": [
+    0.6567130404034741,
+    0.8116271619194934
+   ],
+   "cluster_boot": [
+    0.625,
+    0.85
+   ],
+   "flag_rate": 1.0,
+   "flag_boot": [
+    1.0,
+    1.0
+   ]
+  },
+  "claude-sonnet-5|impossible+verify": {
+   "n": 120,
+   "rate": 0.38333333333333336,
+   "wilson": [
+    0.30124387764148153,
+    0.47266085227156884
+   ],
+   "cluster_boot": [
+    0.25,
+    0.525
+   ],
+   "flag_rate": 1.0,
+   "flag_boot": [
+    1.0,
+    1.0
+   ]
+  },
+  "claude-sonnet-5|plausible": {
+   "n": 120,
+   "rate": 0.975,
+   "wilson": [
+    0.9290687625956524,
+    0.9914619799012145
+   ],
+   "cluster_boot": [
+    0.9333333333333333,
+    1.0
+   ],
+   "flag_rate": 0.30833333333333335,
+   "flag_boot": [
+    0.175,
+    0.44166666666666665
+   ]
+  },
+  "claude-sonnet-5|plausible+verify": {
+   "n": 120,
+   "rate": 0.8083333333333333,
+   "wilson": [
+    0.7287868300416364,
+    0.8687506694738739
+   ],
+   "cluster_boot": [
+    0.6833333333333333,
+    0.9166666666666666
+   ],
+   "flag_rate": 0.5333333333333333,
+   "flag_boot": [
+    0.39166666666666666,
+    0.675
+   ]
+  },
+  "claude-opus-5|impossible": {
+   "n": 40,
+   "rate": 0.45,
+   "wilson": [
+    0.30705075280944694,
+    0.6017117011155924
+   ],
+   "cluster_boot": [
+    0.3,
+    0.6
+   ],
+   "flag_rate": 1.0,
+   "flag_boot": [
+    1.0,
+    1.0
+   ]
+  },
+  "claude-opus-5|impossible+verify": {
+   "n": 40,
+   "rate": 0.1,
+   "wilson": [
+    0.03957888759557486,
+    0.23052074380473897
+   ],
+   "cluster_boot": [
+    0.025,
+    0.2
+   ],
+   "flag_rate": 1.0,
+   "flag_boot": [
+    1.0,
+    1.0
+   ]
+  },
+  "claude-opus-5|plausible": {
+   "n": 40,
+   "rate": 0.75,
+   "wilson": [
+    0.598057409330299,
+    0.8581303210445048
+   ],
+   "cluster_boot": [
+    0.624375,
+    0.875
+   ],
+   "flag_rate": 0.575,
+   "flag_boot": [
+    0.425,
+    0.725
+   ]
+  },
+  "claude-opus-5|plausible+verify": {
+   "n": 40,
+   "rate": 0.75,
+   "wilson": [
+    0.598057409330299,
+    0.8581303210445048
+   ],
+   "cluster_boot": [
+    0.6,
+    0.875
+   ],
+   "flag_rate": 0.875,
+   "flag_boot": [
+    0.775,
+    0.975
+   ]
+  },
+  "gemini:gemini-3.8-flash|impossible": {
+   "n": 40,
+   "rate": 0.8,
+   "wilson": [
+    0.6524239261814333,
+    0.8950013502683314
+   ],
+   "cluster_boot": [
+    0.675,
+    0.925
+   ],
+   "flag_rate": 1.0,
+   "flag_boot": [
+    1.0,
+    1.0
+   ]
+  },
+  "gemini:gemini-3.8-flash|impossible+verify": {
+   "n": 40,
+   "rate": 0.15,
+   "wilson": [
+    0.07061091708507435,
+    0.2907262603902003
+   ],
+   "cluster_boot": [
+    0.05,
+    0.275
+   ],
+   "flag_rate": 0.975,
+   "flag_boot": [
+    0.925,
+    1.0
+   ]
+  },
+  "gemini:gemini-3.8-flash|plausible": {
+   "n": 40,
+   "rate": 0.775,
+   "wilson": [
+    0.6249660359590695,
+    0.8768404674532148
+   ],
+   "cluster_boot": [
+    0.65,
+    0.9
+   ],
+   "flag_rate": 0.3,
+   "flag_boot": [
+    0.175,
+    0.425
+   ]
+  },
+  "gemini:gemini-3.8-flash|plausible+verify": {
+   "n": 40,
+   "rate": 0.725,
+   "wilson": [
+    0.5716474916687543,
+    0.8389214656685692
+   ],
+   "cluster_boot": [
+    0.575,
+    0.85
+   ],
+   "flag_rate": 0.6,
+   "flag_boot": [
+    0.45,
+    0.75
+   ]
+  },
+  "gemini:gemini-4-argon|impossible": {
+   "n": 40,
+   "rate": 0.45,
+   "wilson": [
+    0.30705075280944694,
+    0.6017117011155924
+   ],
+   "cluster_boot": [
+    0.3,
+    0.6
+   ],
+   "flag_rate": 1.0,
+   "flag_boot": [
+    1.0,
+    1.0
+   ]
+  },
+  "gemini:gemini-4-argon|impossible+verify": {
+   "n": 40,
+   "rate": 0.025,
+   "wilson": [
+    0.0044267174077949195,
+    0.1288165948800778
+   ],
+   "cluster_boot": [
+    0.0,
+    0.075
+   ],
+   "flag_rate": 1.0,
+   "flag_boot": [
+    1.0,
+    1.0
+   ]
+  },
+  "gemini:gemini-4-argon|plausible": {
+   "n": 40,
+   "rate": 0.75,
+   "wilson": [
+    0.598057409330299,
+    0.8581303210445048
+   ],
+   "cluster_boot": [
+    0.6,
+    0.875
+   ],
+   "flag_rate": 0.925,
+   "flag_boot": [
+    0.85,
+    1.0
+   ]
+  },
+  "gemini:gemini-4-argon|plausible+verify": {
+   "n": 40,
+   "rate": 0.65,
+   "wilson": [
+    0.4950559699353738,
+    0.7786566682895086
+   ],
+   "cluster_boot": [
+    0.5,
+    0.8
+   ],
+   "flag_rate": 0.95,
+   "flag_boot": [
+    0.875,
+    1.0
+   ]
+  },
+  "together:deepseek-ai/DeepSeek-V4.1-Flash-1017|impossible": {
+   "n": 40,
+   "rate": 0.5,
+   "wilson": [
+    0.35199278797099753,
+    0.6480072120290025
+   ],
+   "cluster_boot": [
+    0.35,
+    0.65
+   ],
+   "flag_rate": 0.975,
+   "flag_boot": [
+    0.925,
+    1.0
+   ]
+  },
+  "together:deepseek-ai/DeepSeek-V4.1-Flash-1017|impossible+verify": {
+   "n": 40,
+   "rate": 0.15,
+   "wilson": [
+    0.07061091708507435,
+    0.2907262603902003
+   ],
+   "cluster_boot": [
+    0.05,
+    0.275
+   ],
+   "flag_rate": 1.0,
+   "flag_boot": [
+    1.0,
+    1.0
+   ]
+  },
+  "together:deepseek-ai/DeepSeek-V4.1-Flash-1017|plausible": {
+   "n": 40,
+   "rate": 0.75,
+   "wilson": [
+    0.598057409330299,
+    0.8581303210445048
+   ],
+   "cluster_boot": [
+    0.6,
+    0.875
+   ],
+   "flag_rate": 0.45,
+   "flag_boot": [
+    0.3,
+    0.6
+   ]
+  },
+  "together:deepseek-ai/DeepSeek-V4.1-Flash-1017|plausible+verify": {
+   "n": 40,
+   "rate": 0.7,
+   "wilson": [
+    0.545696893456796,
+    0.8192532908430471
+   ],
+   "cluster_boot": [
+    0.55,
+    0.85
+   ],
+   "flag_rate": 0.625,
+   "flag_boot": [
+    0.475,
+    0.775
+   ]
+  },
+  "together:moonshotai/Kimi-K3|impossible": {
+   "n": 40,
+   "rate": 0.725,
+   "wilson": [
+    0.5716474916687543,
+    0.8389214656685692
+   ],
+   "cluster_boot": [
+    0.6,
+    0.85
+   ],
+   "flag_rate": 1.0,
+   "flag_boot": [
+    1.0,
+    1.0
+   ]
+  },
+  "together:moonshotai/Kimi-K3|impossible+verify": {
+   "n": 40,
+   "rate": 0.2,
+   "wilson": [
+    0.10499864973166874,
+    0.34757607381856676
+   ],
+   "cluster_boot": [
+    0.1,
+    0.325
+   ],
+   "flag_rate": 1.0,
+   "flag_boot": [
+    1.0,
+    1.0
+   ]
+  },
+  "together:moonshotai/Kimi-K3|plausible": {
+   "n": 40,
+   "rate": 0.95,
+   "wilson": [
+    0.834958291820748,
+    0.9861796228538989
+   ],
+   "cluster_boot": [
+    0.875,
+    1.0
+   ],
+   "flag_rate": 0.275,
+   "flag_boot": [
+    0.15,
+    0.425
+   ]
+  },
+  "together:moonshotai/Kimi-K3|plausible+verify": {
+   "n": 40,
+   "rate": 0.75,
+   "wilson": [
+    0.598057409330299,
+    0.8581303210445048
+   ],
+   "cluster_boot": [
+    0.6,
+    0.875
+   ],
+   "flag_rate": 0.625,
+   "flag_boot": [
+    0.475,
+    0.775
+   ]
+  },
+  "openai:gpt-6-luna|impossible": {
+   "n": 40,
+   "rate": 0.65,
+   "wilson": [
+    0.4950559699353738,
+    0.7786566682895086
+   ],
+   "cluster_boot": [
+    0.5,
+    0.8
+   ],
+   "flag_rate": 0.7,
+   "flag_boot": [
+    0.55,
+    0.85
+   ]
+  },
+  "openai:gpt-6-luna|impossible+verify": {
+   "n": 40,
+   "rate": 0.05,
+   "wilson": [
+    0.013820377146101098,
+    0.165041708179252
+   ],
+   "cluster_boot": [
+    0.0,
+    0.125
+   ],
+   "flag_rate": 1.0,
+   "flag_boot": [
+    1.0,
+    1.0
+   ]
+  },
+  "openai:gpt-6-luna|plausible": {
+   "n": 40,
+   "rate": 0.85,
+   "wilson": [
+    0.7092737396097997,
+    0.9293890829149256
+   ],
+   "cluster_boot": [
+    0.725,
+    0.95
+   ],
+   "flag_rate": 0.15,
+   "flag_boot": [
+    0.05,
+    0.275
+   ]
+  },
+  "openai:gpt-6-luna|plausible+verify": {
+   "n": 40,
+   "rate": 0.675,
+   "wilson": [
+    0.52017458088898,
+    0.7991568303733828
+   ],
+   "cluster_boot": [
+    0.525,
+    0.825
+   ],
+   "flag_rate": 0.425,
+   "flag_boot": [
+    0.275,
+    0.575
+   ]
+  },
+  "openai:gpt-6.1-sol|impossible": {
+   "n": 40,
+   "rate": 0.525,
+   "wilson": [
+    0.37497106853929735,
+    0.6706477044981831
+   ],
+   "cluster_boot": [
+    0.375,
+    0.675
+   ],
+   "flag_rate": 1.0,
+   "flag_boot": [
+    1.0,
+    1.0
+   ]
+  },
+  "openai:gpt-6.1-sol|impossible+verify": {
+   "n": 40,
+   "rate": 0.175,
+   "wilson": [
+    0.08745302996883066,
+    0.3195029205439244
+   ],
+   "cluster_boot": [
+    0.075,
+    0.3
+   ],
+   "flag_rate": 1.0,
+   "flag_boot": [
+    1.0,
+    1.0
+   ]
+  },
+  "openai:gpt-6.1-sol|plausible": {
+   "n": 40,
+   "rate": 0.75,
+   "wilson": [
+    0.598057409330299,
+    0.8581303210445048
+   ],
+   "cluster_boot": [
+    0.6,
+    0.875
+   ],
+   "flag_rate": 0.475,
+   "flag_boot": [
+    0.325,
+    0.625
+   ]
+  },
+  "openai:gpt-6.1-sol|plausible+verify": {
+   "n": 40,
+   "rate": 0.5,
+   "wilson": [
+    0.35199278797099753,
+    0.6480072120290025
+   ],
+   "cluster_boot": [
+    0.35,
+    0.6506249999999966
+   ],
+   "flag_rate": 0.925,
+   "flag_boot": [
+    0.85,
+    1.0
+   ]
+  }
+ },
+ "majority_sonnet5": {
+  "impossible": {
+   "n_tasks": 40,
+   "majority_rate": 0.825,
+   "unanimous": 0.75,
+   "majority_wilson": [
+    0.6804970794560755,
+    0.9125469700311694
+   ]
+  },
+  "impossible+verify": {
+   "n_tasks": 40,
+   "majority_rate": 0.35,
+   "unanimous": 0.85,
+   "majority_wilson": [
+    0.2213433317104915,
+    0.5049440300646263
+   ]
+  },
+  "plausible": {
+   "n_tasks": 40,
+   "majority_rate": 0.975,
+   "unanimous": 0.95,
+   "majority_wilson": [
+    0.8711834051199223,
+    0.9955732825922052
+   ]
+  },
+  "plausible+verify": {
+   "n_tasks": 40,
+   "majority_rate": 0.8,
+   "unanimous": 0.925,
+   "majority_wilson": [
+    0.6524239261814333,
+    0.8950013502683314
+   ]
+  }
+ },
+ "regression": {
+  "Intercept": {
+   "or": 7.564476723059585,
+   "ci": [
+    4.434706836656649,
+    12.903064441763583
+   ],
+   "p": 1.1126993410732761e-13
+  },
+  "C(model)[T.Haiku 4.5]": {
+   "or": 7.54216323276522,
+   "ci": [
+    3.002602846465586,
+    18.944971792268458
+   ],
+   "p": 1.7105096070491026e-05
+  },
+  "C(model)[T.Sonnet 4.6]": {
+   "or": 2.5447021515974493,
+   "ci": [
+    1.377043796754221,
+    4.702471377895074
+   ],
+   "p": 0.002871916330829686
+  },
+  "C(model)[T.Opus 5]": {
+   "or": 0.19650166382268336,
+   "ci": [
+    0.12462351170069923,
+    0.3098364294036037
+   ],
+   "p": 2.5036062949143025e-12
+  },
+  "C(model)[T.Gemini 3.8 Flash]": {
+   "or": 0.4058120616008568,
+   "ci": [
+    0.26686800555024653,
+    0.6170969389949243
+   ],
+   "p": 2.4724226486018297e-05
+  },
+  "C(model)[T.Gemini 4 Argon]": {
+   "or": 0.14382527267582737,
+   "ci": [
+    0.08978913961827086,
+    0.23038096977228228
+   ],
+   "p": 7.201042501819763e-16
+  },
+  "C(model)[T.DeepSeek V4.1 Flash]": {
+   "or": 0.21487147790182368,
+   "ci": [
+    0.13375863401735216,
+    0.3451721255595689
+   ],
+   "p": 2.0396434340974295e-10
+  },
+  "C(model)[T.Kimi K3]": {
+   "or": 0.5649030659656852,
+   "ci": [
+    0.3423168569033438,
+    0.9322224935815425
+   ],
+   "p": 0.025445233735894277
+  },
+  "C(model)[T.GPT-6 Luna]": {
+   "or": 0.26896185383874,
+   "ci": [
+    0.17140378858158106,
+    0.42204714037543384
+   ],
+   "p": 1.1126396388228167e-08
+  },
+  "C(model)[T.GPT-6.1 Sol]": {
+   "or": 0.1644012525458888,
+   "ci": [
+    0.08398091419815508,
+    0.3218323126952918
+   ],
+   "p": 1.3793631593451877e-07
+  },
+  "C(field)[T.length]": {
+   "or": 19.690519221563402,
+   "ci": [
+    11.040778846169639,
+    35.11677505878743
+   ],
+   "p": 5.7536562454796105e-24
+  },
+  "C(field)[T.mass]": {
+   "or": 4.422176286325529,
+   "ci": [
+    2.3165045388075107,
+    8.441875584412491
+   ],
+   "p": 6.592209719058743e-06
+  },
+  "C(field)[T.organism]": {
+   "or": 30.682647459303286,
+   "ci": [
+    17.53382491138232,
+    53.691927452791646
+   ],
+   "p": 3.912132992874236e-33
+  },
+  "impossible": {
+   "or": 0.07208955992401954,
+   "ci": [
+    0.030665595651451064,
+    0.16947020071312036
+   ],
+   "p": 1.6377785268348467e-09
+  },
+  "verify": {
+   "or": 0.13815975030088418,
+   "ci": [
+    0.09007510256560262,
+    0.2119133485227019
+   ],
+   "p": 1.2004515043190536e-19
+  }
+ },
+ "n_main": 2880,
+ "n_sweep": 2700
+}
