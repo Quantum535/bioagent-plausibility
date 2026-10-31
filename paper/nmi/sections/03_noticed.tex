@@ -7,7 +7,8 @@ impossible value, such as a mass of 45~Da for a 228-residue protein, or a plausi
 Impossible values were flagged in 75--100\% of runs, depending on the model, yet relayed into the final answer in 32\% (Opus~5) to
 93\% (Haiku~4.5) of protein runs and 38\% (DeepSeek~V4.1~Flash) to 91\% (Haiku~4.5) of chemistry runs (Fig.~\ref{fig:noticed}).
 Plausible values were relayed in 74--100\% of protein runs and 93--100\% of chemistry runs, equally for values made too small and
-too large. Models ranked similarly in both domains (Spearman $\rho=0.71$, $p=0.02$). One added sentence asking the agent to verify
+too large. These plausible numeric corruptions scaled paired fields together, so the record stayed internally consistent, whereas
+impossible values changed one field and contradicted its partner; we return to this distinction below. Models ranked similarly in both domains (Spearman $\rho=0.71$, $p=0.02$). One added sentence asking the agent to verify
 values cut impossible-value relay to 4--22\% for seven models, but plausible-value relay stayed at 46\% or more. When the tool
 returned the full record, including the sequence or formula, agents corrected values that the record contradicted: organism errors
 fell from 100\% to 0\% for all three models tested, and Opus~5's relay of impossible and plausible values fell from 33\% to 1\% and

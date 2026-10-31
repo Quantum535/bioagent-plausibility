@@ -1,11 +1,12 @@
 \section*{Methods}
 \subsection*{Benchmark}
-\textbf{Entities and tasks.} The benchmark draws on 300 human proteins from UniProt and 300 small molecules from PubChem
-[check: selection criteria]. It has 200 protein tasks over five templates (gene symbol, 50; organism, 50; mass comparison, 50;
+\textbf{Entities and tasks.} The benchmark draws on 300 reviewed (Swiss-Prot) human proteins, sampled with a fixed seed from a pool of 3,000 retrieved through the UniProt
+REST API, and 300 single-component PubChem compounds with a common name, a molecular formula and a molecular weight of
+100--900~Da, sampled with a fixed seed from CIDs 1--30,000. It has 200 protein tasks over five templates (gene symbol, 50; organism, 50; mass comparison, 50;
 length threshold, 25; length ratio, 25) and 100 chemistry tasks over five (name, 25; hydrogen-bond donors, 25; heavy-atom
 threshold, 25; weight threshold, 12; weight comparison, 13). Each task has a single checkable answer and is constructed so that
-the answer implied by a corrupted record differs from the true answer; comparison tasks were kept only if the true margin exceeded
-5\% [check: protein margin].
+the answer implied by a corrupted record differs from the true answer; tasks were kept only if the true answer lay at
+least 5\% from the decision boundary.
 
 \textbf{Tools and records.} Protein agents had two tools: \texttt{get\_protein}, which looks up a record by UniProt accession,
 and \texttt{find\_protein\_by\_gene}, which looks up the human protein encoded by an HGNC gene symbol. Chemistry agents had
@@ -14,12 +15,16 @@ protein name, gene symbol, organism, length, mass and subcellular location, and 
 heavy-atom count and number of hydrogen-bond donors. The full record is the complete UniProt entry, including sequence and
 feature annotations, or, for compounds, the summary fields plus IUPAC name, molecular formula and SMILES.
 
-\textbf{Conditions.} In the clean condition all records are returned unchanged. In the impossible condition the target field of the
-target record holds a value no real entity can have (for example, a 228-residue protein weighing 45~Da, a molecular weight of
-$9\times10^{9}$~Da, or 50,000 heavy atoms). In the plausible condition a numeric target is scaled by 0.75--0.8 or 1.2--1.25, with
-directions balanced [check: protein factors], and an identifier target is replaced [check: by another entity's identifier or a
-fabricated one]. Only the target record is altered; every other record in a run is returned unchanged. In the verify arm, one
-sentence was appended to the system prompt.
+\textbf{Conditions.} In the clean condition all records are returned unchanged. In the impossible condition the target field of
+the target record holds a value no real entity can have: a length of 3 or 60,000 residues; a mass of 45~Da, a negative mass or
+$9\times10^{9}$~Da; the organism \textit{Escherichia coli} K-12 for a protein located in a eukaryote-only compartment; or a
+fabricated gene symbol. For compounds, impossible values include a molecular weight of $9\times10^{9}$~Da, 0 or 50,000 heavy atoms,
+and a fabricated name. Impossible numeric values change a single field and therefore also contradict the record's paired field. In
+the plausible condition a protein's length and mass are scaled together by 0.75--0.8 or 1.2--1.25, so the summary record stays
+internally consistent, and compound weights and heavy-atom counts are scaled in the same way; identifiers are replaced by another
+real entity's value (another protein's gene symbol; the organism \textit{Mus musculus}) [check: plausible compound names].
+Directions are balanced. Only the target record is altered; every other record in a run is returned unchanged. In the verify
+arm, one sentence was appended to the system prompt.
 
 \textbf{Prompt.} The system prompt read: ``You are a bioinformatics assistant. Use the provided tools to answer. End your reply with
 exactly one line of JSON: \texttt{\{"answer": ..., "concerns": [...]\}} where concerns lists anything about the data that looked
@@ -36,8 +41,9 @@ supports it. Unless stated otherwise, each task ran once per condition.
 
 \subsection*{Outcomes}
 The answer and concerns were parsed from the final JSON line. A run is correct if its answer matches the true answer and
-propagated if it matches the answer implied by the corrupted record [check: matching rules per answer type]; because every task
-separates the two, a parsed answer of a corrupted run is at most one of these. A run is flagged if its concerns list is non-empty.
+propagated if it matches the answer implied by the corrupted record; because every task
+separates the two, a parsed answer of a corrupted run is at most one of these. Yes/no answers match on the first yes or no in the answer, numbers within 5\%, and text case-insensitively, either
+exactly or as a contiguous run of words within the answer. A run is flagged if its concerns list is non-empty.
 Runs without a parseable answer were excluded and counted, and runs that failed at the API were retried.
 
 \subsection*{Statistics}
@@ -53,3 +59,87 @@ and two task sets that reused task identifiers and prompts with different record
 setting and a hash of the corruption to the key, repeated every affected run, and kept the affected files for audit. Every run also
 passed a check that its tool outputs contained the record it was meant to receive; this check detected the third collision before
 any affected run entered an analysis. Runs failing the check are recorded as undelivered and excluded.
+
+\subsection*{Deployment experiment}
+We ran Biomni [add: version or commit] with DeepSeek~V4.1~Flash (Together AI) and Gemini~3.8~Flash (Vertex AI, global endpoint).
+Claude models could not be run, because Biomni's agent loop sends a temperature parameter and an assistant prefill that those models
+reject. An intercepting proxy (mitmproxy~12.3) was set as Biomni's HTTPS proxy, with its certificate authority trusted, after the
+agent was constructed; the model API client bypassed the proxy. In a pilot of 25 tasks, every data request went to
+rest.uniprot.org or pubchem.ncbi.nlm.nih.gov and passed through the proxy (48 of 48). The proxy stored the first genuine response to
+each request and served it to every condition, so conditions differed only in the corruption, which an addon applied to the target
+field in JSON and flat-file responses. Two patches to the agent runner relabelled a trailing assistant message as a user message and
+replaced null Vertex responses with empty assistant messages. Each of 300 tasks ran once per condition and model (900 runs per
+model). A corrupted run counts as delivered if the corrupted field was served to the agent. Hypotheses were registered before the
+full runs (OSF vq5cp).
+
+\subsection*{Override boundaries}
+We built 80 protein and 80 chemistry threshold tasks in the full-record format. In each corrupted run the target field and its
+paired field were scaled by the same factor ($\times$0.9, 0.8, 0.7, 0.5, 0.3, 0.1, 0.02 or 0.005 when shrinking; $\times$1.1, 1.25,
+1.5, 2, 3, 10, 50 or 200 when inflating), so that only the sequence or formula contradicted the value; 40 tasks per factor and
+direction. Each threshold lies midway between the true value and the value at the mildest factor. The factor at which half of runs
+overrode the corruption was estimated per model, domain and direction [check: fit method and interval]. Models: Opus~5, Sonnet~5,
+Gemini~4~Argon, Gemini~3.8~Flash and DeepSeek~V4.1~Flash.
+
+\subsection*{Coherent corruptions}
+For proteins we edited the sequence and recomputed every derived field: truncation to the scaled length (plausible, shrink), the
+first three residues (impossible), or extension to the scaled length with a segment of another benchmark protein that shares no
+12-residue substring with the target (plausible, lengthen). For the repeat ablation, sequences were instead extended with copies of
+their last 60 residues, giving the same lengths. Mass was recomputed with Biopython, features beyond the new length were removed
+and sequence checksums dropped. For compounds we substituted the structure of another benchmark compound whose molecular weight
+differs by a factor of 0.72--0.83 or 1.17--1.28 (plausible) or that of methane (impossible), with every field taken from that
+compound except identity. Every coherent record passed our derivation checks. Arms: full record; summary record; summary record with
+the harness and no second source; summary record with the harness and the second source. Models: Opus~5, Gemini~4~Argon and
+DeepSeek~V4.1~Flash. Predictions, and two dated addenda, were committed to the repository before the runs they concern.
+
+\subsection*{Harness and second sources}
+The harness checks each record before the agent sees it. Protein length and mass are derived from the sequence (Biopython; mass
+tolerance $\pm$3~Da, above the largest deviation, 2.38~Da, among 360 calibration proteins), compound molecular weight from the
+structure (RDKit; $\pm$0.5~Da, above the largest deviation, 0.394~Da, among 300 compounds) and heavy-atom and donor counts exactly;
+identifiers are checked by reverse lookup; for summary-only records, mass per residue (89.6--130.3~Da) and mass per heavy atom
+(11.35--225.93~Da) must fall within bands calibrated on clean records. In annotate mode the record carries a verification block
+listing each mismatch; in replace mode mismatched derivable values are also replaced. The second sources were AlphaFold~DB
+(sequence for a UniProt accession; 299 of 300 proteins covered, all 299 sequences identical to UniProt's) and NCI~CACTUS
+(structure from a compound name; 283 of 300 resolved, formula identical to PubChem's for 270, which alone were used). Second-source
+checks used exact length, $\pm$3~Da mass, $\pm$0.5~Da molecular weight and exact heavy-atom count, and raised no false alarm in
+1,200 checks of clean fields. For the presentation comparison, a correction from the second source was written into the record and
+the verification block either listed the original under the annotate-mode field names, labelled it as the original database
+value replaced by the second-source value, or was omitted (silent).
+
+\subsection*{New chemistry fields}
+Monoisotopic mass, topological polar surface area (TPSA) and PubChem complexity were taken from PubChem and classified by agreement
+with RDKit derivations from each record's structure: monoisotopic mass agreed within 0.001~Da for 300 of 300 compounds; TPSA (sulfur
+and phosphorus included) within 0.1~\AA$^2$ for 80\% (Spearman 0.996); complexity matched Bertz complexity for 1.7\% (Spearman
+0.936). We built 180 threshold tasks, 30 per field and direction, one compound each, with the threshold midway between the true and
+the corrupted value. Plausible values were scaled by 0.75--0.8 or 1.2--1.25; a corrupted monoisotopic mass was scaled together with
+molecular weight and heavy-atom count. Impossible values were 0 or $9\times10^{9}$~Da, $-50$ or 50,000~\AA$^2$, and $-100$ or
+$10^{7}$. Five models ran every task under clean, plausible and impossible conditions with the full and the summary record (5,400
+runs). Predictions for monoisotopic mass were derived by code from each model's chemistry boundary curve, by log-linear
+interpolation, with prediction intervals combining the binomial error of both experiments (OSF [add]). The follow-up varied
+agreement on the same 60 compounds: monoisotopic mass corrupted alone; molecular weight asked, with molecular weight and heavy-atom
+count scaled; molecular weight asked, with all three scaled (OSF addendum [add]).
+
+\subsection*{Historical UniProt errors}
+For the 300 benchmark proteins we retrieved every sequence version from UniSave. 167 proteins had at least two sequence versions
+(257 superseded sequences). Proteins whose stored entry had itself been superseded since the benchmark was built were excluded. For
+each remaining protein whose sequence was revised with a change in length, the most recent such superseded sequence defines one
+task (79 tasks), a length or mass threshold question with the threshold between the current and the superseded value; mass
+questions were used only where the two masses differ by at least 200~Da. The superseded record shows the old sequence with its own
+length and mass and current annotations trimmed to the old length. Arms: full record; summary record; summary record with the
+harness and the second source. For cost, Opus~5 ran the full-record clean condition on the first 20 tasks. The replace and
+presentation arms and the repeat samples were registered as an addendum before they ran (OSF [add]).
+
+\subsection*{Cue classification and validation}
+Two annotators labelled 300 concerns (200 protein, 100 chemistry), sampled from the benchmark traces, blind to model and to any
+automatic label, using written guidelines; a concern may cite several cues. Disagreements were resolved jointly into consensus
+labels. The classifier is Sonnet~5 given the guidelines with added decision rules, classifying 10 concerns per request. It was
+developed on a fixed half of the consensus set (100 protein, 50 chemistry; seed 30) over at most three rounds, a limit recorded in
+advance; Haiku~4.5 and Sonnet~5 were compared in the last round under a pre-stated rule. The prompt and model were then frozen and
+committed, and run once on the held-out half, with a pass criterion of $\kappa\geq0.6$ for cross-field, recall and rule cues in both
+domains. All 13,021 concerns used in our analyses were then classified through the Message Batches API with requests identical to
+the validated ones; 280 concerns whose batch response could not be parsed were classified with single requests.
+
+\subsection*{Registrations, data and code}
+The deployment hypotheses (OSF vq5cp), the new-field experiment and its follow-up, the historical-error experiment and the
+robustness addendum were registered on OSF before the runs they concern [add: links]; the coherent-corruption predictions were
+committed to the repository with dated addenda. Code, prompts, task files, registrations and analysis scripts are available at
+[add: repository URL]; all run traces and cue labels at [add: Zenodo DOI].
