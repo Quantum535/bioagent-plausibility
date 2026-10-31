@@ -22,7 +22,7 @@ fabricated gene symbol. For compounds, impossible values include a molecular wei
 and a fabricated name. Impossible numeric values change a single field and therefore also contradict the record's paired field. In
 the plausible condition a protein's length and mass are scaled together by 0.75--0.8 or 1.2--1.25, so the summary record stays
 internally consistent, and compound weights and heavy-atom counts are scaled in the same way; identifiers are replaced by another
-real entity's value (another protein's gene symbol; the organism \textit{Mus musculus}) [check: plausible compound names].
+real entity's value (another protein's gene symbol, the organism \textit{Mus musculus}, or another benchmark compound's name), and a compound's hydrogen-bond donor count is changed by one.
 Directions are balanced. Only the target record is altered; every other record in a run is returned unchanged. In the verify
 arm, one sentence was appended to the system prompt.
 

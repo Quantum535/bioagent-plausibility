@@ -1,0 +1,46 @@
+{
+ "deepseek": {
+  "exact = length, mass, molecular weight, heavy atoms": {
+   "exact": "62/139 (44.6%)",
+   "other": "18/146 (12.3%)",
+   "odds_ratio": 5.73,
+   "ci95": [
+    3.15,
+    10.39
+   ],
+   "fisher_p_two_sided": 1.3296613864181507e-09
+  },
+  "exact = the above + hydrogen-bond donors": {
+   "exact": "72/163 (44.2%)",
+   "other": "8/122 (6.6%)",
+   "odds_ratio": 11.27,
+   "ci95": [
+    5.16,
+    24.61
+   ],
+   "fisher_p_two_sided": 2.689667509535599e-13
+  }
+ },
+ "flash": {
+  "exact = length, mass, molecular weight, heavy atoms": {
+   "exact": "50/143 (35.0%)",
+   "other": "19/145 (13.1%)",
+   "odds_ratio": 3.57,
+   "ci95": [
+    1.97,
+    6.45
+   ],
+   "fisher_p_two_sided": 1.5283692302316253e-05
+  },
+  "exact = the above + hydrogen-bond donors": {
+   "exact": "55/167 (32.9%)",
+   "other": "14/121 (11.6%)",
+   "odds_ratio": 3.75,
+   "ci95": [
+    1.97,
+    7.14
+   ],
+   "fisher_p_two_sided": 2.2563561890005817e-05
+  }
+ }
+}
