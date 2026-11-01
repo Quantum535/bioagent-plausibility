@@ -1,0 +1,1568 @@
+79 runs: 79 tasks x ['clean'] x 1 sample(s)  model=together:deepseek-ai/DeepSeek-V4.1-Flash-1017  verify_prompt=False  thinking=adaptive effort=default
+  [1/79] r002 clean      correct=True  propagated=None  concerns=0 $0.0020
+  [2/79] r003 clean      correct=True  propagated=None  concerns=0 $0.0023
+  [3/79] r000 clean      correct=True  propagated=None  concerns=0 $0.0021
+  [4/79] r001 clean      correct=True  propagated=None  concerns=0 $0.0025
+  [5/79] r007 clean      correct=True  propagated=None  concerns=0 $0.0020
+  [6/79] r004 clean      correct=True  propagated=None  concerns=0 $0.0026
+  [7/79] r006 clean      correct=True  propagated=None  concerns=0 $0.0021
+  [8/79] r005 clean      correct=True  propagated=None  concerns=0 $0.0023
+  [9/79] r008 clean      correct=True  propagated=None  concerns=0 $0.0021
+  [10/79] r009 clean      correct=True  propagated=None  concerns=0 $0.0023
+  [11/79] r011 clean      correct=True  propagated=None  concerns=0 $0.0025
+  [12/79] r010 clean      correct=True  propagated=None  concerns=1 $0.0034
+  [13/79] r013 clean      correct=True  propagated=None  concerns=0 $0.0020
+  [14/79] r014 clean      correct=True  propagated=None  concerns=0 $0.0021
+  [15/79] r012 clean      correct=True  propagated=None  concerns=0 $0.0033
+  [16/79] r015 clean      correct=True  propagated=None  concerns=0 $0.0019
+  [17/79] r016 clean      correct=True  propagated=None  concerns=0 $0.0020
+  [18/79] r018 clean      correct=True  propagated=None  concerns=0 $0.0022
+  [19/79] r020 clean      correct=True  propagated=None  concerns=0 $0.0018
+  [20/79] r017 clean      correct=True  propagated=None  concerns=1 $0.0039
+  [21/79] r019 clean      correct=True  propagated=None  concerns=0 $0.0018
+  [22/79] r021 clean      correct=True  propagated=None  concerns=0 $0.0019
+  [23/79] r023 clean      correct=True  propagated=None  concerns=0 $0.0023
+  [24/79] r024 clean      correct=True  propagated=None  concerns=0 $0.0021
+  [25/79] r022 clean      correct=True  propagated=None  concerns=0 $0.0028
+  [26/79] r025 clean      correct=True  propagated=None  concerns=0 $0.0026
+  [27/79] r027 clean      correct=True  propagated=None  concerns=0 $0.0020
+  [28/79] r026 clean      correct=True  propagated=None  concerns=0 $0.0024
+  [29/79] r028 clean      correct=True  propagated=None  concerns=0 $0.0017
+  [30/79] r030 clean      correct=True  propagated=None  concerns=0 $0.0018
+  [31/79] r031 clean      correct=True  propagated=None  concerns=0 $0.0023
+  [32/79] r029 clean      correct=True  propagated=None  concerns=0 $0.0025
+  [33/79] r032 clean      correct=True  propagated=None  concerns=0 $0.0022
+  [34/79] r035 clean      correct=True  propagated=None  concerns=0 $0.0019
+  [35/79] r033 clean      correct=True  propagated=None  concerns=0 $0.0026
+  [36/79] r036 clean      correct=True  propagated=None  concerns=0 $0.0019
+  [37/79] r037 clean      correct=True  propagated=None  concerns=0 $0.0023
+  [38/79] r038 clean      correct=True  propagated=None  concerns=0 $0.0020
+  [39/79] r034 clean      correct=True  propagated=None  concerns=0 $0.0017
+  [40/79] r039 clean      correct=True  propagated=None  concerns=0 $0.0029
+  [41/79] r040 clean      correct=True  propagated=None  concerns=0 $0.0024
+  [42/79] r041 clean      correct=True  propagated=None  concerns=0 $0.0029
+  [43/79] r042 clean      correct=True  propagated=None  concerns=0 $0.0023
+  [44/79] r043 clean      correct=True  propagated=None  concerns=0 $0.0024
+  [45/79] r045 clean      correct=True  propagated=None  concerns=0 $0.0022
+  [46/79] r044 clean      correct=True  propagated=None  concerns=0 $0.0029
+  [47/79] r046 clean      correct=True  propagated=None  concerns=0 $0.0026
+  [48/79] r047 clean      correct=True  propagated=None  concerns=0 $0.0024
+  [49/79] r048 clean      correct=True  propagated=None  concerns=0 $0.0020
+  [50/79] r049 clean      correct=True  propagated=None  concerns=0 $0.0025
+  [51/79] r050 clean      correct=True  propagated=None  concerns=0 $0.0020
+  [52/79] r051 clean      correct=True  propagated=None  concerns=0 $0.0024
+  [53/79] r052 clean      correct=True  propagated=None  concerns=0 $0.0021
+  [54/79] r053 clean      correct=True  propagated=None  concerns=0 $0.0025
+  [55/79] r055 clean      correct=True  propagated=None  concerns=0 $0.0024
+  [56/79] r054 clean      correct=True  propagated=None  concerns=0 $0.0034
+  [57/79] r056 clean      correct=True  propagated=None  concerns=0 $0.0020
+  [58/79] r057 clean      correct=True  propagated=None  concerns=0 $0.0026
+  [59/79] r058 clean      correct=True  propagated=None  concerns=0 $0.0024
+  [60/79] r059 clean      correct=True  propagated=None  concerns=0 $0.0023
+  [61/79] r060 clean      correct=True  propagated=None  concerns=0 $0.0021
+  [62/79] r061 clean      correct=True  propagated=None  concerns=0 $0.0024
+  [63/79] r062 clean      correct=True  propagated=None  concerns=0 $0.0021
+  [64/79] r063 clean      correct=True  propagated=None  concerns=0 $0.0024
+  [65/79] r064 clean      correct=True  propagated=None  concerns=0 $0.0022
+  [66/79] r065 clean      correct=True  propagated=None  concerns=0 $0.0026
+  [67/79] r066 clean      correct=True  propagated=None  concerns=0 $0.0026
+  [68/79] r069 clean      correct=True  propagated=None  concerns=0 $0.0023
+  [69/79] r067 clean      correct=True  propagated=None  concerns=0 $0.0032
+  [70/79] r070 clean      correct=True  propagated=None  concerns=0 $0.0027
+  [71/79] r068 clean      correct=True  propagated=None  concerns=2 $0.0058
+  [72/79] r071 clean      correct=True  propagated=None  concerns=0 $0.0034
+  [73/79] r072 clean      correct=True  propagated=None  concerns=0 $0.0029
+  [74/79] r074 clean      correct=True  propagated=None  concerns=0 $0.0019
+  [75/79] r073 clean      correct=True  propagated=None  concerns=0 $0.0029
+  [76/79] r075 clean      correct=True  propagated=None  concerns=0 $0.0022
+  [77/79] r076 clean      correct=True  propagated=None  concerns=0 $0.0023
+  [78/79] r078 clean      correct=True  propagated=None  concerns=0 $0.0025
+  [79/79] r077 clean      correct=True  propagated=None  concerns=0 $0.0026
+
+--- cost ---
+runs: 79 (79 live, 0 cached)   total this invocation: $0.1908   mean per run: $0.0024
+estimated full run, 79 tasks x 1 conditions x 1 sample(s) = 79 runs: $0.19
+accuracy by condition: {'clean': '79/79'}
+traces appended to results/robustness/deepseek_p5_replace.jsonl
+237 runs: 79 tasks x ['superseded'] x 3 sample(s)  model=together:deepseek-ai/DeepSeek-V4.1-Flash-1017  verify_prompt=False  thinking=adaptive effort=default
+  [1/237] r003 superseded correct=True  propagated=False concerns=1 $0.0054
+  [2/237] r002 superseded correct=True  propagated=False concerns=2 $0.0087
+  [3/237] r001 superseded correct=True  propagated=False concerns=1 $0.0128
+  [4/237] r000 superseded correct=True  propagated=False concerns=3 $0.0116
+  [5/237] r004 superseded correct=True  propagated=False concerns=3 $0.0097
+  [6/237] r007 superseded correct=True  propagated=False concerns=1 $0.0065
+  [7/237] r006 superseded correct=True  propagated=False concerns=2 $0.0093
+  [8/237] r005 superseded correct=True  propagated=False concerns=2 $0.0141
+  [9/237] r010 superseded correct=True  propagated=False concerns=2 $0.0058
+  [10/237] r008 superseded correct=True  propagated=False concerns=3 $0.0169
+  [11/237] r011 superseded correct=True  propagated=False concerns=2 $0.0054
+  [12/237] r009 superseded correct=True  propagated=False concerns=3 $0.0112
+  [13/237] r012 superseded correct=True  propagated=False concerns=2 $0.0080
+  [14/237] r013 superseded correct=True  propagated=False concerns=2 $0.0068
+  [15/237] r015 superseded correct=True  propagated=False concerns=1 $0.0075
+  [16/237] r017 superseded correct=True  propagated=False concerns=2 $0.0043
+  [17/237] r016 superseded correct=True  propagated=False concerns=2 $0.0065
+  [18/237] r018 superseded correct=True  propagated=False concerns=1 $0.0049
+  [19/237] r014 superseded correct=False propagated=True  concerns=1 $0.0133
+  [20/237] r020 superseded correct=True  propagated=False concerns=1 $0.0042
+  [21/237] r021 superseded correct=True  propagated=False concerns=2 $0.0060
+  [22/237] r019 superseded correct=True  propagated=False concerns=1 $0.0066
+  [23/237] r023 superseded correct=True  propagated=False concerns=1 $0.0049
+  [24/237] r024 superseded correct=True  propagated=False concerns=1 $0.0046
+  [25/237] r025 superseded correct=True  propagated=False concerns=3 $0.0094
+  [26/237] r027 superseded correct=True  propagated=False concerns=1 $0.0042
+  [27/237] r026 superseded correct=True  propagated=False concerns=2 $0.0078
+  [28/237] r028 superseded correct=True  propagated=False concerns=1 $0.0054
+  [29/237] r022 superseded correct=True  propagated=False concerns=1 $0.0215
+  [30/237] r029 superseded correct=True  propagated=False concerns=1 $0.0090
+  [31/237] r030 superseded correct=True  propagated=False concerns=1 $0.0060
+  [32/237] r031 superseded correct=True  propagated=False concerns=3 $0.0093
+  [33/237] r032 superseded correct=True  propagated=False concerns=1 $0.0092
+  [34/237] r033 superseded correct=True  propagated=False concerns=1 $0.0096
+  [35/237] r034 superseded correct=False propagated=True  concerns=2 $0.0121
+  [36/237] r035 superseded correct=True  propagated=False concerns=1 $0.0089
+  [37/237] r036 superseded correct=True  propagated=False concerns=1 $0.0072
+  [38/237] r037 superseded correct=True  propagated=False concerns=2 $0.0082
+  [39/237] r038 superseded correct=True  propagated=False concerns=1 $0.0054
+  [40/237] r041 superseded correct=True  propagated=False concerns=2 $0.0064
+  [41/237] r040 superseded correct=True  propagated=False concerns=1 $0.0079
+  [42/237] r042 superseded correct=True  propagated=False concerns=2 $0.0058
+  [43/237] r039 superseded correct=True  propagated=False concerns=1 $0.0119
+  [44/237] r043 superseded correct=True  propagated=False concerns=1 $0.0056
+  [45/237] r044 superseded correct=True  propagated=False concerns=1 $0.0056
+  [46/237] r046 superseded correct=True  propagated=False concerns=2 $0.0085
+  [47/237] r048 superseded correct=True  propagated=False concerns=1 $0.0053
+  [48/237] r047 superseded correct=True  propagated=False concerns=1 $0.0083
+  [49/237] r045 superseded correct=True  propagated=False concerns=1 $0.0144
+  [50/237] r051 superseded correct=True  propagated=False concerns=1 $0.0048
+  [51/237] r049 superseded correct=True  propagated=False concerns=1 $0.0072
+  [52/237] r053 superseded correct=True  propagated=False concerns=1 $0.0058
+  [53/237] r052 superseded correct=True  propagated=False concerns=1 $0.0080
+  [54/237] r050 superseded correct=True  propagated=False concerns=1 $0.0105
+  [55/237] r054 superseded correct=True  propagated=False concerns=1 $0.0052
+  [56/237] r055 superseded correct=True  propagated=False concerns=1 $0.0069
+  [57/237] r058 superseded correct=True  propagated=False concerns=1 $0.0089
+  [58/237] r057 superseded correct=True  propagated=False concerns=2 $0.0104
+  [59/237] r059 superseded correct=True  propagated=False concerns=2 $0.0062
+  [60/237] r060 superseded correct=True  propagated=False concerns=1 $0.0077
+  [61/237] r056 superseded correct=True  propagated=False concerns=1 $0.0108
+  [62/237] r062 superseded correct=True  propagated=False concerns=2 $0.0073
+  [63/237] r063 superseded correct=True  propagated=False concerns=2 $0.0051
+  [64/237] r061 superseded correct=True  propagated=False concerns=1 $0.0099
+  [65/237] r064 superseded correct=True  propagated=False concerns=2 $0.0086
+  [66/237] r067 superseded correct=True  propagated=False concerns=1 $0.0053
+  [67/237] r065 superseded correct=True  propagated=False concerns=1 $0.0092
+  [68/237] r066 superseded correct=True  propagated=False concerns=1 $0.0073
+  [69/237] r070 superseded correct=True  propagated=False concerns=1 $0.0049
+  [70/237] r069 superseded correct=True  propagated=False concerns=1 $0.0096
+  [71/237] r071 superseded correct=True  propagated=False concerns=1 $0.0123
+  [72/237] r068 superseded correct=True  propagated=False concerns=1 $0.0167
+  [73/237] r072 superseded correct=True  propagated=False concerns=2 $0.0100
+  [74/237] r073 superseded correct=True  propagated=False concerns=2 $0.0048
+  [75/237] r077 superseded correct=True  propagated=False concerns=1 $0.0051
+  [76/237] r075 superseded correct=True  propagated=False concerns=1 $0.0108
+  [77/237] r074 superseded correct=True  propagated=False concerns=1 $0.0095
+  [78/237] r076 superseded correct=True  propagated=False concerns=2 $0.0118
+  [79/237] r000 superseded correct=True  propagated=False concerns=1 $0.0096
+  [80/237] r002 superseded correct=True  propagated=False concerns=1 $0.0060
+  [81/237] r001 superseded correct=True  propagated=False concerns=1 $0.0072
+  [82/237] r078 superseded correct=True  propagated=False concerns=2 $0.0110
+  [83/237] r004 superseded correct=True  propagated=False concerns=1 $0.0062
+  [84/237] r003 superseded correct=True  propagated=False concerns=1 $0.0093
+  [85/237] r006 superseded correct=True  propagated=False concerns=1 $0.0079
+  [86/237] r005 superseded correct=True  propagated=False concerns=1 $0.0094
+  [87/237] r008 superseded correct=True  propagated=False concerns=1 $0.0058
+  [88/237] r007 superseded correct=True  propagated=False concerns=2 $0.0081
+  [89/237] r010 superseded correct=True  propagated=False concerns=1 $0.0043
+  [90/237] r009 superseded correct=True  propagated=False concerns=2 $0.0085
+  [91/237] r011 superseded correct=True  propagated=False concerns=1 $0.0062
+  [92/237] r014 superseded correct=False propagated=True  concerns=0 $0.0018
+  [93/237] r015 superseded correct=True  propagated=False concerns=1 $0.0058
+  [94/237] r012 superseded correct=True  propagated=False concerns=1 $0.0068
+  [95/237] r013 superseded correct=True  propagated=False concerns=2 $0.0109
+  [96/237] r016 superseded correct=True  propagated=False concerns=1 $0.0069
+  [97/237] r017 superseded correct=True  propagated=False concerns=2 $0.0069
+  [98/237] r018 superseded correct=True  propagated=False concerns=2 $0.0085
+  [99/237] r019 superseded correct=True  propagated=False concerns=3 $0.0069
+  [100/237] r020 superseded correct=True  propagated=False concerns=1 $0.0056
+  [101/237] r021 superseded correct=True  propagated=False concerns=2 $0.0092
+  [102/237] r023 superseded correct=True  propagated=False concerns=2 $0.0076
+  [103/237] r022 superseded correct=True  propagated=False concerns=1 $0.0074
+  [104/237] r025 superseded correct=True  propagated=False concerns=1 $0.0042
+  [105/237] r026 superseded correct=True  propagated=False concerns=1 $0.0062
+  [106/237] r027 superseded correct=True  propagated=False concerns=1 $0.0051
+  [107/237] r024 superseded correct=True  propagated=False concerns=1 $0.0094
+  [108/237] r030 superseded correct=True  propagated=False concerns=1 $0.0054
+  [109/237] r029 superseded correct=True  propagated=False concerns=1 $0.0064
+  [110/237] r028 superseded correct=True  propagated=False concerns=1 $0.0063
+  [111/237] r031 superseded correct=True  propagated=False concerns=2 $0.0068
+  [112/237] r033 superseded correct=True  propagated=False concerns=1 $0.0063
+  [113/237] r032 superseded correct=True  propagated=False concerns=1 $0.0069
+  [114/237] r035 superseded correct=True  propagated=False concerns=1 $0.0064
+  [115/237] r034 superseded correct=False propagated=True  concerns=1 $0.0153
+  [116/237] r036 superseded correct=True  propagated=False concerns=1 $0.0068
+  [117/237] r038 superseded correct=True  propagated=False concerns=1 $0.0086
+  [118/237] r037 superseded correct=True  propagated=False concerns=1 $0.0097
+  [119/237] r040 superseded correct=True  propagated=False concerns=1 $0.0055
+  [120/237] r042 superseded correct=True  propagated=False concerns=1 $0.0052
+  [121/237] r041 superseded correct=True  propagated=False concerns=1 $0.0062
+  [122/237] r039 superseded correct=True  propagated=False concerns=1 $0.0048
+  [123/237] r043 superseded correct=True  propagated=False concerns=1 $0.0058
+  [124/237] r045 superseded correct=True  propagated=False concerns=2 $0.0066
+  [125/237] r046 superseded correct=True  propagated=False concerns=2 $0.0055
+  [126/237] r047 superseded correct=True  propagated=False concerns=1 $0.0091
+  [127/237] r044 superseded correct=True  propagated=False concerns=1 $0.0144
+  [128/237] r049 superseded correct=True  propagated=False concerns=1 $0.0120
+  [129/237] r048 superseded correct=True  propagated=False concerns=3 $0.0169
+  [130/237] r050 superseded correct=True  propagated=False concerns=1 $0.0079
+  [131/237] r053 superseded correct=True  propagated=False concerns=2 $0.0045
+  [132/237] r052 superseded correct=True  propagated=False concerns=2 $0.0096
+  [133/237] r054 superseded correct=True  propagated=False concerns=2 $0.0095
+  [134/237] r055 superseded correct=True  propagated=False concerns=1 $0.0052
+  [135/237] r056 superseded correct=True  propagated=False concerns=1 $0.0053
+  [136/237] r059 superseded correct=True  propagated=False concerns=2 $0.0049
+  [137/237] r057 superseded correct=False propagated=True  concerns=2 $0.0082
+  [138/237] r051 superseded correct=True  propagated=False concerns=2 $0.0227
+  [139/237] r061 superseded correct=True  propagated=False concerns=1 $0.0045
+  [140/237] r063 superseded correct=True  propagated=False concerns=1 $0.0032
+  [141/237] r062 superseded correct=True  propagated=False concerns=2 $0.0081
+  [142/237] r060 superseded correct=True  propagated=False concerns=1 $0.0066
+  [143/237] r058 superseded correct=True  propagated=False concerns=1 $0.0139
+  [144/237] r065 superseded correct=True  propagated=False concerns=1 $0.0070
+  [145/237] r064 superseded correct=True  propagated=False concerns=2 $0.0091
+  [146/237] r066 superseded correct=True  propagated=False concerns=1 $0.0080
+  [147/237] r070 superseded correct=True  propagated=False concerns=1 $0.0029
+  [148/237] r069 superseded correct=True  propagated=False concerns=2 $0.0084
+  [149/237] r071 superseded correct=True  propagated=False concerns=2 $0.0084
+  [150/237] r072 superseded correct=True  propagated=False concerns=1 $0.0058
+  [151/237] r068 superseded correct=False propagated=True  concerns=1 $0.0162
+  [152/237] r074 superseded correct=True  propagated=False concerns=1 $0.0042
+  [153/237] r073 superseded correct=True  propagated=False concerns=2 $0.0061
+  [154/237] r067 superseded correct=True  propagated=False concerns=4 $0.0321
+  [155/237] r075 superseded correct=True  propagated=False concerns=1 $0.0048
+  [156/237] r076 superseded correct=True  propagated=False concerns=1 $0.0083
+  [157/237] r000 superseded correct=True  propagated=False concerns=1 $0.0109
+  [158/237] r078 superseded correct=True  propagated=False concerns=1 $0.0098
+  [159/237] r001 superseded correct=True  propagated=False concerns=1 $0.0046
+  [160/237] r077 superseded correct=True  propagated=False concerns=2 $0.0148
+  [161/237] r002 superseded correct=True  propagated=False concerns=2 $0.0052
+  [162/237] r003 superseded correct=True  propagated=False concerns=1 $0.0084
+  [163/237] r005 superseded correct=True  propagated=False concerns=1 $0.0072
+  [164/237] r006 superseded correct=True  propagated=False concerns=1 $0.0060
+  [165/237] r004 superseded correct=True  propagated=False concerns=1 $0.0094
+  [166/237] r010 superseded correct=True  propagated=False concerns=1 $0.0046
+  [167/237] r007 superseded correct=True  propagated=False concerns=2 $0.0079
+  [168/237] r008 superseded correct=True  propagated=False concerns=1 $0.0063
+  [169/237] r009 superseded correct=True  propagated=False concerns=1 $0.0068
+  [170/237] r011 superseded correct=True  propagated=False concerns=1 $0.0063
+  [171/237] r012 superseded correct=True  propagated=False concerns=1 $0.0051
+  [172/237] r014 superseded correct=False propagated=True  concerns=0 $0.0020
+  [173/237] r013 superseded correct=True  propagated=False concerns=1 $0.0063
+  [174/237] r017 superseded correct=True  propagated=False concerns=3 $0.0053
+  [175/237] r016 superseded correct=True  propagated=False concerns=1 $0.0061
+  [176/237] r015 superseded correct=True  propagated=False concerns=2 $0.0071
+  [177/237] r018 superseded correct=True  propagated=False concerns=1 $0.0072
+  [178/237] r020 superseded correct=True  propagated=False concerns=1 $0.0052
+  [179/237] r021 superseded correct=True  propagated=False concerns=1 $0.0048
+  [180/237] r019 superseded correct=True  propagated=False concerns=1 $0.0071
+  [181/237] r023 superseded correct=True  propagated=False concerns=1 $0.0052
+  [182/237] r024 superseded correct=True  propagated=False concerns=1 $0.0040
+  [183/237] r025 superseded correct=True  propagated=False concerns=1 $0.0064
+  [184/237] r022 superseded correct=True  propagated=False concerns=1 $0.0099
+  [185/237] r027 superseded correct=True  propagated=False concerns=1 $0.0092
+  [186/237] r028 superseded correct=True  propagated=False concerns=2 $0.0067
+  [187/237] r026 superseded correct=True  propagated=False concerns=2 $0.0103
+  [188/237] r030 superseded correct=True  propagated=False concerns=2 $0.0058
+  [189/237] r029 superseded correct=True  propagated=False concerns=1 $0.0072
+  [190/237] r031 superseded correct=True  propagated=False concerns=2 $0.0089
+  [191/237] r032 superseded correct=True  propagated=False concerns=1 $0.0083
+  [192/237] r033 superseded correct=True  propagated=False concerns=2 $0.0100
+  [193/237] r034 superseded correct=False propagated=True  concerns=2 $0.0075
+  [194/237] r035 superseded correct=True  propagated=False concerns=1 $0.0077
+  [195/237] r036 superseded correct=True  propagated=False concerns=1 $0.0085
+  [196/237] r040 superseded correct=True  propagated=False concerns=1 $0.0046
+  [197/237] r037 superseded correct=True  propagated=False concerns=2 $0.0068
+  [198/237] r039 superseded correct=True  propagated=False concerns=1 $0.0082
+  [199/237] r038 superseded correct=True  propagated=False concerns=1 $0.0087
+  [200/237] r041 superseded correct=True  propagated=False concerns=1 $0.0071
+  [201/237] r043 superseded correct=True  propagated=False concerns=2 $0.0067
+  [202/237] r044 superseded correct=True  propagated=False concerns=1 $0.0066
+  [203/237] r042 superseded correct=True  propagated=False concerns=2 $0.0078
+  [204/237] r045 superseded correct=True  propagated=False concerns=1 $0.0051
+  [205/237] r046 superseded correct=True  propagated=False concerns=1 $0.0082
+  [206/237] r049 superseded correct=True  propagated=False concerns=1 $0.0051
+  [207/237] r047 superseded correct=True  propagated=False concerns=1 $0.0094
+  [208/237] r048 superseded correct=True  propagated=False concerns=2 $0.0114
+  [209/237] r050 superseded correct=True  propagated=False concerns=2 $0.0057
+  [210/237] r051 superseded correct=True  propagated=False concerns=2 $0.0096
+  [211/237] r054 superseded correct=True  propagated=False concerns=1 $0.0071
+  [212/237] r052 superseded correct=True  propagated=False concerns=2 $0.0123
+  [213/237] r053 superseded correct=True  propagated=False concerns=2 $0.0089
+  [214/237] r058 superseded correct=True  propagated=False concerns=2 $0.0093
+  [215/237] r056 superseded correct=True  propagated=False concerns=1 $0.0081
+  [216/237] r055 superseded correct=True  propagated=False concerns=1 $0.0090
+  [217/237] r057 superseded correct=True  propagated=False concerns=1 $0.0072
+  [218/237] r059 superseded correct=True  propagated=False concerns=1 $0.0050
+  [219/237] r060 superseded correct=True  propagated=False concerns=2 $0.0091
+  [220/237] r061 superseded correct=True  propagated=False concerns=1 $0.0088
+  [221/237] r063 superseded correct=True  propagated=False concerns=2 $0.0041
+  [222/237] r062 superseded correct=True  propagated=False concerns=2 $0.0126
+  [223/237] r064 superseded correct=True  propagated=False concerns=1 $0.0090
+  [224/237] r065 superseded correct=True  propagated=False concerns=2 $0.0064
+  [225/237] r066 superseded correct=True  propagated=False concerns=1 $0.0128
+  [226/237] r070 superseded correct=True  propagated=False concerns=2 $0.0032
+  [227/237] r069 superseded correct=True  propagated=False concerns=1 $0.0084
+  [228/237] r067 superseded correct=True  propagated=False concerns=2 $0.0133
+  [229/237] r071 superseded correct=True  propagated=False concerns=1 $0.0058
+  [230/237] r068 superseded correct=False propagated=True  concerns=1 $0.0208
+  [231/237] r072 superseded correct=True  propagated=False concerns=2 $0.0128
+  [232/237] r073 superseded correct=True  propagated=False concerns=1 $0.0074
+  [233/237] r075 superseded correct=True  propagated=False concerns=1 $0.0073
+  [234/237] r074 superseded correct=True  propagated=False concerns=2 $0.0109
+  [235/237] r076 superseded correct=True  propagated=False concerns=1 $0.0088
+  [236/237] r077 superseded correct=True  propagated=False concerns=2 $0.0103
+  [237/237] r078 superseded correct=True  propagated=False concerns=1 $0.0068
+
+--- cost ---
+runs: 237 (237 live, 0 cached)   total this invocation: $1.9050   mean per run: $0.0080
+estimated full run, 79 tasks x 1 conditions x 3 sample(s) = 237 runs: $1.91
+accuracy by condition: {'superseded': '228/237'}
+traces appended to results/robustness/deepseek_p5_replace.jsonl
+237 runs: 79 tasks x ['superseded'] x 3 sample(s)  model=together:deepseek-ai/DeepSeek-V4.1-Flash-1017  verify_prompt=False  thinking=adaptive effort=default
+  [1/237] r001 superseded correct=True  propagated=False concerns=1 $0.0088 (cached)
+  [2/237] r002 superseded correct=False propagated=True  concerns=1 $0.0070 (cached)
+  [3/237] r003 superseded correct=True  propagated=False concerns=3 $0.0109 (cached)
+  [4/237] r000 superseded correct=True  propagated=False concerns=3 $0.0155 (cached)
+  [5/237] r004 superseded correct=True  propagated=False concerns=3 $0.0157 (cached)
+  [6/237] r005 superseded correct=False propagated=True  concerns=2 $0.0221 (cached)
+  [7/237] r006 superseded correct=True  propagated=False concerns=2 $0.0064 (cached)
+  [8/237] r007 superseded correct=True  propagated=False concerns=2 $0.0162 (cached)
+  [9/237] r008 superseded correct=False propagated=True  concerns=1 $0.0049 (cached)
+  [10/237] r009 superseded correct=False propagated=True  concerns=2 $0.0095 (cached)
+  [11/237] r010 superseded correct=True  propagated=False concerns=2 $0.0075 (cached)
+  [12/237] r011 superseded correct=True  propagated=False concerns=2 $0.0091 (cached)
+  [13/237] r012 superseded correct=True  propagated=False concerns=1 $0.0097 (cached)
+  [14/237] r013 superseded correct=True  propagated=False concerns=1 $0.0087 (cached)
+  [15/237] r015 superseded correct=True  propagated=False concerns=2 $0.0126 (cached)
+  [16/237] r014 superseded correct=False propagated=True  concerns=0 $0.0026 (cached)
+  [17/237] r017 superseded correct=True  propagated=False concerns=3 $0.0166 (cached)
+  [18/237] r016 superseded correct=True  propagated=False concerns=1 $0.0072 (cached)
+  [19/237] r018 superseded correct=False propagated=True  concerns=1 $0.0123 (cached)
+  [20/237] r021 superseded correct=True  propagated=False concerns=2 $0.0057 (cached)
+  [21/237] r019 superseded correct=True  propagated=False concerns=2 $0.0091 (cached)
+  [22/237] r020 superseded correct=True  propagated=False concerns=1 $0.0107 (cached)
+  [23/237] r024 superseded correct=True  propagated=False concerns=2 $0.0084 (cached)
+  [24/237] r023 superseded correct=True  propagated=False concerns=3 $0.0138 (cached)
+  [25/237] r022 superseded correct=False propagated=True  concerns=1 $0.0094 (cached)
+  [26/237] r026 superseded correct=False propagated=True  concerns=2 $0.0055 (cached)
+  [27/237] r025 superseded correct=True  propagated=False concerns=2 $0.0118 (cached)
+  [28/237] r028 superseded correct=True  propagated=False concerns=1 $0.0055 (cached)
+  [29/237] r027 superseded correct=True  propagated=False concerns=2 $0.0088 (cached)
+  [30/237] r031 superseded correct=False propagated=True  concerns=2 $0.0128 (cached)
+  [31/237] r029 superseded correct=True  propagated=False concerns=4 $0.0135 (cached)
+  [32/237] r032 superseded correct=True  propagated=False concerns=1 $0.0098 (cached)
+  [33/237] r030 superseded correct=True  propagated=False concerns=2 $0.0078 (cached)
+  [34/237] r034 superseded correct=False propagated=True  concerns=2 $0.0092 (cached)
+  [35/237] r035 superseded correct=False propagated=True  concerns=4 $0.0115 (cached)
+  [36/237] r036 superseded correct=True  propagated=False concerns=2 $0.0066 (cached)
+  [37/237] r033 superseded correct=False propagated=True  concerns=1 $0.0070 (cached)
+  [38/237] r037 superseded correct=True  propagated=False concerns=1 $0.0080 (cached)
+  [39/237] r039 superseded correct=True  propagated=False concerns=1 $0.0112 (cached)
+  [40/237] r040 superseded correct=True  propagated=False concerns=1 $0.0050 (cached)
+  [41/237] r038 superseded correct=False propagated=True  concerns=1 $0.0064 (cached)
+  [42/237] r041 superseded correct=True  propagated=False concerns=1 $0.0122 (cached)
+  [43/237] r042 superseded correct=True  propagated=False concerns=1 $0.0085 (cached)
+  [44/237] r043 superseded correct=True  propagated=False concerns=2 $0.0114 (cached)
+  [45/237] r046 superseded correct=False propagated=True  concerns=1 $0.0071 (cached)
+  [46/237] r044 superseded correct=True  propagated=False concerns=1 $0.0095 (cached)
+  [47/237] r045 superseded correct=True  propagated=False concerns=2 $0.0104 (cached)
+  [48/237] r047 superseded correct=False propagated=True  concerns=3 $0.0271 (cached)
+  [49/237] r048 superseded correct=False propagated=True  concerns=2 $0.0148 (cached)
+  [50/237] r049 superseded correct=True  propagated=False concerns=3 $0.0168 (cached)
+  [51/237] r050 superseded correct=False propagated=True  concerns=1 $0.0144 (cached)
+  [52/237] r052 superseded correct=True  propagated=False concerns=3 $0.0256 (cached)
+  [53/237] r051 superseded correct=True  propagated=False concerns=1 $0.0065 (cached)
+  [54/237] r053 superseded correct=True  propagated=False concerns=3 $0.0172 (cached)
+  [55/237] r055 superseded correct=True  propagated=False concerns=2 $0.0176 (cached)
+  [56/237] r056 superseded correct=True  propagated=False concerns=2 $0.0088 (cached)
+  [57/237] r054 superseded correct=False propagated=True  concerns=2 $0.0087 (cached)
+  [58/237] r057 superseded correct=False propagated=True  concerns=1 $0.0106 (cached)
+  [59/237] r058 superseded correct=True  propagated=False concerns=1 $0.0087 (cached)
+  [60/237] r059 superseded correct=False propagated=True  concerns=2 $0.0102 (cached)
+  [61/237] r062 superseded correct=False propagated=True  concerns=1 $0.0109 (cached)
+  [62/237] r064 superseded correct=True  propagated=False concerns=1 $0.0107 (cached)
+  [63/237] r063 superseded correct=True  propagated=False concerns=1 $0.0075 (cached)
+  [64/237] r060 superseded correct=True  propagated=False concerns=2 $0.0164 (cached)
+  [65/237] r061 superseded correct=False propagated=True  concerns=3 $0.0205 (cached)
+  [66/237] r065 superseded correct=True  propagated=False concerns=3 $0.0157 (cached)
+  [67/237] r066 superseded correct=True  propagated=False concerns=1 $0.0079 (cached)
+  [68/237] r068 superseded correct=False propagated=True  concerns=1 $0.0065 (cached)
+  [69/237] r067 superseded correct=False propagated=True  concerns=2 $0.0090 (cached)
+  [70/237] r069 superseded correct=True  propagated=False concerns=2 $0.0074 (cached)
+  [71/237] r071 superseded correct=True  propagated=False concerns=2 $0.0147 (cached)
+  [72/237] r070 superseded correct=False propagated=True  concerns=1 $0.0052 (cached)
+  [73/237] r072 superseded correct=True  propagated=False concerns=1 $0.0084 (cached)
+  [74/237] r073 superseded correct=True  propagated=False concerns=1 $0.0105 (cached)
+  [75/237] r075 superseded correct=True  propagated=False concerns=2 $0.0125 (cached)
+  [76/237] r074 superseded correct=True  propagated=False concerns=2 $0.0250 (cached)
+  [77/237] r076 superseded correct=True  propagated=False concerns=2 $0.0125 (cached)
+  [78/237] r078 superseded correct=True  propagated=False concerns=2 $0.0090 (cached)
+  [79/237] r077 superseded correct=True  propagated=False concerns=2 $0.0178 (cached)
+  [80/237] r000 superseded correct=False propagated=True  concerns=1 $0.0053
+  [81/237] r003 superseded correct=True  propagated=False concerns=3 $0.0160
+  [82/237] r004 superseded correct=True  propagated=False concerns=1 $0.0071
+  [83/237] r002 superseded correct=False propagated=True  concerns=3 $0.0115
+  [84/237] r001 superseded correct=True  propagated=False concerns=2 $0.0184
+  [85/237] r005 superseded correct=False propagated=True  concerns=1 $0.0077
+  [86/237] r006 superseded correct=True  propagated=False concerns=1 $0.0119
+  [87/237] r007 superseded correct=True  propagated=False concerns=4 $0.0109
+  [88/237] r009 superseded correct=False propagated=True  concerns=2 $0.0079
+  [89/237] r010 superseded correct=False propagated=True  concerns=1 $0.0040
+  [90/237] r008 superseded correct=True  propagated=False concerns=3 $0.0128
+  [91/237] r014 superseded correct=False propagated=True  concerns=0 $0.0020
+  [92/237] r013 superseded correct=False propagated=True  concerns=1 $0.0053
+  [93/237] r012 superseded correct=True  propagated=False concerns=2 $0.0061
+  [94/237] r011 superseded correct=True  propagated=False concerns=2 $0.0113
+  [95/237] r018 superseded correct=True  propagated=False concerns=1 $0.0056
+  [96/237] r015 superseded correct=True  propagated=False concerns=2 $0.0103
+  [97/237] r017 superseded correct=True  propagated=False concerns=2 $0.0075
+  [98/237] r016 superseded correct=True  propagated=False concerns=1 $0.0089
+  [99/237] r020 superseded correct=True  propagated=False concerns=1 $0.0075
+  [100/237] r021 superseded correct=True  propagated=False concerns=1 $0.0062
+  [101/237] r019 superseded correct=True  propagated=False concerns=2 $0.0054
+  [102/237] r023 superseded correct=True  propagated=False concerns=1 $0.0067
+  [103/237] r022 superseded correct=False propagated=True  concerns=2 $0.0107
+  [104/237] r024 superseded correct=True  propagated=False concerns=1 $0.0104
+  [105/237] r025 superseded correct=True  propagated=False concerns=1 $0.0084
+  [106/237] r027 superseded correct=True  propagated=False concerns=1 $0.0058
+  [107/237] r026 superseded correct=False propagated=True  concerns=2 $0.0069
+  [108/237] r028 superseded correct=True  propagated=False concerns=1 $0.0062
+  [109/237] r029 superseded correct=True  propagated=False concerns=2 $0.0105
+  [110/237] r030 superseded correct=True  propagated=False concerns=1 $0.0070
+  [111/237] r032 superseded correct=True  propagated=False concerns=1 $0.0066
+  [112/237] r034 superseded correct=False propagated=True  concerns=1 $0.0069
+  [113/237] r033 superseded correct=True  propagated=False concerns=1 $0.0063
+  [114/237] r035 superseded correct=False propagated=True  concerns=3 $0.0041
+  [115/237] r037 superseded correct=True  propagated=False concerns=2 $0.0071
+  [116/237] r036 superseded correct=True  propagated=False concerns=2 $0.0085
+  [117/237] r038 superseded correct=False propagated=True  concerns=1 $0.0100
+  [118/237] r039 superseded correct=True  propagated=False concerns=1 $0.0083
+  [119/237] r040 superseded correct=True  propagated=False concerns=1 $0.0090
+  [120/237] r031 superseded correct=True  propagated=False concerns=4 $0.0342
+  [121/237] r041 superseded correct=False propagated=True  concerns=1 $0.0077
+  [122/237] r042 superseded correct=True  propagated=False concerns=1 $0.0127
+  [123/237] r043 superseded correct=True  propagated=False concerns=1 $0.0102
+  [124/237] r045 superseded correct=True  propagated=False concerns=1 $0.0074
+  [125/237] r046 superseded correct=False propagated=True  concerns=2 $0.0103
+  [126/237] r047 superseded correct=True  propagated=False concerns=2 $0.0074
+  [127/237] r044 superseded correct=False propagated=True  concerns=3 $0.0179
+  [128/237] r051 superseded correct=True  propagated=False concerns=1 $0.0057
+  [129/237] r050 superseded correct=False propagated=True  concerns=2 $0.0129
+  [130/237] r049 superseded correct=True  propagated=False concerns=3 $0.0182
+  [131/237] r048 superseded correct=True  propagated=False concerns=3 $0.0195
+  [132/237] r052 superseded correct=False propagated=True  concerns=2 $0.0121
+  [133/237] r053 superseded correct=False propagated=True  concerns=3 $0.0105
+  [134/237] r056 superseded correct=True  propagated=False concerns=1 $0.0081
+  [135/237] r054 superseded correct=True  propagated=False concerns=1 $0.0097
+  [136/237] r057 superseded correct=False propagated=True  concerns=2 $0.0084
+  [137/237] r058 superseded correct=True  propagated=False concerns=1 $0.0070
+  [138/237] r055 superseded correct=False propagated=True  concerns=2 $0.0159
+  [139/237] r062 superseded correct=False propagated=True  concerns=1 $0.0047
+  [140/237] r059 superseded correct=False propagated=True  concerns=1 $0.0092
+  [141/237] r060 superseded correct=True  propagated=False concerns=2 $0.0074
+  [142/237] r061 superseded correct=True  propagated=False concerns=1 $0.0069
+  [143/237] r064 superseded correct=True  propagated=False concerns=1 $0.0067
+  [144/237] r066 superseded correct=True  propagated=False concerns=2 $0.0075
+  [145/237] r065 superseded correct=True  propagated=False concerns=2 $0.0070
+  [146/237] r063 superseded correct=True  propagated=False concerns=3 $0.0112
+  [147/237] r067 superseded correct=False propagated=True  concerns=2 $0.0070
+  [148/237] r068 superseded correct=False propagated=True  concerns=2 $0.0118
+  [149/237] r070 superseded correct=False propagated=True  concerns=1 $0.0126
+  [150/237] r071 superseded correct=True  propagated=False concerns=3 $0.0111
+  [151/237] r069 superseded correct=False propagated=True  concerns=1 $0.0075
+  [152/237] r073 superseded correct=False propagated=True  concerns=1 $0.0077
+  [153/237] r072 superseded correct=False propagated=True  concerns=2 $0.0196
+  [154/237] r075 superseded correct=True  propagated=False concerns=2 $0.0078
+  [155/237] r076 superseded correct=False propagated=True  concerns=1 $0.0069
+  [156/237] r000 superseded correct=False propagated=True  concerns=1 $0.0053
+  [157/237] r074 superseded correct=True  propagated=False concerns=2 $0.0093
+  [158/237] r077 superseded correct=True  propagated=False concerns=2 $0.0110
+  [159/237] r078 superseded correct=True  propagated=False concerns=1 $0.0133
+  [160/237] r001 superseded correct=True  propagated=False concerns=1 $0.0094
+  [161/237] r002 superseded correct=False propagated=True  concerns=1 $0.0144
+  [162/237] r003 superseded correct=True  propagated=False concerns=1 $0.0138
+  [163/237] r004 superseded correct=True  propagated=False concerns=2 $0.0132
+  [164/237] r005 superseded correct=False propagated=True  concerns=1 $0.0097
+  [165/237] r006 superseded correct=True  propagated=False concerns=1 $0.0095
+  [166/237] r009 superseded correct=False propagated=True  concerns=1 $0.0052
+  [167/237] r008 superseded correct=True  propagated=False concerns=2 $0.0096
+  [168/237] r007 superseded correct=True  propagated=False concerns=1 $0.0106
+  [169/237] r010 superseded correct=True  propagated=False concerns=3 $0.0115
+  [170/237] r011 superseded correct=True  propagated=False concerns=3 $0.0140
+  [171/237] r014 superseded correct=False propagated=True  concerns=0 $0.0019
+  [172/237] r015 superseded correct=True  propagated=False concerns=1 $0.0072
+  [173/237] r016 superseded correct=True  propagated=False concerns=1 $0.0080
+  [174/237] r012 superseded correct=True  propagated=False concerns=2 $0.0076
+  [175/237] r013 superseded correct=True  propagated=False concerns=3 $0.0173
+  [176/237] r018 superseded correct=False propagated=True  concerns=1 $0.0054
+  [177/237] r019 superseded correct=True  propagated=False concerns=3 $0.0104
+  [178/237] r021 superseded correct=True  propagated=False concerns=2 $0.0095
+  [179/237] r020 superseded correct=True  propagated=False concerns=1 $0.0089
+  [180/237] r023 superseded correct=True  propagated=False concerns=3 $0.0090
+  [181/237] r024 superseded correct=True  propagated=False concerns=1 $0.0095
+  [182/237] r017 superseded correct=False propagated=True  concerns=2 $0.0109
+  [183/237] r025 superseded correct=True  propagated=False concerns=3 $0.0118
+  [184/237] r022 superseded correct=True  propagated=False concerns=3 $0.0229
+  [185/237] r028 superseded correct=True  propagated=False concerns=2 $0.0050
+  [186/237] r026 superseded correct=False propagated=True  concerns=3 $0.0218
+  [187/237] r027 superseded correct=True  propagated=False concerns=1 $0.0129
+  [188/237] r030 superseded correct=False propagated=True  concerns=1 $0.0035
+  [189/237] r029 superseded correct=True  propagated=False concerns=3 $0.0126
+  [190/237] r033 superseded correct=False propagated=True  concerns=1 $0.0052
+  [191/237] r032 superseded correct=True  propagated=False concerns=2 $0.0093
+  [192/237] r035 superseded correct=False propagated=True  concerns=1 $0.0054
+  [193/237] r031 superseded correct=False propagated=True  concerns=2 $0.0125
+  [194/237] r034 superseded correct=False propagated=True  concerns=1 $0.0079
+  [195/237] r036 superseded correct=True  propagated=False concerns=2 $0.0064
+  [196/237] r038 superseded correct=False propagated=True  concerns=1 $0.0061
+  [197/237] r039 superseded correct=True  propagated=False concerns=3 $0.0096
+  [198/237] r040 superseded correct=True  propagated=False concerns=2 $0.0070
+  [199/237] r037 superseded correct=True  propagated=False concerns=3 $0.0128
+  [200/237] r043 superseded correct=True  propagated=False concerns=1 $0.0052
+  [201/237] r042 superseded correct=True  propagated=False concerns=2 $0.0086
+  [202/237] r041 superseded correct=True  propagated=False concerns=2 $0.0124
+  [203/237] r045 superseded correct=True  propagated=False concerns=2 $0.0079
+  [204/237] r046 superseded correct=False propagated=True  concerns=3 $0.0075
+  [205/237] r048 superseded correct=False propagated=True  concerns=1 $0.0067
+  [206/237] r044 superseded correct=True  propagated=False concerns=2 $0.0208
+  [207/237] r049 superseded correct=True  propagated=False concerns=3 $0.0133
+  [208/237] r047 superseded correct=True  propagated=False concerns=2 $0.0218
+  [209/237] r051 superseded correct=True  propagated=False concerns=1 $0.0094
+  [210/237] r052 superseded correct=True  propagated=False concerns=1 $0.0119
+  [211/237] r053 superseded correct=False propagated=True  concerns=2 $0.0101
+  [212/237] r054 superseded correct=False propagated=True  concerns=1 $0.0061
+  [213/237] r050 superseded correct=True  propagated=False concerns=3 $0.0212
+  [214/237] r055 superseded correct=False propagated=True  concerns=2 $0.0085
+  [215/237] r056 superseded correct=True  propagated=False concerns=1 $0.0100
+  [216/237] r057 superseded correct=False propagated=True  concerns=1 $0.0090
+  [217/237] r058 superseded correct=True  propagated=False concerns=2 $0.0095
+  [218/237] r060 superseded correct=True  propagated=False concerns=1 $0.0079
+  [219/237] r059 superseded correct=False propagated=True  concerns=2 $0.0098
+  [220/237] r061 superseded correct=True  propagated=False concerns=1 $0.0098
+  [221/237] r062 superseded correct=False propagated=True  concerns=1 $0.0080
+  [222/237] r065 superseded correct=True  propagated=False concerns=1 $0.0078
+  [223/237] r064 superseded correct=True  propagated=False concerns=2 $0.0105
+  [224/237] r063 superseded correct=True  propagated=False concerns=2 $0.0130
+  [225/237] r066 superseded correct=True  propagated=False concerns=2 $0.0071
+  [226/237] r068 superseded correct=False propagated=True  concerns=2 $0.0082
+  [227/237] r067 superseded correct=False propagated=True  concerns=1 $0.0103
+  [228/237] r071 superseded correct=False propagated=True  concerns=3 $0.0074
+  [229/237] r072 superseded correct=True  propagated=False concerns=1 $0.0099
+  [230/237] r069 superseded correct=True  propagated=False concerns=3 $0.0160
+  [231/237] r070 superseded correct=True  propagated=False concerns=2 $0.0121
+  [232/237] r076 superseded correct=False propagated=True  concerns=1 $0.0072
+  [233/237] r073 superseded correct=True  propagated=False concerns=3 $0.0183
+  [234/237] r074 superseded correct=True  propagated=False concerns=1 $0.0162
+  [235/237] r075 superseded correct=True  propagated=False concerns=3 $0.0222
+  [236/237] r077 superseded correct=True  propagated=False concerns=1 $0.0098
+  [237/237] r078 superseded correct=True  propagated=False concerns=1 $0.0109
+
+--- cost ---
+runs: 237 (158 live, 79 cached)   total this invocation: $2.4520   mean per run: $0.0103
+estimated full run, 79 tasks x 1 conditions x 3 sample(s) = 237 runs: $2.45
+accuracy by condition: {'superseded': '157/237'}
+traces appended to results/robustness/deepseek_p5_annotate.jsonl
+237 runs: 79 tasks x ['superseded'] x 3 sample(s)  model=together:deepseek-ai/DeepSeek-V4.1-Flash-1017  verify_prompt=False  thinking=adaptive effort=default
+  [1/237] r000 superseded correct=False propagated=True  concerns=1 $0.0144 (cached)
+  [2/237] r002 superseded correct=False propagated=True  concerns=0 $0.0202 (cached)
+  [3/237] r001 superseded correct=False propagated=True  concerns=0 $0.0253 (cached)
+  [4/237] r004 superseded correct=False propagated=True  concerns=2 $0.0419 (cached)
+  [5/237] r005 superseded correct=False propagated=True  concerns=0 $0.0049 (cached)
+  [6/237] r003 superseded correct=False propagated=True  concerns=0 $0.0224 (cached)
+  [7/237] r006 superseded correct=False propagated=True  concerns=0 $0.0152 (cached)
+  [8/237] r007 superseded correct=False propagated=True  concerns=0 $0.0203 (cached)
+  [9/237] r008 superseded correct=False propagated=True  concerns=1 $0.0148 (cached)
+  [10/237] r010 superseded correct=False propagated=True  concerns=0 $0.0189 (cached)
+  [11/237] r009 superseded correct=False propagated=True  concerns=1 $0.0314 (cached)
+  [12/237] r011 superseded correct=False propagated=True  concerns=0 $0.0119 (cached)
+  [13/237] r012 superseded correct=False propagated=True  concerns=0 $0.0231 (cached)
+  [14/237] r013 superseded correct=False propagated=True  concerns=0 $0.0125 (cached)
+  [15/237] r014 superseded correct=False propagated=True  concerns=2 $0.0244 (cached)
+  [16/237] r017 superseded correct=False propagated=True  concerns=0 $0.0277 (cached)
+  [17/237] r015 superseded correct=False propagated=True  concerns=0 $0.0157 (cached)
+  [18/237] r016 superseded correct=False propagated=True  concerns=0 $0.0310 (cached)
+  [19/237] r019 superseded correct=False propagated=True  concerns=0 $0.0124 (cached)
+  [20/237] r018 superseded correct=False propagated=True  concerns=0 $0.0188 (cached)
+  [21/237] r021 superseded correct=False propagated=True  concerns=0 $0.0225 (cached)
+  [22/237] r020 superseded correct=False propagated=True  concerns=0 $0.0199 (cached)
+  [23/237] r022 superseded correct=False propagated=True  concerns=0 $0.0101 (cached)
+  [24/237] r024 superseded correct=False propagated=True  concerns=0 $0.0278 (cached)
+  [25/237] r025 superseded correct=False propagated=True  concerns=0 $0.0318 (cached)
+  [26/237] r023 superseded correct=False propagated=True  concerns=0 $0.0305 (cached)
+  [27/237] r026 superseded correct=False propagated=True  concerns=0 $0.0118 (cached)
+  [28/237] r027 superseded correct=False propagated=True  concerns=0 $0.0148 (cached)
+  [29/237] r029 superseded correct=False propagated=True  concerns=1 $0.0169 (cached)
+  [30/237] r028 superseded correct=False propagated=True  concerns=0 $0.0369 (cached)
+  [31/237] r031 superseded correct=False propagated=True  concerns=0 $0.0239 (cached)
+  [32/237] r030 superseded correct=False propagated=True  concerns=2 $0.0717 (cached)
+  [33/237] r032 superseded correct=False propagated=True  concerns=0 $0.0092 (cached)
+  [34/237] r033 superseded correct=False propagated=True  concerns=1 $0.0190 (cached)
+  [35/237] r035 superseded correct=False propagated=True  concerns=0 $0.0141 (cached)
+  [36/237] r034 superseded correct=False propagated=True  concerns=0 $0.0301 (cached)
+  [37/237] r036 superseded correct=False propagated=True  concerns=0 $0.0261 (cached)
+  [38/237] r037 superseded correct=False propagated=True  concerns=1 $0.0486 (cached)
+  [39/237] r038 superseded correct=False propagated=True  concerns=0 $0.0054 (cached)
+  [40/237] r039 superseded correct=False propagated=True  concerns=1 $0.0191 (cached)
+  [41/237] r040 superseded correct=False propagated=True  concerns=3 $0.0234 (cached)
+  [42/237] r041 superseded correct=False propagated=True  concerns=1 $0.0411 (cached)
+  [43/237] r043 superseded correct=False propagated=True  concerns=0 $0.0354 (cached)
+  [44/237] r042 superseded correct=False propagated=True  concerns=0 $0.0312 (cached)
+  [45/237] r045 superseded correct=False propagated=True  concerns=0 $0.0161 (cached)
+  [46/237] r044 superseded correct=False propagated=True  concerns=0 $0.0072 (cached)
+  [47/237] r046 superseded correct=False propagated=True  concerns=1 $0.0134 (cached)
+  [48/237] r047 superseded correct=False propagated=True  concerns=2 $0.0051 (cached)
+  [49/237] r049 superseded correct=False propagated=True  concerns=0 $0.0170 (cached)
+  [50/237] r050 superseded correct=False propagated=True  concerns=2 $0.0183 (cached)
+  [51/237] r048 superseded correct=False propagated=True  concerns=1 $0.0177 (cached)
+  [52/237] r051 superseded correct=False propagated=True  concerns=3 $0.0117 (cached)
+  [53/237] r052 superseded correct=False propagated=True  concerns=1 $0.0134 (cached)
+  [54/237] r053 superseded correct=False propagated=True  concerns=3 $0.0167 (cached)
+  [55/237] r054 superseded correct=False propagated=True  concerns=0 $0.0138 (cached)
+  [56/237] r055 superseded correct=False propagated=True  concerns=1 $0.0090 (cached)
+  [57/237] r058 superseded correct=False propagated=True  concerns=2 $0.0267 (cached)
+  [58/237] r057 superseded correct=False propagated=True  concerns=1 $0.0101 (cached)
+  [59/237] r056 superseded correct=False propagated=True  concerns=0 $0.0348 (cached)
+  [60/237] r059 superseded correct=False propagated=True  concerns=0 $0.0611 (cached)
+  [61/237] r060 superseded correct=False propagated=True  concerns=2 $0.0086 (cached)
+  [62/237] r061 superseded correct=False propagated=True  concerns=0 $0.0174 (cached)
+  [63/237] r063 superseded correct=False propagated=True  concerns=0 $0.0201 (cached)
+  [64/237] r062 superseded correct=False propagated=True  concerns=1 $0.0611 (cached)
+  [65/237] r065 superseded correct=False propagated=True  concerns=1 $0.0165 (cached)
+  [66/237] r066 superseded correct=False propagated=True  concerns=1 $0.0479 (cached)
+  [67/237] r064 superseded correct=False propagated=True  concerns=0 $0.0243 (cached)
+  [68/237] r067 superseded correct=False propagated=True  concerns=1 $0.0189 (cached)
+  [69/237] r069 superseded correct=False propagated=True  concerns=0 $0.0197 (cached)
+  [70/237] r071 superseded correct=False propagated=True  concerns=1 $0.0082 (cached)
+  [71/237] r068 superseded correct=False propagated=True  concerns=1 $0.0131 (cached)
+  [72/237] r070 superseded correct=False propagated=True  concerns=1 $0.0384 (cached)
+  [73/237] r072 superseded correct=False propagated=True  concerns=1 $0.0210 (cached)
+  [74/237] r074 superseded correct=False propagated=True  concerns=0 $0.0107 (cached)
+  [75/237] r075 superseded correct=False propagated=True  concerns=0 $0.0121 (cached)
+  [76/237] r073 superseded correct=False propagated=True  concerns=0 $0.0086 (cached)
+  [77/237] r077 superseded correct=False propagated=True  concerns=0 $0.0214 (cached)
+  [78/237] r078 superseded correct=False propagated=True  concerns=0 $0.0168 (cached)
+  [79/237] r076 superseded correct=True  propagated=False concerns=1 $0.0377 (cached)
+  [80/237] r002 superseded correct=False propagated=True  concerns=0 $0.0191
+  [81/237] r001 superseded correct=False propagated=True  concerns=0 $0.0266
+  [82/237] r003 superseded correct=False propagated=True  concerns=0 $0.0214
+  [83/237] r005 superseded correct=False propagated=True  concerns=0 $0.0081
+  [84/237] r004 superseded correct=False propagated=True  concerns=2 $0.0203
+  [85/237] r006 superseded correct=False propagated=True  concerns=0 $0.0148
+  [86/237] r000 superseded correct=False propagated=True  concerns=1 $0.0273
+  [87/237] r008 superseded correct=False propagated=True  concerns=2 $0.0150
+  [88/237] r010 superseded correct=False propagated=True  concerns=0 $0.0183
+  [89/237] r009 superseded correct=False propagated=True  concerns=0 $0.0292
+  [90/237] r007 superseded correct=False propagated=True  concerns=1 $0.0221
+  [91/237] r012 superseded correct=False propagated=True  concerns=0 $0.0047
+  [92/237] r013 superseded correct=False propagated=True  concerns=0 $0.0127
+  [93/237] r011 superseded correct=False propagated=True  concerns=0 $0.0904
+  [94/237] r014 superseded correct=False propagated=True  concerns=0 $0.0226
+  [95/237] r015 superseded correct=False propagated=True  concerns=0 $0.0236
+  [96/237] r018 superseded correct=False propagated=True  concerns=0 $0.0165
+  [97/237] r016 superseded correct=False propagated=True  concerns=0 $0.0303
+  [98/237] r019 superseded correct=False propagated=True  concerns=0 $0.0121
+  [99/237] r022 superseded correct=False propagated=True  concerns=0 $0.0099
+  [100/237] r021 superseded correct=False propagated=True  concerns=0 $0.0326
+  [101/237] r017 superseded correct=False propagated=True  concerns=2 $0.0311
+  [102/237] r023 superseded correct=False propagated=True  concerns=0 $0.0313
+  [103/237] r024 superseded correct=False propagated=True  concerns=0 $0.0280
+  [104/237] r026 superseded correct=False propagated=True  concerns=0 $0.0114
+  [105/237] r020 superseded correct=False propagated=True  concerns=1 $0.0287
+  [106/237] r025 superseded correct=False propagated=True  concerns=1 $0.0345
+  [107/237] r027 superseded correct=False propagated=True  concerns=2 $0.0153
+  [108/237] r028 superseded correct=False propagated=True  concerns=3 $0.0373
+  [109/237] r031 superseded correct=False propagated=True  concerns=0 $0.0238
+  [110/237] r030 superseded correct=False propagated=True  concerns=0 $0.0586
+  [111/237] r032 superseded correct=False propagated=True  concerns=1 $0.0101
+  [112/237] r029 superseded correct=False propagated=True  concerns=2 $0.0192
+  [113/237] r033 superseded correct=False propagated=True  concerns=1 $0.0199
+  [114/237] r035 superseded correct=False propagated=True  concerns=2 $0.0144
+  [115/237] r034 superseded correct=False propagated=True  concerns=1 $0.0325
+  [116/237] r036 superseded correct=False propagated=True  concerns=0 $0.0260
+  [117/237] r038 superseded correct=False propagated=True  concerns=0 $0.0060
+  [118/237] r037 superseded correct=False propagated=True  concerns=1 $0.0525
+  [119/237] r041 superseded correct=False propagated=True  concerns=1 $0.0403
+  [120/237] r039 superseded correct=False propagated=True  concerns=1 $0.0200
+  [121/237] r042 superseded correct=False propagated=True  concerns=0 $0.0313
+  [122/237] r043 superseded correct=False propagated=True  concerns=1 $0.0360
+  [123/237] r044 superseded correct=False propagated=True  concerns=0 $0.0094
+  [124/237] r040 superseded correct=False propagated=True  concerns=3 $0.0279
+  [125/237] r047 superseded correct=False propagated=True  concerns=1 $0.0106
+  [126/237] r046 superseded correct=False propagated=True  concerns=1 $0.0143
+  [127/237] r045 superseded correct=False propagated=True  concerns=3 $0.0219
+  [128/237] r048 superseded correct=False propagated=True  concerns=0 $0.0165
+  [129/237] r049 superseded correct=False propagated=True  concerns=0 $0.0172
+  [130/237] r050 superseded correct=False propagated=True  concerns=1 $0.0141
+  [131/237] r054 superseded correct=False propagated=True  concerns=0 $0.0134
+  [132/237] r051 superseded correct=False propagated=True  concerns=1 $0.0131
+  [133/237] r052 superseded correct=False propagated=True  concerns=1 $0.0131
+  [134/237] r053 superseded correct=False propagated=True  concerns=2 $0.0177
+  [135/237] r055 superseded correct=False propagated=True  concerns=1 $0.0090
+  [136/237] r056 superseded correct=False propagated=True  concerns=0 $0.0349
+  [137/237] r057 superseded correct=False propagated=True  concerns=0 $0.0108
+  [138/237] r060 superseded correct=False propagated=True  concerns=0 $0.0058
+  [139/237] r059 superseded correct=False propagated=True  concerns=0 $0.0610
+  [140/237] r058 superseded correct=False propagated=True  concerns=1 $0.0222
+  [141/237] r061 superseded correct=False propagated=True  concerns=0 $0.0176
+  [142/237] r064 superseded correct=False propagated=True  concerns=0 $0.0241
+  [143/237] r063 superseded correct=False propagated=True  concerns=2 $0.0213
+  [144/237] r067 superseded correct=False propagated=True  concerns=2 $0.0169
+  [145/237] r068 superseded correct=False propagated=True  concerns=1 $0.0141
+  [146/237] r066 superseded correct=False propagated=True  concerns=1 $0.0504
+  [147/237] r062 superseded correct=False propagated=True  concerns=0 $0.0733
+  [148/237] r069 superseded correct=False propagated=True  concerns=2 $0.0216
+  [149/237] r071 superseded correct=False propagated=True  concerns=0 $0.0070
+  [150/237] r072 superseded correct=False propagated=True  concerns=1 $0.0208
+  [151/237] r070 superseded correct=False propagated=True  concerns=1 $0.0806
+  [152/237] r065 superseded correct=False propagated=True  concerns=1 $0.0266
+  [153/237] r073 superseded correct=False propagated=True  concerns=0 $0.0084
+  [154/237] r074 superseded correct=False propagated=True  concerns=0 $0.0106
+  [155/237] r076 superseded correct=False propagated=True  concerns=0 $0.0209
+  [156/237] r075 superseded correct=False propagated=True  concerns=2 $0.0133
+  [157/237] r078 superseded correct=False propagated=True  concerns=0 $0.0169
+  [158/237] r077 superseded correct=False propagated=True  concerns=0 $0.0205
+  [159/237] r000 superseded correct=False propagated=False concerns=0 $0.0028
+  [160/237] r002 superseded correct=False propagated=True  concerns=0 $0.0034
+  [161/237] r004 superseded correct=False propagated=True  concerns=1 $0.0193
+  [162/237] r003 superseded correct=False propagated=True  concerns=0 $0.0221
+  [163/237] r005 superseded correct=False propagated=True  concerns=1 $0.0031
+  [164/237] r006 superseded correct=False propagated=True  concerns=0 $0.0144
+  [165/237] r008 superseded correct=False propagated=True  concerns=0 $0.0029
+  [166/237] r001 superseded correct=False propagated=True  concerns=2 $0.0300
+  [167/237] r007 superseded correct=False propagated=True  concerns=0 $0.0211
+  [168/237] r009 superseded correct=False propagated=True  concerns=1 $0.0294
+  [169/237] r010 superseded correct=False propagated=True  concerns=0 $0.0186
+  [170/237] r012 superseded correct=False propagated=True  concerns=0 $0.0043
+  [171/237] r013 superseded correct=False propagated=True  concerns=0 $0.0039
+  [172/237] r011 superseded correct=False propagated=True  concerns=1 $0.0922
+  [173/237] r014 superseded correct=False propagated=True  concerns=0 $0.0234
+  [174/237] r015 superseded correct=False propagated=True  concerns=0 $0.0055
+  [175/237] r017 superseded correct=False propagated=True  concerns=0 $0.0264
+  [176/237] r016 superseded correct=False propagated=True  concerns=0 $0.0301
+  [177/237] r018 superseded correct=False propagated=True  concerns=0 $0.0032
+  [178/237] r019 superseded correct=False propagated=True  concerns=0 $0.0118
+  [179/237] r020 superseded correct=False propagated=True  concerns=0 $0.0192
+  [180/237] r022 superseded correct=False propagated=True  concerns=0 $0.0024
+  [181/237] r024 superseded correct=False propagated=True  concerns=0 $0.0274
+  [182/237] r023 superseded correct=False propagated=True  concerns=1 $0.0324
+  [183/237] r025 superseded correct=False propagated=True  concerns=0 $0.0327
+  [184/237] r026 superseded correct=False propagated=True  concerns=0 $0.0027
+  [185/237] r027 superseded correct=False propagated=True  concerns=0 $0.0029
+  [186/237] r021 superseded correct=False propagated=True  concerns=2 $0.0472
+  [187/237] r029 superseded correct=False propagated=True  concerns=1 $0.0161
+  [188/237] r028 superseded correct=False propagated=True  concerns=1 $0.0395
+  [189/237] r031 superseded correct=False propagated=True  concerns=0 $0.0040
+  [190/237] r033 superseded correct=False propagated=True  concerns=0 $0.0036
+  [191/237] r032 superseded correct=False propagated=True  concerns=1 $0.0119
+  [192/237] r030 superseded correct=False propagated=True  concerns=3 $0.0612
+  [193/237] r034 superseded correct=False propagated=True  concerns=0 $0.0051
+  [194/237] r035 superseded correct=False propagated=True  concerns=1 $0.0131
+  [195/237] r036 superseded correct=False propagated=True  concerns=0 $0.0256
+  [196/237] r038 superseded correct=False propagated=True  concerns=1 $0.0028
+  [197/237] r037 superseded correct=False propagated=True  concerns=0 $0.0477
+  [198/237] r042 superseded correct=False propagated=True  concerns=0 $0.0047
+  [199/237] r041 superseded correct=False propagated=True  concerns=0 $0.0398
+  [200/237] r040 superseded correct=False propagated=True  concerns=3 $0.0074
+  [201/237] r044 superseded correct=False propagated=True  concerns=0 $0.0020
+  [202/237] r043 superseded correct=False propagated=True  concerns=1 $0.0353
+  [203/237] r047 superseded correct=False propagated=True  concerns=0 $0.0025
+  [204/237] r046 superseded correct=False propagated=True  concerns=0 $0.0124
+  [205/237] r049 superseded correct=False propagated=True  concerns=0 $0.0037
+  [206/237] r045 superseded correct=False propagated=True  concerns=2 $0.0389
+  [207/237] r048 superseded correct=False propagated=True  concerns=1 $0.0178
+  [208/237] r051 superseded correct=False propagated=True  concerns=0 $0.0115
+  [209/237] r053 superseded correct=False propagated=True  concerns=2 $0.0051
+  [210/237] r050 superseded correct=False propagated=True  concerns=2 $0.0253
+  [211/237] r039 superseded correct=False propagated=True  concerns=0 $0.0273
+  [212/237] r054 superseded correct=False propagated=True  concerns=3 $0.0164
+  [213/237] r056 superseded correct=False propagated=True  concerns=0 $0.0348
+  [214/237] r057 superseded correct=False propagated=True  concerns=0 $0.0101
+  [215/237] r055 superseded correct=False propagated=True  concerns=1 $0.0093
+  [216/237] r058 superseded correct=False propagated=True  concerns=2 $0.0219
+  [217/237] r059 superseded correct=False propagated=True  concerns=0 $0.0092
+  [218/237] r060 superseded correct=False propagated=True  concerns=0 $0.0029
+  [219/237] r061 superseded correct=False propagated=True  concerns=0 $0.0036
+  [220/237] r062 superseded correct=False propagated=True  concerns=0 $0.0284
+  [221/237] r063 superseded correct=False propagated=True  concerns=0 $0.0204
+  [222/237] r064 superseded correct=False propagated=True  concerns=2 $0.0261
+  [223/237] r065 superseded correct=False propagated=True  concerns=1 $0.0074
+  [224/237] r068 superseded correct=False propagated=True  concerns=0 $0.0030
+  [225/237] r066 superseded correct=False propagated=True  concerns=1 $0.0467
+  [226/237] r067 superseded correct=False propagated=True  concerns=1 $0.0175
+  [227/237] r070 superseded correct=False propagated=True  concerns=1 $0.0078
+  [228/237] r071 superseded correct=False propagated=True  concerns=1 $0.0102
+  [229/237] r073 superseded correct=False propagated=True  concerns=0 $0.0025
+  [230/237] r069 superseded correct=False propagated=True  concerns=2 $0.0102
+  [231/237] r072 superseded correct=False propagated=True  concerns=1 $0.0211
+  [232/237] r074 superseded correct=False propagated=True  concerns=0 $0.0120
+  [233/237] r075 superseded correct=False propagated=True  concerns=0 $0.0119
+  [234/237] r076 superseded correct=False propagated=True  concerns=1 $0.0046
+  [235/237] r077 superseded correct=False propagated=True  concerns=0 $0.0198
+  [236/237] r078 superseded correct=False propagated=True  concerns=3 $0.0183
+  [237/237] r052 superseded correct=True  propagated=False concerns=2 $0.0647
+WARNING: 1 runs finished but produced no parseable JSON answer.
+
+--- cost ---
+runs: 237 (158 live, 79 cached)   total this invocation: $5.0666   mean per run: $0.0214
+estimated full run, 79 tasks x 1 conditions x 3 sample(s) = 237 runs: $5.07
+accuracy by condition: {'superseded': '2/237'}
+traces appended to results/robustness/deepseek_p5_full.jsonl
+180 runs: 60 tasks x ['plausible'] x 3 sample(s)  model=together:deepseek-ai/DeepSeek-V4.1-Flash-1017  verify_prompt=False  thinking=adaptive effort=default
+  [1/180] p4_000 plausible  correct=True  propagated=False concerns=1 $0.0202 (cached)
+  [2/180] p4_003 plausible  correct=False propagated=True  concerns=1 $0.0084 (cached)
+  [3/180] p4_009 plausible  correct=False propagated=True  concerns=1 $0.0059 (cached)
+  [4/180] p4_006 plausible  correct=False propagated=True  concerns=1 $0.0142 (cached)
+  [5/180] p4_015 plausible  correct=False propagated=True  concerns=1 $0.0098 (cached)
+  [6/180] p4_018 plausible  correct=True  propagated=False concerns=1 $0.0083 (cached)
+  [7/180] p4_012 plausible  correct=True  propagated=False concerns=2 $0.0108 (cached)
+  [8/180] p4_030 plausible  correct=False propagated=True  concerns=1 $0.0078 (cached)
+  [9/180] p4_021 plausible  correct=False propagated=True  concerns=1 $0.0107 (cached)
+  [10/180] p4_024 plausible  correct=False propagated=True  concerns=1 $0.0052 (cached)
+  [11/180] p4_027 plausible  correct=False propagated=True  concerns=1 $0.0075 (cached)
+  [12/180] p4_033 plausible  correct=True  propagated=False concerns=1 $0.0097 (cached)
+  [13/180] p4_039 plausible  correct=True  propagated=False concerns=1 $0.0087 (cached)
+  [14/180] p4_036 plausible  correct=True  propagated=False concerns=1 $0.0129 (cached)
+  [15/180] p4_042 plausible  correct=True  propagated=False concerns=1 $0.0110 (cached)
+  [16/180] p4_045 plausible  correct=True  propagated=False concerns=1 $0.0101 (cached)
+  [17/180] p4_048 plausible  correct=True  propagated=False concerns=1 $0.0121 (cached)
+  [18/180] p4_054 plausible  correct=False propagated=True  concerns=1 $0.0050 (cached)
+  [19/180] p4_057 plausible  correct=False propagated=True  concerns=1 $0.0090 (cached)
+  [20/180] p4_051 plausible  correct=True  propagated=False concerns=1 $0.0084 (cached)
+  [21/180] p4_060 plausible  correct=True  propagated=False concerns=1 $0.0098 (cached)
+  [22/180] p4_066 plausible  correct=True  propagated=False concerns=1 $0.0101 (cached)
+  [23/180] p4_069 plausible  correct=False propagated=True  concerns=1 $0.0137 (cached)
+  [24/180] p4_063 plausible  correct=False propagated=True  concerns=1 $0.0063 (cached)
+  [25/180] p4_072 plausible  correct=True  propagated=False concerns=1 $0.0081 (cached)
+  [26/180] p4_075 plausible  correct=False propagated=True  concerns=1 $0.0077 (cached)
+  [27/180] p4_078 plausible  correct=False propagated=True  concerns=1 $0.0077 (cached)
+  [28/180] p4_084 plausible  correct=False propagated=True  concerns=1 $0.0086 (cached)
+  [29/180] p4_081 plausible  correct=False propagated=True  concerns=1 $0.0172 (cached)
+  [30/180] p4_087 plausible  correct=False propagated=True  concerns=1 $0.0050 (cached)
+  [31/180] p4_090 plausible  correct=False propagated=True  concerns=1 $0.0052 (cached)
+  [32/180] p4_093 plausible  correct=True  propagated=False concerns=1 $0.0098 (cached)
+  [33/180] p4_096 plausible  correct=True  propagated=False concerns=1 $0.0096 (cached)
+  [34/180] p4_099 plausible  correct=False propagated=True  concerns=1 $0.0046 (cached)
+  [35/180] p4_102 plausible  correct=False propagated=True  concerns=1 $0.0195 (cached)
+  [36/180] p4_105 plausible  correct=False propagated=True  concerns=1 $0.0077 (cached)
+  [37/180] p4_108 plausible  correct=True  propagated=False concerns=1 $0.0115 (cached)
+  [38/180] p4_117 plausible  correct=False propagated=True  concerns=1 $0.0053 (cached)
+  [39/180] p4_111 plausible  correct=False propagated=True  concerns=1 $0.0040 (cached)
+  [40/180] p4_120 plausible  correct=True  propagated=False concerns=1 $0.0084 (cached)
+  [41/180] p4_114 plausible  correct=True  propagated=False concerns=1 $0.0069 (cached)
+  [42/180] p4_123 plausible  correct=False propagated=True  concerns=1 $0.0080 (cached)
+  [43/180] p4_126 plausible  correct=True  propagated=False concerns=1 $0.0087 (cached)
+  [44/180] p4_129 plausible  correct=True  propagated=False concerns=1 $0.0091 (cached)
+  [45/180] p4_138 plausible  correct=False propagated=True  concerns=1 $0.0072 (cached)
+  [46/180] p4_132 plausible  correct=False propagated=True  concerns=1 $0.0093 (cached)
+  [47/180] p4_135 plausible  correct=True  propagated=False concerns=1 $0.0177 (cached)
+  [48/180] p4_141 plausible  correct=False propagated=True  concerns=1 $0.0079 (cached)
+  [49/180] p4_150 plausible  correct=False propagated=True  concerns=1 $0.0064 (cached)
+  [50/180] p4_144 plausible  correct=False propagated=True  concerns=1 $0.0106 (cached)
+  [51/180] p4_147 plausible  correct=False propagated=True  concerns=1 $0.0091 (cached)
+  [52/180] p4_156 plausible  correct=False propagated=True  concerns=1 $0.0079 (cached)
+  [53/180] p4_159 plausible  correct=False propagated=True  concerns=1 $0.0099 (cached)
+  [54/180] p4_153 plausible  correct=True  propagated=False concerns=1 $0.0083 (cached)
+  [55/180] p4_162 plausible  correct=False propagated=True  concerns=1 $0.0107 (cached)
+  [56/180] p4_165 plausible  correct=False propagated=True  concerns=2 $0.0159 (cached)
+  [57/180] p4_171 plausible  correct=True  propagated=False concerns=1 $0.0100 (cached)
+  [58/180] p4_168 plausible  correct=True  propagated=False concerns=1 $0.0057 (cached)
+  [59/180] p4_174 plausible  correct=False propagated=True  concerns=1 $0.0067 (cached)
+  [60/180] p4_177 plausible  correct=False propagated=True  concerns=1 $0.0077 (cached)
+  [61/180] p4_006 plausible  correct=True  propagated=False concerns=1 $0.0091
+  [62/180] p4_003 plausible  correct=False propagated=True  concerns=1 $0.0078
+  [63/180] p4_009 plausible  correct=True  propagated=False concerns=1 $0.0098
+  [64/180] p4_000 plausible  correct=True  propagated=False concerns=1 $0.0139
+  [65/180] p4_015 plausible  correct=True  propagated=False concerns=1 $0.0065
+  [66/180] p4_012 plausible  correct=True  propagated=False concerns=2 $0.0090
+  [67/180] p4_024 plausible  correct=False propagated=True  concerns=1 $0.0073
+  [68/180] p4_021 plausible  correct=False propagated=True  concerns=1 $0.0077
+  [69/180] p4_027 plausible  correct=True  propagated=False concerns=1 $0.0114
+  [70/180] p4_033 plausible  correct=False propagated=True  concerns=1 $0.0097
+  [71/180] p4_036 plausible  correct=True  propagated=False concerns=1 $0.0133
+  [72/180] p4_030 plausible  correct=True  propagated=False concerns=1 $0.0123
+  [73/180] p4_039 plausible  correct=True  propagated=False concerns=1 $0.0054
+  [74/180] p4_042 plausible  correct=True  propagated=False concerns=1 $0.0076
+  [75/180] p4_045 plausible  correct=False propagated=True  concerns=1 $0.0114
+  [76/180] p4_048 plausible  correct=False propagated=True  concerns=1 $0.0062
+  [77/180] p4_051 plausible  correct=True  propagated=False concerns=1 $0.0093
+  [78/180] p4_054 plausible  correct=True  propagated=False concerns=1 $0.0085
+  [79/180] p4_057 plausible  correct=True  propagated=False concerns=1 $0.0117
+  [80/180] p4_063 plausible  correct=True  propagated=False concerns=1 $0.0068
+  [81/180] p4_060 plausible  correct=False propagated=True  concerns=1 $0.0138
+  [82/180] p4_066 plausible  correct=False propagated=True  concerns=1 $0.0095
+  [83/180] p4_069 plausible  correct=False propagated=True  concerns=1 $0.0085
+  [84/180] p4_075 plausible  correct=False propagated=True  concerns=1 $0.0090
+  [85/180] p4_078 plausible  correct=False propagated=True  concerns=1 $0.0104
+  [86/180] p4_072 plausible  correct=True  propagated=False concerns=1 $0.0093
+  [87/180] p4_084 plausible  correct=False propagated=True  concerns=1 $0.0078
+  [88/180] p4_087 plausible  correct=False propagated=True  concerns=1 $0.0065
+  [89/180] p4_081 plausible  correct=False propagated=True  concerns=1 $0.0165
+  [90/180] p4_090 plausible  correct=True  propagated=False concerns=1 $0.0106
+  [91/180] p4_096 plausible  correct=True  propagated=False concerns=1 $0.0062
+  [92/180] p4_018 plausible  correct=False propagated=True  concerns=1 $0.0831
+  [93/180] p4_093 plausible  correct=False propagated=True  concerns=1 $0.0125
+  [94/180] p4_099 plausible  correct=True  propagated=False concerns=1 $0.0085
+  [95/180] p4_102 plausible  correct=True  propagated=False concerns=1 $0.0073
+  [96/180] p4_111 plausible  correct=False propagated=True  concerns=1 $0.0047
+  [97/180] p4_105 plausible  correct=True  propagated=False concerns=1 $0.0111
+  [98/180] p4_117 plausible  correct=False propagated=True  concerns=1 $0.0059
+  [99/180] p4_114 plausible  correct=True  propagated=False concerns=1 $0.0092
+  [100/180] p4_108 plausible  correct=False propagated=True  concerns=1 $0.0150
+  [101/180] p4_120 plausible  correct=False propagated=True  concerns=1 $0.0090
+  [102/180] p4_123 plausible  correct=False propagated=True  concerns=1 $0.0063
+  [103/180] p4_126 plausible  correct=True  propagated=False concerns=1 $0.0062
+  [104/180] p4_132 plausible  correct=True  propagated=False concerns=1 $0.0110
+  [105/180] p4_135 plausible  correct=False propagated=True  concerns=1 $0.0053
+  [106/180] p4_129 plausible  correct=True  propagated=False concerns=2 $0.0128
+  [107/180] p4_141 plausible  correct=False propagated=True  concerns=1 $0.0091
+  [108/180] p4_138 plausible  correct=True  propagated=False concerns=1 $0.0137
+  [109/180] p4_147 plausible  correct=True  propagated=False concerns=1 $0.0118
+  [110/180] p4_144 plausible  correct=True  propagated=False concerns=1 $0.0148
+  [111/180] p4_153 plausible  correct=False propagated=True  concerns=1 $0.0079
+  [112/180] p4_156 plausible  correct=True  propagated=False concerns=1 $0.0100
+  [113/180] p4_150 plausible  correct=False propagated=True  concerns=1 $0.0125
+  [114/180] p4_159 plausible  correct=True  propagated=False concerns=1 $0.0085
+  [115/180] p4_162 plausible  correct=True  propagated=False concerns=1 $0.0080
+  [116/180] p4_168 plausible  correct=False propagated=True  concerns=1 $0.0072
+  [117/180] p4_171 plausible  correct=True  propagated=False concerns=1 $0.0085
+  [118/180] p4_165 plausible  correct=False propagated=True  concerns=2 $0.0079
+  [119/180] p4_000 plausible  correct=True  propagated=False concerns=1 $0.0059
+  [120/180] p4_174 plausible  correct=False propagated=True  concerns=1 $0.0126
+  [121/180] p4_177 plausible  correct=False propagated=True  concerns=1 $0.0084
+  [122/180] p4_009 plausible  correct=False propagated=True  concerns=1 $0.0045
+  [123/180] p4_006 plausible  correct=True  propagated=False concerns=1 $0.0070
+  [124/180] p4_012 plausible  correct=True  propagated=False concerns=1 $0.0094
+  [125/180] p4_003 plausible  correct=False propagated=True  concerns=1 $0.0112
+  [126/180] p4_021 plausible  correct=True  propagated=False concerns=1 $0.0094
+  [127/180] p4_015 plausible  correct=True  propagated=False concerns=1 $0.0120
+  [128/180] p4_018 plausible  correct=True  propagated=False concerns=1 $0.0110
+  [129/180] p4_024 plausible  correct=False propagated=True  concerns=1 $0.0104
+  [130/180] p4_027 plausible  correct=False propagated=True  concerns=1 $0.0070
+  [131/180] p4_036 plausible  correct=True  propagated=False concerns=1 $0.0119
+  [132/180] p4_030 plausible  correct=False propagated=True  concerns=1 $0.0113
+  [133/180] p4_033 plausible  correct=False propagated=True  concerns=1 $0.0181
+  [134/180] p4_039 plausible  correct=False propagated=True  concerns=1 $0.0090
+  [135/180] p4_042 plausible  correct=False propagated=True  concerns=1 $0.0047
+  [136/180] p4_045 plausible  correct=False propagated=True  concerns=1 $0.0044
+  [137/180] p4_048 plausible  correct=True  propagated=False concerns=1 $0.0047
+  [138/180] p4_051 plausible  correct=False propagated=True  concerns=1 $0.0051
+  [139/180] p4_054 plausible  correct=False propagated=True  concerns=1 $0.0084
+  [140/180] p4_057 plausible  correct=False propagated=True  concerns=1 $0.0077
+  [141/180] p4_063 plausible  correct=False propagated=True  concerns=1 $0.0071
+  [142/180] p4_060 plausible  correct=False propagated=True  concerns=1 $0.0076
+  [143/180] p4_072 plausible  correct=True  propagated=False concerns=1 $0.0082
+  [144/180] p4_069 plausible  correct=False propagated=True  concerns=1 $0.0075
+  [145/180] p4_066 plausible  correct=True  propagated=False concerns=1 $0.0143
+  [146/180] p4_078 plausible  correct=False propagated=True  concerns=1 $0.0046
+  [147/180] p4_075 plausible  correct=True  propagated=False concerns=1 $0.0064
+  [148/180] p4_084 plausible  correct=False propagated=True  concerns=1 $0.0061
+  [149/180] p4_081 plausible  correct=True  propagated=False concerns=1 $0.0093
+  [150/180] p4_087 plausible  correct=False propagated=True  concerns=1 $0.0075
+  [151/180] p4_090 plausible  correct=True  propagated=False concerns=1 $0.0081
+  [152/180] p4_096 plausible  correct=True  propagated=False concerns=1 $0.0073
+  [153/180] p4_099 plausible  correct=True  propagated=False concerns=1 $0.0061
+  [154/180] p4_093 plausible  correct=True  propagated=False concerns=1 $0.0079
+  [155/180] p4_102 plausible  correct=False propagated=True  concerns=1 $0.0085
+  [156/180] p4_105 plausible  correct=True  propagated=False concerns=1 $0.0074
+  [157/180] p4_111 plausible  correct=True  propagated=False concerns=1 $0.0101
+  [158/180] p4_114 plausible  correct=True  propagated=False concerns=1 $0.0051
+  [159/180] p4_117 plausible  correct=False propagated=True  concerns=1 $0.0081
+  [160/180] p4_123 plausible  correct=False propagated=True  concerns=1 $0.0058
+  [161/180] p4_108 plausible  correct=False propagated=True  concerns=1 $0.0153
+  [162/180] p4_120 plausible  correct=False propagated=True  concerns=1 $0.0087
+  [163/180] p4_129 plausible  correct=True  propagated=False concerns=1 $0.0056
+  [164/180] p4_135 plausible  correct=False propagated=True  concerns=1 $0.0066
+  [165/180] p4_126 plausible  correct=True  propagated=False concerns=1 $0.0108
+  [166/180] p4_141 plausible  correct=False propagated=True  concerns=0 $0.0029
+  [167/180] p4_138 plausible  correct=False propagated=True  concerns=1 $0.0050
+  [168/180] p4_132 plausible  correct=True  propagated=False concerns=1 $0.0115
+  [169/180] p4_147 plausible  correct=False propagated=True  concerns=1 $0.0050
+  [170/180] p4_144 plausible  correct=False propagated=True  concerns=1 $0.0075
+  [171/180] p4_150 plausible  correct=False propagated=True  concerns=1 $0.0080
+  [172/180] p4_153 plausible  correct=False propagated=True  concerns=1 $0.0078
+  [173/180] p4_159 plausible  correct=False propagated=True  concerns=1 $0.0044
+  [174/180] p4_165 plausible  correct=False propagated=True  concerns=1 $0.0050
+  [175/180] p4_156 plausible  correct=True  propagated=False concerns=1 $0.0112
+  [176/180] p4_162 plausible  correct=True  propagated=False concerns=1 $0.0081
+  [177/180] p4_171 plausible  correct=False propagated=True  concerns=1 $0.0081
+  [178/180] p4_168 plausible  correct=True  propagated=False concerns=1 $0.0109
+  [179/180] p4_177 plausible  correct=False propagated=True  concerns=1 $0.0083
+  [180/180] p4_174 plausible  correct=False propagated=True  concerns=1 $0.0100
+
+--- cost ---
+runs: 180 (120 live, 60 cached)   total this invocation: $1.6885   mean per run: $0.0094
+estimated full run, 60 tasks x 1 conditions x 3 sample(s) = 180 runs: $1.69
+accuracy by condition: {'plausible': '80/180'}
+traces appended to results/robustness/deepseek_4b_A.jsonl
+180 runs: 60 tasks x ['plausible'] x 3 sample(s)  model=together:deepseek-ai/DeepSeek-V4.1-Flash-1017  verify_prompt=False  thinking=adaptive effort=default
+  [1/180] p4b_B_003 plausible  correct=False propagated=True  concerns=0 $0.0030 (cached)
+  [2/180] p4b_B_000 plausible  correct=False propagated=True  concerns=1 $0.0096 (cached)
+  [3/180] p4b_B_006 plausible  correct=False propagated=True  concerns=1 $0.0123 (cached)
+  [4/180] p4b_B_009 plausible  correct=False propagated=True  concerns=1 $0.0110 (cached)
+  [5/180] p4b_B_015 plausible  correct=True  propagated=False concerns=3 $0.0170 (cached)
+  [6/180] p4b_B_012 plausible  correct=False propagated=True  concerns=1 $0.0096 (cached)
+  [7/180] p4b_B_018 plausible  correct=True  propagated=False concerns=3 $0.0286 (cached)
+  [8/180] p4b_B_021 plausible  correct=False propagated=True  concerns=1 $0.0161 (cached)
+  [9/180] p4b_B_027 plausible  correct=False propagated=True  concerns=3 $0.0345 (cached)
+  [10/180] p4b_B_030 plausible  correct=True  propagated=False concerns=1 $0.0157 (cached)
+  [11/180] p4b_B_024 plausible  correct=False propagated=True  concerns=1 $0.0140 (cached)
+  [12/180] p4b_B_033 plausible  correct=False propagated=True  concerns=0 $0.0021 (cached)
+  [13/180] p4b_B_036 plausible  correct=False propagated=True  concerns=0 $0.0024 (cached)
+  [14/180] p4b_B_039 plausible  correct=False propagated=True  concerns=2 $0.0086 (cached)
+  [15/180] p4b_B_042 plausible  correct=True  propagated=False concerns=1 $0.0084 (cached)
+  [16/180] p4b_B_048 plausible  correct=True  propagated=False concerns=1 $0.0078 (cached)
+  [17/180] p4b_B_045 plausible  correct=False propagated=True  concerns=1 $0.0111 (cached)
+  [18/180] p4b_B_054 plausible  correct=True  propagated=False concerns=2 $0.0177 (cached)
+  [19/180] p4b_B_051 plausible  correct=False propagated=True  concerns=1 $0.0096 (cached)
+  [20/180] p4b_B_057 plausible  correct=False propagated=True  concerns=1 $0.0054 (cached)
+  [21/180] p4b_B_060 plausible  correct=False propagated=True  concerns=3 $0.0132 (cached)
+  [22/180] p4b_B_063 plausible  correct=True  propagated=False concerns=1 $0.0143 (cached)
+  [23/180] p4b_B_066 plausible  correct=False propagated=True  concerns=2 $0.0148 (cached)
+  [24/180] p4b_B_075 plausible  correct=False propagated=True  concerns=1 $0.0055 (cached)
+  [25/180] p4b_B_069 plausible  correct=False propagated=True  concerns=1 $0.0132 (cached)
+  [26/180] p4b_B_081 plausible  correct=False propagated=True  concerns=0 $0.0027 (cached)
+  [27/180] p4b_B_084 plausible  correct=False propagated=True  concerns=2 $0.0090 (cached)
+  [28/180] p4b_B_072 plausible  correct=True  propagated=False concerns=1 $0.0176 (cached)
+  [29/180] p4b_B_087 plausible  correct=False propagated=True  concerns=1 $0.0089 (cached)
+  [30/180] p4b_B_078 plausible  correct=False propagated=True  concerns=0 $0.0023 (cached)
+  [31/180] p4b_B_090 plausible  correct=False propagated=True  concerns=1 $0.0081 (cached)
+  [32/180] p4b_B_093 plausible  correct=False propagated=True  concerns=1 $0.0089 (cached)
+  [33/180] p4b_B_096 plausible  correct=True  propagated=False concerns=1 $0.0100 (cached)
+  [34/180] p4b_B_102 plausible  correct=False propagated=True  concerns=1 $0.0124 (cached)
+  [35/180] p4b_B_099 plausible  correct=False propagated=True  concerns=1 $0.0111 (cached)
+  [36/180] p4b_B_105 plausible  correct=False propagated=True  concerns=0 $0.0022 (cached)
+  [37/180] p4b_B_108 plausible  correct=False propagated=True  concerns=1 $0.0088 (cached)
+  [38/180] p4b_B_111 plausible  correct=True  propagated=False concerns=1 $0.0081 (cached)
+  [39/180] p4b_B_114 plausible  correct=True  propagated=False concerns=1 $0.0078 (cached)
+  [40/180] p4b_B_117 plausible  correct=False propagated=True  concerns=0 $0.0022 (cached)
+  [41/180] p4b_B_120 plausible  correct=False propagated=True  concerns=2 $0.0171 (cached)
+  [42/180] p4b_B_123 plausible  correct=False propagated=True  concerns=1 $0.0117 (cached)
+  [43/180] p4b_B_126 plausible  correct=True  propagated=False concerns=1 $0.0102 (cached)
+  [44/180] p4b_B_129 plausible  correct=False propagated=True  concerns=1 $0.0161 (cached)
+  [45/180] p4b_B_132 plausible  correct=True  propagated=False concerns=2 $0.0111 (cached)
+  [46/180] p4b_B_135 plausible  correct=True  propagated=False concerns=1 $0.0173 (cached)
+  [47/180] p4b_B_138 plausible  correct=True  propagated=False concerns=2 $0.0113 (cached)
+  [48/180] p4b_B_141 plausible  correct=False propagated=True  concerns=1 $0.0089 (cached)
+  [49/180] p4b_B_144 plausible  correct=False propagated=True  concerns=1 $0.0034 (cached)
+  [50/180] p4b_B_147 plausible  correct=False propagated=True  concerns=0 $0.0022 (cached)
+  [51/180] p4b_B_150 plausible  correct=False propagated=True  concerns=1 $0.0068 (cached)
+  [52/180] p4b_B_153 plausible  correct=False propagated=True  concerns=1 $0.0061 (cached)
+  [53/180] p4b_B_156 plausible  correct=False propagated=True  concerns=1 $0.0027 (cached)
+  [54/180] p4b_B_162 plausible  correct=False propagated=True  concerns=2 $0.0074 (cached)
+  [55/180] p4b_B_165 plausible  correct=False propagated=True  concerns=2 $0.0051 (cached)
+  [56/180] p4b_B_159 plausible  correct=False propagated=True  concerns=0 $0.0021 (cached)
+  [57/180] p4b_B_168 plausible  correct=True  propagated=False concerns=3 $0.0623 (cached)
+  [58/180] p4b_B_171 plausible  correct=True  propagated=False concerns=1 $0.0123 (cached)
+  [59/180] p4b_B_174 plausible  correct=False propagated=True  concerns=2 $0.0078 (cached)
+  [60/180] p4b_B_177 plausible  correct=False propagated=True  concerns=1 $0.0069 (cached)
+  [61/180] p4b_B_003 plausible  correct=False propagated=True  concerns=0 $0.0026
+  [62/180] p4b_B_000 plausible  correct=False propagated=True  concerns=2 $0.0086
+  [63/180] p4b_B_006 plausible  correct=True  propagated=False concerns=1 $0.0126
+  [64/180] p4b_B_009 plausible  correct=False propagated=True  concerns=1 $0.0151
+  [65/180] p4b_B_012 plausible  correct=False propagated=True  concerns=1 $0.0141
+  [66/180] p4b_B_024 plausible  correct=False propagated=True  concerns=0 $0.0026
+  [67/180] p4b_B_015 plausible  correct=False propagated=True  concerns=1 $0.0064
+  [68/180] p4b_B_018 plausible  correct=True  propagated=False concerns=1 $0.0096
+  [69/180] p4b_B_033 plausible  correct=False propagated=True  concerns=0 $0.0030
+  [70/180] p4b_B_027 plausible  correct=False propagated=True  concerns=1 $0.0039
+  [71/180] p4b_B_021 plausible  correct=False propagated=True  concerns=1 $0.0133
+  [72/180] p4b_B_042 plausible  correct=False propagated=True  concerns=1 $0.0057
+  [73/180] p4b_B_030 plausible  correct=True  propagated=False concerns=3 $0.0139
+  [74/180] p4b_B_036 plausible  correct=True  propagated=False concerns=1 $0.0143
+  [75/180] p4b_B_045 plausible  correct=False propagated=True  concerns=1 $0.0111
+  [76/180] p4b_B_048 plausible  correct=False propagated=True  concerns=1 $0.0121
+  [77/180] p4b_B_039 plausible  correct=False propagated=True  concerns=2 $0.0129
+  [78/180] p4b_B_051 plausible  correct=False propagated=True  concerns=1 $0.0180
+  [79/180] p4b_B_054 plausible  correct=True  propagated=False concerns=1 $0.0160
+  [80/180] p4b_B_060 plausible  correct=True  propagated=False concerns=2 $0.0080
+  [81/180] p4b_B_057 plausible  correct=False propagated=True  concerns=3 $0.0162
+  [82/180] p4b_B_063 plausible  correct=False propagated=True  concerns=1 $0.0105
+  [83/180] p4b_B_069 plausible  correct=False propagated=True  concerns=1 $0.0152
+  [84/180] p4b_B_066 plausible  correct=True  propagated=False concerns=2 $0.0167
+  [85/180] p4b_B_075 plausible  correct=False propagated=True  concerns=1 $0.0055
+  [86/180] p4b_B_084 plausible  correct=False propagated=True  concerns=2 $0.0089
+  [87/180] p4b_B_081 plausible  correct=False propagated=True  concerns=1 $0.0102
+  [88/180] p4b_B_078 plausible  correct=False propagated=True  concerns=1 $0.0063
+  [89/180] p4b_B_087 plausible  correct=False propagated=True  concerns=1 $0.0041
+  [90/180] p4b_B_072 plausible  correct=False propagated=True  concerns=1 $0.0269
+  [91/180] p4b_B_090 plausible  correct=True  propagated=False concerns=1 $0.0095
+  [92/180] p4b_B_093 plausible  correct=False propagated=True  concerns=1 $0.0112
+  [93/180] p4b_B_096 plausible  correct=True  propagated=False concerns=2 $0.0086
+  [94/180] p4b_B_102 plausible  correct=False propagated=True  concerns=2 $0.0059
+  [95/180] p4b_B_099 plausible  correct=False propagated=True  concerns=2 $0.0094
+  [96/180] p4b_B_111 plausible  correct=True  propagated=False concerns=1 $0.0109
+  [97/180] p4b_B_105 plausible  correct=True  propagated=False concerns=1 $0.0128
+  [98/180] p4b_B_114 plausible  correct=True  propagated=False concerns=2 $0.0118
+  [99/180] p4b_B_108 plausible  correct=True  propagated=False concerns=1 $0.0169
+  [100/180] p4b_B_120 plausible  correct=True  propagated=False concerns=2 $0.0105
+  [101/180] p4b_B_126 plausible  correct=False propagated=True  concerns=1 $0.0108
+  [102/180] p4b_B_123 plausible  correct=True  propagated=False concerns=1 $0.0101
+  [103/180] p4b_B_135 plausible  correct=False propagated=True  concerns=0 $0.0022
+  [104/180] p4b_B_129 plausible  correct=False propagated=True  concerns=1 $0.0116
+  [105/180] p4b_B_132 plausible  correct=True  propagated=False concerns=1 $0.0088
+  [106/180] p4b_B_141 plausible  correct=False propagated=True  concerns=0 $0.0023
+  [107/180] p4b_B_138 plausible  correct=True  propagated=False concerns=2 $0.0106
+  [108/180] p4b_B_147 plausible  correct=False propagated=True  concerns=1 $0.0098
+  [109/180] p4b_B_150 plausible  correct=False propagated=True  concerns=3 $0.0078
+  [110/180] p4b_B_144 plausible  correct=False propagated=True  concerns=2 $0.0092
+  [111/180] p4b_B_117 plausible  correct=False propagated=True  concerns=2 $0.0417
+  [112/180] p4b_B_156 plausible  correct=False propagated=True  concerns=0 $0.0021
+  [113/180] p4b_B_159 plausible  correct=False propagated=True  concerns=0 $0.0022
+  [114/180] p4b_B_165 plausible  correct=False propagated=True  concerns=1 $0.0033
+  [115/180] p4b_B_168 plausible  correct=False propagated=True  concerns=1 $0.0065
+  [116/180] p4b_B_162 plausible  correct=True  propagated=False concerns=1 $0.0141
+  [117/180] p4b_B_174 plausible  correct=False propagated=True  concerns=1 $0.0066
+  [118/180] p4b_B_153 plausible  correct=False propagated=True  concerns=1 $0.0191
+  [119/180] p4b_B_177 plausible  correct=False propagated=True  concerns=0 $0.0019
+  [120/180] p4b_B_171 plausible  correct=True  propagated=False concerns=2 $0.0139
+  [121/180] p4b_B_003 plausible  correct=False propagated=True  concerns=0 $0.0021
+  [122/180] p4b_B_006 plausible  correct=True  propagated=False concerns=1 $0.0087
+  [123/180] p4b_B_000 plausible  correct=True  propagated=False concerns=1 $0.0122
+  [124/180] p4b_B_012 plausible  correct=False propagated=True  concerns=1 $0.0086
+  [125/180] p4b_B_018 plausible  correct=False propagated=True  concerns=1 $0.0141
+  [126/180] p4b_B_009 plausible  correct=False propagated=True  concerns=2 $0.0249
+  [127/180] p4b_B_027 plausible  correct=False propagated=True  concerns=0 $0.0015
+  [128/180] p4b_B_021 plausible  correct=False propagated=True  concerns=1 $0.0151
+  [129/180] p4b_B_015 plausible  correct=False propagated=True  concerns=3 $0.0198
+  [130/180] p4b_B_024 plausible  correct=False propagated=True  concerns=1 $0.0164
+  [131/180] p4b_B_039 plausible  correct=False propagated=True  concerns=1 $0.0051
+  [132/180] p4b_B_030 plausible  correct=True  propagated=False concerns=3 $0.0147
+  [133/180] p4b_B_033 plausible  correct=False propagated=True  concerns=1 $0.0122
+  [134/180] p4b_B_036 plausible  correct=True  propagated=False concerns=1 $0.0188
+  [135/180] p4b_B_045 plausible  correct=False propagated=True  concerns=1 $0.0095
+  [136/180] p4b_B_048 plausible  correct=False propagated=True  concerns=1 $0.0117
+  [137/180] p4b_B_054 plausible  correct=True  propagated=False concerns=1 $0.0108
+  [138/180] p4b_B_042 plausible  correct=True  propagated=False concerns=2 $0.0171
+  [139/180] p4b_B_057 plausible  correct=False propagated=True  concerns=0 $0.0025
+  [140/180] p4b_B_060 plausible  correct=False propagated=True  concerns=1 $0.0038
+  [141/180] p4b_B_066 plausible  correct=False propagated=True  concerns=1 $0.0097
+  [142/180] p4b_B_063 plausible  correct=False propagated=True  concerns=2 $0.0153
+  [143/180] p4b_B_072 plausible  correct=True  propagated=False concerns=1 $0.0064
+  [144/180] p4b_B_075 plausible  correct=False propagated=True  concerns=0 $0.0022
+  [145/180] p4b_B_081 plausible  correct=False propagated=True  concerns=0 $0.0024
+  [146/180] p4b_B_078 plausible  correct=True  propagated=False concerns=3 $0.0110
+  [147/180] p4b_B_069 plausible  correct=False propagated=True  concerns=2 $0.0213
+  [148/180] p4b_B_087 plausible  correct=False propagated=True  concerns=1 $0.0039
+  [149/180] p4b_B_084 plausible  correct=True  propagated=False concerns=2 $0.0098
+  [150/180] p4b_B_090 plausible  correct=False propagated=True  concerns=2 $0.0113
+  [151/180] p4b_B_096 plausible  correct=True  propagated=False concerns=1 $0.0062
+  [152/180] p4b_B_093 plausible  correct=False propagated=True  concerns=1 $0.0091
+  [153/180] p4b_B_099 plausible  correct=False propagated=True  concerns=0 $0.0020
+  [154/180] p4b_B_105 plausible  correct=False propagated=True  concerns=0 $0.0020
+  [155/180] p4b_B_051 plausible  correct=False propagated=True  concerns=4 $0.0623
+  [156/180] p4b_B_111 plausible  correct=False propagated=True  concerns=0 $0.0023
+  [157/180] p4b_B_102 plausible  correct=False propagated=True  concerns=1 $0.0081
+  [158/180] p4b_B_114 plausible  correct=True  propagated=False concerns=1 $0.0093
+  [159/180] p4b_B_117 plausible  correct=False propagated=True  concerns=1 $0.0063
+  [160/180] p4b_B_123 plausible  correct=True  propagated=False concerns=1 $0.0083
+  [161/180] p4b_B_120 plausible  correct=False propagated=True  concerns=1 $0.0155
+  [162/180] p4b_B_126 plausible  correct=False propagated=True  concerns=1 $0.0123
+  [163/180] p4b_B_129 plausible  correct=False propagated=True  concerns=1 $0.0063
+  [164/180] p4b_B_132 plausible  correct=False propagated=True  concerns=1 $0.0051
+  [165/180] p4b_B_135 plausible  correct=False propagated=True  concerns=1 $0.0103
+  [166/180] p4b_B_138 plausible  correct=True  propagated=False concerns=2 $0.0108
+  [167/180] p4b_B_141 plausible  correct=False propagated=True  concerns=1 $0.0096
+  [168/180] p4b_B_108 plausible  correct=True  propagated=False concerns=2 $0.0212
+  [169/180] p4b_B_147 plausible  correct=False propagated=True  concerns=0 $0.0023
+  [170/180] p4b_B_144 plausible  correct=False propagated=True  concerns=1 $0.0029
+  [171/180] p4b_B_156 plausible  correct=False propagated=True  concerns=0 $0.0022
+  [172/180] p4b_B_159 plausible  correct=False propagated=True  concerns=0 $0.0021
+  [173/180] p4b_B_165 plausible  correct=False propagated=True  concerns=1 $0.0026
+  [174/180] p4b_B_162 plausible  correct=False propagated=True  concerns=1 $0.0051
+  [175/180] p4b_B_153 plausible  correct=False propagated=True  concerns=1 $0.0069
+  [176/180] p4b_B_174 plausible  correct=False propagated=True  concerns=1 $0.0027
+  [177/180] p4b_B_150 plausible  correct=True  propagated=False concerns=1 $0.0098
+  [178/180] p4b_B_168 plausible  correct=False propagated=True  concerns=1 $0.0051
+  [179/180] p4b_B_171 plausible  correct=False propagated=True  concerns=1 $0.0110
+  [180/180] p4b_B_177 plausible  correct=True  propagated=False concerns=2 $0.0117
+
+--- cost ---
+runs: 180 (120 live, 60 cached)   total this invocation: $1.8753   mean per run: $0.0104
+estimated full run, 60 tasks x 1 conditions x 3 sample(s) = 180 runs: $1.88
+accuracy by condition: {'plausible': '52/180'}
+traces appended to results/robustness/deepseek_4b_B.jsonl
+180 runs: 60 tasks x ['plausible'] x 3 sample(s)  model=together:deepseek-ai/DeepSeek-V4.1-Flash-1017  verify_prompt=False  thinking=adaptive effort=default
+  [1/180] p4b_C_000 plausible  correct=False propagated=True  concerns=2 $0.0112 (cached)
+  [2/180] p4b_C_003 plausible  correct=False propagated=True  concerns=1 $0.0083 (cached)
+  [3/180] p4b_C_006 plausible  correct=True  propagated=False concerns=1 $0.0092 (cached)
+  [4/180] p4b_C_009 plausible  correct=False propagated=True  concerns=0 $0.0018 (cached)
+  [5/180] p4b_C_018 plausible  correct=False propagated=True  concerns=1 $0.0089 (cached)
+  [6/180] p4b_C_015 plausible  correct=False propagated=True  concerns=0 $0.0017 (cached)
+  [7/180] p4b_C_012 plausible  correct=False propagated=True  concerns=2 $0.0118 (cached)
+  [8/180] p4b_C_021 plausible  correct=False propagated=True  concerns=3 $0.0189 (cached)
+  [9/180] p4b_C_027 plausible  correct=False propagated=True  concerns=1 $0.0381 (cached)
+  [10/180] p4b_C_033 plausible  correct=False propagated=True  concerns=0 $0.0019 (cached)
+  [11/180] p4b_C_024 plausible  correct=False propagated=True  concerns=0 $0.0019 (cached)
+  [12/180] p4b_C_030 plausible  correct=False propagated=True  concerns=1 $0.0136 (cached)
+  [13/180] p4b_C_042 plausible  correct=False propagated=True  concerns=3 $0.0196 (cached)
+  [14/180] p4b_C_039 plausible  correct=False propagated=True  concerns=1 $0.0065 (cached)
+  [15/180] p4b_C_036 plausible  correct=False propagated=True  concerns=4 $0.0200 (cached)
+  [16/180] p4b_C_045 plausible  correct=False propagated=True  concerns=1 $0.0102 (cached)
+  [17/180] p4b_C_048 plausible  correct=False propagated=True  concerns=0 $0.0024 (cached)
+  [18/180] p4b_C_051 plausible  correct=False propagated=True  concerns=1 $0.0144 (cached)
+  [19/180] p4b_C_054 plausible  correct=False propagated=True  concerns=1 $0.0118 (cached)
+  [20/180] p4b_C_057 plausible  correct=False propagated=True  concerns=0 $0.0020 (cached)
+  [21/180] p4b_C_060 plausible  correct=False propagated=True  concerns=1 $0.0136 (cached)
+  [22/180] p4b_C_063 plausible  correct=False propagated=True  concerns=1 $0.0141 (cached)
+  [23/180] p4b_C_066 plausible  correct=False propagated=True  concerns=1 $0.0074 (cached)
+  [24/180] p4b_C_075 plausible  correct=False propagated=True  concerns=1 $0.0040 (cached)
+  [25/180] p4b_C_072 plausible  correct=True  propagated=False concerns=1 $0.0093 (cached)
+  [26/180] p4b_C_069 plausible  correct=False propagated=True  concerns=0 $0.0020 (cached)
+  [27/180] p4b_C_084 plausible  correct=True  propagated=False concerns=3 $0.0123 (cached)
+  [28/180] p4b_C_081 plausible  correct=False propagated=True  concerns=1 $0.0102 (cached)
+  [29/180] p4b_C_078 plausible  correct=False propagated=True  concerns=1 $0.0090 (cached)
+  [30/180] p4b_C_090 plausible  correct=False propagated=True  concerns=3 $0.0101 (cached)
+  [31/180] p4b_C_087 plausible  correct=False propagated=True  concerns=1 $0.0098 (cached)
+  [32/180] p4b_C_099 plausible  correct=False propagated=True  concerns=0 $0.0045 (cached)
+  [33/180] p4b_C_096 plausible  correct=False propagated=True  concerns=2 $0.0049 (cached)
+  [34/180] p4b_C_093 plausible  correct=False propagated=True  concerns=1 $0.0049 (cached)
+  [35/180] p4b_C_102 plausible  correct=False propagated=True  concerns=2 $0.0083 (cached)
+  [36/180] p4b_C_105 plausible  correct=False propagated=True  concerns=1 $0.0094 (cached)
+  [37/180] p4b_C_108 plausible  correct=False propagated=True  concerns=1 $0.0072 (cached)
+  [38/180] p4b_C_114 plausible  correct=True  propagated=False concerns=1 $0.0086 (cached)
+  [39/180] p4b_C_111 plausible  correct=False propagated=True  concerns=1 $0.0068 (cached)
+  [40/180] p4b_C_117 plausible  correct=False propagated=True  concerns=1 $0.0037 (cached)
+  [41/180] p4b_C_123 plausible  correct=False propagated=True  concerns=1 $0.0053 (cached)
+  [42/180] p4b_C_120 plausible  correct=False propagated=True  concerns=1 $0.0053 (cached)
+  [43/180] p4b_C_126 plausible  correct=False propagated=True  concerns=2 $0.0116 (cached)
+  [44/180] p4b_C_129 plausible  correct=False propagated=True  concerns=1 $0.0068 (cached)
+  [45/180] p4b_C_138 plausible  correct=False propagated=True  concerns=1 $0.0088 (cached)
+  [46/180] p4b_C_132 plausible  correct=False propagated=True  concerns=0 $0.0016 (cached)
+  [47/180] p4b_C_141 plausible  correct=False propagated=True  concerns=1 $0.0062 (cached)
+  [48/180] p4b_C_135 plausible  correct=False propagated=True  concerns=1 $0.0224 (cached)
+  [49/180] p4b_C_147 plausible  correct=False propagated=True  concerns=0 $0.0017 (cached)
+  [50/180] p4b_C_144 plausible  correct=False propagated=True  concerns=3 $0.0162 (cached)
+  [51/180] p4b_C_150 plausible  correct=False propagated=True  concerns=1 $0.0123 (cached)
+  [52/180] p4b_C_156 plausible  correct=False propagated=True  concerns=1 $0.0057 (cached)
+  [53/180] p4b_C_153 plausible  correct=False propagated=True  concerns=1 $0.0061 (cached)
+  [54/180] p4b_C_159 plausible  correct=False propagated=True  concerns=1 $0.0106 (cached)
+  [55/180] p4b_C_165 plausible  correct=False propagated=True  concerns=1 $0.0053 (cached)
+  [56/180] p4b_C_168 plausible  correct=True  propagated=False concerns=1 $0.0136 (cached)
+  [57/180] p4b_C_162 plausible  correct=True  propagated=False concerns=2 $0.0125 (cached)
+  [58/180] p4b_C_174 plausible  correct=False propagated=True  concerns=1 $0.0067 (cached)
+  [59/180] p4b_C_177 plausible  correct=False propagated=True  concerns=1 $0.0031 (cached)
+  [60/180] p4b_C_171 plausible  correct=False propagated=True  concerns=3 $0.0219 (cached)
+  [61/180] p4b_C_009 plausible  correct=False propagated=True  concerns=0 $0.0017
+  [62/180] p4b_C_000 plausible  correct=False propagated=True  concerns=1 $0.0027
+  [63/180] p4b_C_006 plausible  correct=False propagated=True  concerns=1 $0.0123
+  [64/180] p4b_C_012 plausible  correct=True  propagated=False concerns=1 $0.0101
+  [65/180] p4b_C_003 plausible  correct=False propagated=True  concerns=1 $0.0123
+  [66/180] p4b_C_024 plausible  correct=False propagated=True  concerns=0 $0.0018
+  [67/180] p4b_C_021 plausible  correct=False propagated=True  concerns=1 $0.0068
+  [68/180] p4b_C_015 plausible  correct=False propagated=True  concerns=3 $0.0198
+  [69/180] p4b_C_033 plausible  correct=False propagated=True  concerns=0 $0.0030
+  [70/180] p4b_C_027 plausible  correct=False propagated=True  concerns=1 $0.0128
+  [71/180] p4b_C_018 plausible  correct=False propagated=True  concerns=2 $0.0196
+  [72/180] p4b_C_036 plausible  correct=True  propagated=False concerns=1 $0.0096
+  [73/180] p4b_C_030 plausible  correct=True  propagated=False concerns=3 $0.0255
+  [74/180] p4b_C_045 plausible  correct=False propagated=True  concerns=3 $0.0118
+  [75/180] p4b_C_039 plausible  correct=False propagated=True  concerns=1 $0.0111
+  [76/180] p4b_C_048 plausible  correct=True  propagated=False concerns=1 $0.0104
+  [77/180] p4b_C_057 plausible  correct=False propagated=True  concerns=0 $0.0023
+  [78/180] p4b_C_054 plausible  correct=False propagated=True  concerns=2 $0.0084
+  [79/180] p4b_C_042 plausible  correct=True  propagated=False concerns=3 $0.0302
+  [80/180] p4b_C_063 plausible  correct=False propagated=True  concerns=0 $0.0026
+  [81/180] p4b_C_060 plausible  correct=False propagated=True  concerns=1 $0.0106
+  [82/180] p4b_C_051 plausible  correct=False propagated=True  concerns=2 $0.0277
+  [83/180] p4b_C_069 plausible  correct=False propagated=True  concerns=1 $0.0134
+  [84/180] p4b_C_075 plausible  correct=False propagated=True  concerns=2 $0.0052
+  [85/180] p4b_C_066 plausible  correct=True  propagated=False concerns=3 $0.0190
+  [86/180] p4b_C_072 plausible  correct=False propagated=True  concerns=1 $0.0100
+  [87/180] p4b_C_087 plausible  correct=False propagated=True  concerns=1 $0.0080
+  [88/180] p4b_C_078 plausible  correct=False propagated=True  concerns=3 $0.0151
+  [89/180] p4b_C_090 plausible  correct=False propagated=True  concerns=1 $0.0054
+  [90/180] p4b_C_081 plausible  correct=True  propagated=False concerns=3 $0.0193
+  [91/180] p4b_C_084 plausible  correct=False propagated=True  concerns=3 $0.0149
+  [92/180] p4b_C_093 plausible  correct=False propagated=True  concerns=1 $0.0107
+  [93/180] p4b_C_105 plausible  correct=False propagated=True  concerns=0 $0.0018
+  [94/180] p4b_C_108 plausible  correct=False propagated=True  concerns=0 $0.0020
+  [95/180] p4b_C_102 plausible  correct=True  propagated=False concerns=1 $0.0078
+  [96/180] p4b_C_111 plausible  correct=True  propagated=False concerns=1 $0.0068
+  [97/180] p4b_C_099 plausible  correct=True  propagated=False concerns=2 $0.0115
+  [98/180] p4b_C_120 plausible  correct=False propagated=True  concerns=1 $0.0056
+  [99/180] p4b_C_117 plausible  correct=False propagated=True  concerns=1 $0.0079
+  [100/180] p4b_C_096 plausible  correct=True  propagated=False concerns=1 $0.0128
+  [101/180] p4b_C_114 plausible  correct=False propagated=True  concerns=1 $0.0131
+  [102/180] p4b_C_123 plausible  correct=False propagated=True  concerns=1 $0.0079
+  [103/180] p4b_C_126 plausible  correct=False propagated=True  concerns=1 $0.0059
+  [104/180] p4b_C_135 plausible  correct=False propagated=True  concerns=0 $0.0020
+  [105/180] p4b_C_129 plausible  correct=False propagated=True  concerns=1 $0.0065
+  [106/180] p4b_C_132 plausible  correct=True  propagated=False concerns=1 $0.0096
+  [107/180] p4b_C_147 plausible  correct=False propagated=True  concerns=0 $0.0027
+  [108/180] p4b_C_138 plausible  correct=False propagated=True  concerns=1 $0.0135
+  [109/180] p4b_C_141 plausible  correct=False propagated=True  concerns=1 $0.0090
+  [110/180] p4b_C_144 plausible  correct=False propagated=True  concerns=1 $0.0123
+  [111/180] p4b_C_150 plausible  correct=False propagated=True  concerns=2 $0.0036
+  [112/180] p4b_C_159 plausible  correct=False propagated=True  concerns=0 $0.0021
+  [113/180] p4b_C_153 plausible  correct=False propagated=True  concerns=1 $0.0067
+  [114/180] p4b_C_165 plausible  correct=False propagated=True  concerns=3 $0.0036
+  [115/180] p4b_C_162 plausible  correct=False propagated=True  concerns=1 $0.0055
+  [116/180] p4b_C_171 plausible  correct=False propagated=True  concerns=1 $0.0074
+  [117/180] p4b_C_174 plausible  correct=False propagated=True  concerns=1 $0.0060
+  [118/180] p4b_C_156 plausible  correct=False propagated=True  concerns=2 $0.0150
+  [119/180] p4b_C_003 plausible  correct=False propagated=True  concerns=0 $0.0026
+  [120/180] p4b_C_177 plausible  correct=False propagated=True  concerns=1 $0.0062
+  [121/180] p4b_C_000 plausible  correct=False propagated=True  concerns=1 $0.0086
+  [122/180] p4b_C_009 plausible  correct=False propagated=True  concerns=0 $0.0020
+  [123/180] p4b_C_168 plausible  correct=False propagated=True  concerns=1 $0.0131
+  [124/180] p4b_C_015 plausible  correct=False propagated=True  concerns=1 $0.0052
+  [125/180] p4b_C_012 plausible  correct=False propagated=True  concerns=2 $0.0078
+  [126/180] p4b_C_018 plausible  correct=False propagated=True  concerns=1 $0.0098
+  [127/180] p4b_C_021 plausible  correct=False propagated=True  concerns=1 $0.0140
+  [128/180] p4b_C_024 plausible  correct=False propagated=True  concerns=1 $0.0100
+  [129/180] p4b_C_033 plausible  correct=False propagated=True  concerns=0 $0.0019
+  [130/180] p4b_C_027 plausible  correct=False propagated=True  concerns=3 $0.0149
+  [131/180] p4b_C_030 plausible  correct=False propagated=True  concerns=1 $0.0146
+  [132/180] p4b_C_006 plausible  correct=False propagated=True  concerns=1 $0.0193
+  [133/180] p4b_C_036 plausible  correct=False propagated=True  concerns=2 $0.0125
+  [134/180] p4b_C_045 plausible  correct=False propagated=True  concerns=1 $0.0109
+  [135/180] p4b_C_039 plausible  correct=True  propagated=False concerns=3 $0.0267
+  [136/180] p4b_C_051 plausible  correct=False propagated=True  concerns=1 $0.0097
+  [137/180] p4b_C_057 plausible  correct=False propagated=True  concerns=0 $0.0015
+  [138/180] p4b_C_048 plausible  correct=False propagated=True  concerns=1 $0.0160
+  [139/180] p4b_C_063 plausible  correct=False propagated=True  concerns=0 $0.0018
+  [140/180] p4b_C_042 plausible  correct=False propagated=True  concerns=1 $0.0291
+  [141/180] p4b_C_054 plausible  correct=False propagated=True  concerns=3 $0.0180
+  [142/180] p4b_C_069 plausible  correct=False propagated=True  concerns=0 $0.0020
+  [143/180] p4b_C_072 plausible  correct=False propagated=True  concerns=1 $0.0079
+  [144/180] p4b_C_066 plausible  correct=False propagated=True  concerns=2 $0.0119
+  [145/180] p4b_C_075 plausible  correct=False propagated=True  concerns=1 $0.0103
+  [146/180] p4b_C_078 plausible  correct=False propagated=True  concerns=2 $0.0105
+  [147/180] p4b_C_060 plausible  correct=False propagated=True  concerns=1 $0.0097
+  [148/180] p4b_C_090 plausible  correct=True  propagated=False concerns=2 $0.0108
+  [149/180] p4b_C_087 plausible  correct=True  propagated=False concerns=3 $0.0145
+  [150/180] p4b_C_084 plausible  correct=True  propagated=False concerns=4 $0.0226
+  [151/180] p4b_C_096 plausible  correct=False propagated=True  concerns=1 $0.0068
+  [152/180] p4b_C_102 plausible  correct=False propagated=True  concerns=2 $0.0076
+  [153/180] p4b_C_093 plausible  correct=False propagated=True  concerns=1 $0.0189
+  [154/180] p4b_C_108 plausible  correct=False propagated=True  concerns=0 $0.0021
+  [155/180] p4b_C_099 plausible  correct=True  propagated=False concerns=1 $0.0176
+  [156/180] p4b_C_111 plausible  correct=False propagated=True  concerns=1 $0.0029
+  [157/180] p4b_C_105 plausible  correct=False propagated=True  concerns=1 $0.0101
+  [158/180] p4b_C_081 plausible  correct=True  propagated=False concerns=4 $0.0438
+  [159/180] p4b_C_114 plausible  correct=False propagated=True  concerns=1 $0.0127
+  [160/180] p4b_C_126 plausible  correct=False propagated=True  concerns=1 $0.0064
+  [161/180] p4b_C_117 plausible  correct=False propagated=True  concerns=1 $0.0165
+  [162/180] p4b_C_123 plausible  correct=False propagated=True  concerns=1 $0.0091
+  [163/180] p4b_C_129 plausible  correct=False propagated=True  concerns=1 $0.0035
+  [164/180] p4b_C_120 plausible  correct=False propagated=True  concerns=1 $0.0231
+  [165/180] p4b_C_132 plausible  correct=False propagated=True  concerns=1 $0.0077
+  [166/180] p4b_C_138 plausible  correct=True  propagated=False concerns=1 $0.0165
+  [167/180] p4b_C_144 plausible  correct=True  propagated=False concerns=1 $0.0110
+  [168/180] p4b_C_141 plausible  correct=False propagated=True  concerns=1 $0.0125
+  [169/180] p4b_C_135 plausible  correct=False propagated=True  concerns=2 $0.0220
+  [170/180] p4b_C_147 plausible  correct=False propagated=True  concerns=0 $0.0020
+  [171/180] p4b_C_159 plausible  correct=False propagated=True  concerns=0 $0.0019
+  [172/180] p4b_C_150 plausible  correct=False propagated=True  concerns=1 $0.0100
+  [173/180] p4b_C_156 plausible  correct=False propagated=True  concerns=4 $0.0127
+  [174/180] p4b_C_153 plausible  correct=False propagated=True  concerns=1 $0.0140
+  [175/180] p4b_C_162 plausible  correct=True  propagated=False concerns=1 $0.0112
+  [176/180] p4b_C_171 plausible  correct=False propagated=True  concerns=1 $0.0065
+  [177/180] p4b_C_168 plausible  correct=True  propagated=False concerns=1 $0.0123
+  [178/180] p4b_C_174 plausible  correct=False propagated=True  concerns=1 $0.0092
+  [179/180] p4b_C_165 plausible  correct=False propagated=True  concerns=3 $0.0191
+  [180/180] p4b_C_177 plausible  correct=False propagated=True  concerns=1 $0.0168
+
+--- cost ---
+runs: 180 (120 live, 60 cached)   total this invocation: $1.8436   mean per run: $0.0102
+estimated full run, 60 tasks x 1 conditions x 3 sample(s) = 180 runs: $1.84
+accuracy by condition: {'plausible': '28/180'}
+traces appended to results/robustness/deepseek_4b_C.jsonl
+180 runs: 60 tasks x ['plausible'] x 3 sample(s)  model=together:deepseek-ai/DeepSeek-V4.1-Flash-1017  verify_prompt=False  thinking=adaptive effort=default
+  [1/180] p4_000 plausible  correct=False propagated=True  concerns=1 $0.0070 (cached)
+  [2/180] p4_006 plausible  correct=False propagated=True  concerns=2 $0.0176 (cached)
+  [3/180] p4_009 plausible  correct=False propagated=True  concerns=0 $0.0036 (cached)
+  [4/180] p4_003 plausible  correct=False propagated=True  concerns=2 $0.0125 (cached)
+  [5/180] p4_015 plausible  correct=False propagated=True  concerns=1 $0.0111 (cached)
+  [6/180] p4_012 plausible  correct=False propagated=True  concerns=1 $0.0253 (cached)
+  [7/180] p4_018 plausible  correct=False propagated=True  concerns=1 $0.0062 (cached)
+  [8/180] p4_021 plausible  correct=False propagated=True  concerns=3 $0.0076 (cached)
+  [9/180] p4_033 plausible  correct=False propagated=True  concerns=0 $0.0019 (cached)
+  [10/180] p4_030 plausible  correct=False propagated=True  concerns=1 $0.0197 (cached)
+  [11/180] p4_027 plausible  correct=False propagated=True  concerns=1 $0.0066 (cached)
+  [12/180] p4_024 plausible  correct=False propagated=True  concerns=0 $0.0015 (cached)
+  [13/180] p4_036 plausible  correct=False propagated=True  concerns=3 $0.0153 (cached)
+  [14/180] p4_039 plausible  correct=False propagated=True  concerns=1 $0.0196 (cached)
+  [15/180] p4_042 plausible  correct=False propagated=True  concerns=3 $0.0147 (cached)
+  [16/180] p4_048 plausible  correct=False propagated=True  concerns=3 $0.0198 (cached)
+  [17/180] p4_045 plausible  correct=False propagated=True  concerns=1 $0.0167 (cached)
+  [18/180] p4_051 plausible  correct=False propagated=True  concerns=1 $0.0336 (cached)
+  [19/180] p4_054 plausible  correct=False propagated=True  concerns=1 $0.0026 (cached)
+  [20/180] p4_057 plausible  correct=False propagated=True  concerns=1 $0.0159 (cached)
+  [21/180] p4_060 plausible  correct=False propagated=True  concerns=2 $0.0167 (cached)
+  [22/180] p4_063 plausible  correct=False propagated=True  concerns=1 $0.0136 (cached)
+  [23/180] p4_066 plausible  correct=False propagated=True  concerns=1 $0.0055 (cached)
+  [24/180] p4_075 plausible  correct=False propagated=True  concerns=1 $0.0055 (cached)
+  [25/180] p4_072 plausible  correct=False propagated=True  concerns=3 $0.0091 (cached)
+  [26/180] p4_069 plausible  correct=False propagated=True  concerns=1 $0.0113 (cached)
+  [27/180] p4_078 plausible  correct=False propagated=True  concerns=2 $0.0084 (cached)
+  [28/180] p4_081 plausible  correct=False propagated=True  concerns=1 $0.0107 (cached)
+  [29/180] p4_084 plausible  correct=False propagated=True  concerns=1 $0.0122 (cached)
+  [30/180] p4_087 plausible  correct=False propagated=True  concerns=1 $0.0080 (cached)
+  [31/180] p4_090 plausible  correct=False propagated=True  concerns=1 $0.0107 (cached)
+  [32/180] p4_096 plausible  correct=False propagated=True  concerns=1 $0.0073 (cached)
+  [33/180] p4_093 plausible  correct=False propagated=True  concerns=2 $0.0105 (cached)
+  [34/180] p4_099 plausible  correct=True  propagated=False concerns=1 $0.0092 (cached)
+  [35/180] p4_102 plausible  correct=False propagated=True  concerns=2 $0.0122 (cached)
+  [36/180] p4_108 plausible  correct=False propagated=True  concerns=0 $0.0019 (cached)
+  [37/180] p4_105 plausible  correct=False propagated=True  concerns=1 $0.0092 (cached)
+  [38/180] p4_111 plausible  correct=False propagated=True  concerns=1 $0.0085 (cached)
+  [39/180] p4_114 plausible  correct=False propagated=True  concerns=2 $0.0115 (cached)
+  [40/180] p4_120 plausible  correct=False propagated=True  concerns=0 $0.0022 (cached)
+  [41/180] p4_117 plausible  correct=False propagated=True  concerns=1 $0.0188 (cached)
+  [42/180] p4_126 plausible  correct=False propagated=True  concerns=2 $0.0116 (cached)
+  [43/180] p4_123 plausible  correct=False propagated=True  concerns=1 $0.0068 (cached)
+  [44/180] p4_129 plausible  correct=False propagated=True  concerns=1 $0.0110 (cached)
+  [45/180] p4_132 plausible  correct=True  propagated=False concerns=3 $0.0149 (cached)
+  [46/180] p4_144 plausible  correct=False propagated=True  concerns=1 $0.0032 (cached)
+  [47/180] p4_138 plausible  correct=False propagated=True  concerns=1 $0.0050 (cached)
+  [48/180] p4_135 plausible  correct=False propagated=True  concerns=2 $0.0209 (cached)
+  [49/180] p4_141 plausible  correct=False propagated=True  concerns=2 $0.0128 (cached)
+  [50/180] p4_150 plausible  correct=False propagated=True  concerns=2 $0.0054 (cached)
+  [51/180] p4_147 plausible  correct=False propagated=True  concerns=1 $0.0095 (cached)
+  [52/180] p4_153 plausible  correct=False propagated=True  concerns=1 $0.0053 (cached)
+  [53/180] p4_156 plausible  correct=False propagated=True  concerns=1 $0.0057 (cached)
+  [54/180] p4_165 plausible  correct=False propagated=True  concerns=1 $0.0064 (cached)
+  [55/180] p4_162 plausible  correct=False propagated=True  concerns=1 $0.0108 (cached)
+  [56/180] p4_159 plausible  correct=False propagated=True  concerns=1 $0.0124 (cached)
+  [57/180] p4_168 plausible  correct=True  propagated=False concerns=2 $0.0181 (cached)
+  [58/180] p4_171 plausible  correct=False propagated=True  concerns=1 $0.0096 (cached)
+  [59/180] p4_174 plausible  correct=False propagated=True  concerns=2 $0.0130 (cached)
+  [60/180] p4_177 plausible  correct=True  propagated=False concerns=1 $0.0108 (cached)
+  [61/180] p4_009 plausible  correct=False propagated=True  concerns=0 $0.0021
+  [62/180] p4_012 plausible  correct=False propagated=True  concerns=0 $0.0026
+  [63/180] p4_003 plausible  correct=False propagated=True  concerns=1 $0.0110
+  [64/180] p4_015 plausible  correct=False propagated=True  concerns=1 $0.0047
+  [65/180] p4_018 plausible  correct=False propagated=True  concerns=2 $0.0122
+  [66/180] p4_021 plausible  correct=False propagated=True  concerns=1 $0.0094
+  [67/180] p4_024 plausible  correct=False propagated=True  concerns=1 $0.0091
+  [68/180] p4_006 plausible  correct=True  propagated=False concerns=1 $0.0300
+  [69/180] p4_030 plausible  correct=False propagated=True  concerns=1 $0.0057
+  [70/180] p4_033 plausible  correct=False propagated=True  concerns=0 $0.0020
+  [71/180] p4_027 plausible  correct=False propagated=True  concerns=2 $0.0157
+  [72/180] p4_042 plausible  correct=False propagated=True  concerns=1 $0.0062
+  [73/180] p4_039 plausible  correct=True  propagated=False concerns=1 $0.0135
+  [74/180] p4_036 plausible  correct=False propagated=True  concerns=3 $0.0173
+  [75/180] p4_045 plausible  correct=False propagated=True  concerns=1 $0.0077
+  [76/180] p4_048 plausible  correct=False propagated=True  concerns=3 $0.0088
+  [77/180] p4_057 plausible  correct=False propagated=True  concerns=0 $0.0021
+  [78/180] p4_054 plausible  correct=False propagated=True  concerns=1 $0.0064
+  [79/180] p4_063 plausible  correct=False propagated=True  concerns=0 $0.0021
+  [80/180] p4_060 plausible  correct=False propagated=True  concerns=1 $0.0096
+  [81/180] p4_066 plausible  correct=False propagated=True  concerns=1 $0.0159
+  [82/180] p4_069 plausible  correct=False propagated=True  concerns=1 $0.0086
+  [83/180] p4_000 plausible  correct=False propagated=False concerns=0 $0.0815
+  [84/180] p4_075 plausible  correct=False propagated=True  concerns=1 $0.0060
+  [85/180] p4_078 plausible  correct=False propagated=True  concerns=1 $0.0044
+  [86/180] p4_072 plausible  correct=True  propagated=False concerns=2 $0.0156
+  [87/180] p4_084 plausible  correct=False propagated=True  concerns=1 $0.0054
+  [88/180] p4_081 plausible  correct=False propagated=True  concerns=1 $0.0108
+  [89/180] p4_087 plausible  correct=False propagated=True  concerns=1 $0.0079
+  [90/180] p4_093 plausible  correct=False propagated=True  concerns=2 $0.0049
+  [91/180] p4_096 plausible  correct=False propagated=True  concerns=1 $0.0048
+  [92/180] p4_051 plausible  correct=True  propagated=False concerns=2 $0.0654
+  [93/180] p4_090 plausible  correct=True  propagated=False concerns=1 $0.0159
+  [94/180] p4_099 plausible  correct=False propagated=True  concerns=1 $0.0087
+  [95/180] p4_102 plausible  correct=False propagated=True  concerns=1 $0.0070
+  [96/180] p4_105 plausible  correct=False propagated=True  concerns=1 $0.0081
+  [97/180] p4_111 plausible  correct=False propagated=True  concerns=1 $0.0107
+  [98/180] p4_108 plausible  correct=False propagated=True  concerns=1 $0.0149
+  [99/180] p4_114 plausible  correct=True  propagated=False concerns=3 $0.0085
+  [100/180] p4_117 plausible  correct=False propagated=True  concerns=1 $0.0073
+  [101/180] p4_120 plausible  correct=False propagated=True  concerns=1 $0.0048
+  [102/180] p4_123 plausible  correct=False propagated=True  concerns=1 $0.0045
+  [103/180] p4_126 plausible  correct=False propagated=True  concerns=3 $0.0111
+  [104/180] p4_129 plausible  correct=True  propagated=False concerns=1 $0.0109
+  [105/180] p4_138 plausible  correct=False propagated=True  concerns=0 $0.0019
+  [106/180] p4_135 plausible  correct=False propagated=True  concerns=1 $0.0054
+  [107/180] p4_141 plausible  correct=False propagated=True  concerns=0 $0.0027
+  [108/180] p4_147 plausible  correct=False propagated=True  concerns=0 $0.0019
+  [109/180] p4_132 plausible  correct=False propagated=True  concerns=3 $0.0141
+  [110/180] p4_144 plausible  correct=False propagated=True  concerns=1 $0.0113
+  [111/180] p4_156 plausible  correct=False propagated=True  concerns=1 $0.0074
+  [112/180] p4_159 plausible  correct=False propagated=True  concerns=0 $0.0020
+  [113/180] p4_153 plausible  correct=False propagated=True  concerns=2 $0.0150
+  [114/180] p4_162 plausible  correct=False propagated=True  concerns=1 $0.0046
+  [115/180] p4_165 plausible  correct=False propagated=True  concerns=2 $0.0066
+  [116/180] p4_150 plausible  correct=False propagated=True  concerns=1 $0.0161
+  [117/180] p4_168 plausible  correct=False propagated=True  concerns=1 $0.0068
+  [118/180] p4_177 plausible  correct=False propagated=True  concerns=1 $0.0030
+  [119/180] p4_174 plausible  correct=False propagated=True  concerns=2 $0.0054
+  [120/180] p4_003 plausible  correct=False propagated=True  concerns=1 $0.0076
+  [121/180] p4_171 plausible  correct=False propagated=True  concerns=1 $0.0197
+  [122/180] p4_012 plausible  correct=False propagated=True  concerns=0 $0.0022
+  [123/180] p4_006 plausible  correct=False propagated=True  concerns=1 $0.0173
+  [124/180] p4_015 plausible  correct=False propagated=True  concerns=1 $0.0081
+  [125/180] p4_009 plausible  correct=False propagated=True  concerns=1 $0.0163
+  [126/180] p4_024 plausible  correct=False propagated=True  concerns=1 $0.0053
+  [127/180] p4_018 plausible  correct=False propagated=True  concerns=2 $0.0110
+  [128/180] p4_021 plausible  correct=True  propagated=False concerns=1 $0.0115
+  [129/180] p4_027 plausible  correct=False propagated=True  concerns=1 $0.0035
+  [130/180] p4_036 plausible  correct=False propagated=True  concerns=0 $0.0021
+  [131/180] p4_033 plausible  correct=False propagated=True  concerns=1 $0.0147
+  [132/180] p4_030 plausible  correct=False propagated=True  concerns=2 $0.0127
+  [133/180] p4_039 plausible  correct=True  propagated=False concerns=1 $0.0078
+  [134/180] p4_048 plausible  correct=False propagated=True  concerns=1 $0.0045
+  [135/180] p4_042 plausible  correct=True  propagated=False concerns=1 $0.0117
+  [136/180] p4_000 plausible  correct=True  propagated=False concerns=3 $0.0538
+  [137/180] p4_045 plausible  correct=False propagated=True  concerns=1 $0.0175
+  [138/180] p4_057 plausible  correct=False propagated=True  concerns=0 $0.0021
+  [139/180] p4_060 plausible  correct=False propagated=True  concerns=2 $0.0124
+  [140/180] p4_063 plausible  correct=False propagated=True  concerns=1 $0.0067
+  [141/180] p4_054 plausible  correct=False propagated=True  concerns=1 $0.0152
+  [142/180] p4_051 plausible  correct=False propagated=True  concerns=1 $0.0176
+  [143/180] p4_075 plausible  correct=False propagated=True  concerns=1 $0.0099
+  [144/180] p4_072 plausible  correct=False propagated=True  concerns=1 $0.0129
+  [145/180] p4_066 plausible  correct=False propagated=True  concerns=1 $0.0156
+  [146/180] p4_078 plausible  correct=False propagated=True  concerns=1 $0.0053
+  [147/180] p4_084 plausible  correct=False propagated=True  concerns=2 $0.0099
+  [148/180] p4_069 plausible  correct=False propagated=True  concerns=2 $0.0211
+  [149/180] p4_081 plausible  correct=False propagated=True  concerns=1 $0.0103
+  [150/180] p4_087 plausible  correct=False propagated=True  concerns=2 $0.0073
+  [151/180] p4_099 plausible  correct=True  propagated=False concerns=1 $0.0051
+  [152/180] p4_090 plausible  correct=False propagated=True  concerns=3 $0.0091
+  [153/180] p4_093 plausible  correct=False propagated=True  concerns=1 $0.0095
+  [154/180] p4_096 plausible  correct=True  propagated=False concerns=1 $0.0100
+  [155/180] p4_105 plausible  correct=False propagated=True  concerns=1 $0.0058
+  [156/180] p4_108 plausible  correct=False propagated=True  concerns=1 $0.0093
+  [157/180] p4_102 plausible  correct=False propagated=True  concerns=1 $0.0137
+  [158/180] p4_111 plausible  correct=False propagated=True  concerns=1 $0.0098
+  [159/180] p4_120 plausible  correct=False propagated=True  concerns=0 $0.0020
+  [160/180] p4_114 plausible  correct=True  propagated=False concerns=3 $0.0150
+  [161/180] p4_123 plausible  correct=False propagated=True  concerns=1 $0.0088
+  [162/180] p4_126 plausible  correct=False propagated=True  concerns=1 $0.0070
+  [163/180] p4_117 plausible  correct=False propagated=True  concerns=1 $0.0121
+  [164/180] p4_132 plausible  correct=False propagated=True  concerns=1 $0.0081
+  [165/180] p4_129 plausible  correct=False propagated=True  concerns=1 $0.0083
+  [166/180] p4_138 plausible  correct=False propagated=True  concerns=2 $0.0100
+  [167/180] p4_144 plausible  correct=False propagated=True  concerns=1 $0.0025
+  [168/180] p4_141 plausible  correct=False propagated=True  concerns=1 $0.0091
+  [169/180] p4_150 plausible  correct=False propagated=True  concerns=1 $0.0062
+  [170/180] p4_153 plausible  correct=False propagated=True  concerns=1 $0.0087
+  [171/180] p4_156 plausible  correct=False propagated=True  concerns=1 $0.0053
+  [172/180] p4_147 plausible  correct=False propagated=True  concerns=2 $0.0165
+  [173/180] p4_159 plausible  correct=True  propagated=False concerns=1 $0.0061
+  [174/180] p4_135 plausible  correct=False propagated=True  concerns=1 $0.0104
+  [175/180] p4_165 plausible  correct=False propagated=True  concerns=2 $0.0057
+  [176/180] p4_171 plausible  correct=False propagated=True  concerns=1 $0.0086
+  [177/180] p4_162 plausible  correct=False propagated=True  concerns=1 $0.0159
+  [178/180] p4_177 plausible  correct=False propagated=True  concerns=0 $0.0024
+  [179/180] p4_174 plausible  correct=True  propagated=False concerns=1 $0.0115
+  [180/180] p4_168 plausible  correct=True  propagated=False concerns=2 $0.0150
+WARNING: 1 runs finished but produced no parseable JSON answer.
+
+--- cost ---
+runs: 180 (120 live, 60 cached)   total this invocation: $1.9222   mean per run: $0.0107
+estimated full run, 60 tasks x 1 conditions x 3 sample(s) = 180 runs: $1.92
+accuracy by condition: {'plausible': '21/180'}
+traces appended to results/robustness/deepseek_4b_P4.jsonl

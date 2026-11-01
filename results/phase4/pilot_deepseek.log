@@ -1,0 +1,19 @@
+12 runs: 6 tasks x ['clean', 'plausible'] x 1 sample(s)  model=together:deepseek-ai/DeepSeek-V4.1-Flash-1017  verify_prompt=False  thinking=adaptive effort=default
+  [1/12] p4_001 clean      correct=True  propagated=None  concerns=0 $0.0029
+  [2/12] p4_001 plausible  correct=False propagated=True  concerns=0 $0.0028
+  [3/12] p4_000 clean      correct=False propagated=None  concerns=0 $0.0035
+  [4/12] p4_002 clean      correct=True  propagated=None  concerns=0 $0.0030
+  [5/12] p4_002 plausible  correct=False propagated=True  concerns=0 $0.0023
+  [6/12] p4_003 clean      correct=True  propagated=None  concerns=0 $0.0028
+  [7/12] p4_004 clean      correct=True  propagated=None  concerns=0 $0.0022
+  [8/12] p4_005 clean      correct=True  propagated=None  concerns=0 $0.0025
+  [9/12] p4_004 plausible  correct=False propagated=True  concerns=0 $0.0032
+  [10/12] p4_005 plausible  correct=False propagated=True  concerns=0 $0.0029
+  [11/12] p4_003 plausible  correct=False propagated=True  concerns=1 $0.0116
+  [12/12] p4_000 plausible  correct=True  propagated=False concerns=1 $0.0143
+
+--- cost ---
+runs: 12 (12 live, 0 cached)   total this invocation: $0.0539   mean per run: $0.0045
+estimated full run, 180 tasks x 2 conditions x 1 sample(s) = 360 runs: $1.62
+accuracy by condition: {'clean': '5/6', 'plausible': '1/6'}
+traces appended to results/phase4/pilot_deepseek.jsonl

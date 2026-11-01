@@ -1,0 +1,19 @@
+12 runs: 6 tasks x ['clean', 'plausible'] x 1 sample(s)  model=gemini:gemini-4-argon  verify_prompt=False  thinking=adaptive effort=default
+  [1/12] p4_000 clean      correct=True  propagated=None  concerns=0 $0.0029
+  [2/12] p4_001 plausible  correct=False propagated=True  concerns=1 $0.0049
+  [3/12] p4_001 clean      correct=True  propagated=None  concerns=0 $0.0028
+  [4/12] p4_000 plausible  correct=False propagated=True  concerns=2 $0.0062
+  [5/12] p4_002 clean      correct=True  propagated=None  concerns=0 $0.0028
+  [6/12] p4_002 plausible  correct=False propagated=True  concerns=0 $0.0028
+  [7/12] p4_003 plausible  correct=False propagated=True  concerns=2 $0.0041
+  [8/12] p4_004 clean      correct=True  propagated=None  concerns=0 $0.0027
+  [9/12] p4_004 plausible  correct=False propagated=True  concerns=1 $0.0045
+  [10/12] p4_005 clean      correct=True  propagated=None  concerns=0 $0.0026
+  [11/12] p4_005 plausible  correct=False propagated=True  concerns=0 $0.0026
+  [12/12] p4_003 clean      correct=True  propagated=None  concerns=0 $0.0028
+
+--- cost ---
+runs: 12 (12 live, 0 cached)   total this invocation: $0.0418   mean per run: $0.0035
+estimated full run, 180 tasks x 2 conditions x 1 sample(s) = 360 runs: $1.26
+accuracy by condition: {'clean': '6/6', 'plausible': '0/6'}
+traces appended to results/phase4/pilot_argon.jsonl

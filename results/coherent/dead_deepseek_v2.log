@@ -1,0 +1,58 @@
+50 runs: 50 tasks x ['coherent_plausible'] x 1 sample(s)  model=together:deepseek-ai/DeepSeek-V4.1-Flash-1017  verify_prompt=False  thinking=adaptive effort=default
+  [1/50] u012 coherent_plausible correct=False propagated=True  concerns=0 $0.0117
+  [2/50] u013 coherent_plausible correct=False propagated=True  concerns=0 $0.0458
+  [3/50] u020 coherent_plausible correct=False propagated=True  concerns=1 $0.0204
+  [4/50] u005 coherent_plausible correct=False propagated=True  concerns=1 $0.0418
+  [5/50] u004 coherent_plausible correct=False propagated=True  concerns=1 $0.0137
+  [6/50] u028 coherent_plausible correct=False propagated=True  concerns=0 $0.0105
+  [7/50] u029 coherent_plausible correct=False propagated=True  concerns=0 $0.0235
+  [8/50] u036 coherent_plausible correct=False propagated=True  concerns=1 $0.0345
+  [9/50] u045 coherent_plausible correct=False propagated=True  concerns=0 $0.0253
+  [10/50] u037 coherent_plausible correct=False propagated=True  concerns=1 $0.0316
+  [11/50] u044 coherent_plausible correct=False propagated=True  concerns=1 $0.0180
+  [12/50] u052 coherent_plausible correct=False propagated=True  concerns=1 $0.0113
+  [13/50] u053 coherent_plausible correct=False propagated=True  concerns=0 $0.0333
+  [14/50] u060 coherent_plausible correct=False propagated=True  concerns=1 $0.0284
+  [15/50] u068 coherent_plausible correct=False propagated=True  concerns=1 $0.0288
+  [16/50] u021 coherent_plausible correct=False propagated=True  concerns=4 $0.0563
+  [17/50] u069 coherent_plausible correct=False propagated=True  concerns=2 $0.0172
+  [18/50] u076 coherent_plausible correct=False propagated=True  concerns=2 $0.0336
+  [19/50] u077 coherent_plausible correct=False propagated=True  concerns=2 $0.0448
+  [20/50] u061 coherent_plausible correct=False propagated=True  concerns=2 $0.0412
+  [21/50] u092 coherent_plausible correct=False propagated=True  concerns=1 $0.0237
+  [22/50] u085 coherent_plausible correct=False propagated=True  concerns=1 $0.0496
+  [23/50] u093 coherent_plausible correct=False propagated=True  concerns=2 $0.0364
+  [24/50] u100 coherent_plausible correct=False propagated=True  concerns=1 $0.0135
+  [25/50] u101 coherent_plausible correct=False propagated=True  concerns=0 $0.0401
+  [26/50] u108 coherent_plausible correct=False propagated=True  concerns=1 $0.0163
+  [27/50] u109 coherent_plausible correct=False propagated=True  concerns=0 $0.0172
+  [28/50] u084 coherent_plausible correct=False propagated=True  concerns=1 $0.0449
+  [29/50] u124 coherent_plausible correct=False propagated=True  concerns=0 $0.0097
+  [30/50] u117 coherent_plausible correct=False propagated=True  concerns=0 $0.0397
+  [31/50] u125 coherent_plausible correct=False propagated=True  concerns=0 $0.0354
+  [32/50] u133 coherent_plausible correct=False propagated=True  concerns=0 $0.0295
+  [33/50] u140 coherent_plausible correct=False propagated=True  concerns=0 $0.0168
+  [34/50] u132 coherent_plausible correct=False propagated=True  concerns=1 $0.0151
+  [35/50] u141 coherent_plausible correct=False propagated=True  concerns=0 $0.0538
+  [36/50] u148 coherent_plausible correct=False propagated=True  concerns=3 $0.0132
+  [37/50] u156 coherent_plausible correct=False propagated=True  concerns=0 $0.0104
+  [38/50] u116 coherent_plausible correct=False propagated=True  concerns=1 $0.0752
+  [39/50] u164 coherent_plausible correct=False propagated=True  concerns=0 $0.0134
+  [40/50] u157 coherent_plausible correct=False propagated=True  concerns=0 $0.0288
+  [41/50] u172 coherent_plausible correct=False propagated=True  concerns=1 $0.0144
+  [42/50] u180 coherent_plausible correct=False propagated=True  concerns=2 $0.0149
+  [43/50] u173 coherent_plausible correct=False propagated=True  concerns=1 $0.0312
+  [44/50] u149 coherent_plausible correct=False propagated=True  concerns=3 $0.0519
+  [45/50] u165 coherent_plausible correct=False propagated=True  concerns=3 $0.0506
+  [46/50] u196 coherent_plausible correct=False propagated=True  concerns=0 $0.0267
+  [47/50] u197 coherent_plausible correct=False propagated=True  concerns=2 $0.0389
+  [48/50] u181 coherent_plausible correct=True  propagated=False concerns=3 $0.0959
+  [49/50] u189 coherent_plausible correct=False propagated=True  concerns=1 $0.0714
+  [50/50] u188 coherent_plausible correct=False propagated=False concerns=0 $0.1356
+WARNING: 1 runs finished but produced no parseable JSON answer.
+
+--- cost ---
+runs: 50 (50 live, 0 cached)   total this invocation: $1.6859   mean per run: $0.0337
+estimated full run, 50 tasks x 1 conditions x 1 sample(s) = 50 runs: $1.69
+accuracy by condition: {'coherent_plausible': '1/50'}
+traces appended to results/coherent/deepseek_prot_inflate_v2.jsonl

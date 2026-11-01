@@ -1,0 +1,107 @@
+100 runs: 50 tasks x ['clean', 'coherent_plausible'] x 1 sample(s)  model=gemini:gemini-4-argon  verify_prompt=False  thinking=adaptive effort=default
+  [1/100] u004 clean      correct=True  propagated=None  concerns=1 $0.0094 (cached)
+  [2/100] u005 clean      correct=True  propagated=None  concerns=1 $0.0402 (cached)
+  [3/100] u012 clean      correct=True  propagated=None  concerns=1 $0.0111 (cached)
+  [4/100] u013 clean      correct=True  propagated=None  concerns=2 $0.0455 (cached)
+  [5/100] u012 coherent_plausible correct=False propagated=True  concerns=2 $0.0126
+  [6/100] u020 clean      correct=True  propagated=None  concerns=1 $0.0169 (cached)
+  [7/100] u013 coherent_plausible correct=False propagated=True  concerns=3 $0.0460
+  [8/100] u021 clean      correct=True  propagated=None  concerns=2 $0.0364 (cached)
+  [9/100] u020 coherent_plausible correct=True  propagated=False concerns=2 $0.0193
+  [10/100] u028 clean      correct=True  propagated=None  concerns=1 $0.0093 (cached)
+  [11/100] u004 coherent_plausible correct=False propagated=True  concerns=2 $0.0105
+  [12/100] u029 clean      correct=True  propagated=None  concerns=1 $0.0222 (cached)
+  [13/100] u005 coherent_plausible correct=False propagated=True  concerns=2 $0.0423
+  [14/100] u036 clean      correct=True  propagated=None  concerns=1 $0.0338 (cached)
+  [15/100] u021 coherent_plausible correct=False propagated=True  concerns=2 $0.0370
+  [16/100] u037 clean      correct=True  propagated=None  concerns=1 $0.0278 (cached)
+  [17/100] u029 coherent_plausible correct=False propagated=True  concerns=2 $0.0234
+  [18/100] u044 clean      correct=True  propagated=None  concerns=1 $0.0125 (cached)
+  [19/100] u028 coherent_plausible correct=True  propagated=False concerns=2 $0.0107
+  [20/100] u045 clean      correct=True  propagated=None  concerns=2 $0.0256 (cached)
+  [21/100] u037 coherent_plausible correct=True  propagated=False concerns=3 $0.0311
+  [22/100] u052 clean      correct=True  propagated=None  concerns=1 $0.0103 (cached)
+  [23/100] u045 coherent_plausible correct=True  propagated=False concerns=3 $0.0274
+  [24/100] u053 clean      correct=True  propagated=None  concerns=2 $0.0342 (cached)
+  [25/100] u044 coherent_plausible correct=False propagated=True  concerns=3 $0.0153
+  [26/100] u060 clean      correct=True  propagated=None  concerns=1 $0.0244 (cached)
+  [27/100] u052 coherent_plausible correct=True  propagated=False concerns=2 $0.0119
+  [28/100] u061 clean      correct=True  propagated=None  concerns=1 $0.0361 (cached)
+  [29/100] u060 coherent_plausible correct=False propagated=True  concerns=2 $0.0258
+  [30/100] u068 clean      correct=True  propagated=None  concerns=1 $0.0263 (cached)
+  [31/100] u053 coherent_plausible correct=False propagated=True  concerns=4 $0.0357
+  [32/100] u069 clean      correct=True  propagated=None  concerns=1 $0.0144 (cached)
+  [33/100] u068 coherent_plausible correct=True  propagated=False concerns=2 $0.0277
+  [34/100] u076 clean      correct=True  propagated=None  concerns=3 $0.0296 (cached)
+  [35/100] u069 coherent_plausible correct=False propagated=True  concerns=2 $0.0165
+  [36/100] u077 clean      correct=True  propagated=None  concerns=1 $0.0400 (cached)
+  [37/100] u077 coherent_plausible correct=True  propagated=False concerns=3 $0.0435
+  [38/100] u084 clean      correct=True  propagated=None  concerns=1 $0.0156 (cached)
+  [39/100] u061 coherent_plausible correct=True  propagated=False concerns=2 $0.0391
+  [40/100] u085 clean      correct=True  propagated=None  concerns=1 $0.0375 (cached)
+  [41/100] u084 coherent_plausible correct=False propagated=True  concerns=3 $0.0175
+  [42/100] u092 clean      correct=True  propagated=None  concerns=2 $0.0218 (cached)
+  [43/100] u036 coherent_plausible correct=False propagated=True  concerns=3 $0.0358
+  [44/100] u093 clean      correct=True  propagated=None  concerns=1 $0.0323 (cached)
+  [45/100] u092 coherent_plausible correct=False propagated=True  concerns=3 $0.0242
+  [46/100] u100 clean      correct=True  propagated=None  concerns=1 $0.0091 (cached)
+  [47/100] u076 coherent_plausible correct=False propagated=True  concerns=2 $0.0306
+  [48/100] u101 clean      correct=True  propagated=None  concerns=2 $0.0409 (cached)
+  [49/100] u085 coherent_plausible correct=True  propagated=False concerns=2 $0.0395
+  [50/100] u108 clean      correct=True  propagated=None  concerns=2 $0.0070 (cached)
+  [51/100] u101 coherent_plausible correct=False propagated=True  concerns=3 $0.0415
+  [52/100] u109 clean      correct=True  propagated=None  concerns=1 $0.0172 (cached)
+  [53/100] u093 coherent_plausible correct=False propagated=True  concerns=3 $0.0355
+  [54/100] u116 clean      correct=True  propagated=None  concerns=1 $0.0649 (cached)
+  [55/100] u100 coherent_plausible correct=True  propagated=False concerns=2 $0.0106
+  [56/100] u117 clean      correct=True  propagated=None  concerns=1 $0.0407 (cached)
+  [57/100] u116 coherent_plausible correct=False propagated=True  concerns=2 $0.0668
+  [58/100] u124 clean      correct=True  propagated=None  concerns=1 $0.0103 (cached)
+  [59/100] u108 coherent_plausible correct=True  propagated=False concerns=2 $0.0161
+  [60/100] u125 clean      correct=True  propagated=None  concerns=1 $0.0362 (cached)
+  [61/100] u124 coherent_plausible correct=True  propagated=False concerns=2 $0.0131
+  [62/100] u132 clean      correct=True  propagated=None  concerns=1 $0.0110 (cached)
+  [63/100] u117 coherent_plausible correct=True  propagated=False concerns=3 $0.0426
+  [64/100] u133 clean      correct=True  propagated=None  concerns=1 $0.0297 (cached)
+  [65/100] u125 coherent_plausible correct=False propagated=True  concerns=2 $0.0378
+  [66/100] u140 clean      correct=True  propagated=None  concerns=3 $0.0190 (cached)
+  [67/100] u132 coherent_plausible correct=False propagated=True  concerns=3 $0.0137
+  [68/100] u141 clean      correct=True  propagated=None  concerns=1 $0.0177 (cached)
+  [69/100] u109 coherent_plausible correct=True  propagated=False concerns=3 $0.0198
+  [70/100] u148 clean      correct=True  propagated=None  concerns=2 $0.0099 (cached)
+  [71/100] u148 coherent_plausible correct=True  propagated=False concerns=2 $0.0107
+  [72/100] u149 clean      correct=True  propagated=None  concerns=3 $0.0107 (cached)
+  [73/100] u140 coherent_plausible correct=True  propagated=False concerns=2 $0.0203
+  [74/100] u156 clean      correct=True  propagated=None  concerns=1 $0.0062 (cached)
+  [75/100] u141 coherent_plausible correct=True  propagated=False concerns=3 $0.0575
+  [76/100] u157 clean      correct=True  propagated=None  concerns=2 $0.0289 (cached)
+  [77/100] u156 coherent_plausible correct=True  propagated=False concerns=2 $0.0110
+  [78/100] u164 clean      correct=True  propagated=None  concerns=1 $0.0139 (cached)
+  [79/100] u157 coherent_plausible correct=True  propagated=False concerns=2 $0.0313
+  [80/100] u165 clean      correct=True  propagated=None  concerns=2 $0.0346 (cached)
+  [81/100] u164 coherent_plausible correct=False propagated=True  concerns=2 $0.0155
+  [82/100] u172 clean      correct=True  propagated=None  concerns=1 $0.0130 (cached)
+  [83/100] u149 coherent_plausible correct=True  propagated=False concerns=3 $0.0370
+  [84/100] u173 clean      correct=True  propagated=None  concerns=1 $0.0289 (cached)
+  [85/100] u165 coherent_plausible correct=True  propagated=False concerns=2 $0.0365
+  [86/100] u180 clean      correct=True  propagated=None  concerns=1 $0.0126 (cached)
+  [87/100] u133 coherent_plausible correct=True  propagated=False concerns=3 $0.0335
+  [88/100] u181 clean      correct=True  propagated=None  concerns=3 $0.0919 (cached)
+  [89/100] u173 coherent_plausible correct=False propagated=True  concerns=3 $0.0313
+  [90/100] u188 clean      correct=True  propagated=None  concerns=2 $0.0570 (cached)
+  [91/100] u172 coherent_plausible correct=True  propagated=False concerns=2 $0.0151
+  [92/100] u189 clean      correct=True  propagated=None  concerns=2 $0.0344 (cached)
+  [93/100] u188 coherent_plausible correct=True  propagated=False concerns=2 $0.0590
+  [94/100] u196 clean      correct=True  propagated=None  concerns=1 $0.0265 (cached)
+  [95/100] u180 coherent_plausible correct=True  propagated=False concerns=3 $0.0142
+  [96/100] u197 clean      correct=True  propagated=None  concerns=3 $0.0362 (cached)
+  [97/100] u189 coherent_plausible correct=False propagated=True  concerns=2 $0.0356
+  [98/100] u181 coherent_plausible correct=True  propagated=False concerns=3 $0.0937
+  [99/100] u197 coherent_plausible correct=True  propagated=False concerns=4 $0.0387
+  [100/100] u196 coherent_plausible correct=True  propagated=False concerns=3 $0.0294
+
+--- cost ---
+runs: 100 (50 live, 50 cached)   total this invocation: $2.8129   mean per run: $0.0281
+estimated full run, 50 tasks x 2 conditions x 1 sample(s) = 100 runs: $2.81
+accuracy by condition: {'clean': '50/50', 'coherent_plausible': '28/50'}
+traces appended to results/coherent/argon_prot_inflate.jsonl

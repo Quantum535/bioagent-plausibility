@@ -1,0 +1,523 @@
+20 runs: 20 tasks x ['clean'] x 1 sample(s)  model=gemini:gemini-4-argon  verify_prompt=False  thinking=adaptive effort=default
+  [1/20] r003 clean      correct=True  propagated=None  concerns=0 $0.0029
+  [2/20] r001 clean      correct=True  propagated=None  concerns=0 $0.0030
+  [3/20] r002 clean      correct=True  propagated=None  concerns=0 $0.0029
+  [4/20] r005 clean      correct=True  propagated=None  concerns=0 $0.0029
+  [5/20] r006 clean      correct=True  propagated=None  concerns=0 $0.0027
+  [6/20] r008 clean      correct=True  propagated=None  concerns=0 $0.0028 (cached)
+  [7/20] r009 clean      correct=True  propagated=None  concerns=0 $0.0029 (cached)
+  [8/20] r010 clean      correct=True  propagated=None  concerns=1 $0.0034
+  [9/20] r011 clean      correct=True  propagated=None  concerns=0 $0.0030 (cached)
+  [10/20] r012 clean      correct=True  propagated=None  concerns=0 $0.0027 (cached)
+  [11/20] r013 clean      correct=True  propagated=None  concerns=0 $0.0029 (cached)
+  [12/20] r014 clean      correct=True  propagated=None  concerns=0 $0.0027 (cached)
+  [13/20] r015 clean      correct=True  propagated=None  concerns=0 $0.0027 (cached)
+  [14/20] r016 clean      correct=True  propagated=None  concerns=0 $0.0028 (cached)
+  [15/20] r017 clean      correct=True  propagated=None  concerns=0 $0.0030
+  [1  [17/20] r003 clean      correct=True  propagated=None  concerns=0 $0.0  [17/20] r018 clean      correct=True  propagated=None  concerns=0 $0.0028
+  [1  [19/20] r018 clean      correct=True  propagated=None  concerns=0 $0.0028
+  [20/20] r019 clean      correct=True  propagated=None  concerns=0 $0.0027
+
+--- cost ---
+runs: 20 (20 live, 0 cached)   total this invocation: $0.0571   mean per run: $0.0029
+estimated full run, 79 tasks x 1 conditions x 1 sample(s) = 79 runs: $0.23
+accuracy by condition: {'clean': '20/20'}
+traces appended to results/robustness/argon_p5_replace_labeled.jsonl
+237 runs: 79 tasks x ['superseded'] x 3 sample(s)  model=gemini:gemini-4-argon  verify_prompt=False  thinking=adaptive effort=default
+  [1/237] r001 superseded correct=False propagated=True  concerns=1 $0.0049 (cached)
+  [2/237] r000 superseded correct=False propagated=True  concerns=1 $0.0044 (cached)
+  [3/237] r002 superseded correct=False propagated=True  concerns=1 $0.0044 (cached)
+  [4/237] r003 superseded correct=True  propagated=False concerns=1 $0.0051 (cached)
+  [5/237] r004 superseded correct=True  propagated=False concerns=1 $0.0046 (cached)
+  [6/237] r007 superseded correct=False propagated=True  concerns=1 $0.0048 (cached)
+  [7/237] r005 superseded correct=False propagated=True  concerns=1 $0.0046 (cached)
+  [8/237] r006 superseded correct=True  propagated=False concerns=1 $0.0074 (cached)
+  [9/237] r008 superseded correct=True  propagated=False concerns=1 $0.0038 (cached)
+  [10/237] r010 superseded correct=True  propagated=False concerns=2 $0.0041 (cached)
+  [11/237] r009 superseded correct=True  propagated=False concerns=1 $0.0048 (cached)
+  [12/237] r011 superseded correct=False propagated=True  concerns=1 $0.0086 (cached)
+  [13/237] r012 superseded correct=False propagated=True  concerns=1 $0.0035 (cached)
+  [14/237] r014 superseded correct=False propagated=True  concerns=0 $0.0027 (cached)
+  [15/237] r013 superseded correct=True  propagated=False concerns=1 $0.0080 (cached)
+  [16/237] r018 superseded correct=False propagated=True  concerns=2 $0.0039 (cached)
+  [17/237] r015 superseded correct=True  propagated=False concerns=1 $0.0046 (cached)
+  [18/237] r016 superseded correct=True  propagated=False concerns=1 $0.0038 (cached)
+  [19/237] r017 superseded correct=False propagated=True  concerns=1 $0.0046 (cached)
+  [20/237] r019 superseded correct=True  propagated=False concerns=1 $0.0042 (cached)
+  [21/237] r020 superseded correct=True  propagated=False concerns=1 $0.0041 (cached)
+  [22/237] r022 superseded correct=False propagated=True  concerns=1 $0.0043 (cached)
+  [23/237] r023 superseded correct=True  propagated=False concerns=1 $0.0047 (cached)
+  [24/237] r021 sup  [26/237] r025 superseded correct=True  propagated=False concerns=1 $0.0088
+  [27/237] r028 superseded correct=False propagated=True  concerns=1 $0.0046  [26/237] r028 superseded correct=False propagated=True  concerns=1 $0.0045
+  [27/237] r026 superseded correct=False propagated=True  concerns=1 $0.0075
+  [28/237] r027 superseded correct=True  propagated=False concerns=1 $0.0040
+   [31/237] r030 superseded correct=True  propagated=False concerns=1 $0.0049
+  [32/237] r032 superseded correct=True  propagated=False concerns=1 $0.0050
+  [33/237] r033 superseded correct=True  propagated=False concerns=1 $0.0053   [34/237] r031 superseded correct=True  propagated=False concerns=1 $0.0082
+  [35/237] r036 superseded correct=True  propagated=False concerns=1 $0.0046   [36/237] r035 superseded correct=False propagated=True  concerns=1 $0.0042  [35/237] r036 superseded correct=True  propagated=False concerns=1 $0.0041
+   [38/237] r040 superseded correct=True  propagated=False concerns=1 $0.0063
+  [39/237] r034 superseded correct=False propagated=True  concerns=1 $0.0072
+  [40/237] r039 superseded correct=True  propagated=False concerns=1 $0.0046
+  [41/237] r041 superseded correct=False propagated=True  concerns=1 $0.0048
+  [42/237] r044 superseded correct=True  propagated=False concerns=1 $0.0038
+  [43/237] r045 superseded correct=True  propagated=False concerns=1 $0.0049
+  [44/237] r042 superseded correct=True  propagated=False concerns=1 $0.0042
+  [45/237] r038 superseded correct=False propagated=True  concerns=1 $0.0044
+  [46/237] r046 superseded correct=False propagated=True  concerns=1 $0.0044
+  [47/237] r043 superseded correct=False propagated=True  concerns=1 $0.0052
+  [48/237] r047 superseded correct=False propagated=True  concerns=1 $0.0049
+  [49/237] r050 superseded correct=True  propagated=False concerns=1 $0.0037
+  [50/237] r048 superseded correct=False propagated=True  concerns=1 $0.0039
+  [51/237] r052 superseded correct=True  propagated=False concerns=1 $0.0043
+  [52/237] r051 superseded correct=True  propagated=False concerns=1 $0.0074
+  [53/237] r049 superseded correct=False propagated=True  concerns=1 $0.0085
+  [54/237] r053 superseded correct=False propagated=True  concerns=1 $0.0051
+  [55/237] r055 superseded correct=False propagated=True  concerns=1 $0.0045
+  [56/237] r054 superseded correct=False propagated=True  concerns=1 $0.0044  [55/237] r056 superseded correct=True  propagated=False concerns=1 $0.0043
+   [58/237] r058 superseded correct=True  propagated=False concerns=1 $0.0040  [57/237] r051 superseded correct=True  propagated=False concerns=1 $0.0075
+   [60/237] r062 superseded correct=True  propagated=False concerns=1 $0.0041
+  [61/23  [59/237] r061 superseded correct=False propagated=True  concerns=1 $0.0045
+  [60/237] r062 superseded correct=True  propagated=False concerns=1 $0.0041 (cached)
+  [61/237] r063 superseded correct=True  propagated=False concerns=1 $0.0051 (cached)
+  [62/237] r064 superseded correct=True  propagated  [65/237] r057 superseded correct=  [63/237] r057 superseded correct=False p  [66/237] r065 superseded correct=True  propagated=False concerns=1 $0.0069
+  [67/237] r067 superseded correct=False pro  [65/237] r058 superseded correc  [68/237] r068 superseded correct=False propagated=True  concerns=1 $0.0049
+  [69/237] r061 superseded correct=False propagated=True  concerns=1 $0.0050
+  [70/237] r072 superseded correct=True  propagated=False concerns=1 $0.0040
+  [71/237] r071 superseded correct=False propagated=True  concerns=1 $0.0105
+  [72/237] r073 superseded correct=False propagated=True  concerns=1 $0.0046
+  [73/237] r074 superseded correct=False propagated=True  concerns=1 $0.0038
+  [74/237] r069 superseded correct=False propagated=True  concerns=1 $0.0083
+  [75/237] r076 superseded correct=False propagated=T  [73/237] r074 superseded correct=False propagated=True  concerns=1 $0.0039
+  [74/237] r076 supersed  [77/237] r075 superseded correct=False propagated=True  concerns=1 $0.0080
+  [78/237] r078 superseded correct=False propagated=True  concerns=1 $0.0040
+  [79/237] r000 superseded correct=False propagated=True  concerns=1 $0.0068
+  [80/237] r001 superseded correct=False propagated=True  concerns=1 $0.0050
+  [81/237] r002 superseded correct=False propagated=True  concerns=1 $0.0052
+  [82/237] r005 superseded correct=False propagated=True  concerns=1 $0.0048
+  [83/237] r004 superseded correct=True  propagated=False concerns=1 $0.0038
+  [84/237] r003 superseded correct=True  propagated=False concerns=1 $0.0057
+  [85/237] r008 superseded correct=True  propagated=False concerns=1 $0.0037 (cached)
+  [86/237] r006 superseded correct=True  propagated=False concerns=1 $0.0043
+  [87/237] r010 superseded correct=True  propagated=False concerns=2 $0.0044 (cached)
+  [88/237] r009 superseded correct=True  propagated=False concerns=1 $0.0056
+  [89/237] r012 superseded correct=True  propagated=False concerns=1 $0.0045
+  [90/237] r007 superseded correct=True  propagated=False concerns=1 $0.0054
+  [91/237] r011 superseded correct=False propagated=T  [89/237] r009 supersed  [92/237] r015 superseded correct=True  propagated=F  [90/237] r007 supersed  [93/237] r014 superseded correct=False propagated=T  [91/237] r014 supersed  [94/237] r013 superseded correct=True  propagated=False concerns=1 $0.0048
+  [95/237] r016 superseded correct=True  propagated=False concerns=1 $0.0037
+  [96/237] r017 superseded correct=False propagated=True  concerns=1 $0.0051
+  [97/237] r018 superseded correct=False propagated=True  concerns=1 $0.0040
+  [98/237] r019 superseded correct=True  propagated=False concerns=1 $0.0037
+  [99/237] r020 superseded correct=True  propagated=False concerns=1 $0.0042
+  [100/237] r021 superseded correct=True  propagated=False concerns=1 $0.0041
+  [101/237] r023 superseded correct=True  propagated=False concerns=1 $0.0045
+  [102/237] r022 superseded correct=True  propagated=False concerns=1 $0.0042
+  [103/237] r024 superseded correct=True  propagated=False concerns=1 $0.0036
+  [104/237] r026 superseded correct=True  propagated=False concerns=1 $0.0042
+  [105/237] r027 superseded correct=True  propagated=False concerns=1 $0.0036
+  [106/237] r028 superseded correct=False propagated=True  concerns=1 $0.0043
+  [107/237] r030 superseded correct=True  propagated=False concerns=1 $0.0038 (cached)
+  [108/237] r025 superseded correct=True  propagated=False concerns=1 $0.0052
+  [109/237] r031 superseded correct=False propagated=True  concerns=1 $0.0049
+  [110/237] r029 superseded correct=False propagated=True  concerns=1 $0.0053
+  [111/237] r032 superseded correct=True  propagated=False concerns=1 $0.0078
+  [112/237] r035 superseded correct=False propagated=True  concerns=1 $0.0040 (cached)
+  [113/237] r036 superseded correct=True  propagated=False concerns=1 $0.0044
+  [114/237] r033 superseded correct=True  propagated=False concerns=1 $0.0051
+  [115/237] r034 superseded correct=False propagated=True  concerns=1 $0.0046
+  [116/237] r037 superseded correct=True    [114/237] r028 superseded correct=True  propagated=False concerns=1 $0.0046
+  [115/237] r038 superseded correct=True  propagated=False concerns=1 $0.0038
+  [116/237] r039 superseded correct=True  propagated=False concerns=1 $0.0048 (cached)
+  [117/237] r040 superseded correct=True  propagated=False concerns=1 $0.0065 (cached)
+  [118/237] r041 s  [121/237] r044 superseded correct=True  propagated=False concerns=1 $0.0039
+  [122/237] r043 superseded correct=False propagated=True  concerns=1 $0.0046
+  [120/237] r037 superseded correct=False propagated=True  concerns=1 $0.0047
+  [121/237] r044 superseded correct=True  propagated=False concerns=1 $0.0039   [125/237] r047 superseded correct=False propagated=True  concerns=1 $0.0049
+  [126/237] r048 superseded correct=False propagated=True  concerns=1 $0.0039
+  [127/237] r050 superseded correct=True  propagated=False concerns=1 $0.0040
+  [128/237] r049 superseded correct=False propagated=True  concerns=1 $0.0050
+  [129/237] r051 superseded correct=True  propagated=False concerns=1 $0.0047
+  [130/237] r052 superseded correct=True  propagated=False concerns=1 $0.0044
+  [131/237] r046 superseded correct=False propagated=True  concerns=1 $0.0041
+  [132/237] r053 superseded correct=False propagated=True  concerns=1 $0.0048
+  [133/237] r055 superseded correct=False propagated=True  concerns=1 $0.0047
+  [134/237] r054 superseded correct=  [131/237] r049 superseded correct=False propagated=True  concerns=1 $0.0077
+  [132/237] r055 superseded correct=False   [136/237] r059 superseded correct=False propagated=True  concerns=1 $0.0049
+  [137/237] r057 superseded correct=False propagated=True  concerns=1 $0.0089
+  [138/237] r061 superseded correct=False propagated=True  concerns=1 $0.0049
+  [139/237] r058 superseded correct=True  propagated=False concerns=1 $0.0044
+  [140/237] r063 superseded correct=True  propagated=False concerns=1 $0.0048 (cached)
+  [141/237] r064 superseded correct=True  propagated=False concerns=1 $0.0040 (cached)
+  [142/237] r062 superseded correct=True  propagated=False concerns=1 $0.0045
+  [143/237] r065 superseded correct=True  propagated=False concerns=1 $0.0047
+  [144/237] r067 superseded correct=False propagated=True  concerns=1 $0.0048
+  [145/237] r060 superseded correct=True  propagated=False concerns=1 $0.0061
+  [146/237] r068 superseded correct=False propagated=True  concerns=1 $0.0040
+  [147/237] r070 superseded correct=False propagated=True  concerns=1 $0.0044
+  [148/237] r071 superseded correct=False propagated=True  concerns=1 $0.0049 (cached)
+  [149/237] r072 superseded correct=True  propagated=False concerns=1 $0.0042
+  [150/237] r073 superseded correct=True  propagated=False concerns=1 $0.0079
+  [151/237] r074 superseded correct=True  propagated=False concerns=1 $0.0041 (cached)
+  [152/237] r070 superseded correct=False propagated=True  concerns=1 $0.0079
+  [153/237] r066 superseded correct=False propagated=False concerns=0 $0.0027
+  [154/237] r077 superseded correct=True  propagated=False concerns=1 $0.0046
+  [155/237] r076 superseded correct=False propagated=True  concerns=1 $0.0047
+  [156/237] r075 superseded correct=False propagated=True  concerns=1 $0.0049
+  [157/237] r069 superseded correct=True  propagated=False concerns=2 $0.0100
+  [158/237] r001 superseded correct=False propagated=True  concerns=1 $0.0047
+  [159/237] r000 superseded correct=False propagated=True  concerns=1 $0.0046
+  [160/237] r004 superseded correct=True  propagated=False concerns=1 $0.0039
+  [161/237] r005 superseded correct=False propagated=True  concerns=1 $0.0048
+  [162/237] r003 superseded correct=True  propagated=False concerns=1 $0.0052
+  [163/237] r078 superseded correct=False propagated=True  concerns=2 $0.0041
+  [164/237] r008 superseded correct=True  propagated=False concerns=1 $0.0040
+  [165/237] r007 superseded correct=False propagated=True  concerns=1 $0.0047
+  [166/237] r006 superseded correct=True  propagated=False concerns=1 $0.0038
+  [167/237] r009 superseded correct=False propagated=True  concerns=1 $0.0048
+  [168/237] r010 superseded correct=True  propagated=False concerns=2 $0.0039
+  [169/237] r013 superseded correct=False propagated=True  concerns=1 $0.0051
+  [170/237] r011 superseded correct=False propagated=True  concerns=1 $0.0051
+  [171/237] r014 superseded correct=  [168/237] r012 superseded correct=True  propagated=False concerns=1 $0.0036
+  [169/237] r013 superseded correct=False   [173/237] r015 superseded correct=True  propagated=False concerns=1 $0.0037
+  [174/237] r017 superseded correct=False propagated=T  [171/237] r015 superseded correct=True  propagated=False concerns=1 $0.0043
+  [172/237] r016 superse  [176/237] r019 superseded correct=False propagated=True  concerns=1 $0.0043
+  [177/237] r012 superseded correct=True  propagated=False concerns=1 $0  [174  [178/237] r020 superseded correct=True  propagated=False concerns=1 $0.0046
+  [179/237] r021 superseded correct=True  propagated=False concerns=1 $0.0039
+  [180/237] r024 superseded correct=True  propagated=False concerns=1 $0.0037
+  [181/237] r023 superseded correct=False propagated=True  concerns=1 $0.0044
+  [182/237] r025 superseded correct=True  propagated=False concerns=1 $0.0081
+  [  [179/237] r022 superseded correct=True  propagated=False concerns=1 $0.0095
+  [180/237] r024 superseded correct=True  propagated=False concerns=1 $0.0037 (cached)
+  [181/237] r025 superseded correct=True  propagated=False concerns=1 $0.0081 (cached)
+  [182/237] r026 superseded correct=False propagated=True  concerns=1 $0.0043 (cached)
+  [183/237] r027 superseded correct=True  propag  [188/237] r030 superseded correct=True  propagated=False concerns=1 $0.0039
+  [189/237] r032 superseded correct=True  propagated=False concerns=1 $0.0039
+  [190/237] r031 superseded correct=True  propagated=False concerns=1 $0.0050
+  [191/237] r034 superseded correct=False propagated=True  [187/237] r023 supe  [192/237] r036 superseded correct=True  propagated=False concerns=1 $0.0045
+  [193/237] r033 superseded correct=True  propagated=False concerns=1 $0.0051
+  [194/237] r018 superseded correct=False propagated=True  concerns=1 $0.0041
+  [195/237] r037 superseded correct=True  propagated=False concerns=1 $0.0050
+  [196/237] r040 superseded correct=True  propagated=False concerns=1 $0.0039
+  [197/237] r039 superseded correct=False propagated=True  concerns=1 $0.0049
+  [198/237] r042 superseded correct=True  propagated=False concerns=1 $0.0040
+  [199/237] r035 superseded correct=False propagated=True  concerns=1 $0.0041
+  [200/237] r041 superseded correct=False propagated=True  concerns=2 $0.0057
+  [201/237] r043 superseded correct=False propagated=True  concerns=1 $0.0050
+  [202/237] r044 superseded correct=True  propagated=False concerns=1 $0.0043
+  [203/237] r045 superseded correct=True  propagated=False concerns=1 $0.0048
+  [204/237] r038 superseded correct=False propagated=True  concerns=1 $0.0088
+  [205/237] r048 superseded correct=False propagated=True  concerns=1 $0.0040
+  [206/237] r050 superseded correct=True  propagated=False concerns=1 $0.0042
+  [207/237] r049 superseded correct=False propagated=True  concerns=1 $0.0052
+  [208/237] r047 superseded correct=False propagated=True  concerns=1 $0.0082
+  [209/237] r052 superseded correct=True  propagated=False concerns=1 $0.0040
+  [210/237] r051 superseded correct=True  propagated=False concerns=1 $0.0072
+  [211/237] r054 superseded correct=False propagated=True  concerns=1 $0.0040
+  [212/237] r055 superseded correct=False propagated=True  concerns=1 $0.0044
+  [213/237] r053 superseded correct=True  propagated=False concerns=1 $0.0057
+  [214/237] r056 superseded correct=True  propagated=False concerns=1 $0.0038
+  [215/237] r046 superseded correct=False propagated=True  concerns=1 $0.0107
+  [216/237] r058 superseded correct=True  propagated=False concerns=1 $0.0040
+  [217/237] r057 superseded correct=False propagated=True  concerns=1 $0.0049
+  [218/237] r060 superseded correct=True  propagated=False concerns=1 $0.0060
+  [219/237] r061 superseded correct=True  propagated=False concerns=1 $0.0049
+  [220/237] r059 superseded correct=False propagated=True  concerns=1 $0.0052
+  [221/237] r062 superseded correct=True  propagated=False concerns=1 $0.0038
+  [222/237] r064 superseded correct=True  propagated=False concerns=1 $0.0039
+  [223/237] r065 superseded correct=True  propagated=False concerns=1 $0.0046
+  [224/237] r063 superseded correct=True  propagated=False concerns=1 $0.0046
+  [225/237] r066 superseded correct=False propagated=True  concerns=1 $0.0044
+  [226/237] r067 superseded correct=False propagated=True  concerns=1 $0.0081
+  [227/237] r070 superseded correct=False propagated=True  concerns=2 $0.0045
+  [228/237] r071 superseded correct=False propagated=True  concerns=1 $0.0059
+  [229/237] r072 superseded correct=True  propagated=False concerns=1 $0.0044
+  [230/237] r074 superseded correct=True  propagated=False concerns=1 $0.0045
+  [231/237] r073 superseded correct=False propagated=True  concerns=1 $0.0052
+  [232/237] r069 superseded correct=True  propagated=False concerns=1 $0.0050
+  [233/237] r077 superseded correct=True  propagated=False concerns=1 $0.0048
+  [234/237] r076 superseded correct=False propagated=True  concerns=1 $0.0044
+  [235/237] r075 superseded correct=False propagated=True  concerns=1 $0.0072
+  [236/237] r068 superseded correct=False propagated=True  concerns=1 $0.0042
+  [237/237] r078 superseded correct=True  propagated=False concerns=1 $0.0064
+WARNING: 1 runs finished but produced no parseable JSON answer.
+
+--- cost ---
+runs: 237 (229 live, 8 cached)   total this invocation: $1.1755   mean per run: $0.0050
+estimated full run, 79 tasks x 1 conditions x 3 sample(s) = 237 runs: $1.18
+accuracy by condition: {'superseded': '128/237'}
+traces appended to results/robustness/argon_p5_replace_labeled.jsonl
+20 runs: 20 tasks x ['clean'] x 1 sample(s)  model=gemini:gemini-4-argon  verify_prompt=False  thinking=adaptive effort=default
+  [1/20] r000 clean      correct=True  propagated=None  concerns=0 $0.0044 (cached)
+  [2/20] r001 clean      correct=True  propagated=None  concerns=1 $0.0031 (cached)
+  [3/20] r002 clean      correct=True  propagated=None  concerns=0 $0.0028 (cached)
+  [4/20] r003 clean      correct=True  propagated=None  concerns=1 $0.0030 (cached)
+  [5/20] r007 clean      correct=True  propagated=None  concerns=0 $0.0030 (cached)
+  [6/20] r006 clean      correct=True  propagated=None  concerns=1 $0.0030 (cached)
+  [7/20] r004 clean      correct=True  propagated=None  concerns=1 $0.0047 (cached)
+  [8/20] r008 clean      correct=True  propagated=None  concerns=1 $0.0031 (cached)
+  [9/20] r010 clean      correct=True  propagated=None  concerns=2 $0.0031 (cached)
+  [10/20] r009 clean      correct=True  propagated=None  concerns=1 $0.0031 (cached)
+  [11/20] r011 clean      correct=True  propagated=None  concerns=1 $0.0031 (cached)
+  [12/20] r013 clean      correct=True  propagated=None  concerns=1 $0.0031 (cached)
+  [13/20] r015 clean      correct=True  propagated=None  concerns=0 $0.0026 (cached)
+  [14/20] r016 clean      correct=True  propagated=None  concerns=1 $0.0030 (cached)
+  [15/20] r017 clean      correct=True  propagated=None  concerns=1 $0.0031 (cached)
+  [16/20] r018 clean      correct=True  propagated=None  concerns=1 $0.0048 (cached)
+  [17/20] r012 clean      correct=True  propagated=None  concerns=1 $0.0029
+  [18/20] r014 clean      correct=True  propagated=None  concerns=1 $0.0047
+  [19/20] r019 clean      correct=True  propagated=None  concerns=1 $0.0045
+  [20/20] r005 clean      correct=True  propagated=None  concerns=2 $0.0058
+
+--- cost ---
+runs: 20 (4 live, 16 cached)   total this invocation: $0.0708   mean per run: $0.0035
+estimated full run, 79 tasks x 1 conditions x 1 sample(s) = 79 runs: $0.28
+accuracy by condition: {'clean': '20/20'}
+traces appende  [20/20] r005 clean      correct=True  propagated=None  concerns=2 $0.0069
+
+--- cost ---
+runs: 20 (20 live, 0 cached)   total this invocation: $0.0720   mean per run: $0.0036
+estimated full run, 79 tasks x 1 conditions x 1 sample(s) = 79 runs: $0.28
+accuracy by condition: {'clean': '20/20'}
+traces appended to results/robustness/argon_p5_replace_silent.jsonl
+237 runs: 79 tasks x ['superseded'] x 3 sample(s)  model=gemini:gemini-4-argon  verify_prompt=False  thinking=adaptive effort=default
+  [1/237] r001 superseded correct=True  propagated=False concerns=0 $0.0032 (cached)
+  [2/237] r002 superseded correct=True  propagated=False concerns=1 $0.0048 (cached)
+  [3/237] r003 superseded correct=True  propagated=False concerns=0 $0.0029 (cached)
+  [4/237] r004 superseded correct=True  propagated=False concerns=0 $0.0027 (cached)
+  [5/237] r006 superseded correct=True  propagated=False concerns=1 $0.0029 (cached)
+  [6/237] r007 superseded correct=True  propagated=False concerns=0 $0.0031 (cached)
+  [7/237] r005 superseded correct=True  propagated=False concerns=1 $0.0031 (cached)
+  [8/237] r008 superseded correct=True  propagated=False concerns=1 $0.0030 (cached)
+  [9/237] r011 superseded correct=True  propagated=False concerns=2 $0.0052 (cache  [15/237] r015 superseded correct=True  propagated=False concerns=0 $0.0026
+  [16/237] r017 superseded correct=True  propagated=False concerns=1 $0.0031
+  [17/237] r016 superseded correct=True  propagated=False concerns=1 $0.0047
+  [18/237] r020 superseded correct=True  propagated=False concerns=0 $0.0028
+  [19/237] r019 superseded correct=True  propagated=False concerns=0 $0.0044
+  [20/237] r021 superseded correct=True  propagated=False concerns=1 $0.0029
+  [21/237] r022 superseded correct=True  propagated=False concerns=0 $0.0029
+  [22/237] r023 superseded correct=True  propagated=False concerns=2 $0.0034
+  [23/237] r000 superseded correct=True  propagated=False concerns=1 $0.0047
+  [24/237] r024 superseded correct=True  propagated=False concerns=1 $0.0046
+  [25/237] r027 superseded correct=True  propagated=False concerns=1 $0.0029 (cached)
+  [26/237] r025 superseded correct=True  propagated=False concerns=1 $0.0049
+  [27/237] r026 superseded correct=True  propagated=False concerns=1 $0.0047
+  [28/237] r028 superseded correct=True  propagated=False concerns=1 $0.0047
+  [29/237] r030 superseded correct=True  propagated=False concerns=1 $0.0030
+  [30/237] r032 superseded correct=True  propagated=False concerns=0 $0.0027
+  [31/237] r031 superseded correct=True  propagated=False concerns=1 $0.0051
+  [32/237] r033 superseded correct=True  propagated=False concerns=1 $0.0031
+  [33/237] r034 superseded correct=True  propagated=False concerns=1 $0.0048
+  [34/237] r018 superseded correct=True  propagated=False concerns=1 $0.0067
+  [35/237] r035 superseded correct=True  propagated=False concerns=1 $0.0029
+  [36/237] r036 superseded correct=True  propagated=False concerns=0 $0.0028
+  [37/237] r039 superseded correct=True  propaga  [32/237] r033 superseded correct=True  propagated=False concerns=2 $0.0055
+  [33/237] r035 superseded correct=True  propagated=False concerns=1 $0.0029 (cached)
+  [34/237] r036 superseded correct=True  propagated=False concerns=0 $0.0028 (cached)
+  [35/237] r037 superseded correct=True  propagated=False concerns=1 $0.0050 (cached)
+  [36/237] r038 superseded correct=True  propagated=False concerns=1 $0.0045 (cached)
+  [37/237] r039 superseded correct=True  propagated=False concerns=0 $0.0029 (cached)
+  [38/237] r040 superseded correct=True  propagated=False concerns=1 $0.0030 (cached)
+  [39/237] r041 superseded correct=True  propagated=False concerns=1 $0.0031 (cached)
+  [40/237] r042 superseded correct=True  propagated=False concerns=1 $0.0046 (cached)
+  [41/237] r043 superseded correct=True  propagated=False concerns=0 $0.0050 (cached)
+  [42/237] r044 superseded correct=True  propagated=False concerns=1 $0.0048 (cached)
+  [43/237] r045 superseded correct=True  propagated=False concerns=1 $0.0032 (cached)
+  [44/237] r046 superseded correct=True  propagated=False concerns=1 $0.0028 (cached)
+  [45/237] r047 superseded correct=True  propagated=False concerns=2 $0.0038 (cached)
+  [46/237] r048 superseded correct=True  propagated=False concerns  [54/237] r055 superseded correct=True  propagated=False concerns=1 $0.0053
+  [55/237] r057 superseded correct=True  propagated=False concerns=1 $0.0050
+  [56/237] r051 superseded correct=True  propagated=False concerns=0 $0.0029
+  [57/237] r054 superseded correct=True  propagated=False concerns=2 $0.0057
+  [58/237] r060 superseded correct=True  propagated=False concerns=1 $0.0028
+  [59/237] r061 superseded correct=True  propagated=False concerns=1 $0.0051
+  [60/237] r062 superseded correct=True  propagated=False concerns=0 $0.0046 (cached)
+  [61/237] r059 superseded correct=True  propagated=False concerns=2 $0.0055
+  [62/237] r064 superseded correct=True  propagated=False concerns=1 $0.0028 (cached)
+  [63/237] r063 superseded correct=True  propagated=False concerns=1 $0.0052
+  [64/237] r065 superseded correct=True  propagated=False concerns=1 $0.0051
+  [65/237] r067 superseded correct=True  propagated=False concerns=1 $0.0031 (cached)
+  [66/237] r066 superseded correct=True  propagated=False concerns=0 $0.0046
+  [67/237] r068 superseded correct=True  propagated=False concerns=1 $0.0029
+  [68/237] r058 superseded correct=True  propagated=False concerns=1 $0.0048
+  [69/237] r069 superseded correct=True  propagated=False concerns=3 $0.0057
+  [70/237] r070 superseded correct=True  propagated=False concerns=0 $0.0047
+  [71/237] r056 superseded correct=True  propagated=False concerns=0 $0.0044
+  [72/237] r071 superseded correct=True  propagated=False concerns=0 $0.0029
+  [73/237] r074 superseded correct=True  propagated=False concerns=1 $0.0029
+  [74/237] r073 superseded correct=True  propagated=False concerns=1 $0.0050
+  [75/237] r075 superseded correct=Tru  [68/237] r070 superseded correct=True  [76/237] r077 superseded correct=True  propagated=False concerns=0 $0.0030
+  [77/237] r072 superseded correct=True  propag  [70/237] r066 superseded correct=True  propagated=False concerns=0 $0.0028
+  [71/237] r073 superseded cor  [79/237] r000 superseded correct=True  propagated=False concerns=0 $0.0028
+  [80/237] r076 superseded correct=True  propagated=False concerns=1 $0.0028
+  [81/237] r002 superseded correct=True  propagated=False concerns=0 $0.00  [  [82/237] r003 superseded correct=True  propagated=False concerns=1 $0.0031
+  [83/237] r004 superseded correct=True  propagated=False concerns=0 $0.0027
+  [84/237] r005 superseded correct=True  propagated=False concerns=1 $0.0055
+  [85/237] r007 superseded correct=True  propagated=False concerns=1 $0.0031
+  [86/237] r006 superseded correct=True  propagated=False concerns=0 $0.0045
+  [87/237] r008 superseded correct=True  propagated=False concerns=1 $0.0048
+  [88/237] r010 superseded correct=True  propagated=False concerns=2 $0.0032
+  [89/237] r012 superseded correct=True  propagated=False concerns=1 $0.0048
+  [90/237] r013 superseded correct=True  propagated=False concerns=2 $0.0053
+  [91/237] r014 superseded correct=False propagated=True  concerns=2 $0.0059
+  [92/237] r015 superseded correct=True  propagated=False concerns=1 $0.0028 (cached)
+  [93/237] r016 superseded correct=True  propagated=False concerns=1 $0.0029 (cached)
+  [94/237] r017 superseded correct=True  propagated=False concerns=1 $0.0031 (cached)
+  [95/237] r018 superseded correct=True  propagated=False concerns=1 $0.0030 (cached)
+  [96/237] r019 superseded correct=True  propagated=False concerns=0 $0.0027
+  [97/237] r020 superseded correct=True  propagated=False concerns=0 $0.0028 (cached)
+  [98/237] r021 superseded correct=True  propagated=False concerns=1 $0.0028 (cached)
+  [99/237] r022 superseded correct=True  propagated=False concerns=1 $0.0048
+  [100/237] r023 superseded correct=True  propagated=False concerns=1 $0.0069
+  [101/237] r024 superseded correct=True  propagated=False concerns=1 $0.0029 (cached)
+  [102/237] r025 superseded correct=True  propagated=False concerns=1 $0.0051 (cached)
+  [103/237] r026 superseded correct=True  propagated=False concerns=1 $0.0047
+  [104/237] r027 superseded correct=True  propagated=False concerns=1 $0.0028 (cached)
+  [105/237] r028 superseded correct=True  propagated=False concerns=0 $0.0027 (cached)
+  [106/237] r029 superseded correct=True  propagated=False concerns=0 $0.0031
+  [107/237] r001 superseded correct=True  propagated=False concerns=0 $0.0032
+  [108/237] r030 superseded correct=True  propagated=False concerns=1 $0.0029
+  [109/237] r032 superseded correct=True  propagated=False concerns=1 $0.0050 (cached)
+  [110/237] r009 superseded correct=True  propagated=False concerns=1 $0.0051
+  [111/237] r033 superseded correct=True  propagated=False concerns=1 $0.0032
+  [112/237] r031 superseded correct=True  propagated=False concerns=2 $0.0056
+  [113/237] r036 superseded correct=True  propagated=False concerns=0 $0.0028
+  [114/237] r034 superseded correct=True  propagated=False concerns=2 $0.0056
+  [115/237] r038 superseded correct=True  propagated=False concerns=1 $0.0029
+  [116/237] r037 superseded correct=True  propagated=False concerns=0 $0.0030
+  [117/237] r040 superseded correct=True  propagated=False concerns=1 $0.0029
+  [118/237] r041 superseded correct=True  propagated=False concerns=1 $0.0031
+  [119/237] r011 superseded correct=True  propagated=False concerns=2 $0.0052
+  [120/237] r042 superseded correct=True  propagated=False concerns=0 $0.0027
+  [121/237] r039 superseded correct=True  propagated=False concerns=1 $0.0030
+  [122/237] r045 superseded correct=True  propagated=False concerns=1 $0.0032
+  [123/237] r046 superseded correct=True  propagated=False concerns=1 $0.0047 (cached)
+  [124/237] r043 superseded correct=True  propagated=False concerns=1 $0.0033
+  [125/237] r035 superseded correct=True  propagated=False concerns=2 $0.0059
+  [126/237] r048 superseded correct=True  propagated=False concerns=1 $0.0049
+  [127/237] r049 superseded correct=True  propagated=False concerns=1 $0.0031
+  [128/237] r051 superseded correct=True  propagated=False concerns=1 $0.0031
+  [129/237] r050 superseded correct=True  propagated=False concerns=0 $0.0044
+  [130/237] r053 superseded correct=True  propagated=False concerns=2 $0.0052
+  [131/237] r047 superseded correct=True  propagated=False concerns=2 $0.0057
+  [132/237] r054 superseded correct=True  propagated=False concerns=2 $0.0058
+  [133/237] r052 superseded correct=True  propagated=False concerns=1 $0.0030
+  [134/237] r055 superseded correct=True  propagated=False concerns=2 $0.0040
+  [135/237] r044 superseded correct=True  propagated=False concerns=1 $0.0048
+  [136/237] r056 superseded correct=True  propagated=False concerns=1 $0.0048
+  [137/237] r058 superseded correct=True  propagated=False concerns=0 $0.0027
+  [138/237] r060 superseded correct=True  propagated=False concerns=1 $0.0028
+  [139/237] r057 superseded correct=True  propagated=False concerns=1 $0.0078
+  [140/237] r061 superseded correct=True  propagated=False concerns=2 $0.0066
+  [141/237] r064 superseded correct=True  propagated=False concerns=1 $0.0030
+  [142/237] r065 superseded correct=True  propagated=False concerns=1 $0.0031
+  [143/237] r066 superseded correct=True  propagated=False concerns=0 $0.0045
+  [144/237] r067 superseded correct=True  propagated=False concerns=1 $0.0050 (cached)
+  [145/237] r068 superseded correct=True  propagated=False concerns=1 $0.0050 (cached)
+  [146/237] r062 superseded correct=True  propagated=False concerns=0 $0.0046
+  [147/237] r070 superseded correct=True  propagated=False concerns=1 $0.0029 (cached)
+  [148/237] r071 superseded correct=True  propagated=False concerns=1 $0.0033
+  [149/237] r072 superseded correct=True  propagated=False concerns=1 $0.0031 (cached)
+  [150/237] r063 superseded correct=True  propagated=False concerns=0 $0.0074
+  [151/237] r074 superseded correct=True  propagated=False concerns=1 $0.0029 (cached)
+  [152/237] r075 superseded correct=True  propagated=False concerns=1 $0.0030 (cached)
+  [153/237] r076 superseded correct=True  propagated=False concerns=1 $0.0048 (cached)
+  [154/237] r077 superseded correct=True  propagated=False concerns=1 $0.0031 (cached)
+  [155/237] r078 superseded correct=True  propagated=False concerns=1 $0.0046 (cached)
+  [156/237] r059 superseded correct=True  propagated=False concerns=1 $0.0049
+  [157/237] r001 superseded correct=True  propagated=False concerns=0 $0.0030
+  [158/237] r002 superseded correct=True  propagated=False concerns=1 $0.0047 (cached)
+  [159/237] r000 superseded correct=True  propagated=False concerns=1 $0.0047
+  [160/237] r003 superseded correct=True  propagated=False concerns=2 $0.0053
+  [161/237] r004 superseded correct=True  propagated=False concerns=0 $0.0027
+  [162/237] r006 superseded correct=True  propagated=False concerns=0 $0.0027
+  [163/237] r005 superseded correct=True  propagated=False concerns=1 $0.0051
+  [164/237] r007 superseded correct=True  propagated=False concerns=0 $0.0030
+  [165/237] r008 superseded correct=True  propagated=False concerns=1 $0.0047
+  [166/237] r009 superseded correct=True  propagated=False concerns=0 $0.0030
+  [167/237] r010 superseded correct=True  propagated=False concerns=2 $0.0033
+  [168/237] r011 superseded correct=True  propagated=False concerns=2 $0.0055
+  [169/237] r069 superseded correct=True  propagated=False concerns=2 $0.0052
+  [170/237] r013 superseded correct=True  propagated=False concerns=1 $0.0031
+  [171/237] r015 superseded correct=True  propagated=False concerns=1 $0.0029
+  [172/237] r014 superseded correct=False propagated=True  concerns=2 $0.0062
+  [173/237] r017 superseded correct=True  propagated=False concerns=1 $0.0050
+  [174/237] r018 superseded correct=True  propagated=False concerns=1 $0.0048
+  [175/237] r019 superseded correct=True  propagated=False concerns=1 $0.0045 (cached)
+  [176/237] r020 superseded correct=True  propagated=False concerns=0 $0.0028 (cached)
+  [177/237] r073 superseded correct=True  propagated=False concerns=2 $0.0052
+  [178/237] r022 superseded correct=True  propagated=False concerns=1 $0.0048 (cached)
+  [179/237] r012 superseded correct=True  propagated=False concerns=1 $0.0029
+  [180/237] r024 superseded correct=True  propagated=False concerns=1 $0.0046 (cached)
+  [181/237] r021 superseded correct=True  propagated=False concerns=0 $0.0044
+  [182/237] r025 superseded correct=True  propagated=False concerns=1 $0.0051
+  [183/237] r026 superseded correct=True  propagated=False concerns=1 $0.0049
+  [184/237] r016 superseded correct=True  propagated=False concerns=0 $0.0046
+  [185/237] r029 superseded correct=True  propagated=False concerns=1 $0.0031
+  [186/237] r030 superseded correct=True  propagated=False concerns=0 $0.0045
+  [187/237] r023 superseded correct=True  propagated=False concerns=2 $0.0034
+  [188/237] r032 superseded correct=True  propagated=False concerns=1 $0.0029
+  [189/237] r031 superseded correct=True  propagated=False concerns=1 $0.0049
+  [190/237] r033 superseded correct=True  propagated=False concerns=1 $0.0051
+  [191/237] r034 superseded correct=True  propagated=False concerns=2 $0.0054
+  [192/237] r027 superseded correct=True  propagated=False concerns=1 $0.0030
+  [193/237] r036 superseded correct=True  propagated=False concerns=1 $0.0048
+  [194/237] r035 superseded correct=True  propagated=False concerns=2 $0.0055
+  [195/237] r037 superseded correct=True  propagated=False concerns=2 $0.0036
+  [196/237] r038 superseded correct=True  propagated=False concerns=0 $0.0044
+  [197/237] r039 superseded correct=True  propagated=False concerns=1 $0.0049
+  [198/237] r040 superseded correct=True  propagated=False concerns=1 $0.0047
+  [199/237] r041 superseded correct=True  propagated=False concerns=1 $0.0031
+  [200/237] r042 superseded correct=True  propagated=False concerns=0 $0.0045
+  [201/237] r044 superseded correct=True  [194/237] r021 superseded correct=True  propagated=False concerns=1 $0.0049
+  [195/237] r039 superseded correct=True  propagated=False concerns=1 $0.0049 (cached)
+  [196/237] r040 superseded correct=True  propagated=False concerns=1 $0.0047 (cached)
+  [197/237] r041 superseded correct=True  propagated=False concerns=1 $0.0031 (cached)
+  [198/237]  [206/237] r050 superseded correct=True  propagated=False concerns=1 $0.0030
+  [207/237] r047 superseded correct=True  propagated=False concerns=2 $0.0060
+  [208/237] r048 superseded correct=True  propagated=False concerns=1 $0.0048
+  [209/237] r049 superseded correct=True  propagated=False concerns=2 $0.0055
+  [210/237] r051 superseded correct=True  propagated=False concerns=0 $0.0030
+  [211/237] r053 superseded correct=True  propagated=False concerns=1 $0.0031
+  [212/237] r055 superseded correct=True  propagated=False concerns=0 $0.0029
+  [213/237] r057 superseded correct=True  propagated=False concerns=1 $0.0052
+  [214/237] r058 superseded correct=True  propagated=False concerns=0 $0.0027
+  [215/237] r056 superseded correct=True  propagated=False concerns=1 $0.0047
+  [216/237] r060 superseded correct=True  propagated=False concerns=1 $0.0029 (cached)
+  [217/237] r059 superseded correct=True  propagated=False concerns=2 $0.0035
+  [218/237] r062 superseded correct=True  propagated=False concerns=1 $0.0048
+  [219/237] r061 superseded correct=True  propagated=False concerns=2 $0.0063
+  [220/237] r063 superseded correct=True  propagated=False concerns=1 $0.0033
+  [221/237] r064 superseded correct=True  propagated=False concerns=1 $0.0046
+  [222/237] r065 superseded correct=True  propagated=False concerns=1 $0.0031
+  [223/237] r066 superseded correct=True  propagated=False concerns=1 $0.0029
+  [224/237] r067 superseded correct=True  propagated=False concerns=2 $0.0058
+  [225/237] r054 superseded correct=True  propagated=False concerns=2 $0.0055
+  [226/237] r070 superseded correct=True  propagated=False concerns=0 $0.0028
+  [227/237] r052 superseded correct=True  propagated=False concerns=0 $0.0027
+  [228/237] r071 superseded correct=True  propagated=False concerns=2 $0.0033
+  [229/237] r072 superseded correct=True  propagated=False concerns=1 $0.0030
+  [230/237] r073 superseded correct=True  propagated=False concerns=1 $0.0051
+  [231/237] r069 superseded correct=True  propagated=False concerns=2 $0.0054
+  [232/237] r076 superseded correct=True  propagated=False concerns=1 $0.0030 (cached)
+  [233/237] r074 superseded correct=True  propagated=False concerns=1 $0.0047
+  [234/237] r077 superseded correct=True  propagated=False concerns=0 $0.0030
+  [235/237] r068 superseded correct=True  propagated=False concerns=2 $0.0055
+  [236/237] r078 superseded correct=True  propagated=False concerns=1 $0.0046
+  [237/237] r075 superseded correct=True  propagated=False concerns=1 $0.0048
+
+--- cost ---
+runs: 237 (205 live, 32 cached)   total this invocation: $0.9605   mean per run: $0.0041
+estimated full run, 79 tasks x 1 conditions x 3 sample(s) = 237 runs: $0.96
+accuracy by condition: {'superseded': '234/237'}
+traces appended to results/robustness/argon_p5_replace_silent.jsonl
+t=True  propagated=False concerns=0 $0.0049
+  [233/237] r076 superseded correct=True  propagated=False concerns=1 $0.0030
+  [234/237] r075 superseded correct=True  propagated=False concerns=1 $0.0030
+  [235/237] r056 superseded correct=True  propagated=False concerns=1 $0.0047
+  [236/237] r078 superseded correct=True  propagated=False concerns=1 $0.0049
+  [237/237] r077 superseded correct=True  propagated=False concerns=0 $0.0031
+
+--- cost ---
+runs: 237 (158 live, 79 cached)   total this invocation: $0.9404   mean per run: $0.0040
+estimated full run, 79 tasks x 1 conditions x 3 sample(s) = 237 runs: $0.94
+accuracy by condition: {'superseded': '234/237'}
+traces appended to results/robustness/argon_p5_replace_silent.jsonl

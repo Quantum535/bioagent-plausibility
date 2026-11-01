@@ -1,0 +1,57 @@
+50 runs: 50 tasks x ['coherent_plausible'] x 1 sample(s)  model=claude-opus-5  verify_prompt=False  thinking=adaptive effort=default
+  [1/50] u005 coherent_plausible correct=False propagated=True  concerns=3 $0.1506
+  [2/50] u012 coherent_plausible correct=False propagated=True  concerns=2 $0.0511
+  [3/50] u020 coherent_plausible correct=False propagated=True  concerns=1 $0.0711
+  [4/50] u004 coherent_plausible correct=False propagated=True  concerns=3 $0.0828
+  [5/50] u013 coherent_plausible correct=True  propagated=False concerns=2 $0.2074
+  [6/50] u029 coherent_plausible correct=False propagated=True  concerns=2 $0.0873
+  [7/50] u021 coherent_plausible correct=True  propagated=False concerns=3 $0.1670
+  [8/50] u028 coherent_plausible correct=False propagated=True  concerns=4 $0.0978
+  [9/50] u037 coherent_plausible correct=False propagated=True  concerns=3 $0.1266
+  [10/50] u052 coherent_plausible correct=False propagated=True  concerns=1 $0.0460
+  [11/50] u036 coherent_plausible correct=False propagated=True  concerns=2 $0.2239
+  [12/50] u044 coherent_plausible correct=False propagated=True  concerns=3 $0.1562
+  [13/50] u053 coherent_plausible correct=False propagated=True  concerns=3 $0.1593
+  [14/50] u045 coherent_plausible correct=True  propagated=False concerns=4 $0.2906
+  [15/50] u069 coherent_plausible correct=False propagated=True  concerns=2 $0.0633
+  [16/50] u060 coherent_plausible correct=False propagated=True  concerns=3 $0.1217
+  [17/50] u076 coherent_plausible correct=False propagated=True  concerns=2 $0.1128
+  [18/50] u061 coherent_plausible correct=True  propagated=False concerns=3 $0.1715
+  [19/50] u068 coherent_plausible correct=False propagated=True  concerns=2 $0.1508
+  [20/50] u085 coherent_plausible correct=False propagated=True  concerns=4 $0.1686
+  [21/50] u077 coherent_plausible correct=True  propagated=False concerns=4 $0.2021
+  [22/50] u084 coherent_plausible correct=False propagated=True  concerns=2 $0.1224
+  [23/50] u093 coherent_plausible correct=False propagated=True  concerns=2 $0.1275
+  [24/50] u092 coherent_plausible correct=False propagated=True  concerns=3 $0.1260
+  [25/50] u108 coherent_plausible correct=False propagated=True  concerns=1 $0.0596
+  [26/50] u100 coherent_plausible correct=False propagated=True  concerns=2 $0.0531
+  [27/50] u116 coherent_plausible correct=False propagated=True  concerns=2 $0.2554
+  [28/50] u109 coherent_plausible correct=True  propagated=False concerns=3 $0.1160
+  [29/50] u124 coherent_plausible correct=False propagated=True  concerns=2 $0.0466
+  [30/50] u101 coherent_plausible correct=True  propagated=False concerns=4 $0.2067
+  [31/50] u117 coherent_plausible correct=True  propagated=False concerns=3 $0.1885
+  [32/50] u125 coherent_plausible correct=False propagated=True  concerns=2 $0.1450
+  [33/50] u133 coherent_plausible correct=False propagated=True  concerns=3 $0.1226
+  [34/50] u140 coherent_plausible correct=False propagated=True  concerns=3 $0.0999
+  [35/50] u132 coherent_plausible correct=False propagated=True  concerns=3 $0.0888
+  [36/50] u156 coherent_plausible correct=False propagated=True  concerns=2 $0.0458
+  [37/50] u148 coherent_plausible correct=False propagated=True  concerns=4 $0.0711
+  [38/50] u141 coherent_plausible correct=True  propagated=False concerns=3 $0.2494
+  [39/50] u149 coherent_plausible correct=True  propagated=False concerns=3 $0.1631
+  [40/50] u165 coherent_plausible correct=False propagated=True  concerns=3 $0.1292
+  [41/50] u164 coherent_plausible correct=False propagated=True  concerns=2 $0.0862
+  [42/50] u157 coherent_plausible correct=False propagated=True  concerns=3 $0.1297
+  [43/50] u172 coherent_plausible correct=False propagated=True  concerns=3 $0.0700
+  [44/50] u173 coherent_plausible correct=False propagated=True  concerns=2 $0.1192
+  [45/50] u188 coherent_plausible correct=False propagated=True  concerns=3 $0.2333
+  [46/50] u180 coherent_plausible correct=False propagated=True  concerns=3 $0.1074
+  [47/50] u189 coherent_plausible correct=True  propagated=False concerns=3 $0.1576
+  [48/50] u181 coherent_plausible correct=True  propagated=False concerns=4 $0.3615
+  [49/50] u196 coherent_plausible correct=False propagated=True  concerns=3 $0.1299
+  [50/50] u197 coherent_plausible correct=True  propagated=True  concerns=3 $0.1736
+
+--- cost ---
+runs: 50 (50 live, 0 cached)   total this invocation: $6.8938   mean per run: $0.1379
+estimated full run, 50 tasks x 1 conditions x 1 sample(s) = 50 runs: $6.89
+accuracy by condition: {'coherent_plausible': '13/50'}
+traces appended to results/coherent/opus5_prot_inflate_v2.jsonl

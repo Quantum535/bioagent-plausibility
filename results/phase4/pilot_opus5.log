@@ -1,0 +1,19 @@
+12 runs: 6 tasks x ['clean', 'plausible'] x 1 sample(s)  model=claude-opus-5  verify_prompt=False  thinking=adaptive effort=default
+  [1/12] p4_001 plausible  correct=False propagated=True  concerns=0 $0.0123
+  [2/12] p4_000 clean      correct=True  propagated=None  concerns=0 $0.0127
+  [3/12] p4_001 clean      correct=True  propagated=None  concerns=0 $0.0148
+  [4/12] p4_002 plausible  correct=False propagated=True  concerns=0 $0.0153
+  [5/12] p4_002 clean      correct=True  propagated=None  concerns=1 $0.0158
+  [6/12] p4_003 clean      correct=True  propagated=None  concerns=0 $0.0123
+  [7/12] p4_000 plausible  correct=False propagated=True  concerns=3 $0.0266
+  [8/12] p4_003 plausible  correct=False propagated=True  concerns=0 $0.0124
+  [9/12] p4_005 clean      correct=True  propagated=None  concerns=0 $0.0119
+  [10/12] p4_005 plausible  correct=False propagated=True  concerns=0 $0.0116
+  [11/12] p4_004 clean      correct=True  propagated=None  concerns=0 $0.0125
+  [12/12] p4_004 plausible  correct=False propagated=True  concerns=0 $0.0130
+
+--- cost ---
+runs: 12 (12 live, 0 cached)   total this invocation: $0.1711   mean per run: $0.0143
+estimated full run, 180 tasks x 2 conditions x 1 sample(s) = 360 runs: $5.13
+accuracy by condition: {'clean': '6/6', 'plausible': '0/6'}
+traces appended to results/phase4/pilot_opus5.jsonl
