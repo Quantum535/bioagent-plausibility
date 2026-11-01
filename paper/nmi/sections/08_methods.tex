@@ -60,7 +60,7 @@ passed a check that its tool outputs contained the record it was meant to receiv
 any affected run entered an analysis. Runs failing the check are recorded as undelivered and excluded.
 
 \subsection*{Deployment experiment}
-We ran Biomni [add: version or commit] with DeepSeek~V4.1~Flash (Together AI) and Gemini~3.8~Flash (Vertex AI, global endpoint).
+We ran Biomni (version 0.0.8) with DeepSeek~V4.1~Flash (Together AI) and Gemini~3.8~Flash (Vertex AI, global endpoint).
 Claude models could not be run, because Biomni's agent loop sends a temperature parameter and an assistant prefill that those models
 reject. An intercepting proxy (mitmproxy~12.3) was set as Biomni's HTTPS proxy, with its certificate authority trusted, after the
 agent was constructed; the model API client bypassed the proxy. In a pilot of 25 tasks, every data request went to
