@@ -3,7 +3,7 @@ To test whether the problem arises outside a benchmark, we ran Biomni~\citep{hua
 against the live UniProt and PubChem APIs and altered one field of selected responses in transit with an intercepting proxy
 (Methods). Biomni retrieved and processed records with its own code and tools; we changed only what the databases returned. Each
 of 300 tasks ran once without corruption, once with an impossible value and once with a plausible value within 25\% of the true
-one, for two models, with hypotheses registered in advance (OSF vq5cp).
+one, for two models, with hypotheses fixed in advance (OSF jmwab; Methods).
 
 The corrupted value reached the agent in 95--96\% of corrupted runs; in the remainder the agent answered through another route
 and never requested the corrupted field. Impossible values were almost always caught: they were relayed in 5 of 287 runs with

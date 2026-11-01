@@ -1,20 +1,32 @@
 {
  "deepseek": {
-  "exact = length, mass, molecular weight, heavy atoms": {
+  "registered": {
    "exact": "62/139 (44.6%)",
    "other": "18/146 (12.3%)",
    "odds_ratio": 5.73,
-   "ci95": [
+   "ci95_cluster": [
+    3.15,
+    10.41
+   ],
+   "p_cluster_two_sided": 1.0790702466288818e-08,
+   "n_tasks": 285,
+   "ci95_woolf": [
     3.15,
     10.39
    ],
    "fisher_p_two_sided": 1.3296613864181507e-09
   },
-  "exact = the above + hydrogen-bond donors": {
+  "donors_as_exact": {
    "exact": "72/163 (44.2%)",
    "other": "8/122 (6.6%)",
    "odds_ratio": 11.27,
-   "ci95": [
+   "ci95_cluster": [
+    5.15,
+    24.68
+   ],
+   "p_cluster_two_sided": 1.3549080445392977e-09,
+   "n_tasks": 285,
+   "ci95_woolf": [
     5.16,
     24.61
    ],
@@ -22,21 +34,33 @@
   }
  },
  "flash": {
-  "exact = length, mass, molecular weight, heavy atoms": {
+  "registered": {
    "exact": "50/143 (35.0%)",
    "other": "19/145 (13.1%)",
    "odds_ratio": 3.57,
-   "ci95": [
+   "ci95_cluster": [
+    1.97,
+    6.46
+   ],
+   "p_cluster_two_sided": 2.7630264634620544e-05,
+   "n_tasks": 288,
+   "ci95_woolf": [
     1.97,
     6.45
    ],
    "fisher_p_two_sided": 1.5283692302316253e-05
   },
-  "exact = the above + hydrogen-bond donors": {
+  "donors_as_exact": {
    "exact": "55/167 (32.9%)",
    "other": "14/121 (11.6%)",
    "odds_ratio": 3.75,
-   "ci95": [
+   "ci95_cluster": [
+    1.97,
+    7.16
+   ],
+   "p_cluster_two_sided": 6.0027079606105636e-05,
+   "n_tasks": 288,
+   "ci95_woolf": [
     1.97,
     7.14
    ],

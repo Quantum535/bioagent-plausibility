@@ -68,8 +68,7 @@ rest.uniprot.org or pubchem.ncbi.nlm.nih.gov and passed through the proxy (48 of
 each request and served it to every condition, so conditions differed only in the corruption, which an addon applied to the target
 field in JSON and flat-file responses. Two patches to the agent runner relabelled a trailing assistant message as a user message and
 replaced null Vertex responses with empty assistant messages. Each of 300 tasks ran once per condition and model (900 runs per
-model). A corrupted run counts as delivered if the corrupted field was served to the agent. For the derivation-route comparison, protein length and mass and compound molecular weight and heavy-atom count counted as fields with an exact route, and all other fields formed the comparison group; odds ratios are crude, with Woolf 95\% intervals and two-sided Fisher exact tests. Counting hydrogen-bond donors as exact-route fields gives odds ratios of 11.3 (5.2--24.6) and 3.8 (2.0--7.1). Hypotheses were registered before the
-full runs (OSF vq5cp).
+model). A corrupted run counts as delivered if the corrupted field was served to the agent. For the derivation-route comparison, protein length and mass and compound molecular weight and heavy-atom count counted, as registered, as fields with an exact route, and all other fields formed the comparison group; odds ratios and 95\% intervals are from the registered test, a logistic regression of relay on route class with task-clustered standard errors. Counting hydrogen-bond donors as exact-route fields gives odds ratios of 11.3 (5.2--24.7) and 3.8 (2.0--7.2). The hypotheses, primary outcome, tests and exclusions were written as an OSF registration draft on 25 October 2026, after the pilots and four minutes before the first full run began, as the OSF and repository timestamps record (commit a2dc4a4 cites the draft two minutes before the runs); the draft was submitted unchanged on 1 November 2026 (OSF jmwab).
 
 \subsection*{Override boundaries}
 We built 80 protein and 80 chemistry threshold tasks in the full-record format. In each corrupted run the target field and its
@@ -112,9 +111,9 @@ the corrupted value. Plausible values were scaled by 0.75--0.8 or 1.2--1.25; a c
 molecular weight and heavy-atom count. Impossible values were 0 or $9\times10^{9}$~Da, $-50$ or 50,000~\AA$^2$, and $-100$ or
 $10^{7}$. Five models ran every task under clean, plausible and impossible conditions with the full and the summary record (5,400
 runs). Predictions for monoisotopic mass were derived by code from each model's chemistry boundary curve, by log-linear
-interpolation, with prediction intervals combining the binomial error of both experiments (OSF [add]). The follow-up varied
+interpolation, with prediction intervals combining the binomial error of both experiments (commit 2059c3a, three minutes before the runs began; a 36-run cost-only pilot, disclosed in the registration, preceded it and is excluded from all analyses). The follow-up varied
 agreement on the same 60 compounds: monoisotopic mass corrupted alone; molecular weight asked, with molecular weight and heavy-atom
-count scaled; molecular weight asked, with all three scaled (OSF addendum [add]).
+count scaled; molecular weight asked, with all three scaled (commit 217ea9d, one minute before the runs).
 
 \subsection*{Historical UniProt errors}
 For the 300 benchmark proteins we retrieved every sequence version from UniSave. 167 proteins had at least two sequence versions
@@ -124,7 +123,7 @@ task (79 tasks), a length or mass threshold question with the threshold between 
 questions were used only where the two masses differ by at least 200~Da. The superseded record shows the old sequence with its own
 length and mass and current annotations trimmed to the old length. Arms: full record; summary record; summary record with the
 harness and the second source. For cost, Opus~5 ran the full-record clean condition on the first 20 tasks. The replace and
-presentation arms and the repeat samples were registered as an addendum before they ran (OSF [add]).
+presentation arms and the repeat samples were registered as an addendum before they ran (commits 6830c57 and 76e56b6, 13 minutes and one minute before the respective runs).
 
 \subsection*{Cue classification and validation}
 Two annotators labelled 300 concerns (200 protein, 100 chemistry), sampled from the benchmark traces, blind to model and to any
@@ -137,7 +136,5 @@ domains. All 13,021 concerns used in our analyses were then classified through t
 the validated ones; 280 concerns whose batch response could not be parsed were classified with single requests.
 
 \subsection*{Registrations, data and code}
-The deployment hypotheses (OSF vq5cp), the new-field experiment and its follow-up, the historical-error experiment and the
-robustness addendum were registered on OSF before the runs they concern [add: links]; the coherent-corruption predictions were
-committed to the repository with dated addenda. Code, prompts, task files, registrations and analysis scripts are available at
-[add: repository URL]; all run traces and cue labels at [add: Zenodo DOI].
+Throughout, `registered' means that predictions, outcomes and exclusions were fixed in a dated repository commit before the runs they concern: the new-field experiment (2059c3a), its agreement follow-up (217ea9d), the historical-error experiment (ac99248, 24 seconds before the first run), the robustness addendum (6830c57, 76e56b6) and the coherent corruptions (dated addenda). The deployment hypotheses were drafted on OSF before the full runs and submitted unchanged on 1 November 2026 (osf.io/jmwab). Code, prompts, task files, registrations and analysis scripts are available at
+\url{https://github.com/Quantum535/bioagent-plausibility}; all run traces and cue labels at [add: Zenodo DOI].
