@@ -9,10 +9,7 @@ tested, whatever the size of the revision.
 
 Agents increasingly sit between such databases and downstream analyses, and their answers are often read by programs rather than people. In that setting a raised concern is easy to lose: the answer field carried the record's value, while the correct value, when the agent had found it, sat in a separate remark.
 
-Work on knowledge conflicts has shown that language models adopt incorrect context readily, less so the further it departs from
-the truth~\citep{wu2024clasheval}, and that they accept coherent, convincing counter-evidence even against their own
-memory~\citep{xie2024adaptive,xu2024conflicts}. Concurrent work finds that tool-using agents adopt corrupted tool returns and may
-question a return, or state the correct value, without warning the user~\citep{yang2026overreliance}. Our results carry these
+Work on knowledge conflicts has shown that language models adopt incorrect context readily, even against their own memory~\cite{wu2024clasheval,xu2024conflicts,xie2024adaptive}, and concurrent work that tool-using agents adopt corrupted tool returns, sometimes while questioning them~\cite{yang2026overreliance}. Our results carry these
 findings into structured scientific records and identify what decides the outcome there. Values that looked like placeholders were
 replaced, consistent with a role for implausibility at the extreme, but within the range of values that look like data the deciding
 variable was agreement among the record's fields. Agreement can be varied without changing the wrong value at all, and doing so moved
@@ -36,7 +33,7 @@ Our study has limits. Most conditions ran one sample per task; repeats on the ce
 and directions, but other cells may vary more. We studied two domains, two primary databases and question formats with a single
 checkable answer; open-ended analyses may behave differently. All errors except those in the UniProt archive were constructed, and
 the historical records combined superseded sequences with current annotations, because historical entries are not archived in full.
-The deployment used one agent framework and two models, because the Claude models could not run in that framework's agent loop.
+The deployment used one agent framework and two models (Methods).
 Model behaviour is tied to the versions we tested, all from 2026. Two experiments, the agreement follow-up and the comparison of
 presentations, were designed after earlier results in the same study and registered before they ran; several registered
 predictions failed or could not be tested, and we report each. Our cue classifier agrees with human consensus at

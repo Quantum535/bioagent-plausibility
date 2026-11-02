@@ -13,8 +13,8 @@ entity, errors passed in 26 of 30 runs, and the one uncovered real error passed 
 % src: results/coherent/RESULTS.md (finding 4); results/phase5/RESULTS.md (R2); results/robustness/RESULTS.md (Part 2)
 
 What remained followed a pattern we found in the constructed errors and then registered for the real ones: agents deferred to the
-database when its record was longer than the second source's. Residual relay was higher for superseded records longer than today's than for shorter ones: 25\% against 11\% in the first sample (one-sided Fisher $p = 0.007$) and 23\% against 11\% pooled over three samples (44/189 against 56/512), with the same direction in every sample ($p = 0.007$, $0.044$ and $0.116$). Agents reported
-both values and answered with the record's (``1111 aa (record) / 889 aa (AlphaFold)''); in the first sample DeepSeek flagged the discrepancy in 24 of its 25 relayed runs. A harness message reporting that all fields were consistent did not make agents more trusting of a coherent error (Methods).
+database when its record was longer than the second source's. Residual relay was higher for superseded records longer than today's than for shorter ones: 25\% against 11\% in the first sample (one-sided Fisher $p = 0.007$) and 23\% against 11\% pooled over three samples (44/189 against 56/512) (same direction in every sample; Methods). Agents reported
+both values and answered with the record's (``1111 aa (record) / 889 aa (AlphaFold)''). A harness message reporting that all fields were consistent did not make agents more trusting of a coherent error (Methods).
 % src: results/phase5/RESULTS.md (R3); results/robustness/RESULTS.md (R3 per sample); results/coherent/RESULTS.md (finding 5)
 
 \subsection*{Correcting the record works; showing the conflict does not}

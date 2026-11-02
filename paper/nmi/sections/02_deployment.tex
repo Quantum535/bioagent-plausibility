@@ -4,8 +4,7 @@ against the live UniProt and PubChem APIs and altered one field of selected resp
 (Methods). Biomni retrieved and processed records with its own code and tools; we changed only what the databases returned. Each
 of 300 tasks ran once without corruption, once with an impossible value and once with a plausible value (a number within 25\% of the true one, a donor count changed by one, or another real entity's identifier), for two models, with hypotheses fixed in advance (OSF jmwab; Methods).
 
-The corrupted value reached the agent in 95--96\% of corrupted runs; in the remainder the agent answered through another route
-and never requested the corrupted field. Impossible values were almost always caught: they were relayed in 5 of 287 runs with
+The corrupted value reached the agent in 95--96\% of corrupted runs (Fig.~\ref{fig:deploy}b). Impossible values were almost always caught: they were relayed in 5 of 287 runs with
 DeepSeek~V4.1~Flash and 6 of 286 with Gemini~3.8~Flash. Plausible values were relayed in 28\% (80/285) and 24\% (69/288) of runs,
 far fewer, as predicted, than in the controlled benchmark below (McNemar $p<10^{-30}$ for both models) but not rare.
 % src: results/biomni_full_deepseek, results/biomni_full_flash (delivery 287/285 and 286/288; H1 tests)

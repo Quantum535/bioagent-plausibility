@@ -10,11 +10,7 @@ derived field, so that the record was internally consistent and passed every der
 Opus~5, Gemini~4~Argon and DeepSeek~V4.1~Flash relayed these coherent plausible errors in 94--98\% of runs that shortened a
 protein, 70--96\% of runs that lengthened one and 93--98\% of chemistry runs, compared with 9\% for Opus~5 when the full record
 contradicted the value. Consistency carried impossible values too: a three-residue sequence presented as a known human protein, with matching length and mass, was relayed in 94--100\% of runs from the summary record, against 32--44\% for the benchmark's impossible values, which contradicted their paired field (an indicative comparison, as the values differ), and in 12--42\% with the full sequence in view; a methane structure substituted for a drug was relayed in 45--100\% of runs.
-% src: results/coherent/RESULTS.md (findings 1-2); make_phase3_table.py
-
-Agents did use sequence-level evidence when it was visible. When we lengthened sequences by repeating their last 60 residues,
-Opus~5 and Argon relayed the wrong length in 40\% and 44\% of runs, against 76\% and 70\% when the added residues were a natural
-segment of another protein. DeepSeek mentioned the repeat in 48 of 50 runs and relayed the wrong length in 92\% of them.
+% src: results/coherent/RESULTS.md (findings 1-2); make_phase3_table.py Agents did use sequence-level evidence when it was visible: a tandem-repeat extension was relayed less often than a natural one (Methods).
 % src: results/coherent/RESULTS.md (finding 3)
 
 \subsection*{A derivation route enables detection; agreement decides override}

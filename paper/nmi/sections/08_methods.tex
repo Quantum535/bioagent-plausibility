@@ -81,7 +81,7 @@ Gemini~4~Argon, Gemini~3.8~Flash and DeepSeek~V4.1~Flash.
 For proteins we edited the sequence and recomputed every derived field: truncation to the scaled length (plausible, shrink), the
 first three residues (impossible), or extension to the scaled length with a segment of another benchmark protein that shares no
 12-residue substring with the target (plausible, lengthen). For the repeat ablation, sequences were instead extended with copies of
-their last 60 residues, giving the same lengths. Mass was recomputed with Biopython, features beyond the new length were removed
+their last 60 residues, giving the same lengths. With repeats, Opus~5 and Argon relayed the wrong length in 40\% and 44\% of runs, against 76\% and 70\% with a natural segment; DeepSeek noted the repeat in 48 of 50 runs and relayed the wrong length in 92\%. Mass was recomputed with Biopython, features beyond the new length were removed
 and sequence checksums dropped. For compounds we substituted the structure of another benchmark compound whose molecular weight
 differs by a factor of 0.72--0.83 or 1.17--1.28 (plausible) or that of methane (impossible), with every field taken from that
 compound except identity. Every coherent record passed our derivation checks. Arms: full record; summary record; summary record with
@@ -123,7 +123,7 @@ task (79 tasks), a length or mass threshold question with the threshold between 
 questions were used only where the two masses differ by at least 200~Da. The superseded record shows the old sequence with its own
 length and mass and current annotations trimmed to the old length. Arms: full record; summary record; summary record with the
 harness and the second source. For cost, Opus~5 ran the full-record clean condition on the first 20 tasks. The replace and
-presentation arms and the repeat samples were registered as an addendum before they ran (commits 6830c57 and 76e56b6, 13 minutes and one minute before the respective runs).
+presentation arms and the repeat samples were registered as an addendum before they ran (commits 6830c57 and 76e56b6, 13 minutes and one minute before the respective runs). One-sided Fisher $p$ for the direction comparison was 0.007, 0.044 and 0.116 in the three samples; in the first sample DeepSeek flagged the discrepancy in 24 of its 25 relayed runs.
 
 \subsection*{Cue classification and validation}
 Two annotators labelled 300 concerns (200 protein, 100 chemistry), sampled from the benchmark traces, blind to model and to any
