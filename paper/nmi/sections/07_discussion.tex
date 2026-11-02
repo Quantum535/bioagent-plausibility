@@ -7,10 +7,7 @@ the agent had computed the correct answer from the record's own formula and writ
 form: a superseded sequence is consistent with its own length and mass, and 90--100\% of such values passed through every model we
 tested, whatever the size of the revision.
 
-These errors are not rare. Of our 300 benchmark proteins, chosen without regard to their history, 167 had at least one superseded
-sequence in UniProt's archive. Agents increasingly sit between such databases and downstream analyses, and their answers are often
-read by programs rather than people. In that setting a raised concern is easy to lose: the answer field carried the record's value,
-while the correct value, when the agent had found it, sat in a separate remark.
+Agents increasingly sit between such databases and downstream analyses, and their answers are often read by programs rather than people. In that setting a raised concern is easy to lose: the answer field carried the record's value, while the correct value, when the agent had found it, sat in a separate remark.
 
 Work on knowledge conflicts has shown that language models adopt incorrect context readily, less so the further it departs from
 the truth~\citep{wu2024clasheval}, and that they accept coherent, convincing counter-evidence even against their own
@@ -43,8 +40,7 @@ The deployment used one agent framework and two models, because the Claude model
 Model behaviour is tied to the versions we tested, all from 2026. Two experiments, the agreement follow-up and the comparison of
 presentations, were designed after earlier results in the same study and registered before they ran; several registered
 predictions failed or could not be tested, and we report each. Our cue classifier agrees with human consensus at
-$\kappa=0.65$--$0.87$, not perfectly. During the study we found and corrected three collisions in our run cache; all affected runs
-were repeated, and a run-level check confirmed that every corrupted run received the record it was meant to (Methods).
+$\kappa=0.65$--$0.87$, not perfectly.
 
 The agents we studied behaved less like credulous readers than like careful clerks: they noticed discrepancies, noted them, and
 recorded what the database said. For a clerk that is often the right policy. For an agent whose answer feeds an analysis, it means

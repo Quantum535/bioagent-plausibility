@@ -22,10 +22,4 @@ internal consistency of the records and the derivation routes they offer. We pre
 And we tested corrections: checks of each record against its own derivations, an independent second source, and three ways of
 presenting a correction to the agent. Where we made predictions, we fixed them in dated repository commits before running the experiments, deposited the deployment hypotheses on OSF, and report the ones that failed.
 
-Across these experiments, agents noticed wrong values far more often than they acted on them. Whether a wrong value was relayed
-depended less on how plausible it was than on whether the rest of the record agreed with it: adding one agreeing field raised relay,
-and making the record disagree with itself lowered it, with the wrong value unchanged. A derivation route let agents detect an error,
-and often compute the correct value, without changing what they answered. Errors that UniProt later corrected, each internally
-consistent, were relayed in 90--100\% of runs, whatever the size of the revision. An independent second source removed most of
-these errors; correcting the record silently removed all of them in our tests, whereas showing the agent the original value invited
-it back.
+Across these experiments, agents noticed wrong values far more often than they acted on them. Whether a wrong value was relayed depended less on how plausible it was than on whether the rest of the record agreed with it, and real errors that UniProt later corrected, each internally consistent, were relayed in 90--100\% of runs whatever the size of the revision. An independent second source removed most of these errors; correcting the record silently removed all of them, whereas showing the agent the original value invited it back.
