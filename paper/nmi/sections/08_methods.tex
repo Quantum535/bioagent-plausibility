@@ -13,7 +13,7 @@ and \texttt{find\_protein\_by\_gene}, which looks up the human protein encoded b
 \texttt{get\_compound} (by PubChem CID) and \texttt{find\_compound\_by\_name}. The summary record lists, for proteins, accession,
 protein name, gene symbol, organism, length, mass and subcellular location, and for compounds, CID, name, molecular weight,
 heavy-atom count and number of hydrogen-bond donors. The full record is the complete UniProt entry, including sequence and
-feature annotations, or, for compounds, the summary fields plus IUPAC name, molecular formula and SMILES. The full-record arm ran 100 of the protein tasks with Opus~5, Gemini~4~Argon and DeepSeek~V4.1~Flash.
+feature annotations, or, for compounds, the summary fields plus IUPAC name, molecular formula and SMILES. The full-record arm ran 100 of the protein tasks, spanning all five templates, with Opus~5, Gemini~4~Argon and DeepSeek~V4.1~Flash, and 100 chemistry tasks with Gemini~4~Argon and DeepSeek~V4.1~Flash.
 
 \textbf{Conditions.} In the clean condition all records are returned unchanged. In the impossible condition the target field of
 the target record holds a value no real entity can have: a length of 3 or 60,000 residues; a mass of 45~Da, a negative mass or
