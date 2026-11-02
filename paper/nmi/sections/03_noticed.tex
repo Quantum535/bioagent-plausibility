@@ -9,10 +9,8 @@ Impossible values were flagged in 75--100\% of runs, depending on the model, yet
 Plausible values were relayed in 74--100\% of protein runs and 93--100\% of chemistry runs, equally for values made too small and
 too large. These plausible numeric corruptions scaled paired fields together, so the record stayed internally consistent, whereas
 impossible values changed one field and contradicted its partner; we return to this distinction below. Models ranked similarly in both domains (Spearman $\rho=0.71$, $p=0.02$). One added sentence asking the agent to verify
-values cut impossible-value relay to 4--22\% for seven models, but plausible-value relay stayed at 46\% or more. When the tool
-returned the full record, including the sequence or formula, agents corrected values that the record contradicted: organism errors
-fell from 100\% to 0\% for all three models tested, and Opus~5's relay of impossible and plausible values fell from 33\% to 1\% and
-from 75\% to 9\%.
+values cut impossible-value relay to 4--22\% for seven models, but plausible-value relay stayed at 46\% or more. When the tool returned the full record, including the sequence or formula (100 protein tasks, three models; Methods), agents corrected values that the record contradicted: organism errors
+fell from 100\% to 0\% for all three models tested, and Opus~5's relay of impossible and plausible values fell from 33\% to 1\% and from 75\% to 9\% on those tasks (32\% and 75\% over all 200).
 % src: results/v2 and results/chem analyses (n = 200 per cell, protein; 100, chemistry); results/v2_full; icml_results_notes.md
 
 What do agents cite when they flag a value? We classified every concern with a model-based classifier validated against two human
