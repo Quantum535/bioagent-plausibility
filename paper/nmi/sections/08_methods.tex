@@ -68,7 +68,7 @@ rest.uniprot.org or pubchem.ncbi.nlm.nih.gov and passed through the proxy (48 of
 each request and served it to every condition, so conditions differed only in the corruption, which an addon applied to the target
 field in JSON and flat-file responses. Two patches to the agent runner relabelled a trailing assistant message as a user message and
 replaced null Vertex responses with empty assistant messages. Each of 300 tasks ran once per condition and model (900 runs per
-model). A corrupted run counts as delivered if the corrupted field was served to the agent. For the derivation-route comparison, protein length and mass and compound molecular weight and heavy-atom count counted, as registered, as fields with an exact route, and all other fields formed the comparison group; odds ratios and 95\% intervals are from the registered test, a logistic regression of relay on route class with task-clustered standard errors. Counting hydrogen-bond donors as exact-route fields gives odds ratios of 11.3 (5.2--24.7) and 3.8 (2.0--7.2). The hypotheses, primary outcome, tests and exclusions were written as an OSF registration draft on 25 October 2026, after the pilots and four minutes before the first full run began, as the OSF and repository timestamps record (commit a2dc4a4 cites the draft two minutes before the runs); the draft was submitted unchanged on 1 November 2026 (OSF jmwab).
+model). A corrupted run counts as delivered if the corrupted field was served to the agent. Runs without a parseable answer count as neither propagated nor correct, as registered. For the derivation-route comparison, protein length and mass and compound molecular weight and heavy-atom count counted, as registered, as fields with an exact route, and all other fields formed the comparison group; odds ratios and 95\% intervals are from the registered test, a logistic regression of relay on route class with task-clustered standard errors. Counting hydrogen-bond donors as exact-route fields gives odds ratios of 11.3 (5.2--24.7) and 3.8 (2.0--7.2). The hypotheses, primary outcome, tests and exclusions were written as an OSF registration draft on 25 October 2026, after the pilots and four minutes before the first full run began, as the OSF and repository timestamps record (commit a2dc4a4 cites the draft two minutes before the runs); the draft was submitted unchanged on 1 November 2026 (OSF jmwab).
 
 \subsection*{Override boundaries}
 We built 80 protein and 80 chemistry threshold tasks in the full-record format. In each corrupted run the target field and its
@@ -111,9 +111,9 @@ the corrupted value. Plausible values were scaled by 0.75--0.8 or 1.2--1.25; a c
 molecular weight and heavy-atom count. Impossible values were 0 or $9\times10^{9}$~Da, $-50$ or 50,000~\AA$^2$, and $-100$ or
 $10^{7}$. Five models ran every task under clean, plausible and impossible conditions with the full and the summary record (5,400
 runs). Predictions for monoisotopic mass were derived by code from each model's chemistry boundary curve, by log-linear
-interpolation, with prediction intervals combining the binomial error of both experiments (commit 2059c3a, three minutes before the runs began; a 36-run cost-only pilot, disclosed in the registration, preceded it and is excluded from all analyses). The follow-up varied
+interpolation, with prediction intervals combining the binomial error of both experiments. The follow-up varied
 agreement on the same 60 compounds: monoisotopic mass corrupted alone; molecular weight asked, with molecular weight and heavy-atom
-count scaled; molecular weight asked, with all three scaled (commit 217ea9d, one minute before the runs).
+count scaled; molecular weight asked, with all three scaled. Predictions were fixed in commit 2059c3a, three minutes before the runs began, and the follow-up's in commit 217ea9d, one minute before its runs; a 36-run cost-only pilot, disclosed in the registration, preceded the first and is excluded from all analyses.
 
 \subsection*{Historical UniProt errors}
 For the 300 benchmark proteins we retrieved every sequence version from UniSave. 167 proteins had at least two sequence versions

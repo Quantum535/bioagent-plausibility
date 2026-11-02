@@ -2,8 +2,7 @@
 To test whether the problem arises outside a benchmark, we ran Biomni~\citep{huang2026biomni}, an open-source biomedical agent,
 against the live UniProt and PubChem APIs and altered one field of selected responses in transit with an intercepting proxy
 (Methods). Biomni retrieved and processed records with its own code and tools; we changed only what the databases returned. Each
-of 300 tasks ran once without corruption, once with an impossible value and once with a plausible value within 25\% of the true
-one, for two models, with hypotheses fixed in advance (OSF jmwab; Methods).
+of 300 tasks ran once without corruption, once with an impossible value and once with a plausible value (a number within 25\% of the true one, a donor count changed by one, or another real entity's identifier), for two models, with hypotheses fixed in advance (OSF jmwab; Methods).
 
 The corrupted value reached the agent in 95--96\% of corrupted runs; in the remainder the agent answered through another route
 and never requested the corrupted field. Impossible values were almost always caught: they were relayed in 5 of 287 runs with
@@ -12,8 +11,7 @@ far fewer than in the controlled benchmark below (McNemar $p<10^{-30}$ for both 
 % src: results/biomni_full_deepseek, results/biomni_full_flash (delivery 287/285 and 286/288; H1 tests)
 
 Where plausible values were relayed contradicted our second prediction. We had expected fields with an exact derivation route to
-be protected; instead they were relayed more often (44.6\% against 12.3\% of delivered plausible runs for DeepSeek, odds ratio 5.7, 95\% interval 3.1--10.4; 35.0\% against 13.1\% for Flash, odds ratio 3.6, 2.0--6.5). Protein length and mass, which follow exactly from the sequence, were relayed in 43--68\% of plausible runs, against 0--14\% for organism and 12--15\% for gene symbols (Fig.~\ref{fig:deploy}c). Chemistry split by model: Gemini 3.8 Flash relayed 1 of 49 corrupted molecular weights and heavy-atom counts and none of 24 compound names, whereas DeepSeek relayed 8 of 22 molecular weights and 2 of 24 names; hydrogen-bond donor counts were relayed by both (21--42\%). An exact derivation route did not, by itself, protect a value. A third prediction, about which concern an agent raises first, was supported for one model
-and not the other (Supplementary Information).
+be protected; instead they were relayed more often (44.6\% against 12.3\% of delivered plausible runs for DeepSeek, odds ratio 5.7, 95\% interval 3.1--10.4; 35.0\% against 13.1\% for Flash, odds ratio 3.6, 2.0--6.5). Protein length and mass, which follow exactly from the sequence, were relayed in 43--68\% of plausible runs, against 0--14\% for organism and 12--15\% for gene symbols (Fig.~\ref{fig:deploy}c). Chemistry split by model: Gemini 3.8 Flash relayed 1 of 49 corrupted molecular weights and heavy-atom counts and none of 24 compound names, whereas DeepSeek relayed 8 of 22 molecular weights and 2 of 24 names; hydrogen-bond donor counts were relayed by both (21--42\%). An exact derivation route did not, by itself, protect a value. A third prediction, that relayed values would be flagged less often in Biomni than in the native loop, was mixed: it held for DeepSeek's plausible values (20\% of relayed values flagged, against 46\%; $p = 4\times10^{-5}$) and for Flash's six relayed impossible values (50\% against 90\%; $p = 0.02$), but not for Flash's plausible values (42\% against 29\%, not significant).
 % src: Biomni H2 per-field analysis; H3 results (DeepSeek p = 4e-5; Flash mixed)
 
 \begin{figure}[t]
