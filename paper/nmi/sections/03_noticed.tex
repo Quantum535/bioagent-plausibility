@@ -1,6 +1,5 @@
 \subsection*{Agents notice errors and relay them anyway}
-To separate what agents detect from what they report, we built a controlled benchmark of 300 human proteins from UniProt and 300
-small molecules from PubChem, with lookup and threshold questions across ten templates, and ran ten models from five developers
+To separate what agents detect from what they report, we built a controlled benchmark of 300 human proteins from UniProt~\cite{uniprot2025} and 300 small molecules from PubChem~\cite{kim2025pubchem}, with lookup and threshold questions across ten templates, and ran ten models from five developers
 (Methods). Agents retrieved records through a lookup tool. In corrupted conditions one field of the target record held either an
 impossible value, such as a mass of 45~Da for a 228-residue protein, or a plausible one: a number scaled down or up by about a fifth, a donor count changed by one, or an identifier swapped for another real entity's.
 

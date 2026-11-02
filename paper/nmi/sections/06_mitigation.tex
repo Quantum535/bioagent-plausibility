@@ -4,11 +4,8 @@ errors almost entirely: relay fell to 0--1\% for proteins with Opus~5, Argon and
 concentrated in compound names, which have no derivation route.
 % src: Phase 2 harness (results/harness); Phase 2 replace rerun (results/coherent/RESULTS.md, methods note b)
 
-Coherent and real errors pass derivation checks by construction, so we added an independent second source: AlphaFold~DB for
-proteins, whose sequences matched UniProt for all 299 proteins it covers, and NCI~CACTUS for chemistry, which agreed with PubChem's
-formula for 270 of the 283 compounds it resolved (Methods). Neither raised a false alarm in 1,200 checks of clean fields. Where the
-second source covered the entity, it caught most coherent errors: Argon relayed none, Opus relayed 4 of 49 lengthened proteins and
-nothing else, and DeepSeek relayed 9 of 49 lengthened proteins and a few others. On the real UniProt errors, relay of covered proteins over three samples was 9\% (Opus, 21/234), 1\% (Argon, 2/233) and 33\% (DeepSeek, 77/234), each model's rate stable across samples (DeepSeek 31--36\%). Where the second source did not cover the
+Coherent and real errors pass derivation checks by construction, so we added an independent second source: AlphaFold~DB~\cite{varadi2024alphafolddb,jumper2021alphafold} for proteins, whose sequences matched UniProt for all 299 proteins it covers, and NCI~CACTUS for chemistry, which agreed with PubChem's
+formula for 270 of the 283 compounds it resolved (Methods). Neither raised a false alarm in 1,200 checks of clean fields. Where the second source covered the entity, it caught most coherent errors (Argon relayed none; Opus 4 of 49 lengthened proteins; DeepSeek 9 of 49 and a few others). On the real UniProt errors, relay of covered proteins over three samples was 9\% (Opus, 21/234), 1\% (Argon, 2/233) and 33\% (DeepSeek, 77/234), each model's rate stable across samples (DeepSeek 31--36\%). Where the second source did not cover the
 entity, errors passed in 26 of 30 runs, and the one uncovered real error passed for every model and record format.
 % src: results/coherent/RESULTS.md (finding 4); results/phase5/RESULTS.md (R2); results/robustness/RESULTS.md (Part 2)
 

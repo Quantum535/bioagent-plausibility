@@ -46,7 +46,7 @@ exactly or as a contiguous run of words within the answer. A run is flagged if i
 Runs without a parseable answer were excluded and counted, and runs that failed at the API were retried.
 
 \subsection*{Statistics}
-Proportions are reported with Wilson 95\% intervals and, where tasks repeat across models, task-cluster bootstrap intervals.
+Proportions are reported with Wilson~\cite{wilson1927} 95\% intervals and, where tasks repeat across models, task-cluster bootstrap intervals~\cite{cameron2008bootstrap}.
 Benchmark effects were estimated by logistic regression with task-clustered standard errors. Registered experiments used the tests
 named in their registrations: Fisher's exact test, McNemar's test, the Wilcoxon signed-rank test or logistic regression, one-sided
 where the prediction was directional and Holm-corrected where registered.
@@ -89,9 +89,9 @@ the harness and no second source; summary record with the harness and the second
 DeepSeek~V4.1~Flash. Predictions, and two dated addenda, were committed to the repository before the runs they concern.
 
 \subsection*{Harness and second sources}
-The harness checks each record before the agent sees it. Protein length and mass are derived from the sequence (Biopython; mass
+The harness checks each record before the agent sees it. Protein length and mass are derived from the sequence (Biopython~\cite{cock2009biopython}; mass
 tolerance $\pm$3~Da, above the largest deviation, 2.38~Da, among 360 calibration proteins), compound molecular weight from the
-structure (RDKit; $\pm$0.5~Da, above the largest deviation, 0.394~Da, among 300 compounds) and heavy-atom and donor counts exactly;
+structure (RDKit~\cite{rdkit}; $\pm$0.5~Da, above the largest deviation, 0.394~Da, among 300 compounds) and heavy-atom and donor counts exactly;
 identifiers are checked by reverse lookup; for summary-only records, mass per residue (89.6--130.3~Da) and mass per heavy atom
 (11.35--225.93~Da) must fall within bands calibrated on clean records. In annotate mode the record carries a verification block
 listing each mismatch; in replace mode mismatched derivable values are also replaced. The second sources were AlphaFold~DB
@@ -131,7 +131,7 @@ automatic label, using written guidelines; a concern may cite several cues. Disa
 labels. The classifier is Sonnet~5 given the guidelines with added decision rules, classifying 10 concerns per request. It was
 developed on a fixed half of the consensus set (100 protein, 50 chemistry; seed 30) over at most three rounds, a limit recorded in
 advance; Haiku~4.5 and Sonnet~5 were compared in the last round under a pre-stated rule. The prompt and model were then frozen and
-committed, and run once on the held-out half, with a pass criterion of $\kappa\geq0.6$ for cross-field, recall and rule cues in both
+committed, and run once on the held-out half, with a pass criterion of Cohen's~\cite{cohen1960kappa} $\kappa\geq0.6$ for cross-field, recall and rule cues in both
 domains. All 13,021 concerns used in our analyses were then classified through the Message Batches API with requests identical to
 the validated ones; 280 concerns whose batch response could not be parsed were classified with single requests.
 
