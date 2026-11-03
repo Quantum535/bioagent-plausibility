@@ -1,13 +1,13 @@
 Language-model agents are moving from answering questions to doing research. Systems such as Coscientist~\cite{boiko2023coscientist}, ChemCrow~\citep{bran2024chemcrow} and
 Biomni~\citep{huang2026biomni} plan multistep analyses, query scientific databases and compute on what they retrieve. Their answers
 can only be as good as the records they read, and those records contain errors. Misannotation is widespread in several major
-protein databases~\citep{schnoes2009annotation}, and even curated resources revise their entries: UniProt~\cite{uniprot2025} archives every earlier version of every entry~\citep{leinonen2006unisave}, and of the 300 reviewed human proteins in our benchmark, 167 have at least one
+protein databases~\citep{schnoes2009annotation,brenner1999errors,gilks2002percolation,jones2007annotation}, and even curated resources revise their entries: UniProt~\cite{uniprot2025} archives every earlier version of every entry~\citep{leinonen2006unisave}, and of the 300 reviewed human proteins in our benchmark, 167 have at least one
 superseded sequence. An agent that relays a database value inherits its error unless it notices the error and acts on it.
 
 How language models handle wrong information in their context has been studied mainly as a conflict between the context and the
 model's own knowledge~\citep{longpre2021entity,xu2024conflicts}. Models often adopt incorrect retrieved content, less often the
-further it departs from the truth~\citep{wu2024clasheval}, and they accept counter-evidence that is coherent and convincing even when
-it contradicts their memory~\citep{xie2024adaptive}. Tool use is well developed~\cite{schick2023toolformer,yao2023react,qin2024toolllm,patil2024gorilla} and benchmarked~\cite{liu2024agentbench,yao2025taubench}, and adversarial tool returns have been studied as prompt injection~\cite{zhan2024injecagent,debenedetti2024agentdojo,ruan2024toolemu}. Concurrent work shows that tool-using agents adopt corrupted tool returns and
+further it departs from the truth~\citep{wu2024clasheval,chen2024rgb}, and they accept counter-evidence that is coherent and convincing even when
+it contradicts their memory~\citep{xie2024adaptive}. Models are also distracted by irrelevant context~\citep{shi2023distracted,liu2024lost}, steered by a few poisoned documents~\citep{zou2025poisonedrag}, and sycophantic toward stated beliefs~\citep{sharma2024sycophancy,perez2023modelwritten}. Tool use is well developed~\cite{schick2023toolformer,yao2023react,qin2024toolllm,patil2024gorilla} and benchmarked~\cite{liu2024agentbench,yao2025taubench}, and adversarial tool returns have been studied as prompt injection~\cite{zhan2024injecagent,debenedetti2024agentdojo,ruan2024toolemu}. Concurrent work shows that tool-using agents adopt corrupted tool returns and
 may question a return, or even state the correct value, while passing the corrupted content on~\citep{yang2026overreliance}. These
 studies corrupt passages of text or single returned values. Scientific database records are different. A value sits among related
 fields that can confirm or contradict it, and the record often contains what is needed to derive the value independently: a

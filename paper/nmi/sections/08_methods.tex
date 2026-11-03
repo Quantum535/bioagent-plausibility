@@ -36,7 +36,7 @@ We evaluated ten models: Claude Haiku~4.5, Sonnet~4.6, Sonnet~5 and Opus~5 (Anth
 (Google Vertex AI); GPT-6~Luna and GPT-6.1~Sol (OpenAI API); and DeepSeek~V4.1~Flash and Kimi~K3 (Together AI). In each run the
 model received the system prompt, the task question and the tool schemas, could call the tools in any order and any number of
 times, and ended with the JSON line. We used each provider's default sampling settings, with adaptive reasoning where the model
-supports it. Unless stated otherwise, each task ran once per condition. API identifiers: \texttt{claude-haiku-4-5}, \texttt{claude-sonnet-4-6}, \texttt{claude-sonnet-5}, \texttt{claude-opus-5}; \texttt{gemini-3.8-flash}, \texttt{gemini-4-argon}; \texttt{gpt-6-luna}, \texttt{gpt-6.1-sol}; \texttt{deepseek-ai/DeepSeek-V4.1-Flash-1017}, \texttt{moonshotai/Kimi-K3}. All runs took place between 13 September 2026 and 31 October 2026.
+supports it. Unless stated otherwise, each task ran once per condition. API identifiers: \texttt{claude-haiku-4-5}, \texttt{claude-sonnet-4-6}, \texttt{claude-sonnet-5}, \texttt{claude-opus-5}; \texttt{gemini-3.8-flash}, \texttt{gemini-4-argon}; \texttt{gpt-6-luna}, \texttt{gpt-6.1-sol}; \texttt{deepseek-ai/DeepSeek-V4.1-Flash-1017}, \texttt{moonshotai/Kimi-K3}. All runs took place between September and October 2026.
 
 \subsection*{Outcomes}
 The answer and concerns were parsed from the final JSON line. A run is correct if its answer matches the true answer and
