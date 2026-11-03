@@ -6,7 +6,8 @@ from urllib.parse import unquote
 from mitmproxy import http
 
 ROOT = Path.cwd()
-LOG = Path(os.environ["PROXYLOG"]); STATE = Path("/tmp/biomni_current_task")
+LOG = Path(os.environ["PROXYLOG"]); STATE = Path(os.environ.get("AGENT_STATE", "/tmp/biomni_current_task"))
+SCHED = json.load(open(os.environ["RERUN_SCHEDULE"])) if os.environ.get("RERUN_SCHEDULE") else None  # slot -> condition, per task
 CACHE = ROOT / "harness" / "cache"; CACHE.mkdir(parents=True, exist_ok=True)
 TASKS = {t["task_id"]: t for p in ("data/tasks_v2.json", "data/chem/tasks.json") for t in json.load(open(ROOT / p))["tasks"]}
 NAMES = {str(c["cid"]): c["name"].lower() for c in json.load(open(ROOT / "data/chem/compounds.json"))}
@@ -21,9 +22,10 @@ PUB = {"molecular_weight": "MolecularWeight", "heavy_atom_count": "HeavyAtomCoun
 def _state():
     try: s = json.loads(STATE.read_text())
     except Exception: return "?", None, None
+    cond = SCHED[s["task_id"]][str(s["slot"])] if (SCHED and "slot" in s and s.get("task_id") in SCHED) else s.get("condition")
     t = TASKS.get(s.get("task_id"))
-    if t is None or s.get("condition") in (None, "clean"): return s.get("task_id", "?"), s.get("condition"), None
-    return s["task_id"], s["condition"], t
+    if t is None or cond in (None, "clean"): return s.get("task_id", "?"), cond, None
+    return s["task_id"], cond, t
 
 
 def _log(**kw):
