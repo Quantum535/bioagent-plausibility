@@ -1,0 +1,97 @@
+{
+ "benchmark full record | anthropic:claude-opus-5": {
+  "relayed_runs": 10,
+  "stated_correct_value": 3,
+  "share": 0.3
+ },
+ "benchmark full record | gemini:gemini-4-argon": {
+  "relayed_runs": 7,
+  "stated_correct_value": 2,
+  "share": 0.286
+ },
+ "benchmark full record | together:deepseek-ai/DeepSeek-V4.1-Flash-1017": {
+  "relayed_runs": 65,
+  "stated_correct_value": 10,
+  "share": 0.154
+ },
+ "boundary sweep | anthropic:claude-opus-5": {
+  "relayed_runs": 150,
+  "stated_correct_value": 90,
+  "share": 0.6
+ },
+ "boundary sweep | anthropic:claude-sonnet-5": {
+  "relayed_runs": 590,
+  "stated_correct_value": 284,
+  "share": 0.481
+ },
+ "boundary sweep | gemini:gemini-3.8-flash": {
+  "relayed_runs": 301,
+  "stated_correct_value": 198,
+  "share": 0.658
+ },
+ "boundary sweep | gemini:gemini-4-argon": {
+  "relayed_runs": 237,
+  "stated_correct_value": 176,
+  "share": 0.743
+ },
+ "boundary sweep | together:deepseek-ai/DeepSeek-V4.1-Flash-1017": {
+  "relayed_runs": 385,
+  "stated_correct_value": 209,
+  "share": 0.543
+ },
+ "coherent (full) | claude-opus-5": {
+  "relayed_runs": 128,
+  "stated_correct_value": 52,
+  "share": 0.406
+ },
+ "coherent (full) | gemini:gemini-4-argon": {
+  "relayed_runs": 111,
+  "stated_correct_value": 57,
+  "share": 0.514
+ },
+ "coherent (full) | together:deepseek-ai/DeepSeek-V4.1-Flash-1017": {
+  "relayed_runs": 153,
+  "stated_correct_value": 51,
+  "share": 0.333
+ },
+ "historical (full) | claude-opus-5": {
+  "relayed_runs": 78,
+  "stated_correct_value": 16,
+  "share": 0.205
+ },
+ "historical (full) | gemini:gemini-4-argon": {
+  "relayed_runs": 71,
+  "stated_correct_value": 19,
+  "share": 0.268
+ },
+ "historical (full) | together:deepseek-ai/DeepSeek-V4.1-Flash-1017": {
+  "relayed_runs": 78,
+  "stated_correct_value": 12,
+  "share": 0.154
+ },
+ "new chemistry fields (full) | claude-opus-5": {
+  "relayed_runs": 256,
+  "stated_correct_value": 77,
+  "share": 0.301
+ },
+ "new chemistry fields (full) | claude-sonnet-5": {
+  "relayed_runs": 282,
+  "stated_correct_value": 41,
+  "share": 0.145
+ },
+ "new chemistry fields (full) | gemini:gemini-3.8-flash": {
+  "relayed_runs": 267,
+  "stated_correct_value": 83,
+  "share": 0.311
+ },
+ "new chemistry fields (full) | gemini:gemini-4-argon": {
+  "relayed_runs": 241,
+  "stated_correct_value": 112,
+  "share": 0.465
+ },
+ "new chemistry fields (full) | together:deepseek-ai/DeepSeek-V4.1-Flash-1017": {
+  "relayed_runs": 249,
+  "stated_correct_value": 62,
+  "share": 0.249
+ }
+}
