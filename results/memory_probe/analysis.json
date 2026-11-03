@@ -1,0 +1,197 @@
+{
+ "opus5": {
+  "memory": {
+   "current": 48,
+   "superseded": 7,
+   "other": 12,
+   "either": 12
+  },
+  "no second source (full)": {
+   "current": [
+    47,
+    48
+   ],
+   "superseded": [
+    7,
+    7
+   ],
+   "other": [
+    12,
+    12
+   ],
+   "either": [
+    12,
+    12
+   ]
+  },
+  "no second source (full) p": 0.8727272727272728,
+  "no second source (summary)": {
+   "current": [
+    48,
+    48
+   ],
+   "superseded": [
+    7,
+    7
+   ],
+   "other": [
+    12,
+    12
+   ],
+   "either": [
+    12,
+    12
+   ]
+  },
+  "no second source (summary) p": 1.0,
+  "second source, annotate (3 samples)": {
+   "current": [
+    2,
+    144
+   ],
+   "superseded": [
+    13,
+    21
+   ],
+   "other": [
+    9,
+    36
+   ],
+   "either": [
+    0,
+    36
+   ]
+  },
+  "second source, annotate (3 samples) p": 2.9091113682774926e-12
+ },
+ "argon": {
+  "memory": {
+   "current": 53,
+   "other": 8,
+   "superseded": 6,
+   "either": 12
+  },
+  "no second source (full)": {
+   "current": [
+    48,
+    53
+   ],
+   "other": [
+    6,
+    8
+   ],
+   "superseded": [
+    6,
+    6
+   ],
+   "either": [
+    11,
+    12
+   ]
+  },
+  "no second source (full) p": 0.5732049026982737,
+  "no second source (summary)": {
+   "current": [
+    53,
+    53
+   ],
+   "other": [
+    8,
+    8
+   ],
+   "superseded": [
+    6,
+    6
+   ],
+   "either": [
+    12,
+    12
+   ]
+  },
+  "no second source (summary) p": 1.0,
+  "second source, annotate (3 samples)": {
+   "current": [
+    4,
+    159
+   ],
+   "other": [
+    0,
+    24
+   ],
+   "superseded": [
+    0,
+    17
+   ],
+   "either": [
+    1,
+    36
+   ]
+  },
+  "second source, annotate (3 samples) p": 1.0
+ },
+ "deepseek": {
+  "memory": {
+   "current": 50,
+   "superseded": 6,
+   "either": 11,
+   "other": 12
+  },
+  "no second source (full)": {
+   "current": [
+    50,
+    50
+   ],
+   "superseded": [
+    6,
+    6
+   ],
+   "either": [
+    11,
+    11
+   ],
+   "other": [
+    11,
+    12
+   ]
+  },
+  "no second source (full) p": 1.0,
+  "no second source (summary)": {
+   "current": [
+    50,
+    50
+   ],
+   "superseded": [
+    6,
+    6
+   ],
+   "either": [
+    11,
+    11
+   ],
+   "other": [
+    12,
+    12
+   ]
+  },
+  "no second source (summary) p": 1.0,
+  "second source, annotate (3 samples)": {
+   "current": [
+    38,
+    150
+   ],
+   "superseded": [
+    17,
+    18
+   ],
+   "either": [
+    7,
+    33
+   ],
+   "other": [
+    18,
+    36
+   ]
+  },
+  "second source, annotate (3 samples) p": 1.137619517729927e-08
+ }
+}
