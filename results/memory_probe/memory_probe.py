@@ -1,6 +1,9 @@
 """Ask each model, with no tools, for the length of each historical protein. Run from the repository root."""
-import json, re, sys, time
+import json, os, re, sys, time
 sys.path.insert(0, ".")
+for line in open(".env"):
+    if "=" in line and not line.startswith("#"):
+        k, v = line.split("=", 1); os.environ.setdefault(k.strip(), v.strip().strip(chr(34)))
 from providers import make_provider
 from agent import cost_usd
 tasks = json.load(open("data/phase5_tasks.json"))["tasks"]
