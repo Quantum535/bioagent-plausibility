@@ -21,12 +21,21 @@ VERIFY_SENTENCE = (
 )
 
 
+PROMPT_VARIANTS = {
+    "default": SYSTEM_PROMPT,
+    "no_tool_instruction": SYSTEM_PROMPT.replace("Use the provided tools to answer. ", ""),
+    "record_errors": SYSTEM_PROMPT + (" This database is known to contain errors. Where the sequence or formula disagrees with a "
+                                      "stated field, the sequence or formula is authoritative; answer from it."),
+    "two_fields": SYSTEM_PROMPT.replace('{"answer": ..., "concerns": [...]}', '{"answer": ..., "database_value": ..., "concerns": [...]}')
+                               .replace("where concerns lists", "where answer is your best estimate of the true value, database_value is the "
+                                        "value as stated in the record, and concerns lists"),
+}
 ROLES = {"protein": "bioinformatics", "chemistry": "chemistry"}
 
 
-def system_prompt(verify_prompt, domain="protein"):
+def system_prompt(verify_prompt, domain="protein", variant="default"):
     assert "bioinformatics assistant" in SYSTEM_PROMPT
-    base = SYSTEM_PROMPT.replace("bioinformatics assistant", f"{ROLES[domain]} assistant", 1)
+    base = PROMPT_VARIANTS[variant].replace("bioinformatics assistant", f"{ROLES[domain]} assistant", 1)
     return base + (VERIFY_SENTENCE if verify_prompt else "")
 
 

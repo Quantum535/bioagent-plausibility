@@ -38,6 +38,10 @@ class HarnessLayer:
                 if "derived" in r and f not in ("gene_symbol", "name"): rec[f] = r["derived"]
         rec["_verification"] = ({f: {k: r[k] for k in ("status", "observed", "derived", "route") if k in r} for f, r in bad.items()}
                                 if bad else "all fields consistent with the full database record")
+        if bad and self.mode == "blank":  # withhold mismatched derivable fields, no note; identifiers untouched
+            for f in list(bad):
+                if f not in ("gene_symbol", "name"): rec.pop(f, None)
+            rec.pop("_verification", None)
         style = os.environ.get("HARNESS_REPLACE_STYLE")  # robustness Part 3: how a replacement is presented
         if self.mode == "replace" and style == "silent":
             rec.pop("_verification", None)

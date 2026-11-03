@@ -384,7 +384,7 @@ def mock_fetch(task, layer):
 
 # ---------------------------------------------------------------- Phase 4 fields: active only for tables whose records carry them,
 # so every existing chemistry prompt and tool description stays byte-identical.
-EXTRA_FIELDS = ["monoisotopic_mass", "tpsa", "complexity"]
+EXTRA_FIELDS = ["molecular_weight_reported", "monoisotopic_mass", "tpsa", "complexity"]
 _EXTRA_ACTIVE = False
 FIELD_WORDS.update({"monoisotopic_mass": ["monoisotopic", "exact mass"], "tpsa": ["tpsa", "polar surface"], "complexity": ["complexity"]})
 

@@ -81,13 +81,14 @@ def main():
     ap.add_argument("--model", default=DEFAULT_MODEL,
                     help="'claude-sonnet-5' (Anthropic), or 'openai:<model>', 'together:<org/model>'")
     ap.add_argument("--seed", type=int, default=0, help="must match the seed used by make_tasks.py")
+    ap.add_argument("--prompt_variant", choices=["default", "no_tool_instruction", "record_errors", "two_fields"], default="default")
     ap.add_argument("--verify_prompt", action="store_true", help="append the sanity-check sentence to the system prompt")
     ap.add_argument("--thinking", choices=["adaptive", "disabled"], default="adaptive")
     ap.add_argument("--effort", choices=["low", "medium", "high", "xhigh", "max"], default=None)
     ap.add_argument("--workers", type=int, default=4)
     ap.add_argument("--tasks", default=str(ROOT / "data" / "tasks.json"))
     ap.add_argument("--domain", default=None, help="protein (default) or chemistry; defaults to the task file's domain")
-    ap.add_argument("--harness", choices=["none", "annotate", "replace"], default="none", help="harness-side verification of every returned record")
+    ap.add_argument("--harness", choices=["none", "annotate", "replace", "blank"], default="none", help="harness-side verification of every returned record")
     ap.add_argument("--record_format", choices=["summary", "full"], default="summary",
                     help="summary = 7-field mock record; full = real UniProtKB entry (minus references/xrefs)")
     ap.add_argument("--proteins", default=None, help="protein table; default is the one named in the task file, else data/proteins.json")
@@ -132,7 +133,7 @@ def main():
     provider, cfg_for_hash = None, {}
     if not args.mock:
         try:
-            provider = make_provider(args.model, system_prompt(args.verify_prompt, domain_name), schemas,
+            provider = make_provider(args.model, system_prompt(args.verify_prompt, domain_name, args.prompt_variant), schemas,
                                      thinking=args.thinking, effort=args.effort)
             if provider.name == "anthropic":  # preflight: credentials resolve and the model id exists (free call)
                 provider.client.models.retrieve(provider.model)
@@ -148,8 +149,10 @@ def main():
     def one(task, condition, sample):
         phash = prompt_hash(cfg_for_hash, task["prompt"])
         import os
-        if args.harness == "replace":
-            phash = f"{phash}|replace"
+        if args.harness in ("replace", "blank"):
+            phash = f"{phash}|{args.harness}"
+        if args.prompt_variant != "default":
+            phash = f"{phash}|pv:{args.prompt_variant}"
         if args.harness != "none" and os.environ.get("HARNESS_SECOND_SOURCE") is not None:
             phash = f"{phash}|ss{os.environ['HARNESS_SECOND_SOURCE']}"
         if args.harness == "replace" and os.environ.get("HARNESS_REPLACE_STYLE"):
@@ -178,7 +181,7 @@ def main():
         implied = task["corruptions"][condition]["implied"] if condition != "clean" else None
         return {
             "run_key": key, "cached": cached, "model": model, "condition": condition, "sample": sample,
-            "verify_prompt": args.verify_prompt, "thinking": args.thinking, "effort": args.effort,
+            "verify_prompt": args.verify_prompt, "prompt_variant": args.prompt_variant, "thinking": args.thinking, "effort": args.effort,
             "seed": args.seed, "task_id": task["task_id"], "template": task["template"],
             "target_field": task["target_field"], "target_accession": task["target_accession"],
             "gold": task["gold"], "implied": implied, "answer_type": task["answer_type"],

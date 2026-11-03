@@ -1,0 +1,1870 @@
+{
+ "domain": "chemistry",
+ "proteins": "data/chem/compounds.json",
+ "seed": 4,
+ "phase": "repetition",
+ "arm": "R0",
+ "n_tasks": 60,
+ "tasks": [
+  {
+   "template": "weight_threshold",
+   "target_field": "molecular_weight",
+   "target_accession": "4921",
+   "accessions": [
+    "4921"
+   ],
+   "params": {
+    "accession": "4921",
+    "threshold": 760.0
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "plausible": {
+     "fields": {
+      "molecular_weight": 675.52
+     },
+     "clean_value": 844.4,
+     "corrupted_value": 675.52,
+     "factor": 0.8,
+     "consistent": false,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 4921 have a molecular weight greater than 760.0 Da? Answer yes or no and give the weight. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "rep_R0_000",
+   "direction": "shrink"
+  },
+  {
+   "template": "weight_threshold",
+   "target_field": "molecular_weight",
+   "target_accession": "9387",
+   "accessions": [
+    "9387"
+   ],
+   "params": {
+    "accession": "9387",
+    "threshold": 481.9
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "plausible": {
+     "fields": {
+      "molecular_weight": 525.67
+     },
+     "clean_value": 438.06,
+     "corrupted_value": 525.67,
+     "factor": 1.2,
+     "consistent": false,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 9387 have a molecular weight greater than 481.9 Da? Answer yes or no and give the weight. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "rep_R0_003",
+   "direction": "inflate"
+  },
+  {
+   "template": "weight_threshold",
+   "target_field": "molecular_weight",
+   "target_accession": "5411",
+   "accessions": [
+    "5411"
+   ],
+   "params": {
+    "accession": "5411",
+    "threshold": 237.9
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "plausible": {
+     "fields": {
+      "molecular_weight": 211.49
+     },
+     "clean_value": 264.36,
+     "corrupted_value": 211.49,
+     "factor": 0.8,
+     "consistent": false,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 5411 have a molecular weight greater than 237.9 Da? Answer yes or no and give the weight. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "rep_R0_006",
+   "direction": "shrink"
+  },
+  {
+   "template": "weight_threshold",
+   "target_field": "molecular_weight",
+   "target_accession": "7710",
+   "accessions": [
+    "7710"
+   ],
+   "params": {
+    "accession": "7710",
+    "threshold": 175.8
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "plausible": {
+     "fields": {
+      "molecular_weight": 195.28
+     },
+     "clean_value": 156.22,
+     "corrupted_value": 195.28,
+     "factor": 1.25,
+     "consistent": false,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 7710 have a molecular weight greater than 175.8 Da? Answer yes or no and give the weight. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "rep_R0_009",
+   "direction": "inflate"
+  },
+  {
+   "template": "weight_threshold",
+   "target_field": "molecular_weight",
+   "target_accession": "763",
+   "accessions": [
+    "763"
+   ],
+   "params": {
+    "accession": "763",
+    "threshold": 102.5
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "plausible": {
+     "fields": {
+      "molecular_weight": 87.83
+     },
+     "clean_value": 117.11,
+     "corrupted_value": 87.83,
+     "factor": 0.75,
+     "consistent": false,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 763 have a molecular weight greater than 102.5 Da? Answer yes or no and give the weight. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "rep_R0_012",
+   "direction": "shrink"
+  },
+  {
+   "template": "weight_threshold",
+   "target_field": "molecular_weight",
+   "target_accession": "18096",
+   "accessions": [
+    "18096"
+   ],
+   "params": {
+    "accession": "18096",
+    "threshold": 205.0
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "plausible": {
+     "fields": {
+      "molecular_weight": 227.8
+     },
+     "clean_value": 182.24,
+     "corrupted_value": 227.8,
+     "factor": 1.25,
+     "consistent": false,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 18096 have a molecular weight greater than 205.0 Da? Answer yes or no and give the weight. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "rep_R0_015",
+   "direction": "inflate"
+  },
+  {
+   "template": "weight_threshold",
+   "target_field": "molecular_weight",
+   "target_accession": "3634",
+   "accessions": [
+    "3634"
+   ],
+   "params": {
+    "accession": "3634",
+    "threshold": 311.9
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "plausible": {
+     "fields": {
+      "molecular_weight": 267.38
+     },
+     "clean_value": 356.5,
+     "corrupted_value": 267.38,
+     "factor": 0.75,
+     "consistent": false,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 3634 have a molecular weight greater than 311.9 Da? Answer yes or no and give the weight. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "rep_R0_018",
+   "direction": "shrink"
+  },
+  {
+   "template": "weight_threshold",
+   "target_field": "molecular_weight",
+   "target_accession": "21183",
+   "accessions": [
+    "21183"
+   ],
+   "params": {
+    "accession": "21183",
+    "threshold": 354.5
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "plausible": {
+     "fields": {
+      "molecular_weight": 386.76
+     },
+     "clean_value": 322.3,
+     "corrupted_value": 386.76,
+     "factor": 1.2,
+     "consistent": false,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 21183 have a molecular weight greater than 354.5 Da? Answer yes or no and give the weight. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "rep_R0_021",
+   "direction": "inflate"
+  },
+  {
+   "template": "weight_threshold",
+   "target_field": "molecular_weight",
+   "target_accession": "908",
+   "accessions": [
+    "908"
+   ],
+   "params": {
+    "accession": "908",
+    "threshold": 91.9
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "plausible": {
+     "fields": {
+      "molecular_weight": 81.67
+     },
+     "clean_value": 102.09,
+     "corrupted_value": 81.67,
+     "factor": 0.8,
+     "consistent": false,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 908 have a molecular weight greater than 91.9 Da? Answer yes or no and give the weight. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "rep_R0_024",
+   "direction": "shrink"
+  },
+  {
+   "template": "weight_threshold",
+   "target_field": "molecular_weight",
+   "target_accession": "684",
+   "accessions": [
+    "684"
+   ],
+   "params": {
+    "accession": "684",
+    "threshold": 634.8
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "plausible": {
+     "fields": {
+      "molecular_weight": 705.38
+     },
+     "clean_value": 564.3,
+     "corrupted_value": 705.38,
+     "factor": 1.25,
+     "consistent": false,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 684 have a molecular weight greater than 634.8 Da? Answer yes or no and give the weight. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "rep_R0_027",
+   "direction": "inflate"
+  },
+  {
+   "template": "weight_threshold",
+   "target_field": "molecular_weight",
+   "target_accession": "24885",
+   "accessions": [
+    "24885"
+   ],
+   "params": {
+    "accession": "24885",
+    "threshold": 457.2
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "plausible": {
+     "fields": {
+      "molecular_weight": 391.88
+     },
+     "clean_value": 522.5,
+     "corrupted_value": 391.88,
+     "factor": 0.75,
+     "consistent": false,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 24885 have a molecular weight greater than 457.2 Da? Answer yes or no and give the weight. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "rep_R0_030",
+   "direction": "shrink"
+  },
+  {
+   "template": "weight_threshold",
+   "target_field": "molecular_weight",
+   "target_accession": "11517",
+   "accessions": [
+    "11517"
+   ],
+   "params": {
+    "accession": "11517",
+    "threshold": 220.3
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "plausible": {
+     "fields": {
+      "molecular_weight": 240.38
+     },
+     "clean_value": 200.32,
+     "corrupted_value": 240.38,
+     "factor": 1.2,
+     "consistent": false,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 11517 have a molecular weight greater than 220.3 Da? Answer yes or no and give the weight. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "rep_R0_033",
+   "direction": "inflate"
+  },
+  {
+   "template": "weight_threshold",
+   "target_field": "molecular_weight",
+   "target_accession": "3671",
+   "accessions": [
+    "3671"
+   ],
+   "params": {
+    "accession": "3671",
+    "threshold": 207.3
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "plausible": {
+     "fields": {
+      "molecular_weight": 184.25
+     },
+     "clean_value": 230.31,
+     "corrupted_value": 184.25,
+     "factor": 0.8,
+     "consistent": false,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 3671 have a molecular weight greater than 207.3 Da? Answer yes or no and give the weight. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "rep_R0_036",
+   "direction": "shrink"
+  },
+  {
+   "template": "weight_threshold",
+   "target_field": "molecular_weight",
+   "target_accession": "10468",
+   "accessions": [
+    "10468"
+   ],
+   "params": {
+    "accession": "10468",
+    "threshold": 430.5
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "plausible": {
+     "fields": {
+      "molecular_weight": 478.38
+     },
+     "clean_value": 382.7,
+     "corrupted_value": 478.38,
+     "factor": 1.25,
+     "consistent": false,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 10468 have a molecular weight greater than 430.5 Da? Answer yes or no and give the weight. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "rep_R0_039",
+   "direction": "inflate"
+  },
+  {
+   "template": "weight_threshold",
+   "target_field": "molecular_weight",
+   "target_accession": "3455",
+   "accessions": [
+    "3455"
+   ],
+   "params": {
+    "accession": "3455",
+    "threshold": 405.5
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "plausible": {
+     "fields": {
+      "molecular_weight": 360.48
+     },
+     "clean_value": 450.6,
+     "corrupted_value": 360.48,
+     "factor": 0.8,
+     "consistent": false,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 3455 have a molecular weight greater than 405.5 Da? Answer yes or no and give the weight. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "rep_R0_042",
+   "direction": "shrink"
+  },
+  {
+   "template": "weight_threshold",
+   "target_field": "molecular_weight",
+   "target_accession": "12827",
+   "accessions": [
+    "12827"
+   ],
+   "params": {
+    "accession": "12827",
+    "threshold": 225.3
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "plausible": {
+     "fields": {
+      "molecular_weight": 250.32
+     },
+     "clean_value": 200.26,
+     "corrupted_value": 250.32,
+     "factor": 1.25,
+     "consistent": false,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 12827 have a molecular weight greater than 225.3 Da? Answer yes or no and give the weight. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "rep_R0_045",
+   "direction": "inflate"
+  },
+  {
+   "template": "weight_threshold",
+   "target_field": "molecular_weight",
+   "target_accession": "3039",
+   "accessions": [
+    "3039"
+   ],
+   "params": {
+    "accession": "3039",
+    "threshold": 193.3
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "plausible": {
+     "fields": {
+      "molecular_weight": 165.73
+     },
+     "clean_value": 220.97,
+     "corrupted_value": 165.73,
+     "factor": 0.75,
+     "consistent": false,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 3039 have a molecular weight greater than 193.3 Da? Answer yes or no and give the weight. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "rep_R0_048",
+   "direction": "shrink"
+  },
+  {
+   "template": "weight_threshold",
+   "target_field": "molecular_weight",
+   "target_accession": "4350",
+   "accessions": [
+    "4350"
+   ],
+   "params": {
+    "accession": "4350",
+    "threshold": 363.4
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "plausible": {
+     "fields": {
+      "molecular_weight": 396.48
+     },
+     "clean_value": 330.4,
+     "corrupted_value": 396.48,
+     "factor": 1.2,
+     "consistent": false,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 4350 have a molecular weight greater than 363.4 Da? Answer yes or no and give the weight. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "rep_R0_051",
+   "direction": "inflate"
+  },
+  {
+   "template": "weight_threshold",
+   "target_field": "molecular_weight",
+   "target_accession": "12051",
+   "accessions": [
+    "12051"
+   ],
+   "params": {
+    "accession": "12051",
+    "threshold": 88.5
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "plausible": {
+     "fields": {
+      "molecular_weight": 75.86
+     },
+     "clean_value": 101.15,
+     "corrupted_value": 75.86,
+     "factor": 0.75,
+     "consistent": false,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 12051 have a molecular weight greater than 88.5 Da? Answer yes or no and give the weight. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "rep_R0_054",
+   "direction": "shrink"
+  },
+  {
+   "template": "weight_threshold",
+   "target_field": "molecular_weight",
+   "target_accession": "8834",
+   "accessions": [
+    "8834"
+   ],
+   "params": {
+    "accession": "8834",
+    "threshold": 238.9
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "plausible": {
+     "fields": {
+      "molecular_weight": 265.41
+     },
+     "clean_value": 212.33,
+     "corrupted_value": 265.41,
+     "factor": 1.25,
+     "consistent": false,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 8834 have a molecular weight greater than 238.9 Da? Answer yes or no and give the weight. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "rep_R0_057",
+   "direction": "inflate"
+  },
+  {
+   "template": "weight_threshold",
+   "target_field": "molecular_weight",
+   "target_accession": "17697",
+   "accessions": [
+    "17697"
+   ],
+   "params": {
+    "accession": "17697",
+    "threshold": 198.1
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "plausible": {
+     "fields": {
+      "molecular_weight": 169.8
+     },
+     "clean_value": 226.4,
+     "corrupted_value": 169.8,
+     "factor": 0.75,
+     "consistent": false,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 17697 have a molecular weight greater than 198.1 Da? Answer yes or no and give the weight. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "rep_R0_060",
+   "direction": "shrink"
+  },
+  {
+   "template": "weight_threshold",
+   "target_field": "molecular_weight",
+   "target_accession": "2136",
+   "accessions": [
+    "2136"
+   ],
+   "params": {
+    "accession": "2136",
+    "threshold": 280.8
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "plausible": {
+     "fields": {
+      "molecular_weight": 306.32
+     },
+     "clean_value": 255.27,
+     "corrupted_value": 306.32,
+     "factor": 1.2,
+     "consistent": false,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 2136 have a molecular weight greater than 280.8 Da? Answer yes or no and give the weight. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "rep_R0_063",
+   "direction": "inflate"
+  },
+  {
+   "template": "weight_threshold",
+   "target_field": "molecular_weight",
+   "target_accession": "8852",
+   "accessions": [
+    "8852"
+   ],
+   "params": {
+    "accession": "8852",
+    "threshold": 271.8
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "plausible": {
+     "fields": {
+      "molecular_weight": 233.01
+     },
+     "clean_value": 310.68,
+     "corrupted_value": 233.01,
+     "factor": 0.75,
+     "consistent": false,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 8852 have a molecular weight greater than 271.8 Da? Answer yes or no and give the weight. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "rep_R0_066",
+   "direction": "shrink"
+  },
+  {
+   "template": "weight_threshold",
+   "target_field": "molecular_weight",
+   "target_accession": "7714",
+   "accessions": [
+    "7714"
+   ],
+   "params": {
+    "accession": "7714",
+    "threshold": 207.3
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "plausible": {
+     "fields": {
+      "molecular_weight": 230.34
+     },
+     "clean_value": 184.27,
+     "corrupted_value": 230.34,
+     "factor": 1.25,
+     "consistent": false,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 7714 have a molecular weight greater than 207.3 Da? Answer yes or no and give the weight. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "rep_R0_069",
+   "direction": "inflate"
+  },
+  {
+   "template": "weight_threshold",
+   "target_field": "molecular_weight",
+   "target_accession": "16316",
+   "accessions": [
+    "16316"
+   ],
+   "params": {
+    "accession": "16316",
+    "threshold": 137.6
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "plausible": {
+     "fields": {
+      "molecular_weight": 117.98
+     },
+     "clean_value": 157.3,
+     "corrupted_value": 117.98,
+     "factor": 0.75,
+     "consistent": false,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 16316 have a molecular weight greater than 137.6 Da? Answer yes or no and give the weight. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "rep_R0_072",
+   "direction": "shrink"
+  },
+  {
+   "template": "weight_threshold",
+   "target_field": "molecular_weight",
+   "target_accession": "7269",
+   "accessions": [
+    "7269"
+   ],
+   "params": {
+    "accession": "7269",
+    "threshold": 151.0
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "plausible": {
+     "fields": {
+      "molecular_weight": 167.78
+     },
+     "clean_value": 134.22,
+     "corrupted_value": 167.78,
+     "factor": 1.25,
+     "consistent": false,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 7269 have a molecular weight greater than 151.0 Da? Answer yes or no and give the weight. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "rep_R0_075",
+   "direction": "inflate"
+  },
+  {
+   "template": "weight_threshold",
+   "target_field": "molecular_weight",
+   "target_accession": "6029",
+   "accessions": [
+    "6029"
+   ],
+   "params": {
+    "accession": "6029",
+    "threshold": 219.8
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "plausible": {
+     "fields": {
+      "molecular_weight": 195.36
+     },
+     "clean_value": 244.2,
+     "corrupted_value": 195.36,
+     "factor": 0.8,
+     "consistent": false,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 6029 have a molecular weight greater than 219.8 Da? Answer yes or no and give the weight. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "rep_R0_078",
+   "direction": "shrink"
+  },
+  {
+   "template": "weight_threshold",
+   "target_field": "molecular_weight",
+   "target_accession": "19232",
+   "accessions": [
+    "19232"
+   ],
+   "params": {
+    "accession": "19232",
+    "threshold": 286.9
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "plausible": {
+     "fields": {
+      "molecular_weight": 318.78
+     },
+     "clean_value": 255.02,
+     "corrupted_value": 318.78,
+     "factor": 1.25,
+     "consistent": false,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 19232 have a molecular weight greater than 286.9 Da? Answer yes or no and give the weight. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "rep_R0_081",
+   "direction": "inflate"
+  },
+  {
+   "template": "weight_threshold",
+   "target_field": "molecular_weight",
+   "target_accession": "8794",
+   "accessions": [
+    "8794"
+   ],
+   "params": {
+    "accession": "8794",
+    "threshold": 105.4
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "plausible": {
+     "fields": {
+      "molecular_weight": 93.72
+     },
+     "clean_value": 117.15,
+     "corrupted_value": 93.72,
+     "factor": 0.8,
+     "consistent": false,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 8794 have a molecular weight greater than 105.4 Da? Answer yes or no and give the weight. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "rep_R0_084",
+   "direction": "shrink"
+  },
+  {
+   "template": "weight_threshold",
+   "target_field": "molecular_weight",
+   "target_accession": "5610",
+   "accessions": [
+    "5610"
+   ],
+   "params": {
+    "accession": "5610",
+    "threshold": 154.3
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "plausible": {
+     "fields": {
+      "molecular_weight": 171.48
+     },
+     "clean_value": 137.18,
+     "corrupted_value": 171.48,
+     "factor": 1.25,
+     "consistent": false,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 5610 have a molecular weight greater than 154.3 Da? Answer yes or no and give the weight. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "rep_R0_087",
+   "direction": "inflate"
+  },
+  {
+   "template": "weight_threshold",
+   "target_field": "molecular_weight",
+   "target_accession": "7197",
+   "accessions": [
+    "7197"
+   ],
+   "params": {
+    "accession": "7197",
+    "threshold": 147.8
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "plausible": {
+     "fields": {
+      "molecular_weight": 131.36
+     },
+     "clean_value": 164.2,
+     "corrupted_value": 131.36,
+     "factor": 0.8,
+     "consistent": false,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 7197 have a molecular weight greater than 147.8 Da? Answer yes or no and give the weight. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "rep_R0_090",
+   "direction": "shrink"
+  },
+  {
+   "template": "weight_threshold",
+   "target_field": "molecular_weight",
+   "target_accession": "13027",
+   "accessions": [
+    "13027"
+   ],
+   "params": {
+    "accession": "13027",
+    "threshold": 147.6
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "plausible": {
+     "fields": {
+      "molecular_weight": 160.97
+     },
+     "clean_value": 134.14,
+     "corrupted_value": 160.97,
+     "factor": 1.2,
+     "consistent": false,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 13027 have a molecular weight greater than 147.6 Da? Answer yes or no and give the weight. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "rep_R0_093",
+   "direction": "inflate"
+  },
+  {
+   "template": "weight_threshold",
+   "target_field": "molecular_weight",
+   "target_accession": "5780",
+   "accessions": [
+    "5780"
+   ],
+   "params": {
+    "accession": "5780",
+    "threshold": 164.0
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "plausible": {
+     "fields": {
+      "molecular_weight": 145.74
+     },
+     "clean_value": 182.17,
+     "corrupted_value": 145.74,
+     "factor": 0.8,
+     "consistent": false,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 5780 have a molecular weight greater than 164.0 Da? Answer yes or no and give the weight. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "rep_R0_096",
+   "direction": "shrink"
+  },
+  {
+   "template": "weight_threshold",
+   "target_field": "molecular_weight",
+   "target_accession": "8102",
+   "accessions": [
+    "8102"
+   ],
+   "params": {
+    "accession": "8102",
+    "threshold": 111.3
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "plausible": {
+     "fields": {
+      "molecular_weight": 121.43
+     },
+     "clean_value": 101.19,
+     "corrupted_value": 121.43,
+     "factor": 1.2,
+     "consistent": false,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 8102 have a molecular weight greater than 111.3 Da? Answer yes or no and give the weight. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "rep_R0_099",
+   "direction": "inflate"
+  },
+  {
+   "template": "weight_threshold",
+   "target_field": "molecular_weight",
+   "target_accession": "6346",
+   "accessions": [
+    "6346"
+   ],
+   "params": {
+    "accession": "6346",
+    "threshold": 241.1
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "plausible": {
+     "fields": {
+      "molecular_weight": 214.27
+     },
+     "clean_value": 267.835,
+     "corrupted_value": 214.27,
+     "factor": 0.8,
+     "consistent": false,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 6346 have a molecular weight greater than 241.1 Da? Answer yes or no and give the weight. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "rep_R0_102",
+   "direction": "shrink"
+  },
+  {
+   "template": "weight_threshold",
+   "target_field": "molecular_weight",
+   "target_accession": "7520",
+   "accessions": [
+    "7520"
+   ],
+   "params": {
+    "accession": "7520",
+    "threshold": 139.7
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "plausible": {
+     "fields": {
+      "molecular_weight": 155.26
+     },
+     "clean_value": 124.21,
+     "corrupted_value": 155.26,
+     "factor": 1.25,
+     "consistent": false,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 7520 have a molecular weight greater than 139.7 Da? Answer yes or no and give the weight. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "rep_R0_105",
+   "direction": "inflate"
+  },
+  {
+   "template": "weight_threshold",
+   "target_field": "molecular_weight",
+   "target_accession": "6391",
+   "accessions": [
+    "6391"
+   ],
+   "params": {
+    "accession": "6391",
+    "threshold": 108.8
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "plausible": {
+     "fields": {
+      "molecular_weight": 96.73
+     },
+     "clean_value": 120.91,
+     "corrupted_value": 96.73,
+     "factor": 0.8,
+     "consistent": false,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 6391 have a molecular weight greater than 108.8 Da? Answer yes or no and give the weight. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "rep_R0_108",
+   "direction": "shrink"
+  },
+  {
+   "template": "weight_threshold",
+   "target_field": "molecular_weight",
+   "target_accession": "8434",
+   "accessions": [
+    "8434"
+   ],
+   "params": {
+    "accession": "8434",
+    "threshold": 182.8
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "plausible": {
+     "fields": {
+      "molecular_weight": 199.4
+     },
+     "clean_value": 166.17,
+     "corrupted_value": 199.4,
+     "factor": 1.2,
+     "consistent": false,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 8434 have a molecular weight greater than 182.8 Da? Answer yes or no and give the weight. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "rep_R0_111",
+   "direction": "inflate"
+  },
+  {
+   "template": "weight_threshold",
+   "target_field": "molecular_weight",
+   "target_accession": "26404",
+   "accessions": [
+    "26404"
+   ],
+   "params": {
+    "accession": "26404",
+    "threshold": 250.6
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "plausible": {
+     "fields": {
+      "molecular_weight": 214.81
+     },
+     "clean_value": 286.41,
+     "corrupted_value": 214.81,
+     "factor": 0.75,
+     "consistent": false,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 26404 have a molecular weight greater than 250.6 Da? Answer yes or no and give the weight. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "rep_R0_114",
+   "direction": "shrink"
+  },
+  {
+   "template": "weight_threshold",
+   "target_field": "molecular_weight",
+   "target_accession": "6490",
+   "accessions": [
+    "6490"
+   ],
+   "params": {
+    "accession": "6490",
+    "threshold": 243.4
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "plausible": {
+     "fields": {
+      "molecular_weight": 270.4
+     },
+     "clean_value": 216.32,
+     "corrupted_value": 270.4,
+     "factor": 1.25,
+     "consistent": false,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 6490 have a molecular weight greater than 243.4 Da? Answer yes or no and give the weight. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "rep_R0_117",
+   "direction": "inflate"
+  },
+  {
+   "template": "weight_threshold",
+   "target_field": "molecular_weight",
+   "target_accession": "22541",
+   "accessions": [
+    "22541"
+   ],
+   "params": {
+    "accession": "22541",
+    "threshold": 113.9
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "plausible": {
+     "fields": {
+      "molecular_weight": 97.67
+     },
+     "clean_value": 130.23,
+     "corrupted_value": 97.67,
+     "factor": 0.75,
+     "consistent": false,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 22541 have a molecular weight greater than 113.9 Da? Answer yes or no and give the weight. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "rep_R0_120",
+   "direction": "shrink"
+  },
+  {
+   "template": "weight_threshold",
+   "target_field": "molecular_weight",
+   "target_accession": "16270",
+   "accessions": [
+    "16270"
+   ],
+   "params": {
+    "accession": "16270",
+    "threshold": 123.4
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "plausible": {
+     "fields": {
+      "molecular_weight": 134.65
+     },
+     "clean_value": 112.21,
+     "corrupted_value": 134.65,
+     "factor": 1.2,
+     "consistent": false,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 16270 have a molecular weight greater than 123.4 Da? Answer yes or no and give the weight. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "rep_R0_123",
+   "direction": "inflate"
+  },
+  {
+   "template": "weight_threshold",
+   "target_field": "molecular_weight",
+   "target_accession": "6128",
+   "accessions": [
+    "6128"
+   ],
+   "params": {
+    "accession": "6128",
+    "threshold": 250.6
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "plausible": {
+     "fields": {
+      "molecular_weight": 214.8
+     },
+     "clean_value": 286.4,
+     "corrupted_value": 214.8,
+     "factor": 0.75,
+     "consistent": false,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 6128 have a molecular weight greater than 250.6 Da? Answer yes or no and give the weight. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "rep_R0_126",
+   "direction": "shrink"
+  },
+  {
+   "template": "weight_threshold",
+   "target_field": "molecular_weight",
+   "target_accession": "29161",
+   "accessions": [
+    "29161"
+   ],
+   "params": {
+    "accession": "29161",
+    "threshold": 158.7
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "plausible": {
+     "fields": {
+      "molecular_weight": 173.1
+     },
+     "clean_value": 144.25,
+     "corrupted_value": 173.1,
+     "factor": 1.2,
+     "consistent": false,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 29161 have a molecular weight greater than 158.7 Da? Answer yes or no and give the weight. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "rep_R0_129",
+   "direction": "inflate"
+  },
+  {
+   "template": "weight_threshold",
+   "target_field": "molecular_weight",
+   "target_accession": "9502",
+   "accessions": [
+    "9502"
+   ],
+   "params": {
+    "accession": "9502",
+    "threshold": 218.0
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "plausible": {
+     "fields": {
+      "molecular_weight": 186.82
+     },
+     "clean_value": 249.09,
+     "corrupted_value": 186.82,
+     "factor": 0.75,
+     "consistent": false,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 9502 have a molecular weight greater than 218.0 Da? Answer yes or no and give the weight. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "rep_R0_132",
+   "direction": "shrink"
+  },
+  {
+   "template": "weight_threshold",
+   "target_field": "molecular_weight",
+   "target_accession": "7960",
+   "accessions": [
+    "7960"
+   ],
+   "params": {
+    "accession": "7960",
+    "threshold": 179.4
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "plausible": {
+     "fields": {
+      "molecular_weight": 195.67
+     },
+     "clean_value": 163.06,
+     "corrupted_value": 195.67,
+     "factor": 1.2,
+     "consistent": false,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 7960 have a molecular weight greater than 179.4 Da? Answer yes or no and give the weight. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "rep_R0_135",
+   "direction": "inflate"
+  },
+  {
+   "template": "weight_threshold",
+   "target_field": "molecular_weight",
+   "target_accession": "20345",
+   "accessions": [
+    "20345"
+   ],
+   "params": {
+    "accession": "20345",
+    "threshold": 303.9
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "plausible": {
+     "fields": {
+      "molecular_weight": 260.5
+     },
+     "clean_value": 347.33,
+     "corrupted_value": 260.5,
+     "factor": 0.75,
+     "consistent": false,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 20345 have a molecular weight greater than 303.9 Da? Answer yes or no and give the weight. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "rep_R0_138",
+   "direction": "shrink"
+  },
+  {
+   "template": "weight_threshold",
+   "target_field": "molecular_weight",
+   "target_accession": "12318",
+   "accessions": [
+    "12318"
+   ],
+   "params": {
+    "accession": "12318",
+    "threshold": 284.6
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "plausible": {
+     "fields": {
+      "molecular_weight": 310.45
+     },
+     "clean_value": 258.71,
+     "corrupted_value": 310.45,
+     "factor": 1.2,
+     "consistent": false,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 12318 have a molecular weight greater than 284.6 Da? Answer yes or no and give the weight. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "rep_R0_141",
+   "direction": "inflate"
+  },
+  {
+   "template": "weight_threshold",
+   "target_field": "molecular_weight",
+   "target_accession": "11166",
+   "accessions": [
+    "11166"
+   ],
+   "params": {
+    "accession": "11166",
+    "threshold": 147.0
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "plausible": {
+     "fields": {
+      "molecular_weight": 125.98
+     },
+     "clean_value": 167.98,
+     "corrupted_value": 125.98,
+     "factor": 0.75,
+     "consistent": false,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 11166 have a molecular weight greater than 147.0 Da? Answer yes or no and give the weight. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "rep_R0_144",
+   "direction": "shrink"
+  },
+  {
+   "template": "weight_threshold",
+   "target_field": "molecular_weight",
+   "target_accession": "7721",
+   "accessions": [
+    "7721"
+   ],
+   "params": {
+    "accession": "7721",
+    "threshold": 203.6
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "plausible": {
+     "fields": {
+      "molecular_weight": 222.07
+     },
+     "clean_value": 185.06,
+     "corrupted_value": 222.07,
+     "factor": 1.2,
+     "consistent": false,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 7721 have a molecular weight greater than 203.6 Da? Answer yes or no and give the weight. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "rep_R0_147",
+   "direction": "inflate"
+  },
+  {
+   "template": "weight_threshold",
+   "target_field": "molecular_weight",
+   "target_accession": "21291",
+   "accessions": [
+    "21291"
+   ],
+   "params": {
+    "accession": "21291",
+    "threshold": 265.5
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "plausible": {
+     "fields": {
+      "molecular_weight": 236.0
+     },
+     "clean_value": 295.0,
+     "corrupted_value": 236.0,
+     "factor": 0.8,
+     "consistent": false,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 21291 have a molecular weight greater than 265.5 Da? Answer yes or no and give the weight. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "rep_R0_150",
+   "direction": "shrink"
+  },
+  {
+   "template": "weight_threshold",
+   "target_field": "molecular_weight",
+   "target_accession": "17235",
+   "accessions": [
+    "17235"
+   ],
+   "params": {
+    "accession": "17235",
+    "threshold": 341.6
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "plausible": {
+     "fields": {
+      "molecular_weight": 372.6
+     },
+     "clean_value": 310.5,
+     "corrupted_value": 372.6,
+     "factor": 1.2,
+     "consistent": false,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 17235 have a molecular weight greater than 341.6 Da? Answer yes or no and give the weight. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "rep_R0_153",
+   "direction": "inflate"
+  },
+  {
+   "template": "weight_threshold",
+   "target_field": "molecular_weight",
+   "target_accession": "3037",
+   "accessions": [
+    "3037"
+   ],
+   "params": {
+    "accession": "3037",
+    "threshold": 242.2
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "plausible": {
+     "fields": {
+      "molecular_weight": 215.3
+     },
+     "clean_value": 269.12,
+     "corrupted_value": 215.3,
+     "factor": 0.8,
+     "consistent": false,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 3037 have a molecular weight greater than 242.2 Da? Answer yes or no and give the weight. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "rep_R0_156",
+   "direction": "shrink"
+  },
+  {
+   "template": "weight_threshold",
+   "target_field": "molecular_weight",
+   "target_accession": "6362",
+   "accessions": [
+    "6362"
+   ],
+   "params": {
+    "accession": "6362",
+    "threshold": 187.0
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "plausible": {
+     "fields": {
+      "molecular_weight": 203.99
+     },
+     "clean_value": 169.99,
+     "corrupted_value": 203.99,
+     "factor": 1.2,
+     "consistent": false,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 6362 have a molecular weight greater than 187.0 Da? Answer yes or no and give the weight. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "rep_R0_159",
+   "direction": "inflate"
+  },
+  {
+   "template": "weight_threshold",
+   "target_field": "molecular_weight",
+   "target_accession": "12386",
+   "accessions": [
+    "12386"
+   ],
+   "params": {
+    "accession": "12386",
+    "threshold": 156.1
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "plausible": {
+     "fields": {
+      "molecular_weight": 133.8
+     },
+     "clean_value": 178.4,
+     "corrupted_value": 133.8,
+     "factor": 0.75,
+     "consistent": false,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 12386 have a molecular weight greater than 156.1 Da? Answer yes or no and give the weight. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "rep_R0_162",
+   "direction": "shrink"
+  },
+  {
+   "template": "weight_threshold",
+   "target_field": "molecular_weight",
+   "target_accession": "24550",
+   "accessions": [
+    "24550"
+   ],
+   "params": {
+    "accession": "24550",
+    "threshold": 172.4
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "plausible": {
+     "fields": {
+      "molecular_weight": 188.05
+     },
+     "clean_value": 156.71,
+     "corrupted_value": 188.05,
+     "factor": 1.2,
+     "consistent": false,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 24550 have a molecular weight greater than 172.4 Da? Answer yes or no and give the weight. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "rep_R0_165",
+   "direction": "inflate"
+  },
+  {
+   "template": "weight_threshold",
+   "target_field": "molecular_weight",
+   "target_accession": "21693",
+   "accessions": [
+    "21693"
+   ],
+   "params": {
+    "accession": "21693",
+    "threshold": 393.4
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "plausible": {
+     "fields": {
+      "molecular_weight": 337.2
+     },
+     "clean_value": 449.6,
+     "corrupted_value": 337.2,
+     "factor": 0.75,
+     "consistent": false,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 21693 have a molecular weight greater than 393.4 Da? Answer yes or no and give the weight. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "rep_R0_168",
+   "direction": "shrink"
+  },
+  {
+   "template": "weight_threshold",
+   "target_field": "molecular_weight",
+   "target_accession": "3894",
+   "accessions": [
+    "3894"
+   ],
+   "params": {
+    "accession": "3894",
+    "threshold": 429.1
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "plausible": {
+     "fields": {
+      "molecular_weight": 476.75
+     },
+     "clean_value": 381.4,
+     "corrupted_value": 476.75,
+     "factor": 1.25,
+     "consistent": false,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 3894 have a molecular weight greater than 429.1 Da? Answer yes or no and give the weight. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "rep_R0_171",
+   "direction": "inflate"
+  },
+  {
+   "template": "weight_threshold",
+   "target_field": "molecular_weight",
+   "target_accession": "234",
+   "accessions": [
+    "234"
+   ],
+   "params": {
+    "accession": "234",
+    "threshold": 124.2
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "plausible": {
+     "fields": {
+      "molecular_weight": 106.46
+     },
+     "clean_value": 141.943,
+     "corrupted_value": 106.46,
+     "factor": 0.75,
+     "consistent": false,
+     "direction": "shrink",
+     "implied": "no"
+    }
+   },
+   "gold": "yes",
+   "prompt": "Does the compound with PubChem CID 234 have a molecular weight greater than 124.2 Da? Answer yes or no and give the weight. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "rep_R0_174",
+   "direction": "shrink"
+  },
+  {
+   "template": "weight_threshold",
+   "target_field": "molecular_weight",
+   "target_accession": "24556",
+   "accessions": [
+    "24556"
+   ],
+   "params": {
+    "accession": "24556",
+    "threshold": 117.1
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "plausible": {
+     "fields": {
+      "molecular_weight": 130.1
+     },
+     "clean_value": 104.079,
+     "corrupted_value": 130.1,
+     "factor": 1.25,
+     "consistent": false,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does the compound with PubChem CID 24556 have a molecular weight greater than 117.1 Da? Answer yes or no and give the weight. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "rep_R0_177",
+   "direction": "inflate"
+  }
+ ]
+}
