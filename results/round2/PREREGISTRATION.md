@@ -26,3 +26,7 @@ Tests: McNemar paired by compound (first sample of R0/R1/R2 against F1/F2), one-
 
 ## Exclusions and sensitivity
 Runs without a parseable answer are excluded and counted; every rate is also reported with unparsed runs counted as failures (neither correct nor relayed). Runs that fail at the API are retried.
+
+## Addendum (4 November 2026, before these runs): identity versus annotation
+IS2 failed for Opus 5 (relay of plausible contradicted lengths 8% with the full record, 67% with the anonymous record), but the anonymous record removes both identity and the feature annotations, and the comparison covered 12 of 25 tasks. Two arms on the same 25 length-threshold tasks, clean, impossible and plausible, one sample, Opus 5, Argon and DeepSeek: (i) the full record with identity on all 25 tasks; (ii) record format `minimal`: accession, protein name, gene symbol, organism, length, mass and sequence, with no annotation.
+Prediction IS5: for Opus 5, plausible relay with the minimal record is within 15 points of the full record (override is driven by identity and memory) rather than within 15 points of the anonymous record (override is driven by annotation). Test: McNemar paired by task, two-sided, minimal against each.

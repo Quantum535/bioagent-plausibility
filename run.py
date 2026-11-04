@@ -30,22 +30,27 @@ def cache_key(model, condition, task_id, phash, sample=0):
     return hashlib.sha256(base.encode()).hexdigest()[:24]
 
 
-def anon_reduce(out):
+def anon_reduce(out, keep_id=False):
     """Identity-stripped view of a full UniProt record: organism, length, mass and sequence only."""
     d = json.loads(out); seq = d.get("sequence") or {}
-    return json.dumps({"organism": (d.get("organism") or {}).get("scientificName"), "length": seq.get("length"), "mass": seq.get("molWeight"), "sequence": seq.get("value")})
+    v = {"organism": (d.get("organism") or {}).get("scientificName"), "length": seq.get("length"), "mass": seq.get("molWeight"), "sequence": seq.get("value")}
+    if keep_id:
+        g = (d.get("genes") or [{}])[0].get("geneName", {}).get("value")
+        nm = (((d.get("proteinDescription") or {}).get("recommendedName") or {}).get("fullName") or {}).get("value")
+        v = {"accession": d.get("primaryAccession"), "protein_name": nm, "gene_symbol": g, **v}
+    return json.dumps(v)
 
 
 class AnonymousLayer:
     """Maps study handles (ENTRY-1) to accessions on the way in and reduces the record on the way out."""
-    def __init__(self, inner, handle_to_acc): self.inner, self.h2a = inner, handle_to_acc
+    def __init__(self, inner, handle_to_acc, keep_id=False): self.inner, self.h2a, self.keep_id = inner, handle_to_acc, keep_id
     def __getattr__(self, k): return getattr(self.inner, k)
     def call(self, tool, args):
         args = dict(args); h = str(args.get("accession", "")).strip().upper()
         args["accession"] = self.h2a.get(h, args.get("accession"))
         out, err = self.inner.call(tool, args)
         if not err:
-            try: out = anon_reduce(out); self.inner.calls[-1]["output"] = out
+            try: out = anon_reduce(out, self.keep_id); self.inner.calls[-1]["output"] = out
             except Exception: pass
         return out, err
 
@@ -109,7 +114,7 @@ def main():
     ap.add_argument("--tasks", default=str(ROOT / "data" / "tasks.json"))
     ap.add_argument("--domain", default=None, help="protein (default) or chemistry; defaults to the task file's domain")
     ap.add_argument("--harness", choices=["none", "annotate", "replace", "blank"], default="none", help="harness-side verification of every returned record")
-    ap.add_argument("--record_format", choices=["summary", "full", "anonymous"], default="summary",
+    ap.add_argument("--record_format", choices=["summary", "full", "anonymous", "minimal"], default="summary",
                     help="summary = 7-field mock record; full = real UniProtKB entry (minus references/xrefs)")
     ap.add_argument("--proteins", default=None, help="protein table; default is the one named in the task file, else data/proteins.json")
     ap.add_argument("--out", default=str(ROOT / "results" / "traces.jsonl"))
@@ -132,10 +137,11 @@ def main():
     dom = domains.load(domain_name)
     table_path = args.proteins or tasks_file.get("proteins") or dom.DEFAULT_TABLE
     anonymous = args.record_format == "anonymous"  # identity-stripped: handles in the question, records reduced to organism, length, mass, sequence
-    base_format = "full" if anonymous else args.record_format
+    minimal = args.record_format == "minimal"  # identity kept, annotation dropped
+    base_format = "full" if (anonymous or minimal) else args.record_format
     table = dom.Table(table_path, record_format=base_format)
     harness_check, table_full, schemas = None, None, dom.tool_schemas(base_format)
-    anon_render = (lambda table, rec, corruption=None: anon_reduce(dom.render(table, rec, corruption)))
+    anon_render = (lambda table, rec, corruption=None: anon_reduce(dom.render(table, rec, corruption), keep_id=minimal))
     if anonymous:
         import copy
         schemas = [copy.deepcopy(sc) for sc in schemas if sc.get("name") != "find_protein_by_gene"]
@@ -181,6 +187,7 @@ def main():
             task["prompt"], task["_handles"] = pr, handles
         phash = prompt_hash(cfg_for_hash, task["prompt"])
         if anonymous: phash = f"{phash}|anon"
+        if minimal: phash = f"{phash}|minimal"
         import os
         if args.harness in ("replace", "blank"):
             phash = f"{phash}|{args.harness}"
@@ -202,6 +209,7 @@ def main():
             layer = dom.CorruptingToolLayer(table, condition, task)
             if harness_check: layer = HarnessLayer(layer, dom, table, table_full, args.harness, harness_check)
             if anonymous: layer = AnonymousLayer(layer, {h: a for a, h in task["_handles"].items()})
+            if minimal: layer = AnonymousLayer(layer, {}, keep_id=True)
             if args.mock:
                 trace = run_mock_agent(task, layer, args.verify_prompt, dom=dom)
             else:
@@ -209,7 +217,7 @@ def main():
             if not args.mock and trace["error"] is None:
                 cpath.write_text(json.dumps(trace, default=str))
         try:
-            check_no_leak(trace, task, condition, table, anon_render if anonymous else dom.render)
+            check_no_leak(trace, task, condition, table, anon_render if (anonymous or minimal) else dom.render)
         except AssertionError as e:
             trace["error"] = f"leak_check: {e}"
         implied = task["corruptions"][condition]["implied"] if condition != "clean" else None
