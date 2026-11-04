@@ -1,6 +1,6 @@
 \subsection*{What turns detection into override}
 
-The experiments above establish that agents relay plausible values and override impossible ones, and that a second field in the record moves the boundary. Four further registered experiments ask what, short of an external source, changes relay (Fig.~7; Supplementary Tables~8--12).
+The experiments above establish that agents relay plausible values and override impossible ones, and that a second field in the record moves the boundary. Four further registered experiments ask what, short of an external source, changes relay (Fig.~7; Supplementary Tables~1--5).
 
 \textbf{Instructions remove relay only where the record contradicts the value.} We reran three cells under three prompt variants (Methods). On the chemistry agreement cell, where the formula and SMILES contradict the molecular weight, removing the instruction to use the provided tools lowered relay from 80--91\% to 34--51\% for Opus~5, Argon and Flash (paired McNemar, $p \le 4\times10^{-9}$), and telling the agent that the database contains errors and the formula is authoritative lowered it to 0--1\% in every model. On coherent protein errors, where nothing in the record contradicts the value, no instruction changed relay (92--100\% under every variant). The registered prediction that the tool instruction would matter by fewer than 10 points failed; the prediction that no instruction would reach coherent errors held.
 
@@ -10,7 +10,7 @@ The experiments above establish that agents relay plausible values and override 
 
 \textbf{Memory is a tie-breaker, not the cause of relay.} Asked without tools for the length of each protein in the historical set, the three models gave the superseded value for 8--9\% of proteins and the current value for 61--67\%. Without a second source, proteins for which memory held the current value were still relayed at 91--100\%: the record won over a correct memory. With the labelled second source present, proteins whose memory held the superseded value were relayed far more often (Opus~5, 13/21 versus 2/144, $p = 3 \times 10^{-12}$; DeepSeek, 17/18 versus 38/150, $p = 1 \times 10^{-8}$), so when the record shows a conflict, memory decides it.
 
-\textbf{Withholding the field removes relay entirely.} A harness that drops any derivable field failing its check, with no note, left 0 of 709 corrupted numeric fields relayed across three models, two domains and both conditions, at the cost of 8 wrong answers in 200 DeepSeek protein runs. Identifier fields, which the check does not cover, were relayed as before.
+\textbf{Withholding the field removes relay entirely.} A harness that drops any derivable field failing its check, with no note, left 0 of 709 corrupted numeric fields relayed across three models, two domains and both conditions, at the cost of 8 wrong answers in 200 DeepSeek protein runs. Identifier fields, which the check does not cover, were still relayed (0--8\% of protein runs, 4--48\% of compound-name runs).
 
 \begin{figure}[p]
 \centering
