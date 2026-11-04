@@ -1,0 +1,148 @@
+\clearpage
+\section*{Supplementary Tables 14--20: experiments added in revision}
+
+\begin{table}[p]
+\centering\small
+\caption{Identity. Relay (relayed/parsed runs) on the 25 length-threshold benchmark tasks with the full record, with identity but no annotation (accession, protein name, gene, organism, length, mass, sequence), and with neither (anonymous; three samples, the first paired with the other formats); clean rows give accuracy. The last row per model gives relay of the 79 superseded sequences without a second source, with the full record and anonymously.}
+\resizebox{\textwidth}{!}{\begin{tabular}{llllll}
+\toprule
+Model & Condition & Full record & Identity, no annotation & Neither, sample 1 & Neither, 3 samples \\
+\midrule
+Opus 5 & clean (accuracy) & 25/25 (100\%) & 25/25 (100\%) & 25/25 (100\%) & 75/75 (100\%) \\
+Opus 5 & impossible & 0/25 (0\%) & 0/25 (0\%) & 0/25 (0\%) & 0/75 (0\%) \\
+Opus 5 & plausible & 1/25 (4\%) & 7/25 (28\%) & 17/25 (68\%) & 50/75 (67\%) \\
+Opus 5 & superseded record & 78/79 (99\%) & -- & 79/79 (100\%) & -- \\
+Gemini 4 Argon & clean (accuracy) & 25/25 (100\%) & 25/25 (100\%) & 25/25 (100\%) & 75/75 (100\%) \\
+Gemini 4 Argon & impossible & 0/25 (0\%) & 0/25 (0\%) & 0/25 (0\%) & 0/75 (0\%) \\
+Gemini 4 Argon & plausible & 0/25 (0\%) & 1/25 (4\%) & 0/25 (0\%) & 1/75 (1\%) \\
+Gemini 4 Argon & superseded record & 71/79 (90\%) & -- & 77/79 (97\%) & -- \\
+DeepSeek V4.1 Flash & clean (accuracy) & 25/25 (100\%) & 25/25 (100\%) & 25/25 (100\%) & 75/75 (100\%) \\
+DeepSeek V4.1 Flash & impossible & 0/25 (0\%) & 0/24 (0\%) & 1/25 (4\%) & 2/73 (3\%) \\
+DeepSeek V4.1 Flash & plausible & 22/25 (88\%) & 23/25 (92\%) & 21/25 (84\%) & 70/75 (93\%) \\
+DeepSeek V4.1 Flash & superseded record & 78/79 (99\%) & -- & 79/79 (100\%) & -- \\
+\bottomrule
+\end{tabular}}
+\end{table}
+
+\begin{table}[p]
+\centering\small
+\caption{Reasoning. Relay with adaptive thinking (the setting used throughout) and with thinking disabled, paired by task.}
+\begin{tabular}{lllll}
+\toprule
+Model & Cell & Condition & Thinking adaptive & Thinking disabled \\
+\midrule
+Opus 5 & full record, first 50 tasks & impossible & 0/50 (0\%) & 1/50 (2\%) \\
+Opus 5 & full record, first 50 tasks & plausible & 4/50 (8\%) & 23/50 (46\%) \\
+Sonnet 5 & summary record, proteins & impossible & 151/200 (76\%) & 139/200 (70\%) \\
+Sonnet 5 & summary record, proteins & plausible & 185/200 (92\%) & 189/200 (94\%) \\
+Sonnet 5 & summary record, chemistry & impossible & 73/100 (73\%) & 63/100 (63\%) \\
+Sonnet 5 & summary record, chemistry & plausible & 100/100 (100\%) & 100/100 (100\%) \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[p]
+\centering\small
+\caption{Request settings recorded in the traces, by model as requested (the three most frequent configurations; runs counted over the benchmark and round-2 files). Settings not listed were the provider's defaults.}
+\resizebox{\textwidth}{!}{\begin{tabular}{lll}
+\toprule
+Model & Settings & Runs \\
+\midrule
+anthropic:claude-haiku-4-5 & max\_tokens=8000; model=claude-haiku-4-5; provider=anthropic; thinking=adaptive & 1500 \\
+anthropic:claude-opus-5 & max\_tokens=8000; model=claude-opus-5; provider=anthropic; thinking=adaptive & 2534 \\
+anthropic:claude-opus-5 & max\_tokens=8000; model=claude-opus-5; provider=anthropic; thinking=disabled & 100 \\
+anthropic:claude-sonnet-4-6 & max\_tokens=8000; model=claude-sonnet-4-6; provider=anthropic; thinking=adaptive & 1500 \\
+anthropic:claude-sonnet-5 & max\_tokens=8000; model=claude-sonnet-5; provider=anthropic; thinking=adaptive & 1500 \\
+anthropic:claude-sonnet-5 & max\_tokens=8000; model=claude-sonnet-5; provider=anthropic; thinking=disabled & 600 \\
+gemini:gemini-3.8-flash & max\_tokens=8000; model=google/gemini-3.8-flash; provider=gemini; reasoning\_effort=None; thinking=adaptive & 1680 \\
+gemini:gemini-4-argon & max\_tokens=8000; model=google/gemini-4-argon; provider=gemini; reasoning\_effort=None; thinking=adaptive & 2534 \\
+openai:gpt-6-luna & api=responses; max\_tokens=8000; model=gpt-6-luna; provider=openai; reasoning\_effort=None; thinking=adaptive & 1500 \\
+openai:gpt-6.1-sol & api=responses; max\_tokens=8000; model=gpt-6.1-sol; provider=openai; reasoning\_effort=None; thinking=adaptive & 1500 \\
+together:deepseek-ai/DeepSeek-V4.1-Flash-1017 & max\_tokens=8000; model=deepseek-ai/DeepSeek-V4.1-Flash-1017; provider=together; reasoning\_effort=None; thinking=adaptive & 2534 \\
+together:moonshotai/Kimi-K3 & max\_tokens=8000; model=moonshotai/Kimi-K3; provider=together; reasoning\_effort=None; thinking=adaptive & 1500 \\
+\bottomrule
+\end{tabular}}
+\end{table}
+
+\begin{table}[p]
+\centering\small
+\caption{Prompt without the concerns field (summary record, first 100 tasks per domain). Relay under the registered prompt and without the concerns field; runs listing a concern under the registered prompt; runs voicing doubt in the reply text with and without the field, by the validated classifier; and the registered keyword detector without the field, a lower bound.}
+\resizebox{\textwidth}{!}{\begin{tabular}{lllllllll}
+\toprule
+Model & Domain & Condition & Relay, registered & Relay, no field & Concerns listed & Doubt in reply, registered & Doubt in reply, no field & Keyword, no field \\
+\midrule
+Opus 5 & proteins & impossible & 33/100 (33\%) & 60/100 (60\%) & 100/100 (100\%) & 99/100 (99\%) & 84/100 (84\%) & 45/100 (45\%) \\
+Opus 5 & proteins & plausible & 75/100 (75\%) & 79/100 (79\%) & 57/100 (57\%) & 52/100 (52\%) & 29/100 (29\%) & 17/100 (17\%) \\
+Opus 5 & chemistry & impossible & 46/100 (46\%) & 57/100 (57\%) & 100/100 (100\%) & 100/100 (100\%) & 75/100 (75\%) & 32/100 (32\%) \\
+Opus 5 & chemistry & plausible & 98/100 (98\%) & 100/100 (100\%) & 97/100 (97\%) & 96/100 (96\%) & 17/100 (17\%) & 0/100 (0\%) \\
+Gemini 4 Argon & proteins & impossible & 37/100 (37\%) & 80/100 (80\%) & 100/100 (100\%) & 99/100 (99\%) & 36/100 (36\%) & 5/100 (5\%) \\
+Gemini 4 Argon & proteins & plausible & 74/100 (74\%) & 100/100 (100\%) & 94/100 (94\%) & 85/100 (85\%) & 1/100 (1\%) & 0/100 (0\%) \\
+Gemini 4 Argon & chemistry & impossible & 62/100 (62\%) & 39/100 (39\%) & 91/100 (91\%) & 83/100 (83\%) & 72/100 (72\%) & 31/100 (31\%) \\
+Gemini 4 Argon & chemistry & plausible & 98/100 (98\%) & 100/100 (100\%) & 90/100 (90\%) & 81/100 (81\%) & 0/100 (0\%) & 0/100 (0\%) \\
+DeepSeek V4.1 Flash & proteins & impossible & 43/100 (43\%) & 68/100 (68\%) & 100/100 (100\%) & 95/100 (95\%) & 71/100 (71\%) & 35/100 (35\%) \\
+DeepSeek V4.1 Flash & proteins & plausible & 78/100 (78\%) & 83/100 (83\%) & 43/100 (43\%) & 41/100 (41\%) & 21/100 (21\%) & 8/100 (8\%) \\
+DeepSeek V4.1 Flash & chemistry & impossible & 38/100 (38\%) & 50/100 (50\%) & 97/100 (97\%) & 87/100 (87\%) & 66/100 (66\%) & 20/100 (20\%) \\
+DeepSeek V4.1 Flash & chemistry & plausible & 95/99 (96\%) & 100/100 (100\%) & 71/99 (72\%) & 57/99 (58\%) & 14/100 (14\%) & 2/100 (2\%) \\
+\bottomrule
+\end{tabular}}
+\end{table}
+
+\begin{table}[p]
+\centering\small
+\caption{Familiar duplicate field. Relay of a wrong molecular weight alone and with a verbatim copy that agrees or disagrees, under an unfamiliar (molecular\_weight\_reported) or familiar (average\_mass) field name; first sample of the earlier arms; 60 compounds.}
+\resizebox{\textwidth}{!}{\begin{tabular}{lllllll}
+\toprule
+Model & Alone & Copy agrees, unfamiliar & Copy agrees, familiar & Copy disagrees, unfamiliar & Copy disagrees, familiar & Clean accuracy, familiar copy \\
+\midrule
+Opus 5 & 35/60 (58\%) & 24/60 (40\%) & 32/60 (53\%) & 0/60 (0\%) & 0/60 (0\%) & 60/60 (100\%) \\
+Gemini 4 Argon & 37/60 (62\%) & 23/60 (38\%) & 32/60 (53\%) & 1/60 (2\%) & 6/60 (10\%) & 60/60 (100\%) \\
+Gemini 3.8 Flash & 48/59 (81\%) & 47/59 (80\%) & 46/56 (82\%) & 0/60 (0\%) & 1/57 (2\%) & 60/60 (100\%) \\
+DeepSeek V4.1 Flash & 32/60 (53\%) & 39/59 (66\%) & 40/59 (68\%) & 0/60 (0\%) & 14/60 (23\%) & 60/60 (100\%) \\
+\bottomrule
+\end{tabular}}
+\end{table}
+
+\begin{table}[p]
+\centering\small
+\caption{Revision audit of the 79 superseded sequences: class, number of proteins, number with the change at the N-terminus, and relay of the superseded value pooled over Opus 5, Gemini 4 Argon and DeepSeek V4.1 Flash in four arms (second source shown: three samples).}
+\resizebox{\textwidth}{!}{\begin{tabular}{lllllll}
+\toprule
+Class & Proteins & N-terminal & Full record & Summary & Second source shown & Identity removed \\
+\midrule
+documented error & 13 & 10 & 33/39 (85\%) & 39/39 (100\%) & 27/117 (23\%) & 39/39 (100\%) \\
+flagged discrepancy & 1 & 0 & 3/3 (100\%) & 3/3 (100\%) & 0/9 (0\%) & 3/3 (100\%) \\
+current isoform & 16 & 10 & 48/48 (100\%) & 48/48 (100\%) & 25/143 (17\%) & 48/48 (100\%) \\
+matches a current RefSeq/Ensembl model & 1 & 0 & 3/3 (100\%) & 3/3 (100\%) & 9/9 (100\%) & 3/3 (100\%) \\
+retired, reason not recorded & 48 & 26 & 140/144 (97\%) & 144/144 (100\%) & 48/432 (11\%) & 142/144 (99\%) \\
+\bottomrule
+\end{tabular}}
+\end{table}
+
+\begin{table}[p]
+\centering\small
+\caption{Runs without a parseable answer: every cell with at least two, with the reported rate (unparsed runs excluded) and the rate with unparsed runs counted against the agent (as relayed for relay, as wrong for accuracy).}
+\resizebox{\textwidth}{!}{\begin{tabular}{lllllll}
+\toprule
+Experiment & File & Condition & Parsed & Unparsed & Reported & Counted against the agent \\
+\midrule
+benchmark & traces\_gemini38flash & impossible & 198 & 2 & relay 167/198 (84\%) & 169/200 (84\%) \\
+full record & traces\_deepseek\_v41flash & impossible & 97 & 3 & relay 11/97 (11\%) & 14/100 (14\%) \\
+prompt variants & deepseek\_protein\_record\_errors & plausible & 92 & 8 & relay 23/92 (25\%) & 31/100 (31\%) \\
+prompt variants & deepseek\_protein\_two\_fields & plausible & 97 & 3 & relay 35/97 (36\%) & 38/100 (38\%) \\
+prompt variants & flash\_agreeC\_no\_tool\_instruction & plausible & 171 & 9 & relay 58/171 (34\%) & 67/180 (37\%) \\
+prompt variants & flash\_agreeC\_two\_fields & plausible & 163 & 17 & relay 6/163 (4\%) & 23/180 (13\%) \\
+prompt variants & opus5\_protein\_record\_errors & plausible & 88 & 12 & relay 0/88 (0\%) & 12/100 (12\%) \\
+prompt variants & opus5\_protein\_two\_fields & plausible & 97 & 3 & relay 5/97 (5\%) & 8/100 (8\%) \\
+withholding & argon\_protein & plausible & 98 & 2 & relay 0/98 (0\%) & 2/100 (2\%) \\
+withholding & deepseek\_protein & impossible & 84 & 16 & relay 4/84 (5\%) & 20/100 (20\%) \\
+withholding & deepseek\_protein & plausible & 87 & 13 & relay 1/87 (1\%) & 14/100 (14\%) \\
+withholding & opus5\_protein & impossible & 96 & 4 & relay 0/96 (0\%) & 4/100 (4\%) \\
+withholding & opus5\_protein & plausible & 95 & 5 & relay 0/95 (0\%) & 5/100 (5\%) \\
+round 2 & deepseek\_IS\_bench & impossible & 73 & 2 & relay 2/73 (3\%) & 4/75 (5\%) \\
+round 2 & flash\_F1 & plausible & 56 & 4 & relay 46/56 (82\%) & 50/60 (83\%) \\
+round 2 & flash\_F2 & plausible & 57 & 3 & relay 1/57 (2\%) & 4/60 (7\%) \\
+superseded & argon\_p5\_replace & superseded & 234 & 3 & relay 20/234 (9\%) & 23/237 (10\%) \\
+superseded & argon\_p5\_replace\_labeled & superseded & 234 & 3 & relay 98/234 (42\%) & 101/237 (43\%) \\
+\bottomrule
+\end{tabular}}
+\end{table}
