@@ -57,14 +57,14 @@ def style(ax, letter, title, xs, labels, ylabel=None):
     ax.set_title(title, loc="left", fontsize=7.2, pad=3)
     if ylabel: ax.set_ylabel(ylabel)
 
-fig, axes = plt.subplots(2, 3, figsize=(6.5, 5.3))
-V = ["default", "no tool\ninstruction", "database\nhas errors", "two\nfields"]
+fig, axes = plt.subplots(2, 3, figsize=(6.5, 5.5))
+V = ["default", "no tool\ninstr.", "errors\nnoted", "two\nfields"]
 for ax, cell, title in zip(axes[0], "abc", ["Proteins, sequence contradicts value", "Molecules, three fields agree", "Coherent protein errors"]):
     series(ax, PROMPT[cell], [0, 1, 2, 3]); style(ax, cell, title, [0, 1, 2, 3], V, "Wrong value relayed (%)" if cell == "a" else None)
-axes[0][1].legend(loc="center right", frameon=False, handlelength=1.6)
+fig.legend(*axes[0][1].get_legend_handles_labels(), loc="upper center", ncol=4, frameon=False, handlelength=1.8, bbox_to_anchor=(0.5, 1.0))
 
 ax = axes[1][0]; series(ax, REP, [0, 1, 2, 3])
-style(ax, "d", "Repetition versus consistency", [0, 1, 2, 3], ["weight\nalone", "repeat\nagrees", "repeat\ndisagrees", "derived\nfield agrees"], "Wrong value relayed (%)")
+style(ax, "d", "Repetition versus consistency", [0, 1, 2, 3], ["weight\nalone", "repeat\nagrees", "repeat\ndisagrees", "derived\nagrees"], "Wrong value relayed (%)")
 
 ax = axes[1][1]
 for m, d in MEM.items():
@@ -73,7 +73,7 @@ for m, d in MEM.items():
             point(ax, gi + OFF[m] + (-0.045 if si == 0 else 0.045), *d[g][si], COL[m], filled=(si == 0))
 style(ax, "e", "Memory probe: relay by memory state", [0, 1], ["no second\nsource", "second source\nshown"])
 ax.legend(handles=[Line2D([], [], marker="o", color="0.3", mfc="0.3", ls="", ms=3.3, label="memory holds current value"),
-                   Line2D([], [], marker="o", color="0.3", mfc="white", ls="", ms=3.3, label="memory holds superseded value")], loc="center left", frameon=False)
+                   Line2D([], [], marker="o", color="0.3", mfc="white", ls="", ms=3.3, label="memory holds superseded value")], loc="lower left", frameon=False)
 
 ax = axes[1][2]
 for m, d in BLANK.items():
@@ -83,4 +83,4 @@ for m, d in BLANK.items():
 style(ax, "f", "Withholding harness", [0, 1], ["proteins", "molecules"])
 ax.legend(handles=[Line2D([], [], marker="o", color="0.3", ls="", ms=3.3, label="numeric field (withheld if mismatched)"),
                    Line2D([], [], marker="D", color="0.3", ls="", ms=2.8, label="identifier (not checked)")], loc="upper left", frameon=False)
-fig.tight_layout(w_pad=1.2, h_pad=1.6); fig.savefig("paper/figures/nmi_mechanism.pdf"); print("wrote paper/figures/nmi_mechanism.pdf")
+fig.tight_layout(w_pad=1.2, h_pad=1.6, rect=(0, 0, 1, 0.965)); fig.savefig("paper/figures/nmi_mechanism.pdf"); print("wrote paper/figures/nmi_mechanism.pdf")
