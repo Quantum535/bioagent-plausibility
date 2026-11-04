@@ -1,5 +1,5 @@
 \clearpage
-\section*{Supplementary Tables 6--13: counts behind Figures 1--6}
+\section*{Supplementary Tables 6--13: counts behind Figures 1, 2, 4 and 6 and Extended Data Figures 1 and 2}
 
 \begin{table}[p]
 \centering\small
@@ -46,7 +46,7 @@ Gemini 3.8 Flash & plausible & organism & 4/48 (8\%) & 3/4 \\
 
 \begin{table}[p]
 \centering\small
-\caption{Benchmark (Fig.~2): corrupted values relayed, runs raising a concern, and relayed runs that raised a concern (summary record, registered prompt, one sample).}
+\caption{Benchmark (Extended Data Fig.~1): corrupted values relayed, runs raising a concern, and relayed runs that raised a concern (summary record, registered prompt, one sample).}
 \begin{tabular}{llllll}
 \toprule
 Model & Domain & Condition & Relayed & Flagged & Flagged among relayed \\
@@ -97,7 +97,7 @@ Haiku 4.5 & molecules & plausible & 100/100 (100\%) & 3/100 (3\%) & 3/100 \\
 
 \begin{table}[p]
 \centering\small
-\caption{Override boundaries (Fig.~3), value decreased: corrupted value relayed (relayed/parsed runs) at each corruption factor, full record, paired field scaled alike.}
+\caption{Override boundaries (Extended Data Fig.~2), value decreased: corrupted value relayed (relayed/parsed runs) at each corruption factor, full record, paired field scaled alike.}
 \resizebox{\textwidth}{!}{\begin{tabular}{llllllllll}
 \toprule
 Model & Domain & $\times$0.9 & $\times$0.8 & $\times$0.7 & $\times$0.5 & $\times$0.3 & $\times$0.1 & $\times$0.02 & $\times$0.005 \\
@@ -118,7 +118,7 @@ DeepSeek V4.1 Flash & molecules & 22/40 & 11/40 & 10/40 & 6/40 & 1/39 & 0/40 & 0
 
 \begin{table}[p]
 \centering\small
-\caption{Override boundaries (Fig.~3), value increased: corrupted value relayed (relayed/parsed runs) at each corruption factor, full record, paired field scaled alike.}
+\caption{Override boundaries (Extended Data Fig.~2), value increased: corrupted value relayed (relayed/parsed runs) at each corruption factor, full record, paired field scaled alike.}
 \resizebox{\textwidth}{!}{\begin{tabular}{llllllllll}
 \toprule
 Model & Domain & $\times$1.1 & $\times$1.25 & $\times$1.5 & $\times$2 & $\times$3 & $\times$10 & $\times$50 & $\times$200 \\
@@ -222,7 +222,7 @@ DeepSeek V4.1 Flash & weight asked, two agreeing fields & 152/180 (84\%) & 54/60
 
 \begin{table}[p]
 \centering\small
-\caption{Historical UniProt errors (Fig.~5): superseded value relayed with the full and summary record (one sample), full-record repeats (three samples), and with AlphaFold DB as second source (annotate arm, three samples) on covered proteins, by direction of the revision, and on the uncovered protein.}
+\caption{Historical UniProt errors (Fig.~2): superseded value relayed with the full and summary record (one sample), full-record repeats (three samples), and with AlphaFold DB as second source (annotate arm, three samples) on covered proteins, by direction of the revision, and on the uncovered protein.}
 \resizebox{\textwidth}{!}{\begin{tabular}{llllllll}
 \toprule
 Model & Full record & Summary & Full, repeats & Second source & Superseded longer & Superseded shorter & Uncovered \\

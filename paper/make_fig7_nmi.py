@@ -6,7 +6,7 @@ import matplotlib; matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 from matplotlib.lines import Line2D
 
-plt.rcParams.update({"font.family": "serif", "font.serif": ["Times New Roman", "Times", "Nimbus Roman", "DejaVu Serif"],
+plt.rcParams.update({"font.family": "serif", "font.serif": ["Arial", "Helvetica", "Liberation Sans", "DejaVu Sans"],
                      "font.size": 7, "axes.labelsize": 7, "xtick.labelsize": 6.5, "ytick.labelsize": 6.5,
                      "legend.fontsize": 6.2, "axes.linewidth": 0.6, "pdf.fonttype": 42})
 COL = {"opus5": "#B8860B", "argon": "#1F4E9C", "flash": "#6FA3E0", "deepseek": "#7B3FA0"}

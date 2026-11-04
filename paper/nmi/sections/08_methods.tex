@@ -1,4 +1,7 @@
 \section*{Methods}
+\subsection*{Terms}
+A corrupted value is \emph{relayed} (in the code and data files, \emph{propagated}) when the agent's answer matches the answer the corrupted record implies, and \emph{overridden} when the answer is the true one instead; a run is \emph{flagged} when the agent lists a concern, and a corrupted value is \emph{delivered} when it reached the agent. A record is \emph{consistent} (in the constructed experiments, \emph{coherent}) when none of its fields contradicts another, and \emph{contradicted} when its sequence, formula or another field disagrees with the value. \emph{Superseded} sequences are earlier UniProt versions of an entry; \emph{documented errors} are those traced to a submission that the current entry flags as erroneous. Harness modes: \emph{annotate} lists each mismatch in a verification note; \emph{replace} also writes in the corrected value, with the original listed under ambiguous field names, labelled as the original database value, or not shown at all (\emph{silent}); \emph{withhold} removes a mismatched derivable field without a note.
+
 \subsection*{Benchmark}
 \textbf{Entities and tasks.} The benchmark draws on 300 reviewed (Swiss-Prot) human proteins, sampled with a fixed seed from a pool of 3,000 retrieved through the UniProt
 REST API, and 300 single-component PubChem compounds with a common name, a molecular formula and a molecular weight of
@@ -35,8 +38,7 @@ concerns.''
 We evaluated ten models: Claude Haiku~4.5, Sonnet~4.6, Sonnet~5 and Opus~5 (Anthropic API); Gemini~3.8~Flash and Gemini~4~Argon
 (Google Vertex AI); GPT-6~Luna and GPT-6.1~Sol (OpenAI API); and DeepSeek~V4.1~Flash and Kimi~K3 (Together AI). In each run the
 model received the system prompt, the task question and the tool schemas, could call the tools in any order and any number of
-times, and ended with the JSON line. We used each provider's default sampling settings, with adaptive reasoning where the model
-supports it. The request settings recorded in the traces are listed for every model in Supplementary Table~16. Unless stated otherwise, each task ran once per condition. API identifiers: \texttt{claude-haiku-4-5}, \texttt{claude-sonnet-4-6}, \texttt{claude-sonnet-5}, \texttt{claude-opus-5}; \texttt{gemini-3.8-flash}, \texttt{gemini-4-argon}; \texttt{gpt-6-luna}, \texttt{gpt-6.1-sol}; \texttt{deepseek-ai/DeepSeek-V4.1-Flash-1017}, \texttt{moonshotai/Kimi-K3}. All runs took place between September and November 2026.
+times, and ended with the JSON line. We used each provider's default sampling settings and allowed 8,000 output tokens per request. Anthropic models ran with adaptive thinking (disabled only in the reasoning ablation); for other providers no reasoning parameter was sent, so each ran at its provider's default reasoning setting. Requests named the models by the aliases below; dated snapshot identifiers were not recorded. The request settings recorded in the traces are listed for every model in Supplementary Table~16. Unless stated otherwise, each task ran once per condition. API identifiers: \texttt{claude-haiku-4-5}, \texttt{claude-sonnet-4-6}, \texttt{claude-sonnet-5}, \texttt{claude-opus-5}; \texttt{gemini-3.8-flash}, \texttt{gemini-4-argon}; \texttt{gpt-6-luna}, \texttt{gpt-6.1-sol}; \texttt{deepseek-ai/DeepSeek-V4.1-Flash-1017}, \texttt{moonshotai/Kimi-K3}. All runs took place between September and November 2026.
 
 \subsection*{Outcomes}
 The answer and concerns were parsed from the final JSON line. A run is correct if its answer matches the true answer and

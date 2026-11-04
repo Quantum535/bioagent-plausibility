@@ -13,7 +13,7 @@ import numpy as np
 
 OUT = "paper/figures"; os.makedirs(OUT, exist_ok=True)
 INK, MUTED, RULE, GRID = "#1f1f1f", "#6b6b6b", "#b8b8b8", "#ececec"
-plt.rcParams.update({"font.family": "serif", "font.serif": ["Times New Roman", "Times", "Nimbus Roman", "DejaVu Serif"],
+plt.rcParams.update({"font.family": "serif", "font.serif": ["Arial", "Helvetica", "Liberation Sans", "DejaVu Sans"],
     "font.size": 7.5, "axes.titlesize": 7.6, "axes.labelsize": 7.2, "xtick.labelsize": 6.6, "ytick.labelsize": 6.6,
     "legend.fontsize": 6.5, "axes.edgecolor": RULE, "text.color": INK, "axes.labelcolor": INK, "xtick.color": MUTED,
     "ytick.color": MUTED, "axes.spines.top": False, "axes.spines.right": False, "axes.grid": True, "grid.color": GRID,

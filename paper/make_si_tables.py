@@ -43,7 +43,7 @@ for m in ORDER10:
             if not c: continue
             k, n = kn(c); fl = sum(flagged(t) for t in c); kf = sum(flagged(t) for t in c if t.get("propagated"))
             rows.append([NAME[m], dom, cond, frac(k, n), frac(fl, n), f"{kf}/{k}" if k else "--"]); check[(m, dom, cond)] = round(100 * k / n)
-table("Benchmark (Fig.~2): corrupted values relayed, runs raising a concern, and relayed runs that raised a concern (summary record, registered prompt, one sample).",
+table("Benchmark (Extended Data Fig.~1): corrupted values relayed, runs raising a concern, and relayed runs that raised a concern (summary record, registered prompt, one sample).",
       ["Model", "Domain", "Condition", "Relayed", "Flagged", "Flagged among relayed"], rows)
 print("check Fig. 2, Opus 5 proteins impossible: expect 32, got", check.get(("opus5", "proteins", "impossible")))
 
@@ -62,7 +62,7 @@ for direction, word in (("shrink", "decreased"), ("inflate", "increased")):
         for dom in ("protein", "chem"):
             g = (m, dom, direction)
             if g in data: rows.append([NAME[m], "proteins" if dom == "protein" else "molecules"] + [f"{data[g][k][0]}/{data[g][k][1]}" if k in data[g] else "--" for k in keys])
-    table(f"Override boundaries (Fig.~3), value {word}: corrupted value relayed (relayed/parsed runs) at each corruption factor, full record, paired field scaled alike.",
+    table(f"Override boundaries (Extended Data Fig.~2), value {word}: corrupted value relayed (relayed/parsed runs) at each corruption factor, full record, paired field scaled alike.",
           ["Model", "Domain"] + [f"$\\times${k:g}" for k in keys], rows, wide=True)
 
 # Table 10: new chemistry fields (Fig. 4a)
@@ -100,7 +100,7 @@ for m in M3:
     rows.append([NAME[m], frac(*kn(load(f"results/phase5/{m}_full.jsonl", "superseded"))), frac(*kn(load(f"results/phase5/{m}_summary.jsonl", "superseded"))),
                  frac(*kn(load(f"results/robustness/{m}_p5_full.jsonl", "superseded"))), frac(*kn(annc)), frac(*kn(lon)), frac(*kn(sho)), frac(*kn([t for t in ann if not cov(t)]))])
     if m == "opus5": print("check Fig. 5c, Opus 5 longer: expect 16/63, got", kn(lon))
-table("Historical UniProt errors (Fig.~5): superseded value relayed with the full and summary record (one sample), full-record repeats (three samples), and with AlphaFold DB as second source (annotate arm, three samples) on covered proteins, by direction of the revision, and on the uncovered protein.",
+table("Historical UniProt errors (Fig.~2): superseded value relayed with the full and summary record (one sample), full-record repeats (three samples), and with AlphaFold DB as second source (annotate arm, three samples) on covered proteins, by direction of the revision, and on the uncovered protein.",
       ["Model", "Full record", "Summary", "Full, repeats", "Second source", "Superseded longer", "Superseded shorter", "Uncovered"], rows, wide=True)
 ARMS = [("p5_annotate", "annotate: conflict listed"), ("p5_replace", "replace: ambiguous labels"), ("p5_replace_labeled", "replace: original labelled"), ("p5_replace_silent", "replace: silent")]
 rows = []
@@ -111,5 +111,5 @@ for m in M3:
 table("Presentation of the correction (Fig.~6): superseded value relayed on covered proteins under four presentations, pooled over three samples and per sample.",
       ["Model", "Presentation", "Pooled", "Sample 1", "Sample 2", "Sample 3"], rows)
 
-open("paper/nmi/si_tables.tex", "w").write("\\clearpage\n\\section*{Supplementary Tables 6--13: counts behind Figures 1--6}\n\n" + "\n".join(out))
+open("paper/nmi/si_tables.tex", "w").write("\\clearpage\n\\section*{Supplementary Tables 6--13: counts behind Figures 1, 2, 4 and 6 and Extended Data Figures 1 and 2}\n\n" + "\n".join(out))
 print("wrote paper/nmi/si_tables.tex with", len(out), "tables")
