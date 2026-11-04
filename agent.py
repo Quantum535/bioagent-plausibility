@@ -144,3 +144,5 @@ def run_mock_agent(task, tool_layer, verify_prompt=False, dom=None):
             "final_text": final, "final_json_raw": final, "answer": answer, "concerns": [],
             "parsed_ok": True, "stop_reason": "end_turn", "error": None, "n_api_calls": 0,
             "usage": usage, "cost_usd": 0.0, "elapsed_s": 0.0}
+
+PROMPT_VARIANTS["no_concerns"] = 'You are a bioinformatics assistant. Use the provided tools to answer. End your reply with exactly one line of JSON: {"answer": ...}.'

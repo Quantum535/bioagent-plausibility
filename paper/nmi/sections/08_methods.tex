@@ -139,7 +139,7 @@ Each of Opus~5, Gemini 4 Argon and DeepSeek V4.1 Flash was asked, without tools,
 \subsection*{Cue classification and validation}
 Two annotators labelled 300 concerns (200 protein, 100 chemistry), sampled from the benchmark traces, blind to model and to any
 automatic label, using written guidelines; a concern may cite several cues. Disagreements were resolved jointly into consensus
-labels. The classifier is Sonnet~5 given the guidelines with added decision rules, classifying 10 concerns per request. It was
+labels. One annotator was the author and the other an independent annotator (Acknowledgements). The classifier is one of the evaluated models and therefore also classified its own concerns, under a prompt frozen before validation. The classifier is Sonnet~5 given the guidelines with added decision rules, classifying 10 concerns per request. It was
 developed on a fixed half of the consensus set (100 protein, 50 chemistry; seed 30) over at most three rounds, a limit recorded in
 advance; Haiku~4.5 and Sonnet~5 were compared in the last round under a pre-stated rule. The prompt and model were then frozen and
 committed, and run once on the held-out half, with a pass criterion of Cohen's~\cite{cohen1960kappa} $\kappa\geq0.6$ for cross-field, recall and rule cues in both

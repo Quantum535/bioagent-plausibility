@@ -13,7 +13,7 @@ studies corrupt passages of text or single returned values. Scientific database 
 fields that can confirm or contradict it, and the record often contains what is needed to derive the value independently: a
 protein's sequence fixes its length and mass, and a compound's formula fixes its weight. Whether agents use this structure, whether
 errors that occurred in real databases behave like constructed ones, and which corrections actually change what an agent reports,
-are open questions.
+are open questions. The notice-yet-relay phenomenon itself is known from single returned values \citep{yang2026overreliance}; what this study adds is the mechanism in structured records, errors that occurred in a production database, and a comparison of remedies by what they change in the agent's answer.
 
 We studied them in six steps. We ran a deployed biomedical agent against live database APIs with responses altered in transit; built a controlled benchmark of protein and small-molecule questions for ten models from five developers; manipulated records' internal consistency and derivation routes; presented errors that UniProt itself later corrected; tested corrections: derivation checks, an independent second source, and three ways of presenting a correction; and asked what in the prompt, the output format or the model's memory turns detection into override. Where we made predictions, we fixed them in dated repository commits before running the experiments, deposited the deployment hypotheses on OSF, and report the ones that failed.
 

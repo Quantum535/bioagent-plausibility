@@ -30,6 +30,26 @@ def cache_key(model, condition, task_id, phash, sample=0):
     return hashlib.sha256(base.encode()).hexdigest()[:24]
 
 
+def anon_reduce(out):
+    """Identity-stripped view of a full UniProt record: organism, length, mass and sequence only."""
+    d = json.loads(out); seq = d.get("sequence") or {}
+    return json.dumps({"organism": (d.get("organism") or {}).get("scientificName"), "length": seq.get("length"), "mass": seq.get("molWeight"), "sequence": seq.get("value")})
+
+
+class AnonymousLayer:
+    """Maps study handles (ENTRY-1) to accessions on the way in and reduces the record on the way out."""
+    def __init__(self, inner, handle_to_acc): self.inner, self.h2a = inner, handle_to_acc
+    def __getattr__(self, k): return getattr(self.inner, k)
+    def call(self, tool, args):
+        args = dict(args); h = str(args.get("accession", "")).strip().upper()
+        args["accession"] = self.h2a.get(h, args.get("accession"))
+        out, err = self.inner.call(tool, args)
+        if not err:
+            try: out = anon_reduce(out); self.inner.calls[-1]["output"] = out
+            except Exception: pass
+        return out, err
+
+
 def check_no_leak(trace, task, condition, table, render):
     """Assert clean runs saw only clean records and corrupted runs saw the corrupted target record."""
     by_acc = {r["accession"]: r for r in table.records}
@@ -81,7 +101,7 @@ def main():
     ap.add_argument("--model", default=DEFAULT_MODEL,
                     help="'claude-sonnet-5' (Anthropic), or 'openai:<model>', 'together:<org/model>'")
     ap.add_argument("--seed", type=int, default=0, help="must match the seed used by make_tasks.py")
-    ap.add_argument("--prompt_variant", choices=["default", "no_tool_instruction", "record_errors", "two_fields"], default="default")
+    ap.add_argument("--prompt_variant", choices=["default", "no_tool_instruction", "record_errors", "two_fields", "no_concerns"], default="default")
     ap.add_argument("--verify_prompt", action="store_true", help="append the sanity-check sentence to the system prompt")
     ap.add_argument("--thinking", choices=["adaptive", "disabled"], default="adaptive")
     ap.add_argument("--effort", choices=["low", "medium", "high", "xhigh", "max"], default=None)
@@ -89,7 +109,7 @@ def main():
     ap.add_argument("--tasks", default=str(ROOT / "data" / "tasks.json"))
     ap.add_argument("--domain", default=None, help="protein (default) or chemistry; defaults to the task file's domain")
     ap.add_argument("--harness", choices=["none", "annotate", "replace", "blank"], default="none", help="harness-side verification of every returned record")
-    ap.add_argument("--record_format", choices=["summary", "full"], default="summary",
+    ap.add_argument("--record_format", choices=["summary", "full", "anonymous"], default="summary",
                     help="summary = 7-field mock record; full = real UniProtKB entry (minus references/xrefs)")
     ap.add_argument("--proteins", default=None, help="protein table; default is the one named in the task file, else data/proteins.json")
     ap.add_argument("--out", default=str(ROOT / "results" / "traces.jsonl"))
@@ -111,8 +131,15 @@ def main():
     domain_name = args.domain or tasks_file.get("domain") or "protein"
     dom = domains.load(domain_name)
     table_path = args.proteins or tasks_file.get("proteins") or dom.DEFAULT_TABLE
-    table = dom.Table(table_path, record_format=args.record_format)
-    harness_check, table_full, schemas = None, None, dom.tool_schemas(args.record_format)
+    anonymous = args.record_format == "anonymous"  # identity-stripped: handles in the question, records reduced to organism, length, mass, sequence
+    base_format = "full" if anonymous else args.record_format
+    table = dom.Table(table_path, record_format=base_format)
+    harness_check, table_full, schemas = None, None, dom.tool_schemas(base_format)
+    anon_render = (lambda table, rec, corruption=None: anon_reduce(dom.render(table, rec, corruption)))
+    if anonymous:
+        import copy
+        schemas = [copy.deepcopy(sc) for sc in schemas if sc.get("name") != "find_protein_by_gene"]
+        for sc in schemas: sc["description"] = "Look up a protein record by its study identifier (for example ENTRY-1). Returns organism, length, mass and amino-acid sequence."
     if args.harness != "none":
         from harness.layer import HarnessLayer
         from harness.checks import check_protein, check_compound
@@ -147,7 +174,13 @@ def main():
     Path(args.out).parent.mkdir(exist_ok=True)
 
     def one(task, condition, sample):
+        if anonymous:
+            task = dict(task); handles = {a: f"ENTRY-{i + 1}" for i, a in enumerate(task["accessions"])}
+            pr = task["prompt"]
+            for a, h in handles.items(): pr = pr.replace(a, h)
+            task["prompt"], task["_handles"] = pr, handles
         phash = prompt_hash(cfg_for_hash, task["prompt"])
+        if anonymous: phash = f"{phash}|anon"
         import os
         if args.harness in ("replace", "blank"):
             phash = f"{phash}|{args.harness}"
@@ -168,6 +201,7 @@ def main():
         else:
             layer = dom.CorruptingToolLayer(table, condition, task)
             if harness_check: layer = HarnessLayer(layer, dom, table, table_full, args.harness, harness_check)
+            if anonymous: layer = AnonymousLayer(layer, {h: a for a, h in task["_handles"].items()})
             if args.mock:
                 trace = run_mock_agent(task, layer, args.verify_prompt, dom=dom)
             else:
@@ -175,7 +209,7 @@ def main():
             if not args.mock and trace["error"] is None:
                 cpath.write_text(json.dumps(trace, default=str))
         try:
-            check_no_leak(trace, task, condition, table, dom.render)
+            check_no_leak(trace, task, condition, table, anon_render if anonymous else dom.render)
         except AssertionError as e:
             trace["error"] = f"leak_check: {e}"
         implied = task["corruptions"][condition]["implied"] if condition != "clean" else None

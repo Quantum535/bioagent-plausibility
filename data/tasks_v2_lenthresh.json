@@ -1,0 +1,1033 @@
+{
+ "seed": 1,
+ "n_tasks": 200,
+ "proteins": "data/proteins_v2.json",
+ "alternate_direction": true,
+ "tasks": [
+  {
+   "template": "length_threshold",
+   "target_field": "length",
+   "target_accession": "P50553",
+   "accessions": [
+    "P50553"
+   ],
+   "params": {
+    "accession": "P50553",
+    "threshold": 259
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "length": 60000
+     },
+     "clean_value": 236,
+     "corrupted_value": 60000,
+     "factor": null,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "length": 283,
+      "mass": 30545
+     },
+     "clean_value": 236,
+     "corrupted_value": 283,
+     "factor": 1.2,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does protein P50553 have more than 259 residues? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "u004",
+   "direction": "inflate"
+  },
+  {
+   "template": "length_threshold",
+   "target_field": "length",
+   "target_accession": "Q8N4E7",
+   "accessions": [
+    "Q8N4E7"
+   ],
+   "params": {
+    "accession": "Q8N4E7",
+    "threshold": 266
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "length": 60000
+     },
+     "clean_value": 242,
+     "corrupted_value": 60000,
+     "factor": null,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "length": 290,
+      "mass": 33046
+     },
+     "clean_value": 242,
+     "corrupted_value": 290,
+     "factor": 1.2,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does protein Q8N4E7 have more than 266 residues? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "u012",
+   "direction": "inflate"
+  },
+  {
+   "template": "length_threshold",
+   "target_field": "length",
+   "target_accession": "Q4G0N8",
+   "accessions": [
+    "Q4G0N8"
+   ],
+   "params": {
+    "accession": "Q4G0N8",
+    "threshold": 1324
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "length": 60000
+     },
+     "clean_value": 1177,
+     "corrupted_value": 60000,
+     "factor": null,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "length": 1471,
+      "mass": 169008
+     },
+     "clean_value": 1177,
+     "corrupted_value": 1471,
+     "factor": 1.25,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does protein Q4G0N8 have more than 1324 residues? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "u020",
+   "direction": "inflate"
+  },
+  {
+   "template": "length_threshold",
+   "target_field": "length",
+   "target_accession": "O76075",
+   "accessions": [
+    "O76075"
+   ],
+   "params": {
+    "accession": "O76075",
+    "threshold": 380
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "length": 60000
+     },
+     "clean_value": 338,
+     "corrupted_value": 60000,
+     "factor": null,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "length": 422,
+      "mass": 48888
+     },
+     "clean_value": 338,
+     "corrupted_value": 422,
+     "factor": 1.25,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does protein O76075 have more than 380 residues? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "u028",
+   "direction": "inflate"
+  },
+  {
+   "template": "length_threshold",
+   "target_field": "length",
+   "target_accession": "P51795",
+   "accessions": [
+    "P51795"
+   ],
+   "params": {
+    "accession": "P51795",
+    "threshold": 918
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "length": 60000
+     },
+     "clean_value": 816,
+     "corrupted_value": 60000,
+     "factor": null,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "length": 1020,
+      "mass": 113481
+     },
+     "clean_value": 816,
+     "corrupted_value": 1020,
+     "factor": 1.25,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does protein P51795 have more than 918 residues? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "u036",
+   "direction": "inflate"
+  },
+  {
+   "template": "length_threshold",
+   "target_field": "length",
+   "target_accession": "Q9H252",
+   "accessions": [
+    "Q9H252"
+   ],
+   "params": {
+    "accession": "Q9H252",
+    "threshold": 1054
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "length": 60000
+     },
+     "clean_value": 958,
+     "corrupted_value": 60000,
+     "factor": null,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "length": 1150,
+      "mass": 127710
+     },
+     "clean_value": 958,
+     "corrupted_value": 1150,
+     "factor": 1.2,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does protein Q9H252 have more than 1054 residues? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "u044",
+   "direction": "inflate"
+  },
+  {
+   "template": "length_threshold",
+   "target_field": "length",
+   "target_accession": "Q9H0A8",
+   "accessions": [
+    "Q9H0A8"
+   ],
+   "params": {
+    "accession": "Q9H0A8",
+    "threshold": 219
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "length": 60000
+     },
+     "clean_value": 199,
+     "corrupted_value": 60000,
+     "factor": null,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "length": 239,
+      "mass": 26117
+     },
+     "clean_value": 199,
+     "corrupted_value": 239,
+     "factor": 1.2,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does protein Q9H0A8 have more than 219 residues? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "u052",
+   "direction": "inflate"
+  },
+  {
+   "template": "length_threshold",
+   "target_field": "length",
+   "target_accession": "Q9C0J8",
+   "accessions": [
+    "Q9C0J8"
+   ],
+   "params": {
+    "accession": "Q9C0J8",
+    "threshold": 1503
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "length": 60000
+     },
+     "clean_value": 1336,
+     "corrupted_value": 60000,
+     "factor": null,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "length": 1670,
+      "mass": 182364
+     },
+     "clean_value": 1336,
+     "corrupted_value": 1670,
+     "factor": 1.25,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does protein Q9C0J8 have more than 1503 residues? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "u060",
+   "direction": "inflate"
+  },
+  {
+   "template": "length_threshold",
+   "target_field": "length",
+   "target_accession": "P50213",
+   "accessions": [
+    "P50213"
+   ],
+   "params": {
+    "accession": "P50213",
+    "threshold": 412
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "length": 60000
+     },
+     "clean_value": 366,
+     "corrupted_value": 60000,
+     "factor": null,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "length": 458,
+      "mass": 49490
+     },
+     "clean_value": 366,
+     "corrupted_value": 458,
+     "factor": 1.25,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does protein P50213 have more than 412 residues? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "u068",
+   "direction": "inflate"
+  },
+  {
+   "template": "length_threshold",
+   "target_field": "length",
+   "target_accession": "Q16836",
+   "accessions": [
+    "Q16836"
+   ],
+   "params": {
+    "accession": "Q16836",
+    "threshold": 345
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "length": 60000
+     },
+     "clean_value": 314,
+     "corrupted_value": 60000,
+     "factor": null,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "length": 377,
+      "mass": 41153
+     },
+     "clean_value": 314,
+     "corrupted_value": 377,
+     "factor": 1.2,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does protein Q16836 have more than 345 residues? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "u076",
+   "direction": "inflate"
+  },
+  {
+   "template": "length_threshold",
+   "target_field": "length",
+   "target_accession": "P26022",
+   "accessions": [
+    "P26022"
+   ],
+   "params": {
+    "accession": "P26022",
+    "threshold": 428
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "length": 60000
+     },
+     "clean_value": 381,
+     "corrupted_value": 60000,
+     "factor": null,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "length": 476,
+      "mass": 52470
+     },
+     "clean_value": 381,
+     "corrupted_value": 476,
+     "factor": 1.25,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does protein P26022 have more than 428 residues? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "u084",
+   "direction": "inflate"
+  },
+  {
+   "template": "length_threshold",
+   "target_field": "length",
+   "target_accession": "P49279",
+   "accessions": [
+    "P49279"
+   ],
+   "params": {
+    "accession": "P49279",
+    "threshold": 605
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "length": 60000
+     },
+     "clean_value": 550,
+     "corrupted_value": 60000,
+     "factor": null,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "length": 660,
+      "mass": 71846
+     },
+     "clean_value": 550,
+     "corrupted_value": 660,
+     "factor": 1.2,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does protein P49279 have more than 605 residues? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "u092",
+   "direction": "inflate"
+  },
+  {
+   "template": "length_threshold",
+   "target_field": "length",
+   "target_accession": "Q9GZR2",
+   "accessions": [
+    "Q9GZR2"
+   ],
+   "params": {
+    "accession": "Q9GZR2",
+    "threshold": 475
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "length": 60000
+     },
+     "clean_value": 422,
+     "corrupted_value": 60000,
+     "factor": null,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "length": 528,
+      "mass": 58340
+     },
+     "clean_value": 422,
+     "corrupted_value": 528,
+     "factor": 1.25,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does protein Q9GZR2 have more than 475 residues? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "u100",
+   "direction": "inflate"
+  },
+  {
+   "template": "length_threshold",
+   "target_field": "length",
+   "target_accession": "Q6XZB0",
+   "accessions": [
+    "Q6XZB0"
+   ],
+   "params": {
+    "accession": "Q6XZB0",
+    "threshold": 517
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "length": 60000
+     },
+     "clean_value": 460,
+     "corrupted_value": 60000,
+     "factor": null,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "length": 575,
+      "mass": 66152
+     },
+     "clean_value": 460,
+     "corrupted_value": 575,
+     "factor": 1.25,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does protein Q6XZB0 have more than 517 residues? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "u108",
+   "direction": "inflate"
+  },
+  {
+   "template": "length_threshold",
+   "target_field": "length",
+   "target_accession": "Q92900",
+   "accessions": [
+    "Q92900"
+   ],
+   "params": {
+    "accession": "Q92900",
+    "threshold": 1242
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "length": 60000
+     },
+     "clean_value": 1129,
+     "corrupted_value": 60000,
+     "factor": null,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "length": 1355,
+      "mass": 149214
+     },
+     "clean_value": 1129,
+     "corrupted_value": 1355,
+     "factor": 1.2,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does protein Q92900 have more than 1242 residues? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "u116",
+   "direction": "inflate"
+  },
+  {
+   "template": "length_threshold",
+   "target_field": "length",
+   "target_accession": "Q13368",
+   "accessions": [
+    "Q13368"
+   ],
+   "params": {
+    "accession": "Q13368",
+    "threshold": 643
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "length": 60000
+     },
+     "clean_value": 585,
+     "corrupted_value": 60000,
+     "factor": null,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "length": 702,
+      "mass": 79382
+     },
+     "clean_value": 585,
+     "corrupted_value": 702,
+     "factor": 1.2,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does protein Q13368 have more than 643 residues? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "u124",
+   "direction": "inflate"
+  },
+  {
+   "template": "length_threshold",
+   "target_field": "length",
+   "target_accession": "Q8IY82",
+   "accessions": [
+    "Q8IY82"
+   ],
+   "params": {
+    "accession": "Q8IY82",
+    "threshold": 961
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "length": 60000
+     },
+     "clean_value": 874,
+     "corrupted_value": 60000,
+     "factor": null,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "length": 1049,
+      "mass": 124196
+     },
+     "clean_value": 874,
+     "corrupted_value": 1049,
+     "factor": 1.2,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does protein Q8IY82 have more than 961 residues? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "u132",
+   "direction": "inflate"
+  },
+  {
+   "template": "length_threshold",
+   "target_field": "length",
+   "target_accession": "P59044",
+   "accessions": [
+    "P59044"
+   ],
+   "params": {
+    "accession": "P59044",
+    "threshold": 981
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "length": 60000
+     },
+     "clean_value": 892,
+     "corrupted_value": 60000,
+     "factor": null,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "length": 1070,
+      "mass": 118522
+     },
+     "clean_value": 892,
+     "corrupted_value": 1070,
+     "factor": 1.2,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does protein P59044 have more than 981 residues? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "u140",
+   "direction": "inflate"
+  },
+  {
+   "template": "length_threshold",
+   "target_field": "length",
+   "target_accession": "Q969F9",
+   "accessions": [
+    "Q969F9"
+   ],
+   "params": {
+    "accession": "Q969F9",
+    "threshold": 1104
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "length": 60000
+     },
+     "clean_value": 1004,
+     "corrupted_value": 60000,
+     "factor": null,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "length": 1205,
+      "mass": 136483
+     },
+     "clean_value": 1004,
+     "corrupted_value": 1205,
+     "factor": 1.2,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does protein Q969F9 have more than 1104 residues? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "u148",
+   "direction": "inflate"
+  },
+  {
+   "template": "length_threshold",
+   "target_field": "length",
+   "target_accession": "Q14774",
+   "accessions": [
+    "Q14774"
+   ],
+   "params": {
+    "accession": "Q14774",
+    "threshold": 537
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "length": 60000
+     },
+     "clean_value": 488,
+     "corrupted_value": 60000,
+     "factor": null,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "length": 586,
+      "mass": 60947
+     },
+     "clean_value": 488,
+     "corrupted_value": 586,
+     "factor": 1.2,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does protein Q14774 have more than 537 residues? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "u156",
+   "direction": "inflate"
+  },
+  {
+   "template": "length_threshold",
+   "target_field": "length",
+   "target_accession": "P08571",
+   "accessions": [
+    "P08571"
+   ],
+   "params": {
+    "accession": "P08571",
+    "threshold": 412
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "length": 60000
+     },
+     "clean_value": 375,
+     "corrupted_value": 60000,
+     "factor": null,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "length": 450,
+      "mass": 48091
+     },
+     "clean_value": 375,
+     "corrupted_value": 450,
+     "factor": 1.2,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does protein P08571 have more than 412 residues? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "u164",
+   "direction": "inflate"
+  },
+  {
+   "template": "length_threshold",
+   "target_field": "length",
+   "target_accession": "Q9P2Y4",
+   "accessions": [
+    "Q9P2Y4"
+   ],
+   "params": {
+    "accession": "Q9P2Y4",
+    "threshold": 794
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "length": 60000
+     },
+     "clean_value": 722,
+     "corrupted_value": 60000,
+     "factor": null,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "length": 866,
+      "mass": 92252
+     },
+     "clean_value": 722,
+     "corrupted_value": 866,
+     "factor": 1.2,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does protein Q9P2Y4 have more than 794 residues? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "u172",
+   "direction": "inflate"
+  },
+  {
+   "template": "length_threshold",
+   "target_field": "length",
+   "target_accession": "Q05D32",
+   "accessions": [
+    "Q05D32"
+   ],
+   "params": {
+    "accession": "Q05D32",
+    "threshold": 524
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "length": 60000
+     },
+     "clean_value": 466,
+     "corrupted_value": 60000,
+     "factor": null,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "length": 582,
+      "mass": 66249
+     },
+     "clean_value": 466,
+     "corrupted_value": 582,
+     "factor": 1.25,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does protein Q05D32 have more than 524 residues? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "u180",
+   "direction": "inflate"
+  },
+  {
+   "template": "length_threshold",
+   "target_field": "length",
+   "target_accession": "Q8TD43",
+   "accessions": [
+    "Q8TD43"
+   ],
+   "params": {
+    "accession": "Q8TD43",
+    "threshold": 1366
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "length": 60000
+     },
+     "clean_value": 1214,
+     "corrupted_value": 60000,
+     "factor": null,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "length": 1518,
+      "mass": 167876
+     },
+     "clean_value": 1214,
+     "corrupted_value": 1518,
+     "factor": 1.25,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does protein Q8TD43 have more than 1366 residues? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "u188",
+   "direction": "inflate"
+  },
+  {
+   "template": "length_threshold",
+   "target_field": "length",
+   "target_accession": "Q8N4A0",
+   "accessions": [
+    "Q8N4A0"
+   ],
+   "params": {
+    "accession": "Q8N4A0",
+    "threshold": 636
+   },
+   "answer_type": "yesno",
+   "n_calls_expected": 1,
+   "corruptions": {
+    "impossible": {
+     "fields": {
+      "length": 60000
+     },
+     "clean_value": 578,
+     "corrupted_value": 60000,
+     "factor": null,
+     "direction": "inflate",
+     "implied": "yes"
+    },
+    "plausible": {
+     "fields": {
+      "length": 694,
+      "mass": 79999
+     },
+     "clean_value": 578,
+     "corrupted_value": 694,
+     "factor": 1.2,
+     "direction": "inflate",
+     "implied": "yes"
+    }
+   },
+   "gold": "no",
+   "prompt": "Does protein Q8N4A0 have more than 636 residues? Answer yes or no and give the count. Put exactly \"yes\" or \"no\" in the JSON \"answer\" field.",
+   "task_id": "u196",
+   "direction": "inflate"
+  }
+ ]
+}
