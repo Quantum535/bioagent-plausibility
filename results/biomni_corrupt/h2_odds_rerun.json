@@ -1,0 +1,70 @@
+{
+ "deepseek": {
+  "registered": {
+   "exact": "46/142 (32.4%)",
+   "other": "4/148 (2.7%)",
+   "odds_ratio": 17.25,
+   "ci95_cluster": [
+    5.99,
+    49.66
+   ],
+   "p_cluster_two_sided": 1.3047189801068684e-07,
+   "n_tasks": 290,
+   "ci95_woolf": [
+    5.68,
+    42.12
+   ],
+   "fisher_p_two_sided": 3.1100151932648557e-12
+  },
+  "donors_as_exact": {
+   "exact": "50/167 (29.9%)",
+   "other": "0/123 (0.0%)",
+   "odds_ratio": 19938482684.35,
+   "ci95_cluster": [
+    14301300633.76,
+    27797687912.07
+   ],
+   "p_cluster_two_sided": 0.0,
+   "n_tasks": 290,
+   "ci95_woolf": [
+    6.47,
+    1740.45
+   ],
+   "fisher_p_two_sided": 4.529977910326302e-14
+  }
+ },
+ "flash": {
+  "registered": {
+   "exact": "47/136 (34.6%)",
+   "other": "10/140 (7.1%)",
+   "odds_ratio": 6.87,
+   "ci95_cluster": [
+    3.29,
+    14.34
+   ],
+   "p_cluster_two_sided": 2.955783169697398e-07,
+   "n_tasks": 276,
+   "ci95_woolf": [
+    3.21,
+    13.56
+   ],
+   "fisher_p_two_sided": 1.3669342497062577e-08
+  },
+  "donors_as_exact": {
+   "exact": "52/159 (32.7%)",
+   "other": "5/117 (4.3%)",
+   "odds_ratio": 10.89,
+   "ci95_cluster": [
+    4.17,
+    28.39
+   ],
+   "p_cluster_two_sided": 1.0546254237510072e-06,
+   "n_tasks": 276,
+   "ci95_woolf": [
+    3.99,
+    25.0
+   ],
+   "fisher_p_two_sided": 1.1580290169479798e-09
+  }
+ }
+}
