@@ -1,0 +1,637 @@
+{
+ "IS": {
+  "opus5_plausible": {
+   "no_identity": [
+    50,
+    75,
+    0
+   ],
+   "identity": [
+    1,
+    12,
+    0
+   ],
+   "paired": {
+    "pairs": 12,
+    "base": 1,
+    "variant": 8,
+    "up": 7,
+    "down": 0,
+    "p": 0.015625
+   }
+  },
+  "opus5_impossible": {
+   "no_identity": [
+    0,
+    75,
+    0
+   ],
+   "identity": [
+    0,
+    12,
+    0
+   ],
+   "paired": {
+    "pairs": 12,
+    "base": 0,
+    "variant": 0,
+    "up": 0,
+    "down": 0,
+    "p": 1.0
+   }
+  },
+  "opus5_hist": {
+   "no_identity": [
+    79,
+    79,
+    0
+   ],
+   "identity": [
+    78,
+    79,
+    0
+   ]
+  },
+  "opus5_clean": [
+   75,
+   75,
+   0
+  ],
+  "argon_plausible": {
+   "no_identity": [
+    1,
+    75,
+    0
+   ],
+   "identity": [
+    0,
+    12,
+    0
+   ],
+   "paired": {
+    "pairs": 12,
+    "base": 0,
+    "variant": 0,
+    "up": 0,
+    "down": 0,
+    "p": 1.0
+   }
+  },
+  "argon_impossible": {
+   "no_identity": [
+    0,
+    75,
+    0
+   ],
+   "identity": [
+    0,
+    12,
+    0
+   ],
+   "paired": {
+    "pairs": 12,
+    "base": 0,
+    "variant": 0,
+    "up": 0,
+    "down": 0,
+    "p": 1.0
+   }
+  },
+  "argon_hist": {
+   "no_identity": [
+    77,
+    79,
+    0
+   ],
+   "identity": [
+    71,
+    79,
+    0
+   ]
+  },
+  "argon_clean": [
+   75,
+   75,
+   0
+  ],
+  "deepseek_plausible": {
+   "no_identity": [
+    70,
+    75,
+    0
+   ],
+   "identity": [
+    12,
+    12,
+    0
+   ],
+   "paired": {
+    "pairs": 12,
+    "base": 12,
+    "variant": 10,
+    "up": 0,
+    "down": 2,
+    "p": 0.5
+   }
+  },
+  "deepseek_impossible": {
+   "no_identity": [
+    2,
+    73,
+    2
+   ],
+   "identity": [
+    0,
+    12,
+    0
+   ],
+   "paired": {
+    "pairs": 12,
+    "base": 0,
+    "variant": 0,
+    "up": 0,
+    "down": 0,
+    "p": 1.0
+   }
+  },
+  "deepseek_hist": {
+   "no_identity": [
+    79,
+    79,
+    0
+   ],
+   "identity": [
+    78,
+    79,
+    0
+   ]
+  },
+  "deepseek_clean": [
+   75,
+   75,
+   0
+  ]
+ },
+ "NC": {
+  "opus5_protein_impossible": {
+   "default": [
+    33,
+    100,
+    0
+   ],
+   "no_concerns": [
+    60,
+    100,
+    0
+   ],
+   "paired": {
+    "pairs": 100,
+    "base": 33,
+    "variant": 60,
+    "up": 29,
+    "down": 2,
+    "p": 4.628673195838928e-07
+   },
+   "solicited": [
+    100,
+    100
+   ],
+   "kw_default": [
+    62,
+    100
+   ],
+   "kw_nc": [
+    48,
+    100
+   ]
+  },
+  "opus5_protein_plausible": {
+   "default": [
+    75,
+    100,
+    0
+   ],
+   "no_concerns": [
+    79,
+    100,
+    0
+   ],
+   "paired": {
+    "pairs": 100,
+    "base": 75,
+    "variant": 79,
+    "up": 4,
+    "down": 0,
+    "p": 0.125
+   },
+   "solicited": [
+    57,
+    100
+   ],
+   "kw_default": [
+    34,
+    100
+   ],
+   "kw_nc": [
+    17,
+    100
+   ]
+  },
+  "opus5_chem_impossible": {
+   "default": [
+    46,
+    100,
+    0
+   ],
+   "no_concerns": [
+    57,
+    100,
+    0
+   ],
+   "paired": {
+    "pairs": 100,
+    "base": 46,
+    "variant": 57,
+    "up": 16,
+    "down": 5,
+    "p": 0.02660369873046875
+   },
+   "solicited": [
+    100,
+    100
+   ],
+   "kw_default": [
+    43,
+    100
+   ],
+   "kw_nc": [
+    32,
+    100
+   ]
+  },
+  "opus5_chem_plausible": {
+   "default": [
+    98,
+    100,
+    0
+   ],
+   "no_concerns": [
+    100,
+    100,
+    0
+   ],
+   "paired": {
+    "pairs": 100,
+    "base": 98,
+    "variant": 100,
+    "up": 2,
+    "down": 0,
+    "p": 0.5
+   },
+   "solicited": [
+    97,
+    100
+   ],
+   "kw_default": [
+    63,
+    100
+   ],
+   "kw_nc": [
+    0,
+    100
+   ]
+  },
+  "argon_protein_impossible": {
+   "default": [
+    37,
+    100,
+    0
+   ],
+   "no_concerns": [
+    80,
+    100,
+    0
+   ],
+   "paired": {
+    "pairs": 100,
+    "base": 37,
+    "variant": 80,
+    "up": 43,
+    "down": 0,
+    "p": 2.2737367544323206e-13
+   },
+   "solicited": [
+    100,
+    100
+   ],
+   "kw_default": [
+    52,
+    100
+   ],
+   "kw_nc": [
+    5,
+    100
+   ]
+  },
+  "argon_protein_plausible": {
+   "default": [
+    74,
+    100,
+    0
+   ],
+   "no_concerns": [
+    100,
+    100,
+    0
+   ],
+   "paired": {
+    "pairs": 100,
+    "base": 74,
+    "variant": 100,
+    "up": 26,
+    "down": 0,
+    "p": 2.9802322387695312e-08
+   },
+   "solicited": [
+    94,
+    100
+   ],
+   "kw_default": [
+    19,
+    100
+   ],
+   "kw_nc": [
+    0,
+    100
+   ]
+  },
+  "argon_chem_impossible": {
+   "default": [
+    62,
+    100,
+    0
+   ],
+   "no_concerns": [
+    39,
+    100,
+    0
+   ],
+   "paired": {
+    "pairs": 100,
+    "base": 62,
+    "variant": 39,
+    "up": 7,
+    "down": 30,
+    "p": 0.00019107642583549023
+   },
+   "solicited": [
+    91,
+    100
+   ],
+   "kw_default": [
+    38,
+    100
+   ],
+   "kw_nc": [
+    31,
+    100
+   ]
+  },
+  "argon_chem_plausible": {
+   "default": [
+    98,
+    100,
+    0
+   ],
+   "no_concerns": [
+    100,
+    100,
+    0
+   ],
+   "paired": {
+    "pairs": 100,
+    "base": 98,
+    "variant": 100,
+    "up": 2,
+    "down": 0,
+    "p": 0.5
+   },
+   "solicited": [
+    90,
+    100
+   ],
+   "kw_default": [
+    35,
+    100
+   ],
+   "kw_nc": [
+    0,
+    100
+   ]
+  },
+  "deepseek_protein_impossible": {
+   "default": [
+    43,
+    100,
+    0
+   ],
+   "no_concerns": [
+    68,
+    100,
+    0
+   ],
+   "paired": {
+    "pairs": 100,
+    "base": 43,
+    "variant": 68,
+    "up": 27,
+    "down": 2,
+    "p": 1.6242265701293945e-06
+   },
+   "solicited": [
+    100,
+    100
+   ],
+   "kw_default": [
+    52,
+    100
+   ],
+   "kw_nc": [
+    35,
+    100
+   ]
+  },
+  "deepseek_protein_plausible": {
+   "default": [
+    78,
+    100,
+    0
+   ],
+   "no_concerns": [
+    83,
+    100,
+    0
+   ],
+   "paired": {
+    "pairs": 100,
+    "base": 78,
+    "variant": 83,
+    "up": 6,
+    "down": 1,
+    "p": 0.125
+   },
+   "solicited": [
+    43,
+    100
+   ],
+   "kw_default": [
+    17,
+    100
+   ],
+   "kw_nc": [
+    8,
+    100
+   ]
+  },
+  "deepseek_chem_impossible": {
+   "default": [
+    38,
+    100,
+    0
+   ],
+   "no_concerns": [
+    50,
+    100,
+    0
+   ],
+   "paired": {
+    "pairs": 100,
+    "base": 38,
+    "variant": 50,
+    "up": 16,
+    "down": 4,
+    "p": 0.01181793212890625
+   },
+   "solicited": [
+    97,
+    100
+   ],
+   "kw_default": [
+    22,
+    100
+   ],
+   "kw_nc": [
+    20,
+    100
+   ]
+  },
+  "deepseek_chem_plausible": {
+   "default": [
+    95,
+    99,
+    1
+   ],
+   "no_concerns": [
+    100,
+    100,
+    0
+   ],
+   "paired": {
+    "pairs": 99,
+    "base": 95,
+    "variant": 99,
+    "up": 4,
+    "down": 0,
+    "p": 0.125
+   },
+   "solicited": [
+    71,
+    99
+   ],
+   "kw_default": [
+    44,
+    99
+   ],
+   "kw_nc": [
+    2,
+    100
+   ]
+  }
+ },
+ "FD": {
+  "FD1 F1>R1": {
+   "pairs": 233,
+   "base": 130,
+   "variant": 150,
+   "up": 49,
+   "down": 29,
+   "p": 0.015393247910699969
+  },
+  "FD2 F1 vs R0": {
+   "pairs": 234,
+   "base": 148,
+   "variant": 149,
+   "up": 44,
+   "down": 43,
+   "p": 1.0
+  },
+  "FD3 F2<R0": {
+   "pairs": 236,
+   "base": 149,
+   "variant": 21,
+   "up": 6,
+   "down": 134,
+   "p": 7.041541894050549e-33
+  }
+ },
+ "TH": {
+  "opus5_full_impossible": {
+   "pairs": 50,
+   "base": 0,
+   "variant": 1,
+   "up": 1,
+   "down": 0,
+   "p": 0.5
+  },
+  "opus5_full_plausible": {
+   "pairs": 50,
+   "base": 4,
+   "variant": 23,
+   "up": 19,
+   "down": 0,
+   "p": 1.9073486328125e-06
+  },
+  "sonnet5_protein_impossible": {
+   "pairs": 200,
+   "base": 151,
+   "variant": 139,
+   "up": 12,
+   "down": 24,
+   "p": 0.9855916401720606
+  },
+  "sonnet5_protein_plausible": {
+   "pairs": 200,
+   "base": 185,
+   "variant": 189,
+   "up": 9,
+   "down": 5,
+   "p": 0.4239501953125
+  },
+  "sonnet5_chem_impossible": {
+   "pairs": 100,
+   "base": 73,
+   "variant": 63,
+   "up": 2,
+   "down": 12,
+   "p": 0.99908447265625
+  },
+  "sonnet5_chem_plausible": {
+   "pairs": 100,
+   "base": 100,
+   "variant": 100,
+   "up": 0,
+   "down": 0,
+   "p": 1.0
+  }
+ }
+}
