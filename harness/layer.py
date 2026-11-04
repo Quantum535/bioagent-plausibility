@@ -4,6 +4,16 @@ import json
 import os
 
 
+UNI = {"length": ("sequence", "length"), "mass": ("sequence", "molWeight"), "organism": ("organism", "scientificName"),
+       "gene_symbol": ("genes", 0, "geneName", "value")}  # where a full UniProt record keeps the summary fields
+def _get(d, path):
+    for k in path: d = d[k]
+    return d
+def _pop(d, path):
+    for k in path[:-1]: d = d[k]
+    if isinstance(d, dict): d.pop(path[-1], None)
+
+
 class HarnessLayer:
     def __init__(self, inner, dom, table_s, table_f, mode, check):
         self.inner, self.dom, self.ts, self.tf, self.mode, self.check = inner, dom, table_s, table_f, mode, check
@@ -14,10 +24,17 @@ class HarnessLayer:
     def call(self, tool, args):
         out, err = self.inner.call(tool, args)
         if err: return out, err
-        rec = json.loads(out); acc = rec.get("accession") or str(rec.get("cid"))
+        rec = json.loads(out); full_prot = "primaryAccession" in rec
+        acc = rec.get("accession") or rec.get("primaryAccession") or str(rec.get("cid"))
+        view = rec
+        if full_prot:  # summary view of a full protein record for the derivation check
+            view = {"accession": acc}
+            for f, path in UNI.items():
+                try: view[f] = _get(rec, path)
+                except (KeyError, IndexError, TypeError): pass
         corr = self.inner.corruption if acc == self.inner.target_acc else None
         full = json.loads(self.dom.render(self.tf, self.ts.by_acc[acc], corr))
-        v = self.check(rec, self.ts, full=full)
+        v = self.check(view, self.ts, full=full)
         bad = {f: r for f, r in v.items() if r.get("status") in ("mismatch", "not_found")}
         if os.environ.get("HARNESS_SECOND_SOURCE") == "1":  # Phase 3: independent database
             from harness import second_source as ss
@@ -40,7 +57,9 @@ class HarnessLayer:
                                 if bad else "all fields consistent with the full database record")
         if bad and self.mode == "blank":  # withhold mismatched derivable fields, no note; identifiers untouched
             for f in list(bad):
-                if f not in ("gene_symbol", "name"): rec.pop(f, None)
+                if f in ("gene_symbol", "name"): continue
+                if full_prot: _pop(rec, UNI.get(f, (f,)))
+                else: rec.pop(f, None)
             rec.pop("_verification", None)
         style = os.environ.get("HARNESS_REPLACE_STYLE")  # robustness Part 3: how a replacement is presented
         if self.mode == "replace" and style == "silent":
