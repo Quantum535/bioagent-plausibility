@@ -1,0 +1,10 @@
+{"t": 1793742194.1949482, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793742194.766716, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/Q5TD94.json"}
+{"t": 1793742261.735947, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793742262.283093, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/Q5TD94.json"}
+{"t": 1793742262.300266, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793742262.439275, "kind": "http", "lib": "netlog_shim.py", "host": "rest.genenames.org", "method": "GET", "path": "/fetch/hgnc_id/HGNC:21558"}
+{"t": 1793742267.6452632, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793742267.834344, "kind": "http", "lib": "netlog_shim.py", "host": "eutils.ncbi.nlm.nih.gov", "method": "GET", "path": "/entrez/eutils/esummary.fcgi?db=gene&id=345895&retmode=json"}
+{"t": 1793742267.988684, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793742268.1469922, "kind": "http", "lib": "netlog_shim.py", "host": "eutils.ncbi.nlm.nih.gov", "method": "GET", "path": "/entrez/eutils/esearch.fcgi?db=gene&term=PTX3%5BGene+Name%5D+AND+Homo+sapiens%5BOrganism%5D&retmode=json"}

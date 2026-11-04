@@ -1,0 +1,4 @@
+{"t": 1793728703.8510249, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793728704.429064, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene:ZBTB10+AND+organism_id:9606+AND+reviewed:true&fields=accession,protein_name,gene_names,mass,length&format=json&size=5"}
+{"t": 1793728705.022929, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793728705.56705, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene:HDAC7+AND+organism_id:9606+AND+reviewed:true&fields=accession,protein_name,gene_names,mass,length&format=json&size=5"}

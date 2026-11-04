@@ -1,0 +1,8 @@
+{
+ "task_id": "u101",
+ "slot": 2,
+ "elapsed": 40.60996890068054,
+ "final": "To determine which protein is heavier between those encoded by *COLEC11* and *NRL*, we examine their canonical human protein products in UniProt:\n\n- **COLEC11** encodes Collectin-11 (UniProt ID: [Q9BWP8](https://www.uniprot.org/uniprotkb/Q9BWP8/entry)), which has a length of 271 amino acids and a molecular mass of **28.665 kDa** (28,665 Da).\n- **NRL** encodes Neural retina-specific leucine zipper protein (UniProt ID: [P54845](https://www.uniprot.org/uniprotkb/P54845/entry)), which has a length of 284 amino acids and a molecular mass of **31.128 kDa** (31,128 Da).\n\nComparing the two, the protein encoded by **NRL** is heavier.\n\n<solution>\n```json\n{\n  \"answer\": \"NRL\",\n  \"concerns\": []\n}\n```\n</solution>",
+ "error": null,
+ "condition": "plausible"
+}

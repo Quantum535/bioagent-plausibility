@@ -1,0 +1,8 @@
+{
+ "task_id": "u175",
+ "slot": 2,
+ "elapsed": 53.656620025634766,
+ "final": "1. [\u2713] Query UniProt for accession O94898\n2. [\u2713] Extract gene info: UniProt geneName \"JAT1\", synonyms KIAA0806/LIG2\n3. [\u2713] Verify Ensembl/HGNC: LRIG2 \u2192 ENSG00000198799; official symbol LRIG2\n4. [\u2713] NCBI Gene 9860: official symbol LRIG2 (aliases LIG-2, LIG2, UFS2)\n5. [\u2713] \"JAT1\" is not a recognized HGNC symbol and not indexed in UniProt gene search\n6. [\u2713] Final cross-check: Swiss-Prot reviewed entry, protein at protein level, 1065 aa; HGNC:20889 uniprot_ids includes O94898\n\n**Conclusion:** O94898 is the UniProt accession for leucine-rich repeats and immunoglobulin-like domains protein 2 (LIG-2). The UniProt entry's primary gene name field says \"JAT1\", but this is not a valid HGNC symbol \u2014 HGNC (HGNC:20889), NCBI Gene (GeneID 9860), and Ensembl (ENSG00000198799) all assign the official symbol **LRIG2**, and UniProt's own HGNC cross-reference lists GeneName = LRIG2.\n\n<solution>{\"answer\": \"LRIG2\", \"concerns\": [\"UniProt entry O94898 lists 'JAT1' as the primary gene name with synonyms KIAA0806 and LIG2, but 'JAT1' is not a recognized HGNC symbol and returns no hits in HGNC or UniProt gene-name searches; the official symbol per HGNC (HGNC:20889), NCBI Gene (GeneID 9860), Ensembl (ENSG00000198799), and UniProt's own HGNC cross-reference is LRIG2.\", \"UniProt entryAudit reports a lastAnnotationUpdateDate of 2026-09-02 (entryVersion 188) while the sequence was last updated in 2004, which looks like a metadata anomaly.\"]}</solution>",
+ "error": null,
+ "condition": "impossible"
+}

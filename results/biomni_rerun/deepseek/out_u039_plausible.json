@@ -1,0 +1,8 @@
+{
+ "task_id": "u039",
+ "slot": 0,
+ "elapsed": 46.08501219749451,
+ "final": "## Findings\n\n**UniProt P14061** = 17-beta-hydroxysteroid dehydrogenase type 1 (DHB1_HUMAN, 328 aa).\n\nThe gene is **HSD17B1**. Evidence:\n\n| Source | Result |\n|---|---|\n| UniProt entry `DR HGNC; HGNC:5210; HSD17B1` | HSD17B1 |\n| HGNC:5210 (fetched directly) | symbol **HSD17B1**, name \"hydroxysteroid 17-beta dehydrogenase 1\", uniprot_ids = ['P14061'] |\n| MyGene.info (Entrez 3292) | HSD17B1 \u2192 Swiss-Prot P14061 |\n| Protein name / synonyms (E17KSR, EDH17B1, EDH17B2, EDHB17, SDR28C1) | all consistent with 17\u03b2-HSD1 |\n\n\u26a0\ufe0f **Data anomaly:** The entry's `GN Name=TRPM4` line is wrong. Its own evidence tag points to `HGNC:5210`, which is HSD17B1 \u2014 not TRPM4. TRPM4 is a distinct gene with HGNC ID 17993 and UniProt **Q8TD43** (verified). So the `GN` line in P14061 is an internal inconsistency (likely a curation/import error), while the `DR` cross-reference, HGNC, and MyGene all agree on HSD17B1.\n\n<solution>{\"answer\": \"HSD17B1\", \"concerns\": [\"UniProt entry P14061 contains an internally inconsistent gene name: the GN line reads 'Name=TRPM4' while its own evidence tag (HGNC:5210) and the DR cross-reference 'HGNC; HGNC:5210; HSD17B1' both point to HSD17B1. HGNC:5210 resolves to HSD17B1 (17-beta-hydroxysteroid dehydrogenase 1), and TRPM4 is a different gene (HGNC:3975/HGNC ID distinct; UniProt Q8TD43). The protein name and synonyms (EDH17B1/EDH17B2, SDRDH, SDR28C1) and external MyUniProt/HGNC/mygene mappings all confirm HSD17B1, so the HGNC symbol HSD17B1 was used.\"]}</solution>",
+ "error": null,
+ "condition": "plausible"
+}

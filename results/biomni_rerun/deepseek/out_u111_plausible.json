@@ -1,0 +1,8 @@
+{
+ "task_id": "u111",
+ "slot": 2,
+ "elapsed": 22.57180690765381,
+ "final": "## Summary of findings\n\n**Accession O15247** is the human **Chloride intracellular channel protein 2**. Every independent cross-reference in the record points to the same gene:\n\n| Source | Identifier | Resolved gene |\n|---|---|---|\n| HGNC | HGNC:2063 | **CLIC2** (aliases: XAP121, CLCNL2) |\n| NCBI Gene | 1193 | **CLIC2** (X chromosome) |\n| Ensembl | ENSG00000155962 | **CLIC2** |\n| Protein name | \u2014 | Chloride intracellular channel protein 2 (alt: XAP121) |\n\n**However**, the `geneName` field in the UniProt record literally reads **\"IDH3A\"** \u2014 which is inconsistent with all of the above. The true IDH3A is a separate entry (**P50213**, isocitrate dehydrogenase [NAD] subunit alpha, mitochondrial, HGNC:5384). The cited HGNC ID (2063) belongs to CLIC2, confirming the gene-name string is a data-entry error in the UniProt record rather than a genuine IDH3A assignment.\n\nGiven the protein identity and all cross-references agree on CLIC2, the gene symbol should be **CLIC2**.\n\n<solution>{\"answer\": \"CLIC2\", \"concerns\": [\"The UniProt entry O15247 has an erroneous geneName field value of 'IDH3A', which contradicts the protein name (Chloride intracellular channel protein 2) and all cross-references (HGNC:2063 = CLIC2, NCBI GeneID 1193 = CLIC2, Ensembl ENSG00000155962 = CLIC2). The true IDH3A is a different entry (P50213). Answer taken as CLIC2 based on converging evidence.\", \"The biomni query_uniprot natural-language wrapper failed due to missing Anthropic API credentials; queries were run directly against the UniProt/HGNC/NCBI/Ensembl REST APIs instead.\"]}</solution>",
+ "error": null,
+ "condition": "plausible"
+}

@@ -1,0 +1,16 @@
+{"t": 1793740230.033868, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact:JARID2+AND+organism_id:9606+AND+reviewed:true&format=json"}
+{"t": 1793740230.0344691, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793740230.597383, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact:LRRC32+AND+organism_id:9606+AND+reviewed:true&format=json"}
+{"t": 1793740230.597694, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793740235.649785, "kind": "http", "lib": "netlog_shim.py", "host": "eutils.ncbi.nlm.nih.gov", "method": "GET", "path": "/entrez/eutils/esearch.fcgi?db=gene&term=JARID2[Gene+Name]+AND+human[Organism]&retmode=json"}
+{"t": 1793740235.651274, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793740236.1325812, "kind": "http", "lib": "netlog_shim.py", "host": "eutils.ncbi.nlm.nih.gov", "method": "GET", "path": "/entrez/eutils/esummary.fcgi?db=gene&id=3720&retmode=json"}
+{"t": 1793740236.133054, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793740236.431995, "kind": "http", "lib": "netlog_shim.py", "host": "eutils.ncbi.nlm.nih.gov", "method": "GET", "path": "/entrez/eutils/esearch.fcgi?db=gene&term=LRRC32[Gene+Name]+AND+human[Organism]&retmode=json"}
+{"t": 1793740236.432616, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793740236.71587, "kind": "http", "lib": "netlog_shim.py", "host": "eutils.ncbi.nlm.nih.gov", "method": "GET", "path": "/entrez/eutils/esummary.fcgi?db=gene&id=2615&retmode=json"}
+{"t": 1793740236.7164202, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793740288.1786518, "kind": "http", "lib": "netlog_shim.py", "host": "rest.ensembl.org", "method": "GET", "path": "/lookup/symbol/homo_sapiens/JARID2?expand=1"}
+{"t": 1793740288.179069, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793740290.7271109, "kind": "http", "lib": "netlog_shim.py", "host": "rest.ensembl.org", "method": "GET", "path": "/lookup/symbol/homo_sapiens/LRRC32?expand=1"}
+{"t": 1793740290.727654, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}

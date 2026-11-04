@@ -1,0 +1,41 @@
+{"t": 1793731785.412116, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793731785.962683, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact%3APLPP3+AND+organism_id%3A9606+AND+reviewed%3Atrue&fields=accession%2Cid%2Cprotein_name%2Cgene_names%2Csequence%2Clength%2Cmass&format=json&size=5"}
+{"t": 1793731786.211338, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793731786.757633, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact%3AMAS1+AND+organism_id%3A9606+AND+reviewed%3Atrue&fields=accession%2Cid%2Cprotein_name%2Cgene_names%2Csequence%2Clength%2Cmass&format=json&size=5"}
+{"t": 1793731788.515434, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793731789.07448, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/O14495.json"}
+{"t": 1793731789.079222, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793731789.6275442, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/P04201.json"}
+{"t": 1793731791.458196, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793731792.0093389, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/O14495.json"}
+{"t": 1793731794.761007, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793731795.326565, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/O14495.json"}
+{"t": 1793731795.331519, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793731795.8823721, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact%3APLPP3+AND+organism_id%3A9606+AND+reviewed%3Atrue&fields=accession%2Cid%2Csequence%2Clength%2Cmass&format=json&size=5"}
+{"t": 1793731800.8507469, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793731801.384575, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/O14495.fasta"}
+{"t": 1793731801.393294, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793731801.958765, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/P04201.fasta"}
+{"t": 1793731810.628852, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793731811.188905, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/O14495.txt"}
+{"t": 1793731811.198495, "kind": "http", "lib": "netlog_shim.py", "host": "eutils.ncbi.nlm.nih.gov", "method": "GET", "path": "/entrez/eutils/esearch.fcgi?db=protein&term=PLPP3%5Bgene%5D+AND+Homo+sapiens%5Borganism%5D+AND+srcdb_refseq%5Bprop%5D&retmax=20&tool=biopython&email=researcher%40example.org"}
+{"t": 1793731811.198688, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793731811.573079, "kind": "http", "lib": "netlog_shim.py", "host": "eutils.ncbi.nlm.nih.gov", "method": "GET", "path": "/entrez/eutils/esummary.fcgi?db=protein&id=29171740&tool=biopython&email=researcher%40example.org"}
+{"t": 1793731811.573538, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793731819.0307531, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793731819.553248, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/O14495.xml"}
+{"t": 1793731822.839349, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793731823.4185112, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/O14495.txt"}
+{"t": 1793731823.431246, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793731824.011837, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/O14495.fasta"}
+{"t": 1793731829.553904, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793731830.1634738, "kind": "http", "lib": "netlog_shim.py", "host": "www.ebi.ac.uk", "method": "GET", "path": "/proteins/api/proteins/O14495"}
+{"t": 1793731830.6831932, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793731831.24105, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/O14495?fields=sequence%2Clength%2Cmass&format=json"}
+{"t": 1793731831.425386, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793731831.9893372, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact%3APLPP3+AND+organism_id%3A9606&fields=accession%2Cid%2Creviewed%2Clength%2Cmass%2Cprotein_name&format=json&size=25"}
+{"t": 1793731835.594004, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793731836.180114, "kind": "http", "lib": "netlog_shim.py", "host": "rest.ensembl.org", "method": "GET", "path": "/lookup/symbol/homo_sapiens/PLPP3?expand=1&content-type=application%2Fjson"}
+{"t": 1793731870.341604, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793731870.938751, "kind": "http", "lib": "netlog_shim.py", "host": "rest.ensembl.org", "method": "GET", "path": "/lookup/symbol/homo_sapiens/MAS1?expand=1&content-type=application%2Fjson"}
+{"t": 1793731898.5803719, "kind": "dns", "lib": "netlog_shim.py", "host": "api.together.xyz"}

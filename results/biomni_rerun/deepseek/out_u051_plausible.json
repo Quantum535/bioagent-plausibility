@@ -1,0 +1,8 @@
+{
+ "task_id": "u051",
+ "slot": 1,
+ "elapsed": 37.96838402748108,
+ "final": "1. [\u2713] Query UniProt for accession O00411 (via direct REST call)\n2. [\u2717] UniProt's GN line reads \"POU4F3\" but its own HGNC xref (HGNC:9200) and protein name point to POLRMT \u2014 conflicting data\n3. [\u2713] Resolved conflict: HGNC:9200 = POLRMT (19p13.3, Entrez 5442), Ensembl ENSG00000099821 = POLRMT, GeneID 5442 = POLRMT\n\n**Conclusion:** O00411 is \"DNA-directed RNA polymerase, mitochondrial\" (MtRPOL, EC 2.7.7.6). Every independent identifier attached to the entry \u2014 HGNC:9200, Ensembl ENSG00000099821/ENST00000588649, NCBI GeneID 5442 \u2014 maps to **POLRMT**. The `GN Name=POU4F3` line in the UniProt flat file is an erroneous gene-name annotation (POU4F3 is a distinct transcription factor at 5q31, and its own accession is Q15319); it contradicts the entry's own cross-references, so it should be disregarded.\n\n<solution>{\"answer\": \"POLRMT\", \"concerns\": [\"UniProt entry O00411 contains a contradictory gene annotation: the GN line reports 'POU4F3' while the entry's own HGNC (HGNC:9200), Ensembl (ENSG00000099821), and NCBI GeneID (5442) cross-references all resolve to POLRMT, consistent with the protein name 'DNA-directed RNA polymerase, mitochondrial'. The POU4F3 gene-name field appears to be a UniProt annotation error and was disregarded.\", \"The query_uniprot wrapper tool failed due to a missing LLM API key, so results were obtained via direct REST calls to UniProt, HGNC, and Ensembl.\"]}</solution>",
+ "error": null,
+ "condition": "plausible"
+}

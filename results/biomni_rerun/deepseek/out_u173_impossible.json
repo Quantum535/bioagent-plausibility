@@ -1,0 +1,8 @@
+{
+ "task_id": "u173",
+ "slot": 0,
+ "elapsed": 26.302862882614136,
+ "final": "1. [\u2713] Query UniProt for the human proteins encoded by RCVRN and GET1\n2. [\u2713] Retrieve canonical sequences and compute molecular masses in kDa\n3. [\u2713] Compare masses and return the heavier gene symbol as JSON\n\n**Results (canonical reviewed human entries, masses computed from sequence):**\n\n| Gene | UniProt | Protein | Length | Mass |\n|------|---------|---------|--------|------|\n| RCVRN | P35243 | Recoverin | 200 aa | 23.130 kDa |\n| GET1 | O00258 | Guided entry of tail-anchored proteins factor 1 (WRB) | 174 aa | 19.779 kDa |\n\nRCVRN is heavier (23.13 kDa vs 19.78 kDa).\n\n<solution>\nRCVRN encodes Recoverin (UniProt P35243, 200 aa), with a computed molecular mass of **23.130 kDa**. GET1 encodes the guided entry of tail-anchored proteins factor 1 / WRB (UniProt O00258, 174 aa), with a computed molecular mass of **19.779 kDa**. Therefore RCVRN is the heavier protein.\n\n{\"answer\": \"RCVRN\", \"concerns\": [\"The UniProt REST API 'molWeight' field for GET1 (O00258) returned 9,000,000,000 Da for a 174-aa sequence, which is impossible; masses were therefore recomputed directly from the canonical FASTA sequences using Biopython.\", \"GET1 is listed with synonyms CHD5 and WRB in UniProt; WRB is the more commonly used name for this human protein, so the gene symbol GET1 refers to the same entry (O00258).\", \"Masses are for the unmodified precursor sequences; RCVRN is N-myristoylated in vivo (adds ~0.2 kDa), which does not change the ranking.\"]}</solution>",
+ "error": null,
+ "condition": "impossible"
+}

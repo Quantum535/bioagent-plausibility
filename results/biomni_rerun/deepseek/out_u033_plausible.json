@@ -1,0 +1,8 @@
+{
+ "task_id": "u033",
+ "slot": 2,
+ "elapsed": 12.825965166091919,
+ "final": "1. [\u2713] Query UniProt for human ZBTB10 \u2014 Q96DT7, 94,894 Da (94.89 kDa)\n2. [\u2713] Query UniProt for human HDAC7 \u2014 Q8WUI4, 82,342 Da (82.34 kDa)\n3. [\u2713] Compare masses \u2014 ZBTB10 is heavier by ~12.55 kDa\n\nUsing canonical reviewed (Swiss-Prot) human entries:\n- **ZBTB10** (Q96DT7, 871 aa): **94.89 kDa**\n- **HDAC7** (Q8WUI4, 762 aa): **82.34 kDa**\n\nZBTB10 is the heavier protein.\n\n<solution>The protein encoded by ZBTB10 is heavier than that encoded by HDAC7.\n\n- ZBTB10 (UniProt Q96DT7, 871 aa): 94,894 Da = 94.89 kDa\n- HDAC7 (UniProt Q8WUI4, 762 aa): 82,342 Da = 82.34 kDa\n- Difference: ~12.55 kDa\n\n{\"answer\": \"ZBTB10\", \"concerns\": [\"A second reviewed entry (HDAC9, Q9UKV0, 111.3 kDa) matched the HDAC7 query because HDAC7 is a synonym of HDAC9; the true HDAC7 entry Q8WUI4 was used.\"]}</solution>",
+ "error": null,
+ "condition": "plausible"
+}

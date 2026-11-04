@@ -1,0 +1,8 @@
+{
+ "task_id": "u042",
+ "slot": 0,
+ "elapsed": 19.129963874816895,
+ "final": "1. [\u2713] Query UniProt for accession A7MD48 \u2014 record retrieved.\n2. [\u2713] Determine organism \u2014 UniProt's `scientificName` field is corrupted (\"Escherichia coli K-12\"), but taxonId 9606, entry name `SRRM4_HUMAN`, human lineage, and the EBI Proteins API all independently confirm **Homo sapiens**.\n3. [\u2713] Mammal status \u2014 Homo sapiens is in class Mammalia \u2192 **yes**.\n\n**Organism:** *Homo sapiens* (human) \u2014 the protein is SRRM4 / nSR100, 611 aa.\n**Is it a mammal?** Yes.\n\nData concern: the UniProt JSON/TSV `organism`/`scientificName` field for A7MD48 reads \"Escherichia coli K-12\" while its taxonId (9606), common name (\"Human\"), lineage, entry name (SRRM4_HUMAN), and the EBI Proteins API record all say *Homo sapiens* \u2014 a clearly corrupted upstream field, not a genuine bacterial entry.\n\n<solution>**Organism:** *Homo sapiens* (human) \u2014 UniProt A7MD48 is SRRM4_HUMAN (serine/arginine repetitive matrix protein 4 / nSR100), 611 aa, taxon ID 9606.\n**Is it a mammal?** Yes \u2014 *Homo sapiens* belongs to class Mammalia.\n\nNote: UniProt's `scientificName` field for this entry is corrupted (\"Escherichia coli K-12\"), but taxonId 9606, the human lineage, the entry name SRRM4_HUMAN, and the EBI Proteins API all confirm human.\n\n{\"answer\": \"Homo sapiens\", \"concerns\": [\"UniProt record A7MD48 has an internally inconsistent/corrupted organism scientificName field reading 'Escherichia coli K-12' while taxonId is 9606, commonName is 'Human', lineage is human, entry name is SRRM4_HUMAN, and the EBI Proteins API reports Homo sapiens.\"]}</solution>",
+ "error": null,
+ "condition": "impossible"
+}

@@ -1,0 +1,19 @@
+{"t": 1793739025.8261938, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact:NKX2-6+AND+organism_id:9606+AND+reviewed:true&fields=accession,id,gene_names,sequence,mass,protein_name"}
+{"t": 1793739025.8269172, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793739026.719805, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact:SCD5+AND+organism_id:9606+AND+reviewed:true&fields=accession,id,gene_names,sequence,mass,protein_name"}
+{"t": 1793739026.7202911, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793739030.653389, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact:NKX2-6+AND+organism_id:9606+AND+reviewed:true"}
+{"t": 1793739030.6541598, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793739031.567057, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact:SCD5+AND+organism_id:9606+AND+reviewed:true"}
+{"t": 1793739031.567513, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793739039.698376, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/A6NCS4.json"}
+{"t": 1793739039.699936, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793739132.377321, "kind": "http", "lib": "netlog_shim.py", "host": "eutils.ncbi.nlm.nih.gov", "method": "GET", "path": "/entrez/eutils/esearch.fcgi?db=protein&term=NKX2-6[Gene]+AND+Homo+sapiens[Organism]+AND+refseq[filter]&retmode=json"}
+{"t": 1793739132.377766, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793739132.809102, "kind": "http", "lib": "netlog_shim.py", "host": "eutils.ncbi.nlm.nih.gov", "method": "GET", "path": "/entrez/eutils/esummary.fcgi?db=protein&id=343183350&retmode=json"}
+{"t": 1793739132.80949, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793739183.678787, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/A6NCS4.txt"}
+{"t": 1793739183.679463, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793739297.408465, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/unisave/A6NCS4?format=json"}
+{"t": 1793739297.409215, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793739307.572711, "kind": "dns", "lib": "netlog_shim.py", "host": "aiplatform.googleapis.com"}

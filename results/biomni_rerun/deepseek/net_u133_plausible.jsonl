@@ -1,0 +1,4 @@
+{"t": 1793732213.239525, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793732213.815368, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact%3ADPH1+AND+organism_id%3A9606+AND+reviewed%3Atrue&format=json&size=25&fields=accession%2Cid%2Cgene_names%2Cprotein_name%2Cmass%2Clength%2Creviewed"}
+{"t": 1793732214.100798, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793732214.678432, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact%3ADDI2+AND+organism_id%3A9606+AND+reviewed%3Atrue&format=json&size=25&fields=accession%2Cid%2Cgene_names%2Cprotein_name%2Cmass%2Clength%2Creviewed"}

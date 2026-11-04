@@ -1,0 +1,24 @@
+{"t": 1793731109.938723, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793731110.508554, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/Q9Y3E5.json"}
+{"t": 1793731112.941178, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793731113.499711, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/Q9Y3E5.tsv?fields=accession%2Cid%2Cprotein_name%2Corganism_name%2Corganism_id%2Clineage%28SUPERKINGDOM%29%2Clineage%28MAMMALIA%29%2Clineage%28ORDER%29%2Clineage%28FAMILY%29"}
+{"t": 1793731115.095198, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793731115.6793358, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/Q9Y3E5.tsv?fields=accession%2Cid%2Cprotein_name%2Corganism_name%2Corganism_id%2Clineage"}
+{"t": 1793731115.8761868, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793731116.464343, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/Q9Y3E5.json"}
+{"t": 1793731116.474373, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793731116.993063, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/taxonomy/9606"}
+{"t": 1793731118.917015, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793731119.522796, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/Q9Y3E5.txt"}
+{"t": 1793731119.745217, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793731120.3119848, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=accession%3AQ9Y3E5&fields=accession%2Corganism_name%2Corganism_id%2Cprotein_name&format=json"}
+{"t": 1793731120.632766, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793731121.2212732, "kind": "http", "lib": "netlog_shim.py", "host": "alphafold.ebi.ac.uk", "method": "GET", "path": "/api/prediction/Q9Y3E5"}
+{"t": 1793731123.5848699, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793731123.7628539, "kind": "http", "lib": "netlog_shim.py", "host": "eutils.ncbi.nlm.nih.gov", "method": "GET", "path": "/entrez/eutils/esummary.fcgi?db=taxonomy&id=9606&retmode=json"}
+{"t": 1793731123.9094772, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793731124.444507, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/taxonomy/search?query=Homo+sapiens+AND+rank%3Aspecies&format=json&size=1"}
+{"t": 1793731124.651925, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793731125.204125, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/taxonomy/search?query=Mus+musculus+AND+rank%3Aspecies&format=json&size=1"}
+{"t": 1793731126.425946, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793731126.982904, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/taxonomy/9606.json"}

@@ -1,0 +1,8 @@
+{
+ "task_id": "u194",
+ "slot": 2,
+ "elapsed": 38.99710297584534,
+ "final": "The protein with UniProt accession **Q9UNL4** (entry name `ING4_HUMAN`, Inhibitor of growth protein 4) is from **Homo sapiens** (human), and it is a mammal (**yes**).\n\n<solution>\n{\n  \"answer\": \"Homo sapiens\",\n  \"concerns\": [\n    \"The UniProt record contains conflicting organism metadata: the scientificName field is set to 'Mus musculus', but the commonName is 'Human', the taxon ID is 9606 (Homo sapiens), the entry name is ING4_HUMAN, and the lineage is entirely primate/human (Eukaryota > Metazoa > Chordata > Craniata > Vertebrata > Euteleostomi > Mammalia > Eutheria > Euarchontoglires > Primates > Haplorrhini > Catarrhini > Hominidae > Homo).\"\n  ]\n}\n</solution>",
+ "error": null,
+ "condition": "plausible"
+}

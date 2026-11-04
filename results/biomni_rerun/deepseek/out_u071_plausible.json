@@ -1,0 +1,8 @@
+{
+ "task_id": "u071",
+ "slot": 0,
+ "elapsed": 29.266194105148315,
+ "final": "Cross-references are unanimous: HGNC:21558 \u2192 **RSPH4A**, Ensembl ENSG00000111834 display_name = **RSPH4A**, GeneID 345895, and the protein itself is \"Radial spoke head protein 4 homolog A\" (entry ID RSH4A_HUMAN, disease CILD11 = primary ciliary dyskinesia 11, an RSPH4A phenotype). The `geneName` field in the UniProt record oddly reads \"PTX3\" (a pentraxin gene unrelated to this protein) \u2014 this is clearly a misassigned gene name in the entry, contradicted by every cross-reference.\n\n1. [\u2713] Query UniProt for accession Q5TD94\n2. [\u2713] Extract the encoding gene symbol\n3. [\u2713] Resolve gene-name conflict via HGNC/Ensembl/GeneID cross-references\n4. [\u2713] Return JSON with answer and concerns\n\n<solution>{\"answer\": \"RSPH4A\", \"concerns\": [\"UniProt entry Q5TD94 (RSH4A_HUMAN, 'Radial spoke head protein 4 homolog A') lists geneName as 'PTX3' with synonym 'RSHL3', which conflicts with all cross-references (HGNC:21558 = RSPH4A, Ensembl ENSG00000111834 display_name = RSPH4A, GeneID 345895, MIM 612647, disease CILD11). The 'PTX3' gene name in the record appears to be a data error/misassignment; the correct encoding gene symbol is RSPH4A.\"]}</solution>",
+ "error": null,
+ "condition": "plausible"
+}

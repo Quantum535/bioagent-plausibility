@@ -1,0 +1,13 @@
+{"t": 1793744585.127394, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793744585.713965, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact:DNA2+AND+organism_id:9606+AND+reviewed:true&fields=accession,id,gene_names,length,protein_name"}
+{"t": 1793744587.219871, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793744587.78804, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact:FBXW8+AND+organism_id:9606+AND+reviewed:true&fields=accession,id,gene_names,length,protein_name"}
+{"t": 1793744592.5826728, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793744593.18089, "kind": "http", "lib": "netlog_shim.py", "host": "rest.ensembl.org", "method": "GET", "path": "/lookup/symbol/homo_sapiens/DNA2?expand=1;content-type=application/json"}
+{"t": 1793744608.281112, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793744608.8741288, "kind": "http", "lib": "netlog_shim.py", "host": "rest.ensembl.org", "method": "GET", "path": "/lookup/symbol/homo_sapiens/FBXW8?expand=1;content-type=application/json"}
+{"t": 1793744613.496966, "kind": "dns", "lib": "netlog_shim.py", "host": "aiplatform.googleapis.com"}
+{"t": 1793744630.834155, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793744631.389886, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/Q8N3Y1.json"}
+{"t": 1793744631.408593, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793744631.9546869, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/P51530.json"}

@@ -1,0 +1,11 @@
+{"t": 1793728561.577595, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793728562.158963, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/Q8NDP4.json"}
+{"t": 1793728563.265505, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793728563.7880251, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/Q8NDP4.tsv?fields=accession,id,protein_name,gene_names,organism_name,organism_id,lineage,length,sequence_version"}
+{"t": 1793728563.9865549, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793728564.532886, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/Q8NDP4.json"}
+{"t": 1793728566.570593, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793728567.26434, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793728567.826116, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=accession%3AQ8NDP4&fields=accession%2Corganism_name%2Corganism_id%2Clineage&format=json"}
+{"t": 1793728568.095638, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793728568.6499898, "kind": "http", "lib": "netlog_shim.py", "host": "www.ebi.ac.uk", "method": "GET", "path": "/ena/taxonomy/rest/tax-id/9606"}

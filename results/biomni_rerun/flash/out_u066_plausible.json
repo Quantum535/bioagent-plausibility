@@ -1,0 +1,8 @@
+{
+ "task_id": "u066",
+ "slot": 2,
+ "elapsed": 34.34110999107361,
+ "final": "<execute>\nresult_data = data['result']\norganism = result_data.get('organism', {})\nprint(\"Organism info:\", organism)\nprint(\"Protein description:\", result_data.get('proteinDescription'))\nprint(\"Genes:\", result_data.get('genes'))\nprint(\"Lineage:\", organism.get('lineage'))\n <execute>\nprint(\"Entry type:\", result_data.get('entryType'))\nprint(\"Annotation score:\", result_data.get('annotationScore'))\nprint(\"Features summary:\", len(result_data.get('features', [])))\nprint(\"Gene:\", result_data.get('genes'))\nprint(\"Organism:\", result_data.get('organism'))\n Q96DT7 (Zinc finger protein 350 / ZSCAN13) is from the organism *Homo sapiens* (Human), and yes, it is a mammal.\n\n<solution>\nQ96DT7 is from Homo sapiens, and yes, it is a mammal.\n\n```json\n{\n  \"answer\": \"Homo sapiens\",\n  \"concerns\": []\n}\n```\n</execute></solution>",
+ "error": null,
+ "condition": "plausible"
+}

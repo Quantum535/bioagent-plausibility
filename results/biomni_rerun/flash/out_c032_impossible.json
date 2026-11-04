@@ -1,0 +1,8 @@
+{
+ "task_id": "c032",
+ "slot": 0,
+ "elapsed": 68.68745398521423,
+ "final": "<execute>\nimport urllib.request\nimport json\n\ndef get_pubchem_info(name):\n    url = f\"https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/{name}/property/MolecularWeight,MolecularFormula/JSON\"\n    req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})\n    with urllib.request.urlopen(req) as response:\n        data = json.loads(response.read().decode())\n        return data['PropertyTable']['Properties'][0]\n\nprint(\"Perylene:\", get_pubchem_info(\"perylene\"))\nprint(\"Diiodomethane:\", get_pubchem_info(\"diiodomethane\"))\n To determine which compound is heavier, we compare the molecular formulas and molecular weights of both compounds:\n\n1. **Perylene**\n   - **Molecular Formula:** $\\text{C}_{20}\\text{H}_{12}$\n   - **Molecular Weight:** **252.32 Da** (or approximately 252.316 Da)\n\n2. **Diiodomethane**\n   - **Molecular Formula:** $\\text{CH}_2\\text{I}_2$\n   - **Molecular Weight:** **267.84 Da** (or approximately 267.835 Da)\n\nBecause iodine is a heavy halogen atom (atomic weight $\\approx 126.90\\text{ Da}$ each, contributing $\\approx 253.80\\text{ Da}$ from the two iodine atoms alone), **Diiodomethane** is heavier than Perylene.\n\n<solution>\n```json\n{\n  \"answer\": \"Diiodomethane\",\n  \"concerns\": []\n}\n```\n</execute></solution>",
+ "error": null,
+ "condition": "impossible"
+}

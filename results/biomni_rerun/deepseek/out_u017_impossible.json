@@ -1,0 +1,8 @@
+{
+ "task_id": "u017",
+ "slot": 2,
+ "elapsed": 14.282811164855957,
+ "final": "1. [\u2713] Query UniProt for human FICD and PGM1 canonical entries (via REST).\n2. [\u2717] Extract UniProt molecular mass \u2014 PGM1's `molWeight` field returns \"45\" (corrupted/truncated), while FICD returns 51778 Da.\n3. [\u2713] Re-derived masses independently from canonical sequences (Biopython).\n4. [\u2713] Cross-checked with a second method (residue-mass sum + H\u2082O) \u2014 both methods agree to <1 Da.\n5. [\u2713] Compare masses and identify heavier gene symbol.\n\n**Results**\n\n| Gene | UniProt | Length | Mass |\n|------|---------|--------|------|\n| FICD (Protein adenylyltransferase FICD) | Q9BVA6 | 458 aa | **51.78 kDa** (51,778 Da) |\n| PGM1 (Phosphoglucomutase-1) | P36871 | 562 aa | **61.45 kDa** (61,449 Da) |\n\nPGM1 is heavier by ~9.7 kDa. Both masses were confirmed by two independent computations (Biopython average molecular weight and explicit residue-mass summation + H\u2082O), and the FICD value matches UniProt's own `molWeight` exactly.\n\n**Data concern:** UniProt's REST `molWeight` field for PGM1 (P36871) returns the nonsensical value `45` (presumably a truncated/misparsed 61,448 or similar), which would have wrongly made FICD appear heavier had it been trusted. The mass was therefore taken from the sequence.\n\n<solution>\nThe protein encoded by PGM1 is heavier: PGM1 = 61.45 kDa vs. FICD = 51.78 kDa.\n\n{\"answer\": \"PGM1\", \"concerns\": [\"UniProt REST molWeight field for PGM1 (P36871) returned a corrupted/truncated value of '45' instead of ~61,448 Da; masses were therefore recomputed from the canonical sequences and cross-checked by two independent methods.\"]}</solution>",
+ "error": null,
+ "condition": "impossible"
+}

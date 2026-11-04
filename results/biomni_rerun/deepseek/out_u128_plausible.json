@@ -1,0 +1,8 @@
+{
+ "task_id": "u128",
+ "slot": 0,
+ "elapsed": 15.750975131988525,
+ "final": "1. [\u2717] Query UniProt for human **UPB1** protein length (wrapper unusable)\n2. [\u2717] Query UniProt for **NDUFS8** (wrapper unusable)\n3. [ ] Query UniProt REST API directly with `requests` (fix syntax error)\n4. [ ] Compare canonical protein lengths\n5. [ ] Return required JSON\n\n<solution>\nLet me redo the direct query cleanly.\n\n<execute>\nimport requests\n\ndef get_uniprot(gene):\n    url = \"https://rest.uniprot.org/uniprotkb/search\"\n    params = {\n        \"query\": f\"gene_exact:{gene} AND organism_id:9606 AND reviewed:true\",\n        \"format\": \"tsv\",\n        \"size\": 10,\n        \"fields\": \"accession,entry_name,protein_name,gene_names,organism_name,length\"\n    }\n    r = requests.get(url, params=params, timeout=30)\n    print(f\"--- {gene} | HTTP {r.status_code} ---\")\n    print(r.text)\n    return r.text\n\nprint(\"=== NDUFS8 ===\")\nndu = fetch_uniprot(\"NDUFS8\")\nprint(\"=== UPB1 ===\")\nupu = fetch_uniprot(\"UPB1\")</execute></solution>",
+ "error": null,
+ "condition": "plausible"
+}

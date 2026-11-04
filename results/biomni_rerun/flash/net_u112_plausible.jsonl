@@ -1,0 +1,9 @@
+{"t": 1793745140.335066, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact:ACOT7+AND+organism_id:9606+AND+reviewed:true&fields=accession,id,gene_names,length,sequence"}
+{"t": 1793745140.335571, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793745141.2995782, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact:PTRH2+AND+organism_id:9606+AND+reviewed:true&fields=accession,id,gene_names,length,sequence"}
+{"t": 1793745141.299863, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793745146.012918, "kind": "http", "lib": "netlog_shim.py", "host": "rest.ensembl.org", "method": "GET", "path": "/lookup/symbol/homo_sapiens/ACOT7?expand=1"}
+{"t": 1793745146.013212, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793745185.603777, "kind": "http", "lib": "netlog_shim.py", "host": "rest.ensembl.org", "method": "GET", "path": "/lookup/symbol/homo_sapiens/PTRH2?expand=1"}
+{"t": 1793745185.6045408, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793745210.064575, "kind": "dns", "lib": "netlog_shim.py", "host": "aiplatform.googleapis.com"}

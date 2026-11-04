@@ -1,0 +1,8 @@
+{
+ "task_id": "u077",
+ "slot": 0,
+ "elapsed": 30.762367963790894,
+ "final": "The canonical protein isoforms and masses for human AHCYL2 and ZNF835 in UniProt are:\n- **AHCYL2** (UniProt: Q96HN2, canonical isoform 1): 611 amino acids, molecular mass of **66.721 kDa** (66,721 Da). (Other isoforms range from ~56.7 kDa to 66.6 kDa).\n- **ZNF835** (UniProt: Q9Y2P0): 671 amino acids, molecular mass of **74.539 kDa** (74,539 Da).\n\nComparing the two proteins, **ZNF835** is heavier than AHCYL2.\n\n<solution>\nThe protein encoded by **ZNF835** is heavier than that encoded by **AHCYL2**.\n\n- **ZNF835** mass: ~74.54 kDa (74,539 Da)\n- **AHCYL2** mass: ~66.72 kDa (66,721 Da for the canonical isoform)\n\n{\"answer\": \"ZNF835\", \"concerns\": []}\n</solution>",
+ "error": null,
+ "condition": "plausible"
+}

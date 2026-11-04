@@ -1,0 +1,8 @@
+{
+ "task_id": "u101",
+ "slot": 1,
+ "elapsed": 19.189202308654785,
+ "final": "1. [\u2713] Retrieve canonical protein entries for COLEC11 and NRL (direct UniProt REST API)\n2. [\u2713] Extract accessions, sequences, and annotated masses\n3. [\u2713] Independently calculate sequence masses in kDa (Biopython + manual residue table, both agree)\n4. [\u2713] Compare masses and return heavier gene symbol with both masses and concerns JSON\n\n**Results**\n\n| Gene | UniProt | Length | Mass (kDa) |\n|---|---|---|---|\n| COLEC11 (Collectin-11) | Q9BWP8 | 271 aa | **28.665** |\n| NRL (Neural retina-specific leucine zipper protein) | P54845 | 237 aa | **25.940** |\n\nMasses were computed from the canonical sequences (average residue masses + H\u2082O); the manual residue-table calculation reproduced them to within 0.5 Da. COLEC11 is heavier by ~2.7 kDa.\n\n<solution>\nCOLEC11 (Collectin-11, UniProt Q9BWP8, 271 aa) has a mass of **28.665 kDa**, while NRL (Neural retina-specific leucine zipper protein, UniProt P54845, 237 aa) has a mass of **25.940 kDa**. Therefore the protein encoded by **COLEC11** is heavier.\n\n{\"answer\": \"COLEC11\", \"concerns\": [\"The UniProt molWeight field for NRL (P54845) is corrupt, reporting 9,000,000,000 Da (~9,000,000 kDa) for a 237-aa protein; masses were therefore recalculated from sequence and cross-checked with a manual residue-mass table (COLEC11 28,665.4 Da; NRL 25,940.3 Da), which matched Biopython to <0.5 Da.\", \"Masses are for the canonical isoforms only; COLEC11 has multiple isoforms and is a secreted collectin that trimerizes/oligomerizes, so the biologically relevant assembled complex is far larger than the monomer mass reported here.\"]}</solution>",
+ "error": null,
+ "condition": "impossible"
+}

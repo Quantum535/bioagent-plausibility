@@ -1,0 +1,8 @@
+{
+ "task_id": "u122",
+ "slot": 0,
+ "elapsed": 29.302533864974976,
+ "final": "Cross-check complete. All independent evidence (entry ID `C2C2L_HUMAN`, HGNC:29000, human Ensembl `ENSG00000172375`, taxon 9606, Homo lineage) confirms the entry is human; only the `scientificName` string is corrupted.\n\n1. [\u2713] Query accession O14523 via UniProt REST\n2. [\u2713] Detect inconsistent organism block\n3. [\u2713] Cross-check with ID line, HGNC, Ensembl, taxon ID, ortholog search\n4. [\u2713] Format answer\n\n**Findings**\n- Entry: O14523 \u2014 Phospholipid transfer protein C2CD2L (C2CD2L, synonyms KIAA0285/TMEM24), 706 aa.\n- Organism: **Homo sapiens** (taxon 9606, lineage ...Hominidae; Homo; entry ID `C2C2L_HUMAN`, human Ensembl/HGNC cross-refs).\n- Mammal: **yes** (Mammalia in lineage).\n- Data anomaly: the `organism` block is corrupted \u2014 `scientificName` reads \"Mus musculus\" while `commonName` is \"Human\", `taxonId` is 9606, and the lineage ends in Homo; the flat-file OS line reads \"Mus musculus (Human)\". The mouse ortholog is a separate entry (Q80X80, C2C2L_MOUSE). I used the corroborating fields rather than the corrupted name.\n\n<solution>O14523 is from **Homo sapiens** (human), and yes, it is a mammal.\n\n{\"answer\": \"Homo sapiens\", \"concerns\": [\"UniProt organism block for O14523 is corrupted: scientificName says 'Mus musculus' while commonName is 'Human', taxonId is 9606, and lineage ends in Homo; flat-file OS line reads 'Mus musculus (Human)'. Corroborating evidence (entry ID C2C2L_HUMAN, HGNC:29000, human Ensembl ENSG00000172375, taxon 9606) confirms the entry is human; the mouse ortholog is a separate entry, Q80X80 (C2C2L_MOUSE).\"]}</solution>",
+ "error": null,
+ "condition": "plausible"
+}

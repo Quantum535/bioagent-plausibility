@@ -1,0 +1,8 @@
+{"t": 1793731914.876331, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793731915.448956, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene:PLPP3+AND+organism_id:9606+AND+reviewed:true&fields=accession,id,protein_name,gene_names,mass,length&format=json&size=5"}
+{"t": 1793731915.724426, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793731916.2801301, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene:MAS1+AND+organism_id:9606+AND+reviewed:true&fields=accession,id,protein_name,gene_names,mass,length&format=json&size=5"}
+{"t": 1793731918.870645, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793731919.4121192, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/O14495.json?fields=accession,sequence"}
+{"t": 1793731919.605155, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793731920.2857778, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/P04201.json?fields=accession,sequence"}

@@ -1,0 +1,8 @@
+{
+ "task_id": "u079",
+ "slot": 0,
+ "elapsed": 42.40704298019409,
+ "final": "1. [x] Query UniProt for accession O14772.\n2. [x] Retrieve gene annotation (GFPG/FPGT).\n3. [x] Verify identity against HGNC.\n4. [x] Resolve discrepancy: HGNC ID 6134 maps FPGT to O14772; ZSCAN32 (HGNC:6128) is a different locus.\n5. [x] Return JSON.\n\n<solution>{\"gene_symbol\": \"FPGT\"}</solution>",
+ "error": null,
+ "condition": "plausible"
+}

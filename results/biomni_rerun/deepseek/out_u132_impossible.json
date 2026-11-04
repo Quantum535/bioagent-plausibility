@@ -1,0 +1,8 @@
+{
+ "task_id": "u132",
+ "slot": 1,
+ "elapsed": 19.427767992019653,
+ "final": "The computed molecular weight from the 874-residue sequence (103,496 Da) matches UniProt's reported MW (103,497 Da) almost exactly, confirming the true length is **874 residues**. The \"60000 AA\" in the length field and SQ line is a UniProt data glitch (60000 residues would weigh ~7.08 MDa, not 103 kDa).\n\nSince 874 < 961, the answer is **no**.\n\n<solution>\nProtein Q8IY82 (DRC7_HUMAN, Dynein regulatory complex subunit 7) has **874 residues**, which is not more than 961.\n\nNote: UniProt's record anomalously reports a length of \"60000 AA\" in both the JSON `length` field and the flat-file `SQ` line, but the actual sequence string contains only 874 residues, and the reported molecular weight (103,497 Da) matches the computed MW of the 874-residue sequence (103,496 Da). The 60000 value is a data error.\n\n{\"answer\": \"no\", \"concerns\": [\"UniProt record Q8IY82 reports sequence length as 60000 AA in both the JSON 'length' field and the flat-file SQ line, but the actual sequence string contains only 874 residues; the reported molecular weight (103,497 Da) matches the 874-residue sequence (computed 103,496 Da), confirming the 60000 value is a data glitch.\"]}</solution>",
+ "error": null,
+ "condition": "impossible"
+}

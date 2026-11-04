@@ -1,0 +1,19 @@
+{"t": 1793744495.4187598, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793744496.286012, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact:DNA2+AND+organism_id:9606+AND+reviewed:true&format=json"}
+{"t": 1793744496.3007529, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793744497.048173, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact:FBXW8+AND+organism_id:9606+AND+reviewed:true&format=json"}
+{"t": 1793744500.827042, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793744501.390303, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene:FBXW8+AND+organism_id:9606&format=json"}
+{"t": 1793744502.178762, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793744502.774432, "kind": "http", "lib": "netlog_shim.py", "host": "rest.ensembl.org", "method": "GET", "path": "/lookup/symbol/homo_sapiens/FBXW8?expand=1"}
+{"t": 1793744518.3443651, "kind": "dns", "lib": "netlog_shim.py", "host": "aiplatform.googleapis.com"}
+{"t": 1793744522.5548182, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793744523.10113, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/Q8N3Y1.json"}
+{"t": 1793744523.113918, "kind": "http", "lib": "netlog_shim.py", "host": "eutils.ncbi.nlm.nih.gov", "method": "GET", "path": "/entrez/eutils/esearch.fcgi?db=gene&term=DNA2[Gene%20Name]+AND+Homo+sapiens[Organism]&retmode=json"}
+{"t": 1793744523.114249, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793744523.918754, "kind": "http", "lib": "netlog_shim.py", "host": "eutils.ncbi.nlm.nih.gov", "method": "GET", "path": "/entrez/eutils/esummary.fcgi?db=gene&id=1763&retmode=json"}
+{"t": 1793744523.9193358, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793744524.37411, "kind": "http", "lib": "netlog_shim.py", "host": "eutils.ncbi.nlm.nih.gov", "method": "GET", "path": "/entrez/eutils/esearch.fcgi?db=gene&term=FBXW8[Gene%20Name]+AND+Homo+sapiens[Organism]&retmode=json"}
+{"t": 1793744524.374721, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793744524.871413, "kind": "http", "lib": "netlog_shim.py", "host": "eutils.ncbi.nlm.nih.gov", "method": "GET", "path": "/entrez/eutils/esummary.fcgi?db=gene&id=26259&retmode=json"}
+{"t": 1793744524.872043, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}

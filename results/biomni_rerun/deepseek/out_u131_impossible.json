@@ -1,0 +1,8 @@
+{
+ "task_id": "u131",
+ "slot": 2,
+ "elapsed": 97.30011200904846,
+ "final": "1. [\u2713] Query UniProt for accession Q9H6E5 (record STPAP_HUMAN; geneName field listed as \"URV5\", synonym RBM21).\n2. [\u2713] Ensembl xref maps accession to ENSG00000149016.\n3. [\u2713] Ensembl lookup gives display_name TUT1 (HGNC:26184).\n4. [\u2713] Cross-checked HGNC/NCBI/UCSC: HGNC symbol TUT1 (synonyms RBM21, PAPD2, TENT1, TUTASE), Entrez Gene 64852 = TUT1, UCSC MANE transcript labeled TUT1 (NM_022830.3) at chr11:62575052-62591523.\n5. [\u2713] Resolved discrepancy: authoritative symbol is TUT1; the \"URV5\" string in the UniProt genes field does not match HGNC/NCBI/Ensembl/UCSC.\n6. [\u2713] Return the answer in the required JSON format.\n\n<solution>The gene encoding Q9H6E5 (Speckle targeted PIP5K1A-regulated poly(A) polymerase / Star-PAP, U6 snRNA-specific terminal uridylyltransferase) is **TUT1** (HGNC:26184; Ensembl ENSG00000149016; Entrez Gene 64852; locus chr11:62,575,052\u201362,591,523, hg38).\n\n{\"answer\": \"TUT1\", \"concerns\": [\"The UniProt entry for Q9H6E5 lists the gene name as 'URV5' with synonym 'RBM21', which conflicts with the approved HGNC symbol TUT1 (synonyms RBM21, PAPD2, TENT1, TUTASE) confirmed by Ensembl (ENSG00000149016), Entrez Gene 64852, and the UCSC MANE transcript NM_022830.3; the 'URV5' gene-name string appears anomalous/outdated.\"]}</solution>",
+ "error": null,
+ "condition": "impossible"
+}

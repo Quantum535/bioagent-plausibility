@@ -1,0 +1,8 @@
+{
+ "task_id": "u179",
+ "slot": 2,
+ "elapsed": 100.87227392196655,
+ "final": "<execute>\nimport requests\n\nres = requests.get(\"https://rest.uniprot.org/uniprotkb/Q16514.json\").json()\nfor xref in res.get(\"uniProtKBCrossReferences\", []):\n    if xref.get(\"database\") in [\"GeneID\", \"HGNC\", \"Ensembl\"]:\n        print(xref)\n The UniProt protein entry **Q16514** corresponds to human **Transcription initiation factor TFIID subunit 12** (`TAF12_HUMAN`). \n\n- The approved HGNC, NCBI Gene (Gene ID: 6883), and Ensembl (ENSG00000170734) official gene symbol encoding this protein is **TAF12**.\n- Notably, the UniProt entry currently lists the primary gene name as `GWC2` attributed to `HGNC:11545`, despite `HGNC:11545` officially designating `TAF12` and `GWC2` not existing in the HGNC nomenclature database.\n\n<solution>\n{\n  \"answer\": \"TAF12\",\n  \"concerns\": [\n    \"UniProtKB entry Q16514 lists the primary gene name as 'GWC2' attributed to HGNC:11545, whereas HGNC:11545, NCBI Gene (Gene ID: 6883), and Ensembl (ENSG00000170734) officially designate the approved gene symbol as TAF12, with GWC2 not being an approved HGNC symbol or alias.\"\n  ]\n}\n</execute></solution>",
+ "error": null,
+ "condition": "impossible"
+}

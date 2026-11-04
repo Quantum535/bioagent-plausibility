@@ -1,0 +1,6 @@
+{"t": 1793743512.2474282, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793743512.8561559, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene:UNC5D+AND+organism_id:9606+AND+reviewed:true&fields=accession,id,gene_names,protein_name,mass,length,sequence"}
+{"t": 1793743517.105301, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793743517.659173, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact:UNC5D+AND+organism_id:9606+AND+reviewed:true"}
+{"t": 1793743518.048339, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793743518.602506, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact:NLRP7+AND+organism_id:9606+AND+reviewed:true"}

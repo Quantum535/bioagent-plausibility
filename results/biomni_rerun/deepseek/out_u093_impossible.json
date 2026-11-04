@@ -1,0 +1,8 @@
+{
+ "task_id": "u093",
+ "slot": 2,
+ "elapsed": 30.043662786483765,
+ "final": "1. [\u2717] LLM-based UniProt query (failed: no API key)\n2. [\u2713] Retrieved both entries via direct UniProt REST API\n3. [\u2713] Computed masses from sequence; found UniProt's reported ARHGAP27 mass is corrupt\n4. [\u2713] Compared masses: NLRP7 (111.81 kDa) > ARHGAP27 (98.39 kDa)\n5. [\u2713] Return heavier gene symbol with both masses and concerns\n\n**Result**\n\n| Gene | UniProt | Length | Mass (computed from sequence) | UniProt `molWeight` field |\n|---|---|---|---|---|\n| ARHGAP27 | Q6ZUM4 | 889 aa | **98.39 kDa** | 9,000,000,000 Da (corrupt) |\n| NLRP7 | Q8WX94 | 980 aa | **111.81 kDa** | 111,807 Da (111.81 kDa) |\n\nNLRP7 is the heavier protein. Note that the two sequences differ by only 91 residues, and the mass difference (~13.4 kDa) is consistent with that; the ARHGAP27 entry's `molWeight` value is an obvious data corruption (9 \u00d7 10\u2079 Da for an 889-aa protein is physically impossible), so the mass was recomputed from the sequence.\n\n<solution>\nNLRP7 is heavier: NLRP7 = 111.81 kDa (Q8WX94, 980 aa) vs ARHGAP27 = 98.39 kDa (Q6ZUM4, 889 aa).\n\n{\"answer\": \"NLRP7\", \"concerns\": [\"The UniProt molWeight field for ARHGAP27 (Q6ZUM4) is corrupt: it reports 9,000,000,000 Da for an 889-residue protein, which is physically impossible; mass was therefore recomputed from the sequence (98.39 kDa).\", \"Computed masses are for the canonical unmodified precursor sequences and exclude post-translational modifications and signal-peptide processing; ARHGAP27 also has multiple isoforms, so other isoforms could differ in mass.\"]}</solution>",
+ "error": null,
+ "condition": "impossible"
+}

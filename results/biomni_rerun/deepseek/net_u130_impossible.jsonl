@@ -1,0 +1,27 @@
+{"t": 1793732049.746249, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793732050.377984, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/Q9BT40.json"}
+{"t": 1793732050.745035, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793732051.303128, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/Q9BT40.json"}
+{"t": 1793732052.000109, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793732052.576745, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/Q9BT40.txt"}
+{"t": 1793732052.5807061, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793732053.170122, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/Q9BT40.tsv?fields=accession,id,protein_name,organism_name,organism_id,lineage"}
+{"t": 1793732054.9158971, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793732055.4636002, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=accession%3AQ9BT40+AND+organism_id%3A9606&fields=accession%2Corganism_name%2Corganism_id%2Cprotein_name&format=tsv"}
+{"t": 1793732055.7515678, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793732056.310743, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=accession%3AQ9BT40+AND+organism_id%3A83333&fields=accession%2Corganism_name%2Corganism_id&format=tsv"}
+{"t": 1793732056.56788, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793732057.1365068, "kind": "http", "lib": "netlog_shim.py", "host": "rest.ensembl.org", "method": "GET", "path": "/lookup/symbol/homo_sapiens/INPP5K?content-type=application/json"}
+{"t": 1793732087.1719239, "kind": "dns", "lib": "netlog_shim.py", "host": "api.together.xyz"}
+{"t": 1793732089.8709178, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793732090.4516962, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=accession%3AQ9BT40+AND+organism_id%3A9606&format=tsv&fields=accession%2Corganism_name%2Corganism_id"}
+{"t": 1793732090.752139, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793732091.3164759, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=accession%3AQ9BT40+AND+organism_id%3A10090&format=tsv&fields=accession%2Corganism_name%2Corganism_id"}
+{"t": 1793732091.60945, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793732092.207072, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=accession%3AQ9BT40+AND+organism_id%3A83333&format=tsv&fields=accession%2Corganism_name%2Corganism_id"}
+{"t": 1793732092.407582, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793732092.992373, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/Q9BT40.json"}
+{"t": 1793732094.511221, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793732095.057232, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/taxonomy/9606"}
+{"t": 1793732095.0684721, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793732095.657727, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene%3AINPP5K+AND+organism_id%3A9606+AND+reviewed%3Atrue&format=tsv&fields=accession%2Cid%2Corganism_name%2Corganism_id%2Cprotein_name&size=5"}

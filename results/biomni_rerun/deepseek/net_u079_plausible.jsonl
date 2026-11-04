@@ -1,0 +1,14 @@
+{"t": 1793730238.464034, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793730239.044853, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/O14772.json"}
+{"t": 1793730240.4329169, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793730240.995074, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=FPGT_HUMAN&fields=accession%2Cid%2Cgene_names%2Cprotein_name&format=tsv&size=10"}
+{"t": 1793730241.3319628, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793730241.897068, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene%3AFPGT+AND+organism_id%3A9606&fields=accession%2Cid%2Cgene_names%2Cprotein_name&format=tsv&size=10"}
+{"t": 1793730242.1971998, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793730242.7624462, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene%3AZSCAN32+AND+organism_id%3A9606&fields=accession%2Cid%2Cgene_names%2Cprotein_name&format=tsv&size=10"}
+{"t": 1793730244.767987, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793730244.950281, "kind": "http", "lib": "netlog_shim.py", "host": "rest.genenames.org", "method": "GET", "path": "/fetch/hgnc_id/3825"}
+{"t": 1793730245.161526, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793730245.293524, "kind": "http", "lib": "netlog_shim.py", "host": "rest.genenames.org", "method": "GET", "path": "/search/symbol/FPGT"}
+{"t": 1793730245.5027049, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793730245.6403599, "kind": "http", "lib": "netlog_shim.py", "host": "rest.genenames.org", "method": "GET", "path": "/search/symbol/ZSCAN32"}

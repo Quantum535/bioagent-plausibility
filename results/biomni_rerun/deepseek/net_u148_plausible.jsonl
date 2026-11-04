@@ -1,0 +1,15 @@
+{"t": 1793732895.605778, "kind": "http", "lib": "netlog_shim.py", "host": "eutils.ncbi.nlm.nih.gov", "method": "GET", "path": "/entrez/eutils/efetch.fcgi?db=protein&id=NP_115759.2&rettype=fasta&retmode=text"}
+{"t": 1793732895.606472, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793732896.028756, "kind": "http", "lib": "netlog_shim.py", "host": "eutils.ncbi.nlm.nih.gov", "method": "GET", "path": "/entrez/eutils/efetch.fcgi?db=protein&id=NP_001295187.1&rettype=fasta&retmode=text"}
+{"t": 1793732896.0293, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793732896.454386, "kind": "http", "lib": "netlog_shim.py", "host": "rest.ensembl.org", "method": "GET", "path": "/sequence/id/ENSP00000296051?content-type=application/json"}
+{"t": 1793732896.454738, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793732906.2221131, "kind": "dns", "lib": "netlog_shim.py", "host": "api.together.xyz"}
+{"t": 1793732907.8291872, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/Q969F9.txt"}
+{"t": 1793732907.8295958, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793732908.453055, "kind": "http", "lib": "netlog_shim.py", "host": "alphafold.ebi.ac.uk", "method": "GET", "path": "/api/prediction/Q969F9"}
+{"t": 1793732908.453262, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793732916.116381, "kind": "http", "lib": "netlog_shim.py", "host": "www.ebi.ac.uk", "method": "GET", "path": "/proteins/api/proteins/Q969F9?format=fasta"}
+{"t": 1793732916.1169631, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793732916.934706, "kind": "http", "lib": "netlog_shim.py", "host": "eutils.ncbi.nlm.nih.gov", "method": "GET", "path": "/entrez/eutils/efetch.fcgi?db=nuccore&id=NM_032383.5&rettype=gb&retmode=text"}
+{"t": 1793732916.935342, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}

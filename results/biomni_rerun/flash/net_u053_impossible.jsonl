@@ -1,0 +1,6 @@
+{"t": 1793741239.131372, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793741239.6974862, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact:HORMAD1+AND+organism_id:9606&fields=accession,id,gene_names,protein_name,sequence,mass"}
+{"t": 1793741243.5576708, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793741244.449311, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact:HORMAD1+AND+organism_id:9606+AND+reviewed:true"}
+{"t": 1793741244.790443, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793741246.026638, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact:INPP5K+AND+organism_id:9606+AND+reviewed:true"}

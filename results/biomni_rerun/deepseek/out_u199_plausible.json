@@ -1,0 +1,8 @@
+{
+ "task_id": "u199",
+ "slot": 1,
+ "elapsed": 40.5478937625885,
+ "final": "The accession P08912 corresponds to the human muscarinic acetylcholine receptor M5 (ACM5_HUMAN). Although the record's `geneName` field anomalously returned \"PSTPIP1\", all independent cross-references \u2014 GeneID 1133 and Ensembl ENSG00000184984 \u2014 unambiguously identify the gene as **CHRM5** (cholinergic receptor muscarinic 5). The correct gene symbol is CHRM5.\n\n<solution>{\"answer\": \"CHRM5\", \"concerns\": [\"The UniProt record for P08912 (M5 muscarinic acetylcholine receptor) returned an incorrect gene name field: 'PSTAM1' instead of 'CHRM5'. This is contradicted by the protein name (Muscarinic acetylcholine receptor M5), GeneID 1133 (CHRM5), and Ensembl ENSG00000184984 (CHRM5), all of which confirm CHRM5.\"]}</solution>",
+ "error": null,
+ "condition": "plausible"
+}

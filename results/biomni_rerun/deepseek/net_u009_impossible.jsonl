@@ -1,0 +1,4 @@
+{"t": 1793728084.357711, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793728084.908581, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene:NETO1+AND+organism_id:9606+AND+reviewed:true&fields=accession,id,protein_name,gene_names,mass,length,sequence&format=json&size=10"}
+{"t": 1793728085.6218271, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793728086.1968691, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene:POLL+AND+organism_id:9606+AND+reviewed:true&fields=accession,id,protein_name,gene_names,mass,length,sequence&format=json&size=10"}

@@ -1,0 +1,12 @@
+{"t": 1793732579.335951, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793732579.924451, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=%28gene%3ADIXDC1+OR+gene%3ADNAJC11%29+AND+organism_id%3A9606+AND+reviewed%3Atrue&format=json&size=10&fields=accession%2Cgene_names%2Cprotein_name%2Cmass%2Clength%2Csequence"}
+{"t": 1793732580.867568, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793732581.687867, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=%28gene%3ADIXDC1+OR+gene%3ADNAJC11%29+AND+organism_id%3A9606+AND+reviewed%3Atrue&format=json&size=10&fields=accession%2Cgene_names%2Cprotein_name%2Cmass%2Clength%2Csequence"}
+{"t": 1793732582.6839218, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793732583.254953, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=accession%3AQ9NVH1&format=json&fields=accession%2Cid%2Csequence%2Cprotein_name"}
+{"t": 1793732583.529213, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793732584.121399, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/Q9NVH1.json"}
+{"t": 1793732584.132454, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793732584.7554991, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=accession%3AQ155Q3&format=json&fields=accession%2Cid%2Csequence%2Cprotein_name"}
+{"t": 1793732585.042342, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793732585.6488802, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/Q155Q3.json"}

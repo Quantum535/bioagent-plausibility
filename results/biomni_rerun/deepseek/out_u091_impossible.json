@@ -1,0 +1,8 @@
+{
+ "task_id": "u091",
+ "slot": 2,
+ "elapsed": 26.894511938095093,
+ "final": "1. [\u2713] Direct endpoint query succeeded for P49137.\n2. [\u2717] UniProt's record lists geneName \"HAB5\" \u2014 anomalous: no UniProt entry anywhere uses HAB5, though the entry is still retrieved by a gene:MAPKAPK2 query.\n3. [\u2713] HGNC/Ensembl confirm MAPKAPK2 \u2194 P49137 (HGNC:6887, ENSG00000162889).\n4. [\u2713] NCBI Gene (9261) and OpenTargets both give approved symbol MAPKAPK2.\n\nAll independent sources (HGNC, Ensembl, NCBI Gene, OpenTargets) agree that P49137 is MAPKAPK2 (MAPK activated protein kinase 2 / MK2); the UniProt \"HAB5\" gene name appears to be a data anomaly.\n\n<solution>{\"answer\": \"MAPKAPK2\", \"concerns\": [\"UniProt record P49137 (MAPK2_HUMAN) currently lists geneName 'HAB5', which conflicts with the protein name (MAP kinase-activated protein kinase 2 / MK2) and with HGNC, Ensembl, NCBI Gene and OpenTargets, all of which give MAPKAPK2. No UniProt entry anywhere uses the symbol HAB5, yet the P49137 entry is still returned by a gene:MAPKAPK2 query, suggesting a corrupted or erroneous gene-name field in the UniProt record.\"]}</solution>",
+ "error": null,
+ "condition": "impossible"
+}

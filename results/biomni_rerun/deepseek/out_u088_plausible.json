@@ -1,0 +1,8 @@
+{
+ "task_id": "u088",
+ "slot": 2,
+ "elapsed": 18.20722794532776,
+ "final": "1. [\u2713] Query UniProt REST API directly (ARMC9 Q7Z3E5 = 818 aa; TACR3 P29371 = 372 aa)\n2. [\u2713] Compare lengths: 2 \u00d7 372 = 744; 818 \u2265 744 \u2192 yes\n3. [\u2713] Report answer\n\nBoth canonical reviewed human entries were retrieved directly from UniProtKB. ARMC9 (Q7Z3E5) is 818 amino acids and TACR3 (P29371) is 372 amino acids; the threshold for \"twice as long\" is 744 aa, which ARMC9 exceeds.\n\n<solution>\nYes \u2014 ARMC9 (UniProt Q7Z3E5, canonical human) is 818 amino acids long, while TACR3 (UniProt P29371, canonical human) is 372 amino acids long. Since 818 \u2265 2 \u00d7 372 = 744, ARMC9 is more than twice as long as TACR3.\n\n{\"answer\": \"yes\", \"concerns\": [\"ARMC9 has multiple annotated isoforms with differing lengths; the comparison uses the canonical (reviewed) sequence of 818 aa, so results could differ if a shorter isoform were used.\"]}</solution>",
+ "error": null,
+ "condition": "plausible"
+}

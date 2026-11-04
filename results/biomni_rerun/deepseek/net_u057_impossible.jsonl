@@ -1,0 +1,17 @@
+{"t": 1793729433.801302, "kind": "http", "lib": "netlog_shim.py", "host": "eutils.ncbi.nlm.nih.gov", "method": "GET", "path": "/entrez/eutils/esearch.fcgi?db=gene&term=Homo+sapiens%5BOrganism%5D+AND+TNFRSF10B%5BGene%5D&retmax=5&tool=biopython"}
+{"t": 1793729433.801879, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793729434.172698, "kind": "http", "lib": "netlog_shim.py", "host": "eutils.ncbi.nlm.nih.gov", "method": "GET", "path": "/entrez/eutils/efetch.fcgi?db=gene&id=8795&rettype=gb&retmode=xml&tool=biopython"}
+{"t": 1793729434.173161, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793729435.7010581, "kind": "http", "lib": "netlog_shim.py", "host": "eutils.ncbi.nlm.nih.gov", "method": "GET", "path": "/entrez/eutils/efetch.fcgi?db=nucleotide&id=NC_000008.11&rettype=gbwithparts&retmode=text&tool=biopython"}
+{"t": 1793729435.701175, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793729474.118088, "kind": "http", "lib": "netlog_shim.py", "host": "eutils.ncbi.nlm.nih.gov", "method": "GET", "path": "/entrez/eutils/esearch.fcgi?db=gene&term=Homo+sapiens%5BOrganism%5D+AND+KLF11%5BGene%5D&retmax=5&tool=biopython"}
+{"t": 1793729474.119004, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793729474.493283, "kind": "http", "lib": "netlog_shim.py", "host": "eutils.ncbi.nlm.nih.gov", "method": "GET", "path": "/entrez/eutils/efetch.fcgi?db=gene&id=8462&rettype=gb&retmode=xml&tool=biopython"}
+{"t": 1793729474.49355, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793729475.396267, "kind": "http", "lib": "netlog_shim.py", "host": "eutils.ncbi.nlm.nih.gov", "method": "GET", "path": "/entrez/eutils/efetch.fcgi?db=nucleotide&id=NC_000002.12&rettype=gbwithparts&retmode=text&tool=biopython"}
+{"t": 1793729475.3964438, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793729518.3373451, "kind": "dns", "lib": "netlog_shim.py", "host": "api.together.xyz"}
+{"t": 1793729522.569099, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793729523.1653051, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact%3ATNFRSF10B+AND+organism_id%3A9606+AND+reviewed%3Atrue&fields=accession%2Cid%2Cprotein_name%2Clength%2Cmass%2Csequence&format=json&size=5"}
+{"t": 1793729523.427802, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793729524.009757, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact%3AKLF11+AND+organism_id%3A9606+AND+reviewed%3Atrue&fields=accession%2Cid%2Cprotein_name%2Clength%2Cmass%2Csequence&format=json&size=5"}

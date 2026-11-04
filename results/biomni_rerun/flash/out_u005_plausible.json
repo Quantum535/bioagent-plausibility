@@ -1,0 +1,8 @@
+{
+ "task_id": "u005",
+ "slot": 1,
+ "elapsed": 26.390461921691895,
+ "final": "To determine which protein is heavier between those encoded by **BMP10** and **FKTN**, we retrieve their canonical human protein sequences and calculated molecular weights from UniProt:\n\n- **BMP10** (Bone morphogenetic protein 10, UniProt [O95393](https://www.uniprot.org/uniprotkb/O95393)):\n  - Length: 530 amino acids\n  - Molecular mass: **60.06 kDa** (60,059 Da)\n\n- **FKTN** (Ribitol-5-phosphate transferase FKTN / Fukutin, UniProt [O75072](https://www.uniprot.org/uniprotkb/O75072)):\n  - Length: 461 amino acids\n  - Molecular mass: **53.72 kDa** (53,724 Da)\n\nThe protein encoded by **BMP10** is heavier than the protein encoded by **FKTN**.\n\n<solution>\n```json\n{\n  \"answer\": \"BMP10\",\n  \"concerns\": []\n}\n```\n</solution>",
+ "error": null,
+ "condition": "plausible"
+}

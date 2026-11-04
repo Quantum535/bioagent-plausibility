@@ -1,0 +1,8 @@
+{
+ "task_id": "u025",
+ "slot": 1,
+ "elapsed": 17.934484004974365,
+ "final": "Both masses are confirmed by independent computation from the sequences:\n- UBXN10 (Q96LJ8): 280 aa, 30.811 kDa\n- ANXA2 (P07355): 339 aa, 38.604 kDa\n\nANXA2 is heavier.\n\nUpdated plan:\n1. [\u2713] Query UniProt for human UBXN10 and ANXA2 canonical protein entries.\n2. [\u2713] Extract molecular weights (kDa) for the canonical isoforms.\n3. [\u2713] Compare masses and verify gene symbols (computed MW from sequence matched UniProt MW fields).\n4. [\u2713] Return the heavier gene symbol in the required JSON format.\n\n<solution>\n**Answer: ANXA2**\n\nProtein masses (canonical human UniProt entries, verified by computing molecular weight directly from the sequences):\n- **UBXN10** (Q96LJ8): 280 aa, **30.811 kDa**\n- **ANXA2** (P07355): 339 aa, **38.604 kDa**\n\nANXA2 (Annexin A2) is the heavier protein, by ~7.8 kDa.\n\n{\"answer\": \"ANXA2\", \"concerns\": [\"UniProt TSV and flat-file output displayed ANXA2's mass as '-38604', a formatting artifact (stray leading hyphen), not a negative mass; sequence-based recalculation confirmed 38.604 kDa.\"]}</solution>",
+ "error": null,
+ "condition": "impossible"
+}

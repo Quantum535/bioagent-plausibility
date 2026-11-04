@@ -1,0 +1,8 @@
+{
+ "task_id": "u150",
+ "slot": 1,
+ "elapsed": 23.476505756378174,
+ "final": "1. [\u2713] Identify the UniProt entry O75072 using available data sources or UniProt API.\n2. [\u2713] Extract the source organism and determine whether it is a mammal.\n3. [\u2713] Return the requested JSON with only the organism in `answer`.\n\nVerification summary:\n\n| Evidence | Value |\n|---|---|\n| Entry ID | `FKTN_HUMAN` |\n| Gene | `FKTN` (synonym `FCMD`) |\n| Protein | Ribitol-5-phosphate transferase FKTN, 461 aa |\n| Taxon ID | 9606 |\n| Taxon 9606 lookup | *Homo sapiens* (Human), rank: species |\n| Lineage | Eukaryota \u2192 Metazoa \u2192 Chordata \u2192 Vertebrata \u2192 **Mammalia** \u2192 Primates \u2192 Hominidae \u2192 *Homo* |\n\nThe `OS`/`scientificName` field reads \"Escherichia coli K-12\", which is contradicted by every other field in the same record (entry mnemonic `_HUMAN`, common name \"Human\", taxon ID 9606, and a full mammalian/primates/*Homo* lineage), as well as by the independent UniProt taxonomy lookup for taxon 9606. So the record's organism is human \u2014 a mammal.\n\n<solution>O75072 (FKTN_HUMAN, ribitol-5-phosphate transferase FKTN) is from **Homo sapiens** (human), which **is** a mammal (lineage includes Mammalia; taxon ID 9606).\n\n{\"answer\": \"Homo sapiens\", \"concerns\": [\"The UniProt record's organism scientificName field is corrupted/mismatched: it reads 'Escherichia coli K-12' (and the OS line 'Escherichia coli K-12 (Human)') despite the entry mnemonic FKTN_HUMAN, commonName 'Human', taxonId 9606, and a fully mammalian/primates/Homo lineage; UniProt taxonomy lookup for taxon 9606 confirms Homo sapiens.\"]}</solution>",
+ "error": null,
+ "condition": "impossible"
+}

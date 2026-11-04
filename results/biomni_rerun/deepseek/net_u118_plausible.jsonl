@@ -1,0 +1,14 @@
+{"t": 1793731724.408343, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793731725.185817, "kind": "http", "lib": "netlog_shim.py", "host": "uniprot.org", "method": "GET", "path": "/"}
+{"t": 1793731725.36462, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793731725.967618, "kind": "http", "lib": "netlog_shim.py", "host": "www.uniprot.org", "method": "GET", "path": "/"}
+{"t": 1793731726.706031, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793731727.269067, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/P28069.json"}
+{"t": 1793731729.636933, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793731730.29811, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/P28069.json"}
+{"t": 1793731730.3094468, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793731730.873012, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=accession%3AP28069&format=json&fields=accession%2Cid%2Corganism_name%2Corganism_id%2Cprotein_name"}
+{"t": 1793731732.908496, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793731733.499413, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/P28069.txt"}
+{"t": 1793731733.509175, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793731733.680135, "kind": "http", "lib": "netlog_shim.py", "host": "eutils.ncbi.nlm.nih.gov", "method": "GET", "path": "/entrez/eutils/esummary.fcgi?db=taxonomy&id=9606&retmode=json"}

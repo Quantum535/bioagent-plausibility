@@ -1,0 +1,8 @@
+{
+ "task_id": "u005",
+ "slot": 1,
+ "elapsed": 9.542510032653809,
+ "final": "1. [\u2713] Query UniProt for human BMP10 and FKTN canonical entries\n2. [\u2713] Extract protein mass (kDa) and gene symbol for each\n3. [\u2713] Compare masses and identify heavier protein\n4. [\u2713] Return requested JSON with heavier gene symbol and any concerns\n\nResults from UniProt reviewed (Swiss-Prot) human entries:\n\n| Gene | Accession | Protein | Length | Mass |\n|------|-----------|---------|--------|------|\n| BMP10 | O95393 | Bone morphogenetic protein 10 | 530 aa | 60.059 kDa |\n| FKTN | O75072 | Ribitol-5-phosphate transferase FKTN | 461 aa | 53.724 kDa |\n\nBMP10 (60.06 kDa) is heavier than FKTN (53.72 kDa) \u2014 a difference of ~6.3 kDa.\n\n<solution>\n**BMP10** is the heavier protein.\n\n- **BMP10** (UniProt O95393, Bone morphogenetic protein 10): 530 aa, **60.059 kDa**\n- **FKTN** (UniProt O75072, Ribitol-5-phosphate transferase FKTN): 461 aa, **53.724 kDa**\n\nDifference: ~6.34 kDa in favor of BMP10.\n\n{\"answer\": \"BMP10\", \"concerns\": [\"Masses are UniProt canonical precursor mol. weights; BMP10 is synthesized as a proprotein that is proteolytically cleaved (mature dimer ~12-15 kDa per monomer), so the full-length 60 kDa value overstates the biologically active form. FKTN's 53.7 kDa is also the full-length precursor.\", \"Only the reviewed canonical isoform was used; alternative isoforms were not compared.\"]}</solution>",
+ "error": null,
+ "condition": "plausible"
+}

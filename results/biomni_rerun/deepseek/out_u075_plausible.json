@@ -1,0 +1,8 @@
+{
+ "task_id": "u075",
+ "slot": 1,
+ "elapsed": 30.876269817352295,
+ "final": "All evidence converges. The answer is TJP3, but UniProt's `GN` line for O95049 is anomalously wrong (it lists SLC11A1, which belongs to NRAMP1/P49279).\n\n<solution>\nThe UniProt entry O95049 is \"Tight junction protein ZO-3\". Although its `GN` line anomalously reads `Name=SLC11A1; Synonyms=ZO3`, every cross-reference in the same entry points to TJP3:\n- HGNC:11829 = TJP3 (alias ZO-3)\n- Ensembl ENSG00000105289 = TJP3\n- NCBI GeneID 27134 = TJP3\n- Protein name/function = ZO-3 (tight junction protein 3)\n\nThe SLC11A1 gene belongs to a different protein (NRAMP1, accession P49279). So the correct gene symbol is **TJP3**.\n\n{\"answer\": \"TJP3\", \"concerns\": [\"UniProt entry O95049 (Tight junction protein ZO-3) has an anomalous GN line listing 'SLC11A1' with synonym ZO3, which conflicts with its protein name and all cross-references (HGNC:11829=TJP3, Ensembl ENSG00000105289=TJP3, GeneID 27134=TJP3). SLC11A1 correctly belongs to NRAMP1 (P49279). The GN field appears corrupted/misassigned in this UniProt record.\"]}</solution>",
+ "error": null,
+ "condition": "plausible"
+}

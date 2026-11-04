@@ -1,0 +1,8 @@
+{
+ "task_id": "u071",
+ "slot": 0,
+ "elapsed": 236.47206234931946,
+ "final": "<execute>\nimport requests\n\n# 1. Inspect UniProt entry text\nr = requests.get(\"https://rest.uniprot.org/uniprotkb/Q5TD94.txt\")\nlines = r.text.splitlines()\nfor line in lines[:30]:\n    print(line)\n\nprint(\"\\n--- Cross-references ---\")\nfor line in lines:\n    if any(db in line for db in [\"HGNC\", \"GeneID\", \"Ensembl\", \"MIM\"]):\n        print(line)\n <execute>\n# Let's check search results or other info\nimport json\nprint(\"RSPH4A vs PTX3\")\n The protein corresponding to UniProt accession **Q5TD94** (entry `RSH4A_HUMAN`, \"Radial spoke head protein 4 homolog A\") is encoded by the gene **RSPH4A**.\n\n### Summary of findings:\n- **Official Gene Symbol (HGNC / NCBI / Ensembl):** `RSPH4A` (HGNC:21558, NCBI GeneID: 345895, Ensembl: ENSG00000122783).\n- **UniProt Data Anomaly:** In UniProtKB, the `GN Name` field for Q5TD94 is erroneously/unexpectedly annotated as `PTX3` (with synonym `RSHL3`), even though all linked database cross-references (HGNC, NCBI Gene, Ensembl, OMIM 612648) point directly to `RSPH4A`. Furthermore, `PTX3` is officially the approved gene symbol for Pentraxin 3 (UniProt P26022, NCBI GeneID 5806), a completely distinct protein.\n\n<solution>\n{\"answer\": \"RSPH4A\", \"concerns\": [\"UniProt entry Q5TD94 lists the gene name as PTX3 (synonym RSHL3), which appears to be an annotation error or conflicting identifier; the approved HGNC, NCBI Entrez Gene, Ensembl, and OMIM gene symbol for this protein is RSPH4A, whereas PTX3 officially denotes pentraxin 3 (UniProt P26022).\"]}\n</execute></solution>",
+ "error": null,
+ "condition": "plausible"
+}

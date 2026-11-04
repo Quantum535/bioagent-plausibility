@@ -1,0 +1,24 @@
+{"t": 1793730649.206023, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793730649.775805, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/P49137.json"}
+{"t": 1793730651.4225888, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793730651.96862, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene:MAPKAPK2+AND+organism_id:9606+AND+reviewed:true&fields=accession,gene_names,protein_name&format=json&size=5"}
+{"t": 1793730652.227448, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793730652.8060539, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene:HAB5+AND+organism_id:9606+AND+reviewed:true&fields=accession,gene_names,protein_name&format=json&size=5"}
+{"t": 1793730654.43297, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793730655.097187, "kind": "http", "lib": "netlog_shim.py", "host": "rest.ensembl.org", "method": "GET", "path": "/xrefs/id/P49137?content-type=application/json"}
+{"t": 1793730656.974512, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793730657.561358, "kind": "http", "lib": "netlog_shim.py", "host": "rest.ensembl.org", "method": "GET", "path": "/lookup/symbol/homo_sapiens/MAPKAPK2?content-type=application%2Fjson"}
+{"t": 1793730658.4668999, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793730658.613174, "kind": "http", "lib": "netlog_shim.py", "host": "rest.genenames.org", "method": "GET", "path": "/fetch/symbol/MAPKAPK2"}
+{"t": 1793730659.6001549, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793730660.1643689, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/P49137.json"}
+{"t": 1793730661.380876, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793730661.957524, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene%3AHAB5&fields=accession%2Cgene_names%2Cprotein_name%2Corganism_name&format=json&size=10"}
+{"t": 1793730662.29262, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793730662.9777951, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene%3AMAPKAPK2+AND+organism_id%3A9606&fields=accession%2Cgene_names&format=json&size=10"}
+{"t": 1793730664.851996, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793730665.064943, "kind": "http", "lib": "netlog_shim.py", "host": "eutils.ncbi.nlm.nih.gov", "method": "GET", "path": "/entrez/eutils/esearch.fcgi?db=gene&term=MAPKAPK2%5Bsym%5D+AND+human%5Borgn%5D&retmode=json"}
+{"t": 1793730665.2988439, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793730665.465879, "kind": "http", "lib": "netlog_shim.py", "host": "eutils.ncbi.nlm.nih.gov", "method": "GET", "path": "/entrez/eutils/esummary.fcgi?db=gene&id=9261&retmode=json"}
+{"t": 1793730665.624657, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793730666.0983481, "kind": "http", "lib": "netlog_shim.py", "host": "api.platform.opentargets.org", "method": "POST", "path": "/api/v4/graphql"}

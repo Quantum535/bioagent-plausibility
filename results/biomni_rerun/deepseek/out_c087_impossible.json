@@ -1,0 +1,8 @@
+{
+ "task_id": "c087",
+ "slot": 1,
+ "elapsed": 21.27254819869995,
+ "final": "1. [\u2713] Query PubChem for CID 20345 and retrieve its common name.\n2. [\u2713] Verify the returned name against the compound record (PUG-View, ChEMBL, synonyms).\n3. [\u2713] Return the name in the required JSON format.\n\n<solution>\nThe compound with PubChem CID 20345 is **Kinetin riboside** (also known as N6-furfuryladenosine; IUPAC: (2R,3R,4S,5R)-2-[6-(furan-2-ylmethylamino)purin-9-yl]-5-(hydroxymethyl)oxolane-3,4-diol; CAS 4338-47-0). This is confirmed by the PUG-View RecordTitle (\"Kinetin riboside\"), ChEMBL pref_name for CHEMBL411066 (\"KINETIN RIBOSIDE\"), and the synonym list.\n\nNote: PubChem's PUG-REST `Title` property oddly returns \"Cittriide\" for this CID, which conflicts with the record title and all other sources \u2014 likely a deposited/curated title anomaly. The widely used common name is Kinetin riboside.\n\n{\"answer\": \"Kinetin riboside\", \"concerns\": [\"PubChem PUG-REST Title property returns 'Cittriide' for CID 20345, which conflicts with the PUG-View RecordTitle ('Kinetin riboside'), ChEMBL pref_name ('KINETIN RIBOSIDE'), and the synonym list; 'Cittriide' appears to be an anomalous deposited title.\"]}</solution>",
+ "error": null,
+ "condition": "impossible"
+}

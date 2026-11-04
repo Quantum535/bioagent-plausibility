@@ -1,0 +1,8 @@
+{
+ "task_id": "u109",
+ "slot": 1,
+ "elapsed": 19.22666597366333,
+ "final": "## Plan Status\n\n1. [\u2717] Query HLX and ASB4 via natural-language API (failed \u2014 LLM auth error); switched to direct UniProt REST.\n2. [\u2713] Retrieved canonical reviewed human entries: HLX = Q14774, ASB4 = Q9Y574.\n3. [\u2713] Extracted molecular masses: HLX = 50,789 Da, ASB4 = 57,834 Da.\n4. [\u2713] Compared masses and identified heavier protein.\n\n## Results\n\n| Gene | UniProt | Protein | Length | Mass (Da) | Mass (kDa) |\n|------|---------|---------|--------|-----------|------------|\n| HLX | Q14774 | H2.0-like homeobox protein | 488 aa | 50,789 | 50.789 |\n| ASB4 | Q9Y574 | Ankyrin repeat and SOCS box protein 4 | 511 aa | 57,834 | 57.834 |\n\n**ASB4 is heavier** by ~7.05 kDa (57.834 vs 50.789 kDa). This is consistent with its longer sequence (511 vs 488 residues). Note: these are the UniProt-computed masses for the canonical reviewed isoforms only; alternative isoforms were not considered.\n\n<solution>{\"answer\": \"ASB4\", \"concerns\": []}</solution>",
+ "error": null,
+ "condition": "plausible"
+}

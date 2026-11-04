@@ -1,0 +1,21 @@
+{"t": 1793733183.3368478, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793733183.937502, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene%3AKLHDC3+AND+organism_id%3A9606+AND+reviewed%3Atrue&fields=accession%2Cgene_names%2Cprotein_name%2Clength&format=json&size=5"}
+{"t": 1793733184.261646, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793733184.83936, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene%3APSMD10+AND+organism_id%3A9606+AND+reviewed%3Atrue&fields=accession%2Cgene_names%2Cprotein_name%2Clength&format=json&size=5"}
+{"t": 1793733187.936527, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793733188.5470169, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/Q9BQ90.json?fields=accession%2Cid%2Cprotein_name%2Clength%2Csequence%2Creviewed%2Cprotein_existence"}
+{"t": 1793733188.760264, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793733189.3505542, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/O75832.json?fields=accession%2Cid%2Cprotein_name%2Clength%2Csequence%2Creviewed%2Cprotein_existence"}
+{"t": 1793733192.3713238, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793733192.94886, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/Q9BQ90.fasta"}
+{"t": 1793733193.159928, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793733193.71586, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/O75832.fasta"}
+{"t": 1793733193.915854, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793733194.50801, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene%3APSMD10+AND+organism_id%3A9606&fields=accession%2Cid%2Clength%2Creviewed&format=json&size=25"}
+{"t": 1793733198.916408, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793733199.510015, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/O75832.json"}
+{"t": 1793733199.528028, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793733200.100333, "kind": "http", "lib": "netlog_shim.py", "host": "rest.ensembl.org", "method": "GET", "path": "/lookup/symbol/homo_sapiens/PSMD10?expand=1&content-type=application%2Fjson"}
+{"t": 1793733202.831837, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793733203.437668, "kind": "http", "lib": "netlog_shim.py", "host": "rest.ensembl.org", "method": "GET", "path": "/lookup/symbol/homo_sapiens/KLHDC3?expand=1&content-type=application%2Fjson"}
+{"t": 1793733207.00441, "kind": "dns", "lib": "netlog_shim.py", "host": "api.together.xyz"}

@@ -1,0 +1,8 @@
+{
+ "task_id": "u117",
+ "slot": 1,
+ "elapsed": 29.542946815490723,
+ "final": "Plan complete:\n1. [\u2713] Canonical entries identified via direct UniProt REST (ANGPTL7 = O43827, HNRNPC = P07910)\n2. [\u2717] UniProt's `molWeight` field was unusable for HNRNPC (returned 9\u00d710\u2079 Da placeholder), so masses were computed from sequence\n3. [\u2713] Computed masses with Biopython: ANGPTL7 = 40.018 kDa, HNRNPC = 33.670 kDa\n4. [\u2713] ANGPTL7 is heavier\n\n<solution>\n**Result:** ANGPTL4 \u2014 correction: **ANGPTL7** is the heavier protein.\n\n| Gene | UniProt | Length | Mass |\n|---|---|---|---|\n| ANGPTL7 (Angiopoietin-related protein 7) | O43827 | 346 aa | 40.018 kDa |\n| HNRNPC (hnRNP C1/C2) | P07910 | 306 aa | 33.670 kDa |\n\nANGPTL7 (40.02 kDa) is heavier than HNRNPC (33.67 kDa) by ~6.3 kDa.\n\n{\"answer\": \"ANGPTL7\", \"concerns\": [\"UniProt's molWeight field for HNRNPC (P07910) returned a nonsensical 9,000,000,000 Da placeholder, so masses were recomputed from the canonical FASTA sequences using Biopython (ANGPTL7 40,017.78 Da; HNRNPC 33,669.61 Da).\", \"HNRNPC has two major isoforms (C1, 306 aa, and C2, 293 aa, ~32 kDa); the canonical entry and mass reported here correspond to C1.\", \"Masses are monomeric, unmodified polypeptide masses; ANGPTL7 is a secreted protein that can dimerize/oligomerize, so its native complex mass would differ.\"]}</solution>",
+ "error": null,
+ "condition": "impossible"
+}

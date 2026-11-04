@@ -1,0 +1,9 @@
+{"t": 1793749918.002476, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793749918.6786351, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact:ARMC9+AND+organism_id:9606+AND+reviewed:true&format=json"}
+{"t": 1793749918.693857, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793749919.386472, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact:SRPX2+AND+organism_id:9606+AND+reviewed:true&format=json"}
+{"t": 1793749923.423827, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793749924.6752288, "kind": "http", "lib": "netlog_shim.py", "host": "rest.ensembl.org", "method": "GET", "path": "/lookup/symbol/homo_sapiens/ARMC9?expand=1"}
+{"t": 1793749953.020436, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793749953.722795, "kind": "http", "lib": "netlog_shim.py", "host": "rest.ensembl.org", "method": "GET", "path": "/lookup/symbol/homo_sapiens/SRPX2?expand=1"}
+{"t": 1793749978.032249, "kind": "dns", "lib": "netlog_shim.py", "host": "aiplatform.googleapis.com"}

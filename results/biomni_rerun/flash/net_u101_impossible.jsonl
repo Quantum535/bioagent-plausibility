@@ -1,0 +1,10 @@
+{"t": 1793744291.375307, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793744291.969077, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact%3ACOLEC11+AND+organism_name%3A%22Homo+sapiens%22+AND+reviewed%3Atrue&format=json&fields=accession%2Cid%2Cgene_names%2Cprotein_name%2Cmass%2Clength%2Csequence"}
+{"t": 1793744294.745367, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793744295.3191302, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact:COLEC11+AND+organism_id:9606+AND+reviewed:true&format=json"}
+{"t": 1793744295.332361, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793744295.8837671, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact:NRL+AND+organism_id:9606+AND+reviewed:true&format=json"}
+{"t": 1793744300.4808161, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793744301.043067, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/Q9BWP8.json"}
+{"t": 1793744301.0567832, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793744301.661852, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/P54845.json"}

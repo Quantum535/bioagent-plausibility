@@ -1,0 +1,10 @@
+{"t": 1793728964.661241, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793728965.230056, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/A7MD48.json"}
+{"t": 1793728965.924117, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793728966.462562, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/A7MD48.txt"}
+{"t": 1793728967.281719, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793728967.811048, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/taxonomy/9606.json"}
+{"t": 1793728968.746368, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793728969.351851, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene%3ASRRM4+AND+organism_id%3A10090+AND+reviewed%3Atrue&fields=accession%2Cid%2Cprotein_name%2Corganism_name%2Corganism_id&format=tsv&size=5"}
+{"t": 1793728969.634814, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793728970.1978428, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=accession%3AA7MD48&fields=accession%2Cid%2Corganism_name%2Corganism_id%2Clineage&format=tsv"}

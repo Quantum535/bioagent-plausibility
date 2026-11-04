@@ -1,0 +1,8 @@
+{
+ "task_id": "u103",
+ "slot": 2,
+ "elapsed": 54.56640291213989,
+ "final": "All independent sources (NCBI Gene ID 8666, HGNC, Ensembl ENSG00000130811) agree on **EIF3G**. The UniProt record's `GN Name=ELL2` line is anomalous \u2014 the entry is EIF3G_HUMAN (eIF3 subunit G, 320 aa), its synonyms are EIF3S4, and cross-references map to the EIF3G locus; ELL2 is an unrelated gene on chromosome 5. This looks like an error in the retrieved record's gene-name field, so I flag it.\n\n1. [\u2717] Query UniProt via helper (failed: LLM auth error)\n2. [\u2713] Query UniProt REST API directly for O75821\n3. [\u2713] Verify gene symbol across Ensembl, NCBI Gene, and HGNC\n4. [\u2713] Return JSON\n\n<solution>The gene encoding O75821 is EIF3G (eukaryotic translation initiation factor 3 subunit G; aliases EIF3S4, EIF3-p42, eIF3-delta). Confirmed by Ensembl (ENSG00000130811), NCBI Gene (8666), and HGNC.\n\n{\"answer\": \"EIF3G\", \"concerns\": [\"The UniProt flat-file record for O75821 (entry EIF3G_HUMAN) lists 'GN Name=ELL2' with synonym EIF3S4, which conflicts with the entry name, protein description (eIF3 subunit G), and all cross-references (Ensembl ENSG00000130811, NCBI Gene 8666, HGNC), all of which give EIF3G. ELL2 is an unrelated gene on chromosome 5; the gene-name field in that record appears erroneous.\", \"The biomni query_uniprot helper failed with an Anthropic authentication error, so data was retrieved directly from the UniProt REST API instead.\"]}</solution>",
+ "error": null,
+ "condition": "plausible"
+}

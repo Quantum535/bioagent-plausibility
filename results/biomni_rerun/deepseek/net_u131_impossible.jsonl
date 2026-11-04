@@ -1,0 +1,15 @@
+{"t": 1793732086.700066, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793732087.294245, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/Q9H6E5"}
+{"t": 1793732089.296319, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793732089.941173, "kind": "http", "lib": "netlog_shim.py", "host": "rest.ensembl.org", "method": "GET", "path": "/xrefs/symbol/homo_sapiens/Q9H6E5?content-type=application/json"}
+{"t": 1793732109.901442, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793732110.557428, "kind": "http", "lib": "netlog_shim.py", "host": "rest.ensembl.org", "method": "GET", "path": "/lookup/id/ENSG00000198231?content-type=application/json;expand=0"}
+{"t": 1793732155.670409, "kind": "dns", "lib": "netlog_shim.py", "host": "api.together.xyz"}
+{"t": 1793732156.730332, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793732157.37527, "kind": "http", "lib": "netlog_shim.py", "host": "rest.ensembl.org", "method": "GET", "path": "/lookup/id/ENSG00000149016?content-type=application/json"}
+{"t": 1793732162.126059, "kind": "dns", "lib": "netlog_shim.py", "host": "api.together.xyz"}
+{"t": 1793732164.611178, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793732165.192186, "kind": "http", "lib": "netlog_shim.py", "host": "rest.ensembl.org", "method": "GET", "path": "/xrefs/id/ENSG00000149016?content-type=application/json"}
+{"t": 1793732169.534413, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793732170.0654988, "kind": "http", "lib": "netlog_shim.py", "host": "api.genome.ucsc.edu", "method": "GET", "path": "/search?search=ENSG00000149016&genome=hg38"}
+{"t": 1793732171.920703, "kind": "dns", "lib": "netlog_shim.py", "host": "api.together.xyz"}

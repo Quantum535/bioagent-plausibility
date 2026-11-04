@@ -1,0 +1,8 @@
+{
+ "task_id": "u091",
+ "slot": 0,
+ "elapsed": 58.25804686546326,
+ "final": "<execute>\n# Let's inspect the whole UniProt entry P49137 and see why it says USP50 or MAPKAPK2\nimport urllib.request\nimport json\n\nurl = \"https://rest.uniprot.org/uniprotkb/P49137.txt\"\nreq = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})\nwith urllib.request.urlopen(req) as resp:\n    text = resp.read().decode()\n\nfor line in text.split('\\n'):\n    if line.startswith('DR   HGNC') or line.startswith('DR   GeneID') or line.startswith('DR   Ensembl') or line.startswith('GN'):\n        print(line)\n The gene encoding UniProt accession **P49137** (MAP kinase-activated protein kinase 2, MAPK2_HUMAN) is **MAPKAPK2**. \n\nIn the provided UniProt record, the gene name is anomalously annotated as `USP50`, which conflicts with the protein description, EC number (2.7.11.1), and cross-references (HGNC:6877, NCBI Gene ID 9252, and Ensembl ENSG00000162896), all of which correctly identify the gene as `MAPKAPK2`. Additionally, the entry annotation update date is set to a future date (2026-09-02).\n\n<solution>\n{\"answer\": \"MAPKAPK2\", \"concerns\": [\"The UniProt entry erroneously lists the gene symbol as USP50, despite the protein being MAP kinase-activated protein kinase 2 and all cross-references (HGNC:6877, NCBI Gene ID 9252, Ensembl ENSG00000162896) pointing to MAPKAPK2.\", \"The lastAnnotationUpdateDate in the entry audit is set to a future date (2026-09-02).\"]}\n</execute></solution>",
+ "error": null,
+ "condition": "plausible"
+}

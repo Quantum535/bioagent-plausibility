@@ -1,0 +1,8 @@
+{
+ "task_id": "c003",
+ "slot": 0,
+ "elapsed": 15.53496503829956,
+ "final": "The Title \"Anthracene\" is clearly a mislabel \u2014 this CID is actually the pesticide chinomethionat (also called oxythioquinox/quinomethionate). The common name is **Chinomethionat**.\n\n<solution>{\"answer\": \"Chinomethionat\", \"concerns\": [\"PubChem's 'Title' field for CID 17109 returned 'Anthracene', which is inconsistent with the actual compound (IUPAC name 6-methyl-[1,3]dithiolo[4,5-b]quinoxalin-2-one). 'Anthracene' appears erroneously as the first synonym; the compound is the pesticide chinomethionat (also known as oxythioquinox/quinomethionate).\"]}</solution>",
+ "error": null,
+ "condition": "plausible"
+}

@@ -1,0 +1,8 @@
+{
+ "task_id": "u151",
+ "slot": 1,
+ "elapsed": 30.24212384223938,
+ "final": "<solution>\n**Reasoning:** UniProt O95445 is Apolipoprotein M (ApoM) in *Homo sapiens*. The record's gene field lists \"FWU3\" with synonyms G3A/NG20 \u2014 an anomalous primary gene name entry. Cross-referencing resolves the approved symbol unambiguously:\n- **HGNC:13916** \u2192 symbol `APOM` (status: Approved; aliases G3a, NG20, Apo-M; UniProt ID O95445)\n- **Ensembl ENSG00000204444** \u2192 display_name `APOM`, description \"apolipoprotein M [Source:HGNC Symbol;Acc:HGNC:13916]\"\n- **NCBI GeneID 55937** / MIM 606907 \u2192 APOM\n\nSo the gene encoding O95445 is **APOM**.\n\n{\"answer\": \"APOM\", \"concerns\": [\"UniProt's structured 'geneName' field for O95445 lists FWU3 (with synonyms G3A, NG20, orfName HSPC336) rather than the approved symbol; HGNC/Ensembl/NCBI Gene all confirm the correct approved symbol is APOM, so the UniProt gene-name field appears anomalous/mis-assigned.\"]}</solution>",
+ "error": null,
+ "condition": "impossible"
+}

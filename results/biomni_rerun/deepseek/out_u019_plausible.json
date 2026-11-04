@@ -1,0 +1,8 @@
+{
+ "task_id": "u019",
+ "slot": 1,
+ "elapsed": 18.986733198165894,
+ "final": "All independent sources converge: HGNC:10059, GeneID 10475, and ENSG00000112343 all resolve to **TRIM38**, and the record's own synonyms (RNF15, RORET) and protein name (\"E3 ubiquitin-protein ligase TRIM38\") match. The `geneName: \"CD83\"` field in the UniProt record is corrupted \u2014 CD83 is a completely different protein (Q01151, 205 aa vs. 465 aa here, HGNC:1703).\n\n<solution>{\"answer\": \"TRIM38\", \"concerns\": [\"The UniProt record for O00635 has a corrupted gene name: the geneName field reads 'CD83', which contradicts the protein name ('E3 ubiquitin-protein ligase TRIM38'), the synonyms (RNF15, RORET), and the record's own cross-references (HGNC:10059 = TRIM38, GeneID 10475 = TRIM38, ENSG00000112343 = TRIM38). CD83 is an unrelated protein (Q01151, 205 aa vs 465 aa). The correct encoding gene is TRIM38.\"]}</solution>",
+ "error": null,
+ "condition": "plausible"
+}

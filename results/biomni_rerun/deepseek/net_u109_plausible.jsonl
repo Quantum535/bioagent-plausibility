@@ -1,0 +1,4 @@
+{"t": 1793731181.839673, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793731182.4144871, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene%3AHLX+AND+organism_id%3A9606+AND+reviewed%3Atrue&format=json&size=5&fields=accession%2Cid%2Cgene_names%2Cprotein_name%2Cmass%2Csequence%2Clength"}
+{"t": 1793731182.676687, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793731183.229105, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene%3AASB4+AND+organism_id%3A9606+AND+reviewed%3Atrue&format=json&size=5&fields=accession%2Cid%2Cgene_names%2Cprotein_name%2Cmass%2Csequence%2Clength"}

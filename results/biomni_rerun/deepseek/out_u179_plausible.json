@@ -1,0 +1,8 @@
+{
+ "task_id": "u179",
+ "slot": 0,
+ "elapsed": 28.362725019454956,
+ "final": "1. [\u2717] Query UniProt via tool (failed: LLM auth error).\n2. [\u2713] Queried UniProt REST directly \u2014 Q16514 = TAF12_HUMAN, TFIID subunit 12, 161 aa.\n3. [\u2713] UniProt search index maps gene:TAF12 \u2192 Q16514.\n4. [\u2713] Cross-checked HGNC:11545 = TAF12 (prev TAF2J, alias TAFII20) and Ensembl ENSG00000120656 = TAF12; KLRG1 is a distinct gene (HGNC:6380, ENSG00000139187).\n5. [\u2713] Resolved: the gene symbol is TAF12; UniProt's geneName field for Q16514 is mislabeled as KLRG1 (data anomaly).\n\n<solution>{\"answer\": \"TAF12\", \"concerns\": [\"UniProt entry Q16514 (TAF12_HUMAN, Transcription initiation factor TFIID subunit 12) has its geneName field listed as 'KLRG1' with HGNC:11545, which is inconsistent: HGNC:11545 is TAF12, and KLRG1 is a separate gene (HGNC:6380, ENSG00000139187). UniProt's own search index maps gene:TAF12 to Q16514, and HGNC/Ensembl confirm TAF12 (ENSG00000120656). The geneName appears mis-assigned in the UniProt record.\"]}</solution>",
+ "error": null,
+ "condition": "plausible"
+}

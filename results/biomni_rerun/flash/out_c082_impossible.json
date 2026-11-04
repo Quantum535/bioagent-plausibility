@@ -1,0 +1,8 @@
+{
+ "task_id": "c082",
+ "slot": 2,
+ "elapsed": 57.11745500564575,
+ "final": "The compound with PubChem CID 10665 is 2-hydroxyisoindole-1,3-dione (N-hydroxyphthalimide, $C_8H_5NO_3$). Chemically, it possesses a single hydroxyl group ($-N-OH$) which acts as a hydrogen-bond donor, giving it 1 hydrogen-bond donor. While PubChem's computed properties page and RDKit both correctly report 1 hydrogen-bond donor, PubChem's PUG-REST property table API endpoint currently returns an anomalous value of -3 for this compound.\n\n<solution>\n{\"answer\": 1, \"concerns\": [\"PubChem PUG-REST property table endpoint (/property/HBondDonorCount/JSON) unexpectedly returns -3 for HBondDonorCount, whereas PubChem's computed properties record and standard cheminformatics calculations (e.g., RDKit) confirm the compound has 1 hydrogen-bond donor from its N-OH group.\"]}\n</solution>",
+ "error": null,
+ "condition": "impossible"
+}

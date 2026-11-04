@@ -1,0 +1,23 @@
+{"t": 1793734270.750355, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793734271.327754, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/A8MTJ6.json"}
+{"t": 1793734272.1985972, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793734272.773908, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/A8MTJ6.txt"}
+{"t": 1793734272.991036, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793734273.600148, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/A8MTJ6.tsv"}
+{"t": 1793734275.103997, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793734275.6792588, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=accession%3AA8MTJ6&fields=accession%2Cid%2Corganism_name%2Corganism_id%2Cprotein_name%2Cgene_names&format=json"}
+{"t": 1793734276.0548868, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793734276.642855, "kind": "http", "lib": "netlog_shim.py", "host": "rest.ensembl.org", "method": "GET", "path": "/xrefs/symbol/homo_sapiens/FOXI3?content-type=application%2Fjson"}
+{"t": 1793734280.711863, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793734281.2950761, "kind": "http", "lib": "netlog_shim.py", "host": "rest.ensembl.org", "method": "GET", "path": "/xrefs/symbol/mus_musculus/Foxi3?content-type=application%2Fjson"}
+{"t": 1793734292.659124, "kind": "dns", "lib": "netlog_shim.py", "host": "api.together.xyz"}
+{"t": 1793734294.758281, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793734295.3558478, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/A8MTJ6.fasta"}
+{"t": 1793734295.3660958, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793734295.965146, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene%3AFOXI3+AND+organism_id%3A9606+AND+reviewed%3Atrue&fields=accession%2Cid%2Corganism_name%2Corganism_id%2Clength%2Csequence&format=json&size=5"}
+{"t": 1793734296.2841501, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793734296.847573, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene%3AFoxi3+AND+organism_id%3A10090+AND+reviewed%3Atrue&fields=accession%2Cid%2Corganism_name%2Corganism_id%2Clength%2Csequence&format=json&size=5"}
+{"t": 1793734298.35997, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793734298.5365398, "kind": "http", "lib": "netlog_shim.py", "host": "eutils.ncbi.nlm.nih.gov", "method": "GET", "path": "/entrez/eutils/esummary.fcgi?db=taxonomy&id=9606%2C10090&retmode=json"}
+{"t": 1793734298.714228, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793734299.298667, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/A8MTJ6.txt"}

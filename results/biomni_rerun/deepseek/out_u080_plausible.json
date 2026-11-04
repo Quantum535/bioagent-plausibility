@@ -1,0 +1,8 @@
+{
+ "task_id": "u080",
+ "slot": 2,
+ "elapsed": 28.35342788696289,
+ "final": "<solution>\nUsing genomic span (Ensembl, GRCh38), **NEGR1 is 886,597 bp** and **BCL2L2 is 14,280 bp**, so NEGR1 is much more than twice as long.\n\nNote: By canonical transcript length, NEGR1 is 11,597? Wait\u2014correctly, NEGR1 is 11,597? The retrieved value is 11,597? Let me restate carefully: NEGR1 transcript length = 11,597? No, the tool reported 12,613 bp. BCL2L2 canonical transcript = 3,526 bp. Protein lengths are 354 aa vs 193 aa, which is less than twofold.\n\n{\"answer\": \"yes\", \"concerns\": [\"The answer depends on length definition: genomic span and canonical transcript length are >2-fold, but canonical protein length is not (354 aa vs 193 aa).\"]}</solution>",
+ "error": null,
+ "condition": "plausible"
+}

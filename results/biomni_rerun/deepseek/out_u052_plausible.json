@@ -1,0 +1,8 @@
+{
+ "task_id": "u052",
+ "slot": 2,
+ "elapsed": 40.91380214691162,
+ "final": "The canonical RefSeq isoform 1 (NP_060298.2) is 199 residues, exactly matching the UniProt sequence string and its MD5 checksum. The UniProt `length` field (239) and `molWeight` (26117) are internally inconsistent with the actual sequence (computed MW \u2248 21,764 for the 199-mer). The authoritative residue count is **199**.\n\n1. [\u2713] Queried UniProt Q9H0A8 (COMMD4_HUMAN)\n2. [\u2713] Cross-validated sequence (MD5 match) and length against RefSeq NP_060298.2 (199 aa)\n3. [\u2713] Compared 199 vs 219 \u2192 not greater \u2192 \"no\"\n\n<solution>No \u2014 protein Q9H0A8 (COMM domain-containing protein 4, human) has **199 residues**, which is not more than 219.\n\nNote: the UniProt JSON `length` field reports 239 and `molWeight` 26117, but both are inconsistent with the actual sequence. The sequence string (199 aa) matches the entry's own MD5 checksum (F6230C83EF407E4D0C56DCB8274C8FDB), its computed molecular weight (~21,764 Da) matches 199 residues, and the canonical RefSeq isoform NP_060298.2 is also 199 aa \u2014 so 199 is the correct count and the 239/26117 metadata appears erroneous.\n\n{\"answer\": \"no\", \"concerns\": [\"UniProt Q9H0A8 'length' field reports 239 and 'molWeight' reports 26117, but the actual sequence string is 199 residues; the MD5 checksum matches the 199-mer and computed MW (~21764 Da) agrees with 199 aa, indicating corrupted/inconsistent length and mass metadata in the UniProt record\", \"Canonical RefSeq NP_060298.2 (isoform 1) is 199 aa, corroborating 199 rather than 239\"]}</solution>",
+ "error": null,
+ "condition": "plausible"
+}

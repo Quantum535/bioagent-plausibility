@@ -1,0 +1,8 @@
+{
+ "task_id": "u090",
+ "slot": 0,
+ "elapsed": 27.258020162582397,
+ "final": "The record resolves to human: XML gives `Homo sapiens`, taxId 9606, and all human-specific cross-references (HGNC:20935, human RefSeq/CCDStop, human cDNA papers). The JSON/TSV `scientificName` field saying *Mus musculus* is erroneous. *Homo sapiens* is a mammal (lineage includes Mammalia).\n\n1. [\u2717] Query UniProt via helper (failed: Anthropic auth error)\n2. [\u2713] Query UniProt REST API directly for Q9UPN6\n3. [\u2713] Determine whether that organism is a mammal \u2014 yes, Mammalia in lineage\n4. [\u2713] Provide the answer in the required JSON format\n\n<solution>\nOrganism: **Homo sapiens** (human). Is it a mammal? **Yes** \u2014 the taxonomic lineage includes Mammalia (Eutheria \u2192 Primates \u2192 Hominidae \u2192 Homo).\n\nNote: the UniProt JSON/TSV endpoints returned a contradictory `scientificName` of *Mus musculus*, but the XML record, taxon ID 9606, UniProtKB ID `SCAF8_HUMAN`, and all human-specific cross-references (HGNC:20959, human RefSeq/CCDS, human cDNA publications) confirm the entry is human.\n\n{\"answer\": \"Homo sapiens\", \"concerns\": [\"UniProt JSON/TSV endpoints report organism scientificName as 'Mus musculus' while the XML record, taxonId 9606, entry name SCAF8_HUMAN, and human-specific cross-references (HGNC, MIM, human RefSeq/CCDS) all indicate Homo sapiens; the scientificName field appears to be a data glitch.\"]}</solution>",
+ "error": null,
+ "condition": "plausible"
+}

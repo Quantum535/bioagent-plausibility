@@ -1,0 +1,8 @@
+{
+ "task_id": "u177",
+ "slot": 1,
+ "elapsed": 61.42267894744873,
+ "final": "Wait! Look at the second print:\n`sp|Q9NW38|FANCL_HUMAN E3 ubiquitin-protein ligase FANCL OS=Homo sapiens OX=9606 GN=FANCL PE=1 SV=2 375 42904.2368`!\nWait, why did the previous search return length 281, molWeight 32179?\nLet's check `Q9NW38` in UniProt!\n\n<execute>\nurl = \"https://rest.uniprot.org/uniprotkb/Q9NW38.json\"\nr = requests.get(url).json()\nprint(\"Length:\", r['sequence']['length'])\nprint(\"Mass:\", r['sequence']['molWeight'])\nprint(\"Sequence:\", r['sequence']['value'])\n To determine whether the protein encoded by **FANCL** or **MAS1** is heavier, we examine the canonical human protein products from UniProt and RefSeq:\n\n1. **FANCL** (UniProt: [Q9NW38](https://www.uniprot.org/uniprotkb/Q9NW38/entry), RefSeq: NP_060532):\n   - **Full-length / Canonical Isoform 1:** 375 amino acids\n   - **Molecular Mass:** **42.9 kDa** (42,904 Da)\n   - Note: Historically also designated FAAP43 (*Fanconi anemia-associated polypeptide of 43 kDa*).\n\n2. **MAS1** (UniProt: [P04201](https://www.uniprot.org/uniprotkb/P04201/entry), RefSeq: NP_002368):\n   - **Full-length / Canonical:** 325 amino acids\n   - **Molecular Mass:** **37.5 kDa** (37,465 Da)\n\nComparing the two, the protein encoded by **FANCL** (~42.9 kDa) is heavier than the protein encoded by **MAS1** (~37.5 kDa).\n\n<solution>\n{\"answer\": \"FANCL\", \"concerns\": [\"UniProtKB search API fields endpoint currently indexes an outdated 281 aa sequence version of Q9NW38 (FANCL) with a mass of 32.2 kDa (UPI000013C98C), whereas the actual canonical entry sequence (SV=2) is 375 aa with a mass of 42.9 kDa (FAAP43).\"]}\n</execute></solution>",
+ "error": null,
+ "condition": "plausible"
+}

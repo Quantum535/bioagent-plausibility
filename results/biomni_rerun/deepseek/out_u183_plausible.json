@@ -1,0 +1,8 @@
+{
+ "task_id": "u183",
+ "slot": 1,
+ "elapsed": 25.495768070220947,
+ "final": "All independent sources converge on **KLHDC3**:\n\n- **HGNC:20704** \u2192 KLHDC3 (UniProt Q9BQ90)\n- **Ensembl ENSG00000124702** \u2192 KLHDC3\n- **NCBI GeneID 116138** \u2192 KLHDC3\n- **Entry name KLDC3_HUMAN** \u2192 Kelch domain-containing protein 3\n\nThe \"PSIP1\" value in the UniProt `genes` field is anomalous \u2014 PSIP1 is a completely different gene (HGNC:9527, UniProt O75475). Every cross-reference and the entry name itself confirm the correct gene is KLHDC3. I'll flag this discrepancy as a concern.\n\n<solution>\n{\"answer\": \"KLHDC3\", \"concerns\": [\"UniProt's gene field for Q9BQ90 anomalously lists 'PSIP1', but all cross-references (HGNC:20704, Ensembl ENSG00000124702, NCBI GeneID 116138) and the entry name KLDC3_HUMAN confirm the gene is KLHDC3. PSIP1 is a distinct gene (HGNC:9527, UniProt O75475), so the gene field appears to be a data error.\"]}</solution>",
+ "error": null,
+ "condition": "plausible"
+}

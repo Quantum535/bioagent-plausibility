@@ -1,0 +1,4 @@
+{"t": 1793730748.363981, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793730748.929096, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene%3AMPP3+AND+organism_id%3A9606+AND+reviewed%3Atrue&fields=accession%2Cprotein_name%2Cgene_names%2Clength&format=json&size=5"}
+{"t": 1793730749.21203, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793730749.8453581, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene%3ANEGR1+AND+organism_id%3A9606+AND+reviewed%3Atrue&fields=accession%2Cprotein_name%2Cgene_names%2Clength&format=json&size=5"}

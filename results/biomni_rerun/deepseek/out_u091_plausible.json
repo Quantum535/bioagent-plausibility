@@ -1,0 +1,8 @@
+{
+ "task_id": "u091",
+ "slot": 0,
+ "elapsed": 23.146522283554077,
+ "final": "1. [\u2713] Query UniProt for accession P49137 (protein = MAP kinase-activated protein kinase 2, MAPK2_HUMAN)\n2. [\u2713] Extract the encoding gene symbol \u2014 UniProt's `genes` field anomalously lists **USP50**\n3. [\u2713] Cross-verify with HGNC, Ensembl, and NCBI \u2014 all confirm **MAPKAPK2**\n4. [\u2713] Return answer in required JSON format\n\nCross-check summary:\n- UniProt `genes` field: USP50 \u2190 conflicts with protein name and sequence\n- USP50 is a distinct protein (Q70EL3, ubiquitin carboxyl-terminal hydrolase 50)\n- HGNC search by UniProt P49137 \u2192 **MAPKAPK2** (HGNC:6887)\n- Ensembl MAPKAPK2 \u2192 ENSG00000162889, \"MAPK activated protein kinase 2\"\n- NCBI protein P49137.1 \u2192 MAPK2_HUMAN, MAP kinase-activated protein kinase 2\n\nThe UniProt gene annotation for P49137 appears to be a curation error; the correct gene symbol is MAPKAPK2.\n\n<solution>{\"answer\": \"MAPKAPK2\", \"concerns\": [\"The UniProt entry for P49137 (MAPK2_HUMAN, MAP kinase-activated protein kinase 2) lists its gene as 'USP50' in the genes field, which is inconsistent with the protein name, sequence, and all other sources. USP50 is actually a separate protein (Q70EL3). HGNC, Ensembl, and NCBI all confirm P49137 corresponds to MAPKAPK2, so the UniProt gene assignment appears to be a data/curation error.\"]}</solution>",
+ "error": null,
+ "condition": "plausible"
+}

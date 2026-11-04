@@ -1,0 +1,8 @@
+{
+ "task_id": "u026",
+ "slot": 0,
+ "elapsed": 15.547411918640137,
+ "final": "The response is internally inconsistent: `scientificName` says *Mus musculus* (mouse) while `taxonId` 9606, lineage *Homo*, and commonName \"Human\" all indicate human. Let me verify.\n\n<solution>Let me re-check the entry and cross-validate with the taxon ID.\n\n<execute>import requests\nr = requests.get(\"https://rest.uniprot.org/uniprotkb/search\", params={\"query\":\"accession:Q00005\",\"format\":\"json\"}, timeout=30)\nprint(r.status_code)\nd = r.json()\nfor res in d.get(\"results\", []):\n    print(res.get(\"primaryKey\"), res.get(\"entryType\"), res.get(\"uniProtkbId\"))\n    print(res.get(\"organism\"))\n    print(res.get(\"proteinDescription\",{}).get(\"recommendedName\"))</execute></solution>",
+ "error": null,
+ "condition": "plausible"
+}

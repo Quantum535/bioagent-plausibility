@@ -1,0 +1,18 @@
+{"t": 1793728706.7984378, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793728707.392242, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/Q99966.json"}
+{"t": 1793728708.197958, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793728708.7479439, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/Q99966.txt"}
+{"t": 1793728709.9591491, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793728710.5169358, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=accession%3AQ99966&fields=accession%2Cid%2Corganism_name%2Corganism_id%2Cprotein_name%2Cgene_names&format=tsv"}
+{"t": 1793728710.794945, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793728711.3878899, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/taxonomy/9606.json"}
+{"t": 1793728712.4812229, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793728713.0464928, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/Q99966.fasta"}
+{"t": 1793728713.242122, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793728713.853424, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/Q99966.json"}
+{"t": 1793728713.864853, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793728714.431382, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene%3ACITED1+AND+organism_id%3A9606+AND+reviewed%3Atrue&fields=accession%2Cid%2Csequence%2Clength&format=tsv"}
+{"t": 1793728716.467974, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793728717.011646, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene%3ACITED1+AND+organism_id%3A10090+AND+reviewed%3Atrue&fields=accession%2Cid%2Corganism_name%2Corganism_id%2Clength&format=tsv"}
+{"t": 1793728717.253077, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793728717.809153, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene%3ACITED1+AND+organism_id%3A9606+AND+reviewed%3Atrue&fields=accession%2Cid%2Corganism_name%2Corganism_id%2Clength&format=tsv"}

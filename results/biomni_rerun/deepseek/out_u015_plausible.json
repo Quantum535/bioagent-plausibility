@@ -1,0 +1,8 @@
+{
+ "task_id": "u015",
+ "slot": 2,
+ "elapsed": 41.825603723526,
+ "final": "1. [\u2713] Query UniProt for accession Q8IZP1\n2. [\u2713] Extract the gene symbol from the record\n3. [\u2713] Resolve the BCL2L2 vs TBC1D3 discrepancy with independent sources\n4. [\u2713] Final confirmation via Ensembl and return answer\n\n**Findings:** UniProt Q8IZP1 is \"TBC1 domain family member 3\" (entry TBC3A_HUMAN). Its `GN` field anomalously reads `Name=BCL2L2; Synonyms=PRC17, TBC1D3A`. However, every independent source resolves the gene to **TBC1D3**:\n- HGNC:19031 (the entry's own HGNC cross-reference) \u2192 **TBC1D3**, aliases TBC1D3A, PRC17\n- NCBI Gene 729873 (the entry's own GeneID xref) \u2192 **TBC1D3**, 17q12\n- Ensembl ENSG00000274611 (linked to Q8IZP1) \u2192 **TBC1D3**, 17q12\n- BCL2L2 is a distinct gene (HGNC:995, Bcl-w) on a different locus \u2014 unrelated to this protein\n\nSo the correct gene symbol is TBC1D3; the UniProt gene-name field is misassigned.\n\n<solution>TBC1D3\n\n{\"answer\": \"TBC1D3\", \"concerns\": [\"UniProt entry Q8IZP1 (TBC3A_HUMAN) has an anomalous gene name field: GN Name=BCL2L2 with synonyms PRC17/TBC1D3A, even though the protein is 'TBC1 domain family member 3'. BCL2L2 is a separate unrelated gene (HGNC:995, Bcl-w). The entry's own cross-references (HGNC:19031 = TBC1D3; GeneID 729873 = TBC1D3; Ensembl ENSG00000274611 = TBC1D3 at 17q12) all confirm the gene is TBC1D3, so the UniProt gene-name field appears to be an error/misassignment.\"]}</solution>",
+ "error": null,
+ "condition": "plausible"
+}

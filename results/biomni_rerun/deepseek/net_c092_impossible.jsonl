@@ -1,0 +1,6 @@
+{"t": 1793738349.181355, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793738349.3365738, "kind": "http", "lib": "netlog_shim.py", "host": "pubchem.ncbi.nlm.nih.gov", "method": "GET", "path": "/rest/pug/compound/cid/25834/property/MolecularWeight,MolecularFormula/JSON"}
+{"t": 1793738350.7624168, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793738350.949912, "kind": "http", "lib": "netlog_shim.py", "host": "pubchem.ncbi.nlm.nih.gov", "method": "GET", "path": "/rest/pug/compound/cid/25834/property/MolecularWeight,MolecularFormula,ExactMass,HeavyAtomCount,Title,IUPACName/JSON"}
+{"t": 1793738351.488124, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793738351.678079, "kind": "http", "lib": "netlog_shim.py", "host": "pubchem.ncbi.nlm.nih.gov", "method": "GET", "path": "/rest/pug_view/data/compound/25834/JSON?heading=Molecular+Weight"}

@@ -1,0 +1,16 @@
+{"t": 1793733557.3510442, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793733557.9598742, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene:RCVRN+AND+organism_id:9606+AND+reviewed:true&format=json&size=5"}
+{"t": 1793733558.311286, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793733558.890765, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene:GET1+AND+organism_id:9606+AND+reviewed:true&format=json&size=5"}
+{"t": 1793733561.398884, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793733561.975156, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene%3ARCVRN+AND+organism_id%3A9606+AND+reviewed%3Atrue&format=json&size=5&fields=accession%2Cgene_names%2Cprotein_name%2Clength%2Cmass%2Csequence"}
+{"t": 1793733562.276938, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793733562.882176, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene%3AGET1+AND+organism_id%3A9606+AND+reviewed%3Atrue&format=json&size=5&fields=accession%2Cgene_names%2Cprotein_name%2Clength%2Cmass%2Csequence"}
+{"t": 1793733565.524043, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793733566.122954, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/P35243.fasta"}
+{"t": 1793733566.1318579, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793733566.742053, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/O00258.fasta"}
+{"t": 1793733571.000679, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793733571.6207209, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/O00258.json?fields=accession%2Cid%2Cgene_names%2Cprotein_name%2Clength%2Csequence"}
+{"t": 1793733571.8398452, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793733572.4500191, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/P35243.json?fields=accession%2Cid%2Cgene_names%2Cprotein_name%2Clength%2Csequence"}

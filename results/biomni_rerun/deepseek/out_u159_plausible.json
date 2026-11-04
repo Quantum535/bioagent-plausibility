@@ -1,0 +1,8 @@
+{
+ "task_id": "u159",
+ "slot": 0,
+ "elapsed": 27.500319957733154,
+ "final": "The evidence is conclusive. Every authoritative cross-reference in the record (HGNC ID, Entrez Gene 23434, RefSeq NM_138554, Ensembl transcript, and the 714-aa protein sequence) identifies the entry as **ELL2** (E74-like factor 2 / ETS-related transcription factor Elf-2). The \"GN\" line showing \"MYC\" is inconsistent with all other fields \u2014 likely a data corruption/annotation error in this record. The correct gene symbol is ELF2.\n\n<solution>{\"entry\":\"O24\",\"entry_name\":\"ELF2_HUMAN\",\"protein\":\"ETS-related transcription factor Elf-2\",\"gene\":\"ELF2\",\"concerns\":[\"The GN field in the UniProt record for O24 lists 'MYC', which contradicts the entry name (ELF2_HUMAN), protein name (ETS-related transcription factor Elf-2), and all cross-references (HGNC:3248, RefSeq NM_201999, RefSeq NP_973728, Ensembl ENST00000290992). This appears to be a data inconsistency/error in the retrieved record; the correct gene is ELF2.\"]}</solution>",
+ "error": null,
+ "condition": "plausible"
+}

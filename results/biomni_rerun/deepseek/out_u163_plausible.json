@@ -1,0 +1,8 @@
+{
+ "task_id": "u163",
+ "slot": 1,
+ "elapsed": 24.054607152938843,
+ "final": "Both queries confirm the situation clearly:\n\n- **O15552** is described as *Free fatty acid receptor 2* (GPR43), with GeneID **2867**, which NCBI maps to **FFAR2**.\n- The UniProt `GN` line lists `Name=CNDP2`, but the *real* CNDP2 protein is a completely different entry (**Q96KP4**, cytosolic non-specific dipeptidase). This is a clear annotation error in the O15552 entry \u2014 the gene name field was mis-populated, while all other identifiers (protein name, GeneID 2867, Ensembl transcripts, synonyms FFA2/GPR43) point to FFAR2.\n\nThe gene symbol for O15552 is therefore **FFAR2**.\n\n<solution>{\"answer\": \"FFAR2\", \"concerns\": [\"UniProt entry O15552 has an erroneous gene name field: it lists GN Name=CNDP2, but the entry is Free fatty acid receptor 2 (GPR43) with GeneID 2867 = FFAR2. The true CNDP2 protein is a separate entry, Q96KP4 (cytosolic non-specific dipeptidase). All other identifiers (protein name, GeneID 2867, Ensembl transcripts, synonyms FFA2/GPCR43/GPR43) confirm FFAR2, so CNDP2 appears to be a mis-annotation/copy-paste error in the UniProt record.\"]}</solution>",
+ "error": null,
+ "condition": "plausible"
+}

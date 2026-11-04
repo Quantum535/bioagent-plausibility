@@ -1,0 +1,8 @@
+{
+ "task_id": "u138",
+ "slot": 0,
+ "elapsed": 33.663382053375244,
+ "final": "The EBI Proteins API independently confirms the record is human (taxon 9606, entry name BHA09_HUMAN). The UniProt REST `scientificName` field is corrupt \u2014 it says \"Mus musculus\" while every other field (taxon ID 9606, common name \"Human\", lineage ending in *Homo*, entry name `BHA09_HUMAN`) indicates *Homo sapiens*.\n\nOrganism: **Homo sapiens** \u2014 a mammal: **yes**.\n\n<solution>\nQ7RTU4 is the human Class A basic helix-loop-helix protein 9 (bHLHa9, gene BHLHA9), entry name BHA09_HUMAN.\n\nOrganism: Homo sapiens. Is it a mammal? Yes.\n\nNote on the data: the UniProt REST API record for Q7RTU4 is internally contradictory \u2014 its `organism.scientificName` field reads \"Mus musculus\", yet `taxonId` is 9606, `commonName` is \"Human\", the lineage terminates in *Homo*, and the entry name is `BHA09_HUMAN`. Cross-checking with the independent EBI Proteins API confirms *Homo sapiens* (taxonomy 9606, BHA09_HUMAN), so the \"Mus musculus\" string is a data anomaly, not the true source organism.\n\n{\"answer\": \"Homo sapiens\", \"concerns\": [\"UniProt REST record Q7RTU4 has an internally inconsistent organism block: scientificName says 'Mus musculus' while taxonId=9606, commonName='Human', lineage ends in Homo, and entry name is BHA09_HUMAN. EBI Proteins API independently confirms Homo sapiens.\"]}</solution>",
+ "error": null,
+ "condition": "plausible"
+}

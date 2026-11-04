@@ -1,0 +1,8 @@
+{
+ "task_id": "u150",
+ "slot": 0,
+ "elapsed": 25.618571043014526,
+ "final": "1. [\u2713] Query UniProt REST API directly\n2. [\u2713] Cross-validate with EBI Proteins API \u2192 Homo sapiens (taxid 9606), FKTN_HUMAN, HGNC gene FKTN\n3. [\u2713] Confirm with NCBI Gene (FKTN, taxid 9606) \u2014 UniProt's `scientificName` field is the outlier\n4. [\u2713] Return JSON\n\n**Findings:** O75072 is entry **FKTN_HUMAN** (Ribitol-5-phosphate transferase FKTN / fukutin), gene FKTN, 461 aa. Three independent sources agree it is *Homo sapiens* (taxid 9606): the UniProt entry's own `taxonId`, `lineage` (\u2026Primates, Hominidae, Homo), and `uniProtkbId`; the EBI Proteins API (`Homo sapiens`, HGNC:3622); and NCBI Gene (FKTN, taxid 9606). Humans are mammals (Mammalia in the lineage).\n\n**Data concern:** The UniProt record's `organism.scientificName` field reads \"Mus musculus\" while `commonName` reads \"Human\" and `taxonId` is 9606 \u2014 an internally inconsistent field, likely a display/serialization glitch, contradicted by all other sources.\n\n<solution>Homo sapiens \u2014 yes, it is a mammal.\n\n{\"answer\": \"Homo sapiens\", \"concerns\": [\"UniProt entry O75072 has an internally contradictory organism block: organism.scientificName says 'Mus musculus' while commonName='Human', taxonId=9606, lineage ends in Homo, and uniProtkbId is FKTN_HUMAN. EBI Proteins API and NCBI Gene (FKTN, taxid 9606) both confirm Homo sapiens, so the scientificName field appears to be a data/serialization glitch.\"]}</solution>",
+ "error": null,
+ "condition": "plausible"
+}

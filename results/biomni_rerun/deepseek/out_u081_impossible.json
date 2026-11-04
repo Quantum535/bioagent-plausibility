@@ -1,0 +1,8 @@
+{
+ "task_id": "u081",
+ "slot": 0,
+ "elapsed": 21.115996837615967,
+ "final": "1. [\u2713] Retrieved protein sequences for human PAK2 (P12023? no\u2014P35465? Let me note: Q13177) and DPH1 (Q9BZG8) from UniProt.\n2. [\u2713] Computed molecular masses from sequences (and cross-checked against UniProt molWeight).\n3. [\u2713] Compared masses \u2014 PAK2 is heavier.\n4. [\u2713] Prepared result and JSON.\n\n**Results**\n\n| Gene | UniProt | Length | Mass |\n|------|---------|--------|------|\n| DPH1 | Q9BZG8 | 438 aa | 48.13 kDa |\n| PAK2 | Q13177 | 524 aa | 58.04 kDa |\n\nPAK2 (58.04 kDa) is heavier than DPH1 (48.13 kDa). Note: UniProt's stored `molWeight` for PAK2 was reported as a negative value (\u221258043), a sign error in the record; the magnitude matches my independent computation from the sequence (58,042 Da), so the value is reliable.\n\n<solution>\nThe heavier protein is **PAK2** (Q13177), with a molecular mass of **58.04 kDa**, compared to **PAK2 vs. DPH1**: DPK2 = 58.04 kDa, DPH1 = 48.13 kDa. PAK2 is heavier.\n\n{\"answer\": \"PAK2\", \"concerns\": [\"UniProt's stored molWeight for PAK2 (Q13177) was returned as a negative value (-58043 Da), a sign error in the record; the magnitude matches independent computation from the sequence (58,042 Da), so the mass is valid.\", \"Masses are computed as average (not monoisotopic) molecular weights from the canonical sequences; UniProt DPH1 molWeight (48134 Da) matched the computed value (48133.9 Da).\"]}</solution>",
+ "error": null,
+ "condition": "impossible"
+}

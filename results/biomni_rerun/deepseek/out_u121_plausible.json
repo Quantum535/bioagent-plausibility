@@ -1,0 +1,8 @@
+{
+ "task_id": "u121",
+ "slot": 2,
+ "elapsed": 55.18509101867676,
+ "final": "## Results\n\n| Gene | UniProt | Length | Mass |\n|------|---------|--------|------|\n| MAD2L1 | Q13257 (MD2L1_HUMAN) | 205 aa | 23.51 kDa |\n| SCN4B | Q8IWT1 (SCN4B_HUMAN) | 228 aa | 24.97 kDa |\n\n**SCN4B is heavier** (24.97 kDa vs. 23.51 kDa for MAD2L1).\n\n**Data check:** The UniProt JSON record for Q8IWT1 reported `length: 171` and `molWeight: 18727 Da`, which is inconsistent with its own sequence (228 aa). The Ensembl canonical protein ENSP00000322460 is also 228 aa and matches the UniProt sequence exactly, so the masses above are computed directly from the canonical sequences (Biopython average MW), which are consistent across sources. The MAD2L1 record was internally consistent (205 aa, 23,510 Da).\n\n<solution>MAD2L1 encodes a 205-aa protein of ~23.51 kDa; SCN4B encodes a 228-aa protein of ~24.97 kDa. SCN4B is the heavier protein.\n\n{\"answer\": \"SCN4B\", \"concerns\": [\"UniProt Q8IWT1 (SCN4B) JSON 'length' (171) and 'molWeight' (18,727 Da) fields conflict with its own sequence (228 aa); Ensembl canonical ENSP00000322460 confirms 228 aa, so masses were computed from the canonical sequences (~24.97 kDa vs ~23.51 kDa).\"]}</solution>",
+ "error": null,
+ "condition": "plausible"
+}

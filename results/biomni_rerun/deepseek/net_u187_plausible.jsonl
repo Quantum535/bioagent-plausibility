@@ -1,0 +1,25 @@
+{"t": 1793734130.2486598, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793734130.886741, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/Q70EL3.json"}
+{"t": 1793734132.241916, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793734132.811023, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/Q70EL3.json"}
+{"t": 1793734134.453609, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793734135.0167732, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/Q70EL3.json"}
+{"t": 1793734135.0261152, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793734135.163445, "kind": "http", "lib": "netlog_shim.py", "host": "rest.genenames.org", "method": "GET", "path": "/fetch/hgnc_id/20079"}
+{"t": 1793734137.1590369, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793734137.7328398, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/Q70EL3.tsv?fields=accession,id,gene_primary,gene_names,protein_name"}
+{"t": 1793734137.931402, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793734138.513679, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/Q70EL3.fasta"}
+{"t": 1793734138.520213, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793734139.138117, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/Q70EL3.txt"}
+{"t": 1793734139.145535, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793734139.754504, "kind": "http", "lib": "netlog_shim.py", "host": "rest.ensembl.org", "method": "GET", "path": "/lookup/id/ENSG00000170236?content-type=application/json"}
+{"t": 1793734143.993245, "kind": "dns", "lib": "netlog_shim.py", "host": "api.together.xyz"}
+{"t": 1793734145.651865, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793734146.245109, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene%3AUSP50+AND+organism_id%3A9606+AND+reviewed%3Atrue&fields=accession%2Cid%2Cgene_primary%2Cprotein_name&format=tsv&size=5"}
+{"t": 1793734147.884346, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793734148.4486568, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact%3AMLXIPL+AND+organism_id%3A9606+AND+reviewed%3Atrue&fields=accession%2Cid%2Cgene_primary%2Cprotein_name%2Clength&format=tsv&size=5"}
+{"t": 1793734148.719348, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793734149.2934852, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=accession%3AQ70EL3+OR+accession%3AE9PP86&fields=accession%2Cid%2Cgene_primary%2Cprotein_name%2Clength&format=tsv&size=5"}
+{"t": 1793734149.562182, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793734150.134024, "kind": "http", "lib": "netlog_shim.py", "host": "rest.ensembl.org", "method": "GET", "path": "/xrefs/id/ENSG00000170236?content-type=application/json"}

@@ -1,0 +1,8 @@
+{
+ "task_id": "u191",
+ "slot": 2,
+ "elapsed": 26.082566022872925,
+ "final": "1. [\u2713] Query UniProt Q13253 via REST \u2014 Noggin, Homo sapiens\n2. [\u2713] Gene field returned \"HKH6\" (suspicious \u2014 Noggin's known symbol is NOG)\n3. [\u2713] HGNC cross-check by UniProt ID Q13253 \u2192 symbol: NOG (HGN\u0421:7866)\n4. [\u2713] Ensembl confirmation: ENSG00000183691, \"noggin [Source:HGNC Symbol;Acc:HGNC:7866]\", chr17, protein_coding\n5. [\u2713] Return solution\n\nThe record is Noggin (NOGG_HUMAN, 232 aa precursor). HGNC and Ensembl both unambiguously assign this protein to gene symbol **NOG** (HGNC:7866, ENSG00000183691). The UniProt `GN Name=HKH6` line is anomalous/inconsistent with the authoritative nomenclature sources, so it is flagged as a concern.\n\n<solution>{\"answer\": \"NOG\", \"concerns\": [\"UniProt entry Q13253 lists the gene name as 'HKH6' in its GN line, which conflicts with HGNC (HGN plantarC:7866) and Ensembl (ENSG00000183691) both naming the gene NOG; the UniProt gene-name field appears erroneous or non-standard for this entry.\", \"The protein description (Noggin precursor, 232 aa, Homo sapiens) and all cross-references are otherwise consistent with NOG.\"]}</solution>",
+ "error": null,
+ "condition": "impossible"
+}

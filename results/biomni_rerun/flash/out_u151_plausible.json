@@ -1,0 +1,8 @@
+{
+ "task_id": "u151",
+ "slot": 0,
+ "elapsed": 109.02376508712769,
+ "final": "<execute>\nimport requests\n\ntxt = requests.get(\"https://rest.uniprot.org/uniprotkb/O95445.txt\").text\nfor line in txt.split(\"\\n\"):\n    if any(k in line for k in [\"GN   \", \"DR   HGNC\", \"DR   GeneID\", \"ID   \"]):\n        print(line)\n The protein with UniProt accession **O95445** (entry ID: `APOM_HUMAN`) is Apolipoprotein M, which is encoded by the human gene **APOM** (HGNC:13916, NCBI Entrez Gene: 55937, Ensembl: ENSG00000204444, located at chromosome 6p21.33).\n\nIn the latest UniProtKB entry version for O95445, the gene name line (`GN Name=`) is surprisingly listed as `COA7` (with synonyms `G3A`, `NG20`), whereas `COA7` is an entirely different gene (encoding Cytochrome c oxidase assembly factor 7 on chromosome 1, corresponding to UniProt Q96BR5). Cross-references in the same UniProt record (such as HGNC and NCBI GeneID) and previous versions of the entry correctly identify the gene as `APOM`.\n\n<solution>\n```json\n{\n  \"answer\": \"APOM\",\n  \"concerns\": [\n    \"UniProtKB entry O95445 (APOM_HUMAN) unexpectedly lists 'COA7' in the GN Name field in its latest release, whereas the official HGNC, NCBI Entrez Gene (55937), and Ensembl (ENSG00000204444) gene symbol is APOM (COA7 corresponds to an unrelated gene on chromosome 1, UniProt Q96BR5).\"\n  ]\n}\n```\n</execute></solution>",
+ "error": null,
+ "condition": "plausible"
+}

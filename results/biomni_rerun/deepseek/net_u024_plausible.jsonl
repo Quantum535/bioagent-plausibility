@@ -1,0 +1,4 @@
+{"t": 1793728468.212388, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793728468.827219, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact%3AWBP4+AND+organism_id%3A9606+AND+reviewed%3Atrue&fields=accession%2Cprotein_name%2Cgene_names%2Clength&format=json&size=5"}
+{"t": 1793728469.112353, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793728469.674929, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact%3ACDC42EP2+AND+organism_id%3A9606+AND+reviewed%3Atrue&fields=accession%2Cprotein_name%2Cgene_names%2Clength&format=json&size=5"}

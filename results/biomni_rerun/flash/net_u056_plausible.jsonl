@@ -1,0 +1,13 @@
+{"t": 1793741326.8113742, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact:USP50+AND+organism_id:9606+AND+reviewed:true&format=json"}
+{"t": 1793741326.812161, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793741327.427835, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene_exact:RLN2+AND+organism_id:9606+AND+reviewed:true&format=json"}
+{"t": 1793741327.4280498, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793741332.5890172, "kind": "http", "lib": "netlog_shim.py", "host": "rest.ensembl.org", "method": "GET", "path": "/lookup/symbol/homo_sapiens/USP50?expand=1"}
+{"t": 1793741332.589428, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793741337.8672352, "kind": "http", "lib": "netlog_shim.py", "host": "rest.ensembl.org", "method": "GET", "path": "/lookup/symbol/homo_sapiens/RLN2?expand=1"}
+{"t": 1793741337.867733, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793741350.739157, "kind": "dns", "lib": "netlog_shim.py", "host": "aiplatform.googleapis.com"}
+{"t": 1793741356.78028, "kind": "http", "lib": "netlog_shim.py", "host": "eutils.ncbi.nlm.nih.gov", "method": "GET", "path": "/entrez/eutils/esearch.fcgi?db=gene&term=USP50[Gene%20Name]+AND+human[Organism]&retmode=json"}
+{"t": 1793741356.780701, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793741357.095417, "kind": "http", "lib": "netlog_shim.py", "host": "eutils.ncbi.nlm.nih.gov", "method": "GET", "path": "/entrez/eutils/esearch.fcgi?db=gene&term=RLN2[Gene%20Name]+AND+human[Organism]&retmode=json"}
+{"t": 1793741357.096016, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}

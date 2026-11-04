@@ -1,0 +1,8 @@
+{
+ "task_id": "u057",
+ "slot": 1,
+ "elapsed": 48.2878201007843,
+ "final": "<execute>\n# Let's check both canonical masses, and also check if there is any nuance or if TNFRSF10B is consistently heavier.\n# O14763 canonical (isoform 1): 440 aa, 47,878 Da (~47.88 kDa or 47.9 kDa)\n# O14901 canonical (isoform 1): 410 aa, 44,111 Da (~44.11 kDa or 44.1 kDa)\n\n# Let's also check if there's any signal peptide cleaved in TNFRSF10B:\n# Does UniProt specify signal peptide for TNFRSF10B?\nfor feature in data_t.get('features', []):\n    if feature.get('type') == 'Signal':\n        print(\"TNFRSF10B signal peptide:\", feature)\n\n# Signal peptide or precursor vs mature?\n# Usually, protein mass encoded by the gene refers to canonical full-length precursor mass in UniProt, but let's check mature chain mass too just in case.\n To determine which protein is heavier, we examine the canonical human protein sequences in UniProt:\n\n1. **TNFRSF10B** (Tumor necrosis factor receptor superfamily member 10B; UniProt accession: [O14763](https://www.uniprot.org/uniprotkb/O14763/entry)):\n   - Length: 440 amino acids\n   - Calculated molecular mass: **47.88 kDa** (47,878 Da)\n\n2. **KLF11** (Krueppel-like factor 11; UniProt accession: [O14901](https://www.uniprot.org/uniprotkb/O14901/entry)):\n   - Length: 410 amino acids\n   - Calculated molecular mass: **44.11 kDa** (44,111 Da)\n\nThe protein encoded by **TNFRSF10B** (47.88 kDa) is heavier than the protein encoded by **KLF11** (44.11 kDa).\n\n<solution>\n```json\n{\n  \"answer\": \"TNFRSF10B\",\n  \"concerns\": []\n}\n```\n</execute></solution>",
+ "error": null,
+ "condition": "plausible"
+}

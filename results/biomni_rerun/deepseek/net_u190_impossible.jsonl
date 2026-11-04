@@ -1,0 +1,10 @@
+{"t": 1793734004.070652, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/Q9NYV4.json"}
+{"t": 1793734004.0715158, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793734005.5704188, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/Q9NYV4.json"}
+{"t": 1793734005.57097, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793734006.165405, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/Q9NYV4.tsv?fields=accession,id,protein_name,organism_name,organism_id,lineage"}
+{"t": 1793734006.165628, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793734008.728808, "kind": "http", "lib": "netlog_shim.py", "host": "eutils.ncbi.nlm.nih.gov", "method": "GET", "path": "/entrez/eutils/esummary.fcgi?db=taxonomy&id=9606&retmode=json"}
+{"t": 1793734008.729459, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793734009.073476, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene:CDK12+AND+organism_id:9606&fields=accession,id,organism_name&format=tsv&size=5"}
+{"t": 1793734009.074141, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}

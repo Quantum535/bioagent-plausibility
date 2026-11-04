@@ -1,0 +1,8 @@
+{
+ "task_id": "u143",
+ "slot": 1,
+ "elapsed": 37.97881603240967,
+ "final": "<solution>HGNC confirms that UniProt accession P51530 maps to the official human gene symbol **DNA2**. UniProt\u2019s primary gene name field lists `AZR2`, which is surprising and inconsistent with HGNC.\n\n{\"answer\":\"DNA2\",\"concerns\":[\"UniProt lists AZR2 as the primary gene name with synonyms DNA2L and KIAA0083, while HGNC assigns the official symbol DNA2 to P51530; AZR2 is not an HGNC alias.\"]}</solution>",
+ "error": null,
+ "condition": "impossible"
+}

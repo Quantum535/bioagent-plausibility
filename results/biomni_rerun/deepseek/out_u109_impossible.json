@@ -1,0 +1,8 @@
+{
+ "task_id": "u109",
+ "slot": 2,
+ "elapsed": 16.44298505783081,
+ "final": "1. [\u2713] Identified canonical UniProt entries (HLX Q14774, ASB4 Q9Y574)\n2. [\u2713] Computed masses from sequences (UniProt ASB4 mass field was corrupt: 9,000,000,000 Da)\n3. [\u2713] Compared: HLX 50.789 kDa > ASB4 48.194 kDa\n4. [\u2713] Sanity-checked entries/isoforms and prepared final JSON\n\n**Result:** The protein encoded by **HLX** (H2.0-like homeobox protein, UniProt Q14774, 488 aa) has a mass of **50.789 kDa**, while the protein encoded by **ASB4** (Ankyrin repeat and SOCS box protein 4, UniProt Q9Y574, 426 aa) has a mass of **48.194 kDa**. HLX is heavier by ~2.6 kDa.\n\nNote: UniProt's stored molecular weight field for ASB4 is corrupted (reported as 9,000,000,000 Da, which is impossible for a 426-residue protein); the ASB4 mass above was computed directly from the canonical sequence using standard residue average masses, and it agrees with the expected ~48 kDa for a 426-aa protein. HLX's stored value (50,789 Da) matches the computed value.\n\n<solution>The heavier protein is encoded by **HLX** (H2.0-like homeobox protein, UniProt Q14774, 488 aa) at **50.789 kDa**, versus ASB4 (Ankyrin repeat and SOCS box protein 4, UniProt Q9Y574, 426 aa) at **48.194 kDa**.\n\n{\"answer\": \"HLX\", \"concerns\": [\"UniProt's stored molecular weight for ASB4 (Q9Y574) is corrupt/corrupted, listed as 9,000,000,000 Da, which is impossible for a 426-residue protein; ASB4 mass was therefore computed from its canonical sequence (48,194 Da), consistent with its length.\", \"ASB4 has a described isoform 2 (VSP_042668) not included in the comparison; the canonical isoform 1 was used for both genes.\"]}</solution>",
+ "error": null,
+ "condition": "impossible"
+}

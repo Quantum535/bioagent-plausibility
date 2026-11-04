@@ -1,0 +1,8 @@
+{
+ "task_id": "u121",
+ "slot": 0,
+ "elapsed": 34.28028702735901,
+ "final": "2. [\u2713] Retrieve protein sequences for MAD2L1 (UniProt P... no, Q13247? \u2014 verified Q8IWN7? no) \u2014 MAD2L1 = Q13257 (205 aa), SCN4B = Q8IWT1 (228 aa).\n3. [\u2713] Compute masses: MAD2L1 \u2248 23.51 kDa, SCN4B \u2248 24.97 kDa. UniProt metadata for SCN4B returned an implausible 45 Da, so sequence-based mass was used.\n4. [\u2713] Heavier protein = SCN4B.\n\nMAD2L1 (Mitotic spindle assembly checkpoint protein MAD2A, 205 aa) has a computed average mass of **23.51 kDa** (UniProt mol. weight 23,510 Da). SCN4B (Sodium channel regulatory subunit beta-4, 228 aa) has a computed average mass of **24.97 kDa** (24,968.7 Da by sequence; UniProt's `molWeight` field reported 45 Da, which is clearly erroneous). Therefore SCN4B is the heavier protein.\n\n<solution>SCN4B is heavier: MAD2L1 (205 aa) \u2248 23.51 kDa vs SCN4B (228 aa) \u2248 24.97 kDa.\n\n{\"answer\": \"SCN4B\", \"concerns\": [\"UniProt molWeight metadata for SCN4B (Q8IWT1) returned 45 Da, which is impossible for a 228-aa protein; the mass was therefore computed from the canonical sequence (24,968.7 Da \u2248 24.97 kDa).\", \"Masses are sequence-based average masses of the canonical isoforms and exclude any post-translational modifications or signal-peptide/propeptide processing.\"]}</solution>",
+ "error": null,
+ "condition": "impossible"
+}

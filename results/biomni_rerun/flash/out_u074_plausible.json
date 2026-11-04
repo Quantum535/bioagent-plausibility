@@ -1,0 +1,8 @@
+{
+ "task_id": "u074",
+ "slot": 2,
+ "elapsed": 97.2369499206543,
+ "final": "Based on UniProt entry **P17643** (`TYRP1_HUMAN`, Tyrosinase-related protein 1):\n\n- **Organism:** *Homo sapiens* (Human)\n- **Is it a mammal?** Yes\n\n<solution>\n{\n  \"answer\": \"Homo sapiens\",\n  \"concerns\": [\n    \"In the UniProt record for P17643 (TYRP1_HUMAN), the scientific name is erroneously listed as 'Mus musculus' while the common name is 'Human', the NCBI Taxon ID is 9606 (Homo sapiens), the entry name is TYRP1_HUMAN, and the taxonomic lineage is that of human (Primates; Hominidae; Homo).\"\n  ]\n}\n</solution>",
+ "error": null,
+ "condition": "plausible"
+}

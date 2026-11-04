@@ -1,0 +1,105 @@
+[22:14:02.419] Loading script harness/corrupt_proxy.py
+[22:14:02.424] HTTP(S) proxy listening at *:8899.
+[22:18:47.364][127.0.0.1:53609] client connect
+[22:18:47.529][127.0.0.1:53609] server connect rest.uniprot.org:443 (193.62.192.81:443)
+127.0.0.1:53609: GET https://rest.uniprot.org/uniprotkb/search?query=gene_ex…
+              << 200 OK 51.7k
+[22:18:47.901][127.0.0.1:53609] client disconnect
+[22:18:47.901][127.0.0.1:53609] server disconnect rest.uniprot.org:443 (193.62.192.81:443)
+[22:18:47.902][127.0.0.1:53611] client connect
+[22:18:48.051][127.0.0.1:53611] server connect rest.uniprot.org:443 (193.62.192.81:443)
+127.0.0.1:53611: GET https://rest.uniprot.org/uniprotkb/search?query=gene_ex…
+              << 200 OK 46.2k
+[22:18:48.366][127.0.0.1:53611] client disconnect
+[22:18:48.366][127.0.0.1:53611] server disconnect rest.uniprot.org:443 (193.62.192.81:443)
+[22:18:54.747][127.0.0.1:53616] client connect
+[22:18:54.910][127.0.0.1:53616] server connect rest.uniprot.org:443 (193.62.192.81:443)
+127.0.0.1:53616: GET https://rest.uniprot.org/uniprotkb/P0DTE4.json
+              << 200 OK 51.7k
+[22:18:55.253][127.0.0.1:53616] client disconnect
+[22:18:55.253][127.0.0.1:53616] server disconnect rest.uniprot.org:443 (193.62.192.81:443)
+[22:18:55.255][127.0.0.1:53618] client connect
+[22:18:55.405][127.0.0.1:53618] server connect rest.uniprot.org:443 (193.62.192.81:443)
+127.0.0.1:53618: GET https://rest.uniprot.org/uniprotkb/O15120.json
+              << 200 OK 46.2k
+OpenSSL/crypto.py:984: CryptographyDeprecationWarning: Parsed a serial number which wasn't positive (i.e., it was negative or zero), which is disallowed by RFC 5280. Loading this certificate will cause an exception in a future release of cryptography.
+[22:18:55.819][127.0.0.1:53618] client disconnect
+[22:18:55.821][127.0.0.1:53620] client connect
+[22:18:55.821][127.0.0.1:53618] server disconnect rest.uniprot.org:443 (193.62.192.81:443)
+[22:18:55.891][127.0.0.1:53620] server connect eutils.ncbi.nlm.nih.gov:443 (34.107.134.59:443)
+127.0.0.1:53620: GET https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.f…
+              << 200 OK 267b
+[22:18:56.031][127.0.0.1:53620] client disconnect
+[22:18:56.031][127.0.0.1:53620] server disconnect eutils.ncbi.nlm.nih.gov:443 (34.107.134.59:443)
+[22:18:56.033][127.0.0.1:53622] client connect
+[22:18:56.059][127.0.0.1:53622] server connect eutils.ncbi.nlm.nih.gov:443 (34.107.134.59:443)
+127.0.0.1:53622: GET https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.…
+              << 200 OK 1.2k
+[22:18:56.236][127.0.0.1:53622] client disconnect
+[22:18:56.237][127.0.0.1:53622] server disconnect eutils.ncbi.nlm.nih.gov:443 (34.107.134.59:443)
+[22:18:56.241][127.0.0.1:53624] client connect
+[22:18:56.263][127.0.0.1:53624] server connect eutils.ncbi.nlm.nih.gov:443 (34.107.134.59:443)
+127.0.0.1:53624: GET https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.f…
+              << 200 OK 268b
+[22:18:56.416][127.0.0.1:53624] client disconnect
+[22:18:56.417][127.0.0.1:53624] server disconnect eutils.ncbi.nlm.nih.gov:443 (34.107.134.59:443)
+[22:18:56.421][127.0.0.1:53626] client connect
+[22:18:56.442][127.0.0.1:53626] server connect eutils.ncbi.nlm.nih.gov:443 (34.107.134.59:443)
+127.0.0.1:53626: GET https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.…
+              << 429 Too Many Requests 102b
+[22:18:56.597][127.0.0.1:53626] client disconnect
+[22:18:56.597][127.0.0.1:53626] server disconnect eutils.ncbi.nlm.nih.gov:443 (34.107.134.59:443)
+[22:19:28.533][127.0.0.1:53630] client connect
+[22:19:28.691][127.0.0.1:53630] server connect rest.uniprot.org:443 (193.62.192.81:443)
+127.0.0.1:53630: GET https://rest.uniprot.org/uniprotkb/search?query=gene:UG…
+              << 200 OK 51.7k
+[22:19:29.450][127.0.0.1:53630] server disconnect rest.uniprot.org:443 (193.62.192.81:443)
+[22:19:29.451][127.0.0.1:53630] client disconnect
+[22:19:29.453][127.0.0.1:53632] client connect
+[22:19:29.600][127.0.0.1:53632] server connect rest.uniprot.org:443 (193.62.192.81:443)
+127.0.0.1:53632: GET https://rest.uniprot.org/uniprotkb/search?query=gene:AG…
+              << 200 OK 46.2k
+[22:19:30.408][127.0.0.1:53632] server disconnect rest.uniprot.org:443 (193.62.192.81:443)
+[22:19:30.409][127.0.0.1:53632] client disconnect
+[22:19:35.453][127.0.0.1:53634] client connect
+[22:19:35.484][127.0.0.1:53634] server connect eutils.ncbi.nlm.nih.gov:443 (34.107.134.59:443)
+127.0.0.1:53634: GET https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.f…
+              << 200 OK 464b
+[22:19:35.649][127.0.0.1:53634] server disconnect eutils.ncbi.nlm.nih.gov:443 (34.107.134.59:443)
+[22:19:35.650][127.0.0.1:53634] client disconnect
+[22:19:35.653][127.0.0.1:53636] client connect
+[22:19:35.682][127.0.0.1:53636] server connect eutils.ncbi.nlm.nih.gov:443 (34.107.134.59:443)
+127.0.0.1:53636: GET https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.…
+              << 200 OK 3.9k
+[22:19:35.948][127.0.0.1:53636] server disconnect eutils.ncbi.nlm.nih.gov:443 (34.107.134.59:443)
+[22:19:35.949][127.0.0.1:53636] client disconnect
+[22:19:35.952][127.0.0.1:53638] client connect
+[22:19:35.979][127.0.0.1:53638] server connect eutils.ncbi.nlm.nih.gov:443 (34.107.134.59:443)
+127.0.0.1:53638: GET https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.f…
+              << 200 OK 466b
+[22:19:36.280][127.0.0.1:53638] server disconnect eutils.ncbi.nlm.nih.gov:443 (34.107.134.59:443)
+[22:19:36.281][127.0.0.1:53638] client disconnect
+[22:19:36.284][127.0.0.1:53640] client connect
+[22:19:36.310][127.0.0.1:53640] server connect eutils.ncbi.nlm.nih.gov:443 (34.107.134.59:443)
+127.0.0.1:53640: GET https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.…
+              << 429 Too Many Requests 85b
+[22:19:36.423][127.0.0.1:53640] server disconnect eutils.ncbi.nlm.nih.gov:443 (34.107.134.59:443)
+[22:19:36.424][127.0.0.1:53640] client disconnect
+[22:20:39.878][127.0.0.1:53644] client connect
+[22:20:40.040][127.0.0.1:53644] server connect rest.uniprot.org:443 (193.62.192.81:443)
+127.0.0.1:53644: GET https://rest.uniprot.org/uniprotkb/search?query=gene_ex…
+              << 200 OK 312b
+[22:20:40.384][127.0.0.1:53644] client disconnect
+[22:20:40.385][127.0.0.1:53644] server disconnect rest.uniprot.org:443 (193.62.192.81:443)
+[22:20:40.388][127.0.0.1:53646] client connect
+[22:20:40.535][127.0.0.1:53646] server connect rest.uniprot.org:443 (193.62.192.81:443)
+127.0.0.1:53646: GET https://rest.uniprot.org/uniprotkb/search?query=gene_ex…
+              << 200 OK 230b
+[22:20:40.850][127.0.0.1:53646] client disconnect
+[22:20:40.850][127.0.0.1:53646] server disconnect rest.uniprot.org:443 (193.62.192.81:443)
+[22:20:43.646][127.0.0.1:53648] client connect
+[22:20:43.797][127.0.0.1:53648] server connect rest.uniprot.org:443 (193.62.192.81:443)
+127.0.0.1:53648: GET https://rest.uniprot.org/uniprotkb/O15120.json
+              << 200 OK 46.2k
+[22:20:44.135][127.0.0.1:53648] client disconnect
+[22:20:44.135][127.0.0.1:53648] server disconnect rest.uniprot.org:443 (193.62.192.81:443)

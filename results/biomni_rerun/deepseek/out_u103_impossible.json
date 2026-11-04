@@ -1,0 +1,8 @@
+{
+ "task_id": "u103",
+ "slot": 0,
+ "elapsed": 21.890366077423096,
+ "final": "1. [\u2713] Query UniProt for accession O75821 (done via direct REST; helper required an LLM API key).\n2. [\u2713] Extract gene info.\n3. [\u2713] Cross-check via Ensembl (ENSG00000130811 \u2192 EIF3G) and UniProt search endpoint (EIF3G EIF3S4).\n4. [\u2713] Return the answer.\n\nThe entry-level JSON reported `geneName: YEL4`, which is a yeast-style name erroneously propagated by a HAMAP rule. The canonical human symbol, confirmed by both Ensembl (HGNC:3274) and the UniProt search endpoint, is **EIF3G** (synonym EIF3S4).\n\n<solution>{\"answer\": \"EIF3G\", \"concerns\": [\"The UniProt entry JSON for O75821 lists geneName 'YEL4' (a yeast-style name propagated from HAMAP-Rule MF_03006), which is incorrect for this human entry; the canonical symbol EIF3G was confirmed via Ensembl (ENSG00000130811) and the UniProt search endpoint (EIF3G, synonym EIF3S4).\"]}</solution>",
+ "error": null,
+ "condition": "impossible"
+}

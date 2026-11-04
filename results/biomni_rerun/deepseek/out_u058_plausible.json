@@ -1,0 +1,8 @@
+{
+ "task_id": "u058",
+ "slot": 2,
+ "elapsed": 27.81372618675232,
+ "final": "The record's cross-references are decisive: ENSG (human Ensembl gene), CCDS, HGNC, and entry ID ZN599_HUMAN all indicate human, matching taxon 9606 and the lineage ending in Homo. The \"Mus musculus\" scientificName is a corrupted field.\n\n1. [\u2713] Queried UniProt for Q96NL3\n2. [\u2713] Extracted organism and lineage\n3. [\u2713] Cross-verified species via entry ID, taxon ID, and cross-references (ENSG/HGNC/CCDS)\n\n<solution>Q96NL3 (Zinc finger protein 599, gene ZNF599) is from **Homo sapiens** (human), which is a mammal: **yes**.\n\nThe UniProt record's organism block is internally inconsistent \u2014 `scientificName` reads \"Mus musculus\" while the taxon ID is 9606, common name \"Human\", lineage ends in *Homo*, the entry ID is ZN599_HUMAN, and all cross-references are human (ENSG00000153896, HGNC:26408, CCDS32991). The \"Mus musculus\" label is a corrupted field; the organism is unambiguously human.\n\n{\"answer\": \"Homo sapiens\", \"concerns\": [\"UniProt organism field for Q96NL3 is corrupted: scientificName says 'Mus musculus' while taxonId=9606, commonName='Human', lineage ends in Homo, and entry ID/cross-references (ZN599_HUMAN, ENSG00000153896, HGNC:26408, CCDS32991) all indicate human. Species determined as Homo sapiens from the concordant taxon ID, lineage, and cross-references.\"]}</solution>",
+ "error": null,
+ "condition": "plausible"
+}

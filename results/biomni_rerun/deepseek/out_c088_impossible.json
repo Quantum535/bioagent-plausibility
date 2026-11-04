@@ -1,0 +1,8 @@
+{
+ "task_id": "c088",
+ "slot": 0,
+ "elapsed": 39.84265899658203,
+ "final": "1. [\u2713] PubChem retrieved formulas; Neomycin MW field returned 2.0 (glitch)\n2. [\u2713] Computed MW from formula: Asaphan 522.47 Da, Neomycin 614.65 Da\n3. [\u2713] Compared \u2014 Neomycin is heavier\n\nNeomycin (C23H46N6O13) = 614.65 Da; Asaphan (C26H33Cl2N3O4) = 522.47 Da. Neomycin is heavier by ~92 Da. The PubChem \"MolecularWeight\" field for Neomycin (CID 8378) returned 2.0, which is clearly a data glitch; the value derived from its molecular formula is 614.65 Da.\n\n<solution>Neomycin is heavier. Asaphan = 522.47 Da (C26H33Cl2N3O4); Neomycin = 614.65 Da (C23H46N6O13).\n\n{\"answer\": \"Neomycin\", \"concerns\": [\"PubChem's MolecularWeight field for Neomycin (CID 8378) returned 2.0, which is clearly wrong; molecular weight was computed from the molecular formula C23H46N6O13 to give 614.65 Da.\", \"Neomycin is commonly used as neomycin trisulfate salt (much higher MW); here the free base (CID 8378) was used for comparison.\"]}</solution>",
+ "error": null,
+ "condition": "impossible"
+}

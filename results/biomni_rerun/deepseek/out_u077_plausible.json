@@ -1,0 +1,8 @@
+{
+ "task_id": "u077",
+ "slot": 0,
+ "elapsed": 60.895750999450684,
+ "final": "1. [\u2713] Queried UniProt for AHCYL2 (Q96HN2) and ZNF835 (Q9Y2P0)\n2. [\u2713] Computed molecular weights from canonical sequences\n3. [\u2713] Resolved a UniProt record inconsistency for ZNF835 via Ensembl/NCBI cross-check\n4. [\u2713] Compared and determined heavier gene\n\nComparison (computed from canonical sequences):\n\n| Gene | UniProt | Length | Mass |\n|------|---------|--------|------|\n| **AHCYL2** | Q96HN2 | 611 aa | **66.72 kDa** |\n| ZNF835 | Q9Y2P0 | 537 aa | 59.63 kDa |\n\nAHCYL2 is heavier. Note that UniProt's Q9Y2P0 header claims 671 aa / 74,539 Da, but the actual sequence block is only 537 aa (CRC64 matches the 537-aa sequence), and Ensembl + NCBI RefSeq NP_001005850 both confirm 537 aa. Using the erroneous header value would have flipped the answer.\n\n<solution>\n**AHCYL2** encodes the heavier protein: **AHCYL2 = 66.72 kDa** vs **ZNF835 = 59.63 kDa**.\n\n{\"answer\": \"AHCYL2\", \"concerns\": [\"UniProt record Q9Y2P0 (ZNF835) is internally inconsistent: the header/SQ line states 671 AA and 74,539 Da, but the actual sequence is 537 aa (CRC64 matches the 537-aa sequence). Ensembl (ENST00000537055 etc.) and NCBI RefSeq NP_001005850 both confirm 537 aa / ~59.6 kDa. Using UniProt's stated 74.5 kDa would incorrectly make ZNF835 appear heavier.\"]}</solution>",
+ "error": null,
+ "condition": "plausible"
+}

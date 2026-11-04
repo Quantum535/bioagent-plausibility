@@ -1,0 +1,14 @@
+{"t": 1793728042.267893, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793728042.8377311, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/Q96JX3.json"}
+{"t": 1793728044.006619, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793728044.572105, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/Q96JX3.tsv?fields=accession,protein_name,organism_name,organism_id,lineage,length,gene_names"}
+{"t": 1793728044.7631, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793728045.302217, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=accession:Q96JX3&fields=accession,organism_name,organism_id&format=tsv"}
+{"t": 1793728045.568903, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793728046.139064, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/Q96JX3.json"}
+{"t": 1793728047.397107, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793728047.952435, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/Q96JX3.json"}
+{"t": 1793728047.9634051, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793728048.512237, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene%3Aserac1+AND+organism_id%3A9606&fields=accession%2Cprotein_name%2Corganism_name%2Clength&format=tsv&size=5"}
+{"t": 1793728048.813998, "kind": "dns", "lib": "netlog_shim.py", "host": "127.0.0.1"}
+{"t": 1793728049.546271, "kind": "http", "lib": "netlog_shim.py", "host": "rest.uniprot.org", "method": "GET", "path": "/uniprotkb/search?query=gene%3Aserac1+AND+organism_id%3A10090&fields=accession%2Cprotein_name%2Corganism_name%2Clength&format=tsv&size=5"}

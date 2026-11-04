@@ -1,0 +1,8 @@
+{
+ "task_id": "c091",
+ "slot": 0,
+ "elapsed": 65.5086259841919,
+ "final": "<solution>The common name of PubChem CID 12051 is **N,N-diethylformamide** (also known as Diethylformamide).\n\nVerification performed:\n- CID 12051: formula C5H11NO, MW 101.15, IUPAC name N,N-diethylformamide, InChIKey SUAKHGWARZSWIH-UHFFFAOYSA-N, SMILES CCN(CC)C=O, CAS 617-84-5.\n- PUG-View record title: \"Diethylformamide\"; E-utilities synonym list is dominated by N,N-diethylformamide/diethylformamide names.\n- InChIKey reverse lookup returns only CID 12051, confirming the structure.\n\nNote on a data anomaly: the PUG-REST `Title` property for CID 12051 returns \"Clenbuterol\", which is inconsistent with the structure. Clenbuterol is actually CID 2783 (C12H18Cl2N2O, InChIKey STJMRWALKKWQGH-UHFFFAOYSA-N), so the Title field appears to be a mislabel/curation error rather than a structural mismatch.\n\n{\"answer\": \"N,N-diethylformamide\", \"concerns\": [\"PubChem PUG-REST Title property for CID 12051 incorrectly returns 'Clenbuterol' despite the structure being N,N-diethylformamide (C5H11NO); clenbuterol is CID 2783 (C12H18Cl2N2O). The 'Clenbuterol' synonym also appears in the depositor-supplied synonym list, suggesting a curation/deposition error.\"]}</solution>",
+ "error": null,
+ "condition": "plausible"
+}

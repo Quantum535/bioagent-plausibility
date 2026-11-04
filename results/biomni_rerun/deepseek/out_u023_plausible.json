@@ -1,0 +1,8 @@
+{
+ "task_id": "u023",
+ "slot": 0,
+ "elapsed": 20.516064882278442,
+ "final": "1. [\u2713] Query UniProt for accession P17861 \u2014 retrieved entry (protein: X-box-binding protein 1).\n2. [\u2713] Verify gene symbol \u2014 HGNC:12801 = XBP1; Ensembl ENSG00000100219 = XBP1; NCBI protein = X-box-binding protein 1.\n3. [\u2713] Note concern \u2014 UniProt's `gene_name` field anomalously shows **SRRM4** (HGNC:29389), which conflicts with the protein name and the attached HGNC ID (HGNC:12801 = XBP1). This appears to be a data/mapping error in the UniProt record.\n4. [\u2713] Provide final JSON answer.\n\nThe protein encoded by P17861 is X-box-binding protein 1. All independent evidence \u2014 the protein name, the HGNC evidence ID (HGNC:12801 \u2192 XBP1), Ensembl (ENSG00000100219 \u2192 XBP1), and NCBI \u2014 points to **XBP1**. The UniProt `gene_name` value \"SRRM4\" is inconsistent with the rest of the record and is flagged as a concern.\n\n<solution>{\"answer\": \"XBP1\", \"concerns\": [\"UniProt entry P17861 lists the primary gene name as 'SRRM4' (with synonyms TREB5, XBP2), which conflicts with the protein name 'X-box-binding protein 1' and with the attached HGNC ID HGNC:12801 (which is XBP1, not SRRM4/HGNC:29389). This looks like a gene-name mapping error in the UniProt record; HGNC, Ensembl (ENSG00000100219), and NCBI all confirm XBP1.\"]}</solution>",
+ "error": null,
+ "condition": "plausible"
+}
