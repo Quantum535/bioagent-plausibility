@@ -91,9 +91,8 @@ T = {t["task_id"]: t for t in json.load(open("data/phase5_tasks.json"))["tasks"]
 from harness import second_source as ss
 cov = lambda t: bool(ss._AF.get(T[t["task_id"]]["target_accession"]))
 def direction(t):
-    c = t.get("corruption") or {}
-    try: return "longer" if float(c["corrupted_value"]) > float(c["clean_value"]) else "shorter"
-    except Exception: return None
+    c = t.get("corruption") or T[t["task_id"]].get("corruption") or {}
+    return {"old_longer": "longer", "old_shorter": "shorter"}.get(c.get("direction"))
 rows = []
 for m in M3:
     ann = load(f"results/robustness/{m}_p5_annotate.jsonl", "superseded"); annc = [t for t in ann if cov(t)]
