@@ -12,7 +12,7 @@ def rate(rs): return (sum(bool(t.get("propagated")) for t in rs), len(rs))
 def mcnemar(base, var, key, alternative="two-sided"):
     b = {key(t): bool(t.get("propagated")) for t in base}; v = {key(t): bool(t.get("propagated")) for t in var}
     pairs = [(b[k], v[k]) for k in b if k in v]; d1 = sum(1 for x, y in pairs if x and not y); d2 = sum(1 for x, y in pairs if y and not x)
-    p = binomtest(d1, d1 + d2, 0.5, alternative="greater" if alternative == "less" else alternative).pvalue if d1 + d2 else float("nan")
+    p = binomtest(d1, d1 + d2, 0.5, alternative=alternative).pvalue if d1 + d2 else float("nan")
     return len(pairs), d1, d2, p
 def fmt(k, n): return f"{k}/{n} ({100*k/n:.0f}%)" if n else "0/0"
 BASE_PROT = {"opus5": "results/v2_full/traces_opus5.jsonl", "argon": "results/v2_full/traces_gemini4argon.jsonl", "deepseek": "results/v2_full/traces_deepseek_v41flash.jsonl"}
@@ -50,13 +50,13 @@ for m in ("opus5", "argon", "flash", "deepseek"):
     for k, v in arms.items(): pooled[k] += v
     r = {k: fmt(*rate(v)) for k, v in arms.items()}
     c1 = mcnemar(arms["R0 alone"], arms["R1 repeat agrees"], acc, "less"); c2 = mcnemar(arms["R1 repeat agrees"], arms["B derived agrees"], acc, "less"); c3 = mcnemar(arms["R0 alone"], arms["R2 repeat disagrees"], acc, "greater")
-    print(f"  {m:8s} " + "  ".join(f"{k}: {v}" for k, v in r.items()) + f"   RC1 R1>R0 p={c1[3]:.2g}  RC2 B>R1 p={c2[3]:.2g}  RC3 R2<R0 p={c3[3]:.2g}")
+    print(f"  {m:8s} " + "  ".join(f"{k}: {v}" for k, v in r.items()) + f"   RC1 R1>R0 one-sided p={c1[3]:.2g} (two-sided {mcnemar(arms["R0 alone"], arms["R1 repeat agrees"], acc)[3]:.2g})  RC2 B>R1 p={c2[3]:.2g}  RC3 R2<R0 p={c3[3]:.2g}")
     cl = load(f"results/repetition/{m}_R1_clean.jsonl", {"clean"}); print(f"           R1 clean accuracy {fmt(sum(bool(t.get('correct')) for t in cl), len(cl))}")
 r = {k: rate(v) for k, v in pooled.items()}; print("  pooled   " + "  ".join(f"{k}: {fmt(*v)}" for k, v in r.items()))
 c1 = mcnemar(pooled["R0 alone"], pooled["R1 repeat agrees"], lambda t: (t["model"], t["target_accession"], t.get("sample", 0)), "less")
 c2 = mcnemar(pooled["R1 repeat agrees"], pooled["B derived agrees"], lambda t: (t["model"], t["target_accession"], t.get("sample", 0)), "less")
 c3 = mcnemar(pooled["R0 alone"], pooled["R2 repeat disagrees"], lambda t: (t["model"], t["target_accession"], t.get("sample", 0)), "greater")
-print(f"  pooled   RC1 p={c1[3]:.2g} ({c1[1]} vs {c1[2]} discordant)  RC2 p={c2[3]:.2g}  RC3 p={c3[3]:.2g}  | B minus R1 = {100*(r['B derived agrees'][0]/r['B derived agrees'][1] - r['R1 repeat agrees'][0]/r['R1 repeat agrees'][1]):+.0f} points")
+print(f"  pooled   RC1 one-sided p={c1[3]:.2g}, two-sided {binomtest(min(c1[1], c1[2]), c1[1] + c1[2], 0.5).pvalue:.2g} ({c1[1]} vs {c1[2]} discordant)  RC2 p={c2[3]:.2g}  RC3 p={c3[3]:.2g}  | B minus R1 = {100*(r['B derived agrees'][0]/r['B derived agrees'][1] - r['R1 repeat agrees'][0]/r['R1 repeat agrees'][1]):+.0f} points")
 print("\n=== BLANK HARNESS (full record, field withheld when the derivation check fails)")
 IDENT = {"gene_symbol", "organism", "name"}
 for m in ("opus5", "argon", "deepseek"):
