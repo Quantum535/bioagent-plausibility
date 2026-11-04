@@ -1,0 +1,362 @@
+{
+ "opus5|protein, sequence contradicts value|no_tool_instruction": {
+  "base": [
+   9,
+   49
+  ],
+  "variant": [
+   4,
+   49
+  ],
+  "pairs": 48,
+  "p": 0.21875
+ },
+ "opus5|protein, sequence contradicts value|record_errors": {
+  "base": [
+   9,
+   49
+  ],
+  "variant": [
+   0,
+   38
+  ],
+  "pairs": 37,
+  "p": 0.0625
+ },
+ "opus5|protein, sequence contradicts value|two_fields": {
+  "base": [
+   9,
+   49
+  ],
+  "variant": [
+   5,
+   47
+  ],
+  "pairs": 47,
+  "p": 0.548828125
+ },
+ "opus5|coherent, nothing contradicts|no_tool_instruction": {
+  "base": [
+   49,
+   50
+  ],
+  "variant": [
+   48,
+   50
+  ],
+  "pairs": 50,
+  "p": 1.0
+ },
+ "opus5|coherent, nothing contradicts|record_errors": {
+  "base": [
+   49,
+   50
+  ],
+  "variant": [
+   50,
+   50
+  ],
+  "pairs": 50,
+  "p": 1.0
+ },
+ "opus5|coherent, nothing contradicts|two_fields": {
+  "base": [
+   49,
+   50
+  ],
+  "variant": [
+   26,
+   50
+  ],
+  "pairs": 50,
+  "p": 2.384185791015625e-07
+ },
+ "opus5|agreement C, 3 samples|no_tool_instruction": {
+  "base": [
+   163,
+   180
+  ],
+  "variant": [
+   85,
+   180
+  ],
+  "pairs": 180,
+  "p": 3.847409116639797e-18
+ },
+ "opus5|agreement C, 3 samples|record_errors": {
+  "base": [
+   163,
+   180
+  ],
+  "variant": [
+   0,
+   180
+  ],
+  "pairs": 180,
+  "p": 1.7105694144590052e-49
+ },
+ "opus5|agreement C, 3 samples|two_fields": {
+  "base": [
+   163,
+   180
+  ],
+  "variant": [
+   0,
+   180
+  ],
+  "pairs": 180,
+  "p": 1.7105694144590052e-49
+ },
+ "argon|protein, sequence contradicts value|no_tool_instruction": {
+  "base": [
+   7,
+   50
+  ],
+  "variant": [
+   6,
+   50
+  ],
+  "pairs": 50,
+  "p": 1.0
+ },
+ "argon|protein, sequence contradicts value|record_errors": {
+  "base": [
+   7,
+   50
+  ],
+  "variant": [
+   1,
+   50
+  ],
+  "pairs": 50,
+  "p": 0.03125
+ },
+ "argon|protein, sequence contradicts value|two_fields": {
+  "base": [
+   7,
+   50
+  ],
+  "variant": [
+   0,
+   50
+  ],
+  "pairs": 50,
+  "p": 0.015625
+ },
+ "argon|coherent, nothing contradicts|no_tool_instruction": {
+  "base": [
+   48,
+   50
+  ],
+  "variant": [
+   47,
+   50
+  ],
+  "pairs": 50,
+  "p": 1.0
+ },
+ "argon|coherent, nothing contradicts|record_errors": {
+  "base": [
+   48,
+   50
+  ],
+  "variant": [
+   50,
+   50
+  ],
+  "pairs": 50,
+  "p": 0.5
+ },
+ "argon|coherent, nothing contradicts|two_fields": {
+  "base": [
+   48,
+   50
+  ],
+  "variant": [
+   0,
+   50
+  ],
+  "pairs": 50,
+  "p": 7.105427357601002e-15
+ },
+ "argon|agreement C, 3 samples|no_tool_instruction": {
+  "base": [
+   144,
+   180
+  ],
+  "variant": [
+   92,
+   180
+  ],
+  "pairs": 180,
+  "p": 1.807703105408552e-09
+ },
+ "argon|agreement C, 3 samples|record_errors": {
+  "base": [
+   144,
+   180
+  ],
+  "variant": [
+   0,
+   180
+  ],
+  "pairs": 180,
+  "p": 8.96831017167883e-44
+ },
+ "argon|agreement C, 3 samples|two_fields": {
+  "base": [
+   144,
+   180
+  ],
+  "variant": [
+   0,
+   180
+  ],
+  "pairs": 180,
+  "p": 8.96831017167883e-44
+ },
+ "deepseek|protein, sequence contradicts value|no_tool_instruction": {
+  "base": [
+   50,
+   50
+  ],
+  "variant": [
+   42,
+   49
+  ],
+  "pairs": 49,
+  "p": 0.015625
+ },
+ "deepseek|protein, sequence contradicts value|record_errors": {
+  "base": [
+   50,
+   50
+  ],
+  "variant": [
+   23,
+   42
+  ],
+  "pairs": 42,
+  "p": 3.814697265625e-06
+ },
+ "deepseek|protein, sequence contradicts value|two_fields": {
+  "base": [
+   50,
+   50
+  ],
+  "variant": [
+   34,
+   47
+  ],
+  "pairs": 47,
+  "p": 0.000244140625
+ },
+ "deepseek|coherent, nothing contradicts|no_tool_instruction": {
+  "base": [
+   47,
+   50
+  ],
+  "variant": [
+   46,
+   50
+  ],
+  "pairs": 50,
+  "p": 1.0
+ },
+ "deepseek|coherent, nothing contradicts|record_errors": {
+  "base": [
+   47,
+   50
+  ],
+  "variant": [
+   49,
+   49
+  ],
+  "pairs": 49,
+  "p": 0.25
+ },
+ "deepseek|coherent, nothing contradicts|two_fields": {
+  "base": [
+   47,
+   50
+  ],
+  "variant": [
+   45,
+   50
+  ],
+  "pairs": 50,
+  "p": 0.6875
+ },
+ "deepseek|agreement C, 3 samples|no_tool_instruction": {
+  "base": [
+   152,
+   180
+  ],
+  "variant": [
+   140,
+   180
+  ],
+  "pairs": 180,
+  "p": 0.14800580076020603
+ },
+ "deepseek|agreement C, 3 samples|record_errors": {
+  "base": [
+   152,
+   180
+  ],
+  "variant": [
+   2,
+   180
+  ],
+  "pairs": 180,
+  "p": 1.401298464324817e-45
+ },
+ "deepseek|agreement C, 3 samples|two_fields": {
+  "base": [
+   152,
+   180
+  ],
+  "variant": [
+   19,
+   180
+  ],
+  "pairs": 180,
+  "p": 1.8367099231598242e-40
+ },
+ "flash|agreement C, 3 samples|no_tool_instruction": {
+  "base": [
+   159,
+   174
+  ],
+  "variant": [
+   58,
+   171
+  ],
+  "pairs": 165,
+  "p": 1.74595783696353e-24
+ },
+ "flash|agreement C, 3 samples|record_errors": {
+  "base": [
+   159,
+   174
+  ],
+  "variant": [
+   0,
+   180
+  ],
+  "pairs": 174,
+  "p": 2.7369110631344083e-48
+ },
+ "flash|agreement C, 3 samples|two_fields": {
+  "base": [
+   159,
+   174
+  ],
+  "variant": [
+   6,
+   163
+  ],
+  "pairs": 157,
+  "p": 5.739718509874451e-42
+ }
+}
