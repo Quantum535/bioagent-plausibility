@@ -1,0 +1,43 @@
+Source Data Fig1. Counts are relayed (or correct) runs over runs with a parseable answer; rates and 95% Wilson intervals in the figure are computed from them by the figure scripts in paper/.
+
+"Supplementary Table 1. Deployment experiment, first run (October 2026) and rerun (3 November 2026). Relay is relayed/delivered runs; the odds ratio compares relay of plausible values on exact-route fields with other fields (registered test, task-clustered logistic regression, 95% interval). Audit columns count runs matching each pattern."
+Model,Run,Impossible relayed,Plausible relayed,Odds ratio,Aware,Repository,Vocabulary
+DeepSeek V4.1 Flash,first,5/287 (2%),80/285 (28%),5.7 (3.1-10.4),0,0,1
+DeepSeek V4.1 Flash,rerun,4/293 (1%),50/290 (17%),17.2 (6.0-49.7),0,0,0
+Gemini 3.8 Flash,first,6/286 (2%),69/288 (24%),3.6 (2.0-6.5),44,98,2
+Gemini 3.8 Flash,rerun,4/283 (1%),57/276 (21%),6.9 (3.3-14.3),16,17,2
+
+"Supplementary Table 6. Deployment rerun (Fig. 1b, c): corrupted values relayed by field (relayed/delivered runs) and, among relayed runs, how many raised a concern."
+Model,Condition,Field,Relayed,Flagged among relayed
+DeepSeek V4.1 Flash,impossible,gene symbol,2/50 (4%),1/2
+DeepSeek V4.1 Flash,impossible,h bond donors,0/24 (0%),-
+DeepSeek V4.1 Flash,impossible,heavy atom count,0/25 (0%),-
+DeepSeek V4.1 Flash,impossible,length,0/46 (0%),-
+DeepSeek V4.1 Flash,impossible,mass,0/50 (0%),-
+DeepSeek V4.1 Flash,impossible,molecular weight,0/23 (0%),-
+DeepSeek V4.1 Flash,impossible,name,2/25 (8%),2/2
+DeepSeek V4.1 Flash,impossible,organism,0/50 (0%),-
+DeepSeek V4.1 Flash,plausible,gene symbol,0/49 (0%),-
+DeepSeek V4.1 Flash,plausible,h bond donors,4/25 (16%),4/4
+DeepSeek V4.1 Flash,plausible,heavy atom count,0/25 (0%),-
+DeepSeek V4.1 Flash,plausible,length,23/44 (52%),6/23
+DeepSeek V4.1 Flash,plausible,mass,18/49 (37%),4/18
+DeepSeek V4.1 Flash,plausible,molecular weight,5/24 (21%),0/5
+DeepSeek V4.1 Flash,plausible,name,0/24 (0%),-
+DeepSeek V4.1 Flash,plausible,organism,0/50 (0%),-
+Gemini 3.8 Flash,impossible,gene symbol,0/50 (0%),-
+Gemini 3.8 Flash,impossible,h bond donors,0/25 (0%),-
+Gemini 3.8 Flash,impossible,heavy atom count,0/22 (0%),-
+Gemini 3.8 Flash,impossible,length,1/48 (2%),0/1
+Gemini 3.8 Flash,impossible,mass,1/48 (2%),1/1
+Gemini 3.8 Flash,impossible,molecular weight,0/21 (0%),-
+Gemini 3.8 Flash,impossible,name,1/23 (4%),0/1
+Gemini 3.8 Flash,impossible,organism,1/46 (2%),1/1
+Gemini 3.8 Flash,plausible,gene symbol,1/49 (2%),1/1
+Gemini 3.8 Flash,plausible,h bond donors,5/23 (22%),4/5
+Gemini 3.8 Flash,plausible,heavy atom count,0/23 (0%),-
+Gemini 3.8 Flash,plausible,length,16/44 (36%),7/16
+Gemini 3.8 Flash,plausible,mass,30/48 (62%),9/30
+Gemini 3.8 Flash,plausible,molecular weight,1/21 (5%),1/1
+Gemini 3.8 Flash,plausible,name,0/20 (0%),-
+Gemini 3.8 Flash,plausible,organism,4/48 (8%),3/4

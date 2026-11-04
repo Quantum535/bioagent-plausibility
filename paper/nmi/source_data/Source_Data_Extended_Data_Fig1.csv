@@ -1,0 +1,44 @@
+Source Data Extended Data Fig1. Counts are relayed (or correct) runs over runs with a parseable answer; rates and 95% Wilson intervals in the figure are computed from them by the figure scripts in paper/.
+
+"Supplementary Table 7. Benchmark (Extended Data Fig. 1): corrupted values relayed, runs raising a concern, and relayed runs that raised a concern (summary record, registered prompt, one sample)."
+Model,Domain,Condition,Relayed,Flagged,Flagged among relayed
+Opus 5,proteins,impossible,64/200 (32%),200/200 (100%),64/64
+Opus 5,proteins,plausible,150/200 (75%),118/200 (59%),68/150
+Opus 5,molecules,impossible,46/100 (46%),100/100 (100%),46/46
+Opus 5,molecules,plausible,98/100 (98%),97/100 (97%),95/98
+Gemini 4 Argon,proteins,impossible,70/200 (35%),200/200 (100%),70/70
+Gemini 4 Argon,proteins,plausible,147/199 (74%),189/199 (95%),137/147
+Gemini 4 Argon,molecules,impossible,62/100 (62%),91/100 (91%),53/62
+Gemini 4 Argon,molecules,plausible,98/100 (98%),90/100 (90%),88/98
+DeepSeek V4.1 Flash,proteins,impossible,88/200 (44%),200/200 (100%),88/88
+DeepSeek V4.1 Flash,proteins,plausible,154/200 (77%),92/200 (46%),46/154
+DeepSeek V4.1 Flash,molecules,impossible,38/100 (38%),97/100 (97%),35/38
+DeepSeek V4.1 Flash,molecules,plausible,95/99 (96%),71/99 (72%),67/95
+GPT-6.1 Sol,proteins,impossible,133/200 (66%),200/200 (100%),133/133
+GPT-6.1 Sol,proteins,plausible,150/200 (75%),105/200 (52%),55/150
+GPT-6.1 Sol,molecules,impossible,67/100 (67%),78/100 (78%),45/67
+GPT-6.1 Sol,molecules,plausible,93/100 (93%),71/100 (71%),64/93
+GPT-6 Luna,proteins,impossible,146/200 (73%),163/200 (82%),109/146
+GPT-6 Luna,proteins,plausible,171/200 (86%),34/200 (17%),6/171
+GPT-6 Luna,molecules,impossible,68/100 (68%),75/100 (75%),43/68
+GPT-6 Luna,molecules,plausible,100/100 (100%),16/100 (16%),16/100
+Kimi K3,proteins,impossible,149/200 (74%),199/200 (100%),148/149
+Kimi K3,proteins,plausible,184/200 (92%),58/200 (29%),42/184
+Kimi K3,molecules,impossible,63/100 (63%),88/100 (88%),51/63
+Kimi K3,molecules,plausible,99/100 (99%),60/100 (60%),59/99
+Sonnet 5,proteins,impossible,151/200 (76%),200/200 (100%),151/151
+Sonnet 5,proteins,plausible,185/200 (92%),63/200 (32%),48/185
+Sonnet 5,molecules,impossible,73/100 (73%),90/100 (90%),63/73
+Sonnet 5,molecules,plausible,100/100 (100%),50/100 (50%),50/100
+Sonnet 4.6,proteins,impossible,166/200 (83%),199/200 (100%),165/166
+Sonnet 4.6,proteins,plausible,199/200 (100%),50/200 (25%),49/199
+Sonnet 4.6,molecules,impossible,83/100 (83%),84/100 (84%),67/83
+Sonnet 4.6,molecules,plausible,100/100 (100%),38/100 (38%),38/100
+Gemini 3.8 Flash,proteins,impossible,167/198 (84%),195/198 (98%),164/167
+Gemini 3.8 Flash,proteins,plausible,155/200 (78%),64/200 (32%),19/155
+Gemini 3.8 Flash,molecules,impossible,62/99 (63%),77/99 (78%),40/62
+Gemini 3.8 Flash,molecules,plausible,100/100 (100%),56/100 (56%),56/100
+Haiku 4.5,proteins,impossible,186/200 (93%),152/200 (76%),138/186
+Haiku 4.5,proteins,plausible,200/200 (100%),15/200 (8%),15/200
+Haiku 4.5,molecules,impossible,91/100 (91%),75/100 (75%),66/91
+Haiku 4.5,molecules,plausible,100/100 (100%),3/100 (3%),3/100

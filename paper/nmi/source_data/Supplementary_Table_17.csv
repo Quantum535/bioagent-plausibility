@@ -1,0 +1,14 @@
+"Supplementary Table 17. Prompt without the concerns field (summary record, first 100 tasks per domain). Relay under the registered prompt and without the concerns field; runs listing a concern under the registered prompt; runs voicing doubt in the reply text with and without the field, by the validated classifier; and the registered keyword detector without the field, a lower bound."
+Model,Domain,Condition,"Relay, registered","Relay, no field",Concerns listed,"Doubt in reply, registered","Doubt in reply, no field","Keyword, no field"
+Opus 5,proteins,impossible,33/100 (33%),60/100 (60%),100/100 (100%),99/100 (99%),84/100 (84%),45/100 (45%)
+Opus 5,proteins,plausible,75/100 (75%),79/100 (79%),57/100 (57%),52/100 (52%),29/100 (29%),17/100 (17%)
+Opus 5,chemistry,impossible,46/100 (46%),57/100 (57%),100/100 (100%),100/100 (100%),75/100 (75%),32/100 (32%)
+Opus 5,chemistry,plausible,98/100 (98%),100/100 (100%),97/100 (97%),96/100 (96%),17/100 (17%),0/100 (0%)
+Gemini 4 Argon,proteins,impossible,37/100 (37%),80/100 (80%),100/100 (100%),99/100 (99%),36/100 (36%),5/100 (5%)
+Gemini 4 Argon,proteins,plausible,74/100 (74%),100/100 (100%),94/100 (94%),85/100 (85%),1/100 (1%),0/100 (0%)
+Gemini 4 Argon,chemistry,impossible,62/100 (62%),39/100 (39%),91/100 (91%),83/100 (83%),72/100 (72%),31/100 (31%)
+Gemini 4 Argon,chemistry,plausible,98/100 (98%),100/100 (100%),90/100 (90%),81/100 (81%),0/100 (0%),0/100 (0%)
+DeepSeek V4.1 Flash,proteins,impossible,43/100 (43%),68/100 (68%),100/100 (100%),95/100 (95%),71/100 (71%),35/100 (35%)
+DeepSeek V4.1 Flash,proteins,plausible,78/100 (78%),83/100 (83%),43/100 (43%),41/100 (41%),21/100 (21%),8/100 (8%)
+DeepSeek V4.1 Flash,chemistry,impossible,38/100 (38%),50/100 (50%),97/100 (97%),87/100 (87%),66/100 (66%),20/100 (20%)
+DeepSeek V4.1 Flash,chemistry,plausible,95/99 (96%),100/100 (100%),71/99 (72%),57/99 (58%),14/100 (14%),2/100 (2%)

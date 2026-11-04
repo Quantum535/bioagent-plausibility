@@ -1,0 +1,12 @@
+"Supplementary Table 2. Prompt variants: wrong value relayed (relayed/parsed runs) under the registered default prompt and three variants, on (a) protein tasks whose full record contradicts the value, (b) the chemistry agreement cell (three samples) and (c) coherent protein errors. The last column gives, for the two-fields variant, runs in which the stated database value matched the record (scored on (a) and (b))."
+Cell,Model,Default,No tool instruction,Database has errors,Two fields,Stated value = record
+(a),Opus 5,9/49 (18%),4/49 (8%),0/38 (0%),5/47 (11%),12/47 (26%)
+(a),Gemini 4 Argon,7/50 (14%),6/50 (12%),1/50 (2%),0/50 (0%),0/50 (0%)
+(a),DeepSeek V4.1 Flash,50/50 (100%),42/49 (86%),23/42 (55%),34/47 (72%),13/47 (28%)
+(b),Opus 5,163/180 (91%),85/180 (47%),0/180 (0%),0/180 (0%),180/180 (100%)
+(b),Gemini 4 Argon,144/180 (80%),92/180 (51%),0/180 (0%),0/180 (0%),126/180 (70%)
+(b),Gemini 3.8 Flash,159/174 (91%),58/171 (34%),0/180 (0%),6/163 (4%),103/163 (63%)
+(b),DeepSeek V4.1 Flash,152/180 (84%),140/180 (78%),2/180 (1%),19/180 (11%),171/180 (95%)
+(c),Opus 5,49/50 (98%),48/50 (96%),50/50 (100%),26/50 (52%),-
+(c),Gemini 4 Argon,48/50 (96%),47/50 (94%),50/50 (100%),0/50 (0%),-
+(c),DeepSeek V4.1 Flash,47/50 (94%),46/50 (92%),49/49 (100%),45/50 (90%),-

@@ -1,0 +1,14 @@
+"Supplementary Table 4. Memory probe on the 79 historical proteins. Memory state is the model's answer, without tools, for the protein's length: current (within one residue of today's length), superseded (within one of the superseded length), either (both, where they differ by at most two) or other. Relay of the superseded value is given as relayed/runs by memory state, without a second source (full record, one sample) and with the second source shown (annotate arm, three samples); p is the registered one-sided Fisher test of superseded-memory against current-memory relay with the second source."
+Model,Memory state,Proteins,No second source,Second source shown,p
+Opus 5,current,48,47/48,2/144,
+,superseded,7,7/7,13/21,<1e-10
+,either,12,12/12,0/36,
+,other,12,12/12,9/36,
+Gemini 4 Argon,current,53,48/53,4/159,
+,superseded,6,6/6,0/17,1
+,either,12,11/12,1/36,
+,other,8,6/8,0/24,
+DeepSeek V4.1 Flash,current,50,50/50,38/150,
+,superseded,6,6/6,17/18,1 e-8
+,either,11,11/11,7/33,
+,other,12,11/12,18/36,

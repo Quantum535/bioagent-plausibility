@@ -1,0 +1,27 @@
+Source Data Extended Data Fig2. Counts are relayed (or correct) runs over runs with a parseable answer; rates and 95% Wilson intervals in the figure are computed from them by the figure scripts in paper/.
+
+"Supplementary Table 8. Override boundaries (Extended Data Fig. 2), value decreased: corrupted value relayed (relayed/parsed runs) at each corruption factor, full record, paired field scaled alike."
+Model,Domain,x0.9,x0.8,x0.7,x0.5,x0.3,x0.1,x0.02,x0.005
+Opus 5,proteins,18/40,8/39,1/40,0/39,0/39,0/39,0/38,0/33
+Opus 5,molecules,16/40,14/40,9/40,4/40,0/40,1/40,0/40,0/40
+Sonnet 5,proteins,37/40,35/40,28/40,15/38,5/40,0/40,0/40,0/38
+Sonnet 5,molecules,40/40,40/40,33/40,17/40,3/40,0/40,0/40,0/40
+Gemini 4 Argon,proteins,23/40,16/40,9/40,1/40,0/40,0/40,0/40,0/40
+Gemini 4 Argon,molecules,28/40,24/40,22/40,11/40,3/40,0/40,0/40,0/40
+Gemini 3.8 Flash,proteins,21/39,17/39,12/38,5/37,2/40,0/40,0/40,0/40
+Gemini 3.8 Flash,molecules,29/39,22/35,15/39,15/40,7/39,2/40,5/40,4/40
+DeepSeek V4.1 Flash,proteins,38/40,33/39,33/39,21/39,8/36,0/35,1/30,0/30
+DeepSeek V4.1 Flash,molecules,22/40,11/40,10/40,6/40,1/39,0/40,0/40,0/40
+
+"Supplementary Table 9. Override boundaries (Extended Data Fig. 2), value increased: corrupted value relayed (relayed/parsed runs) at each corruption factor, full record, paired field scaled alike."
+Model,Domain,x1.1,x1.25,x1.5,x2,x3,x10,x50,x200
+Opus 5,proteins,25/40,6/38,4/40,0/40,0/40,0/40,0/40,0/40
+Opus 5,molecules,19/40,10/40,7/40,4/40,4/40,0/40,0/40,0/40
+Sonnet 5,proteins,40/40,37/40,32/40,24/40,12/39,0/40,0/38,0/40
+Sonnet 5,molecules,40/40,40/40,40/40,36/40,30/40,4/40,2/40,0/40
+Gemini 4 Argon,proteins,15/40,11/40,4/40,0/40,0/40,0/40,0/40,0/40
+Gemini 4 Argon,molecules,22/40,19/40,11/40,13/40,5/40,0/40,0/40,0/40
+Gemini 3.8 Flash,proteins,26/40,17/39,6/39,1/40,0/40,0/40,0/40,0/40
+Gemini 3.8 Flash,molecules,21/40,21/39,17/39,14/40,18/38,0/40,4/39,0/40
+DeepSeek V4.1 Flash,proteins,40/40,31/40,24/39,13/38,3/34,0/38,1/33,0/38
+DeepSeek V4.1 Flash,molecules,30/40,22/40,19/40,13/40,5/40,0/40,0/40,0/40

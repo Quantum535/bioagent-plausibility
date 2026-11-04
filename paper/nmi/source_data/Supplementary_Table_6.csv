@@ -1,0 +1,34 @@
+"Supplementary Table 6. Deployment rerun (Fig. 1b, c): corrupted values relayed by field (relayed/delivered runs) and, among relayed runs, how many raised a concern."
+Model,Condition,Field,Relayed,Flagged among relayed
+DeepSeek V4.1 Flash,impossible,gene symbol,2/50 (4%),1/2
+DeepSeek V4.1 Flash,impossible,h bond donors,0/24 (0%),-
+DeepSeek V4.1 Flash,impossible,heavy atom count,0/25 (0%),-
+DeepSeek V4.1 Flash,impossible,length,0/46 (0%),-
+DeepSeek V4.1 Flash,impossible,mass,0/50 (0%),-
+DeepSeek V4.1 Flash,impossible,molecular weight,0/23 (0%),-
+DeepSeek V4.1 Flash,impossible,name,2/25 (8%),2/2
+DeepSeek V4.1 Flash,impossible,organism,0/50 (0%),-
+DeepSeek V4.1 Flash,plausible,gene symbol,0/49 (0%),-
+DeepSeek V4.1 Flash,plausible,h bond donors,4/25 (16%),4/4
+DeepSeek V4.1 Flash,plausible,heavy atom count,0/25 (0%),-
+DeepSeek V4.1 Flash,plausible,length,23/44 (52%),6/23
+DeepSeek V4.1 Flash,plausible,mass,18/49 (37%),4/18
+DeepSeek V4.1 Flash,plausible,molecular weight,5/24 (21%),0/5
+DeepSeek V4.1 Flash,plausible,name,0/24 (0%),-
+DeepSeek V4.1 Flash,plausible,organism,0/50 (0%),-
+Gemini 3.8 Flash,impossible,gene symbol,0/50 (0%),-
+Gemini 3.8 Flash,impossible,h bond donors,0/25 (0%),-
+Gemini 3.8 Flash,impossible,heavy atom count,0/22 (0%),-
+Gemini 3.8 Flash,impossible,length,1/48 (2%),0/1
+Gemini 3.8 Flash,impossible,mass,1/48 (2%),1/1
+Gemini 3.8 Flash,impossible,molecular weight,0/21 (0%),-
+Gemini 3.8 Flash,impossible,name,1/23 (4%),0/1
+Gemini 3.8 Flash,impossible,organism,1/46 (2%),1/1
+Gemini 3.8 Flash,plausible,gene symbol,1/49 (2%),1/1
+Gemini 3.8 Flash,plausible,h bond donors,5/23 (22%),4/5
+Gemini 3.8 Flash,plausible,heavy atom count,0/23 (0%),-
+Gemini 3.8 Flash,plausible,length,16/44 (36%),7/16
+Gemini 3.8 Flash,plausible,mass,30/48 (62%),9/30
+Gemini 3.8 Flash,plausible,molecular weight,1/21 (5%),1/1
+Gemini 3.8 Flash,plausible,name,0/20 (0%),-
+Gemini 3.8 Flash,plausible,organism,4/48 (8%),3/4

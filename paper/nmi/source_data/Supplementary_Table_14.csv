@@ -1,0 +1,14 @@
+"Supplementary Table 14. Identity. Relay (relayed/parsed runs) on the 25 length-threshold benchmark tasks with the full record, with identity but no annotation (accession, protein name, gene, organism, length, mass, sequence), and with neither (anonymous; three samples, the first paired with the other formats); clean rows give accuracy. The last row per model gives relay of the 79 superseded sequences without a second source, with the full record and anonymously."
+Model,Condition,Full record,"Identity, no annotation","Neither, sample 1","Neither, 3 samples"
+Opus 5,clean (accuracy),25/25 (100%),25/25 (100%),25/25 (100%),75/75 (100%)
+Opus 5,impossible,0/25 (0%),0/25 (0%),0/25 (0%),0/75 (0%)
+Opus 5,plausible,1/25 (4%),7/25 (28%),17/25 (68%),50/75 (67%)
+Opus 5,superseded record,78/79 (99%),-,79/79 (100%),-
+Gemini 4 Argon,clean (accuracy),25/25 (100%),25/25 (100%),25/25 (100%),75/75 (100%)
+Gemini 4 Argon,impossible,0/25 (0%),0/25 (0%),0/25 (0%),0/75 (0%)
+Gemini 4 Argon,plausible,0/25 (0%),1/25 (4%),0/25 (0%),1/75 (1%)
+Gemini 4 Argon,superseded record,71/79 (90%),-,77/79 (97%),-
+DeepSeek V4.1 Flash,clean (accuracy),25/25 (100%),25/25 (100%),25/25 (100%),75/75 (100%)
+DeepSeek V4.1 Flash,impossible,0/25 (0%),0/24 (0%),1/25 (4%),2/73 (3%)
+DeepSeek V4.1 Flash,plausible,22/25 (88%),23/25 (92%),21/25 (84%),70/75 (93%)
+DeepSeek V4.1 Flash,superseded record,78/79 (99%),-,79/79 (100%),-

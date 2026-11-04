@@ -1,0 +1,68 @@
+Source Data Fig4. Counts are relayed (or correct) runs over runs with a parseable answer; rates and 95% Wilson intervals in the figure are computed from them by the figure scripts in paper/.
+
+"Supplementary Table 10. New chemistry fields with the full record (Fig. 4a): runs raising a concern and corrupted values relayed, by field and condition."
+Model,Field,Condition,Flagged,Relayed
+Opus 5,complexity,clean,1/60 (2%),-
+Opus 5,complexity,plausible,1/60 (2%),60/60 (100%)
+Opus 5,complexity,impossible,60/60 (100%),60/60 (100%)
+Opus 5,monoisotopic mass,clean,2/60 (3%),-
+Opus 5,monoisotopic mass,plausible,52/60 (87%),57/60 (95%)
+Opus 5,monoisotopic mass,impossible,60/60 (100%),0/60 (0%)
+Opus 5,tpsa,clean,1/60 (2%),-
+Opus 5,tpsa,plausible,10/60 (17%),60/60 (100%)
+Opus 5,tpsa,impossible,60/60 (100%),19/60 (32%)
+Sonnet 5,complexity,clean,3/60 (5%),-
+Sonnet 5,complexity,plausible,2/60 (3%),60/60 (100%)
+Sonnet 5,complexity,impossible,60/60 (100%),60/60 (100%)
+Sonnet 5,monoisotopic mass,clean,6/60 (10%),-
+Sonnet 5,monoisotopic mass,plausible,36/60 (60%),59/60 (98%)
+Sonnet 5,monoisotopic mass,impossible,60/60 (100%),2/60 (3%)
+Sonnet 5,tpsa,clean,0/60 (0%),-
+Sonnet 5,tpsa,plausible,0/60 (0%),60/60 (100%)
+Sonnet 5,tpsa,impossible,60/60 (100%),41/60 (68%)
+Gemini 4 Argon,complexity,clean,0/60 (0%),-
+Gemini 4 Argon,complexity,plausible,1/60 (2%),60/60 (100%)
+Gemini 4 Argon,complexity,impossible,60/60 (100%),51/60 (85%)
+Gemini 4 Argon,monoisotopic mass,clean,3/60 (5%),-
+Gemini 4 Argon,monoisotopic mass,plausible,60/60 (100%),58/60 (97%)
+Gemini 4 Argon,monoisotopic mass,impossible,60/60 (100%),0/60 (0%)
+Gemini 4 Argon,tpsa,clean,1/60 (2%),-
+Gemini 4 Argon,tpsa,plausible,47/60 (78%),60/60 (100%)
+Gemini 4 Argon,tpsa,impossible,60/60 (100%),12/60 (20%)
+Gemini 3.8 Flash,complexity,clean,0/60 (0%),-
+Gemini 3.8 Flash,complexity,plausible,0/60 (0%),60/60 (100%)
+Gemini 3.8 Flash,complexity,impossible,60/60 (100%),57/60 (95%)
+Gemini 3.8 Flash,monoisotopic mass,clean,0/60 (0%),-
+Gemini 3.8 Flash,monoisotopic mass,plausible,58/60 (97%),60/60 (100%)
+Gemini 3.8 Flash,monoisotopic mass,impossible,58/58 (100%),1/58 (2%)
+Gemini 3.8 Flash,tpsa,clean,0/60 (0%),-
+Gemini 3.8 Flash,tpsa,plausible,4/60 (7%),59/60 (98%)
+Gemini 3.8 Flash,tpsa,impossible,56/56 (100%),30/56 (54%)
+DeepSeek V4.1 Flash,complexity,clean,6/60 (10%),-
+DeepSeek V4.1 Flash,complexity,plausible,5/60 (8%),60/60 (100%)
+DeepSeek V4.1 Flash,complexity,impossible,60/60 (100%),60/60 (100%)
+DeepSeek V4.1 Flash,monoisotopic mass,clean,2/60 (3%),-
+DeepSeek V4.1 Flash,monoisotopic mass,plausible,55/60 (92%),56/60 (93%)
+DeepSeek V4.1 Flash,monoisotopic mass,impossible,60/60 (100%),0/60 (0%)
+DeepSeek V4.1 Flash,tpsa,clean,2/60 (3%),-
+DeepSeek V4.1 Flash,tpsa,plausible,8/60 (13%),60/60 (100%)
+DeepSeek V4.1 Flash,tpsa,impossible,58/58 (100%),13/58 (22%)
+
+"Supplementary Table 11. Agreement follow-up (Fig. 4b, c): wrong value relayed on the same 60 compounds, pooled over three samples and per sample."
+Model,Arm,Pooled,Sample 1,Sample 2,Sample 3
+Opus 5,"mono.\ mass asked, two agreeing fields",175/180 (97%),57/60 (95%),60/60 (100%),58/60 (97%)
+Opus 5,"mono.\ mass asked, corrupted alone",138/180 (77%),48/60 (80%),47/60 (78%),43/60 (72%)
+Opus 5,"weight asked, one agreeing field",113/180 (63%),31/60 (52%),43/60 (72%),39/60 (65%)
+Opus 5,"weight asked, two agreeing fields",163/180 (91%),52/60 (87%),58/60 (97%),53/60 (88%)
+Gemini 4 Argon,"mono.\ mass asked, two agreeing fields",172/180 (96%),58/60 (97%),55/60 (92%),59/60 (98%)
+Gemini 4 Argon,"mono.\ mass asked, corrupted alone",129/180 (72%),43/60 (72%),46/60 (77%),40/60 (67%)
+Gemini 4 Argon,"weight asked, one agreeing field",130/180 (72%),40/60 (67%),44/60 (73%),46/60 (77%)
+Gemini 4 Argon,"weight asked, two agreeing fields",144/180 (80%),52/60 (87%),44/60 (73%),48/60 (80%)
+Gemini 3.8 Flash,"mono.\ mass asked, two agreeing fields",178/180 (99%),60/60 (100%),59/60 (98%),59/60 (98%)
+Gemini 3.8 Flash,"mono.\ mass asked, corrupted alone",149/176 (85%),50/59 (85%),49/59 (83%),50/58 (86%)
+Gemini 3.8 Flash,"weight asked, one agreeing field",154/175 (88%),52/59 (88%),53/59 (90%),49/57 (86%)
+Gemini 3.8 Flash,"weight asked, two agreeing fields",159/174 (91%),52/58 (90%),54/58 (93%),53/58 (91%)
+DeepSeek V4.1 Flash,"mono.\ mass asked, two agreeing fields",158/179 (88%),56/60 (93%),52/59 (88%),50/60 (83%)
+DeepSeek V4.1 Flash,"mono.\ mass asked, corrupted alone",100/180 (56%),36/60 (60%),29/60 (48%),35/60 (58%)
+DeepSeek V4.1 Flash,"weight asked, one agreeing field",128/180 (71%),43/60 (72%),41/60 (68%),44/60 (73%)
+DeepSeek V4.1 Flash,"weight asked, two agreeing fields",152/180 (84%),54/60 (90%),48/60 (80%),50/60 (83%)
