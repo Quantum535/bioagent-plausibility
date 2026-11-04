@@ -28,8 +28,9 @@ PROMPT = {
        "flash": [(159, 174), (58, 171), (0, 180), (6, 163)], "deepseek": [(152, 180), (140, 180), (2, 180), (19, 180)]},
  "c": {"opus5": [(49, 50), (48, 50), (50, 50), (26, 50)], "argon": [(48, 50), (47, 50), (50, 50), (0, 50)], "deepseek": [(47, 50), (46, 50), (49, 49), (45, 50)]}}
 # d, repetition: [R0 weight alone, R1 repeat agrees, R2 repeat disagrees, B derived field agrees]
-REP = {"opus5": [(102, 180), (66, 180), (0, 180), (113, 180)], "argon": [(117, 180), (67, 180), (3, 180), (130, 180)],
-       "flash": [(152, 177), (135, 178), (1, 180), (154, 175)], "deepseek": [(115, 180), (105, 179), (5, 180), (128, 180)]}
+REP = {  # [alone, derived agrees, odd-name copy agrees, familiar copy agrees, odd-name copy disagrees, familiar copy disagrees]; familiar arms one sample
+ "opus5": [(102, 180), (113, 180), (66, 180), (32, 60), (0, 180), (0, 60)], "argon": [(117, 180), (130, 180), (67, 180), (32, 60), (3, 180), (6, 60)],
+ "flash": [(152, 177), (154, 175), (135, 178), (46, 56), (1, 180), (1, 57)], "deepseek": [(115, 180), (128, 180), (105, 179), (40, 59), (5, 180), (14, 60)]}
 # e, memory probe: (current-memory, superseded-memory) proteins, without (full record) and with the second source
 MEM = {"opus5": {"without": [(47, 48), (7, 7)], "with": [(2, 144), (13, 21)]},
        "argon": {"without": [(48, 53), (6, 6)], "with": [(4, 159), (0, 17)]},
@@ -63,8 +64,8 @@ for ax, cell, title in zip(axes[0], "abc", ["Proteins, sequence contradicts valu
     series(ax, PROMPT[cell], [0, 1, 2, 3]); style(ax, cell, title, [0, 1, 2, 3], V, "Wrong value relayed (%)" if cell == "a" else None)
 fig.legend(*axes[0][1].get_legend_handles_labels(), loc="upper center", ncol=4, frameon=False, handlelength=1.8, bbox_to_anchor=(0.5, 1.0))
 
-ax = axes[1][0]; series(ax, REP, [0, 1, 2, 3])
-style(ax, "d", "Repetition versus consistency", [0, 1, 2, 3], ["weight\nalone", "repeat\nagrees", "repeat\ndisagrees", "derived\nagrees"], "Wrong value relayed (%)")
+ax = axes[1][0]; series(ax, REP, [0, 1, 2, 3, 4, 5])
+style(ax, "d", "Agreement versus repetition", [0, 1, 2, 3, 4, 5], ["alone", "derived\n+", "copy +\n(odd)", "copy +\n(fam.)", "copy \u2212\n(odd)", "copy \u2212\n(fam.)"], "Wrong value relayed (%)")
 
 ax = axes[1][1]
 for m, d in MEM.items():
