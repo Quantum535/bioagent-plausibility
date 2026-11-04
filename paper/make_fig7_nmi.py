@@ -57,7 +57,7 @@ def style(ax, letter, title, xs, labels, ylabel=None):
     ax.set_title(title, loc="left", fontsize=7.2, pad=3)
     if ylabel: ax.set_ylabel(ylabel)
 
-fig, axes = plt.subplots(2, 3, figsize=(6.5, 5.5))
+fig, axes = plt.subplots(2, 3, figsize=(6.5, 5.9))
 V = ["default", "no tool\ninstr.", "errors\nnoted", "two\nfields"]
 for ax, cell, title in zip(axes[0], "abc", ["Proteins, sequence contradicts value", "Molecules, three fields agree", "Coherent protein errors"]):
     series(ax, PROMPT[cell], [0, 1, 2, 3]); style(ax, cell, title, [0, 1, 2, 3], V, "Wrong value relayed (%)" if cell == "a" else None)
@@ -73,7 +73,7 @@ for m, d in MEM.items():
             point(ax, gi + OFF[m] + (-0.045 if si == 0 else 0.045), *d[g][si], COL[m], filled=(si == 0))
 style(ax, "e", "Memory probe: relay by memory state", [0, 1], ["no second\nsource", "second source\nshown"])
 ax.legend(handles=[Line2D([], [], marker="o", color="0.3", mfc="0.3", ls="", ms=3.3, label="memory holds current value"),
-                   Line2D([], [], marker="o", color="0.3", mfc="white", ls="", ms=3.3, label="memory holds superseded value")], loc="lower left", frameon=False)
+                   Line2D([], [], marker="o", color="0.3", mfc="white", ls="", ms=3.3, label="memory holds superseded value")], loc="upper center", bbox_to_anchor=(0.5, -0.3), ncol=1, frameon=False)
 
 ax = axes[1][2]
 for m, d in BLANK.items():
