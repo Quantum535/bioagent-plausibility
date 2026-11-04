@@ -30,3 +30,7 @@ Runs without a parseable answer are excluded and counted; every rate is also rep
 ## Addendum (4 November 2026, before these runs): identity versus annotation
 IS2 failed for Opus 5 (relay of plausible contradicted lengths 8% with the full record, 67% with the anonymous record), but the anonymous record removes both identity and the feature annotations, and the comparison covered 12 of 25 tasks. Two arms on the same 25 length-threshold tasks, clean, impossible and plausible, one sample, Opus 5, Argon and DeepSeek: (i) the full record with identity on all 25 tasks; (ii) record format `minimal`: accession, protein name, gene symbol, organism, length, mass and sequence, with no annotation.
 Prediction IS5: for Opus 5, plausible relay with the minimal record is within 15 points of the full record (override is driven by identity and memory) rather than within 15 points of the anonymous record (override is driven by annotation). Test: McNemar paired by task, two-sided, minimal against each.
+
+## Addendum 2 (4 November 2026, before these runs): reasoning in a second provider; clean superseded records
+TH3: Gemini 4 Argon with reasoning effort set to low, the harness's lowest setting for this provider, on the full-record cell of TH1 (first 50 benchmark tasks, impossible and plausible), against its default-reasoning runs: relay of plausible values is at least 10 points higher at low effort (one-sided McNemar paired by task).
+CL: Opus 5, full record, clean condition, all 79 superseded-record tasks (previously the first 20): accuracy at least 95%.
