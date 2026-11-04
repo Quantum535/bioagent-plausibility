@@ -339,7 +339,7 @@ def fig6():
             ax.text(x, p + eh + 1.5, f"{kn(R[(m, a)])[0]}/{len(R[(m, a)])}", ha="center", fontsize=5.6, color=MUTED, rotation=90, va="bottom")
     ax.set_xticks(range(len(ARMS))); ax.set_xticklabels([l for _, l in ARMS]); ax.set_ylim(-3, 62); ax.set_xlim(-0.5, len(ARMS) - 0.5)
     ax.set_ylabel("Superseded value relayed (%)"); ax.grid(axis="x", visible=False)
-    ax.set_title("Real UniProt errors, covered proteins, three samples per run", loc="left")
+    ax.set_title("Superseded UniProt sequences, covered proteins, three samples per run", loc="left")
     ax.legend(handles=[Line2D([], [], marker="o", ls="", color=COL[m], label=NAME[m]) for m in M3] + [Line2D([], [], marker="o", ls="", color=INK, alpha=0.35, ms=2.5, label="single sample")],
               loc="upper right", frameon=False)
     ax = fig.add_subplot(gs[1]); letter(ax, "b")

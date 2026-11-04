@@ -65,7 +65,8 @@ for ax, cell, title in zip(axes[0], "abc", ["Proteins, sequence contradicts valu
 fig.legend(*axes[0][1].get_legend_handles_labels(), loc="upper center", ncol=4, frameon=False, handlelength=1.8, bbox_to_anchor=(0.5, 1.0))
 
 ax = axes[1][0]; series(ax, REP, [0, 1, 2, 3, 4, 5])
-style(ax, "d", "Agreement versus repetition", [0, 1, 2, 3, 4, 5], ["alone", "derived\n+", "copy +\n(odd)", "copy +\n(fam.)", "copy \u2212\n(odd)", "copy \u2212\n(fam.)"], "Wrong value relayed (%)")
+style(ax, "d", "Agreement versus repetition", [0, 1, 2, 3, 4, 5], ["alone", "derived agrees", "copy agrees", "familiar copy agrees", "copy disagrees", "familiar copy disagrees"], "Wrong value relayed (%)")
+plt.setp(ax.get_xticklabels(), rotation=35, ha="right", fontsize=5.6)
 
 ax = axes[1][1]
 for m, d in MEM.items():
