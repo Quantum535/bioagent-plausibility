@@ -114,8 +114,8 @@ def fig1():
             ax.text(x + 20.2, yy, v, ha="right", va="top", fontsize=6.2, color=c if diff else INK, weight="bold" if diff else "normal")
         if note: ax.text(x + 11.6, 3.2, note, ha="center", va="center", fontsize=5.8, color=MUTED, style="italic")
     axb = fig.add_subplot(gs[1, 0]); letter(axb, "b")
-    RUNS = [("DeepSeek", "impossible", 300, 287, 5), ("DeepSeek", "plausible", 300, 285, 80),
-            ("Flash", "impossible", 300, 286, 6), ("Flash", "plausible", 300, 288, 69)]  # src: results/biomni_full_* (H1 analysis)
+    RUNS = [("DeepSeek", "impossible", 300, 293, 4), ("DeepSeek", "plausible", 300, 290, 50),
+            ("Flash", "impossible", 300, 283, 4), ("Flash", "plausible", 300, 276, 57)]  # src: results/biomni_full_* (H1 analysis)
     for i, (m, c, n, dlv, rel) in enumerate(RUNS):
         y = len(RUNS) - 1 - i
         axb.barh(y, 100 * rel / n, color="#c0392b", height=0.62)
@@ -128,7 +128,7 @@ def fig1():
     axb.legend(handles=[Patch(color="#c0392b", label="relayed"), Patch(color="#9fc5a8", label="caught"), Patch(color="#dcdcdc", label="never requested")],
                loc="upper center", bbox_to_anchor=(0.5, -0.32), ncol=3, frameon=False)
     axc = fig.add_subplot(gs[1, 1]); letter(axc, "c")
-    F = {"deepseek": biomni_fields("results/biomni_full_deepseek"), "flash": biomni_fields("results/biomni_full_flash")}
+    F = {"deepseek": biomni_fields("results/biomni_rerun/deepseek"), "flash": biomni_fields("results/biomni_rerun/flash")}
     ROWS = [("length", "length"), ("mass", "mass"), ("organism", "organism"), ("gene_symbol", "gene symbol"),
             ("molecular_weight", "molecular weight"), ("heavy_atom_count", "heavy-atom count"), ("h_bond_donors", "H-bond donors"), ("name", "compound name")]
     EXACT = {"length", "mass", "molecular_weight", "heavy_atom_count"}
