@@ -19,6 +19,11 @@ After the run, every transcript was audited with three regular expressions, reco
 
 The corrupted conditions were rerun on 3 November 2026 under a second macOS user with no read access to the author's home directory, with the data lake at a neutral path (\path{/Users/Shared/agentrun/workspace}). The agent's state file carried only the task identifier and a slot number; the mapping from slot to condition (\path{harness/rerun_schedule.json}, commit 0019d72) was read by the proxy and never shown to the agent. The clean runs were retained from the first run. In the rerun no transcript named the study, its repository or its paper. DeepSeek matched no pattern in any run. Flash matched awareness in 16 runs, each inferred from the task and the anomaly themselves rather than from the environment, the repository pattern in 17 runs of directory and process probing that found nothing, and the vocabulary in 2; the external files it fetched were again Biomni's own repository and Bio-Bench. Supplementary Table~1 gives both runs side by side; the main text reports the rerun throughout.
 
+
+\section*{Supplementary Note 2: registration and run timestamps}
+
+Each registration was committed before the runs it concerns; the intervals were: new-field experiment, commit 2059c3a, three minutes before the first run; its agreement follow-up, 217ea9d, one minute; historical-error experiment, ac99248, 24 seconds; robustness addendum, 6830c57 and 76e56b6, 13 minutes and one minute before the respective runs; deployment hypotheses, OSF draft four minutes before the first full run, cited by commit a2dc4a4 two minutes before the runs; memory probe, 74415d3, and the prompt, repetition and withholding experiments, 499d317, each committed before the runs they concern on 3 November 2026. Commit times are recorded in the repository history.
+
 \begin{table}[h]
 \centering\small
 \caption{Deployment experiment, first run (October 2026) and rerun (3 November 2026). Relay is relayed/delivered runs; the odds ratio compares relay of plausible values on exact-route fields with other fields (registered test, task-clustered logistic regression, 95\% interval). Audit columns count runs matching each pattern.}
@@ -57,7 +62,7 @@ Cell & Model & Default & No tool instruction & Database has errors & Two fields 
 
 \begin{table}[h]
 \centering\small
-\caption{Repetition versus consistency: wrong molecular weight relayed (relayed/parsed runs; 60 compounds, three samples, full record). R0, weight alone; R1, a verbatim repeat field scaled with the weight; R2, the repeat left correct; B, the heavy-atom count scaled with the weight. On uncorrupted records with the repeat field present, every model answered correctly in 60 of 60 runs. Pooled discordant pairs for RC1 (R0 relayed and R1 not, against the reverse): 198 against 84, two-sided McNemar $p = 10^{-11}$; for RC3 (R2 against R0), $p = 3 \times 10^{-144}$.}
+\caption{Repetition versus consistency: wrong molecular weight relayed (relayed/parsed runs; 60 compounds, three samples, full record). R0, weight alone; R1, a verbatim repeat field scaled with the weight; R2, the repeat left correct; B, the heavy-atom count scaled with the weight. On uncorrupted records with the repeat field present, every model answered correctly in 60 of 60 runs. Pooled discordant pairs for RC1 (R0 relayed and R1 not, against the reverse): 198 against 84, two-sided McNemar $p < 10^{-10}$; for RC3 (R2 against R0), $p < 10^{-10}$.}
 \begin{tabular}{lcccc}
 \toprule
 Model & R0 weight alone & R1 repeat agrees & R2 repeat disagrees & B derived field agrees \\
@@ -79,7 +84,7 @@ Pooled & 486/717 (68\%) & 373/717 (52\%) & 9/720 (1\%) & 525/715 (73\%) \\
 Model & Memory state & Proteins & No second source & Second source shown & $p$ \\
 \midrule
 Opus 5 & current & 48 & 47/48 & 2/144 & \\
- & superseded & 7 & 7/7 & 13/21 & $3 \times 10^{-12}$ \\
+ & superseded & 7 & 7/7 & 13/21 & $<10^{-10}$ \\
  & either & 12 & 12/12 & 0/36 & \\
  & other & 12 & 12/12 & 9/36 & \\
 Gemini 4 Argon & current & 53 & 48/53 & 4/159 & \\
