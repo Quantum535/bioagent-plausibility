@@ -25,7 +25,7 @@ note, removed relay entirely: 0 of 702 runs across the three models.
 
 When the conflict was shown, Opus and DeepSeek mostly resolved it from memory, citing a recalled ``canonical'' length that matched
 the superseded entry (10 of 12 and 14 of 17 relayed runs with the labelled note, by a text match), while Argon deferred to the
-labelled original. No model restored a value from memory when no conflict was shown: memory acted as a tie-breaker once a
+labelled original. No model restored a value from memory when no conflict was shown under the registered output format: memory acted as a tie-breaker once a
 disagreement was visible, not as an independent check. Silent correction is only as safe as the second source. AlphaFold~DB
 matched current UniProt for every protein it covers, so silent replacement never altered a clean record here; a source that
 disagreed with the primary database as often as NCI~CACTUS does (about 5\%) would insert errors into clean records.
