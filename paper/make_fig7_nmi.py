@@ -19,7 +19,7 @@ OFF = {"opus5": -0.21, "argon": -0.07, "flash": 0.07, "deepseek": 0.21}
 
 def wilson(k, n, z=1.96):
     p = k / n; d = 1 + z * z / n; c = (p + z * z / (2 * n)) / d; h = z * math.sqrt(p * (1 - p) / n + z * z / (4 * n * n)) / d
-    return 100 * p, 100 * (c - h), 100 * (c + h)
+    return 100 * p, 100 * min(p, c - h), 100 * max(p, c + h)
 
 # a-c, prompt variants: [default, no tool instruction, database has errors, two fields]
 PROMPT = {
