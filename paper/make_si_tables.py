@@ -88,7 +88,8 @@ table("Agreement follow-up (Fig.~4b, c): wrong value relayed on the same 60 comp
 
 # Tables 12-13: historical errors (Figs. 5, 6)
 T = {t["task_id"]: t for t in json.load(open("data/phase5_tasks.json"))["tasks"]}
-cov = lambda t: bool(mf.ss._AF.get(T[t["task_id"]]["target_accession"]))
+from harness import second_source as ss
+cov = lambda t: bool(ss._AF.get(T[t["task_id"]]["target_accession"]))
 def direction(t):
     c = t.get("corruption") or {}
     try: return "longer" if float(c["corrupted_value"]) > float(c["clean_value"]) else "shorter"

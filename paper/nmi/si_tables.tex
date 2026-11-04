@@ -1,0 +1,258 @@
+\clearpage
+\section*{Supplementary Tables 6--13: counts behind Figures 1--6}
+
+\begin{table}[p]
+\centering\small
+\caption{Deployment rerun (Fig.~1b, c): corrupted values relayed by field (relayed/delivered runs) and, among relayed runs, how many raised a concern.}
+\begin{tabular}{lllll}
+\toprule
+Model & Condition & Field & Relayed & Flagged among relayed \\
+\midrule
+DeepSeek V4.1 Flash & impossible & gene symbol & 2/50 (4\%) & 1/2 \\
+DeepSeek V4.1 Flash & impossible & h bond donors & 0/24 (0\%) & -- \\
+DeepSeek V4.1 Flash & impossible & heavy atom count & 0/25 (0\%) & -- \\
+DeepSeek V4.1 Flash & impossible & length & 0/46 (0\%) & -- \\
+DeepSeek V4.1 Flash & impossible & mass & 0/50 (0\%) & -- \\
+DeepSeek V4.1 Flash & impossible & molecular weight & 0/23 (0\%) & -- \\
+DeepSeek V4.1 Flash & impossible & name & 2/25 (8\%) & 2/2 \\
+DeepSeek V4.1 Flash & impossible & organism & 0/50 (0\%) & -- \\
+DeepSeek V4.1 Flash & plausible & gene symbol & 0/49 (0\%) & -- \\
+DeepSeek V4.1 Flash & plausible & h bond donors & 4/25 (16\%) & 4/4 \\
+DeepSeek V4.1 Flash & plausible & heavy atom count & 0/25 (0\%) & -- \\
+DeepSeek V4.1 Flash & plausible & length & 23/44 (52\%) & 6/23 \\
+DeepSeek V4.1 Flash & plausible & mass & 18/49 (37\%) & 4/18 \\
+DeepSeek V4.1 Flash & plausible & molecular weight & 5/24 (21\%) & 0/5 \\
+DeepSeek V4.1 Flash & plausible & name & 0/24 (0\%) & -- \\
+DeepSeek V4.1 Flash & plausible & organism & 0/50 (0\%) & -- \\
+Gemini 3.8 Flash & impossible & gene symbol & 0/50 (0\%) & -- \\
+Gemini 3.8 Flash & impossible & h bond donors & 0/25 (0\%) & -- \\
+Gemini 3.8 Flash & impossible & heavy atom count & 0/22 (0\%) & -- \\
+Gemini 3.8 Flash & impossible & length & 1/48 (2\%) & 0/1 \\
+Gemini 3.8 Flash & impossible & mass & 1/48 (2\%) & 1/1 \\
+Gemini 3.8 Flash & impossible & molecular weight & 0/21 (0\%) & -- \\
+Gemini 3.8 Flash & impossible & name & 1/23 (4\%) & 0/1 \\
+Gemini 3.8 Flash & impossible & organism & 1/46 (2\%) & 1/1 \\
+Gemini 3.8 Flash & plausible & gene symbol & 1/49 (2\%) & 1/1 \\
+Gemini 3.8 Flash & plausible & h bond donors & 5/23 (22\%) & 4/5 \\
+Gemini 3.8 Flash & plausible & heavy atom count & 0/23 (0\%) & -- \\
+Gemini 3.8 Flash & plausible & length & 16/44 (36\%) & 7/16 \\
+Gemini 3.8 Flash & plausible & mass & 30/48 (62\%) & 9/30 \\
+Gemini 3.8 Flash & plausible & molecular weight & 1/21 (5\%) & 1/1 \\
+Gemini 3.8 Flash & plausible & name & 0/20 (0\%) & -- \\
+Gemini 3.8 Flash & plausible & organism & 4/48 (8\%) & 3/4 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[p]
+\centering\small
+\caption{Benchmark (Fig.~2): corrupted values relayed, runs raising a concern, and relayed runs that raised a concern (summary record, registered prompt, one sample).}
+\begin{tabular}{llllll}
+\toprule
+Model & Domain & Condition & Relayed & Flagged & Flagged among relayed \\
+\midrule
+Opus 5 & proteins & impossible & 64/200 (32\%) & 200/200 (100\%) & 64/64 \\
+Opus 5 & proteins & plausible & 150/200 (75\%) & 118/200 (59\%) & 68/150 \\
+Opus 5 & molecules & impossible & 46/100 (46\%) & 100/100 (100\%) & 46/46 \\
+Opus 5 & molecules & plausible & 98/100 (98\%) & 97/100 (97\%) & 95/98 \\
+Gemini 4 Argon & proteins & impossible & 70/200 (35\%) & 200/200 (100\%) & 70/70 \\
+Gemini 4 Argon & proteins & plausible & 147/199 (74\%) & 189/199 (95\%) & 137/147 \\
+Gemini 4 Argon & molecules & impossible & 62/100 (62\%) & 91/100 (91\%) & 53/62 \\
+Gemini 4 Argon & molecules & plausible & 98/100 (98\%) & 90/100 (90\%) & 88/98 \\
+DeepSeek V4.1 Flash & proteins & impossible & 88/200 (44\%) & 200/200 (100\%) & 88/88 \\
+DeepSeek V4.1 Flash & proteins & plausible & 154/200 (77\%) & 92/200 (46\%) & 46/154 \\
+DeepSeek V4.1 Flash & molecules & impossible & 38/100 (38\%) & 97/100 (97\%) & 35/38 \\
+DeepSeek V4.1 Flash & molecules & plausible & 95/99 (96\%) & 71/99 (72\%) & 67/95 \\
+GPT-6.1 Sol & proteins & impossible & 133/200 (66\%) & 200/200 (100\%) & 133/133 \\
+GPT-6.1 Sol & proteins & plausible & 150/200 (75\%) & 105/200 (52\%) & 55/150 \\
+GPT-6.1 Sol & molecules & impossible & 67/100 (67\%) & 78/100 (78\%) & 45/67 \\
+GPT-6.1 Sol & molecules & plausible & 93/100 (93\%) & 71/100 (71\%) & 64/93 \\
+GPT-6 Luna & proteins & impossible & 146/200 (73\%) & 163/200 (82\%) & 109/146 \\
+GPT-6 Luna & proteins & plausible & 171/200 (86\%) & 34/200 (17\%) & 6/171 \\
+GPT-6 Luna & molecules & impossible & 68/100 (68\%) & 75/100 (75\%) & 43/68 \\
+GPT-6 Luna & molecules & plausible & 100/100 (100\%) & 16/100 (16\%) & 16/100 \\
+Kimi K3 & proteins & impossible & 149/200 (74\%) & 199/200 (100\%) & 148/149 \\
+Kimi K3 & proteins & plausible & 184/200 (92\%) & 58/200 (29\%) & 42/184 \\
+Kimi K3 & molecules & impossible & 63/100 (63\%) & 88/100 (88\%) & 51/63 \\
+Kimi K3 & molecules & plausible & 99/100 (99\%) & 60/100 (60\%) & 59/99 \\
+Sonnet 5 & proteins & impossible & 151/200 (76\%) & 200/200 (100\%) & 151/151 \\
+Sonnet 5 & proteins & plausible & 185/200 (92\%) & 63/200 (32\%) & 48/185 \\
+Sonnet 5 & molecules & impossible & 73/100 (73\%) & 90/100 (90\%) & 63/73 \\
+Sonnet 5 & molecules & plausible & 100/100 (100\%) & 50/100 (50\%) & 50/100 \\
+Sonnet 4.6 & proteins & impossible & 166/200 (83\%) & 199/200 (100\%) & 165/166 \\
+Sonnet 4.6 & proteins & plausible & 199/200 (100\%) & 50/200 (25\%) & 49/199 \\
+Sonnet 4.6 & molecules & impossible & 83/100 (83\%) & 84/100 (84\%) & 67/83 \\
+Sonnet 4.6 & molecules & plausible & 100/100 (100\%) & 38/100 (38\%) & 38/100 \\
+Gemini 3.8 Flash & proteins & impossible & 167/198 (84\%) & 195/198 (98\%) & 164/167 \\
+Gemini 3.8 Flash & proteins & plausible & 155/200 (78\%) & 64/200 (32\%) & 19/155 \\
+Gemini 3.8 Flash & molecules & impossible & 62/99 (63\%) & 77/99 (78\%) & 40/62 \\
+Gemini 3.8 Flash & molecules & plausible & 100/100 (100\%) & 56/100 (56\%) & 56/100 \\
+Haiku 4.5 & proteins & impossible & 186/200 (93\%) & 152/200 (76\%) & 138/186 \\
+Haiku 4.5 & proteins & plausible & 200/200 (100\%) & 15/200 (8\%) & 15/200 \\
+Haiku 4.5 & molecules & impossible & 91/100 (91\%) & 75/100 (75\%) & 66/91 \\
+Haiku 4.5 & molecules & plausible & 100/100 (100\%) & 3/100 (3\%) & 3/100 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[p]
+\centering\small
+\caption{Override boundaries (Fig.~3), value decreased: corrupted value relayed (relayed/parsed runs) at each corruption factor, full record, paired field scaled alike.}
+\resizebox{\textwidth}{!}{\begin{tabular}{llllllllll}
+\toprule
+Model & Domain & $\times$0.9 & $\times$0.8 & $\times$0.7 & $\times$0.5 & $\times$0.3 & $\times$0.1 & $\times$0.02 & $\times$0.005 \\
+\midrule
+Opus 5 & proteins & 18/40 & 8/39 & 1/40 & 0/39 & 0/39 & 0/39 & 0/38 & 0/33 \\
+Opus 5 & molecules & 16/40 & 14/40 & 9/40 & 4/40 & 0/40 & 1/40 & 0/40 & 0/40 \\
+Sonnet 5 & proteins & 37/40 & 35/40 & 28/40 & 15/38 & 5/40 & 0/40 & 0/40 & 0/38 \\
+Sonnet 5 & molecules & 40/40 & 40/40 & 33/40 & 17/40 & 3/40 & 0/40 & 0/40 & 0/40 \\
+Gemini 4 Argon & proteins & 23/40 & 16/40 & 9/40 & 1/40 & 0/40 & 0/40 & 0/40 & 0/40 \\
+Gemini 4 Argon & molecules & 28/40 & 24/40 & 22/40 & 11/40 & 3/40 & 0/40 & 0/40 & 0/40 \\
+Gemini 3.8 Flash & proteins & 21/39 & 17/39 & 12/38 & 5/37 & 2/40 & 0/40 & 0/40 & 0/40 \\
+Gemini 3.8 Flash & molecules & 29/39 & 22/35 & 15/39 & 15/40 & 7/39 & 2/40 & 5/40 & 4/40 \\
+DeepSeek V4.1 Flash & proteins & 38/40 & 33/39 & 33/39 & 21/39 & 8/36 & 0/35 & 1/30 & 0/30 \\
+DeepSeek V4.1 Flash & molecules & 22/40 & 11/40 & 10/40 & 6/40 & 1/39 & 0/40 & 0/40 & 0/40 \\
+\bottomrule
+\end{tabular}}
+\end{table}
+
+\begin{table}[p]
+\centering\small
+\caption{Override boundaries (Fig.~3), value increased: corrupted value relayed (relayed/parsed runs) at each corruption factor, full record, paired field scaled alike.}
+\resizebox{\textwidth}{!}{\begin{tabular}{llllllllll}
+\toprule
+Model & Domain & $\times$1.1 & $\times$1.25 & $\times$1.5 & $\times$2 & $\times$3 & $\times$10 & $\times$50 & $\times$200 \\
+\midrule
+Opus 5 & proteins & 25/40 & 6/38 & 4/40 & 0/40 & 0/40 & 0/40 & 0/40 & 0/40 \\
+Opus 5 & molecules & 19/40 & 10/40 & 7/40 & 4/40 & 4/40 & 0/40 & 0/40 & 0/40 \\
+Sonnet 5 & proteins & 40/40 & 37/40 & 32/40 & 24/40 & 12/39 & 0/40 & 0/38 & 0/40 \\
+Sonnet 5 & molecules & 40/40 & 40/40 & 40/40 & 36/40 & 30/40 & 4/40 & 2/40 & 0/40 \\
+Gemini 4 Argon & proteins & 15/40 & 11/40 & 4/40 & 0/40 & 0/40 & 0/40 & 0/40 & 0/40 \\
+Gemini 4 Argon & molecules & 22/40 & 19/40 & 11/40 & 13/40 & 5/40 & 0/40 & 0/40 & 0/40 \\
+Gemini 3.8 Flash & proteins & 26/40 & 17/39 & 6/39 & 1/40 & 0/40 & 0/40 & 0/40 & 0/40 \\
+Gemini 3.8 Flash & molecules & 21/40 & 21/39 & 17/39 & 14/40 & 18/38 & 0/40 & 4/39 & 0/40 \\
+DeepSeek V4.1 Flash & proteins & 40/40 & 31/40 & 24/39 & 13/38 & 3/34 & 0/38 & 1/33 & 0/38 \\
+DeepSeek V4.1 Flash & molecules & 30/40 & 22/40 & 19/40 & 13/40 & 5/40 & 0/40 & 0/40 & 0/40 \\
+\bottomrule
+\end{tabular}}
+\end{table}
+
+\begin{table}[p]
+\centering\small
+\caption{New chemistry fields with the full record (Fig.~4a): runs raising a concern and corrupted values relayed, by field and condition.}
+\begin{tabular}{lllll}
+\toprule
+Model & Field & Condition & Flagged & Relayed \\
+\midrule
+Opus 5 & complexity & clean & 1/60 (2\%) & -- \\
+Opus 5 & complexity & plausible & 1/60 (2\%) & 60/60 (100\%) \\
+Opus 5 & complexity & impossible & 60/60 (100\%) & 60/60 (100\%) \\
+Opus 5 & monoisotopic mass & clean & 2/60 (3\%) & -- \\
+Opus 5 & monoisotopic mass & plausible & 52/60 (87\%) & 57/60 (95\%) \\
+Opus 5 & monoisotopic mass & impossible & 60/60 (100\%) & 0/60 (0\%) \\
+Opus 5 & tpsa & clean & 1/60 (2\%) & -- \\
+Opus 5 & tpsa & plausible & 10/60 (17\%) & 60/60 (100\%) \\
+Opus 5 & tpsa & impossible & 60/60 (100\%) & 19/60 (32\%) \\
+Sonnet 5 & complexity & clean & 3/60 (5\%) & -- \\
+Sonnet 5 & complexity & plausible & 2/60 (3\%) & 60/60 (100\%) \\
+Sonnet 5 & complexity & impossible & 60/60 (100\%) & 60/60 (100\%) \\
+Sonnet 5 & monoisotopic mass & clean & 6/60 (10\%) & -- \\
+Sonnet 5 & monoisotopic mass & plausible & 36/60 (60\%) & 59/60 (98\%) \\
+Sonnet 5 & monoisotopic mass & impossible & 60/60 (100\%) & 2/60 (3\%) \\
+Sonnet 5 & tpsa & clean & 0/60 (0\%) & -- \\
+Sonnet 5 & tpsa & plausible & 0/60 (0\%) & 60/60 (100\%) \\
+Sonnet 5 & tpsa & impossible & 60/60 (100\%) & 41/60 (68\%) \\
+Gemini 4 Argon & complexity & clean & 0/60 (0\%) & -- \\
+Gemini 4 Argon & complexity & plausible & 1/60 (2\%) & 60/60 (100\%) \\
+Gemini 4 Argon & complexity & impossible & 60/60 (100\%) & 51/60 (85\%) \\
+Gemini 4 Argon & monoisotopic mass & clean & 3/60 (5\%) & -- \\
+Gemini 4 Argon & monoisotopic mass & plausible & 60/60 (100\%) & 58/60 (97\%) \\
+Gemini 4 Argon & monoisotopic mass & impossible & 60/60 (100\%) & 0/60 (0\%) \\
+Gemini 4 Argon & tpsa & clean & 1/60 (2\%) & -- \\
+Gemini 4 Argon & tpsa & plausible & 47/60 (78\%) & 60/60 (100\%) \\
+Gemini 4 Argon & tpsa & impossible & 60/60 (100\%) & 12/60 (20\%) \\
+Gemini 3.8 Flash & complexity & clean & 0/60 (0\%) & -- \\
+Gemini 3.8 Flash & complexity & plausible & 0/60 (0\%) & 60/60 (100\%) \\
+Gemini 3.8 Flash & complexity & impossible & 60/60 (100\%) & 57/60 (95\%) \\
+Gemini 3.8 Flash & monoisotopic mass & clean & 0/60 (0\%) & -- \\
+Gemini 3.8 Flash & monoisotopic mass & plausible & 58/60 (97\%) & 60/60 (100\%) \\
+Gemini 3.8 Flash & monoisotopic mass & impossible & 58/58 (100\%) & 1/58 (2\%) \\
+Gemini 3.8 Flash & tpsa & clean & 0/60 (0\%) & -- \\
+Gemini 3.8 Flash & tpsa & plausible & 4/60 (7\%) & 59/60 (98\%) \\
+Gemini 3.8 Flash & tpsa & impossible & 56/56 (100\%) & 30/56 (54\%) \\
+DeepSeek V4.1 Flash & complexity & clean & 6/60 (10\%) & -- \\
+DeepSeek V4.1 Flash & complexity & plausible & 5/60 (8\%) & 60/60 (100\%) \\
+DeepSeek V4.1 Flash & complexity & impossible & 60/60 (100\%) & 60/60 (100\%) \\
+DeepSeek V4.1 Flash & monoisotopic mass & clean & 2/60 (3\%) & -- \\
+DeepSeek V4.1 Flash & monoisotopic mass & plausible & 55/60 (92\%) & 56/60 (93\%) \\
+DeepSeek V4.1 Flash & monoisotopic mass & impossible & 60/60 (100\%) & 0/60 (0\%) \\
+DeepSeek V4.1 Flash & tpsa & clean & 2/60 (3\%) & -- \\
+DeepSeek V4.1 Flash & tpsa & plausible & 8/60 (13\%) & 60/60 (100\%) \\
+DeepSeek V4.1 Flash & tpsa & impossible & 58/58 (100\%) & 13/58 (22\%) \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[p]
+\centering\small
+\caption{Agreement follow-up (Fig.~4b, c): wrong value relayed on the same 60 compounds, pooled over three samples and per sample.}
+\resizebox{\textwidth}{!}{\begin{tabular}{llllll}
+\toprule
+Model & Arm & Pooled & Sample 1 & Sample 2 & Sample 3 \\
+\midrule
+Opus 5 & mono.\ mass asked, two agreeing fields & 175/180 (97\%) & 57/60 (95\%) & 60/60 (100\%) & 58/60 (97\%) \\
+Opus 5 & mono.\ mass asked, corrupted alone & 138/180 (77\%) & 48/60 (80\%) & 47/60 (78\%) & 43/60 (72\%) \\
+Opus 5 & weight asked, one agreeing field & 113/180 (63\%) & 31/60 (52\%) & 43/60 (72\%) & 39/60 (65\%) \\
+Opus 5 & weight asked, two agreeing fields & 163/180 (91\%) & 52/60 (87\%) & 58/60 (97\%) & 53/60 (88\%) \\
+Gemini 4 Argon & mono.\ mass asked, two agreeing fields & 172/180 (96\%) & 58/60 (97\%) & 55/60 (92\%) & 59/60 (98\%) \\
+Gemini 4 Argon & mono.\ mass asked, corrupted alone & 129/180 (72\%) & 43/60 (72\%) & 46/60 (77\%) & 40/60 (67\%) \\
+Gemini 4 Argon & weight asked, one agreeing field & 130/180 (72\%) & 40/60 (67\%) & 44/60 (73\%) & 46/60 (77\%) \\
+Gemini 4 Argon & weight asked, two agreeing fields & 144/180 (80\%) & 52/60 (87\%) & 44/60 (73\%) & 48/60 (80\%) \\
+Gemini 3.8 Flash & mono.\ mass asked, two agreeing fields & 178/180 (99\%) & 60/60 (100\%) & 59/60 (98\%) & 59/60 (98\%) \\
+Gemini 3.8 Flash & mono.\ mass asked, corrupted alone & 149/176 (85\%) & 50/59 (85\%) & 49/59 (83\%) & 50/58 (86\%) \\
+Gemini 3.8 Flash & weight asked, one agreeing field & 154/175 (88\%) & 52/59 (88\%) & 53/59 (90\%) & 49/57 (86\%) \\
+Gemini 3.8 Flash & weight asked, two agreeing fields & 159/174 (91\%) & 52/58 (90\%) & 54/58 (93\%) & 53/58 (91\%) \\
+DeepSeek V4.1 Flash & mono.\ mass asked, two agreeing fields & 158/179 (88\%) & 56/60 (93\%) & 52/59 (88\%) & 50/60 (83\%) \\
+DeepSeek V4.1 Flash & mono.\ mass asked, corrupted alone & 100/180 (56\%) & 36/60 (60\%) & 29/60 (48\%) & 35/60 (58\%) \\
+DeepSeek V4.1 Flash & weight asked, one agreeing field & 128/180 (71\%) & 43/60 (72\%) & 41/60 (68\%) & 44/60 (73\%) \\
+DeepSeek V4.1 Flash & weight asked, two agreeing fields & 152/180 (84\%) & 54/60 (90\%) & 48/60 (80\%) & 50/60 (83\%) \\
+\bottomrule
+\end{tabular}}
+\end{table}
+
+\begin{table}[p]
+\centering\small
+\caption{Historical UniProt errors (Fig.~5): superseded value relayed with the full and summary record (one sample), full-record repeats (three samples), and with AlphaFold DB as second source (annotate arm, three samples) on covered proteins, by direction of the revision, and on the uncovered protein.}
+\resizebox{\textwidth}{!}{\begin{tabular}{llllllll}
+\toprule
+Model & Full record & Summary & Full, repeats & Second source & Superseded longer & Superseded shorter & Uncovered \\
+\midrule
+Opus 5 & 78/79 (99\%) & 79/79 (100\%) & 90/90 (100\%) & 21/234 (9\%) & 16/60 (27\%) & 5/174 (3\%) & 3/3 (100\%) \\
+Gemini 4 Argon & 71/79 (90\%) & 79/79 (100\%) & 213/236 (90\%) & 2/233 (1\%) & 1/60 (2\%) & 1/173 (1\%) & 3/3 (100\%) \\
+DeepSeek V4.1 Flash & 78/79 (99\%) & 79/79 (100\%) & 234/236 (99\%) & 77/234 (33\%) & 27/60 (45\%) & 50/174 (29\%) & 3/3 (100\%) \\
+\bottomrule
+\end{tabular}}
+\end{table}
+
+\begin{table}[p]
+\centering\small
+\caption{Presentation of the correction (Fig.~6): superseded value relayed on covered proteins under four presentations, pooled over three samples and per sample.}
+\begin{tabular}{llllll}
+\toprule
+Model & Presentation & Pooled & Sample 1 & Sample 2 & Sample 3 \\
+\midrule
+Opus 5 & annotate: conflict listed & 21/234 (9\%) & 7/78 (9\%) & 7/78 (9\%) & 7/78 (9\%) \\
+Opus 5 & replace: ambiguous labels & 25/234 (11\%) & 7/78 (9\%) & 9/78 (12\%) & 9/78 (12\%) \\
+Opus 5 & replace: original labelled & 12/234 (5\%) & 4/78 (5\%) & 3/78 (4\%) & 5/78 (6\%) \\
+Opus 5 & replace: silent & 0/234 (0\%) & 0/78 (0\%) & 0/78 (0\%) & 0/78 (0\%) \\
+Gemini 4 Argon & annotate: conflict listed & 2/233 (1\%) & 1/78 (1\%) & 0/77 (0\%) & 1/78 (1\%) \\
+Gemini 4 Argon & replace: ambiguous labels & 17/231 (7\%) & 5/77 (6\%) & 7/77 (9\%) & 5/77 (6\%) \\
+Gemini 4 Argon & replace: original labelled & 95/231 (41\%) & 37/78 (47\%) & 31/77 (40\%) & 27/76 (36\%) \\
+Gemini 4 Argon & replace: silent & 0/234 (0\%) & 0/78 (0\%) & 0/78 (0\%) & 0/78 (0\%) \\
+DeepSeek V4.1 Flash & annotate: conflict listed & 77/234 (33\%) & 24/78 (31\%) & 28/78 (36\%) & 25/78 (32\%) \\
+DeepSeek V4.1 Flash & replace: ambiguous labels & 6/234 (3\%) & 1/78 (1\%) & 3/78 (4\%) & 2/78 (3\%) \\
+DeepSeek V4.1 Flash & replace: original labelled & 17/233 (7\%) & 7/78 (9\%) & 5/78 (6\%) & 5/77 (6\%) \\
+DeepSeek V4.1 Flash & replace: silent & 0/234 (0\%) & 0/78 (0\%) & 0/78 (0\%) & 0/78 (0\%) \\
+\bottomrule
+\end{tabular}
+\end{table}
