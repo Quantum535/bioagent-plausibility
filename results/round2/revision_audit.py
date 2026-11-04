@@ -14,7 +14,7 @@ def get(url, accept="*/*", tries=2):
         except Exception: time.sleep(1 + i)
     return None
 UNIPARC_UP = True
-REST_UP = True
+REST_UP = False  # UniProt's UniParc search returns only the current sequence; use the EBI mirror
 def uniparc(acc, o):
     """Return (UPI, cross-references as dicts with database, id, active) for sequence o among the UniParc entries of accession acc."""
     global UNIPARC_UP, REST_UP
@@ -64,7 +64,7 @@ for n, t in enumerate(json.load(open("data/phase5_tasks.json"))["tasks"]):
     if any("-" in a for a in iso_acc): cls = "current isoform"
     elif set(caut) & ERR: cls = "documented error"
     elif caut: cls = "flagged discrepancy"
-    elif active: cls = "matches a current " + "/".join(active) + " model"
+    elif [d for d in active if d.startswith(("RefSeq", "Ensembl"))]: cls = "matches a current RefSeq/Ensembl model"
     elif upi == "pending": cls = "pending (UniParc unavailable)"
     elif not upi: cls = "not found in UniParc"
     else: cls = "retired, reason not recorded"
