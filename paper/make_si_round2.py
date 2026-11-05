@@ -34,10 +34,14 @@ rows = []
 O_th = load(f"{R}/opus5_TH_full.jsonl"); ot = {r["task_id"] for r in O_th}
 O_on = [r for r in load("results/v2_full/traces_opus5.jsonl") if (r.get("prompt_variant") or "default") == "default" and r.get("harness") in (None, "none", False) and r["task_id"] in ot]
 for cond in ("impossible", "plausible"): rows.append(["Opus 5", "thinking disabled", "full record, first 50 tasks", cond, fr(*kn(O_on, cond)), fr(*kn(O_th, cond))])
+AB = sorted(glob.glob("results/v2_full/traces_*argon*.jsonl")); assert AB, "no Argon full-record traces in results/v2_full"
+A_th = load(f"{R}/argon_TH_full.jsonl"); at = {r["task_id"] for r in A_th}
+A_on = [r for r in load(AB[0]) if (r.get("prompt_variant") or "default") == "default" and r.get("harness") in (None, "none", False) and r["task_id"] in at]
+for cond in ("impossible", "plausible"): rows.append(["Gemini 4 Argon", "effort low", "full record, first 50 tasks", cond, fr(*kn(A_on, cond)), fr(*kn(A_th, cond))]); print("Argon reasoning row:", AB[0].split("/")[-1], rows[-1][3:])
 for dom, bp, f in (("proteins", "v2", "protein"), ("chemistry", "chem", "chem")):
     th = load(f"{R}/sonnet5_TH_{f}.jsonl"); tt = {r["task_id"] for r in th}; on = [r for r in load(f"results/{bp}/traces_sonnet5.jsonl") if bench(r) and r["task_id"] in tt]
     for cond in ("impossible", "plausible"): rows.append(["Sonnet 5", "thinking disabled", f"summary record, {dom}", cond, fr(*kn(on, cond)), fr(*kn(th, cond))])
-table("Reasoning. Relay with adaptive thinking (the setting used throughout) and with thinking disabled, paired by task.", ["Model", "Cell", "Condition", "Thinking adaptive", "Thinking disabled"], rows, wide=False)
+table("Reasoning. Relay (relayed/parsed runs) at the setting used throughout and with reasoning reduced, paired by task; the Reduction column gives the reduced setting for each model (Opus 5 and Sonnet 5 otherwise ran with adaptive thinking, Gemini 4 Argon at the provider's default).", ["Model", "Reduction", "Cell", "Condition", "Setting used throughout", "Reduced"], rows, wide=False)
 cfg = collections.defaultdict(collections.Counter)
 for f in glob.glob("results/v2/traces_*.jsonl") + glob.glob("results/chem/traces_*.jsonl") + glob.glob(f"{R}/*.jsonl"):
     for r in load(f):

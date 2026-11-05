@@ -1,7 +1,9 @@
-"Supplementary Table 15. Reasoning. Relay with adaptive thinking (the setting used throughout) and with thinking disabled, paired by task."
-Model,Cell,Condition,Thinking adaptive,Thinking disabled
+"Supplementary Table 15. Reasoning. Relay (relayed/parsed runs) at the setting used throughout and with reasoning reduced, paired by task; the Reduction column gives the reduced setting for each model (Opus 5 and Sonnet 5 otherwise ran with adaptive thinking, Gemini 4 Argon at the provider's default)."
+Model,Reduction,Cell,Condition,Setting used throughout,Reduced
 Opus 5,thinking disabled,"full record, first 50 tasks",impossible,0/50 (0%),1/50 (2%)
 Opus 5,thinking disabled,"full record, first 50 tasks",plausible,4/50 (8%),23/50 (46%)
+Gemini 4 Argon,effort low,"full record, first 50 tasks",impossible,0/50 (0%),1/50 (2%)
+Gemini 4 Argon,effort low,"full record, first 50 tasks",plausible,3/50 (6%),7/50 (14%)
 Sonnet 5,thinking disabled,"summary record, proteins",impossible,151/200 (76%),139/200 (70%)
 Sonnet 5,thinking disabled,"summary record, proteins",plausible,185/200 (92%),189/200 (94%)
 Sonnet 5,thinking disabled,"summary record, chemistry",impossible,73/100 (73%),63/100 (63%)
