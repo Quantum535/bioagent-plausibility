@@ -16,7 +16,7 @@
 
 The first full run of the deployment experiment began on 25 October 2026 under the author's own macOS account. Biomni's system prompt lists its data-lake directory, and that directory sat inside the study's repository, so the path shown to the model contained the strings \texttt{bioagent-plausibility} and \texttt{biomni\_spike}. Biomni's code executor was not sandboxed: code the agent wrote could read the author's filesystem and reach the internet, and the study's repository was public.
 
-After the run, every transcript was audited with three regular expressions, recorded in \path{results/analysis/audit_biomni_environment.py}: \emph{awareness} (phrases inferring a plausibility benchmark, a test, or an evaluation of the agent), \emph{repository pattern} (code executions referencing the author's home directory outside the data lake, the study's repository files, \texttt{git} commands or process listings) and \emph{metadata vocabulary} (terms from the study's task files, such as \texttt{corrupted\_value} or ``answer key''). DeepSeek V4.1 Flash matched none of the first two in any run and the third in one run (u015), which caught the corruption regardless. Gemini 3.8 Flash matched awareness in 44 runs, the repository pattern in 98 and the vocabulary in 2. Awareness changed behaviour: Flash's aware runs relayed plausible values in 1 of 23 delivered runs, against 68 of 265 for the others, so the first run's Flash catch rate was inflated. The external files Flash fetched were Biomni's own repository (its evaluation task list) and a third-party benchmark (Bio-Bench); no transcript shows the study's files being read.
+After the run, every transcript was audited with three regular expressions, recorded in \path{results/analysis/audit_biomni_environment.py}: \emph{awareness} (phrases inferring a plausibility benchmark, a test, or an evaluation of the agent), \emph{repository pattern} (code executions referencing the author's home directory outside the data lake, the study's repository files, \texttt{git} commands or process listings) and \emph{metadata vocabulary} (terms from the study's task files, such as \texttt{corrupted\_value} or ``answer key''). DeepSeek V4.1 Flash matched none of the first two in any run and the third in one run (u015), which caught the corruption regardless. Gemini 3.8 Flash matched awareness in 44 runs, the repository pattern in 98 and the vocabulary in 2. Aware runs behaved differently: Flash's aware runs relayed plausible values in 1 of 23 delivered runs, against 68 of 265 for the others. Awareness does not account for the difference between the runs, however: both models relayed plausible values less often in the rerun (Gemini 3.8 Flash 21\% against 24\%; DeepSeek, which showed no awareness, 17\% against 28\%), which indicates run-to-run variation of about ten points in this setting. We report the rerun as registered, and both runs gave the same direction for the derivation-route hypothesis (odds ratios 5.7 and 17.2 for DeepSeek, 3.6 and 6.9 for Gemini 3.8 Flash; Supplementary Table 1). The external files Flash fetched were Biomni's own repository (its evaluation task list) and a third-party benchmark (Bio-Bench); no transcript shows the study's files being read.
 
 The corrupted conditions were rerun on 3 November 2026 under a second macOS user with no read access to the author's home directory, with the data lake at a neutral path (\path{/Users/Shared/agentrun/workspace}). The agent's state file carried only the task identifier and a slot number; the mapping from slot to condition (\path{harness/rerun_schedule.json}, commit 0019d72) was read by the proxy and never shown to the agent. The clean runs were retained from the first run. In the rerun no transcript named the study, its repository or its paper. DeepSeek matched no pattern in any run. Flash matched awareness in 16 runs, each inferred from the task and the anomaly themselves rather than from the environment, the repository pattern in 17 runs of directory and process probing that found nothing, and the vocabulary in 2; the external files it fetched were again Biomni's own repository and Bio-Bench. Supplementary Table~1 gives both runs side by side; the main text reports the rerun throughout.
 
@@ -102,23 +102,23 @@ DeepSeek V4.1 Flash & current & 50 & 50/50 & 38/150 & \\
 
 \begin{table}[h]
 \centering\footnotesize
-\caption{Withholding harness (full record, 100 tasks per domain and condition, one sample): corrupted numeric fields and identifiers relayed (relayed/parsed runs), runs without a parseable answer, and runs answered with a value that was neither the true nor the corrupted one. The last column gives identifier relay in the annotate arm of the benchmark (summary record) for comparison; the arms differ in record format.}
-\resizebox{\textwidth}{!}{\begin{tabular}{lllccccc}
+\caption{Withholding harness (full record, 100 tasks per domain and condition, one sample): corrupted numeric fields and identifiers relayed (relayed/parsed runs), runs without a parseable answer, and runs answered with a value that was neither the true nor the corrupted one. The last column gives identifier relay in the annotate arm of the benchmark (summary record) for comparison; the arms differ in record format. Accuracy is correct answers among parsed runs.}
+\resizebox{\textwidth}{!}{\begin{tabular}{lllcccccc}
 \toprule
-Model & Domain & Condition & Numeric relayed & Identifiers relayed & Unparsed & Wrong & Annotate arm identifiers \\
+Model & Domain & Condition & Numeric relayed & Identifiers relayed & Unparsed & Wrong & Accuracy & Annotate arm identifiers \\
 \midrule
-Opus 5 & proteins & impossible & 0/46 & 0/50 & 4 & 0 & 0/100 \\
- & & plausible & 0/45 & 0/50 & 5 & 0 & 0/100 \\
- & molecules & impossible & 0/75 & 5/25 & 0 & 0 & 21/25 \\
- & & plausible & 0/75 & 3/25 & 0 & 0 & 10/25 \\
-Gemini 4 Argon & proteins & impossible & 0/49 & 0/50 & 1 & 0 & 0/100 \\
- & & plausible & 0/48 & 0/50 & 2 & 0 & 0/100 \\
- & molecules & impossible & 0/75 & 4/25 & 0 & 0 & 19/25 \\
- & & plausible & 0/75 & 1/25 & 0 & 0 & 18/25 \\
-DeepSeek V4.1 Flash & proteins & impossible & 0/34 & 4/50 & 16 & 5 & 1/100 \\
- & & plausible & 0/37 & 1/50 & 13 & 3 & 1/100 \\
- & molecules & impossible & 0/75 & 12/25 & 0 & 0 & 22/24 \\
- & & plausible & 0/75 & 11/25 & 0 & 0 & 21/24 \\
+Opus 5 & proteins & impossible & 0/46 & 0/50 & 4 & 0 & 96/96 (100\%) & 0/100 \\
+ & & plausible & 0/45 & 0/50 & 5 & 0 & 95/95 (100\%) & 0/100 \\
+ & molecules & impossible & 0/75 & 5/25 & 0 & 0 & 93/100 (93\%) & 21/25 \\
+ & & plausible & 0/75 & 3/25 & 0 & 0 & 93/100 (93\%) & 10/25 \\
+Gemini 4 Argon & proteins & impossible & 0/49 & 0/50 & 1 & 0 & 99/99 (100\%) & 0/100 \\
+ & & plausible & 0/48 & 0/50 & 2 & 0 & 98/98 (100\%) & 0/100 \\
+ & molecules & impossible & 0/75 & 4/25 & 0 & 0 & 94/100 (94\%) & 19/25 \\
+ & & plausible & 0/75 & 1/25 & 0 & 0 & 95/100 (95\%) & 18/25 \\
+DeepSeek V4.1 Flash & proteins & impossible & 0/34 & 4/50 & 16 & 5 & 79/84 (94\%) & 1/100 \\
+ & & plausible & 0/37 & 1/50 & 13 & 3 & 84/87 (97\%) & 1/100 \\
+ & molecules & impossible & 0/75 & 12/25 & 0 & 0 & 83/100 (83\%) & 22/24 \\
+ & & plausible & 0/75 & 11/25 & 0 & 0 & 85/100 (85\%) & 21/24 \\
 \bottomrule
 \end{tabular}}
 \end{table}

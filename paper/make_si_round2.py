@@ -83,18 +83,36 @@ for cls in ("documented error", "flagged discrepancy", "current isoform", "match
 table("Revision audit of the 79 superseded sequences: class, number of proteins, number with the change at the N-terminus, and relay of the superseded value pooled over Opus 5, Gemini 4 Argon and DeepSeek V4.1 Flash in four arms (second source shown: three samples). The second-source column includes the one protein AlphaFold DB does not cover, whose old sequence matches a current RefSeq or Ensembl model (9 runs, all relayed); Supplementary Tables 12 and 13 exclude it and so count 701 runs.",
       ["Class", "Proteins", "N-terminal", "Full record", "Summary", "Second source shown", "Identity removed"], rows)
 rows = []
+import re, json, os
+T5 = {t["task_id"]: t for t in json.load(open("data/phase5_tasks.json"))["tasks"]}
+from harness import second_source as _ss
+_cov = lambda r: bool(_ss._AF.get(T5[r["task_id"]]["target_accession"]))
+BIG = []
+def groups(label, f, rs):
+    b = os.path.basename(f).replace(".jsonl", "")
+    if label == "prompt variants" and "_protein_" in b:
+        yield b + " (cell a: length, mass)", [r for r in rs if re.search(r"length|mass", str(r.get("target_field")))]
+    elif label == "withholding":
+        ident = [r for r in rs if re.search(r"gene|organism|name", str(r.get("target_field")))]; ids = {id(r) for r in ident}
+        yield b + " (numeric)", [r for r in rs if id(r) not in ids]
+        yield b + " (identifiers)", ident
+    elif label == "superseded" and re.search(r"_p5_(annotate|replace)", b):
+        yield b + " (covered)", [r for r in rs if _cov(r)]
+    else:
+        yield b, rs
 SETS = [("benchmark", glob.glob("results/v2/traces_*.jsonl") + glob.glob("results/chem/traces_*.jsonl"), bench), ("full record", glob.glob("results/v2_full/traces_*.jsonl"), None),
         ("prompt variants", glob.glob("results/prompt_ablation/*.jsonl"), None), ("withholding", glob.glob("results/blank_harness/*.jsonl"), None), ("round 2", glob.glob(f"{R}/*.jsonl"), None),
         ("superseded", glob.glob("results/phase5/*.jsonl") + glob.glob("results/robustness/*_p5_*.jsonl"), None)]
 for label, files, flt in SETS:
     for f in sorted(files):
-        rs = [r for r in load(f) if flt is None or flt(r)]
+      for fname, rs in groups(label, f, [r for r in load(f) if flt is None or flt(r)]):
         for cond in sorted({r.get("condition") for r in rs}):
             c = [r for r in rs if r.get("condition") == cond]; p = [r for r in c if ok(r)]; u = len(c) - len(p)
             if u < 2: continue
             what = "correct" if cond == "clean" else "propagated"; k = sum(bool(r.get(what)) for r in p)
             worst = k + u if what == "propagated" else k
-            rows.append([label, esc(os.path.basename(f).replace(".jsonl", "")), str(cond), str(len(p)), str(u), ("accuracy " if what == "correct" else "relay ") + fr(k, len(p)), fr(worst, len(c))])
-table("Runs without a parseable answer: every cell with at least two, with the reported rate (unparsed runs excluded) and the rate with unparsed runs counted against the agent (as relayed for relay, as wrong for accuracy).",
+            rows.append([label, esc(fname), str(cond), str(len(p)), str(u), ("accuracy " if what == "correct" else "relay ") + fr(k, len(p)), fr(worst, len(c))])
+            if abs(worst / len(c) - k / max(len(p), 1)) * 100 > 3: BIG.append((label, fname, cond, f"{k}/{len(p)}", f"{worst}/{len(c)}"))
+table("Runs without a parseable answer: every cell with at least two, computed on the cells reported (prompt-variant protein rows: cell (a), length and mass tasks; withholding: numeric fields and identifiers separately; presentation arms: covered proteins), with the reported rate (unparsed runs excluded) and the rate with unparsed runs counted against the agent (as relayed for relay, as wrong for accuracy).",
       ["Experiment", "File", "Condition", "Parsed", "Unparsed", "Reported", "Counted against the agent"], rows)
-open("paper/nmi/si_round2.tex", "w").write("\\clearpage\n\\section*{Supplementary Tables 14--20: experiments added in revision}\n\n" + "\n".join(out)); print("wrote paper/nmi/si_round2.tex,", len(out), "tables")
+print("MOVED>3", json.dumps(BIG)); open("paper/nmi/si_round2.tex", "w").write("\\clearpage\n\\section*{Supplementary Tables 14--20: experiments added in revision}\n\n" + "\n".join(out)); print("wrote paper/nmi/si_round2.tex,", len(out), "tables")
