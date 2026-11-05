@@ -81,4 +81,15 @@ for i, fld in enumerate(("length", "mass")):
     axd.plot([i - 0.12, i + 0.12], [y1, y2], color=COL["flash"], lw=0.7)
 style(axd, "a", "Biomni, Gemini 3.8 Flash", [0, 1], ["length", "mass"])
 axd.legend(handles=[Line2D([], [], marker="o", color=COL["flash"], ls="", ms=3.4, label="computed from sequence"), Line2D([], [], marker="o", color=COL["flash"], mfc="white", ls="", ms=3.4, label="did not compute")], loc="lower right", frameon=False)
+# legend fix: panel c (keep the legend clear of the data)
+import matplotlib.pyplot as _plt
+for _ax in _plt.gcf().axes:
+    _txt = _ax.get_title(loc="left") + _ax.get_title() + " ".join(t.get_text() for t in _ax.texts)
+    _leg = _ax.get_legend()
+    if "Identity" in _txt and _leg is not None:
+        _h = getattr(_leg, "legend_handles", None) or getattr(_leg, "legendHandles")
+        _l = [t.get_text() for t in _leg.get_texts()]; _fs = _leg.get_texts()[0].get_fontsize(); _leg.remove()
+        _short = {"Gemini 4 Argon": "Argon", "DeepSeek V4.1 Flash": "DeepSeek"}
+        _ax.legend(_h, [_short.get(x, x) for x in _l], loc="center left", bbox_to_anchor=(0.01, 0.5), frameon=False, fontsize=_fs, handlelength=1.6)
+        print("panel c legend moved")
 fig.tight_layout(w_pad=1.0, h_pad=1.4); fig.savefig("paper/figures/nmi_knowledge.pdf"); print("wrote paper/figures/nmi_knowledge.pdf")
