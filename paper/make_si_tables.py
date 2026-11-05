@@ -100,7 +100,7 @@ for m in M3:
     rows.append([NAME[m], frac(*kn(load(f"results/phase5/{m}_full.jsonl", "superseded"))), frac(*kn(load(f"results/phase5/{m}_summary.jsonl", "superseded"))),
                  frac(*kn(load(f"results/robustness/{m}_p5_full.jsonl", "superseded"))), frac(*kn(annc)), frac(*kn(lon)), frac(*kn(sho)), frac(*kn([t for t in ann if not cov(t)]))])
     if m == "opus5": print("check Fig. 5c, Opus 5 longer: expect 16/63, got", kn(lon))
-table("Historical UniProt errors (Fig.~2): superseded value relayed with the full and summary record (one sample), full-record repeats (three samples), and with AlphaFold DB as second source (annotate arm, three samples) on covered proteins, by direction of the revision, and on the uncovered protein.",
+table("Historical UniProt errors (Fig.~3): superseded value relayed with the full and summary record (one sample), full-record repeats (three samples), and with AlphaFold DB as second source (annotate arm, three samples) on covered proteins, by direction of the revision, and on the uncovered protein.",
       ["Model", "Full record", "Summary", "Full, repeats", "Second source", "Superseded longer", "Superseded shorter", "Uncovered"], rows, wide=True)
 ARMS = [("p5_annotate", "annotate: conflict listed"), ("p5_replace", "replace: ambiguous labels"), ("p5_replace_labeled", "replace: original labelled"), ("p5_replace_silent", "replace: silent")]
 rows = []
@@ -111,5 +111,5 @@ for m in M3:
 table("Presentation of the correction (Fig.~6): superseded value relayed on covered proteins under four presentations, pooled over three samples and per sample.",
       ["Model", "Presentation", "Pooled", "Sample 1", "Sample 2", "Sample 3"], rows)
 
-open("paper/nmi/si_tables.tex", "w").write("\\clearpage\n\\section*{Supplementary Tables 6--13: counts behind Figures 1, 2, 4 and 6 and Extended Data Figures 1 and 2}\n\n" + "\n".join(out))
+open("paper/nmi/si_tables.tex", "w").write("\\clearpage\n\\section*{Supplementary Tables 6--13: counts behind Figures 1, 3, 4 and 6 and Extended Data Figures 1 and 2}\n\n" + "\n".join(out))
 print("wrote paper/nmi/si_tables.tex with", len(out), "tables")

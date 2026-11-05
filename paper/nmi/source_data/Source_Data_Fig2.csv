@@ -1,15 +1,46 @@
 Source Data Fig2. Counts are relayed (or correct) runs over runs with a parseable answer; rates and 95% Wilson intervals in the figure are computed from them by the figure scripts in paper/.
 
-"Supplementary Table 12. Historical UniProt errors (Fig. 2): superseded value relayed with the full and summary record (one sample), full-record repeats (three samples), and with AlphaFold DB as second source (annotate arm, three samples) on covered proteins, by direction of the revision, and on the uncovered protein."
-Model,Full record,Summary,"Full, repeats",Second source,Superseded longer,Superseded shorter,Uncovered
-Opus 5,78/79 (99%),79/79 (100%),90/90 (100%),21/234 (9%),16/63 (25%),5/171 (3%),3/3 (100%)
-Gemini 4 Argon,71/79 (90%),79/79 (100%),213/236 (90%),2/233 (1%),1/63 (2%),1/170 (1%),3/3 (100%)
-DeepSeek V4.1 Flash,78/79 (99%),79/79 (100%),234/236 (99%),77/234 (33%),27/63 (43%),50/171 (29%),3/3 (100%)
+"Supplementary Table 14. Identity. Relay (relayed/parsed runs) on the 25 length-threshold benchmark tasks with the full record, with identity but no annotation (accession, protein name, gene, organism, length, mass, sequence), and with neither (anonymous; three samples, the first paired with the other formats); clean rows give accuracy. The last row per model gives relay of the 79 superseded sequences without a second source, with the full record and anonymously."
+Model,Condition,Full record,"Identity, no annotation","Neither, sample 1","Neither, 3 samples"
+Opus 5,clean (accuracy),25/25 (100%),25/25 (100%),25/25 (100%),75/75 (100%)
+Opus 5,impossible,0/25 (0%),0/25 (0%),0/25 (0%),0/75 (0%)
+Opus 5,plausible,1/25 (4%),7/25 (28%),17/25 (68%),50/75 (67%)
+Opus 5,superseded record,78/79 (99%),-,79/79 (100%),-
+Gemini 4 Argon,clean (accuracy),25/25 (100%),25/25 (100%),25/25 (100%),75/75 (100%)
+Gemini 4 Argon,impossible,0/25 (0%),0/25 (0%),0/25 (0%),0/75 (0%)
+Gemini 4 Argon,plausible,0/25 (0%),1/25 (4%),0/25 (0%),1/75 (1%)
+Gemini 4 Argon,superseded record,71/79 (90%),-,77/79 (97%),-
+DeepSeek V4.1 Flash,clean (accuracy),25/25 (100%),25/25 (100%),25/25 (100%),75/75 (100%)
+DeepSeek V4.1 Flash,impossible,0/25 (0%),0/24 (0%),1/25 (4%),2/73 (3%)
+DeepSeek V4.1 Flash,plausible,22/25 (88%),23/25 (92%),21/25 (84%),70/75 (93%)
+DeepSeek V4.1 Flash,superseded record,78/79 (99%),-,79/79 (100%),-
 
-"Supplementary Table 19. Revision audit of the 79 superseded sequences: class, number of proteins, number with the change at the N-terminus, and relay of the superseded value pooled over Opus 5, Gemini 4 Argon and DeepSeek V4.1 Flash in four arms (second source shown: three samples)."
-Class,Proteins,N-terminal,Full record,Summary,Second source shown,Identity removed
-documented error,13,10,33/39 (85%),39/39 (100%),27/117 (23%),39/39 (100%)
-flagged discrepancy,1,0,3/3 (100%),3/3 (100%),0/9 (0%),3/3 (100%)
-current isoform,16,10,48/48 (100%),48/48 (100%),25/143 (17%),48/48 (100%)
-matches a current RefSeq/Ensembl model,1,0,3/3 (100%),3/3 (100%),9/9 (100%),3/3 (100%)
-"retired, reason not recorded",48,26,140/144 (97%),144/144 (100%),48/432 (11%),142/144 (99%)
+"Supplementary Table 15. Reasoning. Relay with adaptive thinking (the setting used throughout) and with thinking disabled, paired by task."
+Model,Cell,Condition,Thinking adaptive,Thinking disabled
+Opus 5,"full record, first 50 tasks",impossible,0/50 (0%),1/50 (2%)
+Opus 5,"full record, first 50 tasks",plausible,4/50 (8%),23/50 (46%)
+Sonnet 5,"summary record, proteins",impossible,151/200 (76%),139/200 (70%)
+Sonnet 5,"summary record, proteins",plausible,185/200 (92%),189/200 (94%)
+Sonnet 5,"summary record, chemistry",impossible,73/100 (73%),63/100 (63%)
+Sonnet 5,"summary record, chemistry",plausible,100/100 (100%),100/100 (100%)
+
+"Supplementary Table 17. Prompt without the concerns field (summary record, first 100 tasks per domain). Relay under the registered prompt and without the concerns field; runs listing a concern under the registered prompt; runs voicing doubt in the reply text with and without the field, by the validated classifier; and the registered keyword detector without the field, a lower bound."
+Model,Domain,Condition,"Relay, registered","Relay, no field",Concerns listed,"Doubt in reply, registered","Doubt in reply, no field","Keyword, no field"
+Opus 5,proteins,impossible,33/100 (33%),60/100 (60%),100/100 (100%),99/100 (99%),84/100 (84%),45/100 (45%)
+Opus 5,proteins,plausible,75/100 (75%),79/100 (79%),57/100 (57%),52/100 (52%),29/100 (29%),17/100 (17%)
+Opus 5,chemistry,impossible,46/100 (46%),57/100 (57%),100/100 (100%),100/100 (100%),75/100 (75%),32/100 (32%)
+Opus 5,chemistry,plausible,98/100 (98%),100/100 (100%),97/100 (97%),96/100 (96%),17/100 (17%),0/100 (0%)
+Gemini 4 Argon,proteins,impossible,37/100 (37%),80/100 (80%),100/100 (100%),99/100 (99%),36/100 (36%),5/100 (5%)
+Gemini 4 Argon,proteins,plausible,74/100 (74%),100/100 (100%),94/100 (94%),85/100 (85%),1/100 (1%),0/100 (0%)
+Gemini 4 Argon,chemistry,impossible,62/100 (62%),39/100 (39%),91/100 (91%),83/100 (83%),72/100 (72%),31/100 (31%)
+Gemini 4 Argon,chemistry,plausible,98/100 (98%),100/100 (100%),90/100 (90%),81/100 (81%),0/100 (0%),0/100 (0%)
+DeepSeek V4.1 Flash,proteins,impossible,43/100 (43%),68/100 (68%),100/100 (100%),95/100 (95%),71/100 (71%),35/100 (35%)
+DeepSeek V4.1 Flash,proteins,plausible,78/100 (78%),83/100 (83%),43/100 (43%),41/100 (41%),21/100 (21%),8/100 (8%)
+DeepSeek V4.1 Flash,chemistry,impossible,38/100 (38%),50/100 (50%),97/100 (97%),87/100 (87%),66/100 (66%),20/100 (20%)
+DeepSeek V4.1 Flash,chemistry,plausible,95/99 (96%),100/100 (100%),71/99 (72%),57/99 (58%),14/100 (14%),2/100 (2%)
+
+panel a: field,computed from sequence,relayed,delivered plausible runs
+length,True,5,22
+length,False,11,22
+mass,True,11,24
+mass,False,19,24
