@@ -8,6 +8,7 @@ anthropic:claude-sonnet-5,max_tokens=8000; model=claude-sonnet-5; provider=anthr
 anthropic:claude-sonnet-5,max_tokens=8000; model=claude-sonnet-5; provider=anthropic; thinking=disabled,600
 gemini:gemini-3.8-flash,max_tokens=8000; model=google/gemini-3.8-flash; provider=gemini; reasoning_effort=None; thinking=adaptive,1680
 gemini:gemini-4-argon,max_tokens=8000; model=google/gemini-4-argon; provider=gemini; reasoning_effort=None; thinking=adaptive,2534
+gemini:gemini-4-argon,effort=low; max_tokens=8000; model=google/gemini-4-argon; provider=gemini; reasoning_effort=low; thinking=adaptive,100
 openai:gpt-6-luna,api=responses; max_tokens=8000; model=gpt-6-luna; provider=openai; reasoning_effort=None; thinking=adaptive,1500
 openai:gpt-6.1-sol,api=responses; max_tokens=8000; model=gpt-6.1-sol; provider=openai; reasoning_effort=None; thinking=adaptive,1500
 together:deepseek-ai/DeepSeek-V4.1-Flash-1017,max_tokens=8000; model=deepseek-ai/DeepSeek-V4.1-Flash-1017; provider=together; reasoning_effort=None; thinking=adaptive,2534

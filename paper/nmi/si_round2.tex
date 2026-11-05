@@ -31,12 +31,12 @@ DeepSeek V4.1 Flash & superseded record & 78/79 (99\%) & -- & 79/79 (100\%) & --
 \toprule
 Model & Cell & Condition & Thinking adaptive & Thinking disabled \\
 \midrule
-Opus 5 & full record, first 50 tasks & impossible & 0/50 (0\%) & 1/50 (2\%) \\
-Opus 5 & full record, first 50 tasks & plausible & 4/50 (8\%) & 23/50 (46\%) \\
-Sonnet 5 & summary record, proteins & impossible & 151/200 (76\%) & 139/200 (70\%) \\
-Sonnet 5 & summary record, proteins & plausible & 185/200 (92\%) & 189/200 (94\%) \\
-Sonnet 5 & summary record, chemistry & impossible & 73/100 (73\%) & 63/100 (63\%) \\
-Sonnet 5 & summary record, chemistry & plausible & 100/100 (100\%) & 100/100 (100\%) \\
+Opus 5 & thinking disabled & full record, first 50 tasks & impossible & 0/50 (0\%) & 1/50 (2\%) \\
+Opus 5 & thinking disabled & full record, first 50 tasks & plausible & 4/50 (8\%) & 23/50 (46\%) \\
+Sonnet 5 & thinking disabled & summary record, proteins & impossible & 151/200 (76\%) & 139/200 (70\%) \\
+Sonnet 5 & thinking disabled & summary record, proteins & plausible & 185/200 (92\%) & 189/200 (94\%) \\
+Sonnet 5 & thinking disabled & summary record, chemistry & impossible & 73/100 (73\%) & 63/100 (63\%) \\
+Sonnet 5 & thinking disabled & summary record, chemistry & plausible & 100/100 (100\%) & 100/100 (100\%) \\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -56,6 +56,7 @@ anthropic:claude-sonnet-5 & max\_tokens=8000; model=claude-sonnet-5; provider=an
 anthropic:claude-sonnet-5 & max\_tokens=8000; model=claude-sonnet-5; provider=anthropic; thinking=disabled & 600 \\
 gemini:gemini-3.8-flash & max\_tokens=8000; model=google/gemini-3.8-flash; provider=gemini; reasoning\_effort=None; thinking=adaptive & 1680 \\
 gemini:gemini-4-argon & max\_tokens=8000; model=google/gemini-4-argon; provider=gemini; reasoning\_effort=None; thinking=adaptive & 2534 \\
+gemini:gemini-4-argon & effort=low; max\_tokens=8000; model=google/gemini-4-argon; provider=gemini; reasoning\_effort=low; thinking=adaptive & 100 \\
 openai:gpt-6-luna & api=responses; max\_tokens=8000; model=gpt-6-luna; provider=openai; reasoning\_effort=None; thinking=adaptive & 1500 \\
 openai:gpt-6.1-sol & api=responses; max\_tokens=8000; model=gpt-6.1-sol; provider=openai; reasoning\_effort=None; thinking=adaptive & 1500 \\
 together:deepseek-ai/DeepSeek-V4.1-Flash-1017 & max\_tokens=8000; model=deepseek-ai/DeepSeek-V4.1-Flash-1017; provider=together; reasoning\_effort=None; thinking=adaptive & 2534 \\

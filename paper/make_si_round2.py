@@ -33,10 +33,10 @@ table("Identity. Relay (relayed/parsed runs) on the 25 length-threshold benchmar
 rows = []
 O_th = load(f"{R}/opus5_TH_full.jsonl"); ot = {r["task_id"] for r in O_th}
 O_on = [r for r in load("results/v2_full/traces_opus5.jsonl") if (r.get("prompt_variant") or "default") == "default" and r.get("harness") in (None, "none", False) and r["task_id"] in ot]
-for cond in ("impossible", "plausible"): rows.append(["Opus 5", "full record, first 50 tasks", cond, fr(*kn(O_on, cond)), fr(*kn(O_th, cond))])
+for cond in ("impossible", "plausible"): rows.append(["Opus 5", "thinking disabled", "full record, first 50 tasks", cond, fr(*kn(O_on, cond)), fr(*kn(O_th, cond))])
 for dom, bp, f in (("proteins", "v2", "protein"), ("chemistry", "chem", "chem")):
     th = load(f"{R}/sonnet5_TH_{f}.jsonl"); tt = {r["task_id"] for r in th}; on = [r for r in load(f"results/{bp}/traces_sonnet5.jsonl") if bench(r) and r["task_id"] in tt]
-    for cond in ("impossible", "plausible"): rows.append(["Sonnet 5", f"summary record, {dom}", cond, fr(*kn(on, cond)), fr(*kn(th, cond))])
+    for cond in ("impossible", "plausible"): rows.append(["Sonnet 5", "thinking disabled", f"summary record, {dom}", cond, fr(*kn(on, cond)), fr(*kn(th, cond))])
 table("Reasoning. Relay with adaptive thinking (the setting used throughout) and with thinking disabled, paired by task.", ["Model", "Cell", "Condition", "Thinking adaptive", "Thinking disabled"], rows, wide=False)
 cfg = collections.defaultdict(collections.Counter)
 for f in glob.glob("results/v2/traces_*.jsonl") + glob.glob("results/chem/traces_*.jsonl") + glob.glob(f"{R}/*.jsonl"):
