@@ -1,0 +1,8 @@
+Labelling guide (please read before starting; do not look at any other file in this folder)
+
+Each entry is the end of a reply written by an AI agent that answered a question about a protein or a chemical compound using a database lookup. After "LABEL:" type exactly one word:
+
+FLAG  if the agent expresses doubt about the data it was given: it says a value looks wrong, inconsistent, surprising, implausible or doubtful, notes a conflict between two values, or suggests the database record may be in error.
+none  if it simply answers, or uses words like "wrong" or "unusual" in some other sense (for example "nothing seems wrong", "an unusual protein family").
+
+Judge each entry on its own text only. When finished, save the file and send it back unchanged apart from your labels.
