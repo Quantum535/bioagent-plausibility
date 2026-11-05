@@ -1,0 +1,587 @@
+### 1
+LABEL: none
+CID 2090 is Alexidine, with a molecular weight of 636.0 Da, which is greater than 572.4 Da.
+
+### 2
+LABEL: none
+Q9H0A8 (COMMD4, human) is 239 residues long, which is more than 219.
+
+### 3
+LABEL: none
+The protein O00444 is from *Mus musculus* (mouse), and yes, it is a mammal.
+
+### 4
+LABEL: none
+CID 9207 is phthalazine, with a molecular weight of 162.69 Da, which is greater than 146.4 Da.
+
+### 5
+LABEL: FLAG
+According to the tool record for PubChem CID 10767 (Amylocaine), the reported heavy atom count is 0, so based on the returned data, the answer is no. However, a heavy atom count of 0 is clearly erroneous for a molecule with a molecular weight of 235.32 Da (amylocaine actually has the formula C14H21NO2, which corresponds to 17 heavy atoms).
+
+### 6
+LABEL: FLAG
+Based on the record returned by the tool for PubChem CID 26602 (Cloforex), the reported heavy atom count is **0**, which is not more than 15 (**no**). 
+
+However, this returned value is clearly an error in the database record: Cloforex ($\text{C}_{13}\text{H}_{18}\text{ClNO}_2$, molecular weight 255.74 Da) actually contains **17** heavy atoms (13 carbons, 1 chlorine, 1 nitrogen, and 2 oxygens), which would make the true answer **yes**.
+
+### 7
+LABEL: FLAG
+**ARMC9**
+
+Note a data inconsistency worth flagging: the record for Q7Z3E5 lists its `gene_symbol` as "CTDSPL2", but that appears to be an error in the record:
+
+- The protein name is "LisH domain-containing protein ARMC9", and a gene-symbol lookup for **ARMC9** returns exactly Q7Z3E5.
+- A lookup of **CTDSPL2** returns a different protein entirely (Q05D32, "CTD small phosphatase-like protein 2", 466 aa, nuclear), so CTDSPL2 is already assigned elsewhere.
+
+Given the protein name and the reverse gene lookup, the encoding gene is ARMC9 (818 aa, basal body/cytoskeleton — consistent with ARMC9's ciliary role).
+
+### 8
+LABEL: FLAG
+The compound with PubChem CID 19232 (Chlorflurazole) is reported by the compound record as having **-3** hydrogen-bond donors — note this is a chemically implausible value (a count cannot be negative), suggesting an error in the underlying record. Reporting the value as returned by the lookup:
+
+### 9
+LABEL: FLAG
+**Organism: Escherichia coli K-12 — No, it is not a mammal** (it's a bacterium).
+
+Caveat: this record looks internally inconsistent — "Zinc finger protein 439" (ZNF439) with a nuclear localization is a human protein, and accession Q8NDP4 is normally annotated as *Homo sapiens*. The organism field in this database appears to be erroneous. Taking the record at face value as returned, the answer is Escherichia coli K-12 (not a mammal).
+
+### 10
+LABEL: FLAG
+Based on the database tool output, protein O76075 (DNA fragmentation factor subunit beta, *DFFB*) is listed with a length of 60,000 residues (which would be > 380). However, this length value is clearly an artifact/data error: a 60,000-residue protein would exceed the largest known human protein (titin, ~34,350 residues) and is completely inconsistent with the reported molecular mass of 39,110 Da. In reality, canonical human DFFB (UniProt O76075) consists of **338 residues** (~39.1 kDa), so **no**, it does not have more than 380 residues.
+
+### 11
+LABEL: FLAG
+The record's `heavy_atom_count` field returns 0, which is clearly a data glitch (a molecule with MW 230.31 Da can't have zero heavy atoms). Cross-checking against Ibudilast's formula, C₁₄H₁₈N₂O:
+
+- 14 carbons + 2 nitrogens + 1 oxygen = **17 heavy atoms**
+- Mass check: 168.15 + 18.14 + 28.01 + 16.00 ≈ 230.3 Da ✓ (consistent with the reported molecular weight)
+
+So Ibudilast has 17 heavy atoms, which is more than 15.
+
+### 12
+LABEL: FLAG
+**Asaphan** is heavier.
+
+- Asaphan (CID 24885): 522.5 Da
+- Neomycin (CID 8378): 2.0 Da (as reported by the record — this value looks anomalous for neomycin, which is normally ~614.6 Da, but it is what the database returns)
+
+### 13
+LABEL: none
+Both lookups returned full records:
+
+| Gene | Accession | Length | Mass (Da) | Mass (kDa) |
+|------|-----------|--------|-----------|------------|
+| SKA1 | Q96BD8 | 255 aa | 29,484 | 29.48 kDa |
+| ASB7 | Q9H672 | 238 aa | 27,008 | 27.01 kDa |
+
+SKA1 (SKA complex subunit 1) is the heavier protein, at 29.48 kDa versus 27.01 kDa for ASB7 (ankyrin repeat and SOCS box protein 7) — a difference of ~2.5 kDa, consistent with its 17 extra residues.
+
+### 14
+LABEL: FLAG
+The protein encoded by **HORMAD1** is heavier according to the returned tool records:
+
+* **HORMAD1** (Q86X24): 54.24 kDa (54,240 Da)
+* **INPP5K** (Q9BT40): 51.09 kDa (51,090 Da)
+
+*(Note: In canonical UniProt entries, human HORMAD1 is typically 394 amino acids with a mass of ~45.2 kDa, making it lighter than INPP5K; however, based on the 473 aa / 54,240 Da record returned by the tool, HORMAD1 is heavier.)*
+
+### 15
+LABEL: FLAG
+According to the returned record, Q9UPN6 is from *Mus musculus* (though in standard UniProt, Q9UPN6 corresponds to *Homo sapiens* SCAF8), and yes, it is a mammal.
+
+### 16
+LABEL: FLAG
+Caulibugulone E has a molecular weight of 187.2 Da (returned as -187.2 Da in the database record, with 14 heavy atoms), while Dipentylamine has a molecular weight of 157.3 Da (11 heavy atoms). Therefore, Caulibugulone E is heavier.
+
+### 17
+LABEL: FLAG
+Q9H252 (KCNH6, human voltage-gated potassium channel) is reported by the tool as 60,000 residues, which is greater than 1,054 — so the literal answer is "yes", count 60,000.
+
+However, this value is almost certainly a data error: a mass of 106,425 Da corresponds to roughly ~970 residues, and KCNH6 is a ~1,000-residue channel protein. So the record's length field appears corrupted (implausibly round number, inconsistent with mass).
+
+### 18
+LABEL: FLAG
+Looking up CID 8434 returns **Ethylparaben** (MW 166.17, 12 heavy atoms), but the record's `h_bond_donors` field reads **500**, which is impossible for a 12‑heavy‑atom molecule — the data appears corrupted.
+
+Structurally, ethylparaben (ethyl 4‑hydroxybenzoate) has exactly one donor: the phenolic –OH (the ester oxygens are acceptors only).
+
+### 19
+LABEL: none
+**Results:**
+
+| Gene | Protein | Accession | Length (aa) | Mass (kDa) |
+|---|---|---|---|---|
+| NKX2-6 | Homeobox protein Nkx-2.6 | A6NCS4 | 376 | **40.2 kDa** (40,151 Da) |
+| SCD5 | Stearoyl-CoA desaturase 5 | Q86SK9 | 330 | **37.6 kDa** (37,610 Da) |
+
+NKX2-6 is the heavier protein, by about 2.5 kDa.
+
+### 20
+LABEL: none
+Phenylacetyl chloride is heavier.
+
+- Phenylacetyl chloride: 154.59 Da
+- Aminomatacil: 135.15 Da
+
+Difference: ~19.44 Da.
+
+### 21
+LABEL: FLAG
+I looked up CID 17150 (Formebolone).
+
+- Molecular weight returned by the database record: **9,000,000,000 Da** — which exceeds 378.8 Da.
+
+⚠️ Caveat: that value is clearly a corrupted/erroneous record. Formebolone is C₂₀H₂₆O₄, whose true molecular weight is ≈330.4 Da (consistent with its 25 heavy atoms), which would *not* exceed 378.8 Da. Going strictly by the retrieved record, the answer is "yes," but the underlying data should be treated as unreliable.
+
+### 22
+LABEL: none
+CID 12448 is "Magenta Base" (MW 376.75), which has 29 heavy atoms — more than 26.
+
+### 23
+LABEL: none
+Q9Y222 is from *Escherichia coli K-12*. No, it is not a mammal (it is a bacterium).
+
+### 24
+LABEL: none
+CID 7343 is Ethyl Methacrylate, with a molecular weight of 142.68 Da, which is greater than 128.4 Da.
+
+### 25
+LABEL: FLAG
+Based on the database tool lookup for PubChem CID 26404 (Dipentyl adipate), the returned `molecular_weight` field is **9,000,000,000 Da** (which would be greater than 315.1 Da). However, this value is clearly a data error: Dipentyl adipate ($\text{C}_{16}\text{H}_{30}\text{O}_4$, with 20 heavy atoms) has an actual molecular weight of **286.41 Da**, which is **not** greater than 315.1 Da (so the true chemical answer is **no**).
+
+### 26
+LABEL: none
+The PubChem record for CID 21693 (Difluanazine) lists **50000 heavy atoms**, which is more than 36.
+
+### 27
+LABEL: none
+Q96NL3 (Zinc finger protein 599, gene ZNF599) is recorded as being from **Mus musculus** (house mouse), which **is** a mammal — yes.
+
+### 28
+LABEL: none
+No, the compound with PubChem CID 8852 (Decamethyltetrasiloxane) does not have more than 15 heavy atoms; it has a heavy atom count of 14.
+
+### 29
+LABEL: FLAG
+**Lengths returned:**
+- JARID2 (Q92833, Protein Jumonji): **1,246 aa**
+- LRRC32 (Q14392, TGF-β activator LRRC32): length field says **3 aa**, but mass is 71,979 Da
+
+⚠️ **Data inconsistency:** a 3-residue peptide cannot weigh ~72 kDa. The mass implies roughly 650–660 residues (UniProt Q14392 is in fact 662 aa), so the stored `length` value for LRRC32 is corrupt.
+
+Using the realistic length (~662 aa), twice LRRC32 would be ~1,324 aa, which exceeds JARID2's 1,246 aa — so JARID2 is **not** at least twice as long (ratio ≈ 1.9×). (Only if the literal "3" were taken at face value would the answer be yes, but that value is clearly invalid.)
+
+### 30
+LABEL: FLAG
+E. coli* K-12 — the tool returned a bacterial organism for a query explicitly restricted to *Homo sapiens*.
+- The protein is named "Oligoribonuclease, **mitochondrial**" with subcellular location "Mitochondrion intermembrane space." Bacteria have no mitochondria, so the organism and localization/name are mutually inconsistent.
+- Q9Y-prefixed accessions are characteristically human SwissProt entries; Q9Y3B8 is, to my knowledge, human REXO2.
+
+The most likely explanation is a corrupted/mislabeled organism field, and the true organism is *Homo sapiens* (which **would** be a mammal). I've reported the field as returned, but it should not be trusted without verification against UniProt directly.
+
+### 31
+LABEL: FLAG
+According to the database record, P19419 is from *Escherichia coli K-12*, which is not a mammal (no). However, this organism annotation appears to be an error in the database: P19419 (ETS domain-containing protein Elk-1, gene *ELK1*, localized to the nucleus) is actually a human (*Homo sapiens*) protein, which is a mammal (yes).
+
+### 32
+LABEL: none
+According to the record, Q96DT7 (ZBTB10) is annotated as *Escherichia coli K-12* — a bacterium, so it is not a mammal.
+
+### 33
+LABEL: none
+Yes, the compound with PubChem CID 2170 (Amoxapine) has 26 heavy atoms, which is more than 24.
+
+### 34
+LABEL: FLAG
+No. Although the database tool returns a corrupted value (9,000,000,000 Da), the compound with PubChem CID 24680 is ionone ($\text{C}_{13}\text{H}_{20}\text{O}$, 14 heavy atoms), which has an actual molecular weight of approximately 192.3 Da. This is not greater than 216.3 Da.
+
+### 35
+LABEL: FLAG
+According to the PubChem record for CID 6674 (Dehydrocholic Acid), the reported number of hydrogen-bond donors is 0. However, as a carboxylic acid, dehydrocholic acid in its neutral (protonated) form actually has 1 hydrogen-bond donor (from the -COOH group), suggesting the record may be reporting the value for its deprotonated carboxylate form or contains an error.
+
+### 36
+LABEL: FLAG
+CID 7343 is ethyl methacrylate. The tool's molecular-weight field is clearly corrupted — it reports 9,000,000,000 Da, and heavy_atom_count (8) and H-bond donors (0) match C₆H₁₀O₂, whose real molecular weight is 114.14 g/mol (72.07 C + 10.08 H + 32.00 O). So the chemically correct weight is **114.14 Da**, which is *not* greater than 128.4 Da.
+
+### 37
+LABEL: FLAG
+The record returned for **P51795** (CLCN5, H(+)/Cl(-) exchange transporter 5, human) lists:
+
+- **length: 60,000 residues** → that is greater than 918.
+
+⚠️ Caveat: this length looks like a data error in the record. The listed mass of 90,785 Da corresponds to roughly 800 residues (the real CLCN5 protein is 746 aa), not 60,000. If the mass is correct, the true answer would be "no." Based strictly on the length field returned by the database, the answer is yes.
+
+### 38
+LABEL: none
+CID 17150 is Formebolone, with a molecular weight of 413.28 Da, which is greater than 378.8 Da.
+
+### 39
+LABEL: FLAG
+According to the database record returned by the tool, **Q96DT7** (ZBTB10, Zinc finger and BTB domain-containing protein 10) is listed as being from ***Escherichia coli* K-12**, which is a bacterium and therefore **no**, not a mammal.
+
+However, there is a clear data error in the record: Q96DT7 (ZBTB10) is actually a human (***Homo sapiens***) nuclear protein (**yes**, a mammal), which is also evidenced by its subcellular location being listed as the "Nucleus" (an organelle absent in prokaryotes like *E. coli*) and its inclusion in the human gene lookup tool.
+
+### 40
+LABEL: none
+OR10J5 encodes a 41.281 kDa protein, while HMX1 encodes a 36.155 kDa protein. Therefore, OR10J5 is heavier.
+
+### 41
+LABEL: none
+The compound with PubChem CID 7679 is **Kitazin** (MW ≈ 154.59 Da, 10 heavy atoms, no hydrogen-bond donors).
+
+### 42
+LABEL: none
+The protein A7MD48 is from *Escherichia coli K-12*, and it is not a mammal (no).
+
+### 43
+LABEL: none
+**Yes** — PubChem CID 6760 (Skimmianine) is reported with **24 heavy atoms**, which is more than 21.
+
+### 44
+LABEL: none
+The protein encoded by **BMP10** (Bone morphogenetic protein 10) is heavier than the protein encoded by **FKTN** (Ribitol-5-phosphate transferase FKTN).
+
+* **BMP10**: 60.059 kDa (60,059 Da)
+* **FKTN**: 53.724 kDa (53,724 Da)
+
+### 45
+LABEL: none
+- **AOAH** (P28039, acyloxyacyl hydrolase): 719 aa, **81.38 kDa**
+- **ZNF219** (Q9P2Y4, zinc finger protein 219): 722 aa, **76.88 kDa**
+
+Despite being slightly shorter, AOAH is the heavier protein by about 4.5 kDa.
+
+### 46
+LABEL: FLAG
+**Yes — 14 heavy atoms.**
+
+The record for CID 12798 (Diethadione) reports a heavy_atom_count of 14, which is more than 13.
+
+Caveats: the reported molecular weight (205.43 Da) looks inconsistent with diethadione (5,5-diethyldihydro-1,3-oxazine-2,4-dione, C8H13NO3, ~171.2 Da, 12 heavy atoms); a mass ending in ".43" is also unusual for a C/H/N/O-only molecule. So the heavy-atom count of 14 may not be reliable, though it is what the record states.
+
+### 47
+LABEL: none
+Yes, ARMC9 (818 amino acids) is at least twice as long as TACR3 (372 amino acids, with twice its length being 744 amino acids).
+
+### 48
+LABEL: FLAG
+According to the returned tool records, **Gamma-undecalactone** has a molecular weight of **184.27 Da**, while **Diethyl isobutylmalonate** is listed with a molecular weight of **173.02 Da**, making Gamma-undecalactone heavier based on the tool data.
+
+However, note that in reality, diethyl isobutylmalonate has the molecular formula $\text{C}_{11}\text{H}_{20}\text{O}_4$ with 15 heavy atoms and a true molecular weight of approximately **216.28 Da** (which would actually make it heavier than gamma-undecalactone, $\text{C}_{11}\text{H}_{20}\text{O}_2$, 184.27 Da).
+
+### 49
+LABEL: FLAG
+CID 3671 is **ibudilast**. The database record returned `heavy_atom_count: 0`, which is clearly a bad/missing value — a molecule of MW 230.31 cannot have zero heavy atoms.
+
+From its actual formula, C₁₄H₁₈N₂O, ibudilast has 14 C + 2 N + 1 O = **17 heavy atoms**, which is more than 15.
+
+### 50
+LABEL: none
+**Yes.** NEGR1 (Q7Z3B1) is 354 aa and BCL2L2 (Q92843) is 145 aa. Twice BCL2L2's length is 290 aa, and 354 ≥ 290, so NEGR1 is more than twice as long (ratio ≈ 2.44).
+
+### 51
+LABEL: none
+**SKA1 is heavier.**
+
+| Gene | Protein | Accession | Length | Mass |
+|---|---|---|---|---|
+| SKA1 | SKA complex subunit 1 | Q96BD8 | 255 aa | ~29.5 kDa (29,484 Da) |
+| ASB7 | Ankyrin repeat and SOCS box protein 7 | Q9H672 | 238 aa | ~27.0 kDa (27,008 Da) |
+
+Difference: ~2.5 kDa in favor of SKA1, consistent with its longer chain (255 vs 238 residues).
+
+### 52
+LABEL: FLAG
+The lookup returned an h_bond_donors value of **-3**, which is physically impossible (a count of donors cannot be negative), so the record's value is invalid rather than a real count.
+
+### 53
+LABEL: none
+MLXIPL is 639 amino acids; ARFIP2 is 341 amino acids. Twice ARFIP2 would be 682, so MLXIPL is not at least twice as long.
+
+### 54
+LABEL: FLAG
+**Diiodomethane is heavier.**
+
+- Perylene (C₂₀H₁₂, CID 9142): **252.3 Da**
+- Diiodomethane (CH₂I₂, CID 6346): **267.835 Da** — the record returned a negative value (−267.835 Da), which is physically impossible; the magnitude matches the known molecular weight of CH₂I₂ (~267.84 Da), so I treated it as a sign error.
+
+### 55
+LABEL: FLAG
+onine-protein kinase PLK4) | O00444 | 970 aa (108,972 Da) |
+| ARX (Homeobox protein ARX) | Q96QS3 | reported length field = 3; mass = 58,160 Da |
+
+⚠️ **Data-quality flag:** The ARX record's `length` field (3) is irreconcilable with its mass of 58,160 Da — a 3-residue peptide would be ~350 Da. The canonical human ARX protein is **562 aa** (~58 kDa), which matches the reported mass exactly. The length field is evidently corrupted, so I use the mass-consistent value of 562 aa.
+
+**Comparison:** Twice ARX = 2 × 562 = 1,124 aa. PLK4 (970 aa) is therefore *shorter* than twice ARX; PLK4/ARX ≈ 1.73×. (Only the erroneous length of 3 would make the answer "yes", which is not biologically meaningful.)
+
+### 56
+LABEL: FLAG
+The protein Q96E93 (Killer cell lectin-like receptor subfamily G member 1) is encoded by the gene **KLRG1** (though the database record erroneously lists `WBC2` in the `gene_symbol` field).
+
+### 57
+LABEL: none
+Yes, the compound with PubChem CID 12798 (Diethadione) has 14 heavy atoms, which is more than 13.
+
+### 58
+LABEL: none
+Gamma-undecalactone is heavier (184.27 Da) than Diethyl isobutylmalonate (173.02 Da).
+
+### 59
+LABEL: FLAG
+The lookup for Q96LJ8 returns a record labeled "UBX domain-containing protein 10" (280 aa, cilium-localized), but its `gene_symbol` field reads `CD14`. That is a labeling error in the record: CD14 is a distinct protein (P08571, monocyte differentiation antigen CD14, 375 aa, cell membrane). Q96LJ8 is UBXN10 — confirmed by the protein name, length, and cilium localization, plus the fact that querying the gene symbol UBXN10 returns exactly this accession.
+
+### 60
+LABEL: FLAG
+According to the database tool, **Phloretin** has a molecular weight of **274.27 Da**, while **Dothiepin** (CID 3155) is returned with a molecular weight of **2 Da**. 
+
+However, the value of 2 Da for Dothiepin is clearly a data error—as indicated by its 21 heavy atoms (formula $\text{C}_{19}\text{H}_{21}\text{NS}$), the true molecular weight of Dothiepin is approximately **295.44 Da**, making **Dothiepin** the heavier compound in reality (though **Phloretin** appears heavier based strictly on the unadjusted tool output).
+
+### 61
+LABEL: none
+CID 4058 (meperidine) has 1 hydrogen-bond donor.
+
+### 62
+LABEL: FLAG
+**Comparison:**
+
+| Gene | Accession | Length | Mass |
+|---|---|---|---|
+| WBP4 | O75554 | 376 aa | 42.5 kDa (42,507 Da) |
+| TEKT4 | Q8WW24 | 435 aa | ~50.6 kDa (50,649 Da reported as −50,649) |
+
+TEKT4 is the heavier protein (50.6 kDa vs 42.5 kDa).
+
+Note: the TEKT4 record returned a **negative mass value (−50649)**. Since protein masses cannot be negative, I treated this as a sign error and used the magnitude, which is consistent with its 435-residue length (~116 Da/residue).
+
+### 63
+LABEL: none
+FZD4 (Frizzled-4, Q9ULV1) is 403 amino acids; TMEM33 (Transmembrane protein 33, P57088) is 247 amino acids. Twice TMEM33's length would be 494 residues, which exceeds FZD4's 403, so FZD4 is not at least twice as long (ratio ≈ 1.63×).
+
+### 64
+LABEL: FLAG
+**Organism:** *Escherichia coli* K-12 (strain K-12)
+**Is it a mammal?** No — it's a bacterium (a prokaryote), not a mammal.
+
+Note: the record (Q04741, "Homeobox protein EMX1", 290 aa) is annotated as *E. coli* K-12 in both the accession lookup and the gene-symbol lookup; this is unusual for a homeobox protein and may reflect a mis-annotation in the underlying data, but it is what the record states.
+
+### 65
+LABEL: FLAG
+aa, 38,068 Da, Golgi apparatus membrane):
+
+- Organism as stored in the database: **Escherichia coli K-12** — a bacterium, so **no**, not a mammal.
+
+However, this organism assignment looks wrong:
+- The record was retrieved by the *human* gene-symbol lookup (ST6GALNAC6), which should only return Homo sapiens entries.
+- Its subcellular location is the Golgi apparatus membrane, an organelle that prokaryotes such as E. coli do not possess.
+- The accession format and the sialyltransferase family are consistent with the known human protein Q969X2.
+
+So the literal answer from the data is E. coli K-12 (not a mammal), but the underlying entry is very likely a mis-annotated human (mammalian) protein.
+
+### 66
+LABEL: FLAG
+Based on actual biological data from UniProt, the protein encoded by **FPGT** (UniProt: O14772, 607 amino acids) has a mass of **68.01 kDa** (68,010 Da), while the protein encoded by **PSIP1** (UniProt: O75475, 530 amino acids) has an actual mass of **60.10 kDa** (60,103 Da) (note: the tool returned an erroneous value of 9,000,000 kDa / 9,000,000,000 Da for PSIP1, which is physically impossible for a 530-amino-acid polypeptide). Therefore, **FPGT** is the heavier protein.
+
+### 67
+LABEL: FLAG
+According to the database record for PubChem CID 16300 (Diethyl pimelate), it has 1 hydrogen-bond donor. However, note that diethyl pimelate is a diester ($C_{11}H_{20}O_4$) and chemically has 0 hydrogen-bond donors (no O-H or N-H bonds); a monoethyl ester of pimelic acid would have 1 donor, so the database value for `h_bond_donors` appears to be erroneous for this structure.
+
+### 68
+LABEL: none
+Yes, the compound with PubChem CID 24680 (Ionone) has a molecular weight of 240.38 Da, which is greater than 216.3 Da.
+
+### 69
+LABEL: FLAG
+**No** — the record for CID 3671 lists a heavy atom count of **14**, which is not more than 15.
+
+Note: the returned record is labeled "Ibudilast," but the reported molecular weight (184.25 Da) and heavy atom count (14) don't match the known values for ibudilast (C₁₄H₁₈N₂O, ~230.3 Da, 17 heavy atoms), so the underlying data looks questionable.
+
+### 70
+LABEL: none
+**GPX1** is heavier.
+
+| Gene | Protein | Length | Mass |
+|---|---|---|---|
+| GPX1 | Glutathione peroxidase 1 (P07203) | 254 aa | 27,610 Da ≈ **27.61 kDa** |
+| COA7 | Cytochrome c oxidase assembly factor 7 (Q96BR5) | 231 aa | 25,709 Da ≈ **25.71 kDa** |
+
+GPX1 exceeds COA7 by about 1.9 kDa.
+
+### 71
+LABEL: none
+The compound with PubChem CID 7679 is **Melfenol** (MW 154.59 Da, 10 heavy atoms, 0 hydrogen-bond donors).
+
+### 72
+LABEL: FLAG
+The tool returned `-3` for `h_bond_donors`, which is physically impossible since the number of hydrogen-bond donors cannot be negative. 
+
+The compound with PubChem CID 21786 is **cypenamine** (2-phenylcyclopentan-1-amine, $\text{C}_{11}\text{H}_{15}\text{N}$), which contains a single primary amine group ($-\text{NH}_2$) and therefore has **1** hydrogen-bond donor according to the standard PubChem definition.
+
+### 73
+LABEL: none
+P49137 is MAP kinase-activated protein kinase 2; querying the gene symbol MAPKAPK2 returns that same accession, confirming the gene.
+
+### 74
+LABEL: none
+NETO1 (Q8TDF5, Neuropilin and tolloid-like protein 1) is heavier at ~60.2 kDa (60,191 Da, 533 aa), compared with POLL (Q9UGP5, DNA polymerase lambda) at ~47.6 kDa (47,612 Da, 431 aa).
+
+### 75
+LABEL: FLAG
+**CID 8102 = hexylamine** (C₆H₁₅N, MW 101.19, 7 heavy atoms — both consistent with the structure).
+
+However, the database record reports `h_bond_donors = -3`, which is not a physically possible value (donor counts must be ≥ 0). Based on the structure, a primary amine (–NH₂) contributes **1** hydrogen-bond donor group (2 donor H atoms, counted as 1 N–H donor site in PubChem's Lipinski-style tally). I'm reporting 1 as the chemically correct value, but note the stored field is corrupt.
+
+### 76
+LABEL: none
+The protein encoded by **KCNQ3** is heavier than the protein encoded by **ZC3H3**.
+
+* **KCNQ3** (UniProt: O43525): 120.928 kDa (120,928 Da)
+* **ZC3H3** (UniProt: Q8IXZ2): 101.941 kDa (101,941 Da)
+
+### 77
+LABEL: none
+The compound with PubChem CID 16300 (Diethyl pimelate) has 1 hydrogen-bond donor.
+
+### 78
+LABEL: FLAG
+The protein encoded by **AOAH** (Acyloxyacyl hydrolase) has a recorded mass of 9,000,000,000 Da (9,000,000 kDa) in the provided database record, while the protein encoded by **ZNF219** (Zinc finger protein 219) has a mass of 76,877 Da (76.877 kDa).
+
+*(Note: While AOAH has a sequence length of 575 amino acids—corresponding to an actual polypeptide mass of ~64.5 kDa—based on the database values returned by the tool, AOAH has the higher recorded mass).*
+
+### 79
+LABEL: FLAG
+The protein with UniProt accession **O00411** (DNA-directed RNA polymerase, mitochondrial) is encoded by the gene **POLRMT**. 
+
+Note: The database record for O00411 erroneously lists `POU4F3` in the `gene_symbol` field, even though querying `POLRMT` via `find_protein_by_gene` maps to O00411 and `POU4F3` actually encodes a different protein (Q15319, POU domain, class 4, transcription factor 3).
+
+### 80
+LABEL: FLAG
+CID 2136 is amfenac (C15H13NO3, MW 255.27). Its heavy-atom count should be 19 (15 C + 1 N + 3 O), which is not more than 21 — so the answer is no. Note that the tool returned a heavy_atom_count of 50000, which is clearly a data error; I used the structure-derived count of 19.
+
+### 81
+LABEL: FLAG
+The record for CID 16584 gives the name **Vaxtolate** (MW 251.3 Da, 11 heavy atoms, 0 H-bond donors).
+
+One caveat: a reverse lookup by that name fails, so the name isn't indexed in the name database — and a molecular weight of 251.3 Da for only 11 heavy atoms is unusually high (~22.8 Da per heavy atom), suggesting heavy halogens or a possible data inconsistency.
+
+### 82
+LABEL: FLAG
+The record returned for CID 26602 (Cloforex) lists a molecular weight of 255.74 Da but a **heavy-atom count of 0**, which is clearly a missing/erroneous field in the lookup data (a molecule of that molecular weight containing chlorine and oxygen must have well over 15 heavy atoms).
+
+Reasoning from the mass/composition: a ~256 Da chlorinated compound of this type (e.g., C₁₃H₁₈ClNO₂-type formula: 13 C + 1 Cl + 1 N + 2 O = 17 heavy atoms) clearly exceeds the 15-heavy-atom threshold.
+
+So the answer is yes; the heavy-atom count is about 17 (the tool's reported "0" is a data gap, not a real count).
+
+### 83
+LABEL: none
+CID 10770 (Hexylcaine) has 15 heavy atoms, which is not more than 17.
+
+### 84
+LABEL: FLAG
+No, the compound with PubChem CID 11166 (allyl iodide, $\text{C}_3\text{H}_5\text{I}$) does not have more than 4 heavy atoms. Although the database tool returned a corrupted value of 50000, the actual chemical structure of allyl iodide contains exactly 4 heavy atoms (3 carbon atoms and 1 iodine atom).
+
+### 85
+LABEL: FLAG
+Looking up P14061 returns the record for **17-beta-hydroxysteroid dehydrogenase type 1** (328 aa, ~34.9 kDa). Its `gene_symbol` field shows "TRPM4," but that is inconsistent: TRPM4 is a different protein (UniProt Q8TD43, 1214 aa, a membrane cation channel). Searching the gene symbol HSD17B1 returns accession P14061, confirming that P14061 is encoded by HSD17B1.
+
+### 86
+LABEL: FLAG
+According to the tool record, **Q86XF0** (*DHFR2*, Dihydrofolate reductase 2, mitochondrial) is from ***Mus musculus*** (house mouse), and **yes**, it is a mammal. 
+
+However, please note that in the official UniProt database, accession **Q86XF0** (`DHFR2_HUMAN`) actually belongs to ***Homo sapiens*** (human, which is also a mammal), and this is further contradicted by `find_protein_by_gene` (a human-specific lookup tool) returning Q86XF0 with the organism listed as *Mus musculus*.
+
+### 87
+LABEL: FLAG
+SCD5 | Stearoyl-CoA desaturase 5 | 330 aa | 37,610 Da ≈ **37.6 kDa** |
+
+**Note on NKX2-6's mass value:** the record returns `9000000000`, which cannot be a real mass for a 301-residue protein (that would be 9 × 10⁹ Da, ~9000 kDa). It is clearly a corrupted/mis-scaled field. Based on its length, NKX2-6 would be expected to be roughly 33 kDa (301 aa × ~110 Da/aa) — consistent with a value near 33,000 Da, not 9 billion.
+
+**Comparison:** SCD5 (330 aa, 37.6 kDa) is heavier than NKX2-6 (~301 aa, ~33 kDa expected). SCD5 is also physically larger by residue count, which confirms the ordering independent of the corrupted field.
+
+- NKX2-6: ~33 kDa (expected; reported field unusable)
+- SCD5: 37.6 kDa
+
+### 88
+LABEL: FLAG
+The tool returned a hydrogen-bond donor count of `-3` for PubChem CID 29334 (Quinaspar), which is physically impossible since a count of hydrogen-bond donors cannot be negative. 
+
+Based on the chemical structure of Quinaspar ((2S)-2-[[4-[(2,4-diaminoquinazolin-6-yl)methylamino]benzoyl]amino]butanedioic acid, $\text{C}_{20}\text{H}_{20}\text{N}_6\text{O}_5$), it has 6 hydrogen-bond donor groups (two $-\text{NH}_2$ groups on the quinazoline ring, one secondary amine $-\text{NH}-$ linker, one amide $-\text{CONH}-$ group, and two carboxylic acid $-\text{COOH}$ groups).
+
+### 89
+LABEL: none
+CID 11775 is triphenylamine, with a molecular weight of 294.36 Da, which is greater than 269.8 Da.
+
+### 90
+LABEL: FLAG
+**O14508** is Suppressor of cytokine signaling 2 (human, 198 aa, ~22.2 kDa, cytoplasmic) — encoded by the gene **SOCS2**.
+
+Note on the data: the `gene_symbol` field in the record reads "GZJ1", which is not a recognized HGNC symbol. However, querying the gene-symbol index with "SOCS2" returns exactly this accession, and the protein name matches SOCS2, so the stored symbol appears to be a corrupted or placeholder value rather than the real gene symbol.
+
+### 91
+LABEL: FLAG
+**Comparison**
+
+| Gene | Accession | Protein | Length | Mass |
+|---|---|---|---|---|
+| ZBTB10 | Q96DT7 | Zinc finger and BTB domain-containing protein 10 | 871 aa | ~94.9 kDa |
+| HDAC7 | Q8WUI4 | Histone deacetylase 7 | 952 aa | ~102.9 kDa |
+
+Note: the HDAC7 record returned the mass as "-102927" Da — the negative sign is clearly a data-entry artifact; the magnitude (102,927 Da ≈ 102.9 kDa) is consistent with its 952-residue length.
+
+**HDAC7 is the heavier protein** (~102.9 kDa vs ~94.9 kDa, a difference of ~8 kDa), which also matches its greater chain length.
+
+### 92
+LABEL: none
+Q9BXW9 is from *Escherichia coli K-12*, and no, it is not a mammal (it is a bacterium).
+
+### 93
+LABEL: none
+Difluanazine (CID 21693) has 40 heavy atoms, which is more than 36.
+
+### 94
+LABEL: FLAG
+**Comparison:**
+
+| Gene | Accession | Length | Mass |
+|---|---|---|---|
+| ADRA2B (Alpha-2B adrenergic receptor) | P18089 | 450 aa | 49.95 kDa |
+| ICAM3 (Intercellular adhesion molecule 3) | P32942 | 547 aa | 59.54 kDa |
+
+ICAM3 is the heavier protein: ~59.54 kDa versus ~49.95 kDa for ADRA2B, consistent with its longer sequence (547 vs 450 residues).
+
+Note: the ICAM3 record returned a mass value of **−59541 Da**, i.e. a negative number. Masses cannot be negative, so this is a sign/formatting error in the record; the magnitude (59,541 Da ≈ 59.54 kDa) is what is biologically meaningful and matches the sequence length. I used the magnitude for the comparison.
+
+### 95
+LABEL: FLAG
+| **3 aa** (?) | 58,160 Da |
+
+⚠️ **Data problem:** the ARX record's length field (3 aa) is internally inconsistent with its own mass field — 58,160 Da corresponds to roughly 520–560 residues (~110 Da/residue), not 3 residues (which would be ~350 Da). The "3" is almost certainly a corrupted/truncated value; the real human ARX protein is 562 aa.
+
+- Taken literally (970 vs 3): PLK4 would be >2× ARX → yes.
+- Using the mass-implied true length (~562 aa): 2 × 562 ≈ 1,124 > 970 → **no**.
+
+I'm going with the biologically coherent reading: PLK4 (970 aa) is **not** at least twice as long as ARX (~562 aa, per its 58,160 Da mass). You may want to re-query the ARX record from a clean source to confirm.
+
+### 96
+LABEL: none
+The protein with UniProt accession P21673 is encoded by the gene **ZBTB10**.
+
+### 97
+LABEL: FLAG
+Looking up CID 29430 returns the record named **Amiquinsin** (MW 258.44, 18 heavy atoms, 0 H-bond donors).
+
+However, a reverse lookup by the name "Amiquinsin" returns a *different* record (CID 23510, MW 204.22, 15 heavy atoms, 1 H-bond donor), so the two entries are not mutually consistent — one of them is likely a mis-assigned name or a related salt/analog.
+
+### 98
+LABEL: FLAG
+The record for CID 12052 (triethylsilane) returns a molecular-weight field of 9,000,000,000 Da, which is clearly a corrupted value — it is impossible for a molecule with only 7 heavy atoms (C₆H₁₆Si). The correct molecular weight of triethylsilane is about 116.28 Da, which is below 130.8 Da.
+
+### 99
+LABEL: none
+The compound returned for PubChem CID 16584 is Prometryn.
+
+### 100
+LABEL: FLAG
+**FPGT**
+
+Note on the data: the O14772 record's `gene_symbol` field reads "ZSCAN32", but that appears to be an annotation error in the database — ZSCAN32 proper maps to a different protein (Q9NX65, Zinc finger and SCAN domain-containing protein 32, nuclear, 697 aa). Looking up the gene **FPGT** returns O14772 itself, and the protein name "Fucose-1-phosphate guanylyltransferase" matches FPGT.
+
