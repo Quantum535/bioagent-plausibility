@@ -22,7 +22,7 @@ L1,Robustness addendum (76e56b6),Original labelled: relay at most 2% per model,"
 L2,Robustness addendum,Labelled relays less than ambiguous labels (one-sided Wilcoxon),p=1.0,failed (C)
 S1,Robustness addendum,Silent correction: relay at most 2% per model,0 of 702,held
 M1,Memory probe (74415d3; registered as P1-P3),Memory holds the superseded length for at least 20% of proteins in at least one model,8-9%,failed (P)
-M2,Memory probe,"With the second source shown, superseded-memory proteins are relayed more than current-memory ones (one-sided Fisher)","Opus 5 p=3\times10^-12, DeepSeek p=1\times10^-8; Argon 0 of 17 against 4 of 159",partly held
+M2,Memory probe,"With the second source shown, superseded-memory proteins are relayed more than current-memory ones (one-sided Fisher)","Opus 5 p < 10^-10, DeepSeek p=1\times10^-8; Argon 0 of 17 against 4 of 159",partly held
 M3,Memory probe,"Without a second source, relay is at least 90% in both memory states for every model",91-100%,held
 PA1,Prompt variants (499d317),The errors-noted prompt lowers relay on the contradicted protein cell by at least 20 points for every model,DeepSeek 100% to 55%; Opus 5 and Argon from 18% and 14% to 0% and 2%,partly held
 PA2,Prompt variants,Removing the tool instruction changes relay on the protein and agreement cells by fewer than 10 points,"Agreement cell fell 44, 29 and 57 points (Opus 5, Argon, Flash)",failed (P)

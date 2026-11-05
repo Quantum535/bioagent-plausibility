@@ -45,7 +45,7 @@ Sonnet 5 & thinking disabled & summary record, chemistry & plausible & 100/100 (
 
 \begin{table}[p]
 \centering\small
-\caption{Request settings recorded in the traces, by model as requested (the three most frequent configurations; runs counted over the benchmark and round-2 files). Settings not listed were the provider's defaults.}
+\caption{Request settings recorded in the traces, by model as requested (the three most frequent configurations; runs counted over the benchmark and round-2 files). Settings not listed were the provider's defaults. The label thinking=adaptive is the harness's own name for its default setting; the harness sent it as an API parameter only to Anthropic models and sent no reasoning parameter to other providers, except effort=low to Gemini 4 Argon in the reasoning ablation.}
 \resizebox{\textwidth}{!}{\begin{tabular}{lll}
 \toprule
 Model & Settings & Runs \\
@@ -107,7 +107,7 @@ DeepSeek V4.1 Flash & 32/60 (53\%) & 39/59 (66\%) & 40/59 (68\%) & 0/60 (0\%) & 
 
 \begin{table}[p]
 \centering\small
-\caption{Revision audit of the 79 superseded sequences: class, number of proteins, number with the change at the N-terminus, and relay of the superseded value pooled over Opus 5, Gemini 4 Argon and DeepSeek V4.1 Flash in four arms (second source shown: three samples).}
+\caption{Revision audit of the 79 superseded sequences: class, number of proteins, number with the change at the N-terminus, and relay of the superseded value pooled over Opus 5, Gemini 4 Argon and DeepSeek V4.1 Flash in four arms (second source shown: three samples). The second-source column includes the one protein AlphaFold DB does not cover, whose old sequence matches a current RefSeq or Ensembl model (9 runs, all relayed); Supplementary Tables 12 and 13 exclude it and so count 701 runs.}
 \resizebox{\textwidth}{!}{\begin{tabular}{lllllll}
 \toprule
 Class & Proteins & N-terminal & Full record & Summary & Second source shown & Identity removed \\

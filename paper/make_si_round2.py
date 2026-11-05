@@ -53,7 +53,7 @@ rows = []
 for m, cnt in sorted(cfg.items()):
     for c, n in cnt.most_common(3): rows.append([esc(m), esc("; ".join(f"{k}={v}" for k, v in json.loads(c).items())) or "--", str(n)])
 print("request settings:"); [print("  ", r[0], "|", r[1], "|", r[2]) for r in rows]
-table("Request settings recorded in the traces, by model as requested (the three most frequent configurations; runs counted over the benchmark and round-2 files). Settings not listed were the provider's defaults.", ["Model", "Settings", "Runs"], rows)
+table("Request settings recorded in the traces, by model as requested (the three most frequent configurations; runs counted over the benchmark and round-2 files). Settings not listed were the provider's defaults. The label thinking=adaptive is the harness's own name for its default setting; the harness sent it as an API parameter only to Anthropic models and sent no reasoning parameter to other providers, except effort=low to Gemini 4 Argon in the reasoning ablation.", ["Model", "Settings", "Runs"], rows)
 J = json.load(open(f"{R}/nc_judge.json")); rows = []
 for m in M3:
     for dom, bp in (("protein", "v2"), ("chem", "chem")):
@@ -80,7 +80,7 @@ rows = []
 for cls in ("documented error", "flagged discrepancy", "current isoform", "matches a current RefSeq/Ensembl model", "retired, reason not recorded"):
     mem = [r for r in AU.values() if r["class"] == cls]
     rows.append([esc(cls), str(len(mem)), str(sum(r["location"] == "N-terminal" for r in mem))] + [fr(*rel[(cls, a)]) for a, _ in ARMS])
-table("Revision audit of the 79 superseded sequences: class, number of proteins, number with the change at the N-terminus, and relay of the superseded value pooled over Opus 5, Gemini 4 Argon and DeepSeek V4.1 Flash in four arms (second source shown: three samples).",
+table("Revision audit of the 79 superseded sequences: class, number of proteins, number with the change at the N-terminus, and relay of the superseded value pooled over Opus 5, Gemini 4 Argon and DeepSeek V4.1 Flash in four arms (second source shown: three samples). The second-source column includes the one protein AlphaFold DB does not cover, whose old sequence matches a current RefSeq or Ensembl model (9 runs, all relayed); Supplementary Tables 12 and 13 exclude it and so count 701 runs.",
       ["Class", "Proteins", "N-terminal", "Full record", "Summary", "Second source shown", "Identity removed"], rows)
 rows = []
 SETS = [("benchmark", glob.glob("results/v2/traces_*.jsonl") + glob.glob("results/chem/traces_*.jsonl"), bench), ("full record", glob.glob("results/v2_full/traces_*.jsonl"), None),

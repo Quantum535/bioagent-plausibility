@@ -1,4 +1,4 @@
-"Supplementary Table 16. Request settings recorded in the traces, by model as requested (the three most frequent configurations; runs counted over the benchmark and round-2 files). Settings not listed were the provider's defaults."
+"Supplementary Table 16. Request settings recorded in the traces, by model as requested (the three most frequent configurations; runs counted over the benchmark and round-2 files). Settings not listed were the provider's defaults. The label thinking=adaptive is the harness's own name for its default setting; the harness sent it as an API parameter only to Anthropic models and sent no reasoning parameter to other providers, except effort=low to Gemini 4 Argon in the reasoning ablation."
 Model,Settings,Runs
 anthropic:claude-haiku-4-5,max_tokens=8000; model=claude-haiku-4-5; provider=anthropic; thinking=adaptive,1500
 anthropic:claude-opus-5,max_tokens=8000; model=claude-opus-5; provider=anthropic; thinking=adaptive,2534
