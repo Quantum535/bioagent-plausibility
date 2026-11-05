@@ -48,3 +48,21 @@ for name, (idx, extra) in FIGS.items():
         for i in idx: cap, rows = tables[i - 1]; w.writerow([]); w.writerow([f"Supplementary Table {i}. {cap}"]); w.writerows(rows)
         if extra: w.writerow([]); w.writerows(extra())
     print("wrote", f"{OUT}/Source_Data_{name}.csv")
+
+
+# post-process: source data cleanup (LaTeX remnants; continuation rows that start with "& ")
+import csv as _csv, glob as _glob, re as _re
+def _fix(c):
+    c = c.replace("^\\dagger", "\u2020").replace("\\dagger", "\u2020").replace("\\times", "\u00d7").replace("\\ ", " ").replace("\\%", "%").replace("$", "")
+    c = _re.sub(r"\^\{(-?\d+)\}", r"^\1", c)
+    return _re.sub(r"(\d) e-(\d)", r"\1e-\2", c)
+for _f in _glob.glob("paper/nmi/source_data/*.csv"):
+    with open(_f, newline="", encoding="utf-8") as _h: _rows = list(_csv.reader(_h))
+    _out = []
+    for _r in _rows:
+        _n = []
+        for _c in _r:
+            if _c.startswith("& "): _n += ["", _c[2:]]
+            else: _n.append(_c)
+        _out.append([_fix(_c) for _c in _n])
+    with open(_f, "w", newline="", encoding="utf-8") as _h: _csv.writer(_h).writerows(_out)

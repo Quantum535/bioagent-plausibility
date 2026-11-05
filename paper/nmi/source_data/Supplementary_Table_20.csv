@@ -1,20 +1,20 @@
-"Supplementary Table 20. Runs without a parseable answer: every cell with at least two, computed on the cells reported (prompt-variant protein rows: cell (a), length and mass tasks; withholding: numeric fields and identifiers separately; presentation arms: covered proteins); cells whose rate changes by more than three points are marked ^\dagger, with the reported rate (unparsed runs excluded) and the rate with unparsed runs counted against the agent (as relayed for relay, as wrong for accuracy)."
+"Supplementary Table 20. Runs without a parseable answer: every cell with at least two, computed on the cells reported (prompt-variant protein rows: cell (a), length and mass tasks; withholding: numeric fields and identifiers separately; presentation arms: covered proteins); cells whose rate changes by more than three points are marked †, with the reported rate (unparsed runs excluded) and the rate with unparsed runs counted against the agent (as relayed for relay, as wrong for accuracy)."
 Experiment,File,Condition,Parsed,Unparsed,Reported,Counted against the agent
 benchmark,traces_gemini38flash,impossible,198,2,relay 167/198 (84%),169/200 (84%)
 full record,traces_deepseek_v41flash,impossible,97,3,relay 11/97 (11%),14/100 (14%)
-prompt variants,"deepseek_protein_record_errors (cell a: length, mass)",plausible,42,8,relay 23/42 (55%),31/50 (62%)^\dagger
+prompt variants,"deepseek_protein_record_errors (cell a: length, mass)",plausible,42,8,relay 23/42 (55%),31/50 (62%)†
 prompt variants,"deepseek_protein_two_fields (cell a: length, mass)",plausible,47,3,relay 34/47 (72%),37/50 (74%)
-prompt variants,flash_agreeC_no_tool_instruction,plausible,171,9,relay 58/171 (34%),67/180 (37%)^\dagger
-prompt variants,flash_agreeC_two_fields,plausible,163,17,relay 6/163 (4%),23/180 (13%)^\dagger
-prompt variants,"opus5_protein_record_errors (cell a: length, mass)",plausible,38,12,relay 0/38 (0%),12/50 (24%)^\dagger
-prompt variants,"opus5_protein_two_fields (cell a: length, mass)",plausible,47,3,relay 5/47 (11%),8/50 (16%)^\dagger
-withholding,argon_protein (numeric),plausible,48,2,relay 0/48 (0%),2/50 (4%)^\dagger
-withholding,deepseek_protein (numeric),impossible,34,16,relay 0/34 (0%),16/50 (32%)^\dagger
-withholding,deepseek_protein (numeric),plausible,37,13,relay 0/37 (0%),13/50 (26%)^\dagger
-withholding,opus5_protein (numeric),impossible,46,4,relay 0/46 (0%),4/50 (8%)^\dagger
-withholding,opus5_protein (numeric),plausible,45,5,relay 0/45 (0%),5/50 (10%)^\dagger
+prompt variants,flash_agreeC_no_tool_instruction,plausible,171,9,relay 58/171 (34%),67/180 (37%)†
+prompt variants,flash_agreeC_two_fields,plausible,163,17,relay 6/163 (4%),23/180 (13%)†
+prompt variants,"opus5_protein_record_errors (cell a: length, mass)",plausible,38,12,relay 0/38 (0%),12/50 (24%)†
+prompt variants,"opus5_protein_two_fields (cell a: length, mass)",plausible,47,3,relay 5/47 (11%),8/50 (16%)†
+withholding,argon_protein (numeric),plausible,48,2,relay 0/48 (0%),2/50 (4%)†
+withholding,deepseek_protein (numeric),impossible,34,16,relay 0/34 (0%),16/50 (32%)†
+withholding,deepseek_protein (numeric),plausible,37,13,relay 0/37 (0%),13/50 (26%)†
+withholding,opus5_protein (numeric),impossible,46,4,relay 0/46 (0%),4/50 (8%)†
+withholding,opus5_protein (numeric),plausible,45,5,relay 0/45 (0%),5/50 (10%)†
 round 2,deepseek_IS_bench,impossible,73,2,relay 2/73 (3%),4/75 (5%)
 round 2,flash_F1,plausible,56,4,relay 46/56 (82%),50/60 (83%)
-round 2,flash_F2,plausible,57,3,relay 1/57 (2%),4/60 (7%)^\dagger
+round 2,flash_F2,plausible,57,3,relay 1/57 (2%),4/60 (7%)†
 superseded,argon_p5_replace (covered),superseded,231,3,relay 17/231 (7%),20/234 (9%)
 superseded,argon_p5_replace_labeled (covered),superseded,231,3,relay 95/231 (41%),98/234 (42%)

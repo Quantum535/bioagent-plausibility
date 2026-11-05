@@ -6,9 +6,9 @@ Agents such as Coscientist, ChemCrow and Biomni now query scientific databases a
 
 A methodological finding of general interest comes first. The usual way to measure whether agents notice bad data, asking them to list concerns, inflates detection: asked, agents flagged most errors and still relayed many; not asked, they rarely questioned plausible values, and relayed more. Benchmarks that solicit concerns overstate detection and understate relay.
 
-The substantive finding is that internal consistency, not plausibility, decides override. A record that agreed with itself carried an error of any size: the superseded sequences were relayed in 90-100% of runs, as often for the 13 traced to documented errors as for the rest, and as often with the protein's identity removed. A contradiction inside the record made override possible, to a degree set by its size, the model and what the model knew; registered controls separate the record's role from the model's identity knowledge, reasoning and memory.
+The substantive finding is that internal consistency, not plausibility, decides override. A record that agreed with itself carried an error of any size: the superseded sequences were relayed in 90–100% of runs, as often for the 13 traced to documented errors as for the rest, and as often with the protein's identity removed. A contradiction inside the record made override possible, to a degree set by its size, the model and what the model knew; registered controls separate the record's role from the model's identity knowledge, reasoning and memory.
 
-The design consequence is to resolve conflicts before the model sees them. Instructions removed relay only where the record contradicted the value. Withholding fields that failed a derivation check, or silently correcting records from a current copy, left nothing to relay without lowering accuracy, whereas showing the agent both values let it restore the original.
+The design consequence is to resolve conflicts before the model sees them. Instructions removed relay only where the record contradicted the value. Withholding fields that failed a derivation check, or silently correcting records from a current copy, left no checked value to relay, whereas showing the agent both values let it restore the original.
 
 The closest work is Yang et al. (2026; ref. 31), on agents' overreliance on unreliable tools, and ClashEval (Wu et al., 2024), on conflicts between retrieved text and a model's prior. Neither has three things this paper has: the internal consistency of a structured record identified as the deciding variable; real superseded records from a production database, with an audit of why each was revised; and remedies compared by what they change in the agent's answer, with accuracy reported alongside relay.
 
@@ -16,7 +16,7 @@ All 48 predictions were fixed in dated repository commits or on OSF before the r
 
 A preliminary account of the benchmark alone was presented at the AgenticLS workshop at ICML 2026 and appears here as Extended Data Fig. 1; every other experiment is new. The manuscript is not under consideration elsewhere, and a preprint will be posted to arXiv at submission. I am the sole author and declare no competing interests. AI tools (Claude, Anthropic) assisted with analysis scripts, analysis and drafting, as stated in the manuscript.
 
-Suggested reviewers (authors of the closest work): Kevin Wu or James Zou (Stanford; ClashEval); Yu Su (Ohio State; knowledge conflicts); Yohan Jo (Seoul National University; tool overreliance); Philippe Schwaller (EPFL; ChemCrow). I would ask that the Biomni authors not review, since the paper evaluates their system.
+Suggested reviewers: Kevin Wu or James Zou (Stanford; ClashEval); Yu Su (Ohio State; knowledge conflicts); Yohan Jo (Seoul National University; tool overreliance); Philippe Schwaller (EPFL; ChemCrow). I would ask that the Biomni authors not review, since the paper evaluates their system.
 
 Thank you for your consideration.
 

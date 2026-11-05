@@ -7,8 +7,8 @@ H1,New fields (2059c3a),"Plausible relay rises with route class, monoisotopic ma
 H2,New fields,Monoisotopic-mass relay falls inside each model's interval from its molecular-weight curve in at least 8 of 10 cells,"2 of 10 (both Sonnet 5, at ceiling); 90-100% observed, 27-59% predicted",failed (C)
 H3,New fields,"The route effect is larger with the full than the summary record (interaction, one-sided)",Every summary-record run relayed,not testable
 E1,Agreement follow-up (217ea9d),Molecular weight with one agreeing field falls inside the H2 intervals in at least 8 of 10 cells,5 of 10,failed (C)
-E2,Agreement follow-up,"Relay is higher with two agreeing fields than one (logistic regression, one-sided)",p=4\times10^-7,held
-E3,Agreement follow-up,Relay is lower when monoisotopic mass is corrupted alone,p=9\times10^-10; all four models,held
+E2,Agreement follow-up,"Relay is higher with two agreeing fields than one (logistic regression, one-sided)",p=4×10^-7,held
+E3,Agreement follow-up,Relay is lower when monoisotopic mass is corrupted alone,p=9×10^-10; all four models,held
 C1,Coherent corruptions (f97e2d2; registered as P1-P4),Coherent plausible errors with the full record are relayed in at least 70% for all three models,70-98%,held
 C2,Coherent corruptions,"Coherent impossible values with the full record are relayed less than the summary-record impossible baseline, but above 0",3 of 6 comparisons as predicted,partly held
 C3,Coherent corruptions,"With the annotate harness and the second source, relay is at most 5% on covered entities",Argon 0%; Opus 5 and DeepSeek above 5% in some cells,partly held
@@ -17,12 +17,12 @@ R1,Superseded sequences (ac99248),"Without a second source, relay is at least 80
 R2,Superseded sequences,"With the second source, relay on covered proteins is at most 10% for each model","Opus 5 9%, Argon 1%, DeepSeek 31-36% in every sample",failed (C)
 R3,Superseded sequences,Residual relay is higher when the superseded sequence is longer than today's (one-sided Fisher),"25% against 11%, p=0.007 (first sample)",held
 RR1,Robustness addendum (6830c57),Replace with ambiguous labels: relay on covered proteins at most 2% per model,"11%, 7% and 3%",failed (C)
-RR2,Robustness addendum,"Replace relays less than annotate (one-sided Wilcoxon, pooled)",p=2.5\times10^-4 pooled; heterogeneous by model,held
+RR2,Robustness addendum,"Replace relays less than annotate (one-sided Wilcoxon, pooled)",p=2.5×10^-4 pooled; heterogeneous by model,held
 L1,Robustness addendum (76e56b6),Original labelled: relay at most 2% per model,"Opus 5 5%, Argon 41%, DeepSeek 7%",failed (C)
 L2,Robustness addendum,Labelled relays less than ambiguous labels (one-sided Wilcoxon),p=1.0,failed (C)
 S1,Robustness addendum,Silent correction: relay at most 2% per model,0 of 702,held
 M1,Memory probe (74415d3; registered as P1-P3),Memory holds the superseded length for at least 20% of proteins in at least one model,8-9%,failed (P)
-M2,Memory probe,"With the second source shown, superseded-memory proteins are relayed more than current-memory ones (one-sided Fisher)","Opus 5 p < 10^-10, DeepSeek p=1\times10^-8; Argon 0 of 17 against 4 of 159",partly held
+M2,Memory probe,"With the second source shown, superseded-memory proteins are relayed more than current-memory ones (one-sided Fisher)","Opus 5 p < 10^-10, DeepSeek p=1×10^-8; Argon 0 of 17 against 4 of 159",partly held
 M3,Memory probe,"Without a second source, relay is at least 90% in both memory states for every model",91-100%,held
 PA1,Prompt variants (499d317),The errors-noted prompt lowers relay on the contradicted protein cell by at least 20 points for every model,DeepSeek 100% to 55%; Opus 5 and Argon from 18% and 14% to 0% and 2%,partly held
 PA2,Prompt variants,Removing the tool instruction changes relay on the protein and agreement cells by fewer than 10 points,"Agreement cell fell 44, 29 and 57 points (Opus 5, Argon, Flash)",failed (P)
@@ -38,7 +38,7 @@ IS2,Identity,Plausible relay without identity lies within 15 points of the full 
 IS3,Identity,Impossible relay without identity is at most 20%,0-3%,held
 IS4,Identity,Clean accuracy without identity is at least 90%,100%,held
 IS5,"Identity, addendum (c4f1f43)",Opus 5 with identity but no annotation lies within 15 points of the full or the anonymous record,28% against 4% and 68%,failed (P)
-TH1,Reasoning (9234013),"Without thinking, relay of contradicted values rises by at least 10 points",Opus 5 plausible 8% to 46% (p=2\times10^-6); impossible 0% to 2%; Sonnet 5 fell,partly held
+TH1,Reasoning (9234013),"Without thinking, relay of contradicted values rises by at least 10 points",Opus 5 plausible 8% to 46% (p=2×10^-6); impossible 0% to 2%; Sonnet 5 fell,partly held
 TH2,Reasoning,"Without thinking, plausible summary-record relay changes by fewer than 10 points",92% to 94%; 100% to 100%,held
 TH3,"Reasoning, addendum (cfbf0a7)",Argon at low reasoning effort relays contradicted plausible values at least 10 points more (one-sided McNemar),6% to 14% (p=0.06),failed (P)
 NC1,No-concerns prompt (9234013),Relay changes by fewer than 10 points in every cell,"7 of 12 cells changed more (six rose by 11-43 points, one fell by 23)",failed (P)
