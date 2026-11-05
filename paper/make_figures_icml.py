@@ -11,6 +11,7 @@ from matplotlib.patches import Rectangle, Patch, FancyBboxPatch
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
 from analysis import load_runs, score, classify  # noqa: E402
+import matplotlib as _mpl; _mpl.rcParams.update({"font.family": "sans-serif", "font.sans-serif": ["Arial", "Helvetica", "DejaVu Sans"]})
 
 OUT = ROOT / "paper" / "figures"; TAB = ROOT / "paper" / "tables"
 OUT.mkdir(exist_ok=True); TAB.mkdir(exist_ok=True)
@@ -38,7 +39,7 @@ FSHORT = {"length": "length", "mass": "mass", "organism": "organism", "gene_symb
 CUES = [("crossfield", "cross-field"), ("recall", "recall"), ("rule", "rule"), ("none", "unspecific")]
 
 plt.rcParams.update({
-    "font.family": "serif", "font.serif": ["Times New Roman", "Times", "Nimbus Roman", "DejaVu Serif"],
+    "font.family": "sans-serif", "font.serif": ["Arial", "Arial", "Arial", "DejaVu Serif"],
     "font.size": 7.5, "axes.titlesize": 7.8, "axes.labelsize": 7.2, "xtick.labelsize": 6.6, "ytick.labelsize": 6.6,
     "legend.fontsize": 6.4, "axes.edgecolor": RULE, "text.color": INK, "axes.labelcolor": INK,
     "xtick.color": MUTED, "ytick.color": MUTED, "pdf.fonttype": 42, "ps.fonttype": 42})
@@ -172,7 +173,7 @@ def fig_main():
         ax.set_ylim(-0.6, n - 0.4)
         style(ax, ylim=None, xpct=True, xmax=1.24); ax.set_xticks([0, .5, 1]); ax.set_xticklabels(["0", "50", "100%"])
         ax.set_title(title, loc="left", weight="bold"); ax.set_xlabel("share of runs")
-    hl = [Patch(fc=MUTED, label="propagated and flagged (noticed, yet answered)"), Patch(fc=MUTED, alpha=0.3, label="propagated without a flag"),
+    hl = [Patch(fc=MUTED, label="relayed and flagged (noticed, yet answered)"), Patch(fc=MUTED, alpha=0.3, label="relayed without a flag"),
           Line2D([], [], color=INK, lw=1.2, label="flag rate")]
     fig.legend(handles=hl, loc="lower center", bbox_to_anchor=(0.5, -0.1), ncol=3, frameon=False, handlelength=1.2, columnspacing=1.5)
     save(fig, "icml_main")

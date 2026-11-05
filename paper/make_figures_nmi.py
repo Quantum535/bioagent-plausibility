@@ -91,7 +91,7 @@ def fig1():
         ax.text(x + w / 2, y + h - 2.0, title, ha="center", va="top", fontsize=7.2, weight="bold")
         for i, l in enumerate(lines): ax.text(x + w / 2, y + h - 6.6 - 3.4 * i, l, ha="center", va="top", fontsize=6.3)
     box(1, 34, 19, 16, "Scientific database", ["UniProt (proteins)", "PubChem (compounds)", "UniSave (past versions)"], "#f4f4f4", RULE)
-    box(27, 34, 21, 16, "Tool layer or proxy", ["errors injected here:", "impossible, plausible,", "coherent, historical"], "#fdf1e6", "#e0a060")
+    box(27, 34, 21, 16, "Tool layer or proxy", ["errors injected here:", "impossible, plausible,", "coherent, superseded"], "#fdf1e6", "#e0a060")
     box(55, 34, 19, 16, "Agent", ["10 models, 5 developers", "Biomni (deployed)", "summary or full record"], "#eef3fb", "#7a9fd6")
     box(81, 34, 18, 16, "Answer and concerns", ['{"answer": ...,', '"concerns": [...]}', "relayed? flagged?"], "#f4f4f4", RULE)
     for x0, x1 in ((20.6, 26.4), (48.6, 54.4), (74.6, 80.4)):
@@ -103,7 +103,7 @@ def fig1():
     TRUE = ("228 aa", "25.0 kDa", "228 aa")
     cards = [("true record", TRUE, INK, ""), ("impossible, one field", ("228 aa", "45 Da", "228 aa"), "#c0392b", "contradicts its paired field"),
              ("plausible, paired fields", ("182 aa", "20.0 kDa", "228 aa"), "#d68910", "contradicts only the sequence"),
-             ("coherent or historical", ("182 aa", "20.0 kDa", "182 aa"), "#7b4fb3", "contradicts nothing in the record")]
+             ("coherent or superseded", ("182 aa", "20.0 kDa", "182 aa"), "#7b4fb3", "contradicts nothing in the record")]
     for i, (h, vals, c, note) in enumerate(cards):
         x = 1 + i * 24.8
         ax.add_patch(FancyBboxPatch((x, 0.8), 23.2, 18.2, boxstyle="round,pad=0.3,rounding_size=1", fc="white", ec=c, lw=0.9))
@@ -287,7 +287,7 @@ def fig5():
         xc = float(np.median([abs(T[t]["corruptions"]["superseded"]["d_length"]) for t in tids]))
         ax.errorbar(xc, p, yerr=[[el], [eh]], fmt="_", color=INK, ms=14, mew=1.6, capsize=2, lw=1.0, zorder=5)
         ax.text(xc, p - el - 4, f"{k}/{n}", ha="center", va="top", fontsize=6, color=INK)
-    ax.set_xscale("log"); ax.set_ylim(50, 106); ax.set_xlabel("Size of the historical change in length (residues)")
+    ax.set_xscale("log"); ax.set_ylim(50, 106); ax.set_xlabel("Size of the change in length (residues)")
     ax.set_ylabel("Runs relaying, per protein (%)"); ax.set_title("Every protein, three models × two record formats", loc="left")
     ax.legend(handles=[Line2D([], [], marker="o", ls="", color=LONGER, label="superseded sequence longer"), Line2D([], [], marker="o", ls="", color=SHORTER, label="superseded sequence shorter"),
                        Line2D([], [], marker="_", ls="", color=INK, ms=10, mew=1.6, label="pooled rate per size bin")], loc="lower right", frameon=False)
