@@ -85,6 +85,7 @@ table("Revision audit of the 79 superseded sequences: class, number of proteins,
 rows = []
 import re, json, os
 T5 = {t["task_id"]: t for t in json.load(open("data/phase5_tasks.json"))["tasks"]}
+import sys; sys.path.insert(0, os.getcwd())
 from harness import second_source as _ss
 _cov = lambda r: bool(_ss._AF.get(T5[r["task_id"]]["target_accession"]))
 BIG = []
@@ -112,7 +113,7 @@ for label, files, flt in SETS:
             what = "correct" if cond == "clean" else "propagated"; k = sum(bool(r.get(what)) for r in p)
             worst = k + u if what == "propagated" else k
             rows.append([label, esc(fname), str(cond), str(len(p)), str(u), ("accuracy " if what == "correct" else "relay ") + fr(k, len(p)), fr(worst, len(c))])
-            if abs(worst / len(c) - k / max(len(p), 1)) * 100 > 3: BIG.append((label, fname, cond, f"{k}/{len(p)}", f"{worst}/{len(c)}"))
-table("Runs without a parseable answer: every cell with at least two, computed on the cells reported (prompt-variant protein rows: cell (a), length and mass tasks; withholding: numeric fields and identifiers separately; presentation arms: covered proteins), with the reported rate (unparsed runs excluded) and the rate with unparsed runs counted against the agent (as relayed for relay, as wrong for accuracy).",
+            if abs(worst / len(c) - k / max(len(p), 1)) * 100 > 3: BIG.append((label, fname, cond, f"{k}/{len(p)}", f"{worst}/{len(c)}")); rows[-1][-1] += r"$^{\dagger}$"
+table("Runs without a parseable answer: every cell with at least two, computed on the cells reported (prompt-variant protein rows: cell (a), length and mass tasks; withholding: numeric fields and identifiers separately; presentation arms: covered proteins); cells whose rate changes by more than three points are marked $^{\\dagger}$, with the reported rate (unparsed runs excluded) and the rate with unparsed runs counted against the agent (as relayed for relay, as wrong for accuracy).",
       ["Experiment", "File", "Condition", "Parsed", "Unparsed", "Reported", "Counted against the agent"], rows)
 print("MOVED>3", json.dumps(BIG)); open("paper/nmi/si_round2.tex", "w").write("\\clearpage\n\\section*{Supplementary Tables 14--20: experiments added in revision}\n\n" + "\n".join(out)); print("wrote paper/nmi/si_round2.tex,", len(out), "tables")

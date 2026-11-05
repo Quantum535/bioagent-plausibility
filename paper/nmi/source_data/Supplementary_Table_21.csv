@@ -9,7 +9,7 @@ H3,New fields,"The route effect is larger with the full than the summary record 
 E1,Agreement follow-up (217ea9d),Molecular weight with one agreeing field falls inside the H2 intervals in at least 8 of 10 cells,5 of 10,failed (C)
 E2,Agreement follow-up,"Relay is higher with two agreeing fields than one (logistic regression, one-sided)",p=4\times10^-7,held
 E3,Agreement follow-up,Relay is lower when monoisotopic mass is corrupted alone,p=9\times10^-10; all four models,held
-C1,Coherent corruptions (28 Oct; registered as P1-P4),Coherent plausible errors with the full record are relayed in at least 70% for all three models,70-98%,held
+C1,Coherent corruptions (f97e2d2; registered as P1-P4),Coherent plausible errors with the full record are relayed in at least 70% for all three models,70-98%,held
 C2,Coherent corruptions,"Coherent impossible values with the full record are relayed less than the summary-record impossible baseline, but above 0",3 of 6 comparisons as predicted,partly held
 C3,Coherent corruptions,"With the annotate harness and the second source, relay is at most 5% on covered entities",Argon 0%; Opus 5 and DeepSeek above 5% in some cells,partly held
 C4,Coherent corruptions,An all-clear harness message raises relay of coherent impossible values from the summary record,Not raised (proteins at ceiling; chemistry lower for Opus 5),failed (P)

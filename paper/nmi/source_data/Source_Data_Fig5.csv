@@ -47,13 +47,13 @@ DeepSeek V4.1 Flash,current,50,50/50,38/150,
 Model,Domain,Condition,Numeric relayed,Identifiers relayed,Unparsed,Wrong,Accuracy,Annotate arm identifiers
 Opus 5,proteins,impossible,0/46,0/50,4,0,96/96 (100%),0/100
 ,& plausible,0/45,0/50,5,0,95/95 (100%),0/100
-,molecules,impossible,0/75,5/25,0,0,93/100 (93%),21/25
-,& plausible,0/75,3/25,0,0,93/100 (93%),10/25
+,molecules,impossible,0/75,5/25,0,2,93/100 (93%),21/25
+,& plausible,0/75,3/25,0,4,93/100 (93%),10/25
 Gemini 4 Argon,proteins,impossible,0/49,0/50,1,0,99/99 (100%),0/100
 ,& plausible,0/48,0/50,2,0,98/98 (100%),0/100
-,molecules,impossible,0/75,4/25,0,0,94/100 (94%),19/25
-,& plausible,0/75,1/25,0,0,95/100 (95%),18/25
-DeepSeek V4.1 Flash,proteins,impossible,0/34,4/50,16,5,79/84 (94%),1/100
-,& plausible,0/37,1/50,13,3,84/87 (97%),1/100
-,molecules,impossible,0/75,12/25,0,0,83/100 (83%),22/24
-,& plausible,0/75,11/25,0,0,85/100 (85%),21/24
+,molecules,impossible,0/75,4/25,0,2,94/100 (94%),19/25
+,& plausible,0/75,1/25,0,4,95/100 (95%),18/25
+DeepSeek V4.1 Flash,proteins,impossible,0/34,4/50,16,1,79/84 (94%),1/100
+,& plausible,0/37,1/50,13,2,84/87 (97%),1/100
+,molecules,impossible,0/75,12/25,0,5,83/100 (83%),22/24
+,& plausible,0/75,11/25,0,4,85/100 (85%),21/24
